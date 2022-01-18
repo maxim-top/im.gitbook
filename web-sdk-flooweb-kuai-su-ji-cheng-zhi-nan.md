@@ -1,5 +1,7 @@
 # Web SDK (floo-web) 快速集成指南
 
+本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/web)
+
 ## 选型先读
 
 美信拓扑前端 Web SDK 共有三个版本，请按需选择：

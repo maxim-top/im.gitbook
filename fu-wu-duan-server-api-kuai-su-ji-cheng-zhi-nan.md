@@ -1,5 +1,7 @@
 # 服务端（server api）快速集成指南
 
+本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/api)
+
 ## 入门
 
 ### 术语介绍
