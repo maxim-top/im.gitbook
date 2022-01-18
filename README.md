@@ -47,11 +47,11 @@
 
 ### API 文档
 
-服务端 API
+[服务端 API](https://maximtop.com/docs/api/)
 
 ### 私有部署安装
 
-下载[安装包](https://package.maximtop.com/linux/amd64/maxim.ctl) 后直接在控制台按照步骤操作，亦可查看详细安装文档
+下载[安装包](https://package.maximtop.com/linux/amd64/maxim.ctl) 后直接在控制台按照步骤操作，亦可查看[详细安装文档](https://maximtop.com/docs/install\_maxim)
 
 ## 客户端SDK
 
@@ -59,10 +59,10 @@
 
 ### API详细文档
 
-1. iOS API
-2. Android API
-3. Web API，微信小程序API与此完全相同
-4. C++ API
+1. [iOS API](https://maximtop.com/docs/ios/)
+2. [Android API](https://maximtop.com/docs/android/)
+3. [Web API](https://maximtop.com/docs/web/)，微信小程序API与此完全相同
+4. [C++ API](https://maximtop.com/docs/floo/annotated.html)
 
 ### 平台兼容
 
