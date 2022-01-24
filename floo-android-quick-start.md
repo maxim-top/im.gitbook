@@ -109,7 +109,7 @@ implementation(name:'floo-android_2.3.1.20200428',ext:'aar')
 #### jar+so format
 
 * Download jar package and so library to /lib in project
-* 在build.gradleFile中增加：implementation fileTree(dir: 'libs', include: \['\*.jar'])
+* Add implementation fileTree(dir: ‘libs’, include: \[’\*.jar’]) to build.gradle file
 
 ### Permission configuration
 
@@ -149,7 +149,7 @@ Add import to app entry class
     }
 ```
 
-**Step 2 – Initialize BMXClient**
+**Step 2 - Initialize BMXClient**
 
 ```
     // Set storage path

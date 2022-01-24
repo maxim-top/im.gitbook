@@ -56,7 +56,7 @@ Hint: If cocoapods is not installed, please refer to [CocoaPods installation](ht
     If libcrypto.a is already referenced within your project, no need to import it again to avoid introducing conflicts.
 
     If libcrypto.a is not referenced in your project yet, please unzip the downloaded SDK package to import libcrypto.a into your project.
-3. 在 Xcode 项目 Build Settings - Other Linker Flags 中，增加 "-ObjC"。
+3. In Xcode project’s Build Settings - Other Linker Flags, add “-ObjC”.
 4. Set App to support HTTPS
 5. Make push certificate
 
@@ -568,7 +568,7 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
     ```
 *   Multi-terminal read message count synchronization
 
-    BMXConversation 实体提供MessageNumber of unreads量和Number of all messages in session /\*\* Number of unread messages \*/ @property (nonatomic,assign, readonly) NSInteger unreadNumber;
+    BMXConversation entity provides unread message count and total number of messages in session /\*\* Unread message count \*/ @property (nonatomic,assign, readonly) NSInteger unreadNumber;
 
     ```
       /**

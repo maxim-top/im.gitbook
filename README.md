@@ -73,7 +73,7 @@ Maximtop supports following platforms:
 | iOS     | iOS 9.0 +                                |
 | Android | Android 4.1 +                            |
 | Web     | IE 10 and above, Chrome, Firefox, Safari         |
-| PC      | Node.jsVersionSDKSupportElectron开发Frame，但仅Support x86\_64 架构 |
+| PC      | Node.js version of the SDK supports Electron development framework, but only for x86_64 architecture |
 | Linux   | C++ version of the SDK, supports x86/x86-x64/ARM/MIPS architecture        |
 
 ### Changelog

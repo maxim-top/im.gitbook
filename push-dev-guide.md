@@ -44,12 +44,12 @@ Aar or jar + so formats are selectable in SDK import
 #### aar format
 
 * [Download aar file](https://github.com/maxim-top/floo-android/releases)to /lib in project
-* 在build.gradleFiledependencies块中增加：implementation(name:'floo-android\_3.1.3.aar',ext:'aar')
+* Add implementation(name:'floo-android\_3.1.3.aar',ext:'aar') to the dependencies block in build.gradle file
 
 #### jar+so format
 
 * Download jar package and so library to /lib in project
-* 在build.gradleFile中增加：implementation fileTree(dir: 'libs', include: \['\*.jar'])
+* Add implementation fileTree(dir: ‘libs’, include: \[’\*.jar’]) to build.gradle file
 
 ### Permission configuration
 

@@ -81,7 +81,7 @@ Screenshot of installation completed
 
 ![Single server version installation: Step 3](.gitbook/assets/2-3.install\_single\_s3.png)
 
-* 本地环境不可进行外部访问，安装时需要添加Parameter --net internal 提示安装程序选择内网IPRegister。
+* The local environment is not accessible externally, and the parameter --net internal needs to be added during installation to prompt the installer to select intranet IP registration.
 
 Execute the following command to start installation
 
@@ -167,7 +167,7 @@ Screenshot of installation completed
 
 ![Cluster version installation: Step 3](.gitbook/assets/3-2-3.install\_cluster\_s3.png)
 
-* 本地环境不可进行外部访问，安装时需要添加Parameter --net internal 提示安装程序选择内网IPRegister。
+* The local environment is not accessible externally, and the parameter --net internal needs to be added during installation to prompt the installer to select intranet IP registration.
 
 Execute the following command to install.
 
@@ -187,54 +187,9 @@ Screenshot of installation completed
 
 Hint: Wait for the installation to complete, which takes about 20 minutes.
 
-### 阿里云版
-
-Single server version和Cluster versionSupport使用阿里云的redis/rds/kafka/oss，如果需要使用可以在Single server version和Cluster version步骤2的install命令之前执行如下命令：
-
-* 使用阿里云redis做Storage
-
-```
-## redis-server为redis的服务Address， redis-password为redis的Password
-sudo ./maxim.ctl set_config --config redis-server=r-xxx.redis.rds.aliyuncs.com:6379 redis-password=xxx
-```
-
-* 使用阿里云redis做缓存
-
-```
-## redis-cache-server为redis的服务Address， redis-cache-password为redis的Password
-sudo ./maxim.ctl set_config --config redis-cache-server=r-xxx.redis.rds.aliyuncs.com:6379 redis-cache-password=xxx
-```
-
-* 使用阿里云rds
-
-```
-## mysql-server为rds的服务Address， mysql-username为rds的Username, mysql-password为rds的Password
-sudo ./maxim.ctl set_config --config mysql-server=rm-xxx.mysql.rds.aliyuncs.com:3306 mysql-username=xxx mysql-password=xxx
-```
-
-* 使用阿里云kafka
-
-```
-## kafka-server为kafka的服务Address，kafka-user为kafka的Username， kafka-password为kafka的Password
-sudo ./maxim.ctl set_config --config kafka-server=172.16.1.10:9092,172.16.1.9:9092,172.16.1.11:9092 kafka-user=xxx kafka-password=xxx
-```
-
-* 使用阿里云oss
-
-```
-## file-storage-access-key-id为阿里云子账号ID
-## file-storage-access-key-secret为阿里云子账号Password
-## file-storage-access-endpoint为阿里云接入点Address
-## file-storage-bucket-chat-file为阿里云OSS的bucket名字
-## file-storage-bucket-user-profile为阿里云OSS的bucket名字
-## file-storage-bucket-chat-history为阿里云OSS的bucket名字
-## file-storage-bucket-chat-file-chatroom为阿里云OSS的bucket名字
-sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-key-id=xxx file-storage-access-key-secret=xxx file-storage-access-endpoint=oss-cn-beijing.aliyuncs.com file-storage-bucket-chat-file=chat-xxx file-storage-bucket-user-profile=profile-xxx file-storage-bucket-chat-history=history-xxx file-storage-bucket-chat-file-chatroom=chat-file-chatroom-xxx
-```
-
 ## Other considerations
 
-1. 服务安装完会需要联系服务器自检，如果确定本地环境不可进行外部访问，安装时需要添加Parameter --net internal 提示安装程序选择内网IPRegister。
+1. After the service is installed, you need to contact the server for self-inspection. If it is determined that the local environment cannot be accessed externally, you need to add the parameter --net internal to prompt the installer to select intranet IP registration.
 2. If the host has a firewall, you need to ensure that ports 443 and 80 are accessible.
 3. How to check Private Cloud installation progress and data migration status?
 

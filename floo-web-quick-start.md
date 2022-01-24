@@ -14,7 +14,7 @@ The following documenting takes the Web version as an example, and all versions 
 
 ## Previous preparation
 
-1. Login官网Console，获取你的appid，并替换下文中 YOUR\_APP\_ID。
+1. Login our official website console, get your appid and replace the following YOU\_APP\_IDs with it.
 2. Download SDK [floo-2.0.0.js](https://package.maximtop.com/floo-2.0.0.js)
 
 ## Quick integration
@@ -60,7 +60,7 @@ Register user via the asyncRegister of IM’s userManager
 
 ```
 im.userManage.asyncRegister(this.user).then(() => {
-  console.log("Register成功");
+  console.log("Registered");
 }).catch(ex => {
   console.log(ex.message);
 });

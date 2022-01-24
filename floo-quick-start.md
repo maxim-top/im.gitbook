@@ -336,7 +336,7 @@ BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMX
 
 ### Message operation
 
-Message实体构建完成后，通过 BMXClient的单例，ChatServiceClass，调用 sendMessage: Method，将构建好的Message实体传入，即可实现Message sending。Message状态变化会通过Register的BMXChatServiceListenerClass型的listenerCallback通知。
+After message body is built, call the sendMessage: method through the singleton of BMXClient, ChatService class, and pass in the built message body, so that the message can be sent. Message status changes are notified by a listener callback of the registered BMXChatServiceListener type.
 
 * Send
 
