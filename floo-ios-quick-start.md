@@ -1,38 +1,38 @@
-# iOS SDK (floo-ios) 快速集成指南
+# iOS SDK (floo-ios) Quick integration指南
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/ios)
+This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/ios)
 
-## 前期准备
+## Previous preparation
 
-美信拓扑 IM SDK 提供两种集成方式，可以通过 CocoaPods 自动集成我们的 floo-ios，也可以通过手动下载 floo-ios.framework, 手动添加到项目中。
+Maximtop IM SDK provides two ways to integrate our floo-ios, automatically through CocoaPods or manually add it to the project by downloading the floo-ios.framework model manually.
 
-### 方式一：自动集成/CocoaPods
+### Mode I: Auto integration/CocoaPods
 
-提示：如果未安装cocoapods，请参照 [CocoaPods安装](https://cocoapods.org)
+Hint: If cocoapods is not installed, please refer to [CocoaPods installation](https://cocoapods.org)
 
-1.  在 Podfile 文件中加入 floo-ios :
+1.  Add floo-ios to Prodfile:
 
     ```
     pod 'floo-ios'
     ```
-2.  执行安装 ，命令如下
+2.  Install with the following command
 
     ```
     pod install
     ```
 
-    提示：如果无法安装 SDK 最新版本，运行以下命令更新本地的 CocoaPods 仓库列表
+    Hint: If you cannot install the latet version of SDK, run the following command to update your local CocoaPods repo list
 
     ```
     pod repo update
     ```
 
-### 方式二：手动集成
+### Mode II: Manual integration
 
-1. [下载 floo-ios.framework](https://package.maximtop.com/floo-ios-v2.2.0.zip) , 然后将文件引用到您的项目中。
-2.  添加系统库依赖
+1. [Download floo-ios.framework](https://package.maximtop.com/floo-ios-v2.2.0.zip) , and then reference the file to your project.
+2.  Add system library dependencies
 
-    您除了在工程中导入 SDK 之前，还需要添加如下系统库的引用。
+    Before importing SDK to your project, please add the following system library references.
 
     * libsqlite3.tbd
     * libc++abi.tbd
@@ -51,35 +51,35 @@
     * AVFoundation.framework
     * AssetsLibrary.framework
 
-    注意：
+    Note：
 
-    如果您的工程内已经引用libcrypto.a，为避免引入冲突不需要再次导入工程。
+    If libcrypto.a is already referenced within your project, no need to import it again to avoid introducing conflicts.
 
-    如果您的工程内没有引用libcrypto.a，请解压下载的SDK包将libcrypto.a导入工程。
+    If libcrypto.a is not referenced in your project yet, please unzip the downloaded SDK package to import libcrypto.a into your project.
 3. 在 Xcode 项目 Build Settings - Other Linker Flags 中，增加 "-ObjC"。
-4. 设置 App 支持 HTTPS
-5. 推送证书制作
+4. Set App to support HTTPS
+5. Make push certificate
 
-## 快速集成
+## Quick integration
 
-### 一、初始化
+### I. Initialization
 
-在您需要使用MaxIM SDK 功能的类中，import 相关头文件。
+Import the related header file in the class where you need to use MaxIM SDK functionality.
 
 ```
 #import "BMXClient.h"
 ```
 
-您在使用MaxIM SDK 所有功能之前，您必须先调用此方法初始化 SDK。 在 App 的整个生命周期中，您只需要将 SDK 初始化一次。
+You must call this method to initialize MaxIM SDK before you can use all of its features. You only need to initialize the SDK once in the whole life cycle of the App.
 
 ```
-// 设置存储路径
+// Set storage path
 
 NSString* dataDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@“ChatData”];
 
 NSString* cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingString:@“UserCache”];
 
-// 初始化
+// Initialization
 
 BMXSDKConfig *config = [[BMXSDKConfig alloc] initConfigWithDataDir:dataDir cacheDir:cacheDir pushCertName:@“Your APNS Certification” userAgent:@“userAgent”];
 
@@ -89,52 +89,52 @@ config.appID = @“Your AppID”;
 
 ```
 
-### 二、注册用户
+### II. Register user
 
-通过 BMXClient的单例，UserService类，传入 -signUpMobile:password:vertifyCode:userName:方法，注册IM账户。
+Pass in signUpMobile:password:vertifyCode:userName: method through the singleton of BMXClient, UserService class, to register IM account.
 
 ```
 [[[BMXClient sharedClient] userService] signUpMobile:mobile password:password vertifyCode:vertifyCode userName:username completion:^(BMXUserProfile *profile, BMXError *aError) {
 
         [HQCustomToast hideWating];
         if(!aError) {
-             NSLog(@"注册成功");
+             NSLog(@"Registered");
         }  else {
-             NSLog(@"失败 errorCode = %ld ", error.errorCode);
+             NSLog(@"Failed errorCode = %ld ", error.errorCode);
         }
      }];
 ```
 
-### 三、登录链接服务器
+### III. Login connected server
 
-将您在上一步获取到的 账号密码，通过 BMXClient的单例，UserService类，传入 -signInById 方法，即可建立与服务器的连接。
+Pass the account password you obtained in the previous step into the -signInById method through the UserService class, a singleton of BMXClient, to establish a connection with the server.
 
-提供两种登录模式：一种是普通手动登录，另一种是快速登录模式
+Two login modes provided: One for normal manual login, and the other for quick login
 
 ```
 [[[BMXClient sharedClient] userService] signInById:userid password:password completion:^(BMXError *error) {
         if (!error) {
-            NSLog(@"登录成功 username = %lld , password = %@",userid, password);
+            NSLog(@"Login successful username = %lld , password = %@",userid, password);
           } else {
-            NSLog(@"失败 errorCode = %lu ", error.errorCode);
+            NSLog(@"Failed errorCode = %lu ", error.errorCode);
         }
      }];
 
-     // 快速登录,不需要获取token
+     // Quick login needs no getting token
      [[[BMXClient sharedClient] userService] fastSignInById: userid password:password  completion:^(BMXError *error) {
          if (!error) {
-             NSLog(@"登录成功 username = %@ , password = %@", userid, password);
+             NSLog(@"Registered username = %@ , password = %@", userid, password);
          } else {
-             NSLog(@"失败 errorCode = %ld ", error.errorCode);
+             NSLog(@"Failed errorCode = %ld ", error.errorCode);
          }
       }];
 ```
 
-### 四、会话列表功能
+### IV. Session list function
 
-通过 BMXClient的单例，ChatService类，传入 -getAllConversationsWithCompletion 方法，获取所有会话列表。返回BMXConversation对象的数组列表。
+Pass in getAllConversationsWithCompletion method through the singleton of BMXClient, ChatService class, to get a list of all sessions. Then return an array list of BMXConversation objects.
 
-如果需要获取多设备同步的离线会话列表，需要在SDK初始化配置loadAllServerConversations属性值为Yes，默认只获取本地会话列表。
+If you need to get a list of offline sessions for multi-device synchronization, you need to configure the loadAllServerConversations property value to Yes at SDK initialization, and only get the local session list by default.
 
 ```
  [[[BMXClient sharedClient] chatService] getAllConversationsWithCompletion:^(NSArray *conversations) {
@@ -142,62 +142,62 @@ config.appID = @“Your AppID”;
   }];
 ```
 
-### 五、断开连接
+### V. Disconnect
 
-在断开与MaxIM服务器的连接时，默认会停止接收远程推送,会自动解绑设备devicetoken.
+devicetoken.When disconnected from MaxIM server, remote push is stopped by default and device devicetoken is automatically unbound.
 
 ```
  [[[BMXClient sharedClient] userService] signOutWithcompletion:^(BMXError *error) {
     if (!error) {
-    NSLog(@"退出成功");
+    NSLog(@"Quit successfully");
     }
  }];
 ```
 
-## 用户好友
+## User friend
 
-*   添加好友
+*   Add friend
 
     ```
        [[[BMXClient sharedClient] rosterService] applyAddRoster:rosterId reason:reason completion:^(BMXRoster *roster, BMXError *error) {
         if (!error) {
-        MAXLog(@"申请成功");
+        MAXLog(@"Application successful");
       } else {
-        MAXLog(@"申请失败");
+        MAXLog(@"Application failed");
       }
 
       }];
     ```
-*   删除好友
+*   Delete friend
 
     ```
       [[[BMXClient sharedClient] rosterService] removeRosterById:@"880" withCompletion:^(BMXError *error) {
 
       }];
     ```
-*   同意添加好友
+*   Agree to add friend
 
     ```
       [[[BMXClient sharedClient] rosterService] acceptRosterById:@"880" withCompletion:^(BMXError *error) {
       	 if (!error) {
-          MAXLog(@"添加成功");
+          MAXLog(@"Added successfully");
        }
           MAXLog(@"%@", error);
 
       }];
     ```
-*   拒绝添加好友
+*   Reject to add friend
 
     ```
       [[[BMXClient sharedClient] rosterService] declineRosterById:@"880" withReason:reason completion:^(BMXError *error) {
 
       }];
     ```
-*   获取好友列表
+*   Get friend list
 
-    开发者可以通过参数哦forceRefresh,选择从服务器或者是从本地获取好友列表数据。
+    Developers can choose to get friend list data from server or locally via parameter forceRefresh.
 
-    如果设置为NO, 当本地数为空，会自动从服务器去获取数据后返回结果。
+    If set to NO, when the local data is empty, it will automatically get the data from server and return the result.
 
     ```
       [[[BMXClient sharedClient] rosterService] getRosterListforceRefresh:YES completion:^(NSArray *rostIdList, BMXError *error) {
@@ -208,46 +208,46 @@ config.appID = @“Your AppID”;
       }];
     ```
 
-## 基础功能
+## Basic features
 
-### 单聊
+### Single chat
 
-单聊是最基本的聊天界面，提供文字、表情、语音片段、图片等多种输入内容，解决 App 内用户的沟通瓶颈。单聊的 BMXConversationType 是 BMXConversationSingle，toId 是单聊对象的 userId。
+Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object.
 
-### 群聊
+### Group chat
 
-群组的 BMXConversationType 是 BMXConversationGroup，toId 是群组 Id。
+Group’s BMXConversationType is BMXConversationGroup，toId is group Id。
 
-* 创建群组
+* Create group
 
-开发者可以注册监听，创建群组成功后, 收到相应回调通知,开发者可以进行一些UI处理。
+Developers can register to listener, then receive corresponding callback notifications after group created, thus do some UI processing.
 
 ```
-    // 构建创建群组信息实体
+    // Build information body of created group
     BMXCreatGroupOption *option = [[BMXCreatGroupOption alloc] initWithGroupName:title groupDescription:description isPublic:YES];
-    option.message = message;  // 建群时成员收到的邀请信息
-    option.members = ids;   //建群时添加的成员列表
+    option.message = message;  // Invitation information received by members when group created
+    option.members = ids;   // Member list added when group created
     [[[BMXClient sharedClient] groupService] creatGroupWithCreateGroupOption:option completion:^(BMXGroup *group, BMXError *error) {
         if (!error) {
         }
     }];
 ```
 
-*   加入群组
+*   Join group
 
     ```
       /**
-      加入一个群，根据群设置可能需要管理员批准
+      Join a group, which may require admin approval depending on group settings
 
       @param group BMXGroup
-      @param message 申请信息
+      @param message Application information
       @param aCompletionBlock Error
       */
       - (void)joinGroup:(BMXGroup *)group
         message:(NSString *)message
        completion:(void(^)(BMXError *error))aCompletionBlock;
     ```
-*   退出群组
+*   Quit group
 
     ```
        [[[BMXClient sharedClient] groupService] leaveGroup:self.group completion:^(BMXError *error) {
@@ -255,29 +255,29 @@ config.appID = @“Your AppID”;
           }
       }];
     ```
-*   解散群组
+*   Dissolve group
 
     ```
        [[[BMXClient sharedClient] groupService] destroyGroup:group completion:^(BMXError *error) {
           if (!error) {
-            NSLog(@"销毁群");
+            NSLog(@"Destroy group");
         }
       }];
     ```
-*   获取群成员列表
+*   Get group member list
 
     ```
        [[[BMXClient sharedClient] groupService] getMembers:self.group forceRefresh:YES completion:^(NSArray<BMXGroupMember * *groupList, BMXError *error) {
           NSLog(@"%ld", groupList.count);
        }];
     ```
-*   获取群组列表
+*   Get group list
 
     ```
       	/**
-       获取群组列表
+       Get group list
 
-       @param forceRefresh 如果设置了forceRefresh则从服务器拉取
+       @param forceRefresh Pull from server if forceRefresh is set
        @param aCompletionBlock GroupList, Error
        */
       [[[BMXClient sharedClient] groupService] getGroupListForceRefresh:NO completion:^(NSArray *groupList, BMXError *error) {
@@ -286,7 +286,7 @@ config.appID = @“Your AppID”;
       }
       }];
     ```
-*   获取群组信息
+*   Get group information
 
     ```
       [[[BMXClient sharedClient] groupService] getGroupInfoByGroupId:self.group.groupId forceRefresh:YES completion:^(BMXGroup *group, BMXError *error) {
@@ -294,37 +294,37 @@ config.appID = @“Your AppID”;
       }];
     ```
 
-## 消息发送
+## Message sending
 
-登录成功之后才能进行聊天操作。发消息时，单聊和群聊调用的是统一接口，区别只是要设置下 BMXConversationType
+You can't chat until you login successfully. When sending messages, single chat and group chat call the same unified interface, but the only difference is to set BMXConversationType.
 
-消息的远程推送：
+Remote push of messages:
 
-开发者配置好远程推送的证书，且在代码中申请好权限，并将 deviceToken 传给MaxIM服务器，当接收者不在线的时候，MaxIM服务器会自动通过远程推送将消息发过去。
+Developer shall configure the certificate for remote push, apply for permission in code, and send the deviceToken to MaxIM server. When receiver is not online, MaxIM server will automatically send the message through remote push.
 
-注： 推送的内容由发送消息接口的 pushContent 字段决定，内置消息发送的时候如果该字段没有值，将使用默认内容推送；自定义消息必须设置该字段，否则将不会推送。
+Note: The pushed content is determined by the pushContent field of the sending message interface. If this field is empty-valued when the built-in message is sent, the default content will be pushed; user-defined messages must set this field, otherwise they will not be pushed.
 
-以下是将 deviceToken 传给MaxIM接口
+Pass deviceToken to MaxIM interface as follows:
 
 ```
 [[[BMXClient sharedClient] userService] bindDevice:deviceToken completion:^(BMXError *error) {
-      NSLog(@"绑定成功");
+      NSLog(@"Binding succeeded");
  }];
 ```
 
-### 构建消息实体
+### Build message body
 
-### 文本消息
+### Text message
 
 ```
  /**
- 创建文本消息
+ Create text message
 
- @param content 内容
- @param fromId 发送id
- @param toId 接收id
- @param mtype 消息类型
- @param conversationId 会话id
+ @param content Content
+ @param fromId Send id
+ @param toId Receive id
+ @param mtype Message id
+ @param conversationId Session id
  @return BMXMessageObject
  */
  BMXMessageObject *messageObject = [[BMXMessageObject alloc] initWithBMXMessageText:message
@@ -334,22 +334,22 @@ config.appID = @“Your AppID”;
                                                       conversationId:conversationId];
 ```
 
-### 图片消息
+### Image message
 
 ```
 	/**
-  创建图片消息对象
+  Create image-message object
 
-  @param aData 二进制数据
-  @param aThumbnailData 缩略图
-  @param imageSize 图片大小
-  @param conversationId 会话IDID
+  @param aData Binary data
+  @param aThumbnailData Thumbnail
+  @param imageSize Image size
+  @param conversationId Session IDID
   @return BMXImageAttachment
   */
  BMXImageAttachment *imageAttachment = [[BMXImageAttachment alloc] initWithData:imageData thumbnailData:thumImageData imageSize:image.size conversationId:[NSString stringWithFormat:@"%lld",self.conversationId]];
 ```
 
-### 文件消息
+### File message
 
 ```
  BMXFileAttachment *fileAttachment = [[BMXFileAttachment alloc] initWithData:dic[@"data"] displayName:dic[@"displayName"] fileLength:integer conversationId:[NSString stringWithFormat:@"%lld",self.conversationId]];
@@ -359,7 +359,7 @@ config.appID = @“Your AppID”;
                                                             conversationId:conversationId];
 ```
 
-### 位置消息
+### Location message
 
 ```
  BMXLocationAttachment *locationment = [[BMXLocationAttachment alloc] initWithLatitude:latitude longitude:longitude address:address]
@@ -369,7 +369,7 @@ config.appID = @“Your AppID”;
                                                             conversationId:conversationId];
 ```
 
-### 语音消息
+### Voice message
 
 ```
  BMXVoiceAttachment *vocieAttachment = [[BMXVoiceAttachment alloc] initWithPath:voicePath displayName:@"voice" duration:duartion];
@@ -379,101 +379,101 @@ config.appID = @“Your AppID”;
                                                             conversationId:conversationId];
 ```
 
-### 消息操作
+### Message operation
 
-消息实体构建完成后，通过 BMXClient的单例，ChatService类，调用 -sendMessage: 方法，将构建好的消息实体传入，即可实现消息发送
+After message body is built, call the -sendMessage: method through the singleton of BMXClient, ChatService class, and pass in the built message body to send the message
 
-*   发送
+*   Send
 
     ```
      /**
-      发送消息，消息状态变化会通过listener通知
+      Send a message, and the message status change is notified via listener
      **/
      [[[BMXClient sharedClient] chatService] sendMessage:messageObject completion:^(BMXMessageObject *message, BMXError *error) {
-       MAXLog(@"发送消息%@", error);
+       MAXLog(@"Send message%@", error);
      }];
     ```
-*   转发
+*   Forward
 
     ```
      /**
-     简单转发消息，用户应当通过BMXMessagseObject,initWithForwardMessage先创建转发消息
+     Simple forwarding message, users should create forwarding message first through BMXMessagseObject, initWithForwardMessage
      **/
      BMXMessageObject *m = [[BMXMessageObject alloc] initWithForwardMessage:self.currentMessage fromId:[self.account.usedId longLongValue] toId:roster.rosterId type:BMXMessageTypeSingle conversationId:roster.rosterId];
      [[[BMXClient sharedClient] chatService] forwardMessage:m];
     ```
-*   重发
+*   Resend
 
     ```
       /**
-     重新发送消息，消息状态变化会通过listener通知
+     Resend this message, and the message status change is notified via listener
      **/
      [[[BMXClient sharedClient] chatService] resendMessage: self.messageModel.messageObjc completion:^(BMXMessageObject *message, BMXError *error) {
      }];
     ```
-*   撤回
+*   Revoke
 
     ```
      /**
-     撤回消息，消息状态变化会通过listener通知
+     Recall a message, and the message status change is notified via listener
      **/
      [[[BMXClient sharedClient] chatService] recallMessage:message completion:nil];
     ```
-*   下载消息附件
+*   Download message attachment
 
     ```
        /**
-      * 下载附件，下载状态变化和进度通过listener通知
+      * Download attachment, and download status changes and progress are notified through listener
       **/
        [[[BMXClient sharedClient] chatService] downloadAttachment:message downloadProgress:nil completion:nil];
     ```
 
-## 消息接收监听
+## Message delivery listening
 
-注册消息回调
+Register message callback
 
 ```
 	/**
-    * 添加聊天监听者
+    * Add chat listener
     **/
 	- (void)addChatListener:(id<BMXChatServiceProtocol>)listener;
 
 	/**
-	 * 移除聊天监听者
+	 * Remove chat listener
 	**/
 	- (void)removeChatListener:(id<BMXChatServiceProtocol>)listener;
 ```
 
-*   接收到消息通知
+*   Message notification received
 
     ```
       /**
-      * 收到消息
+      * Message received
       **/
       - (void)receivedMessages:(NSArray<BMXMessageObject*> *)messages {
 
       	  if (message.contentType == BMXContentTypeText) {
-          			// 收到文本消息，UI等处理
+          			// Text-message received, wait for processing by UI
 
             } else if (message.contentType == BMXContentTypeImage) {
-                	// 收到图片消息
+                	// Image-message received
 
             } else if (message.contentType == BMXContentTypeVoice) {
-      				// 收到语音消息
+      				// Voice-message received
 
             } else if (message.contentType == BMXContentTypeLocation) {
-             		// 收到位置消息
+             		// Location-message received
 
             } else if (message.contentType == BMXContentTypeFile) {
-                	// 收到文件消息
+                	// File-message received
 
             }
       }
     ```
-*   消息发送后状态回调通知
+*   Status callback notificated after message sending
 
     ```
-      //  消息状态发生变化
+      // Message status changed
       - (void)messageStatusChanged:(BMXMessageObject *)message
                      error:(BMXError *)error {
 
@@ -504,19 +504,19 @@ config.appID = @“Your AppID”;
 
       }
     ```
-*   附件消息发送状态回调
+*   Status callback of attachment sending
 
     ```
       - (void)messageAttachmentUploadProgressChanged:(BMXMessageObject *)message percent:(int)percent {
-      // percent为上传进度百分比
+      // percent of uploading progress
 
       }
     ```
-*   消息提醒设置 通过 BMXClient的单例，UserService类，以下方法可以设置消息推送提醒
+*   Message reminder settings You can set message push reminder as follows via the singleton of BMXClient, UserService class.
 
     ```
       /**
-      设置是否允许推送
+      Set whether push is allowed
 
       @param enablePushStatus BOOL
       */
@@ -524,7 +524,7 @@ config.appID = @“Your AppID”;
                completion:(void(^)(BMXError *error))aCompletionBlock;
 
       /**
-        设置是否推送详情
+        Set whether to push details
 
         @param enablePushDetail BOOL
        */
@@ -532,66 +532,66 @@ config.appID = @“Your AppID”;
 
 p - (void)setEnablePushDetail:(BOOL)enablePushDetail completion:(void(^)(BMXError \*error))aCompletionBlock;
 
-*   附件消息下载状态变化
+*   Status changes of attachment donwloading
 
     ```
       /**
-      * 附件下载状态发生变化
+      * Attachment download status changed
       **/
       - (void)messageAttachmentStatusDidChanged:(BMXMessageObject *)message
                         error:(BMXError*)error
                       percent:(int)percent;
     ```
 
-## 功能进阶
+## Advanced features
 
-BMXMessageObject实体中，提供可扩展属性(extensionJson 和 configJson) extensionJson 为开发使用的扩展字段，例如编辑状态。 configJson 为SDK自用的扩展字段，例如mention功能，push功能
+BMXMessageObject entity provides extensible attributes (extensionJson and configJson), extensionJson is an extension field for development use, such as edit status; configJson is an extension field for SDK's own use, such as mention and push functions.
 
-*   群组@功能
+*   Group @ function
 
-    群组中支持 @ 功能，满足您 @ 指定用户或 @ 所有人的需求，开发者在BMXMessageObject中通过设置configJson 来实现群主@功能，已经@成员后的会下发推送通知
-*   消息正在输入状态
+    Support @ function in group to meet the needs of your @ specified user or @ every member. Developers can realize the @ function of group Owner by setting setConfig in BMXMessageObject, and push notifications will be sent to all @ members.
+*   Typing message
 
     ```
-      // 可以使用extensionJson，来扩展正在编辑状态消息，（json格式，可以扩展多种自定义功能）
+      // ExtensionJson can be used to extend the message being edited, (json format, which can extend a variety of user-defined functions)
       @property (nonatomic, copy) NSString *extensionJson;
     ```
-*   消息阅读回执
+*   Message read receipt
 
     ```
-      //全部消息是否已读
+      //Whether all messages read
       @property (nonatomic,assign) BOOL isRead;
-      //接受消息是否发送已读回执
+      //Whether to send a read receipt after message delivered
       @property (nonatomic,assign) BOOL isReadAcked;
-      //接受消息是否发送已送达
+      //Whether to send a delivery receipt after message received
       @property (nonatomic, assign) BOOL isDeliveryAcked;
     ```
-*   多端阅读消息数同步
+*   Multi-terminal read message count synchronization
 
-    BMXConversation 实体提供消息未读数量和会话中所有消息数量 /\*\* 未读消息数量 \*/ @property (nonatomic,assign, readonly) NSInteger unreadNumber;
+    BMXConversation 实体提供MessageNumber of unreads量和Number of all messages in session /\*\* Number of unread messages \*/ @property (nonatomic,assign, readonly) NSInteger unreadNumber;
 
     ```
       /**
-       会话中所有消息数量
+       Number of all messages in session
       */
       @property (nonatomic,assign, readonly) NSInteger messageCount;
     ```
-*   消息搜索
+*   Search for message
 
-    根据关键字搜索指定消息内容
+    Search for specified message by keyword
 
     ```
       /**
-       搜索消息
+       Search for messages
 
-       @param keywords 关键字
-       @param refTime 时间
-       @param size 分页
-       @param directionType 消息顺序
-       @param aCompletionBlock 搜索结果
+       @param keywords Keyword
+       @param refTime Time
+       @param size Page
+       @param directionType Message order
+       @param aCompletionBlock Search result
       */
 
-      [[[BMXClient sharedClient] chatService] searchMessages:@"哈哈" refTime:0 size:100 directionType:BMXMessageDirectionUp completion:^(NSArray *array, BMXError *error) {
+      [[[BMXClient sharedClient] chatService] searchMessages:@"Haha" refTime:0 size:100 directionType:BMXMessageDirectionUp completion:^(NSArray *array, BMXError *error) {
 
       }];
     ```

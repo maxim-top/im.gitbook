@@ -1,28 +1,28 @@
-# C++ SDK (floo) 快速集成指南
+# C++ SDK (floo) Quick integration指南
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/floo)
+This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/floo)
 
-## SDK 整体架构
+## SDK overall architecture
 
-SDK 架构说明
+SDK architecture description
 
-* BMXClient:SDK功能聚合类，包含了所有的service类、实现了网络事件监听接口。
-* BMXChatService:消息发送、消息历史获取、会话列表
-* BMXUserService:注册账号、登入、登出、我的设置
-* BMXRosterService:好友列表、黑名单、
-* BMXGroupService:群管理（创建、解散、查找、设置、成员管理、邀请、申请、接受、拒绝）
-* BMXChatServiceListener:消息到达事件、消息发送结果事件监听
-* BMXGroupServiceListener:群事件监听
-* BMXUserServiceListener:用户事件监听
-* BMXRosterServiceListener:好友事件监听
-* BMXNetworkListener:网络事件监听接口，由BMXClient实现
-* BMXConversation:会话
-* BMXMessage:消息
-* BMXGroup:群
-* BMXRosterItem花名册项（好友、陌生人、黑名单、前好友）
-* BMXUserProfile:用户信息
+* BMXClient:SDK function aggregation class that contains all service classes and implements the network event listening interface.
+* BMXChatService: Message sending, message history retrieval, session list
+* BMXUserService: Register account, login, logout, my settings
+* BMXRosterService: Friend list, blacklist
+* BMXGroupService: Group management (create, dissolve, search, set, member management, invite, apply, accept, reject)
+* BMXChatServiceListener: Message delivery event, message sent result event listening
+* BMXGroupServiceListener: Group event listening
+* BMXUserServiceListener: User event listening
+* BMXRosterServiceListener: Friend event listening
+* BMXNetworkListener: Network event listening interface, implemented by BMXClient
+* BMXConversation: Session
+* BMXMessage: Message
+* BMXGroup: Group
+* BMXRosterItem Roster item (friend, stranger, blacklist, former friend)
+* BMXUserProfile: User information
 
-主要类之间的关系如下：
+Relationship among main classes is as follows:
 
 ```
 >BMXClient
@@ -42,18 +42,18 @@ SDK 架构说明
 >    |----BMXGroup
 ```
 
-## SDK集成
+## SDK integration
 
-1. SDK文件说明
-2. 添加系统库依赖 您在工程中导入SDK之前，需要添加如下系统库的引用。
+1. SDK document description
+2. Add system library dependencies Before import SDK in your project, you need to add following system library references.
 
-* libz 解压缩库
-* libcrypto openssl加密库
-* libsqlite3 sqlite3本地数据库
-* lcurl libcurl网络库
-* lcurses ncurses库，运行embedded版本demo需要使用
+* libz decompression library
+* libcrypto openssl encryption library
+* libsqlite3 sqlite3 local database
+* lcurl libcurl network library
+* lcurses ncurses library, which is required to run the embedded version of our demo
 
-### 一、初始化，导入相关头文件
+### I. Initialize, import of related header file
 
 ```
 #include "bmx_client.h"
@@ -64,7 +64,7 @@ config->setConsoleOutput(false);
 client = BMXClient::create(config);
 ```
 
-### 二、注册用户
+### II. Register user
 
 ```
 BMXUserProfilePtr profile;
@@ -77,11 +77,11 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-### 三、登录链接服务器
+### III. Login connected server
 
-将您在上一步获取到的 账号密码，通过 BMXClient的单例，UserService类，传入 -signInById 方法，即可建立与服务器的连接。
+Pass the account password you obtained in the previous step into the -signInById method through the UserService class, a singleton of BMXClient, to establish a connection with the server.
 
-提供两种登录模式：一种是普通手动登录，另一种是快速登录模式
+Two login modes provided: One for normal manual login, and the other for quick login
 
 ```
 BMXErrorCode errorCode = client->getUserService().signInByName("maximtest1", "1");
@@ -92,7 +92,7 @@ if (BMXErrorCode::NoError == errorCode) {
   std::cout << getErrorMessage(errorCode) << std::endl;
 }
 
-// 快速登录,不需要获取token
+// Quick login needs no getting token
 BMXErrorCode errorCode = client->getUserService().fastSignInByName("maximtest1", "1");
 if (BMXErrorCode::NoError == errorCode) {
   std::cout << "signInByName successs!" << std::endl;
@@ -102,19 +102,19 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-### 四、获取会话列表
+### IV. Get session list
 
-通过 BMXClient的单例，ChatService类的getAllConversations 方法，获取所有会话列表。返回BMXConversationPtr对象的数组列表。
+Get a list of all sessions through the singleton of BMXClient, getAllConversations method of ChatService class. It returns an array list of BMXConversationPtr objects.
 
-如果需要获取多设备同步的离线会话列表，需要在SDK初始化配置setLoadAllServerConversations属性值为true，默认只获取本地会话列表。
+If you need to get a list of offline sessions for multi-device synchronization, it’s required to configure the setLoadAllServerConversations property value to true at SDK initialization, and only get the local session list by default.
 
 ```
 BMXConversationList list = client->getChatService().getAllConversations();
 ```
 
-### 五、断开连接
+### V. Disconnect
 
-在断开与MaxIM服务器的连接时，默认会停止接收消息。
+When you disconnect from MaxIM server, it stops receiving later messages by default.
 
 ```
 BMXErrorCode errorCode = client->getChatService().signOut();
@@ -126,9 +126,9 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-## 用户好友体系
+## User friend system
 
-* 添加好友
+* Add friend
 
 ```
 BMXErrorCode errorCode = client->getRosterService().apply(rosterId, "apply");
@@ -140,7 +140,7 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-* 删除好友
+* Delete friend
 
 ```
 BMXErrorCode errorCode = client->getRosterService().remove(rosterId);
@@ -152,7 +152,7 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-* 同意添加好友
+* Agree to add friend
 
 ```
 BMXErrorCode errorCode = client->getRosterService().accept(rosterId);
@@ -164,7 +164,7 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-* 拒绝添加好友
+* Reject to add friend
 
 ```
 BMXErrorCode errorCode = client->getRosterService().decline(rosterId, "reason");
@@ -176,9 +176,9 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-* 获取好友列表
+* Get friend list
 
-开发者可以通过参数forceRefresh,选择从服务器或者是从本地获取好友列表数据。 如果设置为NO, 当本地数为空，会自动从服务器去获取数据后返回结果。
+Developers can choose to get friend list data from server or locally with the forceRefresh parameter. If it is set to NO, when the local data is empty, it will automatically get the data from server and return the result.
 
 ```
 std::vector<int64_t> list;
@@ -188,29 +188,29 @@ if (list.size() > 0) {
 }
 ```
 
-## 基础功能
+## Basic features
 
-### 消息内容格式
+### Message format
 
-* 文字
-* 表情
-* 语音片段
-* 视频片段
-* 图片
-* 地理位置
-* 自定义消息
+* Text
+* Emoji
+* Voice clip
+* Video clip
+* Image
+* Geo-location
+* Custom message
 
-### 单聊
+### Single chat
 
-单聊是最基本的聊天界面，提供文字、表情、语音片段、图片等多种输入内容，解决 App 内用户的沟通瓶颈。单聊的 BMXConversationType 是 BMXConversationSingle，toId 是单聊对象的 userId。
+Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object.
 
-### 群聊
+### Group chat
 
-群聊是指附带角色和权限的用户集合内进行的内部广播方式的聊天功能，群组的 BMXConversationType 是 BMXConversationGroup，toId 是群组 Id。
+Group chat refers to the chat function of internal broadcast mode in the user set with roles and permissions. BMXConversationType of group is BMXConversationGroup, and toId is group Id.
 
-* 创建群组
+* Create group
 
-开发者可以注册监听，创建群组成功后, 收到相应回调通知,开发者可以进行一些UI处理。
+Developers can register to listener, then receive corresponding callback notifications after group created, thus do some UI processing.
 
 ```
 BMXGroupPtr group;
@@ -224,25 +224,25 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-* 加入群组
+* Join group
 
 ```
 BMXErrorCode errorCode = client->getGroupService().join(group, message);
 ```
 
-* 退出群组
+* Quit group
 
 ```
 BMXErrorCode errorCode = client->getGroupService().leave(group);
 ```
 
-* 解散群组
+* Dissolve group
 
 ```
 BMXErrorCode errorCode = client->getGroupService().destroy(group);
 ```
 
-* 获取群成员列表
+* Get group member list
 
 ```
 BMXGroupMemberResultPagePtr result;
@@ -258,175 +258,175 @@ do {
 } while (cursor.size());
 ```
 
-* 获取群组列表
+* Get group list
 
 ```
-@param list 群组id列表，传入空列表函数返回后从此处获取返回的群组id列表
-@param forceRefresh 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
+@param list Group id list, pass in an empty list function and fetch the returned group id list here.
+@param forceRefresh True to force fetching from server, sdk will automatically fetch from server if local fetching failed.
 BMXGroupList list;
 bool forceRefresh = false;
 BMXErrorCode errorCode = client->getGroupService().search(list, forceRefresh);
 ```
 
-* 获取群组信息
+* Get group information
 
 ```
 BMXGroupPtr group;
 errorCode = client->getGroupService().search(groupId, group, true);
 ```
 
-## 消息发送
+## Message sending
 
-登录成功之后才能进行聊天操作。发消息时，单聊和群聊调用的是统一接口，区别只是要设置下 BMXConversationType。
+You can't chat until login successfully. When sending messages, single chat and group chat call the same unified interface, but the only difference is to set BMXConversationType.
 
-### 构建消息实体
+### Build message body
 
-* 文本消息
+* Text message
 
 ```
 /**
-  * @param from 消息发送者Id
-  * @param to 消息接收者Id
-  * @param type 消息类型
-  * @param conversationId 会话id
-  * @param content 消息内容
+  * @param from Message sender Id
+  * @param to Message receiver Id
+  * @param type Message type
+  * @param conversationId Session id
+  * @param content Message content
   **/
   BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMXMessage::MessageType)1, 2272061881760, "test");
 ```
 
-* 图片消息
+* Image message
 
 ```
 /**
-  * @param path 本地路径
-  * @param size 图片的大小，宽度和高度
-  * @param displayName 展示名
+  * @param path Local path
+  * @param size Image size, width and height
+  * @param displayName Display name
   **/
 BMXImageAttachmentPtr attachment(new BMXImageAttachment(path, size, displayName));
 BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMXMessage::MessageType)1, 2272061881760, attachment);
 ```
 
-* 文件消息
+* File message
 
 ```
 BMXFileAttachmentPtr attachment(new BMXFileAttachment(path, displayName));
 BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMXMessage::MessageType)1, 2272061881760, attachment);
 ```
 
-* 位置消息
+* Location message
 
 ```
 BMXLocationAttachmentPtr attachment(new BMXLocationAttachment(latitude, longitude, address));
 BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMXMessage::MessageType)1, 2272061881760, attachment);
 ```
 
-* 语音消息
+* Voice message
 
 ```
 BMXVoiceAttachmentPtr attachment(new BMXVoiceAttachmentPtr(path, duration, displayName));
 BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMXMessage::MessageType)1, 2272061881760, attachment);
 ```
 
-* 视频消息
+* Video-message
 
 ```
 BMXVideoAttachmentPtr attachment(new BMXVideoAttachment(path, duration, size, displayName));
 BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMXMessage::MessageType)1, 2272061881760, attachment);
 ```
 
-### 消息操作
+### Message operation
 
-消息实体构建完成后，通过 BMXClient的单例，ChatService类，调用 sendMessage: 方法，将构建好的消息实体传入，即可实现消息发送。消息状态变化会通过注册的BMXChatServiceListener类型的listener回调通知。
+Message实体构建完成后，通过 BMXClient的单例，ChatServiceClass，调用 sendMessage: Method，将构建好的Message实体传入，即可实现Message sending。Message状态变化会通过Register的BMXChatServiceListenerClass型的listenerCallback通知。
 
-* 发送
+* Send
 
 ```
 client->getChatService().sendMessage(msg);
 ```
 
-* 转发
+* Forward
 
 ```
 BMXMessagePtr forwardMsg = BMXMessage::createForwardMessage(msg, from, to, type, conversationId);
 client->getChatService().forwardMessage(msg);
 ```
 
-* 重发
+* Resend
 
 ```
 client->getChatService().resendMessage(msg);
 ```
 
-* 撤回
+* Revoke
 
 ```
 client->getChatService().recallMessage(msg);
 ```
 
-* 下载消息附件
+* Download message attachment
 
 ```
 client->getChatService().downloadAttachment(msg);
 ```
 
-### 消息接收监听
+### Message delivery listening
 
-注册消息回调
+Register message callback
 
 ```
-client->getChatService().addChatListener(listener); //添加聊天监听者
-client->getChatService().removeChatListener(listener);  //移除聊天监听者
+client->getChatService().addChatListener(listener); //Add chat listener
+client->getChatService().removeChatListener(listener);  //Remove chat listener
 ```
 
-* 接收到消息通知
+* Message notification received
 
 ```
 void onReceive(const BMXMessageList& list)  {}
 ```
 
-* 消息发送后状态回调通知
+* Status callback notificated after message sending
 
 ```
 void onStatusChanged(BMXMessagePtr msg, BMXErrorCode error) {}
 ```
 
-* 附件消息发送状态回调
+* Status callback of attachment sending
 
 ```
 void onAttachmentUploadProgressChanged(BMXMessagePtr msg, int percent)  {}
 ```
 
-* 附件消息下载状态变化
+* Status changes of attachment donwloading
 
 ```
 void onAttachmentStatusChanged(BMXMessagePtr msg, BMXErrorCode error, int percent)  {}
 ```
 
-## 功能进阶
+## Advanced features
 
-BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为开发使用的扩展字段，例如编辑状态。 config 为SDK自用的扩展字段，例如mention功能，push功能。
+Extension fields in BMXMessage entity provide extensible attributes (extension and config). Extension for development use, such as edit status. Config is an extension field for SDK's own use, such as the mention function and the push function.
 
-* 群组@功能 群组中支持 @ 功能，满足您 @ 指定用户或 @ 所有人的需求，开发者在BMXMessage中通过设置 setConfig 来实现群主@功能，已经@成员后的会同时在移动端下发推送通知。config对象中通过设置setMentionList可以设置@通知列表。通过setMentionAll设置是否@全部群成员。
-* 消息正在输入状态
+* Group @ function Support @ function in group to meet the needs of your @ specified user or @ every member. Developers can realize the @ function of group Owner by setting setConfig in BMXMessage, and push notifications will be sent on the mobile side after @ members operation. You can set the @ notification list by setting the setMentionList in the Config object. Set whether to @ all group members through setMentionAll.
+* Typing message
 
 ```
-// 可以使用extensionJson，来扩展正在编辑状态消息，（json格式，可以扩展多种自定义功能）
+// ExtensionJson can be used to extend the message being edited, (json format, which can extend a variety of user-defined functions)
 void setExtension(const JSON&)
 ```
 
-可以使用BMXMessage的setExtension函数设置json格式的信息，表明客户端在进行输入。
+You can use setExtension function of BMXMessage to set information in json format, to indicate the client-side is typing.
 
-* 消息搜索
+* Search for message
 
-根据关键字搜索指定消息内容
+Search for specified message by keyword
 
 ```
 /**
-  * @param keywords 搜索的关键字
-  * @param refTime 搜索消息的起始时间
-  * @param size 搜索的最大消息条数
-  * @param result 搜索到的消息结果列表，外部初始化传入空列表。
-  * @param Direction 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索
+  * @param keywords Keyword to search
+  * @param refTime Start time of message searching
+  * @param size Max. number of messages to search
+  * @param result List of searched result, initially pass in an empty list externally.
+  * @param Direction Message search direction, default（Direction::Up）to search from earlier messages
   **/
 BMXErrorCode errorCode = client->getChatService().searchMessages(keywords, refTime, size, result, direction);
 ```

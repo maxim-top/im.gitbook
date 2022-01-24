@@ -1,28 +1,28 @@
-# 服务端（server api）快速集成指南
+# Server-side（server api）Quick integration指南
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/api)
+This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/api)
 
-## 入门
+## Getting started
 
-### 术语介绍
+### Terminology introduction
 
 *   app\_id
 
-    `app_id`是创建App时，MaxIM为App生成的唯一标识，是字符串类型。可从console"应用信息"页面获取。
+    `app_id`是创建App时，MaxIM为App生成的唯一标识，是字符串Class型。可从console"Application information"页面获取。
 *   api\_endpoint
 
-    `api_endpoint`是App所在API服务的地址。可从console"应用信息"页面获取。
+    `api_endpoint`是App所在API服务的Address。可从console"Application information"页面获取。
 *   access-token
 
     `access-token`用作权限校验。可在console"Token管理"页面为App生成access-token或选用已有access-token。
 
-### API概述
+### API profile
 
-MaxIM API服务基于HTTPS安全协议，保证了调用时数据传输的安全性。同时API服务提供访问控制，调用前先需要获取 特有的`access-token`，才有权限操作App下用户、群组等数据。涉及的`access-token`请妥善保存。
+MaxIM API service is based on the HTTPS security protocol, which ensures the security of data transfer when invoked. At the same time, MaxIM API service provides access control, and it is necessary to obtain the unique`access-token`to operate users, groups and other data under App legally. Involved`access-token`shall be kept properly.
 
-调用所有MaxIM API前，要获取参数`api_endpoint`、`app_id`、`access-token`。 参数`app_id`，`access-token`在请求的Header中使用，未特殊说明的请求Content-Type类型为`application/json`。
+Before calling any MaxIM API, please get parameter first`api_endpoint`、`app_id`、`access-token`. Parameter`app_id`，`access-token`will be used in the header of request, and unspecified request Content-Type type is`application/json`。
 
-调用MaxIM API的请求的通用示例（请根据具体值替换用`{}`表示的变量）：
+a generic example of the request that calls MaxIM API (please replace the variable represented by`{}`with a specified value):
 
 ```
 curl -X {METHOD} '{api_endpoint}/{URI}' \
@@ -31,59 +31,59 @@ curl -X {METHOD} '{api_endpoint}/{URI}' \
 -H 'app_id: {app_id}' \
 ```
 
-### API分类
+### API classification
 
-MaxIM API主要分为用户API、好友API、群组API、消息API、推送API。
+MaxIM API主要分为User API、Friend API、Group API、Message API、PushAPI。
 
-*   用户API
+*   User API
 
-    用户隶属于单个App，是即时通讯的基础。有了用户才能实现好友、群组功能。用户数据分为基本信息和设置信息。 基本信息包括邮箱、手机号、用户名、密码。设置信息包括是否自动下载缩略图和文件、邀请入群是否需要确认等。 总体上讲，用户API主要涉及到其基本信息的更新和用户的设置，相关API以`/user`开头，后面接具体的资源，如获取用户设置API为"GET /user/settings"。
-*   好友API
+    Users belong to a single App, which is the foundation of instant messaging. Only with users can we realize the functions of friends and groups. User data is divided into basic information and setting information. Basic information includes email address, mobile number, username and password. Setting information includes whether to download thumbnails and files automatically, whether to confirm the invitation to join group, etc. Generally speaking, the user API mainly involves the update of its basic information and user settings, and the related API starts with`/user`开头，后面接具体的资源，如Get user settingsAPI为"GET /user/settings"。
+*   Friend API
 
-    好友是用户之间的关系，MaxIM好友设计中用户可为好友设置备注、设置好友消息的通知方式、可申请加好友、拉黑好用等。 好友API提供了好友信息、好友申请、好友列表、好友黑名单列表等相关操作，其API以`/roster`开头。
-*   群组API
+    Friend is the relationship between users. In MaxIM friendship design, users can set remarks for friends, set the notification method of friend messages, apply for adding friends, and blacklist a friend. Friend API provides friend information, friend application, friend list, friend blacklist and other related operations, and its API starts with`/roster`.
+*   Group API
 
-    群组可以实现多用户通讯。MaxIM设计中群成员角色分为群主、群管理员、普通群成员，权限等级依次降低，群主拥有群的所有权限，管理员有操作 群成员和修改群信息群设置的权限，根据群设置能普通群成员是否具有修改群信息以及邀请用户加入群组的权限。群成员功能设计有入群邀请、入群申请、 群黑名单、群禁言列表。 主要API包括群组数据操作和群成员操作，群数据操作主要有创建群、解散群、转让群以及群信息、群设置的更新、 群公告操作、群共享文件操作，群成员操作主要有邀请用户入群、管理员处理邀请、用户申请入群、用户处理申请、设置群黑名单、设置群禁言列表、 用户退出群、将用户踢出群等，API以`/group`开头。
-*   消息API
+    Groups enable multi-user communication. In MaxIM design, the roles of group members are divided into group Owners, group Admins and group Members, and the authority levels are lowered in turn. The group Owners have all the permissions of the group, while the Admins have the permissions to operate group members and modify group information settings. According to group settings, ordinary group Members may have or not have the permissions to modify group information and invite users to join group. The functional design of group membership includes invitation to join group, application to join group, set group blacklist and group ban list. The main APIs include group data operations and group member operations. Group data operations mainly include create group, dissolve group, transfer group Owner, update group information and group settings, group announcement operation, group shared file operation; and group member operations mainly include invite user to join group, Admin process invitation, user apply to join group, user process application, set group blacklist, set group ban list, user quit group, kick user out of group, etc. APIs start with`/group`.
+*   Message API
 
-    消息相关API是对IM服务的封装，旨在为使用者提供简便方法以实现通讯功能。消息API以`/message`开头。
-*   推送API
+    Message APIs are encapsulations of IM services designed to provide an easy way for messaging. Message APIs start with`/message`.
+*   PushAPI
 
-    推送相关API用于推送通知到设备，其API以`/push`开头。
+    Push相关API用于Push通知到设备，其API以`/push`.
 
-一般情况下，请求到MaxIM服务的API如遇业务错误，则返回的http code为200，在response body会返回MaxIM自定义错误码。 具体错误码的含义见错误码页面。
+In general, the API requested to MaxIM service will return an http code of 200 in case of a business error, and a MaxIM custom error code will be returned in the response body. See the Error Code page for the specific meaning of error code.
 
-下面以以下值为例介绍部分关键API，实际请求中请予以替换。
+Some of the key APIs are demonstrated with the following values, which should be replaced in your actual request.
 
 * `app_id`: `welovemaxim`
 * `api_endpoint`: `https://api.maximtop.com`
 * `access-token`: `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJkcGJkdmVrZmVjYm8iLCJzdWIiOiIyMCIsImNsdXN0ZXIiOjAsInJvbGUiOjIsImlhdCI6MTU2Nzk5NzQwOH0.U-iFpEwprrkf-mFkhHN_CWmF5nkBbRQLTjttN4Qlkzw3ET1Zke9OZdjutm90KSyDs9jjYvUSAGGsWVjLmDZlkg`
 
-## 用户API
+## User API
 
-### 注册用户
+### Register user
 
-*   API描述
+*   API description
 
-    为指定App注册MaxIM用户。
-*   请求说明
+    Register a MaxIM user for the specified App.
+*   Request description
 
-    Http方法: `POST` 资源路径: `/user/register/v2`
-*   参数说明
+    Http method: `POST` Resource path: `/user/register/v2`
+*   Parameter description
 
-    * Header参数
+    * Header parameter
 
-    | 参数      | 描述     | 备注 |
+    | Parameter      | Description     | Comment |
     | ------- | ------ | -- |
-    | app\_id | App id | 必填 |
+    | app\_id | App id | Required |
 
-    * Request Body参数
+    * Request Body parameter
 
-    | 参数       | 描述  | 备注                                        |
+    | Parameter       | Description  | Comment                                        |
     | -------- | --- | ----------------------------------------- |
-    | username | 用户名 | 必填，用户名仅支持字母数字下划线组合，且不能是纯数字，不能以maxim、mta开头 |
-    | password | 密码  | 必填                                        |
-*   cURL请求示例
+    | username | Username | Required, username supports only alphanumeric and underscore combinations, and cannot be pure numbers nor begin with maxim, mta |
+    | password | Password  | Required                                        |
+*   cURL request example
 
     ```
     curl -X POST 'https://api.maximtop.com/user/register/v2' \
@@ -91,7 +91,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'app_id: welovemaxim' \
     -d '{ "username": "test_user", "password": "asd"}'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -111,30 +111,30 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-## 好友API
+## Friend API
 
-### 添加好友
+### Add friend
 
-*   API描述
+*   API description
 
-    为指定用户添加好友。
-*   请求说明
+    Add friend for specified user.
+*   Request description
 
-    Http方法: `POST` 资源路径: `/user/add_roster`
-* 参数说明
-  *   Header参数
+    Http method: `POST` Resource path: `/user/add_roster`
+* Parameter description
+  *   Header parameter
 
-      | 参数           | 描述          | 备注 |
+      | Parameter           | Description          | Comment |
       | ------------ | ----------- | -- |
-      | app\_id      | APP ID      | 必填 |
-      | access-token | token       | 必填 |
-      | user\_id     | 添加方user\_id | 必填 |
-  *   Request Body参数
+      | app\_id      | APP ID      | Required |
+      | access-token | token       | Required |
+      | user\_id     | 添加方user\_id | Required |
+  *   Request Body parameter
 
-      | 参数   | 描述             | 备注 |
+      | Parameter   | Description             | Comment |
       | ---- | -------------- | -- |
-      | list | 被添加方user\_id列表 | 必填 |
-*   cURL请求示例
+      | list | 被添加方user\_id列表 | Required |
+*   cURL request example
 
     ```
     curl -X POST 'https://api.maximtop.com/user/add_roster' \
@@ -144,7 +144,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'user_id: 2302128618880' \
     -d '{ "list": [2199040544848, 2199040544992]}'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -153,26 +153,26 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-### 获取好友列表
+### Get friend list
 
-*   API描述
+*   API description
 
-    获取指定用户的好友列表。
-*   请求说明
+    Get friend list of the specified user.
+*   Request description
 
-    Http方法: `GET` 资源路径: `/user/rosters`
-* 参数说明
-  *   Header参数
+    Http method: `GET` Resource path: `/user/rosters`
+* Parameter description
+  *   Header parameter
 
-      | 参数           | 描述           | 备注 |
+      | Parameter           | Description           | Comment |
       | ------------ | ------------ | -- |
-      | app\_id      | APP ID       | 必填 |
-      | access-token | token        | 必填 |
-      | user\_id     | 当前用户user\_id | 必填 |
-  *   Request Body参数
+      | app\_id      | APP ID       | Required |
+      | access-token | token        | Required |
+      | user\_id     | 当前用户user\_id | Required |
+  *   Request Body parameter
 
-      无
-*   cURL请求示例
+      None
+*   cURL request example
 
     ```
     curl -X GET 'https://api.maximtop.com/user/rosters' \
@@ -181,7 +181,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'app_id: welovemaxim' \
     -H 'user_id: 2302128618880'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -196,31 +196,31 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-## 群组API
+## Group API
 
-### 创建群
+### Create group
 
-*   API描述
+*   API description
 
-    以指定用户为群主创建群组。
-*   请求说明
+    Create a group with the specified user as group Owner.
+*   Request description
 
-    Http方法: `POST` 资源路径: `/group/create`
-* 参数说明
-  *   Header参数
+    Http method: `POST` Resource path: `/group/create`
+* Parameter description
+  *   Header parameter
 
-      | 参数           | 描述         | 备注 |
+      | Parameter           | Description         | Comment |
       | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | 必填 |
-      | access-token | token      | 必填 |
-      | user\_id     | 群主user\_id | 必填 |
-  *   Request Body参数
+      | app\_id      | APP ID     | Required |
+      | access-token | token      | Required |
+      | user\_id     | Group Owneruser\_id | Required |
+  *   Request Body parameter
 
-      | 参数          | 描述  | 备注 |
+      | Parameter          | Description  | Comment |
       | ----------- | --- | -- |
-      | name        | 群名称 | 必填 |
-      | description | 群描述 | 可选 |
-*   cURL请求示例
+      | name        | Group name | Required |
+      | description | Group description | Optional |
+*   cURL request example
 
     ```
     curl -X POST 'https://api.maximtop.com/group/create' \
@@ -230,7 +230,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'user_id: 2302128618880' \
     -d '{ "name": "g001", "description": "test-group"}'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -253,29 +253,29 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-### 邀请用户加群
+### Invite user to join group
 
-*   API描述
+*   API description
 
-    以指定用户为群主邀请用户加入群组。
-*   请求说明
+    Invite user to join the group with the specified user as group Owner.
+*   Request description
 
-    Http方法: `POST` 资源路径: `/group/invite`
-* 参数说明
-  *   Header参数
+    Http method: `POST` Resource path: `/group/invite`
+* Parameter description
+  *   Header parameter
 
-      | 参数           | 描述         | 备注 |
+      | Parameter           | Description         | Comment |
       | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | 必填 |
-      | access-token | token      | 必填 |
-      | user\_id     | 群主user\_id | 必填 |
-  *   Request Body参数
+      | app\_id      | APP ID     | Required |
+      | access-token | token      | Required |
+      | user\_id     | Group Owneruser\_id | Required |
+  *   Request Body parameter
 
-      | 参数         | 描述     | 备注 |
+      | Parameter         | Description     | Comment |
       | ---------- | ------ | -- |
-      | group\_id  | 群id    | 必填 |
-      | user\_list | 用户id列表 | 必填 |
-*   cURL请求示例
+      | group\_id  | Group id    | Required |
+      | user\_list | User id list | Required |
+*   cURL request example
 
     ```
     curl -X POST 'https://api.maximtop.com/group/invite' \
@@ -285,7 +285,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'user_id: 2302128618880' \
     -d '{ "group_id": 2306414607729, "user_list": [2199040544848, 2199040544992]}'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -300,30 +300,30 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-### 获取群成员列表
+### Get group member list
 
-*   API描述
+*   API description
 
-    获取群成员列表，支持分页。 分页由limit和cursor字段控制，limit是每页的大小，cursor是游标。 **cursor**：取第某页数据后若还有成员数据，会返回cursor字段，传cursor字段会取游标的下一页数据。
-*   请求说明
+    Get group member list, can be in pages. Pages are controlled by limit and cursor fields, limit for page size, cursor as the name suggest. **cursor**：If there is still member data left after fetching data on a certain page, it will return cursor field for fetching data from the next page of the cursor.
+*   Request description
 
-    Http方法: `GET` 资源路径: `/group/member_list`
-* 参数说明
-  *   Header参数
+    Http method: `GET` Resource path: `/group/member_list`
+* Parameter description
+  *   Header parameter
 
-      | 参数           | 描述         | 备注 |
+      | Parameter           | Description         | Comment |
       | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | 必填 |
-      | access-token | token      | 必填 |
-      | user\_id     | 群主user\_id | 必填 |
-  *   查询参数参数
+      | app\_id      | APP ID     | Required |
+      | access-token | token      | Required |
+      | user\_id     | Group Owneruser\_id | Required |
+  *   Query parameter
 
-      | 参数        | 描述       | 备注        |
+      | Parameter        | Description       | Comment        |
       | --------- | -------- | --------- |
-      | group\_id | 群id      | 必填        |
-      | cursor    | 分页游标     | 可选，默认取第一页 |
-      | limit     | 单次获取成员数量 | 可选，默认1000 |
-*   cURL请求示例
+      | group\_id | Group id      | Required        |
+      | cursor    | Paged cursor     | Optional, default the first page |
+      | limit     | Number of members to fetch at once | Optional, default 1,000 |
+*   cURL request example
 
     ```
     curl -X GET 'https://api.maximtop.com/group/member_list?group_id=2306414607729&limit=50' \
@@ -331,7 +331,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'app_id: welovemaxim' \
     -H 'user_id: 2302128618880'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -350,23 +350,23 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-### 解散群
+### Disband group
 
-*   API描述
+*   API description
 
-    解散群组。
-*   请求说明
+    Dissolve group.
+*   Request description
 
-    Http方法: `DELETE` 资源路径: `/group/destroy`
-* 参数说明
-  *   Header参数
+    Http method: `DELETE` Resource path: `/group/destroy`
+* Parameter description
+  *   Header parameter
 
-      | 参数           | 描述         | 备注 |
+      | Parameter           | Description         | Comment |
       | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | 必填 |
-      | access-token | token      | 必填 |
-      | user\_id     | 群主user\_id | 必填 |
-*   cURL请求示例
+      | app\_id      | APP ID     | Required |
+      | access-token | token      | Required |
+      | user\_id     | Group Owneruser\_id | Required |
+*   cURL request example
 
     ```
     curl -X DELETE 'https://api.maximtop.com/group/destroy?group_id=2306414607729' \
@@ -374,7 +374,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'app_id: welovemaxim' \
     -H 'user_id: 2302128618880'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -383,32 +383,32 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-## 发送消息API
+## Send message API
 
-### 管理员发送单聊文本消息
+### Admin send single chat text-message
 
-*   API描述
+*   API description
 
-    给指定目标发送消息，可以批量发给群或用户。 指定目标用targets字段表示，列表类型，列表中id只能为用户id或群id的一种，两者不能混合发送。
-*   请求说明
+    Send message to a specified destination, which can be sent in batches to groups or users. The specified destination is represented by targets field, list type and ids in list can only be one of user/group ids, and the both types cannot be mixed.
+*   Request description
 
-    Http方法: `POST` 资源路径: `/message/send`
-* 参数说明
-  *   Header参数
+    Http method: `POST` Resource path: `/message/send`
+* Parameter description
+  *   Header parameter
 
-      | 参数           | 描述     | 备注 |
+      | Parameter           | Description     | Comment |
       | ------------ | ------ | -- |
-      | app\_id      | APP ID | 必填 |
-      | access-token | token  | 必填 |
-  *   Request Body参数
+      | app\_id      | APP ID | Required |
+      | access-token | token  | Required |
+  *   Request Body parameter
 
-      | 参数            | 描述            | 备注 |
+      | Parameter            | Description            | Comment |
       | ------------- | ------------- | -- |
-      | targets       | 目标id列表        | 必填 |
-      | type          | 目标类型,1:单聊2:群聊 | 必填 |
-      | content\_type | 消息内容类型,0:文本消息 | 必填 |
-      | ext           | 扩展字段          | 可选 |
-*   cURL请求示例
+      | targets       | List of target ids        | Required |
+      | type          | Target type, 1: Single chat 2: Group chat | Required |
+      | content\_type | Message content type, 0: text-message | Required |
+      | ext           | Extension field          | Optional |
+*   cURL request example
 
     ```
     curl -X POST 'https://api.maximtop.com/message/send' \
@@ -417,7 +417,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     -H 'app_id: welovemaxim' \
     -d '{"targets":[2302128618880],"type":1,"content":"hello","content_type":0}'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -426,52 +426,52 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-## 推送API
+## PushAPI
 
-### 管理员发送推送通知
+### 管理员SendPush通知
 
-*   API描述
+*   API description
 
-    给指定目标发送通知，可以推送给APP下的所有人，也可以按标签/别名/PushToken/用户ID来推送。
-*   请求说明
+    给指定目标Send通知，可以Push给APP下的所有人，也可以按标签/Alias/PushToken/User ID来Push。
+*   Request description
 
-    Http方法: `POST` 资源路径: `/push/notify`
-* 参数说明：
-  *   Header参数
+    Http method: `POST` Resource path: `/push/notify`
+* Parameter description：
+  *   Header parameter
 
-      | 参数           | 描述     | 备注 |
+      | Parameter           | Description     | Comment |
       | ------------ | ------ | -- |
-      | app\_id      | APP ID | 必填 |
-      | access-token | token  | 必填 |
-  *   Request Body主要参数
+      | app\_id      | APP ID | Required |
+      | access-token | token  | Required |
+  *   Request Body主要Parameter
 
-      | 参数       | 描述    | 备注 |
+      | Parameter       | Description    | Comment |
       | -------- | ----- | -- |
-      | audience | 推送目标  | 必填 |
-      | message  | 推送消息体 | 必填 |
-  *   audience：推送目标。类型为字符串或JSONObject:
+      | audience | Push目标  | Required |
+      | message  | Message body pushed | Required |
+  *   audience：Push目标。Class型为字符串或JSONObject:
 
       ```
-      "all", 表示发给所有设备
-      {"tag":["tag1","tag2"]} 表示发给标签为tag1或tag2的设备
-      {"alias":["alias1","alias2"]} 表示发给别名为alias1或alias2的设备
-      {"user_id":[111,222]} 表示发给用户ID为111或222的设备
-      {"push_token":["push_token1","push_token2"]} 表示发给PushToken为push_token1或push_token2的设备
-      使用标签/别名/用户ID/pushToken推送时，列表长度不能超过500
+      "all", means push to all devices
+      {"tag":["tag1","tag2"]} means push to devices labeled tag1 or tag2
+      {"alias":["alias1","alias2"]} means push to devices with alias1 or alias2
+      {"user_id":[111,222]} means push to devices with user ID 111 or 222
+      {"push_token":["push_token1","push_token2"]} means push to devices with PushToken push_token1 or push_token2
+      List length cannot exceed 500 when pushed with tag/alias/user ID/pushToken
       ```
-  *   message:推送消息体, 主要字段如下，全部字段请参考API详细文档
+  *   message:Message body pushed, 主要Field如下，全部Field请参考API Details
 
-      | 参数              | 描述   | 备注                                          |
+      | Parameter              | Description   | Comment                                          |
       | --------------- | ---- | ------------------------------------------- |
-      | type            | 通知类型 | 可选，text - 文本，image - 图片， cmd - 透传消息。默认为text |
-      | title           | 通知标题 | 可选                                          |
-      | body            | 通知内容 | 可选                                          |
-      | attachment\_url | 附件地址 | 可选,图片/音频/视频的URL地址。                          |
-      | ext             | 扩展字段 | 可选，类型为JSONObject                            |
-*   cURL请求示例
+      | type            | 通知Class型 | Optional，text - 文本，image - Image， cmd - 透传Message。默认为text |
+      | title           | 通知标题 | Optional                                          |
+      | body            | 通知Content | Optional                                          |
+      | attachment\_url | AttachmentAddress | Optional,Image/音频/视频的URLAddress。                          |
+      | ext             | Extension field | Optional，Class型为JSONObject                            |
+*   cURL request example
 
     ```
-    推送文本给APP下所有设备：
+    Push文本给APP下所有设备：
     curl -X POST 'https://api.maximtop.com/push/notify' \
     -H "Content-Type: application/json" \
     -H 'access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJkcGJkdmVrZmVjYm8iLCJzdWIiOiIyMCIsImNsdXN0ZXIiOjAsInJvbGUiOjIsImlhdCI6MTU2Nzk5NzQwOH0.U-iFpEwprrkf-mFkhHN_CWmF5nkBbRQLTjttN4Qlkzw3ET1Zke9OZdjutm90KSyDs9jjYvUSAGGsWVjLmDZlkg' \
@@ -480,7 +480,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     ```
 
     ```
-    推送图片给push_token为token1或token2的设备:
+    PushImage给push_token为token1或token2的设备:
     curl -X POST 'https://api.maximtop.com/push/notify' \
     -H "Content-Type: application/json" \
     -H 'access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJkcGJkdmVrZmVjYm8iLCJzdWIiOiIyMCIsImNsdXN0ZXIiOjAsInJvbGUiOjIsImlhdCI6MTU2Nzk5NzQwOH0.U-iFpEwprrkf-mFkhHN_CWmF5nkBbRQLTjttN4Qlkzw3ET1Zke9OZdjutm90KSyDs9jjYvUSAGGsWVjLmDZlkg' \
@@ -489,14 +489,14 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     ```
 
     ```
-    推送透传消息给标签为beijing或shanghai的所有设备，透传消息不会展示到通知栏上:
+    Push透传Message给标签为beijing或shanghai的所有设备，透传Message不会展示到通知栏上:
     curl -X POST 'https://api.maximtop.com/push/notify' \
     -H "Content-Type: application/json" \
     -H 'access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJkcGJkdmVrZmVjYm8iLCJzdWIiOiIyMCIsImNsdXN0ZXIiOjAsInJvbGUiOjIsImlhdCI6MTU2Nzk5NzQwOH0.U-iFpEwprrkf-mFkhHN_CWmF5nkBbRQLTjttN4Qlkzw3ET1Zke9OZdjutm90KSyDs9jjYvUSAGGsWVjLmDZlkg' \
     -H 'app_id: welovemaxim' \
     -d '{"audience": {"tag":["beijing","shanghai"]},"message": {"type": "cmd","title": "this is push title","body": "this is push body","ext": {"key1": 12345, "key2": "xxx" }}}'
     ```
-*   返回结果示例
+*   Returned result example
 
     ```
     {
@@ -505,61 +505,61 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
     }
     ```
 
-## 附录
+## Appendix
 
-### 错误码说明
+### Error code description
 
-* 1xxxx表示用户/好友体系问题
-* 2xxxx表示群组体系问题
-* 3xxxx表示license问题
+* 1xxxx indicates an issue related to user/friend system
+* 2xxxx indicates an issue related to group system
+* 3xxxx indicates an issue related to license
 
-| 错误码   | 描述                      |
+| Error code   | Description                      |
 | ----- | ----------------------- |
-| 10000 | 用户不存在                   |
-| 10001 | 验证码不正确                  |
-| 10002 | 请求参数不正确                 |
-| 10003 | header中缺少access-token参数 |
-| 10004 | 用户已存在                   |
-| 10005 | 用户已在好友列表                |
-| 10006 | 用户在黑名单列表                |
-| 10007 | 好友申请不存在或已过期             |
-| 10008 | header中access-token无效   |
-| 10009 | oss异常                   |
-| 10010 | 用户无权限                   |
+| 10000 | User does not exist                   |
+| 10001 | Incorrect verification code                  |
+| 10002 | Incorrect request parameter                 |
+| 10003 | Missing access-token parameter in header |
+| 10004 | User already exists                   |
+| 10005 | User already exists in friend list                |
+| 10006 | User already exists in blacklist                |
+| 10007 | Friend does not exist or expired             |
+| 10008 | Invalid access-token in header   |
+| 10009 | oss exception                   |
+| 10010 | User has no permission                   |
 | 10011 | user\_id已绑定             |
-| 10012 | 用户拒绝好友申请                |
-| 12001 | 上传推送图片到小米平台失败           |
-| 12002 | 推送图片文件大小需小于1M           |
-| 12003 | 上传推送图片到OPPO平台失败         |
-| 12004 | 推送的图片地址无法下载             |
-| 12005 | 推送目标列表的长度不能超过500        |
-| 12006 | 没有开通推送功能                |
-| 20000 | 服务器数据库异常                |
-| 20001 | 群组不存在                   |
-| 20002 | 用户不是群成员                 |
+| 10012 | User rejected friend request                |
+| 12001 | 上传PushImage到XiaomiPlatform失败           |
+| 12002 | PushImageFile size需小于1M           |
+| 12003 | 上传PushImage到OPPOPlatform失败         |
+| 12004 | Push的ImageAddressNone法Download Center             |
+| 12005 | Push目标列表的长度不能超过500        |
+| 12006 | 没有开通PushFeatures                |
+| 20000 | Server database exception                |
+| 20001 | Group does not exist                   |
+| 20002 | The user is not a group member                 |
 | 20003 | msg\_push\_mode值不合法     |
-| 20004 | 群主不能直接离开群               |
-| 20005 | 转让群异常：被转让人非群成员          |
-| 20006 | 群组处于修复模式                |
-| 20007 | App群数量超限                |
-| 20008 | 用户创建的群数量超限              |
-| 20009 | 用户加入的群数量超限              |
-| 20010 | 群人数超限                   |
-| 20011 | 操作需要群成员权限               |
-| 20012 | 操作需要群管理员权限              |
-| 20013 | 操作需要群主权限                |
-| 20014 | 入群申请已过期或已处理             |
-| 20015 | 入群邀请已过期或已处理             |
-| 20016 | 用户被踢出群次数超限，不能再加入群       |
-| 20017 | 用户已经是群成员                |
-| 20018 | 用户在群黑名单列表               |
-| 20020 | 群公告不存在                  |
-| 20021 | 群公告被管理员禁用               |
-| 20022 | 群共享文件不存在                |
-| 20023 | 无权限操作群共享文件              |
-| 20024 | 群邀请二维码不合法               |
-| 20025 | 群邀请二维码已过期               |
-| 30021 | MaxIM License无效         |
-| 30022 | MaxIM License已过期        |
-| 30023 | 超出MaxIM License限制       |
+| 20004 | Group Owner cannot quit the group directly               |
+| 20005 | Group transfer error: Assignee is not a group member          |
+| 20006 | Group in repair mode                |
+| 20007 | Number of groups in App exceeds limit                |
+| 20008 | Number of user-created groups exceeds limit              |
+| 20009 | Number of user-joined groups exceeds limit              |
+| 20010 | Number of group members exceeds limit                   |
+| 20011 | This operation needs group member permission               |
+| 20012 | This operation needs group Admin permission              |
+| 20013 | This oeration needs group Owner permission                |
+| 20014 | Application of membership expired or processed             |
+| 20015 | Invitation of membership expired or processed             |
+| 20016 | Times of user’s kicked-out exceeds limit, can no longer join group       |
+| 20017 | User is already a group member                |
+| 20018 | User is already blacklisted               |
+| 20020 | Group announcement does not exist                  |
+| 20021 | Group announcement disabled by Admin               |
+| 20022 | Group shared file does not exist                |
+| 20023 | No permission to operate group shared file              |
+| 20024 | Group invitation QR Code is illegal               |
+| 20025 | Group invitation QR Code has expired               |
+| 30021 | Invalid MaxIM License         |
+| 30022 | Expired MaxIM License        |
+| 30023 | MaxIM License limit exceeded       |
 | 40000 | app\_id不存在              |

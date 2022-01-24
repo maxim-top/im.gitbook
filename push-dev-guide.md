@@ -1,22 +1,22 @@
-# 推送 Push SDK 快速集成指南
+# Push Push SDK Quick integration指南
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/android)
+This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/android)
 
-### 推送 SDK 集成说明
+### Push SDK integration description
 
-美信推送是基于美信拓扑IM技术基础上研发，只需要一次集成，就可以同时拥有推送和IM两大服务，提高研发效率的同时，也会极大降低企业的 IT 支出。
+Maximtop Push is developed based on Maximtop IM technology, which can have both push and IM services with only one integration, improving R&D efficiency and greatly reducing IT expenditure of enterprises.
 
-使用美信推送没有额外费用。
+使用Maximtop Push没有额外费用。
 
-由于默认即支持各主流厂商通道，为了进一步减低集成难度，美信推送实现时也内置了证书设置与更新机制。简单来说，就是开发者集成美信推送之后，只需要在控制台设置好各厂商推送的证书，前端将厂商推送 SDK 打包，即可自动完成系统厂商的适配。不再需要针对性调整各种推送令牌的申请和设置。
+Since the channels of major vendors are supported by default, in order to further reduce the difficulty of integration, certificate settings and updating mechanism are also built into the implementation of Maximtop Push. Simply put, after Maximtop Push integrated, developer only needs to set the certificates pushed by each vendor on the console, and the front end will package the vendor push SDKs, which can automatically complete the adaptation of the system vendor. It is no longer necessary to adjust the application and settings of various push tokens.
 
-注意：与其他推送厂商不同的是，美信推送 SDK 专注于推送通道的建设和服务，并不会收集终端信息，如果你有类似广告业务，需要单独集成广告 SDK，或者将业务数据标签通过接口设置后才能使用。
+Note: Unlike other push vendors, Maximtop Push SDK focuses on the construction and serving of push channels, and does not collect terminal information. If you have similar advertising business, you need to integrate the advertising SDK separately, or set business data tags through the interface before you can use it.
 
-如前所述，由于美信推送 SDK 与 IM SDK 是同一个 SDK，推送功能只是在原有 IM SDK 基础上增加了推送接口。因此集成方式均与 IM SDK 相同，快速集成文档亦可参见美信拓扑IM安卓端快速集成，美信拓扑IM iOS 端快速集成。
+As mentioned earlier, since Maximtop Push SDK and IM SDK are the same SDK, the push function only adds a push interface to the original IM SDK. Therefore, the integration method is the same as that of IM SDK, and the quick integration document can also be found inMaximtop IM for Android Quick Integration，Maximtop IM for iOS Quick Integration。
 
-### SDK 架构
+### SDK architecture
 
-推送功主要涉及以下三个类：
+Push function mainly involves the following three classes:
 
 ```
 BMXClient
@@ -25,35 +25,35 @@ BMXClient
     |----BMXPushManager
 ```
 
-其中 BMXPushService、BMXPushManager 均为推送设置类，前者是同步调用类，后者异步调用类，实现时根据需要在两者中二选一即可。
+Where BMXPushService and BMXPushManager are both push setting classes, the former is a synchronous calling class, and the latter is an asynchronous calling class. You can choose one according to needs when implementing.
 
-其他功能类分别是：
+Other functional classes are:
 
-* BMXCallBack : 无类型接口回调
-* BMXDataCallBack : 泛型类型带数据回调
-* BMXPushServiceListener : 推送事件监听
-* BMXMessage : 推送消息
-* BMXUserProfile : 推送用户信息
+* BMXCallBack : Untyped interface callback
+* BMXDataCallBack : Generic type with data callback
+* BMXPushServiceListener : Push event listening
+* BMXMessage : Push message
+* BMXUserProfile : Push user message
 
-下文以安卓 SDK 为例介绍推送 API。
+Android SDK is used as an example for push API below.
 
-### Android Studio中导入SDK
+### Import SDK into Android Studio
 
-SDK导入可以选择aar格式或者jar+so格式
+Aar or jar + so formats are selectable in SDK import
 
-#### aar格式
+#### aar format
 
-* [下载aar文件](https://github.com/maxim-top/floo-android/releases)到项目的libs目录
-* 在build.gradle文件dependencies块中增加：implementation(name:'floo-android\_3.1.3.aar',ext:'aar')
+* [Download aar file](https://github.com/maxim-top/floo-android/releases)to /lib in project
+* 在build.gradleFiledependencies块中增加：implementation(name:'floo-android\_3.1.3.aar',ext:'aar')
 
-#### jar+so格式
+#### jar+so format
 
-* 下载jar包和so库到项目的libs目录
-* 在build.gradle文件中增加：implementation fileTree(dir: 'libs', include: \['\*.jar'])
+* Download jar package and so library to /lib in project
+* 在build.gradleFile中增加：implementation fileTree(dir: 'libs', include: \['\*.jar'])
 
-### 权限配置
+### Permission configuration
 
-在AndroidManifest.xml 里增加加以下权限：
+Add permissions as follows in AndroidManifest.xml:
 
 ```
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -75,11 +75,11 @@ SDK导入可以选择aar格式或者jar+so格式
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 ```
 
-### 快速集成
+### Quick integration
 
-#### BMXClient初始化
+#### BMXClient initialization
 
-* 在app入口类中导入so库文件：
+* Import so library file into app entry class:
 
 ```
     static {
@@ -87,7 +87,7 @@ SDK导入可以选择aar格式或者jar+so格式
     }
 ```
 
-* 初始化BMXClient
+* Initialize BMXClient
 
 ```
     public static void initClient(int index) {
@@ -100,29 +100,29 @@ SDK导入可以选择aar格式或者jar+so格式
         dataPath.mkdirs();
         cachePath.mkdirs();
 
-        String pushId = getPushId();//设置推送平台对应的ID
+        String pushId = getPushId();//Set the ID corresponding to push platform
         BMXSDKConfig conf = new BMXSDKConfig(BMXClientType.Android, "1", dataPath.getAbsolutePath(),
                 cachePath.getAbsolutePath(), TextUtils.isEmpty(pushId) ? "MaxIM" : pushId);
         conf.setConsoleOutput(true);
         conf.setLogLevel(BMXLogLevel.Debug);
-        //设置推送appId
+        //Set push appId
         conf.setAppID("appId");
-        //设置推送secret
+        //Set push secret
         conf.setAppSecret("appSecret");
-        //设置设备的唯一设备id
+        //Set the unique id of device
         conf.setDeviceUuid(deviceId);
-        //设置生产环境
+        //Set production environment
         conf.setEnvironmentType(BMXPushEnvironmentType.Production);
-        //根据设备机型设置pushProviderType
+        //Set pushProviderType based-on device model
         conf.setPushProviderType(getProviderType(context));
         BMXSDKConfig.HostConfig hostConfig = new BMXSDKConfig.HostConfig("sync.maxim.top", 443, "https://api.maxim.top");
         conf.setHostConfig(hostConfig);
-        //获取BMXClient实例
+        //Get BMXClient instance
         BMXClient bmxClient = BMXClient.create(conf);
     }
 
 
-    //根据机型获取type
+    //Get type based-on device model
     private static BMXPushProviderType getProvideType(Context context){
         if (isHuawei(context)) {
             return BMXPushProviderType.HuaWei;
@@ -143,44 +143,44 @@ SDK导入可以选择aar格式或者jar+so格式
     }
 ```
 
-#### 高级调用形式
+#### Advanced invokation form
 
-* BMXPushManager: 通过bmxClient.getPushManager()获取到推送的manager对象。
+* BMXPushManager: Get the manager object to push via bmxClient.getPushManager().
 
-#### 开启推送
+#### Enable push
 
-参数说明: alias(push别名), bmxToken(推送token) callBack
-
-```
-     如果不传入alias  SDK会自动生成
-     如果不传入token  SDK会自动生成并通过BMXPushServiceListener回调
-```
+Parameter description: alias (push alias), bmxToken(push token) callBack
 
 ```
-同步调用形式
-   调用说明: 通过返回值BMXErrorCode判断是否成功。
+     SDK will automatically generate an alias if not passed in
+     SDK will automatically generate a token and callback via BMXPushServiceListener if not passed in
+```
 
-   bmxClient.getPushService().start();//不传入参数
-   bmxClient.getPushService().start("zhangsan");//传入alias
-   bmxClient.getPushService().start("zhangsan", token);//传入alias  token
-异步调用形式
-   调用说明: 通过bmxClient.getPushManager()获取manager对象,在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+```
+Synchronous call
+   Calling description: Success is judged by returned value of BMXErrorCode.
 
-   //不传入参数
+   bmxClient.getPushService().start();//No parameter passed in
+   bmxClient.getPushService().start("zhangsan");//Pass in alias
+   bmxClient.getPushService().start("zhangsan", token);//Pass in alias  token
+Asynchronous calling
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
+
+   //No parameter passed in
    bmxClient.getPushManager().start(new BMXCallBack<>(){
         @Override
         public void onResult(BMXErrorCode bmxErrorCode) {
 
         }
    	});
-   //传入alias
+   //Pass in alias
    bmxClient.getPushManager().start("zhangsan",new BMXCallBack<>(){
         @Override
         public void onResult(BMXErrorCode bmxErrorCode) {
 
         }
     });
-   //传入alias token
+   //Pass in alias token
    bmxClient.getPushManager().start("zhangsan", token, new BMXCallBack<>(){
         @Override
         public void onResult(BMXErrorCode bmxErrorCode) {
@@ -189,17 +189,17 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 停止推送
+#### Stop push
 
-参数说明: callBack
+Parameter description: callBack
 
 ```
-同步调用
-   调用说明: 通过返回值BMXErrorCode判断是否成功。
+Synchronous call
+   Calling description: Success is judged by returned value of BMXErrorCode.
 
    bmxClient.getPushService().stop();
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取manager对象,在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().stop(new BMXCallBack(){
    	      @Override
@@ -209,16 +209,16 @@ SDK导入可以选择aar格式或者jar+so格式
    	});
 ```
 
-#### 唤起推送
+#### Evoke push
 
 ```
-同步调用
-   调用说明: 通过返回值BMXErrorCode判断是否成功。
+Synchronous call
+   Calling description: Success is judged by returned value of BMXErrorCode.
 
    bmxClient.getPushService().resume();
 
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取manager兑现, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().remuse(new BMXCallBack<>() {
        @Override
@@ -227,31 +227,31 @@ SDK导入可以选择aar格式或者jar+so格式
    });
 ```
 
-#### 获取推送的状态
+#### Get push status
 
-返回值说明: public static enum PushSdkStatus { Starting(1), Started, Stoped, Offline; }
+Returned value description: public static enum PushSdkState { Starting(1), Started, Stoped, Offline; }
 
 ```
-同步调用:
+Synchronous call:
 
    BMXPushService.PushSdkStatus status = bmxClient.getPushService().status();
 
-异步调用:
+Asynchronous call:
 
    BMXPushService.PushSdkStatus status = bmxClient.getPushManager().status();
 ```
 
-#### 解绑别名
+#### Unbind alias
 
-参数说明: alias(push别名)
+Parameter description: alias (push alias)
 
 ```
-同步调用
-   调用说明: 通过返回值BMXErrorCode判断是否成功。
+Synchronous call
+   Calling description: Success is judged by returned value of BMXErrorCode.
 
    bmxClient.getPushService().unbindAlias(alias);
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取manager对象,在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().unbindAlias(alias, new BMXCallBack(){
           @Override
@@ -261,46 +261,46 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 获取token
+#### Get token
 
 ```
-   需要在start成功之后调用才有值
+   Value is only available after start called successfully
 
-同步调用:
+Synchronous call:
 
    String token = bmxClient.getPushService().getToken();
 
-异步调用:
+Asynchronous call:
 
    String token = bmxClient.getPushManager().getToken();
 ```
 
-#### 获取cert
+#### Get cert
 
 ```
-   需要在start成功之后调用才有值,  同时需要在对应厂商注册证书并且设置对应的provideType才可获取到
-   目前支持   华为  小米  魅族  oppo  vivo
+   Value is only available after start called successfully, meanwhile it needs to register the certificate with the corresponding vendor and set the correct provideType
+   Currently support Huawei, Xiaomi, Meizu, oppo, and vivo
 
-同步调用:
+Synchronous call:
 
    String cert = bmxClient.getPushService().getCert();
 
-异步调用:
+Asynchronous call:
 
    String cert = bmxClient.getPushManager().getCert();
 ```
 
-#### 绑定厂商token
+#### Bind vendor token
 
-参数说明: token(注册厂商推送返回的token)
+Parameter description: token (the token returned by register vendor push)
 
 ```
-同步调用
-   调用说明: 通过返回值BMXErrorCode判断是否成功。
+Synchronous call
+   Calling description: Success is judged by returned value of BMXErrorCode.
 
    bmxClient.getPushService().bindDeviceToken(token);
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取manager对象,在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().bindDeviceToken(token, new BMXCallBack(){
           @Override
@@ -310,43 +310,43 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 获取推送用户信息
+#### Get information of the user who pushed
 
-参数说明: forceRefresh(是否从server拉取)
+Parameter description: forceRefresh (whether to pull from server)
 
 ```
-同步调用
-   调用说明: 通过传入BMXPushUserProfile对象引用, 调用成功后可获取推送用户信息。
+Synchronous call
+   Calling description: Passing in the BMXPushUserProfile object reference, and push user information can be obtained after successfully called.
 
    BMXPushUserProfile profile = new BMXPushUserProfile();
    bmxClient.getPushService().getPushProfile(profile, forceRefresh);
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXDataCallBack<BMXPushUserProfile>回调中获取推送用户信息。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), and get push user information in BMXDataCallBack<BMXPushUserProfile> callback.
 
    bmxClient.getPushManager().getPushProfile(forceRefresh, new BMXDataCallBack<BMXPushUserProfile>(){
           @Override
           public void onResult(BMXErrorCode bmxErrorCode, BMXPushUserProfile profile) {
-            //返回BMXPushUserProfile实例
+            //Return BMXPushUserProfile instance
           }
     });
 ```
 
-### 高级接口
+### Advanced interface
 
-#### 设置推送标签（tag）
+#### Set push tag
 
-参数说明: tags(tag列表) operationId(此次操作的唯一id 手动生成唯一标识)
+Parameter description: tags (tag list) operationId (the unique id generated manually in this operation)
 
 ```
     TagList tags = new TagList();
-    tags.add("tag内容");
+    tags.add("tag content");
 
-同步调用
-   调用说明: 通过返回值BMXErrorCode判断是否成功。
+Synchronous call
+   Calling description: Success is judged by returned value of BMXErrorCode.
 
    bmxClient.getPushService().setTags(tags, operationId);
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取manager对象,在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().setTags(tags, operationId, new BMXCallBack(){
           @Override
@@ -356,20 +356,20 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 获取推送标签（tag）列表
+#### Get push tag list
 
-参数说明: operationId(此次操作的唯一id 手动生成唯一标识)
+Parameter description: operationId (the unique id generated manually in this operation)
 
-调用说明: 通过传入TagList对象引用, 调用成功后可获取tag列表信息。
+Calling description: Passing in the TagList object reference, and tag list information can be obtained after successfully called.
 
 ```
-同步调用
+Synchronous call
 
    TagList tags = new TagList();
    bmxClient.getPushService().getTags(tags, operationId);
 
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    TagList tags = new TagList();
    bmxClient.getPushManager().getTags(tags, operationId, new BMXCallBack<>(){
@@ -380,20 +380,20 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 删除推送标签（tag）
+#### Delete push tag
 
-参数说明: operationId(此次操作的唯一id 手动生成唯一标识)
+Parameter description: operationId (the unique id generated manually in this operation)
 
 ```
     TagList tags = new TagList();
-    tags.add("tag内容");
+    tags.add("tag content");
 
-同步调用
+Synchronous call
 
    bmxClient.getPushService().deleteTags(tags, operationId);
 
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().deleteTags(tags, operationId, new BMXCallBack<>(){
           @Override
@@ -403,17 +403,17 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 清除所有标签（tag）
+#### Clear all tags
 
-参数说明: operationId(此次操作的唯一id 手动生成唯一标识)
+Parameter description: operationId (the unique id generated manually in this operation)
 
 ```
-同步调用
+Synchronous call
 
    bmxClient.getPushService().clearTags(operationId);
 
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().clearTags(operationId, new BMXCallBack<>(){
           @Override
@@ -423,17 +423,17 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 设置推送开关
+#### Set push switch
 
-参数说明: enable(boolean 推送开关)
+Parameter description: enable (boolean push switch)
 
 ```
-同步调用
+Synchronous call
 
    bmxClient.getPushService().setPushMode(enable);
 
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().setPushMode(enable, new BMXCallBack<>(){
           @Override
@@ -443,17 +443,17 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 设置推送时间
+#### Set push time
 
-参数说明: startHour(推送开启时间) endHour(推送结束时间) 24小时制 设置每天的推送时间区间
+Parameter description: startHour (start time of push) endHour (end time of push) in 24-hour Set the daily push time range
 
 ```
-同步调用
+Synchronous call
 
    bmxClient.getPushService().setPushTime(startHour, endHour);
 
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().setPushTime(startHour, endHour, new BMXCallBack<>(){
           @Override
@@ -463,17 +463,17 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 设置推送静默时间
+#### Set silent-push time
 
-参数说明: startHour(推送开启时间) endHour(推送结束时间) 24小时制 设置每天的不推送时间区间
+Parameter description: startHour (start time of push) endHour (end time of push) in 24-hour Set the daily non-push time range
 
 ```
-同步调用
+Synchronous call
 
    bmxClient.getPushService().setSilenceTime(startHour, endHour);
 
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    bmxClient.getPushManager().setSilenceTime(startHour, endHour, new BMXCallBack<>(){
           @Override
@@ -483,32 +483,32 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-#### 发送推送消息
+#### Send push message
 
-参数说明: content(推送内容)
+Parameter description: content(push content)
 
 ```
-同步调用
+Synchronous call
 
    bmxClient.getPushService().sendMessage(content);
 
-异步调用
+Asynchronous call
 
    bmxClient.getPushManager().sendMessage(content);
 ```
 
-#### 获取推送的消息列表
+#### Get message list to push
 
-参数说明: refMsgId(起始消息id 第一次传0) size(获取的消息数量)
+Parameter description: refMsgId(starting message id, passed 0 first) size(number of fetched messagers)
 
 ```
-同步调用
-   调用说明: 通过传入BMXMessageList对象引用, 调用成功后可获取推送消息列表。
+Synchronous call
+   Calling description: Passing in the BMXMessageList object reference, the push information list can be obtained after successfully called.
 
    BMXMessageList messageList = new BMXMessageList();
    bmxClient.getPushService().loadLocalPushMessages(refMsgId, size, messageList);
-异步调用
-   调用说明: 通过bmxClient.getPushManager()获取到manager对象, 在BMXCallBack回调中返回BMXErrorCode 判断是否成功。
+Asynchronous call
+   Calling description: Get the manager object via bmxClient.getPushManager(), success is judged by returned BMXErrorCode in BMXCallBack callback.
 
    BMXMessageList messageList = new BMXMessageList();
    bmxClient.getPushManager().loadLocalPushMessages(refMsgId, size, messageList, new BMXCallBack<>(){
@@ -518,29 +518,29 @@ SDK导入可以选择aar格式或者jar+so格式
     });
 ```
 
-### 设置监听
+### Set listener
 
-* 注册推送回调
+* Register push callback
 
 ```
-同步调用:
+Synchronous call:
    bmxClient.getPushService().addPushListener(mListener);
 
-异步调用:
+Asynchronous call:
    bmxClient.getPushManager().addPushListener(mListener);
 ```
 
-* 移除推送回调
+* Remove push callback
 
 ```
-同步调用:
+Synchronous call:
    bmxClient.getPushService().removePushListener(mListener);
 
-异步调用:
+Asynchronous call:
    bmxClient.getPushManager().removePushListener(mListener);
 ```
 
-* 回调示例
+* Callback example
 
 ```
     private BMXPushServiceListener mListener = new BMXPushServiceListener() {
@@ -548,7 +548,7 @@ SDK导入可以选择aar格式或者jar+so格式
         @Override
         public void onPushStart(String bmxToken) {
             super.onPushStart(bmxToken);
-            //推送开启返回token
+            //Turn on push to return token
             Log.d(TAG, "onPushStart" + bmxToken);
         }
 
@@ -598,20 +598,20 @@ SDK导入可以选择aar格式或者jar+so格式
         public void onCertRetrieved(String cert) {
             super.onCertRetrieved(cert);
             Log.d(TAG, "onCertRetrieved" + cert);
-            //返回厂商注册的证书   获取到证书之后可以对厂商的push通道进行注册
+            //Return vendor-registered certificate You can register vendor’s push channel after obtaining the certificate
         }
     };
 ```
 
-### 厂商推送集成
+### Vender push integration
 
-各平台集成只需要按照平台推送文档将集成SDK放入应用中, 对应的配置按照平台要求配置即可（华为除外）。
+Platform integration only needs to put the integration SDK into your application according to the platform push document, and the corresponding configuration can be set based-on the specified platform requirements (except Huawei).
 
-#### 华为
+#### Huawei
 
-需要按照华为推送平台设置 [华为推送](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/android-app-quickstart-0000001071490422)
+Need to be set according to Huawei push platform [Huawei push](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/android-app-quickstart-0000001071490422)
 
-1. project级别的build.gradle文件增加
+1. Project-level build.gradle filed added
 
 ```
 repositories {
@@ -633,7 +633,7 @@ allprojects {
 }
 ```
 
-1. app级别build.gradle
+1. App-level build.gradle
 
 ```
 apply plugin: 'com.huawei.agconnect'
@@ -642,20 +642,20 @@ dependencies{
 }
 ```
 
-1. 最后从推送平台下载 agconnect-services.json，放入app目录下。
+1. Finally, download agconnect-services.json from push platform to your app directory.
 
-#### 小米
+#### Xiaomi
 
-按照小米推送平台集成 [小米推送](https://dev.mi.com/console/doc/detail?pId=230)
+Integrate according to Xiaomi push platform [Xiaomi push](https://dev.mi.com/console/doc/detail?pId=230)
 
 #### Oppo
 
-按照OPPO推送平台集成 [oppo推送](https://open.oppomobile.com/wiki/doc#id=10195)
+Integrate according to Oppo push platform [oppo push](https://open.oppomobile.com/wiki/doc#id=10195)
 
-#### 魅族
+#### Meizu
 
-按照魅族推送平台集合 [魅族推送](http://open-wiki.flyme.cn/doc-wiki/index)
+Integrate according to Meizu push platform [Meizu push](http://open-wiki.flyme.cn/doc-wiki/index)
 
-#### 谷歌推送（FCM）
+#### Google push（FCM）
 
-Google推送指南 [FCM](https://firebase.google.cn/docs/cloud-messaging/android/client?hl=zh-cn)
+Google Push Guide [FCM](https://firebase.google.cn/docs/cloud-messaging/android/client?hl=zh-cn)

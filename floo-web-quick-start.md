@@ -1,27 +1,27 @@
-# Web SDK (floo-web) 快速集成指南
+# Web SDK (floo-web) Quick integration指南
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/web)
+This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/web)
 
-## 选型先读
+## Selection guide
 
-美信拓扑前端 Web SDK 共有三个版本，请按需选择：
+Maximtop front end provides 3 versions of Web SDK, please choose on needs:
 
-1. [Web版](https://github.com/maxim-top/maxim-web)，主要供 PC 桌面浏览器使用，适合各种传统前端应用；
-2. [Uni-app版](https://github.com/maxim-top/maxim-uniapp)，基于 DCloud.io 的 uni-app 框架开发，供H5和各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝），也可发布到iOS、Android、快应用等平台；
-3. [微信小程序版](https://github.com/maxim-top/maxim-miniprogram)，符合微信小程序标准的原生版本，功能跟 uni-app 版完全一致；
+1. [Web version](https://github.com/maxim-top/maxim-web), which is mainly used by PC desktop browsers and suitable for various traditional front-end applications;
+2. [Uni-app version](https://github.com/maxim-top/maxim-uniapp), developed based-on DCloud.io uni-app framework, for H5 and various Applets (WeChat/Alypay/Baidu/Toutiao/QQ/DingTalk/Taobao), and also suitable for iOS, Android, QuickApp and other platforms;
+3. [WeChat Applet version](https://github.com/maxim-top/maxim-miniprogram), a native version for WeChat Applet standard, with the same features as the uni-app version;
 
-以下文档以 Web 版为例，所有版本基本一致。与此同时，DemoApp 源码均已开放，建议直接参考开发。
+The following documenting takes the Web version as an example, and all versions are basically the same. Our DemoApp source code has been opened already, so it is recommended to check for development.
 
-## 前期准备
+## Previous preparation
 
-1. 登录官网控制台，获取你的appid，并替换下文中 YOUR\_APP\_ID。
-2. 下载SDK [floo-2.0.0.js](https://package.maximtop.com/floo-2.0.0.js)
+1. Login官网Console，获取你的appid，并替换下文中 YOUR\_APP\_ID。
+2. Download SDK [floo-2.0.0.js](https://package.maximtop.com/floo-2.0.0.js)
 
-## 快速集成
+## Quick integration
 
-### 一、初始化
+### I. Initialization
 
-首先设置 AppID
+Set AppID first
 
 ```
 const config = {
@@ -32,11 +32,11 @@ const config = {
   };
 ```
 
-然后创建im对象，供全局调用。
+Then create an im object for global invocation.
 
-当前支持两种方式：
+Two modes are currently supported:
 
-1. Script 方式，你可以直接 import 后，使用 window.flooIM()
+1. Script: You can import it directly and use window.flooIM()
 
 ```
 import "floo-2.0.0.js";
@@ -44,9 +44,9 @@ import "floo-2.0.0.js";
 const im = new window.flooIM(config);
 ```
 
-这种方式主要为支持浏览器中使用 script 标签引用，但会存在初始化并发问题，所以要用 try-catch-retry，请参见[maxim-web源码](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85)。
+This approach mainly supports script tag references in browsers, but there are initialization concurrency issues, so try-catch-retry is used, see[maxim-web source](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85)。
 
-1. module 方式，import flooim 后，使用 flooim()
+1. module mode，import flooim first，then use flooim()
 
 ```
 import flooim from 'floo-2.0.0';
@@ -54,21 +54,21 @@ import flooim from 'floo-2.0.0';
 const im = flooim(config);
 ```
 
-### 二、注册用户
+### II. Register user
 
-通过 im 的 userManager的 asyncRegister 来注册用户
+Register user via the asyncRegister of IM’s userManager
 
 ```
 im.userManage.asyncRegister(this.user).then(() => {
-  console.log("注册成功");
+  console.log("Register成功");
 }).catch(ex => {
   console.log(ex.message);
 });
 ```
 
-### 三、登录链接服务器
+### III. Login connected server
 
-如果SDK设置了autoLogin为true，那么在第一次登录之后再次打开或刷新页面，将不用再登录。 第一次登录，调用im.login
+If the SDK sets autoLogin to true, you will not need to login if you open or refresh the page again after the first login. For the first login, call im.login
 
 ```
 im.login({
@@ -77,7 +77,7 @@ im.login({
 });
 ```
 
-可监听登录信息或进度：
+You can listen for login information or progress:
 
 ```
 im.on({
@@ -85,77 +85,77 @@ im.on({
 });
 ```
 
-### 四、获取会话列表
+### IV. Get session list
 
-直接调用userManage的getConversationList，返回包括name、id、类型、未读等列表
+Direcly call userManage’s getConversationList, returning lists of names, ids, types, and unreads
 
 ```
 const list = im.userManage.getConversationList();
 console.log(list);
 ```
 
-### 五、断开连接
+### V. Disconnect
 
-im的登录信息存储在localstorage，只要删除刷新即可，可自己实现
+im login information is stored in localstorage, you can delete it and refresh to implement by yourself
 
 ```
 window.localStorage.clear();
 window.location.reload();
 ```
 
-## 用户好友
+## User friend
 
-### 添加好友
+### Add friend
 
-调用 im.rosterManage 的 asyncApply 方法：
+How to call im.rosterManage’s asyncApply method:
 
 ```
 im.rosterManage.asyncApply({ user_id, alias })
   .then(() => {
-    console.log("请求已发送成功!");
+    console.log("Request sent successfully!");
 });
 ```
 
-### 删除好友
+### Delete friend
 
-调用 rosterManage 的 asyncDeleteRoster 方法删除好友
+Call rosterManage’s asyncDeleteRoster method to delete friend
 
 ```
 im.rosterManage.asyncDeleteRoster({ user_id })
   .then(() => {
-    console.log("好友已删除");
+    console.log("Friend deleted");
 });
 ```
 
-### 同意添加好友
+### Agree to add friend
 
-调用 rosterManage 的 asyncAccept 方法来同意好友申请
+Call rosterManage’s asyncAccept method to approve friend request
 
 ```
 im.rosterManage.asyncAccept({ user_id }).then(() => {
-  console.log("您已通过该好友的申请");
+  console.log("Friend request has been approved");
 });
 ```
 
-### 拒绝添加好友
+### Reject to add friend
 
-调用 rosterManage 的 asyncDecline 方法来拒绝好友申请
+Call rosterManage’s asyncDecline method to reject friend request
 
 ```
 im.rosterManage.asyncDecline({ user_id }).then(() => {
-  console.log("您已拒绝该好友的申请");
+  console.log("Friend request has been rejected");
 });
 ```
 
-### 获取好友列表
+### Get friend list
 
-调用 rosterManage 的 getAllRosterDetail 方法来获取好友列表
+Call rosterManage’s getAllRosterDetail method to get friend list
 
 ```
 const list = im.rosterManage.getAllRosterDetail();
 ```
 
-监听 onRosterListUpdate 可即时的得知用户列表的改变
+Listen onRosterListUpdate to instantly view changes to user list
 
 ```
 im.on({
@@ -165,80 +165,80 @@ im.on({
 })
 ```
 
-## 基础功能
+## Basic features
 
-### 单聊
+### Single chat
 
-单聊是最基本的聊天界面，提供文字、表情、图片等多种输入内容。
+Single chat is the most basic chat interface, which provides a variety of input contents, ex. text, emoji, image and so on.
 
-### 群聊
+### Group chat
 
-群组的聊天，是多人一起参与的聊天。
+Group chat, where many members participate together.
 
-1. 创建群组
+1. Create group
 
-调用 groupManage 的 asyncCreate 方法来创建一个群组
+Call groupManage’s asyncCreate method to create a group
 
 ```
 im.groupManage
   .asyncCreate({
     name,
-    type, // 是否 pulbic， 0， 1
+    type, // Yes/No pulbic， 0， 1
     avatar,
     description,
     user_list, // user ids
   })
   .then(() => {
-    console.log("群创建成功");
+    console.log("Group created");
   });
 ```
 
-1. 加入群组
+1. Join group
 
-调用 groupManage 的 asyncApply 方法来申请加入一个群组
+Call groupManage’s asyncApply method to apply to join a group
 
 ```
 im.groupManage
   .asyncApply({ group_id, reason })
   .then(() => {
-    console.log("请求已发送成功!");
+    console.log("Request sent successfully!");
   });
 ```
 
-1. 退出群组
+1. Quit group
 
-调用 groupManage 的 asyncLeave 方法来退出群组
+Call groupManage’s asyncLeave method to quit a group
 
 ```
 im.groupManage
   . asyncLeave({ group_id })
   .then(() => {
-    console.log("已退出群组");
+    console.log("Quitted group");
   });
 ```
 
-1. 解散群组
+1. Dissolve group
 
-调用 groupManage 的 asyncDestroy 方法来申请加入一个群组
+Call groupManage’s asyncDestroy method to dissolve a group
 
 ```
 im.groupManage
   .asyncDestroy({ group_id })
   .then(() => {
-    console.log("群组已解散");
+    console.log("Group dissolved");
   });
 ```
 
-1. 获取群成员列表
+1. Get group member list
 
-调用 groupManage 的 getGroupMembers 方法来获取所有成员列表
+Call groupManage’s getGroupMembers method to get a list of all members
 
 ```
 const members = im.groupManage.getGroupMembers(state.sid);
 console.log(members);
 ```
 
-1. 获取群组列表 调用 groupManage 的 asyncGetJoinedGroups 方法来获取所有用户加入的群组
+1. Get group list  Call groupManage’s asyncGetJoinedGroups method to get groups that all users joined
 
 ```
 im.groupManage.asyncGetJoinedGroups().then(res => {
@@ -246,7 +246,7 @@ im.groupManage.asyncGetJoinedGroups().then(res => {
 });
 ```
 
-1. 获取群组信息 调用 groupManage 的 asyncGetGroupInfo 方法来获取群组的详细信息
+1. Get group information  Call groupManage’s asyncGetGroupInfo method to get group details
 
 ```
 groupManage.asyncGetGroupInfo(group_id).then(res => {
@@ -254,24 +254,24 @@ groupManage.asyncGetGroupInfo(group_id).then(res => {
 });
 ```
 
-## 消息发送
+## Message sending
 
-登录成功之后才能进行聊天操作。发消息时，单聊和群聊是分开发消息的。 由于操作方便，目前只支持文本、图片与文件的发送。
+You can't chat until login successfully. When sending messages, single chat and group chat are divided seperately. For easier operation, it only supports sending text, images and files at present.
 
-### 构建消息实体
+### Build message body
 
-### 文本消息
+### Text message
 
 ```
 const message = {
-  uid,  // 用户id，只有单聊时使用
-  gid,  // 群id，只有群聊时使用
-  content, // 消息文本内容
-  priority， // 设置消息的扩散优先级，取值范围0-10。普通人在聊天室发送的消息级别默认为5，可以丢弃，管理员默认为0不会丢弃。其它值可以根据业务自行设置。
+  uid,  // User id, only used for single chat
+  gid,  // id, only used for group chat
+  content, // Message text
+  priority， // Set the dissemination priority of messages in the range of 0-10. The message level sent by ordinary member in chatroom defaults to 5, which can be discarded, while Admin defaults to 0 and messages will not be discarded. Other values can be set according to the business.
 }
 ```
 
-### 图片消息
+### Image message
 
 ```
 const fileInfo = {
@@ -284,14 +284,14 @@ const fileInfo = {
 const message = {
   type: 'image',
   uid,
-  git, // uid, gid 分别为发送的用户或群
+  git, // uid, gid User or A group in which sent to, respectively
   content: "",
   attachment: fileInfo,
-  priority, //设置消息的扩散优先级
+  priority, //Set priority of message dissemination
 });
 ```
 
-### 文件消息
+### File message
 
 ```
 const fileInfo = {
@@ -304,18 +304,18 @@ const fileInfo = {
 const message = {
   type: 'file',
   uid,
-  git, // uid, gid 分别为发送的用户或群
+  git, // uid, gid User or A group in which sent to, respectively
   content: "",
   attachment: fileInfo,
-  priority, //设置消息的扩散优先级
+  priority, //Set priority of message dissemination
 });
 ```
 
-### 消息操作
+### Message operation
 
-消息实体构建完成后，通过 BMXClient的单例，ChatService类，调用 -sendMessage: 方法，将构建好的消息实体传入，即可实现消息发送
+After message body is built, call the -sendMessage: method through the singleton of BMXClient, ChatService class, and pass in the built message body to send the message
 
-#### 发送
+#### Send
 
 ```
 im.sysManage.sendRosterMessage(message);
@@ -323,31 +323,31 @@ im.sysManage.sendRosterMessage(message);
 im.sysManage.sendGroupMessage(message);
 ```
 
-#### 转发
+#### Forward
 
 ```
 const fmessage = {
-  mid, // 消息id
+  mid, // Message id
   uid,
-  gid, // uid 或 gid 选其一
+  gid, // uid or gid
 }
 im.sysManage.forwardMessage(message);
 ```
 
-#### 撤回
+#### Revoke
 
 ```
 const fmessage = {
-  mid, // 消息id
+  mid, // Message id
   uid,
-  gid, // uid 或 gid 选其一
+  gid, // uid or gid
 }
 im.sysManage.recallMessage(message);
 ```
 
-## 消息接收监听
+## Message delivery listening
 
-### 接收到消息通知
+### Message notification received
 
 ```
 im.on({
@@ -363,57 +363,57 @@ im.on({
 });
 ```
 
-### 消息发送后状态回调通知
+### Status callback notificated after message sending
 
 ```
-im.on({  // 状态发生改变
+im.on({  // Status changed
   onMessageStatusChanged: function(mStatus) {
     console.log(mStatus.mid, mStatus.status);
   }
 });
 
-im.on({ //消息撤回
+im.on({ //Message revoked
   onMessageRecalled: function(mid) {
     console.log(mid);
   }
 });
 
-im.on({ //消息删除
+im.on({ //Message deleted
   onMessageDeleted: function(mid) {
     console.log(mid);
   }
 });
 
-im.on({ //消息撤回
+im.on({ //Message revoked
   onMessageRecalled: function(mid) {
     console.log(mid);
   }
 });
 
-im.on({ //消息设置未读
+im.on({ //Message unread set
   onMessageCanceled: function(mid) {
     console.log(mid);
   }
 });
 ```
 
-## 功能进阶
+## Advanced features
 
-### 群组@功能
+### Group @ function
 
 ```
 im.sysManage.sendMentionMessage({
   gid,
-  txt, // 文本消息
-  mentionAll, // 是否@所有人
+  txt, // Text-message
+  mentionAll, // Whether to @every member
   mentionList, // [id,id ...]
-  mentionedMessage, // mention内容
-  pushMessage, // 推送
-  senderNickname // 发送者昵称
+  mentionedMessage, // mention content
+  pushMessage, // push
+  senderNickname // sender nickname
 });
 ```
 
-### 消息正在输入状态
+### Typing message
 
 ```
 im.sysManage.sendInputStatusMessage({
@@ -422,9 +422,9 @@ im.sysManage.sendInputStatusMessage({
 });
 ```
 
-### 消息搜索
+### Search for message
 
-根据关键字搜索指定消息内容
+Search for specified message by keyword
 
 ```
 const ret = im.sysManage.makeSearch(keyword);
