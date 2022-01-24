@@ -1,6 +1,6 @@
 # Table of contents
 
-* [即时通讯开发指南（IM）【EN】](README.md)
+* [即时通讯开发指南（IM）](README.md)
 * [IM SDK iOS 快速开发（floo-ios）](floo-ios-quick-start.md)
 * [IM SDK Android 快速开发（floo-android）](floo-android-quick-start.md)
 * [IM SDK C++ 快速开发（floo）](floo-quick-start.md)
