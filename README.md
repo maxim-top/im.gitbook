@@ -1,4 +1,4 @@
-# MaximtopDevelopment guide
+# 即时通讯Development guide（IM）
 
 ## Product Features
 
@@ -51,7 +51,7 @@ After application created, App ID and other important information can be obtaine
 
 ### On-premise Deployment
 
-Download Center[Installation package](https://package.maximtop.com/linux/amd64/maxim.ctl) And then follow the steps directly from Console, you can also view[detailed installation document](how-to-deploy-private-cloud.md)
+Download Center[Installation package](https://package.maximtop.com/linux/amd64/maxim.ctl) And then follow the steps directly from Console, you can also view[detailed installation document](quick-start/how-to-deploy-private-cloud.md)
 
 ## Client SDK
 
@@ -68,13 +68,13 @@ Maximtop IM Client SDK, codename floo. Following IM SDKs in document will be rep
 
 Maximtop supports following platforms:
 
-| Platform      | Compatibility                                        |
-| ------- | ------------------------------------------ |
-| iOS     | iOS 9.0 +                                |
-| Android | Android 4.1 +                            |
-| Web     | IE 10 and above, Chrome, Firefox, Safari         |
-| PC      | Node.js version of the SDK supports Electron development framework, but only for x86_64 architecture |
-| Linux   | C++ version of the SDK, supports x86/x86-x64/ARM/MIPS architecture        |
+| Platform | Compatibility                                                                                         |
+| -------- | ----------------------------------------------------------------------------------------------------- |
+| iOS      | iOS 9.0 +                                                                                             |
+| Android  | Android 4.1 +                                                                                         |
+| Web      | IE 10 and above, Chrome, Firefox, Safari                                                              |
+| PC       | Node.js version of the SDK supports Electron development framework, but only for x86\_64 architecture |
+| Linux    | C++ version of the SDK, supports x86/x86-x64/ARM/MIPS architecture                                    |
 
 ### Changelog
 
@@ -82,7 +82,7 @@ To be added, please refer[Source update](https://github.com/maxim-top/)
 
 ### Client Error Code
 
-| Error code                              | Description                                                                      |
+| Error code                        | Description                                                               |
 | --------------------------------- | ------------------------------------------------------------------------- |
 | InvalidParam                      | Input parameters are invalid                                              |
 | NotFound                          | Operate object is NOT exist                                               |
