@@ -1,6 +1,6 @@
 # Server-side（server api）Quick integration指南
 
-This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/api)
+This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/api)
 
 ## Getting started
 

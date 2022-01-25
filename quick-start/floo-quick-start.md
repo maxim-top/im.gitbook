@@ -1,6 +1,6 @@
 # C++ SDK (floo) Quick integration指南
 
-This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/floo)
+This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/floo)
 
 ## SDK overall architecture
 

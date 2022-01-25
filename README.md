@@ -31,7 +31,7 @@ Before you start integrating all clients, you need to create an application thro
 
 1. Create account
 
-Register and login[Maximtop Console](https://console.maximtop.com)
+Register and login [Maximtop Console](https://console.maximtop.com)
 
 1. Create application
 
@@ -51,7 +51,7 @@ After application created, App ID and other important information can be obtaine
 
 ### On-premise Deployment
 
-Download Center[Installation package](https://package.maximtop.com/linux/amd64/maxim.ctl) And then follow the steps directly from Console, you can also view[detailed installation document](quick-start/how-to-deploy-private-cloud.md)
+Download Center [Installation package](https://package.maximtop.com/linux/amd64/maxim.ctl) And then follow the steps directly from Console, you can also view [detailed installation document](quick-start/how-to-deploy-private-cloud.md)
 
 ## Client SDK
 
@@ -78,7 +78,7 @@ Maximtop supports following platforms:
 
 ### Changelog
 
-To be added, please refer[Source update](https://github.com/maxim-top/)
+To be added, please refer [Source update](https://github.com/maxim-top/)
 
 ### Client Error Code
 

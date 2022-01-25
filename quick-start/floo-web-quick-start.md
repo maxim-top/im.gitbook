@@ -1,6 +1,6 @@
 # Web SDK (floo-web) Quick integration指南
 
-This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/web)
+This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/web)
 
 ## Selection guide
 
@@ -44,7 +44,7 @@ import "floo-2.0.0.js";
 const im = new window.flooIM(config);
 ```
 
-This approach mainly supports script tag references in browsers, but there are initialization concurrency issues, so try-catch-retry is used, see[maxim-web source](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85)。
+This approach mainly supports script tag references in browsers, but there are initialization concurrency issues, so try-catch-retry is used, see [maxim-web source](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85)。
 
 1. module mode，import flooim first，then use flooim()
 

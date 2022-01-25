@@ -1,6 +1,6 @@
 # Push Push SDK Quick integration指南
 
-This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/android)
+This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/android)
 
 ### Push SDK integration description
 

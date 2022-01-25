@@ -1,6 +1,6 @@
 # Android SDK (floo-android) Quick integration指南
 
-This page is for quick integration, visit[detailed documentation](https://maximtop.com/docs/android)
+This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/android)
 
 ### Android SDK integration guide
 
@@ -100,7 +100,7 @@ Aar or jar + so formats are selectable in SDK import
 #### aar format
 
 * Download aar file to /libs in project
-* Add dependency in the dependencies block of build.gradle file, refer to[maxim-android source](https://github.com/maxim-top/maxim-android/blob/master/app/build.gradle#L94)for the latest version.
+* Add dependency in the dependencies block of build.gradle file, refer to [maxim-android source](https://github.com/maxim-top/maxim-android/blob/master/app/build.gradle#L94)for the latest version.
 
 ```
 implementation(name:'floo-android_2.3.1.20200428',ext:'aar')
