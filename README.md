@@ -1,4 +1,4 @@
-# 美信拓扑开发指南
+# 即时通讯开发指南（IM）
 
 ## 产品概述
 
@@ -51,7 +51,7 @@
 
 ### 私有部署安装
 
-下载[安装包](https://package.maximtop.com/linux/amd64/maxim.ctl) 后直接在控制台按照步骤操作，亦可查看[详细安装文档](how-to-deploy-private-cloud.md)
+下载[安装包](https://package.maximtop.com/linux/amd64/maxim.ctl) 后直接在控制台按照步骤操作，亦可查看[详细安装文档](quick-start/how-to-deploy-private-cloud.md)
 
 ## 客户端SDK
 

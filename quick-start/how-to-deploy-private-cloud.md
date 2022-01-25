@@ -12,17 +12,17 @@
 
 [登录控制台](https://console.maximtop.com) 点击创建应用。应用创建默认为免费版套餐，也可以升级为商业版。
 
-![创建应用](<.gitbook/assets/1-1.create\_app (1).png>)
+![创建应用](<../.gitbook/assets/1-1.create\_app (1).png>)
 
 ## 开通私有云服务
 
 1.应用创建成功后，进入应用详情页面。
 
-![应用信息](<.gitbook/assets/1-2.app\_info (1).png>)
+![应用信息](<../.gitbook/assets/1-2.app\_info (1).png>)
 
 2.点击更改计划，选择私有云，点击“继续”。
 
-![开通私有云服务](.gitbook/assets/1-3.select\_private\_plan.png)
+![开通私有云服务](../.gitbook/assets/1-3.select\_private\_plan.png)
 
 3.点击私有云图标，进入私有云详情页面，下载安装包 maxim.ctl
 
@@ -30,11 +30,11 @@
 $ wget https://package.maximtop.com/linux/amd64/maxim.ctl
 ```
 
-![私有云部署](.gitbook/assets/1-4.deploy.png)
+![私有云部署](../.gitbook/assets/1-4.deploy.png)
 
 4.获取安装token。可以复制到粘贴板，也可以下载到本地文件备用，安装脚本里我们用 maxim.token.XXXXXX.txt 演示。
 
-![获取私有云安装token](.gitbook/assets/1-5.get\_install\_token.png)
+![获取私有云安装token](../.gitbook/assets/1-5.get\_install\_token.png)
 
 ## 安装私有云
 
@@ -61,7 +61,7 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.
 
 执行结果截图：
 
-![单机版安装步骤一](.gitbook/assets/2-1.install\_single\_s1.png)
+![单机版安装步骤一](../.gitbook/assets/2-1.install\_single\_s1.png)
 
 2.运行安装
 
@@ -75,11 +75,11 @@ sudo ./maxim.ctl install --token INSTALL_TOKEN
 
 开始执行的截图：
 
-![单机版安装步骤二](.gitbook/assets/2-2.install\_single\_s2.png)
+![单机版安装步骤二](../.gitbook/assets/2-2.install\_single\_s2.png)
 
 安装完成的截图：
 
-![单机版安装步骤三](.gitbook/assets/2-3.install\_single\_s3.png)
+![单机版安装步骤三](../.gitbook/assets/2-3.install\_single\_s3.png)
 
 * 本地环境不可进行外部访问，安装时需要添加参数 --net internal 提示安装程序选择内网IP注册。
 
@@ -93,11 +93,11 @@ sudo ./maxim.ctl install --net internal --token INSTALL_TOKEN
 
 开始执行的截图：
 
-![单机版安装步骤四](.gitbook/assets/2-4.install\_single\_s4.png)
+![单机版安装步骤四](../.gitbook/assets/2-4.install\_single\_s4.png)
 
 安装完成的截图：
 
-![单机版安装步骤五](.gitbook/assets/2-5.install\_single\_s5.png)
+![单机版安装步骤五](../.gitbook/assets/2-5.install\_single\_s5.png)
 
 提示：等待安装完成，耗时15分钟左右，即可安装完成。
 
@@ -117,7 +117,7 @@ sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''
 
 执行结果截图：
 
-![集群权限步骤一](.gitbook/assets/3-1-1.config\_cluster\_s1.png)
+![集群权限步骤一](../.gitbook/assets/3-1-1.config\_cluster\_s1.png)
 
 执行如下命令, 将命令的输出分别在主机172.16.0.78 ，172.16.0.79 ，172.16.0.80上执行
 
@@ -127,19 +127,19 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 
 命令输出结果截图：
 
-![集群权限步骤二](.gitbook/assets/3-1-2.config\_cluster\_s2.png)
+![集群权限步骤二](../.gitbook/assets/3-1-2.config\_cluster\_s2.png)
 
 命令输出在172.16.0.78的执行结果：
 
-![集群权限步骤三](.gitbook/assets/3-1-3.config\_cluster\_s3.png)
+![集群权限步骤三](../.gitbook/assets/3-1-3.config\_cluster\_s3.png)
 
 命令输出在172.16.0.79的执行结果：
 
-![集群权限步骤四](.gitbook/assets/3-1-4.config\_cluster\_s4.png)
+![集群权限步骤四](../.gitbook/assets/3-1-4.config\_cluster\_s4.png)
 
 命令输出在172.16.0.80的执行结果：
 
-![集群权限步骤五](.gitbook/assets/3-1-5.config\_cluster\_s5.png)
+![集群权限步骤五](../.gitbook/assets/3-1-5.config\_cluster\_s5.png)
 
 2.ssh登录到第一台主机172.16.0.78上 执行如下命令下载安装脚本，并增加可执行权限
 
@@ -149,7 +149,7 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.
 
 执行结果截图：
 
-![集群版安装步骤一](.gitbook/assets/3-2-1.install\_cluster\_s1.png)
+![集群版安装步骤一](../.gitbook/assets/3-2-1.install\_cluster\_s1.png)
 
 * 服务器已有公网IP，执行如下命令开始安装。
 
@@ -161,11 +161,11 @@ sudo ./maxim.ctl install --nodelist 172.16.0.78 172.16.0.79 172.16.0.80 --token 
 
 开始执行的截图：
 
-![集群版安装步骤二](.gitbook/assets/3-2-2.install\_cluster\_s2.png)
+![集群版安装步骤二](../.gitbook/assets/3-2-2.install\_cluster\_s2.png)
 
 安装完成的截图：
 
-![集群版安装步骤三](.gitbook/assets/3-2-3.install\_cluster\_s3.png)
+![集群版安装步骤三](../.gitbook/assets/3-2-3.install\_cluster\_s3.png)
 
 * 本地环境不可进行外部访问，安装时需要添加参数 --net internal 提示安装程序选择内网IP注册。
 
@@ -179,11 +179,11 @@ sudo ./maxim.ctl install --nodelist 172.16.0.78 172.16.0.79 172.16.0.80 --net in
 
 开始执行的截图：
 
-![集群版安装步骤四](.gitbook/assets/3-2-4.install\_cluster\_s4.png)
+![集群版安装步骤四](../.gitbook/assets/3-2-4.install\_cluster\_s4.png)
 
 安装完成的截图：
 
-![集群版安装步骤五](.gitbook/assets/3-2-5.install\_cluster\_s5.png)
+![集群版安装步骤五](../.gitbook/assets/3-2-5.install\_cluster\_s5.png)
 
 提示：等待安装完成，耗时20分钟左右，即可安装完成。
 
@@ -238,10 +238,8 @@ sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-k
 2. 如果机器有防火墙，需要保证端口443和80允许访问。
 3. 如何查看私有云安装进度，以及数据迁移状态？
 
-![安装进度点击“私有云”，通过节点信息的进度可以查看安装进度](.gitbook/assets/4-1.install\_progress.png)
-
-
+![安装进度点击“私有云”，通过节点信息的进度可以查看安装进度](../.gitbook/assets/4-1.install\_progress.png)
 
 1. 安装完成后，打开美信拓扑控制台进入系统状态页面。
 
-![如果所有检查项的状态都为正常，则表示服务已经正常](.gitbook/assets/4-2.service\_status.png)
+![如果所有检查项的状态都为正常，则表示服务已经正常](../.gitbook/assets/4-2.service\_status.png)
