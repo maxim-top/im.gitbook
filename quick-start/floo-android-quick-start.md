@@ -1,4 +1,4 @@
-# Android SDK (floo-android) Quick integration指南
+# 安卓客户端快速开发（floo-android）
 
 This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/android)
 
@@ -135,11 +135,17 @@ Add permissions as follows in AndroidManifest.xml:
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 ```
 
+### APP obfuscation
+
+```
+Add -keep class im.floo.floolib.**{*;} in ProGuard file
+```
+
 ### Quick integration
 
 #### BMXClient initialization
 
-**Step 1  Import so library file**
+**Step 1 Import so library file**
 
 Add import to app entry class
 
@@ -382,7 +388,6 @@ H/A: Judged by BMXErrorCode in BMXCallBack.
             }
         }
    });
-
 ```
 
 ### Basic features
