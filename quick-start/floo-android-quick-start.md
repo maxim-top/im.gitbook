@@ -1,4 +1,4 @@
-# Android SDK (floo-android) 快速集成指南
+# 安卓客户端快速开发（floo-android）
 
 本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/android)
 
@@ -133,6 +133,12 @@ implementation(name:'floo-android_2.3.1.20200428',ext:'aar')
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+```
+
+### APP混淆 <a href="#app-hun-xiao" id="app-hun-xiao"></a>
+
+```
+在 ProGuard 文件中加入：-keep class im.floo.floolib.**{*;}
 ```
 
 ### 快速集成
@@ -382,7 +388,6 @@ H/A: 在BMXCallBack回调中根据BMXErrorCode判断。
             }
         }
    });
-
 ```
 
 ### 基础功能
