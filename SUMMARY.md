@@ -9,3 +9,5 @@
   * [服务端开发指南（server api）](quick-start/server-api-quick-start.md)
   * [推送开发指南（PUSH）](quick-start/push-dev-guide.md)
   * [私有云部署文档](quick-start/how-to-deploy-private-cloud.md)
+* [详细文档](reference/README.md)
+  * [floo-web API介绍](reference/floo-web.md)
