@@ -8,13 +8,13 @@ This page is for quick integration, visit[detailed documentation](https://maximt
 
 *   app\_id
 
-    `app_id`是创建App时，MaxIM为App生成的唯一标识，是字符串Class型。可从console"Application information"页面获取。
+    `app_id`is the unique identity that MaxIM generates for App when it is created and is of string type. Available from "Application Information" page in Console.
 *   api\_endpoint
 
-    `api_endpoint`是App所在API服务的Address。可从console"Application information"页面获取。
+    `api_endpoint`is the address of the API service where the app resides. Available from "Application Information" page in Console.
 *   access-token
 
-    `access-token`用作权限校验。可在console"Token管理"页面为App生成access-token或选用已有access-token。
+    `access-token`is used for permission verification. You can generate access-token for App or select existing access-token from “Token Management” page in Console.
 
 ### API profile
 
@@ -33,11 +33,11 @@ curl -X {METHOD} '{api_endpoint}/{URI}' \
 
 ### API classification
 
-MaxIM API主要分为User API、Friend API、Group API、Message API、PushAPI。
+MaxIM API is mainly divided into user API, friend API, group API, message API and push API.
 
 *   User API
 
-    Users belong to a single App, which is the foundation of instant messaging. Only with users can we realize the functions of friends and groups. User data is divided into basic information and setting information. Basic information includes email address, mobile number, username and password. Setting information includes whether to download thumbnails and files automatically, whether to confirm the invitation to join group, etc. Generally speaking, the user API mainly involves the update of its basic information and user settings, and the related API starts with`/user`开头，后面接具体的资源，如Get user settingsAPI为"GET /user/settings"。
+    Users belong to a single App, which is the foundation of instant messaging. Only with users can we realize the functions of friends and groups. User data is divided into basic information and setting information. Basic information includes email address, mobile number, username and password. Setting information includes whether to download thumbnails and files automatically, whether to confirm the invitation to join group, etc. Generally speaking, the user API mainly involves the update of its basic information and user settings, and the related API starts with`/user`, followed by specific resources, ex. “GET /user/settings” to get user settings API.
 *   Friend API
 
     Friend is the relationship between users. In MaxIM friendship design, users can set remarks for friends, set the notification method of friend messages, apply for adding friends, and blacklist a friend. Friend API provides friend information, friend application, friend list, friend blacklist and other related operations, and its API starts with`/roster`.
@@ -128,12 +128,12 @@ Some of the key APIs are demonstrated with the following values, which should be
       | ------------ | ----------- | -- |
       | app\_id      | APP ID      | Required |
       | access-token | token       | Required |
-      | user\_id     | 添加方user\_id | Required |
+      | user\_id     | user\_id of adding party | Required |
   *   Request Body parameter
 
       | Parameter   | Description             | Comment |
       | ---- | -------------- | -- |
-      | list | 被添加方user\_id列表 | Required |
+      | list | user\_id list of added party | Required |
 *   cURL request example
 
     ```
@@ -168,7 +168,7 @@ Some of the key APIs are demonstrated with the following values, which should be
       | ------------ | ------------ | -- |
       | app\_id      | APP ID       | Required |
       | access-token | token        | Required |
-      | user\_id     | 当前用户user\_id | Required |
+      | user\_id     | user\_id of current user | Required |
   *   Request Body parameter
 
       None
@@ -213,7 +213,7 @@ Some of the key APIs are demonstrated with the following values, which should be
       | ------------ | ---------- | -- |
       | app\_id      | APP ID     | Required |
       | access-token | token      | Required |
-      | user\_id     | Group Owneruser\_id | Required |
+      | user\_id     | user\_id of group Owner | Required |
   *   Request Body parameter
 
       | Parameter          | Description  | Comment |
@@ -268,7 +268,7 @@ Some of the key APIs are demonstrated with the following values, which should be
       | ------------ | ---------- | -- |
       | app\_id      | APP ID     | Required |
       | access-token | token      | Required |
-      | user\_id     | Group Owneruser\_id | Required |
+      | user\_id     | user\_id of group Owner | Required |
   *   Request Body parameter
 
       | Parameter         | Description     | Comment |
@@ -315,7 +315,7 @@ Some of the key APIs are demonstrated with the following values, which should be
       | ------------ | ---------- | -- |
       | app\_id      | APP ID     | Required |
       | access-token | token      | Required |
-      | user\_id     | Group Owneruser\_id | Required |
+      | user\_id     | user\_id of group Owner | Required |
   *   Query parameter
 
       | Parameter        | Description       | Comment        |
@@ -365,7 +365,7 @@ Some of the key APIs are demonstrated with the following values, which should be
       | ------------ | ---------- | -- |
       | app\_id      | APP ID     | Required |
       | access-token | token      | Required |
-      | user\_id     | Group Owneruser\_id | Required |
+      | user\_id     | user\_id of group Owner | Required |
 *   cURL request example
 
     ```
@@ -526,7 +526,7 @@ Some of the key APIs are demonstrated with the following values, which should be
 | 10008 | Invalid access-token in header   |
 | 10009 | oss exception                   |
 | 10010 | User has no permission                   |
-| 10011 | user\_id已绑定             |
+| 10011 | user\_id bound             |
 | 10012 | User rejected friend request                |
 | 12001 | 上传PushImage到XiaomiPlatform失败           |
 | 12002 | PushImageFile size需小于1M           |
@@ -537,7 +537,7 @@ Some of the key APIs are demonstrated with the following values, which should be
 | 20000 | Server database exception                |
 | 20001 | Group does not exist                   |
 | 20002 | The user is not a group member                 |
-| 20003 | msg\_push\_mode值不合法     |
+| 20003 | msg\_push\_mode value is illegal     |
 | 20004 | Group Owner cannot quit the group directly               |
 | 20005 | Group transfer error: Assignee is not a group member          |
 | 20006 | Group in repair mode                |
@@ -562,4 +562,4 @@ Some of the key APIs are demonstrated with the following values, which should be
 | 30021 | Invalid MaxIM License         |
 | 30022 | Expired MaxIM License        |
 | 30023 | MaxIM License limit exceeded       |
-| 40000 | app\_id不存在              |
+| 40000 | app\_id does not exist              |
