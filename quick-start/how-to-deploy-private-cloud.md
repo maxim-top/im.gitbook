@@ -1,4 +1,4 @@
-# Private Cloud Deployment文档
+# Private Cloud Deployment documentation
 
 ## Profile
 
@@ -187,48 +187,48 @@ Screenshot of installation completed
 
 Hint: Wait for the installation to complete, which takes about 20 minutes.
 
-### 阿里云版
+### Alibaba Cloud version
 
-Single server version和Cluster versionSupport使用阿里云的redis/rds/kafka/oss，如果需要使用可以在Single server version和Cluster version步骤2的install命令之前执行如下命令：
+Single server version and Cluster version support using Alibaba Cloud's redis/rds/kafka/oss，please execute the following command before Single server version and Cluster versions's "Step 2: install" as needs:
 
-* 使用阿里云redis做Storage
+* Use Alibaba Cloud's redis as Storage
 
 ```
-## redis-server为redis的服务Address， redis-password为redis的Password
+## redis-server is redis' service Address， redis-password is redis' Password
 sudo ./maxim.ctl set_config --config redis-server=r-xxx.redis.rds.aliyuncs.com:6379 redis-password=xxx
 ```
 
-* 使用阿里云redis做缓存
+* Use Alibaba Cloud redis as cache
 
 ```
 ## redis-cache-server为redis的服务Address， redis-cache-password为redis的Password
 sudo ./maxim.ctl set_config --config redis-cache-server=r-xxx.redis.rds.aliyuncs.com:6379 redis-cache-password=xxx
 ```
 
-* 使用阿里云rds
+* Use Alibaba Cloud rds
 
 ```
-## mysql-server为rds的服务Address， mysql-username为rds的Username, mysql-password为rds的Password
+## mysql-server is rds' service Address， mysql-username is rds' Username, mysql-password is rds' Password
 sudo ./maxim.ctl set_config --config mysql-server=rm-xxx.mysql.rds.aliyuncs.com:3306 mysql-username=xxx mysql-password=xxx
 ```
 
-* 使用阿里云kafka
+* Use Alibaba Cloud kafka
 
 ```
-## kafka-server为kafka的服务Address，kafka-user为kafka的Username， kafka-password为kafka的Password
+## kafka-server is kafka's Address，kafka-user is kafka's Username， kafka-password is kafka's Password
 sudo ./maxim.ctl set_config --config kafka-server=172.16.1.10:9092,172.16.1.9:9092,172.16.1.11:9092 kafka-user=xxx kafka-password=xxx
 ```
 
-* 使用阿里云oss
+* Use Alibaba Cloud oss
 
 ```
-## file-storage-access-key-id为阿里云子账号ID
-## file-storage-access-key-secret为阿里云子账号Password
-## file-storage-access-endpoint为阿里云接入点Address
-## file-storage-bucket-chat-file为阿里云OSS的bucket名字
-## file-storage-bucket-user-profile为阿里云OSS的bucket名字
-## file-storage-bucket-chat-history为阿里云OSS的bucket名字
-## file-storage-bucket-chat-file-chatroom为阿里云OSS的bucket名字
+## file-storage-access-key-id is Alibaba Cloud sub-account ID
+## file-storage-access-key-secret Alibaba Cloud sub-account Password
+## file-storage-access-endpoint is Alibaba Cloud access point Address
+## file-storage-bucket-chat-file is Alibaba Cloud OSS's bucket name
+## file-storage-bucket-user-profile is Alibaba Cloud OSS's bucket name
+## file-storage-bucket-chat-history is Alibaba Cloud OSS's bucket name
+## file-storage-bucket-chat-file-chatroom is Alibaba Cloud OSS's bucket name
 sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-key-id=xxx file-storage-access-key-secret=xxx file-storage-access-endpoint=oss-cn-beijing.aliyuncs.com file-storage-bucket-chat-file=chat-xxx file-storage-bucket-user-profile=profile-xxx file-storage-bucket-chat-history=history-xxx file-storage-bucket-chat-file-chatroom=chat-file-chatroom-xxx
 ```
 
