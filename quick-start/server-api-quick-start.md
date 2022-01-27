@@ -432,7 +432,7 @@ Some of the key APIs are demonstrated with the following values, which should be
 
 *   API description
 
-    Send a notification to a specific target, means PUSH to everyone in APP. You can also use /Alias/PushToken/User ID as a tag to Push. 
+    Send a notification to a specific target, means PUSH to everyone in APP. You can also use Tag/Alias/PushToken/User ID to Push.
 *   Request description
 
     Http method: `POST` Resource path: `/push/notify`
