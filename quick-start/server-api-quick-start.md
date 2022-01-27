@@ -1,4 +1,4 @@
-# Server-side（server api）Quick integration指南
+# Server-side（server api）Quick integration guide
 
 This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/api)
 
@@ -49,7 +49,7 @@ MaxIM API is mainly divided into user API, friend API, group API, message API an
     Message APIs are encapsulations of IM services designed to provide an easy way for messaging. Message APIs start with`/message`.
 *   PushAPI
 
-    Push相关API用于Push通知到设备，其API以`/push`.
+    Push API to send Push notification to device，which starts with `/push`.
 
 In general, the API requested to MaxIM service will return an http code of 200 in case of a business error, and a MaxIM custom error code will be returned in the response body. See the Error Code page for the specific meaning of error code.
 
@@ -428,11 +428,11 @@ Some of the key APIs are demonstrated with the following values, which should be
 
 ## PushAPI
 
-### 管理员SendPush通知
+### Admin SendPush notification
 
 *   API description
 
-    给指定目标Send通知，可以Push给APP下的所有人，也可以按标签/Alias/PushToken/User ID来Push。
+    Send a notification to a specific target, means PUSH to everyone in APP. You can also use /Alias/PushToken/User ID as a tag to Push. 
 *   Request description
 
     Http method: `POST` Resource path: `/push/notify`
@@ -443,13 +443,13 @@ Some of the key APIs are demonstrated with the following values, which should be
       | ------------ | ------ | -- |
       | app\_id      | APP ID | Required |
       | access-token | token  | Required |
-  *   Request Body主要Parameter
+  *   Request Body's main Parameter
 
       | Parameter       | Description    | Comment |
       | -------- | ----- | -- |
-      | audience | Push目标  | Required |
+      | audience | Push target  | Required |
       | message  | Message body pushed | Required |
-  *   audience：Push目标。Class型为字符串或JSONObject:
+  *   audience：Push target。Class type is string or JSONObject:
 
       ```
       "all", means push to all devices
@@ -459,19 +459,19 @@ Some of the key APIs are demonstrated with the following values, which should be
       {"push_token":["push_token1","push_token2"]} means push to devices with PushToken push_token1 or push_token2
       List length cannot exceed 500 when pushed with tag/alias/user ID/pushToken
       ```
-  *   message:Message body pushed, 主要Field如下，全部Field请参考API Details
+  *   message:Message body pushed, the main Field is as follows，see API Details for full Field
 
       | Parameter              | Description   | Comment                                          |
       | --------------- | ---- | ------------------------------------------- |
-      | type            | 通知Class型 | Optional，text - 文本，image - Image， cmd - 透传Message。默认为text |
-      | title           | 通知标题 | Optional                                          |
-      | body            | 通知Content | Optional                                          |
-      | attachment\_url | AttachmentAddress | Optional,Image/音频/视频的URLAddress。                          |
+      | type            | Class Type of Notification | Optional，text，image， cmd - pass-through Message。Default text |
+      | title           | Notification Tittle | Optional                                          |
+      | body            | Notification Content | Optional                                          |
+      | attachment\_url | AttachmentAddress | Optional,Image/audio/video's URLAddress。                          |
       | ext             | Extension field | Optional，Class型为JSONObject                            |
 *   cURL request example
 
     ```
-    Push文本给APP下所有设备：
+    Push text to all devices belong to APP：
     curl -X POST 'https://api.maximtop.com/push/notify' \
     -H "Content-Type: application/json" \
     -H 'access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJkcGJkdmVrZmVjYm8iLCJzdWIiOiIyMCIsImNsdXN0ZXIiOjAsInJvbGUiOjIsImlhdCI6MTU2Nzk5NzQwOH0.U-iFpEwprrkf-mFkhHN_CWmF5nkBbRQLTjttN4Qlkzw3ET1Zke9OZdjutm90KSyDs9jjYvUSAGGsWVjLmDZlkg' \
@@ -480,7 +480,7 @@ Some of the key APIs are demonstrated with the following values, which should be
     ```
 
     ```
-    PushImage给push_token为token1或token2的设备:
+    PushImage to all devices with push_token as their token1 or token2:
     curl -X POST 'https://api.maximtop.com/push/notify' \
     -H "Content-Type: application/json" \
     -H 'access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJkcGJkdmVrZmVjYm8iLCJzdWIiOiIyMCIsImNsdXN0ZXIiOjAsInJvbGUiOjIsImlhdCI6MTU2Nzk5NzQwOH0.U-iFpEwprrkf-mFkhHN_CWmF5nkBbRQLTjttN4Qlkzw3ET1Zke9OZdjutm90KSyDs9jjYvUSAGGsWVjLmDZlkg' \
@@ -489,7 +489,7 @@ Some of the key APIs are demonstrated with the following values, which should be
     ```
 
     ```
-    Push透传Message给标签为beijing或shanghai的所有设备，透传Message不会展示到通知栏上:
+    Push pass-through Message to all devices tagged as beijing or shanghai，pass-through Message will no display on Notification bar:
     curl -X POST 'https://api.maximtop.com/push/notify' \
     -H "Content-Type: application/json" \
     -H 'access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJkcGJkdmVrZmVjYm8iLCJzdWIiOiIyMCIsImNsdXN0ZXIiOjAsInJvbGUiOjIsImlhdCI6MTU2Nzk5NzQwOH0.U-iFpEwprrkf-mFkhHN_CWmF5nkBbRQLTjttN4Qlkzw3ET1Zke9OZdjutm90KSyDs9jjYvUSAGGsWVjLmDZlkg' \
@@ -528,12 +528,12 @@ Some of the key APIs are demonstrated with the following values, which should be
 | 10010 | User has no permission                   |
 | 10011 | user\_id bound             |
 | 10012 | User rejected friend request                |
-| 12001 | 上传PushImage到XiaomiPlatform失败           |
-| 12002 | PushImageFile size需小于1M           |
-| 12003 | 上传PushImage到OPPOPlatform失败         |
-| 12004 | Push的ImageAddressNone法Download Center             |
-| 12005 | Push目标列表的长度不能超过500        |
-| 12006 | 没有开通PushFeatures                |
+| 12001 | Upload PushImage to XiaomiPlatform failed           |
+| 12002 | PushImageFile size shall be smaller than 1M           |
+| 12003 | Upload PushImage to OPPOPlatform failed         |
+| 12004 | ImageAddressNone to Push cannot be downloaded            |
+| 12005 | Length of Push tartget list shall not exceed 500       |
+| 12006 | PushFeatures not enabled               |
 | 20000 | Server database exception                |
 | 20001 | Group does not exist                   |
 | 20002 | The user is not a group member                 |
