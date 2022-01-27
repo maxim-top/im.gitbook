@@ -1,4 +1,4 @@
-# Push Push SDK Quick integration指南
+# Push Push SDK Quick integration guide
 
 This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/android)
 
@@ -6,7 +6,7 @@ This page is for quick integration, visit [detailed documentation](https://maxim
 
 Maximtop Push is developed based on Maximtop IM technology, which can have both push and IM services with only one integration, improving R&D efficiency and greatly reducing IT expenditure of enterprises.
 
-使用Maximtop Push没有额外费用。
+No extra fee for using Maximtop Push.
 
 Since the channels of major vendors are supported by default, in order to further reduce the difficulty of integration, certificate settings and updating mechanism are also built into the implementation of Maximtop Push. Simply put, after Maximtop Push integrated, developer only needs to set the certificates pushed by each vendor on the console, and the front end will package the vendor push SDKs, which can automatically complete the adaptation of the system vendor. It is no longer necessary to adjust the application and settings of various push tokens.
 
