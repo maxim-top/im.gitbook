@@ -10,39 +10,6 @@
   * [推送开发指南（PUSH）](quick-start/push-dev-guide.md)
   * [私有云部署文档](quick-start/how-to-deploy-private-cloud.md)
 * [详细文档](reference/README.md)
-  * [floo-web API介绍](reference/floo-web.md)
-  * [floo API](reference/floo.md)
-    * **class [floo::BMXChatService](reference/floo/classfloo_1_1_b_m_x_chat_service.md)** <br>聊天Service 
-    * **class [floo::BMXChatServiceListener](reference/floo/classfloo_1_1_b_m_x_chat_service_listener.md)** <br>聊天监听者 
-    * **class [floo::BMXClient](reference/floo/classfloo_1_1_b_m_x_client.md)** <br>客户端 
-    * **class [floo::BMXConversation](reference/floo/classfloo_1_1_b_m_x_conversation.md)** <br>会话 
-    * **class [floo::BMXDevice](reference/floo/classfloo_1_1_b_m_x_device.md)** <br>设备信息 
-    * **class [floo::BMXError](reference/floo/classfloo_1_1_b_m_x_error.md)** 
-    * **class [floo::BMXFileAttachment](reference/floo/classfloo_1_1_b_m_x_file_attachment.md)** <br>消息文件附件 
-    * **class [floo::BMXForwardAttachment](reference/floo/classfloo_1_1_b_m_x_forward_attachment.md)** <br>消息转发附件 
-      * **class [Message](reference/floo/classfloo_1_1_b_m_x_forward_attachment_1_1_message.md)** <br>转发消息附件自定义消息 
-    * **class [floo::BMXGroup](reference/floo/classfloo_1_1_b_m_x_group.md)** <br>群组 
-    * **class [floo::BMXGroupService](reference/floo/classfloo_1_1_b_m_x_group_service.md)** <br>群组Service 
-    * **class [floo::BMXGroupServiceListener](reference/floo/classfloo_1_1_b_m_x_group_service_listener.md)** <br>群组变化监听者 
-    * **class [floo::BMXImageAttachment](reference/floo/classfloo_1_1_b_m_x_image_attachment.md)** <br>图片消息附件 
-    * **class [floo::BMXLocationAttachment](reference/floo/classfloo_1_1_b_m_x_location_attachment.md)** <br>位置消息附件 
-    * **class [floo::BMXMessage](reference/floo/classfloo_1_1_b_m_x_message.md)** <br>消息 
-    * **class [floo::BMXMessageAttachment](reference/floo/classfloo_1_1_b_m_x_message_attachment.md)** <br>消息附件 
-    * **class [floo::BMXMessageConfig](reference/floo/classfloo_1_1_b_m_x_message_config.md)** <br>消息配置 
-    * **class [floo::BMXNetworkListener](reference/floo/classfloo_1_1_b_m_x_network_listener.md)** 
-    * **class [floo::BMXPushService](reference/floo/classfloo_1_1_b_m_x_push_service.md)** 
-    * **class [floo::BMXPushServiceListener](reference/floo/classfloo_1_1_b_m_x_push_service_listener.md)** 
-    * **class [floo::BMXPushUserProfile](reference/floo/classfloo_1_1_b_m_x_push_user_profile.md)** <br>Push用户Profile. 
-    * **class [floo::BMXResultPage](reference/floo/classfloo_1_1_b_m_x_result_page.md)** <br>分页结果 
-    * **class [floo::BMXRosterItem](reference/floo/classfloo_1_1_b_m_x_roster_item.md)** <br>联系人 
-    * **class [floo::BMXRosterService](reference/floo/classfloo_1_1_b_m_x_roster_service.md)** <br>好友Service 
-    * **class [floo::BMXRosterServiceListener](reference/floo/classfloo_1_1_b_m_x_roster_service_listener.md)** <br>好友变化监听者 
-    * **class [floo::BMXSDKConfig](reference/floo/classfloo_1_1_b_m_x_s_d_k_config.md)** <br>SDK设置管理 
-    * **class [floo::BMXUserProfile](reference/floo/classfloo_1_1_b_m_x_user_profile.md)** <br>用户Profile 
-    * **class [floo::BMXUserService](reference/floo/classfloo_1_1_b_m_x_user_service.md)** <br>用户Service 
-    * **class [floo::BMXUserServiceListener](reference/floo/classfloo_1_1_b_m_x_user_service_listener.md)** <br>用户状态监听者 
-    * **class [floo::BMXVideoAttachment](reference/floo/classfloo_1_1_b_m_x_video_attachment.md)** <br>视频消息附件 
-    * **class [floo::BMXVoiceAttachment](reference/floo/classfloo_1_1_b_m_x_voice_attachment.md)** <br>音频消息附件 
   * [floo android API](reference/floo-android.md)
     * **class [im::floo::floolib::BMXChatManager](reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md)** <br>聊天管理器 
     * **class [im::floo::floolib::BMXChatService](reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md)** <br>聊天Service 
@@ -89,3 +56,44 @@
     * **class [im::floo::floolib::BMXUserServiceListener](reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md)** <br>用户状态监听者 
     * **class [im::floo::floolib::BMXVideoAttachment](reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md)** <br>视频消息附件 
     * **class [im::floo::floolib::BMXVoiceAttachment](reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md)** <br>音频消息附件 
+  * [floo API](reference/floo.md)
+    * **class [floo::BMXChatService](reference/floo/classfloo_1_1_b_m_x_chat_service.md)** <br>聊天Service 
+    * **class [floo::BMXChatServiceListener](reference/floo/classfloo_1_1_b_m_x_chat_service_listener.md)** <br>聊天监听者 
+    * **class [floo::BMXClient](reference/floo/classfloo_1_1_b_m_x_client.md)** <br>客户端 
+    * **class [floo::BMXConversation](reference/floo/classfloo_1_1_b_m_x_conversation.md)** <br>会话 
+    * **class [floo::BMXDevice](reference/floo/classfloo_1_1_b_m_x_device.md)** <br>设备信息 
+    * **class [floo::BMXError](reference/floo/classfloo_1_1_b_m_x_error.md)** 
+    * **class [floo::BMXFileAttachment](reference/floo/classfloo_1_1_b_m_x_file_attachment.md)** <br>消息文件附件 
+    * **class [floo::BMXForwardAttachment](reference/floo/classfloo_1_1_b_m_x_forward_attachment.md)** <br>消息转发附件 
+      * **class [Message](reference/floo/classfloo_1_1_b_m_x_forward_attachment_1_1_message.md)** <br>转发消息附件自定义消息 
+    * **class [floo::BMXGroup](reference/floo/classfloo_1_1_b_m_x_group.md)** <br>群组 
+    * **class [floo::BMXGroupService](reference/floo/classfloo_1_1_b_m_x_group_service.md)** <br>群组Service 
+    * **class [floo::BMXGroupServiceListener](reference/floo/classfloo_1_1_b_m_x_group_service_listener.md)** <br>群组变化监听者 
+    * **class [floo::BMXImageAttachment](reference/floo/classfloo_1_1_b_m_x_image_attachment.md)** <br>图片消息附件 
+    * **class [floo::BMXLocationAttachment](reference/floo/classfloo_1_1_b_m_x_location_attachment.md)** <br>位置消息附件 
+    * **class [floo::BMXMessage](reference/floo/classfloo_1_1_b_m_x_message.md)** <br>消息 
+    * **class [floo::BMXMessageAttachment](reference/floo/classfloo_1_1_b_m_x_message_attachment.md)** <br>消息附件 
+    * **class [floo::BMXMessageConfig](reference/floo/classfloo_1_1_b_m_x_message_config.md)** <br>消息配置 
+    * **class [floo::BMXNetworkListener](reference/floo/classfloo_1_1_b_m_x_network_listener.md)** 
+    * **class [floo::BMXPushService](reference/floo/classfloo_1_1_b_m_x_push_service.md)** 
+    * **class [floo::BMXPushServiceListener](reference/floo/classfloo_1_1_b_m_x_push_service_listener.md)** 
+    * **class [floo::BMXPushUserProfile](reference/floo/classfloo_1_1_b_m_x_push_user_profile.md)** <br>Push用户Profile. 
+    * **class [floo::BMXResultPage](reference/floo/classfloo_1_1_b_m_x_result_page.md)** <br>分页结果 
+    * **class [floo::BMXRosterItem](reference/floo/classfloo_1_1_b_m_x_roster_item.md)** <br>联系人 
+    * **class [floo::BMXRosterService](reference/floo/classfloo_1_1_b_m_x_roster_service.md)** <br>好友Service 
+    * **class [floo::BMXRosterServiceListener](reference/floo/classfloo_1_1_b_m_x_roster_service_listener.md)** <br>好友变化监听者 
+    * **class [floo::BMXSDKConfig](reference/floo/classfloo_1_1_b_m_x_s_d_k_config.md)** <br>SDK设置管理 
+    * **class [floo::BMXUserProfile](reference/floo/classfloo_1_1_b_m_x_user_profile.md)** <br>用户Profile 
+    * **class [floo::BMXUserService](reference/floo/classfloo_1_1_b_m_x_user_service.md)** <br>用户Service 
+    * **class [floo::BMXUserServiceListener](reference/floo/classfloo_1_1_b_m_x_user_service_listener.md)** <br>用户状态监听者 
+    * **class [floo::BMXVideoAttachment](reference/floo/classfloo_1_1_b_m_x_video_attachment.md)** <br>视频消息附件 
+    * **class [floo::BMXVoiceAttachment](reference/floo/classfloo_1_1_b_m_x_voice_attachment.md)** <br>音频消息附件 
+  * [floo-web API介绍](reference/floo-web.md)
+  * [服务端API](reference/server-api/README.md)
+    * [用户操作](reference/server-api/user.md)
+    * [推送接口](reference/server-api/push.md)
+    * [token接口](reference/server-api/token.md)
+    * [消息处理](reference/server-api/message.md)
+    * [群接口](reference/server-api/group.md)
+    * [好友管理接口](reference/server-api/roster.md)
+    * [文件操作接口](reference/server-api/file.md)
