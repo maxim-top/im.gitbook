@@ -1,118 +1,118 @@
 
-## 5    token接口
+## 5    token interface
 
-## 5.1  通过用户ID和密码取普通用户token
+## 5.1  Get ordinary user token by user ID and password
 
 > POST  /token/id
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| device_guid|string||false|设备ID, 如果设置，则返回PushToken|
+| device_guid|string||false|Device ID, if set, returns PushToken|
 | password|string||false||
-| user_id|int32||false|用户ID，仅用于用户ID登录|
+| user_id|int32||false|User ID, for login by user ID only|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|Token 信息|
-|⇥ access_key_secret|string||false|文件密钥|
-|⇥ encrypt_type|int32||false|是否启用加密连接|
-|⇥ expire|int32||false|过期时间戳|
-|⇥ public_key|string||false|公钥|
-|⇥ push_token|string||false|推送Token|
-|⇥ store_token|string||false|文件token|
-|⇥ token|string||false|访问token|
-|⇥ user_id|int32||false|用户ID|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Token information|
+|⇥ access_key_secret|string||false|File key|
+|⇥ encrypt_type|int32||false|Whether to enable encrypted connection|
+|⇥ expire|int32||false|Expiration timestamp|
+|⇥ public_key|string||false|Public key|
+|⇥ push_token|string||false|Push Token|
+|⇥ store_token|string||false|File token|
+|⇥ token|string||false|Access token|
+|⇥ user_id|int32||false|User ID|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 5.2  通过用户名/手机号/邮箱取普通用户token
+## 5.2  Get ordinary user token by username/mobile number/email
 
 > POST  /token/login
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| device_guid|string||false|设备ID, 如果设置，则返回PushToken|
-| login_name|string||false|登录名，可以是手机号，邮箱，用户名|
+| device_guid|string||false|Device ID, if set, returns PushToken|
+| login_name|string||false|Login name, which can be mobile number, email, username|
 | password|string||false||
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|Token 信息|
-|⇥ access_key_secret|string||false|文件密钥|
-|⇥ encrypt_type|int32||false|是否启用加密连接|
-|⇥ expire|int32||false|过期时间戳|
-|⇥ public_key|string||false|公钥|
-|⇥ push_token|string||false|推送Token|
-|⇥ store_token|string||false|文件token|
-|⇥ token|string||false|访问token|
-|⇥ user_id|int32||false|用户ID|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Token information|
+|⇥ access_key_secret|string||false|File key|
+|⇥ encrypt_type|int32||false|Whether to enable encrypted connection|
+|⇥ expire|int32||false|Expiration timestamp|
+|⇥ public_key|string||false|Public key|
+|⇥ push_token|string||false|Push Token|
+|⇥ store_token|string||false|File token|
+|⇥ token|string||false|Access token|
+|⇥ user_id|int32||false|User ID|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 5.3  通过用户名和密码取普通用户token
+## 5.3  Get ordinary user token by username and password
 
 > POST  /token/user
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| device_guid|string||false|设备ID, 如果设置，则返回PushToken|
-| name|string||false|用户名，仅用于用户名登录|
+| device_guid|string||false|Device ID, if set, returns PushToken|
+| name|string||false|Username, for login by username only|
 | password|string||false||
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|Token 信息|
-|⇥ access_key_secret|string||false|文件密钥|
-|⇥ encrypt_type|int32||false|是否启用加密连接|
-|⇥ expire|int32||false|过期时间戳|
-|⇥ public_key|string||false|公钥|
-|⇥ push_token|string||false|推送Token|
-|⇥ store_token|string||false|文件token|
-|⇥ token|string||false|访问token|
-|⇥ user_id|int32||false|用户ID|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Token information|
+|⇥ access_key_secret|string||false|File key|
+|⇥ encrypt_type|int32||false|Whether to enable encrypted connection|
+|⇥ expire|int32||false|Expiration timestamp|
+|⇥ public_key|string||false|Public key|
+|⇥ push_token|string||false|Push Token|
+|⇥ store_token|string||false|File token|
+|⇥ token|string||false|Access token|
+|⇥ user_id|int32||false|User ID|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 

@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXUserProfile
-summary: 用户Profile 
+summary: User Profile 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 用户Profile
 
 
 
-用户Profile 
+User Profile 
 
 Inherits from BMXBaseObject
 
@@ -18,22 +18,22 @@ Inherits from BMXBaseObject
 | -------------- | -------------- |
 | | **[BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-bmxuserprofile)**() |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-delete)**() |
-| long | **[userId](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-userid)**()<br>用户ID（唯一）  |
-| BMXUserProfile.UserCategory | **[category](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-category)**()<br>用户策略  |
-| String | **[username](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-username)**()<br>用户名（唯一）  |
-| String | **[nickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-nickname)**()<br>用户昵称  |
-| String | **[avatarRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarratelurl)**()<br>用户头像ratel服务器地址  |
-| String | **[avatarUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarurl)**()<br>用户头像  |
-| String | **[avatarPath](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarpath)**()<br>用户头像本地存储路径  |
-| String | **[avatarThumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarthumbnailpath)**()<br>用户头像缩略图本地存储路径  |
-| String | **[mobilePhone](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-mobilephone)**()<br>用户手机  |
-| String | **[email](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-email)**()<br>用户邮箱  |
-| String | **[publicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-publicinfo)**()<br>用户公开扩展信息，好友可见  |
-| String | **[privateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-privateinfo)**()<br>用户私有扩展信息，好友不可见  |
-| BMXUserProfile.AddFriendAuthMode | **[addFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-addfriendauthmode)**()<br>加好友校验方式  |
-| BMXUserProfile.AuthQuestion | **[authQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-authquestion)**()<br>添加好友时的验证问题  |
-| BMXUserProfile.MessageSetting | **[messageSetting](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-messagesetting)**()<br>用户消息设定  |
-| boolean | **[isAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-isautoacceptgroupinvite)**()<br>收到群组邀请进群时是否自动同意进群  |
+| long | **[userId](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-userid)**()<br>User ID (unique)  |
+| BMXUserProfile.UserCategory | **[category](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-category)**()<br>User policy  |
+| String | **[username](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-username)**()<br>Username (unique)  |
+| String | **[nickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-nickname)**()<br>User nickname  |
+| String | **[avatarRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarratelurl)**()<br>Ratel server address of user avatar  |
+| String | **[avatarUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarurl)**()<br>User avatar  |
+| String | **[avatarPath](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarpath)**()<br>Local storage path of user avatar  |
+| String | **[avatarThumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-avatarthumbnailpath)**()<br>Local storage path of user avatar thumbnail  |
+| String | **[mobilePhone](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-mobilephone)**()<br>User mobile phone  |
+| String | **[email](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-email)**()<br>User email  |
+| String | **[publicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-publicinfo)**()<br>User public extension information, visible to friends  |
+| String | **[privateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-privateinfo)**()<br>User private extension information, not visible to friends  |
+| BMXUserProfile.AddFriendAuthMode | **[addFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-addfriendauthmode)**()<br>How to validate when adding friend  |
+| BMXUserProfile.AuthQuestion | **[authQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-authquestion)**()<br>Authentication questions when adding friend  |
+| BMXUserProfile.MessageSetting | **[messageSetting](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-messagesetting)**()<br>User message settings  |
+| boolean | **[isAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md#function-isautoacceptgroupinvite)**()<br>Whether to automatically agree to join group when a group invitation is received  |
 
 ## Protected Functions
 
@@ -71,7 +71,7 @@ inline synchronized void delete()
 inline long userId()
 ```
 
-用户ID（唯一） 
+User ID (unique) 
 
 **Return**: int64_t 
 
@@ -81,7 +81,7 @@ inline long userId()
 inline BMXUserProfile.UserCategory category()
 ```
 
-用户策略 
+User policy 
 
 **Return**: [UserCategory]
 
@@ -91,7 +91,7 @@ inline BMXUserProfile.UserCategory category()
 inline String username()
 ```
 
-用户名（唯一） 
+Username (unique) 
 
 **Return**: std::string 
 
@@ -101,7 +101,7 @@ inline String username()
 inline String nickname()
 ```
 
-用户昵称 
+User nickname 
 
 **Return**: std::string 
 
@@ -111,7 +111,7 @@ inline String nickname()
 inline String avatarRatelUrl()
 ```
 
-用户头像ratel服务器地址 
+Ratel server address of user avatar 
 
 **Return**: std::string 
 
@@ -121,7 +121,7 @@ inline String avatarRatelUrl()
 inline String avatarUrl()
 ```
 
-用户头像 
+User avatar 
 
 **Return**: std::string 
 
@@ -131,7 +131,7 @@ inline String avatarUrl()
 inline String avatarPath()
 ```
 
-用户头像本地存储路径 
+Local storage path of user avatar 
 
 **Return**: std::string 
 
@@ -141,7 +141,7 @@ inline String avatarPath()
 inline String avatarThumbnailPath()
 ```
 
-用户头像缩略图本地存储路径 
+Local storage path of user avatar thumbnail 
 
 **Return**: std::string 
 
@@ -151,7 +151,7 @@ inline String avatarThumbnailPath()
 inline String mobilePhone()
 ```
 
-用户手机 
+User mobile phone 
 
 **Return**: std::string 
 
@@ -161,7 +161,7 @@ inline String mobilePhone()
 inline String email()
 ```
 
-用户邮箱 
+User email 
 
 **Return**: std::string 
 
@@ -171,7 +171,7 @@ inline String email()
 inline String publicInfo()
 ```
 
-用户公开扩展信息，好友可见 
+User public extension information, visible to friends 
 
 **Return**: JSON(std::string) 
 
@@ -181,7 +181,7 @@ inline String publicInfo()
 inline String privateInfo()
 ```
 
-用户私有扩展信息，好友不可见 
+User private extension information, not visible to friends 
 
 **Return**: JSON(std::string) 
 
@@ -191,7 +191,7 @@ inline String privateInfo()
 inline BMXUserProfile.AddFriendAuthMode addFriendAuthMode()
 ```
 
-加好友校验方式 
+How to validate when adding friend 
 
 **Return**: [AddFriendAuthMode]
 
@@ -201,7 +201,7 @@ inline BMXUserProfile.AddFriendAuthMode addFriendAuthMode()
 inline BMXUserProfile.AuthQuestion authQuestion()
 ```
 
-添加好友时的验证问题 
+Authentication questions when adding friend 
 
 **Return**: AuthQuestion 
 
@@ -211,7 +211,7 @@ inline BMXUserProfile.AuthQuestion authQuestion()
 inline BMXUserProfile.MessageSetting messageSetting()
 ```
 
-用户消息设定 
+User message settings 
 
 **Return**: MessageSetting 
 
@@ -221,7 +221,7 @@ inline BMXUserProfile.MessageSetting messageSetting()
 inline boolean isAutoAcceptGroupInvite()
 ```
 
-收到群组邀请进群时是否自动同意进群 
+Whether to automatically agree to join group when a group invitation is received 
 
 **Return**: bool 
 

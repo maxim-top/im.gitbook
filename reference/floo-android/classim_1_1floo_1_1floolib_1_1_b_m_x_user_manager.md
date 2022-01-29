@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXUserManager
-summary: 用户管理器 
+summary: User manager 
 
 ---
 
@@ -8,44 +8,44 @@ summary: 用户管理器
 
 
 
-用户管理器 
+User manager 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | | **[BMXUserManager](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-bmxusermanager)**([BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md) service, [BMXClient](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md) bmxClient) |
-| void | **[signUpNewUser](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signupnewuser)**(final String username, final String password, final BMXDataCallBack< [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) > callBack)<br>注册  |
-| void | **[signInByName](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyname)**(final String name, final String password, final BMXCallBack callBack)<br>用户名登陆  |
-| void | **[signInById](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyid)**(final long id, final String password, final BMXCallBack callBack)<br>id 登陆  |
-| void | **[autoSignInByName](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyname)**(final String name, final String password, final BMXCallBack callBack)<br>自动登陆 根据用户名  |
-| void | **[autoSignInById](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyid)**(final long uid, final String password, final BMXCallBack callBack)<br>自动登陆 根据id  |
-| void | **[signOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout)**(final BMXCallBack callBack)<br>退出登录  |
-| void | **[signOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout)**(final long userId, final BMXCallBack callBack)<br>退出登录  |
-| [BMXConnectStatus] | **[connectStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-connectstatus)**()<br>获取当前和服务器的连接状态  |
-| [BMXSignInStatus] | **[signInStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinstatus)**()<br>获取当前的登录状态  |
-| void | **[bindDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-binddevice)**(final String token, final BMXCallBack callBack)<br>绑定设备推送token  |
-| void | **[getDeviceList](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getdevicelist)**(final BMXDataCallBack< BMXDeviceList > callBack)<br>获取登录的设备列表  |
-| void | **[deleteDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-deletedevice)**(final int device_sn, final BMXCallBack callBack)<br>删除设备  |
-| void | **[getProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getprofile)**(final boolean forceRefresh, final BMXDataCallBack< [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) > callBack)<br>获取用户详情  |
-| void | **[setNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnickname)**(final String nickname, final BMXCallBack callBack)<br>设置昵称  |
-| void | **[uploadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-uploadavatar)**(final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>上传头像  |
-| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-downloadavatar)**(final [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, final FileProgressListener listener, final BMXCallBack callBack)<br>下载头像  |
-| void | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpublicinfo)**(final String publicInfo, final BMXCallBack callBack)<br>设置公开扩展信息  |
-| void | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setprivateinfo)**(final String privateInfo, final BMXCallBack callBack)<br>设置私有扩展信息  |
-| void | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setaddfriendauthmode)**(final BMXUserProfile.AddFriendAuthMode mode, final BMXCallBack callBack)<br>设置加好友验证方式  |
-| void | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setauthquestion)**(final BMXUserProfile.AuthQuestion authQuestion, final BMXCallBack callBack)<br>设置加好友验证问题  |
-| void | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepush)**(final boolean enable, final BMXCallBack callBack)<br>设置是否允许推送  |
-| void | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepushdetaile)**(final boolean enable, final BMXCallBack callBack)<br>设置是否推送详情  |
-| void | **[setPushNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushnickname)**(final String nickname, final BMXCallBack callBack)<br>设置推送昵称  |
-| void | **[setPushAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushalias)**(final String alias, final String bmxPushToken, final BMXCallBack callBack)<br>设置推送别名  |
-| void | **[setNotificationSound](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationsound)**(final boolean enable, final BMXCallBack callBack)<br>设置收到新消息是否声音提醒  |
-| void | **[setNotificationVibrate](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationvibrate)**(final boolean enable, final BMXCallBack callBack)<br>设置收到新消息是否震动  |
-| void | **[setAutoDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautodownloadattachment)**(final boolean enable, final BMXCallBack callBack)<br>设置是否自动缩略图和语音附件  |
-| void | **[setAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautoacceptgroupinvite)**(final boolean enable, final BMXCallBack callBack)<br>设置是否自动同意入群邀请  |
-| void | **[addUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-adduserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>添加用户状态监听者  |
-| void | **[removeUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-removeuserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>移除用户状态监听者  |
-| void | **[changeAppId](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-changeappid)**(final String appId, final BMXCallBack callBack)<br>切换appId  |
+| void | **[signUpNewUser](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signupnewuser)**(final String username, final String password, final BMXDataCallBack< [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) > callBack)<br>Register  |
+| void | **[signInByName](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyname)**(final String name, final String password, final BMXCallBack callBack)<br>Username login  |
+| void | **[signInById](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyid)**(final long id, final String password, final BMXCallBack callBack)<br>id login  |
+| void | **[autoSignInByName](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyname)**(final String name, final String password, final BMXCallBack callBack)<br>Auto login, by username  |
+| void | **[autoSignInById](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyid)**(final long uid, final String password, final BMXCallBack callBack)<br>Auto login, by id  |
+| void | **[signOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout)**(final BMXCallBack callBack)<br>Log out  |
+| void | **[signOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout)**(final long userId, final BMXCallBack callBack)<br>Log out  |
+| [BMXConnectStatus] | **[connectStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-connectstatus)**()<br>Get the current connection state with server  |
+| [BMXSignInStatus] | **[signInStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinstatus)**()<br>Get the current login state  |
+| void | **[bindDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-binddevice)**(final String token, final BMXCallBack callBack)<br>Binding device push token  |
+| void | **[getDeviceList](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getdevicelist)**(final BMXDataCallBack< BMXDeviceList > callBack)<br>Get list of logged-in devices  |
+| void | **[deleteDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-deletedevice)**(final int device_sn, final BMXCallBack callBack)<br>Delete device  |
+| void | **[getProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getprofile)**(final boolean forceRefresh, final BMXDataCallBack< [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) > callBack)<br>Get user details  |
+| void | **[setNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnickname)**(final String nickname, final BMXCallBack callBack)<br>Set nickname  |
+| void | **[uploadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-uploadavatar)**(final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>Upload avatar  |
+| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-downloadavatar)**(final [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, final FileProgressListener listener, final BMXCallBack callBack)<br>Download avatar  |
+| void | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpublicinfo)**(final String publicInfo, final BMXCallBack callBack)<br>Set public extension information  |
+| void | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setprivateinfo)**(final String privateInfo, final BMXCallBack callBack)<br>Set private extension information  |
+| void | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setaddfriendauthmode)**(final BMXUserProfile.AddFriendAuthMode mode, final BMXCallBack callBack)<br>Set how to validate when adding friend  |
+| void | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setauthquestion)**(final BMXUserProfile.AuthQuestion authQuestion, final BMXCallBack callBack)<br>Set friend authentication questions  |
+| void | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepush)**(final boolean enable, final BMXCallBack callBack)<br>Set whether push is allowed  |
+| void | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepushdetaile)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to push details  |
+| void | **[setPushNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushnickname)**(final String nickname, final BMXCallBack callBack)<br>Set push nickname  |
+| void | **[setPushAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushalias)**(final String alias, final String bmxPushToken, final BMXCallBack callBack)<br>Set push alias  |
+| void | **[setNotificationSound](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationsound)**(final boolean enable, final BMXCallBack callBack)<br>Set whether a new message is audibly alerted  |
+| void | **[setNotificationVibrate](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationvibrate)**(final boolean enable, final BMXCallBack callBack)<br>Set whether a new message is alerted in vibration  |
+| void | **[setAutoDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautodownloadattachment)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to automatically download thumbnail and voice attachment  |
+| void | **[setAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautoacceptgroupinvite)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to automatically accept group invitations  |
+| void | **[addUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-adduserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>Add user state listener  |
+| void | **[removeUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-removeuserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>Remove user state listener  |
+| void | **[changeAppId](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-changeappid)**(final String appId, final BMXCallBack callBack)<br>Switch appId  |
 
 ## Public Functions Documentation
 
@@ -69,12 +69,12 @@ inline void signUpNewUser(
 )
 ```
 
-注册 
+Register 
 
 **Parameters**: 
 
-  * **password** 密码 
-  * **username** 用户名 
+  * **password** Password 
+  * **username** Username 
   * **callBack** [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md)
 
 
@@ -88,7 +88,7 @@ inline void signInByName(
 )
 ```
 
-用户名登陆 
+Username login 
 
 **Parameters**: 
 
@@ -107,7 +107,7 @@ inline void signInById(
 )
 ```
 
-id 登陆 
+id login 
 
 **Parameters**: 
 
@@ -126,7 +126,7 @@ inline void autoSignInByName(
 )
 ```
 
-自动登陆 根据用户名 
+Auto login, by username 
 
 **Parameters**: 
 
@@ -145,7 +145,7 @@ inline void autoSignInById(
 )
 ```
 
-自动登陆 根据id 
+Auto login, by id 
 
 **Parameters**: 
 
@@ -162,7 +162,7 @@ inline void signOut(
 )
 ```
 
-退出登录 
+Log out 
 
 **Parameters**: 
 
@@ -178,7 +178,7 @@ inline void signOut(
 )
 ```
 
-退出登录 
+Log out 
 
 **Parameters**: 
 
@@ -191,7 +191,7 @@ inline void signOut(
 inline BMXConnectStatus connectStatus()
 ```
 
-获取当前和服务器的连接状态 
+Get the current connection state with server 
 
 ### function signInStatus
 
@@ -199,7 +199,7 @@ inline BMXConnectStatus connectStatus()
 inline BMXSignInStatus signInStatus()
 ```
 
-获取当前的登录状态 
+Get the current login state 
 
 ### function bindDevice
 
@@ -210,7 +210,7 @@ inline void bindDevice(
 )
 ```
 
-绑定设备推送token 
+Binding device push token 
 
 **Parameters**: 
 
@@ -226,11 +226,11 @@ inline void getDeviceList(
 )
 ```
 
-获取登录的设备列表 
+Get list of logged-in devices 
 
 **Parameters**: 
 
-  * **callBack** [BMXErrorCode] 登录的设备列表 
+  * **callBack** [BMXErrorCode] list of logged-in devices 
 
 
 ### function deleteDevice
@@ -242,7 +242,7 @@ inline void deleteDevice(
 )
 ```
 
-删除设备 
+Delete device 
 
 **Parameters**: 
 
@@ -258,12 +258,12 @@ inline void getProfile(
 )
 ```
 
-获取用户详情 
+Get user details 
 
 **Parameters**: 
 
-  * **forceRefresh** 强制从服务器拉取最新结果 
-  * **callBack** [BMXErrorCode],用户详情 
+  * **forceRefresh** Force pull latest results from server 
+  * **callBack** [BMXErrorCode], user details 
 
 
 ### function setNickname
@@ -275,11 +275,11 @@ inline void setNickname(
 )
 ```
 
-设置昵称 
+Set nickname 
 
 **Parameters**: 
 
-  * **nickname** 昵称 
+  * **nickname** Nickname 
   * **callBack** [BMXErrorCode]
 
 
@@ -293,12 +293,12 @@ inline void uploadAvatar(
 )
 ```
 
-上传头像 
+Upload avatar 
 
 **Parameters**: 
 
-  * **avatarPath** 头像本地文件路径 
-  * **listener** 上传进度监听器 
+  * **avatarPath** Local file path of avatar 
+  * **listener** Uploading progress listener 
   * **callBack** [BMXErrorCode]
 
 
@@ -312,12 +312,12 @@ inline void downloadAvatar(
 )
 ```
 
-下载头像 
+Download avatar 
 
 **Parameters**: 
 
-  * **profile** 用户详情 
-  * **listener** 下载进度监听器 
+  * **profile** User details 
+  * **listener** Downloading progress listener 
   * **callBack** [BMXErrorCode]
 
 
@@ -330,11 +330,11 @@ inline void setPublicInfo(
 )
 ```
 
-设置公开扩展信息 
+Set public extension information 
 
 **Parameters**: 
 
-  * **publicInfo** 用户公开信息 
+  * **publicInfo** User public information 
   * **callBack** [BMXErrorCode]
 
 
@@ -347,11 +347,11 @@ inline void setPrivateInfo(
 )
 ```
 
-设置私有扩展信息 
+Set private extension information 
 
 **Parameters**: 
 
-  * **privateInfo** 用户私有信息（只对自己可见） 
+  * **privateInfo** User private information (self-visibe only) 
   * **callBack** [BMXErrorCode]
 
 
@@ -364,11 +364,11 @@ inline void setAddFriendAuthMode(
 )
 ```
 
-设置加好友验证方式 
+Set how to validate when adding friend 
 
 **Parameters**: 
 
-  * **mode** 添加好友时的验证方式 
+  * **mode** How to validate when adding friend 
   * **callBack** [BMXErrorCode]
 
 
@@ -381,11 +381,11 @@ inline void setAuthQuestion(
 )
 ```
 
-设置加好友验证问题 
+Set friend authentication questions 
 
 **Parameters**: 
 
-  * **authQuestion** 验证问题 
+  * **authQuestion** Verification question 
   * **callBack** [BMXErrorCode]
 
 
@@ -398,11 +398,11 @@ inline void setEnablePush(
 )
 ```
 
-设置是否允许推送 
+Set whether push is allowed 
 
 **Parameters**: 
 
-  * **enable** 是否允许推送，true推送，false不推送 
+  * **enable** Whether to allow push, true to push, false not to 
   * **callBack** [BMXErrorCode]
 
 
@@ -415,11 +415,11 @@ inline void setEnablePushDetaile(
 )
 ```
 
-设置是否推送详情 
+Set whether to push details 
 
 **Parameters**: 
 
-  * **enable** 是否推送详情，true推送，false不推送 
+  * **enable** Whether to push details, true to push, false not to 
   * **callBack** [BMXErrorCode]
 
 
@@ -432,11 +432,11 @@ inline void setPushNickname(
 )
 ```
 
-设置推送昵称 
+Set push nickname 
 
 **Parameters**: 
 
-  * **nickname** 推送昵称 
+  * **nickname** Push nickname 
   * **callBack** [BMXErrorCode]
 
 
@@ -450,12 +450,12 @@ inline void setPushAlias(
 )
 ```
 
-设置推送别名 
+Set push alias 
 
 **Parameters**: 
 
-  * **alias** 别名 
-  * **bmxPushToken** 推送token 
+  * **alias** Alias 
+  * **bmxPushToken** Push token 
   * **callBack** [BMXErrorCode]
 
 
@@ -468,11 +468,11 @@ inline void setNotificationSound(
 )
 ```
 
-设置收到新消息是否声音提醒 
+Set whether a new message is audibly alerted 
 
 **Parameters**: 
 
-  * **enable** 收到新消息是否声音提醒，true提醒，false不提醒 
+  * **enable** Whether to sound alert when new message received, true to alert, false not to 
   * **callBack** [BMXErrorCode]
 
 
@@ -485,11 +485,11 @@ inline void setNotificationVibrate(
 )
 ```
 
-设置收到新消息是否震动 
+Set whether a new message is alerted in vibration 
 
 **Parameters**: 
 
-  * **enable** 收到新消息是否震动，true震动，false不震动 
+  * **enable** Whether to vibrate alert when new message received, true to alert, false not to 
   * **callBack** [BMXErrorCode]
 
 
@@ -502,11 +502,11 @@ inline void setAutoDownloadAttachment(
 )
 ```
 
-设置是否自动缩略图和语音附件 
+Set whether to automatically download thumbnail and voice attachment 
 
 **Parameters**: 
 
-  * **enable** 是否自动缩略图和语音附件，true自动下载，false不会自动下载 
+  * **enable** Whether to automatically download thumbnail and voice attachment, true to download, false not to 
   * **callBack** [BMXErrorCode]
 
 
@@ -519,11 +519,11 @@ inline void setAutoAcceptGroupInvite(
 )
 ```
 
-设置是否自动同意入群邀请 
+Set whether to automatically accept group invitations 
 
 **Parameters**: 
 
-  * **enable** 是否自动同意入群邀请，true同意，false不同意 
+  * **enable** Whether to automatically agree to group invitation, true to agree, false not to 
   * **callBack** [BMXErrorCode]
 
 
@@ -535,11 +535,11 @@ inline void addUserListener(
 )
 ```
 
-添加用户状态监听者 
+Add user state listener 
 
 **Parameters**: 
 
-  * **listener** 用户状态监听者 
+  * **listener** User state listener 
 
 
 ### function removeUserListener
@@ -550,11 +550,11 @@ inline void removeUserListener(
 )
 ```
 
-移除用户状态监听者 
+Remove user state listener 
 
 **Parameters**: 
 
-  * **listener** 用户状态监听者 
+  * **listener** User state listener 
 
 
 ### function changeAppId
@@ -566,7 +566,7 @@ inline void changeAppId(
 )
 ```
 
-切换appId 
+Switch appId 
 
 **Parameters**: 
 

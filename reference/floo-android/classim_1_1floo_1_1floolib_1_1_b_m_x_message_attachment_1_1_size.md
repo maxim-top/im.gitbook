@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXMessageAttachment::Size
-summary: 图片/视频大小 
+summary: Picture/video size 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 图片/视频大小
 
 
 
-图片/视频大小 
+Picture/video size 
 
 ## Public Functions
 

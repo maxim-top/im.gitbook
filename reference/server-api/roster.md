@@ -1,710 +1,710 @@
 
-## 8    好友管理接口
+## 8    Friend management interface
 
-## 8.1  同意好友申请
+## 8.1  Agree to add friend
 
 > POST  /roster/accept
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.2  同意好友申请
+## 8.2  Agree to add friend
 
 > PUT  /roster/accept
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.3  申请加好友
+## 8.3  Apply to add friend
 
 > POST  /roster/apply
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| alias|string||false|备注名称|
-| auth_answer|string||false|问题答案|
-| reason|string||false|申请描述|
-| user_id|int32||false|被申请用户 ID|
+| alias|string||false|Name in comment|
+| auth_answer|string||false|Answer of question|
+| reason|string||false|Request description|
+| user_id|int32||false|Invitee ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.4  批量添加好友
+## 8.4  Add friends in batch
 
 > POST  /roster/apply/batch
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| alias|string||false|备注名称|
-| reason|string||false|申请描述|
-| user_id|int32||false|被申请用户 ID|
+| alias|string||false|Name in comment|
+| reason|string||false|Request description|
+| user_id|int32||false|Invitee ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|批量添加好友返回结果|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Returned result for add friends in batch|
 |⇥ fails|array[object]||false||
-|⇥⇥ reason|string||false|失败原因|
-|⇥⇥ user_id|int32||false|用户ID|
+|⇥⇥ reason|string||false|Cause of failure|
+|⇥⇥ user_id|int32||false|User ID|
 |⇥ success|array[int32]||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.5  好友申请列表
+## 8.5  List of friend requests
 
 > GET  /roster/apply/list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |cursor||cursor|
 |limit||limit|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| cursor|string||false|游标，返回结果中缺失 cursor，表示已经返回最后一页|
-| data|array[object]||false|结果数据|
-|⇥ expired_time|int32||false|过期时间|
-|⇥ reason|string||false|申请描述|
+| code|int32||false|Return code, 200 is success|
+| cursor|string||false|Cursor, no cursor in returned result means the last page has been returned|
+| data|array[object]||false|Result data|
+|⇥ expired_time|int32||false|Expiration time|
+|⇥ reason|string||false|Request description|
 |⇥ status|int32||false||
-|⇥ user_id|int32||false|发起加好友申请的用户ID|
-| message|string||false|错误信息，如果成功，该项为null|
-| version|int32||false|版本|
+|⇥ user_id|int32||false|User ID that initiate adding friend|
+| message|string||false|Error information, null means success|
+| version|int32||false|Version|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.6  添加黑名单
+## 8.6  Add to blacklist
 
 > POST  /roster/block
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.7  添加黑名单
+## 8.7  Add to blacklist
 
 > PUT  /roster/block
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.8  黑名单列表
+## 8.8  List of blacklists
 
 > GET  /roster/blocked_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[int32]||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|array[int32]||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.9  拒绝好友申请
+## 8.9  Reject friend request
 
 > POST  /roster/decline
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| reason|string||false|拒绝的原因|
-| user_id|int32||false|拒绝的用户ID|
+| reason|string||false|Reason for rejection|
+| user_id|int32||false|Rejected user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.10 拒绝好友申请
+## 8.10 Reject friend request
 
 > PUT  /roster/decline
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| reason|string||false|拒绝的原因|
-| user_id|int32||false|拒绝的用户ID|
+| reason|string||false|Reason for rejection|
+| user_id|int32||false|Rejected user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.11 删除好友
+## 8.11 Delete friend
 
 > POST  /roster/delete
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.12 删除好友
+## 8.12 Delete friend
 
 > DELETE  /roster/delete
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.13 更新好友扩展信息
+## 8.13 Update friend extension information
 
 > POST  /roster/ext
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| alias|string||false|备注名称|
-| ext|string||false|扩展信息|
-| mute_notification|boolean||false|是否接收消息提醒|
-| user_id|int32||false|好友用户ID|
+| alias|string||false|Name in comment|
+| ext|string||false|Extension information|
+| mute_notification|boolean||false|Whether to receive message alert|
+| user_id|int32||false|Friend user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.14 更新好友扩展信息
+## 8.14 Update friend extension information
 
 > PUT  /roster/ext
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| alias|string||false|备注名称|
-| ext|string||false|扩展信息|
-| mute_notification|boolean||false|是否接收消息提醒|
-| user_id|int32||false|好友用户ID|
+| alias|string||false|Name in comment|
+| ext|string||false|Extension information|
+| mute_notification|boolean||false|Whether to receive message alert|
+| user_id|int32||false|Friend user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.15 用ID搜索用户
+## 8.15 Search for users by ID
 
 > GET  /roster/id
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|user_id||用户ID|
+|user_id||User ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|好友列表|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|List of friends|
 |⇥ alias|string||false||
-|⇥ auth_mode|int32||false|验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请|
-|⇥ auth_question|string||false|验证问题|
-|⇥ avatar|string||false|头像|
-|⇥ description|string||false|描述信息|
+|⇥ auth_mode|int32||false|Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests|
+|⇥ auth_question|string||false|Verification question|
+|⇥ avatar|string||false|Avatar|
+|⇥ description|string||false|Description|
 |⇥ ext|string||false||
 |⇥ mute_notification|boolean||false||
-|⇥ nick_name|string||false|昵称或名称|
-|⇥ public_info|string||false|公开信息，好友和陌生人可见|
+|⇥ nick_name|string||false|Nickname or name|
+|⇥ public_info|string||false|Public information, visible to both friends and strangers|
 |⇥ relation|int32||false||
-|⇥ user_id|int32||false|好友用户ID|
-|⇥ username|string||false|用户名|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ user_id|int32||false|Friend user ID|
+|⇥ username|string||false|Username|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.16 好友列表
+## 8.16 List of friends
 
 > GET  /roster/list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |cursor||cursor|
 |limit||limit|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| cursor|string||false|游标，返回结果中缺失 cursor，表示已经返回最后一页|
-| data|array[int32]||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
-| version|int32||false|版本|
+| code|int32||false|Return code, 200 is success|
+| cursor|string||false|Cursor, no cursor in returned result means the last page has been returned|
+| data|array[int32]||false|Result data|
+| message|string||false|Error information, null means success|
+| version|int32||false|Version|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.17 好友详情列表
+## 8.17 List of friend details
 
 > POST  /roster/list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | list|array[int32]||false||
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ alias|string||false||
-|⇥ auth_mode|int32||false|验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请|
-|⇥ auth_question|string||false|验证问题|
-|⇥ avatar|string||false|头像|
-|⇥ description|string||false|描述信息|
+|⇥ auth_mode|int32||false|Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests|
+|⇥ auth_question|string||false|Verification question|
+|⇥ avatar|string||false|Avatar|
+|⇥ description|string||false|Description|
 |⇥ ext|string||false||
 |⇥ mute_notification|boolean||false||
-|⇥ nick_name|string||false|昵称或名称|
-|⇥ public_info|string||false|公开信息，好友和陌生人可见|
+|⇥ nick_name|string||false|Nickname or name|
+|⇥ public_info|string||false|Public information, visible to both friends and strangers|
 |⇥ relation|int32||false||
-|⇥ user_id|int32||false|好友用户ID|
-|⇥ username|string||false|用户名|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ user_id|int32||false|Friend user ID|
+|⇥ username|string||false|Username|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.18 是否允许发消息
+## 8.18 Whether to allow messaging
 
 > GET  /roster/may_message
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |roster_id||roster_id|
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.19 用手机号搜索用户
+## 8.19 Search for user by mobile number
 
 > GET  /roster/mobile
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |mobile||mobile|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|好友列表|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|List of friends|
 |⇥ alias|string||false||
-|⇥ auth_mode|int32||false|验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请|
-|⇥ auth_question|string||false|验证问题|
-|⇥ avatar|string||false|头像|
-|⇥ description|string||false|描述信息|
+|⇥ auth_mode|int32||false|Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests|
+|⇥ auth_question|string||false|Verification question|
+|⇥ avatar|string||false|Avatar|
+|⇥ description|string||false|Description|
 |⇥ ext|string||false||
 |⇥ mute_notification|boolean||false||
-|⇥ nick_name|string||false|昵称或名称|
-|⇥ public_info|string||false|公开信息，好友和陌生人可见|
+|⇥ nick_name|string||false|Nickname or name|
+|⇥ public_info|string||false|Public information, visible to both friends and strangers|
 |⇥ relation|int32||false||
-|⇥ user_id|int32||false|好友用户ID|
-|⇥ username|string||false|用户名|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ user_id|int32||false|Friend user ID|
+|⇥ username|string||false|Username|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.20 用用户名搜索用户
+## 8.20 Search for user by user ID
 
 > GET  /roster/name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |username||username|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|好友列表|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|List of friends|
 |⇥ alias|string||false||
-|⇥ auth_mode|int32||false|验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请|
-|⇥ auth_question|string||false|验证问题|
-|⇥ avatar|string||false|头像|
-|⇥ description|string||false|描述信息|
+|⇥ auth_mode|int32||false|Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests|
+|⇥ auth_question|string||false|Verification question|
+|⇥ avatar|string||false|Avatar|
+|⇥ description|string||false|Description|
 |⇥ ext|string||false||
 |⇥ mute_notification|boolean||false||
-|⇥ nick_name|string||false|昵称或名称|
-|⇥ public_info|string||false|公开信息，好友和陌生人可见|
+|⇥ nick_name|string||false|Nickname or name|
+|⇥ public_info|string||false|Public information, visible to both friends and strangers|
 |⇥ relation|int32||false||
-|⇥ user_id|int32||false|好友用户ID|
-|⇥ username|string||false|用户名|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ user_id|int32||false|Friend user ID|
+|⇥ username|string||false|Username|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.21 从黑名单移除
+## 8.21 Remove from blacklist
 
 > POST  /roster/unblock
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 8.22 从黑名单移除
+## 8.22 Remove from blacklist
 
 > DELETE  /roster/unblock
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |user_id||user_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 

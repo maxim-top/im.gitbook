@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXUserService
-summary: 用户Service 
+summary: User Service 
 
 ---
 
@@ -8,34 +8,34 @@ summary: 用户Service
 
 
 
-用户Service 
+User Service 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-delete)**() |
-| [BMXErrorCode] | **[bindDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-binddevice)**(String token)<br>绑定设备推送token  |
-| [BMXErrorCode] | **[getDeviceList](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getdevicelist)**(BMXDeviceList deviceList)<br>获取设备列表  |
-| [BMXErrorCode] | **[getProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getprofile)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, boolean forceRefresh)<br>获取用户详情，如果forceRefresh == true，则强制从服务端拉取  |
-| [BMXErrorCode] | **[deleteDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-deletedevice)**(int device_sn)<br>删除设备  |
-| [BMXErrorCode] | **[setNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnickname)**(String nickname)<br>设置昵称  |
-| [BMXErrorCode] | **[uploadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-uploadavatar)**(String avatarPath, FileProgressListener callback)<br>上传头像  |
-| [BMXErrorCode] | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-downloadavatar)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, boolean thumbnail, FileProgressListener callback)<br>下载头像，默认下载缩略图  |
-| [BMXErrorCode] | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpublicinfo)**(String publicInfo)<br>设置公开扩展信息  |
-| [BMXErrorCode] | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setprivateinfo)**(String privateInfo)<br>设置私有扩展信息  |
-| [BMXErrorCode] | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**(BMXUserProfile.AddFriendAuthMode mode)<br>设置加好友验证方式  |
-| [BMXErrorCode] | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setauthquestion)**(BMXUserProfile.AuthQuestion authQuestion)<br>设置加好友验证问题  |
-| [BMXErrorCode] | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepush)**(boolean enable)<br>设置是否允许推送  |
-| [BMXErrorCode] | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepushdetaile)**(boolean enable)<br>设置是否推送详情  |
-| [BMXErrorCode] | **[setPushNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushnickname)**(String nickname)<br>设置推送昵称  |
-| [BMXErrorCode] | **[setPushAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushalias)**(String alias, String bmxPushToken)<br>设置推送别名  |
-| [BMXErrorCode] | **[setNotificationSound](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationsound)**(boolean enable)<br>设置收到新消息是否声音提醒  |
-| [BMXErrorCode] | **[setNotificationVibrate](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationvibrate)**(boolean enable)<br>设置收到新消息是否震动  |
-| [BMXErrorCode] | **[setAutoDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautodownloadattachment)**(boolean enable)<br>设置是否自动缩略图和语音附件  |
-| [BMXErrorCode] | **[setAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite)**(boolean enable)<br>设置是否自动同意入群邀请  |
-| void | **[addUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-adduserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>添加用户状态监听者  |
-| void | **[removeUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-removeuserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>移除用户状态监听者  |
+| [BMXErrorCode] | **[bindDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-binddevice)**(String token)<br>Binding device push token  |
+| [BMXErrorCode] | **[getDeviceList](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getdevicelist)**(BMXDeviceList deviceList)<br>Get device list  |
+| [BMXErrorCode] | **[getProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getprofile)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, boolean forceRefresh)<br>Get user details, force pull from server if forceRefresh == true  |
+| [BMXErrorCode] | **[deleteDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-deletedevice)**(int device_sn)<br>Delete device  |
+| [BMXErrorCode] | **[setNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnickname)**(String nickname)<br>Set nickname  |
+| [BMXErrorCode] | **[uploadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-uploadavatar)**(String avatarPath, FileProgressListener callback)<br>Upload avatar  |
+| [BMXErrorCode] | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-downloadavatar)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, boolean thumbnail, FileProgressListener callback)<br>Download avatar, default to download thumbnail  |
+| [BMXErrorCode] | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpublicinfo)**(String publicInfo)<br>Set public extension information  |
+| [BMXErrorCode] | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setprivateinfo)**(String privateInfo)<br>Set private extension information  |
+| [BMXErrorCode] | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**(BMXUserProfile.AddFriendAuthMode mode)<br>Set how to validate when adding friend  |
+| [BMXErrorCode] | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setauthquestion)**(BMXUserProfile.AuthQuestion authQuestion)<br>Set friend authentication questions  |
+| [BMXErrorCode] | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepush)**(boolean enable)<br>Set whether push is allowed  |
+| [BMXErrorCode] | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepushdetaile)**(boolean enable)<br>Set whether to push details  |
+| [BMXErrorCode] | **[setPushNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushnickname)**(String nickname)<br>Set push nickname  |
+| [BMXErrorCode] | **[setPushAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushalias)**(String alias, String bmxPushToken)<br>Set push alias  |
+| [BMXErrorCode] | **[setNotificationSound](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationsound)**(boolean enable)<br>Set whether a new message is audibly alerted  |
+| [BMXErrorCode] | **[setNotificationVibrate](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationvibrate)**(boolean enable)<br>Set whether a new message is alerted in vibration  |
+| [BMXErrorCode] | **[setAutoDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautodownloadattachment)**(boolean enable)<br>Set whether to automatically download thumbnail and voice attachment  |
+| [BMXErrorCode] | **[setAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite)**(boolean enable)<br>Set whether to automatically accept group invitations  |
+| void | **[addUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-adduserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>Add user state listener  |
+| void | **[removeUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-removeuserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>Remove user state listener  |
 
 ## Protected Functions
 
@@ -68,11 +68,11 @@ inline BMXErrorCode bindDevice(
 )
 ```
 
-绑定设备推送token 
+Binding device push token 
 
 **Parameters**: 
 
-  * **token** 设备token 
+  * **token** Device token 
 
 
 **Return**: [BMXErrorCode]
@@ -85,11 +85,11 @@ inline BMXErrorCode getDeviceList(
 )
 ```
 
-获取设备列表 
+Get device list 
 
 **Parameters**: 
 
-  * **deviceList** 设备列表，传入空列表函数返回后从此处获取返回的设备列表 
+  * **deviceList** Device list, pass in an empty list function and fetch the returned device list here 
 
 
 **Return**: [BMXErrorCode]
@@ -103,12 +103,12 @@ inline BMXErrorCode getProfile(
 )
 ```
 
-获取用户详情，如果forceRefresh == true，则强制从服务端拉取 
+Get user details, force pull from server if forceRefresh == true 
 
 **Parameters**: 
 
-  * **profile** 用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。 
-  * **forceRefresh** 是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取 
+  * **profile** User profile, initially passed in a pointing-to-empty shared_ptr object, and fetch user profile here after the function returned. 
+  * **forceRefresh** Whether to force pull from server, automatically if local fetch failed 
 
 
 **Return**: [BMXErrorCode]
@@ -121,11 +121,11 @@ inline BMXErrorCode deleteDevice(
 )
 ```
 
-删除设备 
+Delete device 
 
 **Parameters**: 
 
-  * **device_sn** 设备序列号 
+  * **device_sn** Device serial number 
 
 
 **Return**: [BMXErrorCode]
@@ -138,11 +138,11 @@ inline BMXErrorCode setNickname(
 )
 ```
 
-设置昵称 
+Set nickname 
 
 **Parameters**: 
 
-  * **nickname** 用户昵称 
+  * **nickname** User nickname 
 
 
 **Return**: [BMXErrorCode]
@@ -156,12 +156,12 @@ inline BMXErrorCode uploadAvatar(
 )
 ```
 
-上传头像 
+Upload avatar 
 
 **Parameters**: 
 
-  * **avatarPath** 上传头像的本地地址 
-  * **callback** 上传回调函数 
+  * **avatarPath** Local address to upload avatar 
+  * **callback** Upload callback function 
 
 
 **Return**: [BMXErrorCode]
@@ -176,13 +176,13 @@ inline BMXErrorCode downloadAvatar(
 )
 ```
 
-下载头像，默认下载缩略图 
+Download avatar, default to download thumbnail 
 
 **Parameters**: 
 
-  * **profile** 用户profile 
-  * **thumbnail** 是否下载缩略图，true下载缩略图，false下载原图 
-  * **callback** 下载回调函数 
+  * **profile** User profile 
+  * **thumbnail** Whether to download thumbnail, true for thumbnail, false for original 
+  * **callback** Download callback function 
 
 
 **Return**: [BMXErrorCode]
@@ -195,11 +195,11 @@ inline BMXErrorCode setPublicInfo(
 )
 ```
 
-设置公开扩展信息 
+Set public extension information 
 
 **Parameters**: 
 
-  * **publicInfo** 公开扩展信息 
+  * **publicInfo** Public extension information 
 
 
 **Return**: [BMXErrorCode]
@@ -212,11 +212,11 @@ inline BMXErrorCode setPrivateInfo(
 )
 ```
 
-设置私有扩展信息 
+Set private extension information 
 
 **Parameters**: 
 
-  * **privateInfo** 私有扩展信息 
+  * **privateInfo** Private extension information 
 
 
 **Return**: [BMXErrorCode]
@@ -229,11 +229,11 @@ inline BMXErrorCode setAddFriendAuthMode(
 )
 ```
 
-设置加好友验证方式 
+Set how to validate when adding friend 
 
 **Parameters**: 
 
-  * **mode** 加好友验证方式 
+  * **mode** Add friend authentication 
 
 
 **Return**: [BMXErrorCode]
@@ -246,11 +246,11 @@ inline BMXErrorCode setAuthQuestion(
 )
 ```
 
-设置加好友验证问题 
+Set friend authentication questions 
 
 **Parameters**: 
 
-  * **authQuestion** 加好友验证问题 
+  * **authQuestion** Add friend authentication question 
 
 
 **Return**: [BMXErrorCode]
@@ -263,11 +263,11 @@ inline BMXErrorCode setEnablePush(
 )
 ```
 
-设置是否允许推送 
+Set whether push is allowed 
 
 **Parameters**: 
 
-  * **enable** 是否允许推送，true推送，false不推送 
+  * **enable** Whether to allow push, true to push, false not to 
 
 
 **Return**: [BMXErrorCode]
@@ -280,11 +280,11 @@ inline BMXErrorCode setEnablePushDetaile(
 )
 ```
 
-设置是否推送详情 
+Set whether to push details 
 
 **Parameters**: 
 
-  * **enable** 是否推送详情，true推送，false不推送 
+  * **enable** Whether to push details, true to push, false not to 
 
 
 **Return**: [BMXErrorCode]
@@ -297,11 +297,11 @@ inline BMXErrorCode setPushNickname(
 )
 ```
 
-设置推送昵称 
+Set push nickname 
 
 **Parameters**: 
 
-  * **nickname** 推送昵称 
+  * **nickname** Push nickname 
 
 
 **Return**: [BMXErrorCode]
@@ -315,12 +315,12 @@ inline BMXErrorCode setPushAlias(
 )
 ```
 
-设置推送别名 
+Set push alias 
 
 **Parameters**: 
 
-  * **alias** 别名 
-  * **bmxPushToken** 推送token 
+  * **alias** Alias 
+  * **bmxPushToken** Push token 
 
 
 **Return**: [BMXErrorCode]
@@ -333,11 +333,11 @@ inline BMXErrorCode setNotificationSound(
 )
 ```
 
-设置收到新消息是否声音提醒 
+Set whether a new message is audibly alerted 
 
 **Parameters**: 
 
-  * **enable** 收到新消息是否声音提醒，true提醒，false不提醒 
+  * **enable** Whether to sound alert when new message received, true to alert, false not to 
 
 
 **Return**: [BMXErrorCode]
@@ -350,11 +350,11 @@ inline BMXErrorCode setNotificationVibrate(
 )
 ```
 
-设置收到新消息是否震动 
+Set whether a new message is alerted in vibration 
 
 **Parameters**: 
 
-  * **enable** 收到新消息是否震动，true震动，false不震动 
+  * **enable** Whether to vibrate alert when new message received, true to alert, false not to 
 
 
 **Return**: [BMXErrorCode]
@@ -367,11 +367,11 @@ inline BMXErrorCode setAutoDownloadAttachment(
 )
 ```
 
-设置是否自动缩略图和语音附件 
+Set whether to automatically download thumbnail and voice attachment 
 
 **Parameters**: 
 
-  * **enable** 是否自动缩略图和语音附件，true自动下载，false不会自动下载 
+  * **enable** Whether to automatically download thumbnail and voice attachment, true to download, false not to 
 
 
 **Return**: [BMXErrorCode]
@@ -384,11 +384,11 @@ inline BMXErrorCode setAutoAcceptGroupInvite(
 )
 ```
 
-设置是否自动同意入群邀请 
+Set whether to automatically accept group invitations 
 
 **Parameters**: 
 
-  * **enable** 是否自动同意入群邀请，true同意，false不同意 
+  * **enable** Whether to automatically agree to group invitation, true to agree, false not to 
 
 
 **Return**: [BMXErrorCode]
@@ -401,11 +401,11 @@ inline void addUserListener(
 )
 ```
 
-添加用户状态监听者 
+Add user state listener 
 
 **Parameters**: 
 
-  * **listener** 用户状态监听者 
+  * **listener** User state listener 
 
 
 ### function removeUserListener
@@ -416,11 +416,11 @@ inline void removeUserListener(
 )
 ```
 
-移除用户状态监听者 
+Remove user state listener 
 
 **Parameters**: 
 
-  * **listener** 用户状态监听者 
+  * **listener** User state listener 
 
 
 ## Protected Functions Documentation

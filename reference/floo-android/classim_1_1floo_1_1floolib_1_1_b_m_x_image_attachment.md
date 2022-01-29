@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXImageAttachment
-summary: 图片消息附件 
+summary: Message picture attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 图片消息附件
 
 
 
-图片消息附件 
+Message picture attachment 
 
 Inherits from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md), [im.floo.floolib.BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md), BMXBaseObject
 
@@ -17,16 +17,16 @@ Inherits from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-delete)**() |
-| | **[BMXImageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-bmximageattachment)**(String path, BMXMessageAttachment.Size size, String displayName)<br>构造函数，构建发送图片消息附件  |
+| | **[BMXImageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-bmximageattachment)**(String path, BMXMessageAttachment.Size size, String displayName)<br>Constructor, to build the message attachment of sent picture  |
 | | **[BMXImageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-bmximageattachment)**(String path, BMXMessageAttachment.Size size) |
-| | **[BMXImageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-bmximageattachment)**(String ratelUrl, BMXMessageAttachment.Size size, String displayName, long fileLength)<br>构造函数，构建接收图片消息附件  |
-| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-type)**()<br>返回图片附件类型  |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-clone)**()<br>克隆函数  |
-| BMXMessageAttachment.Size | **[size](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-size)**()<br>图片大小  |
+| | **[BMXImageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-bmximageattachment)**(String ratelUrl, BMXMessageAttachment.Size size, String displayName, long fileLength)<br>Constructor, to build the message attachment of received picture  |
+| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-type)**()<br>Return the type of picture attachment  |
+| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-clone)**()<br>Cloning function  |
+| BMXMessageAttachment.Size | **[size](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-size)**()<br>Picture size  |
 | String | **[thumbnailUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-thumbnailurl)**() |
-| void | **[setThumbnail](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-setthumbnail)**(String path)<br>设置发送图片消息缩略图  |
-| String | **[thumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-thumbnailpath)**()<br>缩略图本地路径  |
-| BMXMessageAttachment.DownloadStatus | **[thumbnailDownloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-thumbnaildownloadstatus)**()<br>缩略图下载状态  |
+| void | **[setThumbnail](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-setthumbnail)**(String path)<br>Set a thumbnail for sent picture  |
+| String | **[thumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-thumbnailpath)**()<br>Local path of thumbnail  |
+| BMXMessageAttachment.DownloadStatus | **[thumbnailDownloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-thumbnaildownloadstatus)**()<br>Thumbnail downloading state  |
 | [BMXImageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md) | **[dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-dynamic-cast)**([BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) attachment) |
 
 ## Protected Functions
@@ -43,15 +43,15 @@ Inherits from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path, String displayName)<br>构造函数，构建发送文件消息附件  |
+| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path, String displayName)<br>Constructor to build the message attachment of sent file  |
 | | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path) |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String ratelUrl, String displayName, long fileLength)<br>构造函数，构建接收文件消息附件  |
-| String | **[path](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path)**()<br>本地路径  |
-| String | **[displayName](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname)**()<br>显示名  |
+| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String ratelUrl, String displayName, long fileLength)<br>Constructor to build the message attachment of received file  |
+| String | **[path](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path)**()<br>Local path  |
+| String | **[displayName](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname)**()<br>Display name  |
 | String | **[ratelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-ratelurl)**() |
-| String | **[url](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url)**()<br>远程URL  |
-| long | **[fileLength](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength)**()<br>文件长度  |
-| BMXMessageAttachment.DownloadStatus | **[downloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus)**()<br>附件下载状态  |
+| String | **[url](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url)**()<br>Remote URL  |
+| long | **[fileLength](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength)**()<br>File length  |
+| BMXMessageAttachment.DownloadStatus | **[downloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus)**()<br>Attachment download state  |
 
 **Protected Functions inherited from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md)**
 
@@ -88,13 +88,13 @@ inline BMXImageAttachment(
 )
 ```
 
-构造函数，构建发送图片消息附件 
+Constructor, to build the message attachment of sent picture 
 
 **Parameters**: 
 
-  * **path** 本地路径 
-  * **size** 图片的大小，宽度和高度 
-  * **displayName** 展示名 
+  * **path** Local path 
+  * **size** Size, width, and height of image 
+  * **displayName** Display name 
 
 
 ### function BMXImageAttachment
@@ -118,14 +118,14 @@ inline BMXImageAttachment(
 )
 ```
 
-构造函数，构建接收图片消息附件 
+Constructor, to build the message attachment of received picture 
 
 **Parameters**: 
 
-  * **ratelUrl** ratel服务器地址 
-  * **size** 图片的大小，宽度和高度 
-  * **displayName** 展示名 
-  * **fileLength** 文件大小 
+  * **ratelUrl** ratel server address 
+  * **size** Size, width, and height of image 
+  * **displayName** Display name 
+  * **fileLength** File size 
 
 
 ### function type
@@ -134,7 +134,7 @@ inline BMXImageAttachment(
 inline BMXMessageAttachment.Type type()
 ```
 
-返回图片附件类型 
+Return the type of picture attachment 
 
 **Return**: Type 
 
@@ -147,7 +147,7 @@ inline BMXMessageAttachment.Type type()
 inline BMXMessageAttachment clone()
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -160,7 +160,7 @@ inline BMXMessageAttachment clone()
 inline BMXMessageAttachment.Size size()
 ```
 
-图片大小 
+Picture size 
 
 **Return**: Size 
 
@@ -179,11 +179,11 @@ inline void setThumbnail(
 )
 ```
 
-设置发送图片消息缩略图 
+Set a thumbnail for sent picture 
 
 **Parameters**: 
 
-  * **path** 本地路径 
+  * **path** Local path 
 
 
 ### function thumbnailPath
@@ -192,7 +192,7 @@ inline void setThumbnail(
 inline String thumbnailPath()
 ```
 
-缩略图本地路径 
+Local path of thumbnail 
 
 **Return**: std::string 
 
@@ -202,7 +202,7 @@ inline String thumbnailPath()
 inline BMXMessageAttachment.DownloadStatus thumbnailDownloadStatus()
 ```
 
-缩略图下载状态 
+Thumbnail downloading state 
 
 **Return**: DownloadStatus 
 

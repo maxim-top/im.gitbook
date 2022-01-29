@@ -1,22 +1,22 @@
-#  美信拓扑IM SDK：floo-web API介绍
+#  Maximtop IM SDK:floo-web API introduction
 
-## 选型先读
+## Selection guide
 
-美信拓扑前端 Web SDK 共有三个版本，请按需选择：
+Maximtop front end provides 3 versions of Web SDK, please choose on needs:
 
-1.  [Web版](https://github.com/maxim-top/maxim-web)，主要供 PC 桌面浏览器使用，适合各种传统前端应用；
-2.  [Uni-app版](https://github.com/maxim-top/maxim-uniapp)，基于 DCloud.io 的 uni-app 框架开发，供H5和各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝），也可发布到iOS、Android、快应用等平台；
-3.  [微信小程序版](https://github.com/maxim-top/maxim-miniprogram)，符合微信小程序标准的原生版本，功能跟 uni-app 版完全一致；
+1.  [Web version](https://github.com/maxim-top/maxim-web), which is mainly used by PC desktop browsers and suitable for various traditional front-end applications;
+2.  [Uni-app version](https://github.com/maxim-top/maxim-uniapp), developed based-on DCloud.io uni-app framework, for H5 and various Applets (WeChat/Alypay/Baidu/Toutiao/QQ/DingTalk/Taobao), and also suitable for iOS, Android, QuickApp and other platforms;
+3.  [WeChat Applet version](https://github.com/maxim-top/maxim-miniprogram), a native version for WeChat Applet standard, with the same features as the uni-app version;
 
-以下文档以 Web 版为例，所有版本基本一致。与此同时，DemoApp 源码均已开放，建议直接参考开发。
+The following documenting takes the Web version as an example, and all versions are basically the same. Our DemoApp source code has been opened already, so it is recommended to check for development.
 
-## 前期准备
+## Previous preparation
 
-下载对应 SDK 文件，桌面 Web 版地址为：[floo-2.0.0.js](https://package.maximtop.com/floo-2.0.0.js)，并在代码中引用。
+Download the corresponding SDK file, address of desktop Web version is :[floo-2.0.0.js](https://package.maximtop.com/floo-2.0.0.js), and refer to it in code.
 
-## 初始化
+## Initialization
 
-首先设置 AppID
+Set AppID first
 ```
     const config = {
       // dnsServer: "https://dns.maximtop.com/v2/app_dns",
@@ -25,37 +25,37 @@
       autoLogin: true
       };
 ```
-然后创建im对象，供全局调用。
+Then create an im object for global invocation.
 
-当前支持两种方式：
+Two modes are currently supported:
 
-1.  Script 方式，你可以直接 import 后，使用 window.flooIM()
+1.  Script: You can import it directly and use window.flooIM()
 ```
     import "floo-2.0.0.js";
     
     const im = new window.flooIM(config);
 ```
-这种方式主要为支持浏览器中使用 script 标签引用，但会存在初始化并发问题，所以要用 try-catch-retry，请参见[maxim-web源码](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85)。
+This approach mainly supports script tag references in browsers, but there are initialization concurrency issues, so try-catch-retry is used, see[maxim-web source](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85).
 
-2.  module 方式，import flooim 后，使用 flooim()
+2.  module mode,import flooim first,then use flooim()
 ```
     import flooim from 'floo-2.0.0';
     
     const im = flooim(config);
 ```
-## base 基础部分
+## base
 
-登录
+Login
 ```
         im.login({
-          mobile:String, #与name 2选1
+          mobile:String, #or name
           name:String,
           password:String,
         })
 ```   
 
-监听  
-具体事件列表见本文档的"事件通知"部分
+Listen  
+See the Event Notification section of this document for event list
 ```
         im.on('events', (ret) => {
           //do something with ret
@@ -69,7 +69,7 @@
         })
         
 ```
-取消监听
+Unlisten
 ```
         im.off('events', (ret) => {
           //do something with ret
@@ -83,7 +83,7 @@
         })
       
 ```
-二维码登录
+QR code login
 ```
       im.qrlogin({
         password,
@@ -91,28 +91,28 @@
       });
       
 ```
-token登录
+token login
 ```
         im.tokenLogin(user_id, token)
       
 ```
 ## rosterManager
 
-获取好友id列表
+Get friend id list
 ```
         im.rosterManage.asyncGetRosterIdList().then(res => {
           //
         });
       
 ```
-获取好友信息
+Get friend information
 ```
         im.rosterManage.asyncGetRosterInfo(state.sid).then(res => {
           //
         })
       
 ```
-用户注册
+User registeration
 ```
         rosterManage.asyncRegester({
           username,
@@ -122,63 +122,63 @@ token登录
         });
       
 ```
-根据id列表获取用户详细信息
+Get user details by id list
 ```
         im.rosterManage.asnycGetRosterListDetailByIds(rosterIdList).then(res => {
           //
         });
       
 ```
-根据id获取聊天信息
+Get chat message by id
 ```
         const rosterMessages = im.rosterManage.getRosterMessageByRid(uid);
       
 ```
-读取消息
+Read message
 ```
         im.rosterManage.readRosterMessage(uid);
       
 ```
-删除好友
+Delete friend
 ```
         im.rosterManage
         .asyncDeleteRoster({ user_id})
         .then(() => {
-          alert("好友已删除");
+          alert("Friend deleted");
         });
       
 ```
-获取缓存的所有新用户
+Get all cached new users
 ```
         const userMaps = im.rosterManage.getAllRosterDetail();
       
 ```
-撤回消息，只能撤回5分钟内的
+Revoke a message, only valid for last 5 minutes
 ```
         im.rosterManage.recallMessage(user_id, message_id);
       
 ```
-删除消息
+Delete message
 ```
         im.rosterManage.deleteMessage(user_id, message_id);
       
 ```
-获取用户的未读数
+Get number of user's unreads
 ```
         const unreadCount = im.rosterManage.getUnreadCount(user_id) :
       
 ```
-设置消息成未读
+Set message to unread
 ```
         im.rosterManage.unreadMessage(user_id, message_id);
       
 ```
-获取好友信息
+Get friend information
 ```
         const roserInfo = im.rosterManage.getRosterInfo(user_id);
       
 ```
-获取好友申请列表
+Get friend request list
 ```
         im.rosterManage
         .asyncGetApplyList({ cursor: "" })
@@ -187,7 +187,7 @@ token登录
         });
       
 ```
-获取黑名单
+Get blacklist
 ```
         im.rosterManage
         .asyncGetBlockedlist()
@@ -196,7 +196,7 @@ token登录
         });
       
 ```
-加入黑名单
+Add to blacklist
 ```
         im.rosterManage
         .asyncBlockeAdd(user_id)
@@ -205,7 +205,7 @@ token登录
         });
       
 ```
-移除黑名单
+Remove blacklist
 ```
         im.rosterManage
         .asyncBlockeRemove(user_id)
@@ -214,7 +214,7 @@ token登录
         });
       
 ```
-请求加为好友
+Request to add friend
 ```
         im.rosterManage
         .asyncApply({ user_id, alias })
@@ -223,7 +223,7 @@ token登录
         });
       
 ```
-通过好友申请
+Approve add-friend request
 ```
         im.rosterManage
         .asyncAccept({ user_id })
@@ -232,7 +232,7 @@ token登录
         });
       
 ```
-拒绝好友申请
+Reject friend request
 ```
         im.rosterManage
         .asyncDecline({ user_id })
@@ -241,7 +241,7 @@ token登录
         });
       
 ```
-按名称搜索用户
+Search for user by name
 ```
         im.rosterManage
         .asyncSearchRosterByName({ username })
@@ -250,7 +250,7 @@ token登录
         });
       
 ```
-按ID搜索用户
+Search for user by ID
 ```
         im.rosterManage
         .asyncSearchRosterById({ user_id })
@@ -261,78 +261,78 @@ token登录
 ```
 ## groupManager
 
-获取群信息
+Get group information
 ```
         im.groupManage.asyncGetGroupInfo(group_id, fromServer).then(res => {
           //
         })
       
 ```
-获取加入的群组
+Get the group to join
 ```
         im.groupManage.asyncGetJoinedGroups().then(res => {
           //
         });
       
 ```
-打开群组
+Open group
 ```
-        // 此方法会准备群组聊天界面的一些必备信息。
+        // This approach prepares some of necessary information for group chat interface.
         im.groupManage.openGroup(group_id);
       
 ```
-获取缓存的所有群组详情
+Get all cached group details
 ```
         const allGroupMap = im.groupManage.getAllGroupDetail();
       
 ```
-获取群组成员（异步）
+Get group members (asynchronous)
 ```
         im.groupManage.asyncGetGroupMembers(group_id, fromServer).then(res => {
           //
         });
       
 ```
-获取群组成员（同步）
+Get group members (synchronous)
 ```
         const members = im.groupManage.getGroupMembers(group_id);
       
 ```
-按id获取群组详情
+Get group details by id
 ```
         im.groupManage.asyncGetGroupListDetail(groupIds).then(res => {
           //
         });
       
 ```
-获取群消息
+Get group information
 ```
         const groupMessages = rootState.im.groupManage.getGruopMessage(group_id);
       
 ```
-将群消息设置已读
+Set group message to read
 ```
         im.groupManage.readGroupMessage(group_id)
       
 ```
-撤回消息
+Revoke message
 ```
         im.groupManage.recallMessage(group_id, message_id)
       
 ```
-获取群未读消息数
+Get number of unread group messages
 ```
         const unreadCount = im.groupManage.getUnreadCount(group_id);
       
 ```
-获取群管理员列表
+Get the list of group Admins
 ```
         im.groupManage.asyncGetAdminList({ group_id }).then(res => {
           //
         })
       
 ```
-群添加管理员
+Add group Admin
 ```
         im.groupManage.asyncAdminAdd({
           group_id,
@@ -343,21 +343,21 @@ token登录
         });
       
 ```
-移除管理员
+Remove group Admin
 ```
         im.groupManage.asyncAdminRemove({ group_id, user_list }).then(() => {
           //
         });
       
 ```
-获取群公告详情
+Get group announcement details
 ```
         im.groupManage.asyncGetAnouncementById( {announcement_id, group_id} ).then(res => {
           //
         });
       
 ```
-删除群公告
+Delete group announcement
 ```
         im.groupManage
         .asyncAnouncementDelete({ group_id, announcement_id })
@@ -366,7 +366,7 @@ token登录
         });
       
 ```
-添加群公告
+Add group announcement
 ```
         im.groupManage.asyncAnnouncementEdit({ title, content, group_id })
         .then(() => {
@@ -374,14 +374,14 @@ token登录
         });
       
 ```
-群公告列表
+Group announcement list
 ```
         im.groupManage.asyncGetAnnouncementList({ group_id }).then((res = []) => {
           //
         });
       
 ```
-创建群组
+Create group
 ```
         im.groupManage.asyncCreate({
           name,
@@ -395,33 +395,33 @@ token登录
         });
       
 ```
-解散群组
+Dissolve group
 ```
         im.groupManage.asyncDestroy({ group_id })
         .then(() => {
-          alert("您已解散了此群。。");
+          alert("You have dissolved this group.");
         });
       
 ```
-获取群组详情
+Get group details
 ```
         im.groupManage.asyncGetInfo({ group_id }).then(res => {
           //
         });
       
 ```
-更新群头像
+Update group avatar
 ```
         im.groupManage.asyncUpdateAvatar({
           group_id,
           value,
         })
         .then(() => {
-          alert("更新头像完成");
+          alert("Avatar updated");
         });
       
 ```
-更新群描述
+Update group description
 ```
         im.groupManage.asyncUpdateDescription({
           group_id,
@@ -432,7 +432,7 @@ token登录
         });
       
 ```
-更新群名称
+Update group name
 ```
         im.groupManage.asyncUpdateName({
           group_id,
@@ -443,14 +443,14 @@ token登录
         });
       
 ```
-获取群成员
+Get group member
 ```
         im.groupManage.asyncGetMemberList(group_id, fromServer).then(res => {
           //
         });
       
 ```
-设置群消息免打扰情况
+Set do-not-disturb conditions for group message
 ```
         im.groupManage.asyncGroupMsgMutemode({
           group_id,
@@ -461,28 +461,28 @@ token登录
         });
       
 ```
-获取群黑名单
+Get group blacklist
 ```
         im.groupManage.asyncGroupBannedList({ group_id }).then(res => {
           //
         });
       
 ```
-禁言群成员
+Ban group member
 ```
         im.groupManage.asyncGroupBab({ group_id, duration, user_list }).then(() => {
           //
         });
       
 ```
-解除成员
+Unban group member
 ```
         im.groupManage.asyncGroupUnban({ group_id, user_list }).then(() => {
           //
         });
       
 ```
-设置群成员是否可以邀请
+Set whether group members can invite new member
 ```
         im.groupManage.asyncUpdateAllowMemberInvitation({
           group_id,
@@ -493,7 +493,7 @@ token登录
         });
       
 ```
-设置群成员是否可以修改群信息
+Set whether group members can modify group information
 ```
         im.groupManage.asyncUpdateAllowMemberModify({
           group_id,
@@ -504,7 +504,7 @@ token登录
         });
       
 ```
-设置群是否开启已读模式
+Set whether to enable read mode in group
 ```
         im.groupManage.asyncUpdateEnableReadack({
           group_id,
@@ -515,7 +515,7 @@ token登录
         });
       
 ```
-设置群历史是否可见
+Set whether group history is visible
 ```
         im.groupManage.asyncUpdateHistoryVisible({
           group_id,
@@ -526,7 +526,7 @@ token登录
         });
       
 ```
-设置入群是否需要申请
+Set whether need to apply for group joining
 ```
         im.groupManage.asyncUpdateRequireadminapproval({
           group_id,
@@ -537,7 +537,7 @@ token登录
         });
       
 ```
-更换群主
+Change group Owner
 ```
         im.groupManage.asyncOwnerTransfer({
           group_id,
@@ -548,7 +548,7 @@ token登录
         });
       
 ```
-申请加入群
+Apply to join group
 ```
         im.groupManage.asyncApply({ group_id, reason })
         .then(() => {
@@ -556,7 +556,7 @@ token登录
         });
       
 ```
-同意/拒绝申请用户加入群
+Accept/reject group membership application
 ```
         im.groupManage.asyncApplyHandle({
           approval: true/false,
@@ -567,21 +567,21 @@ token登录
         });
       
 ```
-获取群黑名单
+Get group blacklist
 ```
         im.groupManage.asyncGroupBockedlist({ group_id }).then(res => {
           //
         });
       
 ```
-将成员加入黑名单
+Add member to blacklist
 ```
         im.groupManage.asyncGroupBlock({ group_id, user_list }).then(() => {
           //
         });
       
 ```
-解除黑名单
+Remove member from blacklist
 ```
         im.groupManage.asyncGroupUnblock({ group_id, user_list })
         .then(() => {
@@ -589,28 +589,28 @@ token登录
         });
       
 ```
-踢出群组
+Kick out group member
 ```
         im.groupManage.asyncKick({ group_id, user_list }).then(() => {
           //
         });
       
 ```
-获取群邀请列表
+Get group invitation list
 ```
         this.im.groupManage.asyncGetInvitationList().then(res => {
           //
         });
       
 ```
-邀请成员加入群
+Invite member to group
 ```
         im.groupManage.asyncInvite({ group_id, user_list }).then(() => {
           /
         });
       
 ```
-同意/拒绝群邀请
+Accept/reject group invitation
 ```
         im.groupManage.asyncInviteHandle({
           approval: true,
@@ -621,7 +621,7 @@ token登录
         });
       
 ```
-退出群
+Quit group
 ```
         im.groupManage.asyncLeave({ group_id })
         .then(() => {
@@ -629,7 +629,7 @@ token登录
         });
       
 ```
-修改群名片
+Modify group profile
 ```
         im.groupManage.asyncUpdateDisplayName({
           group_id,
@@ -640,21 +640,21 @@ token登录
         });
       
 ```
-获取群申请列表
+Get the list of group membership requests
 ```
         im.groupManage.asncGetApplicationList({ group_list }).then(rs => {
           //
         });
       
 ```
-获取群文件
+Get group file
 ```
         im.groupManage.asyncGetFileList({ group_id }).then((res = []) => {
           //
         });
       
 ```
-删除群文件
+Delete group file
 ```
         im.groupManage.asyncFileDelete({ file_list, group_id }).then(() => {
           //
@@ -663,7 +663,7 @@ token登录
 ```
 ## sysManager
 
-发送好友消息
+Send message to friend
 ```
         im.sysManage.sendRosterMessage({
           type,
@@ -673,7 +673,7 @@ token登录
         });
       
 ```
-发送群消息
+Send group message
 ```
         im.sysManage.sendGroupMessage({
           type,
@@ -683,7 +683,7 @@ token登录
         });
       
 ```
-群发送@消息
+Group-sent @message
 ```
         im.sysManage.sendMentionMessage({
           gid,
@@ -696,32 +696,32 @@ token登录
         });
       
 ```
-发送输入状态消息
+Send type status
 ```
         im.sysManage.sendInputStatusMessage(roster_id, "nothing"/"typing");
       
 ```
-转发消息
+Forward message
 ```
         im.sysManage.forwardMessage({
           uid,
-          gid, //2选1
+          gid, //either-or
           mid,
         });
       
 ```
-请求历史消息
+Request history
 ```
         im.sysManage.requireHistoryMessage(roster_id/group_id, mid, amount);
-        // mid：消息ID， 从哪条消息往前取历史，0表示最新一条消息。 amount：最多取多少条消息。
+        // mid:message ID, from which message to fetch history, 0 for the latest message. amount:max. number of messages to fetch.
       
 ```
-获取所有消息未读状态
+Get all unread messages
 ```
         const allAcks = im.sysManage.getAllMessageStatus() || {};
       
 ```
-获取群文件上传url
+Get upload url of group file
 ```
         im.sysManage.asyncGetGroupAvatarUploadUrl({
           group_id,
@@ -732,7 +732,7 @@ token登录
         });
       
 ```
-获取聊天文件上传地址
+Get upload address of chat file
 ```
         im.sysManage.asyncGetFileUploadChatFileUrl({
           file_type,
@@ -744,7 +744,7 @@ token登录
         });
       
 ```
-上传文件
+Upload file
 ```
         im.sysManage.asyncFileUpload({
           file,
@@ -758,34 +758,34 @@ token登录
         })
       
 ```
-拼装图片路径
+Assemble image path
 ```
         const image = im.sysManage.getImage({ avatar, type='roster', thumbnail=true });
       
 ```
 ## userManager
 
-获取登录用户的token
+Get token of logged-in user
 ```
         const token =  im.userManage.getToken();
       
 ```
-获取登录用户的uid
+Get uid of logged-in user
 ```
         const cuid = im.userManage.getUid();
       
 ```
-获取appid
+Get appid
 ```
         const appid = im.userManage.getAppid();
       
 ```
-获取最近回话列表
+Get recent reply list
 ```
         const list = im.userManage.getConversationList();
       
 ```
-发送验证码
+Send verification code
 ```
         im.userManage
         .asyncUserSendSms({
@@ -796,7 +796,7 @@ token登录
         });
       
 ```
-发送验证码（通过图片验证码）
+Send verification code (in image)
 ```
         im.userManage
         .asyncCaptchaSms({
@@ -809,14 +809,14 @@ token登录
         });
       
 ```
-检查用户名是否可用
+Check whether username is available
 ```
         im.userManage.asyncUserNameCheck(username).then(() => {
           //
         });
       
 ```
-绑定手机号-使用签名绑定
+Bind mobile number - bind with signature
 ```
         im.userManage.asyncUserMobileBindSign({
             mobile,
@@ -826,7 +826,7 @@ token登录
           });
       
 ```
-手机号验证码登录
+Login with mobile number and verification vode
 ```
         im.userManage.asyncUserMobileLogin({
           captcha,
@@ -837,7 +837,7 @@ token登录
         });
       
 ```
-更新手机号
+Update mobile number
 ```
         im.userManage
         .asyncUpdateMobile({ mobile })
@@ -846,7 +846,7 @@ token登录
         });
       
 ```
-更新头像
+Update avatar
 ```
         im.userManage
         .asyncUpdateAvatar({
@@ -857,21 +857,21 @@ token登录
         });
       
 ```
-更新昵称
+Update nickname
 ```
         im.userManage.asyncUpdateNickName({ nick_name }).then(() => {
           //
         });
       
 ```
-获取用户profile
+Get user profile
 ```
         im.userManage.asyncGetProfile(true).then(res => {
           //
         })
       
 ```
-更新用户profile
+Update user profile
 ```
         im.userManage.asyncUpdateProfile({
           username,
@@ -881,14 +881,14 @@ token登录
         })
       
 ```
-获取用户设置信息
+Get user settings
 ```
         im.userManage.asyncGetSettings().then(res => {
           //
         })
       
 ```
-修改用户设置
+Modify user settings
 ```
         im.userManage
         .asyncUpdateSettings({ 
@@ -911,168 +911,168 @@ token登录
         });
       
 ```
-## 事件通知
+## Event notification
 
-1.  Floo通知
+1.  Floo notification
 ```
-事件名称：flooNotice
-事件内容：({category, desc})
-{category: 'loginMessage',desc: 'socket connecting...'} // 开始建连接
-{category: 'loginMessage',desc: 'socket connect success...'} // 连接成功
-{category: 'loginMessage',desc: 'logining socket service...'} // 开始登录
-{category: 'loginMessage',desc: 'login socket failure ......'} // 登录失败
-{category: 'loginMessage',desc: 'login socket success.....'} // 登录成功
-{category: 'loginMessage', desc: 'getting token...' } //获取token
-{category: 'loginMessage',desc: 'token sucecc, getting roster lists..'} // 获取token成功，开始获取好友列表
-{category: 'loginMessage',desc: 'get roster list failure:' + ex.message} // 获取好友列表失败
-{category: 'action', desc: 'relogin' } // 需要自动登录
-{category: 'action', desc: 'relogin_manually' }  // 需要手动登录
-{category: 'conversation_deleted',desc: { id, source:'user_operation' }} // 会话被删除。ID：会话ID， source: 来源
-{category: 'userNotice', desc:'PASSWORD_CHANGED'} // 用户密码改变
-{category: 'userNotice', desc:'FROZEN'} // 用户账户被封禁
-{category: 'userNotice', desc:'REMOVED'} // 用户被删除
-{category: 'userNotice', desc:'KICK_BY_SAME_DEVICE'} // 当前设备被相同设备踢下线
-{category: 'userNotice', desc:'KICKED_BY_OTHER_DEVICE'} // 当前设备被其它设备踢下线
-{category: 'userNotice', desc:'INFO_UPDATED'} // 用户信息改变：profile或setting
-{category: 'userNotice', desc:'DEVICE_LOGIN'} // 用户其它设备上线
-{category: 'userNotice', desc:'DEVICE_LOGOUT'} // 用户其它设备下线
-{category: 'userNotice', desc:'DEVICE_ADDED'} // 新设备通知
-{category: 'userNotice', desc:'DEVICE_REMOVED'} // 设备被移除的通知
-{category: 'userNotice', desc:'CLUSTER_CHANGED'} // 用户所在集群改变 需要重新登录
+Event name:flooNotice
+Event content:({category, desc})
+{category: 'loginMessage',desc: 'socket connecting...'} // Start connecting
+{category: 'loginMessage',desc: 'socket connect success...'} // Connected
+{category: 'loginMessage',desc: 'logining socket service...'} // Start logging in
+{category: 'loginMessage',desc: 'login socket failure ......'} // Login failed
+{category: 'loginMessage',desc: 'login socket success.....'} // Login succeeded
+{category: 'loginMessage', desc: 'getting token...' } //Get token
+{category: 'loginMessage',desc: 'token sucecc, getting roster lists..'} // Getting token succeeded, start to fetch friend list
+{category: 'loginMessage',desc: 'get roster list failure:' + ex.message} // Friend list fetching failed
+{category: 'action', desc: 'relogin' } // Need to automatically login
+{category: 'action', desc: 'relogin_manually' }  // Need to manually login
+{category: 'conversation_deleted',desc: { id, source:'user_operation' }} // Session deleted. ID:session ID, source: source
+{category: 'userNotice', desc:'PASSWORD_CHANGED'} // User password changed
+{category: 'userNotice', desc:'FROZEN'} // User account frozen
+{category: 'userNotice', desc:'REMOVED'} // User removed
+{category: 'userNotice', desc:'KICK_BY_SAME_DEVICE'} // Current device is kicked off the line by the same device
+{category: 'userNotice', desc:'KICKED_BY_OTHER_DEVICE'} // Current device is kicked off the line by other device
+{category: 'userNotice', desc:'INFO_UPDATED'} // User information changed:profile or setting
+{category: 'userNotice', desc:'DEVICE_LOGIN'} // User's other device logged-in
+{category: 'userNotice', desc:'DEVICE_LOGOUT'} // User's other device logged-out
+{category: 'userNotice', desc:'DEVICE_ADDED'} // New device notified
+{category: 'userNotice', desc:'DEVICE_REMOVED'} // Device removal notified
+{category: 'userNotice', desc:'CLUSTER_CHANGED'} // User's group changed, please re-login
 ```
-2. Floo错误
+2. Floo error
 ```
-事件名称：flooError
-事件内容：({category, desc})
-{category: 'USER_BANNED', desc:'用户被禁言'}
-{category: 'USER_FROZEN', desc:'用户被冻结，请联系App管理员。'}
-{category: 'APP_FROZEN', desc:'APP 被冻结，请登陆美信拓扑控制台查看详情。'}
-{category: 'LICENSE', desc:'无效 LICENSE，请确认服务已按时付费。'}
-{category: 'LICENSE', desc:'超出 LICENSE 用户数限制，请购买更高规格服务。'}
-{category: 'DNS_FAILED', desc: dnsServer } // DNS错误: 无法访问
+Event name:flooError
+Event content:({category, desc})
+{category: 'USER_BANNED', desc:'User is banned'}
+{category: 'USER_FROZEN', desc:'User is frozen, please contact App Admin.'}
+{category: 'APP_FROZEN', desc:'APP is frozen, please login Maximtop Console for more details.'}
+{category: 'LICENSE', desc:'Invalid LICENSE, please make sure service is paid on time.'}
+{category: 'LICENSE', desc:'LICENSE user limit reached, please purchase higher service package.'}
+{category: 'DNS_FAILED', desc: dnsServer } // DNS error: unaccessible
 ```
-3. 登录失败
+3. Login failed
 ```
-事件名称: loginFail
-事件内容：(desc) 失败原因的描述
+Event name: loginFail
+Event content: (desc) description of failure cause
 ```
-4. 登录成功
+4. Login succeeded
 ```
-事件名称：loginSuccess
-事件内容：({})
+Event name:loginSuccess
+Event content:({})
 ```
-5. 群列表更新
+5. Group list update
 ```
-事件名称：onGroupListUpdate
-事件内容：()
+Event name:onGroupListUpdate
+Event content:()
 ```
-6. 群成员列表更新
+6. Group member list update
 ```
-事件名称：onGroupMemberChanged
-事件内容: (groupId) 群ID
+Event name:onGroupMemberChanged
+Event content: (groupId) group ID
 ```
-7. 收到群消息
+7. Group message received
 ```
-事件名称: onGroupMessage
-事件内容: (meta) 消息的内容
+Event name: onGroupMessage
+Event content: (meta) Message content
 ```
-8. 对方正在输入
+8. The other party is typing
 ```
-事件名称: onInputStatusMessage
-事件内容: ({ext,from,to})  ext:扩展字段 from: 发送者用户ID to: 接收者用户ID
+Event name: onInputStateMessage
+Event content: ({ext,from,to})  ext:extension field from: sender's user ID to: receiver's user ID
 ```
-9. 收到群组@消息
+9. Group @message received
 ```
-事件名称: onMentionMessage
-事件内容: (meta) 消息的内容
+Event name: onMentionMessage
+Event content: (meta) Message content
 ```
-10. 消息被取消已读
+10. Message re-unread
 ```
-事件名称: onMessageCanceled
-事件内容: ({uid,mid})  uid: 会话ID， mid: 消息ID
+Event name: onMessageCanceled
+Event content: ({uid,mid})  uid: session ID, mid: message ID
 ```
-11. 消息被删除
+11. Message deleted
 ```
-事件名称: onMessageDeleted
-事件内容: ({uid,mid})  uid: 会话ID， mid: 消息ID
+Event name: onMessageDeleted
+Event content: ({uid,mid})  uid: session ID, mid: message ID
 ```
-12. 消息被撤回
+12. Message revoked
 ```
-事件名称: onMessageRecalled
-事件内容: ({uid,mid})  uid: 会话ID， mid: 消息ID
+Event name: onMessageRecalled
+Event content: ({uid,mid})  uid: session ID, mid: message ID
 ```
-13. 消息状态变更：撤回/删除/已读
+13. Message status change: revoked/deleted/read
 ```
-事件名称: onMessageStatusChanged
-事件内容: ({uid,mid})  uid: 会话ID， mid: 消息ID
+Event name: onMessageStateChanged
+Event content: ({uid,mid})  uid: session ID, mid: message ID
 ```
-14. 收到历史消息
+14. Message history received
 ```
-事件名称: onReceiveHistoryMsg
-事件内容: ({next})  next: 下次取历史消息的key
+Event name: onReceiveHistoryMsg
+Event content: ({next})  next: Get message history key next time
 ```
-15. 好友信息变更
+15. Friend information changed
 ```
-事件名称: onRosterInfoUpdate
-事件内容: (rosterIds)  rosterIds: 好友的用户ID列表
+Event name: onRosterInfoUpdate
+Event content: (rosterIds)  rosterIds: List of friends' user ids
 ```
-16. 好友列表变更
+16. Friend list changed
 ```
-事件名称: onRosterListUpdate
-事件内容: (meta) 好友通知的消息内容
+Event name: onRosterListUpdate
+Event content: (meta) Message content of friend notification
 ```
-17. 收到单聊消息
+17. Single chat received
 ```
-事件名称: onRosterMessage
-事件内容: (meta) 好友通知的消息内容
+Event name: onRosterMessage
+Event content: (meta) Message content of friend notification
 ```
-18. 消息发送状态变更
+18. Message sending status changed
 ```
-事件名称: onSendingMessageStatusChanged
-事件内容: ({status,mid})  status: 发送状态，取值为sending|failed|sent， mid: 客户端生成的client_mid
+Event name: onSendingMessageStateChanged
+Event content: ({state,mid})  state: sending status, valued as sending|failed|sent, mid: client_mid generated by client
 ```
-19. 未读数改变
+19. Number of unreads changed
 ```
-事件名称: onUnreadChange
-事件内容: (cid)  会话ID
+Event name: onUnreadChange
+Event content: (cid)  session ID
 ```
-20. 最近会话更新
+20. Recent session updated
 ```
-事件名称: recentlistUpdate
-事件内容: ()
+Event name: recentlistUpdate
+Event content: ()
 ```
-21. 群组创建通知
+21. Group creation notification
 ```
-事件名称: onGroupCreated
-事件内容: (meta) 群通知的消息内容
+Event name: onGroupCreated
+Event content: (meta) Content of group notification
 ```
-22. 群组解散通知
+22. Group dissolution notification
 ```
-事件名称: onGroupDestoryed
-事件内容: (meta) 群通知的消息内容
+Event name: onGroupDestoryed
+Event content: (meta) Content of group notification
 ```
-23. 成员入群通知
+23. Notification of group membership
 ```
-事件名称: onGroupJoined
-事件内容: (meta) 群通知的消息内容
+Event name: onGroupJoined
+Event content: (meta) Content of group notification
 ```
-24. 群申请被通过
+24. Group application approved
 ```
-事件名称: onGroupApplyAccepted
-事件内容: (meta) 群通知的消息内容
+Event name: onGroupApplyAccepted
+Event content: (meta) Content of group notification
 ```
-25. 群申请被拒绝
+25. Group application rejected
 ```
-事件名称: onGroupApplyDeclined
-事件内容: (meta) 群通知的消息内容
+Event name: onGroupApplyDeclined
+Event content: (meta) Content of group notification
 ```
-26. 被群禁言
+26. Banned in group
 ```
-事件名称: onGroupBaned
-事件内容: (meta) 群通知的消息内容
+Event name: onGroupBaned
+Event content: (meta) Content of group notification
 ```
-27. 被群取消禁言
+27. Unbanned in group
 ```
-事件名称: onGroupUnbaned
-事件内容: (meta) 群通知的消息内容
+Event name: onGroupUnbaned
+Event content: (meta) Content of group notification
 ```

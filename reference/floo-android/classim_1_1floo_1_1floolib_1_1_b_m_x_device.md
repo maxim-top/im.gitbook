@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXDevice
-summary: 设备信息 
+summary: Device information 
 
 ---
 
@@ -8,19 +8,19 @@ summary: 设备信息
 
 
 
-设备信息 
+Device information 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-delete)**() |
-| int | **[deviceSN](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-devicesn)**()<br>设备序列号  |
-| long | **[userId](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-userid)**()<br>用户id  |
-| int | **[platform](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-platform)**()<br>软件平台  |
-| String | **[userAgent](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-useragent)**()<br>用户代理信息  |
-| void | **[setUserAgent](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-setuseragent)**(String userAgent)<br>设置用户代理信息  |
-| boolean | **[isCurrentDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-iscurrentdevice)**()<br>是否是当前设备  |
+| int | **[deviceSN](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-devicesn)**()<br>Device serial number  |
+| long | **[userId](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-userid)**()<br>User id  |
+| int | **[platform](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-platform)**()<br>Software platform  |
+| String | **[userAgent](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-useragent)**()<br>User agent information  |
+| void | **[setUserAgent](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-setuseragent)**(String userAgent)<br>Set user agent information  |
+| boolean | **[isCurrentDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_device.md#function-iscurrentdevice)**()<br>Whether for the current device  |
 
 ## Protected Functions
 
@@ -45,7 +45,7 @@ inline synchronized void delete()
 inline int deviceSN()
 ```
 
-设备序列号 
+Device serial number 
 
 **Return**: int 
 
@@ -55,7 +55,7 @@ inline int deviceSN()
 inline long userId()
 ```
 
-用户id 
+User id 
 
 **Return**: int64_t 
 
@@ -65,7 +65,7 @@ inline long userId()
 inline int platform()
 ```
 
-软件平台 
+Software platform 
 
 **Return**: int 
 
@@ -75,7 +75,7 @@ inline int platform()
 inline String userAgent()
 ```
 
-用户代理信息 
+User agent information 
 
 **Return**: std::string 
 
@@ -87,11 +87,11 @@ inline void setUserAgent(
 )
 ```
 
-设置用户代理信息 
+Set user agent information 
 
 **Parameters**: 
 
-  * **userAgent** 用户代理信息 
+  * **userAgent** User agent information 
 
 
 ### function isCurrentDevice
@@ -100,7 +100,7 @@ inline void setUserAgent(
 inline boolean isCurrentDevice()
 ```
 
-是否是当前设备 
+Whether for the current device 
 
 **Return**: bool 
 

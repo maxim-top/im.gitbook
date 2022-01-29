@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXRosterService::Application
-summary: 好友邀请 
+summary: Friend invitation 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 好友邀请
 
 
 
-好友邀请 
+Friend invitation 
 
 ## Public Functions
 

@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXRosterManager
-summary: 好友管理器 
+summary: Friend manager 
 
 ---
 
@@ -8,31 +8,31 @@ summary: 好友管理器
 
 
 
-好友管理器 
+Friend manager 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | | **[BMXRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-bmxrostermanager)**([BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) service) |
-| void | **[get](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-get)**(final boolean forceRefresh, final BMXDataCallBack< ListOfLongLong > callBack)<br>获取好友列表，如果forceRefresh == true，则强制从服务端拉取  |
-| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final long rosterId, final boolean forceRefresh, final BMXDataCallBack< [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) > callBack)<br>搜索用户  |
-| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final String name, final boolean forceRefresh, final BMXDataCallBack< [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) > callBack)<br>搜索用户  |
-| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final ListOfLongLong rosterIdList, final boolean forceRefresh, final BMXDataCallBack< BMXRosterItemList > callBack)<br>批量搜索用户  |
-| void | **[setItemExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemextension)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final String extension, final BMXCallBack callBack)<br>更新好友本地扩展信息  |
-| void | **[setItemAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemalias)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final String alias, final BMXCallBack callBack)<br>更新好友别名  |
-| void | **[setItemMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemmutenotification)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final boolean status, final BMXCallBack callBack)<br>设置是否拒收用户消息  |
-| void | **[apply](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-apply)**(final long rosterId, final String message, final BMXCallBack callBack)<br>申请添加好友  |
-| void | **[remove](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-remove)**(final long rosterId, final BMXCallBack callBack)<br>删除好友  |
-| void | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getapplicationlist)**(final String cursor, final int pageSize, final BMXDataCallBack< ApplicationPage > callBack)<br>获取申请添加好友列表  |
-| void | **[accept](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-accept)**(final long rosterId, final BMXCallBack callBack)<br>接受加好友申请  |
-| void | **[decline](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-decline)**(final long rosterId, final String reason, final BMXCallBack callBack)<br>拒绝加好友申请  |
-| void | **[block](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-block)**(final long rosterId, final BMXCallBack callBack)<br>加入黑名单  |
-| void | **[unblock](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-unblock)**(final long rosterId, final BMXCallBack callBack)<br>从黑名单移除  |
-| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getblocklist)**(final boolean forceRefresh, final BMXDataCallBack< ListOfLongLong > callBack)<br>获取黑名单，如果forceRefresh == true，则强制从服务端拉取  |
-| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-downloadavatar)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final FileProgressListener listener, final BMXCallBack callBack)<br>下载头像  |
-| void | **[addRosterListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-addrosterlistener)**([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) listener)<br>添加好友变化监听者  |
-| void | **[removeRosterListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-removerosterlistener)**([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) listener)<br>移除好友变化监听者  |
+| void | **[get](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-get)**(final boolean forceRefresh, final BMXDataCallBack< ListOfLongLong > callBack)<br>Get friend list, force pull from server-side if forceRefresh == true  |
+| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final long rosterId, final boolean forceRefresh, final BMXDataCallBack< [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) > callBack)<br>Search for users  |
+| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final String name, final boolean forceRefresh, final BMXDataCallBack< [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) > callBack)<br>Search for users  |
+| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final ListOfLongLong rosterIdList, final boolean forceRefresh, final BMXDataCallBack< BMXRosterItemList > callBack)<br>Batch search for users  |
+| void | **[setItemExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemextension)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final String extension, final BMXCallBack callBack)<br>Update friend's local extension information  |
+| void | **[setItemAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemalias)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final String alias, final BMXCallBack callBack)<br>Update friend's alias  |
+| void | **[setItemMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemmutenotification)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final boolean status, final BMXCallBack callBack)<br>Set whether to reject user message  |
+| void | **[apply](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-apply)**(final long rosterId, final String message, final BMXCallBack callBack)<br>Request to add friend  |
+| void | **[remove](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-remove)**(final long rosterId, final BMXCallBack callBack)<br>Delete friend  |
+| void | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getapplicationlist)**(final String cursor, final int pageSize, final BMXDataCallBack< ApplicationPage > callBack)<br>Get list of adding friend requests  |
+| void | **[accept](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-accept)**(final long rosterId, final BMXCallBack callBack)<br>Accept adding friend request  |
+| void | **[decline](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-decline)**(final long rosterId, final String reason, final BMXCallBack callBack)<br>Reject adding friend request  |
+| void | **[block](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-block)**(final long rosterId, final BMXCallBack callBack)<br>Add to blacklist  |
+| void | **[unblock](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-unblock)**(final long rosterId, final BMXCallBack callBack)<br>Remove from blacklist  |
+| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getblocklist)**(final boolean forceRefresh, final BMXDataCallBack< ListOfLongLong > callBack)<br>Get blacklist, force pull from server-side if forceRefresh == true  |
+| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-downloadavatar)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final FileProgressListener listener, final BMXCallBack callBack)<br>Download avatar  |
+| void | **[addRosterListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-addrosterlistener)**([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) listener)<br>Add friend change listener  |
+| void | **[removeRosterListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-removerosterlistener)**([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) listener)<br>Remove friend change listener  |
 
 ## Public Functions Documentation
 
@@ -54,12 +54,12 @@ inline void get(
 )
 ```
 
-获取好友列表，如果forceRefresh == true，则强制从服务端拉取 
+Get friend list, force pull from server-side if forceRefresh == true 
 
 **Parameters**: 
 
-  * **forceRefresh** 是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取 
-  * **callBack** [BMXErrorCode] 好友id列表 
+  * **forceRefresh** Whether to read data from server, true to force read from server, false to automatically read from server if the local read list is empty 
+  * **callBack** [BMXErrorCode] friend id list 
 
 
 ### function search
@@ -72,13 +72,13 @@ inline void search(
 )
 ```
 
-搜索用户 
+Search for users 
 
 **Parameters**: 
 
-  * **rosterId** 搜索的好友id 
-  * **forceRefresh** 为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。 
-  * **callBack** [BMXErrorCode] 查询返回的用户的信息 
+  * **rosterId** Friend id to search 
+  * **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty. 
+  * **callBack** [BMXErrorCode] user information returned by query 
 
 
 ### function search
@@ -91,13 +91,13 @@ inline void search(
 )
 ```
 
-搜索用户 
+Search for users 
 
 **Parameters**: 
 
-  * **name** 搜索的用户名 
-  * **forceRefresh** 为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。 
-  * **callBack** [BMXErrorCode] 查询返回的用户的信息 
+  * **name** Username to search 
+  * **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty. 
+  * **callBack** [BMXErrorCode] user information returned by query 
 
 
 ### function search
@@ -110,13 +110,13 @@ inline void search(
 )
 ```
 
-批量搜索用户 
+Batch search for users 
 
 **Parameters**: 
 
-  * **rosterIdList** 需要搜索的用户id列表 
-  * **forceRefresh** 是否强制从服务器获取，为true则强制从服务器获取 
-  * **callBack** [BMXErrorCode] 返回的好友信息列表 
+  * **rosterIdList** List of user ids to search 
+  * **forceRefresh** Whether to force fetch from server, true to force fetch from server 
+  * **callBack** [BMXErrorCode] List of friend information returned 
 
 
 ### function setItemExtension
@@ -129,12 +129,12 @@ inline void setItemExtension(
 )
 ```
 
-更新好友本地扩展信息 
+Update friend's local extension information 
 
 **Parameters**: 
 
-  * **item** 用户信息 
-  * **extension** 本地扩展信息 
+  * **item** User information 
+  * **extension** Local extension information 
   * **callBack** [BMXErrorCode]
 
 
@@ -148,12 +148,12 @@ inline void setItemAlias(
 )
 ```
 
-更新好友别名 
+Update friend's alias 
 
 **Parameters**: 
 
-  * **item** 用户信息 
-  * **alias** 好友别名 
+  * **item** User information 
+  * **alias** Friend alias 
   * **callBack** [BMXErrorCode]
 
 
@@ -167,12 +167,12 @@ inline void setItemMuteNotification(
 )
 ```
 
-设置是否拒收用户消息 
+Set whether to reject user message 
 
 **Parameters**: 
 
-  * **item** 用户信息 
-  * **status** 是否拒收用户消息，true拒收，false不拒收 
+  * **item** User information 
+  * **status** Whether to reject user message, true to reject, false to accept 
   * **callBack** [BMXErrorCode]
 
 
@@ -186,12 +186,12 @@ inline void apply(
 )
 ```
 
-申请添加好友 
+Request to add friend 
 
 **Parameters**: 
 
-  * **rosterId** 申请添加的用户id 
-  * **message** 好友申请信息 
+  * **rosterId** User id requested to be added 
+  * **message** Friend application information 
   * **callBack** [BMXErrorCode]
 
 
@@ -204,11 +204,11 @@ inline void remove(
 )
 ```
 
-删除好友 
+Delete friend 
 
 **Parameters**: 
 
-  * **rosterId** 删除的好友id 
+  * **rosterId** Delete friend id 
   * **callBack** [BMXErrorCode]
 
 
@@ -222,13 +222,13 @@ inline void getApplicationList(
 )
 ```
 
-获取申请添加好友列表 
+Get list of adding friend requests 
 
 **Parameters**: 
 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
-  * **callBack** [BMXErrorCode] 返回的申请好友列表信息 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
+  * **callBack** [BMXErrorCode] List of friend requests returned 
 
 
 ### function accept
@@ -240,11 +240,11 @@ inline void accept(
 )
 ```
 
-接受加好友申请 
+Accept adding friend request 
 
 **Parameters**: 
 
-  * **rosterId** 申请加为好友的用户id 
+  * **rosterId** User id to be added as a friend 
   * **callBack** [BMXErrorCode]
 
 
@@ -258,12 +258,12 @@ inline void decline(
 )
 ```
 
-拒绝加好友申请 
+Reject adding friend request 
 
 **Parameters**: 
 
-  * **rosterId** 申请加为好友的用户id 
-  * **reason** 拒绝的原因 
+  * **rosterId** User id to be added as a friend 
+  * **reason** Reason for rejection 
   * **callBack** [BMXErrorCode]
 
 
@@ -276,11 +276,11 @@ inline void block(
 )
 ```
 
-加入黑名单 
+Add to blacklist 
 
 **Parameters**: 
 
-  * **rosterId** 加入黑名单的用户id 
+  * **rosterId** Blacklisted user id 
   * **callBack** [BMXErrorCode]
 
 
@@ -293,11 +293,11 @@ inline void unblock(
 )
 ```
 
-从黑名单移除 
+Remove from blacklist 
 
 **Parameters**: 
 
-  * **rosterId** 从黑名单移除的用户id 
+  * **rosterId** Unblacklisted user id 
   * **callBack** [BMXErrorCode]
 
 
@@ -310,12 +310,12 @@ inline void getBlockList(
 )
 ```
 
-获取黑名单，如果forceRefresh == true，则强制从服务端拉取 
+Get blacklist, force pull from server-side if forceRefresh == true 
 
 **Parameters**: 
 
-  * **forceRefresh** 是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取 
-  * **callBack** [BMXErrorCode] 好友id列表 
+  * **forceRefresh** Whether to read data from server, true to force read from server, false to automatically read from server if the local read list is empty 
+  * **callBack** [BMXErrorCode] friend id list 
 
 
 ### function downloadAvatar
@@ -328,12 +328,12 @@ inline void downloadAvatar(
 )
 ```
 
-下载头像 
+Download avatar 
 
 **Parameters**: 
 
-  * **item** 用户信息 
-  * **listener** 下载回调函数 
+  * **item** User information 
+  * **listener** Download callback function 
   * **callBack** [BMXErrorCode]
 
 
@@ -345,11 +345,11 @@ inline void addRosterListener(
 )
 ```
 
-添加好友变化监听者 
+Add friend change listener 
 
 **Parameters**: 
 
-  * **listener** 好友变化监听者 
+  * **listener** Friend change listener 
 
 
 ### function removeRosterListener
@@ -360,11 +360,11 @@ inline void removeRosterListener(
 )
 ```
 
-移除好友变化监听者 
+Remove friend change listener 
 
 **Parameters**: 
 
-  * **listener** 好友变化监听者 
+  * **listener** Friend change listener 
 
 
 -------------------------------

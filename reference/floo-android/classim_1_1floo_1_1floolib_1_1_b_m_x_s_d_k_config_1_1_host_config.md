@@ -15,7 +15,7 @@ title: im::floo::floolib::BMXSDKConfig::HostConfig
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-delete)**() |
 | | **[HostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)**() |
-| | **[HostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)**(String im, int port, String rest)<br>服务设置  |
+| | **[HostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)**(String im, int port, String rest)<br>Service settings  |
 | void | **[setImHost](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setimhost)**(String value) |
 | String | **[getImHost](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getimhost)**() |
 | void | **[setImPort](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setimport)**(int value) |
@@ -63,13 +63,13 @@ inline HostConfig(
 )
 ```
 
-服务设置 
+Service settings 
 
 **Parameters**: 
 
-  * **im** IM服务器地址 
-  * **port** IM服务器端口 
-  * **rest** ratel服务器地址 
+  * **im** IM server address 
+  * **port** IM server interface 
+  * **rest** ratel server address 
 
 
 ### function setImHost

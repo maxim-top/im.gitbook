@@ -1,6 +1,6 @@
 ---
 title: floo::BMXVideoAttachment
-summary: 视频消息附件 
+summary: Video attachment of message 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 视频消息附件
 
 
 
-视频消息附件 
+Video attachment of message 
 
 
 `#include <bmx_video_attachment.h>`
@@ -19,21 +19,21 @@ Inherits from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md),
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & path, int duration, const [Size] & size, const std::string & displayName ="")<br>构造函数，构建发送视频消息附件  |
-| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & path, const std::string & thumbnailPath, int duration, const [Size] & size, const std::string & displayName ="")<br>构造函数，构建发送视频消息附件  |
-| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & ratelUrl, int duration, const [Size] & size, const std::string & displayName, int64_t fileLength)<br>构造函数，构建接收视频消息附件  |
-| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & ratelUrl, const std::string & thumbnailRatelUrl, int duration, const [Size] & size, const std::string & displayName, int64_t fileLength)<br>构造函数，构建接收视频消息附件  |
-| virtual | **[~BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-~bmxvideoattachment)**()<br>析构函数  |
-| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_video_attachment.md#function-type)**() const<br>返回文件类型  |
-| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_video_attachment.md#function-clone)**() const<br>克隆函数  |
-| const [Size] & | **[size](classfloo_1_1_b_m_x_video_attachment.md#function-size)**() const<br>视频大小，宽度和高度  |
-| int32_t | **[duration](classfloo_1_1_b_m_x_video_attachment.md#function-duration)**() const<br>视频片段时长  |
-| void | **[setThumbnail](classfloo_1_1_b_m_x_video_attachment.md#function-setthumbnail)**(const std::string & path)<br>设置发送视频片段消息缩略图  |
-| const std::string & | **[thumbnailPath](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnailpath)**() const<br>缩略图本地路径  |
-| const std::string & | **[thumbnailUrl](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnailurl)**() const<br>远程缩略图使用URL  |
-| void | **[setThumbnailRatelUrl](classfloo_1_1_b_m_x_video_attachment.md#function-setthumbnailratelurl)**(const std::string & thumbnailRatelUrl)<br>设置发送视频片段消息缩略图ratel服务器路径  |
-| const std::string & | **[thumbnailRatelUrl](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnailratelurl)**() const<br>缩略图ratel服务器路径  |
-| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[thumbnailDownloadStatus](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnaildownloadstatus)**() const<br>缩略图下载状态  |
+| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & path, int duration, const [Size] & size, const std::string & displayName ="")<br>Constructor to build the video attachment to send  |
+| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & path, const std::string & thumbnailPath, int duration, const [Size] & size, const std::string & displayName ="")<br>Constructor to build the video attachment to send  |
+| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & ratelUrl, int duration, const [Size] & size, const std::string & displayName, int64_t fileLength)<br>Constructor to build the video attachment to receive  |
+| | **[BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-bmxvideoattachment)**(const std::string & ratelUrl, const std::string & thumbnailRatelUrl, int duration, const [Size] & size, const std::string & displayName, int64_t fileLength)<br>Constructor to build the video attachment to receive  |
+| virtual | **[~BMXVideoAttachment](classfloo_1_1_b_m_x_video_attachment.md#function-~bmxvideoattachment)**()<br>Destructor  |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_video_attachment.md#function-type)**() const<br>Type of returned file  |
+| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_video_attachment.md#function-clone)**() const<br>Cloning function  |
+| const [Size] & | **[size](classfloo_1_1_b_m_x_video_attachment.md#function-size)**() const<br>Video size, width, and height  |
+| int32_t | **[duration](classfloo_1_1_b_m_x_video_attachment.md#function-duration)**() const<br>Length of video clip  |
+| void | **[setThumbnail](classfloo_1_1_b_m_x_video_attachment.md#function-setthumbnail)**(const std::string & path)<br>Set the thumbnail for video clip to send  |
+| const std::string & | **[thumbnailPath](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnailpath)**() const<br>Local path of thumbnail  |
+| const std::string & | **[thumbnailUrl](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnailurl)**() const<br>URL for remote thumbnail  |
+| void | **[setThumbnailRatelUrl](classfloo_1_1_b_m_x_video_attachment.md#function-setthumbnailratelurl)**(const std::string & thumbnailRatelUrl)<br>Set thumbnail ratel server path to send video clip message  |
+| const std::string & | **[thumbnailRatelUrl](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnailratelurl)**() const<br>Thumbnail ratel server path  |
+| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[thumbnailDownloadStatus](classfloo_1_1_b_m_x_video_attachment.md#function-thumbnaildownloadstatus)**() const<br>Thumbnail downloading state  |
 
 ## Friends
 
@@ -48,15 +48,15 @@ Inherits from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md),
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & path, const std::string & displayName ="")<br>构造函数，构建发送文件消息附件  |
-| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & ratelUrl, const std::string & displayName, int64_t fileLength)<br>构造函数，构建接收文件消息附件  |
-| virtual | **[~BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-~bmxfileattachment)**()<br>析构函数  |
-| const std::string & | **[path](classfloo_1_1_b_m_x_file_attachment.md#function-path)**() const<br>本地路径  |
-| const std::string & | **[displayName](classfloo_1_1_b_m_x_file_attachment.md#function-displayname)**() const<br>显示名  |
-| const std::string & | **[ratelUrl](classfloo_1_1_b_m_x_file_attachment.md#function-ratelurl)**() const<br>远程ratel使用URL  |
-| const std::string & | **[url](classfloo_1_1_b_m_x_file_attachment.md#function-url)**() const<br>远程使用URL  |
-| int64_t | **[fileLength](classfloo_1_1_b_m_x_file_attachment.md#function-filelength)**() const<br>文件长度  |
-| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[downloadStatus](classfloo_1_1_b_m_x_file_attachment.md#function-downloadstatus)**() const<br>附件下载状态  |
+| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & path, const std::string & displayName ="")<br>Constructor to build the message attachment of sent file  |
+| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & ratelUrl, const std::string & displayName, int64_t fileLength)<br>Constructor to build the message attachment of received file  |
+| virtual | **[~BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-~bmxfileattachment)**()<br>Destructor  |
+| const std::string & | **[path](classfloo_1_1_b_m_x_file_attachment.md#function-path)**() const<br>Local path  |
+| const std::string & | **[displayName](classfloo_1_1_b_m_x_file_attachment.md#function-displayname)**() const<br>Display name  |
+| const std::string & | **[ratelUrl](classfloo_1_1_b_m_x_file_attachment.md#function-ratelurl)**() const<br>URL for remote ratel  |
+| const std::string & | **[url](classfloo_1_1_b_m_x_file_attachment.md#function-url)**() const<br>URL for remote  |
+| int64_t | **[fileLength](classfloo_1_1_b_m_x_file_attachment.md#function-filelength)**() const<br>File length  |
+| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[downloadStatus](classfloo_1_1_b_m_x_file_attachment.md#function-downloadstatus)**() const<br>Attachment download state  |
 
 **Protected Attributes inherited from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md)**
 
@@ -80,15 +80,15 @@ Inherits from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md),
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>附件类型  |
-| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>附件下载状态  |
+| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
+| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
 
 **Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>构造函数  |
-| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>析构函数  |
+| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
+| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
 
 
 ## Public Functions Documentation
@@ -104,14 +104,14 @@ BMXVideoAttachment(
 )
 ```
 
-构造函数，构建发送视频消息附件 
+Constructor to build the video attachment to send 
 
 **Parameters**: 
 
-  * **path** 文件的本地路径 
-  * **duration** 视频片段时长 
-  * **size** 视频大小，宽度和高度 
-  * **displayName** 文件展示名 
+  * **path** Local path of file 
+  * **duration** Length of video clip 
+  * **size** Video size, width, and height 
+  * **displayName** Display name of file 
 
 
 ### function BMXVideoAttachment
@@ -126,15 +126,15 @@ BMXVideoAttachment(
 )
 ```
 
-构造函数，构建发送视频消息附件 
+Constructor to build the video attachment to send 
 
 **Parameters**: 
 
-  * **path** 文件的本地路径 
-  * **thumbnailPath** 缩略图文件的本地路径 
-  * **duration** 视频片段时长 
-  * **size** 视频大小，宽度和高度 
-  * **displayName** 文件展示名 
+  * **path** Local path of file 
+  * **thumbnailPath** Local path of thumbnail file 
+  * **duration** Length of video clip 
+  * **size** Video size, width, and height 
+  * **displayName** Display name of file 
 
 
 ### function BMXVideoAttachment
@@ -149,15 +149,15 @@ BMXVideoAttachment(
 )
 ```
 
-构造函数，构建接收视频消息附件 
+Constructor to build the video attachment to receive 
 
 **Parameters**: 
 
-  * **ratelUrl** ratel文件服务器地址 
-  * **duration** 视频片段时长 
-  * **size** 视频大小，宽度和高度 
-  * **displayName** 文件展示名 
-  * **fileLength** 文件大小 
+  * **ratelUrl** Address of ratel file server 
+  * **duration** Length of video clip 
+  * **size** Video size, width, and height 
+  * **displayName** Display name of file 
+  * **fileLength** File size 
 
 
 ### function BMXVideoAttachment
@@ -173,16 +173,16 @@ BMXVideoAttachment(
 )
 ```
 
-构造函数，构建接收视频消息附件 
+Constructor to build the video attachment to receive 
 
 **Parameters**: 
 
-  * **ratelUrl** ratel文件服务器地址 
-  * **thumbnailRatelUrl** 缩略图ratel文件服务器地址 
-  * **duration** 视频片段时长 
-  * **size** 视频大小，宽度和高度 
-  * **displayName** 文件展示名 
-  * **fileLength** 文件大小 
+  * **ratelUrl** Address of ratel file server 
+  * **thumbnailRatelUrl** Thumbnail ratel file server address 
+  * **duration** Length of video clip 
+  * **size** Video size, width, and height 
+  * **displayName** Display name of file 
+  * **fileLength** File size 
 
 
 ### function ~BMXVideoAttachment
@@ -191,7 +191,7 @@ BMXVideoAttachment(
 inline virtual ~BMXVideoAttachment()
 ```
 
-析构函数 
+Destructor 
 
 ### function type
 
@@ -199,7 +199,7 @@ inline virtual ~BMXVideoAttachment()
 inline virtual Type type() const
 ```
 
-返回文件类型 
+Type of returned file 
 
 **Return**: Type 
 
@@ -212,7 +212,7 @@ inline virtual Type type() const
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -225,7 +225,7 @@ virtual BMXMessageAttachmentPtr clone() const
 const Size & size() const
 ```
 
-视频大小，宽度和高度 
+Video size, width, and height 
 
 **Return**: Size 
 
@@ -235,7 +235,7 @@ const Size & size() const
 int32_t duration() const
 ```
 
-视频片段时长 
+Length of video clip 
 
 **Return**: int32_t 
 
@@ -247,11 +247,11 @@ void setThumbnail(
 )
 ```
 
-设置发送视频片段消息缩略图 
+Set the thumbnail for video clip to send 
 
 **Parameters**: 
 
-  * **path** 视频片段消息缩略图 
+  * **path** Thumbnail of video clip message 
 
 
 ### function thumbnailPath
@@ -260,7 +260,7 @@ void setThumbnail(
 const std::string & thumbnailPath() const
 ```
 
-缩略图本地路径 
+Local path of thumbnail 
 
 **Return**: std::string 
 
@@ -270,7 +270,7 @@ const std::string & thumbnailPath() const
 const std::string & thumbnailUrl() const
 ```
 
-远程缩略图使用URL 
+URL for remote thumbnail 
 
 **Return**: std::string 
 
@@ -282,11 +282,11 @@ void setThumbnailRatelUrl(
 )
 ```
 
-设置发送视频片段消息缩略图ratel服务器路径 
+Set thumbnail ratel server path to send video clip message 
 
 **Parameters**: 
 
-  * **thumbnailRatelUrl** 视频片段消息缩略图服务器路径 
+  * **thumbnailRatelUrl** Thumbnail server path for video clip message 
 
 
 ### function thumbnailRatelUrl
@@ -295,7 +295,7 @@ void setThumbnailRatelUrl(
 const std::string & thumbnailRatelUrl() const
 ```
 
-缩略图ratel服务器路径 
+Thumbnail ratel server path 
 
 **Return**: std::string 
 
@@ -305,7 +305,7 @@ const std::string & thumbnailRatelUrl() const
 DownloadStatus thumbnailDownloadStatus() const
 ```
 
-缩略图下载状态 
+Thumbnail downloading state 
 
 **Return**: DownloadStatus 
 

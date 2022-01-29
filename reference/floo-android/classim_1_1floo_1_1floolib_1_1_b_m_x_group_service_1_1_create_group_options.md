@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroupService::CreateGroupOptions
-summary: 创建群组选项 
+summary: Group creation options 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 创建群组选项
 
 
 
-创建群组选项 
+Group creation options 
 
 ## Public Functions
 

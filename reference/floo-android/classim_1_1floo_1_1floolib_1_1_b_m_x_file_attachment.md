@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXFileAttachment
-summary: 消息文件附件 
+summary: Message file attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息文件附件
 
 
 
-消息文件附件 
+Message file attachment 
 
 Inherits from [im.floo.floolib.BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md), BMXBaseObject
 
@@ -19,17 +19,17 @@ Inherited by [im.floo.floolib.BMXImageAttachment](classim_1_1floo_1_1floolib_1_1
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-delete)**() |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path, String displayName)<br>构造函数，构建发送文件消息附件  |
+| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path, String displayName)<br>Constructor to build the message attachment of sent file  |
 | | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path) |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String ratelUrl, String displayName, long fileLength)<br>构造函数，构建接收文件消息附件  |
-| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-type)**()<br>返回文件类型  |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-clone)**()<br>克隆函数  |
-| String | **[path](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path)**()<br>本地路径  |
-| String | **[displayName](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname)**()<br>显示名  |
+| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String ratelUrl, String displayName, long fileLength)<br>Constructor to build the message attachment of received file  |
+| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-type)**()<br>Type of returned file  |
+| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-clone)**()<br>Cloning function  |
+| String | **[path](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path)**()<br>Local path  |
+| String | **[displayName](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname)**()<br>Display name  |
 | String | **[ratelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-ratelurl)**() |
-| String | **[url](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url)**()<br>远程URL  |
-| long | **[fileLength](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength)**()<br>文件长度  |
-| BMXMessageAttachment.DownloadStatus | **[downloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus)**()<br>附件下载状态  |
+| String | **[url](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url)**()<br>Remote URL  |
+| long | **[fileLength](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength)**()<br>File length  |
+| BMXMessageAttachment.DownloadStatus | **[downloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus)**()<br>Attachment download state  |
 | [BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md) | **[dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-dynamic-cast)**([BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) attachment) |
 
 ## Protected Functions
@@ -73,12 +73,12 @@ inline BMXFileAttachment(
 )
 ```
 
-构造函数，构建发送文件消息附件 
+Constructor to build the message attachment of sent file 
 
 **Parameters**: 
 
-  * **path** 文件的本地路径 
-  * **displayName** 文件展示名 
+  * **path** Local path of file 
+  * **displayName** Display name of file 
 
 
 ### function BMXFileAttachment
@@ -100,13 +100,13 @@ inline BMXFileAttachment(
 )
 ```
 
-构造函数，构建接收文件消息附件 
+Constructor to build the message attachment of received file 
 
 **Parameters**: 
 
-  * **ratelUrl** ratel服务器地址 
-  * **displayName** 文件展示名 
-  * **fileLength** 文件大小 
+  * **ratelUrl** ratel server address 
+  * **displayName** Display name of file 
+  * **fileLength** File size 
 
 
 ### function type
@@ -115,7 +115,7 @@ inline BMXFileAttachment(
 inline BMXMessageAttachment.Type type()
 ```
 
-返回文件类型 
+Type of returned file 
 
 **Return**: Type 
 
@@ -131,7 +131,7 @@ inline BMXMessageAttachment.Type type()
 inline BMXMessageAttachment clone()
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -147,7 +147,7 @@ inline BMXMessageAttachment clone()
 inline String path()
 ```
 
-本地路径 
+Local path 
 
 **Return**: std::string 
 
@@ -157,7 +157,7 @@ inline String path()
 inline String displayName()
 ```
 
-显示名 
+Display name 
 
 **Return**: std::string 
 
@@ -174,7 +174,7 @@ inline String ratelUrl()
 inline String url()
 ```
 
-远程URL 
+Remote URL 
 
 **Return**: std::string 
 
@@ -184,7 +184,7 @@ inline String url()
 inline long fileLength()
 ```
 
-文件长度 
+File length 
 
 **Return**: std::string 
 
@@ -194,7 +194,7 @@ inline long fileLength()
 inline BMXMessageAttachment.DownloadStatus downloadStatus()
 ```
 
-附件下载状态 
+Attachment download state 
 
 **Return**: DownloadStatus 
 

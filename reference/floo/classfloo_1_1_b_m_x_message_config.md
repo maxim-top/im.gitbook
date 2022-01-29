@@ -1,6 +1,6 @@
 ---
 title: floo::BMXMessageConfig
-summary: 消息配置 
+summary: Message configuration 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息配置
 
 
 
-消息配置 
+Message configuration 
 
 
 `#include <bmx_message_config.h>`
@@ -19,44 +19,44 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype)** { Change, Set}<br>当前读取的Badge数字的操作类型  |
+| enum class| **[BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype)** { Change, Set}<br>Operation type of the currently read Badge number  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | virtual | **[~BMXMessageConfig](classfloo_1_1_b_m_x_message_config.md#function-~bmxmessageconfig)**() |
-| void | **[setMentionAll](classfloo_1_1_b_m_x_message_config.md#function-setmentionall)**(bool mentionAll)<br>设置是否@全员  |
-| bool | **[getMentionAll](classfloo_1_1_b_m_x_message_config.md#function-getmentionall)**()<br>获取是否@全员  |
-| void | **[setMentionList](classfloo_1_1_b_m_x_message_config.md#function-setmentionlist)**(const std::vector< int64_t > & mentionList)<br>设置通知成员id列表  |
-| std::vector< int64_t > | **[getMentionList](classfloo_1_1_b_m_x_message_config.md#function-getmentionlist)**()<br>获取@成员列表  |
-| void | **[setMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-setmentionedmessage)**(const std::string & mentionedMessage)<br>设置@消息  |
-| std::string | **[getMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-getmentionedmessage)**()<br>获取@消息  |
-| void | **[setPushMessage](classfloo_1_1_b_m_x_message_config.md#function-setpushmessage)**(const std::string & pushMessage)<br>设置推送消息  |
-| std::string | **[getPushMessage](classfloo_1_1_b_m_x_message_config.md#function-getpushmessage)**()<br>获取推送消息  |
-| void | **[setSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-setsendernickname)**(const std::string & senderNickname)<br>设置发送者昵称  |
-| std::string | **[getSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-getsendernickname)**()<br>获取发送者昵称  |
-| void | **[setGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-setgroupmemberlist)**(const std::vector< int64_t > & groupMemberList)<br>设置需要群已读消息的群成员id列表  |
-| std::vector< int64_t > | **[getGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-getgroupmemberlist)**()<br>获取需要群已读消息的群成员id列表  |
-| void | **[addGroupMember](classfloo_1_1_b_m_x_message_config.md#function-addgroupmember)**(int64_t id)<br>添加群已读消息的群成员id列表成员  |
-| void | **[removeGroupMember](classfloo_1_1_b_m_x_message_config.md#function-removegroupmember)**(int64_t id)<br>清除需要群已读消息的群成员id列表成员  |
-| void | **[clearGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-cleargroupmemberlist)**()<br>清空群已读消息的群成员id列表  |
-| void | **[setIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-setiosconfig)**(const std::string & iosConfig)<br>设置IOS系统配置信息  |
-| std::string | **[getIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-getiosconfig)**()<br>获取IOS系统配置信息  |
-| void | **[setAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-setandroidconfig)**(const std::string & androidConfig)<br>设置Android系统配置信息  |
-| std::string | **[getAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-getandroidconfig)**()<br>获取Android系统配置信息  |
-| void | **[setPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowbegintime)**(int beginTime)<br>设置推送显示开始时间  |
-| int | **[getPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowbegintime)**()<br>获取推送显示开始时间  |
-| void | **[setPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowendtime)**(int endTime)<br>设置推送显示结束时间  |
-| int | **[getPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowendtime)**()<br>获取推送显示结束时间  |
-| void | **[setPushTitle](classfloo_1_1_b_m_x_message_config.md#function-setpushtitle)**(const std::string & pushTitle)<br>设置推送标题  |
-| std::string | **[getPushTitle](classfloo_1_1_b_m_x_message_config.md#function-getpushtitle)**()<br>获取推送标题  |
-| bool | **[isSilence](classfloo_1_1_b_m_x_message_config.md#function-issilence)**()<br>获取当前的推送消息是否是静默消息  |
-| [BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype) | **[getBadgeCountType](classfloo_1_1_b_m_x_message_config.md#function-getbadgecounttype)**()<br>获取当前的推送消息中badge计数  |
-| int | **[getBadgeCount](classfloo_1_1_b_m_x_message_config.md#function-getbadgecount)**(int count)<br>获取当前的推送消息中badge计数  |
-| void | **[setUsername](classfloo_1_1_b_m_x_message_config.md#function-setusername)**(const std::string & username)<br>设置用户名  |
-| std::string | **[getUsername](classfloo_1_1_b_m_x_message_config.md#function-getusername)**()<br>获得用户名  |
-| std::string | **[serialize](classfloo_1_1_b_m_x_message_config.md#function-serialize)**() const<br>序列化操作  |
+| void | **[setMentionAll](classfloo_1_1_b_m_x_message_config.md#function-setmentionall)**(bool mentionAll)<br>Set whether to @ all members  |
+| bool | **[getMentionAll](classfloo_1_1_b_m_x_message_config.md#function-getmentionall)**()<br>Get whether to @ all members  |
+| void | **[setMentionList](classfloo_1_1_b_m_x_message_config.md#function-setmentionlist)**(const std::vector< int64_t > & mentionList)<br>Set the list of notified member ids  |
+| std::vector< int64_t > | **[getMentionList](classfloo_1_1_b_m_x_message_config.md#function-getmentionlist)**()<br>Get @ member list  |
+| void | **[setMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-setmentionedmessage)**(const std::string & mentionedMessage)<br>Set @ message  |
+| std::string | **[getMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-getmentionedmessage)**()<br>Get @ message  |
+| void | **[setPushMessage](classfloo_1_1_b_m_x_message_config.md#function-setpushmessage)**(const std::string & pushMessage)<br>Set push message  |
+| std::string | **[getPushMessage](classfloo_1_1_b_m_x_message_config.md#function-getpushmessage)**()<br>Get push message  |
+| void | **[setSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-setsendernickname)**(const std::string & senderNickname)<br>Set nickname of sender  |
+| std::string | **[getSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-getsendernickname)**()<br>Get nickname of sender  |
+| void | **[setGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-setgroupmemberlist)**(const std::vector< int64_t > & groupMemberList)<br>Set the list of member ids that require read group messages  |
+| std::vector< int64_t > | **[getGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-getgroupmemberlist)**()<br>Get the list of group member ids that require read group messages  |
+| void | **[addGroupMember](classfloo_1_1_b_m_x_message_config.md#function-addgroupmember)**(int64_t id)<br>Member of group member id list with read messages added  |
+| void | **[removeGroupMember](classfloo_1_1_b_m_x_message_config.md#function-removegroupmember)**(int64_t id)<br>Empty the list of member ids that require read group messages  |
+| void | **[clearGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-cleargroupmemberlist)**()<br>List of member ids with read group messages emptied  |
+| void | **[setIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-setiosconfig)**(const std::string & iosConfig)<br>Set IOS system configuration information  |
+| std::string | **[getIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-getiosconfig)**()<br>Get IOS system configuration information  |
+| void | **[setAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-setandroidconfig)**(const std::string & androidConfig)<br>Set Android system configuration information  |
+| std::string | **[getAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-getandroidconfig)**()<br>Get Android system configuration information  |
+| void | **[setPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowbegintime)**(int beginTime)<br>Set start time for push display  |
+| int | **[getPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowbegintime)**()<br>Get start time for push display  |
+| void | **[setPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowendtime)**(int endTime)<br>Set end time for push display  |
+| int | **[getPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowendtime)**()<br>Get end time for push display  |
+| void | **[setPushTitle](classfloo_1_1_b_m_x_message_config.md#function-setpushtitle)**(const std::string & pushTitle)<br>Set push header  |
+| std::string | **[getPushTitle](classfloo_1_1_b_m_x_message_config.md#function-getpushtitle)**()<br>Get push header  |
+| bool | **[isSilence](classfloo_1_1_b_m_x_message_config.md#function-issilence)**()<br>Get whether the current push is a silent message  |
+| [BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype) | **[getBadgeCountType](classfloo_1_1_b_m_x_message_config.md#function-getbadgecounttype)**()<br>Get the badge count of the current push  |
+| int | **[getBadgeCount](classfloo_1_1_b_m_x_message_config.md#function-getbadgecount)**(int count)<br>Get the badge count of the current push  |
+| void | **[setUsername](classfloo_1_1_b_m_x_message_config.md#function-setusername)**(const std::string & username)<br>**to-be-translate**  |
+| std::string | **[getUsername](classfloo_1_1_b_m_x_message_config.md#function-getusername)**()<br>**to-be-translate**  |
+| std::string | **[serialize](classfloo_1_1_b_m_x_message_config.md#function-serialize)**() const<br>Serialization operation  |
 | BMXMessageConfigPtr | **[createMessageConfig](classfloo_1_1_b_m_x_message_config.md#function-createmessageconfig)**(bool mentionAll) |
 
 ## Friends
@@ -72,12 +72,12 @@ Inherits from BMXBaseObject
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Change | | 读取Badge计数的操作类型为增加或减少。正数为增加负数为减少   |
-| Set | | 设置Badge的计数为当前的计数值   |
+| Change | | The type of operation to read the Badge count is increment or decrement. Positive number is increment and negative number is decrement.   |
+| Set | | Set the Badge count to the current count   |
 
 
 
-当前读取的Badge数字的操作类型 
+Operation type of the currently read Badge number 
 
 ## Public Functions Documentation
 
@@ -96,7 +96,7 @@ void setMentionAll(
 )
 ```
 
-设置是否@全员 
+Set whether to @ all members 
 
 **Parameters**: 
 
@@ -109,7 +109,7 @@ void setMentionAll(
 bool getMentionAll()
 ```
 
-获取是否@全员 
+Get whether to @ all members 
 
 **Return**: bool 
 
@@ -121,7 +121,7 @@ void setMentionList(
 )
 ```
 
-设置通知成员id列表 
+Set the list of notified member ids 
 
 **Parameters**: 
 
@@ -134,7 +134,7 @@ void setMentionList(
 std::vector< int64_t > getMentionList()
 ```
 
-获取@成员列表 
+Get @ member list 
 
 **Return**: std::vector<int64_t> 
 
@@ -146,7 +146,7 @@ void setMentionedMessage(
 )
 ```
 
-设置@消息 
+Set @ message 
 
 **Parameters**: 
 
@@ -159,7 +159,7 @@ void setMentionedMessage(
 std::string getMentionedMessage()
 ```
 
-获取@消息 
+Get @ message 
 
 **Return**: std::string 
 
@@ -171,7 +171,7 @@ void setPushMessage(
 )
 ```
 
-设置推送消息 
+Set push message 
 
 **Parameters**: 
 
@@ -184,7 +184,7 @@ void setPushMessage(
 std::string getPushMessage()
 ```
 
-获取推送消息 
+Get push message 
 
 **Return**: std::string 
 
@@ -196,7 +196,7 @@ void setSenderNickname(
 )
 ```
 
-设置发送者昵称 
+Set nickname of sender 
 
 **Parameters**: 
 
@@ -209,7 +209,7 @@ void setSenderNickname(
 std::string getSenderNickname()
 ```
 
-获取发送者昵称 
+Get nickname of sender 
 
 **Return**: std::string 
 
@@ -221,7 +221,7 @@ void setGroupMemberList(
 )
 ```
 
-设置需要群已读消息的群成员id列表 
+Set the list of member ids that require read group messages 
 
 **Parameters**: 
 
@@ -234,7 +234,7 @@ void setGroupMemberList(
 std::vector< int64_t > getGroupMemberList()
 ```
 
-获取需要群已读消息的群成员id列表 
+Get the list of group member ids that require read group messages 
 
 **Return**: std::vector<int64_t> 
 
@@ -246,7 +246,7 @@ void addGroupMember(
 )
 ```
 
-添加群已读消息的群成员id列表成员 
+Member of group member id list with read messages added 
 
 ### function removeGroupMember
 
@@ -256,7 +256,7 @@ void removeGroupMember(
 )
 ```
 
-清除需要群已读消息的群成员id列表成员 
+Empty the list of member ids that require read group messages 
 
 **Return**: std::vector<int64_t> 
 
@@ -266,7 +266,7 @@ void removeGroupMember(
 void clearGroupMemberList()
 ```
 
-清空群已读消息的群成员id列表 
+List of member ids with read group messages emptied 
 
 ### function setIOSConfig
 
@@ -276,7 +276,7 @@ void setIOSConfig(
 )
 ```
 
-设置IOS系统配置信息 
+Set IOS system configuration information 
 
 **Parameters**: 
 
@@ -289,7 +289,7 @@ void setIOSConfig(
 std::string getIOSConfig()
 ```
 
-获取IOS系统配置信息 
+Get IOS system configuration information 
 
 **Return**: std::string 
 
@@ -301,7 +301,7 @@ void setAndroidConfig(
 )
 ```
 
-设置Android系统配置信息 
+Set Android system configuration information 
 
 **Parameters**: 
 
@@ -314,7 +314,7 @@ void setAndroidConfig(
 std::string getAndroidConfig()
 ```
 
-获取Android系统配置信息 
+Get Android system configuration information 
 
 **Return**: std::string 
 
@@ -326,7 +326,7 @@ void setPushShowBeginTime(
 )
 ```
 
-设置推送显示开始时间 
+Set start time for push display 
 
 **Parameters**: 
 
@@ -339,7 +339,7 @@ void setPushShowBeginTime(
 int getPushShowBeginTime()
 ```
 
-获取推送显示开始时间 
+Get start time for push display 
 
 **Return**: int 
 
@@ -351,7 +351,7 @@ void setPushShowEndTime(
 )
 ```
 
-设置推送显示结束时间 
+Set end time for push display 
 
 **Parameters**: 
 
@@ -364,7 +364,7 @@ void setPushShowEndTime(
 int getPushShowEndTime()
 ```
 
-获取推送显示结束时间 
+Get end time for push display 
 
 **Return**: int 
 
@@ -376,7 +376,7 @@ void setPushTitle(
 )
 ```
 
-设置推送标题 
+Set push header 
 
 **Parameters**: 
 
@@ -389,7 +389,7 @@ void setPushTitle(
 std::string getPushTitle()
 ```
 
-获取推送标题 
+Get push header 
 
 **Return**: std::string 
 
@@ -399,7 +399,7 @@ std::string getPushTitle()
 bool isSilence()
 ```
 
-获取当前的推送消息是否是静默消息 
+Get whether the current push is a silent message 
 
 **Return**: bool 
 
@@ -409,7 +409,7 @@ bool isSilence()
 BadgeCountType getBadgeCountType()
 ```
 
-获取当前的推送消息中badge计数 
+Get the badge count of the current push 
 
 **Return**: BadgeCountType 
 
@@ -421,7 +421,7 @@ int getBadgeCount(
 )
 ```
 
-获取当前的推送消息中badge计数 
+Get the badge count of the current push 
 
 **Return**: int 
 
@@ -433,7 +433,7 @@ void setUsername(
 )
 ```
 
-设置用户名 
+**to-be-translate** 
 
 **Parameters**: 
 
@@ -446,7 +446,7 @@ void setUsername(
 std::string getUsername()
 ```
 
-获得用户名 
+**to-be-translate** 
 
 **Return**: std::string 
 
@@ -456,7 +456,7 @@ std::string getUsername()
 std::string serialize() const
 ```
 
-序列化操作 
+Serialization operation 
 
 **Return**: std::string 
 

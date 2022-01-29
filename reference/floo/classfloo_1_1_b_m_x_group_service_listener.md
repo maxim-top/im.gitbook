@@ -1,6 +1,6 @@
 ---
 title: floo::BMXGroupServiceListener
-summary: 群组变化监听者 
+summary: Group change listener 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群组变化监听者
 
 
 
-群组变化监听者 
+Group change listener 
 
 
 `#include <bmx_group_service_listener.h>`
@@ -17,35 +17,35 @@ summary: 群组变化监听者
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**()<br>构造函数  |
-| virtual | **[~BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md#function-~bmxgroupservicelistener)**()<br>析构函数  |
-| virtual void | **[onGroupCreate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**(BMXGroupPtr group)<br>多设备同步创建群组  |
-| virtual void | **[onGroupListUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**(const BMXGroupList & list)<br>群列表更新了  |
-| virtual void | **[onGroupJoined](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupjoined)**(BMXGroupPtr group)<br>加入了某群  |
-| virtual void | **[onGroupLeft](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupleft)**(BMXGroupPtr group, const std::string & reason)<br>退出了某群  |
-| virtual void | **[onInvitated](classfloo_1_1_b_m_x_group_service_listener.md#function-oninvitated)**(int64_t groupId, int64_t inviter, const std::string & message)<br>收到入群邀请  |
-| virtual void | **[onInvitationAccepted](classfloo_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted)**(BMXGroupPtr group, int64_t inviteeId)<br>入群邀请被接受  |
-| virtual void | **[onInvitationDeclined](classfloo_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined)**(BMXGroupPtr group, int64_t inviteeId, const std::string & reason)<br>入群申请被拒绝  |
-| virtual void | **[onApplied](classfloo_1_1_b_m_x_group_service_listener.md#function-onapplied)**(BMXGroupPtr group, int64_t applicantId, const std::string & message)<br>收到入群申请  |
-| virtual void | **[onApplicationAccepted](classfloo_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted)**(BMXGroupPtr group, int64_t approver)<br>入群申请被接受  |
-| virtual void | **[onApplicationDeclined](classfloo_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined)**(BMXGroupPtr group, int64_t approver, const std::string & reason)<br>入群申请被拒绝  |
-| virtual void | **[onMembersBanned](classfloo_1_1_b_m_x_group_service_listener.md#function-onmembersbanned)**(BMXGroupPtr group, const std::vector< int64_t > & members, int64_t duration)<br>群成员被禁言  |
-| virtual void | **[onMembersUnbanned](classfloo_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>群成员被解除禁言  |
-| virtual void | **[onMemberJoined](classfloo_1_1_b_m_x_group_service_listener.md#function-onmemberjoined)**(BMXGroupPtr group, int64_t memberId, int64_t inviter)<br>加入新成员  |
-| virtual void | **[onMemberLeft](classfloo_1_1_b_m_x_group_service_listener.md#function-onmemberleft)**(BMXGroupPtr group, int64_t memberId, const std::string & reason)<br>群成员退出  |
-| virtual void | **[onAdminsAdded](classfloo_1_1_b_m_x_group_service_listener.md#function-onadminsadded)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>添加了新管理员  |
-| virtual void | **[onAdminsRemoved](classfloo_1_1_b_m_x_group_service_listener.md#function-onadminsremoved)**(BMXGroupPtr group, const std::vector< int64_t > & members, const std::string & reason)<br>移除了管理员  |
-| virtual void | **[onOwnerAssigned](classfloo_1_1_b_m_x_group_service_listener.md#function-onownerassigned)**(BMXGroupPtr group)<br>成为群主  |
-| virtual void | **[onGroupInfoUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate)**(BMXGroupPtr group, [BMXGroup::UpdateInfoType](classfloo_1_1_b_m_x_group.md#enum-updateinfotype) type)<br>群组信息变更  |
-| virtual void | **[onMemberChangeNickName](classfloo_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname)**(BMXGroupPtr group, int64_t memberId, const std::string & nickName)<br>群成员更改群内昵称  |
-| virtual void | **[onAnnouncementUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**(BMXGroupPtr group, BMXGroup::AnnouncementPtr announcement)<br>收到群公告  |
-| virtual void | **[onSharedFileUploaded](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>收到共享文件  |
-| virtual void | **[onSharedFileDeleted](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>删除了共享文件  |
-| virtual void | **[onSharedFileUpdated](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>共享文件更新文件名  |
-| virtual void | **[onBlockListAdded](classfloo_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>添加黑名单  |
-| virtual void | **[onBlockListRemoved](classfloo_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>删除黑名单  |
-| virtual void | **[onGroupListUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**()<br>客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息  |
-| void | **[registerGroupService](classfloo_1_1_b_m_x_group_service_listener.md#function-registergroupservice)**([BMXGroupService](classfloo_1_1_b_m_x_group_service.md) * service)<br>注册BMXGroupServiceListener绑定到的BMXGroupService（SDK内部自动注册）  |
+| | **[BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**()<br>Constructor  |
+| virtual | **[~BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md#function-~bmxgroupservicelistener)**()<br>Destructor  |
+| virtual void | **[onGroupCreate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**(BMXGroupPtr group)<br>Create a group cross-device synchronously  |
+| virtual void | **[onGroupListUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**(const BMXGroupList & list)<br>Group list updated  |
+| virtual void | **[onGroupJoined](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupjoined)**(BMXGroupPtr group)<br>Join a group  |
+| virtual void | **[onGroupLeft](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupleft)**(BMXGroupPtr group, const std::string & reason)<br>Quit a group  |
+| virtual void | **[onInvitated](classfloo_1_1_b_m_x_group_service_listener.md#function-oninvitated)**(int64_t groupId, int64_t inviter, const std::string & message)<br>Group invitation received  |
+| virtual void | **[onInvitationAccepted](classfloo_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted)**(BMXGroupPtr group, int64_t inviteeId)<br>Group invitation accepted  |
+| virtual void | **[onInvitationDeclined](classfloo_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined)**(BMXGroupPtr group, int64_t inviteeId, const std::string & reason)<br>Join group rejected  |
+| virtual void | **[onApplied](classfloo_1_1_b_m_x_group_service_listener.md#function-onapplied)**(BMXGroupPtr group, int64_t applicantId, const std::string & message)<br>Group membership application received  |
+| virtual void | **[onApplicationAccepted](classfloo_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted)**(BMXGroupPtr group, int64_t approver)<br>Join group accepted  |
+| virtual void | **[onApplicationDeclined](classfloo_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined)**(BMXGroupPtr group, int64_t approver, const std::string & reason)<br>Join group rejected  |
+| virtual void | **[onMembersBanned](classfloo_1_1_b_m_x_group_service_listener.md#function-onmembersbanned)**(BMXGroupPtr group, const std::vector< int64_t > & members, int64_t duration)<br>Member banned  |
+| virtual void | **[onMembersUnbanned](classfloo_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>Member unbanned  |
+| virtual void | **[onMemberJoined](classfloo_1_1_b_m_x_group_service_listener.md#function-onmemberjoined)**(BMXGroupPtr group, int64_t memberId, int64_t inviter)<br>New member added  |
+| virtual void | **[onMemberLeft](classfloo_1_1_b_m_x_group_service_listener.md#function-onmemberleft)**(BMXGroupPtr group, int64_t memberId, const std::string & reason)<br>Member quit  |
+| virtual void | **[onAdminsAdded](classfloo_1_1_b_m_x_group_service_listener.md#function-onadminsadded)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>New Admin added  |
+| virtual void | **[onAdminsRemoved](classfloo_1_1_b_m_x_group_service_listener.md#function-onadminsremoved)**(BMXGroupPtr group, const std::vector< int64_t > & members, const std::string & reason)<br>Admin removed  |
+| virtual void | **[onOwnerAssigned](classfloo_1_1_b_m_x_group_service_listener.md#function-onownerassigned)**(BMXGroupPtr group)<br>Become group Owner  |
+| virtual void | **[onGroupInfoUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate)**(BMXGroupPtr group, [BMXGroup::UpdateInfoType](classfloo_1_1_b_m_x_group.md#enum-updateinfotype) type)<br>Group information changes  |
+| virtual void | **[onMemberChangeNickName](classfloo_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname)**(BMXGroupPtr group, int64_t memberId, const std::string & nickName)<br>Member nickname changed  |
+| virtual void | **[onAnnouncementUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**(BMXGroupPtr group, BMXGroup::AnnouncementPtr announcement)<br>Group announcement received  |
+| virtual void | **[onSharedFileUploaded](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>Share file received  |
+| virtual void | **[onSharedFileDeleted](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>Shared file deleted  |
+| virtual void | **[onSharedFileUpdated](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>Name of shared file updated  |
+| virtual void | **[onBlockListAdded](classfloo_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>Add to blacklist  |
+| virtual void | **[onBlockListRemoved](classfloo_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>Delete blacklist  |
+| virtual void | **[onGroupListUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**()<br>Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information  |
+| void | **[registerGroupService](classfloo_1_1_b_m_x_group_service_listener.md#function-registergroupservice)**([BMXGroupService](classfloo_1_1_b_m_x_group_service.md) * service)<br>**to-be-translate**  |
 
 ## Protected Attributes
 
@@ -61,7 +61,7 @@ summary: 群组变化监听者
 inline BMXGroupServiceListener()
 ```
 
-构造函数 
+Constructor 
 
 ### function ~BMXGroupServiceListener
 
@@ -69,7 +69,7 @@ inline BMXGroupServiceListener()
 inline virtual ~BMXGroupServiceListener()
 ```
 
-析构函数 
+Destructor 
 
 ### function onGroupCreate
 
@@ -79,11 +79,11 @@ inline virtual void onGroupCreate(
 )
 ```
 
-多设备同步创建群组 
+Create a group cross-device synchronously 
 
 **Parameters**: 
 
-  * **group** 新创建的群组 
+  * **group** Newly created group 
 
 
 ### function onGroupListUpdate
@@ -94,11 +94,11 @@ inline virtual void onGroupListUpdate(
 )
 ```
 
-群列表更新了 
+Group list updated 
 
 **Parameters**: 
 
-  * **list** 更新的群组列表 
+  * **list** Updated group list 
 
 
 ### function onGroupJoined
@@ -109,11 +109,11 @@ inline virtual void onGroupJoined(
 )
 ```
 
-加入了某群 
+Join a group 
 
 **Parameters**: 
 
-  * **group** 加入的群组 
+  * **group** Group to join 
 
 
 ### function onGroupLeft
@@ -125,12 +125,12 @@ inline virtual void onGroupLeft(
 )
 ```
 
-退出了某群 
+Quit a group 
 
 **Parameters**: 
 
-  * **group** 退出的群组 
-  * **reason** 退出原因 
+  * **group** Group to quit 
+  * **reason** Quit reason 
 
 
 ### function onInvitated
@@ -143,13 +143,13 @@ inline virtual void onInvitated(
 )
 ```
 
-收到入群邀请 
+Group invitation received 
 
 **Parameters**: 
 
-  * **groupId** 邀请进入的群组id 
-  * **inviter** 邀请者id 
-  * **message** 邀请原因 
+  * **groupId** Group id invited to 
+  * **inviter** Inviter id 
+  * **message** Invitation reason 
 
 
 ### function onInvitationAccepted
@@ -161,12 +161,12 @@ inline virtual void onInvitationAccepted(
 )
 ```
 
-入群邀请被接受 
+Group invitation accepted 
 
 **Parameters**: 
 
-  * **group** 邀请被同意的群组 
-  * **inviteeId** 被邀请者id 
+  * **group** A group in which invitation approved 
+  * **inviteeId** Invitee id 
 
 
 ### function onInvitationDeclined
@@ -179,13 +179,13 @@ inline virtual void onInvitationDeclined(
 )
 ```
 
-入群申请被拒绝 
+Join group rejected 
 
 **Parameters**: 
 
-  * **group** 邀请被拒绝的群组 
-  * **inviteeId** 被邀请者id 
-  * **reason** 拒绝原因 
+  * **group** A group in which invitation rejected 
+  * **inviteeId** Invitee id 
+  * **reason** Rejection reason 
 
 
 ### function onApplied
@@ -198,13 +198,13 @@ inline virtual void onApplied(
 )
 ```
 
-收到入群申请 
+Group membership application received 
 
 **Parameters**: 
 
-  * **group** 收到入群申请的群组 
-  * **applicantId** 申请者id 
-  * **message** 申请原因 
+  * **group** A group in which received membership application 
+  * **applicantId** Applicant id 
+  * **message** Application reason 
 
 
 ### function onApplicationAccepted
@@ -216,12 +216,12 @@ inline virtual void onApplicationAccepted(
 )
 ```
 
-入群申请被接受 
+Join group accepted 
 
 **Parameters**: 
 
-  * **group** 入群申请被接受的群组 
-  * **approver** 申请的批准者 
+  * **group** Group where membership application was accepted 
+  * **approver** Approver of the application 
 
 
 ### function onApplicationDeclined
@@ -234,13 +234,13 @@ inline virtual void onApplicationDeclined(
 )
 ```
 
-入群申请被拒绝 
+Join group rejected 
 
 **Parameters**: 
 
-  * **group** 入群申请被拒绝的群组 
-  * **approver** 申请的批准者 
-  * **reason** 拒绝的原因 
+  * **group** Group where membership application was rejected 
+  * **approver** Approver of the application 
+  * **reason** Reason for rejection 
 
 
 ### function onMembersBanned
@@ -253,13 +253,13 @@ inline virtual void onMembersBanned(
 )
 ```
 
-群成员被禁言 
+Member banned 
 
 **Parameters**: 
 
-  * **group** 群成员被禁言的群组 
-  * **members** 被禁言的群成员id列表 
-  * **duration** 禁言时长 
+  * **group** Group with member banned 
+  * **members** List of banned member ids 
+  * **duration** Duration of banned 
 
 
 ### function onMembersUnbanned
@@ -271,12 +271,12 @@ inline virtual void onMembersUnbanned(
 )
 ```
 
-群成员被解除禁言 
+Member unbanned 
 
 **Parameters**: 
 
-  * **group** 群成员被解除禁言的群组 
-  * **members** 被解除禁言的群成员id列表 
+  * **group** Group with member unbanned 
+  * **members** List of unbanned group member ids 
 
 
 ### function onMemberJoined
@@ -289,13 +289,13 @@ inline virtual void onMemberJoined(
 )
 ```
 
-加入新成员 
+New member added 
 
 **Parameters**: 
 
-  * **group** 有成员加入的群组 
-  * **memberId** 加入成员的id 
-  * **inviter** 邀请者id 
+  * **group** Group with new member added 
+  * **memberId** ID of added member 
+  * **inviter** Inviter id 
 
 
 ### function onMemberLeft
@@ -308,13 +308,13 @@ inline virtual void onMemberLeft(
 )
 ```
 
-群成员退出 
+Member quit 
 
 **Parameters**: 
 
-  * **group** 有成员退出的群组 
-  * **memberId** 退出的群成员id 
-  * **reason** 退出的原因 
+  * **group** Group with member quitting 
+  * **memberId** ID of quitted member 
+  * **reason** Reason for quitting 
 
 
 ### function onAdminsAdded
@@ -326,12 +326,12 @@ inline virtual void onAdminsAdded(
 )
 ```
 
-添加了新管理员 
+New Admin added 
 
 **Parameters**: 
 
-  * **group** 发生添加新管理员的群组 
-  * **members** 被提升为管理员的成员列表 
+  * **group** Group where addition of new Admin occurred 
+  * **members** List of members promoted to Admins 
 
 
 ### function onAdminsRemoved
@@ -344,13 +344,13 @@ inline virtual void onAdminsRemoved(
 )
 ```
 
-移除了管理员 
+Admin removed 
 
 **Parameters**: 
 
-  * **group** 发生移除管理员的群组 
-  * **members** 被移除了管理员的成员列表 
-  * **reason** 被移除的原因 
+  * **group** Group where Admin removal occurred 
+  * **members** List of members degraded from Admins 
+  * **reason** Reason for removal 
 
 
 ### function onOwnerAssigned
@@ -361,11 +361,11 @@ inline virtual void onOwnerAssigned(
 )
 ```
 
-成为群主 
+Become group Owner 
 
 **Parameters**: 
 
-  * **group** 被转让为群主的群组 
+  * **group** A group in which group Owner transferred 
 
 
 ### function onGroupInfoUpdate
@@ -377,12 +377,12 @@ inline virtual void onGroupInfoUpdate(
 )
 ```
 
-群组信息变更 
+Group information changes 
 
 **Parameters**: 
 
-  * **group** 群信息发生变更的群组 
-  * **type** 发生变更的群信息类型 
+  * **group** Group with group information changed 
+  * **type** Type of group information that changed 
 
 
 ### function onMemberChangeNickName
@@ -395,13 +395,13 @@ inline virtual void onMemberChangeNickName(
 )
 ```
 
-群成员更改群内昵称 
+Member nickname changed 
 
 **Parameters**: 
 
-  * **group** 发生群成员变更群昵称的群组 
-  * **memberId** 变更群昵称的群成员id 
-  * **nickName** 变更后的群昵称 
+  * **group** A group in which member nickname changed 
+  * **memberId** Group member id that changed group nickname 
+  * **nickName** Changed group nickname 
 
 
 ### function onAnnouncementUpdate
@@ -413,12 +413,12 @@ inline virtual void onAnnouncementUpdate(
 )
 ```
 
-收到群公告 
+Group announcement received 
 
 **Parameters**: 
 
-  * **group** 发生群公告更新的群组 
-  * **announcement** 变更后的最新的群更高 
+  * **group** Group where announcement update occurred 
+  * **announcement** Latest group announcement after changed 
 
 
 ### function onSharedFileUploaded
@@ -430,12 +430,12 @@ inline virtual void onSharedFileUploaded(
 )
 ```
 
-收到共享文件 
+Share file received 
 
 **Parameters**: 
 
-  * **group** 发生群共享文件上传的群组 
-  * **sharedFile** 新上传的群共享文件 
+  * **group** A group in which shared file uploading occurred 
+  * **sharedFile** Newly uploaded group shared file 
 
 
 ### function onSharedFileDeleted
@@ -447,12 +447,12 @@ inline virtual void onSharedFileDeleted(
 )
 ```
 
-删除了共享文件 
+Shared file deleted 
 
 **Parameters**: 
 
-  * **group** 发生群共享文件删除的群组 
-  * **sharedFile** 被删除的群共享文件 
+  * **group** A group in which shared file deleted 
+  * **sharedFile** Deleted group shared file 
 
 
 ### function onSharedFileUpdated
@@ -464,12 +464,12 @@ inline virtual void onSharedFileUpdated(
 )
 ```
 
-共享文件更新文件名 
+Name of shared file updated 
 
 **Parameters**: 
 
-  * **group** 发生群共享文件更新的群组 
-  * **sharedFile** 更新的群共享文件 
+  * **group** A group in which share file updated 
+  * **sharedFile** Updated group shared file 
 
 
 ### function onBlockListAdded
@@ -481,12 +481,12 @@ inline virtual void onBlockListAdded(
 )
 ```
 
-添加黑名单 
+Add to blacklist 
 
 **Parameters**: 
 
-  * **group** 添加黑名单的群组 
-  * **members** 添加的黑名单成员列表 
+  * **group** Group with blacklist added 
+  * **members** List of blacklisted members 
 
 
 ### function onBlockListRemoved
@@ -498,12 +498,12 @@ inline virtual void onBlockListRemoved(
 )
 ```
 
-删除黑名单 
+Delete blacklist 
 
 **Parameters**: 
 
-  * **group** 删除黑名单的群组 
-  * **members** 删除的黑名单成员列表 
+  * **group** Group with blacklist removed 
+  * **members** List of unblacklisted members 
 
 
 ### function onGroupListUpdate
@@ -512,7 +512,7 @@ inline virtual void onBlockListRemoved(
 inline virtual void onGroupListUpdate()
 ```
 
-客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息 
+Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information 
 
 ### function registerGroupService
 
@@ -522,7 +522,7 @@ inline void registerGroupService(
 )
 ```
 
-注册BMXGroupServiceListener绑定到的BMXGroupService（SDK内部自动注册） 
+**to-be-translate** 
 
 **Parameters**: 
 

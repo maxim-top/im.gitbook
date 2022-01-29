@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroup::Announcement
-summary: 群公告 
+summary: Group announcement 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群公告
 
 
 
-群公告 
+Group announcement 
 
 ## Public Functions
 

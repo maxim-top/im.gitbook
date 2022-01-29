@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXMessageAttachment
-summary: 消息附件 
+summary: Message attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息附件
 
 
 
-消息附件 
+Message attachment 
 
 Inherits from BMXBaseObject
 
@@ -19,8 +19,8 @@ Inherited by [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-delete)**() |
-| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-type)**()<br>附件类型  |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-clone)**()<br>复制附件  |
+| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-type)**()<br>Attachment type  |
+| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-clone)**()<br>Copy attachment  |
 
 ## Protected Functions
 
@@ -48,7 +48,7 @@ inline synchronized void delete()
 inline BMXMessageAttachment.Type type()
 ```
 
-附件类型 
+Attachment type 
 
 **Return**: [Type]
 
@@ -61,7 +61,7 @@ inline BMXMessageAttachment.Type type()
 inline BMXMessageAttachment clone()
 ```
 
-复制附件 
+Copy attachment 
 
 **Return**: BMXMessageAttachmentPtr 
 

@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroupManager
-summary: 群组管理器 
+summary: Group Manager 
 
 ---
 
@@ -8,67 +8,67 @@ summary: 群组管理器
 
 
 
-群组管理器 
+Group Manager 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | | **[BMXGroupManager](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-bmxgroupmanager)**([BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) service) |
-| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final boolean forceRefresh, final BMXDataCallBack< BMXGroupList > callBack)<br>获取群组列表，如果设置了forceRefresh则从服务器拉取  |
-| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final ListOfLongLong groupIdList, final boolean forceRefresh, final BMXDataCallBack< BMXGroupList > callBack)<br>获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取  |
-| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final long groupId, final boolean forceUpdate, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>获取群信息，如果设置了forceRefresh则从服务器拉取  |
-| void | **[getInvitationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinvitationlist)**(final String cursor, final int pageSize, final BMXDataCallBack< GroupInvitaionPage > callBack)<br>分页获取群组邀请列表  |
-| void | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getapplicationlist)**(final BMXGroupList list, final String cursor, final int pageSize, final BMXDataCallBack< GroupApplicationPage > callBack)<br>分页获取群组申请列表  |
-| void | **[create](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-create)**(final BMXGroupService.CreateGroupOptions options, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>创建群  |
-| void | **[destroy](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-destroy)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>销毁群  |
-| void | **[join](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-join)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String message, final BMXCallBack callBack)<br>加入一个群，根据群设置可能需要管理员批准  |
-| void | **[leave](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-leave)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>退出群  |
-| void | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinfo)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>获取群详情，从服务端拉取最新信息  |
-| void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人  |
-| void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人  |
-| void | **[addMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String message, final BMXCallBack callBack)<br>添加群成员  |
-| void | **[removeMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removemembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String reason, final BMXCallBack callBack)<br>删除群成员  |
-| void | **[addAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String message, final BMXCallBack callBack)<br>添加管理员  |
-| void | **[removeAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removeadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String reason, final BMXCallBack callBack)<br>删除管理员  |
-| void | **[getAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>获取Admins列表，如果设置了forceRefresh则从服务器拉取  |
-| void | **[blockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-blockmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>添加黑名单  |
-| void | **[unblockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unblockmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>从黑名单删除  |
-| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>获取黑名单  |
-| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>获取黑名单  |
-| void | **[banMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-banmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final long duration, final String reason, final BMXCallBack callBack)<br>禁言  |
-| void | **[banGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-bangroup)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long duration, final BMXCallBack callBack)<br>全员禁言  |
-| void | **[unbanMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbanmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>解除禁言  |
-| void | **[unbanGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbangroup)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>解除全员禁言  |
-| void | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupBannedMemberResultPage > callBack)<br>获取禁言列表  |
-| void | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< BMXGroupBannedMemberList > callBack)<br>获取禁言列表  |
-| void | **[muteMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-mutemessage)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.MsgMuteMode mode, final BMXCallBack callBack)<br>设置是否屏蔽群消息  |
-| void | **[acceptApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptapplication)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long applicantId, final BMXCallBack callBack)<br>接受入群申请  |
-| void | **[declineApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineapplication)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long applicantId, final String reason, final BMXCallBack callBack)<br>拒绝入群申请  |
-| void | **[acceptInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptinvitation)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long inviter, final BMXCallBack callBack)<br>接受入群邀请  |
-| void | **[declineInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineinvitation)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long inviter, final BMXCallBack callBack)<br>拒绝入群邀请  |
-| void | **[transferOwner](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-transferowner)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long newOwnerId, final BMXCallBack callBack)<br>转移群主  |
-| void | **[uploadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-uploadsharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String filePath, final String displayName, final String extensionName, final FileProgressListener listener, final BMXCallBack callBack)<br>添加群共享文件  |
-| void | **[removeSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removesharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final BMXCallBack callBack)<br>移除群共享文件  |
-| void | **[downloadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadsharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final FileProgressListener listener, final BMXCallBack callBack)<br>下载群共享文件  |
-| void | **[getSharedFilesList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getsharedfileslist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupSharedFileList > callBack)<br>获取群共享文件列表  |
-| void | **[changeSharedFileName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-changesharedfilename)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final String name, final BMXCallBack callBack)<br>修改群共享文件名称  |
-| void | **[getLatestAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getlatestannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroup.Announcement > callBack)<br>获取最新的群公告  |
-| void | **[getAnnouncementList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getannouncementlist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupAnnouncementList > callBack)<br>获取群公告列表  |
-| void | **[editAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-editannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String title, final String content, final BMXCallBack callBack)<br>设置群公告  |
-| void | **[deleteAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-deleteannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long announcementId, final BMXCallBack callBack)<br>删除群公告  |
-| void | **[setName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setname)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String name, final BMXCallBack callBack)<br>设置群名称  |
-| void | **[setDescription](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setdescription)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String description, final BMXCallBack callBack)<br>设置群描述信息  |
-| void | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setextension)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String extension, final BMXCallBack callBack)<br>设置群扩展信息  |
-| void | **[setMyNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmynickname)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String nickname, final BMXCallBack callBack)<br>设置在群里的昵称  |
-| void | **[setMsgPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmsgpushmode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.MsgPushMode mode, final BMXCallBack callBack)<br>设置群消息通知模式  |
-| void | **[setJoinAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setjoinauthmode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.JoinAuthMode mode, final BMXCallBack callBack)<br>设置入群审批模式  |
-| void | **[setInviteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setinvitemode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.InviteMode mode, final BMXCallBack callBack)<br>设置邀请模式  |
-| void | **[setAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setavatar)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>设置群头像  |
-| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadavatar)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final FileProgressListener listener, final BMXCallBack callBack)<br>下载群头像  |
-| void | **[addGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addgrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>添加群组变化监听者  |
-| void | **[removeGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removegrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>移除群组变化监听者  |
-| void | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setenablereadack)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean enable, final BMXCallBack callBack)<br>设置是否开启群消息已读功能  |
+| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final boolean forceRefresh, final BMXDataCallBack< BMXGroupList > callBack)<br>Get group list, pull from server if forceRefreshed is set  |
+| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final ListOfLongLong groupIdList, final boolean forceRefresh, final BMXDataCallBack< BMXGroupList > callBack)<br>Get the list of group information for the incoming group id, pull from server if forceRefreshed is set  |
+| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final long groupId, final boolean forceUpdate, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>Get group information, pull from server if forceRefreshed is set  |
+| void | **[getInvitationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinvitationlist)**(final String cursor, final int pageSize, final BMXDataCallBack< GroupInvitaionPage > callBack)<br>Get group invitation list in pages  |
+| void | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getapplicationlist)**(final BMXGroupList list, final String cursor, final int pageSize, final BMXDataCallBack< GroupApplicationPage > callBack)<br>Get a list of group applications in pages  |
+| void | **[create](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-create)**(final BMXGroupService.CreateGroupOptions options, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>Create group  |
+| void | **[destroy](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-destroy)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>Destroy group  |
+| void | **[join](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-join)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String message, final BMXCallBack callBack)<br>Join a group, which may require admin approval depending on group settings  |
+| void | **[leave](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-leave)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>Quit group  |
+| void | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinfo)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>Get group details, pull the latest information from server  |
+| void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000  |
+| void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000  |
+| void | **[addMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String message, final BMXCallBack callBack)<br>Add group member  |
+| void | **[removeMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removemembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String reason, final BMXCallBack callBack)<br>Remove group member  |
+| void | **[addAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String message, final BMXCallBack callBack)<br>Add Admin  |
+| void | **[removeAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removeadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String reason, final BMXCallBack callBack)<br>Remove admin  |
+| void | **[getAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get Admins list, pull from server if forceRefreshed is set  |
+| void | **[blockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-blockmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>Add to blacklist  |
+| void | **[unblockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unblockmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>Unblacklist  |
+| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>Get blacklist  |
+| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get blacklist  |
+| void | **[banMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-banmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final long duration, final String reason, final BMXCallBack callBack)<br>Ban  |
+| void | **[banGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-bangroup)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long duration, final BMXCallBack callBack)<br>**to-be-translate**  |
+| void | **[unbanMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbanmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>Unban  |
+| void | **[unbanGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbangroup)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>**to-be-translate**  |
+| void | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupBannedMemberResultPage > callBack)<br>Get a list of banned members  |
+| void | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< BMXGroupBannedMemberList > callBack)<br>Get a list of banned members  |
+| void | **[muteMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-mutemessage)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.MsgMuteMode mode, final BMXCallBack callBack)<br>Set whether to block group messages  |
+| void | **[acceptApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptapplication)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long applicantId, final BMXCallBack callBack)<br>Accept application of membership  |
+| void | **[declineApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineapplication)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long applicantId, final String reason, final BMXCallBack callBack)<br>Reject application of membership  |
+| void | **[acceptInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptinvitation)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long inviter, final BMXCallBack callBack)<br>Accept to join group  |
+| void | **[declineInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineinvitation)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long inviter, final BMXCallBack callBack)<br>Reject invitation to join group  |
+| void | **[transferOwner](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-transferowner)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long newOwnerId, final BMXCallBack callBack)<br>Transfer of group Owner  |
+| void | **[uploadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-uploadsharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String filePath, final String displayName, final String extensionName, final FileProgressListener listener, final BMXCallBack callBack)<br>Add shared file in group  |
+| void | **[removeSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removesharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final BMXCallBack callBack)<br>Remove shared file in group  |
+| void | **[downloadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadsharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final FileProgressListener listener, final BMXCallBack callBack)<br>Download share file in group  |
+| void | **[getSharedFilesList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getsharedfileslist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupSharedFileList > callBack)<br>Get a list of share files in group  |
+| void | **[changeSharedFileName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-changesharedfilename)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final String name, final BMXCallBack callBack)<br>Modify shared file name in group  |
+| void | **[getLatestAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getlatestannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroup.Announcement > callBack)<br>Get the latest group announcement  |
+| void | **[getAnnouncementList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getannouncementlist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupAnnouncementList > callBack)<br>Get group announcements list  |
+| void | **[editAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-editannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String title, final String content, final BMXCallBack callBack)<br>Write group announcement  |
+| void | **[deleteAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-deleteannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long announcementId, final BMXCallBack callBack)<br>Delete group announcement  |
+| void | **[setName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setname)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String name, final BMXCallBack callBack)<br>Set group name  |
+| void | **[setDescription](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setdescription)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String description, final BMXCallBack callBack)<br>Set group description  |
+| void | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setextension)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String extension, final BMXCallBack callBack)<br>Set group extension information  |
+| void | **[setMyNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmynickname)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String nickname, final BMXCallBack callBack)<br>Set nickname in group  |
+| void | **[setMsgPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmsgpushmode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.MsgPushMode mode, final BMXCallBack callBack)<br>Set group message notification mode  |
+| void | **[setJoinAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setjoinauthmode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.JoinAuthMode mode, final BMXCallBack callBack)<br>Set approval mode for joining group  |
+| void | **[setInviteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setinvitemode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.InviteMode mode, final BMXCallBack callBack)<br>Set invitation mode  |
+| void | **[setAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setavatar)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>Set group avatar  |
+| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadavatar)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final FileProgressListener listener, final BMXCallBack callBack)<br>Download group avatar  |
+| void | **[addGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addgrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>Add group change listener  |
+| void | **[removeGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removegrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>Remove group change listener  |
+| void | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setenablereadack)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean enable, final BMXCallBack callBack)<br>Set whether group message read is enabled  |
 
 ## Public Functions Documentation
 
@@ -90,12 +90,12 @@ inline void getGroupList(
 )
 ```
 
-获取群组列表，如果设置了forceRefresh则从服务器拉取 
+Get group list, pull from server if forceRefreshed is set 
 
 **Parameters**: 
 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode],群组id列表 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], group id list 
 
 
 ### function getGroupList
@@ -108,13 +108,13 @@ inline void getGroupList(
 )
 ```
 
-获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取 
+Get the list of group information for the incoming group id, pull from server if forceRefreshed is set 
 
 **Parameters**: 
 
-  * **groupIdList** 群组id列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode],群组详细信息列表 
+  * **groupIdList** List of group ids 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], group details list 
 
 
 ### function getGroupList
@@ -127,13 +127,13 @@ inline void getGroupList(
 )
 ```
 
-获取群信息，如果设置了forceRefresh则从服务器拉取 
+Get group information, pull from server if forceRefreshed is set 
 
 **Parameters**: 
 
-  * **groupId** 要搜索的群组id 
-  * **forceUpdate** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode],搜索返回的群组信息 
+  * **groupId** Group id to search 
+  * **forceUpdate** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], group details returned by search 
 
 
 ### function getInvitationList
@@ -146,13 +146,13 @@ inline void getInvitationList(
 )
 ```
 
-分页获取群组邀请列表 
+Get group invitation list in pages 
 
 **Parameters**: 
 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
-  * **callBack** [BMXErrorCode],分页获取的群组邀请列表 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
+  * **callBack** [BMXErrorCode], paged list of group invitation 
 
 
 ### function getApplicationList
@@ -166,14 +166,14 @@ inline void getApplicationList(
 )
 ```
 
-分页获取群组申请列表 
+Get a list of group applications in pages 
 
 **Parameters**: 
 
-  * **list** 需要获取群组申请列表信息的群组id列表 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
-  * **callBack** [BMXErrorCode],分页获取的群组申请列表 
+  * **list** List of group ids for which group application list information needs to be obtained 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
+  * **callBack** [BMXErrorCode], paged list of group application 
 
 
 ### function create
@@ -185,12 +185,12 @@ inline void create(
 )
 ```
 
-创建群 
+Create group 
 
 **Parameters**: 
 
-  * **options** 创建群组时传入的参数选项 
-  * **callBack** [BMXErrorCode],创建好的群 
+  * **options** Parameters passed in when creating a group 
+  * **callBack** [BMXErrorCode], created group 
 
 
 ### function destroy
@@ -202,11 +202,11 @@ inline void destroy(
 )
 ```
 
-销毁群 
+Destroy group 
 
 **Parameters**: 
 
-  * **callBack** BMXErrorCode，要销毁的群组 
+  * **callBack** BMXErrorCode,Group to destroy 
 
 
 ### function join
@@ -219,12 +219,12 @@ inline void join(
 )
 ```
 
-加入一个群，根据群设置可能需要管理员批准 
+Join a group, which may require admin approval depending on group settings 
 
 **Parameters**: 
 
-  * **group** 要加入的群组 
-  * **message** 申请入群的信息 
+  * **group** Group to join 
+  * **message** Information for group membership application 
   * **callBack** [BMXErrorCode]
 
 
@@ -237,11 +237,11 @@ inline void leave(
 )
 ```
 
-退出群 
+Quit group 
 
 **Parameters**: 
 
-  * **group** 要退出的群组 
+  * **group** Group to quit 
   * **callBack** [BMXErrorCode]
 
 
@@ -254,11 +254,11 @@ inline void getInfo(
 )
 ```
 
-获取群详情，从服务端拉取最新信息 
+Get group details, pull the latest information from server 
 
 **Parameters**: 
 
-  * **callBack** [BMXErrorCode],要获取群组最新信息的群组 
+  * **callBack** [BMXErrorCode], the group to get its latest information 
 
 
 ### function getMembers
@@ -272,14 +272,14 @@ inline void getMembers(
 )
 ```
 
-获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人 
+Get group member list, pull from server if forceRefresh is set, up to 1,000 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
-  * **callBack** [BMXErrorCode],群成员列表 
+  * **group** Group to operate on 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
+  * **callBack** [BMXErrorCode], group member list 
 
 
 ### function getMembers
@@ -292,13 +292,13 @@ inline void getMembers(
 )
 ```
 
-获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人 
+Get group member list, pull from server if forceRefresh is set, up to 1,000 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode],群成员列表 
+  * **group** Group to operate on 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], group member list 
 
 
 ### function addMembers
@@ -312,13 +312,13 @@ inline void addMembers(
 )
 ```
 
-添加群成员 
+Add group member 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **members** 要添加进群的成员id列表 
-  * **message** 添加成员原因信息 
+  * **group** Group to operate on 
+  * **members** List of member ids to join group 
+  * **message** Reason for membership application 
   * **callBack** [BMXErrorCode]
 
 
@@ -333,13 +333,13 @@ inline void removeMembers(
 )
 ```
 
-删除群成员 
+Remove group member 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **members** 要删除的群组成员id列表 
-  * **reason** 删除的原因 
+  * **group** Group to operate on 
+  * **members** List of group member ids to delete 
+  * **reason** Reason for deletion 
   * **callBack** [BMXErrorCode]
 
 
@@ -354,13 +354,13 @@ inline void addAdmins(
 )
 ```
 
-添加管理员 
+Add Admin 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **admins** 要添加为管理员的成员id列表 
-  * **message** 添加为管理员的原因 
+  * **group** Group to operate on 
+  * **admins** List of member ids to be added as Admins 
+  * **message** Reason for adding as Admin 
   * **callBack** [BMXErrorCode]
 
 
@@ -375,13 +375,13 @@ inline void removeAdmins(
 )
 ```
 
-删除管理员 
+Remove admin 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **admins** 要从管理员移除的成员id列表 
-  * **reason** 要移除管理员的原因 
+  * **group** Group to operate on 
+  * **admins** List of member ids to degrade from Admins 
+  * **reason** Reason to degrade from Admin 
   * **callBack** [BMXErrorCode]
 
 
@@ -395,13 +395,13 @@ inline void getAdmins(
 )
 ```
 
-获取Admins列表，如果设置了forceRefresh则从服务器拉取 
+Get Admins list, pull from server if forceRefreshed is set 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode],群管理员列表 
+  * **group** Group to operate on 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], list of group Admins 
 
 
 ### function blockMembers
@@ -414,12 +414,12 @@ inline void blockMembers(
 )
 ```
 
-添加黑名单 
+Add to blacklist 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **members** 要加入黑名单的群成员id列表 
+  * **group** Group to operate on 
+  * **members** List of member ids to be blacklisted 
   * **callBack** [BMXErrorCode]
 
 
@@ -433,12 +433,12 @@ inline void unblockMembers(
 )
 ```
 
-从黑名单删除 
+Unblacklist 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **members** 从黑名单移除的用户id列表 
+  * **group** Group to operate on 
+  * **members** List of unblacklisted user ids 
   * **callBack** [BMXErrorCode]
 
 
@@ -453,14 +453,14 @@ inline void getBlockList(
 )
 ```
 
-获取黑名单 
+Get blacklist 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
-  * **callBack** [BMXErrorCode],群黑名单列表 
+  * **group** Group to operate on 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
+  * **callBack** [BMXErrorCode], list of group blacklists 
 
 
 ### function getBlockList
@@ -473,13 +473,13 @@ inline void getBlockList(
 )
 ```
 
-获取黑名单 
+Get blacklist 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode],群黑名单列表 
+  * **group** Group to operate on 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], list of group blacklists 
 
 
 ### function banMembers
@@ -494,14 +494,14 @@ inline void banMembers(
 )
 ```
 
-禁言 
+Ban 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **members** 被禁言的群成员id列表 
-  * **duration** 禁言时长 
-  * **reason** 禁言原因 
+  * **group** Group to operate on 
+  * **members** List of banned member ids 
+  * **duration** Duration of banned 
+  * **reason** Reason for banned 
   * **callBack** [BMXErrorCode]
 
 
@@ -515,12 +515,12 @@ inline void banGroup(
 )
 ```
 
-全员禁言 
+**to-be-translate** 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **duration** 禁言时长 
+  * **group** Group to operate on 
+  * **duration** Duration of banned 
   * **callBack** [BMXErrorCode]
 
 
@@ -534,12 +534,12 @@ inline void unbanMembers(
 )
 ```
 
-解除禁言 
+Unban 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **members** 被解除禁言的群成员id列表 
+  * **group** Group to operate on 
+  * **members** List of unbanned group member ids 
   * **callBack** [BMXErrorCode]
 
 
@@ -552,11 +552,11 @@ inline void unbanGroup(
 )
 ```
 
-解除全员禁言 
+**to-be-translate** 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
+  * **group** Group to operate on 
   * **callBack** [BMXErrorCode]
 
 
@@ -571,14 +571,14 @@ inline void getBannedMembers(
 )
 ```
 
-获取禁言列表 
+Get a list of banned members 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
-  * **callBack** [BMXErrorCode] 群禁言列表 
+  * **group** Group to operate on 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
+  * **callBack** [BMXErrorCode], list of group bans 
 
 
 ### function getBannedMembers
@@ -590,12 +590,12 @@ inline void getBannedMembers(
 )
 ```
 
-获取禁言列表 
+Get a list of banned members 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **callBack** [BMXErrorCode] 群禁言列表 
+  * **group** Group to operate on 
+  * **callBack** [BMXErrorCode], list of group bans 
 
 
 ### function muteMessage
@@ -608,12 +608,12 @@ inline void muteMessage(
 )
 ```
 
-设置是否屏蔽群消息 
+Set whether to block group messages 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **mode** 群屏蔽的模式 
+  * **group** Group to operate on 
+  * **mode** Group blocking mode 
   * **callBack** [BMXErrorCode]
 
 
@@ -627,12 +627,12 @@ inline void acceptApplication(
 )
 ```
 
-接受入群申请 
+Accept application of membership 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **applicantId** 申请进群的用户id 
+  * **group** Group to operate on 
+  * **applicantId** User id that request to join group 
   * **callBack** [BMXErrorCode]
 
 
@@ -647,13 +647,13 @@ inline void declineApplication(
 )
 ```
 
-拒绝入群申请 
+Reject application of membership 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **applicantId** 申请进群的用户id 
-  * **reason** 拒绝的原因 
+  * **group** Group to operate on 
+  * **applicantId** User id that request to join group 
+  * **reason** Reason for rejection 
   * **callBack** [BMXErrorCode]
 
 
@@ -667,12 +667,12 @@ inline void acceptInvitation(
 )
 ```
 
-接受入群邀请 
+Accept to join group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **inviter** 邀请者id 
+  * **group** Group to operate on 
+  * **inviter** Inviter id 
   * **callBack** [BMXErrorCode]
 
 
@@ -686,12 +686,12 @@ inline void declineInvitation(
 )
 ```
 
-拒绝入群邀请 
+Reject invitation to join group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **inviter** 邀请者id 
+  * **group** Group to operate on 
+  * **inviter** Inviter id 
   * **callBack** [BMXErrorCode]
 
 
@@ -705,12 +705,12 @@ inline void transferOwner(
 )
 ```
 
-转移群主 
+Transfer of group Owner 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **newOwnerId** 转让为新群主的用户id 
+  * **group** Group to operate on 
+  * **newOwnerId** User id that transferred as new group Owner 
   * **callBack** [BMXErrorCode]
 
 
@@ -727,15 +727,15 @@ inline void uploadSharedFile(
 )
 ```
 
-添加群共享文件 
+Add shared file in group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **filePath** 文件的本地路径 
-  * **displayName** 文件的展示名 
-  * **extensionName** 文件的扩展名 
-  * **listener** 上传回调函数 
+  * **group** Group to operate on 
+  * **filePath** Local path of file 
+  * **displayName** File display name 
+  * **extensionName** File extension name 
+  * **listener** Upload callback function 
   * **callBack** [BMXErrorCode]
 
 
@@ -749,12 +749,12 @@ inline void removeSharedFile(
 )
 ```
 
-移除群共享文件 
+Remove shared file in group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **sharedFile** 删除的群共享文件 
+  * **group** Group to operate on 
+  * **sharedFile** Deleted group shared file 
   * **callBack** [BMXErrorCode]
 
 
@@ -769,13 +769,13 @@ inline void downloadSharedFile(
 )
 ```
 
-下载群共享文件 
+Download share file in group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **sharedFile** 下载的群共享文件 
-  * **listener** 下载回调函数 
+  * **group** Group to operate on 
+  * **sharedFile** Downloaded group shared files 
+  * **listener** Download callback function 
   * **callBack** [BMXErrorCode]
 
 
@@ -789,13 +789,13 @@ inline void getSharedFilesList(
 )
 ```
 
-获取群共享文件列表 
+Get a list of share files in group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode] 群共享文件列表 
+  * **group** Group to operate on 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], list of group shared files 
 
 
 ### function changeSharedFileName
@@ -809,13 +809,13 @@ inline void changeSharedFileName(
 )
 ```
 
-修改群共享文件名称 
+Modify shared file name in group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **sharedFile** 进行更改的群共享文件 
-  * **name** 修改的群共享文件名称 
+  * **group** Group to operate on 
+  * **sharedFile** Group shared file to change 
+  * **name** **to-be-translate** 
   * **callBack** [BMXErrorCode]
 
 
@@ -829,13 +829,13 @@ inline void getLatestAnnouncement(
 )
 ```
 
-获取最新的群公告 
+Get the latest group announcement 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode] 最新的群组公告 
+  * **group** Group to operate on 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], latest group announcement 
 
 
 ### function getAnnouncementList
@@ -848,13 +848,13 @@ inline void getAnnouncementList(
 )
 ```
 
-获取群公告列表 
+Get group announcements list 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
-  * **callBack** [BMXErrorCode], 群公告列表 
+  * **group** Group to operate on 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
+  * **callBack** [BMXErrorCode], list of group announcements 
 
 
 ### function editAnnouncement
@@ -868,13 +868,13 @@ inline void editAnnouncement(
 )
 ```
 
-设置群公告 
+Write group announcement 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **title** 群公告的标题 
-  * **content** 群公告的内容 
+  * **group** Group to operate on 
+  * **title** Tittle of group announcement 
+  * **content** Content of group announcement 
   * **callBack** [BMXErrorCode]
 
 
@@ -888,12 +888,12 @@ inline void deleteAnnouncement(
 )
 ```
 
-删除群公告 
+Delete group announcement 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **announcementId** 删除的群公告id 
+  * **group** Group to operate on 
+  * **announcementId** Deleted group announcement id 
   * **callBack** [BMXErrorCode]
 
 
@@ -907,12 +907,12 @@ inline void setName(
 )
 ```
 
-设置群名称 
+Set group name 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **name** 群组名称 
+  * **group** Group to operate on 
+  * **name** Group name 
   * **callBack** [BMXErrorCode]
 
 
@@ -926,12 +926,12 @@ inline void setDescription(
 )
 ```
 
-设置群描述信息 
+Set group description 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **description** 群组描述 
+  * **group** Group to operate on 
+  * **description** Group description 
   * **callBack** [BMXErrorCode]
 
 
@@ -945,12 +945,12 @@ inline void setExtension(
 )
 ```
 
-设置群扩展信息 
+Set group extension information 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **extension** 群组的扩展信息 
+  * **group** Group to operate on 
+  * **extension** Group extension information 
   * **callBack** [BMXErrorCode]
 
 
@@ -964,12 +964,12 @@ inline void setMyNickname(
 )
 ```
 
-设置在群里的昵称 
+Set nickname in group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **nickname** 用户在群组内的昵称 
+  * **group** Group to operate on 
+  * **nickname** User nickname in group 
   * **callBack** [BMXErrorCode]
 
 
@@ -983,12 +983,12 @@ inline void setMsgPushMode(
 )
 ```
 
-设置群消息通知模式 
+Set group message notification mode 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **mode** 群消息通知模式 
+  * **group** Group to operate on 
+  * **mode** Group message notification mode 
   * **callBack** [BMXErrorCode]
 
 
@@ -1002,12 +1002,12 @@ inline void setJoinAuthMode(
 )
 ```
 
-设置入群审批模式 
+Set approval mode for joining group 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **mode** 入群审批模式 
+  * **group** Group to operate on 
+  * **mode** Join approval mode 
   * **callBack** [BMXErrorCode]
 
 
@@ -1021,12 +1021,12 @@ inline void setInviteMode(
 )
 ```
 
-设置邀请模式 
+Set invitation mode 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **mode** 群组的邀请模式 
+  * **group** Group to operate on 
+  * **mode** Group invitation mode 
   * **callBack** [BMXErrorCode]
 
 
@@ -1041,13 +1041,13 @@ inline void setAvatar(
 )
 ```
 
-设置群头像 
+Set group avatar 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **avatarPath** 群头像文件的本地路径 
-  * **listener** 上传回调函数 
+  * **group** Group to operate on 
+  * **avatarPath** Local path of group avatar file 
+  * **listener** Upload callback function 
   * **callBack** [BMXErrorCode]
 
 
@@ -1061,12 +1061,12 @@ inline void downloadAvatar(
 )
 ```
 
-下载群头像 
+Download group avatar 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **listener** 下载回调函数 
+  * **group** Group to operate on 
+  * **listener** Download callback function 
   * **callBack** [BMXErrorCode]
 
 
@@ -1078,11 +1078,11 @@ inline void addGroupListener(
 )
 ```
 
-添加群组变化监听者 
+Add group change listener 
 
 **Parameters**: 
 
-  * **listener** 群组变化监听者 
+  * **listener** Group change listener 
 
 
 ### function removeGroupListener
@@ -1093,11 +1093,11 @@ inline void removeGroupListener(
 )
 ```
 
-移除群组变化监听者 
+Remove group change listener 
 
 **Parameters**: 
 
-  * **listener** 群组变化监听者 
+  * **listener** Group change listener 
 
 
 ### function setEnableReadAck
@@ -1110,12 +1110,12 @@ inline void setEnableReadAck(
 )
 ```
 
-设置是否开启群消息已读功能 
+Set whether group message read is enabled 
 
 **Parameters**: 
 
-  * **group** 进行操作的群组 
-  * **enable** 是否开启 
+  * **group** Group to operate on 
+  * **enable** Enable or not 
   * **callBack** [BMXErrorCode]
 
 

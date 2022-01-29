@@ -1,6 +1,6 @@
 ---
 title: floo::BMXDevice
-summary: 设备信息 
+summary: Device information 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 设备信息
 
 
 
-设备信息 
+Device information 
 
 
 `#include <bmx_device.h>`
@@ -19,13 +19,13 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BMXDevice](classfloo_1_1_b_m_x_device.md#function-~bmxdevice)**()<br>析构函数  |
-| virtual int | **[deviceSN](classfloo_1_1_b_m_x_device.md#function-devicesn)**() =0<br>设备序列号  |
-| virtual int64_t | **[userId](classfloo_1_1_b_m_x_device.md#function-userid)**() =0<br>用户id  |
-| virtual int | **[platform](classfloo_1_1_b_m_x_device.md#function-platform)**() =0<br>软件平台  |
-| virtual std::string | **[userAgent](classfloo_1_1_b_m_x_device.md#function-useragent)**() =0<br>用户代理信息  |
-| virtual void | **[setUserAgent](classfloo_1_1_b_m_x_device.md#function-setuseragent)**(const std::string & userAgent) =0<br>设置用户代理信息  |
-| virtual bool | **[isCurrentDevice](classfloo_1_1_b_m_x_device.md#function-iscurrentdevice)**() =0<br>是否是当前设备  |
+| virtual | **[~BMXDevice](classfloo_1_1_b_m_x_device.md#function-~bmxdevice)**()<br>Destructor  |
+| virtual int | **[deviceSN](classfloo_1_1_b_m_x_device.md#function-devicesn)**() =0<br>Device serial number  |
+| virtual int64_t | **[userId](classfloo_1_1_b_m_x_device.md#function-userid)**() =0<br>User id  |
+| virtual int | **[platform](classfloo_1_1_b_m_x_device.md#function-platform)**() =0<br>Software platform  |
+| virtual std::string | **[userAgent](classfloo_1_1_b_m_x_device.md#function-useragent)**() =0<br>User agent information  |
+| virtual void | **[setUserAgent](classfloo_1_1_b_m_x_device.md#function-setuseragent)**(const std::string & userAgent) =0<br>Set user agent information  |
+| virtual bool | **[isCurrentDevice](classfloo_1_1_b_m_x_device.md#function-iscurrentdevice)**() =0<br>Whether for the current device  |
 
 ## Protected Functions
 
@@ -41,7 +41,7 @@ Inherits from BMXBaseObject
 inline virtual ~BMXDevice()
 ```
 
-析构函数 
+Destructor 
 
 ### function deviceSN
 
@@ -49,7 +49,7 @@ inline virtual ~BMXDevice()
 virtual int deviceSN() =0
 ```
 
-设备序列号 
+Device serial number 
 
 **Return**: int 
 
@@ -59,7 +59,7 @@ virtual int deviceSN() =0
 virtual int64_t userId() =0
 ```
 
-用户id 
+User id 
 
 **Return**: int64_t 
 
@@ -69,7 +69,7 @@ virtual int64_t userId() =0
 virtual int platform() =0
 ```
 
-软件平台 
+Software platform 
 
 **Return**: int 
 
@@ -79,7 +79,7 @@ virtual int platform() =0
 virtual std::string userAgent() =0
 ```
 
-用户代理信息 
+User agent information 
 
 **Return**: std::string 
 
@@ -91,11 +91,11 @@ virtual void setUserAgent(
 ) =0
 ```
 
-设置用户代理信息 
+Set user agent information 
 
 **Parameters**: 
 
-  * **userAgent** 用户代理信息 
+  * **userAgent** User agent information 
 
 
 ### function isCurrentDevice
@@ -104,7 +104,7 @@ virtual void setUserAgent(
 virtual bool isCurrentDevice() =0
 ```
 
-是否是当前设备 
+Whether for the current device 
 
 **Return**: bool 
 

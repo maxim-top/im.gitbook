@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXUserProfile::MessageSetting
-summary: 用户消息设置 
+summary: User message settings 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 用户消息设置
 
 
 
-用户消息设置 
+User message settings 
 
 ## Public Functions
 

@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXLocationAttachment
-summary: 位置消息附件 
+summary: Location message attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 位置消息附件
 
 
 
-位置消息附件 
+Location message attachment 
 
 Inherits from [im.floo.floolib.BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md), BMXBaseObject
 
@@ -17,12 +17,12 @@ Inherits from [im.floo.floolib.BMXMessageAttachment](classim_1_1floo_1_1floolib_
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-delete)**() |
-| | **[BMXLocationAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment)**(double latitude, double longitude, String address)<br>构造函数  |
-| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-type)**()<br>返回位置附件类型  |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-clone)**()<br>克隆函数  |
-| double | **[latitude](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-latitude)**()<br>纬度  |
-| double | **[longitude](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-longitude)**()<br>经度  |
-| String | **[address](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-address)**()<br>地址  |
+| | **[BMXLocationAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment)**(double latitude, double longitude, String address)<br>Constructor  |
+| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-type)**()<br>Return the type of location attachment  |
+| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-clone)**()<br>Cloning function  |
+| double | **[latitude](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-latitude)**()<br>Latitude  |
+| double | **[longitude](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-longitude)**()<br>Longitude  |
+| String | **[address](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-address)**()<br>Address  |
 | [BMXLocationAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md) | **[dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-dynamic-cast)**([BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) attachment) |
 
 ## Protected Functions
@@ -64,13 +64,13 @@ inline BMXLocationAttachment(
 )
 ```
 
-构造函数 
+Constructor 
 
 **Parameters**: 
 
-  * **latitude** 纬度 
-  * **longitude** 经度 
-  * **address** 地址名称 
+  * **latitude** Latitude 
+  * **longitude** Longitude 
+  * **address** Address name 
 
 
 ### function type
@@ -79,7 +79,7 @@ inline BMXLocationAttachment(
 inline BMXMessageAttachment.Type type()
 ```
 
-返回位置附件类型 
+Return the type of location attachment 
 
 **Return**: Type 
 
@@ -92,7 +92,7 @@ inline BMXMessageAttachment.Type type()
 inline BMXMessageAttachment clone()
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -105,7 +105,7 @@ inline BMXMessageAttachment clone()
 inline double latitude()
 ```
 
-纬度 
+Latitude 
 
 **Return**: double 
 
@@ -115,7 +115,7 @@ inline double latitude()
 inline double longitude()
 ```
 
-经度 
+Longitude 
 
 **Return**: double 
 
@@ -125,7 +125,7 @@ inline double longitude()
 inline String address()
 ```
 
-地址 
+Address 
 
 **Return**: std::string 
 

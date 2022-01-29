@@ -1,6 +1,6 @@
 ---
 title: floo::BMXFileAttachment
-summary: 消息文件附件 
+summary: Message file attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息文件附件
 
 
 
-消息文件附件 
+Message file attachment 
 
 
 `#include <bmx_file_attachment.h>`
@@ -21,17 +21,17 @@ Inherited by [floo::BMXImageAttachment](classfloo_1_1_b_m_x_image_attachment.md)
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & path, const std::string & displayName ="")<br>构造函数，构建发送文件消息附件  |
-| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & ratelUrl, const std::string & displayName, int64_t fileLength)<br>构造函数，构建接收文件消息附件  |
-| virtual | **[~BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-~bmxfileattachment)**()<br>析构函数  |
-| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_file_attachment.md#function-type)**() const<br>返回文件类型  |
-| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_file_attachment.md#function-clone)**() const<br>克隆函数  |
-| const std::string & | **[path](classfloo_1_1_b_m_x_file_attachment.md#function-path)**() const<br>本地路径  |
-| const std::string & | **[displayName](classfloo_1_1_b_m_x_file_attachment.md#function-displayname)**() const<br>显示名  |
-| const std::string & | **[ratelUrl](classfloo_1_1_b_m_x_file_attachment.md#function-ratelurl)**() const<br>远程ratel使用URL  |
-| const std::string & | **[url](classfloo_1_1_b_m_x_file_attachment.md#function-url)**() const<br>远程使用URL  |
-| int64_t | **[fileLength](classfloo_1_1_b_m_x_file_attachment.md#function-filelength)**() const<br>文件长度  |
-| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[downloadStatus](classfloo_1_1_b_m_x_file_attachment.md#function-downloadstatus)**() const<br>附件下载状态  |
+| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & path, const std::string & displayName ="")<br>Constructor to build the message attachment of sent file  |
+| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & ratelUrl, const std::string & displayName, int64_t fileLength)<br>Constructor to build the message attachment of received file  |
+| virtual | **[~BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-~bmxfileattachment)**()<br>Destructor  |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_file_attachment.md#function-type)**() const<br>Type of returned file  |
+| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_file_attachment.md#function-clone)**() const<br>Cloning function  |
+| const std::string & | **[path](classfloo_1_1_b_m_x_file_attachment.md#function-path)**() const<br>Local path  |
+| const std::string & | **[displayName](classfloo_1_1_b_m_x_file_attachment.md#function-displayname)**() const<br>Display name  |
+| const std::string & | **[ratelUrl](classfloo_1_1_b_m_x_file_attachment.md#function-ratelurl)**() const<br>URL for remote ratel  |
+| const std::string & | **[url](classfloo_1_1_b_m_x_file_attachment.md#function-url)**() const<br>URL for remote  |
+| int64_t | **[fileLength](classfloo_1_1_b_m_x_file_attachment.md#function-filelength)**() const<br>File length  |
+| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[downloadStatus](classfloo_1_1_b_m_x_file_attachment.md#function-downloadstatus)**() const<br>Attachment download state  |
 
 ## Protected Attributes
 
@@ -57,15 +57,15 @@ Inherited by [floo::BMXImageAttachment](classfloo_1_1_b_m_x_image_attachment.md)
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>附件类型  |
-| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>附件下载状态  |
+| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
+| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
 
 **Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>构造函数  |
-| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>析构函数  |
+| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
+| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
 
 
 ## Public Functions Documentation
@@ -79,12 +79,12 @@ BMXFileAttachment(
 )
 ```
 
-构造函数，构建发送文件消息附件 
+Constructor to build the message attachment of sent file 
 
 **Parameters**: 
 
-  * **path** 文件的本地路径 
-  * **displayName** 文件展示名 
+  * **path** Local path of file 
+  * **displayName** Display name of file 
 
 
 ### function BMXFileAttachment
@@ -97,13 +97,13 @@ BMXFileAttachment(
 )
 ```
 
-构造函数，构建接收文件消息附件 
+Constructor to build the message attachment of received file 
 
 **Parameters**: 
 
-  * **ratelUrl** ratel文件服务器地址 
-  * **displayName** 文件展示名 
-  * **fileLength** 文件大小 
+  * **ratelUrl** Address of ratel file server 
+  * **displayName** Display name of file 
+  * **fileLength** File size 
 
 
 ### function ~BMXFileAttachment
@@ -112,7 +112,7 @@ BMXFileAttachment(
 inline virtual ~BMXFileAttachment()
 ```
 
-析构函数 
+Destructor 
 
 ### function type
 
@@ -120,7 +120,7 @@ inline virtual ~BMXFileAttachment()
 inline virtual Type type() const
 ```
 
-返回文件类型 
+Type of returned file 
 
 **Return**: Type 
 
@@ -136,7 +136,7 @@ inline virtual Type type() const
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -152,7 +152,7 @@ virtual BMXMessageAttachmentPtr clone() const
 const std::string & path() const
 ```
 
-本地路径 
+Local path 
 
 **Return**: std::string 
 
@@ -162,7 +162,7 @@ const std::string & path() const
 const std::string & displayName() const
 ```
 
-显示名 
+Display name 
 
 **Return**: std::string 
 
@@ -172,7 +172,7 @@ const std::string & displayName() const
 const std::string & ratelUrl() const
 ```
 
-远程ratel使用URL 
+URL for remote ratel 
 
 **Return**: std::string 
 
@@ -182,7 +182,7 @@ const std::string & ratelUrl() const
 const std::string & url() const
 ```
 
-远程使用URL 
+URL for remote 
 
 **Return**: std::string 
 
@@ -192,7 +192,7 @@ const std::string & url() const
 int64_t fileLength() const
 ```
 
-文件长度 
+File length 
 
 **Return**: std::string 
 
@@ -202,7 +202,7 @@ int64_t fileLength() const
 DownloadStatus downloadStatus() const
 ```
 
-附件下载状态 
+Attachment download state 
 
 **Return**: DownloadStatus 
 

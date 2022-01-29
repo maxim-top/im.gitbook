@@ -1,6 +1,6 @@
 ---
 title: floo::BMXMessage
-summary: 消息 
+summary: Message 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息
 
 
 
-消息 
+Message 
 
 
 `#include <bmx_message.h>`
@@ -19,73 +19,73 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[DeliveryStatus](classfloo_1_1_b_m_x_message.md#enum-deliverystatus)** { New, Delivering, Deliveried, Failed, Recalled}<br>消息投递状态  |
-| enum class| **[MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype)** { Single, Group, System}<br>消息类型  |
-| enum class| **[ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype)** { Text, Image, Voice, Video, File, Location, Command, Forward}<br>消息内容类型  |
-| enum class| **[DeliveryQos](classfloo_1_1_b_m_x_message.md#enum-deliveryqos)** { AtLastOnce, AtMostOnce, ExactlyOnce}<br>消息投递质量  |
+| enum class| **[DeliveryStatus](classfloo_1_1_b_m_x_message.md#enum-deliverystatus)** { New, Delivering, Deliveried, Failed, Recalled}<br>Messaging state  |
+| enum class| **[MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype)** { Single, Group, System}<br>Message type  |
+| enum class| **[ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype)** { Text, Image, Voice, Video, File, Location, Command, Forward}<br>Type of message content  |
+| enum class| **[DeliveryQos](classfloo_1_1_b_m_x_message.md#enum-deliveryqos)** { AtLastOnce, AtMostOnce, ExactlyOnce}<br>Messaging quality  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BMXMessage](classfloo_1_1_b_m_x_message.md#function-~bmxmessage)**()<br>析构函数  |
-| int64_t | **[msgId](classfloo_1_1_b_m_x_message.md#function-msgid)**()<br>消息唯一ID  |
-| int64_t | **[clientMsgId](classfloo_1_1_b_m_x_message.md#function-clientmsgid)**()<br>消息客户端ID,仅在消息发送端存在  |
-| int64_t | **[fromId](classfloo_1_1_b_m_x_message.md#function-fromid)**()<br>消息发送方ID  |
-| int64_t | **[toId](classfloo_1_1_b_m_x_message.md#function-toid)**()<br>消息接收方ID  |
-| [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) | **[type](classfloo_1_1_b_m_x_message.md#function-type)**()<br>消息类型  |
-| int64_t | **[conversationId](classfloo_1_1_b_m_x_message.md#function-conversationid)**()<br>消息所属会话ID  |
-| [DeliveryStatus](classfloo_1_1_b_m_x_message.md#enum-deliverystatus) | **[deliveryStatus](classfloo_1_1_b_m_x_message.md#function-deliverystatus)**()<br>消息投递状态  |
-| void | **[setDeliveryStatus](classfloo_1_1_b_m_x_message.md#function-setdeliverystatus)**([DeliveryStatus](classfloo_1_1_b_m_x_message.md#enum-deliverystatus) )<br>设置消息投递状态  |
-| int64_t | **[serverTimestamp](classfloo_1_1_b_m_x_message.md#function-servertimestamp)**()<br>消息时间戳（服务端收到时的时间）  |
-| void | **[setServerTimestamp](classfloo_1_1_b_m_x_message.md#function-setservertimestamp)**(int64_t )<br>设置时间戳（服务端收到时的时间）  |
-| int64_t | **[clientTimestamp](classfloo_1_1_b_m_x_message.md#function-clienttimestamp)**()<br>本地时间戳（消息创建或者收到时的本地时间）  |
-| void | **[setClientTimestamp](classfloo_1_1_b_m_x_message.md#function-setclienttimestamp)**(int64_t )<br>设置消息本地时间戳  |
-| bool | **[isPlayed](classfloo_1_1_b_m_x_message.md#function-isplayed)**()<br>语音或者视频消息是否播放过，仅对收到的音视频消息有效  |
-| void | **[setIsPlayed](classfloo_1_1_b_m_x_message.md#function-setisplayed)**(bool )<br>设置语音或者视频消息是否播放过，仅对收到的音视频消息有效  |
-| bool | **[isPlayAcked](classfloo_1_1_b_m_x_message.md#function-isplayacked)**()<br>对于发送方表示是否收到了已播放回执，对于接收方表示是否发送了已播放回执  |
-| void | **[setIsPlayAcked](classfloo_1_1_b_m_x_message.md#function-setisplayacked)**(bool )<br>设置已播放回执  |
-| bool | **[isReceiveMsg](classfloo_1_1_b_m_x_message.md#function-isreceivemsg)**()<br>是否接收的消息  |
-| void | **[setIsReceiveMsg](classfloo_1_1_b_m_x_message.md#function-setisreceivemsg)**(bool )<br>设置是否接收的消息  |
-| bool | **[isRead](classfloo_1_1_b_m_x_message.md#function-isread)**()<br>消息是否已读标志  |
-| void | **[setIsRead](classfloo_1_1_b_m_x_message.md#function-setisread)**(bool )<br>消息是否已读标志  |
-| bool | **[isReadAcked](classfloo_1_1_b_m_x_message.md#function-isreadacked)**()<br>对于发送方表示是否收到了已读回执，对于接收方表示是否发送了已读回执  |
-| void | **[setIsReadAcked](classfloo_1_1_b_m_x_message.md#function-setisreadacked)**(bool )<br>设置已读回执  |
-| bool | **[isDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-isdeliveryacked)**()<br>对于发送方表示消息是否已投递到对方，对于接收方表示是否发送了消息已到达回执  |
-| void | **[setIsDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-setisdeliveryacked)**(bool )<br>设置投递回执  |
-| const std::string & | **[content](classfloo_1_1_b_m_x_message.md#function-content)**()<br>消息文本内容  |
-| void | **[setContent](classfloo_1_1_b_m_x_message.md#function-setcontent)**(const std::string & content)<br>消息文本内容  |
-| [ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) | **[contentType](classfloo_1_1_b_m_x_message.md#function-contenttype)**()<br>消息内容类型，如果带附件就表示附件类型，不带附件就是文本类型  |
-| BMXMessageAttachmentPtr | **[attachment](classfloo_1_1_b_m_x_message.md#function-attachment)**()<br>消息附件，BMXMessage拥有附件的所有权，负责释放  |
-| BMXMessageConfigPtr | **[config](classfloo_1_1_b_m_x_message.md#function-config)**()<br>消息的配置信息  |
-| void | **[setConfig](classfloo_1_1_b_m_x_message.md#function-setconfig)**(BMXMessageConfigPtr )<br>设置消息配置信息  |
-| const JSON & | **[extension](classfloo_1_1_b_m_x_message.md#function-extension)**()<br>消息扩展信息  |
-| void | **[setExtension](classfloo_1_1_b_m_x_message.md#function-setextension)**(const JSON & )<br>设置消息扩展信息  |
-| [DeliveryQos](classfloo_1_1_b_m_x_message.md#enum-deliveryqos) | **[deliveryQos](classfloo_1_1_b_m_x_message.md#function-deliveryqos)**()<br>消息投递QOS  |
-| void | **[setDeliveryQos](classfloo_1_1_b_m_x_message.md#function-setdeliveryqos)**([DeliveryQos](classfloo_1_1_b_m_x_message.md#enum-deliveryqos) qos)<br>设置消息投递QOS  |
-| const std::string & | **[senderName](classfloo_1_1_b_m_x_message.md#function-sendername)**()<br>消息发送者的显示名称  |
-| void | **[setSenderName](classfloo_1_1_b_m_x_message.md#function-setsendername)**(const std::string & senderName)<br>设置消息的发送者显示名称  |
-| int | **[groupAckCount](classfloo_1_1_b_m_x_message.md#function-groupackcount)**()<br>群消息已读AckCount数目  |
-| void | **[setGroupAckCount](classfloo_1_1_b_m_x_message.md#function-setgroupackcount)**(int count)<br>设置消息已读groupAckCount数目(SDK 内部调用接口，上层不应该调用)  |
-| int | **[groupAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-groupackunreadcount)**()<br>群消息未读AckCount数目  |
-| void | **[setGroupAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-setgroupackunreadcount)**(int count)<br>设置消息未读groupAckCount数目(SDK 内部调用接口，上层不应该调用)  |
-| bool | **[groupAckReadAll](classfloo_1_1_b_m_x_message.md#function-groupackreadall)**()<br>群消息是否全部已读  |
-| int | **[groupPlayAckCount](classfloo_1_1_b_m_x_message.md#function-groupplayackcount)**()<br>群消息已播放AckCount数目（仅用于音频/视频附件消息）  |
-| void | **[setGroupPlayAckCount](classfloo_1_1_b_m_x_message.md#function-setgroupplayackcount)**(int count)<br>设置消息已播放groupAckCount数目(SDK 内部调用接口，上层不应该调用)（仅用于音频/视频附件消息）  |
-| int | **[groupPlayAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-groupplayackunreadcount)**()<br>群消息未播放AckCount数目（仅用于音频/视频附件消息）  |
-| void | **[setGroupPlayAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-setgroupplayackunreadcount)**(int count)<br>设置消息未播放groupAckCount数目(SDK 内部调用接口，上层不应该调用)（仅用于音频/视频附件消息）  |
-| bool | **[groupPlayAckReadAll](classfloo_1_1_b_m_x_message.md#function-groupplayackreadall)**()<br>群消息是否全部已播放  |
-| void | **[setPriority](classfloo_1_1_b_m_x_message.md#function-setpriority)**(int priority)<br>设置消息的扩散优先级，默认为0。0表示扩散，数字越小扩散的越多。  |
-| int | **[priority](classfloo_1_1_b_m_x_message.md#function-priority)**()<br>消息的扩散优先级  |
-| void | **[setPushMessageMode](classfloo_1_1_b_m_x_message.md#function-setpushmessagemode)**(bool )<br>设置消息是否为推送消息。  |
-| bool | **[isPushMessage](classfloo_1_1_b_m_x_message.md#function-ispushmessage)**()<br>消息是否是推送消息  |
-| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content)<br>创建发送文本消息  |
-| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, BMXMessageAttachmentPtr attachment)<br>创建发送附件消息  |
-| BMXMessagePtr | **[createCommandMessage](classfloo_1_1_b_m_x_message.md#function-createcommandmessage)**(int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content)<br>创建发送命令消息(命令消息通过content字段或者extension字段存放命令信息)  |
-| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t msgId, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content, int64_t serverTimestamp)<br>创建收到的消息  |
-| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t msgId, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, BMXMessageAttachmentPtr attachment, int64_t serverTimestamp)<br>创建收到的消息  |
-| BMXMessagePtr | **[createCommandMessage](classfloo_1_1_b_m_x_message.md#function-createcommandmessage)**(int64_t msgId, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content, int64_t serverTimestamp)<br>创建收到的命令消息(命令消息通过content字段或者extension字段存放命令信息)  |
-| BMXMessagePtr | **[createForwardMessage](classfloo_1_1_b_m_x_message.md#function-createforwardmessage)**(BMXMessagePtr msg, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId)<br>创建转发消息  |
+| virtual | **[~BMXMessage](classfloo_1_1_b_m_x_message.md#function-~bmxmessage)**()<br>Destructor  |
+| int64_t | **[msgId](classfloo_1_1_b_m_x_message.md#function-msgid)**()<br>Message unique ID  |
+| int64_t | **[clientMsgId](classfloo_1_1_b_m_x_message.md#function-clientmsgid)**()<br>Message client ID, only exists on message sender-side  |
+| int64_t | **[fromId](classfloo_1_1_b_m_x_message.md#function-fromid)**()<br>Message sender ID  |
+| int64_t | **[toId](classfloo_1_1_b_m_x_message.md#function-toid)**()<br>Message receiver ID  |
+| [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) | **[type](classfloo_1_1_b_m_x_message.md#function-type)**()<br>Message type  |
+| int64_t | **[conversationId](classfloo_1_1_b_m_x_message.md#function-conversationid)**()<br>Session ID that message belongs to  |
+| [DeliveryStatus](classfloo_1_1_b_m_x_message.md#enum-deliverystatus) | **[deliveryStatus](classfloo_1_1_b_m_x_message.md#function-deliverystatus)**()<br>Messaging state  |
+| void | **[setDeliveryStatus](classfloo_1_1_b_m_x_message.md#function-setdeliverystatus)**([DeliveryStatus](classfloo_1_1_b_m_x_message.md#enum-deliverystatus) )<br>Set messaging state  |
+| int64_t | **[serverTimestamp](classfloo_1_1_b_m_x_message.md#function-servertimestamp)**()<br>Message timestamp (when received by server-side)  |
+| void | **[setServerTimestamp](classfloo_1_1_b_m_x_message.md#function-setservertimestamp)**(int64_t )<br>Set message timestamp (when received by server-side)  |
+| int64_t | **[clientTimestamp](classfloo_1_1_b_m_x_message.md#function-clienttimestamp)**()<br>Local timestamp (local time when message created or received)  |
+| void | **[setClientTimestamp](classfloo_1_1_b_m_x_message.md#function-setclienttimestamp)**(int64_t )<br>Set message local timestamp  |
+| bool | **[isPlayed](classfloo_1_1_b_m_x_message.md#function-isplayed)**()<br>Whether voice or video message has been played, valid only for received audio/video messages  |
+| void | **[setIsPlayed](classfloo_1_1_b_m_x_message.md#function-setisplayed)**(bool )<br>Set whether a voice or video message has been played, valid only for received audio or video messages  |
+| bool | **[isPlayAcked](classfloo_1_1_b_m_x_message.md#function-isplayacked)**()<br>Means whether playback receipt received for sender, and whether playback receipt sent for receiver  |
+| void | **[setIsPlayAcked](classfloo_1_1_b_m_x_message.md#function-setisplayacked)**(bool )<br>Set playback receipt  |
+| bool | **[isReceiveMsg](classfloo_1_1_b_m_x_message.md#function-isreceivemsg)**()<br>Message whether to receive  |
+| void | **[setIsReceiveMsg](classfloo_1_1_b_m_x_message.md#function-setisreceivemsg)**(bool )<br>Message to set receiving condition  |
+| bool | **[isRead](classfloo_1_1_b_m_x_message.md#function-isread)**()<br>Message read or unread mark  |
+| void | **[setIsRead](classfloo_1_1_b_m_x_message.md#function-setisread)**(bool )<br>Message read or unread mark  |
+| bool | **[isReadAcked](classfloo_1_1_b_m_x_message.md#function-isreadacked)**()<br>Show sender whether read receipt received, and show receiver whether message read receipt sent  |
+| void | **[setIsReadAcked](classfloo_1_1_b_m_x_message.md#function-setisreadacked)**(bool )<br>Set read receipt  |
+| bool | **[isDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-isdeliveryacked)**()<br>Show sender whether message has been delivered to the other party, and show receiver whether message delivered receipt has been sent  |
+| void | **[setIsDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-setisdeliveryacked)**(bool )<br>Set delivery receipt  |
+| const std::string & | **[content](classfloo_1_1_b_m_x_message.md#function-content)**()<br>Message text content  |
+| void | **[setContent](classfloo_1_1_b_m_x_message.md#function-setcontent)**(const std::string & content)<br>Message text content  |
+| [ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) | **[contentType](classfloo_1_1_b_m_x_message.md#function-contenttype)**()<br>Message content type, attachment-type with attachment, text-type with no attachment  |
+| BMXMessageAttachmentPtr | **[attachment](classfloo_1_1_b_m_x_message.md#function-attachment)**()<br>Message attachment, BMXMessage owns the attachment and is responsible for releasing it  |
+| BMXMessageConfigPtr | **[config](classfloo_1_1_b_m_x_message.md#function-config)**()<br>Message settings  |
+| void | **[setConfig](classfloo_1_1_b_m_x_message.md#function-setconfig)**(BMXMessageConfigPtr )<br>Set message config information  |
+| const JSON & | **[extension](classfloo_1_1_b_m_x_message.md#function-extension)**()<br>Message extension information  |
+| void | **[setExtension](classfloo_1_1_b_m_x_message.md#function-setextension)**(const JSON & )<br>Set message extension information  |
+| [DeliveryQos](classfloo_1_1_b_m_x_message.md#enum-deliveryqos) | **[deliveryQos](classfloo_1_1_b_m_x_message.md#function-deliveryqos)**()<br>QOS of messaging  |
+| void | **[setDeliveryQos](classfloo_1_1_b_m_x_message.md#function-setdeliveryqos)**([DeliveryQos](classfloo_1_1_b_m_x_message.md#enum-deliveryqos) qos)<br>Set QOS of messaging  |
+| const std::string & | **[senderName](classfloo_1_1_b_m_x_message.md#function-sendername)**()<br>Display name of message sender  |
+| void | **[setSenderName](classfloo_1_1_b_m_x_message.md#function-setsendername)**(const std::string & senderName)<br>Set display name of message sender  |
+| int | **[groupAckCount](classfloo_1_1_b_m_x_message.md#function-groupackcount)**()<br>AckCount of read group messages  |
+| void | **[setGroupAckCount](classfloo_1_1_b_m_x_message.md#function-setgroupackcount)**(int count)<br>Set groupAckCount of read messages (an SDK internal calling interface that shall not be called by upper layer)  |
+| int | **[groupAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-groupackunreadcount)**()<br>AckCount of unread group messages  |
+| void | **[setGroupAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-setgroupackunreadcount)**(int count)<br>Set groupAckCount of unread messages (an SDK internal calling interface that shall not be called by upper layer)  |
+| bool | **[groupAckReadAll](classfloo_1_1_b_m_x_message.md#function-groupackreadall)**()<br>Whether all group messages are read  |
+| int | **[groupPlayAckCount](classfloo_1_1_b_m_x_message.md#function-groupplayackcount)**()<br>AckCount of played group messages (valid only for messages with audio/video attachment)  |
+| void | **[setGroupPlayAckCount](classfloo_1_1_b_m_x_message.md#function-setgroupplayackcount)**(int count)<br>Set groupAckCount of played messages (an SDK internal calling interface that shall not be called by upper layer) (valid only for messages with audio/video attachment)  |
+| int | **[groupPlayAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-groupplayackunreadcount)**()<br>AckCount of unplayed group messages (valid only for messages with audio/video attachment)  |
+| void | **[setGroupPlayAckUnreadCount](classfloo_1_1_b_m_x_message.md#function-setgroupplayackunreadcount)**(int count)<br>Set groupAckCount of unplayed messages (an SDK internal calling interface that shall not be called by upper layer) (valid only for messages with audio/video attachment)  |
+| bool | **[groupPlayAckReadAll](classfloo_1_1_b_m_x_message.md#function-groupplayackreadall)**()<br>Whether all group messages have been played  |
+| void | **[setPriority](classfloo_1_1_b_m_x_message.md#function-setpriority)**(int priority)<br>Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused.  |
+| int | **[priority](classfloo_1_1_b_m_x_message.md#function-priority)**()<br>Message diffusion priority  |
+| void | **[setPushMessageMode](classfloo_1_1_b_m_x_message.md#function-setpushmessagemode)**(bool )<br>Set whether the message is a push.  |
+| bool | **[isPushMessage](classfloo_1_1_b_m_x_message.md#function-ispushmessage)**()<br>Whether the message is a push  |
+| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content)<br>Create a text message  |
+| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, BMXMessageAttachmentPtr attachment)<br>Create a sent-attachment message  |
+| BMXMessagePtr | **[createCommandMessage](classfloo_1_1_b_m_x_message.md#function-createcommandmessage)**(int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content)<br>Create a sent command message (command message holds command information in a content field or an extension field)  |
+| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t msgId, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content, int64_t serverTimestamp)<br>Create a received message  |
+| BMXMessagePtr | **[createMessage](classfloo_1_1_b_m_x_message.md#function-createmessage)**(int64_t msgId, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, BMXMessageAttachmentPtr attachment, int64_t serverTimestamp)<br>Create a received message  |
+| BMXMessagePtr | **[createCommandMessage](classfloo_1_1_b_m_x_message.md#function-createcommandmessage)**(int64_t msgId, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId, const std::string & content, int64_t serverTimestamp)<br>Create a received command message (command message holds command information in a content field or an extension field)  |
+| BMXMessagePtr | **[createForwardMessage](classfloo_1_1_b_m_x_message.md#function-createforwardmessage)**(BMXMessagePtr msg, int64_t from, int64_t to, [MessageType](classfloo_1_1_b_m_x_message.md#enum-messagetype) type, int64_t conversationId)<br>Create a forwarding message  |
 
 ## Public Types Documentation
 
@@ -93,56 +93,56 @@ Inherits from BMXBaseObject
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| New | | 新创建消息   |
-| Delivering | | 消息投递中   |
-| Deliveried | | 消息已投递   |
-| Failed | | 消息投递失败   |
-| Recalled | | 消息已撤回   |
+| New | | Newly created message   |
+| Delivering | | Message delivering   |
+| Deliveried | | Message delivered   |
+| Failed | | Message delivery failed   |
+| Recalled | | Message delivery canceled   |
 
 
 
-消息投递状态 
+Messaging state 
 
 ### enum MessageType
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Single | | 单聊消息   |
-| Group | | 群聊消息   |
-| System | | 系统消息   |
+| Single | | Single chat message   |
+| Group | | Group chat message   |
+| System | | System message   |
 
 
 
-消息类型 
+Message type 
 
 ### enum ContentType
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Text | | 文本消息   |
-| Image | | 图片消息   |
-| Voice | | 语音消息   |
-| Video | | 视频片段消息   |
-| File | | 文件消息   |
-| Location | | 位置消息   |
-| Command | | 命令消息   |
-| Forward | | 转发消息   |
+| Text | | Text message   |
+| Image | | Image message   |
+| Voice | | Voice message   |
+| Video | | Video clip message   |
+| File | | File message   |
+| Location | | Location message   |
+| Command | | Command message   |
+| Forward | | Forward message   |
 
 
 
-消息内容类型 
+Type of message content 
 
 ### enum DeliveryQos
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| AtLastOnce | | 最少投递一次   |
-| AtMostOnce | | 最多投递一次   |
-| ExactlyOnce | | 仅投递一次   |
+| AtLastOnce | | Deliver at least once   |
+| AtMostOnce | | Deliver at most once   |
+| ExactlyOnce | | Deliver only once   |
 
 
 
-消息投递质量 
+Messaging quality 
 
 ## Public Functions Documentation
 
@@ -152,7 +152,7 @@ Inherits from BMXBaseObject
 virtual ~BMXMessage()
 ```
 
-析构函数 
+Destructor 
 
 ### function msgId
 
@@ -160,7 +160,7 @@ virtual ~BMXMessage()
 int64_t msgId()
 ```
 
-消息唯一ID 
+Message unique ID 
 
 **Return**: int64_t 
 
@@ -170,7 +170,7 @@ int64_t msgId()
 int64_t clientMsgId()
 ```
 
-消息客户端ID,仅在消息发送端存在 
+Message client ID, only exists on message sender-side 
 
 **Return**: int64_t 
 
@@ -180,7 +180,7 @@ int64_t clientMsgId()
 int64_t fromId()
 ```
 
-消息发送方ID 
+Message sender ID 
 
 **Return**: int64_t 
 
@@ -190,7 +190,7 @@ int64_t fromId()
 int64_t toId()
 ```
 
-消息接收方ID 
+Message receiver ID 
 
 **Return**: int64_t 
 
@@ -200,7 +200,7 @@ int64_t toId()
 MessageType type()
 ```
 
-消息类型 
+Message type 
 
 **Return**: MessageType 
 
@@ -210,7 +210,7 @@ MessageType type()
 int64_t conversationId()
 ```
 
-消息所属会话ID 
+Session ID that message belongs to 
 
 **Return**: int64_t 
 
@@ -220,7 +220,7 @@ int64_t conversationId()
 DeliveryStatus deliveryStatus()
 ```
 
-消息投递状态 
+Messaging state 
 
 **Return**: DeliveryStatus 
 
@@ -232,7 +232,7 @@ void setDeliveryStatus(
 )
 ```
 
-设置消息投递状态 
+Set messaging state 
 
 ### function serverTimestamp
 
@@ -240,7 +240,7 @@ void setDeliveryStatus(
 int64_t serverTimestamp()
 ```
 
-消息时间戳（服务端收到时的时间） 
+Message timestamp (when received by server-side) 
 
 **Return**: int64_t 
 
@@ -252,7 +252,7 @@ void setServerTimestamp(
 )
 ```
 
-设置时间戳（服务端收到时的时间） 
+Set message timestamp (when received by server-side) 
 
 ### function clientTimestamp
 
@@ -260,7 +260,7 @@ void setServerTimestamp(
 int64_t clientTimestamp()
 ```
 
-本地时间戳（消息创建或者收到时的本地时间） 
+Local timestamp (local time when message created or received) 
 
 **Return**: int64_t 
 
@@ -272,7 +272,7 @@ void setClientTimestamp(
 )
 ```
 
-设置消息本地时间戳 
+Set message local timestamp 
 
 ### function isPlayed
 
@@ -280,7 +280,7 @@ void setClientTimestamp(
 bool isPlayed()
 ```
 
-语音或者视频消息是否播放过，仅对收到的音视频消息有效 
+Whether voice or video message has been played, valid only for received audio/video messages 
 
 **Return**: bool 
 
@@ -292,7 +292,7 @@ void setIsPlayed(
 )
 ```
 
-设置语音或者视频消息是否播放过，仅对收到的音视频消息有效 
+Set whether a voice or video message has been played, valid only for received audio or video messages 
 
 ### function isPlayAcked
 
@@ -300,7 +300,7 @@ void setIsPlayed(
 bool isPlayAcked()
 ```
 
-对于发送方表示是否收到了已播放回执，对于接收方表示是否发送了已播放回执 
+Means whether playback receipt received for sender, and whether playback receipt sent for receiver 
 
 **Return**: bool 
 
@@ -312,7 +312,7 @@ void setIsPlayAcked(
 )
 ```
 
-设置已播放回执 
+Set playback receipt 
 
 ### function isReceiveMsg
 
@@ -320,7 +320,7 @@ void setIsPlayAcked(
 bool isReceiveMsg()
 ```
 
-是否接收的消息 
+Message whether to receive 
 
 **Return**: bool 
 
@@ -332,7 +332,7 @@ void setIsReceiveMsg(
 )
 ```
 
-设置是否接收的消息 
+Message to set receiving condition 
 
 ### function isRead
 
@@ -340,7 +340,7 @@ void setIsReceiveMsg(
 bool isRead()
 ```
 
-消息是否已读标志 
+Message read or unread mark 
 
 **Return**: bool 
 
@@ -352,7 +352,7 @@ void setIsRead(
 )
 ```
 
-消息是否已读标志 
+Message read or unread mark 
 
 ### function isReadAcked
 
@@ -360,7 +360,7 @@ void setIsRead(
 bool isReadAcked()
 ```
 
-对于发送方表示是否收到了已读回执，对于接收方表示是否发送了已读回执 
+Show sender whether read receipt received, and show receiver whether message read receipt sent 
 
 **Return**: bool 
 
@@ -372,7 +372,7 @@ void setIsReadAcked(
 )
 ```
 
-设置已读回执 
+Set read receipt 
 
 ### function isDeliveryAcked
 
@@ -380,7 +380,7 @@ void setIsReadAcked(
 bool isDeliveryAcked()
 ```
 
-对于发送方表示消息是否已投递到对方，对于接收方表示是否发送了消息已到达回执 
+Show sender whether message has been delivered to the other party, and show receiver whether message delivered receipt has been sent 
 
 **Return**: bool 
 
@@ -392,7 +392,7 @@ void setIsDeliveryAcked(
 )
 ```
 
-设置投递回执 
+Set delivery receipt 
 
 ### function content
 
@@ -400,7 +400,7 @@ void setIsDeliveryAcked(
 const std::string & content()
 ```
 
-消息文本内容 
+Message text content 
 
 **Return**: std::string 
 
@@ -412,11 +412,11 @@ void setContent(
 )
 ```
 
-消息文本内容 
+Message text content 
 
 **Parameters**: 
 
-  * **content** 消息文本内容 
+  * **content** Message text content 
 
 
 ### function contentType
@@ -425,7 +425,7 @@ void setContent(
 ContentType contentType()
 ```
 
-消息内容类型，如果带附件就表示附件类型，不带附件就是文本类型 
+Message content type, attachment-type with attachment, text-type with no attachment 
 
 **Return**: ContentType 
 
@@ -435,7 +435,7 @@ ContentType contentType()
 BMXMessageAttachmentPtr attachment()
 ```
 
-消息附件，BMXMessage拥有附件的所有权，负责释放 
+Message attachment, BMXMessage owns the attachment and is responsible for releasing it 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -445,7 +445,7 @@ BMXMessageAttachmentPtr attachment()
 BMXMessageConfigPtr config()
 ```
 
-消息的配置信息 
+Message settings 
 
 **Return**: JSON(std::string) 
 
@@ -457,7 +457,7 @@ void setConfig(
 )
 ```
 
-设置消息配置信息 
+Set message config information 
 
 ### function extension
 
@@ -465,7 +465,7 @@ void setConfig(
 const JSON & extension()
 ```
 
-消息扩展信息 
+Message extension information 
 
 **Return**: JSON(std::string) 
 
@@ -477,7 +477,7 @@ void setExtension(
 )
 ```
 
-设置消息扩展信息 
+Set message extension information 
 
 ### function deliveryQos
 
@@ -485,7 +485,7 @@ void setExtension(
 DeliveryQos deliveryQos()
 ```
 
-消息投递QOS 
+QOS of messaging 
 
 **Return**: DeliveryQos 
 
@@ -497,11 +497,11 @@ void setDeliveryQos(
 )
 ```
 
-设置消息投递QOS 
+Set QOS of messaging 
 
 **Parameters**: 
 
-  * **qos** 消息投递QOS 
+  * **qos** QOS of messaging 
 
 
 ### function senderName
@@ -510,7 +510,7 @@ void setDeliveryQos(
 const std::string & senderName()
 ```
 
-消息发送者的显示名称 
+Display name of message sender 
 
 **Return**: std::string 
 
@@ -522,11 +522,11 @@ void setSenderName(
 )
 ```
 
-设置消息的发送者显示名称 
+Set display name of message sender 
 
 **Parameters**: 
 
-  * **senderName** 消息文本内容 
+  * **senderName** Message text content 
 
 
 ### function groupAckCount
@@ -535,7 +535,7 @@ void setSenderName(
 int groupAckCount()
 ```
 
-群消息已读AckCount数目 
+AckCount of read group messages 
 
 **Return**: int 
 
@@ -547,11 +547,11 @@ void setGroupAckCount(
 )
 ```
 
-设置消息已读groupAckCount数目(SDK 内部调用接口，上层不应该调用) 
+Set groupAckCount of read messages (an SDK internal calling interface that shall not be called by upper layer) 
 
 **Parameters**: 
 
-  * **count** 设置群消息已读数目 
+  * **count** Set the number of read group messages 
 
 
 ### function groupAckUnreadCount
@@ -560,7 +560,7 @@ void setGroupAckCount(
 int groupAckUnreadCount()
 ```
 
-群消息未读AckCount数目 
+AckCount of unread group messages 
 
 **Return**: int 
 
@@ -572,11 +572,11 @@ void setGroupAckUnreadCount(
 )
 ```
 
-设置消息未读groupAckCount数目(SDK 内部调用接口，上层不应该调用) 
+Set groupAckCount of unread messages (an SDK internal calling interface that shall not be called by upper layer) 
 
 **Parameters**: 
 
-  * **count** 设置群消息未读数目 
+  * **count** Set the number of unread group messages 
 
 
 ### function groupAckReadAll
@@ -585,7 +585,7 @@ void setGroupAckUnreadCount(
 bool groupAckReadAll()
 ```
 
-群消息是否全部已读 
+Whether all group messages are read 
 
 **Return**: bool 
 
@@ -595,7 +595,7 @@ bool groupAckReadAll()
 int groupPlayAckCount()
 ```
 
-群消息已播放AckCount数目（仅用于音频/视频附件消息） 
+AckCount of played group messages (valid only for messages with audio/video attachment) 
 
 **Return**: int 
 
@@ -607,11 +607,11 @@ void setGroupPlayAckCount(
 )
 ```
 
-设置消息已播放groupAckCount数目(SDK 内部调用接口，上层不应该调用)（仅用于音频/视频附件消息） 
+Set groupAckCount of played messages (an SDK internal calling interface that shall not be called by upper layer) (valid only for messages with audio/video attachment) 
 
 **Parameters**: 
 
-  * **count** 设置群消息已读数目 
+  * **count** Set the number of read group messages 
 
 
 ### function groupPlayAckUnreadCount
@@ -620,7 +620,7 @@ void setGroupPlayAckCount(
 int groupPlayAckUnreadCount()
 ```
 
-群消息未播放AckCount数目（仅用于音频/视频附件消息） 
+AckCount of unplayed group messages (valid only for messages with audio/video attachment) 
 
 **Return**: int 
 
@@ -632,11 +632,11 @@ void setGroupPlayAckUnreadCount(
 )
 ```
 
-设置消息未播放groupAckCount数目(SDK 内部调用接口，上层不应该调用)（仅用于音频/视频附件消息） 
+Set groupAckCount of unplayed messages (an SDK internal calling interface that shall not be called by upper layer) (valid only for messages with audio/video attachment) 
 
 **Parameters**: 
 
-  * **count** 设置群消息未播放数目 
+  * **count** Set the number of unplayed group messages 
 
 
 ### function groupPlayAckReadAll
@@ -645,7 +645,7 @@ void setGroupPlayAckUnreadCount(
 bool groupPlayAckReadAll()
 ```
 
-群消息是否全部已播放 
+Whether all group messages have been played 
 
 **Return**: bool 
 
@@ -657,14 +657,14 @@ void setPriority(
 )
 ```
 
-设置消息的扩散优先级，默认为0。0表示扩散，数字越小扩散的越多。 
+Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. 
 
 **Parameters**: 
 
-  * **priority** 设置群消息未读数目 
+  * **priority** Set the number of unread group messages 
 
 
-取值范围0-10。普通人在聊天室发送的消息级别默认为5，可以丢弃。管理员默认为0不会丢弃。其它值可以根据业务自行设置。 
+Value range 0-10. The default level of messages sent by ordinary users in chatroom is 5, which can be discarded. Admin level defaults to 0 and will not be discarded. Other values can be set according to business. 
 
 
 ### function priority
@@ -673,7 +673,7 @@ void setPriority(
 int priority()
 ```
 
-消息的扩散优先级 
+Message diffusion priority 
 
 **Return**: int 
 
@@ -685,7 +685,7 @@ void setPushMessageMode(
 )
 ```
 
-设置消息是否为推送消息。 
+Set whether the message is a push. 
 
 ### function isPushMessage
 
@@ -693,7 +693,7 @@ void setPushMessageMode(
 bool isPushMessage()
 ```
 
-消息是否是推送消息 
+Whether the message is a push 
 
 **Return**: bool 
 
@@ -709,15 +709,15 @@ static BMXMessagePtr createMessage(
 )
 ```
 
-创建发送文本消息 
+Create a text message 
 
 **Parameters**: 
 
-  * **from** 消息发送者 
-  * **to** 消息接收者 
-  * **type** 消息类型 
-  * **conversationId** 会话id 
-  * **content** 消息内容 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Session id 
+  * **content** Message content 
 
 
 ### function createMessage
@@ -732,15 +732,15 @@ static BMXMessagePtr createMessage(
 )
 ```
 
-创建发送附件消息 
+Create a sent-attachment message 
 
 **Parameters**: 
 
-  * **from** 消息发送者 
-  * **to** 消息接收者 
-  * **type** 消息类型 
-  * **conversationId** 会话id 
-  * **attachment** 附件 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Session id 
+  * **attachment** Attachment 
 
 
 ### function createCommandMessage
@@ -755,15 +755,15 @@ static BMXMessagePtr createCommandMessage(
 )
 ```
 
-创建发送命令消息(命令消息通过content字段或者extension字段存放命令信息) 
+Create a sent command message (command message holds command information in a content field or an extension field) 
 
 **Parameters**: 
 
-  * **from** 消息发送者 
-  * **to** 消息接收者 
-  * **type** 消息类型 
-  * **conversationId** 会话id 
-  * **content** 消息内容 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Session id 
+  * **content** Message content 
 
 
 ### function createMessage
@@ -780,17 +780,17 @@ static BMXMessagePtr createMessage(
 )
 ```
 
-创建收到的消息 
+Create a received message 
 
 **Parameters**: 
 
-  * **msgId** 消息id 
-  * **from** 消息发送者 
-  * **to** 消息接收者 
-  * **type** 消息类型 
-  * **conversationId** 会话id 
-  * **content** 消息内容 
-  * **serverTimestamp** 服务器时间戳 
+  * **msgId** Message id 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Session id 
+  * **content** Message content 
+  * **serverTimestamp** Server timestamp 
 
 
 ### function createMessage
@@ -807,17 +807,17 @@ static BMXMessagePtr createMessage(
 )
 ```
 
-创建收到的消息 
+Create a received message 
 
 **Parameters**: 
 
-  * **msgId** 消息id 
-  * **from** 消息发送者 
-  * **to** 消息接收者 
-  * **type** 消息类型 
-  * **conversationId** 会话id 
-  * **attachment** 附件 
-  * **serverTimestamp** 服务器时间戳 
+  * **msgId** Message id 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Session id 
+  * **attachment** Attachment 
+  * **serverTimestamp** Server timestamp 
 
 
 ### function createCommandMessage
@@ -834,17 +834,17 @@ static BMXMessagePtr createCommandMessage(
 )
 ```
 
-创建收到的命令消息(命令消息通过content字段或者extension字段存放命令信息) 
+Create a received command message (command message holds command information in a content field or an extension field) 
 
 **Parameters**: 
 
-  * **msgId** 消息id 
-  * **from** 消息发送者 
-  * **to** 消息接收者 
-  * **type** 消息类型 
-  * **conversationId** 会话id 
-  * **content** 消息内容 
-  * **serverTimestamp** 服务器时间戳 
+  * **msgId** Message id 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Session id 
+  * **content** Message content 
+  * **serverTimestamp** Server timestamp 
 
 
 ### function createForwardMessage
@@ -859,15 +859,15 @@ static BMXMessagePtr createForwardMessage(
 )
 ```
 
-创建转发消息 
+Create a forwarding message 
 
 **Parameters**: 
 
-  * **msg** 要转发的消息 
-  * **from** 消息发送者 
-  * **to** 消息接收者 
-  * **type** 消息类型 
-  * **conversationId** 会话id 
+  * **msg** Message to forward 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Session id 
 
 
 -------------------------------

@@ -1,6 +1,6 @@
 ---
 title: floo::BMXForwardAttachment::Message
-summary: 转发消息附件自定义消息 
+summary: Custom message to forward attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 转发消息附件自定义消息
 
 
 
-转发消息附件自定义消息 
+Custom message to forward attachment 
 
 
 `#include <bmx_forward_attachment.h>`

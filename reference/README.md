@@ -1,2 +1,2 @@
-# 详细文档
+# detailed documentation
 

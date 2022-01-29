@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroup
-summary: 群组 
+summary: Group 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群组
 
 
 
-群组 
+Group 
 
 Inherits from BMXBaseObject
 
@@ -16,8 +16,8 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Announcement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_announcement.md)** <br>群公告  |
-| class | **[Application](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_application.md)** <br>群申请  |
+| class | **[Announcement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_announcement.md)** <br>Group announcement  |
+| class | **[Application](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_application.md)** <br>Group application  |
 
 ## Public Functions
 
@@ -25,37 +25,37 @@ Inherits from BMXBaseObject
 | -------------- | -------------- |
 | | **[BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-bmxgroup)**() |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-delete)**() |
-| long | **[groupId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-groupid)**()<br>群Id  |
-| BMXGroup.GroupType | **[groupType](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-grouptype)**()<br>当前群组的群组类型（Private 私有群组，Public 公开群组，Chatroom 聊天室）  |
-| String | **[myNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-mynickname)**()<br>在群里的昵称  |
-| String | **[name](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-name)**()<br>群名称  |
-| String | **[description](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-description)**()<br>群描述  |
-| String | **[avatarRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarratelurl)**()<br>群头像ratel地址  |
-| String | **[avatarUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarurl)**()<br>群头像  |
-| String | **[avatarPath](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarpath)**()<br>群头像下载后的本地路径  |
-| String | **[avatarThumbnailUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarthumbnailurl)**()<br>群头像缩略图地址  |
-| String | **[avatarThumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarthumbnailpath)**()<br>群头像缩略图下载后的本地路径  |
-| long | **[createTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-createtime)**()<br>群创建时间  |
-| String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-extension)**()<br>群扩展信息  |
-| long | **[ownerId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-ownerid)**()<br>群Owner  |
-| int | **[capacity](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-capacity)**()<br>最大人数  |
-| int | **[membersCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-memberscount)**()<br>群成员数量，包含Owner，admins 和members  |
-| int | **[adminsCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-adminscount)**()<br>群管理员数量  |
-| int | **[blockListSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-blocklistsize)**()<br>黑名单数量  |
-| int | **[bannedListSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-bannedlistsize)**()<br>禁言数量  |
-| int | **[sharedFilesCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-sharedfilescount)**()<br>群共享文件数量  |
-| long | **[latestAnnouncementId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-latestannouncementid)**()<br>最新群公告id  |
-| BMXGroup.MsgPushMode | **[msgPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-msgpushmode)**()<br>群消息通知类型  |
-| BMXGroup.ModifyMode | **[modifyMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-modifymode)**()<br>群信息修改模式  |
-| BMXGroup.JoinAuthMode | **[joinAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-joinauthmode)**()<br>入群审批模式  |
-| BMXGroup.InviteMode | **[inviteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-invitemode)**()<br>入群邀请模式  |
-| BMXGroup.MsgMuteMode | **[msgMuteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-msgmutemode)**()<br>群消息屏蔽模式  |
-| BMXGroup.GroupStatus | **[groupStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-groupstatus)**()<br>当前群组的状态。（Normal 正常， Destroyed 以销毁）  |
+| long | **[groupId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-groupid)**()<br>Group Id  |
+| BMXGroup.GroupType | **[groupType](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-grouptype)**()<br>Type of the current group (Private, Public, Chatroom)  |
+| String | **[myNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-mynickname)**()<br>Group member nickname  |
+| String | **[name](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-name)**()<br>Group name  |
+| String | **[description](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-description)**()<br>Group description  |
+| String | **[avatarRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarratelurl)**()<br>Ratel address of group avatar  |
+| String | **[avatarUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarurl)**()<br>Group avatar  |
+| String | **[avatarPath](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarpath)**()<br>Local path of downloaded group avatar  |
+| String | **[avatarThumbnailUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarthumbnailurl)**()<br>Group avatar thumbnail address  |
+| String | **[avatarThumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarthumbnailpath)**()<br>Local path of downloaded group avatar thumbnail  |
+| long | **[createTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-createtime)**()<br>Group creation time  |
+| String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-extension)**()<br>Group extension information  |
+| long | **[ownerId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-ownerid)**()<br>Group Owner  |
+| int | **[capacity](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-capacity)**()<br>Max member-number  |
+| int | **[membersCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-memberscount)**()<br>Group member-number, including Owner, Admins and Members  |
+| int | **[adminsCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-adminscount)**()<br>Group admin-number  |
+| int | **[blockListSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-blocklistsize)**()<br>Blacklisted user-number  |
+| int | **[bannedListSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-bannedlistsize)**()<br>Banned user-number  |
+| int | **[sharedFilesCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-sharedfilescount)**()<br>Shared file-number in group  |
+| long | **[latestAnnouncementId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-latestannouncementid)**()<br>Latest group announcement id  |
+| BMXGroup.MsgPushMode | **[msgPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-msgpushmode)**()<br>Group message notification type  |
+| BMXGroup.ModifyMode | **[modifyMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-modifymode)**()<br>Group information modification mode  |
+| BMXGroup.JoinAuthMode | **[joinAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-joinauthmode)**()<br>Join approval mode  |
+| BMXGroup.InviteMode | **[inviteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-invitemode)**()<br>Group invitation mode  |
+| BMXGroup.MsgMuteMode | **[msgMuteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-msgmutemode)**()<br>Group message blocking mode  |
+| BMXGroup.GroupStatus | **[groupStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-groupstatus)**()<br>state of the current group. (Normal, Destroyed)  |
 | boolean | **[isMember](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-ismember)**()<br>Deprecated use roleType instead.  |
-| boolean | **[enableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-enablereadack)**()<br>是否开启群消息已读功能  |
-| boolean | **[historyVisible](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-historyvisible)**()<br>是否可以加载显示历史聊天记录  |
-| BMXGroup.MemberRoleType | **[roleType](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-roletype)**()<br>成员在群组内的角色类型  |
-| long | **[banExpireTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-banexpiretime)**()<br>群组全员禁言到期时间  |
+| boolean | **[enableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-enablereadack)**()<br>Whether group message read feature enabled  |
+| boolean | **[historyVisible](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-historyvisible)**()<br>Whether to load and display the chat history  |
+| BMXGroup.MemberRoleType | **[roleType](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-roletype)**()<br>Type of a member role in group  |
+| long | **[banExpireTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-banexpiretime)**()<br>**to-be-translate**  |
 
 ## Protected Functions
 
@@ -93,7 +93,7 @@ inline synchronized void delete()
 inline long groupId()
 ```
 
-群Id 
+Group Id 
 
 **Return**: int64_t 
 
@@ -103,7 +103,7 @@ inline long groupId()
 inline BMXGroup.GroupType groupType()
 ```
 
-当前群组的群组类型（Private 私有群组，Public 公开群组，Chatroom 聊天室） 
+Type of the current group (Private, Public, Chatroom) 
 
 **Return**: [GroupType]
 
@@ -113,7 +113,7 @@ inline BMXGroup.GroupType groupType()
 inline String myNickname()
 ```
 
-在群里的昵称 
+Group member nickname 
 
 **Return**: std::string 
 
@@ -123,7 +123,7 @@ inline String myNickname()
 inline String name()
 ```
 
-群名称 
+Group name 
 
 **Return**: std::string 
 
@@ -133,7 +133,7 @@ inline String name()
 inline String description()
 ```
 
-群描述 
+Group description 
 
 **Return**: std::string 
 
@@ -143,7 +143,7 @@ inline String description()
 inline String avatarRatelUrl()
 ```
 
-群头像ratel地址 
+Ratel address of group avatar 
 
 **Return**: std::string 
 
@@ -153,7 +153,7 @@ inline String avatarRatelUrl()
 inline String avatarUrl()
 ```
 
-群头像 
+Group avatar 
 
 **Return**: std::string 
 
@@ -163,7 +163,7 @@ inline String avatarUrl()
 inline String avatarPath()
 ```
 
-群头像下载后的本地路径 
+Local path of downloaded group avatar 
 
 **Return**: std::string 
 
@@ -173,7 +173,7 @@ inline String avatarPath()
 inline String avatarThumbnailUrl()
 ```
 
-群头像缩略图地址 
+Group avatar thumbnail address 
 
 **Return**: std::string 
 
@@ -183,7 +183,7 @@ inline String avatarThumbnailUrl()
 inline String avatarThumbnailPath()
 ```
 
-群头像缩略图下载后的本地路径 
+Local path of downloaded group avatar thumbnail 
 
 **Return**: std::string 
 
@@ -193,7 +193,7 @@ inline String avatarThumbnailPath()
 inline long createTime()
 ```
 
-群创建时间 
+Group creation time 
 
 **Return**: int64_t 
 
@@ -203,7 +203,7 @@ inline long createTime()
 inline String extension()
 ```
 
-群扩展信息 
+Group extension information 
 
 **Return**: JSON(std::string) 
 
@@ -213,7 +213,7 @@ inline String extension()
 inline long ownerId()
 ```
 
-群Owner 
+Group Owner 
 
 **Return**: int64_t 
 
@@ -223,7 +223,7 @@ inline long ownerId()
 inline int capacity()
 ```
 
-最大人数 
+Max member-number 
 
 **Return**: int 
 
@@ -233,7 +233,7 @@ inline int capacity()
 inline int membersCount()
 ```
 
-群成员数量，包含Owner，admins 和members 
+Group member-number, including Owner, Admins and Members 
 
 **Return**: int 
 
@@ -243,7 +243,7 @@ inline int membersCount()
 inline int adminsCount()
 ```
 
-群管理员数量 
+Group admin-number 
 
 **Return**: int 
 
@@ -253,7 +253,7 @@ inline int adminsCount()
 inline int blockListSize()
 ```
 
-黑名单数量 
+Blacklisted user-number 
 
 **Return**: int 
 
@@ -263,7 +263,7 @@ inline int blockListSize()
 inline int bannedListSize()
 ```
 
-禁言数量 
+Banned user-number 
 
 **Return**: int 
 
@@ -273,7 +273,7 @@ inline int bannedListSize()
 inline int sharedFilesCount()
 ```
 
-群共享文件数量 
+Shared file-number in group 
 
 **Return**: int 
 
@@ -283,7 +283,7 @@ inline int sharedFilesCount()
 inline long latestAnnouncementId()
 ```
 
-最新群公告id 
+Latest group announcement id 
 
 **Return**: int64_t 
 
@@ -293,7 +293,7 @@ inline long latestAnnouncementId()
 inline BMXGroup.MsgPushMode msgPushMode()
 ```
 
-群消息通知类型 
+Group message notification type 
 
 **Return**: [MsgPushMode]
 
@@ -303,7 +303,7 @@ inline BMXGroup.MsgPushMode msgPushMode()
 inline BMXGroup.ModifyMode modifyMode()
 ```
 
-群信息修改模式 
+Group information modification mode 
 
 **Return**: [ModifyMode]
 
@@ -313,7 +313,7 @@ inline BMXGroup.ModifyMode modifyMode()
 inline BMXGroup.JoinAuthMode joinAuthMode()
 ```
 
-入群审批模式 
+Join approval mode 
 
 **Return**: [JoinAuthMode]
 
@@ -323,7 +323,7 @@ inline BMXGroup.JoinAuthMode joinAuthMode()
 inline BMXGroup.InviteMode inviteMode()
 ```
 
-入群邀请模式 
+Group invitation mode 
 
 **Return**: [InviteMode]
 
@@ -333,7 +333,7 @@ inline BMXGroup.InviteMode inviteMode()
 inline BMXGroup.MsgMuteMode msgMuteMode()
 ```
 
-群消息屏蔽模式 
+Group message blocking mode 
 
 **Return**: [MsgMuteMode]
 
@@ -343,7 +343,7 @@ inline BMXGroup.MsgMuteMode msgMuteMode()
 inline BMXGroup.GroupStatus groupStatus()
 ```
 
-当前群组的状态。（Normal 正常， Destroyed 以销毁） 
+state of the current group. (Normal, Destroyed) 
 
 **Return**: [GroupStatus]
 
@@ -357,7 +357,7 @@ Deprecated use roleType instead.
 
 **Return**: bool 
 
-当前用户是否是群成员 
+Whether the current user is a group member 
 
 
 ### function enableReadAck
@@ -366,7 +366,7 @@ Deprecated use roleType instead.
 inline boolean enableReadAck()
 ```
 
-是否开启群消息已读功能 
+Whether group message read feature enabled 
 
 **Return**: bool 
 
@@ -376,7 +376,7 @@ inline boolean enableReadAck()
 inline boolean historyVisible()
 ```
 
-是否可以加载显示历史聊天记录 
+Whether to load and display the chat history 
 
 **Return**: bool 
 
@@ -386,7 +386,7 @@ inline boolean historyVisible()
 inline BMXGroup.MemberRoleType roleType()
 ```
 
-成员在群组内的角色类型 
+Type of a member role in group 
 
 **Return**: [MemberRoleType]
 
@@ -396,7 +396,7 @@ inline BMXGroup.MemberRoleType roleType()
 inline long banExpireTime()
 ```
 
-群组全员禁言到期时间 
+**to-be-translate** 
 
 ## Protected Functions Documentation
 

@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXRosterItem
-summary: 联系人 
+summary: Contact 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 联系人
 
 
 
-联系人 
+Contact 
 
 Inherits from BMXBaseObject
 
@@ -18,22 +18,22 @@ Inherits from BMXBaseObject
 | -------------- | -------------- |
 | | **[BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-bmxrosteritem)**() |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-delete)**() |
-| long | **[rosterId](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-rosterid)**()<br>好友Id  |
-| String | **[username](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-username)**()<br>好友名  |
-| String | **[nickname](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-nickname)**()<br>好友昵称  |
-| String | **[avatarRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarratelurl)**()<br>好友头像ratel服务器地址  |
-| String | **[avatarUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarurl)**()<br>好友头像服务器地址  |
-| String | **[avatarPath](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarpath)**()<br>好友头像本地存储路径  |
-| String | **[avatarThumbnailUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarthumbnailurl)**()<br>好友头像缩略图地址  |
-| String | **[avatarThumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarthumbnailpath)**()<br>好友头像缩略图本地存储路径  |
-| String | **[publicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-publicinfo)**()<br>扩展信息，用户设置的好友可以看到的信息，比如地址，个性签名等  |
-| String | **[alias](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-alias)**()<br>用户对好友添加的备注等信息  |
-| String | **[ext](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-ext)**()<br>用户的服务器扩展信息  |
-| String | **[localExt](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-localext)**()<br>用户的本地扩展信息  |
-| BMXRosterItem.RosterRelation | **[relation](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-relation)**()<br>联系人关系  |
-| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-ismutenotification)**()<br>是否提醒用户消息  |
-| BMXRosterItem.AddFriendAuthMode | **[addFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-addfriendauthmode)**()<br>roster的好友添加验证方式。  |
-| String | **[authQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-authquestion)**()<br>roster的好友验证问题。  |
+| long | **[rosterId](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-rosterid)**()<br>Friend id  |
+| String | **[username](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-username)**()<br>Friend name  |
+| String | **[nickname](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-nickname)**()<br>Friend nickname  |
+| String | **[avatarRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarratelurl)**()<br>Ratel server address of friend avatar  |
+| String | **[avatarUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarurl)**()<br>Friend avatar thumbnail server address  |
+| String | **[avatarPath](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarpath)**()<br>Local storage path of friend avatar  |
+| String | **[avatarThumbnailUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarthumbnailurl)**()<br>Friend avatar thumbnail address  |
+| String | **[avatarThumbnailPath](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-avatarthumbnailpath)**()<br>Local storage path of friend avatar thumbnail  |
+| String | **[publicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-publicinfo)**()<br>Extension information which is visible to user's friends, such as address, personal state and more  |
+| String | **[alias](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-alias)**()<br>Comments added by user to adding friend  |
+| String | **[ext](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-ext)**()<br>User's server extension information  |
+| String | **[localExt](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-localext)**()<br>User's local extension information  |
+| BMXRosterItem.RosterRelation | **[relation](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-relation)**()<br>Contact relationship  |
+| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-ismutenotification)**()<br>Whether to alert user for message  |
+| BMXRosterItem.AddFriendAuthMode | **[addFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-addfriendauthmode)**()<br>How roster to validate adding friend.  |
+| String | **[authQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md#function-authquestion)**()<br>How roster to validate friend.  |
 
 ## Protected Functions
 
@@ -71,7 +71,7 @@ inline synchronized void delete()
 inline long rosterId()
 ```
 
-好友Id 
+Friend id 
 
 **Return**: int64_t 
 
@@ -81,7 +81,7 @@ inline long rosterId()
 inline String username()
 ```
 
-好友名 
+Friend name 
 
 **Return**: std::string 
 
@@ -91,7 +91,7 @@ inline String username()
 inline String nickname()
 ```
 
-好友昵称 
+Friend nickname 
 
 **Return**: std::string 
 
@@ -101,7 +101,7 @@ inline String nickname()
 inline String avatarRatelUrl()
 ```
 
-好友头像ratel服务器地址 
+Ratel server address of friend avatar 
 
 **Return**: std::string 
 
@@ -111,7 +111,7 @@ inline String avatarRatelUrl()
 inline String avatarUrl()
 ```
 
-好友头像服务器地址 
+Friend avatar thumbnail server address 
 
 **Return**: std::string 
 
@@ -121,7 +121,7 @@ inline String avatarUrl()
 inline String avatarPath()
 ```
 
-好友头像本地存储路径 
+Local storage path of friend avatar 
 
 **Return**: std::string 
 
@@ -131,7 +131,7 @@ inline String avatarPath()
 inline String avatarThumbnailUrl()
 ```
 
-好友头像缩略图地址 
+Friend avatar thumbnail address 
 
 **Return**: std::string 
 
@@ -141,7 +141,7 @@ inline String avatarThumbnailUrl()
 inline String avatarThumbnailPath()
 ```
 
-好友头像缩略图本地存储路径 
+Local storage path of friend avatar thumbnail 
 
 **Return**: std::string 
 
@@ -151,7 +151,7 @@ inline String avatarThumbnailPath()
 inline String publicInfo()
 ```
 
-扩展信息，用户设置的好友可以看到的信息，比如地址，个性签名等 
+Extension information which is visible to user's friends, such as address, personal state and more 
 
 **Return**: JSON(std::string) 
 
@@ -161,7 +161,7 @@ inline String publicInfo()
 inline String alias()
 ```
 
-用户对好友添加的备注等信息 
+Comments added by user to adding friend 
 
 **Return**: JSON(std::string) 
 
@@ -171,7 +171,7 @@ inline String alias()
 inline String ext()
 ```
 
-用户的服务器扩展信息 
+User's server extension information 
 
 **Return**: JSON(std::string) 
 
@@ -181,7 +181,7 @@ inline String ext()
 inline String localExt()
 ```
 
-用户的本地扩展信息 
+User's local extension information 
 
 **Return**: JSON(std::string) 
 
@@ -191,7 +191,7 @@ inline String localExt()
 inline BMXRosterItem.RosterRelation relation()
 ```
 
-联系人关系 
+Contact relationship 
 
 **Return**: [RosterRelation]
 
@@ -201,7 +201,7 @@ inline BMXRosterItem.RosterRelation relation()
 inline boolean isMuteNotification()
 ```
 
-是否提醒用户消息 
+Whether to alert user for message 
 
 **Return**: bool 
 
@@ -211,7 +211,7 @@ inline boolean isMuteNotification()
 inline BMXRosterItem.AddFriendAuthMode addFriendAuthMode()
 ```
 
-roster的好友添加验证方式。 
+How roster to validate adding friend. 
 
 **Return**: [AddFriendAuthMode]
 
@@ -221,7 +221,7 @@ roster的好友添加验证方式。
 inline String authQuestion()
 ```
 
-roster的好友验证问题。 
+How roster to validate friend. 
 
 **Return**: std::string 
 

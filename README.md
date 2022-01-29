@@ -1,4 +1,4 @@
-# Instant Messaging Development guide（IM）
+# Instant Messaging Development guide(IM)
 
 ## Product Features
 

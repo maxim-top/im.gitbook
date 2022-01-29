@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXChatService
-summary: 聊天Service 
+summary: Chat Service 
 
 ---
 
@@ -8,53 +8,53 @@ summary: 聊天Service
 
 
 
-聊天Service 
+Chat Service 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-delete)**() |
-| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-sendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送消息，消息状态变化会通过listener通知  |
-| void | **[resendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-resendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>重新发送消息，消息状态变化会通过listener通知  |
-| void | **[recallMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-recallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>撤回消息，消息状态变化会通过listener通知  |
-| [BMXErrorCode] | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessageList list, [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) to, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) newMsg)<br>合并转发消息  |
-| void | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>简单转发消息，用户应当通过BMXMessage::createForwardMessage()先创建转发消息  |
-| void | **[ackMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送已读回执  |
-| void | **[ackMessageDelivered](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送送达回执  |
-| void | **[ackPlayMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackplaymessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送已播放回执  |
-| void | **[readCancel](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readcancel)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>标记此消息为未读，该消息同步到当前用户的所有设备  |
-| void | **[readAllMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>标记此消息及之前全部消息为已读，该消息同步到当前用户的所有设备  |
-| void | **[removeMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removemessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, boolean synchronize)<br>删除此消息，该消息同步到当前用户的其它设备  |
+| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-sendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send a message, and the message status change is notified via listener  |
+| void | **[resendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-resendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Resend this message, and the message status change is notified via listener  |
+| void | **[recallMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-recallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Recall a message, and the message status change is notified via listener  |
+| [BMXErrorCode] | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessageList list, [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) to, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) newMsg)<br>Merge forwarding messages  |
+| void | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()  |
+| void | **[ackMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send read receipt  |
+| void | **[ackMessageDelivered](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>**to-be-translate**  |
+| void | **[ackPlayMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackplaymessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send a playback receipt  |
+| void | **[readCancel](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readcancel)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Mark this message as unread and synchronize to all devices of the current user  |
+| void | **[readAllMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Mark this message and all previous messages as read, and synchronize to all current users' devices  |
+| void | **[removeMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removemessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, boolean synchronize)<br>Delete this message, which synchronizes to other devices of the current user  |
 | void | **[removeMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removemessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg) |
-| void | **[downloadThumbnail](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadthumbnail)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, BMXChatService.ThumbnailStrategy strategy)<br>下载缩略图，下载状态变化和进度通过listener通知 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。  |
+| void | **[downloadThumbnail](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadthumbnail)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, BMXChatService.ThumbnailStrategy strategy)<br>Download thumbnail, downloading state changes and progress notified via listener. Thumbnail generation policy: 1 - generated by third-party server, 2 - generated by local server, default 1.  |
 | void | **[downloadThumbnail](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadthumbnail)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg) |
-| void | **[downloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>下载附件，下载状态变化和进度通过listener通知  |
-| void | **[downloadAttachmentByUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl)**(long msgId, String url, String path)<br>下载附件，下载状态变化和进度通过listener通知  |
-| void | **[cancelUploadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceluploadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>取消上传附件  |
-| void | **[cancelDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceldownloadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>取消上传附件  |
-| int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum)**()<br>上传或下载中的文件数  |
-| [BMXErrorCode] | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-insertmessages)**(BMXMessageList list)<br>插入消息  |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage)**(long msgId)<br>读取一条消息  |
-| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br>删除会话  |
+| void | **[downloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Downloaded attachments, and download state changes and progress are notified via listener  |
+| void | **[downloadAttachmentByUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl)**(long msgId, String url, String path)<br>Downloaded attachments, and download state changes and progress are notified via listener  |
+| void | **[cancelUploadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceluploadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Cancel uploading attachment  |
+| void | **[cancelDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceldownloadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Cancel uploading attachment  |
+| int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum)**()<br>**to-be-translate**  |
+| [BMXErrorCode] | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-insertmessages)**(BMXMessageList list)<br>Insert a message  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage)**(long msgId)<br>Read a message  |
+| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br>Delete session  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId) |
-| [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>打开一个会话  |
+| [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>Launch a session  |
 | [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type) |
-| String | **[attachmentDir](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdir)**()<br>获取附件保存路径  |
-| String | **[attachmentDirForConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(long conversationId)<br>获取会话的附件保存路径  |
-| BMXConversationList | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversations)**()<br>获取所有会话  |
-| int | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**()<br>获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内）  |
-| [BMXErrorCode] | **[retrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, long refMsgId, long size, BMXMessageList result)<br>拉取历史消息  |
-| [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>搜索消息  |
+| String | **[attachmentDir](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdir)**()<br>Get attachment saving path  |
+| String | **[attachmentDirForConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(long conversationId)<br>Get attachment saving path for a session  |
+| BMXConversationList | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversations)**()<br>Get all sessions  |
+| int | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**()<br>Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted)  |
+| [BMXErrorCode] | **[retrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, long refMsgId, long size, BMXMessageList result)<br>Pull message history  |
+| [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>Search for messages  |
 | [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result) |
-| [BMXErrorCode] | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessages)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>搜索消息  |
+| [BMXErrorCode] | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessages)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>Search for messages  |
 | [BMXErrorCode] | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessages)**(String keywords, long refTime, long size, BMXMessageListList result) |
-| [BMXErrorCode] | **[getGroupAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息已读用户id列表  |
-| [BMXErrorCode] | **[getGroupAckMessageUnreadUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageunreaduseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息未读用户id列表  |
-| [BMXErrorCode] | **[getGroupPlayAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupplayackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息已播放用户id列表  |
-| [BMXErrorCode] | **[getGroupUnPlayAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupunplayackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息未播放用户id列表  |
-| void | **[addChatListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-addchatlistener)**([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) listener)<br>添加聊天监听者  |
-| void | **[removeChatListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removechatlistener)**([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) listener)<br>移除聊天监听者  |
+| [BMXErrorCode] | **[getGroupAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>Get the list of user-ids that have read group messages  |
+| [BMXErrorCode] | **[getGroupAckMessageUnreadUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageunreaduseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>Get a list of unread user ids for the sent group message  |
+| [BMXErrorCode] | **[getGroupPlayAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupplayackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>Get a list of playback user ids for the sent group message  |
+| [BMXErrorCode] | **[getGroupUnPlayAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupunplayackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>Get a list of unplayed user ids for the sent group message  |
+| void | **[addChatListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-addchatlistener)**([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) listener)<br>Add chat listener  |
+| void | **[removeChatListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removechatlistener)**([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) listener)<br>Remove chat listener  |
 
 ## Protected Functions
 
@@ -87,11 +87,11 @@ inline void sendMessage(
 )
 ```
 
-发送消息，消息状态变化会通过listener通知 
+Send a message, and the message status change is notified via listener 
 
 **Parameters**: 
 
-  * **msg** 发送的消息 
+  * **msg** Sent message 
 
 
 ### function resendMessage
@@ -102,11 +102,11 @@ inline void resendMessage(
 )
 ```
 
-重新发送消息，消息状态变化会通过listener通知 
+Resend this message, and the message status change is notified via listener 
 
 **Parameters**: 
 
-  * **msg** 重新发送的消息 
+  * **msg** Resent message 
 
 
 ### function recallMessage
@@ -117,11 +117,11 @@ inline void recallMessage(
 )
 ```
 
-撤回消息，消息状态变化会通过listener通知 
+Recall a message, and the message status change is notified via listener 
 
 **Parameters**: 
 
-  * **msg** 撤回的消息 
+  * **msg** Recalled message 
 
 
 ### function forwardMessage
@@ -134,13 +134,13 @@ inline BMXErrorCode forwardMessage(
 )
 ```
 
-合并转发消息 
+Merge forwarding messages 
 
 **Parameters**: 
 
-  * **list** 转发的消息列表 
-  * **to** 消息被转发到的会话 
-  * **newMsg** 转发的消息列表合并后生成的新的单条转发消息 
+  * **list** List of forwarded messages 
+  * **to** The session to which message is forwarded 
+  * **newMsg** The newly generated single forwarded message from the merging list of forwarded messages 
 
 
 **Return**: [BMXErrorCode]
@@ -153,11 +153,11 @@ inline void forwardMessage(
 )
 ```
 
-简单转发消息，用户应当通过BMXMessage::createForwardMessage()先创建转发消息 
+Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage () 
 
 **Parameters**: 
 
-  * **msg** 转发的消息 
+  * **msg** Forwarded message 
 
 
 ### function ackMessage
@@ -168,11 +168,11 @@ inline void ackMessage(
 )
 ```
 
-发送已读回执 
+Send read receipt 
 
 **Parameters**: 
 
-  * **msg** 需要发送已读回执的消息 
+  * **msg** Message requiring a read receipt to be sent 
 
 
 ### function ackMessageDelivered
@@ -183,11 +183,11 @@ inline void ackMessageDelivered(
 )
 ```
 
-发送送达回执 
+**to-be-translate** 
 
 **Parameters**: 
 
-  * **msg** 需要发送送达回执的消息 
+  * **msg** **to-be-translate** 
 
 
 ### function ackPlayMessage
@@ -198,11 +198,11 @@ inline void ackPlayMessage(
 )
 ```
 
-发送已播放回执 
+Send a playback receipt 
 
 **Parameters**: 
 
-  * **msg** 需要发送已读回播放的消息 
+  * **msg** Messages that require to send a playback receipt 
 
 
 ### function readCancel
@@ -213,11 +213,11 @@ inline void readCancel(
 )
 ```
 
-标记此消息为未读，该消息同步到当前用户的所有设备 
+Mark this message as unread and synchronize to all devices of the current user 
 
 **Parameters**: 
 
-  * **msg** 需要发送消息已读取消的消息 
+  * **msg** The message needs to send “read recalled” 
 
 
 ### function readAllMessage
@@ -228,11 +228,11 @@ inline void readAllMessage(
 )
 ```
 
-标记此消息及之前全部消息为已读，该消息同步到当前用户的所有设备 
+Mark this message and all previous messages as read, and synchronize to all current users' devices 
 
 **Parameters**: 
 
-  * **msg** 需要标记为此消息以前全部消息为已读的消息 
+  * **msg** The message for which all earlier messages need to be marked as read 
 
 
 ### function removeMessage
@@ -244,12 +244,12 @@ inline void removeMessage(
 )
 ```
 
-删除此消息，该消息同步到当前用户的其它设备 
+Delete this message, which synchronizes to other devices of the current user 
 
 **Parameters**: 
 
-  * **msg** 需要删除的消息 
-  * **synchronize** 是否同步到其它设备，不同步的情况下只会删除本地存储的该条消息 
+  * **msg** Message to be deleted 
+  * **synchronize** Whether to synchronize to other devices, otherwise only the locally stored message will be deleted 
 
 
 ### function removeMessage
@@ -270,12 +270,12 @@ inline void downloadThumbnail(
 )
 ```
 
-下载缩略图，下载状态变化和进度通过listener通知 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。 
+Download thumbnail, downloading state changes and progress notified via listener. Thumbnail generation policy: 1 - generated by third-party server, 2 - generated by local server, default 1. 
 
 **Parameters**: 
 
-  * **msg** 需要下载缩略图的消息 
-  * **strategy** 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。 
+  * **msg** Message requiring to download thumbnail 
+  * **strategy** Thumbnail generation policy, 1 - generated by third-party server, 2 - Generated by local server, default 1. 
 
 
 ### function downloadThumbnail
@@ -295,11 +295,11 @@ inline void downloadAttachment(
 )
 ```
 
-下载附件，下载状态变化和进度通过listener通知 
+Downloaded attachments, and download state changes and progress are notified via listener 
 
 **Parameters**: 
 
-  * **msg** 需要下载附件的消息 
+  * **msg** Message requiring to download attachment 
 
 
 ### function downloadAttachmentByUrl
@@ -312,13 +312,13 @@ inline void downloadAttachmentByUrl(
 )
 ```
 
-下载附件，下载状态变化和进度通过listener通知 
+Downloaded attachments, and download state changes and progress are notified via listener 
 
 **Parameters**: 
 
-  * **msgId** 需要下载附件的消息 
-  * **url** 文件远程地址 
-  * **path** 文件本地路径 
+  * **msgId** Message requiring to download attachment 
+  * **url** File remote address 
+  * **path** File local address 
 
 
 ### function cancelUploadAttachment
@@ -329,11 +329,11 @@ inline void cancelUploadAttachment(
 )
 ```
 
-取消上传附件 
+Cancel uploading attachment 
 
 **Parameters**: 
 
-  * **msg** 需要取消上传附件的消息 
+  * **msg** Message requiring to cancel attachment uploading 
 
 
 ### function cancelDownloadAttachment
@@ -344,11 +344,11 @@ inline void cancelDownloadAttachment(
 )
 ```
 
-取消上传附件 
+Cancel uploading attachment 
 
 **Parameters**: 
 
-  * **msg** 需要取消上传附件的消息 
+  * **msg** Message requiring to cancel attachment uploading 
 
 
 ### function transferingNum
@@ -357,9 +357,9 @@ inline void cancelDownloadAttachment(
 inline int transferingNum()
 ```
 
-上传或下载中的文件数 
+**to-be-translate** 
 
-**Return**: 文件数 
+**Return**: **to-be-translate** 
 
 ### function insertMessages
 
@@ -369,11 +369,11 @@ inline BMXErrorCode insertMessages(
 )
 ```
 
-插入消息 
+Insert a message 
 
 **Parameters**: 
 
-  * **list** 插入消息列表 
+  * **list** Insert message list 
 
 
 **Return**: [BMXErrorCode]
@@ -386,11 +386,11 @@ inline BMXMessage getMessage(
 )
 ```
 
-读取一条消息 
+Read a message 
 
 **Parameters**: 
 
-  * **msgId** 需要获取消息的消息id 
+  * **msgId** id of the message which needs to be fetched 
 
 
 **Return**: [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)
@@ -404,12 +404,12 @@ inline void deleteConversation(
 )
 ```
 
-删除会话 
+Delete session 
 
 **Parameters**: 
 
-  * **conversationId** 需要删除会话的会话id 
-  * **synchronize** 是否同步删除其它设备该会话，默认为false，仅删除本设备会话 
+  * **conversationId** Session id requiring to delete session 
+  * **synchronize** Whether to delete the session on other devices synchronously, default false, means only delete the session on the current device 
 
 
 ### function deleteConversation
@@ -431,13 +431,13 @@ inline BMXConversation openConversation(
 )
 ```
 
-打开一个会话 
+Launch a session 
 
 **Parameters**: 
 
-  * **conversationId** 需要打开的会话的会话id 
-  * **type** 会话的类型，单聊还是群聊。 
-  * **createIfNotExist** 会话不存在的情况下是否要创建本地会话，默认为创建 
+  * **conversationId** id of the session which needs to be opened 
+  * **type** Session type, single/group chat. 
+  * **createIfNotExist** Whether to create a local session if no session existing, default to create 
 
 
 **Return**: [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md)
@@ -458,7 +458,7 @@ inline BMXConversation openConversation(
 inline String attachmentDir()
 ```
 
-获取附件保存路径 
+Get attachment saving path 
 
 **Return**: std::string 
 
@@ -470,11 +470,11 @@ inline String attachmentDirForConversation(
 )
 ```
 
-获取会话的附件保存路径 
+Get attachment saving path for a session 
 
 **Parameters**: 
 
-  * **conversationId** 需要获取会话附件路径的会话id 
+  * **conversationId** Session id requiring a session attachment path 
 
 
 **Return**: std::string 
@@ -485,7 +485,7 @@ inline String attachmentDirForConversation(
 inline BMXConversationList getAllConversations()
 ```
 
-获取所有会话 
+Get all sessions 
 
 **Return**: BMXConversationList 
 
@@ -495,7 +495,7 @@ inline BMXConversationList getAllConversations()
 inline int getAllConversationsUnreadCount()
 ```
 
-获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内） 
+Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted) 
 
 **Return**: int 
 
@@ -510,14 +510,14 @@ inline BMXErrorCode retrieveHistoryMessages(
 )
 ```
 
-拉取历史消息 
+Pull message history 
 
 **Parameters**: 
 
-  * **conversation** 需要拉取历史消息的会话 
-  * **refMsgId** 拉取会话消息的起始消息Id 
-  * **size** 拉取的最大消息条数 
-  * **result** 拉取操作获取的消息列表，外部初始化传入空列表。 
+  * **conversation** Session for which message history needs to pull 
+  * **refMsgId** Start message Id for pulling session messages 
+  * **size** Maximum number of messages to pull 
+  * **result** List of messages fetched by pull operation, externally initializing an incoming empty list. 
 
 
 **Return**: [BMXErrorCode]
@@ -534,15 +534,15 @@ inline BMXErrorCode searchMessagesByKeyWords(
 )
 ```
 
-搜索消息 
+Search for messages 
 
 **Parameters**: 
 
-  * **keywords** 搜索的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 搜索的最大消息条数 
-  * **result** 搜索到的消息结果列表，外部初始化传入空列表。 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **keywords** Keyword for search 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of messages to search 
+  * **result** List of searched message results, externally initializing an incoming empty list. 
+  * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: [BMXErrorCode]
@@ -571,15 +571,15 @@ inline BMXErrorCode searchMessages(
 )
 ```
 
-搜索消息 
+Search for messages 
 
 **Parameters**: 
 
-  * **keywords** 搜索的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 搜索的最大消息条数 
-  * **result** 搜索到的消息结果列表，外部初始化传入空列表。 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **keywords** Keyword for search 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of messages to search 
+  * **result** List of searched message results, externally initializing an incoming empty list. 
+  * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: [BMXErrorCode]
@@ -605,12 +605,12 @@ inline BMXErrorCode getGroupAckMessageUserIdList(
 )
 ```
 
-获取发送的群组消息已读用户id列表 
+Get the list of user-ids that have read group messages 
 
 **Parameters**: 
 
-  * **msg** 需要获取已读用户id列表的消息 
-  * **groupMemberIdList** 对该条消息已读的用户id列表，初始传入为空列表 
+  * **msg** Message requiring to get list of read user ids 
+  * **groupMemberIdList** List of read user ids for this message, initially passed in as an empty list 
 
 
 **Return**: [BMXErrorCode]
@@ -624,12 +624,12 @@ inline BMXErrorCode getGroupAckMessageUnreadUserIdList(
 )
 ```
 
-获取发送的群组消息未读用户id列表 
+Get a list of unread user ids for the sent group message 
 
 **Parameters**: 
 
-  * **msg** 需要获取未读用户id列表的消息 
-  * **groupMemberIdList** 对该条消息未读的用户id列表，初始传入为空列表 
+  * **msg** Message requiring to get list of unread user ids 
+  * **groupMemberIdList** List of unread user ids for this message, initially passed in as an empty list 
 
 
 **Return**: [BMXErrorCode]
@@ -643,12 +643,12 @@ inline BMXErrorCode getGroupPlayAckMessageUserIdList(
 )
 ```
 
-获取发送的群组消息已播放用户id列表 
+Get a list of playback user ids for the sent group message 
 
 **Parameters**: 
 
-  * **msg** 需要获取已播放用户id列表的消息 
-  * **groupMemberIdList** 对该条消息已播放的用户id列表，初始传入为空列表 
+  * **msg** Message requiring to get list of played user ids 
+  * **groupMemberIdList** List of played user ids for this message, initially passed in as an empty list 
 
 
 **Return**: [BMXErrorCode]
@@ -662,12 +662,12 @@ inline BMXErrorCode getGroupUnPlayAckMessageUserIdList(
 )
 ```
 
-获取发送的群组消息未播放用户id列表 
+Get a list of unplayed user ids for the sent group message 
 
 **Parameters**: 
 
-  * **msg** 需要获取未播放用户id列表的消息 
-  * **groupMemberIdList** 对该条消息未播放的用户id列表，初始传入为空列表 
+  * **msg** Message requiring to get list of unplayed user ids 
+  * **groupMemberIdList** List of unplayed user ids for this message, initially passed in as an empty list 
 
 
 **Return**: [BMXErrorCode]
@@ -680,11 +680,11 @@ inline void addChatListener(
 )
 ```
 
-添加聊天监听者 
+Add chat listener 
 
 **Parameters**: 
 
-  * **listener** 聊天监听者 
+  * **listener** Chat listener 
 
 
 ### function removeChatListener
@@ -695,11 +695,11 @@ inline void removeChatListener(
 )
 ```
 
-移除聊天监听者 
+Remove chat listener 
 
 **Parameters**: 
 
-  * **listener** 聊天监听者 
+  * **listener** Chat listener 
 
 
 ## Protected Functions Documentation

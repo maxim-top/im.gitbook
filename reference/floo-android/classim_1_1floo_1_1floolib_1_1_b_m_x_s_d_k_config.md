@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXSDKConfig
-summary: SDK设置管理 
+summary: SDK settings management 
 
 ---
 
@@ -8,7 +8,7 @@ summary: SDK设置管理
 
 
 
-SDK设置管理 
+SDK settings management 
 
 ## Public Classes
 
@@ -21,7 +21,7 @@ SDK设置管理
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-delete)**() |
-| | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, boolean deliveryAck)<br>构造函数  |
+| | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, boolean deliveryAck)<br>Constructor  |
 | | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName) |
 | | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, String appId, String appSecret, boolean deliveryAck) |
 | | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, String appId, String appSecret) |
@@ -99,16 +99,16 @@ inline BMXSDKConfig(
 )
 ```
 
-构造函数 
+Constructor 
 
 **Parameters**: 
 
-  * **type** 客户端类型 
-  * **vsn** 客户端OS版本 
-  * **dataDir** 聊天数据存储路径 
-  * **cacheDir** 缓存数据存储路径 
-  * **pushCertName** Push证书名字 
-  * **deliveryAck** 是否发送消息送达回执 
+  * **type** Client type 
+  * **vsn** Client OS version 
+  * **dataDir** Storage path of chat data 
+  * **cacheDir** Storage path of cached data 
+  * **pushCertName** Push certificate name 
+  * **deliveryAck** Whether to send message delivery receipt 
 
 
 ### function BMXSDKConfig

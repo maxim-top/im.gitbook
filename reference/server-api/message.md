@@ -1,59 +1,59 @@
 
 
-## 6    消息处理
+## 6    Message processing
 
-## 6.1  发送已读回执
+## 6.1  Send read receipt
 
 > GET  /message/ack
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |conversation_id||conversation_id|
 |device_sn||device_sn|
 |msg_id||msg_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 6.2  取指定会话的消息
+## 6.2  Get the message for the specified session
 
 > GET  /message/conversation
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |limit||limit|
 |msg_id_start||msg_id_start|
 |opposite_id||opposite_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
 |⇥ is_last|boolean||false||
 |⇥ messages|array[object]||false||
@@ -91,207 +91,207 @@
 |⇥ set_is_last|boolean||false||
 |⇥ set_messages|boolean||false||
 |⇥ set_next_msg_id|boolean||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 6.3  删除用户的指定会话
+## 6.3  Delete the specified session for the user
 
 > DELETE  /message/conversation
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |conversation_id||conversation_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 6.4  发送系统通知
+## 6.4  Send system notification
 
 > POST  /message/notify
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | attachment|string||false||
 | config|string||false||
 | content|string||false||
-| content_type|int32||false|消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
+| content_type|int32||false|Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
 | ext|string||false||
-| from_user_id|int32||false|发送者的用户ID|
-| targets|array[int32]||false|接收用户ID或群ID|
-| transaction_id|int32||false|请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重|
-| type|int32||false|目标类型，1 - 普通用户，2 - 群组|
+| from_user_id|int32||false|Sender's user ID|
+| targets|array[int32]||false|Receive user ID or group ID|
+| transaction_id|int32||false|**to-be-translate**|
+| type|int32||false|Target type, 1 - normal user, 2 -- group|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 6.5  发送系统通知
+## 6.5  Send system notification
 
 > PUT  /message/notify
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | attachment|string||false||
 | config|string||false||
 | content|string||false||
-| content_type|int32||false|消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
+| content_type|int32||false|Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
 | ext|string||false||
-| from_user_id|int32||false|发送者的用户ID|
-| targets|array[int32]||false|接收用户ID或群ID|
-| transaction_id|int32||false|请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重|
-| type|int32||false|目标类型，1 - 普通用户，2 - 群组|
+| from_user_id|int32||false|Sender's user ID|
+| targets|array[int32]||false|Receive user ID or group ID|
+| transaction_id|int32||false|**to-be-translate**|
+| type|int32||false|Target type, 1 - normal user, 2 -- group|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 6.6  发送消息
+## 6.6  **to-be-translate**
 
 > POST  /message/send
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | attachment|string||false||
 | config|string||false||
 | content|string||false||
-| content_type|int32||false|消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
+| content_type|int32||false|Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
 | ext|string||false||
-| from_user_id|int32||false|发送者的用户ID|
-| targets|array[int32]||false|接收用户ID或群ID|
-| transaction_id|int32||false|请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重|
-| type|int32||false|目标类型，1 - 普通用户，2 - 群组|
+| from_user_id|int32||false|Sender's user ID|
+| targets|array[int32]||false|Receive user ID or group ID|
+| transaction_id|int32||false|**to-be-translate**|
+| type|int32||false|Target type, 1 - normal user, 2 -- group|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 6.7  发送消息
+## 6.7  **to-be-translate**
 
 > PUT  /message/send
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | attachment|string||false||
 | config|string||false||
 | content|string||false||
-| content_type|int32||false|消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
+| content_type|int32||false|Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;|
 | ext|string||false||
-| from_user_id|int32||false|发送者的用户ID|
-| targets|array[int32]||false|接收用户ID或群ID|
-| transaction_id|int32||false|请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重|
-| type|int32||false|目标类型，1 - 普通用户，2 - 群组|
+| from_user_id|int32||false|Sender's user ID|
+| targets|array[int32]||false|Receive user ID or group ID|
+| transaction_id|int32||false|**to-be-translate**|
+| type|int32||false|Target type, 1 - normal user, 2 -- group|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 6.8  取指定用户的最近会话列表
+## 6.8  Get the list of recent sessions for the specified user
 
 > GET  /message/unread
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ conversation_id|object||false||
 |⇥⇥ device_sn|int32||false||
 |⇥⇥ set_device_sn|boolean||false||
@@ -300,10 +300,10 @@
 |⇥ num|int32||false||
 |⇥ set_conversation_id|boolean||false||
 |⇥ set_num|boolean||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 

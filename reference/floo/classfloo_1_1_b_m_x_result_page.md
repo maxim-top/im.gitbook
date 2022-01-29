@@ -1,6 +1,6 @@
 ---
 title: floo::BMXResultPage
-summary: 分页结果 
+summary: Paged result 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 分页结果
 
 
 
-分页结果  [More...](#detailed-description)
+Paged result  [More...](#detailed-description)
 
 
 `#include <bmx_result_page.h>`
@@ -19,17 +19,17 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**()<br>构造函数  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const std::vector< T > & result, int64_t offset)<br>构造函数  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const std::vector< T > & result, std::string cursor)<br>构造函数  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & from)<br>构造函数  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**([BMXResultPage](classfloo_1_1_b_m_x_result_page.md) && from)<br>构造函数  |
-| [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & | **[operator=](classfloo_1_1_b_m_x_result_page.md#function-operator=)**(const [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & from)<br>赋值函数  |
-| virtual | **[~BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-~bmxresultpage)**()<br>析构函数  |
-| size_t | **[count](classfloo_1_1_b_m_x_result_page.md#function-count)**() const<br>vector对象数组大小  |
-| int64_t | **[offset](classfloo_1_1_b_m_x_result_page.md#function-offset)**() const<br>偏移量  |
-| const std::string & | **[cursor](classfloo_1_1_b_m_x_result_page.md#function-cursor)**() const<br>cursor偏移量  |
-| const std::vector< T > & | **[result](classfloo_1_1_b_m_x_result_page.md#function-result)**() const<br>vector对象数组  |
+| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**()<br>Constructor  |
+| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const std::vector< T > & result, int64_t offset)<br>Constructor  |
+| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const std::vector< T > & result, std::string cursor)<br>Constructor  |
+| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & from)<br>Constructor  |
+| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**([BMXResultPage](classfloo_1_1_b_m_x_result_page.md) && from)<br>Constructor  |
+| [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & | **[operator=](classfloo_1_1_b_m_x_result_page.md#function-operator=)**(const [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & from)<br>Assignment function  |
+| virtual | **[~BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-~bmxresultpage)**()<br>Destructor  |
+| size_t | **[count](classfloo_1_1_b_m_x_result_page.md#function-count)**() const<br>Size of vector object-array  |
+| int64_t | **[offset](classfloo_1_1_b_m_x_result_page.md#function-offset)**() const<br>Offset  |
+| const std::string & | **[cursor](classfloo_1_1_b_m_x_result_page.md#function-cursor)**() const<br>cursor offset  |
+| const std::vector< T > & | **[result](classfloo_1_1_b_m_x_result_page.md#function-result)**() const<br>vector object-array  |
 
 ## Detailed Description
 
@@ -38,7 +38,7 @@ template <typename T >
 class floo::BMXResultPage;
 ```
 
-分页结果 
+Paged result 
 ## Public Functions Documentation
 
 ### function BMXResultPage
@@ -47,7 +47,7 @@ class floo::BMXResultPage;
 inline BMXResultPage()
 ```
 
-构造函数 
+Constructor 
 
 ### function BMXResultPage
 
@@ -58,12 +58,12 @@ inline BMXResultPage(
 )
 ```
 
-构造函数 
+Constructor 
 
 **Parameters**: 
 
-  * **result** 列表数据 
-  * **offset** 偏移量 
+  * **result** List data 
+  * **offset** Offset 
 
 
 ### function BMXResultPage
@@ -75,12 +75,12 @@ inline BMXResultPage(
 )
 ```
 
-构造函数 
+Constructor 
 
 **Parameters**: 
 
-  * **result** 列表结果 
-  * **cursor** cursor偏移量 
+  * **result** List result 
+  * **cursor** cursor offset 
 
 
 ### function BMXResultPage
@@ -91,11 +91,11 @@ inline BMXResultPage(
 )
 ```
 
-构造函数 
+Constructor 
 
 **Parameters**: 
 
-  * **from** BMXResultPage对象 
+  * **from** BMXResultPage object 
 
 
 ### function BMXResultPage
@@ -106,11 +106,11 @@ inline BMXResultPage(
 )
 ```
 
-构造函数 
+Constructor 
 
 **Parameters**: 
 
-  * **from** BMXResultPage对象 
+  * **from** BMXResultPage object 
 
 
 ### function operator=
@@ -121,11 +121,11 @@ inline BMXResultPage & operator=(
 )
 ```
 
-赋值函数 
+Assignment function 
 
 **Parameters**: 
 
-  * **from** BMXResultPage对象 
+  * **from** BMXResultPage object 
 
 
 **Return**: [BMXResultPage](classfloo_1_1_b_m_x_result_page.md)
@@ -136,7 +136,7 @@ inline BMXResultPage & operator=(
 inline virtual ~BMXResultPage()
 ```
 
-析构函数 
+Destructor 
 
 ### function count
 
@@ -144,7 +144,7 @@ inline virtual ~BMXResultPage()
 inline size_t count() const
 ```
 
-vector对象数组大小 
+Size of vector object-array 
 
 **Return**: size_t 
 
@@ -154,7 +154,7 @@ vector对象数组大小
 inline int64_t offset() const
 ```
 
-偏移量 
+Offset 
 
 **Return**: int64_t 
 
@@ -164,7 +164,7 @@ inline int64_t offset() const
 inline const std::string & cursor() const
 ```
 
-cursor偏移量 
+cursor offset 
 
 **Return**: std::string 
 
@@ -174,7 +174,7 @@ cursor偏移量
 inline const std::vector< T > & result() const
 ```
 
-vector对象数组 
+vector object-array 
 
 **Return**: std::vector<T> 
 

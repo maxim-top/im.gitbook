@@ -1,6 +1,6 @@
 ---
 title: floo::BMXGroup
-summary: 群组 
+summary: Group 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群组
 
 
 
-群组 
+Group 
 
 
 `#include <bmx_group.h>`
@@ -19,15 +19,15 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[InvitationStatus](classfloo_1_1_b_m_x_group.md#enum-invitationstatus)** { Pending, Accepted, Declined}<br>群邀请状态  |
-| enum class| **[ApplicationStatus](classfloo_1_1_b_m_x_group.md#enum-applicationstatus)** { Pending, Accepted, Declined}<br>群申请状态  |
-| enum class| **[MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode)** { All, None, AdminOrAt, Admin, At}<br>消息通知类型  |
-| enum class| **[ModifyMode](classfloo_1_1_b_m_x_group.md#enum-modifymode)** { AdminOnly, Open}<br>群信息修改模式  |
-| enum class| **[JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode)** { Open, NeedApproval, RejectAll}<br>进群验证方式  |
-| enum class| **[InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode)** { AdminOnly, Open}<br>邀请入群模式  |
-| enum class| **[UpdateInfoType](classfloo_1_1_b_m_x_group.md#enum-updateinfotype)** { UnKnown, Name, Description, Avatar, Owner, Ext, NickName, ModifyMode, JoinAuthMode, InviteMode, MsgPushMode, MsgMuteMode, ReadAckMode, HistoryVisibleMode, BanExpireTime}<br>群组信息更新类型  |
-| enum class| **[GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus)** { Normal, Destroyed}<br>群组状态  |
-| enum class| **[MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode)** { None, MuteNotification, MuteChat}<br>群组消息屏蔽模式  |
+| enum class| **[InvitationStatus](classfloo_1_1_b_m_x_group.md#enum-invitationstatus)** { Pending, Accepted, Declined}<br>Group invitation state  |
+| enum class| **[ApplicationStatus](classfloo_1_1_b_m_x_group.md#enum-applicationstatus)** { Pending, Accepted, Declined}<br>Group application state  |
+| enum class| **[MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode)** { All, None, AdminOrAt, Admin, At}<br>Message notification type  |
+| enum class| **[ModifyMode](classfloo_1_1_b_m_x_group.md#enum-modifymode)** { AdminOnly, Open}<br>Group information modification mode  |
+| enum class| **[JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode)** { Open, NeedApproval, RejectAll}<br>Group joining authentication mode  |
+| enum class| **[InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode)** { AdminOnly, Open}<br>Group invitation mode  |
+| enum class| **[UpdateInfoType](classfloo_1_1_b_m_x_group.md#enum-updateinfotype)** { UnKnown, Name, Description, Avatar, Owner, Ext, NickName, ModifyMode, JoinAuthMode, InviteMode, MsgPushMode, MsgMuteMode, ReadAckMode, HistoryVisibleMode, BanExpireTime}<br>Group information update type  |
+| enum class| **[GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus)** { Normal, Destroyed}<br>Grouping state  |
+| enum class| **[MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode)** { None, MuteNotification, MuteChat}<br>Group message blocking mode  |
 | enum class| **[MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype)** { GroupMember, GroupAdmin, GroupOwner, NotGroupMember} |
 | enum class| **[GroupType](classfloo_1_1_b_m_x_group.md#enum-grouptype)** { Private, Public, Chatroom} |
 | typedef std::shared_ptr< [Member] > | **[MemberPtr](classfloo_1_1_b_m_x_group.md#typedef-memberptr)**  |
@@ -47,38 +47,38 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BMXGroup](classfloo_1_1_b_m_x_group.md#function-~bmxgroup)**()<br>析构函数  |
-| virtual int64_t | **[groupId](classfloo_1_1_b_m_x_group.md#function-groupid)**() =0<br>群Id  |
-| virtual [GroupType](classfloo_1_1_b_m_x_group.md#enum-grouptype) | **[groupType](classfloo_1_1_b_m_x_group.md#function-grouptype)**() =0<br>当前群组的群组类型（Private 私有群组，Public 公开群组，Chatroom 聊天室）  |
-| virtual const std::string & | **[myNickname](classfloo_1_1_b_m_x_group.md#function-mynickname)**() =0<br>在群里的昵称  |
-| virtual const std::string & | **[name](classfloo_1_1_b_m_x_group.md#function-name)**() =0<br>群名称  |
-| virtual const std::string & | **[description](classfloo_1_1_b_m_x_group.md#function-description)**() =0<br>群描述  |
-| virtual std::string | **[avatarRatelUrl](classfloo_1_1_b_m_x_group.md#function-avatarratelurl)**() =0<br>群头像Ratel服务器Url  |
-| virtual std::string | **[avatarUrl](classfloo_1_1_b_m_x_group.md#function-avatarurl)**() =0<br>群头像服务器Url  |
-| virtual std::string | **[avatarPath](classfloo_1_1_b_m_x_group.md#function-avatarpath)**() =0<br>群头像下载后的本地路径  |
-| virtual std::string | **[avatarThumbnailUrl](classfloo_1_1_b_m_x_group.md#function-avatarthumbnailurl)**() =0<br>群头像缩略图服务器Url  |
-| virtual std::string | **[avatarThumbnailPath](classfloo_1_1_b_m_x_group.md#function-avatarthumbnailpath)**() =0<br>群头像缩略图下载后的本地路径  |
-| virtual int64_t | **[createTime](classfloo_1_1_b_m_x_group.md#function-createtime)**() =0<br>群创建时间  |
-| virtual const JSON & | **[extension](classfloo_1_1_b_m_x_group.md#function-extension)**() =0<br>群扩展信息  |
-| virtual int64_t | **[ownerId](classfloo_1_1_b_m_x_group.md#function-ownerid)**() =0<br>群Owner  |
-| virtual int | **[capacity](classfloo_1_1_b_m_x_group.md#function-capacity)**() =0<br>最大人数  |
-| virtual int | **[membersCount](classfloo_1_1_b_m_x_group.md#function-memberscount)**() =0<br>群成员数量，包含Owner，admins 和members  |
-| virtual int | **[adminsCount](classfloo_1_1_b_m_x_group.md#function-adminscount)**() =0<br>群管理员数量  |
-| virtual int | **[blockListSize](classfloo_1_1_b_m_x_group.md#function-blocklistsize)**() =0<br>黑名单数量  |
-| virtual int | **[bannedListSize](classfloo_1_1_b_m_x_group.md#function-bannedlistsize)**() =0<br>禁言数量  |
-| virtual int | **[sharedFilesCount](classfloo_1_1_b_m_x_group.md#function-sharedfilescount)**() =0<br>群共享文件数量  |
-| virtual int64_t | **[latestAnnouncementId](classfloo_1_1_b_m_x_group.md#function-latestannouncementid)**() =0<br>最新群公告id  |
-| virtual [MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode) | **[msgPushMode](classfloo_1_1_b_m_x_group.md#function-msgpushmode)**() =0<br>群消息通知类型  |
-| virtual [ModifyMode](classfloo_1_1_b_m_x_group.md#enum-modifymode) | **[modifyMode](classfloo_1_1_b_m_x_group.md#function-modifymode)**() =0<br>群信息修改模式  |
-| virtual [JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode) | **[joinAuthMode](classfloo_1_1_b_m_x_group.md#function-joinauthmode)**() =0<br>入群审批模式  |
-| virtual [InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode) | **[inviteMode](classfloo_1_1_b_m_x_group.md#function-invitemode)**() =0<br>入群邀请模式  |
-| virtual [MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode) | **[msgMuteMode](classfloo_1_1_b_m_x_group.md#function-msgmutemode)**() =0<br>群消息屏蔽模式  |
-| virtual [GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus) | **[groupStatus](classfloo_1_1_b_m_x_group.md#function-groupstatus)**() =0<br>当前群组的状态。（Normal 正常， Destroyed 以销毁）  |
+| virtual | **[~BMXGroup](classfloo_1_1_b_m_x_group.md#function-~bmxgroup)**()<br>Destructor  |
+| virtual int64_t | **[groupId](classfloo_1_1_b_m_x_group.md#function-groupid)**() =0<br>Group Id  |
+| virtual [GroupType](classfloo_1_1_b_m_x_group.md#enum-grouptype) | **[groupType](classfloo_1_1_b_m_x_group.md#function-grouptype)**() =0<br>Type of the current group (Private, Public, Chatroom)  |
+| virtual const std::string & | **[myNickname](classfloo_1_1_b_m_x_group.md#function-mynickname)**() =0<br>Group member nickname  |
+| virtual const std::string & | **[name](classfloo_1_1_b_m_x_group.md#function-name)**() =0<br>Group name  |
+| virtual const std::string & | **[description](classfloo_1_1_b_m_x_group.md#function-description)**() =0<br>Group description  |
+| virtual std::string | **[avatarRatelUrl](classfloo_1_1_b_m_x_group.md#function-avatarratelurl)**() =0<br>Url for group avatar Ratel server  |
+| virtual std::string | **[avatarUrl](classfloo_1_1_b_m_x_group.md#function-avatarurl)**() =0<br>Url for group avatar server  |
+| virtual std::string | **[avatarPath](classfloo_1_1_b_m_x_group.md#function-avatarpath)**() =0<br>Local path of downloaded group avatar  |
+| virtual std::string | **[avatarThumbnailUrl](classfloo_1_1_b_m_x_group.md#function-avatarthumbnailurl)**() =0<br>Url for group avatar thumbnail server  |
+| virtual std::string | **[avatarThumbnailPath](classfloo_1_1_b_m_x_group.md#function-avatarthumbnailpath)**() =0<br>Local path of downloaded group avatar thumbnail  |
+| virtual int64_t | **[createTime](classfloo_1_1_b_m_x_group.md#function-createtime)**() =0<br>Group creation time  |
+| virtual const JSON & | **[extension](classfloo_1_1_b_m_x_group.md#function-extension)**() =0<br>Group extension information  |
+| virtual int64_t | **[ownerId](classfloo_1_1_b_m_x_group.md#function-ownerid)**() =0<br>Group Owner  |
+| virtual int | **[capacity](classfloo_1_1_b_m_x_group.md#function-capacity)**() =0<br>Max member-number  |
+| virtual int | **[membersCount](classfloo_1_1_b_m_x_group.md#function-memberscount)**() =0<br>Group member-number, including Owner, Admins and Members  |
+| virtual int | **[adminsCount](classfloo_1_1_b_m_x_group.md#function-adminscount)**() =0<br>Group admin-number  |
+| virtual int | **[blockListSize](classfloo_1_1_b_m_x_group.md#function-blocklistsize)**() =0<br>Blacklisted user-number  |
+| virtual int | **[bannedListSize](classfloo_1_1_b_m_x_group.md#function-bannedlistsize)**() =0<br>Banned user-number  |
+| virtual int | **[sharedFilesCount](classfloo_1_1_b_m_x_group.md#function-sharedfilescount)**() =0<br>Shared file-number in group  |
+| virtual int64_t | **[latestAnnouncementId](classfloo_1_1_b_m_x_group.md#function-latestannouncementid)**() =0<br>Latest group announcement id  |
+| virtual [MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode) | **[msgPushMode](classfloo_1_1_b_m_x_group.md#function-msgpushmode)**() =0<br>Group message notification type  |
+| virtual [ModifyMode](classfloo_1_1_b_m_x_group.md#enum-modifymode) | **[modifyMode](classfloo_1_1_b_m_x_group.md#function-modifymode)**() =0<br>Group information modification mode  |
+| virtual [JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode) | **[joinAuthMode](classfloo_1_1_b_m_x_group.md#function-joinauthmode)**() =0<br>Join approval mode  |
+| virtual [InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode) | **[inviteMode](classfloo_1_1_b_m_x_group.md#function-invitemode)**() =0<br>Group invitation mode  |
+| virtual [MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode) | **[msgMuteMode](classfloo_1_1_b_m_x_group.md#function-msgmutemode)**() =0<br>Group message blocking mode  |
+| virtual [GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus) | **[groupStatus](classfloo_1_1_b_m_x_group.md#function-groupstatus)**() =0<br>state of the current group. (Normal, Destroyed)  |
 | virtual bool | **[isMember](classfloo_1_1_b_m_x_group.md#function-ismember)**() =0<br>Deprecated use roleType instead.  |
-| virtual bool | **[enableReadAck](classfloo_1_1_b_m_x_group.md#function-enablereadack)**() =0<br>是否开启群消息已读功能  |
-| virtual bool | **[historyVisible](classfloo_1_1_b_m_x_group.md#function-historyvisible)**() =0<br>是否可以加载显示历史聊天记录  |
-| virtual [MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype) | **[roleType](classfloo_1_1_b_m_x_group.md#function-roletype)**() =0<br>成员在群组内的角色类型  |
-| virtual int64_t | **[banExpireTime](classfloo_1_1_b_m_x_group.md#function-banexpiretime)**() =0<br>群组全员禁言到期时间  |
+| virtual bool | **[enableReadAck](classfloo_1_1_b_m_x_group.md#function-enablereadack)**() =0<br>Whether group message read feature enabled  |
+| virtual bool | **[historyVisible](classfloo_1_1_b_m_x_group.md#function-historyvisible)**() =0<br>Whether to load and display the chat history  |
+| virtual [MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype) | **[roleType](classfloo_1_1_b_m_x_group.md#function-roletype)**() =0<br>Type of a member role in group  |
+| virtual int64_t | **[banExpireTime](classfloo_1_1_b_m_x_group.md#function-banexpiretime)**() =0<br>**to-be-translate**  |
 
 ## Protected Functions
 
@@ -92,129 +92,129 @@ Inherits from BMXBaseObject
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Pending | | 请求待处理   |
-| Accepted | | 请求已接受   |
-| Declined | | 请求已拒绝   |
+| Pending | | Request pending   |
+| Accepted | | Request accepted   |
+| Declined | | Request rejected   |
 
 
 
-群邀请状态 
+Group invitation state 
 
 ### enum ApplicationStatus
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Pending | | 请求待处理   |
-| Accepted | | 请求已接受   |
-| Declined | | 请求已拒绝   |
+| Pending | | Request pending   |
+| Accepted | | Request accepted   |
+| Declined | | Request rejected   |
 
 
 
-群申请状态 
+Group application state 
 
 ### enum MsgPushMode
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| All | | 通知所有群消息   |
-| None | | 所有消息都不通知   |
-| AdminOrAt | | 只通知管理员或者被@消息   |
-| Admin | | 只通知知管理员消息   |
-| At | | 只通知被@消息   |
+| All | | Alert all group messages   |
+| None | | Do not alert any group message   |
+| AdminOrAt | | Alert Admins only, except @ messages   |
+| Admin | | Alert Admins only   |
+| At | | Alert @ messages only   |
 
 
 
-消息通知类型 
+Message notification type 
 
 ### enum ModifyMode
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| AdminOnly | | 只有管理员可以   |
-| Open | | 所有群成员都可以修改   |
+| AdminOnly | | Admin only   |
+| Open | | Any group member can modify   |
 
 
 
-群信息修改模式 
+Group information modification mode 
 
 ### enum JoinAuthMode
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Open | | 无需验证   |
-| NeedApproval | | 需要管理员批准   |
-| RejectAll | | 拒绝所有申请   |
+| Open | | No authentication required   |
+| NeedApproval | | Admin approval required   |
+| RejectAll | | All requests rejected   |
 
 
 
-进群验证方式 
+Group joining authentication mode 
 
 ### enum InviteMode
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| AdminOnly | | 只有管理员可以邀请他人进群   |
-| Open | | 所有人都可以邀请他人进群   |
+| AdminOnly | | Only Admins can invite new group member   |
+| Open | | Anyone can invite new group member   |
 
 
 
-邀请入群模式 
+Group invitation mode 
 
 ### enum UpdateInfoType
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| UnKnown | | 默认初始化值   |
-| Name | | 修改群名称   |
-| Description | | 修改群描述   |
-| Avatar | | 修改群头像   |
-| Owner | | 修改群主   |
-| Ext | | 修改群扩展   |
-| NickName | | 群成员修改昵称   |
-| ModifyMode | | 修改群信息模式   |
-| JoinAuthMode | | 修改进群验证方式   |
-| InviteMode | | 修改邀请入群模式   |
-| MsgPushMode | | 修改群消息推送类型   |
-| MsgMuteMode | | 修改是否提醒消息   |
-| ReadAckMode | | 是否开启群消息已读功能   |
-| HistoryVisibleMode | | 新群成员是否可见群历史聊天记录   |
-| BanExpireTime | | 群组全员禁言到期时间   |
+| UnKnown | | Default initialization value   |
+| Name | | Modify group name   |
+| Description | | Modify group description   |
+| Avatar | | Modify group avatar   |
+| Owner | | Modify group Owner   |
+| Ext | | Modify group extension   |
+| NickName | | Modify group member nickname   |
+| ModifyMode | | Modify group information mode   |
+| JoinAuthMode | | Modify group authentication mode   |
+| InviteMode | | Modify group invitation mode   |
+| MsgPushMode | | Modify group pushed message type   |
+| MsgMuteMode | | Modify whether to alert message   |
+| ReadAckMode | | Whether group message read feature enabled   |
+| HistoryVisibleMode | | Whether group chat history is visible to new members   |
+| BanExpireTime | | **to-be-translate**   |
 
 
 
-群组信息更新类型 
+Group information update type 
 
 ### enum GroupStatus
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Normal | | 群组状态正常   |
-| Destroyed | | 群组已销毁   |
+| Normal | | Group state is normal   |
+| Destroyed | | Group destroyed   |
 
 
 
-群组状态 
+Grouping state 
 
 ### enum MsgMuteMode
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | | 不屏蔽   |
-| MuteNotification | | 屏蔽本地消息通知   |
-| MuteChat | | 屏蔽消息，不接收消息   |
+| None | | No blocking   |
+| MuteNotification | | Block local message notification   |
+| MuteChat | | Block message, no message received   |
 
 
 
-群组消息屏蔽模式 
+Group message blocking mode 
 
 ### enum MemberRoleType
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| GroupMember | | 群成员   |
-| GroupAdmin | | 群管理员   |
-| GroupOwner | | 群主   |
-| NotGroupMember | | 非群成员   |
+| GroupMember | | Group members   |
+| GroupAdmin | | Group Admin   |
+| GroupOwner | | Group Owner   |
+| NotGroupMember | | Non-group member   |
 
 
 
@@ -223,9 +223,9 @@ Inherits from BMXBaseObject
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Private | | 私有群组   |
-| Public | | 公开群组(现在暂时没有开放次类型群组)   |
-| Chatroom | | 聊天室   |
+| Private | | Private group   |
+| Public | | Public group (other sub-type groups are not released yet)   |
+| Chatroom | | Chatroom   |
 
 
 
@@ -322,7 +322,7 @@ typedef std::vector<ApplicationPtr> floo::BMXGroup::ApplicationList;
 inline virtual ~BMXGroup()
 ```
 
-析构函数 
+Destructor 
 
 ### function groupId
 
@@ -330,7 +330,7 @@ inline virtual ~BMXGroup()
 virtual int64_t groupId() =0
 ```
 
-群Id 
+Group Id 
 
 **Return**: int64_t 
 
@@ -340,7 +340,7 @@ virtual int64_t groupId() =0
 virtual GroupType groupType() =0
 ```
 
-当前群组的群组类型（Private 私有群组，Public 公开群组，Chatroom 聊天室） 
+Type of the current group (Private, Public, Chatroom) 
 
 **Return**: GroupType 
 
@@ -350,7 +350,7 @@ virtual GroupType groupType() =0
 virtual const std::string & myNickname() =0
 ```
 
-在群里的昵称 
+Group member nickname 
 
 **Return**: std::string 
 
@@ -360,7 +360,7 @@ virtual const std::string & myNickname() =0
 virtual const std::string & name() =0
 ```
 
-群名称 
+Group name 
 
 **Return**: std::string 
 
@@ -370,7 +370,7 @@ virtual const std::string & name() =0
 virtual const std::string & description() =0
 ```
 
-群描述 
+Group description 
 
 **Return**: std::string 
 
@@ -380,7 +380,7 @@ virtual const std::string & description() =0
 virtual std::string avatarRatelUrl() =0
 ```
 
-群头像Ratel服务器Url 
+Url for group avatar Ratel server 
 
 **Return**: std::string 
 
@@ -390,7 +390,7 @@ virtual std::string avatarRatelUrl() =0
 virtual std::string avatarUrl() =0
 ```
 
-群头像服务器Url 
+Url for group avatar server 
 
 **Return**: std::string 
 
@@ -400,7 +400,7 @@ virtual std::string avatarUrl() =0
 virtual std::string avatarPath() =0
 ```
 
-群头像下载后的本地路径 
+Local path of downloaded group avatar 
 
 **Return**: std::string 
 
@@ -410,7 +410,7 @@ virtual std::string avatarPath() =0
 virtual std::string avatarThumbnailUrl() =0
 ```
 
-群头像缩略图服务器Url 
+Url for group avatar thumbnail server 
 
 **Return**: std::string 
 
@@ -420,7 +420,7 @@ virtual std::string avatarThumbnailUrl() =0
 virtual std::string avatarThumbnailPath() =0
 ```
 
-群头像缩略图下载后的本地路径 
+Local path of downloaded group avatar thumbnail 
 
 **Return**: std::string 
 
@@ -430,7 +430,7 @@ virtual std::string avatarThumbnailPath() =0
 virtual int64_t createTime() =0
 ```
 
-群创建时间 
+Group creation time 
 
 **Return**: int64_t 
 
@@ -440,7 +440,7 @@ virtual int64_t createTime() =0
 virtual const JSON & extension() =0
 ```
 
-群扩展信息 
+Group extension information 
 
 **Return**: JSON(std::string) 
 
@@ -450,7 +450,7 @@ virtual const JSON & extension() =0
 virtual int64_t ownerId() =0
 ```
 
-群Owner 
+Group Owner 
 
 **Return**: int64_t 
 
@@ -460,7 +460,7 @@ virtual int64_t ownerId() =0
 virtual int capacity() =0
 ```
 
-最大人数 
+Max member-number 
 
 **Return**: int 
 
@@ -470,7 +470,7 @@ virtual int capacity() =0
 virtual int membersCount() =0
 ```
 
-群成员数量，包含Owner，admins 和members 
+Group member-number, including Owner, Admins and Members 
 
 **Return**: int 
 
@@ -480,7 +480,7 @@ virtual int membersCount() =0
 virtual int adminsCount() =0
 ```
 
-群管理员数量 
+Group admin-number 
 
 **Return**: int 
 
@@ -490,7 +490,7 @@ virtual int adminsCount() =0
 virtual int blockListSize() =0
 ```
 
-黑名单数量 
+Blacklisted user-number 
 
 **Return**: int 
 
@@ -500,7 +500,7 @@ virtual int blockListSize() =0
 virtual int bannedListSize() =0
 ```
 
-禁言数量 
+Banned user-number 
 
 **Return**: int 
 
@@ -510,7 +510,7 @@ virtual int bannedListSize() =0
 virtual int sharedFilesCount() =0
 ```
 
-群共享文件数量 
+Shared file-number in group 
 
 **Return**: int 
 
@@ -520,7 +520,7 @@ virtual int sharedFilesCount() =0
 virtual int64_t latestAnnouncementId() =0
 ```
 
-最新群公告id 
+Latest group announcement id 
 
 **Return**: int64_t 
 
@@ -530,7 +530,7 @@ virtual int64_t latestAnnouncementId() =0
 virtual MsgPushMode msgPushMode() =0
 ```
 
-群消息通知类型 
+Group message notification type 
 
 **Return**: MsgPushMode 
 
@@ -540,7 +540,7 @@ virtual MsgPushMode msgPushMode() =0
 virtual ModifyMode modifyMode() =0
 ```
 
-群信息修改模式 
+Group information modification mode 
 
 **Return**: ModifyMode 
 
@@ -550,7 +550,7 @@ virtual ModifyMode modifyMode() =0
 virtual JoinAuthMode joinAuthMode() =0
 ```
 
-入群审批模式 
+Join approval mode 
 
 **Return**: JoinAuthMode 
 
@@ -560,7 +560,7 @@ virtual JoinAuthMode joinAuthMode() =0
 virtual InviteMode inviteMode() =0
 ```
 
-入群邀请模式 
+Group invitation mode 
 
 **Return**: InviteMode 
 
@@ -570,7 +570,7 @@ virtual InviteMode inviteMode() =0
 virtual MsgMuteMode msgMuteMode() =0
 ```
 
-群消息屏蔽模式 
+Group message blocking mode 
 
 **Return**: MsgMuteMode 
 
@@ -580,7 +580,7 @@ virtual MsgMuteMode msgMuteMode() =0
 virtual GroupStatus groupStatus() =0
 ```
 
-当前群组的状态。（Normal 正常， Destroyed 以销毁） 
+state of the current group. (Normal, Destroyed) 
 
 **Return**: GroupStatus 
 
@@ -594,7 +594,7 @@ Deprecated use roleType instead.
 
 **Return**: bool 
 
-当前用户是否是群成员 
+Whether the current user is a group member 
 
 
 ### function enableReadAck
@@ -603,7 +603,7 @@ Deprecated use roleType instead.
 virtual bool enableReadAck() =0
 ```
 
-是否开启群消息已读功能 
+Whether group message read feature enabled 
 
 **Return**: bool 
 
@@ -613,7 +613,7 @@ virtual bool enableReadAck() =0
 virtual bool historyVisible() =0
 ```
 
-是否可以加载显示历史聊天记录 
+Whether to load and display the chat history 
 
 **Return**: bool 
 
@@ -623,7 +623,7 @@ virtual bool historyVisible() =0
 virtual MemberRoleType roleType() =0
 ```
 
-成员在群组内的角色类型 
+Type of a member role in group 
 
 **Return**: MemberRoleType 
 
@@ -633,7 +633,7 @@ virtual MemberRoleType roleType() =0
 virtual int64_t banExpireTime() =0
 ```
 
-群组全员禁言到期时间 
+**to-be-translate** 
 
 **Return**: int64_t 
 

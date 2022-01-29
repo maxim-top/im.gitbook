@@ -1,6 +1,6 @@
 ---
 title: floo::BMXPushUserProfile
-summary: Push用户Profile. 
+summary: Push user Profile. 
 
 ---
 
@@ -8,7 +8,7 @@ summary: Push用户Profile.
 
 
 
-Push用户Profile. 
+Push user Profile. 
 
 
 `#include <bmx_push_user_profile.h>`
@@ -19,11 +19,11 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BMXPushUserProfile](classfloo_1_1_b_m_x_push_user_profile.md#function-~bmxpushuserprofile)**()<br>析构函数  |
-| virtual int64_t | **[userId](classfloo_1_1_b_m_x_push_user_profile.md#function-userid)**() =0<br>用户ID（唯一）  |
-| virtual std::string | **[pushAlias](classfloo_1_1_b_m_x_push_user_profile.md#function-pushalias)**() =0<br>推送用户别名  |
-| virtual std::string | **[pushToken](classfloo_1_1_b_m_x_push_user_profile.md#function-pushtoken)**() =0<br>推送用户token  |
-| virtual const [MessagePushSetting] & | **[messagePushSetting](classfloo_1_1_b_m_x_push_user_profile.md#function-messagepushsetting)**() =0<br>推送用户消息设定  |
+| virtual | **[~BMXPushUserProfile](classfloo_1_1_b_m_x_push_user_profile.md#function-~bmxpushuserprofile)**()<br>Destructor  |
+| virtual int64_t | **[userId](classfloo_1_1_b_m_x_push_user_profile.md#function-userid)**() =0<br>User ID (unique)  |
+| virtual std::string | **[pushAlias](classfloo_1_1_b_m_x_push_user_profile.md#function-pushalias)**() =0<br>Push user alias  |
+| virtual std::string | **[pushToken](classfloo_1_1_b_m_x_push_user_profile.md#function-pushtoken)**() =0<br>Push user token  |
+| virtual const [MessagePushSetting] & | **[messagePushSetting](classfloo_1_1_b_m_x_push_user_profile.md#function-messagepushsetting)**() =0<br>Push user information settings  |
 
 ## Protected Functions
 
@@ -39,7 +39,7 @@ Inherits from BMXBaseObject
 inline virtual ~BMXPushUserProfile()
 ```
 
-析构函数 
+Destructor 
 
 ### function userId
 
@@ -47,7 +47,7 @@ inline virtual ~BMXPushUserProfile()
 virtual int64_t userId() =0
 ```
 
-用户ID（唯一） 
+User ID (unique) 
 
 **Return**: int64_t 
 
@@ -57,7 +57,7 @@ virtual int64_t userId() =0
 virtual std::string pushAlias() =0
 ```
 
-推送用户别名 
+Push user alias 
 
 **Return**: std::string 
 
@@ -67,7 +67,7 @@ virtual std::string pushAlias() =0
 virtual std::string pushToken() =0
 ```
 
-推送用户token 
+Push user token 
 
 **Return**: std::string 
 
@@ -77,7 +77,7 @@ virtual std::string pushToken() =0
 virtual const MessagePushSetting & messagePushSetting() =0
 ```
 
-推送用户消息设定 
+Push user information settings 
 
 **Return**: [MessagePushSetting]
 

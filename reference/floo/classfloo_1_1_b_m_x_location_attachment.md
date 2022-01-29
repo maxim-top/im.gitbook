@@ -1,6 +1,6 @@
 ---
 title: floo::BMXLocationAttachment
-summary: 位置消息附件 
+summary: Location message attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 位置消息附件
 
 
 
-位置消息附件 
+Location message attachment 
 
 
 `#include <bmx_location_attachment.h>`
@@ -19,13 +19,13 @@ Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachmen
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment)**(double latitude, double longitude, const std::string & address)<br>构造函数  |
-| virtual | **[~BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-~bmxlocationattachment)**()<br>析构函数  |
-| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_location_attachment.md#function-type)**() const<br>返回位置附件类型  |
-| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_location_attachment.md#function-clone)**() const<br>克隆函数  |
-| double | **[latitude](classfloo_1_1_b_m_x_location_attachment.md#function-latitude)**() const<br>纬度  |
-| double | **[longitude](classfloo_1_1_b_m_x_location_attachment.md#function-longitude)**() const<br>经度  |
-| const std::string & | **[address](classfloo_1_1_b_m_x_location_attachment.md#function-address)**() const<br>地址  |
+| | **[BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment)**(double latitude, double longitude, const std::string & address)<br>Constructor  |
+| virtual | **[~BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-~bmxlocationattachment)**()<br>Destructor  |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_location_attachment.md#function-type)**() const<br>Return the type of location attachment  |
+| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_location_attachment.md#function-clone)**() const<br>Cloning function  |
+| double | **[latitude](classfloo_1_1_b_m_x_location_attachment.md#function-latitude)**() const<br>Latitude  |
+| double | **[longitude](classfloo_1_1_b_m_x_location_attachment.md#function-longitude)**() const<br>Longitude  |
+| const std::string & | **[address](classfloo_1_1_b_m_x_location_attachment.md#function-address)**() const<br>Address  |
 
 ## Friends
 
@@ -40,15 +40,15 @@ Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachmen
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>附件类型  |
-| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>附件下载状态  |
+| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
+| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
 
 **Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>构造函数  |
-| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>析构函数  |
+| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
+| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
 
 
 ## Public Functions Documentation
@@ -63,13 +63,13 @@ BMXLocationAttachment(
 )
 ```
 
-构造函数 
+Constructor 
 
 **Parameters**: 
 
-  * **latitude** 纬度 
-  * **longitude** 经度 
-  * **address** 地址名称 
+  * **latitude** Latitude 
+  * **longitude** Longitude 
+  * **address** Address name 
 
 
 ### function ~BMXLocationAttachment
@@ -78,7 +78,7 @@ BMXLocationAttachment(
 inline virtual ~BMXLocationAttachment()
 ```
 
-析构函数 
+Destructor 
 
 ### function type
 
@@ -86,7 +86,7 @@ inline virtual ~BMXLocationAttachment()
 inline virtual Type type() const
 ```
 
-返回位置附件类型 
+Return the type of location attachment 
 
 **Return**: Type 
 
@@ -99,7 +99,7 @@ inline virtual Type type() const
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -112,7 +112,7 @@ virtual BMXMessageAttachmentPtr clone() const
 double latitude() const
 ```
 
-纬度 
+Latitude 
 
 **Return**: double 
 
@@ -122,7 +122,7 @@ double latitude() const
 double longitude() const
 ```
 
-经度 
+Longitude 
 
 **Return**: double 
 
@@ -132,7 +132,7 @@ double longitude() const
 const std::string & address() const
 ```
 
-地址 
+Address 
 
 **Return**: std::string 
 

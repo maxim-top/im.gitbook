@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroup::Application
-summary: 群申请 
+summary: Group application 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群申请
 
 
 
-群申请 
+Group application 
 
 ## Public Functions
 

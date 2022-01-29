@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXVoiceAttachment
-summary: 音频消息附件 
+summary: Audio attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 音频消息附件
 
 
 
-音频消息附件 
+Audio attachment 
 
 Inherits from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md), [im.floo.floolib.BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md), BMXBaseObject
 
@@ -17,12 +17,12 @@ Inherits from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-delete)**() |
-| | **[BMXVoiceAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-bmxvoiceattachment)**(String path, int duration, String displayName)<br>构造函数，构建发送音频消息附件  |
+| | **[BMXVoiceAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-bmxvoiceattachment)**(String path, int duration, String displayName)<br>Constructor to build the audio attachment to send  |
 | | **[BMXVoiceAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-bmxvoiceattachment)**(String path, int duration) |
-| | **[BMXVoiceAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-bmxvoiceattachment)**(String ratelUrl, int duration, String displayName, long fileLength)<br>构造函数，构建接收音频消息附件  |
-| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-type)**()<br>返回文件类型  |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-clone)**()<br>克隆函数  |
-| int | **[duration](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-duration)**()<br>语音时长  |
+| | **[BMXVoiceAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-bmxvoiceattachment)**(String ratelUrl, int duration, String displayName, long fileLength)<br>Constructor to build the audio attachment to receive  |
+| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-type)**()<br>Type of returned file  |
+| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-clone)**()<br>Cloning function  |
+| int | **[duration](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-duration)**()<br>Length of speech  |
 | [BMXVoiceAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md) | **[dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-dynamic-cast)**([BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) attachment) |
 
 ## Protected Functions
@@ -39,15 +39,15 @@ Inherits from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path, String displayName)<br>构造函数，构建发送文件消息附件  |
+| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path, String displayName)<br>Constructor to build the message attachment of sent file  |
 | | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path) |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String ratelUrl, String displayName, long fileLength)<br>构造函数，构建接收文件消息附件  |
-| String | **[path](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path)**()<br>本地路径  |
-| String | **[displayName](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname)**()<br>显示名  |
+| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String ratelUrl, String displayName, long fileLength)<br>Constructor to build the message attachment of received file  |
+| String | **[path](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path)**()<br>Local path  |
+| String | **[displayName](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname)**()<br>Display name  |
 | String | **[ratelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-ratelurl)**() |
-| String | **[url](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url)**()<br>远程URL  |
-| long | **[fileLength](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength)**()<br>文件长度  |
-| BMXMessageAttachment.DownloadStatus | **[downloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus)**()<br>附件下载状态  |
+| String | **[url](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url)**()<br>Remote URL  |
+| long | **[fileLength](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength)**()<br>File length  |
+| BMXMessageAttachment.DownloadStatus | **[downloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus)**()<br>Attachment download state  |
 
 **Protected Functions inherited from [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md)**
 
@@ -84,13 +84,13 @@ inline BMXVoiceAttachment(
 )
 ```
 
-构造函数，构建发送音频消息附件 
+Constructor to build the audio attachment to send 
 
 **Parameters**: 
 
-  * **path** 文件的本地路径 
-  * **duration** 音频时长 
-  * **displayName** 文件展示名 
+  * **path** Local path of file 
+  * **duration** Audio length 
+  * **displayName** Display name of file 
 
 
 ### function BMXVoiceAttachment
@@ -114,14 +114,14 @@ inline BMXVoiceAttachment(
 )
 ```
 
-构造函数，构建接收音频消息附件 
+Constructor to build the audio attachment to receive 
 
 **Parameters**: 
 
-  * **ratelUrl** ratel服务器地址 
-  * **duration** 音频时长 
-  * **displayName** 文件展示名 
-  * **fileLength** 文件大小 
+  * **ratelUrl** ratel server address 
+  * **duration** Audio length 
+  * **displayName** Display name of file 
+  * **fileLength** File size 
 
 
 ### function type
@@ -130,7 +130,7 @@ inline BMXVoiceAttachment(
 inline BMXMessageAttachment.Type type()
 ```
 
-返回文件类型 
+Type of returned file 
 
 **Return**: Type 
 
@@ -143,7 +143,7 @@ inline BMXMessageAttachment.Type type()
 inline BMXMessageAttachment clone()
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 
@@ -156,7 +156,7 @@ inline BMXMessageAttachment clone()
 inline int duration()
 ```
 
-语音时长 
+Length of speech 
 
 **Return**: int32_t 
 

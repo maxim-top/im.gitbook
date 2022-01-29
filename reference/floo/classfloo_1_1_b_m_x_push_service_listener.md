@@ -13,18 +13,18 @@ title: floo::BMXPushServiceListener
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md#function-bmxpushservicelistener)**()<br>构造函数  |
-| virtual | **[~BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md#function-~bmxpushservicelistener)**()<br>析构函数  |
-| virtual void | **[onPushStart](classfloo_1_1_b_m_x_push_service_listener.md#function-onpushstart)**(const std::string bmxToken)<br>Push初始化完成通知。  |
-| virtual void | **[onPushStop](classfloo_1_1_b_m_x_push_service_listener.md#function-onpushstop)**()<br>Push功能停止通知。  |
-| virtual void | **[onCertRetrieved](classfloo_1_1_b_m_x_push_service_listener.md#function-oncertretrieved)**(const std::string cert)<br>Push初始化完成后获取推送证书。  |
-| virtual void | **[onSetTags](classfloo_1_1_b_m_x_push_service_listener.md#function-onsettags)**(const std::string & operationId)<br>设置用户推送成功回调。  |
-| virtual void | **[onGetTags](classfloo_1_1_b_m_x_push_service_listener.md#function-ongettags)**(const std::string & operationId)<br>获取用户推送成功回调。  |
-| virtual void | **[onDeleteTags](classfloo_1_1_b_m_x_push_service_listener.md#function-ondeletetags)**(const std::string & operationId)<br>删除用户推送成功回调。  |
-| virtual void | **[onClearTags](classfloo_1_1_b_m_x_push_service_listener.md#function-oncleartags)**(const std::string & operationId)<br>清空用户推送成功回调。  |
-| virtual void | **[onReceivePush](classfloo_1_1_b_m_x_push_service_listener.md#function-onreceivepush)**(const BMXMessageList & list)<br>接收到新的Push通知。  |
-| virtual void | **[onStatusChanged](classfloo_1_1_b_m_x_push_service_listener.md#function-onstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>发送Push上行消息状态变化通知。  |
-| void | **[registerPushService](classfloo_1_1_b_m_x_push_service_listener.md#function-registerpushservice)**([BMXPushService](classfloo_1_1_b_m_x_push_service.md) * service)<br>注册BMXPushServiceListener绑定到的BMXPushService（SDK内部自动注册）  |
+| | **[BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md#function-bmxpushservicelistener)**()<br>Constructor  |
+| virtual | **[~BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md#function-~bmxpushservicelistener)**()<br>Destructor  |
+| virtual void | **[onPushStart](classfloo_1_1_b_m_x_push_service_listener.md#function-onpushstart)**(const std::string bmxToken)<br>Notification of push initialization complete.  |
+| virtual void | **[onPushStop](classfloo_1_1_b_m_x_push_service_listener.md#function-onpushstop)**()<br>Notification of push feature stop.  |
+| virtual void | **[onCertRetrieved](classfloo_1_1_b_m_x_push_service_listener.md#function-oncertretrieved)**(const std::string cert)<br>Get push certificate after push initialization.  |
+| virtual void | **[onSetTags](classfloo_1_1_b_m_x_push_service_listener.md#function-onsettags)**(const std::string & operationId)<br>Set callback of user push success.  |
+| virtual void | **[onGetTags](classfloo_1_1_b_m_x_push_service_listener.md#function-ongettags)**(const std::string & operationId)<br>Get callback of user push success.  |
+| virtual void | **[onDeleteTags](classfloo_1_1_b_m_x_push_service_listener.md#function-ondeletetags)**(const std::string & operationId)<br>Delete callback of user push success.  |
+| virtual void | **[onClearTags](classfloo_1_1_b_m_x_push_service_listener.md#function-oncleartags)**(const std::string & operationId)<br>Clear callback of user push success.  |
+| virtual void | **[onReceivePush](classfloo_1_1_b_m_x_push_service_listener.md#function-onreceivepush)**(const BMXMessageList & list)<br>New push notification received.  |
+| virtual void | **[onStatusChanged](classfloo_1_1_b_m_x_push_service_listener.md#function-onstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>Send notification of push uplink message status change.  |
+| void | **[registerPushService](classfloo_1_1_b_m_x_push_service_listener.md#function-registerpushservice)**([BMXPushService](classfloo_1_1_b_m_x_push_service.md) * service)<br>**to-be-translate**  |
 
 ## Protected Attributes
 
@@ -40,7 +40,7 @@ title: floo::BMXPushServiceListener
 inline BMXPushServiceListener()
 ```
 
-构造函数 
+Constructor 
 
 ### function ~BMXPushServiceListener
 
@@ -48,7 +48,7 @@ inline BMXPushServiceListener()
 inline virtual ~BMXPushServiceListener()
 ```
 
-析构函数 
+Destructor 
 
 ### function onPushStart
 
@@ -58,11 +58,11 @@ inline virtual void onPushStart(
 )
 ```
 
-Push初始化完成通知。 
+Notification of push initialization complete. 
 
 **Parameters**: 
 
-  * **bmxToken** 当前push使用bmxToken 
+  * **bmxToken** bmxToken used in current push 
 
 
 ### function onPushStop
@@ -71,7 +71,7 @@ Push初始化完成通知。
 inline virtual void onPushStop()
 ```
 
-Push功能停止通知。 
+Notification of push feature stop. 
 
 ### function onCertRetrieved
 
@@ -81,11 +81,11 @@ inline virtual void onCertRetrieved(
 )
 ```
 
-Push初始化完成后获取推送证书。 
+Get push certificate after push initialization. 
 
 **Parameters**: 
 
-  * **cert** 从服务器获取的推送证书 
+  * **cert** Push certificate obtained from server 
 
 
 ### function onSetTags
@@ -96,11 +96,11 @@ inline virtual void onSetTags(
 )
 ```
 
-设置用户推送成功回调。 
+Set callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onGetTags
@@ -111,11 +111,11 @@ inline virtual void onGetTags(
 )
 ```
 
-获取用户推送成功回调。 
+Get callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onDeleteTags
@@ -126,11 +126,11 @@ inline virtual void onDeleteTags(
 )
 ```
 
-删除用户推送成功回调。 
+Delete callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onClearTags
@@ -141,11 +141,11 @@ inline virtual void onClearTags(
 )
 ```
 
-清空用户推送成功回调。 
+Clear callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onReceivePush
@@ -156,11 +156,11 @@ inline virtual void onReceivePush(
 )
 ```
 
-接收到新的Push通知。 
+New push notification received. 
 
 **Parameters**: 
 
-  * **list** Push通知列表 
+  * **list** Push notification list 
 
 
 ### function onStatusChanged
@@ -172,12 +172,12 @@ inline virtual void onStatusChanged(
 )
 ```
 
-发送Push上行消息状态变化通知。 
+Send notification of push uplink message status change. 
 
 **Parameters**: 
 
-  * **msg** 发生状态变化的上行消息 
-  * **error** 状态错误码 
+  * **msg** Uplink message with state change 
+  * **error** State error code 
 
 
 ### function registerPushService
@@ -188,7 +188,7 @@ inline void registerPushService(
 )
 ```
 
-注册BMXPushServiceListener绑定到的BMXPushService（SDK内部自动注册） 
+**to-be-translate** 
 
 **Parameters**: 
 

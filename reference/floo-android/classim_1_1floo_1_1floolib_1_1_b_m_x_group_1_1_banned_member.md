@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroup::BannedMember
-summary: 群禁言成员 
+summary: Banned group members 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群禁言成员
 
 
 
-群禁言成员 
+Banned group members 
 
 ## Public Functions
 

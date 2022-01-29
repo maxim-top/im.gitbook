@@ -1,2464 +1,2464 @@
 
 
-## 7    群接口
+## 7    Group interface
 
-## 7.1  添加群管理员
+## 7.1  Add group Admin
 
 > POST  /group/admin/add
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.2  移除群管理员
+## 7.2  Remove group Admin
 
 > POST  /group/admin/remove
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.3  移除群管理员
+## 7.3  Remove group Admin
 
 > DELETE  /group/admin/remove
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.4  获取群管理员列表
+## 7.4  Get the list of group Admins
 
 > GET  /group/admin_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
-|⇥ display_name|string||false|成员群名片|
-|⇥ join_time|int32||false|成员入群时间|
-|⇥ user_id|int32||false|用户id|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
+|⇥ display_name|string||false|Group member profile|
+|⇥ join_time|int32||false|Member join time|
+|⇥ user_id|int32||false|User id|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.5  根据群id和公告id获取群公告详情
+## 7.5  Get group announcement details by group id and announcement id
 
 > GET  /group/announcement
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |announcement_id||announcement_id|
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ author|int32||false|公告发布者|
-|⇥ content|string||false|公告内容|
-|⇥ created_at|int32||false|公告发布时间|
-|⇥ group_id|int32||false|群id|
-|⇥ id|int32||false|公告id|
-|⇥ title|string||false|公告标题|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ author|int32||false|Announcement publisher|
+|⇥ content|string||false|Announcement content|
+|⇥ created_at|int32||false|Announcement publish time|
+|⇥ group_id|int32||false|Group id|
+|⇥ id|int32||false|Announcement id|
+|⇥ title|string||false|Announcement tittle|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.6  删除公告
+## 7.6  Delete group announcement
 
 > POST  /group/announcement/delete
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |announcement_id||announcement_id|
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.7  删除公告
+## 7.7  Delete group announcement
 
 > DELETE  /group/announcement/delete
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |announcement_id||announcement_id|
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.8  编辑群公告
+## 7.8  Edit group announcement
 
 > POST  /group/announcement/edit
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| content|string||false|公告内容|
-| group_id|int32||false|群组id|
-| title|string||false|公告标题|
+| content|string||false|Announcement content|
+| group_id|int32||false|Group id|
+| title|string||false|Announcement tittle|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ author|int32||false|公告发布者|
-|⇥ content|string||false|公告内容|
-|⇥ created_at|int32||false|公告发布时间|
-|⇥ group_id|int32||false|群id|
-|⇥ id|int32||false|公告id|
-|⇥ title|string||false|公告标题|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ author|int32||false|Announcement publisher|
+|⇥ content|string||false|Announcement content|
+|⇥ created_at|int32||false|Announcement publish time|
+|⇥ group_id|int32||false|Group id|
+|⇥ id|int32||false|Announcement id|
+|⇥ title|string||false|Announcement tittle|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.9  获取最新一条群公告详情
+## 7.9  Get the latest group announcement details
 
 > GET  /group/announcement/last
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ author|int32||false|公告发布者|
-|⇥ content|string||false|公告内容|
-|⇥ created_at|int32||false|公告发布时间|
-|⇥ group_id|int32||false|群id|
-|⇥ id|int32||false|公告id|
-|⇥ title|string||false|公告标题|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ author|int32||false|Announcement publisher|
+|⇥ content|string||false|Announcement content|
+|⇥ created_at|int32||false|Announcement publish time|
+|⇥ group_id|int32||false|Group id|
+|⇥ id|int32||false|Announcement id|
+|⇥ title|string||false|Announcement tittle|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.10 获取群公告列表
+## 7.10 Get group announcements list
 
 > GET  /group/announcement/list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
-|⇥ author|int32||false|公告发布者|
-|⇥ content|string||false|公告内容|
-|⇥ created_at|int32||false|公告发布时间|
-|⇥ group_id|int32||false|群id|
-|⇥ id|int32||false|公告id|
-|⇥ title|string||false|公告标题|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
+|⇥ author|int32||false|Announcement publisher|
+|⇥ content|string||false|Announcement content|
+|⇥ created_at|int32||false|Announcement publish time|
+|⇥ group_id|int32||false|Group id|
+|⇥ id|int32||false|Announcement id|
+|⇥ title|string||false|Announcement tittle|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.11 获取群申请列表
+## 7.11 Get the list of group membership requests
 
 > POST  /group/application_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |cursor||cursor|
 |limit||limit|
 |version||version|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_list|array[int32]||false|群id列表|
+| group_list|array[int32]||false|Group id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| cursor|string||false|游标，用于翻页|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
-| total|int32||false|总数|
-| version|int32||false|版本，目前没用到，留作扩展|
+| code|int32||false|Return code, 200 is success|
+| cursor|string||false|Cursor for page turning|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
+| total|int32||false|Total|
+| version|int32||false|Version, not used at present, reserved for extension|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.12 申请入群
+## 7.12 Apply for group membership
 
 > POST  /group/apply
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| reason|string||false|申请入群原因|
+| group_id|int32||false|Group id|
+| reason|string||false|Reason for membership application|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.13 管理员处理入群申请
+## 7.13 Admin processes membership application
 
 > POST  /group/apply/handle
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| approval|boolean||false|审批，bool类型，true为同意，false为拒绝|
-| group_id|int32||false|群id|
-| user_id|int32||false|用户id|
+| approval|boolean||false|Approval, bool type, true for approval, false for rejection|
+| group_id|int32||false|Group id|
+| user_id|int32||false|User id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.14 管理员处理入群申请
+## 7.14 Admin processes membership application
 
 > PUT  /group/apply/handle
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| approval|boolean||false|审批，bool类型，true为同意，false为拒绝|
-| group_id|int32||false|群id|
-| user_id|int32||false|用户id|
+| approval|boolean||false|Approval, bool type, true for approval, false for rejection|
+| group_id|int32||false|Group id|
+| user_id|int32||false|User id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.15 将用户禁言
+## 7.15 Ban a user
 
 > POST  /group/ban
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| duration|int32||false|禁言时长，单位为分钟|
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| duration|int32||false|Duration of banned in minutes|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.16 获取禁言列表
+## 7.16 Get a list of banned members
 
 > GET  /group/banned_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |cursor||cursor|
 |group_id||group_id|
 |limit||limit|
 |version||version|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| cursor|string||false|游标，用于翻页|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
-| total|int32||false|总数|
-| version|int32||false|版本，目前没用到，留作扩展|
+| code|int32||false|Return code, 200 is success|
+| cursor|string||false|Cursor for page turning|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
+| total|int32||false|Total|
+| version|int32||false|Version, not used at present, reserved for extension|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.17 将用户加入黑名单
+## 7.17 Blacklist a user
 
 > POST  /group/block
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.18 获取黑名单列表
+## 7.18 Get backlist
 
 > GET  /group/blocked_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |cursor||cursor|
 |group_id||group_id|
 |limit||limit|
 |version||version|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| cursor|string||false|游标，用于翻页|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
-| total|int32||false|总数|
-| version|int32||false|版本，目前没用到，留作扩展|
+| code|int32||false|Return code, 200 is success|
+| cursor|string||false|Cursor for page turning|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
+| total|int32||false|Total|
+| version|int32||false|Version, not used at present, reserved for extension|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.19 创建群
+## 7.19 Create group
 
 > POST  /group/create
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| avatar|string||false|群头像|
-| description|string||false|群描述|
-| name|string||false|群名称|
-| type|int32||false|群类型 1表示公开群，0表示私有群, 2表示聊天室|
-| user_list|array[int32]||false|邀请入群的用户id列表|
+| avatar|string||false|Group avatar|
+| description|string||false|Group description|
+| name|string||false|Group name|
+| type|int32||false|Group type: 1 for public group, 0 for private group, 2 for chatroom|
+| user_list|array[int32]||false|List of user ids invited to join group|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.20 解散群
+## 7.20 Disband group
 
 > POST  /group/destroy
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.21 解散群
+## 7.21 Disband group
 
 > DELETE  /group/destroy
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.22 更新群名片
+## 7.22 Update group profile
 
 > POST  /group/display_name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.23 更新群名片
+## 7.23 Update group profile
 
 > PUT  /group/display_name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.24 下载群文件
+## 7.24 Download group file
 
 > GET  /group/file
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |file_id||file_id|
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|群共享文件返回格式|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Returned format of group shared files|
 |⇥ created_at|int32||false||
-|⇥ file_id|int32||false|共享文件id|
-|⇥ group_id|int32||false|群id|
-|⇥ name|string||false|共享文件名称|
-|⇥ size|int32||false|共享文件大小|
-|⇥ type|string||false|共享文件类型|
+|⇥ file_id|int32||false|Shared file id|
+|⇥ group_id|int32||false|Group id|
+|⇥ name|string||false|Shared file name|
+|⇥ size|int32||false|Shared file size|
+|⇥ type|string||false|Shared file type|
 |⇥ updated_at|int32||false||
-|⇥ uploader|int32||false|共享文件上传者|
-|⇥ url|string||false|共享文件url|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ uploader|int32||false|Shared file uploader|
+|⇥ url|string||false|Shared file url|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.25 删除群文件
+## 7.25 Delete group file
 
 > POST  /group/file/delete
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| file_list|array[int32]||false|文件id列表|
-| group_id|int32||false|群id|
+| file_list|array[int32]||false|File id list|
+| group_id|int32||false|Group id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ file_id|int32||false||
 |⇥ reason|string||false||
 |⇥ result|string||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.26 删除群文件
+## 7.26 Delete group file
 
 > DELETE  /group/file/delete
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| file_list|array[int32]||false|文件id列表|
-| group_id|int32||false|群id|
+| file_list|array[int32]||false|File id list|
+| group_id|int32||false|Group id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ file_id|int32||false||
 |⇥ reason|string||false||
 |⇥ result|string||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.27 获取群文件列表
+## 7.27 Get the list of group files
 
 > GET  /group/file/list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ created_at|int32||false||
-|⇥ file_id|int32||false|共享文件id|
-|⇥ group_id|int32||false|群id|
-|⇥ name|string||false|共享文件名称|
-|⇥ size|int32||false|共享文件大小|
-|⇥ type|string||false|共享文件类型|
+|⇥ file_id|int32||false|Shared file id|
+|⇥ group_id|int32||false|Group id|
+|⇥ name|string||false|Shared file name|
+|⇥ size|int32||false|Shared file size|
+|⇥ type|string||false|Shared file type|
 |⇥ updated_at|int32||false||
-|⇥ uploader|int32||false|共享文件上传者|
-|⇥ url|string||false|共享文件url|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ uploader|int32||false|Shared file uploader|
+|⇥ url|string||false|Shared file url|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.28 更新群文件名称
+## 7.28 Update group file name
 
 > POST  /group/file/update_name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| file_id|int32||false|文件id|
-| group_id|int32||false|群id|
-| name|string||false|文件新名称|
+| file_id|int32||false|File id|
+| group_id|int32||false|Group id|
+| name|string||false|New file name|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.29 更新群文件名称
+## 7.29 Update group file name
 
 > PUT  /group/file/update_name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| file_id|int32||false|文件id|
-| group_id|int32||false|群id|
-| name|string||false|文件新名称|
+| file_id|int32||false|File id|
+| group_id|int32||false|Group id|
+| name|string||false|New file name|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.30 上传群文件
+## 7.30 Upload group file
 
 > POST  /group/file/upload
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| name|string||false|文件名称|
-| size|int32||false|文件大小|
-| type|string||false|文件类型|
-| url|string||false|文件url|
+| group_id|int32||false|Group id|
+| name|string||false|File name|
+| size|int32||false|File size|
+| type|string||false|File type|
+| url|string||false|File url|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|群共享文件返回格式|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Returned format of group shared files|
 |⇥ created_at|int32||false||
-|⇥ file_id|int32||false|共享文件id|
-|⇥ group_id|int32||false|群id|
-|⇥ name|string||false|共享文件名称|
-|⇥ size|int32||false|共享文件大小|
-|⇥ type|string||false|共享文件类型|
+|⇥ file_id|int32||false|Shared file id|
+|⇥ group_id|int32||false|Group id|
+|⇥ name|string||false|Shared file name|
+|⇥ size|int32||false|Shared file size|
+|⇥ type|string||false|Shared file type|
 |⇥ updated_at|int32||false||
-|⇥ uploader|int32||false|共享文件上传者|
-|⇥ url|string||false|共享文件url|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ uploader|int32||false|Shared file uploader|
+|⇥ url|string||false|Shared file url|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.31 根据group id获取群信息
+## 7.31 Get group information by group id
 
 > GET  /group/info
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ apply_approval|int32||false|入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请|
-|⇥ avatar|string||false|群头像|
-|⇥ ban_expire_time|int32||false|全员禁言过期时间（秒），禁言期间只允许管理员发消息， 为0或小于当前时间表示不禁言, -1表示永久禁言|
-|⇥ created_at|int32||false|创建时间|
-|⇥ description|string||false|群描述|
-|⇥ ext|string||false|群扩展信息|
-|⇥ group_id|int32||false|群id|
-|⇥ history_visible|boolean||false|新成员可见历史聊天记录设置|
-|⇥ member_invite|boolean||false|群成员邀请设置|
-|⇥ member_modify|boolean||false|群成员修改群信息设置|
-|⇥ msg_mute_mode|int32||false|群消息屏蔽模式|
-|⇥ msg_push_mode|int32||false|群消息推送模式|
-|⇥ name|string||false|群名称|
-|⇥ owner_id|int32||false|群主id|
-|⇥ read_ack|boolean||false|群消息已读功能设置|
-|⇥ status|int32||false|群状态, 0：正常, 1：已解散|
-|⇥ type|int32||false|群类型|
-|⇥ updated_at|int32||false|更新时间|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ apply_approval|int32||false|Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests|
+|⇥ avatar|string||false|Group avatar|
+|⇥ ban_expire_time|int32||false|**to-be-translate**|
+|⇥ created_at|int32||false|Creation time|
+|⇥ description|string||false|Group description|
+|⇥ ext|string||false|Group extension information|
+|⇥ group_id|int32||false|Group id|
+|⇥ history_visible|boolean||false|History chat visibility settings for new members|
+|⇥ member_invite|boolean||false|Group member invitation settings|
+|⇥ member_modify|boolean||false|Group information modification settings for members|
+|⇥ msg_mute_mode|int32||false|Group message blocking mode|
+|⇥ msg_push_mode|int32||false|Push mode of group messages|
+|⇥ name|string||false|Group name|
+|⇥ owner_id|int32||false|Group Owner id|
+|⇥ read_ack|boolean||false|Group message read function settings|
+|⇥ status|int32||false|Group state, 0: normal, 1: dissolved|
+|⇥ type|int32||false|Group type|
+|⇥ updated_at|int32||false|Update time|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.32 更新群头像
+## 7.32 Update group avatar
 
 > POST  /group/info/avatar
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.33 更新群头像
+## 7.33 Update group avatar
 
 > PUT  /group/info/avatar
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.34 根据group id获取群信息
+## 7.34 Get group information by group id
 
 > POST  /group/info/batch
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_list|array[int32]||false|群id列表|
+| group_list|array[int32]||false|Group id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
-|⇥ apply_approval|int32||false|入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
+|⇥ apply_approval|int32||false|Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests|
 |⇥ avatar|string||false||
 |⇥ capacity|int32||false||
 |⇥ count|int32||false||
 |⇥ group_id|int32||false||
-|⇥ msg_mute_mode|int32||false|群消息屏蔽设置|
-|⇥ msg_push_mode|int32||false|群消息推送设置|
+|⇥ msg_mute_mode|int32||false|Group message blocking settings|
+|⇥ msg_push_mode|int32||false|Group message push settings|
 |⇥ name|string||false||
 |⇥ owner|int32||false||
-|⇥ status|int32||false|群状态, 0：正常, 1：已解散|
+|⇥ status|int32||false|Group state, 0: normal, 1: dissolved|
 |⇥ type|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.35 更新群描述
+## 7.35 Update group description
 
 > POST  /group/info/description
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.36 更新群描述
+## 7.36 Update group description
 
 > PUT  /group/info/description
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.37 更新扩展信息
+## 7.37 Update extension information
 
 > POST  /group/info/ext
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.38 更新扩展信息
+## 7.38 Update extension information
 
 > PUT  /group/info/ext
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.39 更新群名称
+## 7.39 Update group name
 
 > POST  /group/info/name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.40 更新群名称
+## 7.40 Update group name
 
 > PUT  /group/info/name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|string||false|更新内容|
+| group_id|int32||false|Group id|
+| value|string||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.41 获取群邀请列表
+## 7.41 Get group invitation list
 
 > GET  /group/invitation_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |cursor||cursor|
 |limit||limit|
 |version||version|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| cursor|string||false|游标，用于翻页|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
-| total|int32||false|总数|
-| version|int32||false|版本，目前没用到，留作扩展|
+| code|int32||false|Return code, 200 is success|
+| cursor|string||false|Cursor for page turning|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
+| total|int32||false|Total|
+| version|int32||false|Version, not used at present, reserved for extension|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.42 邀请入群
+## 7.42 Invite to group
 
 > POST  /group/invite
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| reason|string||false|邀请理由|
-| user_list|array[int32]||false|受邀请者id，List类型，单次可邀请多个用户入群|
+| group_id|int32||false|Group id|
+| reason|string||false|Invitation reason|
+| user_list|array[int32]||false|Invitee id, List type, multiple users can be invited to a group at one time|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.43 用户处理入群邀请
+## 7.43 Process group invitation by user
 
 > POST  /group/invite/handle
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| approval|boolean||false|审批，bool类型，true为同意，false为拒绝|
-| group_id|int32||false|群id|
-| user_id|int32||false|用户id|
+| approval|boolean||false|Approval, bool type, true for approval, false for rejection|
+| group_id|int32||false|Group id|
+| user_id|int32||false|User id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.44 用户处理入群邀请
+## 7.44 Process group invitation by user
 
 > PUT  /group/invite/handle
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| approval|boolean||false|审批，bool类型，true为同意，false为拒绝|
-| group_id|int32||false|群id|
-| user_id|int32||false|用户id|
+| approval|boolean||false|Approval, bool type, true for approval, false for rejection|
+| group_id|int32||false|Group id|
+| user_id|int32||false|User id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.45 将成员踢出群
+## 7.45 Kick member out of group
 
 > POST  /group/kick
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.46 将成员踢出群
+## 7.46 Kick member out of group
 
 > DELETE  /group/kick
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.47 成员退出群
+## 7.47 Member quit group
 
 > POST  /group/leave
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.48 成员退出群
+## 7.48 Member quit group
 
 > DELETE  /group/leave
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.49 根据group id获取群成员列表
+## 7.49 Get group member list by group id
 
 > GET  /group/member_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |cursor||cursor|
 |group_id||group_id|
 |limit||limit|
 |version||version|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| cursor|string||false|游标，用于翻页|
-| data|array[object]||false|结果数据|
-|⇥ display_name|string||false|成员群名片|
-|⇥ join_time|int32||false|成员入群时间|
-|⇥ user_id|int32||false|用户id|
-| message|string||false|错误信息，如果成功，该项为null|
-| total|int32||false|总数|
-| version|int32||false|版本，目前没用到，留作扩展|
+| code|int32||false|Return code, 200 is success|
+| cursor|string||false|Cursor for page turning|
+| data|array[object]||false|Result data|
+|⇥ display_name|string||false|Group member profile|
+|⇥ join_time|int32||false|Member join time|
+|⇥ user_id|int32||false|User id|
+| message|string||false|Error information, null means success|
+| total|int32||false|Total|
+| version|int32||false|Version, not used at present, reserved for extension|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.50 批量获取群成员的群名片
+## 7.50 Batch retrieval of group member profiles
 
 > POST  /group/members/display_name
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
-|⇥ display_name|string||false|成员群名片|
-|⇥ join_time|int32||false|成员入群时间|
-|⇥ user_id|int32||false|用户id|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
+|⇥ display_name|string||false|Group member profile|
+|⇥ join_time|int32||false|Member join time|
+|⇥ user_id|int32||false|User id|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.51 设置群消息屏蔽模式
+## 7.51 Set group message blocking mode
 
 > POST  /group/msg/mute_mode
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| msg_mute_mode|int32||false|群消息屏蔽模式： 0 不屏蔽1 屏蔽本地消息通知2 屏蔽消息，不接收消息|
+| group_id|int32||false|Group id|
+| msg_mute_mode|int32||false|Group message blocking mode: 0: No blocking; 1: Blocking local message notifications; 2: Blocking messages, not receiving messages|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.52 设置群消息屏蔽模式
+## 7.52 Set group message blocking mode
 
 > PUT  /group/msg/mute_mode
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| msg_mute_mode|int32||false|群消息屏蔽模式： 0 不屏蔽1 屏蔽本地消息通知2 屏蔽消息，不接收消息|
+| group_id|int32||false|Group id|
+| msg_mute_mode|int32||false|Group message blocking mode: 0: No blocking; 1: Blocking local message notifications; 2: Blocking messages, not receiving messages|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.53 设置群消息推送模式
+## 7.53 Set group message pushing mode
 
 > POST  /group/msg/push_mode
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| msg_push_mode|int32||false|群消息推送类型： 0:接收所有推送;1:不接受推送;2:接收管理员和@消息推送;3:只接收管理员消息推送;4:只接收@消息推送|
+| group_id|int32||false|Group id|
+| msg_push_mode|int32||false|Group message push type: 0: Receive all pushes; 1: Do not accept push; 2: Receive Admin and @ pushes; 3. Only receive Admin pushes; 4: Only receive @ pushes|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.54 设置群消息推送模式
+## 7.54 Set group message pushing mode
 
 > PUT  /group/msg/push_mode
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| msg_push_mode|int32||false|群消息推送类型： 0:接收所有推送;1:不接受推送;2:接收管理员和@消息推送;3:只接收管理员消息推送;4:只接收@消息推送|
+| group_id|int32||false|Group id|
+| msg_push_mode|int32||false|Group message push type: 0: Receive all pushes; 1: Do not accept push; 2: Receive Admin and @ pushes; 3. Only receive Admin pushes; 4: Only receive @ pushes|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.55 获取公开群列表
+## 7.55 Get public group list
 
 > GET  /group/public_list
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[int32]||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|array[int32]||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.56 二维码邀请入群
+## 7.56 Group invitation via QR code
 
 > POST  /group/qrcode/invite
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | qr_info|string||false||
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|object||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|object||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.57 获取群邀请二维码信息
+## 7.57 Get Group invitation QR code
 
 > GET  /group/qrcode/sign
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ create_at|int32||false|二维码生成时间|
-|⇥ expire_at|int32||false|二维码过期时间|
-|⇥ qr_info|string||false|二维码信息|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ create_at|int32||false|QR code generation time|
+|⇥ expire_at|int32||false|QR code expiration time|
+|⇥ qr_info|string||false|QR code information|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.58 获取群设置
+## 7.58 Get group settings
 
 > GET  /group/settings
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求参数(Query Param)
-| 参数名称 | 默认值 | 描述 |
+### Query Param
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
 |group_id||group_id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ apply_approval|int32||false|入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请|
-|⇥ avatar|string||false|群头像|
-|⇥ ban_expire_time|int32||false|全员禁言过期时间（秒），禁言期间只允许管理员发消息， 为0或小于当前时间表示不禁言, -1表示永久禁言|
-|⇥ created_at|int32||false|创建时间|
-|⇥ description|string||false|群描述|
-|⇥ ext|string||false|群扩展信息|
-|⇥ group_id|int32||false|群id|
-|⇥ history_visible|boolean||false|新成员可见历史聊天记录设置|
-|⇥ member_invite|boolean||false|群成员邀请设置|
-|⇥ member_modify|boolean||false|群成员修改群信息设置|
-|⇥ msg_mute_mode|int32||false|群消息屏蔽模式|
-|⇥ msg_push_mode|int32||false|群消息推送模式|
-|⇥ name|string||false|群名称|
-|⇥ owner_id|int32||false|群主id|
-|⇥ read_ack|boolean||false|群消息已读功能设置|
-|⇥ status|int32||false|群状态, 0：正常, 1：已解散|
-|⇥ type|int32||false|群类型|
-|⇥ updated_at|int32||false|更新时间|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ apply_approval|int32||false|Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests|
+|⇥ avatar|string||false|Group avatar|
+|⇥ ban_expire_time|int32||false|**to-be-translate**|
+|⇥ created_at|int32||false|Creation time|
+|⇥ description|string||false|Group description|
+|⇥ ext|string||false|Group extension information|
+|⇥ group_id|int32||false|Group id|
+|⇥ history_visible|boolean||false|History chat visibility settings for new members|
+|⇥ member_invite|boolean||false|Group member invitation settings|
+|⇥ member_modify|boolean||false|Group information modification settings for members|
+|⇥ msg_mute_mode|int32||false|Group message blocking mode|
+|⇥ msg_push_mode|int32||false|Push mode of group messages|
+|⇥ name|string||false|Group name|
+|⇥ owner_id|int32||false|Group Owner id|
+|⇥ read_ack|boolean||false|Group message read function settings|
+|⇥ status|int32||false|Group state, 0: normal, 1: dissolved|
+|⇥ type|int32||false|Group type|
+|⇥ updated_at|int32||false|Update time|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.59 更新群设置--是否允许成员邀请
+## 7.59 Update group settings - whether to allow member invitations
 
 > POST  /group/settings/allow_member_invitation
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.60 更新群设置--是否允许成员邀请
+## 7.60 Update group settings - whether to allow member invitations
 
 > PUT  /group/settings/allow_member_invitation
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.61 更新群设置--群成员是否可修改群信息
+## 7.61 Update group settings - whether group members can modify group information
 
 > POST  /group/settings/allow_member_modify
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.62 更新群设置--群成员是否可修改群信息
+## 7.62 Update group settings - whether group members can modify group information
 
 > PUT  /group/settings/allow_member_modify
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.63 全员禁言，只允许管理员发消息
+## 7.63 **to-be-translate**
 
 > POST  /group/settings/ban_all
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| duration|int32||false|禁言时长，单位为分钟|
-| group_id|int32||false|群id|
+| duration|int32||false|Duration of banned in minutes|
+| group_id|int32||false|Group id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ ban_expire_time|int32||false|全员禁言过期时间|
-| message|string||false|错误信息，如果成功，该项为null|
+|⇥ ban_expire_time|int32||false|**to-be-translate**|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.64 更新群设置--是否开启群消息已读功能
+## 7.64 Update group settings - whether to enable “mark after read”
 
 > POST  /group/settings/enable_read_ack
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.65 更新群设置--是否开启群消息已读功能
+## 7.65 Update group settings - whether to enable “mark after read”
 
 > PUT  /group/settings/enable_read_ack
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.66 更新群设置--新成员是否可见群历史聊天记录
+## 7.66 Update group settings - whether group chat history visible to new members
 
 > POST  /group/settings/history_visible
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.67 更新群设置--新成员是否可见群历史聊天记录
+## 7.67 Update group settings - whether group chat history visible to new members
 
 > PUT  /group/settings/history_visible
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| value|boolean||false|更新内容|
+| group_id|int32||false|Group id|
+| value|boolean||false|Update content|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.68 更新群设置--群申请是否需要管理员审批
+## 7.68 Update group settings - whether group membership request needs Admin approval
 
 > POST  /group/settings/require_admin_approval
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| apply_approval|int32||false|入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请|
-| group_id|int32||false|群id|
+| apply_approval|int32||false|Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests|
+| group_id|int32||false|Group id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.69 更新群设置--群申请是否需要管理员审批
+## 7.69 Update group settings - whether group membership request needs Admin approval
 
 > PUT  /group/settings/require_admin_approval
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| apply_approval|int32||false|入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请|
-| group_id|int32||false|群id|
+| apply_approval|int32||false|Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests|
+| group_id|int32||false|Group id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.70 取消全员禁言
+## 7.70 **to-be-translate**
 
 > POST  /group/settings/unban_all
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
+| group_id|int32||false|Group id|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|boolean||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|boolean||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.71 转让群
+## 7.71 Transfer of group Owner
 
 > POST  /group/transfer
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| new_owner|int32||false|新群主的user_id|
+| group_id|int32||false|Group id|
+| new_owner|int32||false|User_id of new group Owner|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.72 转让群
+## 7.72 Transfer of group Owner
 
 > PUT  /group/transfer
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| new_owner|int32||false|新群主的user_id|
+| group_id|int32||false|Group id|
+| new_owner|int32||false|User_id of new group Owner|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
+| code|int32||false|Return code, 200 is success|
 | data|object||false||
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.73 从禁言列表移除用户
+## 7.73 Remove user from ban list
 
 > POST  /group/unban
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.74 从黑名单移除用户
+## 7.74 Remove user from blacklist
 
 > POST  /group/unblock
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.75 从黑名单移除用户
+## 7.75 Remove user from blacklist
 
 > DELETE  /group/unblock
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 请求体(Request Body)
-| 参数名称 | 数据类型 | 默认值 | 不为空 | 描述 |
+### Request Body
+| Parameter name | Data Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| group_id|int32||false|群id|
-| user_list|array[int32]||false|用户id列表|
+| group_id|int32||false|Group id|
+| user_list|array[int32]||false|User id list|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[object]||false|结果数据|
+| code|int32||false|Return code, 200 is success|
+| data|array[object]||false|Result data|
 |⇥ reason|string||false||
 |⇥ result|string||false||
 |⇥ user_id|int32||false||
-| message|string||false|错误信息，如果成功，该项为null|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 
 
 
-## 7.76 获取用户的群组列表
+## 7.76 Get the list of groups for the user
 
 > GET  /group/user_joined
 
-### 请求头
-| 参数名称 | 默认值 | 描述 |
+### Request Header
+| Parameter name | Default | Description |
 | ------ | ------ | ------ |
-|access-token||令牌||app_id||应用ID||group_id||仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口||user_id||仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口|
+|access-token||Token||app_id||App ID||group_id||This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID||user_id||This field can be set only if access-token is a user token, means call this interface as a group member for this user ID|
 
-### 响应体
-● 200 响应数据格式：JSON
-| 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
+### Response Body
+● 200 Response data format:JSON
+| Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| code|int32||false|返回码，200是成功|
-| data|array[int32]||false|结果数据|
-| message|string||false|错误信息，如果成功，该项为null|
+| code|int32||false|Return code, 200 is success|
+| data|array[int32]||false|Result data|
+| message|string||false|Error information, null means success|
 
 
-### 接口描述
+### Interface Description
 > 
 
 

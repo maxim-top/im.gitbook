@@ -14,39 +14,39 @@ title: im::floo::floolib::BMXPushService
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-delete)**() |
-| [BMXErrorCode] | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-start)**(String alias, String bmxToken)<br>初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。  |
+| [BMXErrorCode] | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-start)**(String alias, String bmxToken)<br>Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.  |
 | [BMXErrorCode] | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-start)**(String alias) |
 | [BMXErrorCode] | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-start)**() |
-| [BMXErrorCode] | **[stop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-stop)**()<br>停止推送功能接口。  |
-| [BMXErrorCode] | **[resume](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-resume)**()<br>恢复推送功能接口。  |
-| [BMXErrorCode] | **[unbindAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-unbindalias)**(String alias)<br>解除用户别名绑定。  |
-| String | **[getToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-gettoken)**()<br>获取登陆后使用的用户token。  |
-| String | **[getCert](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-getcert)**()<br>获取登陆后服务器返回的推送证书。  |
-| BMXPushService.PushSdkStatus | **[status](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-status)**()<br>推送sdk当前的状态。  |
-| [BMXErrorCode] | **[bindDeviceToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-binddevicetoken)**(String token)<br>推送绑定设备token。  |
-| [BMXErrorCode] | **[bindVoipToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-bindvoiptoken)**(String token)<br>绑定推送设备的voiptoken。  |
-| [BMXErrorCode] | **[getPushProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-getpushprofile)**([BMXPushUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.md) pushProfile, boolean forceRefresh)<br>获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取  |
-| [BMXErrorCode] | **[setTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-settags)**(TagList tags, String operationId)<br>设置推送用户的标签。  |
-| [BMXErrorCode] | **[getTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-gettags)**(TagList tags, String operationId)<br>获取推送用户的标签。  |
-| [BMXErrorCode] | **[deleteTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-deletetags)**(TagList tags, String operationId)<br>删除推送用户的标签。  |
-| [BMXErrorCode] | **[clearTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-cleartags)**(String operationId)<br>清空推送用户的标签。  |
-| [BMXErrorCode] | **[setBadge](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setbadge)**(int count)<br>设置推送用户的未读角标。  |
-| [BMXErrorCode] | **[setPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setpushmode)**(boolean enable)<br>设置推送启用状态。默认为使用推送。  |
+| [BMXErrorCode] | **[stop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-stop)**()<br>Shut push feature interface.  |
+| [BMXErrorCode] | **[resume](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-resume)**()<br>Restore push feature interface.  |
+| [BMXErrorCode] | **[unbindAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-unbindalias)**(String alias)<br>Unbind user alias.  |
+| String | **[getToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-gettoken)**()<br>Get user token to use after login.  |
+| String | **[getCert](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-getcert)**()<br>Get push certificate returned by server after login.  |
+| BMXPushService.PushSdkStatus | **[status](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-status)**()<br>Push the current state of sdk.  |
+| [BMXErrorCode] | **[bindDeviceToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-binddevicetoken)**(String token)<br>Push binding device token.  |
+| [BMXErrorCode] | **[bindVoipToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-bindvoiptoken)**(String token)<br>Bind voiptoken of push device  |
+| [BMXErrorCode] | **[getPushProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-getpushprofile)**([BMXPushUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.md) pushProfile, boolean forceRefresh)<br>Get push user details, force pull from server-side if forceRefresh == true  |
+| [BMXErrorCode] | **[setTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-settags)**(TagList tags, String operationId)<br>Set tags of push user.  |
+| [BMXErrorCode] | **[getTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-gettags)**(TagList tags, String operationId)<br>Get tags of the push user.  |
+| [BMXErrorCode] | **[deleteTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-deletetags)**(TagList tags, String operationId)<br>Delete tags of the push user.  |
+| [BMXErrorCode] | **[clearTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-cleartags)**(String operationId)<br>Clear tags of the push user.  |
+| [BMXErrorCode] | **[setBadge](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setbadge)**(int count)<br>Set unread badge for push user.  |
+| [BMXErrorCode] | **[setPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setpushmode)**(boolean enable)<br>Set push enabled state. Default enabled.  |
 | [BMXErrorCode] | **[setPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setpushmode)**() |
-| [BMXErrorCode] | **[setPushTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setpushtime)**(int startHour, int endHour)<br>设置允许推送时间。  |
-| [BMXErrorCode] | **[setSilenceTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setsilencetime)**(int startHour, int endHour)<br>设置推送静默的起始结束时间。  |
-| [BMXErrorCode] | **[setRunBackgroundMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setrunbackgroundmode)**(boolean enable)<br>设置推送是否可以后台运行。默认是false。  |
+| [BMXErrorCode] | **[setPushTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setpushtime)**(int startHour, int endHour)<br>Set allowed push time.  |
+| [BMXErrorCode] | **[setSilenceTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setsilencetime)**(int startHour, int endHour)<br>Set the start and end time of silent push.  |
+| [BMXErrorCode] | **[setRunBackgroundMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setrunbackgroundmode)**(boolean enable)<br>Set whether to run push in background, default false.  |
 | [BMXErrorCode] | **[setRunBackgroundMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setrunbackgroundmode)**() |
-| [BMXErrorCode] | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setgeofencemode)**(boolean enable, boolean isAllow)<br>设置推送的地理围栏功能是否运行。  |
+| [BMXErrorCode] | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setgeofencemode)**(boolean enable, boolean isAllow)<br>Set whether to run push geo-fencing feature.  |
 | [BMXErrorCode] | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setgeofencemode)**(boolean enable) |
 | [BMXErrorCode] | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-setgeofencemode)**() |
-| void | **[clearNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-clearnotification)**(long notificationId)<br>清除指定id的通知。  |
+| void | **[clearNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-clearnotification)**(long notificationId)<br>Clear notifications for the specified id.  |
 | void | **[clearAllNotifications](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-clearallnotifications)**() |
-| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-sendmessage)**(String content)<br>发送推送上行消息，消息状态变化会通过listener通知  |
-| [BMXErrorCode] | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-loadlocalpushmessages)**(long refMsgId, long size, BMXMessageList result, BMXPushService.PushDirection arg3)<br>加载数据库本地存储的推送消息。如果不指定则从最新消息开始  |
+| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-sendmessage)**(String content)<br>Send a push uplink message and notify the listener of a change in message status  |
+| [BMXErrorCode] | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-loadlocalpushmessages)**(long refMsgId, long size, BMXMessageList result, BMXPushService.PushDirection arg3)<br>Load push message stored locally in database. Start with latest message if not specified  |
 | [BMXErrorCode] | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-loadlocalpushmessages)**(long refMsgId, long size, BMXMessageList result) |
-| void | **[addPushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-addpushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>添加推送监听者  |
-| void | **[removePushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-removepushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>移除推送监听者  |
+| void | **[addPushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-addpushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>Add push listener  |
+| void | **[removePushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md#function-removepushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>Remove push listener  |
 
 ## Protected Functions
 
@@ -80,12 +80,12 @@ inline BMXErrorCode start(
 )
 ```
 
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。 
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id. 
 
 **Parameters**: 
 
-  * **alias** 推送初始化使用的当前用户别名 
-  * **bmxToken** 推送初始化的时候App传入的使用的用户的token，无用户的状态下不传入即可。 
+  * **alias** Current user alias used for push initialization 
+  * **bmxToken** User token to use that passed in by App when push initialization, and no passing in is OK without users. 
 
 
 **Return**: [BMXErrorCode]
@@ -112,7 +112,7 @@ inline BMXErrorCode start()
 inline BMXErrorCode stop()
 ```
 
-停止推送功能接口。 
+Shut push feature interface. 
 
 **Return**: [BMXErrorCode]
 
@@ -122,7 +122,7 @@ inline BMXErrorCode stop()
 inline BMXErrorCode resume()
 ```
 
-恢复推送功能接口。 
+Restore push feature interface. 
 
 **Return**: [BMXErrorCode]
 
@@ -134,11 +134,11 @@ inline BMXErrorCode unbindAlias(
 )
 ```
 
-解除用户别名绑定。 
+Unbind user alias. 
 
 **Parameters**: 
 
-  * **alias** 需要解除绑定的用户别名。 
+  * **alias** The user alias that needs to be unbound. 
 
 
 **Return**: [BMXErrorCode]
@@ -149,7 +149,7 @@ inline BMXErrorCode unbindAlias(
 inline String getToken()
 ```
 
-获取登陆后使用的用户token。 
+Get user token to use after login. 
 
 ### function getCert
 
@@ -157,7 +157,7 @@ inline String getToken()
 inline String getCert()
 ```
 
-获取登陆后服务器返回的推送证书。 
+Get push certificate returned by server after login. 
 
 ### function status
 
@@ -165,7 +165,7 @@ inline String getCert()
 inline BMXPushService.PushSdkStatus status()
 ```
 
-推送sdk当前的状态。 
+Push the current state of sdk. 
 
 **Return**: [PushSdkStatus]
 
@@ -177,11 +177,11 @@ inline BMXErrorCode bindDeviceToken(
 )
 ```
 
-推送绑定设备token。 
+Push binding device token. 
 
 **Parameters**: 
 
-  * **token** 设备的推送token 
+  * **token** Device push token 
 
 
 **Return**: [BMXErrorCode]
@@ -194,11 +194,11 @@ inline BMXErrorCode bindVoipToken(
 )
 ```
 
-绑定推送设备的voiptoken。 
+Bind voiptoken of push device 
 
 **Parameters**: 
 
-  * **token** 设备的voip推送token 
+  * **token** Device voip push token 
 
 
 **Return**: [BMXErrorCode]
@@ -212,12 +212,12 @@ inline BMXErrorCode getPushProfile(
 )
 ```
 
-获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取 
+Get push user details, force pull from server-side if forceRefresh == true 
 
 **Parameters**: 
 
-  * **pushProfile** 推送用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。 
-  * **forceRefresh** 是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取 
+  * **pushProfile** Push user profile information, initially passing in a pointing-to-empty shared_ptr object, fetch the user profile information here after function returned. 
+  * **forceRefresh** Whether to force pull from server, automatically if local fetch failed 
 
 
 **Return**: [BMXErrorCode]
@@ -231,12 +231,12 @@ inline BMXErrorCode setTags(
 )
 ```
 
-设置推送用户的标签。 
+Set tags of push user. 
 
 **Parameters**: 
 
-  * **tags** 用户标签 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
+  * **tags** User tag 
+  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
 
 
 **Return**: [BMXErrorCode]
@@ -250,12 +250,12 @@ inline BMXErrorCode getTags(
 )
 ```
 
-获取推送用户的标签。 
+Get tags of the push user. 
 
 **Parameters**: 
 
-  * **tags** 用户标签 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
+  * **tags** User tag 
+  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
 
 
 **Return**: [BMXErrorCode]
@@ -269,12 +269,12 @@ inline BMXErrorCode deleteTags(
 )
 ```
 
-删除推送用户的标签。 
+Delete tags of the push user. 
 
 **Parameters**: 
 
-  * **tags** 要删除用户标签 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
+  * **tags** User tag to delete 
+  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
 
 
 **Return**: [BMXErrorCode]
@@ -287,11 +287,11 @@ inline BMXErrorCode clearTags(
 )
 ```
 
-清空推送用户的标签。 
+Clear tags of the push user. 
 
 **Parameters**: 
 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
+  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
 
 
 **Return**: [BMXErrorCode]
@@ -304,11 +304,11 @@ inline BMXErrorCode setBadge(
 )
 ```
 
-设置推送用户的未读角标。 
+Set unread badge for push user. 
 
 **Parameters**: 
 
-  * **count** 用户未读角标数 
+  * **count** Unread badge count of user 
 
 
 **Return**: [BMXErrorCode]
@@ -321,11 +321,11 @@ inline BMXErrorCode setPushMode(
 )
 ```
 
-设置推送启用状态。默认为使用推送。 
+Set push enabled state. Default enabled. 
 
 **Parameters**: 
 
-  * **enable** 推送的启用状态 
+  * **enable** Enabled state of push 
 
 
 **Return**: [BMXErrorCode]
@@ -346,12 +346,12 @@ inline BMXErrorCode setPushTime(
 )
 ```
 
-设置允许推送时间。 
+Set allowed push time. 
 
 **Parameters**: 
 
-  * **startHour** 静默允许推送的起始时间小时 
-  * **endHour** 静默允许推送的结束时间小时 
+  * **startHour** Start time for allowed silent push (hour) 
+  * **endHour** End time for allowed silent push (hour) 
 
 
 **Return**: [BMXErrorCode]
@@ -365,12 +365,12 @@ inline BMXErrorCode setSilenceTime(
 )
 ```
 
-设置推送静默的起始结束时间。 
+Set the start and end time of silent push. 
 
 **Parameters**: 
 
-  * **startHour** 静默推送的起始时间小时 
-  * **endHour** 静默推送的结束时间小时 
+  * **startHour** Start time for silent push (hour) 
+  * **endHour** End time for silent push (hour) 
 
 
 **Return**: [BMXErrorCode]
@@ -383,11 +383,11 @@ inline BMXErrorCode setRunBackgroundMode(
 )
 ```
 
-设置推送是否可以后台运行。默认是false。 
+Set whether to run push in background, default false. 
 
 **Parameters**: 
 
-  * **enable** 推送后台运行状态。 
+  * **enable** Running state of push background 
 
 
 **Return**: [BMXErrorCode]
@@ -408,12 +408,12 @@ inline BMXErrorCode setGeoFenceMode(
 )
 ```
 
-设置推送的地理围栏功能是否运行。 
+Set whether to run push geo-fencing feature. 
 
 **Parameters**: 
 
-  * **enable** 地理围栏功能是否运行。 
-  * **isAllow** 用户是否主动弹出用户定位请求。 
+  * **enable** Whether the geo-fencing function is running. 
+  * **isAllow** Whether the user actively pops up a user location request. 
 
 
 **Return**: [BMXErrorCode]
@@ -442,11 +442,11 @@ inline void clearNotification(
 )
 ```
 
-清除指定id的通知。 
+Clear notifications for the specified id. 
 
 **Parameters**: 
 
-  * **notificationId** 通知id 
+  * **notificationId** Notification id 
 
 
 ### function clearAllNotifications
@@ -464,11 +464,11 @@ inline void sendMessage(
 )
 ```
 
-发送推送上行消息，消息状态变化会通过listener通知 
+Send a push uplink message and notify the listener of a change in message status 
 
 **Parameters**: 
 
-  * **content** 发送的上行推送消息内容 
+  * **content** Sent uplink push content 
 
 
 ### function loadLocalPushMessages
@@ -482,14 +482,14 @@ inline BMXErrorCode loadLocalPushMessages(
 )
 ```
 
-加载数据库本地存储的推送消息。如果不指定则从最新消息开始 
+Load push message stored locally in database. Start with latest message if not specified 
 
 **Parameters**: 
 
-  * **refMsgId** 加载推送消息的起始id 
-  * **size** 最大加载消息条数 
-  * **result** 数据库返回的加载本地推送消息列表 
-  * **arg3** 加载推送消息的方向，默认是加载更早的消息 
+  * **refMsgId** Start id for loading pushes 
+  * **size** Maximum number of loaded messages 
+  * **result** List of loaded local pushes returned by database 
+  * **arg3** Direction of loading pushes, default to load earlier messages 
 
 
 ### function loadLocalPushMessages
@@ -511,11 +511,11 @@ inline void addPushListener(
 )
 ```
 
-添加推送监听者 
+Add push listener 
 
 **Parameters**: 
 
-  * **listener** 推送监听者 
+  * **listener** Push listener 
 
 
 ### function removePushListener
@@ -526,11 +526,11 @@ inline void removePushListener(
 )
 ```
 
-移除推送监听者 
+Remove push listener 
 
 **Parameters**: 
 
-  * **listener** 推送监听者 
+  * **listener** Push listener 
 
 
 ## Protected Functions Documentation

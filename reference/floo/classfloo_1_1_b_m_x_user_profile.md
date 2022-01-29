@@ -1,6 +1,6 @@
 ---
 title: floo::BMXUserProfile
-summary: 用户Profile 
+summary: User Profile 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 用户Profile
 
 
 
-用户Profile 
+User Profile 
 
 
 `#include <bmx_user_profile.h>`
@@ -19,30 +19,30 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[AddFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode)** { Open, NeedApproval, AnswerQuestion, RejectAll}<br>对方申请加好友时的验证方式  |
-| enum class| **[UserCategory](classfloo_1_1_b_m_x_user_profile.md#enum-usercategory)** { Normal, Advanced}<br>用户类型  |
+| enum class| **[AddFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode)** { Open, NeedApproval, AnswerQuestion, RejectAll}<br>How to validate when adding friend  |
+| enum class| **[UserCategory](classfloo_1_1_b_m_x_user_profile.md#enum-usercategory)** { Normal, Advanced}<br>User type  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BMXUserProfile](classfloo_1_1_b_m_x_user_profile.md#function-~bmxuserprofile)**()<br>析构函数  |
-| virtual int64_t | **[userId](classfloo_1_1_b_m_x_user_profile.md#function-userid)**() =0<br>用户ID（唯一）  |
-| virtual [UserCategory](classfloo_1_1_b_m_x_user_profile.md#enum-usercategory) | **[category](classfloo_1_1_b_m_x_user_profile.md#function-category)**() =0<br>用户策略  |
-| virtual const std::string & | **[username](classfloo_1_1_b_m_x_user_profile.md#function-username)**() =0<br>用户名（唯一）  |
-| virtual const std::string & | **[nickname](classfloo_1_1_b_m_x_user_profile.md#function-nickname)**() =0<br>用户昵称  |
-| virtual std::string | **[avatarRatelUrl](classfloo_1_1_b_m_x_user_profile.md#function-avatarratelurl)**() =0<br>用户ratel服务器头像url  |
-| virtual std::string | **[avatarUrl](classfloo_1_1_b_m_x_user_profile.md#function-avatarurl)**() =0<br>用户头像url  |
-| virtual std::string | **[avatarPath](classfloo_1_1_b_m_x_user_profile.md#function-avatarpath)**() =0<br>用户头像本地存储路径  |
-| virtual std::string | **[avatarThumbnailPath](classfloo_1_1_b_m_x_user_profile.md#function-avatarthumbnailpath)**() =0<br>用户头像缩略图本地存储路径  |
-| virtual const std::string & | **[mobilePhone](classfloo_1_1_b_m_x_user_profile.md#function-mobilephone)**() =0<br>用户手机  |
-| virtual const std::string & | **[email](classfloo_1_1_b_m_x_user_profile.md#function-email)**() =0<br>用户邮箱  |
-| virtual const JSON & | **[publicInfo](classfloo_1_1_b_m_x_user_profile.md#function-publicinfo)**() =0<br>用户公开扩展信息，好友可见  |
-| virtual const JSON & | **[privateInfo](classfloo_1_1_b_m_x_user_profile.md#function-privateinfo)**() =0<br>用户私有扩展信息，好友不可见  |
-| virtual [AddFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode) | **[addFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#function-addfriendauthmode)**() =0<br>加好友校验方式  |
-| virtual const [AuthQuestion] & | **[authQuestion](classfloo_1_1_b_m_x_user_profile.md#function-authquestion)**() =0<br>添加好友时的验证问题  |
-| virtual const [MessageSetting] & | **[messageSetting](classfloo_1_1_b_m_x_user_profile.md#function-messagesetting)**() =0<br>用户消息设定  |
-| virtual bool | **[isAutoAcceptGroupInvite](classfloo_1_1_b_m_x_user_profile.md#function-isautoacceptgroupinvite)**() =0<br>收到群组邀请进群时是否自动同意进群  |
+| virtual | **[~BMXUserProfile](classfloo_1_1_b_m_x_user_profile.md#function-~bmxuserprofile)**()<br>Destructor  |
+| virtual int64_t | **[userId](classfloo_1_1_b_m_x_user_profile.md#function-userid)**() =0<br>User ID (unique)  |
+| virtual [UserCategory](classfloo_1_1_b_m_x_user_profile.md#enum-usercategory) | **[category](classfloo_1_1_b_m_x_user_profile.md#function-category)**() =0<br>User policy  |
+| virtual const std::string & | **[username](classfloo_1_1_b_m_x_user_profile.md#function-username)**() =0<br>Username (unique)  |
+| virtual const std::string & | **[nickname](classfloo_1_1_b_m_x_user_profile.md#function-nickname)**() =0<br>User nickname  |
+| virtual std::string | **[avatarRatelUrl](classfloo_1_1_b_m_x_user_profile.md#function-avatarratelurl)**() =0<br>User ratel server avatar url  |
+| virtual std::string | **[avatarUrl](classfloo_1_1_b_m_x_user_profile.md#function-avatarurl)**() =0<br>User avatar url  |
+| virtual std::string | **[avatarPath](classfloo_1_1_b_m_x_user_profile.md#function-avatarpath)**() =0<br>Local storage path of user avatar  |
+| virtual std::string | **[avatarThumbnailPath](classfloo_1_1_b_m_x_user_profile.md#function-avatarthumbnailpath)**() =0<br>Local storage path of user avatar thumbnail  |
+| virtual const std::string & | **[mobilePhone](classfloo_1_1_b_m_x_user_profile.md#function-mobilephone)**() =0<br>User mobile phone  |
+| virtual const std::string & | **[email](classfloo_1_1_b_m_x_user_profile.md#function-email)**() =0<br>User email  |
+| virtual const JSON & | **[publicInfo](classfloo_1_1_b_m_x_user_profile.md#function-publicinfo)**() =0<br>User public extension information, visible to friends  |
+| virtual const JSON & | **[privateInfo](classfloo_1_1_b_m_x_user_profile.md#function-privateinfo)**() =0<br>User private extension information, not visible to friends  |
+| virtual [AddFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode) | **[addFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#function-addfriendauthmode)**() =0<br>How to validate when adding friend  |
+| virtual const [AuthQuestion] & | **[authQuestion](classfloo_1_1_b_m_x_user_profile.md#function-authquestion)**() =0<br>Authentication questions when adding friend  |
+| virtual const [MessageSetting] & | **[messageSetting](classfloo_1_1_b_m_x_user_profile.md#function-messagesetting)**() =0<br>User message settings  |
+| virtual bool | **[isAutoAcceptGroupInvite](classfloo_1_1_b_m_x_user_profile.md#function-isautoacceptgroupinvite)**() =0<br>Whether to automatically agree to join group when a group invitation is received  |
 
 ## Protected Functions
 
@@ -56,25 +56,25 @@ Inherits from BMXBaseObject
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Open | | 无需验证，任何人可以加为好友   |
-| NeedApproval | | 需要同意方可加为好友   |
-| AnswerQuestion | | 需要回答问题正确方可加为好友   |
-| RejectAll | | 拒绝所有加好友申请   |
+| Open | | No authentication required, anyone can be added as a friend   |
+| NeedApproval | | Consent is required to be added as a friend   |
+| AnswerQuestion | | Need to answer authentication question correctly to be added as a friend   |
+| RejectAll | | Reject all adding friend requests   |
 
 
 
-对方申请加好友时的验证方式 
+How to validate when adding friend 
 
 ### enum UserCategory
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Normal | | 普通用户   |
-| Advanced | | 高级用户   |
+| Normal | | Normal user   |
+| Advanced | | Power user   |
 
 
 
-用户类型 
+User type 
 
 ## Public Functions Documentation
 
@@ -84,7 +84,7 @@ Inherits from BMXBaseObject
 inline virtual ~BMXUserProfile()
 ```
 
-析构函数 
+Destructor 
 
 ### function userId
 
@@ -92,7 +92,7 @@ inline virtual ~BMXUserProfile()
 virtual int64_t userId() =0
 ```
 
-用户ID（唯一） 
+User ID (unique) 
 
 **Return**: int64_t 
 
@@ -102,7 +102,7 @@ virtual int64_t userId() =0
 virtual UserCategory category() =0
 ```
 
-用户策略 
+User policy 
 
 **Return**: UserCategory 
 
@@ -112,7 +112,7 @@ virtual UserCategory category() =0
 virtual const std::string & username() =0
 ```
 
-用户名（唯一） 
+Username (unique) 
 
 **Return**: std::string 
 
@@ -122,7 +122,7 @@ virtual const std::string & username() =0
 virtual const std::string & nickname() =0
 ```
 
-用户昵称 
+User nickname 
 
 **Return**: std::string 
 
@@ -132,7 +132,7 @@ virtual const std::string & nickname() =0
 virtual std::string avatarRatelUrl() =0
 ```
 
-用户ratel服务器头像url 
+User ratel server avatar url 
 
 **Return**: std::string 
 
@@ -142,7 +142,7 @@ virtual std::string avatarRatelUrl() =0
 virtual std::string avatarUrl() =0
 ```
 
-用户头像url 
+User avatar url 
 
 **Return**: std::string 
 
@@ -152,7 +152,7 @@ virtual std::string avatarUrl() =0
 virtual std::string avatarPath() =0
 ```
 
-用户头像本地存储路径 
+Local storage path of user avatar 
 
 **Return**: std::string 
 
@@ -162,7 +162,7 @@ virtual std::string avatarPath() =0
 virtual std::string avatarThumbnailPath() =0
 ```
 
-用户头像缩略图本地存储路径 
+Local storage path of user avatar thumbnail 
 
 **Return**: std::string 
 
@@ -172,7 +172,7 @@ virtual std::string avatarThumbnailPath() =0
 virtual const std::string & mobilePhone() =0
 ```
 
-用户手机 
+User mobile phone 
 
 **Return**: std::string 
 
@@ -182,7 +182,7 @@ virtual const std::string & mobilePhone() =0
 virtual const std::string & email() =0
 ```
 
-用户邮箱 
+User email 
 
 **Return**: std::string 
 
@@ -192,7 +192,7 @@ virtual const std::string & email() =0
 virtual const JSON & publicInfo() =0
 ```
 
-用户公开扩展信息，好友可见 
+User public extension information, visible to friends 
 
 **Return**: JSON(std::string) 
 
@@ -202,7 +202,7 @@ virtual const JSON & publicInfo() =0
 virtual const JSON & privateInfo() =0
 ```
 
-用户私有扩展信息，好友不可见 
+User private extension information, not visible to friends 
 
 **Return**: JSON(std::string) 
 
@@ -212,7 +212,7 @@ virtual const JSON & privateInfo() =0
 virtual AddFriendAuthMode addFriendAuthMode() =0
 ```
 
-加好友校验方式 
+How to validate when adding friend 
 
 **Return**: AddFriendAuthMode 
 
@@ -222,7 +222,7 @@ virtual AddFriendAuthMode addFriendAuthMode() =0
 virtual const AuthQuestion & authQuestion() =0
 ```
 
-添加好友时的验证问题 
+Authentication questions when adding friend 
 
 **Return**: [AuthQuestion]
 
@@ -232,7 +232,7 @@ virtual const AuthQuestion & authQuestion() =0
 virtual const MessageSetting & messageSetting() =0
 ```
 
-用户消息设定 
+User message settings 
 
 **Return**: [MessageSetting]
 
@@ -242,7 +242,7 @@ virtual const MessageSetting & messageSetting() =0
 virtual bool isAutoAcceptGroupInvite() =0
 ```
 
-收到群组邀请进群时是否自动同意进群 
+Whether to automatically agree to join group when a group invitation is received 
 
 **Return**: bool 
 

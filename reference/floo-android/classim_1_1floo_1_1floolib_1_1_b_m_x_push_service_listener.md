@@ -16,15 +16,15 @@ title: im::floo::floolib::BMXPushServiceListener
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-delete)**() |
 | void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-swigreleaseownership)**() |
 | void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-swigtakeownership)**() |
-| void | **[onPushStart](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstart)**(String bmxToken)<br>Push初始化完成通知。  |
-| void | **[onPushStop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstop)**()<br>Push功能停止通知。  |
-| void | **[onCertRetrieved](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncertretrieved)**(String cert)<br>Push初始化完成后获取推送证书。  |
-| void | **[onSetTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onsettags)**(String operationId)<br>设置用户推送成功回调。  |
-| void | **[onGetTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ongettags)**(String operationId)<br>获取用户推送成功回调。  |
-| void | **[onDeleteTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ondeletetags)**(String operationId)<br>删除用户推送成功回调。  |
-| void | **[onClearTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncleartags)**(String operationId)<br>清空用户推送成功回调。  |
-| void | **[onReceivePush](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onreceivepush)**(BMXMessageList list)<br>接收到新的Push通知。  |
-| void | **[onStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>发送Push上行消息状态变化通知。  |
+| void | **[onPushStart](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstart)**(String bmxToken)<br>Notification of push initialization complete.  |
+| void | **[onPushStop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstop)**()<br>Notification of push feature stop.  |
+| void | **[onCertRetrieved](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncertretrieved)**(String cert)<br>Get push certificate after push initialization.  |
+| void | **[onSetTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onsettags)**(String operationId)<br>Set callback of user push success.  |
+| void | **[onGetTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ongettags)**(String operationId)<br>Get callback of user push success.  |
+| void | **[onDeleteTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ondeletetags)**(String operationId)<br>Delete callback of user push success.  |
+| void | **[onClearTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncleartags)**(String operationId)<br>Clear callback of user push success.  |
+| void | **[onReceivePush](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onreceivepush)**(BMXMessageList list)<br>New push notification received.  |
+| void | **[onStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>Send notification of push uplink message status change.  |
 | | **[BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-bmxpushservicelistener)**() |
 | void | **[registerPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-registerpushservice)**([BMXPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md) service) |
 
@@ -74,11 +74,11 @@ inline void onPushStart(
 )
 ```
 
-Push初始化完成通知。 
+Notification of push initialization complete. 
 
 **Parameters**: 
 
-  * **bmxToken** 当前push使用bmxToken 
+  * **bmxToken** bmxToken used in current push 
 
 
 ### function onPushStop
@@ -87,7 +87,7 @@ Push初始化完成通知。
 inline void onPushStop()
 ```
 
-Push功能停止通知。 
+Notification of push feature stop. 
 
 ### function onCertRetrieved
 
@@ -97,11 +97,11 @@ inline void onCertRetrieved(
 )
 ```
 
-Push初始化完成后获取推送证书。 
+Get push certificate after push initialization. 
 
 **Parameters**: 
 
-  * **cert** 从服务器获取的推送证书 
+  * **cert** Push certificate obtained from server 
 
 
 ### function onSetTags
@@ -112,11 +112,11 @@ inline void onSetTags(
 )
 ```
 
-设置用户推送成功回调。 
+Set callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onGetTags
@@ -127,11 +127,11 @@ inline void onGetTags(
 )
 ```
 
-获取用户推送成功回调。 
+Get callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onDeleteTags
@@ -142,11 +142,11 @@ inline void onDeleteTags(
 )
 ```
 
-删除用户推送成功回调。 
+Delete callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onClearTags
@@ -157,11 +157,11 @@ inline void onClearTags(
 )
 ```
 
-清空用户推送成功回调。 
+Clear callback of user push success. 
 
 **Parameters**: 
 
-  * **operationId** 操作id 
+  * **operationId** Operation id 
 
 
 ### function onReceivePush
@@ -172,11 +172,11 @@ inline void onReceivePush(
 )
 ```
 
-接收到新的Push通知。 
+New push notification received. 
 
 **Parameters**: 
 
-  * **list** Push通知列表 
+  * **list** Push notification list 
 
 
 ### function onStatusChanged
@@ -188,12 +188,12 @@ inline void onStatusChanged(
 )
 ```
 
-发送Push上行消息状态变化通知。 
+Send notification of push uplink message status change. 
 
 **Parameters**: 
 
-  * **msg** 发生状态变化的上行消息 
-  * **error** 状态错误码 
+  * **msg** Uplink message with state change 
+  * **error** State error code 
 
 
 ### function BMXPushServiceListener

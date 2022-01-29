@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroup::Invitation
-summary: 群邀请 
+summary: Group invitations 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群邀请
 
 
 
-群邀请 
+Group invitations 
 
 ## Public Functions
 

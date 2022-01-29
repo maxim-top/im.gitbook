@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroupServiceListener
-summary: 群组变化监听者 
+summary: Group change listener 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群组变化监听者
 
 
 
-群组变化监听者 
+Group change listener 
 
 ## Public Functions
 
@@ -17,32 +17,32 @@ summary: 群组变化监听者
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-delete)**() |
 | void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigreleaseownership)**() |
 | void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigtakeownership)**() |
-| void | **[onGroupCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>多设备同步创建群组  |
-| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**(BMXGroupList list)<br>群列表更新了  |
-| void | **[onGroupJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>加入了某群  |
-| void | **[onGroupLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String reason)<br>退出了某群  |
-| void | **[onInvitated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitated)**(long groupId, long inviter, String message)<br>收到入群邀请  |
-| void | **[onInvitationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId)<br>入群邀请被接受  |
-| void | **[onInvitationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId, String reason)<br>入群申请被拒绝  |
-| void | **[onApplied](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplied)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId, String message)<br>收到入群申请  |
-| void | **[onApplicationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver)<br>入群申请被接受  |
-| void | **[onApplicationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver, String reason)<br>入群申请被拒绝  |
-| void | **[onMembersBanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration)<br>群成员被禁言  |
-| void | **[onMembersUnbanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>群成员被解除禁言  |
-| void | **[onMemberJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, long inviter)<br>加入新成员  |
-| void | **[onMemberLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String reason)<br>群成员退出  |
-| void | **[onAdminsAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>添加了新管理员  |
-| void | **[onAdminsRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, String reason)<br>移除了管理员  |
-| void | **[onOwnerAssigned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onownerassigned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>成为群主  |
-| void | **[onGroupInfoUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.UpdateInfoType type)<br>群组信息变更  |
-| void | **[onMemberChangeNickName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String nickName)<br>群成员更改群内昵称  |
-| void | **[onAnnouncementUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.Announcement announcement)<br>收到群公告  |
-| void | **[onSharedFileUploaded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>收到共享文件  |
-| void | **[onSharedFileDeleted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>删除了共享文件  |
-| void | **[onSharedFileUpdated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>共享文件更新文件名  |
-| void | **[onBlockListAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>添加黑名单  |
-| void | **[onBlockListRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>删除黑名单  |
-| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**()<br>客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息  |
+| void | **[onGroupCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Create a group cross-device synchronously  |
+| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**(BMXGroupList list)<br>Group list updated  |
+| void | **[onGroupJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Join a group  |
+| void | **[onGroupLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String reason)<br>Quit a group  |
+| void | **[onInvitated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitated)**(long groupId, long inviter, String message)<br>Group invitation received  |
+| void | **[onInvitationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId)<br>Group invitation accepted  |
+| void | **[onInvitationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId, String reason)<br>Join group rejected  |
+| void | **[onApplied](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplied)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId, String message)<br>Group membership application received  |
+| void | **[onApplicationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver)<br>Join group accepted  |
+| void | **[onApplicationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver, String reason)<br>Join group rejected  |
+| void | **[onMembersBanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration)<br>Member banned  |
+| void | **[onMembersUnbanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>Member unbanned  |
+| void | **[onMemberJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, long inviter)<br>New member added  |
+| void | **[onMemberLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String reason)<br>Member quit  |
+| void | **[onAdminsAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>New Admin added  |
+| void | **[onAdminsRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, String reason)<br>Admin removed  |
+| void | **[onOwnerAssigned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onownerassigned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Become group Owner  |
+| void | **[onGroupInfoUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.UpdateInfoType type)<br>Group information changes  |
+| void | **[onMemberChangeNickName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String nickName)<br>Member nickname changed  |
+| void | **[onAnnouncementUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.Announcement announcement)<br>Group announcement received  |
+| void | **[onSharedFileUploaded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>Share file received  |
+| void | **[onSharedFileDeleted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>Shared file deleted  |
+| void | **[onSharedFileUpdated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>Name of shared file updated  |
+| void | **[onBlockListAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>Add to blacklist  |
+| void | **[onBlockListRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>Delete blacklist  |
+| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**()<br>Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information  |
 | | **[BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**() |
 | void | **[registerGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-registergroupservice)**([BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) service) |
 
@@ -92,11 +92,11 @@ inline void onGroupCreate(
 )
 ```
 
-多设备同步创建群组 
+Create a group cross-device synchronously 
 
 **Parameters**: 
 
-  * **group** 新创建的群组 
+  * **group** Newly created group 
 
 
 ### function onGroupListUpdate
@@ -107,11 +107,11 @@ inline void onGroupListUpdate(
 )
 ```
 
-群列表更新了 
+Group list updated 
 
 **Parameters**: 
 
-  * **list** 更新的群组列表 
+  * **list** Updated group list 
 
 
 ### function onGroupJoined
@@ -122,11 +122,11 @@ inline void onGroupJoined(
 )
 ```
 
-加入了某群 
+Join a group 
 
 **Parameters**: 
 
-  * **group** 加入的群组 
+  * **group** Group to join 
 
 
 ### function onGroupLeft
@@ -138,12 +138,12 @@ inline void onGroupLeft(
 )
 ```
 
-退出了某群 
+Quit a group 
 
 **Parameters**: 
 
-  * **group** 退出的群组 
-  * **reason** 退出原因 
+  * **group** Group to quit 
+  * **reason** Quit reason 
 
 
 ### function onInvitated
@@ -156,13 +156,13 @@ inline void onInvitated(
 )
 ```
 
-收到入群邀请 
+Group invitation received 
 
 **Parameters**: 
 
-  * **groupId** 邀请进入的群组id 
-  * **inviter** 邀请者id 
-  * **message** 邀请原因 
+  * **groupId** Group id invited to 
+  * **inviter** Inviter id 
+  * **message** Invitation reason 
 
 
 ### function onInvitationAccepted
@@ -174,12 +174,12 @@ inline void onInvitationAccepted(
 )
 ```
 
-入群邀请被接受 
+Group invitation accepted 
 
 **Parameters**: 
 
-  * **group** 邀请被同意的群组 
-  * **inviteeId** 被邀请者id 
+  * **group** A group in which invitation approved 
+  * **inviteeId** Invitee id 
 
 
 ### function onInvitationDeclined
@@ -192,13 +192,13 @@ inline void onInvitationDeclined(
 )
 ```
 
-入群申请被拒绝 
+Join group rejected 
 
 **Parameters**: 
 
-  * **group** 邀请被拒绝的群组 
-  * **inviteeId** 被邀请者id 
-  * **reason** 拒绝原因 
+  * **group** A group in which invitation rejected 
+  * **inviteeId** Invitee id 
+  * **reason** Rejection reason 
 
 
 ### function onApplied
@@ -211,13 +211,13 @@ inline void onApplied(
 )
 ```
 
-收到入群申请 
+Group membership application received 
 
 **Parameters**: 
 
-  * **group** 收到入群申请的群组 
-  * **applicantId** 申请者id 
-  * **message** 申请原因 
+  * **group** A group in which received membership application 
+  * **applicantId** Applicant id 
+  * **message** Application reason 
 
 
 ### function onApplicationAccepted
@@ -229,12 +229,12 @@ inline void onApplicationAccepted(
 )
 ```
 
-入群申请被接受 
+Join group accepted 
 
 **Parameters**: 
 
-  * **group** 入群申请被接受的群组 
-  * **approver** 申请的批准者 
+  * **group** Group where membership application was accepted 
+  * **approver** Approver of the application 
 
 
 ### function onApplicationDeclined
@@ -247,13 +247,13 @@ inline void onApplicationDeclined(
 )
 ```
 
-入群申请被拒绝 
+Join group rejected 
 
 **Parameters**: 
 
-  * **group** 入群申请被拒绝的群组 
-  * **approver** 申请的批准者 
-  * **reason** 拒绝的原因 
+  * **group** Group where membership application was rejected 
+  * **approver** Approver of the application 
+  * **reason** Reason for rejection 
 
 
 ### function onMembersBanned
@@ -266,13 +266,13 @@ inline void onMembersBanned(
 )
 ```
 
-群成员被禁言 
+Member banned 
 
 **Parameters**: 
 
-  * **group** 群成员被禁言的群组 
-  * **members** 被禁言的群成员id列表 
-  * **duration** 禁言时长 
+  * **group** Group with member banned 
+  * **members** List of banned member ids 
+  * **duration** Duration of banned 
 
 
 ### function onMembersUnbanned
@@ -284,12 +284,12 @@ inline void onMembersUnbanned(
 )
 ```
 
-群成员被解除禁言 
+Member unbanned 
 
 **Parameters**: 
 
-  * **group** 群成员被解除禁言的群组 
-  * **members** 被解除禁言的群成员id列表 
+  * **group** Group with member unbanned 
+  * **members** List of unbanned group member ids 
 
 
 ### function onMemberJoined
@@ -302,13 +302,13 @@ inline void onMemberJoined(
 )
 ```
 
-加入新成员 
+New member added 
 
 **Parameters**: 
 
-  * **group** 有成员加入的群组 
-  * **memberId** 加入成员的id 
-  * **inviter** 邀请者id 
+  * **group** Group with new member added 
+  * **memberId** ID of added member 
+  * **inviter** Inviter id 
 
 
 ### function onMemberLeft
@@ -321,13 +321,13 @@ inline void onMemberLeft(
 )
 ```
 
-群成员退出 
+Member quit 
 
 **Parameters**: 
 
-  * **group** 有成员退出的群组 
-  * **memberId** 退出的群成员id 
-  * **reason** 退出的原因 
+  * **group** Group with member quitting 
+  * **memberId** ID of quitted member 
+  * **reason** Reason for quitting 
 
 
 ### function onAdminsAdded
@@ -339,12 +339,12 @@ inline void onAdminsAdded(
 )
 ```
 
-添加了新管理员 
+New Admin added 
 
 **Parameters**: 
 
-  * **group** 发生添加新管理员的群组 
-  * **members** 被提升为管理员的成员列表 
+  * **group** Group where addition of new Admin occurred 
+  * **members** List of members promoted to Admins 
 
 
 ### function onAdminsRemoved
@@ -357,13 +357,13 @@ inline void onAdminsRemoved(
 )
 ```
 
-移除了管理员 
+Admin removed 
 
 **Parameters**: 
 
-  * **group** 发生移除管理员的群组 
-  * **members** 被移除了管理员的成员列表 
-  * **reason** 被移除的原因 
+  * **group** Group where Admin removal occurred 
+  * **members** List of members degraded from Admins 
+  * **reason** Reason for removal 
 
 
 ### function onOwnerAssigned
@@ -374,11 +374,11 @@ inline void onOwnerAssigned(
 )
 ```
 
-成为群主 
+Become group Owner 
 
 **Parameters**: 
 
-  * **group** 被转让为群主的群组 
+  * **group** A group in which group Owner transferred 
 
 
 ### function onGroupInfoUpdate
@@ -390,12 +390,12 @@ inline void onGroupInfoUpdate(
 )
 ```
 
-群组信息变更 
+Group information changes 
 
 **Parameters**: 
 
-  * **group** 群信息发生变更的群组 
-  * **type** 发生变更的群信息类型 
+  * **group** Group with group information changed 
+  * **type** Type of group information that changed 
 
 
 ### function onMemberChangeNickName
@@ -408,13 +408,13 @@ inline void onMemberChangeNickName(
 )
 ```
 
-群成员更改群内昵称 
+Member nickname changed 
 
 **Parameters**: 
 
-  * **group** 发生群成员变更群昵称的群组 
-  * **memberId** 变更群昵称的群成员id 
-  * **nickName** 变更后的群昵称 
+  * **group** A group in which member nickname changed 
+  * **memberId** Group member id that changed group nickname 
+  * **nickName** Changed group nickname 
 
 
 ### function onAnnouncementUpdate
@@ -426,12 +426,12 @@ inline void onAnnouncementUpdate(
 )
 ```
 
-收到群公告 
+Group announcement received 
 
 **Parameters**: 
 
-  * **group** 发生群公告更新的群组 
-  * **announcement** 变更后的最新的群更高 
+  * **group** Group where announcement update occurred 
+  * **announcement** Latest group announcement after changed 
 
 
 ### function onSharedFileUploaded
@@ -443,12 +443,12 @@ inline void onSharedFileUploaded(
 )
 ```
 
-收到共享文件 
+Share file received 
 
 **Parameters**: 
 
-  * **group** 发生群共享文件上传的群组 
-  * **sharedFile** 新上传的群共享文件 
+  * **group** A group in which shared file uploading occurred 
+  * **sharedFile** Newly uploaded group shared file 
 
 
 ### function onSharedFileDeleted
@@ -460,12 +460,12 @@ inline void onSharedFileDeleted(
 )
 ```
 
-删除了共享文件 
+Shared file deleted 
 
 **Parameters**: 
 
-  * **group** 发生群共享文件删除的群组 
-  * **sharedFile** 被删除的群共享文件 
+  * **group** A group in which shared file deleted 
+  * **sharedFile** Deleted group shared file 
 
 
 ### function onSharedFileUpdated
@@ -477,12 +477,12 @@ inline void onSharedFileUpdated(
 )
 ```
 
-共享文件更新文件名 
+Name of shared file updated 
 
 **Parameters**: 
 
-  * **group** 发生群共享文件更新的群组 
-  * **sharedFile** 更新的群共享文件 
+  * **group** A group in which share file updated 
+  * **sharedFile** Updated group shared file 
 
 
 ### function onBlockListAdded
@@ -494,12 +494,12 @@ inline void onBlockListAdded(
 )
 ```
 
-添加黑名单 
+Add to blacklist 
 
 **Parameters**: 
 
-  * **group** 添加黑名单的群组 
-  * **members** 添加的黑名单成员列表 
+  * **group** Group with blacklist added 
+  * **members** List of blacklisted members 
 
 
 ### function onBlockListRemoved
@@ -511,12 +511,12 @@ inline void onBlockListRemoved(
 )
 ```
 
-删除黑名单 
+Delete blacklist 
 
 **Parameters**: 
 
-  * **group** 删除黑名单的群组 
-  * **members** 删除的黑名单成员列表 
+  * **group** Group with blacklist removed 
+  * **members** List of unblacklisted members 
 
 
 ### function onGroupListUpdate
@@ -525,7 +525,7 @@ inline void onBlockListRemoved(
 inline void onGroupListUpdate()
 ```
 
-客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息 
+Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information 
 
 ### function BMXGroupServiceListener
 

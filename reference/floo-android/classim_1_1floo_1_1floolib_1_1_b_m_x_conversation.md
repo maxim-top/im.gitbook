@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXConversation
-summary: 会话 
+summary: Session 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 会话
 
 
 
-会话 
+Session 
 
 Inherits from BMXBaseObject
 
@@ -17,34 +17,34 @@ Inherits from BMXBaseObject
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-delete)**() |
-| long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-conversationid)**()<br>会话Id  |
-| BMXConversation.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-type)**()<br>会话类型  |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[lastMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-lastmsg)**()<br>最新消息  |
-| int | **[unreadNumber](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-unreadnumber)**()<br>未读消息数  |
-| int | **[messageCount](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-messagecount)**()<br>会话中所有消息的数量  |
-| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-ismutenotification)**()<br>是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。  |
-| String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-extension)**()<br>扩展信息  |
-| [BMXErrorCode] | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setextension)**(String ext)<br>设置扩展信息  |
-| String | **[editMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-editmessage)**()<br>编辑消息  |
-| [BMXErrorCode] | **[setEditMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-seteditmessage)**(String editMessage)<br>设置编辑消息  |
-| [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageList result, BMXConversation.Direction arg4)<br>搜索消息，如果不指定则从最新消息开始  |
+| long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-conversationid)**()<br>Session Id  |
+| BMXConversation.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-type)**()<br>Session type  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[lastMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-lastmsg)**()<br>Latest message  |
+| int | **[unreadNumber](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-unreadnumber)**()<br>Unread message-number  |
+| int | **[messageCount](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-messagecount)**()<br>Total message-number in session  |
+| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-ismutenotification)**()<br>Whether the user is alerted to the message, without which the session total unread-number does not count this session.  |
+| String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-extension)**()<br>Extension information  |
+| [BMXErrorCode] | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setextension)**(String ext)<br>Set the Extension information  |
+| String | **[editMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-editmessage)**()<br>Edit message  |
+| [BMXErrorCode] | **[setEditMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-seteditmessage)**(String editMessage)<br>Set the Edit Message  |
+| [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageList result, BMXConversation.Direction arg4)<br>Search for messages, starting with latest if not specified  |
 | [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageList result) |
-| [BMXErrorCode] | **[searchMessagesByType](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessagesbytype)**(BMXMessage.ContentType type, long refTime, long size, BMXMessageList result, BMXConversation.Direction arg4)<br>按照类型搜索消息，如果不指定则从最新消息开始  |
+| [BMXErrorCode] | **[searchMessagesByType](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessagesbytype)**(BMXMessage.ContentType type, long refTime, long size, BMXMessageList result, BMXConversation.Direction arg4)<br>Search for messages by type, starting with latest if not specified  |
 | [BMXErrorCode] | **[searchMessagesByType](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessagesbytype)**(BMXMessage.ContentType type, long refTime, long size, BMXMessageList result) |
-| void | **[setMessagePlayedStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setmessageplayedstatus)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final boolean status, final BMXCallBack callBack)<br>设置消息播放状态（只对语音/视频消息有效）  |
-| void | **[setMessageReadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setmessagereadstatus)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final boolean status, final BMXCallBack callBack)<br>设置消息未读状态，更新未读消息数  |
-| void | **[setAllMessagesRead](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setallmessagesread)**(final BMXCallBack callBack)<br>把所有消息设置为已读，更新未读消息数  |
-| void | **[updateMessageExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-updatemessageextension)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final BMXCallBack callBack)<br>更新一条数据库存储消息的扩展字段信息  |
-| void | **[insertMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-insertmessage)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final BMXCallBack callBack)<br>插入一条消息  |
-| void | **[loadMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-loadmessage)**(final long msgId, final BMXDataCallBack< [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) > callBack)<br>读取一条消息  |
-| void | **[removeAllMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-removeallmessages)**(final BMXCallBack callBack)<br>删除会话中的所有消息  |
-| void | **[loadMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-loadmessages)**(final long refMsgId, final long size, final BMXConversation.Direction arg3, final BMXDataCallBack< BMXMessageList > callBack)<br>加载消息，如果不指定则从最新消息开始  |
+| void | **[setMessagePlayedStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setmessageplayedstatus)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final boolean status, final BMXCallBack callBack)<br>Set message playback state (valid only for voice/video messages)  |
+| void | **[setMessageReadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setmessagereadstatus)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final boolean status, final BMXCallBack callBack)<br>Set message unread state, update unread message-number  |
+| void | **[setAllMessagesRead](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setallmessagesread)**(final BMXCallBack callBack)<br>Set all messages to read, update number of unread messages  |
+| void | **[updateMessageExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-updatemessageextension)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final BMXCallBack callBack)<br>Update the extend field info of a database-stored message  |
+| void | **[insertMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-insertmessage)**(final [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, final BMXCallBack callBack)<br>Insert a message  |
+| void | **[loadMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-loadmessage)**(final long msgId, final BMXDataCallBack< [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) > callBack)<br>Read a message  |
+| void | **[removeAllMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-removeallmessages)**(final BMXCallBack callBack)<br>Delete all messages in sesstion  |
+| void | **[loadMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-loadmessages)**(final long refMsgId, final long size, final BMXConversation.Direction arg3, final BMXDataCallBack< BMXMessageList > callBack)<br>Load message, starting with latest if not specified  |
 | void | **[loadMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-loadmessages)**(final long refMsgId, final long size, final BMXDataCallBack< BMXMessageList > callBack) |
-| void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final String keywords, final long refTime, final long size, final BMXConversation.Direction arg4, final BMXDataCallBack< BMXMessageList > callBack)<br>搜索消息，如果不指定则从最新消息开始  |
+| void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final String keywords, final long refTime, final long size, final BMXConversation.Direction arg4, final BMXDataCallBack< BMXMessageList > callBack)<br>Search for messages, starting with latest if not specified  |
 | void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final String keywords, final long refTime, final long size, final BMXDataCallBack< BMXMessageList > callBack) |
-| void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final BMXMessage.ContentType type, final long refTime, final long size, final BMXConversation.Direction arg4, final BMXDataCallBack< BMXMessageList > callBack)<br>按照类型搜索消息，如果不指定则从最新消息开始  |
+| void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final BMXMessage.ContentType type, final long refTime, final long size, final BMXConversation.Direction arg4, final BMXDataCallBack< BMXMessageList > callBack)<br>Search for messages by type, starting with latest if not specified  |
 | void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final BMXMessage.ContentType type, final long refTime, final long size, final BMXDataCallBack< BMXMessageList > callBack) |
-| void | **[refreshConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-refreshconversation)**(final BMXCallBack callBack)<br>读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。  |
+| void | **[refreshConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-refreshconversation)**(final BMXCallBack callBack)<br>Read the total message-number from current session of the database, forces to update the total message-number and unread message-number.  |
 
 ## Protected Functions
 
@@ -69,7 +69,7 @@ inline synchronized void delete()
 inline long conversationId()
 ```
 
-会话Id 
+Session Id 
 
 **Return**: int64_t 
 
@@ -79,7 +79,7 @@ inline long conversationId()
 inline BMXConversation.Type type()
 ```
 
-会话类型 
+Session type 
 
 **Return**: [Type]
 
@@ -89,7 +89,7 @@ inline BMXConversation.Type type()
 inline BMXMessage lastMsg()
 ```
 
-最新消息 
+Latest message 
 
 **Return**: BMXMessagePtr 
 
@@ -99,7 +99,7 @@ inline BMXMessage lastMsg()
 inline int unreadNumber()
 ```
 
-未读消息数 
+Unread message-number 
 
 **Return**: int32_t 
 
@@ -109,7 +109,7 @@ inline int unreadNumber()
 inline int messageCount()
 ```
 
-会话中所有消息的数量 
+Total message-number in session 
 
 **Return**: int32_t 
 
@@ -119,7 +119,7 @@ inline int messageCount()
 inline boolean isMuteNotification()
 ```
 
-是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。 
+Whether the user is alerted to the message, without which the session total unread-number does not count this session. 
 
 **Return**: bool 
 
@@ -129,7 +129,7 @@ inline boolean isMuteNotification()
 inline String extension()
 ```
 
-扩展信息 
+Extension information 
 
 **Return**: JSON(std::string) 
 
@@ -141,11 +141,11 @@ inline BMXErrorCode setExtension(
 )
 ```
 
-设置扩展信息 
+Set the Extension information 
 
 **Parameters**: 
 
-  * **ext** 会话扩展消息 
+  * **ext** Session extension message 
 
 
 **Return**: [BMXErrorCode]
@@ -156,7 +156,7 @@ inline BMXErrorCode setExtension(
 inline String editMessage()
 ```
 
-编辑消息 
+Edit message 
 
 **Return**: std::string 
 
@@ -168,11 +168,11 @@ inline BMXErrorCode setEditMessage(
 )
 ```
 
-设置编辑消息 
+Set the Edit Message 
 
 **Parameters**: 
 
-  * **editMessage** 会话正在编辑的文本消息 
+  * **editMessage** Text message being edited by session 
 
 
 **Return**: [BMXErrorCode]
@@ -189,15 +189,15 @@ inline BMXErrorCode searchMessagesByKeyWords(
 )
 ```
 
-搜索消息，如果不指定则从最新消息开始 
+Search for messages, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **keywords** 搜索消息的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **result** 搜索到的消息结果列表 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **keywords** Keyword for search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **result** List of searched message results 
+  * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: [BMXErrorCode]
@@ -226,15 +226,15 @@ inline BMXErrorCode searchMessagesByType(
 )
 ```
 
-按照类型搜索消息，如果不指定则从最新消息开始 
+Search for messages by type, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **type** 搜索消息的类型 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **result** 搜索到的消息结果列表 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **type** Type of search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **result** List of searched message results 
+  * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: [BMXErrorCode]
@@ -261,13 +261,13 @@ inline void setMessagePlayedStatus(
 )
 ```
 
-设置消息播放状态（只对语音/视频消息有效） 
+Set message playback state (valid only for voice/video messages) 
 
 **Parameters**: 
 
-  * **msg** 需要设置播放状态的消息 
-  * **status** 消息是否已经播放 
-  * **callBack** 回调 
+  * **msg** Message for which playback state needs to be set 
+  * **status** Whether the message has been played 
+  * **callBack** Callback 
 
 
 ### function setMessageReadStatus
@@ -280,13 +280,13 @@ inline void setMessageReadStatus(
 )
 ```
 
-设置消息未读状态，更新未读消息数 
+Set message unread state, update unread message-number 
 
 **Parameters**: 
 
-  * **msg** 需要设置消息已读状态的消息 
-  * **status** 消息是否设置已读 
-  * **callBack** 回调 
+  * **msg** Message for which the read state needs to be set 
+  * **status** Whether the message is set to read 
+  * **callBack** Callback 
 
 
 ### function setAllMessagesRead
@@ -297,11 +297,11 @@ inline void setAllMessagesRead(
 )
 ```
 
-把所有消息设置为已读，更新未读消息数 
+Set all messages to read, update number of unread messages 
 
 **Parameters**: 
 
-  * **callBack** 回调 
+  * **callBack** Callback 
 
 
 ### function updateMessageExtension
@@ -313,12 +313,12 @@ inline void updateMessageExtension(
 )
 ```
 
-更新一条数据库存储消息的扩展字段信息 
+Update the extend field info of a database-stored message 
 
 **Parameters**: 
 
-  * **msg** 需要更改扩展信息的消息此时msg部分已经更新扩展字椴信息 
-  * **callBack** 回调 
+  * **msg** The message that needs to change the extension information when the msg section has updated its extension field 
+  * **callBack** Callback 
 
 
 ### function insertMessage
@@ -330,12 +330,12 @@ inline void insertMessage(
 )
 ```
 
-插入一条消息 
+Insert a message 
 
 **Parameters**: 
 
-  * **msg** 插入的消息 
-  * **callBack** 回调 
+  * **msg** Inserted message 
+  * **callBack** Callback 
 
 
 ### function loadMessage
@@ -347,12 +347,12 @@ inline void loadMessage(
 )
 ```
 
-读取一条消息 
+Read a message 
 
 **Parameters**: 
 
-  * **msgId** 需要读取的消息的消息id 
-  * **callBack** 回调 
+  * **msgId** Message id of the message to read 
+  * **callBack** Callback 
 
 
 ### function removeAllMessages
@@ -363,11 +363,11 @@ inline void removeAllMessages(
 )
 ```
 
-删除会话中的所有消息 
+Delete all messages in sesstion 
 
 **Parameters**: 
 
-  * **callBack** 回调 
+  * **callBack** Callback 
 
 
 ### function loadMessages
@@ -381,14 +381,14 @@ inline void loadMessages(
 )
 ```
 
-加载消息，如果不指定则从最新消息开始 
+Load message, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **refMsgId** 加载消息的起始id 
-  * **size** 最大加载消息条数 
-  * **arg3** 加载消息的方向，默认是加载更早的消息 
-  * **callBack** 回调 
+  * **refMsgId** Start id of the message to load 
+  * **size** Maximum number of loaded messages 
+  * **arg3** Message loading direction, default to load earlier messages 
+  * **callBack** Callback 
 
 
 ### function loadMessages
@@ -414,15 +414,15 @@ inline void searchMessages(
 )
 ```
 
-搜索消息，如果不指定则从最新消息开始 
+Search for messages, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **keywords** 搜索消息的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
-  * **callBack** 回调 
+  * **keywords** Keyword for search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
+  * **callBack** Callback 
 
 
 ### function searchMessages
@@ -449,15 +449,15 @@ inline void searchMessages(
 )
 ```
 
-按照类型搜索消息，如果不指定则从最新消息开始 
+Search for messages by type, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **type** 搜索消息的类型 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
-  * **callBack** 回调 
+  * **type** Type of search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
+  * **callBack** Callback 
 
 
 ### function searchMessages
@@ -480,11 +480,11 @@ inline void refreshConversation(
 )
 ```
 
-读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。 
+Read the total message-number from current session of the database, forces to update the total message-number and unread message-number. 
 
 **Parameters**: 
 
-  * **callBack** 回调 
+  * **callBack** Callback 
 
 
 ## Protected Functions Documentation

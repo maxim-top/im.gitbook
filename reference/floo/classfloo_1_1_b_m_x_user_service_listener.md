@@ -1,6 +1,6 @@
 ---
 title: floo::BMXUserServiceListener
-summary: 用户状态监听者 
+summary: User state listener 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 用户状态监听者
 
 
 
-用户状态监听者 
+User state listener 
 
 
 `#include <bmx_user_service_listener.h>`
@@ -17,15 +17,15 @@ summary: 用户状态监听者
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md#function-bmxuserservicelistener)**()<br>构造函数  |
-| virtual | **[~BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md#function-~bmxuserservicelistener)**()<br>析构函数  |
-| virtual void | **[onConnectStatusChanged](classfloo_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged)**(BMXConnectStatus status)<br>链接状态发生变化  |
-| virtual void | **[onUserSignIn](classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignin)**(BMXUserProfilePtr profile)<br>用户登陆  |
-| virtual void | **[onUserSignOut](classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignout)**(BMXErrorCode error, int64_t userId)<br>用户登出  |
-| virtual void | **[onInfoUpdated](classfloo_1_1_b_m_x_user_service_listener.md#function-oninfoupdated)**(BMXUserProfilePtr profile)<br>同步用户信息更新（其他设备操作发生用户信息变更）  |
-| virtual void | **[onOtherDeviceSingIn](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin)**(int deviceSN)<br>用户在其他设备上登陆  |
-| virtual void | **[onOtherDeviceSingOut](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout)**(int deviceSN)<br>用户在其他设备上登出  |
-| void | **[registerUserService](classfloo_1_1_b_m_x_user_service_listener.md#function-registeruserservice)**([BMXUserService](classfloo_1_1_b_m_x_user_service.md) * service)<br>注册BMXUserServiceListener绑定到的BMXUserService（SDK内部自动注册）  |
+| | **[BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md#function-bmxuserservicelistener)**()<br>Constructor  |
+| virtual | **[~BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md#function-~bmxuserservicelistener)**()<br>Destructor  |
+| virtual void | **[onConnectStatusChanged](classfloo_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged)**(BMXConnectStatus status)<br>Channel state changed  |
+| virtual void | **[onUserSignIn](classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignin)**(BMXUserProfilePtr profile)<br>User login  |
+| virtual void | **[onUserSignOut](classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignout)**(BMXErrorCode error, int64_t userId)<br>User logout  |
+| virtual void | **[onInfoUpdated](classfloo_1_1_b_m_x_user_service_listener.md#function-oninfoupdated)**(BMXUserProfilePtr profile)<br>Synchronize user information updates (when user information changes in other devices)  |
+| virtual void | **[onOtherDeviceSingIn](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin)**(int deviceSN)<br>User login on another device  |
+| virtual void | **[onOtherDeviceSingOut](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout)**(int deviceSN)<br>User logout on another device  |
+| void | **[registerUserService](classfloo_1_1_b_m_x_user_service_listener.md#function-registeruserservice)**([BMXUserService](classfloo_1_1_b_m_x_user_service.md) * service)<br>**to-be-translate**  |
 
 ## Protected Attributes
 
@@ -41,7 +41,7 @@ summary: 用户状态监听者
 inline BMXUserServiceListener()
 ```
 
-构造函数 
+Constructor 
 
 ### function ~BMXUserServiceListener
 
@@ -49,7 +49,7 @@ inline BMXUserServiceListener()
 inline virtual ~BMXUserServiceListener()
 ```
 
-析构函数 
+Destructor 
 
 ### function onConnectStatusChanged
 
@@ -59,11 +59,11 @@ inline virtual void onConnectStatusChanged(
 )
 ```
 
-链接状态发生变化 
+Channel state changed 
 
 **Parameters**: 
 
-  * **status** 连接状态 
+  * **status** Connection state 
 
 
 ### function onUserSignIn
@@ -74,11 +74,11 @@ inline virtual void onUserSignIn(
 )
 ```
 
-用户登陆 
+User login 
 
 **Parameters**: 
 
-  * **profile** 用户profile 
+  * **profile** User profile 
 
 
 ### function onUserSignOut
@@ -90,11 +90,11 @@ inline virtual void onUserSignOut(
 )
 ```
 
-用户登出 
+User logout 
 
 **Parameters**: 
 
-  * **error** 状态错误码 
+  * **error** State error code 
 
 
 ### function onInfoUpdated
@@ -105,11 +105,11 @@ inline virtual void onInfoUpdated(
 )
 ```
 
-同步用户信息更新（其他设备操作发生用户信息变更） 
+Synchronize user information updates (when user information changes in other devices) 
 
 **Parameters**: 
 
-  * **profile** 用户profile 
+  * **profile** User profile 
 
 
 ### function onOtherDeviceSingIn
@@ -120,11 +120,11 @@ inline virtual void onOtherDeviceSingIn(
 )
 ```
 
-用户在其他设备上登陆 
+User login on another device 
 
 **Parameters**: 
 
-  * **deviceSN** 设备序列号 
+  * **deviceSN** Device serial number 
 
 
 ### function onOtherDeviceSingOut
@@ -135,11 +135,11 @@ inline virtual void onOtherDeviceSingOut(
 )
 ```
 
-用户在其他设备上登出 
+User logout on another device 
 
 **Parameters**: 
 
-  * **deviceSN** 设备序列号 
+  * **deviceSN** Device serial number 
 
 
 ### function registerUserService
@@ -150,7 +150,7 @@ inline void registerUserService(
 )
 ```
 
-注册BMXUserServiceListener绑定到的BMXUserService（SDK内部自动注册） 
+**to-be-translate** 
 
 **Parameters**: 
 

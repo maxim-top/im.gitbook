@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXRosterServiceListener
-summary: 好友变化监听者 
+summary: Friend change listener 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 好友变化监听者
 
 
 
-好友变化监听者 
+Friend change listener 
 
 ## Public Functions
 
@@ -17,15 +17,15 @@ summary: 好友变化监听者
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-delete)**() |
 | void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigreleaseownership)**() |
 | void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigtakeownership)**() |
-| void | **[onFriendAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendadded)**(long sponsorId, long recipientId)<br>添加好友  |
-| void | **[onFriendRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendremoved)**(long sponsorId, long recipientId)<br>删除好友  |
-| void | **[onApplied](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplied)**(long sponsorId, long recipientId, String message)<br>收到加好友申请  |
-| void | **[onApplicationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationaccepted)**(long sponsorId, long recipientId)<br>加好友申请被通过了  |
-| void | **[onApplicationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationdeclined)**(long sponsorId, long recipientId, String reason)<br>加好友申请被拒绝了  |
-| void | **[onBlockListAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistadded)**(long sponsorId, long recipientId)<br>添加黑名单  |
-| void | **[onBlockListRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistremoved)**(long sponsorId, long recipientId)<br>删除黑名单  |
-| void | **[onRosterInfoUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterinfoupdate)**([BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item)<br>用户信息更新  |
-| void | **[onRosterListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterlistupdate)**()<br>客户端从服务器拉取到新联系人时触发，用于用户联系人列表更新，从SDK调用本地获取联系人即可取得全部成员信息  |
+| void | **[onFriendAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendadded)**(long sponsorId, long recipientId)<br>Add friend  |
+| void | **[onFriendRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendremoved)**(long sponsorId, long recipientId)<br>Delete friend  |
+| void | **[onApplied](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplied)**(long sponsorId, long recipientId, String message)<br>Request of adding friend received  |
+| void | **[onApplicationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationaccepted)**(long sponsorId, long recipientId)<br>Request of adding friend approved  |
+| void | **[onApplicationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationdeclined)**(long sponsorId, long recipientId, String reason)<br>Request of adding friend rejected  |
+| void | **[onBlockListAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistadded)**(long sponsorId, long recipientId)<br>Add to blacklist  |
+| void | **[onBlockListRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistremoved)**(long sponsorId, long recipientId)<br>Delete blacklist  |
+| void | **[onRosterInfoUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterinfoupdate)**([BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item)<br>Update user information  |
+| void | **[onRosterListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterlistupdate)**()<br>Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information  |
 | | **[BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-bmxrosterservicelistener)**() |
 | void | **[registerRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-registerrosterservice)**([BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) service) |
 
@@ -76,12 +76,12 @@ inline void onFriendAdded(
 )
 ```
 
-添加好友 
+Add friend 
 
 **Parameters**: 
 
-  * **sponsorId** 操作的发起者 
-  * **recipientId** 操作的接受者 
+  * **sponsorId** Operation initiator 
+  * **recipientId** Operation recipient 
 
 
 ### function onFriendRemoved
@@ -93,12 +93,12 @@ inline void onFriendRemoved(
 )
 ```
 
-删除好友 
+Delete friend 
 
 **Parameters**: 
 
-  * **sponsorId** 操作的发起者 
-  * **recipientId** 操作的接受者 
+  * **sponsorId** Operation initiator 
+  * **recipientId** Operation recipient 
 
 
 ### function onApplied
@@ -111,13 +111,13 @@ inline void onApplied(
 )
 ```
 
-收到加好友申请 
+Request of adding friend received 
 
 **Parameters**: 
 
-  * **sponsorId** 操作的发起者 
-  * **recipientId** 操作的接受者 
-  * **message** 好友申请消息 
+  * **sponsorId** Operation initiator 
+  * **recipientId** Operation recipient 
+  * **message** Friend request message 
 
 
 ### function onApplicationAccepted
@@ -129,12 +129,12 @@ inline void onApplicationAccepted(
 )
 ```
 
-加好友申请被通过了 
+Request of adding friend approved 
 
 **Parameters**: 
 
-  * **sponsorId** 操作的发起者 
-  * **recipientId** 操作的接受者 
+  * **sponsorId** Operation initiator 
+  * **recipientId** Operation recipient 
 
 
 ### function onApplicationDeclined
@@ -147,13 +147,13 @@ inline void onApplicationDeclined(
 )
 ```
 
-加好友申请被拒绝了 
+Request of adding friend rejected 
 
 **Parameters**: 
 
-  * **sponsorId** 操作的发起者 
-  * **recipientId** 操作的接受者 
-  * **reason** 申请拒绝原因 
+  * **sponsorId** Operation initiator 
+  * **recipientId** Operation recipient 
+  * **reason** Reason for application rejection 
 
 
 ### function onBlockListAdded
@@ -165,12 +165,12 @@ inline void onBlockListAdded(
 )
 ```
 
-添加黑名单 
+Add to blacklist 
 
 **Parameters**: 
 
-  * **sponsorId** 操作的发起者 
-  * **recipientId** 操作的接受者 
+  * **sponsorId** Operation initiator 
+  * **recipientId** Operation recipient 
 
 
 ### function onBlockListRemoved
@@ -182,12 +182,12 @@ inline void onBlockListRemoved(
 )
 ```
 
-删除黑名单 
+Delete blacklist 
 
 **Parameters**: 
 
-  * **sponsorId** 操作的发起者 
-  * **recipientId** 操作的接受者 
+  * **sponsorId** Operation initiator 
+  * **recipientId** Operation recipient 
 
 
 ### function onRosterInfoUpdate
@@ -198,11 +198,11 @@ inline void onRosterInfoUpdate(
 )
 ```
 
-用户信息更新 
+Update user information 
 
 **Parameters**: 
 
-  * **item** 更新的好友信息 
+  * **item** Updated friend information 
 
 
 ### function onRosterListUpdate
@@ -211,7 +211,7 @@ inline void onRosterInfoUpdate(
 inline void onRosterListUpdate()
 ```
 
-客户端从服务器拉取到新联系人时触发，用于用户联系人列表更新，从SDK调用本地获取联系人即可取得全部成员信息 
+Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information 
 
 ### function BMXRosterServiceListener
 

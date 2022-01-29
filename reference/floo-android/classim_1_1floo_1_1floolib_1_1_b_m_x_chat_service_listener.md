@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXChatServiceListener
-summary: 聊天监听者 
+summary: Chat listener 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 聊天监听者
 
 
 
-聊天监听者 
+Chat listener 
 
 ## Public Functions
 
@@ -17,26 +17,26 @@ summary: 聊天监听者
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-delete)**() |
 | void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigreleaseownership)**() |
 | void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigtakeownership)**() |
-| void | **[onStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>消息发送状态发生变化  |
-| void | **[onAttachmentUploadProgressChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentuploadprogresschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, int percent)<br>附件上传进度发送变化  |
-| void | **[onRecallStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onrecallstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>消息撤回状态发送变化  |
-| void | **[onReceive](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceive)**(BMXMessageList list)<br>收到消息  |
-| void | **[onReceiveCommandMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivecommandmessages)**(BMXMessageList list)<br>收到命令消息  |
-| void | **[onReceiveSystemMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages)**(BMXMessageList list)<br>收到系统通知消息  |
-| void | **[onReceiveReadAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks)**(BMXMessageList list)<br>收到消息已读回执  |
-| void | **[onReceiveDeliverAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks)**(BMXMessageList list)<br>收到消息已送达回执  |
-| void | **[onReceiveRecallMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages)**(BMXMessageList list)<br>收到撤回消息  |
-| void | **[onReceiveReadCancels](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadcancels)**(BMXMessageList list)<br>收到消息已读取消（多设备其他设备同步消息已读状态变为未读）  |
-| void | **[onReceiveReadAllMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadallmessages)**(BMXMessageList list)<br>收到消息全部已读（多设备同步某消息之前消息全部设置为已读）  |
-| void | **[onReceiveDeleteMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages)**(BMXMessageList list)<br>收到删除消息 （多设备同步删除消息）  |
-| void | **[onReceivePlayAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks)**(BMXMessageList list)<br>收到消息已播放回执  |
-| void | **[onAttachmentStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error, int percent)<br>附件下载状态发生变化  |
-| void | **[onAttachmentDownloadByUrlStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged)**(long msgId, [BMXErrorCode] error, int percent)<br>附件下载状态发生变化  |
-| void | **[onRetrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation)<br>拉取历史消息  |
-| void | **[onLoadAllConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>已经加载完未读会话列表  |
-| void | **[onConversationCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>本地创建新会话  |
-| void | **[onConversationDelete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(long conversationId, [BMXErrorCode] error)<br>删除会话  |
-| void | **[onTotalUnreadCountChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>更新总未读数  |
+| void | **[onStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>Messaging state changed  |
+| void | **[onAttachmentUploadProgressChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentuploadprogresschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, int percent)<br>Attachment upload state changed  |
+| void | **[onRecallStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onrecallstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>Message recall state changed  |
+| void | **[onReceive](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceive)**(BMXMessageList list)<br>Message received  |
+| void | **[onReceiveCommandMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivecommandmessages)**(BMXMessageList list)<br>Command received  |
+| void | **[onReceiveSystemMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages)**(BMXMessageList list)<br>System notification message received  |
+| void | **[onReceiveReadAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks)**(BMXMessageList list)<br>Receipt of message read received  |
+| void | **[onReceiveDeliverAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks)**(BMXMessageList list)<br>Receipt of message delivered received  |
+| void | **[onReceiveRecallMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages)**(BMXMessageList list)<br>Canceled message received  |
+| void | **[onReceiveReadCancels](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadcancels)**(BMXMessageList list)<br>Message re-unread received (cross-device synchronization for changing message status into unread)  |
+| void | **[onReceiveReadAllMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadallmessages)**(BMXMessageList list)<br>All received messages are read (all messages are set to read before cross-device synchronization)  |
+| void | **[onReceiveDeleteMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages)**(BMXMessageList list)<br>Deletion received (delete messages cross devices synchronously)  |
+| void | **[onReceivePlayAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks)**(BMXMessageList list)<br>Receipt of message played received  |
+| void | **[onAttachmentStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error, int percent)<br>Attachment download state changed  |
+| void | **[onAttachmentDownloadByUrlStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged)**(long msgId, [BMXErrorCode] error, int percent)<br>Attachment download state changed  |
+| void | **[onRetrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation)<br>Pull message history  |
+| void | **[onLoadAllConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>List of unread sessions has been loaded  |
+| void | **[onConversationCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Create a new session locally  |
+| void | **[onConversationDelete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(long conversationId, [BMXErrorCode] error)<br>Delete session  |
+| void | **[onTotalUnreadCountChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>Update total unread-number  |
 | | **[BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)**() |
 | void | **[registerChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-registerchatservice)**([BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md) service) |
 
@@ -87,12 +87,12 @@ inline void onStatusChanged(
 )
 ```
 
-消息发送状态发生变化 
+Messaging state changed 
 
 **Parameters**: 
 
-  * **msg** 发生状态变化的消息 
-  * **error** 状态错误码 
+  * **msg** Message with state changed 
+  * **error** State error code 
 
 
 ### function onAttachmentUploadProgressChanged
@@ -104,12 +104,12 @@ inline void onAttachmentUploadProgressChanged(
 )
 ```
 
-附件上传进度发送变化 
+Attachment upload state changed 
 
 **Parameters**: 
 
-  * **msg** 上传附件的消息 
-  * **percent** 附件上传的进度 
+  * **msg** Message for uploading attachment 
+  * **percent** Progress of attachment uploading 
 
 
 ### function onRecallStatusChanged
@@ -121,12 +121,12 @@ inline void onRecallStatusChanged(
 )
 ```
 
-消息撤回状态发送变化 
+Message recall state changed 
 
 **Parameters**: 
 
-  * **msg** 撤回状态发生变化的消息 
-  * **error** 状态错误码 
+  * **msg** Message with state change canceled 
+  * **error** State error code 
 
 
 ### function onReceive
@@ -137,11 +137,11 @@ inline void onReceive(
 )
 ```
 
-收到消息 
+Message received 
 
 **Parameters**: 
 
-  * **list** 接收到的消息列表 
+  * **list** List of received messages 
 
 
 ### function onReceiveCommandMessages
@@ -152,11 +152,11 @@ inline void onReceiveCommandMessages(
 )
 ```
 
-收到命令消息 
+Command received 
 
 **Parameters**: 
 
-  * **list** 接收到的消息列表 
+  * **list** List of received messages 
 
 
 ### function onReceiveSystemMessages
@@ -167,11 +167,11 @@ inline void onReceiveSystemMessages(
 )
 ```
 
-收到系统通知消息 
+System notification message received 
 
 **Parameters**: 
 
-  * **list** 接收到的系统消息列表 
+  * **list** List of received system messages 
 
 
 ### function onReceiveReadAcks
@@ -182,11 +182,11 @@ inline void onReceiveReadAcks(
 )
 ```
 
-收到消息已读回执 
+Receipt of message read received 
 
 **Parameters**: 
 
-  * **list** 接收到的已读回执消息列表 
+  * **list** List of received messages with read receipt 
 
 
 ### function onReceiveDeliverAcks
@@ -197,11 +197,11 @@ inline void onReceiveDeliverAcks(
 )
 ```
 
-收到消息已送达回执 
+Receipt of message delivered received 
 
 **Parameters**: 
 
-  * **list** 接收到的已送达回执消息列表 
+  * **list** List of received messages with delivered receipt 
 
 
 ### function onReceiveRecallMessages
@@ -212,11 +212,11 @@ inline void onReceiveRecallMessages(
 )
 ```
 
-收到撤回消息 
+Canceled message received 
 
 **Parameters**: 
 
-  * **list** 接收到的撤回消息列表 
+  * **list** List of canceled messages received 
 
 
 ### function onReceiveReadCancels
@@ -227,11 +227,11 @@ inline void onReceiveReadCancels(
 )
 ```
 
-收到消息已读取消（多设备其他设备同步消息已读状态变为未读） 
+Message re-unread received (cross-device synchronization for changing message status into unread) 
 
 **Parameters**: 
 
-  * **list** 接收到的消息已读取消消息列表 
+  * **list** List of received messages with re-unread receipt 
 
 
 ### function onReceiveReadAllMessages
@@ -242,11 +242,11 @@ inline void onReceiveReadAllMessages(
 )
 ```
 
-收到消息全部已读（多设备同步某消息之前消息全部设置为已读） 
+All received messages are read (all messages are set to read before cross-device synchronization) 
 
 **Parameters**: 
 
-  * **list** 接收到的消息全部已读消息列表 
+  * **list** List of received messages with all-read receipt 
 
 
 ### function onReceiveDeleteMessages
@@ -257,11 +257,11 @@ inline void onReceiveDeleteMessages(
 )
 ```
 
-收到删除消息 （多设备同步删除消息） 
+Deletion received (delete messages cross devices synchronously) 
 
 **Parameters**: 
 
-  * **list** 接收到的删除消息列表 
+  * **list** List of deleted messages received 
 
 
 ### function onReceivePlayAcks
@@ -272,11 +272,11 @@ inline void onReceivePlayAcks(
 )
 ```
 
-收到消息已播放回执 
+Receipt of message played received 
 
 **Parameters**: 
 
-  * **list** 接收到的已读回执消息列表 
+  * **list** List of received messages with read receipt 
 
 
 ### function onAttachmentStatusChanged
@@ -289,13 +289,13 @@ inline void onAttachmentStatusChanged(
 )
 ```
 
-附件下载状态发生变化 
+Attachment download state changed 
 
 **Parameters**: 
 
-  * **msg** 发生下载状态变化的消息 
-  * **error** 状态错误码 
-  * **percent** 附件下载的进度 
+  * **msg** Message with downloading state changed 
+  * **error** State error code 
+  * **percent** Progress of attachment downloading 
 
 
 ### function onAttachmentDownloadByUrlStatusChanged
@@ -308,13 +308,13 @@ inline void onAttachmentDownloadByUrlStatusChanged(
 )
 ```
 
-附件下载状态发生变化 
+Attachment download state changed 
 
 **Parameters**: 
 
-  * **msgId** 发生下载状态变化的消息ID 
-  * **error** 状态错误码 
-  * **percent** 附件下载的进度 
+  * **msgId** Message ID with download state changed 
+  * **error** State error code 
+  * **percent** Progress of attachment downloading 
 
 
 ### function onRetrieveHistoryMessages
@@ -325,11 +325,11 @@ inline void onRetrieveHistoryMessages(
 )
 ```
 
-拉取历史消息 
+Pull message history 
 
 **Parameters**: 
 
-  * **conversation** 发生了拉取指历史消息的会话 
+  * **conversation** Session for which a specific message history was pulled 
 
 
 ### function onLoadAllConversation
@@ -338,7 +338,7 @@ inline void onRetrieveHistoryMessages(
 inline void onLoadAllConversation()
 ```
 
-已经加载完未读会话列表 
+List of unread sessions has been loaded 
 
 ### function onConversationCreate
 
@@ -349,12 +349,12 @@ inline void onConversationCreate(
 )
 ```
 
-本地创建新会话 
+Create a new session locally 
 
 **Parameters**: 
 
-  * **conversation** 新创建的本地会话 
-  * **msg** 会话的最新消息，存在返回不存在返回为空 
+  * **conversation** Newly created local session 
+  * **msg** Latest message for session, return for existing, empty for no existing 
 
 
 ### function onConversationDelete
@@ -366,12 +366,12 @@ inline void onConversationDelete(
 )
 ```
 
-删除会话 
+Delete session 
 
 **Parameters**: 
 
-  * **conversationId** 删除的本地会话id 
-  * **error** 状态错误码 
+  * **conversationId** Deleted local session id 
+  * **error** State error code 
 
 
 ### function onTotalUnreadCountChanged
@@ -382,11 +382,11 @@ inline void onTotalUnreadCountChanged(
 )
 ```
 
-更新总未读数 
+Update total unread-number 
 
 **Parameters**: 
 
-  * **unreadCount** 本地全部会话未读总数 
+  * **unreadCount** Total number of local unread sessions 
 
 
 ### function BMXChatServiceListener

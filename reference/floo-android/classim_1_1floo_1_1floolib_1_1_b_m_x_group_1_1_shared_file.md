@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroup::SharedFile
-summary: 群共享文件 
+summary: Group shared file 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群共享文件
 
 
 
-群共享文件 
+Group shared file 
 
 ## Public Functions
 

@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXMessageConfig
-summary: 消息配置 
+summary: Message configuration 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息配置
 
 
 
-消息配置 
+Message configuration 
 
 Inherits from BMXBaseObject
 
@@ -17,36 +17,36 @@ Inherits from BMXBaseObject
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-delete)**() |
-| void | **[setMentionAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setmentionall)**(boolean mentionAll)<br>设置是否@全员  |
-| boolean | **[getMentionAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getmentionall)**()<br>获取是否@全员  |
-| void | **[setMentionList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setmentionlist)**(ListOfLongLong mentionList)<br>设置通知成员id列表  |
-| ListOfLongLong | **[getMentionList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getmentionlist)**()<br>获取@成员列表  |
-| void | **[setMentionedMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setmentionedmessage)**(String mentionedMessage)<br>设置@消息  |
-| String | **[getMentionedMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getmentionedmessage)**()<br>获取@消息  |
-| void | **[setPushMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setpushmessage)**(String pushMessage)<br>设置推送消息  |
-| String | **[getPushMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushmessage)**()<br>获取推送消息  |
-| void | **[setSenderNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setsendernickname)**(String senderNickname)<br>设置发送者昵称  |
-| String | **[getSenderNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getsendernickname)**()<br>获取发送者昵称  |
-| void | **[setGroupMemberList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setgroupmemberlist)**(ListOfLongLong groupMemberList)<br>设置需要群已读消息的群成员id列表  |
-| ListOfLongLong | **[getGroupMemberList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getgroupmemberlist)**()<br>获取需要群已读消息的群成员id列表  |
-| void | **[addGroupMember](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-addgroupmember)**(long id)<br>添加群已读消息的群成员id列表成员  |
-| void | **[removeGroupMember](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-removegroupmember)**(long id)<br>清除需要群已读消息的群成员id列表成员  |
-| void | **[clearGroupMemberList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-cleargroupmemberlist)**()<br>清空群已读消息的群成员id列表  |
+| void | **[setMentionAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setmentionall)**(boolean mentionAll)<br>Set whether to @ all members  |
+| boolean | **[getMentionAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getmentionall)**()<br>Get whether to @ all members  |
+| void | **[setMentionList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setmentionlist)**(ListOfLongLong mentionList)<br>Set the list of notified member ids  |
+| ListOfLongLong | **[getMentionList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getmentionlist)**()<br>Get @ member list  |
+| void | **[setMentionedMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setmentionedmessage)**(String mentionedMessage)<br>Set @ message  |
+| String | **[getMentionedMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getmentionedmessage)**()<br>Get @ message  |
+| void | **[setPushMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setpushmessage)**(String pushMessage)<br>Set push message  |
+| String | **[getPushMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushmessage)**()<br>Get push message  |
+| void | **[setSenderNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setsendernickname)**(String senderNickname)<br>Set nickname of sender  |
+| String | **[getSenderNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getsendernickname)**()<br>Get nickname of sender  |
+| void | **[setGroupMemberList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setgroupmemberlist)**(ListOfLongLong groupMemberList)<br>Set the list of member ids that require read group messages  |
+| ListOfLongLong | **[getGroupMemberList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getgroupmemberlist)**()<br>Get the list of group member ids that require read group messages  |
+| void | **[addGroupMember](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-addgroupmember)**(long id)<br>Member of group member id list with read messages added  |
+| void | **[removeGroupMember](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-removegroupmember)**(long id)<br>Empty the list of member ids that require read group messages  |
+| void | **[clearGroupMemberList](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-cleargroupmemberlist)**()<br>List of member ids with read group messages emptied  |
 | void | **[setIOSConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setiosconfig)**(String iosConfig) |
-| String | **[getIOSConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getiosconfig)**()<br>获取iOS消息配置  |
+| String | **[getIOSConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getiosconfig)**()<br>Get iOS message configuration  |
 | void | **[setAndroidConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setandroidconfig)**(String androidConfig) |
-| String | **[getAndroidConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getandroidconfig)**()<br>获取Android消息配置  |
+| String | **[getAndroidConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getandroidconfig)**()<br>Get Android message configuration  |
 | void | **[setPushShowBeginTime](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setpushshowbegintime)**(int beginTime) |
-| int | **[getPushShowBeginTime](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushshowbegintime)**()<br>获取推送消息开始展示时间  |
+| int | **[getPushShowBeginTime](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushshowbegintime)**()<br>Get start time of push message displayed  |
 | void | **[setPushShowEndTime](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setpushshowendtime)**(int endTime) |
-| int | **[getPushShowEndTime](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushshowendtime)**()<br>获取推送消息结束展示时间  |
+| int | **[getPushShowEndTime](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushshowendtime)**()<br>Get end time of push message displayed  |
 | void | **[setPushTitle](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-setpushtitle)**(String pushTitle) |
-| String | **[getPushTitle](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushtitle)**()<br>获取推送消息标题  |
+| String | **[getPushTitle](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getpushtitle)**()<br>Get tittle of push message  |
 | boolean | **[isSilence](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-issilence)**() |
 | BMXMessageConfig.BadgeCountType | **[getBadgeCountType](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getbadgecounttype)**() |
 | int | **[getBadgeCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getbadgecount)**(int count) |
-| String | **[getUsername](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getusername)**()<br>获取消息发送者用户名  |
-| String | **[serialize](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-serialize)**()<br>序列化操作  |
+| String | **[getUsername](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-getusername)**()<br>**to-be-translate**  |
+| String | **[serialize](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-serialize)**()<br>Serialization operation  |
 | [BMXMessageConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md) | **[createMessageConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md#function-createmessageconfig)**(boolean mentionAll) |
 
 ## Protected Functions
@@ -74,7 +74,7 @@ inline void setMentionAll(
 )
 ```
 
-设置是否@全员 
+Set whether to @ all members 
 
 **Parameters**: 
 
@@ -87,7 +87,7 @@ inline void setMentionAll(
 inline boolean getMentionAll()
 ```
 
-获取是否@全员 
+Get whether to @ all members 
 
 **Return**: bool 
 
@@ -99,7 +99,7 @@ inline void setMentionList(
 )
 ```
 
-设置通知成员id列表 
+Set the list of notified member ids 
 
 **Parameters**: 
 
@@ -112,7 +112,7 @@ inline void setMentionList(
 inline ListOfLongLong getMentionList()
 ```
 
-获取@成员列表 
+Get @ member list 
 
 **Return**: std::vector<int64_t> 
 
@@ -124,7 +124,7 @@ inline void setMentionedMessage(
 )
 ```
 
-设置@消息 
+Set @ message 
 
 **Parameters**: 
 
@@ -137,7 +137,7 @@ inline void setMentionedMessage(
 inline String getMentionedMessage()
 ```
 
-获取@消息 
+Get @ message 
 
 **Return**: std::string 
 
@@ -149,7 +149,7 @@ inline void setPushMessage(
 )
 ```
 
-设置推送消息 
+Set push message 
 
 **Parameters**: 
 
@@ -162,7 +162,7 @@ inline void setPushMessage(
 inline String getPushMessage()
 ```
 
-获取推送消息 
+Get push message 
 
 **Return**: std::string 
 
@@ -174,7 +174,7 @@ inline void setSenderNickname(
 )
 ```
 
-设置发送者昵称 
+Set nickname of sender 
 
 **Parameters**: 
 
@@ -187,7 +187,7 @@ inline void setSenderNickname(
 inline String getSenderNickname()
 ```
 
-获取发送者昵称 
+Get nickname of sender 
 
 **Return**: std::string 
 
@@ -199,7 +199,7 @@ inline void setGroupMemberList(
 )
 ```
 
-设置需要群已读消息的群成员id列表 
+Set the list of member ids that require read group messages 
 
 **Parameters**: 
 
@@ -212,7 +212,7 @@ inline void setGroupMemberList(
 inline ListOfLongLong getGroupMemberList()
 ```
 
-获取需要群已读消息的群成员id列表 
+Get the list of group member ids that require read group messages 
 
 **Return**: std::vector<int64_t> 
 
@@ -224,7 +224,7 @@ inline void addGroupMember(
 )
 ```
 
-添加群已读消息的群成员id列表成员 
+Member of group member id list with read messages added 
 
 ### function removeGroupMember
 
@@ -234,7 +234,7 @@ inline void removeGroupMember(
 )
 ```
 
-清除需要群已读消息的群成员id列表成员 
+Empty the list of member ids that require read group messages 
 
 ### function clearGroupMemberList
 
@@ -242,7 +242,7 @@ inline void removeGroupMember(
 inline void clearGroupMemberList()
 ```
 
-清空群已读消息的群成员id列表 
+List of member ids with read group messages emptied 
 
 ### function setIOSConfig
 
@@ -259,7 +259,7 @@ inline void setIOSConfig(
 inline String getIOSConfig()
 ```
 
-获取iOS消息配置 
+Get iOS message configuration 
 
 ### function setAndroidConfig
 
@@ -276,7 +276,7 @@ inline void setAndroidConfig(
 inline String getAndroidConfig()
 ```
 
-获取Android消息配置 
+Get Android message configuration 
 
 ### function setPushShowBeginTime
 
@@ -293,7 +293,7 @@ inline void setPushShowBeginTime(
 inline int getPushShowBeginTime()
 ```
 
-获取推送消息开始展示时间 
+Get start time of push message displayed 
 
 ### function setPushShowEndTime
 
@@ -310,7 +310,7 @@ inline void setPushShowEndTime(
 inline int getPushShowEndTime()
 ```
 
-获取推送消息结束展示时间 
+Get end time of push message displayed 
 
 ### function setPushTitle
 
@@ -327,7 +327,7 @@ inline void setPushTitle(
 inline String getPushTitle()
 ```
 
-获取推送消息标题 
+Get tittle of push message 
 
 ### function isSilence
 
@@ -358,7 +358,7 @@ inline int getBadgeCount(
 inline String getUsername()
 ```
 
-获取消息发送者用户名 
+**to-be-translate** 
 
 ### function serialize
 
@@ -366,7 +366,7 @@ inline String getUsername()
 inline String serialize()
 ```
 
-序列化操作 
+Serialization operation 
 
 **Return**: std::string 
 

@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXGroup::Member
-summary: 群成员 
+summary: Group members 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 群成员
 
 
 
-群成员 
+Group members 
 
 ## Public Functions
 

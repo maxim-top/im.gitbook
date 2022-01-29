@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXUserProfile::AuthQuestion
-summary: 添加好友时的校验问题 
+summary: Authentication questions when adding friend 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 添加好友时的校验问题
 
 
 
-添加好友时的校验问题 
+Authentication questions when adding friend 
 
 ## Public Functions
 

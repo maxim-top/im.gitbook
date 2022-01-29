@@ -1,6 +1,6 @@
 ---
 title: floo::BMXForwardAttachment
-summary: 消息转发附件 
+summary: Forwarded attachment in message 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息转发附件
 
 
 
-消息转发附件 
+Forwarded attachment in message 
 
 
 `#include <bmx_forward_attachment.h>`
@@ -19,16 +19,16 @@ Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachmen
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Message](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md)** <br>转发消息附件自定义消息  |
+| class | **[Message](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md)** <br>Custom message to forward attachment  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXForwardAttachment](classfloo_1_1_b_m_x_forward_attachment.md#function-bmxforwardattachment)**()<br>构造函数  |
-| virtual | **[~BMXForwardAttachment](classfloo_1_1_b_m_x_forward_attachment.md#function-~bmxforwardattachment)**()<br>析构函数  |
-| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_forward_attachment.md#function-type)**() const<br>附件类型  |
-| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_forward_attachment.md#function-clone)**() const<br>克隆函数  |
+| | **[BMXForwardAttachment](classfloo_1_1_b_m_x_forward_attachment.md#function-bmxforwardattachment)**()<br>Constructor  |
+| virtual | **[~BMXForwardAttachment](classfloo_1_1_b_m_x_forward_attachment.md#function-~bmxforwardattachment)**()<br>Destructor  |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_forward_attachment.md#function-type)**() const<br>Attachment type  |
+| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_forward_attachment.md#function-clone)**() const<br>Cloning function  |
 
 ## Additional inherited members
 
@@ -36,15 +36,15 @@ Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachmen
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>附件类型  |
-| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>附件下载状态  |
+| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
+| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
 
 **Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>构造函数  |
-| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>析构函数  |
+| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
+| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
 
 
 ## Public Functions Documentation
@@ -55,7 +55,7 @@ Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachmen
 inline BMXForwardAttachment()
 ```
 
-构造函数 
+Constructor 
 
 ### function ~BMXForwardAttachment
 
@@ -63,7 +63,7 @@ inline BMXForwardAttachment()
 inline virtual ~BMXForwardAttachment()
 ```
 
-析构函数 
+Destructor 
 
 ### function type
 
@@ -71,7 +71,7 @@ inline virtual ~BMXForwardAttachment()
 inline virtual Type type() const
 ```
 
-附件类型 
+Attachment type 
 
 **Return**: Type 
 
@@ -84,7 +84,7 @@ inline virtual Type type() const
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-克隆函数 
+Cloning function 
 
 **Return**: BMXMessageAttachmentPtr 
 

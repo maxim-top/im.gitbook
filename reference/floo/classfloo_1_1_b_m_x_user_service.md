@@ -1,6 +1,6 @@
 ---
 title: floo::BMXUserService
-summary: 用户Service 
+summary: User Service 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 用户Service
 
 
 
-用户Service 
+User Service 
 
 
 `#include <bmx_user_service.h>`
@@ -24,27 +24,27 @@ summary: 用户Service
 |                | Name           |
 | -------------- | -------------- |
 | virtual | **[~BMXUserService](classfloo_1_1_b_m_x_user_service.md#function-~bmxuserservice)**() |
-| virtual BMXErrorCode | **[bindDevice](classfloo_1_1_b_m_x_user_service.md#function-binddevice)**(const std::string & token) =0<br>绑定设备推送token  |
-| virtual BMXErrorCode | **[getDeviceList](classfloo_1_1_b_m_x_user_service.md#function-getdevicelist)**(BMXDeviceList & deviceList) =0<br>获取设备列表  |
-| virtual BMXErrorCode | **[deleteDevice](classfloo_1_1_b_m_x_user_service.md#function-deletedevice)**(int32_t device_sn) =0<br>删除设备  |
-| virtual BMXErrorCode | **[getProfile](classfloo_1_1_b_m_x_user_service.md#function-getprofile)**(BMXUserProfilePtr & profile, bool forceRefresh) =0<br>获取用户详情，如果forceRefresh == true，则强制从服务端拉取  |
-| virtual BMXErrorCode | **[setNickname](classfloo_1_1_b_m_x_user_service.md#function-setnickname)**(const std::string & nickname) =0<br>设置昵称  |
-| virtual BMXErrorCode | **[uploadAvatar](classfloo_1_1_b_m_x_user_service.md#function-uploadavatar)**(const std::string & avatarPath, Callback callback) =0<br>上传头像  |
-| virtual BMXErrorCode | **[downloadAvatar](classfloo_1_1_b_m_x_user_service.md#function-downloadavatar)**(BMXUserProfilePtr profile, bool thumbnail, Callback callback) =0<br>下载头像，默认下载缩略图  |
-| virtual BMXErrorCode | **[setPublicInfo](classfloo_1_1_b_m_x_user_service.md#function-setpublicinfo)**(const std::string & publicInfo) =0<br>设置公开扩展信息  |
-| virtual BMXErrorCode | **[setPrivateInfo](classfloo_1_1_b_m_x_user_service.md#function-setprivateinfo)**(const std::string & privateInfo) =0<br>设置私有扩展信息  |
-| virtual BMXErrorCode | **[setAddFriendAuthMode](classfloo_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**([BMXUserProfile::AddFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode) mode) =0<br>设置加好友验证方式  |
-| virtual BMXErrorCode | **[setAuthQuestion](classfloo_1_1_b_m_x_user_service.md#function-setauthquestion)**(const [BMXUserProfile::AuthQuestion] & authQuestion) =0<br>设置加好友验证问题  |
-| virtual BMXErrorCode | **[setEnablePush](classfloo_1_1_b_m_x_user_service.md#function-setenablepush)**(bool enable) =0<br>设置是否允许推送  |
-| virtual BMXErrorCode | **[setEnablePushDetaile](classfloo_1_1_b_m_x_user_service.md#function-setenablepushdetaile)**(bool enable) =0<br>设置是否推送详情  |
-| virtual BMXErrorCode | **[setPushNickname](classfloo_1_1_b_m_x_user_service.md#function-setpushnickname)**(const std::string & nickname) =0<br>设置推送昵称  |
+| virtual BMXErrorCode | **[bindDevice](classfloo_1_1_b_m_x_user_service.md#function-binddevice)**(const std::string & token) =0<br>Binding device push token  |
+| virtual BMXErrorCode | **[getDeviceList](classfloo_1_1_b_m_x_user_service.md#function-getdevicelist)**(BMXDeviceList & deviceList) =0<br>Get device list  |
+| virtual BMXErrorCode | **[deleteDevice](classfloo_1_1_b_m_x_user_service.md#function-deletedevice)**(int32_t device_sn) =0<br>Delete device  |
+| virtual BMXErrorCode | **[getProfile](classfloo_1_1_b_m_x_user_service.md#function-getprofile)**(BMXUserProfilePtr & profile, bool forceRefresh) =0<br>Get user details, force pull from server if forceRefresh == true  |
+| virtual BMXErrorCode | **[setNickname](classfloo_1_1_b_m_x_user_service.md#function-setnickname)**(const std::string & nickname) =0<br>Set nickname  |
+| virtual BMXErrorCode | **[uploadAvatar](classfloo_1_1_b_m_x_user_service.md#function-uploadavatar)**(const std::string & avatarPath, Callback callback) =0<br>Upload avatar  |
+| virtual BMXErrorCode | **[downloadAvatar](classfloo_1_1_b_m_x_user_service.md#function-downloadavatar)**(BMXUserProfilePtr profile, bool thumbnail, Callback callback) =0<br>Download avatar, default to download thumbnail  |
+| virtual BMXErrorCode | **[setPublicInfo](classfloo_1_1_b_m_x_user_service.md#function-setpublicinfo)**(const std::string & publicInfo) =0<br>Set public extension information  |
+| virtual BMXErrorCode | **[setPrivateInfo](classfloo_1_1_b_m_x_user_service.md#function-setprivateinfo)**(const std::string & privateInfo) =0<br>Set private extension information  |
+| virtual BMXErrorCode | **[setAddFriendAuthMode](classfloo_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**([BMXUserProfile::AddFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode) mode) =0<br>Set how to validate when adding friend  |
+| virtual BMXErrorCode | **[setAuthQuestion](classfloo_1_1_b_m_x_user_service.md#function-setauthquestion)**(const [BMXUserProfile::AuthQuestion] & authQuestion) =0<br>Set friend authentication questions  |
+| virtual BMXErrorCode | **[setEnablePush](classfloo_1_1_b_m_x_user_service.md#function-setenablepush)**(bool enable) =0<br>Set whether push is allowed  |
+| virtual BMXErrorCode | **[setEnablePushDetaile](classfloo_1_1_b_m_x_user_service.md#function-setenablepushdetaile)**(bool enable) =0<br>Set whether to push details  |
+| virtual BMXErrorCode | **[setPushNickname](classfloo_1_1_b_m_x_user_service.md#function-setpushnickname)**(const std::string & nickname) =0<br>Set push nickname  |
 | virtual BMXErrorCode | **[setPushAlias](classfloo_1_1_b_m_x_user_service.md#function-setpushalias)**(const std::string & alias, const std::string & bmxPushToken) =0 |
-| virtual BMXErrorCode | **[setNotificationSound](classfloo_1_1_b_m_x_user_service.md#function-setnotificationsound)**(bool enable) =0<br>设置收到新消息是否声音提醒  |
-| virtual BMXErrorCode | **[setNotificationVibrate](classfloo_1_1_b_m_x_user_service.md#function-setnotificationvibrate)**(bool enable) =0<br>设置收到新消息是否震动  |
-| virtual BMXErrorCode | **[setAutoDownloadAttachment](classfloo_1_1_b_m_x_user_service.md#function-setautodownloadattachment)**(bool enable) =0<br>设置是否自动缩略图和语音附件  |
-| virtual BMXErrorCode | **[setAutoAcceptGroupInvite](classfloo_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite)**(bool enable) =0<br>设置是否自动同意入群邀请  |
-| virtual void | **[addUserListener](classfloo_1_1_b_m_x_user_service.md#function-adduserlistener)**([BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md) * listener) =0<br>添加用户状态监听者  |
-| virtual void | **[removeUserListener](classfloo_1_1_b_m_x_user_service.md#function-removeuserlistener)**([BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md) * listener) =0<br>移除用户状态监听者  |
+| virtual BMXErrorCode | **[setNotificationSound](classfloo_1_1_b_m_x_user_service.md#function-setnotificationsound)**(bool enable) =0<br>Set whether a new message is audibly alerted  |
+| virtual BMXErrorCode | **[setNotificationVibrate](classfloo_1_1_b_m_x_user_service.md#function-setnotificationvibrate)**(bool enable) =0<br>Set whether a new message is alerted in vibration  |
+| virtual BMXErrorCode | **[setAutoDownloadAttachment](classfloo_1_1_b_m_x_user_service.md#function-setautodownloadattachment)**(bool enable) =0<br>Set whether to automatically download thumbnail and voice attachment  |
+| virtual BMXErrorCode | **[setAutoAcceptGroupInvite](classfloo_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite)**(bool enable) =0<br>Set whether to automatically accept group invitations  |
+| virtual void | **[addUserListener](classfloo_1_1_b_m_x_user_service.md#function-adduserlistener)**([BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md) * listener) =0<br>Add user state listener  |
+| virtual void | **[removeUserListener](classfloo_1_1_b_m_x_user_service.md#function-removeuserlistener)**([BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md) * listener) =0<br>Remove user state listener  |
 
 ## Protected Functions
 
@@ -78,11 +78,11 @@ virtual BMXErrorCode bindDevice(
 ) =0
 ```
 
-绑定设备推送token 
+Binding device push token 
 
 **Parameters**: 
 
-  * **token** 设备token 
+  * **token** Device token 
 
 
 **Return**: BMXErrorCode 
@@ -95,11 +95,11 @@ virtual BMXErrorCode getDeviceList(
 ) =0
 ```
 
-获取设备列表 
+Get device list 
 
 **Parameters**: 
 
-  * **deviceList** 设备列表，传入空列表函数返回后从此处获取返回的设备列表 
+  * **deviceList** Device list, pass in an empty list function and fetch the returned device list here 
 
 
 **Return**: BMXErrorCode 
@@ -112,11 +112,11 @@ virtual BMXErrorCode deleteDevice(
 ) =0
 ```
 
-删除设备 
+Delete device 
 
 **Parameters**: 
 
-  * **device_sn** 设备序列号 
+  * **device_sn** Device serial number 
 
 
 **Return**: BMXErrorCode 
@@ -130,12 +130,12 @@ virtual BMXErrorCode getProfile(
 ) =0
 ```
 
-获取用户详情，如果forceRefresh == true，则强制从服务端拉取 
+Get user details, force pull from server if forceRefresh == true 
 
 **Parameters**: 
 
-  * **profile** 用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。 
-  * **forceRefresh** 是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取 
+  * **profile** User profile, initially passed in a pointing-to-empty shared_ptr object, and fetch user profile here after the function returned. 
+  * **forceRefresh** Whether to force pull from server, automatically if local fetch failed 
 
 
 **Return**: BMXErrorCode 
@@ -148,11 +148,11 @@ virtual BMXErrorCode setNickname(
 ) =0
 ```
 
-设置昵称 
+Set nickname 
 
 **Parameters**: 
 
-  * **nickname** 用户昵称 
+  * **nickname** User nickname 
 
 
 **Return**: BMXErrorCode 
@@ -166,12 +166,12 @@ virtual BMXErrorCode uploadAvatar(
 ) =0
 ```
 
-上传头像 
+Upload avatar 
 
 **Parameters**: 
 
-  * **avatarPath** 上传头像的本地地址 
-  * **callback** 上传回调函数 
+  * **avatarPath** Local address to upload avatar 
+  * **callback** Upload callback function 
 
 
 **Return**: BMXErrorCode 
@@ -186,13 +186,13 @@ virtual BMXErrorCode downloadAvatar(
 ) =0
 ```
 
-下载头像，默认下载缩略图 
+Download avatar, default to download thumbnail 
 
 **Parameters**: 
 
-  * **profile** 用户profile 
-  * **thumbnail** 是否下载缩略图，true下载缩略图，false下载原图 
-  * **callback** 下载回调函数 
+  * **profile** User profile 
+  * **thumbnail** Whether to download thumbnail, true for thumbnail, false for original 
+  * **callback** Download callback function 
 
 
 **Return**: BMXErrorCode 
@@ -205,11 +205,11 @@ virtual BMXErrorCode setPublicInfo(
 ) =0
 ```
 
-设置公开扩展信息 
+Set public extension information 
 
 **Parameters**: 
 
-  * **publicInfo** 公开扩展信息 
+  * **publicInfo** Public extension information 
 
 
 **Return**: BMXErrorCode 
@@ -222,11 +222,11 @@ virtual BMXErrorCode setPrivateInfo(
 ) =0
 ```
 
-设置私有扩展信息 
+Set private extension information 
 
 **Parameters**: 
 
-  * **privateInfo** 私有扩展信息 
+  * **privateInfo** Private extension information 
 
 
 **Return**: BMXErrorCode 
@@ -239,11 +239,11 @@ virtual BMXErrorCode setAddFriendAuthMode(
 ) =0
 ```
 
-设置加好友验证方式 
+Set how to validate when adding friend 
 
 **Parameters**: 
 
-  * **mode** 加好友验证方式 
+  * **mode** Add friend authentication 
 
 
 **Return**: BMXErrorCode 
@@ -256,11 +256,11 @@ virtual BMXErrorCode setAuthQuestion(
 ) =0
 ```
 
-设置加好友验证问题 
+Set friend authentication questions 
 
 **Parameters**: 
 
-  * **authQuestion** 加好友验证问题 
+  * **authQuestion** Add friend authentication question 
 
 
 **Return**: BMXErrorCode 
@@ -273,11 +273,11 @@ virtual BMXErrorCode setEnablePush(
 ) =0
 ```
 
-设置是否允许推送 
+Set whether push is allowed 
 
 **Parameters**: 
 
-  * **enable** 是否允许推送，true推送，false不推送 
+  * **enable** Whether to allow push, true to push, false not to 
 
 
 **Return**: BMXErrorCode 
@@ -290,11 +290,11 @@ virtual BMXErrorCode setEnablePushDetaile(
 ) =0
 ```
 
-设置是否推送详情 
+Set whether to push details 
 
 **Parameters**: 
 
-  * **enable** 是否推送详情，true推送，false不推送 
+  * **enable** Whether to push details, true to push, false not to 
 
 
 **Return**: BMXErrorCode 
@@ -307,11 +307,11 @@ virtual BMXErrorCode setPushNickname(
 ) =0
 ```
 
-设置推送昵称 
+Set push nickname 
 
 **Parameters**: 
 
-  * **nickname** 推送昵称 
+  * **nickname** Push nickname 
 
 
 **Return**: BMXErrorCode 
@@ -328,7 +328,7 @@ virtual BMXErrorCode setPushAlias(
 
 **Parameters**: 
 
-  * **nickname** 推送昵称 
+  * **nickname** Push nickname 
 
 
 **Return**: BMXErrorCode 
@@ -341,11 +341,11 @@ virtual BMXErrorCode setNotificationSound(
 ) =0
 ```
 
-设置收到新消息是否声音提醒 
+Set whether a new message is audibly alerted 
 
 **Parameters**: 
 
-  * **enable** 收到新消息是否声音提醒，true提醒，false不提醒 
+  * **enable** Whether to sound alert when new message received, true to alert, false not to 
 
 
 **Return**: BMXErrorCode 
@@ -358,11 +358,11 @@ virtual BMXErrorCode setNotificationVibrate(
 ) =0
 ```
 
-设置收到新消息是否震动 
+Set whether a new message is alerted in vibration 
 
 **Parameters**: 
 
-  * **enable** 收到新消息是否震动，true震动，false不震动 
+  * **enable** Whether to vibrate alert when new message received, true to alert, false not to 
 
 
 **Return**: BMXErrorCode 
@@ -375,11 +375,11 @@ virtual BMXErrorCode setAutoDownloadAttachment(
 ) =0
 ```
 
-设置是否自动缩略图和语音附件 
+Set whether to automatically download thumbnail and voice attachment 
 
 **Parameters**: 
 
-  * **enable** 是否自动缩略图和语音附件，true自动下载，false不会自动下载 
+  * **enable** Whether to automatically download thumbnail and voice attachment, true to download, false not to 
 
 
 **Return**: BMXErrorCode 
@@ -392,11 +392,11 @@ virtual BMXErrorCode setAutoAcceptGroupInvite(
 ) =0
 ```
 
-设置是否自动同意入群邀请 
+Set whether to automatically accept group invitations 
 
 **Parameters**: 
 
-  * **enable** 是否自动同意入群邀请，true同意，false不同意 
+  * **enable** Whether to automatically agree to group invitation, true to agree, false not to 
 
 
 **Return**: BMXErrorCode 
@@ -409,11 +409,11 @@ virtual void addUserListener(
 ) =0
 ```
 
-添加用户状态监听者 
+Add user state listener 
 
 **Parameters**: 
 
-  * **listener** 用户状态监听者 
+  * **listener** User state listener 
 
 
 ### function removeUserListener
@@ -424,11 +424,11 @@ virtual void removeUserListener(
 ) =0
 ```
 
-移除用户状态监听者 
+Remove user state listener 
 
 **Parameters**: 
 
-  * **listener** 用户状态监听者 
+  * **listener** User state listener 
 
 
 ## Protected Functions Documentation

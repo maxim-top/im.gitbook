@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXUserServiceListener
-summary: 用户状态监听者 
+summary: User state listener 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 用户状态监听者
 
 
 
-用户状态监听者 
+User state listener 
 
 ## Public Functions
 
@@ -17,12 +17,12 @@ summary: 用户状态监听者
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-delete)**() |
 | void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-swigreleaseownership)**() |
 | void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-swigtakeownership)**() |
-| void | **[onConnectStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged)**([BMXConnectStatus] status)<br>链接状态发生变化  |
-| void | **[onUserSignIn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignin)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile)<br>用户登陆  |
-| void | **[onUserSignOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignout)**([BMXErrorCode] error, long userId)<br>用户登出  |
-| void | **[onInfoUpdated](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-oninfoupdated)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile)<br>同步用户信息更新（其他设备操作发生用户信息变更）  |
-| void | **[onOtherDeviceSingIn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin)**(int deviceSN)<br>用户在其他设备上登陆  |
-| void | **[onOtherDeviceSingOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout)**(int deviceSN)<br>用户在其他设备上登出  |
+| void | **[onConnectStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged)**([BMXConnectStatus] status)<br>Channel state changed  |
+| void | **[onUserSignIn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignin)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile)<br>User login  |
+| void | **[onUserSignOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignout)**([BMXErrorCode] error, long userId)<br>User logout  |
+| void | **[onInfoUpdated](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-oninfoupdated)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile)<br>Synchronize user information updates (when user information changes in other devices)  |
+| void | **[onOtherDeviceSingIn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin)**(int deviceSN)<br>User login on another device  |
+| void | **[onOtherDeviceSingOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout)**(int deviceSN)<br>User logout on another device  |
 | | **[BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-bmxuserservicelistener)**() |
 | void | **[registerUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-registeruserservice)**([BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md) service) |
 
@@ -72,11 +72,11 @@ inline void onConnectStatusChanged(
 )
 ```
 
-链接状态发生变化 
+Channel state changed 
 
 **Parameters**: 
 
-  * **status** 连接状态 
+  * **status** Connection state 
 
 
 ### function onUserSignIn
@@ -87,11 +87,11 @@ inline void onUserSignIn(
 )
 ```
 
-用户登陆 
+User login 
 
 **Parameters**: 
 
-  * **profile** 用户profile 
+  * **profile** User profile 
 
 
 ### function onUserSignOut
@@ -103,11 +103,11 @@ inline void onUserSignOut(
 )
 ```
 
-用户登出 
+User logout 
 
 **Parameters**: 
 
-  * **error** 状态错误码 
+  * **error** State error code 
 
 
 ### function onInfoUpdated
@@ -118,11 +118,11 @@ inline void onInfoUpdated(
 )
 ```
 
-同步用户信息更新（其他设备操作发生用户信息变更） 
+Synchronize user information updates (when user information changes in other devices) 
 
 **Parameters**: 
 
-  * **profile** 用户profile 
+  * **profile** User profile 
 
 
 ### function onOtherDeviceSingIn
@@ -133,11 +133,11 @@ inline void onOtherDeviceSingIn(
 )
 ```
 
-用户在其他设备上登陆 
+User login on another device 
 
 **Parameters**: 
 
-  * **deviceSN** 设备序列号 
+  * **deviceSN** Device serial number 
 
 
 ### function onOtherDeviceSingOut
@@ -148,11 +148,11 @@ inline void onOtherDeviceSingOut(
 )
 ```
 
-用户在其他设备上登出 
+User logout on another device 
 
 **Parameters**: 
 
-  * **deviceSN** 设备序列号 
+  * **deviceSN** Device serial number 
 
 
 ### function BMXUserServiceListener

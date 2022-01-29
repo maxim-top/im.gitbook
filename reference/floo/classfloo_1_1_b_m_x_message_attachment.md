@@ -1,6 +1,6 @@
 ---
 title: floo::BMXMessageAttachment
-summary: 消息附件 
+summary: Message attachment 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 消息附件
 
 
 
-消息附件 
+Message attachment 
 
 
 `#include <bmx_message_attachment.h>`
@@ -21,17 +21,17 @@ Inherited by [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md), 
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image = 1, Voice, Video, File, Location, Command, Forward}<br>附件类型  |
-| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>附件下载状态  |
+| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image = 1, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
+| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>构造函数  |
-| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>析构函数  |
-| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_message_attachment.md#function-type)**() const =0<br>附件类型  |
-| virtual std::shared_ptr< [BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md) > | **[clone](classfloo_1_1_b_m_x_message_attachment.md#function-clone)**() const =0<br>复制附件  |
+| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
+| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_message_attachment.md#function-type)**() const =0<br>Attachment type  |
+| virtual std::shared_ptr< [BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md) > | **[clone](classfloo_1_1_b_m_x_message_attachment.md#function-clone)**() const =0<br>Copy attachment  |
 
 ## Public Types Documentation
 
@@ -39,31 +39,31 @@ Inherited by [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md), 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Image | 1| 图片   |
-| Voice | | 语音   |
-| Video | | 视频片段   |
-| File | | 文件   |
-| Location | | 位置   |
-| Command | | 命令消息   |
-| Forward | | 转发消息   |
+| Image | 1| Image   |
+| Voice | | Voice   |
+| Video | | Video clip   |
+| File | | File   |
+| Location | | Location   |
+| Command | | Command message   |
+| Forward | | Forward message   |
 
 
 
-附件类型 
+Attachment type 
 
 ### enum DownloadStatus
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Downloaing | | 下载中   |
-| Successed | | 下载成功   |
-| Failed | | 下载失败   |
-| NotStart | | 下载尚未开始   |
-| Canceled | | 下载被取消   |
+| Downloaing | | Downloading   |
+| Successed | | Download succeeded   |
+| Failed | | Download failed   |
+| NotStart | | Download has net started yet   |
+| Canceled | | Download canceled   |
 
 
 
-附件下载状态 
+Attachment download state 
 
 ## Public Functions Documentation
 
@@ -73,7 +73,7 @@ Inherited by [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md), 
 inline BMXMessageAttachment()
 ```
 
-构造函数 
+Constructor 
 
 ### function ~BMXMessageAttachment
 
@@ -81,7 +81,7 @@ inline BMXMessageAttachment()
 inline virtual ~BMXMessageAttachment()
 ```
 
-析构函数 
+Destructor 
 
 ### function type
 
@@ -89,7 +89,7 @@ inline virtual ~BMXMessageAttachment()
 virtual Type type() const =0
 ```
 
-附件类型 
+Attachment type 
 
 **Return**: Type 
 
@@ -102,7 +102,7 @@ virtual Type type() const =0
 virtual std::shared_ptr< BMXMessageAttachment > clone() const =0
 ```
 
-复制附件 
+Copy attachment 
 
 **Return**: BMXMessageAttachmentPtr 
 

@@ -1,6 +1,6 @@
 ---
 title: floo::BMXConversation
-summary: 会话 
+summary: Session 
 
 ---
 
@@ -8,7 +8,7 @@ summary: 会话
 
 
 
-会话 
+Session 
 
 
 `#include <bmx_conversation.h>`
@@ -19,37 +19,37 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_conversation.md#enum-type)** { Single, Group, System}<br>会话类型  |
-| enum class| **[Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)** { Up, Down}<br>消息搜索方向  |
+| enum class| **[Type](classfloo_1_1_b_m_x_conversation.md#enum-type)** { Single, Group, System}<br>Session type  |
+| enum class| **[Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)** { Up, Down}<br>Message search direction  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual | **[~BMXConversation](classfloo_1_1_b_m_x_conversation.md#function-~bmxconversation)**()<br>析构函数  |
-| virtual int64_t | **[conversationId](classfloo_1_1_b_m_x_conversation.md#function-conversationid)**() =0<br>会话Id  |
-| virtual [Type](classfloo_1_1_b_m_x_conversation.md#enum-type) | **[type](classfloo_1_1_b_m_x_conversation.md#function-type)**() =0<br>会话类型  |
-| virtual BMXMessagePtr | **[lastMsg](classfloo_1_1_b_m_x_conversation.md#function-lastmsg)**() =0<br>最新消息  |
-| virtual int32_t | **[unreadNumber](classfloo_1_1_b_m_x_conversation.md#function-unreadnumber)**() =0<br>未读消息数  |
-| virtual int32_t | **[messageCount](classfloo_1_1_b_m_x_conversation.md#function-messagecount)**() =0<br>会话中所有消息的数量  |
-| virtual bool | **[isMuteNotification](classfloo_1_1_b_m_x_conversation.md#function-ismutenotification)**() =0<br>是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。  |
-| virtual const JSON & | **[extension](classfloo_1_1_b_m_x_conversation.md#function-extension)**() =0<br>扩展信息  |
-| virtual BMXErrorCode | **[setExtension](classfloo_1_1_b_m_x_conversation.md#function-setextension)**(const std::string & ext) =0<br>设置扩展信息  |
-| virtual const std::string & | **[editMessage](classfloo_1_1_b_m_x_conversation.md#function-editmessage)**() =0<br>编辑消息  |
-| virtual BMXErrorCode | **[setEditMessage](classfloo_1_1_b_m_x_conversation.md#function-seteditmessage)**(const std::string & editMessage) =0<br>设置编辑消息  |
-| virtual BMXErrorCode | **[setMessagePlayedStatus](classfloo_1_1_b_m_x_conversation.md#function-setmessageplayedstatus)**(BMXMessagePtr msg, bool status) =0<br>设置消息播放状态（只对语音/视频消息有效）  |
-| virtual BMXErrorCode | **[setMessageReadStatus](classfloo_1_1_b_m_x_conversation.md#function-setmessagereadstatus)**(BMXMessagePtr msg, bool status) =0<br>设置消息未读状态，更新未读消息数  |
-| virtual BMXErrorCode | **[setAllMessagesRead](classfloo_1_1_b_m_x_conversation.md#function-setallmessagesread)**() =0<br>把所有消息设置为已读，更新未读消息数  |
-| virtual BMXErrorCode | **[updateMessageExtension](classfloo_1_1_b_m_x_conversation.md#function-updatemessageextension)**(BMXMessagePtr msg) =0<br>更新一条数据库存储消息的扩展字段信息  |
-| virtual BMXErrorCode | **[insertMessage](classfloo_1_1_b_m_x_conversation.md#function-insertmessage)**(BMXMessagePtr msg) =0<br>插入一条消息  |
-| virtual BMXMessagePtr | **[loadMessage](classfloo_1_1_b_m_x_conversation.md#function-loadmessage)**(int64_t msgId) =0<br>读取一条消息  |
-| virtual BMXErrorCode | **[removeAllMessages](classfloo_1_1_b_m_x_conversation.md#function-removeallmessages)**() =0<br>删除会话中的所有消息  |
-| virtual BMXErrorCode | **[loadMessages](classfloo_1_1_b_m_x_conversation.md#function-loadmessages)**(int64_t refMsgId, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>加载消息，如果不指定则从最新消息开始  |
-| virtual BMXErrorCode | **[searchMessagesByKeyWords](classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbykeywords)**(const std::string & keywords, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>搜索消息，如果不指定则从最新消息开始  |
+| virtual | **[~BMXConversation](classfloo_1_1_b_m_x_conversation.md#function-~bmxconversation)**()<br>Destructor  |
+| virtual int64_t | **[conversationId](classfloo_1_1_b_m_x_conversation.md#function-conversationid)**() =0<br>Session Id  |
+| virtual [Type](classfloo_1_1_b_m_x_conversation.md#enum-type) | **[type](classfloo_1_1_b_m_x_conversation.md#function-type)**() =0<br>Session type  |
+| virtual BMXMessagePtr | **[lastMsg](classfloo_1_1_b_m_x_conversation.md#function-lastmsg)**() =0<br>Latest message  |
+| virtual int32_t | **[unreadNumber](classfloo_1_1_b_m_x_conversation.md#function-unreadnumber)**() =0<br>Unread message-number  |
+| virtual int32_t | **[messageCount](classfloo_1_1_b_m_x_conversation.md#function-messagecount)**() =0<br>Total message-number in session  |
+| virtual bool | **[isMuteNotification](classfloo_1_1_b_m_x_conversation.md#function-ismutenotification)**() =0<br>Whether the user is alerted to the message, without which the session total unread-number does not count this session.  |
+| virtual const JSON & | **[extension](classfloo_1_1_b_m_x_conversation.md#function-extension)**() =0<br>Extension information  |
+| virtual BMXErrorCode | **[setExtension](classfloo_1_1_b_m_x_conversation.md#function-setextension)**(const std::string & ext) =0<br>Set the Extension information  |
+| virtual const std::string & | **[editMessage](classfloo_1_1_b_m_x_conversation.md#function-editmessage)**() =0<br>Edit message  |
+| virtual BMXErrorCode | **[setEditMessage](classfloo_1_1_b_m_x_conversation.md#function-seteditmessage)**(const std::string & editMessage) =0<br>Set the Edit Message  |
+| virtual BMXErrorCode | **[setMessagePlayedStatus](classfloo_1_1_b_m_x_conversation.md#function-setmessageplayedstatus)**(BMXMessagePtr msg, bool status) =0<br>Set message playback state (valid only for voice/video messages)  |
+| virtual BMXErrorCode | **[setMessageReadStatus](classfloo_1_1_b_m_x_conversation.md#function-setmessagereadstatus)**(BMXMessagePtr msg, bool status) =0<br>Set message unread state, update unread message-number  |
+| virtual BMXErrorCode | **[setAllMessagesRead](classfloo_1_1_b_m_x_conversation.md#function-setallmessagesread)**() =0<br>Set all messages to read, update number of unread messages  |
+| virtual BMXErrorCode | **[updateMessageExtension](classfloo_1_1_b_m_x_conversation.md#function-updatemessageextension)**(BMXMessagePtr msg) =0<br>Update the extend field info of a database-stored message  |
+| virtual BMXErrorCode | **[insertMessage](classfloo_1_1_b_m_x_conversation.md#function-insertmessage)**(BMXMessagePtr msg) =0<br>Insert a message  |
+| virtual BMXMessagePtr | **[loadMessage](classfloo_1_1_b_m_x_conversation.md#function-loadmessage)**(int64_t msgId) =0<br>Read a message  |
+| virtual BMXErrorCode | **[removeAllMessages](classfloo_1_1_b_m_x_conversation.md#function-removeallmessages)**() =0<br>Delete all messages in sesstion  |
+| virtual BMXErrorCode | **[loadMessages](classfloo_1_1_b_m_x_conversation.md#function-loadmessages)**(int64_t refMsgId, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Load message, starting with latest if not specified  |
+| virtual BMXErrorCode | **[searchMessagesByKeyWords](classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbykeywords)**(const std::string & keywords, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Search for messages, starting with latest if not specified  |
 | virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_conversation.md#function-searchmessages)**(const std::string & keywords, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
-| virtual BMXErrorCode | **[searchMessagesByType](classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbytype)**([BMXMessage::ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) type, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>按照类型搜索消息，如果不指定则从最新消息开始  |
+| virtual BMXErrorCode | **[searchMessagesByType](classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbytype)**([BMXMessage::ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) type, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Search for messages by type, starting with latest if not specified  |
 | virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_conversation.md#function-searchmessages)**([BMXMessage::ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) type, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
-| virtual BMXErrorCode | **[refreshConversation](classfloo_1_1_b_m_x_conversation.md#function-refreshconversation)**() =0<br>读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。  |
+| virtual BMXErrorCode | **[refreshConversation](classfloo_1_1_b_m_x_conversation.md#function-refreshconversation)**() =0<br>Read the total message-number from current session of the database, forces to update the total message-number and unread message-number.  |
 
 ## Protected Functions
 
@@ -63,24 +63,24 @@ Inherits from BMXBaseObject
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Single | | 单聊   |
-| Group | | 群聊   |
-| System | | 系统通知   |
+| Single | | Single chat   |
+| Group | | Group chat   |
+| System | | System notification   |
 
 
 
-会话类型 
+Session type 
 
 ### enum Direction
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Up | | 取更旧消息   |
-| Down | | 取更新消息   |
+| Up | | Fetch older message   |
+| Down | | Fetch newer message   |
 
 
 
-消息搜索方向 
+Message search direction 
 
 ## Public Functions Documentation
 
@@ -90,7 +90,7 @@ Inherits from BMXBaseObject
 inline virtual ~BMXConversation()
 ```
 
-析构函数 
+Destructor 
 
 ### function conversationId
 
@@ -98,7 +98,7 @@ inline virtual ~BMXConversation()
 virtual int64_t conversationId() =0
 ```
 
-会话Id 
+Session Id 
 
 **Return**: int64_t 
 
@@ -108,7 +108,7 @@ virtual int64_t conversationId() =0
 virtual Type type() =0
 ```
 
-会话类型 
+Session type 
 
 **Return**: Type 
 
@@ -118,7 +118,7 @@ virtual Type type() =0
 virtual BMXMessagePtr lastMsg() =0
 ```
 
-最新消息 
+Latest message 
 
 **Return**: BMXMessagePtr 
 
@@ -128,7 +128,7 @@ virtual BMXMessagePtr lastMsg() =0
 virtual int32_t unreadNumber() =0
 ```
 
-未读消息数 
+Unread message-number 
 
 **Return**: int32_t 
 
@@ -138,7 +138,7 @@ virtual int32_t unreadNumber() =0
 virtual int32_t messageCount() =0
 ```
 
-会话中所有消息的数量 
+Total message-number in session 
 
 **Return**: int32_t 
 
@@ -148,7 +148,7 @@ virtual int32_t messageCount() =0
 virtual bool isMuteNotification() =0
 ```
 
-是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。 
+Whether the user is alerted to the message, without which the session total unread-number does not count this session. 
 
 **Return**: bool 
 
@@ -158,7 +158,7 @@ virtual bool isMuteNotification() =0
 virtual const JSON & extension() =0
 ```
 
-扩展信息 
+Extension information 
 
 **Return**: JSON(std::string) 
 
@@ -170,11 +170,11 @@ virtual BMXErrorCode setExtension(
 ) =0
 ```
 
-设置扩展信息 
+Set the Extension information 
 
 **Parameters**: 
 
-  * **ext** 会话扩展消息 
+  * **ext** Session extension message 
 
 
 **Return**: BMXErrorCode 
@@ -185,7 +185,7 @@ virtual BMXErrorCode setExtension(
 virtual const std::string & editMessage() =0
 ```
 
-编辑消息 
+Edit message 
 
 **Return**: std::string 
 
@@ -197,11 +197,11 @@ virtual BMXErrorCode setEditMessage(
 ) =0
 ```
 
-设置编辑消息 
+Set the Edit Message 
 
 **Parameters**: 
 
-  * **editMessage** 会话正在编辑的文本消息 
+  * **editMessage** Text message being edited by session 
 
 
 **Return**: BMXErrorCode 
@@ -215,12 +215,12 @@ virtual BMXErrorCode setMessagePlayedStatus(
 ) =0
 ```
 
-设置消息播放状态（只对语音/视频消息有效） 
+Set message playback state (valid only for voice/video messages) 
 
 **Parameters**: 
 
-  * **msg** 需要设置播放状态的消息 
-  * **status** 消息是否已经播放 
+  * **msg** Message for which playback state needs to be set 
+  * **status** Whether the message has been played 
 
 
 **Return**: BMXErrorCode 
@@ -234,12 +234,12 @@ virtual BMXErrorCode setMessageReadStatus(
 ) =0
 ```
 
-设置消息未读状态，更新未读消息数 
+Set message unread state, update unread message-number 
 
 **Parameters**: 
 
-  * **msg** 需要设置消息已读状态的消息 
-  * **status** 消息是否设置已读 
+  * **msg** Message for which the read state needs to be set 
+  * **status** Whether the message is set to read 
 
 
 **Return**: BMXErrorCode 
@@ -250,7 +250,7 @@ virtual BMXErrorCode setMessageReadStatus(
 virtual BMXErrorCode setAllMessagesRead() =0
 ```
 
-把所有消息设置为已读，更新未读消息数 
+Set all messages to read, update number of unread messages 
 
 **Return**: BMXErrorCode 
 
@@ -262,11 +262,11 @@ virtual BMXErrorCode updateMessageExtension(
 ) =0
 ```
 
-更新一条数据库存储消息的扩展字段信息 
+Update the extend field info of a database-stored message 
 
 **Parameters**: 
 
-  * **msg** 需要更改扩展信息的消息此时msg部分已经更新扩展字椴信息 
+  * **msg** The message that needs to change the extension information when the msg section has updated its extension field 
 
 
 **Return**: BMXErrorCode 
@@ -279,11 +279,11 @@ virtual BMXErrorCode insertMessage(
 ) =0
 ```
 
-插入一条消息 
+Insert a message 
 
 **Parameters**: 
 
-  * **msg** 插入的消息 
+  * **msg** Inserted message 
 
 
 **Return**: BMXErrorCode 
@@ -296,11 +296,11 @@ virtual BMXMessagePtr loadMessage(
 ) =0
 ```
 
-读取一条消息 
+Read a message 
 
 **Parameters**: 
 
-  * **msgId** 需要读取的消息的消息id 
+  * **msgId** Message id of the message to read 
 
 
 **Return**: BMXMessagePtr 
@@ -311,7 +311,7 @@ virtual BMXMessagePtr loadMessage(
 virtual BMXErrorCode removeAllMessages() =0
 ```
 
-删除会话中的所有消息 
+Delete all messages in sesstion 
 
 **Return**: BMXErrorCode 
 
@@ -326,14 +326,14 @@ virtual BMXErrorCode loadMessages(
 ) =0
 ```
 
-加载消息，如果不指定则从最新消息开始 
+Load message, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **refMsgId** 加载消息的起始id 
-  * **size** 最大加载消息条数 
-  * **result** 数据库返回的加载消息列表 
-  * **Direction** 加载消息的方向，默认是加载更早的消息 
+  * **refMsgId** Start id of the message to load 
+  * **size** Maximum number of loaded messages 
+  * **result** List of loaded messages returned by database 
+  * **Direction** Message loading direction, default to load earlier messages 
 
 
 **Return**: BMXErrorCode 
@@ -350,15 +350,15 @@ virtual BMXErrorCode searchMessagesByKeyWords(
 ) =0
 ```
 
-搜索消息，如果不指定则从最新消息开始 
+Search for messages, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **keywords** 搜索消息的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **result** 搜索到的消息结果列表 
-  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **keywords** Keyword for search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **result** List of searched message results 
+  * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: BMXErrorCode 
@@ -379,18 +379,18 @@ Deprecated.
 
 **Parameters**: 
 
-  * **keywords** 搜索消息的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **result** 搜索到的消息结果列表 
-  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **keywords** Keyword for search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **result** List of searched message results 
+  * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: BMXErrorCode 
 
 use searchMessagesByKeyWords instead.
 
-搜索消息，如果不指定则从最新消息开始 
+Search for messages, starting with latest if not specified 
 
 
 ### function searchMessagesByType
@@ -405,15 +405,15 @@ virtual BMXErrorCode searchMessagesByType(
 ) =0
 ```
 
-按照类型搜索消息，如果不指定则从最新消息开始 
+Search for messages by type, starting with latest if not specified 
 
 **Parameters**: 
 
-  * **type** 搜索消息的类型 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **result** 搜索到的消息结果列表 
-  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **type** Type of search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **result** List of searched message results 
+  * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: BMXErrorCode 
@@ -434,18 +434,18 @@ Deprecated.
 
 **Parameters**: 
 
-  * **type** 搜索消息的类型 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 最大加载消息条数 
-  * **result** 搜索到的消息结果列表 
-  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+  * **type** Type of search message 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of loaded messages 
+  * **result** List of searched message results 
+  * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
 
 **Return**: BMXErrorCode 
 
 use searchMessagesByType instead.
 
-按照类型搜索消息，如果不指定则从最新消息开始 
+Search for messages by type, starting with latest if not specified 
 
 
 ### function refreshConversation
@@ -454,7 +454,7 @@ use searchMessagesByType instead.
 virtual BMXErrorCode refreshConversation() =0
 ```
 
-读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。 
+Read the total message-number from current session of the database, forces to update the total message-number and unread message-number. 
 
 **Return**: BMXErrorCode 
 
