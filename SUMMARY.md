@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Instant Messaging Development guide(IM)](README.md)
-* [Quickstart](quick-start/README.md)
+* [Quick Start](quick-start/README.md)
   * [Quick development for iOS client(floo-ios)](quick-start/floo-ios-quick-start.md)
   * [Quick development for Android client(floo-android)](quick-start/floo-android-quick-start.md)
   * [Quick development for Linux/C++ client(floo)](quick-start/floo-quick-start.md)
@@ -9,7 +9,7 @@
   * [Server-sideDevelopment guide(server api)](quick-start/server-api-quick-start.md)
   * [PushDevelopment guide(PUSH)](quick-start/push-dev-guide.md)
   * [Private Cloud Deployment documentation](quick-start/how-to-deploy-private-cloud.md)
-* [Reference](reference/README.md)
+* [API Reference](reference/README.md)
   * [floo android API](reference/floo-android.md)
     * **class [im::floo::floolib::BMXChatManager](reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md)** <br>Chat manager 
     * **class [im::floo::floolib::BMXChatService](reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md)** <br>Chat Service 
