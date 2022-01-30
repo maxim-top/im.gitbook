@@ -53,9 +53,9 @@ Group Service
 | virtual BMXErrorCode | **[getBlockList](classfloo_1_1_b_m_x_group_service.md#function-getblocklist)**(BMXGroupPtr group, BMXGroupMemberResultPagePtr & result, const std::string & cursor ="", int pageSize =200) =0<br>Paged to get blacklist  |
 | virtual BMXErrorCode | **[getBlockList](classfloo_1_1_b_m_x_group_service.md#function-getblocklist)**(BMXGroupPtr group, BMXGroup::MemberList & list, bool forceRefresh) =0<br>Get blacklist  |
 | virtual BMXErrorCode | **[banMembers](classfloo_1_1_b_m_x_group_service.md#function-banmembers)**(BMXGroupPtr group, const std::vector< int64_t > & members, int64_t duration, const std::string & reason ="") =0<br>Ban  |
-| virtual BMXErrorCode | **[banGroup](classfloo_1_1_b_m_x_group_service.md#function-bangroup)**(BMXGroupPtr group, int64_t duration) =0<br>**to-be-translate**  |
+| virtual BMXErrorCode | **[banGroup](classfloo_1_1_b_m_x_group_service.md#function-bangroup)**(BMXGroupPtr group, int64_t duration) =0<br>Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration)  |
 | virtual BMXErrorCode | **[unbanMembers](classfloo_1_1_b_m_x_group_service.md#function-unbanmembers)**(BMXGroupPtr group, const std::vector< int64_t > & members) =0<br>Unban  |
-| virtual BMXErrorCode | **[unbanGroup](classfloo_1_1_b_m_x_group_service.md#function-unbangroup)**(BMXGroupPtr group) =0<br>**to-be-translate**  |
+| virtual BMXErrorCode | **[unbanGroup](classfloo_1_1_b_m_x_group_service.md#function-unbangroup)**(BMXGroupPtr group) =0<br>Unban all members  |
 | virtual BMXErrorCode | **[getBannedMembers](classfloo_1_1_b_m_x_group_service.md#function-getbannedmembers)**(BMXGroupPtr group, BMXGroupBannedMemberResultPagePtr & result, const std::string & cursor ="", int pageSize =200) =0<br>Paged to get ban list  |
 | virtual BMXErrorCode | **[getBannedMembers](classfloo_1_1_b_m_x_group_service.md#function-getbannedmembers)**(BMXGroupPtr group, BMXGroup::BannedMemberList & list) =0<br>Get a list of banned members  |
 | virtual BMXErrorCode | **[muteMessage](classfloo_1_1_b_m_x_group_service.md#function-mutemessage)**(BMXGroupPtr group, [BMXGroup::MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode) mode) =0<br>Set whether to block group messages  |
@@ -718,12 +718,12 @@ virtual BMXErrorCode banGroup(
 ) =0
 ```
 
-**to-be-translate** 
+Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration) 
 
 **Parameters**: 
 
   * **group** Group to operate on 
-  * **duration** **to-be-translate** 
+  * **duration** Banning duration (minute) 
 
 
 **Return**: BMXErrorCode 
@@ -755,7 +755,7 @@ virtual BMXErrorCode unbanGroup(
 ) =0
 ```
 
-**to-be-translate** 
+Unban all members 
 
 **Parameters**: 
 
@@ -1064,7 +1064,7 @@ Modify shared file name in group
 
   * **group** Group to operate on 
   * **sharedFile** Group shared file to change 
-  * **name** **to-be-translate** 
+  * **name** Modified group shared file name 
 
 
 **Return**: BMXErrorCode 

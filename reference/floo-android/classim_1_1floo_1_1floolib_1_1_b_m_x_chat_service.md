@@ -21,7 +21,7 @@ Chat Service
 | [BMXErrorCode] | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessageList list, [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) to, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) newMsg)<br>Merge forwarding messages  |
 | void | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()  |
 | void | **[ackMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send read receipt  |
-| void | **[ackMessageDelivered](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>**to-be-translate**  |
+| void | **[ackMessageDelivered](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send delivery receipt  |
 | void | **[ackPlayMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackplaymessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send a playback receipt  |
 | void | **[readCancel](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readcancel)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Mark this message as unread and synchronize to all devices of the current user  |
 | void | **[readAllMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Mark this message and all previous messages as read, and synchronize to all current users' devices  |
@@ -33,7 +33,7 @@ Chat Service
 | void | **[downloadAttachmentByUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl)**(long msgId, String url, String path)<br>Downloaded attachments, and download state changes and progress are notified via listener  |
 | void | **[cancelUploadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceluploadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Cancel uploading attachment  |
 | void | **[cancelDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceldownloadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Cancel uploading attachment  |
-| int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum)**()<br>**to-be-translate**  |
+| int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum)**()<br>Number of uploading/downloading files  |
 | [BMXErrorCode] | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-insertmessages)**(BMXMessageList list)<br>Insert a message  |
 | [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage)**(long msgId)<br>Read a message  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br>Delete session  |
@@ -183,11 +183,11 @@ inline void ackMessageDelivered(
 )
 ```
 
-**to-be-translate** 
+Send delivery receipt 
 
 **Parameters**: 
 
-  * **msg** **to-be-translate** 
+  * **msg** Message that need to send a delivery receipt 
 
 
 ### function ackPlayMessage
@@ -357,9 +357,9 @@ Cancel uploading attachment
 inline int transferingNum()
 ```
 
-**to-be-translate** 
+Number of uploading/downloading files 
 
-**Return**: **to-be-translate** 
+**Return**: Number of files 
 
 ### function insertMessages
 

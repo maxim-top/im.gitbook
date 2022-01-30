@@ -45,7 +45,7 @@ Group change listener
 | virtual void | **[onBlockListAdded](classfloo_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>Add to blacklist  |
 | virtual void | **[onBlockListRemoved](classfloo_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>Delete blacklist  |
 | virtual void | **[onGroupListUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**()<br>Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information  |
-| void | **[registerGroupService](classfloo_1_1_b_m_x_group_service_listener.md#function-registergroupservice)**([BMXGroupService](classfloo_1_1_b_m_x_group_service.md) * service)<br>**to-be-translate**  |
+| void | **[registerGroupService](classfloo_1_1_b_m_x_group_service_listener.md#function-registergroupservice)**([BMXGroupService](classfloo_1_1_b_m_x_group_service.md) * service)<br>Register BMXGroupService to which BMXGroupServiceListener is bound (automatic registration in SDK)  |
 
 ## Protected Attributes
 
@@ -522,7 +522,7 @@ inline void registerGroupService(
 )
 ```
 
-**to-be-translate** 
+Register BMXGroupService to which BMXGroupServiceListener is bound (automatic registration in SDK) 
 
 **Parameters**: 
 

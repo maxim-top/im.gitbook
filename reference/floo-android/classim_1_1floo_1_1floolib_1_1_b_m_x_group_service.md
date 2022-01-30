@@ -50,9 +50,9 @@ Group Service
 | [BMXErrorCode] | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getblocklist)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberList list, boolean forceRefresh)<br>Get blacklist  |
 | [BMXErrorCode] | **[banMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-banmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration, String reason)<br>Ban  |
 | [BMXErrorCode] | **[banMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-banmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration) |
-| [BMXErrorCode] | **[banGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-bangroup)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long duration)<br>**to-be-translate**  |
+| [BMXErrorCode] | **[banGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-bangroup)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long duration)<br>Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration)  |
 | [BMXErrorCode] | **[unbanMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unbanmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>Unban  |
-| [BMXErrorCode] | **[unbanGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unbangroup)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>**to-be-translate**  |
+| [BMXErrorCode] | **[unbanGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unbangroup)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Unban all members  |
 | [BMXErrorCode] | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getbannedmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupBannedMemberResultPage result, String cursor, int pageSize)<br>Paged to get ban list  |
 | [BMXErrorCode] | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getbannedmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupBannedMemberList list)<br>Get a list of banned members  |
 | [BMXErrorCode] | **[muteMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-mutemessage)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.MsgMuteMode mode)<br>Set whether to block group messages  |
@@ -700,12 +700,12 @@ inline BMXErrorCode banGroup(
 )
 ```
 
-**to-be-translate** 
+Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration) 
 
 **Parameters**: 
 
   * **group** Group to operate on 
-  * **duration** **to-be-translate** 
+  * **duration** Banning duration (minute) 
 
 
 **Return**: [BMXErrorCode]
@@ -737,7 +737,7 @@ inline BMXErrorCode unbanGroup(
 )
 ```
 
-**to-be-translate** 
+Unban all members 
 
 **Parameters**: 
 
@@ -1066,7 +1066,7 @@ Modify shared file name in group
 
   * **group** Group to operate on 
   * **sharedFile** Group shared file to change 
-  * **name** **to-be-translate** 
+  * **name** Modified group shared file name 
 
 
 **Return**: [BMXErrorCode]

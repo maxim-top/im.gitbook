@@ -30,7 +30,7 @@ Chat Service
 | virtual BMXErrorCode | **[forwardMessage](classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage)**(const BMXMessageList & list, BMXConversationPtr to, BMXMessagePtr & newMsg) =0<br>Merge forwarding messages  |
 | virtual void | **[forwardMessage](classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessagePtr msg) =0<br>Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()  |
 | virtual void | **[ackMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackmessage)**(BMXMessagePtr msg) =0<br>Send read receipt  |
-| virtual void | **[ackMessageDelivered](classfloo_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**(BMXMessagePtr msg) =0<br>**to-be-translate**  |
+| virtual void | **[ackMessageDelivered](classfloo_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**(BMXMessagePtr msg) =0<br>Send delivery receipt  |
 | virtual void | **[ackPlayMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackplaymessage)**(BMXMessagePtr msg) =0<br>Send an audio/video message playback receipt  |
 | virtual void | **[readCancel](classfloo_1_1_b_m_x_chat_service.md#function-readcancel)**(BMXMessagePtr msg) =0<br>Mark this message as unread and synchronize to all devices of the current user  |
 | virtual void | **[readAllMessage](classfloo_1_1_b_m_x_chat_service.md#function-readallmessage)**(BMXMessagePtr msg) =0<br>Mark this message and all previous messages as read, and synchronize to all current users' devices  |
@@ -40,7 +40,7 @@ Chat Service
 | virtual void | **[downloadAttachmentByUrl](classfloo_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl)**(int64_t msgId, const std::string & url, const std::string & path) =0<br>Downloaded attachments, and download state changes and progress are notified via listener  |
 | virtual void | **[cancelUploadAttachment](classfloo_1_1_b_m_x_chat_service.md#function-canceluploadattachment)**(BMXMessagePtr msg) =0<br>Cancel uploading attachment  |
 | virtual void | **[cancelDownloadAttachment](classfloo_1_1_b_m_x_chat_service.md#function-canceldownloadattachment)**(BMXMessagePtr msg) =0<br>Cancel attachment downloading  |
-| virtual int | **[transferingNum](classfloo_1_1_b_m_x_chat_service.md#function-transferingnum)**() =0<br>**to-be-translate**  |
+| virtual int | **[transferingNum](classfloo_1_1_b_m_x_chat_service.md#function-transferingnum)**() =0<br>Number of uploading/downloading files  |
 | virtual BMXErrorCode | **[insertMessages](classfloo_1_1_b_m_x_chat_service.md#function-insertmessages)**(const BMXMessageList & list) =0<br>Insert a message  |
 | virtual BMXMessagePtr | **[getMessage](classfloo_1_1_b_m_x_chat_service.md#function-getmessage)**(int64_t msgId) =0<br>Read a message  |
 | virtual void | **[deleteConversation](classfloo_1_1_b_m_x_chat_service.md#function-deleteconversation)**(int64_t conversationId, bool synchronize =false) =0<br>Delete session  |
@@ -192,7 +192,7 @@ virtual void ackMessageDelivered(
 ) =0
 ```
 
-**to-be-translate** 
+Send delivery receipt 
 
 ### function ackPlayMessage
 
@@ -336,9 +336,9 @@ Cancel attachment downloading
 virtual int transferingNum() =0
 ```
 
-**to-be-translate** 
+Number of uploading/downloading files 
 
-**Return**: **to-be-translate** 
+**Return**: Number of files 
 
 ### function insertMessages
 

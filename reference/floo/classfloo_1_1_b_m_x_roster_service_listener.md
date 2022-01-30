@@ -28,7 +28,7 @@ Friend change listener
 | virtual void | **[onBlockListRemoved](classfloo_1_1_b_m_x_roster_service_listener.md#function-onblocklistremoved)**(int64_t sponsorId, int64_t recipientId)<br>Delete blacklist  |
 | virtual void | **[onRosterInfoUpdate](classfloo_1_1_b_m_x_roster_service_listener.md#function-onrosterinfoupdate)**(BMXRosterItemPtr item)<br>Update user information  |
 | virtual void | **[onRosterListUpdate](classfloo_1_1_b_m_x_roster_service_listener.md#function-onrosterlistupdate)**()<br>Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information  |
-| void | **[registerRosterService](classfloo_1_1_b_m_x_roster_service_listener.md#function-registerrosterservice)**([BMXRosterService](classfloo_1_1_b_m_x_roster_service.md) * service)<br>**to-be-translate**  |
+| void | **[registerRosterService](classfloo_1_1_b_m_x_roster_service_listener.md#function-registerrosterservice)**([BMXRosterService](classfloo_1_1_b_m_x_roster_service.md) * service)<br>Register BMXRosterService to which BMXRosterServiceListener is bound (automatic registration in SDK)  |
 
 ## Protected Attributes
 
@@ -208,7 +208,7 @@ inline void registerRosterService(
 )
 ```
 
-**to-be-translate** 
+Register BMXRosterService to which BMXRosterServiceListener is bound (automatic registration in SDK) 
 
 **Parameters**: 
 

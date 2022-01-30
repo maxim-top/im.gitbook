@@ -78,7 +78,7 @@ Inherits from BMXBaseObject
 | virtual bool | **[enableReadAck](classfloo_1_1_b_m_x_group.md#function-enablereadack)**() =0<br>Whether group message read feature enabled  |
 | virtual bool | **[historyVisible](classfloo_1_1_b_m_x_group.md#function-historyvisible)**() =0<br>Whether to load and display the chat history  |
 | virtual [MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype) | **[roleType](classfloo_1_1_b_m_x_group.md#function-roletype)**() =0<br>Type of a member role in group  |
-| virtual int64_t | **[banExpireTime](classfloo_1_1_b_m_x_group.md#function-banexpiretime)**() =0<br>**to-be-translate**  |
+| virtual int64_t | **[banExpireTime](classfloo_1_1_b_m_x_group.md#function-banexpiretime)**() =0<br>Expiration time of banning all group members  |
 
 ## Protected Functions
 
@@ -178,7 +178,7 @@ Group invitation mode
 | MsgMuteMode | | Modify whether to alert message   |
 | ReadAckMode | | Whether group message read feature enabled   |
 | HistoryVisibleMode | | Whether group chat history is visible to new members   |
-| BanExpireTime | | **to-be-translate**   |
+| BanExpireTime | | Expiration time of banning all group members   |
 
 
 
@@ -633,7 +633,7 @@ Type of a member role in group
 virtual int64_t banExpireTime() =0
 ```
 
-**to-be-translate** 
+Expiration time of banning all group members 
 
 **Return**: int64_t 
 

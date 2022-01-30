@@ -1033,7 +1033,7 @@
 | data|object||false||
 |⇥ apply_approval|int32||false|Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests|
 |⇥ avatar|string||false|Group avatar|
-|⇥ ban_expire_time|int32||false|**to-be-translate**|
+|⇥ ban_expire_time|int32||false|Expiration time (second), during which only Admins are allowed to send messages, 0 or less than the current time means no banning, -1 means banned permanently|
 |⇥ created_at|int32||false|Creation time|
 |⇥ description|string||false|Group description|
 |⇥ ext|string||false|Group extension information|
@@ -1890,7 +1890,7 @@
 | data|object||false||
 |⇥ apply_approval|int32||false|Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests|
 |⇥ avatar|string||false|Group avatar|
-|⇥ ban_expire_time|int32||false|**to-be-translate**|
+|⇥ ban_expire_time|int32||false|Expiration time (second), during which only Admins are allowed to send messages, 0 or less than the current time means no banning, -1 means banned permanently|
 |⇥ created_at|int32||false|Creation time|
 |⇥ description|string||false|Group description|
 |⇥ ext|string||false|Group extension information|
@@ -2035,7 +2035,7 @@
 
 
 
-## 7.63 **to-be-translate**
+## 7.63 Ban all members, only Admins can send messages
 
 > POST  /group/settings/ban_all
 
@@ -2056,7 +2056,7 @@
 | ------ | ------ | ------ | ------ | ------ |
 | code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ ban_expire_time|int32||false|**to-be-translate**|
+|⇥ ban_expire_time|int32||false|Expiration time of banning all members|
 | message|string||false|Error information, null means success|
 
 
@@ -2246,7 +2246,7 @@
 
 
 
-## 7.70 **to-be-translate**
+## 7.70 Unban all members
 
 > POST  /group/settings/unban_all
 

@@ -28,8 +28,8 @@ SDK settings management
 | const std::string & | **[getPushCertName](classfloo_1_1_b_m_x_s_d_k_config.md#function-getpushcertname)**()<br>Get Push certificate name  |
 | void | **[setPushCertName](classfloo_1_1_b_m_x_s_d_k_config.md#function-setpushcertname)**(const std::string & )<br>Set Push certificate name  |
 | const std::string & | **[getUserAgent](classfloo_1_1_b_m_x_s_d_k_config.md#function-getuseragent)**()<br>Get user proxy information  |
-| bool | **[carryUsernameInMessage](classfloo_1_1_b_m_x_s_d_k_config.md#function-carryusernameinmessage)**()<br>**to-be-translate**  |
-| void | **[setCarryUsernameInMessage](classfloo_1_1_b_m_x_s_d_k_config.md#function-setcarryusernameinmessage)**(bool )<br>**to-be-translate**  |
+| bool | **[carryUsernameInMessage](classfloo_1_1_b_m_x_s_d_k_config.md#function-carryusernameinmessage)**()<br>Whether the config sends message carrying  |
+| void | **[setCarryUsernameInMessage](classfloo_1_1_b_m_x_s_d_k_config.md#function-setcarryusernameinmessage)**(bool )<br>Set whether the config sends message carrying username  |
 | bool | **[enableDeliveryAck](classfloo_1_1_b_m_x_s_d_k_config.md#function-enabledeliveryack)**()<br>Whether to send message delivery receipt  |
 | void | **[setEnableDeliveryAck](classfloo_1_1_b_m_x_s_d_k_config.md#function-setenabledeliveryack)**(bool )<br>Set whether to send message delivery receipt  |
 | BMXLogLevel | **[getLogLevel](classfloo_1_1_b_m_x_s_d_k_config.md#function-getloglevel)**()<br>Log output level  |
@@ -41,9 +41,9 @@ SDK settings management
 | bool | **[getLoadAllServerConversations](classfloo_1_1_b_m_x_s_d_k_config.md#function-getloadallserverconversations)**()<br>Whether to create all sessions based on the unread list returned by server.  |
 | void | **[setLoadAllServerConversations](classfloo_1_1_b_m_x_s_d_k_config.md#function-setloadallserverconversations)**(bool enable =false)<br>Whether to create all sessions based on the unread list returned by server, default false to create sessions with unread only.  |
 | const std::string & | **[getDeviceUuid](classfloo_1_1_b_m_x_s_d_k_config.md#function-getdeviceuuid)**()<br>Get the unique identifier of device  |
-| void | **[setDeviceUuid](classfloo_1_1_b_m_x_s_d_k_config.md#function-setdeviceuuid)**(const std::string & uuid)<br>**to-be-translate**  |
-| const std::string & | **[getDBCryptoKey](classfloo_1_1_b_m_x_s_d_k_config.md#function-getdbcryptokey)**()<br>**to-be-translate**  |
-| void | **[setDBCryptoKey](classfloo_1_1_b_m_x_s_d_k_config.md#function-setdbcryptokey)**(const std::string & cryptoKey)<br>**to-be-translate**  |
+| void | **[setDeviceUuid](classfloo_1_1_b_m_x_s_d_k_config.md#function-setdeviceuuid)**(const std::string & uuid)<br>Set the unique ID of the device, which should always be consistent before the app is uninstalled. Different device IDs can be generated when the app is deleted and installed again.  |
+| const std::string & | **[getDBCryptoKey](classfloo_1_1_b_m_x_s_d_k_config.md#function-getdbcryptokey)**()<br>Get the local database encryption key for the device.  |
+| void | **[setDBCryptoKey](classfloo_1_1_b_m_x_s_d_k_config.md#function-setdbcryptokey)**(const std::string & cryptoKey)<br>Set the encryption key of the local database, which should always be kept until the app is uninstalled, and a different key can be generated when the app is deleted and installed again. Used for local database encryption.  |
 | bool | **[getVerifyCertificate](classfloo_1_1_b_m_x_s_d_k_config.md#function-getverifycertificate)**()<br>Whether need to verify server-side certificate when get https request.  |
 | void | **[setVerifyCertificate](classfloo_1_1_b_m_x_s_d_k_config.md#function-setverifycertificate)**(bool verify =true)<br>Set whether https request verify server-side certificate.  |
 | bool | **[getEnableDNS](classfloo_1_1_b_m_x_s_d_k_config.md#function-getenabledns)**()<br>Whether to enable dns function for get.  |
@@ -221,7 +221,7 @@ Get user proxy information
 bool carryUsernameInMessage()
 ```
 
-**to-be-translate** 
+Whether the config sends message carrying 
 
 **Return**: bool 
 
@@ -233,11 +233,11 @@ void setCarryUsernameInMessage(
 )
 ```
 
-**to-be-translate** 
+Set whether the config sends message carrying username 
 
 **Parameters**: 
 
-  * **bool** **to-be-translate** 
+  * **bool** Set whether the config sends message carrying username 
 
 
 ### function enableDeliveryAck
@@ -383,7 +383,7 @@ void setDeviceUuid(
 )
 ```
 
-**to-be-translate** 
+Set the unique ID of the device, which should always be consistent before the app is uninstalled. Different device IDs can be generated when the app is deleted and installed again. 
 
 **Parameters**: 
 
@@ -396,7 +396,7 @@ void setDeviceUuid(
 const std::string & getDBCryptoKey()
 ```
 
-**to-be-translate** 
+Get the local database encryption key for the device. 
 
 **Return**: std::string 
 
@@ -408,11 +408,11 @@ void setDBCryptoKey(
 )
 ```
 
-**to-be-translate** 
+Set the encryption key of the local database, which should always be kept until the app is uninstalled, and a different key can be generated when the app is deleted and installed again. Used for local database encryption. 
 
 **Parameters**: 
 
-  * **cryptoKey** **to-be-translate**. 
+  * **cryptoKey** Local database encryption key. 
 
 
 ### function getVerifyCertificate

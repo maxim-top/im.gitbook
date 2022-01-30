@@ -25,7 +25,7 @@ User state listener
 | virtual void | **[onInfoUpdated](classfloo_1_1_b_m_x_user_service_listener.md#function-oninfoupdated)**(BMXUserProfilePtr profile)<br>Synchronize user information updates (when user information changes in other devices)  |
 | virtual void | **[onOtherDeviceSingIn](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin)**(int deviceSN)<br>User login on another device  |
 | virtual void | **[onOtherDeviceSingOut](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout)**(int deviceSN)<br>User logout on another device  |
-| void | **[registerUserService](classfloo_1_1_b_m_x_user_service_listener.md#function-registeruserservice)**([BMXUserService](classfloo_1_1_b_m_x_user_service.md) * service)<br>**to-be-translate**  |
+| void | **[registerUserService](classfloo_1_1_b_m_x_user_service_listener.md#function-registeruserservice)**([BMXUserService](classfloo_1_1_b_m_x_user_service.md) * service)<br>Register BMXUserService to which BMXUserServiceListener is bound (automatic registration in SDK)  |
 
 ## Protected Attributes
 
@@ -150,7 +150,7 @@ inline void registerUserService(
 )
 ```
 
-**to-be-translate** 
+Register BMXUserService to which BMXUserServiceListener is bound (automatic registration in SDK) 
 
 **Parameters**: 
 

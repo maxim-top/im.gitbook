@@ -54,8 +54,8 @@ Inherits from BMXBaseObject
 | bool | **[isSilence](classfloo_1_1_b_m_x_message_config.md#function-issilence)**()<br>Get whether the current push is a silent message  |
 | [BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype) | **[getBadgeCountType](classfloo_1_1_b_m_x_message_config.md#function-getbadgecounttype)**()<br>Get the badge count of the current push  |
 | int | **[getBadgeCount](classfloo_1_1_b_m_x_message_config.md#function-getbadgecount)**(int count)<br>Get the badge count of the current push  |
-| void | **[setUsername](classfloo_1_1_b_m_x_message_config.md#function-setusername)**(const std::string & username)<br>**to-be-translate**  |
-| std::string | **[getUsername](classfloo_1_1_b_m_x_message_config.md#function-getusername)**()<br>**to-be-translate**  |
+| void | **[setUsername](classfloo_1_1_b_m_x_message_config.md#function-setusername)**(const std::string & username)<br>Set username  |
+| std::string | **[getUsername](classfloo_1_1_b_m_x_message_config.md#function-getusername)**()<br>Get username  |
 | std::string | **[serialize](classfloo_1_1_b_m_x_message_config.md#function-serialize)**() const<br>Serialization operation  |
 | BMXMessageConfigPtr | **[createMessageConfig](classfloo_1_1_b_m_x_message_config.md#function-createmessageconfig)**(bool mentionAll) |
 
@@ -433,7 +433,7 @@ void setUsername(
 )
 ```
 
-**to-be-translate** 
+Set username 
 
 **Parameters**: 
 
@@ -446,7 +446,7 @@ void setUsername(
 std::string getUsername()
 ```
 
-**to-be-translate** 
+Get username 
 
 **Return**: std::string 
 

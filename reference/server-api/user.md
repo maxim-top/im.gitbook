@@ -333,7 +333,7 @@
 
 
 
-## 3.12 **to-be-translate**
+## 3.12 Banned user
 
 > PUT  /user/disable
 
@@ -420,7 +420,7 @@
 
 
 
-## 3.15 **to-be-translate**
+## 3.15 Unbanned user
 
 > PUT  /user/enable
 
@@ -623,7 +623,7 @@
 
 
 
-## 3.22 **to-be-translate**
+## 3.22 Query user online status
 
 > GET  /user/online_status
 
@@ -637,8 +637,8 @@
 | Parameter name | Type | Default | Not null | Description |
 | ------ | ------ | ------ | ------ | ------ |
 | code|int32||false|Return code, 200 is success|
-| data|object||false|**to-be-translate**|
-|⇥ online|boolean||false|**to-be-translate**|
+| data|object||false|User online info|
+|⇥ online|boolean||false|Online or not: true - online, false - offline|
 | message|string||false|Error information, null means success|
 
 

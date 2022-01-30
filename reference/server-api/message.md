@@ -148,7 +148,7 @@
 | ext|string||false||
 | from_user_id|int32||false|Sender's user ID|
 | targets|array[int32]||false|Receive user ID or group ID|
-| transaction_id|int32||false|**to-be-translate**|
+| transaction_id|int32||false|Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.|
 | type|int32||false|Target type, 1 - normal user, 2 -- group|
 
 ### Response Body
@@ -185,7 +185,7 @@
 | ext|string||false||
 | from_user_id|int32||false|Sender's user ID|
 | targets|array[int32]||false|Receive user ID or group ID|
-| transaction_id|int32||false|**to-be-translate**|
+| transaction_id|int32||false|Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.|
 | type|int32||false|Target type, 1 - normal user, 2 -- group|
 
 ### Response Body
@@ -203,7 +203,7 @@
 
 
 
-## 6.6  **to-be-translate**
+## 6.6  Send a message
 
 > POST  /message/send
 
@@ -222,7 +222,7 @@
 | ext|string||false||
 | from_user_id|int32||false|Sender's user ID|
 | targets|array[int32]||false|Receive user ID or group ID|
-| transaction_id|int32||false|**to-be-translate**|
+| transaction_id|int32||false|Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.|
 | type|int32||false|Target type, 1 - normal user, 2 -- group|
 
 ### Response Body
@@ -240,7 +240,7 @@
 
 
 
-## 6.7  **to-be-translate**
+## 6.7  Send a message
 
 > PUT  /message/send
 
@@ -259,7 +259,7 @@
 | ext|string||false||
 | from_user_id|int32||false|Sender's user ID|
 | targets|array[int32]||false|Receive user ID or group ID|
-| transaction_id|int32||false|**to-be-translate**|
+| transaction_id|int32||false|Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.|
 | type|int32||false|Target type, 1 - normal user, 2 -- group|
 
 ### Response Body

@@ -51,14 +51,14 @@
 | audience|object||false|Target of push, cannot be blank. Type is string or JSONObject:<br>"all", means push to all devices<br>{"tag":["tag1","tag2"]} means push to devices labeled tag1 or tag2<br>{"alias":["alias1","alias2"]} means push to devices with alias1 or alias2<br>{"user_id":[111,222]} means push to devices with user ID 111 or 222<br>{"push_token":["push_token1","push_token2"]} means push to devices with PushToken push_token1 or push_token2<br>List length cannot exceed 500 when pushed with tag/alias/user ID/pushToken<br>|
 | setting|object||false|Push settings, can be blank|
 |⇥ request_id|string||false|Request ID for request deduplication, not pushed if request ID has been present before. Can be blank, which means no deduplication.|
-|⇥ distribution_strategy|string||false|**to-be-translate**|
-|⇥ ospush_sequence|array[string]||false|**to-be-translate**|
+|⇥ distribution_strategy|string||false|Notification distribution strategy: combined- means to use Maxim channel to distribute first, and if Maxim is not online, use vendor channel to distribute; Mxpush_only- indicates that only the Maxim channel is used for distribution; Ospush_only- indicates that only the vendor channel is used for distribution. Can be empty, which defaults to combined|
+|⇥ ospush_sequence|array[string]||false|Vendor push priority: ups - domestic vendors (Xiaomi/Huawei/Meizu/oppo/vivo); fcm - FCM push; Huawei - Huawei push; Xiaomi - Xiaomi push; Oppo - OPPO push; Vivo - Vivo push, Meizu - Meizu push. Can be empty, which defaults to [ups, fcm]|
 | message|object||false|Message body pushed|
 |⇥ type|string||false|Message type:text - text,image - image, cmd - pass-through message. Can be blank, which means text by default|
 |⇥ title|string||false|Tittle, can be blank|
 |⇥ body|string||false|Content, can be blank|
 |⇥ attachment_url|string||false|Attachment address: URL address of image/audio/video, can be blank. If it is an image address, it needs to end with .jpg/jpeg/png, and the picture size should be less than 1M. 876*324 px is recommended|
-|⇥ big_text|string||false|**to-be-translate**|
+|⇥ big_text|string||false|Large text: If this field is set and the vendor supports pushing large text, use this field to push large text; Otherwise, use the body field to push ordinary text|
 |⇥ badge|string||false|Badge: If it is a number, modify the badge to this number; If starts with +, means adding this number to badge, ex. “+1” means adding 1 to badge; If blank, default “+1"|
 |⇥ ext|object||false|Extension field: Can be blank, JSONObject type, ex. {"key1":123, "key2":"value2"}|
 |⇥ show_begin_time|int32||false|Start timestamp of timed presentation (seconds), blank for immediate presentation|
@@ -69,8 +69,8 @@
 |⇥⇥ mutable_content|boolean||false|Corresponding to mutable-content in APNs, can be blank|
 |⇥⇥ category|string||false|Corresponding to category in APNs Payload, can be blank|
 |⇥⇥ thread_id|string||false|Corresponding to thread-id in APNs, can be blank; which is used for grouping notifications by thread-id|
-|⇥⇥ subtitle|string||false|**to-be-translate**|
-|⇥⇥ apns_collapse_id|string||false|**to-be-translate**|
+|⇥⇥ subtitle|string||false|Subtitle corresponding to APNs, can be empty|
+|⇥⇥ apns_collapse_id|string||false|apns-collapse-id corresponding to APNs, can be empty. The notifications with apns-collapse-id parameter will override other notifications with the same apns-collapse-id in the Notification Center.|
 |⇥ android|object||false|Additional parameter for android platform, can be blank|
 |⇥⇥ sound|string||false|Message alert sound, can be blank|
 |⇥⇥ channel_id|string||false|Notification bar channel, can be blank|
@@ -116,7 +116,7 @@
 | ------ | ------ | ------ | ------ | ------ |
 | code|int32||false|Return code, 200 is success|
 | data|object||false||
-|⇥ task_id|int32||false|**to-be-translate**|
+|⇥ task_id|int32||false|Task ID|
 | message|string||false|Error information, null means success|
 
 
@@ -157,7 +157,7 @@ Common request format as follows:
 
 
 
-## 4.3  **to-be-translate**
+## 4.3  Query push stats
 
 > POST  /push/task/detail
 
@@ -177,31 +177,31 @@ Common request format as follows:
 | ------ | ------ | ------ | ------ | ------ |
 | code|int32||false|Return code, 200 is success|
 | data|array[object]||false|Result data|
-|⇥ apns_received|int32||false|**to-be-translate**|
-|⇥ apns_sent|int32||false|**to-be-translate**|
-|⇥ apns_target|int32||false|**to-be-translate**|
-|⇥ fcm_received|int32||false|**to-be-translate**|
-|⇥ fcm_sent|int32||false|**to-be-translate**|
-|⇥ fcm_target|int32||false|**to-be-translate**|
-|⇥ flyme_received|int32||false|**to-be-translate**|
-|⇥ flyme_sent|int32||false|**to-be-translate**|
-|⇥ flyme_target|int32||false|**to-be-translate**|
-|⇥ huawei_received|int32||false|**to-be-translate**|
-|⇥ huawei_sent|int32||false|**to-be-translate**|
-|⇥ huawei_target|int32||false|**to-be-translate**|
-|⇥ mxpush_received|int32||false|**to-be-translate**|
-|⇥ mxpush_sent|int32||false|**to-be-translate**|
-|⇥ mxpush_target|int32||false|**to-be-translate**|
-|⇥ oppo_received|int32||false|**to-be-translate**|
-|⇥ oppo_sent|int32||false|**to-be-translate**|
-|⇥ oppo_target|int32||false|**to-be-translate**|
-|⇥ vivo_received|int32||false|**to-be-translate**|
-|⇥ vivo_sent|int32||false|**to-be-translate**|
-|⇥ vivo_target|int32||false|**to-be-translate**|
-|⇥ xiaomi_received|int32||false|**to-be-translate**|
-|⇥ xiaomi_sent|int32||false|**to-be-translate**|
-|⇥ xiaomi_target|int32||false|**to-be-translate**|
-|⇥ task_id|int32||false|**to-be-translate**|
+|⇥ apns_received|int32||false|Delivery number on APNs channel|
+|⇥ apns_sent|int32||false|Sent number on APNs channel|
+|⇥ apns_target|int32||false|Valid target number on APNs channel|
+|⇥ fcm_received|int32||false|Delivery number on FCM channel|
+|⇥ fcm_sent|int32||false|Sent number on FCM channel|
+|⇥ fcm_target|int32||false|Valid target number on FCM channel|
+|⇥ flyme_received|int32||false|Delivery number on Meizu channel|
+|⇥ flyme_sent|int32||false|Sent number on Meizu channel|
+|⇥ flyme_target|int32||false|Valid target number on Meizu channel|
+|⇥ huawei_received|int32||false|Delivery number on Huawei channel|
+|⇥ huawei_sent|int32||false|Sent number on Huawei channel|
+|⇥ huawei_target|int32||false|Valid target number on Huawei channel|
+|⇥ mxpush_received|int32||false|Delivery number on Maxim channel|
+|⇥ mxpush_sent|int32||false|Sent number on Maxim channel|
+|⇥ mxpush_target|int32||false|Valid target number on Maxim channel|
+|⇥ oppo_received|int32||false|Delivery number on oppo channel|
+|⇥ oppo_sent|int32||false|Sent number on oppo channel|
+|⇥ oppo_target|int32||false|Valid target number on oppo channel|
+|⇥ vivo_received|int32||false|Delivery number on vivo channel|
+|⇥ vivo_sent|int32||false|Sent number on vivo channel|
+|⇥ vivo_target|int32||false|Valid target number on vivo channel|
+|⇥ xiaomi_received|int32||false|Delivery number on Xiaomi channel|
+|⇥ xiaomi_sent|int32||false|Sent number on Xiaomi channel|
+|⇥ xiaomi_target|int32||false|Valid target number on Xiaomi channel|
+|⇥ task_id|int32||false|Push task ID|
 | message|string||false|Error information, null means success|
 
 

@@ -1,2 +1,2 @@
-# detailed documentation
+# API Reference
 

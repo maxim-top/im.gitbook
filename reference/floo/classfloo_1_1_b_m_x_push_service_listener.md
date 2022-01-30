@@ -24,7 +24,7 @@ title: floo::BMXPushServiceListener
 | virtual void | **[onClearTags](classfloo_1_1_b_m_x_push_service_listener.md#function-oncleartags)**(const std::string & operationId)<br>Clear callback of user push success.  |
 | virtual void | **[onReceivePush](classfloo_1_1_b_m_x_push_service_listener.md#function-onreceivepush)**(const BMXMessageList & list)<br>New push notification received.  |
 | virtual void | **[onStatusChanged](classfloo_1_1_b_m_x_push_service_listener.md#function-onstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>Send notification of push uplink message status change.  |
-| void | **[registerPushService](classfloo_1_1_b_m_x_push_service_listener.md#function-registerpushservice)**([BMXPushService](classfloo_1_1_b_m_x_push_service.md) * service)<br>**to-be-translate**  |
+| void | **[registerPushService](classfloo_1_1_b_m_x_push_service_listener.md#function-registerpushservice)**([BMXPushService](classfloo_1_1_b_m_x_push_service.md) * service)<br>Register BMXPushService to which BMXPushServiceListener is bound (automatic registration in SDK)  |
 
 ## Protected Attributes
 
@@ -188,7 +188,7 @@ inline void registerPushService(
 )
 ```
 
-**to-be-translate** 
+Register BMXPushService to which BMXPushServiceListener is bound (automatic registration in SDK) 
 
 **Parameters**: 
 

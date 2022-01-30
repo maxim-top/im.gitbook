@@ -55,7 +55,7 @@ Inherits from BMXBaseObject
 | boolean | **[enableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-enablereadack)**()<br>Whether group message read feature enabled  |
 | boolean | **[historyVisible](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-historyvisible)**()<br>Whether to load and display the chat history  |
 | BMXGroup.MemberRoleType | **[roleType](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-roletype)**()<br>Type of a member role in group  |
-| long | **[banExpireTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-banexpiretime)**()<br>**to-be-translate**  |
+| long | **[banExpireTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-banexpiretime)**()<br>Expiration time of banning all group members  |
 
 ## Protected Functions
 
@@ -396,7 +396,7 @@ Type of a member role in group
 inline long banExpireTime()
 ```
 
-**to-be-translate** 
+Expiration time of banning all group members 
 
 ## Protected Functions Documentation
 
