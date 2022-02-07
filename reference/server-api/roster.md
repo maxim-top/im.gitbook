@@ -8,7 +8,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -37,7 +39,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -66,7 +70,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
@@ -98,7 +105,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
@@ -133,7 +143,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -169,7 +182,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -198,7 +213,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -227,7 +244,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Response Body
 ● 200 Response data format:JSON
@@ -251,7 +271,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
@@ -281,7 +304,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
@@ -311,7 +337,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -340,7 +368,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -369,7 +399,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
@@ -401,7 +434,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
@@ -433,7 +469,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -474,7 +512,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -506,7 +547,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
@@ -547,7 +591,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -577,7 +623,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -618,7 +667,10 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -659,7 +711,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
@@ -688,7 +742,9 @@
 ### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
-| access-token| | Token| | app_id| | App ID| | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| access-token| | Token| 
+| app_id| | App ID| 
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
 ### Query Param
 |  Parameter name |  Default |  Description | 
