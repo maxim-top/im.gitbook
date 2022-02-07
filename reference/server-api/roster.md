@@ -8,7 +8,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -38,7 +39,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -68,7 +70,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -102,7 +105,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -139,7 +143,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -177,7 +182,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -207,7 +213,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -237,7 +244,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -263,7 +271,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -295,7 +304,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -327,7 +337,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -357,7 +368,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -387,7 +399,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -421,7 +434,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -455,7 +469,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -497,7 +512,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -531,7 +547,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -574,7 +591,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -605,7 +623,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -648,7 +667,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
@@ -691,7 +711,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
@@ -721,7 +742,8 @@
 ### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
-| access-token| | 令牌| | app_id| | 应用ID| 
+| access-token| | 令牌| 
+| app_id| | 应用ID| 
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 
 ### 请求参数(Query Param)
