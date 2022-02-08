@@ -1,30 +1,25 @@
-# 美信拓扑服务端API文档
-[toc]
-## 1    环境变量
+# 服务端API
 
+## 1 环境变量
 
-### 默认环境1
-|  参数名 |  字段值 | 
-|  ------ |  ------ | 
-| baseUrl| http://s-1-3-api.maximtop.cn| 
+### 默认环境
 
+| 参数名     | 字段值                          |
+| ------- | ---------------------------- |
+| baseUrl | http://s-1-3-api.maximtop.cn |
 
-## 2    美信拓扑服务端API文档
-
+## 2 美信拓扑服务端API文档
 
 ### 说明
-> 
 
-
-
+> 调用美信拓扑API前，请先从控制台获取参数api\_endpoint、app\_id、access-token。api\_endpoint是服务地址，app\_id，access-token在请求Header中使用。未特殊说明的请求Content-Type类型为application/json。
 
 ### 联系方式
-- **联系人：**技术支持请访问
-- **邮箱：**
-- **网址：**/https://github.com/maxim-top/maxims-bistro/issues/
 
+* **技术支持请访问：**[**https://github.com/maxim-top/maxims-bistro/issues/**](https://github.com/maxim-top/maxims-bistro/issues/)****
 
 ### 文档版本
+
 ```
 v1.0
 ```
