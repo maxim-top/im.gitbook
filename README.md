@@ -49,9 +49,9 @@ After application created, App ID and other important information can be obtaine
 
 [Server-side API](https://maximtop.com/docs/api/)
 
-### On-premise Deployment
+### Private Deployment
 
-Download Center [Installation package](https://package.maximtop.com/linux/amd64/maxim.ctl) And then follow the steps directly from Console, you can also view [detailed installation document](quick-start/how-to-deploy-private-cloud.md)
+Download the [Installation package](https://package.maximtop.com/linux/amd64/maxim.ctl) , then follow the steps from the console. View [installation document](quick-start/how-to-deploy-private-cloud.md) for details.
 
 ## Client SDK
 

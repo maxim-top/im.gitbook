@@ -6,7 +6,7 @@ One-click installation makes Maximtop Proprietary Cloud worry-free and efficient
 
 With cutting-edge container technology, all Maximtop services have completed Cloud-native transformation, commit to smooth, stable and reliable operation of bare-metal servers, private cloud platforms, and other on-premise container platforms.
 
-Maximtop On-premise Deployment provides two deployment modes: Single server version and cluster version. 3 operates, 10 minutes to setup, the Console provides a concise state monitoring page for controlling system running state in real-time.
+Maximtop Private Deployment provides two deployment modes: Single server version and cluster version. 3 operates, 10 minutes to setup, the Console provides a concise state monitoring page for controlling system running state in real-time.
 
 ## Create application
 
