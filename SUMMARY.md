@@ -88,7 +88,7 @@
     * [floo::BMXUserServiceListener](reference/floo/classfloo\_1\_1\_b\_m\_x\_user\_service\_listener.md)
     * [floo::BMXVideoAttachment](reference/floo/classfloo\_1\_1\_b\_m\_x\_video\_attachment.md)
     * [floo::BMXVoiceAttachment](reference/floo/classfloo\_1\_1\_b\_m\_x\_voice\_attachment.md)
-  * [Web SDK API (floo-web/floo-uniapp)](reference/floo-web.md)
+  * [Web SDK API (floo-web)](reference/floo-web.md)
   * [Server API](reference/server-api/README.md)
     * [User Operation](reference/server-api/user.md)
     * [Push Interface](reference/server-api/push.md)
