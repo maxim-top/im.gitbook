@@ -2,7 +2,7 @@
 
 ## 1 Environment variable
 
-### Default environment 1
+### Default environment
 
 | Parameter name | Field value                  |
 | -------------- | ---------------------------- |
