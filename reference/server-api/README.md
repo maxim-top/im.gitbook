@@ -16,7 +16,7 @@
 
 ### Contact
 
-* **URL:** https://github.com/maxim-top/maxims-bistro/issues/
+* **URL:** [**https://github.com/maxim-top/maxims-bistro/issues/**](https://github.com/maxim-top/maxims-bistro/issues/)****
 
 ### Document version
 
