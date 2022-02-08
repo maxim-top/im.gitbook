@@ -55,7 +55,7 @@ Download the [Installation package](https://package.maximtop.com/linux/amd64/max
 
 ## Client SDK
 
-Maximtop IM Client SDK, codename floo. Following IM SDKs in document will be replaced with floo.
+The codename of Maximtop IM Client SDK is Floo, which comes from The Wizarding World of Harry Potter. We'll use Floo to represent IMSDK in the following document.
 
 ### API Details
 
