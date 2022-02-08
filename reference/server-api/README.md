@@ -12,7 +12,7 @@
 
 ### Description
 
-> Get the parameters api\_endpoint, app\_id, and access-token from Console before calling Maximtop API. api\_endpoint is the service address, app\_id and access-token are used in request Header. The default type of request Content-Type is application/json.
+> Get the parameters api\_endpoint, app\_id, and access-token from Console before calling Maximtop API, api\_endpoint is the service address, app\_id and access-token are used in request Header. The default type of request Content-Type is application/json.
 
 ### Contact
 
