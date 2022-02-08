@@ -53,7 +53,7 @@ Installation prerequisites
 
 ### Single server version
 
-1. First, get a server ready for on-premise deployment and log ssh on to it. Then, execute the download installation script command and elevate the executable permissions. The command is as follows:
+1. First, get a server ready for Private Deployment and log ssh on to it. Then, execute the download installation script command and elevate the executable permissions. The command is as follows:
 
 ```
 wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
