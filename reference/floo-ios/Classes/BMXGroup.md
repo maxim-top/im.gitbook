@@ -5,19 +5,19 @@
 
 ## Overview
 
-聊天室
+Chatroom
 
 ## Properties
 
 <a name="//api/name/adminsCount" title="adminsCount"></a>
 ### adminsCount
 
-群管理员数量
+Group admin-number
 
 `@property (nonatomic, assign, readonly) NSInteger adminsCount`
 
 #### Discussion
-群管理员数量
+Group admin-number
 
 #### Declared In
 * `BMXGroup.h`
@@ -30,12 +30,12 @@
 <a name="//api/name/avatarPath" title="avatarPath"></a>
 ### avatarPath
 
-群头像下载后的本地路径
+Local path of downloaded group avatar
 
 `@property (nonatomic, copy, readonly) NSString *avatarPath`
 
 #### Discussion
-群头像下载后的本地路径
+Local path of downloaded group avatar
 
 #### Declared In
 * `BMXGroup.h`
@@ -43,12 +43,12 @@
 <a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
 ### avatarThumbnailPath
 
-群头像缩略图下载后的本地路径
+Local path of downloaded group avatar thumbnail
 
 `@property (nonatomic, copy, readonly) NSString *avatarThumbnailPath`
 
 #### Discussion
-群头像缩略图下载后的本地路径
+Local path of downloaded group avatar thumbnail
 
 #### Declared In
 * `BMXGroup.h`
@@ -56,12 +56,12 @@
 <a name="//api/name/avatarThumbnailUrl" title="avatarThumbnailUrl"></a>
 ### avatarThumbnailUrl
 
-群头像缩略图
+Group avatar thumbnail
 
 `@property (nonatomic, copy, readonly) NSString *avatarThumbnailUrl`
 
 #### Discussion
-群头像缩略图
+Group avatar thumbnail
 
 #### Declared In
 * `BMXGroup.h`
@@ -69,12 +69,12 @@
 <a name="//api/name/avatarUrl" title="avatarUrl"></a>
 ### avatarUrl
 
-群头像
+Group avatar
 
 `@property (nonatomic, copy, readonly) NSString *avatarUrl`
 
 #### Discussion
-群头像
+Group avatar
 
 #### Declared In
 * `BMXGroup.h`
@@ -82,12 +82,12 @@
 <a name="//api/name/banExpireTime" title="banExpireTime"></a>
 ### banExpireTime
 
-全群禁言到期时间
+Expiration time of banning all members
 
 `@property (nonatomic, assign, readonly) long long banExpireTime`
 
 #### Discussion
-全群禁言到期时间
+Expiration time of banning all members
 
 #### Declared In
 * `BMXGroup.h`
@@ -95,12 +95,12 @@
 <a name="//api/name/capactiy" title="capactiy"></a>
 ### capactiy
 
-最大人数
+Max member-number
 
 `@property (nonatomic, assign, readonly) NSInteger capactiy`
 
 #### Discussion
-最大人数
+Max member-number
 
 #### Declared In
 * `BMXGroup.h`
@@ -108,12 +108,12 @@
 <a name="//api/name/creatTime" title="creatTime"></a>
 ### creatTime
 
-群创建时间
+Group creation time
 
 `@property (nonatomic, readonly) long long creatTime`
 
 #### Discussion
-群创建时间
+Group creation time
 
 #### Declared In
 * `BMXGroup.h`
@@ -121,12 +121,12 @@
 <a name="//api/name/enableReadAck" title="enableReadAck"></a>
 ### enableReadAck
 
-是否开启群消息已读功能
+Whether group message read feature enabled
 
 `@property (nonatomic, assign) BOOL enableReadAck`
 
 #### Discussion
-是否开启群消息已读功能
+Whether group message read feature enabled
 
 #### Declared In
 * `BMXGroup.h`
@@ -134,12 +134,12 @@
 <a name="//api/name/groupDescription" title="groupDescription"></a>
 ### groupDescription
 
-群描述
+Group description
 
 `@property (nonatomic, copy, readonly) NSString *groupDescription`
 
 #### Discussion
-群描述
+Group description
 
 #### Declared In
 * `BMXGroup.h`
@@ -147,12 +147,12 @@
 <a name="//api/name/groupId" title="groupId"></a>
 ### groupId
 
-群Id
+Group Id
 
 `@property (nonatomic, assign, readonly) long long groupId`
 
 #### Discussion
-群Id
+Group Id
 
 #### Declared In
 * `BMXGroup.h`
@@ -160,12 +160,12 @@
 <a name="//api/name/groupStatus" title="groupStatus"></a>
 ### groupStatus
 
-当前群组的状态。（Normal 正常， Destroyed 以销毁）
+state of the current group. (Normal, Destroyed)
 
 `@property (nonatomic, assign) BMXGroupStatus groupStatus`
 
 #### Discussion
-当前群组的状态。（Normal 正常， Destroyed 以销毁）
+state of the current group. (Normal, Destroyed)
 
 #### Declared In
 * `BMXGroup.h`
@@ -178,12 +178,12 @@
 <a name="//api/name/historyVisible" title="historyVisible"></a>
 ### historyVisible
 
-是否可以加载显示历史聊天记录
+Whether to load and display the chat history
 
 `@property (nonatomic, assign) BOOL historyVisible`
 
 #### Discussion
-是否可以加载显示历史聊天记录
+Whether to load and display the chat history
 
 #### Declared In
 * `BMXGroup.h`
@@ -191,12 +191,12 @@
 <a name="//api/name/inviteMode" title="inviteMode"></a>
 ### inviteMode
 
-入群邀请模式
+Group invitation mode
 
 `@property (nonatomic, assign, readonly) BMXGroupInviteMode inviteMode`
 
 #### Discussion
-入群邀请模式
+Group invitation mode
 
 #### Declared In
 * `BMXGroup.h`
@@ -209,12 +209,12 @@
 <a name="//api/name/joinAuthMode" title="joinAuthMode"></a>
 ### joinAuthMode
 
-入群审批模式
+Join approval mode
 
 `@property (nonatomic, assign, readonly) BMXGroupJoinAuthMode joinAuthMode`
 
 #### Discussion
-入群审批模式
+Join approval mode
 
 #### Declared In
 * `BMXGroup.h`
@@ -222,12 +222,12 @@
 <a name="//api/name/jsonextension" title="jsonextension"></a>
 ### jsonextension
 
-群扩展信息
+Group extension information
 
 `@property (nonatomic, copy, readonly) NSString *jsonextension`
 
 #### Discussion
-群扩展信息
+Group extension information
 
 #### Declared In
 * `BMXGroup.h`
@@ -235,12 +235,12 @@
 <a name="//api/name/membersCount" title="membersCount"></a>
 ### membersCount
 
-群成员数量，包含Owner，admins 和members
+Group member-number, including Owner, Admins and Members
 
 `@property (nonatomic, assign, readonly) NSInteger membersCount`
 
 #### Discussion
-群成员数量，包含Owner，admins 和members
+Group member-number, including Owner, Admins and Members
 
 #### Declared In
 * `BMXGroup.h`
@@ -248,12 +248,12 @@
 <a name="//api/name/modifyMode" title="modifyMode"></a>
 ### modifyMode
 
-群信息修改模式
+Group information modification mode
 
 `@property (nonatomic, assign, readonly) BMXGroupModifyMode modifyMode`
 
 #### Discussion
-群信息修改模式
+Group information modification mode
 
 #### Declared In
 * `BMXGroup.h`
@@ -261,12 +261,12 @@
 <a name="//api/name/msgMuteMode" title="msgMuteMode"></a>
 ### msgMuteMode
 
-群消息屏蔽模式
+Group message blocking mode
 
 `@property (nonatomic, assign) BMXGroupMsgMuteMode msgMuteMode`
 
 #### Discussion
-群消息屏蔽模式
+Group message blocking mode
 
 #### Declared In
 * `BMXGroup.h`
@@ -274,12 +274,12 @@
 <a name="//api/name/msgPushMode" title="msgPushMode"></a>
 ### msgPushMode
 
-群消息通知类型
+Group message notification type
 
 `@property (nonatomic, assign, readonly) BMXGroupMsgPushMode msgPushMode`
 
 #### Discussion
-群消息通知类型
+Group message notification type
 
 #### Declared In
 * `BMXGroup.h`
@@ -287,12 +287,12 @@
 <a name="//api/name/myNickName" title="myNickName"></a>
 ### myNickName
 
-在群里的昵称
+Group member nickname
 
 `@property (nonatomic, copy, readonly) NSString *myNickName`
 
 #### Discussion
-在群里的昵称
+Group member nickname
 
 #### Declared In
 * `BMXGroup.h`
@@ -300,12 +300,12 @@
 <a name="//api/name/name" title="name"></a>
 ### name
 
-群名称
+Group name
 
 `@property (nonatomic, copy, readonly) NSString *name`
 
 #### Discussion
-群名称
+Group name
 
 #### Declared In
 * `BMXGroup.h`
@@ -313,12 +313,12 @@
 <a name="//api/name/ownerId" title="ownerId"></a>
 ### ownerId
 
-群成员
+Group members
 
 `@property (nonatomic, assign, readonly) NSInteger ownerId`
 
 #### Discussion
-群成员
+Group members
 
 #### Declared In
 * `BMXGroup.h`
@@ -336,12 +336,12 @@
 <a name="//api/name/sharedFilesCount" title="sharedFilesCount"></a>
 ### sharedFilesCount
 
-群共享文件数量
+Shared file-number in group
 
 `@property (nonatomic, assign, readonly) NSInteger sharedFilesCount`
 
 #### Discussion
-群共享文件数量
+Shared file-number in group
 
 #### Declared In
 * `BMXGroup.h`

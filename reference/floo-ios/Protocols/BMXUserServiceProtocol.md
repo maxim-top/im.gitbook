@@ -8,17 +8,17 @@
 <a name="//api/name/connectStatusDidChanged:" title="connectStatusDidChanged:"></a>
 ### connectStatusDidChanged:
 
-链接状态发生变化
+Channel state changed
 
 `- (void)connectStatusDidChanged:(BMXConnectStatus)*status*`
 
 #### Parameters
 
 *status*  
-   网络状态  
+   Network status  
 
 #### Discussion
-链接状态发生变化
+Channel state changed
 
 #### Declared In
 * `BMXUserServiceProtocol.h`
@@ -26,12 +26,12 @@
 <a name="//api/name/userInfoDidUpdated:" title="userInfoDidUpdated:"></a>
 ### userInfoDidUpdated:
 
-同步用户信息更新（其他设备操作发生用户信息变更）
+Synchronize user information updates (when user information changes in other devices)
 
 `- (void)userInfoDidUpdated:(BMXUserProfile *)*userProflie*`
 
 #### Discussion
-同步用户信息更新（其他设备操作发生用户信息变更）
+Synchronize user information updates (when user information changes in other devices)
 
 #### Declared In
 * `BMXUserServiceProtocol.h`
@@ -39,12 +39,12 @@
 <a name="//api/name/userOtherDeviceDidSignIn:" title="userOtherDeviceDidSignIn:"></a>
 ### userOtherDeviceDidSignIn:
 
-用户在其他设备上登陆
+User login on another device
 
 `- (void)userOtherDeviceDidSignIn:(NSInteger)*deviceSN*`
 
 #### Discussion
-用户在其他设备上登陆
+User login on another device
 
 #### Declared In
 * `BMXUserServiceProtocol.h`
@@ -52,12 +52,12 @@
 <a name="//api/name/userOtherDeviceDidSignOut:" title="userOtherDeviceDidSignOut:"></a>
 ### userOtherDeviceDidSignOut:
 
-用户在其他设备上登出
+User logout on another device
 
 `- (void)userOtherDeviceDidSignOut:(NSInteger)*deviceSN*`
 
 #### Discussion
-用户在其他设备上登出
+User logout on another device
 
 #### Declared In
 * `BMXUserServiceProtocol.h`
@@ -65,17 +65,17 @@
 <a name="//api/name/userSignIn:" title="userSignIn:"></a>
 ### userSignIn:
 
-用户登陆
+User login
 
 `- (void)userSignIn:(BMXUserProfile *)*userProflie*`
 
 #### Parameters
 
 *userProflie*  
-   用户信息  
+   User information  
 
 #### Discussion
-用户登陆
+User login
 
 #### Declared In
 * `BMXUserServiceProtocol.h`
@@ -83,17 +83,17 @@
 <a name="//api/name/userSignOut:userId:" title="userSignOut:userId:"></a>
 ### userSignOut:userId:
 
-用户登出
+User logout
 
 `- (void)userSignOut:(BMXError *)*error* userId:(long long)*userId*`
 
 #### Parameters
 
 *error*  
-   错误码  
+   Error code  
 
 #### Discussion
-用户登出
+User logout
 
 #### Declared In
 * `BMXUserServiceProtocol.h`

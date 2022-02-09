@@ -48,12 +48,12 @@ NSObject
 <a name="//api/name/setReceiveThumbnailUrl:thumbnailSize:fileLength:" title="setReceiveThumbnailUrl:thumbnailSize:fileLength:"></a>
 ### setReceiveThumbnailUrl:thumbnailSize:fileLength:
 
-设置接收图片消息缩略图
+Set to receive thumbnail for image message
 
 `- (void)setReceiveThumbnailUrl:(NSString *)*url* thumbnailSize:(CGSize)*thumbnailSize* fileLength:(long long)*fileLength*`
 
 #### Discussion
-设置接收图片消息缩略图
+Set to receive thumbnail for image message
 
 #### Declared In
 * `BMXImageAttachment.h`
@@ -61,12 +61,12 @@ NSObject
 <a name="//api/name/setsendThumbnailPath:" title="setsendThumbnailPath:"></a>
 ### setsendThumbnailPath:
 
-设置发送图片消息缩略图
+Set a thumbnail for sent picture
 
 `- (void)setsendThumbnailPath:(NSString *)*path*`
 
 #### Discussion
-设置发送图片消息缩略图
+Set a thumbnail for sent picture
 
 #### Declared In
 * `BMXImageAttachment.h`

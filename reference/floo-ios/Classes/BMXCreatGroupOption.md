@@ -8,12 +8,12 @@
 <a name="//api/name/announcement" title="announcement"></a>
 ### announcement
 
-群公告
+Group announcement
 
 `@property (nonatomic, copy) NSString *announcement`
 
 #### Discussion
-群公告
+Group announcement
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -21,12 +21,12 @@
 <a name="//api/name/avatarPath" title="avatarPath"></a>
 ### avatarPath
 
-群头像本地路径
+Local path of group avatar
 
 `@property (nonatomic, copy) NSString *avatarPath`
 
 #### Discussion
-群头像本地路径
+Local path of group avatar
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -34,12 +34,12 @@
 <a name="//api/name/extion" title="extion"></a>
 ### extion
 
-群扩展信息
+Group extension information
 
 `@property (nonatomic, copy) NSString *extion`
 
 #### Discussion
-群扩展信息
+Group extension information
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -47,12 +47,12 @@
 <a name="//api/name/groupDescription" title="groupDescription"></a>
 ### groupDescription
 
-群描述
+Group description
 
 `@property (nonatomic, copy) NSString *groupDescription`
 
 #### Discussion
-群描述
+Group description
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -60,12 +60,12 @@
 <a name="//api/name/isChatroom" title="isChatroom"></a>
 ### isChatroom
 
-是否聊天室
+Chatroom or not
 
 `@property (nonatomic, assign) BOOL isChatroom`
 
 #### Discussion
-是否聊天室
+Chatroom or not
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -73,12 +73,12 @@
 <a name="//api/name/members" title="members"></a>
 ### members
 
-建群时添加的成员
+Members added when group created
 
 `@property (nonatomic, strong) NSArray *members`
 
 #### Discussion
-建群时添加的成员
+Members added when group created
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -86,12 +86,12 @@
 <a name="//api/name/message" title="message"></a>
 ### message
 
-建群时成员收到的邀请信息
+Invitation information received by members when group created
 
 `@property (nonatomic, copy) NSString *message`
 
 #### Discussion
-建群时成员收到的邀请信息
+Invitation information received by members when group created
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -99,12 +99,12 @@
 <a name="//api/name/name" title="name"></a>
 ### name
 
-群名称
+Group name
 
 `@property (nonatomic, copy) NSString *name`
 
 #### Discussion
-群名称
+Group name
 
 #### Declared In
 * `BMXCreatGroupOption.h`
@@ -115,23 +115,23 @@
 <a name="//api/name/initWithGroupName:groupDescription:isPublic:" title="initWithGroupName:groupDescription:isPublic:"></a>
 ### initWithGroupName:groupDescription:isPublic:
 
-创建群实体
+Create group entity
 
 `- (instancetype)initWithGroupName:(NSString *)*name* groupDescription:(NSString *)*groupDescription* isPublic:(BOOL)*isPublic*`
 
 #### Parameters
 
 *name*  
-   必填  
+   Required  
 
 *groupDescription*  
-   非必填  
+   Optional  
 
 #### Return Value
 BMXCreatGroupOption
 
 #### Discussion
-创建群实体
+Create group entity
 
 #### Declared In
 * `BMXCreatGroupOption.h`

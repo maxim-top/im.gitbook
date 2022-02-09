@@ -121,29 +121,29 @@
 <a name="//api/name/initWithBMXCommandMessageText:fromId:toId:type:conversationId:" title="initWithBMXCommandMessageText:fromId:toId:type:conversationId:"></a>
 ### initWithBMXCommandMessageText:fromId:toId:type:conversationId:
 
-创建发送命令消息(命令消息通过content字段或者extension字段存放命令信息)
+Create a sent command message (command message holds command information in a content field or an extension field)
 
 `- (instancetype)initWithBMXCommandMessageText:(NSString *)*content* fromId:(long long)*fromId* toId:(long long)*toId* type:(BMXMessageType)*mtype* conversationId:(long long)*conversationId*`
 
 #### Parameters
 
 *content*  
-   消息内容  
+   Message content  
 
 *fromId*  
-   消息发送者  
+   Message sender  
 
 *toId*  
-   消息接收者  
+   Message receiver  
 
 *mtype*  
-   消息类型  
+   Message type  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 #### Discussion
-创建发送命令消息(命令消息通过content字段或者extension字段存放命令信息)
+Create a sent command message (command message holds command information in a content field or an extension field)
 
 #### Declared In
 * `BMXMessageObject.h`
@@ -151,7 +151,7 @@
 <a name="//api/name/initWithBMXMessageAttachment:fromId:toId:type:conversationId:" title="initWithBMXMessageAttachment:fromId:toId:type:conversationId:"></a>
 ### initWithBMXMessageAttachment:fromId:toId:type:conversationId:
 
-创建附件消息
+Create attachment-message
 
 `- (instancetype)initWithBMXMessageAttachment:(BMXMessageAttachment *)*attachment* fromId:(long long)*fromId* toId:(long long)*toId* type:(BMXMessageType)*mtype* conversationId:(long long)*conversationId*`
 
@@ -161,22 +161,22 @@
    <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>  
 
 *fromId*  
-   发送id  
+   Send id  
 
 *toId*  
-   接收id  
+   Receive id  
 
 *mtype*  
-   消息类型  
+   Message type  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 #### Return Value
 BMXMessageObject
 
 #### Discussion
-创建附件消息
+Create attachment-message
 
 #### Declared In
 * `BMXMessageObject.h`
@@ -184,32 +184,32 @@ BMXMessageObject
 <a name="//api/name/initWithBMXMessageText:fromId:toId:type:conversationId:" title="initWithBMXMessageText:fromId:toId:type:conversationId:"></a>
 ### initWithBMXMessageText:fromId:toId:type:conversationId:
 
-创建文本消息
+Create text message
 
 `- (instancetype)initWithBMXMessageText:(NSString *)*content* fromId:(long long)*fromId* toId:(long long)*toId* type:(BMXMessageType)*mtype* conversationId:(long long)*conversationId*`
 
 #### Parameters
 
 *content*  
-   内容  
+   Content  
 
 *fromId*  
-   发送id  
+   Send id  
 
 *toId*  
-   接收id  
+   Receive id  
 
 *mtype*  
-   消息类型  
+   Message type  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 #### Return Value
 BMXMessageObject
 
 #### Discussion
-创建文本消息
+Create text message
 
 #### Declared In
 * `BMXMessageObject.h`
@@ -217,7 +217,7 @@ BMXMessageObject
 <a name="//api/name/initWithForwardMessage:fromId:toId:type:conversationId:" title="initWithForwardMessage:fromId:toId:type:conversationId:"></a>
 ### initWithForwardMessage:fromId:toId:type:conversationId:
 
-创建转发消息
+Create a forwarding message
 
 `- (instancetype)initWithForwardMessage:(BMXMessageObject *)*message* fromId:(long long)*fromId* toId:(long long)*toId* type:(BMXMessageType)*mtype* conversationId:(long long)*conversationId*`
 
@@ -227,22 +227,22 @@ BMXMessageObject
    BMXMessageObject  
 
 *fromId*  
-   发送id  
+   Send id  
 
 *toId*  
-   接收id  
+   Receive id  
 
 *mtype*  
-   消息类型  
+   Message type  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 #### Return Value
 BMXMessageObject
 
 #### Discussion
-创建转发消息
+Create a forwarding message
 
 #### Declared In
 * `BMXMessageObject.h`
@@ -250,7 +250,7 @@ BMXMessageObject
 <a name="//api/name/initWithRecieveBMXMessageAttachment:msgId:fromId:toId:type:conversationId:timeStamp:" title="initWithRecieveBMXMessageAttachment:msgId:fromId:toId:type:conversationId:timeStamp:"></a>
 ### initWithRecieveBMXMessageAttachment:msgId:fromId:toId:type:conversationId:timeStamp:
 
-创建接收附件消息
+Create receive attachment-message
 
 `- (instancetype)initWithRecieveBMXMessageAttachment:(BMXMessageAttachment *)*attachment* msgId:(long long)*msgId* fromId:(long long)*fromId* toId:(long long)*toId* type:(BMXMessageType)*mtype* conversationId:(long long)*conversationId* timeStamp:(long long)*timeStamp*`
 
@@ -260,28 +260,28 @@ BMXMessageObject
    <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>  
 
 *msgId*  
-   消息id  
+   Message id  
 
 *fromId*  
-   发送id  
+   Send id  
 
 *toId*  
-   接收id  
+   Receive id  
 
 *mtype*  
-   消息类型  
+   Message type  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 *timeStamp*  
-   时间戳  
+   Timestamp  
 
 #### Return Value
 BMXMessageObject
 
 #### Discussion
-创建接收附件消息
+Create receive attachment-message
 
 #### Declared In
 * `BMXMessageObject.h`
@@ -289,35 +289,35 @@ BMXMessageObject
 <a name="//api/name/initWithRecieveBMXMessageCommandMessageText:msgId:fromId:toId:type:conversationId:timeStamp:" title="initWithRecieveBMXMessageCommandMessageText:msgId:fromId:toId:type:conversationId:timeStamp:"></a>
 ### initWithRecieveBMXMessageCommandMessageText:msgId:fromId:toId:type:conversationId:timeStamp:
 
-创建收到的命令消息(命令消息通过content字段或者extension字段存放命令信息)
+Create a received command message (command message holds command information in a content field or an extension field)
 
 `- (instancetype)initWithRecieveBMXMessageCommandMessageText:(NSString *)*content* msgId:(long long)*msgId* fromId:(long long)*fromId* toId:(long long)*toId* type:(BMXMessageType)*mtype* conversationId:(long long)*conversationId* timeStamp:(long long)*timeStamp*`
 
 #### Parameters
 
 *content*  
-   消息内容  
+   Message content  
 
 *msgId*  
-   消息id  
+   Message id  
 
 *fromId*  
-   消息发送者  
+   Message sender  
 
 *toId*  
-   消息接收者  
+   Message receiver  
 
 *mtype*  
-   消息类型  
+   Message type  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 *timeStamp*  
-   服务器时间戳  
+   Server timestamp  
 
 #### Discussion
-创建收到的命令消息(命令消息通过content字段或者extension字段存放命令信息)
+Create a received command message (command message holds command information in a content field or an extension field)
 
 #### Declared In
 * `BMXMessageObject.h`
@@ -325,38 +325,38 @@ BMXMessageObject
 <a name="//api/name/initWithRecieveBMXMessageText:msgId:fromId:toId:type:conversationId:timeStamp:" title="initWithRecieveBMXMessageText:msgId:fromId:toId:type:conversationId:timeStamp:"></a>
 ### initWithRecieveBMXMessageText:msgId:fromId:toId:type:conversationId:timeStamp:
 
-创建接收文本消息
+Create receive text-message
 
 `- (instancetype)initWithRecieveBMXMessageText:(NSString *)*content* msgId:(long long)*msgId* fromId:(long long)*fromId* toId:(long long)*toId* type:(BMXMessageType)*mtype* conversationId:(long long)*conversationId* timeStamp:(long long)*timeStamp*`
 
 #### Parameters
 
 *content*  
-   内容  
+   Content  
 
 *msgId*  
-   消息id  
+   Message id  
 
 *fromId*  
-   发送id  
+   Send id  
 
 *toId*  
-   接收id  
+   Receive id  
 
 *mtype*  
-   消息类型  
+   Message type  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 *timeStamp*  
-   时间戳  
+   Timestamp  
 
 #### Return Value
 BMXMessageObject
 
 #### Discussion
-创建接收文本消息
+Create receive text-message
 
 #### Declared In
 * `BMXMessageObject.h`

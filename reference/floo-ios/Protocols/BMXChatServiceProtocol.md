@@ -8,20 +8,20 @@
 <a name="//api/name/conversationDidCreatedConversation:message:" title="conversationDidCreatedConversation:message:"></a>
 ### conversationDidCreatedConversation:message:
 
-本地创建新会话成功
+New session locally created
 
 `- (void)conversationDidCreatedConversation:(BMXConversation *)*conversation* message:(BMXMessageObject *)*message*`
 
 #### Parameters
 
 *conversation*  
-   新创建的本地会话  
+   Newly created local session  
 
 *message*  
-   会话的最新消息，存在返回不存在返回为空  
+   Latest message for session, return for existing, empty for no existing  
 
 #### Discussion
-本地创建新会话成功
+New session locally created
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -29,20 +29,20 @@
 <a name="//api/name/conversationDidDeletedConversationId:error:" title="conversationDidDeletedConversationId:error:"></a>
 ### conversationDidDeletedConversationId:error:
 
-删除会话
+Delete session
 
 `- (void)conversationDidDeletedConversationId:(NSInteger)*conversationId* error:(BMXError *)*error*`
 
 #### Parameters
 
 *conversationId*  
-   删除的本地会话id  
+   Deleted local session id  
 
 *error*  
-   状态错误码  
+   State error code  
 
 #### Discussion
-删除会话
+Delete session
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -50,17 +50,17 @@
 <a name="//api/name/conversationTotalCountChanged:" title="conversationTotalCountChanged:"></a>
 ### conversationTotalCountChanged:
 
-更新总未读数
+Update total unread-number
 
 `- (void)conversationTotalCountChanged:(NSInteger)*unreadCount*`
 
 #### Parameters
 
 *unreadCount*  
-   未读数  
+   Number of unreads  
 
 #### Discussion
-更新总未读数
+Update total unread-number
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -68,12 +68,12 @@
 <a name="//api/name/loadAllConversationDidFinished" title="loadAllConversationDidFinished"></a>
 ### loadAllConversationDidFinished
 
-已经加载完未读会话列表
+List of unread sessions has been loaded
 
 `- (void)loadAllConversationDidFinished`
 
 #### Discussion
-已经加载完未读会话列表
+List of unread sessions has been loaded
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -81,12 +81,12 @@
 <a name="//api/name/messageAttachmentStatusDidChanged:error:percent:" title="messageAttachmentStatusDidChanged:error:percent:"></a>
 ### messageAttachmentStatusDidChanged:error:percent:
 
-附件下载状态发生变化
+Attachment download state changed
 
 `- (void)messageAttachmentStatusDidChanged:(BMXMessageObject *)*message* error:(BMXError *)*error* percent:(int)*percent*`
 
 #### Discussion
-附件下载状态发生变化
+Attachment download state changed
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -94,12 +94,12 @@
 <a name="//api/name/messageAttachmentUploadProgressChanged:percent:" title="messageAttachmentUploadProgressChanged:percent:"></a>
 ### messageAttachmentUploadProgressChanged:percent:
 
-附件上传进度发送变化
+Attachment upload state changed
 
 `- (void)messageAttachmentUploadProgressChanged:(BMXMessageObject *)*message* percent:(int)*percent*`
 
 #### Discussion
-附件上传进度发送变化
+Attachment upload state changed
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -107,12 +107,12 @@
 <a name="//api/name/messageRecallStatusDidChanged:error:" title="messageRecallStatusDidChanged:error:"></a>
 ### messageRecallStatusDidChanged:error:
 
-消息撤回状态发送变化
+Message recall state changed
 
 `- (void)messageRecallStatusDidChanged:(BMXMessageObject *)*message* error:(BMXError *)*error*`
 
 #### Discussion
-消息撤回状态发送变化
+Message recall state changed
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -120,12 +120,12 @@
 <a name="//api/name/messageStatusChanged:error:" title="messageStatusChanged:error:"></a>
 ### messageStatusChanged:error:
 
-消息发送状态发生变化
+Messaging state changed
 
 `- (void)messageStatusChanged:(BMXMessageObject *)*message* error:(BMXError *)*error*`
 
 #### Discussion
-消息发送状态发生变化
+Messaging state changed
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -133,12 +133,12 @@
 <a name="//api/name/receiveDeleteMessages:" title="receiveDeleteMessages:"></a>
 ### receiveDeleteMessages:
 
-收到删除消息 （多设备同步删除消息）
+Deletion received (delete messages cross devices synchronously)
 
 `- (void)receiveDeleteMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到删除消息 （多设备同步删除消息）
+Deletion received (delete messages cross devices synchronously)
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -146,12 +146,12 @@
 <a name="//api/name/receiveReadAllMessages:" title="receiveReadAllMessages:"></a>
 ### receiveReadAllMessages:
 
-收到消息全部已读（多设备同步某消息之前消息全部设置为已读）
+All received messages are read (all messages are set to read before cross-device synchronization)
 
 `- (void)receiveReadAllMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到消息全部已读（多设备同步某消息之前消息全部设置为已读）
+All received messages are read (all messages are set to read before cross-device synchronization)
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -159,12 +159,12 @@
 <a name="//api/name/receiveReadCancelsMessages:" title="receiveReadCancelsMessages:"></a>
 ### receiveReadCancelsMessages:
 
-收到消息已读取消（多设备其他设备同步消息已读状态变为未读）
+Message re-unread received (cross-device synchronization for changing message status into unread)
 
 `- (void)receiveReadCancelsMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到消息已读取消（多设备其他设备同步消息已读状态变为未读）
+Message re-unread received (cross-device synchronization for changing message status into unread)
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -172,12 +172,12 @@
 <a name="//api/name/receivedCommandMessages:" title="receivedCommandMessages:"></a>
 ### receivedCommandMessages:
 
-收到命令消息
+Command received
 
 `- (void)receivedCommandMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到命令消息
+Command received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -185,12 +185,12 @@
 <a name="//api/name/receivedDeliverAcks:" title="receivedDeliverAcks:"></a>
 ### receivedDeliverAcks:
 
-收到消息已送达回执
+Receipt of message delivered received
 
 `- (void)receivedDeliverAcks:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到消息已送达回执
+Receipt of message delivered received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -198,12 +198,12 @@
 <a name="//api/name/receivedMessages:" title="receivedMessages:"></a>
 ### receivedMessages:
 
-收到消息
+Message received
 
 `- (void)receivedMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到消息
+Message received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -211,12 +211,12 @@
 <a name="//api/name/receivedReadAcks:" title="receivedReadAcks:"></a>
 ### receivedReadAcks:
 
-收到消息已读回执
+Receipt of message read received
 
 `- (void)receivedReadAcks:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到消息已读回执
+Receipt of message read received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -224,12 +224,12 @@
 <a name="//api/name/receivedRecallMessages:" title="receivedRecallMessages:"></a>
 ### receivedRecallMessages:
 
-收到撤回消息
+Canceled message received
 
 `- (void)receivedRecallMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到撤回消息
+Canceled message received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -237,12 +237,12 @@
 <a name="//api/name/receivedSystemMessages:" title="receivedSystemMessages:"></a>
 ### receivedSystemMessages:
 
-收到系统通知消息
+System notification message received
 
 `- (void)receivedSystemMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-收到系统通知消息
+System notification message received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -250,12 +250,12 @@
 <a name="//api/name/retrieveHistoryMessagesConversation:" title="retrieveHistoryMessagesConversation:"></a>
 ### retrieveHistoryMessagesConversation:
 
-拉取历史消息
+Pull message history
 
 `- (void)retrieveHistoryMessagesConversation:(BMXConversation *)*conversation*`
 
 #### Discussion
-拉取历史消息
+Pull message history
 
 #### Declared In
 * `BMXChatServiceProtocol.h`

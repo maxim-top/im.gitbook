@@ -10,12 +10,12 @@ NSObject
 <a name="//api/name/duration" title="duration"></a>
 ### duration
 
-时长
+Length
 
 `@property (nonatomic, assign) int duration`
 
 #### Discussion
-时长
+Length
 
 #### Declared In
 * `BMXVoiceAttachment.h`
@@ -26,26 +26,26 @@ NSObject
 <a name="//api/name/initWithData:displayName:fileLength:duration:conversationId:" title="initWithData:displayName:fileLength:duration:conversationId:"></a>
 ### initWithData:displayName:fileLength:duration:conversationId:
 
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 
 `- (instancetype)initWithData:(NSData *)*aData* displayName:(NSString *)*displayName* fileLength:(NSInteger)*fileLength* duration:(NSInteger)*duration* conversationId:(NSString *)*conversationId*`
 
 #### Parameters
 
 *aData*  
-   音频Data  
+   Audio Data  
 
 *displayName*  
-   显示名称  
+   Display name  
 
 *duration*  
-   时长  
+   Length  
 
 *conversationId*  
-   会话Id  
+   Session Id  
 
 #### Discussion
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 
 #### Declared In
 * `BMXVoiceAttachment.h`
@@ -53,26 +53,26 @@ NSObject
 <a name="//api/name/initWithPath:displayName:duration:conversationId:" title="initWithPath:displayName:duration:conversationId:"></a>
 ### initWithPath:displayName:duration:conversationId:
 
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 
 `- (instancetype)initWithPath:(NSString *)*path* displayName:(NSString *)*displayName* duration:(NSInteger)*duration* conversationId:(NSString *)*conversationId*`
 
 #### Parameters
 
 *path*  
-   音频路径  
+   Audio path  
 
 *displayName*  
-   显示  
+   Display  
 
 *duration*  
-   时长  
+   Length  
 
 #### Return Value
 <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 
 #### Discussion
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 
 #### Declared In
 * `BMXVoiceAttachment.h`

@@ -8,12 +8,12 @@
 <a name="//api/name/deviceSN" title="deviceSN"></a>
 ### deviceSN
 
-设备序列号
+Device serial number
 
 `@property (nonatomic, assign, readonly) int deviceSN`
 
 #### Discussion
-设备序列号
+Device serial number
 
 #### Declared In
 * `BMXDevice.h`
@@ -21,12 +21,12 @@
 <a name="//api/name/isCurrentDevice" title="isCurrentDevice"></a>
 ### isCurrentDevice
 
-是否是当前设备
+Whether for the current device
 
 `@property (nonatomic, assign, readonly) BOOL isCurrentDevice`
 
 #### Discussion
-是否是当前设备
+Whether for the current device
 
 #### Declared In
 * `BMXDevice.h`
@@ -34,12 +34,12 @@
 <a name="//api/name/platform" title="platform"></a>
 ### platform
 
-平台
+Platform
 
 `@property (nonatomic, assign, readonly) int platform`
 
 #### Discussion
-平台
+Platform
 
 #### Declared In
 * `BMXDevice.h`
@@ -60,12 +60,12 @@ UA
 <a name="//api/name/userId" title="userId"></a>
 ### userId
 
-用户id
+User id
 
 `@property (nonatomic, assign, readonly) long long userId`
 
 #### Discussion
-用户id
+User id
 
 #### Declared In
 * `BMXDevice.h`

@@ -9,12 +9,12 @@ NSObject
 <a name="//api/name/displayName" title="displayName"></a>
 ### displayName
 
-显示名称
+Display name
 
 `@property (nonatomic, copy) NSString *displayName`
 
 #### Discussion
-显示名称
+Display name
 
 #### Declared In
 * `BMXFileAttachment.h`
@@ -22,12 +22,12 @@ NSObject
 <a name="//api/name/downLoadStatus" title="downLoadStatus"></a>
 ### downLoadStatus
 
-下载状态
+Download state
 
 `@property (nonatomic, assign) BMXAttachmentDownloadStatus downLoadStatus`
 
 #### Discussion
-下载状态
+Download state
 
 #### Declared In
 * `BMXFileAttachment.h`
@@ -35,12 +35,12 @@ NSObject
 <a name="//api/name/fileLength" title="fileLength"></a>
 ### fileLength
 
-文件大小
+File size
 
 `@property (nonatomic, assign) long long fileLength`
 
 #### Discussion
-文件大小
+File size
 
 #### Declared In
 * `BMXFileAttachment.h`
@@ -48,12 +48,12 @@ NSObject
 <a name="//api/name/path" title="path"></a>
 ### path
 
-本地路径
+Local path
 
 `@property (nonatomic, copy) NSString *path`
 
 #### Discussion
-本地路径
+Local path
 
 #### Declared In
 * `BMXFileAttachment.h`
@@ -61,12 +61,12 @@ NSObject
 <a name="//api/name/url" title="url"></a>
 ### url
 
-文件url
+File url
 
 `@property (nonatomic, copy) NSString *url`
 
 #### Discussion
-文件url
+File url
 
 #### Declared In
 * `BMXFileAttachment.h`
@@ -77,26 +77,26 @@ NSObject
 <a name="//api/name/initWithData:displayName:conversationId:" title="initWithData:displayName:conversationId:"></a>
 ### initWithData:displayName:conversationId:
 
-初始化文件BMXFileAttachment
+Initialize file BMXFileAttachment
 
 `- (instancetype)initWithData:(NSData *)*aData* displayName:(NSString *)*displayName* conversationId:(NSString *)*conversationId*`
 
 #### Parameters
 
 *aData*  
-   文件数据  
+   File data  
 
 *displayName*  
-   文件名称  
+   File name  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 #### Return Value
 BMXFileAttachment
 
 #### Discussion
-初始化文件BMXFileAttachment
+Initialize file BMXFileAttachment
 
 #### Declared In
 * `BMXFileAttachment.h`
@@ -104,23 +104,23 @@ BMXFileAttachment
 <a name="//api/name/initWithPath:displayName:conversationId:" title="initWithPath:displayName:conversationId:"></a>
 ### initWithPath:displayName:conversationId:
 
-初始化文件BMXFileAttachment
+Initialize file BMXFileAttachment
 
 `- (instancetype)initWithPath:(NSString *)*path* displayName:(NSString *)*displayName* conversationId:(NSString *)*conversationId*`
 
 #### Parameters
 
 *path*  
-   文件路径  
+   File path  
 
 *displayName*  
-   文件名称  
+   File name  
 
 *conversationId*  
-   会话id  
+   Session id  
 
 #### Discussion
-初始化文件BMXFileAttachment
+Initialize file BMXFileAttachment
 
 #### Declared In
 * `BMXFileAttachment.h`

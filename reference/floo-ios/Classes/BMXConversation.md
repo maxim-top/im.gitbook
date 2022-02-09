@@ -8,12 +8,12 @@
 <a name="//api/name/conversationId" title="conversationId"></a>
 ### conversationId
 
-会话Id
+Session Id
 
 `@property (nonatomic, assign, readonly) long long conversationId`
 
 #### Discussion
-会话Id
+Session Id
 
 #### Declared In
 * `BMXConversation.h`
@@ -21,12 +21,12 @@
 <a name="//api/name/editMessage" title="editMessage"></a>
 ### editMessage
 
-编辑消息
+Edit message
 
 `@property (nonatomic, copy) NSString *editMessage`
 
 #### Discussion
-编辑消息
+Edit message
 
 #### Declared In
 * `BMXConversation.h`
@@ -34,12 +34,12 @@
 <a name="//api/name/extensionJson" title="extensionJson"></a>
 ### extensionJson
 
-扩展信息
+Extension information
 
 `@property (nonatomic, copy) NSString *extensionJson`
 
 #### Discussion
-扩展信息
+Extension information
 
 #### Declared In
 * `BMXConversation.h`
@@ -47,12 +47,12 @@
 <a name="//api/name/isMuteNotication" title="isMuteNotication"></a>
 ### isMuteNotication
 
-是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。
+Whether the user is alerted to the message, without which the session total unread-number does not count this session.
 
 `@property (nonatomic, assign) BOOL isMuteNotication`
 
 #### Discussion
-是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。
+Whether the user is alerted to the message, without which the session total unread-number does not count this session.
 
 #### Declared In
 * `BMXConversation.h`
@@ -60,12 +60,12 @@
 <a name="//api/name/lastMessage" title="lastMessage"></a>
 ### lastMessage
 
-最新消息
+Latest message
 
 `@property (nonatomic, strong, readonly) BMXMessageObject *lastMessage`
 
 #### Discussion
-最新消息
+Latest message
 
 #### Declared In
 * `BMXConversation.h`
@@ -73,12 +73,12 @@
 <a name="//api/name/messageCount" title="messageCount"></a>
 ### messageCount
 
-会话中所有消息数量
+Number of all messages in session
 
 `@property (nonatomic, assign, readonly) NSInteger messageCount`
 
 #### Discussion
-会话中所有消息数量
+Number of all messages in session
 
 #### Declared In
 * `BMXConversation.h`
@@ -86,12 +86,12 @@
 <a name="//api/name/type" title="type"></a>
 ### type
 
-会话类型
+Session type
 
 `@property (nonatomic, assign, readonly) BMXConversationType type`
 
 #### Discussion
-会话类型
+Session type
 
 #### Declared In
 * `BMXConversation.h`
@@ -99,12 +99,12 @@
 <a name="//api/name/unreadNumber" title="unreadNumber"></a>
 ### unreadNumber
 
-未读消息数量
+Number of unread messages
 
 `@property (nonatomic, assign, readonly) NSInteger unreadNumber`
 
 #### Discussion
-未读消息数量
+Number of unread messages
 
 #### Declared In
 * `BMXConversation.h`
@@ -115,7 +115,7 @@
 <a name="//api/name/insertMessage:completion:" title="insertMessage:completion:"></a>
 ### insertMessage:completion:
 
-插入一条消息
+Insert a message
 
 `- (void)insertMessage:(BMXMessageObject *)*msg* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -128,7 +128,7 @@
    Result  
 
 #### Discussion
-插入一条消息
+Insert a message
 
 #### Declared In
 * `BMXConversation.h`
@@ -136,7 +136,7 @@
 <a name="//api/name/loadMessage:completion:" title="loadMessage:completion:"></a>
 ### loadMessage:completion:
 
-读取一条消息
+Read a message
 
 `- (void)loadMessage:(long long)*msgId* completion:(void ( ^ ) ( BMXMessageObject *message ))*aCompletionBlock*`
 
@@ -149,7 +149,7 @@
    Result  
 
 #### Discussion
-读取一条消息
+Read a message
 
 #### Declared In
 * `BMXConversation.h`
@@ -157,23 +157,23 @@
 <a name="//api/name/loadMessageFromMessageId:size:completion:" title="loadMessageFromMessageId:size:completion:"></a>
 ### loadMessageFromMessageId:size:completion:
 
-加载消息，从参考消息向前加载，如果不指定则从最新消息开始
+Load messages, starting from the reference message to load earlier messages; starting from the latest message if not specified
 
 `- (void)loadMessageFromMessageId:(long long)*reMsgId* size:(NSUInteger)*size* completion:(void ( ^ ) ( NSArray *messageList , BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *reMsgId*  
-   参考消息Id  
+   Reference message Id  
 
 *size*  
    size  
 
 *aCompletionBlock*  
-   Result：MessageList  
+   Result:MessageList  
 
 #### Discussion
-加载消息，从参考消息向前加载，如果不指定则从最新消息开始
+Load messages, starting from the reference message to load earlier messages; starting from the latest message if not specified
 
 #### Declared In
 * `BMXConversation.h`
@@ -181,7 +181,7 @@
 <a name="//api/name/removeAllMessagescompletion:" title="removeAllMessagescompletion:"></a>
 ### removeAllMessagescompletion:
 
-删除会话中的所有消息
+Delete all messages in sesstion
 
 `- (void)removeAllMessagescompletion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -191,7 +191,7 @@
    Result  
 
 #### Discussion
-删除会话中的所有消息
+Delete all messages in sesstion
 
 #### Declared In
 * `BMXConversation.h`
@@ -199,12 +199,12 @@
 <a name="//api/name/searchMessagesByKeyWords:refTime:size:directionType:completion:" title="searchMessagesByKeyWords:refTime:size:directionType:completion:"></a>
 ### searchMessagesByKeyWords:refTime:size:directionType:completion:
 
-搜索消息，如果不指定则从最新消息开始
+Search for messages, starting with latest if not specified
 
 `- (void)searchMessagesByKeyWords:(NSString *)*keywords* refTime:(NSTimeInterval)*refTime* size:(NSUInteger)*size* directionType:(BMXMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray<BMXMessageObject*> *messageList , BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-搜索消息，如果不指定则从最新消息开始
+Search for messages, starting with latest if not specified
 
 #### Declared In
 * `BMXConversation.h`
@@ -212,12 +212,12 @@
 <a name="//api/name/searchMessagesBycontentType:refTime:size:directionType:completion:" title="searchMessagesBycontentType:refTime:size:directionType:completion:"></a>
 ### searchMessagesBycontentType:refTime:size:directionType:completion:
 
-按照类型搜索消息，如果不指定则从最新消息开始
+Search for messages by type, starting with latest if not specified
 
 `- (void)searchMessagesBycontentType:(BMXContentType)*contentType* refTime:(NSTimeInterval)*refTime* size:(NSUInteger)*size* directionType:(BMXMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray<BMXMessageObject*> *messageList , BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-按照类型搜索消息，如果不指定则从最新消息开始
+Search for messages by type, starting with latest if not specified
 
 #### Declared In
 * `BMXConversation.h`
@@ -225,12 +225,12 @@
 <a name="//api/name/setAllMessagesReadCompletion:" title="setAllMessagesReadCompletion:"></a>
 ### setAllMessagesReadCompletion:
 
-把所有消息设置为已读，更新未读消息数
+Set all messages to read, update number of unread messages
 
 `- (void)setAllMessagesReadCompletion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-把所有消息设置为已读，更新未读消息数
+Set all messages to read, update number of unread messages
 
 #### Declared In
 * `BMXConversation.h`
@@ -238,7 +238,7 @@
 <a name="//api/name/setMessagePlayedStatus:status:completion:" title="setMessagePlayedStatus:status:completion:"></a>
 ### setMessagePlayedStatus:status:completion:
 
-设置消息播放状态（只对语音/视频消息有效）
+Set message playback state (valid only for voice/video messages)
 
 `- (void)setMessagePlayedStatus:(BMXMessageObject *)*message* status:(bool)*status* completion:(void ( ^ ) ( BMXMessageObject *aMessage , BMXError *error ))*aCompletionBlock*`
 
@@ -248,13 +248,13 @@
    message  
 
 *status*  
-   播放状态  
+   Playback state  
 
 *aCompletionBlock*  
    Result  
 
 #### Discussion
-设置消息播放状态（只对语音/视频消息有效）
+Set message playback state (valid only for voice/video messages)
 
 #### Declared In
 * `BMXConversation.h`
@@ -262,7 +262,7 @@
 <a name="//api/name/setMessageReadStatus:status:completion:" title="setMessageReadStatus:status:completion:"></a>
 ### setMessageReadStatus:status:completion:
 
-设置消息未读状态，更新未读消息数, 本地
+Set message unread state, update the number of unread messages locally
 
 `- (void)setMessageReadStatus:(BMXMessageObject *)*message* status:(BOOL)*status* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -272,13 +272,13 @@
    message  
 
 *status*  
-   是否已读  
+   Read or unread  
 
 *aCompletionBlock*  
    Result  
 
 #### Discussion
-设置消息未读状态，更新未读消息数, 本地
+Set message unread state, update the number of unread messages locally
 
 #### Declared In
 * `BMXConversation.h`
@@ -286,20 +286,20 @@
 <a name="//api/name/updateMessageExtension:completion:" title="updateMessageExtension:completion:"></a>
 ### updateMessageExtension:completion:
 
-更新一条数据库存储消息的扩展字段信息
+Update the extend field info of a database-stored message
 
 `- (void)updateMessageExtension:(BMXMessageObject *)*message* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *message*  
-   需要更改扩展信息的消息此时msg部分已经更新扩展字椴信息  
+   The message that needs to change the extension information when the msg section has updated its extension field  
 
 *aCompletionBlock*  
-   更新结果  
+   Update result  
 
 #### Discussion
-更新一条数据库存储消息的扩展字段信息
+Update the extend field info of a database-stored message
 
 #### Declared In
 * `BMXConversation.h`

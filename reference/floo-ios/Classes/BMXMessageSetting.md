@@ -8,12 +8,12 @@
 <a name="//api/name/mAutoDownloadAttachment" title="mAutoDownloadAttachment"></a>
 ### mAutoDownloadAttachment
 
-自动下载附件
+Automatically download attachment
 
 `@property (nonatomic, assign, readonly) BOOL mAutoDownloadAttachment`
 
 #### Discussion
-自动下载附件
+Automatically download attachment
 
 #### Declared In
 * `BMXMessageSetting.h`
@@ -21,12 +21,12 @@
 <a name="//api/name/mNotificationSound" title="mNotificationSound"></a>
 ### mNotificationSound
 
-推送声音
+Push sound alert
 
 `@property (nonatomic, assign, readonly) BOOL mNotificationSound`
 
 #### Discussion
-推送声音
+Push sound alert
 
 #### Declared In
 * `BMXMessageSetting.h`
@@ -34,12 +34,12 @@
 <a name="//api/name/mNotificationVibrate" title="mNotificationVibrate"></a>
 ### mNotificationVibrate
 
-推送通知震动
+Push vibrate alert
 
 `@property (nonatomic, assign, readonly) BOOL mNotificationVibrate`
 
 #### Discussion
-推送通知震动
+Push vibrate alert
 
 #### Declared In
 * `BMXMessageSetting.h`
@@ -47,12 +47,12 @@
 <a name="//api/name/mPushDetail" title="mPushDetail"></a>
 ### mPushDetail
 
-推送详情
+Push details
 
 `@property (nonatomic, assign, readonly) BOOL mPushDetail`
 
 #### Discussion
-推送详情
+Push details
 
 #### Declared In
 * `BMXMessageSetting.h`
@@ -60,12 +60,12 @@
 <a name="//api/name/mPushEnabled" title="mPushEnabled"></a>
 ### mPushEnabled
 
-推送开关
+Push switch
 
 `@property (nonatomic, assign, readonly) BOOL mPushEnabled`
 
 #### Discussion
-推送开关
+Push switch
 
 #### Declared In
 * `BMXMessageSetting.h`
@@ -78,12 +78,12 @@
 <a name="//api/name/pushNickname" title="pushNickname"></a>
 ### pushNickname
 
-对方收到推送消息时显示的名称
+The name displayed when the other party receives the pushed message
 
 `@property (nonatomic, copy) NSString *pushNickname`
 
 #### Discussion
-对方收到推送消息时显示的名称
+The name displayed when the other party receives the pushed message
 
 #### Declared In
 * `BMXMessageSetting.h`

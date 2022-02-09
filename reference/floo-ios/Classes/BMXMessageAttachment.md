@@ -5,7 +5,7 @@
 
 ## Overview
 
-下载被取消
+Download canceled
 
 ## Properties
 

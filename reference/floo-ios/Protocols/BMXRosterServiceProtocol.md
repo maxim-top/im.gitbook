@@ -8,20 +8,20 @@
 <a name="//api/name/friendAddedSponsorId:recipientId:" title="friendAddedSponsorId:recipientId:"></a>
 ### friendAddedSponsorId:recipientId:
 
-添加好友
+Add friend
 
 `- (void)friendAddedSponsorId:(long long)*sponsorId* recipientId:(long long)*recipientId*`
 
 #### Parameters
 
 *sponsorId*  
-   发起方  
+   Initiator  
 
 *recipientId*  
-   接受方  
+   Recipient  
 
 #### Discussion
-添加好友
+Add friend
 
 #### Declared In
 * `BMXRosterServiceProtocol.h`
@@ -30,7 +30,7 @@
 ### friendAddedtoBlockListSponsorId:recipientId:
 
 <ul>
-<li>添加黑名单</li>
+<li>Add to blacklist</li>
 </ul>
 
 `- (void)friendAddedtoBlockListSponsorId:(long long)*sponsorId* recipientId:(long long)*recipientId*`
@@ -38,14 +38,14 @@
 #### Parameters
 
 *sponsorId*  
-   发起方  
+   Initiator  
 
 *recipientId*  
-   接受方  
+   Recipient  
 
 #### Discussion
 <ul>
-<li>添加黑名单</li>
+<li>Add to blacklist</li>
 </ul>
 
 #### Declared In
@@ -55,8 +55,8 @@
 ### friendDidApplicationAcceptedFromSponsorId:recipientId:
 
 <ul>
-<li>加好友申请被通过了</li>
-<li>用户B同意用户A的加好友请求后，用户A会收到这个回调</li>
+<li>Request of adding friend approved</li>
+<li>User A will receive this callback after User B agrees to User A's friend request</li>
 </ul>
 
 `- (void)friendDidApplicationAcceptedFromSponsorId:(long long)*sponsorId* recipientId:(long long)*recipientId*`
@@ -64,15 +64,15 @@
 #### Parameters
 
 *sponsorId*  
-   发起方  
+   Initiator  
 
 *recipientId*  
-   接受方  
+   Recipient  
 
 #### Discussion
 <ul>
-<li>加好友申请被通过了</li>
-<li>用户B同意用户A的加好友请求后，用户A会收到这个回调</li>
+<li>Request of adding friend approved</li>
+<li>User A will receive this callback after User B agrees to User A's friend request</li>
 </ul>
 
 #### Declared In
@@ -82,8 +82,8 @@
 ### friendDidApplicationDeclinedFromSponsorId:recipientId:reson:
 
 <ul>
-<li>加好友申请被拒绝了</li>
-<li>用户B拒绝用户A的加好友请求后，用户A会收到这个回调</li>
+<li>Request of adding friend rejected</li>
+<li>User A will receive this callback after User B rejects to User A's friend request</li>
 </ul>
 
 `- (void)friendDidApplicationDeclinedFromSponsorId:(long long)*sponsorId* recipientId:(long long)*recipientId* reson:(NSString *)*reason*`
@@ -91,18 +91,18 @@
 #### Parameters
 
 *sponsorId*  
-   发起方  
+   Initiator  
 
 *recipientId*  
-   接受方  
+   Recipient  
 
 *reason*  
-   拒绝理由  
+   Reason for rejection  
 
 #### Discussion
 <ul>
-<li>加好友申请被拒绝了</li>
-<li>用户B拒绝用户A的加好友请求后，用户A会收到这个回调</li>
+<li>Request of adding friend rejected</li>
+<li>User A will receive this callback after User B rejects to User A's friend request</li>
 </ul>
 
 #### Declared In
@@ -112,8 +112,8 @@
 ### friendDidRecivedAppliedSponsorId:recipientId:message:
 
 <ul>
-<li>收到加好友申请</li>
-<li>用户B申请加A为好友后，用户A会收到这个回调</li>
+<li>Request of adding friend received</li>
+<li>User A will receive this callback after User B requests a friend relationship with User A</li>
 </ul>
 
 `- (void)friendDidRecivedAppliedSponsorId:(long long)*sponsorId* recipientId:(long long)*recipientId* message:(NSString *)*message*`
@@ -121,18 +121,18 @@
 #### Parameters
 
 *sponsorId*  
-   发起方  
+   Initiator  
 
 *recipientId*  
-   接受方  
+   Recipient  
 
 *message*  
-   好友邀请信息  
+   Friend request information  
 
 #### Discussion
 <ul>
-<li>收到加好友申请</li>
-<li>用户B申请加A为好友后，用户A会收到这个回调</li>
+<li>Request of adding friend received</li>
+<li>User A will receive this callback after User B requests a friend relationship with User A</li>
 </ul>
 
 #### Declared In
@@ -142,7 +142,7 @@
 ### friendRemovedFromBlockListSponsorId:recipientId:
 
 <ul>
-<li>删除黑名单</li>
+<li>Delete blacklist</li>
 </ul>
 
 `- (void)friendRemovedFromBlockListSponsorId:(long long)*sponsorId* recipientId:(long long)*recipientId*`
@@ -150,14 +150,14 @@
 #### Parameters
 
 *sponsorId*  
-   发起方  
+   Initiator  
 
 *recipientId*  
-   接受方  
+   Recipient  
 
 #### Discussion
 <ul>
-<li>删除黑名单</li>
+<li>Delete blacklist</li>
 </ul>
 
 #### Declared In
@@ -166,11 +166,11 @@
 <a name="//api/name/friendRemovedSponsorId:recipientId:" title="friendRemovedSponsorId:recipientId:"></a>
 ### friendRemovedSponsorId:recipientId:
 
-<pre><code>删除好友
+<pre><code>Delete friend
 </code></pre>
 
 <ul>
-<li>用户B删除与用户A的好友关系后，用户A会收到这个回调</li>
+<li>User A will receive this callback after User B removes a friend relationship with User A</li>
 </ul>
 
 `- (void)friendRemovedSponsorId:(long long)*sponsorId* recipientId:(long long)*recipientId*`
@@ -178,17 +178,17 @@
 #### Parameters
 
 *sponsorId*  
-   发起方  
+   Initiator  
 
 *recipientId*  
-   接受方  
+   Recipient  
 
 #### Discussion
-<pre><code>删除好友
+<pre><code>Delete friend
 </code></pre>
 
 <ul>
-<li>用户B删除与用户A的好友关系后，用户A会收到这个回调</li>
+<li>User A will receive this callback after User B removes a friend relationship with User A</li>
 </ul>
 
 #### Declared In
@@ -197,12 +197,12 @@
 <a name="//api/name/rosterInfoDidUpdate:" title="rosterInfoDidUpdate:"></a>
 ### rosterInfoDidUpdate:
 
-用户信息更新
+Update user information
 
 `- (void)rosterInfoDidUpdate:(BMXRoster *)*roster*`
 
 #### Discussion
-用户信息更新
+Update user information
 
 #### Declared In
 * `BMXRosterServiceProtocol.h`

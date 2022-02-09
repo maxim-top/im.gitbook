@@ -5,7 +5,7 @@
 
 ## Overview
 
-离线
+Offline
 
 ## Instance Methods
 
@@ -22,17 +22,17 @@
 <a name="//api/name/addPushListener:" title="addPushListener:"></a>
 ### addPushListener:
 
-添加聊天监听者
+Add chat listener
 
 `- (void)addPushListener:(id<BMXPushServiceProtocol>)*listener*`
 
 #### Parameters
 
 *listener*  
-   监听者  
+   Listener  
 
 #### Discussion
-添加聊天监听者
+Add chat listener
 
 #### Declared In
 * `BMXPushManager.h`
@@ -40,20 +40,20 @@
 <a name="//api/name/bindDeviceToken:completion:" title="bindDeviceToken:completion:"></a>
 ### bindDeviceToken:completion:
 
-推送绑定设备token。
+Push binding device token.
 
 `- (void)bindDeviceToken:(NSString *)*deviceToken* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *deviceToken*  
-   token 设备的推送token  
+   token device's push token  
 
 *aCompletionBlock*  
-   绑定回调  
+   Bind callback  
 
 #### Discussion
-推送绑定设备token。
+Push binding device token.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -61,12 +61,12 @@
 <a name="//api/name/clearAllNotifications" title="clearAllNotifications"></a>
 ### clearAllNotifications
 
-用于移除在通知中心显示的所有推送
+Used to remove all pushes displayed in Notification
 
 `- (void)clearAllNotifications`
 
 #### Discussion
-用于移除在通知中心显示的所有推送
+Used to remove all pushes displayed in Notification
 
 #### Declared In
 * `BMXPushManager.h`
@@ -74,21 +74,21 @@
 <a name="//api/name/clearNotification:" title="clearNotification:"></a>
 ### clearNotification:
 
-  用于移除在通知中心显示的指定推送
-  iOS 10 以上 支持通过identifier 移除指定推送
-  iOS 10 以下 identifier 设置为 0 ，则移除所有推送
+  Used to remove the specified push displayed in Notification
+  iOS 10 and over support to remove specified push by identifier
+  For iOS 10 and earlier versions, remove all pushes if identifier is set to 0
 
 `- (void)clearNotification:(NSInteger)*notificationId*`
 
 #### Parameters
 
 *notificationId*  
-   如果notificationId 置 0 ，则移除所有推送  
+   If notificationId is set to 0, remove all pushes  
 
 #### Discussion
-  用于移除在通知中心显示的指定推送
-  iOS 10 以上 支持通过identifier 移除指定推送
-  iOS 10 以下 identifier 设置为 0 ，则移除所有推送
+  Used to remove the specified push displayed in Notification
+  iOS 10 and over support to remove specified push by identifier
+  For iOS 10 and earlier versions, remove all pushes if identifier is set to 0
 
 #### Declared In
 * `BMXPushManager.h`
@@ -96,17 +96,17 @@
 <a name="//api/name/clearTagsByOperationId:" title="clearTagsByOperationId:"></a>
 ### clearTagsByOperationId:
 
-清空推送用户的标签。
+Clear tags of the push user.
 
 `- (void)clearTagsByOperationId:(NSString *)*operationId*`
 
 #### Parameters
 
 *operationId*  
-   操作id。在回调通知中对应通知提醒。  
+   Operation id. Corresponding notification reminder in callback notification.  
 
 #### Discussion
-清空推送用户的标签。
+Clear tags of the push user.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -114,20 +114,20 @@
 <a name="//api/name/deleteTags:operationId:" title="deleteTags:operationId:"></a>
 ### deleteTags:operationId:
 
-删除推送用户的标签。
+Delete tags of the push user.
 
 `- (void)deleteTags:(NSArray<NSString*> *)*tags* operationId:(NSString *)*operationId*`
 
 #### Parameters
 
 *tags*  
-   要删除用户标签  
+   User tag to delete  
 
 *operationId*  
-   操作id。在回调通知中对应通知提醒。  
+   Operation id. Corresponding notification reminder in callback notification.  
 
 #### Discussion
-删除推送用户的标签。
+Delete tags of the push user.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -135,12 +135,12 @@
 <a name="//api/name/getCertification" title="getCertification"></a>
 ### getCertification
 
-获取登陆后服务器返回的推送证书。
+Get push certificate returned by server after login.
 
 `- (void)getCertification`
 
 #### Discussion
-获取登陆后服务器返回的推送证书。
+Get push certificate returned by server after login.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -148,20 +148,20 @@
 <a name="//api/name/getPushProfileForceRefresh:completion:" title="getPushProfileForceRefresh:completion:"></a>
 ### getPushProfileForceRefresh:completion:
 
-获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取
+Get push user details, force pull from server-side if forceRefresh == true
 
 `- (void)getPushProfileForceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( BMXPushUserProfile *profile , BMXError *aError ))*aCompletionBlock*`
 
 #### Parameters
 
 *forceRefresh*  
-   推送用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。  
+   Push user profile information, initially passing in a pointing-to-empty shared_ptr object, fetch the user profile information here after function returned.  
 
 *aCompletionBlock*  
-   是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取  
+   Whether to force pull from server, automatically if local fetch failed  
 
 #### Discussion
-获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取
+Get push user details, force pull from server-side if forceRefresh == true
 
 #### Declared In
 * `BMXPushManager.h`
@@ -169,20 +169,20 @@
 <a name="//api/name/getTagsByOperationId:withCompletion:" title="getTagsByOperationId:withCompletion:"></a>
 ### getTagsByOperationId:withCompletion:
 
-获取推送用户的标签。
+Get tags of the push user.
 
 `- (void)getTagsByOperationId:(NSString *)*operationId* withCompletion:(void ( ^ ) ( NSArray *tags , BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *operationId*  
-   操作id。在回调通知中对应通知提醒。  
+   Operation id. Corresponding notification reminder in callback notification.  
 
 *aCompletionBlock*  
-   获取回调  
+   Get callback  
 
 #### Discussion
-获取推送用户的标签。
+Get tags of the push user.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -190,12 +190,12 @@
 <a name="//api/name/getToken" title="getToken"></a>
 ### getToken
 
-获取登陆后使用的用户token。
+Get user token to use after login.
 
 `- (void)getToken`
 
 #### Discussion
-获取登陆后使用的用户token。
+Get user token to use after login.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -203,26 +203,26 @@
 <a name="//api/name/loadLocalPushMessagesFromMessageId:size:directionType:completion:" title="loadLocalPushMessagesFromMessageId:size:directionType:completion:"></a>
 ### loadLocalPushMessagesFromMessageId:size:directionType:completion:
 
-加载数据库本地存储的推送消息。如果不指定则从最新消息开始
+Load push message stored locally in database. Start with latest message if not specified
 
 `- (void)loadLocalPushMessagesFromMessageId:(long long)*reMsgId* size:(NSUInteger)*size* directionType:(BMXPushMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray *messageList , BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *reMsgId*  
-   加载推送消息的起始id  
+   Start id for loading pushes  
 
 *size*  
-   最大加载消息条数  
+   Maximum number of loaded messages  
 
 *directionType*  
-   数据库返回的加载本地推送消息列表  
+   List of loaded local pushes returned by database  
 
 *aCompletionBlock*  
-   加载推送消息的方向，默认是加载更早的消息  
+   Direction of loading pushes, default to load earlier messages  
 
 #### Discussion
-加载数据库本地存储的推送消息。如果不指定则从最新消息开始
+Load push message stored locally in database. Start with latest message if not specified
 
 #### Declared In
 * `BMXPushManager.h`
@@ -235,17 +235,17 @@
 <a name="//api/name/removePushListener:" title="removePushListener:"></a>
 ### removePushListener:
 
-移除聊天监听者
+Remove chat listener
 
 `- (void)removePushListener:(id<BMXPushServiceProtocol>)*listener*`
 
 #### Parameters
 
 *listener*  
-   监听者  
+   Listener  
 
 #### Discussion
-移除聊天监听者
+Remove chat listener
 
 #### Declared In
 * `BMXPushManager.h`
@@ -253,12 +253,12 @@
 <a name="//api/name/resume" title="resume"></a>
 ### resume
 
-恢复推送功能接口。
+Restore push feature interface.
 
 `- (void)resume`
 
 #### Discussion
-恢复推送功能接口。
+Restore push feature interface.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -266,17 +266,17 @@
 <a name="//api/name/sendMessage:" title="sendMessage:"></a>
 ### sendMessage:
 
-发送推送上行消息，消息状态变化会通过listener通知
+Send a push uplink message and notify the listener of a change in message status
 
 `- (void)sendMessage:(NSString *)*message*`
 
 #### Parameters
 
 *message*  
-   发送的上行推送消息内容  
+   Sent uplink push content  
 
 #### Discussion
-发送推送上行消息，消息状态变化会通过listener通知
+Send a push uplink message and notify the listener of a change in message status
 
 #### Declared In
 * `BMXPushManager.h`
@@ -284,17 +284,17 @@
 <a name="//api/name/setBadge:" title="setBadge:"></a>
 ### setBadge:
 
-设置推送用户的未读角标。
+Set unread badge for push user.
 
 `- (void)setBadge:(int)*count*`
 
 #### Parameters
 
 *count*  
-   用户未读角标数  
+   Unread badge count of user  
 
 #### Discussion
-设置推送用户的未读角标。
+Set unread badge for push user.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -302,17 +302,17 @@
 <a name="//api/name/setPushMode:" title="setPushMode:"></a>
 ### setPushMode:
 
-设置推送启用状态。默认为使用推送。
+Set push enabled state. Default enabled.
 
 `- (void)setPushMode:(BOOL)*enable*`
 
 #### Parameters
 
 *enable*  
-   推送的启用状态  
+   Enabled state of push  
 
 #### Discussion
-设置推送启用状态。默认为使用推送。
+Set push enabled state. Default enabled.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -320,20 +320,20 @@
 <a name="//api/name/setPushTimeStartHour:endHour:" title="setPushTimeStartHour:endHour:"></a>
 ### setPushTimeStartHour:endHour:
 
-设置允许推送时间。
+Set allowed push time.
 
 `- (void)setPushTimeStartHour:(int)*startHour* endHour:(int)*endHour*`
 
 #### Parameters
 
 *startHour*  
-   静默允许推送的起始时间小时  
+   Start time for allowed silent push (hour)  
 
 *endHour*  
-   静默允许推送的结束时间小时  
+   End time for allowed silent push (hour)  
 
 #### Discussion
-设置允许推送时间。
+Set allowed push time.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -341,20 +341,20 @@
 <a name="//api/name/setSlienceTimeStartHour:endHour:" title="setSlienceTimeStartHour:endHour:"></a>
 ### setSlienceTimeStartHour:endHour:
 
-设置推送静默的起始结束时间。
+Set the start and end time of silent push.
 
 `- (void)setSlienceTimeStartHour:(int)*startHour* endHour:(int)*endHour*`
 
 #### Parameters
 
 *startHour*  
-   静默推送的起始时间小时  
+   Start time for silent push (hour)  
 
 *endHour*  
-   静默推送的结束时间小时  
+   End time for silent push (hour)  
 
 #### Discussion
-设置推送静默的起始结束时间。
+Set the start and end time of silent push.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -362,20 +362,20 @@
 <a name="//api/name/setTags:operationId:" title="setTags:operationId:"></a>
 ### setTags:operationId:
 
-设置推送用户的标签。
+Set tags of push user.
 
 `- (void)setTags:(NSArray<NSString*> *)*tags* operationId:(NSString *)*operationId*`
 
 #### Parameters
 
 *tags*  
-   用户标签  
+   User tag  
 
 *operationId*  
-   操作id。在回调通知中对应通知提醒。  
+   Operation id. Corresponding notification reminder in callback notification.  
 
 #### Discussion
-设置推送用户的标签。
+Set tags of push user.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -383,12 +383,12 @@
 <a name="//api/name/start" title="start"></a>
 ### start
 
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
 `- (void)start`
 
 #### Discussion
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -396,17 +396,17 @@
 <a name="//api/name/startWithAlias:" title="startWithAlias:"></a>
 ### startWithAlias:
 
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
 `- (void)startWithAlias:(NSString *)*alias*`
 
 #### Parameters
 
 *alias*  
-   推送初始化使用的当前用户别名  
+   Current user alias used for push initialization  
 
 #### Discussion
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -414,20 +414,20 @@
 <a name="//api/name/startWithAlias:bmxToken:" title="startWithAlias:bmxToken:"></a>
 ### startWithAlias:bmxToken:
 
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
 `- (void)startWithAlias:(NSString *)*alias* bmxToken:(NSString *)*bmxToken*`
 
 #### Parameters
 
 *alias*  
-   推送初始化使用的当前用户别名  
+   Current user alias used for push initialization  
 
 *bmxToken*  
-   推送初始化的时候App传入的使用的用户的token。  
+   User token passed in by App when push initialization.  
 
 #### Discussion
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -435,12 +435,12 @@
 <a name="//api/name/status" title="status"></a>
 ### status
 
-推送sdk当前的状态。
+Push the current state of sdk.
 
 `- (BMXPushSdkStatus)status`
 
 #### Discussion
-推送sdk当前的状态。
+Push the current state of sdk.
 
 #### Declared In
 * `BMXPushManager.h`
@@ -448,12 +448,12 @@
 <a name="//api/name/stop" title="stop"></a>
 ### stop
 
-停止推送功能接口
+Function interface for stop push
 
 `- (void)stop`
 
 #### Discussion
-停止推送功能接口
+Function interface for stop push
 
 #### Declared In
 * `BMXPushManager.h`
@@ -461,17 +461,17 @@
 <a name="//api/name/unbindAlias:" title="unbindAlias:"></a>
 ### unbindAlias:
 
-解除用户别名绑定。
+Unbind user alias.
 
 `- (void)unbindAlias:(NSString *)*alias*`
 
 #### Parameters
 
 *alias*  
-   需要解除绑定的用户别名。  
+   The user alias that needs to be unbound.  
 
 #### Discussion
-解除用户别名绑定。
+Unbind user alias.
 
 #### Declared In
 * `BMXPushManager.h`

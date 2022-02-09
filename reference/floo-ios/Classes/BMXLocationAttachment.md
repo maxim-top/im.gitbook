@@ -9,12 +9,12 @@ NSObject
 <a name="//api/name/address" title="address"></a>
 ### address
 
-地址
+Address
 
 `@property (nonatomic, copy) NSString *address`
 
 #### Discussion
-地址
+Address
 
 #### Declared In
 * `BMXLocationAttachment.h`
@@ -35,26 +35,26 @@ NSObject
 <a name="//api/name/initWithLatitude:longitude:address:" title="initWithLatitude:longitude:address:"></a>
 ### initWithLatitude:longitude:address:
 
-初始化BMXLocationAttachment
+Initialize BMXLocationAttachment
 
 `- (instancetype)initWithLatitude:(double)*aLatitude* longitude:(double)*aLongitude* address:(NSString *)*aAddress*`
 
 #### Parameters
 
 *aLatitude*  
-   纬度  
+   Latitude  
 
 *aLongitude*  
-   经度  
+   Longitude  
 
 *aAddress*  
-   地址  
+   Address  
 
 #### Return Value
 BMXLocationAttachment
 
 #### Discussion
-初始化BMXLocationAttachment
+Initialize BMXLocationAttachment
 
 #### Declared In
 * `BMXLocationAttachment.h`

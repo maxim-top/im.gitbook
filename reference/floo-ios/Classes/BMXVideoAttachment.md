@@ -10,12 +10,12 @@ NSObject
 <a name="//api/name/duration" title="duration"></a>
 ### duration
 
-时长
+Length
 
 `@property (nonatomic, assign) int duration`
 
 #### Discussion
-时长
+Length
 
 #### Declared In
 * `BMXVideoAttachment.h`
@@ -23,12 +23,12 @@ NSObject
 <a name="//api/name/thumbnailFileLength" title="thumbnailFileLength"></a>
 ### thumbnailFileLength
 
-thumbnail文件大小
+thumbnail file size
 
 `@property (nonatomic) long long thumbnailFileLength`
 
 #### Discussion
-thumbnail文件大小
+thumbnail file size
 
 #### Declared In
 * `BMXVideoAttachment.h`
@@ -36,12 +36,12 @@ thumbnail文件大小
 <a name="//api/name/thumbnailPath" title="thumbnailPath"></a>
 ### thumbnailPath
 
-缩略图路径
+Thumbnail path
 
 `@property (nonatomic, copy) NSString *thumbnailPath`
 
 #### Discussion
-缩略图路径
+Thumbnail path
 
 #### Declared In
 * `BMXVideoAttachment.h`
@@ -49,12 +49,12 @@ thumbnail文件大小
 <a name="//api/name/thumbnailUrl" title="thumbnailUrl"></a>
 ### thumbnailUrl
 
-缩略图url
+Thumbnail url
 
 `@property (nonatomic, copy) NSString *thumbnailUrl`
 
 #### Discussion
-缩略图url
+Thumbnail url
 
 #### Declared In
 * `BMXVideoAttachment.h`
@@ -62,12 +62,12 @@ thumbnail文件大小
 <a name="//api/name/thumbnaildownLoadStatus" title="thumbnaildownLoadStatus"></a>
 ### thumbnaildownLoadStatus
 
-视频下载状态
+Video download status
 
 `@property (nonatomic, assign) BMXAttachmentDownloadStatus thumbnaildownLoadStatus`
 
 #### Discussion
-视频下载状态
+Video download status
 
 #### Declared In
 * `BMXVideoAttachment.h`
@@ -75,12 +75,12 @@ thumbnail文件大小
 <a name="//api/name/videoSize" title="videoSize"></a>
 ### videoSize
 
-video大小
+video size
 
 `@property (nonatomic) CGSize videoSize`
 
 #### Discussion
-video大小
+video size
 
 #### Declared In
 * `BMXVideoAttachment.h`

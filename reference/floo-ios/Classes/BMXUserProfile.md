@@ -8,12 +8,12 @@
 <a name="//api/name/addFriendAuthMode" title="addFriendAuthMode"></a>
 ### addFriendAuthMode
 
-好友验证模式
+Friend authentication mode
 
 `@property (nonatomic, assign) BMXAddFriendAuthMode addFriendAuthMode`
 
 #### Discussion
-好友验证模式
+Friend authentication mode
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -21,12 +21,12 @@
 <a name="//api/name/authQuestion" title="authQuestion"></a>
 ### authQuestion
 
-验证问题
+Verification question
 
 `@property (nonatomic, strong) BMXAuthQuestion *authQuestion`
 
 #### Discussion
-验证问题
+Verification question
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -34,12 +34,12 @@
 <a name="//api/name/avatarPath" title="avatarPath"></a>
 ### avatarPath
 
-头像本地路径
+Local path of avatar
 
 `@property (nonatomic, copy) NSString *avatarPath`
 
 #### Discussion
-头像本地路径
+Local path of avatar
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -47,12 +47,12 @@
 <a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
 ### avatarThumbnailPath
 
-头像缩略图本地路径
+Local path of avatar thumbnail
 
 `@property (nonatomic, copy) NSString *avatarThumbnailPath`
 
 #### Discussion
-头像缩略图本地路径
+Local path of avatar thumbnail
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -60,12 +60,12 @@
 <a name="//api/name/avatarThumbnailUrl" title="avatarThumbnailUrl"></a>
 ### avatarThumbnailUrl
 
-头像缩略图url
+url of avatar thumbnail
 
 `@property (nonatomic, copy) NSString *avatarThumbnailUrl`
 
 #### Discussion
-头像缩略图url
+url of avatar thumbnail
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -73,12 +73,12 @@
 <a name="//api/name/avatarUrl" title="avatarUrl"></a>
 ### avatarUrl
 
-头像url
+Avatar url
 
 `@property (nonatomic, copy) NSString *avatarUrl`
 
 #### Discussion
-头像url
+Avatar url
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -86,12 +86,12 @@
 <a name="//api/name/email" title="email"></a>
 ### email
 
-  用户邮箱
+  User email
 
 `@property (nonatomic, copy) NSString *email`
 
 #### Discussion
-  用户邮箱
+  User email
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -99,12 +99,12 @@
 <a name="//api/name/isAutoAcceptGroupInvite" title="isAutoAcceptGroupInvite"></a>
 ### isAutoAcceptGroupInvite
 
-自动接收群邀请
+Automatically receive group invitations
 
 `@property (nonatomic, assign) BOOL isAutoAcceptGroupInvite`
 
 #### Discussion
-自动接收群邀请
+Automatically receive group invitations
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -112,12 +112,12 @@
 <a name="//api/name/messageSetting" title="messageSetting"></a>
 ### messageSetting
 
-消息设置
+Message settings
 
 `@property (nonatomic, strong) BMXMessageSetting *messageSetting`
 
 #### Discussion
-消息设置
+Message settings
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -125,12 +125,12 @@
 <a name="//api/name/mobilePhone" title="mobilePhone"></a>
 ### mobilePhone
 
-手机号
+Mobile number
 
 `@property (nonatomic, copy) NSString *mobilePhone`
 
 #### Discussion
-手机号
+Mobile number
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -138,12 +138,12 @@
 <a name="//api/name/nickName" title="nickName"></a>
 ### nickName
 
-昵称
+Nickname
 
 `@property (nonatomic, copy) NSString *nickName`
 
 #### Discussion
-昵称
+Nickname
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -151,12 +151,12 @@
 <a name="//api/name/privateInfoJson" title="privateInfoJson"></a>
 ### privateInfoJson
 
-私密信息
+Private information
 
 `@property (nonatomic, copy) NSString *privateInfoJson`
 
 #### Discussion
-私密信息
+Private information
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -164,12 +164,12 @@
 <a name="//api/name/publicInfoJson" title="publicInfoJson"></a>
 ### publicInfoJson
 
-公开信息
+Public information
 
 `@property (nonatomic, copy) NSString *publicInfoJson`
 
 #### Discussion
-公开信息
+Public information
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -177,12 +177,12 @@
 <a name="//api/name/userCategory" title="userCategory"></a>
 ### userCategory
 
-用户级别
+User level
 
 `@property (nonatomic, assign) BMXUserCategory userCategory`
 
 #### Discussion
-用户级别
+User level
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -190,12 +190,12 @@
 <a name="//api/name/userId" title="userId"></a>
 ### userId
 
-用户id
+User id
 
 `@property (nonatomic, assign) long long userId`
 
 #### Discussion
-用户id
+User id
 
 #### Declared In
 * `BMXUserProfile.h`
@@ -203,12 +203,12 @@
 <a name="//api/name/userName" title="userName"></a>
 ### userName
 
-用户名
+Username
 
 `@property (nonatomic, copy) NSString *userName`
 
 #### Discussion
-用户名
+Username
 
 #### Declared In
 * `BMXUserProfile.h`

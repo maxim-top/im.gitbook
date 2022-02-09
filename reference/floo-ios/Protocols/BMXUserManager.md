@@ -18,12 +18,12 @@
 <a name="//api/name/bindDevice:completion:" title="bindDevice:completion:"></a>
 ### bindDevice:completion:
 
-绑定设备推送token
+Binding device push token
 
 `- (void)bindDevice:(NSString *)*token* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-绑定设备推送token
+Binding device push token
 
 #### Declared In
 * `BMXUserManager.h`
@@ -31,12 +31,12 @@
 <a name="//api/name/deleteDeviceByDeviceSN:completion:" title="deleteDeviceByDeviceSN:completion:"></a>
 ### deleteDeviceByDeviceSN:completion:
 
-删除设备
+Delete device
 
 `- (void)deleteDeviceByDeviceSN:(NSInteger)*deviceSN* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-删除设备
+Delete device
 
 #### Declared In
 * `BMXUserManager.h`
@@ -44,23 +44,23 @@
 <a name="//api/name/downloadAvatarWithProfile:thumbnail:progress:completion:" title="downloadAvatarWithProfile:thumbnail:progress:completion:"></a>
 ### downloadAvatarWithProfile:thumbnail:progress:completion:
 
-下载头像
+Download avatar
 
 `- (void)downloadAvatarWithProfile:(BMXUserProfile *)*profile* thumbnail:(BOOL)*thumbnail* progress:(void ( ^ ) ( int progress , BMXError *error ))*aProgress* completion:(void ( ^ ) ( BMXUserProfile *profile , BMXError *error ))*aCompletion*`
 
 #### Parameters
 
 *profile*  
-   用户信息  
+   User information  
 
 *aProgress*  
-   下载进度  
+   Download progress  
 
 *aCompletion*  
-   回调  
+   Callback  
 
 #### Discussion
-下载头像
+Download avatar
 
 #### Declared In
 * `BMXUserManager.h`
@@ -68,12 +68,12 @@
 <a name="//api/name/getDeviceListCompletion:" title="getDeviceListCompletion:"></a>
 ### getDeviceListCompletion:
 
-获取设备列表
+Get device list
 
 `- (void)getDeviceListCompletion:(void ( ^ ) ( BMXError *error , NSArray *deviceList ))*aCompletionBlock*`
 
 #### Discussion
-获取设备列表
+Get device list
 
 #### Declared In
 * `BMXUserManager.h`
@@ -81,12 +81,12 @@
 <a name="//api/name/getProfileForceRefresh:completion:" title="getProfileForceRefresh:completion:"></a>
 ### getProfileForceRefresh:completion:
 
-获取用户详情
+Get user details
 
 `- (void)getProfileForceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( BMXUserProfile *profile , BMXError *aError ))*aCompletionBlock*`
 
 #### Discussion
-获取用户详情
+Get user details
 
 #### Declared In
 * `BMXUserManager.h`
@@ -99,7 +99,7 @@
 <a name="//api/name/setAddFriendAuthMode:completion:" title="setAddFriendAuthMode:completion:"></a>
 ### setAddFriendAuthMode:completion:
 
-设置加好友验证方式
+Set how to validate when adding friend
 
 `- (void)setAddFriendAuthMode:(BMXAddFriendAuthMode)*addFriendAuthMode* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -109,7 +109,7 @@
    BMXAddFriendAuthMode  
 
 #### Discussion
-设置加好友验证方式
+Set how to validate when adding friend
 
 #### Declared In
 * `BMXUserManager.h`
@@ -117,7 +117,7 @@
 <a name="//api/name/setAuthQuestion:completion:" title="setAuthQuestion:completion:"></a>
 ### setAuthQuestion:completion:
 
-设置加好友验证问题
+Set friend authentication questions
 
 `- (void)setAuthQuestion:(BMXAuthQuestion *)*authQuestion* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -127,7 +127,7 @@
    BMXAuthQuestion  
 
 #### Discussion
-设置加好友验证问题
+Set friend authentication questions
 
 #### Declared In
 * `BMXUserManager.h`
@@ -135,7 +135,7 @@
 <a name="//api/name/setAutoAcceptGroupInvite:completion:" title="setAutoAcceptGroupInvite:completion:"></a>
 ### setAutoAcceptGroupInvite:completion:
 
-设置是否自动同意入群邀请
+Set whether to automatically accept group invitations
 
 `- (void)setAutoAcceptGroupInvite:(BOOL)*autoAcceptGroupInvite* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -145,7 +145,7 @@
    BOOL  
 
 #### Discussion
-设置是否自动同意入群邀请
+Set whether to automatically accept group invitations
 
 #### Declared In
 * `BMXUserManager.h`
@@ -153,7 +153,7 @@
 <a name="//api/name/setAutoDownloadAttachment:completion:" title="setAutoDownloadAttachment:completion:"></a>
 ### setAutoDownloadAttachment:completion:
 
-设置是否自动缩略图和语音附件
+Set whether to automatically download thumbnail and voice attachment
 
 `- (void)setAutoDownloadAttachment:(BOOL)*autoDownloadAttachment* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -163,7 +163,7 @@
    BOOL  
 
 #### Discussion
-设置是否自动缩略图和语音附件
+Set whether to automatically download thumbnail and voice attachment
 
 #### Declared In
 * `BMXUserManager.h`
@@ -171,7 +171,7 @@
 <a name="//api/name/setEnablePushDetail:completion:" title="setEnablePushDetail:completion:"></a>
 ### setEnablePushDetail:completion:
 
-设置是否推送详情
+Set whether to push details
 
 `- (void)setEnablePushDetail:(BOOL)*enablePushDetail* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -181,7 +181,7 @@
    BOOL  
 
 #### Discussion
-设置是否推送详情
+Set whether to push details
 
 #### Declared In
 * `BMXUserManager.h`
@@ -189,7 +189,7 @@
 <a name="//api/name/setEnablePushStatus:completion:" title="setEnablePushStatus:completion:"></a>
 ### setEnablePushStatus:completion:
 
-设置是否允许推送
+Set whether push is allowed
 
 `- (void)setEnablePushStatus:(BOOL)*enablePushStatus* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -199,7 +199,7 @@
    BOOL  
 
 #### Discussion
-设置是否允许推送
+Set whether push is allowed
 
 #### Declared In
 * `BMXUserManager.h`
@@ -207,12 +207,12 @@
 <a name="//api/name/setNickname:completion:" title="setNickname:completion:"></a>
 ### setNickname:completion:
 
-设置昵称
+Set nickname
 
 `- (void)setNickname:(NSString *)*nickname* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-设置昵称
+Set nickname
 
 #### Declared In
 * `BMXUserManager.h`
@@ -220,7 +220,7 @@
 <a name="//api/name/setNotificationSound:completion:" title="setNotificationSound:completion:"></a>
 ### setNotificationSound:completion:
 
-设置收到新消息是否声音提醒
+Set whether a new message is audibly alerted
 
 `- (void)setNotificationSound:(BOOL)*notificationSound* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -230,7 +230,7 @@
    BOO  
 
 #### Discussion
-设置收到新消息是否声音提醒
+Set whether a new message is audibly alerted
 
 #### Declared In
 * `BMXUserManager.h`
@@ -238,7 +238,7 @@
 <a name="//api/name/setNotificationVibrate:completion:" title="setNotificationVibrate:completion:"></a>
 ### setNotificationVibrate:completion:
 
-设置收到新消息是否震动
+Set whether a new message is alerted in vibration
 
 `- (void)setNotificationVibrate:(BOOL)*notificationVibrate* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -248,7 +248,7 @@
    BOOL  
 
 #### Discussion
-设置收到新消息是否震动
+Set whether a new message is alerted in vibration
 
 #### Declared In
 * `BMXUserManager.h`
@@ -256,7 +256,7 @@
 <a name="//api/name/setPrivateInfo:completion:" title="setPrivateInfo:completion:"></a>
 ### setPrivateInfo:completion:
 
-设置私有扩展信息
+Set private extension information
 
 `- (void)setPrivateInfo:(NSString *)*privateInfo* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -266,7 +266,7 @@
    string  
 
 #### Discussion
-设置私有扩展信息
+Set private extension information
 
 #### Declared In
 * `BMXUserManager.h`
@@ -274,7 +274,7 @@
 <a name="//api/name/setPublicInfo:completion:" title="setPublicInfo:completion:"></a>
 ### setPublicInfo:completion:
 
-设置公开扩展信息
+Set public extension information
 
 `- (void)setPublicInfo:(NSString *)*publicInfo* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -284,7 +284,7 @@
    string  
 
 #### Discussion
-设置公开扩展信息
+Set public extension information
 
 #### Declared In
 * `BMXUserManager.h`
@@ -292,12 +292,12 @@
 <a name="//api/name/setsetPushNickname:completion:" title="setsetPushNickname:completion:"></a>
 ### setsetPushNickname:completion:
 
-设置推送昵称
+Set push nickname
 
 `- (void)setsetPushNickname:(NSString *)*nickname* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-设置推送昵称
+Set push nickname
 
 #### Declared In
 * `BMXUserManager.h`
@@ -305,20 +305,20 @@
 <a name="//api/name/uploadAvatarWithData:progress:" title="uploadAvatarWithData:progress:"></a>
 ### uploadAvatarWithData:progress:
 
-上传头像
+Upload avatar
 
 `- (void)uploadAvatarWithData:(NSData *)*avatarData* progress:(void ( ^ ) ( int progress , BMXError *error ))*aProgressBlock*`
 
 #### Parameters
 
 *avatarData*  
-   头像  
+   Avatar  
 
 *aProgressBlock*  
-   上传进度  
+   Upload progress  
 
 #### Discussion
-上传头像
+Upload avatar
 
 #### Declared In
 * `BMXUserManager.h`

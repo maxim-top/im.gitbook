@@ -8,12 +8,12 @@
 <a name="//api/name/appID" title="appID"></a>
 ### appID
 
-获取用户的appId, 设置用户的appId。
+Get user's appId, set user's appId.
 
 `@property (nonatomic, copy) NSString *appID`
 
 #### Discussion
-获取用户的appId, 设置用户的appId。
+Get user's appId, set user's appId.
 
 #### Declared In
 * `BMXSDKConfig.h`
@@ -31,12 +31,12 @@
 <a name="//api/name/carryUsernameInMessage" title="carryUsernameInMessage"></a>
 ### carryUsernameInMessage
 
-获取和设置是否在消息config字段里携带username功能（方便在未获取到对方user info时展示其用户名），默认是关闭的。
+Get and set whether to carry the username function in the message config field (which is convenient to display the opposite username when the user info is not obtained), default off.
 
 `@property (nonatomic, assign) BOOL carryUsernameInMessage`
 
 #### Discussion
-获取和设置是否在消息config字段里携带username功能（方便在未获取到对方user info时展示其用户名），默认是关闭的。
+Get and set whether to carry the username function in the message config field (which is convenient to display the opposite username when the user info is not obtained), default off.
 
 #### Declared In
 * `BMXSDKConfig.h`
@@ -54,12 +54,12 @@
 <a name="//api/name/debugLogRecevierID" title="debugLogRecevierID"></a>
 ### debugLogRecevierID
 
-设置调试log接收账号(仅用于SDK调试，接收客户端log日志使用)
+Set debug log receiving account (for SDK debugging only, used for receiving client log)
 
 `@property (nonatomic, copy) NSString *debugLogRecevierID`
 
 #### Discussion
-设置调试log接收账号(仅用于SDK调试，接收客户端log日志使用)
+Set debug log receiving account (for SDK debugging only, used for receiving client log)
 
 #### Declared In
 * `BMXSDKConfig.h`
@@ -67,12 +67,12 @@
 <a name="//api/name/deviceUUID" title="deviceUUID"></a>
 ### deviceUUID
 
-获取设备的唯一识别码,如果使用数据库
+Get the unique identifier of device, is using a database
 
 `@property (nonatomic, copy) NSString *deviceUUID`
 
 #### Discussion
-获取设备的唯一识别码,如果使用数据库
+Get the unique identifier of device, is using a database
 
 #### Declared In
 * `BMXSDKConfig.h`
@@ -80,12 +80,12 @@
 <a name="//api/name/enableDNS" title="enableDNS"></a>
 ### enableDNS
 
-获取是否启用dns功能,设置是否启用dns功能，默认是开启的。
+Get whether dns function enabled, set whether to enable dns function, default enabled.
 
 `@property (nonatomic, assign) BOOL enableDNS`
 
 #### Discussion
-获取是否启用dns功能,设置是否启用dns功能，默认是开启的。
+Get whether dns function enabled, set whether to enable dns function, default enabled.
 
 #### Declared In
 * `BMXSDKConfig.h`
@@ -128,12 +128,12 @@
 <a name="//api/name/userDNSAddress" title="userDNSAddress"></a>
 ### userDNSAddress
 
-获取用户自定义dns服务器地址,设置用户自定义dns服务器地址，在用户设置了dns服务器的情况下优先使用用户dns。
+Get user-defined dns server address, set user-defined server address, use the user-defined dns first when the dns server set.
 
 `@property (nonatomic, copy) NSString *userDNSAddress`
 
 #### Discussion
-获取用户自定义dns服务器地址,设置用户自定义dns服务器地址，在用户设置了dns服务器的情况下优先使用用户dns。
+Get user-defined dns server address, set user-defined server address, use the user-defined dns first when the dns server set.
 
 #### Declared In
 * `BMXSDKConfig.h`

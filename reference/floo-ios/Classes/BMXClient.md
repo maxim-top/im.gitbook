@@ -54,17 +54,17 @@
 <a name="//api/name/changeAppID:completion:" title="changeAppID:completion:"></a>
 ### changeAppID:completion:
 
-更改SDK的appId，本操作会同时更新BMXConfig中的appId。
+Change the appId of SDK, which also update the appId in BMXConfig.
 
 `- (void)changeAppID:(NSString *)*appID* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *appID*  
-   新变更的appId  
+   Newly changed appId  
 
 #### Discussion
-更改SDK的appId，本操作会同时更新BMXConfig中的appId。
+Change the appId of SDK, which also update the appId in BMXConfig.
 
 #### Declared In
 * `BMXClient.h`
@@ -72,12 +72,12 @@
 <a name="//api/name/connectStatus" title="connectStatus"></a>
 ### connectStatus
 
-获取当前和服务器的连接状态
+Get the current connection state with server
 
 `- (BMXConnectStatus)connectStatus`
 
 #### Discussion
-获取当前和服务器的连接状态
+Get the current connection state with server
 
 #### Declared In
 * `BMXClient.h`
@@ -85,12 +85,12 @@
 <a name="//api/name/disConnect" title="disConnect"></a>
 ### disConnect
 
-断开网络连接
+Disconnect
 
 `- (void)disConnect`
 
 #### Discussion
-断开网络连接
+Disconnect
 
 #### Declared In
 * `BMXClient.h`
@@ -98,12 +98,12 @@
 <a name="//api/name/fastSignInById:password:completion:" title="fastSignInById:password:completion:"></a>
 ### fastSignInById:password:completion:
 
-通过用户ID自动登录（要求之前成功登录过，登录速度较快）
+Login automatically by user ID (a successful login before required, faster)
 
 `- (void)fastSignInById:(long long)*uid* password:(NSString *)*password* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-通过用户ID自动登录（要求之前成功登录过，登录速度较快）
+Login automatically by user ID (a successful login before required, faster)
 
 #### Declared In
 * `BMXClient.h`
@@ -111,12 +111,12 @@
 <a name="//api/name/fastSignInByName:password:completion:" title="fastSignInByName:password:completion:"></a>
 ### fastSignInByName:password:completion:
 
-通过用户名自动登录（要求之前成功登录过，登录速度较快）
+Login automatically by username (a successful login before required, faster)
 
 `- (void)fastSignInByName:(NSString *)*name* password:(NSString *)*password* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-通过用户名自动登录（要求之前成功登录过，登录速度较快）
+Login automatically by username (a successful login before required, faster)
 
 #### Declared In
 * `BMXClient.h`
@@ -124,17 +124,17 @@
 <a name="//api/name/initializeServerConfig:" title="initializeServerConfig:"></a>
 ### initializeServerConfig:
 
-获取app的服务器网络配置，在初始化SDK之后登陆之前调用，可以提前获取服务器配置加快登陆速度。
+Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.
 
 `- (void)initializeServerConfig:(BOOL)*isLocal*`
 
 #### Parameters
 
 *isLocal*  
-   为true则使用本地缓存的dns配置，为false则从服务器获取最新的配置。  
+   True to use locally cached DNS configuration, false to get the latest configuration from server.  
 
 #### Discussion
-获取app的服务器网络配置，在初始化SDK之后登陆之前调用，可以提前获取服务器配置加快登陆速度。
+Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.
 
 #### Declared In
 * `BMXClient.h`
@@ -142,20 +142,20 @@
 <a name="//api/name/networkDidChangedType:reconnect:" title="networkDidChangedType:reconnect:"></a>
 ### networkDidChangedType:reconnect:
 
-处理网络状态发送变化
+Process network changes in messaging
 
 `- (void)networkDidChangedType:(BMXNetworkType)*type* reconnect:(BOOL)*reconnect*`
 
 #### Parameters
 
 *type*  
-   变化后的网络类型  
+   Changed network type  
 
 *reconnect*  
-   网络是否需要重连  
+   Network needs to reconnect or not  
 
 #### Discussion
-处理网络状态发送变化
+Process network changes in messaging
 
 #### Declared In
 * `BMXClient.h`
@@ -163,12 +163,12 @@
 <a name="//api/name/reconnect" title="reconnect"></a>
 ### reconnect
 
-强制重新连接
+Force reconnection
 
 `- (void)reconnect`
 
 #### Discussion
-强制重新连接
+Force reconnection
 
 #### Declared In
 * `BMXClient.h`
@@ -181,12 +181,12 @@
 <a name="//api/name/signInById:password:completion:" title="signInById:password:completion:"></a>
 ### signInById:password:completion:
 
-通过用户ID登录
+Login by user ID
 
 `- (void)signInById:(long long)*userId* password:(NSString *)*password* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-通过用户ID登录
+Login by user ID
 
 #### Declared In
 * `BMXClient.h`
@@ -194,12 +194,12 @@
 <a name="//api/name/signInById:withToken:completion:" title="signInById:withToken:completion:"></a>
 ### signInById:withToken:completion:
 
-通过用户ID和token登录
+Login by user ID and token
 
 `- (void)signInById:(long long)*userId* withToken:(NSString *)*token* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-通过用户ID和token登录
+Login by user ID and token
 
 #### Declared In
 * `BMXClient.h`
@@ -207,12 +207,12 @@
 <a name="//api/name/signInByName:password:completion:" title="signInByName:password:completion:"></a>
 ### signInByName:password:completion:
 
-通过用户名登录
+Login by username
 
 `- (void)signInByName:(NSString *)*userName* password:(NSString *)*password* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-通过用户名登录
+Login by username
 
 #### Declared In
 * `BMXClient.h`
@@ -220,12 +220,12 @@
 <a name="//api/name/signInStatus" title="signInStatus"></a>
 ### signInStatus
 
-获取当前的登录状态
+Get the current login state
 
 `- (BMXSignInStatus)signInStatus`
 
 #### Discussion
-获取当前的登录状态
+Get the current login state
 
 #### Declared In
 * `BMXClient.h`
@@ -233,12 +233,12 @@
 <a name="//api/name/signOutID:ignoreUnbindDevice:completion:" title="signOutID:ignoreUnbindDevice:completion:"></a>
 ### signOutID:ignoreUnbindDevice:completion:
 
-退出登录
+Log out
 
 `- (void)signOutID:(NSInteger)*userID* ignoreUnbindDevice:(BOOL)*ignoreUnbindDevice* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
-退出登录
+Log out
 
 #### Declared In
 * `BMXClient.h`
@@ -251,23 +251,23 @@
 <a name="//api/name/signUpNewUser:password:completion:" title="signUpNewUser:password:completion:"></a>
 ### signUpNewUser:password:completion:
 
-注册新用户，username和password是必填参数
+To register a new user, username and password are required
 
 `- (void)signUpNewUser:(NSString *)*userName* password:(NSString *)*password* completion:(void ( ^ ) ( BMXUserProfile *profile , BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *userName*  
-   用户名  
+   Username  
 
 *password*  
-   密码  
+   Password  
 
 *aCompletionBlock*  
-   注册成功后从该函数处获取新注册用户的Profile信息，初始传入指向为空的shared_ptr对象即可。  
+   After successful registration, get the profile of the newly registered user from this function, and initially passed in a pointing-to-empty shared_ptr object.  
 
 #### Discussion
-注册新用户，username和password是必填参数
+To register a new user, username and password are required
 
 #### Declared In
 * `BMXClient.h`
