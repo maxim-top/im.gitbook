@@ -90,7 +90,7 @@ Initialize file BMXFileAttachment
    File name  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 #### Return Value
 BMXFileAttachment
@@ -117,7 +117,7 @@ Initialize file BMXFileAttachment
    File name  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 #### Discussion
 Initialize file BMXFileAttachment

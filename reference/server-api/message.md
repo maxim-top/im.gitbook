@@ -36,7 +36,7 @@
 
 
 
-## 6.2  Get the message for the specified session
+## 6.2  Get the message for the specified conversation
 
 > GET  /message/conversation
 
@@ -106,7 +106,7 @@
 
 
 
-## 6.3  Delete the specified session for the user
+## 6.3  Delete the specified conversation for the user
 
 > DELETE  /message/conversation
 
@@ -298,7 +298,7 @@
 
 
 
-## 6.8  Get the list of recent sessions for the specified user
+## 6.8  Get the list of recent conversations for the specified user
 
 > GET  /message/unread
 

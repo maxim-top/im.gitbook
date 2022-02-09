@@ -38,8 +38,8 @@ SDK settings management
 | void | **[setConsoleOutput](classfloo_1_1_b_m_x_s_d_k_config.md#function-setconsoleoutput)**(bool )<br>Set whether to output Log to Console  |
 | void | **[setHostConfig](classfloo_1_1_b_m_x_s_d_k_config.md#function-sethostconfig)**(const [HostConfig] & config)<br>Set server configuration  |
 | const [HostConfig] & | **[getHostConfig](classfloo_1_1_b_m_x_s_d_k_config.md#function-gethostconfig)**()<br>Get server configuration  |
-| bool | **[getLoadAllServerConversations](classfloo_1_1_b_m_x_s_d_k_config.md#function-getloadallserverconversations)**()<br>Whether to create all sessions based on the unread list returned by server.  |
-| void | **[setLoadAllServerConversations](classfloo_1_1_b_m_x_s_d_k_config.md#function-setloadallserverconversations)**(bool enable =false)<br>Whether to create all sessions based on the unread list returned by server, default false to create sessions with unread only.  |
+| bool | **[getLoadAllServerConversations](classfloo_1_1_b_m_x_s_d_k_config.md#function-getloadallserverconversations)**()<br>Whether to create all conversations based on the unread list returned by server.  |
+| void | **[setLoadAllServerConversations](classfloo_1_1_b_m_x_s_d_k_config.md#function-setloadallserverconversations)**(bool enable =false)<br>Whether to create all conversations based on the unread list returned by server, default false to create conversations with unread only.  |
 | const std::string & | **[getDeviceUuid](classfloo_1_1_b_m_x_s_d_k_config.md#function-getdeviceuuid)**()<br>Get the unique identifier of device  |
 | void | **[setDeviceUuid](classfloo_1_1_b_m_x_s_d_k_config.md#function-setdeviceuuid)**(const std::string & uuid)<br>Set the unique ID of the device, which should always be consistent before the app is uninstalled. Different device IDs can be generated when the app is deleted and installed again.  |
 | const std::string & | **[getDBCryptoKey](classfloo_1_1_b_m_x_s_d_k_config.md#function-getdbcryptokey)**()<br>Get the local database encryption key for the device.  |
@@ -346,7 +346,7 @@ Get server configuration
 bool getLoadAllServerConversations()
 ```
 
-Whether to create all sessions based on the unread list returned by server. 
+Whether to create all conversations based on the unread list returned by server. 
 
 **Return**: bool 
 
@@ -358,11 +358,11 @@ void setLoadAllServerConversations(
 )
 ```
 
-Whether to create all sessions based on the unread list returned by server, default false to create sessions with unread only. 
+Whether to create all conversations based on the unread list returned by server, default false to create conversations with unread only. 
 
 **Parameters**: 
 
-  * **enable** Whether to create all sessions based on the unread list returned by server 
+  * **enable** Whether to create all conversations based on the unread list returned by server 
 
 
 ### function getDeviceUuid

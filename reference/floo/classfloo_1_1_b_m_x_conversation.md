@@ -1,6 +1,6 @@
 ---
 title: floo::BMXConversation
-summary: Session 
+summary: Conversation 
 
 ---
 
@@ -8,7 +8,7 @@ summary: Session
 
 
 
-Session 
+Conversation 
 
 
 `#include <bmx_conversation.h>`
@@ -19,7 +19,7 @@ Inherits from BMXBaseObject
 
 |                | Name           |
 | -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_conversation.md#enum-type)** { Single, Group, System}<br>Session type  |
+| enum class| **[Type](classfloo_1_1_b_m_x_conversation.md#enum-type)** { Single, Group, System}<br>Conversation type  |
 | enum class| **[Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)** { Up, Down}<br>Message search direction  |
 
 ## Public Functions
@@ -27,12 +27,12 @@ Inherits from BMXBaseObject
 |                | Name           |
 | -------------- | -------------- |
 | virtual | **[~BMXConversation](classfloo_1_1_b_m_x_conversation.md#function-~bmxconversation)**()<br>Destructor  |
-| virtual int64_t | **[conversationId](classfloo_1_1_b_m_x_conversation.md#function-conversationid)**() =0<br>Session Id  |
-| virtual [Type](classfloo_1_1_b_m_x_conversation.md#enum-type) | **[type](classfloo_1_1_b_m_x_conversation.md#function-type)**() =0<br>Session type  |
+| virtual int64_t | **[conversationId](classfloo_1_1_b_m_x_conversation.md#function-conversationid)**() =0<br>Conversation Id  |
+| virtual [Type](classfloo_1_1_b_m_x_conversation.md#enum-type) | **[type](classfloo_1_1_b_m_x_conversation.md#function-type)**() =0<br>Conversation type  |
 | virtual BMXMessagePtr | **[lastMsg](classfloo_1_1_b_m_x_conversation.md#function-lastmsg)**() =0<br>Latest message  |
 | virtual int32_t | **[unreadNumber](classfloo_1_1_b_m_x_conversation.md#function-unreadnumber)**() =0<br>Unread message-number  |
-| virtual int32_t | **[messageCount](classfloo_1_1_b_m_x_conversation.md#function-messagecount)**() =0<br>Total message-number in session  |
-| virtual bool | **[isMuteNotification](classfloo_1_1_b_m_x_conversation.md#function-ismutenotification)**() =0<br>Whether the user is alerted to the message, without which the session total unread-number does not count this session.  |
+| virtual int32_t | **[messageCount](classfloo_1_1_b_m_x_conversation.md#function-messagecount)**() =0<br>Total message-number in conversation  |
+| virtual bool | **[isMuteNotification](classfloo_1_1_b_m_x_conversation.md#function-ismutenotification)**() =0<br>Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.  |
 | virtual const JSON & | **[extension](classfloo_1_1_b_m_x_conversation.md#function-extension)**() =0<br>Extension information  |
 | virtual BMXErrorCode | **[setExtension](classfloo_1_1_b_m_x_conversation.md#function-setextension)**(const std::string & ext) =0<br>Set the Extension information  |
 | virtual const std::string & | **[editMessage](classfloo_1_1_b_m_x_conversation.md#function-editmessage)**() =0<br>Edit message  |
@@ -49,7 +49,7 @@ Inherits from BMXBaseObject
 | virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_conversation.md#function-searchmessages)**(const std::string & keywords, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
 | virtual BMXErrorCode | **[searchMessagesByType](classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbytype)**([BMXMessage::ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) type, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Search for messages by type, starting with latest if not specified  |
 | virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_conversation.md#function-searchmessages)**([BMXMessage::ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) type, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
-| virtual BMXErrorCode | **[refreshConversation](classfloo_1_1_b_m_x_conversation.md#function-refreshconversation)**() =0<br>Read the total message-number from current session of the database, forces to update the total message-number and unread message-number.  |
+| virtual BMXErrorCode | **[refreshConversation](classfloo_1_1_b_m_x_conversation.md#function-refreshconversation)**() =0<br>Read the total message-number from current conversation of the database, forces to update the total message-number and unread message-number.  |
 
 ## Protected Functions
 
@@ -69,7 +69,7 @@ Inherits from BMXBaseObject
 
 
 
-Session type 
+Conversation type 
 
 ### enum Direction
 
@@ -98,7 +98,7 @@ Destructor
 virtual int64_t conversationId() =0
 ```
 
-Session Id 
+Conversation Id 
 
 **Return**: int64_t 
 
@@ -108,7 +108,7 @@ Session Id
 virtual Type type() =0
 ```
 
-Session type 
+Conversation type 
 
 **Return**: Type 
 
@@ -138,7 +138,7 @@ Unread message-number
 virtual int32_t messageCount() =0
 ```
 
-Total message-number in session 
+Total message-number in conversation 
 
 **Return**: int32_t 
 
@@ -148,7 +148,7 @@ Total message-number in session
 virtual bool isMuteNotification() =0
 ```
 
-Whether the user is alerted to the message, without which the session total unread-number does not count this session. 
+Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation. 
 
 **Return**: bool 
 
@@ -174,7 +174,7 @@ Set the Extension information
 
 **Parameters**: 
 
-  * **ext** Session extension message 
+  * **ext** Conversation extension message 
 
 
 **Return**: BMXErrorCode 
@@ -201,7 +201,7 @@ Set the Edit Message
 
 **Parameters**: 
 
-  * **editMessage** Text message being edited by session 
+  * **editMessage** Text message being edited by conversation 
 
 
 **Return**: BMXErrorCode 
@@ -454,7 +454,7 @@ Search for messages by type, starting with latest if not specified
 virtual BMXErrorCode refreshConversation() =0
 ```
 
-Read the total message-number from current session of the database, forces to update the total message-number and unread message-number. 
+Read the total message-number from current conversation of the database, forces to update the total message-number and unread message-number. 
 
 **Return**: BMXErrorCode 
 

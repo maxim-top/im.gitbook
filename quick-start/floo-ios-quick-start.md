@@ -130,11 +130,11 @@ Two login modes provided: One for normal manual login, and the other for quick l
       }];
 ```
 
-### IV. Session list function
+### IV. Conversation list function
 
-Pass in getAllConversationsWithCompletion method through the singleton of BMXClient, ChatService class, to get a list of all sessions. Then return an array list of BMXConversation objects.
+Pass in getAllConversationsWithCompletion method through the singleton of BMXClient, ChatService class, to get a list of all conversations. Then return an array list of BMXConversation objects.
 
-If you need to get a list of offline sessions for multi-device synchronization, you need to configure the loadAllServerConversations property value to Yes at SDK initialization, and only get the local session list by default.
+If you need to get a list of offline conversations for multi-device synchronization, you need to configure the loadAllServerConversations property value to Yes at SDK initialization, and only get the local conversation list by default.
 
 ```
  [[[BMXClient sharedClient] chatService] getAllConversationsWithCompletion:^(NSArray *conversations) {
@@ -324,7 +324,7 @@ Pass deviceToken to MaxIM interface as follows:
  @param fromId Send id
  @param toId Receive id
  @param mtype Message id
- @param conversationId Session id
+ @param conversationId Conversation id
  @return BMXMessageObject
  */
  BMXMessageObject *messageObject = [[BMXMessageObject alloc] initWithBMXMessageText:message
@@ -343,7 +343,7 @@ Pass deviceToken to MaxIM interface as follows:
   @param aData Binary data
   @param aThumbnailData Thumbnail
   @param imageSize Image size
-  @param conversationId Session IDID
+  @param conversationId Conversation IDID
   @return BMXImageAttachment
   */
  BMXImageAttachment *imageAttachment = [[BMXImageAttachment alloc] initWithData:imageData thumbnailData:thumImageData imageSize:image.size conversationId:[NSString stringWithFormat:@"%lld",self.conversationId]];
@@ -568,11 +568,11 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
     ```
 *   Multi-terminal read message count synchronization
 
-    BMXConversation entity provides unread message count and total number of messages in session /\*\* Unread message count \*/ @property (nonatomic,assign, readonly) NSInteger unreadNumber;
+    BMXConversation entity provides unread message count and total number of messages in conversation /\*\* Unread message count \*/ @property (nonatomic,assign, readonly) NSInteger unreadNumber;
 
     ```
       /**
-       Number of all messages in session
+       Number of all messages in conversation
       */
       @property (nonatomic,assign, readonly) NSInteger messageCount;
     ```

@@ -22,7 +22,7 @@ Inherits from BMXBaseObject
 | long | **[fromId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-fromid)**()<br>Message sender ID  |
 | long | **[toId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-toid)**()<br>Message receiver ID  |
 | BMXMessage.MessageType | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-type)**()<br>Message type  |
-| long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-conversationid)**()<br>Session ID that message belongs to  |
+| long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-conversationid)**()<br>Conversation ID that message belongs to  |
 | BMXMessage.DeliveryStatus | **[deliveryStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-deliverystatus)**()<br>Messaging state  |
 | void | **[setDeliveryStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setdeliverystatus)**(BMXMessage.DeliveryStatus arg0)<br>Set messaging state  |
 | long | **[serverTimestamp](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-servertimestamp)**()<br>Message timestamp (when received by server-side)  |
@@ -148,7 +148,7 @@ Message type
 inline long conversationId()
 ```
 
-Session ID that message belongs to 
+Conversation ID that message belongs to 
 
 **Return**: int64_t 
 
@@ -633,7 +633,7 @@ Create a text message
   * **from** Message sender 
   * **to** Message receiver 
   * **type** Message type 
-  * **conversationId** Session id 
+  * **conversationId** Conversation id 
   * **content** Message content 
 
 
@@ -656,7 +656,7 @@ Create a sent-attachment message
   * **from** Message sender 
   * **to** Message receiver 
   * **type** Message type 
-  * **conversationId** Session id 
+  * **conversationId** Conversation id 
   * **attachment** Attachment 
 
 
@@ -679,7 +679,7 @@ Create a sent command message (command message holds command information in a co
   * **from** Message sender 
   * **to** Message receiver 
   * **type** Message type 
-  * **conversationId** Session id 
+  * **conversationId** Conversation id 
   * **content** Message content 
 
 
@@ -705,7 +705,7 @@ Create a received message
   * **from** Message sender 
   * **to** Message receiver 
   * **type** Message type 
-  * **conversationId** Session id 
+  * **conversationId** Conversation id 
   * **content** Message content 
   * **serverTimestamp** Server timestamp 
 
@@ -732,7 +732,7 @@ Create a received message
   * **from** Message sender 
   * **to** Message receiver 
   * **type** Message type 
-  * **conversationId** Session id 
+  * **conversationId** Conversation id 
   * **attachment** Attachment 
   * **serverTimestamp** Server timestamp 
 
@@ -759,7 +759,7 @@ Create a received command message (command message holds command information in 
   * **from** Message sender 
   * **to** Message receiver 
   * **type** Message type 
-  * **conversationId** Session id 
+  * **conversationId** Conversation id 
   * **content** Message content 
   * **serverTimestamp** Server timestamp 
 
@@ -784,7 +784,7 @@ Create a forwarding message
   * **from** Message sender 
   * **to** Message receiver 
   * **type** Message type 
-  * **conversationId** Session id 
+  * **conversationId** Conversation id 
 
 
 ## Protected Functions Documentation

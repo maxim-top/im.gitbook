@@ -33,9 +33,9 @@ Chat listener
 | void | **[onAttachmentStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error, int percent)<br>Attachment download state changed  |
 | void | **[onAttachmentDownloadByUrlStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged)**(long msgId, [BMXErrorCode] error, int percent)<br>Attachment download state changed  |
 | void | **[onRetrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation)<br>Pull message history  |
-| void | **[onLoadAllConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>List of unread sessions has been loaded  |
-| void | **[onConversationCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Create a new session locally  |
-| void | **[onConversationDelete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(long conversationId, [BMXErrorCode] error)<br>Delete session  |
+| void | **[onLoadAllConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>List of unread conversations has been loaded  |
+| void | **[onConversationCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Create a new conversation locally  |
+| void | **[onConversationDelete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(long conversationId, [BMXErrorCode] error)<br>Delete conversation  |
 | void | **[onTotalUnreadCountChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>Update total unread-number  |
 | | **[BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)**() |
 | void | **[registerChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-registerchatservice)**([BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md) service) |
@@ -329,7 +329,7 @@ Pull message history
 
 **Parameters**: 
 
-  * **conversation** Session for which a specific message history was pulled 
+  * **conversation** Conversation for which a specific message history was pulled 
 
 
 ### function onLoadAllConversation
@@ -338,7 +338,7 @@ Pull message history
 inline void onLoadAllConversation()
 ```
 
-List of unread sessions has been loaded 
+List of unread conversations has been loaded 
 
 ### function onConversationCreate
 
@@ -349,12 +349,12 @@ inline void onConversationCreate(
 )
 ```
 
-Create a new session locally 
+Create a new conversation locally 
 
 **Parameters**: 
 
-  * **conversation** Newly created local session 
-  * **msg** Latest message for session, return for existing, empty for no existing 
+  * **conversation** Newly created local conversation 
+  * **msg** Latest message for conversation, return for existing, empty for no existing 
 
 
 ### function onConversationDelete
@@ -366,11 +366,11 @@ inline void onConversationDelete(
 )
 ```
 
-Delete session 
+Delete conversation 
 
 **Parameters**: 
 
-  * **conversationId** Deleted local session id 
+  * **conversationId** Deleted local conversation id 
   * **error** State error code 
 
 
@@ -386,7 +386,7 @@ Update total unread-number
 
 **Parameters**: 
 
-  * **unreadCount** Total number of local unread sessions 
+  * **unreadCount** Total number of local unread conversations 
 
 
 ### function BMXChatServiceListener

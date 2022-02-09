@@ -140,7 +140,7 @@ Create a sent command message (command message holds command information in a co
    Message type  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 #### Discussion
 Create a sent command message (command message holds command information in a content field or an extension field)
@@ -170,7 +170,7 @@ Create attachment-message
    Message type  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 #### Return Value
 BMXMessageObject
@@ -203,7 +203,7 @@ Create text message
    Message type  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 #### Return Value
 BMXMessageObject
@@ -236,7 +236,7 @@ Create a forwarding message
    Message type  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 #### Return Value
 BMXMessageObject
@@ -272,7 +272,7 @@ Create receive attachment-message
    Message type  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 *timeStamp*  
    Timestamp  
@@ -311,7 +311,7 @@ Create a received command message (command message holds command information in 
    Message type  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 *timeStamp*  
    Server timestamp  
@@ -347,7 +347,7 @@ Create receive text-message
    Message type  
 
 *conversationId*  
-   Session id  
+   Conversation id  
 
 *timeStamp*  
    Timestamp  

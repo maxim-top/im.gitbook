@@ -36,14 +36,14 @@ Chat Service
 | int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum)**()<br>Number of uploading/downloading files  |
 | [BMXErrorCode] | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-insertmessages)**(BMXMessageList list)<br>Insert a message  |
 | [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage)**(long msgId)<br>Read a message  |
-| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br>Delete session  |
+| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br>Delete conversation  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId) |
-| [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>Launch a session  |
+| [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>Launch a conversation  |
 | [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type) |
 | String | **[attachmentDir](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdir)**()<br>Get attachment saving path  |
-| String | **[attachmentDirForConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(long conversationId)<br>Get attachment saving path for a session  |
-| BMXConversationList | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversations)**()<br>Get all sessions  |
-| int | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**()<br>Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted)  |
+| String | **[attachmentDirForConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(long conversationId)<br>Get attachment saving path for a conversation  |
+| BMXConversationList | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversations)**()<br>Get all conversations  |
+| int | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**()<br>Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
 | [BMXErrorCode] | **[retrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, long refMsgId, long size, BMXMessageList result)<br>Pull message history  |
 | [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>Search for messages  |
 | [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result) |
@@ -139,7 +139,7 @@ Merge forwarding messages
 **Parameters**: 
 
   * **list** List of forwarded messages 
-  * **to** The session to which message is forwarded 
+  * **to** The conversation to which message is forwarded 
   * **newMsg** The newly generated single forwarded message from the merging list of forwarded messages 
 
 
@@ -404,12 +404,12 @@ inline void deleteConversation(
 )
 ```
 
-Delete session 
+Delete conversation 
 
 **Parameters**: 
 
-  * **conversationId** Session id requiring to delete session 
-  * **synchronize** Whether to delete the session on other devices synchronously, default false, means only delete the session on the current device 
+  * **conversationId** Conversation id requiring to delete conversation 
+  * **synchronize** Whether to delete the conversation on other devices synchronously, default false, means only delete the conversation on the current device 
 
 
 ### function deleteConversation
@@ -431,13 +431,13 @@ inline BMXConversation openConversation(
 )
 ```
 
-Launch a session 
+Launch a conversation 
 
 **Parameters**: 
 
-  * **conversationId** id of the session which needs to be opened 
-  * **type** Session type, single/group chat. 
-  * **createIfNotExist** Whether to create a local session if no session existing, default to create 
+  * **conversationId** id of the conversation which needs to be opened 
+  * **type** Conversation type, single/group chat. 
+  * **createIfNotExist** Whether to create a local conversation if no conversation existing, default to create 
 
 
 **Return**: [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md)
@@ -470,11 +470,11 @@ inline String attachmentDirForConversation(
 )
 ```
 
-Get attachment saving path for a session 
+Get attachment saving path for a conversation 
 
 **Parameters**: 
 
-  * **conversationId** Session id requiring a session attachment path 
+  * **conversationId** Conversation id requiring a conversation attachment path 
 
 
 **Return**: std::string 
@@ -485,7 +485,7 @@ Get attachment saving path for a session
 inline BMXConversationList getAllConversations()
 ```
 
-Get all sessions 
+Get all conversations 
 
 **Return**: BMXConversationList 
 
@@ -495,7 +495,7 @@ Get all sessions
 inline int getAllConversationsUnreadCount()
 ```
 
-Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted) 
+Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted) 
 
 **Return**: int 
 
@@ -514,8 +514,8 @@ Pull message history
 
 **Parameters**: 
 
-  * **conversation** Session for which message history needs to pull 
-  * **refMsgId** Start message Id for pulling session messages 
+  * **conversation** Conversation for which message history needs to pull 
+  * **refMsgId** Start message Id for pulling conversation messages 
   * **size** Maximum number of messages to pull 
   * **result** List of messages fetched by pull operation, externally initializing an incoming empty list. 
 

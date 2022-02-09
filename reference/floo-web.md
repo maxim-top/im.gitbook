@@ -927,7 +927,7 @@ Event content:({category, desc})
 {category: 'loginMessage',desc: 'get roster list failure:' + ex.message} // Friend list fetching failed
 {category: 'action', desc: 'relogin' } // Need to automatically login
 {category: 'action', desc: 'relogin_manually' }  // Need to manually login
-{category: 'conversation_deleted',desc: { id, source:'user_operation' }} // Session deleted. ID:session ID, source: source
+{category: 'conversation_deleted',desc: { id, source:'user_operation' }} // Conversation deleted. ID:conversation ID, source: source
 {category: 'userNotice', desc:'PASSWORD_CHANGED'} // User password changed
 {category: 'userNotice', desc:'FROZEN'} // User account frozen
 {category: 'userNotice', desc:'REMOVED'} // User removed
@@ -989,22 +989,22 @@ Event content: (meta) Message content
 10. Message re-unread
 ```
 Event name: onMessageCanceled
-Event content: ({uid,mid})  uid: session ID, mid: message ID
+Event content: ({uid,mid})  uid: conversation ID, mid: message ID
 ```
 11. Message deleted
 ```
 Event name: onMessageDeleted
-Event content: ({uid,mid})  uid: session ID, mid: message ID
+Event content: ({uid,mid})  uid: conversation ID, mid: message ID
 ```
 12. Message revoked
 ```
 Event name: onMessageRecalled
-Event content: ({uid,mid})  uid: session ID, mid: message ID
+Event content: ({uid,mid})  uid: conversation ID, mid: message ID
 ```
 13. Message status change: revoked/deleted/read
 ```
 Event name: onMessageStateChanged
-Event content: ({uid,mid})  uid: session ID, mid: message ID
+Event content: ({uid,mid})  uid: conversation ID, mid: message ID
 ```
 14. Message history received
 ```
@@ -1034,9 +1034,9 @@ Event content: ({state,mid})  state: sending status, valued as sending|failed|se
 19. Number of unreads changed
 ```
 Event name: onUnreadChange
-Event content: (cid)  session ID
+Event content: (cid)  conversation ID
 ```
-20. Recent session updated
+20. Recent conversation updated
 ```
 Event name: recentlistUpdate
 Event content: ()

@@ -7,7 +7,7 @@ This page is for quick integration, visit [detailed documentation](https://maxim
 SDK architecture description
 
 * BMXClient:SDK function aggregation class that contains all service classes and implements the network event listening interface.
-* BMXChatService: Message sending, message history retrieval, session list
+* BMXChatService: Message sending, message history retrieval, conversation list
 * BMXUserService: Register account, login, logout, my settings
 * BMXRosterService: Friend list, blacklist
 * BMXGroupService: Group management (create, dissolve, search, set, member management, invite, apply, accept, reject)
@@ -16,7 +16,7 @@ SDK architecture description
 * BMXUserServiceListener: User event listening
 * BMXRosterServiceListener: Friend event listening
 * BMXNetworkListener: Network event listening interface, implemented by BMXClient
-* BMXConversation: Session
+* BMXConversation: Conversation
 * BMXMessage: Message
 * BMXGroup: Group
 * BMXRosterItem Roster item (friend, stranger, blacklist, former friend)
@@ -102,11 +102,11 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 ```
 
-### IV. Get session list
+### IV. Get conversation list
 
-Get a list of all sessions through the singleton of BMXClient, getAllConversations method of ChatService class. It returns an array list of BMXConversationPtr objects.
+Get a list of all conversations through the singleton of BMXClient, getAllConversations method of ChatService class. It returns an array list of BMXConversationPtr objects.
 
-If you need to get a list of offline sessions for multi-device synchronization, it’s required to configure the setLoadAllServerConversations property value to true at SDK initialization, and only get the local session list by default.
+If you need to get a list of offline conversations for multi-device synchronization, it’s required to configure the setLoadAllServerConversations property value to true at SDK initialization, and only get the local conversation list by default.
 
 ```
 BMXConversationList list = client->getChatService().getAllConversations();
@@ -288,7 +288,7 @@ You can't chat until login successfully. When sending messages, single chat and 
   * @param from Message sender Id
   * @param to Message receiver Id
   * @param type Message type
-  * @param conversationId Session id
+  * @param conversationId Conversation id
   * @param content Message content
   **/
   BMXMessagePtr msg = BMXMessage::createMessage(2272061685216, 2272061881760, (BMXMessage::MessageType)1, 2272061881760, "test");

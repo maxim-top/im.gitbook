@@ -61,12 +61,12 @@ Add chat listener
 <a name="//api/name/deleteConversationByConversationId:synchronize:" title="deleteConversationByConversationId:synchronize:"></a>
 ### deleteConversationByConversationId:synchronize:
 
-Delete session
+Delete conversation
 
 `- (void)deleteConversationByConversationId:(NSInteger)*conversationId* synchronize:(BOOL)*synchronize*`
 
 #### Discussion
-Delete session
+Delete conversation
 
 #### Declared In
 * `BMXChatManager.h`
@@ -117,7 +117,7 @@ Simple forward message, user should first create the forward message via BMXMess
 <a name="//api/name/getAllConversationsUnreadCountWithCompletion:" title="getAllConversationsUnreadCountWithCompletion:"></a>
 ### getAllConversationsUnreadCountWithCompletion:
 
-Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted)
+Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)
 
 `- (void)getAllConversationsUnreadCountWithCompletion:(void ( ^ ) ( int count ))*aCompletionBlock*`
 
@@ -127,7 +127,7 @@ Get unread-number for all sessions (unreads for individuals and groups marked as
    count  
 
 #### Discussion
-Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted)
+Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)
 
 #### Declared In
 * `BMXChatManager.h`
@@ -135,12 +135,12 @@ Get unread-number for all sessions (unreads for individuals and groups marked as
 <a name="//api/name/getAllConversationsWithCompletion:" title="getAllConversationsWithCompletion:"></a>
 ### getAllConversationsWithCompletion:
 
-Get all sessions
+Get all conversations
 
 `- (void)getAllConversationsWithCompletion:(void ( ^ ) ( NSArray *conversations ))*aCompletionBlock*`
 
 #### Discussion
-Get all sessions
+Get all conversations
 
 #### Declared In
 * `BMXChatManager.h`
@@ -161,12 +161,12 @@ Get attachment saving path
 <a name="//api/name/getAttachmentDirForConversationWith:" title="getAttachmentDirForConversationWith:"></a>
 ### getAttachmentDirForConversationWith:
 
-Get attachment saving path for a session
+Get attachment saving path for a conversation
 
 `- (NSString *)getAttachmentDirForConversationWith:(NSString *)*conversationId*`
 
 #### Discussion
-Get attachment saving path for a session
+Get attachment saving path for a conversation
 
 #### Declared In
 * `BMXChatManager.h`
@@ -242,12 +242,12 @@ Insert a message
 <a name="//api/name/openConversation:type:createIfNotExist:" title="openConversation:type:createIfNotExist:"></a>
 ### openConversation:type:createIfNotExist:
 
-Launch a session
+Launch a conversation
 
 `- (BMXConversation *)openConversation:(NSInteger)*conversationId* type:(BMXConversationType)*type* createIfNotExist:(bool)*create*`
 
 #### Discussion
-Launch a session
+Launch a conversation
 
 #### Declared In
 * `BMXChatManager.h`

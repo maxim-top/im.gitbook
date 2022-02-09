@@ -1,6 +1,6 @@
 ---
 title: im::floo::floolib::BMXConversation
-summary: Session 
+summary: Conversation 
 
 ---
 
@@ -8,7 +8,7 @@ summary: Session
 
 
 
-Session 
+Conversation 
 
 Inherits from BMXBaseObject
 
@@ -17,12 +17,12 @@ Inherits from BMXBaseObject
 |                | Name           |
 | -------------- | -------------- |
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-delete)**() |
-| long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-conversationid)**()<br>Session Id  |
-| BMXConversation.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-type)**()<br>Session type  |
+| long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-conversationid)**()<br>Conversation Id  |
+| BMXConversation.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-type)**()<br>Conversation type  |
 | [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[lastMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-lastmsg)**()<br>Latest message  |
 | int | **[unreadNumber](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-unreadnumber)**()<br>Unread message-number  |
-| int | **[messageCount](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-messagecount)**()<br>Total message-number in session  |
-| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-ismutenotification)**()<br>Whether the user is alerted to the message, without which the session total unread-number does not count this session.  |
+| int | **[messageCount](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-messagecount)**()<br>Total message-number in conversation  |
+| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-ismutenotification)**()<br>Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.  |
 | String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-extension)**()<br>Extension information  |
 | [BMXErrorCode] | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setextension)**(String ext)<br>Set the Extension information  |
 | String | **[editMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-editmessage)**()<br>Edit message  |
@@ -44,7 +44,7 @@ Inherits from BMXBaseObject
 | void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final String keywords, final long refTime, final long size, final BMXDataCallBack< BMXMessageList > callBack) |
 | void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final BMXMessage.ContentType type, final long refTime, final long size, final BMXConversation.Direction arg4, final BMXDataCallBack< BMXMessageList > callBack)<br>Search for messages by type, starting with latest if not specified  |
 | void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-searchmessages)**(final BMXMessage.ContentType type, final long refTime, final long size, final BMXDataCallBack< BMXMessageList > callBack) |
-| void | **[refreshConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-refreshconversation)**(final BMXCallBack callBack)<br>Read the total message-number from current session of the database, forces to update the total message-number and unread message-number.  |
+| void | **[refreshConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-refreshconversation)**(final BMXCallBack callBack)<br>Read the total message-number from current conversation of the database, forces to update the total message-number and unread message-number.  |
 
 ## Protected Functions
 
@@ -69,7 +69,7 @@ inline synchronized void delete()
 inline long conversationId()
 ```
 
-Session Id 
+Conversation Id 
 
 **Return**: int64_t 
 
@@ -79,7 +79,7 @@ Session Id
 inline BMXConversation.Type type()
 ```
 
-Session type 
+Conversation type 
 
 **Return**: [Type]
 
@@ -109,7 +109,7 @@ Unread message-number
 inline int messageCount()
 ```
 
-Total message-number in session 
+Total message-number in conversation 
 
 **Return**: int32_t 
 
@@ -119,7 +119,7 @@ Total message-number in session
 inline boolean isMuteNotification()
 ```
 
-Whether the user is alerted to the message, without which the session total unread-number does not count this session. 
+Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation. 
 
 **Return**: bool 
 
@@ -145,7 +145,7 @@ Set the Extension information
 
 **Parameters**: 
 
-  * **ext** Session extension message 
+  * **ext** Conversation extension message 
 
 
 **Return**: [BMXErrorCode]
@@ -172,7 +172,7 @@ Set the Edit Message
 
 **Parameters**: 
 
-  * **editMessage** Text message being edited by session 
+  * **editMessage** Text message being edited by conversation 
 
 
 **Return**: [BMXErrorCode]
@@ -480,7 +480,7 @@ inline void refreshConversation(
 )
 ```
 
-Read the total message-number from current session of the database, forces to update the total message-number and unread message-number. 
+Read the total message-number from current conversation of the database, forces to update the total message-number and unread message-number. 
 
 **Parameters**: 
 

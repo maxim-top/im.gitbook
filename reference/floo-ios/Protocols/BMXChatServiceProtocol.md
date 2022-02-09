@@ -8,20 +8,20 @@
 <a name="//api/name/conversationDidCreatedConversation:message:" title="conversationDidCreatedConversation:message:"></a>
 ### conversationDidCreatedConversation:message:
 
-New session locally created
+New conversation locally created
 
 `- (void)conversationDidCreatedConversation:(BMXConversation *)*conversation* message:(BMXMessageObject *)*message*`
 
 #### Parameters
 
 *conversation*  
-   Newly created local session  
+   Newly created local conversation  
 
 *message*  
-   Latest message for session, return for existing, empty for no existing  
+   Latest message for conversation, return for existing, empty for no existing  
 
 #### Discussion
-New session locally created
+New conversation locally created
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -29,20 +29,20 @@ New session locally created
 <a name="//api/name/conversationDidDeletedConversationId:error:" title="conversationDidDeletedConversationId:error:"></a>
 ### conversationDidDeletedConversationId:error:
 
-Delete session
+Delete conversation
 
 `- (void)conversationDidDeletedConversationId:(NSInteger)*conversationId* error:(BMXError *)*error*`
 
 #### Parameters
 
 *conversationId*  
-   Deleted local session id  
+   Deleted local conversation id  
 
 *error*  
    State error code  
 
 #### Discussion
-Delete session
+Delete conversation
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -68,12 +68,12 @@ Update total unread-number
 <a name="//api/name/loadAllConversationDidFinished" title="loadAllConversationDidFinished"></a>
 ### loadAllConversationDidFinished
 
-List of unread sessions has been loaded
+List of unread conversations has been loaded
 
 `- (void)loadAllConversationDidFinished`
 
 #### Discussion
-List of unread sessions has been loaded
+List of unread conversations has been loaded
 
 #### Declared In
 * `BMXChatServiceProtocol.h`

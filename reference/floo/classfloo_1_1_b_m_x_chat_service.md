@@ -43,12 +43,12 @@ Chat Service
 | virtual int | **[transferingNum](classfloo_1_1_b_m_x_chat_service.md#function-transferingnum)**() =0<br>Number of uploading/downloading files  |
 | virtual BMXErrorCode | **[insertMessages](classfloo_1_1_b_m_x_chat_service.md#function-insertmessages)**(const BMXMessageList & list) =0<br>Insert a message  |
 | virtual BMXMessagePtr | **[getMessage](classfloo_1_1_b_m_x_chat_service.md#function-getmessage)**(int64_t msgId) =0<br>Read a message  |
-| virtual void | **[deleteConversation](classfloo_1_1_b_m_x_chat_service.md#function-deleteconversation)**(int64_t conversationId, bool synchronize =false) =0<br>Delete session  |
-| virtual BMXConversationPtr | **[openConversation](classfloo_1_1_b_m_x_chat_service.md#function-openconversation)**(int64_t conversationId, [BMXConversation::Type](classfloo_1_1_b_m_x_conversation.md#enum-type) type, bool createIfNotExist =true) =0<br>Launch a session  |
+| virtual void | **[deleteConversation](classfloo_1_1_b_m_x_chat_service.md#function-deleteconversation)**(int64_t conversationId, bool synchronize =false) =0<br>Delete conversation  |
+| virtual BMXConversationPtr | **[openConversation](classfloo_1_1_b_m_x_chat_service.md#function-openconversation)**(int64_t conversationId, [BMXConversation::Type](classfloo_1_1_b_m_x_conversation.md#enum-type) type, bool createIfNotExist =true) =0<br>Launch a conversation  |
 | virtual std::string | **[attachmentDir](classfloo_1_1_b_m_x_chat_service.md#function-attachmentdir)**() =0<br>Get attachment saving path  |
-| virtual std::string | **[attachmentDirForConversation](classfloo_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(int64_t conversationId) =0<br>Get attachment saving path for a session  |
-| virtual BMXConversationList | **[getAllConversations](classfloo_1_1_b_m_x_chat_service.md#function-getallconversations)**() =0<br>Get all sessions  |
-| virtual int | **[getAllConversationsUnreadCount](classfloo_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**() =0<br>Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted)  |
+| virtual std::string | **[attachmentDirForConversation](classfloo_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(int64_t conversationId) =0<br>Get attachment saving path for a conversation  |
+| virtual BMXConversationList | **[getAllConversations](classfloo_1_1_b_m_x_chat_service.md#function-getallconversations)**() =0<br>Get all conversations  |
+| virtual int | **[getAllConversationsUnreadCount](classfloo_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**() =0<br>Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
 | virtual BMXErrorCode | **[retrieveHistoryMessages](classfloo_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**(BMXConversationPtr conversation, int64_t refMsgId, size_t size, BMXMessageList & result) =0<br>Pull message history  |
 | virtual BMXErrorCode | **[searchMessagesByKeyWords](classfloo_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(const std::string & keywords, int64_t refTime, size_t size, std::vector< BMXMessageList > & result, [BMXConversation::Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[BMXConversation::Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Search for messages by keyword  |
 | virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_chat_service.md#function-searchmessages)**(const std::string & keywords, int64_t refTime, size_t size, std::vector< BMXMessageList > & result, [BMXConversation::Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[BMXConversation::Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
@@ -148,7 +148,7 @@ Merge forwarding messages
 **Parameters**: 
 
   * **list** List of forwarded messages 
-  * **to** The session to which message is forwarded 
+  * **to** The conversation to which message is forwarded 
   * **newMsg** The newly generated single forwarded message from the merging list of forwarded messages 
 
 
@@ -383,12 +383,12 @@ virtual void deleteConversation(
 ) =0
 ```
 
-Delete session 
+Delete conversation 
 
 **Parameters**: 
 
-  * **conversationId** Session id requiring to delete session 
-  * **synchronize** Whether to delete the session on other devices synchronously, default false, means only delete the session on the current device 
+  * **conversationId** Conversation id requiring to delete conversation 
+  * **synchronize** Whether to delete the conversation on other devices synchronously, default false, means only delete the conversation on the current device 
 
 
 ### function openConversation
@@ -401,13 +401,13 @@ virtual BMXConversationPtr openConversation(
 ) =0
 ```
 
-Launch a session 
+Launch a conversation 
 
 **Parameters**: 
 
-  * **conversationId** id of the session which needs to be opened 
-  * **type** Session type, single/group chat. 
-  * **createIfNotExist** Whether to create a local session if no session existing, default to create 
+  * **conversationId** id of the conversation which needs to be opened 
+  * **type** Conversation type, single/group chat. 
+  * **createIfNotExist** Whether to create a local conversation if no conversation existing, default to create 
 
 
 **Return**: BMXConversationPtr 
@@ -430,11 +430,11 @@ virtual std::string attachmentDirForConversation(
 ) =0
 ```
 
-Get attachment saving path for a session 
+Get attachment saving path for a conversation 
 
 **Parameters**: 
 
-  * **conversationId** Session id requiring a session attachment path 
+  * **conversationId** Conversation id requiring a conversation attachment path 
 
 
 **Return**: std::string 
@@ -445,7 +445,7 @@ Get attachment saving path for a session
 virtual BMXConversationList getAllConversations() =0
 ```
 
-Get all sessions 
+Get all conversations 
 
 **Return**: BMXConversationList 
 
@@ -455,7 +455,7 @@ Get all sessions
 virtual int getAllConversationsUnreadCount() =0
 ```
 
-Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted) 
+Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted) 
 
 **Return**: int 
 
@@ -474,8 +474,8 @@ Pull message history
 
 **Parameters**: 
 
-  * **conversation** Session for which message history needs to pull 
-  * **refMsgId** Start message Id for pulling session messages 
+  * **conversation** Conversation for which message history needs to pull 
+  * **refMsgId** Start message Id for pulling conversation messages 
   * **size** Maximum number of messages to pull 
   * **result** List of messages fetched by pull operation, externally initializing an incoming empty list. 
 

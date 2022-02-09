@@ -8,12 +8,12 @@
 <a name="//api/name/conversationId" title="conversationId"></a>
 ### conversationId
 
-Session Id
+Conversation Id
 
 `@property (nonatomic, assign, readonly) long long conversationId`
 
 #### Discussion
-Session Id
+Conversation Id
 
 #### Declared In
 * `BMXConversation.h`
@@ -47,12 +47,12 @@ Extension information
 <a name="//api/name/isMuteNotication" title="isMuteNotication"></a>
 ### isMuteNotication
 
-Whether the user is alerted to the message, without which the session total unread-number does not count this session.
+Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.
 
 `@property (nonatomic, assign) BOOL isMuteNotication`
 
 #### Discussion
-Whether the user is alerted to the message, without which the session total unread-number does not count this session.
+Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.
 
 #### Declared In
 * `BMXConversation.h`
@@ -73,12 +73,12 @@ Latest message
 <a name="//api/name/messageCount" title="messageCount"></a>
 ### messageCount
 
-Number of all messages in session
+Number of all messages in conversation
 
 `@property (nonatomic, assign, readonly) NSInteger messageCount`
 
 #### Discussion
-Number of all messages in session
+Number of all messages in conversation
 
 #### Declared In
 * `BMXConversation.h`
@@ -86,12 +86,12 @@ Number of all messages in session
 <a name="//api/name/type" title="type"></a>
 ### type
 
-Session type
+Conversation type
 
 `@property (nonatomic, assign, readonly) BMXConversationType type`
 
 #### Discussion
-Session type
+Conversation type
 
 #### Declared In
 * `BMXConversation.h`

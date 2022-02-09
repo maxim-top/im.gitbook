@@ -42,7 +42,7 @@ Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
    Length  
 
 *conversationId*  
-   Session Id  
+   Conversation Id  
 
 #### Discussion
 Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>

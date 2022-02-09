@@ -85,7 +85,7 @@ im.on({
 });
 ```
 
-### IV. Get session list
+### IV. Get conversation list
 
 Direcly call userManage’s getConversationList, returning lists of names, ids, types, and unreads
 

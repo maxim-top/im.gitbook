@@ -31,10 +31,10 @@ Chat manager
 | int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-transferingnum)**()<br>Number of uploading/downloading files  |
 | void | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-insertmessages)**(final BMXMessageList list, final BMXCallBack callBack)<br>Insert a message  |
 | void | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getmessage)**(final long msgId, final BMXDataCallBack< [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) > callBack)<br>Read a message  |
-| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-deleteconversation)**(final long conversationId, final Boolean sync)<br>Delete session  |
-| void | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-openconversation)**(final long conversationId, final BMXConversation.Type type, final boolean createIfNotExist, final BMXDataCallBack< [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) > callBack)<br>Launch a session  |
-| void | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversations)**(final BMXDataCallBack< BMXConversationList > callBack)<br>Get all sessions  |
-| void | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversationsunreadcount)**(final BMXDataCallBack< Integer > callBack)<br>Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted)  |
+| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-deleteconversation)**(final long conversationId, final Boolean sync)<br>Delete conversation  |
+| void | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-openconversation)**(final long conversationId, final BMXConversation.Type type, final boolean createIfNotExist, final BMXDataCallBack< [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) > callBack)<br>Launch a conversation  |
+| void | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversations)**(final BMXDataCallBack< BMXConversationList > callBack)<br>Get all conversations  |
+| void | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversationsunreadcount)**(final BMXDataCallBack< Integer > callBack)<br>Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
 | void | **[retrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-retrievehistorymessages)**(final [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, final long refMsgId, final long size, final BMXDataCallBack< BMXMessageList > callBack)<br>Pull message history  |
 | void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-searchmessages)**(final String keywords, final long refTime, final long size, final BMXConversation.Direction arg4, final BMXDataCallBack< BMXMessageListList > callBack)<br>Search for messages  |
 | void | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-searchmessages)**(final String keywords, final long refTime, final long size, final BMXDataCallBack< BMXMessageListList > callBack) |
@@ -114,7 +114,7 @@ Merge forwarding messages
 **Parameters**: 
 
   * **list** List of forwarded messages 
-  * **to** The session to which message is forwarded 
+  * **to** The conversation to which message is forwarded 
   * **newMsg** The newly generated single forwarded message from the merging list of forwarded messages 
   * **callBack** [BMXErrorCode]
 
@@ -293,12 +293,12 @@ inline void deleteConversation(
 )
 ```
 
-Delete session 
+Delete conversation 
 
 **Parameters**: 
 
-  * **conversationId** Session id requiring to delete session 
-  * **sync** Whether to delete the session on other devices synchronously, default false, means only delete the session on the current device 
+  * **conversationId** Conversation id requiring to delete conversation 
+  * **sync** Whether to delete the conversation on other devices synchronously, default false, means only delete the conversation on the current device 
 
 
 ### function openConversation
@@ -312,13 +312,13 @@ inline void openConversation(
 )
 ```
 
-Launch a session 
+Launch a conversation 
 
 **Parameters**: 
 
-  * **conversationId** id of the session which needs to be opened 
-  * **type** Session type, single/group chat. 
-  * **createIfNotExist** Whether to create a local session if no session existing, default to create 
+  * **conversationId** id of the conversation which needs to be opened 
+  * **type** Conversation type, single/group chat. 
+  * **createIfNotExist** Whether to create a local conversation if no conversation existing, default to create 
   * **callBack** [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md)
 
 
@@ -330,7 +330,7 @@ inline void getAllConversations(
 )
 ```
 
-Get all sessions 
+Get all conversations 
 
 **Parameters**: 
 
@@ -345,7 +345,7 @@ inline void getAllConversationsUnreadCount(
 )
 ```
 
-Get unread-number for all sessions (unreads for individuals and groups marked as blocked is not counted) 
+Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted) 
 
 **Parameters**: 
 
@@ -367,8 +367,8 @@ Pull message history
 
 **Parameters**: 
 
-  * **conversation** Session for which message history needs to pull 
-  * **refMsgId** Start message Id for pulling session messages 
+  * **conversation** Conversation for which message history needs to pull 
+  * **refMsgId** Start message Id for pulling conversation messages 
   * **size** Maximum number of messages to pull 
   * **callBack** BMXErrorCode,Message list obtained by pull 
 

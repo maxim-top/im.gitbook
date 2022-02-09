@@ -35,9 +35,9 @@ Chat listener
 | virtual void | **[onAttachmentStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error, int percent)<br>Attachment download state changed  |
 | virtual void | **[onAttachmentDownloadByUrlStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged)**(int64_t msgId, BMXErrorCode error, int percent)<br>Attachment download state changed  |
 | virtual void | **[onRetrieveHistoryMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages)**(BMXConversationPtr conversation)<br>Pull message history  |
-| virtual void | **[onLoadAllConversation](classfloo_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>List of unread sessions has been loaded  |
-| virtual void | **[onConversationCreate](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**(BMXConversationPtr conversation, BMXMessagePtr msg)<br>Create a new session locally  |
-| virtual void | **[onConversationDelete](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(int64_t conversationId, BMXErrorCode error)<br>Delete session  |
+| virtual void | **[onLoadAllConversation](classfloo_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>List of unread conversations has been loaded  |
+| virtual void | **[onConversationCreate](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**(BMXConversationPtr conversation, BMXMessagePtr msg)<br>Create a new conversation locally  |
+| virtual void | **[onConversationDelete](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(int64_t conversationId, BMXErrorCode error)<br>Delete conversation  |
 | virtual void | **[onTotalUnreadCountChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>Update total unread-number  |
 | void | **[registerChatService](classfloo_1_1_b_m_x_chat_service_listener.md#function-registerchatservice)**([BMXChatService](classfloo_1_1_b_m_x_chat_service.md) * service)<br>Register BMXChatService to which BMXChatServiceListener is bound (automatic registration in SDK)  |
 
@@ -316,7 +316,7 @@ Pull message history
 
 **Parameters**: 
 
-  * **conversation** Session for which a specific message history was pulled 
+  * **conversation** Conversation for which a specific message history was pulled 
 
 
 ### function onLoadAllConversation
@@ -325,7 +325,7 @@ Pull message history
 inline virtual void onLoadAllConversation()
 ```
 
-List of unread sessions has been loaded 
+List of unread conversations has been loaded 
 
 ### function onConversationCreate
 
@@ -336,12 +336,12 @@ inline virtual void onConversationCreate(
 )
 ```
 
-Create a new session locally 
+Create a new conversation locally 
 
 **Parameters**: 
 
-  * **conversation** Newly created local session 
-  * **msg** Latest message for session, return for existing, empty for no existing 
+  * **conversation** Newly created local conversation 
+  * **msg** Latest message for conversation, return for existing, empty for no existing 
 
 
 ### function onConversationDelete
@@ -353,11 +353,11 @@ inline virtual void onConversationDelete(
 )
 ```
 
-Delete session 
+Delete conversation 
 
 **Parameters**: 
 
-  * **conversationId** Deleted local session id 
+  * **conversationId** Deleted local conversation id 
   * **error** State error code 
 
 
@@ -373,7 +373,7 @@ Update total unread-number
 
 **Parameters**: 
 
-  * **unreadCount** Total number of local unread sessions 
+  * **unreadCount** Total number of local unread conversations 
 
 
 ### function registerChatService

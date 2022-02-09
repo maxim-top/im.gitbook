@@ -20,7 +20,7 @@ Synchronous service classes are as follows:
 
 ```
 - BMXClient: SDK aggregation class, which contains all service classes and implements network event listening interface
-- BMXChatService: message sending, message history retrieval, session list
+- BMXChatService: message sending, message history retrieval, conversation list
 - BMXUserService: Register account, login, logout, my settings
 - BMXRosterService: Friend list, blacklist
 - BMXGroupService: Group management (create, dissolve, search, set, member management, invite, apply, accept, reject)
@@ -38,7 +38,7 @@ Asynchronous service classes are as follows:
 
 ```
 - BaseManeger:Manger: Manage basic classes
-- ChatManager: Message sending, message history retrieval, session list
+- ChatManager: Message sending, message history retrieval, conversation list
 - UserManager: Register account, login, logout, my settings
 - RosterManager: Friend list, blacklist
 - BMXCallBack: Untyped interface callback
@@ -52,7 +52,7 @@ Asynchronous service classes are as follows:
 - BMXUserServiceListener: User event listening
 - BMXRosterServiceListener: Friend event listening
 - BMXNetworkListener: Network event listening interface, implemented by BMXClient
-- BMXConversation: Session
+- BMXConversation: Conversation
 - BMXMessage: Message
 - BMXGroup: Group
 - BMXRosterItem roster item (friend, stranger, blacklist, former friend)
@@ -235,9 +235,9 @@ H/A: Success is judge by the returned BMXErrorCode in BMXCallBack.
    	});
 ```
 
-#### Get session list
+#### Get conversation list
 
-L/S: BMXConversationList object reference is passed in and called, after which the session list is retrieved.
+L/S: BMXConversationList object reference is passed in and called, after which the conversation list is retrieved.
 
 ```
    BMXConversationList cl = bmxClient.getChatService().getAllConversations();
@@ -247,7 +247,7 @@ L/S: BMXConversationList object reference is passed in and called, after which t
    }
 ```
 
-H/A: From BMXDataCallBackto get session list.
+H/A: From BMXDataCallBackto get conversation list.
 
 ```
    bmxClient.getChatManager().getAllConversations(new BMXDataCallBack<BMXConversationList>() {
