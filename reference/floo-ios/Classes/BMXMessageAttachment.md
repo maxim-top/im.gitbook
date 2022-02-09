@@ -1,0 +1,24 @@
+# BMXMessageAttachment Class Reference
+
+&nbsp;&nbsp;**Inherits from** NSObject  
+&nbsp;&nbsp;**Declared in** BMXMessageAttachment.h  
+
+## Overview
+
+下载被取消
+
+## Properties
+
+<a name="//api/name/size" title="size"></a>
+### size
+
+`@property (nonatomic) CGSize size`
+
+<a title="Instance Methods" name="instance_methods"></a>
+## Instance Methods
+
+<a name="//api/name/init" title="init"></a>
+### init
+
+`- (instancetype)init`
+

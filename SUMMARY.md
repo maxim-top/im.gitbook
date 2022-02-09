@@ -2,7 +2,7 @@
 
 * [即时通讯开发指南（IM）](README.md)
 * [快速开发](quick-start/README.md)
-  * [iOS 客户端快速开发](quick-start/floo-ios-quick-start.md)
+  * [IOS 客户端快速开发](quick-start/floo-ios-quick-start.md)
   * [安卓客户端快速开发](quick-start/floo-android-quick-start.md)
   * [Linux/C++ 客户端快速开发](quick-start/floo-quick-start.md)
   * [Web 前端快速开发](quick-start/floo-web-quick-start.md)
@@ -10,6 +10,42 @@
   * [推送开发指南（PUSH）](quick-start/push-dev-guide.md)
   * [私有云部署文档](quick-start/how-to-deploy-private-cloud.md)
 * [详细文档](reference/README.md)
+  * [IOS SDK API (floo-android)](reference/floo-ios.md)
+    * **class [BMXClient](reference/floo-ios/Classes/BMXClient.md)** <br>
+    * **class [BMXConversation](reference/floo-ios/Classes/BMXConversation.md)** <br>
+    * **class [BMXCreatGroupOption](reference/floo-ios/Classes/BMXCreatGroupOption.md)** <br>
+    * **class [BMXDevice](reference/floo-ios/Classes/BMXDevice.md)** <br>
+    * **class [BMXFileAttachment](reference/floo-ios/Classes/BMXFileAttachment.md)** <br>
+    * **class [BMXGroup](reference/floo-ios/Classes/BMXGroup.md)** <br>
+    * **class [BMXImageAttachment](reference/floo-ios/Classes/BMXImageAttachment.md)** <br>
+    * **class [BMXLocationAttachment](reference/floo-ios/Classes/BMXLocationAttachment.md)** <br>
+    * **class [BMXMessageAttachment](reference/floo-ios/Classes/BMXMessageAttachment.md)** <br>
+    * **class [BMXMessageConfig](reference/floo-ios/Classes/BMXMessageConfig.md)** <br>
+    * **class [BMXMessageObject](reference/floo-ios/Classes/BMXMessageObject.md)** <br>
+    * **class [BMXMessageSetting](reference/floo-ios/Classes/BMXMessageSetting.md)** <br>
+    * **class [BMXPushUserProfile](reference/floo-ios/Classes/BMXPushUserProfile.md)** <br>
+    * **class [BMXRoster](reference/floo-ios/Classes/BMXRoster.md)** <br>
+    * **class [BMXSDKConfig](reference/floo-ios/Classes/BMXSDKConfig.md)** <br>
+    * **class [BMXUserProfile](reference/floo-ios/Classes/BMXUserProfile.md)** <br>
+    * **class [BMXVideoAttachment](reference/floo-ios/Classes/BMXVideoAttachment.md)** <br>
+    * **class [BMXVoiceAttachment](reference/floo-ios/Classes/BMXVoiceAttachment.md)** <br>
+    * **protocol [BMXChatManager](reference/floo-ios/Protocols/BMXChatManager.md)** <br>
+    * **protocol [BMXChatServiceProtocol](reference/floo-ios/Protocols/BMXChatServiceProtocol.md)** <br>
+    * **protocol [BMXGroupManager](reference/floo-ios/Protocols/BMXGroupManager.md)** <br>
+    * **protocol [BMXGroupServiceProtocol](reference/floo-ios/Protocols/BMXGroupServiceProtocol.md)** <br>
+    * **protocol [BMXPushManager](reference/floo-ios/Protocols/BMXPushManager.md)** <br>
+    * **protocol [BMXPushServiceProtocol](reference/floo-ios/Protocols/BMXPushServiceProtocol.md)** <br>
+    * **protocol [BMXRosterManager](reference/floo-ios/Protocols/BMXRosterManager.md)** <br>
+    * **protocol [BMXRosterServiceProtocol](reference/floo-ios/Protocols/BMXRosterServiceProtocol.md)** <br>
+    * **protocol [BMXUserManager](reference/floo-ios/Protocols/BMXUserManager.md)** <br>
+    * **protocol [BMXUserServiceProtocol](reference/floo-ios/Protocols/BMXUserServiceProtocol.md)** <br>
+    * **constants [BMXAttachmentDownloadStatus](reference/floo-ios/Constants/BMXAttachmentDownloadStatus.md)** <br>
+    * **constants [BMXAttachmentType](reference/floo-ios/Constants/BMXAttachmentType.md)** <br>
+    * **constants [BMXConnectStatus](reference/floo-ios/Constants/BMXConnectStatus.md)** <br>
+    * **constants [BMXErrorCode](reference/floo-ios/Constants/BMXErrorCode.md)** <br>
+    * **constants [BMXLogLevel](reference/floo-ios/Constants/BMXLogLevel.md)** <br>
+    * **constants [BMXNetworkType](reference/floo-ios/Constants/BMXNetworkType.md)** <br>
+    * **constants [BMXSignInStatus](reference/floo-ios/Constants/BMXSignInStatus.md)** <br>
   * [Android SDK API (floo-android)](reference/floo-android.md)
     * [im::floo::floolib::BMXChatManager](reference/floo-android/classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_manager.md)
     * [im::floo::floolib::BMXChatService](reference/floo-android/classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md)
