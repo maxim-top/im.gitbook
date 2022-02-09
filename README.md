@@ -47,7 +47,7 @@ After application created, App ID and other important information can be obtaine
 
 ### API Document
 
-[Server-side API](reference/server-api.md)
+[Server-side API](reference/server-api/README.md)
 
 ### Private Deployment
 
