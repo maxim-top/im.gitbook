@@ -47,7 +47,7 @@
 
 ### API 文档
 
-[服务端 API](https://maximtop.com/docs/api/)
+[服务端 API](reference/server-api.md)
 
 ### 私有部署安装
 
@@ -59,10 +59,10 @@
 
 ### API详细文档
 
-1. [iOS API](https://maximtop.com/docs/ios/)
-2. [Android API](https://maximtop.com/docs/android/)
-3. [Web API](https://maximtop.com/docs/web/)，微信小程序API与此完全相同
-4. [C++ API](https://maximtop.com/docs/floo/annotated.html)
+1. [iOS API](reference/floo-ios.md)
+2. [Android API](reference/floo-android.md)
+3. [Web API](reference/floo-web.md)，微信小程序API与此完全相同
+4. [C++ API](reference/floo.md)
 
 ### 平台兼容
 
