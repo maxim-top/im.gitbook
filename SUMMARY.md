@@ -10,7 +10,7 @@
   * [推送开发指南（PUSH）](quick-start/push-dev-guide.md)
   * [私有云部署文档](quick-start/how-to-deploy-private-cloud.md)
 * [详细文档](reference/README.md)
-  * [IOS SDK API (floo-android)](reference/floo-ios.md)
+  * [IOS SDK API (floo-ios)](reference/floo-ios.md)
     * **class [BMXClient](reference/floo-ios/Classes/BMXClient.md)** <br>
     * **class [BMXConversation](reference/floo-ios/Classes/BMXConversation.md)** <br>
     * **class [BMXCreatGroupOption](reference/floo-ios/Classes/BMXCreatGroupOption.md)** <br>
