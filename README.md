@@ -47,7 +47,7 @@ After application created, App ID and other important information can be obtaine
 
 ### API Document
 
-[Server-side API](https://maximtop.com/docs/api/)
+[Server-side API](reference/server-api.md)
 
 ### Private Deployment
 
@@ -59,10 +59,10 @@ The codename of Maximtop IM Client SDK is Floo, which comes from The Wizarding W
 
 ### API Details
 
-1. [iOS API](https://maximtop.com/docs/ios/)
-2. [Android API](https://maximtop.com/docs/android/)
-3. [Web API](https://maximtop.com/docs/web/), WeChat applet API is exactly the same
-4. [C++ API](https://maximtop.com/docs/floo/annotated.html)
+1. [iOS API](reference/floo-ios.md)
+2. [Android API](reference/floo-android.md)
+3. [Web API](reference/floo-web.md), WeChat applet API is exactly the same
+4. [C++ API](reference/floo.md)
 
 ### Platform Compatibility
 
