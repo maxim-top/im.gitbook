@@ -47,7 +47,7 @@
 
 ### API 文档
 
-[服务端 API](reference/server-api.md)
+[服务端 API](reference/server-api/README.md)
 
 ### 私有部署安装
 
