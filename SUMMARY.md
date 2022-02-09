@@ -11,7 +11,7 @@
   * [私有云部署文档](quick-start/how-to-deploy-private-cloud.md)
 * [详细文档](reference/README.md)
   * [IOS SDK API (floo-ios)](reference/floo-ios.md)
-    * [Classes)](reference/floo-ios-class.md)
+    * [Classes](reference/floo-ios/classes.md)
       * **class [BMXClient](reference/floo-ios/Classes/BMXClient.md)** <br>
       * **class [BMXConversation](reference/floo-ios/Classes/BMXConversation.md)** <br>
       * **class [BMXCreatGroupOption](reference/floo-ios/Classes/BMXCreatGroupOption.md)** <br>
@@ -30,7 +30,7 @@
       * **class [BMXUserProfile](reference/floo-ios/Classes/BMXUserProfile.md)** <br>
       * **class [BMXVideoAttachment](reference/floo-ios/Classes/BMXVideoAttachment.md)** <br>
       * **class [BMXVoiceAttachment](reference/floo-ios/Classes/BMXVoiceAttachment.md)** <br>
-    * [Protocols)](reference/floo-ios-protocols.md)
+    * [Protocols](reference/floo-ios/protocols.md)
       * **protocol [BMXChatManager](reference/floo-ios/Protocols/BMXChatManager.md)** <br>
       * **protocol [BMXChatServiceProtocol](reference/floo-ios/Protocols/BMXChatServiceProtocol.md)** <br>
       * **protocol [BMXGroupManager](reference/floo-ios/Protocols/BMXGroupManager.md)** <br>
@@ -41,7 +41,7 @@
       * **protocol [BMXRosterServiceProtocol](reference/floo-ios/Protocols/BMXRosterServiceProtocol.md)** <br>
       * **protocol [BMXUserManager](reference/floo-ios/Protocols/BMXUserManager.md)** <br>
       * **protocol [BMXUserServiceProtocol](reference/floo-ios/Protocols/BMXUserServiceProtocol.md)** <br>
-    * [Constants)](reference/floo-ios-constants.md)
+    * [Constants](reference/floo-ios/constants.md)
       * **constants [BMXAttachmentDownloadStatus](reference/floo-ios/Constants/BMXAttachmentDownloadStatus.md)** <br>
       * **constants [BMXAttachmentType](reference/floo-ios/Constants/BMXAttachmentType.md)** <br>
       * **constants [BMXConnectStatus](reference/floo-ios/Constants/BMXConnectStatus.md)** <br>
