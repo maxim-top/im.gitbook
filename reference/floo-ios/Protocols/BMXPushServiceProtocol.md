@@ -1,7 +1,7 @@
 # BMXPushServiceProtocol Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXPushServiceProtocol.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXPushServiceProtocol.h  
 
 ## Instance Methods
 
@@ -15,7 +15,7 @@ Push初始化完成后获取推送证书。
 #### Parameters
 
 *certification*  
-&nbsp;&nbsp;&nbsp;推送证书  
+   推送证书  
 
 #### Discussion
 Push初始化完成后获取推送证书。
@@ -33,7 +33,7 @@ Push初始化完成后获取推送证书。
 #### Parameters
 
 *operationId*  
-&nbsp;&nbsp;&nbsp;操作id  
+   操作id  
 
 #### Discussion
 清空用户推送成功回调。
@@ -51,7 +51,7 @@ Push初始化完成后获取推送证书。
 #### Parameters
 
 *operationId*  
-&nbsp;&nbsp;&nbsp;操作id  
+   操作id  
 
 #### Discussion
 删除用户推送标签成功回调
@@ -69,7 +69,7 @@ Push初始化完成后获取推送证书。
 #### Parameters
 
 *operationId*  
-&nbsp;&nbsp;&nbsp;操作id  
+   操作id  
 
 #### Discussion
 获取用户推送标签成功回调。
@@ -87,10 +87,10 @@ Push初始化完成后获取推送证书。
 #### Parameters
 
 *message*  
-&nbsp;&nbsp;&nbsp;发生状态变化的上行消息  
+   发生状态变化的上行消息  
 
 *error*  
-&nbsp;&nbsp;&nbsp;状态错误码  
+   状态错误码  
 
 #### Discussion
 发送Push上行消息状态变化通知。
@@ -108,7 +108,7 @@ Push初始化完成通知。
 #### Parameters
 
 *bmxToken*  
-&nbsp;&nbsp;&nbsp;bmxToken  
+   bmxToken  
 
 #### Discussion
 Push初始化完成通知。
@@ -134,12 +134,12 @@ Push功能停止通知。
 
 接收到新的Push通知
 
-`- (void)receivedPush:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receivedPush:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Parameters
 
 *messages*  
-&nbsp;&nbsp;&nbsp;Push通知列表  
+   Push通知列表  
 
 #### Discussion
 接收到新的Push通知
@@ -157,7 +157,7 @@ Push功能停止通知。
 #### Parameters
 
 *operationId*  
-&nbsp;&nbsp;&nbsp;操作id  
+   操作id  
 
 #### Discussion
 设置用户推送标签成功回调。

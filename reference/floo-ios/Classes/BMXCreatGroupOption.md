@@ -1,7 +1,7 @@
 # BMXCreatGroupOption Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXCreatGroupOption.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXCreatGroupOption.h  
 
 ## Properties
 
@@ -122,10 +122,10 @@
 #### Parameters
 
 *name*  
-&nbsp;&nbsp;&nbsp;必填  
+   必填  
 
 *groupDescription*  
-&nbsp;&nbsp;&nbsp;非必填  
+   非必填  
 
 #### Return Value
 BMXCreatGroupOption

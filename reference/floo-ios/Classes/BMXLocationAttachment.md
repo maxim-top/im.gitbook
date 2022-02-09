@@ -1,8 +1,8 @@
 # BMXLocationAttachment Class Reference
 
-&nbsp;&nbsp;**Inherits from** <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
+  **Inherits from** <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
 NSObject  
-&nbsp;&nbsp;**Declared in** BMXLocationAttachment.h  
+  **Declared in** BMXLocationAttachment.h  
 
 ## Properties
 
@@ -42,13 +42,13 @@ NSObject
 #### Parameters
 
 *aLatitude*  
-&nbsp;&nbsp;&nbsp;纬度  
+   纬度  
 
 *aLongitude*  
-&nbsp;&nbsp;&nbsp;经度  
+   经度  
 
 *aAddress*  
-&nbsp;&nbsp;&nbsp;地址  
+   地址  
 
 #### Return Value
 BMXLocationAttachment

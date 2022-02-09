@@ -1,6 +1,6 @@
 # BMXNetworkType Constants Reference
 
-&nbsp;&nbsp;**Declared in** BMXDefines.h  
+  **Declared in** BMXDefines.h  
 
 ### BMXNetworkType
 
@@ -21,17 +21,17 @@
 
 <a name="" title="BMXNetworkTypeMobile"></a><code>BMXNetworkTypeMobile</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 
 <a name="" title="BMXNetworkTypeWifi"></a><code>BMXNetworkTypeWifi</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 
 <a name="" title="BMXNetworkTypeCable"></a><code>BMXNetworkTypeCable</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 
 <a name="" title="BMXNetworkTypeNone"></a><code>BMXNetworkTypeNone</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 

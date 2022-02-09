@@ -1,7 +1,7 @@
 # BMXGroupServiceProtocol Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXGroupServiceProtocol.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXGroupServiceProtocol.h  
 
 ## Instance Methods
 
@@ -10,7 +10,7 @@
 
 添加了新管理员
 
-`- (void)groupAdminsAddedGroup:(BMXGroup *)*group* members:(NSArray&lt;NSNumber*&gt; *)*members*`
+`- (void)groupAdminsAddedGroup:(BMXGroup *)*group* members:(NSArray<NSNumber*> *)*members*`
 
 #### Discussion
 添加了新管理员
@@ -23,7 +23,7 @@
 
 移除了管理员
 
-`- (void)groupAdminsRemovedFromGroup:(BMXGroup *)*group* members:(NSArray&lt;NSNumber*&gt; *)*members* reason:(NSString *)*reason*`
+`- (void)groupAdminsRemovedFromGroup:(BMXGroup *)*group* members:(NSArray<NSNumber*> *)*members* reason:(NSString *)*reason*`
 
 #### Discussion
 移除了管理员
@@ -205,7 +205,7 @@
 
 群成员被禁言
 
-`- (void)groupMembersMutedGroup:(BMXGroup *)*group* members:(NSArray&lt;NSNumber*&gt; *)*members* duration:(NSInteger)*duration*`
+`- (void)groupMembersMutedGroup:(BMXGroup *)*group* members:(NSArray<NSNumber*> *)*members* duration:(NSInteger)*duration*`
 
 #### Discussion
 群成员被禁言
@@ -218,7 +218,7 @@
 
 群成员被解除禁言
 
-`- (void)groupMembersUnMutedGroup:(BMXGroup *)*group* Unmuted:(NSArray&lt;NSNumber*&gt; *)*members*`
+`- (void)groupMembersUnMutedGroup:(BMXGroup *)*group* Unmuted:(NSArray<NSNumber*> *)*members*`
 
 #### Discussion
 群成员被解除禁言

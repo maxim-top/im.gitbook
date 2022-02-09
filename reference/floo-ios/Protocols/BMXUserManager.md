@@ -1,19 +1,19 @@
 # BMXUserManager Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXUserManager.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXUserManager.h  
 
 ## Instance Methods
 
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
-`- (void)addDelegate:(id&lt;BMXUserServiceProtocol&gt;)*aDelegate*`
+`- (void)addDelegate:(id<BMXUserServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 ### addDelegate:delegateQueue:
 
-`- (void)addDelegate:(id&lt;BMXUserServiceProtocol&gt;)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
+`- (void)addDelegate:(id<BMXUserServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/bindDevice:completion:" title="bindDevice:completion:"></a>
 ### bindDevice:completion:
@@ -51,13 +51,13 @@
 #### Parameters
 
 *profile*  
-&nbsp;&nbsp;&nbsp;用户信息  
+   用户信息  
 
 *aProgress*  
-&nbsp;&nbsp;&nbsp;下载进度  
+   下载进度  
 
 *aCompletion*  
-&nbsp;&nbsp;&nbsp;回调  
+   回调  
 
 #### Discussion
 下载头像
@@ -94,7 +94,7 @@
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 ### removeDelegate:
 
-`- (void)removeDelegate:(id&lt;BMXUserServiceProtocol&gt;)*aDelegate*`
+`- (void)removeDelegate:(id<BMXUserServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/setAddFriendAuthMode:completion:" title="setAddFriendAuthMode:completion:"></a>
 ### setAddFriendAuthMode:completion:
@@ -106,7 +106,7 @@
 #### Parameters
 
 *addFriendAuthMode*  
-&nbsp;&nbsp;&nbsp;BMXAddFriendAuthMode  
+   BMXAddFriendAuthMode  
 
 #### Discussion
 设置加好友验证方式
@@ -124,7 +124,7 @@
 #### Parameters
 
 *authQuestion*  
-&nbsp;&nbsp;&nbsp;BMXAuthQuestion  
+   BMXAuthQuestion  
 
 #### Discussion
 设置加好友验证问题
@@ -142,7 +142,7 @@
 #### Parameters
 
 *autoAcceptGroupInvite*  
-&nbsp;&nbsp;&nbsp;BOOL  
+   BOOL  
 
 #### Discussion
 设置是否自动同意入群邀请
@@ -160,7 +160,7 @@
 #### Parameters
 
 *autoDownloadAttachment*  
-&nbsp;&nbsp;&nbsp;BOOL  
+   BOOL  
 
 #### Discussion
 设置是否自动缩略图和语音附件
@@ -178,7 +178,7 @@
 #### Parameters
 
 *enablePushDetail*  
-&nbsp;&nbsp;&nbsp;BOOL  
+   BOOL  
 
 #### Discussion
 设置是否推送详情
@@ -196,7 +196,7 @@
 #### Parameters
 
 *enablePushStatus*  
-&nbsp;&nbsp;&nbsp;BOOL  
+   BOOL  
 
 #### Discussion
 设置是否允许推送
@@ -227,7 +227,7 @@
 #### Parameters
 
 *notificationSound*  
-&nbsp;&nbsp;&nbsp;BOO  
+   BOO  
 
 #### Discussion
 设置收到新消息是否声音提醒
@@ -245,7 +245,7 @@
 #### Parameters
 
 *notificationVibrate*  
-&nbsp;&nbsp;&nbsp;BOOL  
+   BOOL  
 
 #### Discussion
 设置收到新消息是否震动
@@ -263,7 +263,7 @@
 #### Parameters
 
 *privateInfo*  
-&nbsp;&nbsp;&nbsp;string  
+   string  
 
 #### Discussion
 设置私有扩展信息
@@ -281,7 +281,7 @@
 #### Parameters
 
 *publicInfo*  
-&nbsp;&nbsp;&nbsp;string  
+   string  
 
 #### Discussion
 设置公开扩展信息
@@ -312,10 +312,10 @@
 #### Parameters
 
 *avatarData*  
-&nbsp;&nbsp;&nbsp;头像  
+   头像  
 
 *aProgressBlock*  
-&nbsp;&nbsp;&nbsp;上传进度  
+   上传进度  
 
 #### Discussion
 上传头像

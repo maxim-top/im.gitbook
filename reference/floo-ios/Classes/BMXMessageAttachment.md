@@ -1,7 +1,7 @@
 # BMXMessageAttachment Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXMessageAttachment.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXMessageAttachment.h  
 
 ## Overview
 

@@ -1,7 +1,7 @@
 # BMXMessageObject Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXMessageObject.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXMessageObject.h  
 
 ## Properties
 
@@ -128,19 +128,19 @@
 #### Parameters
 
 *content*  
-&nbsp;&nbsp;&nbsp;消息内容  
+   消息内容  
 
 *fromId*  
-&nbsp;&nbsp;&nbsp;消息发送者  
+   消息发送者  
 
 *toId*  
-&nbsp;&nbsp;&nbsp;消息接收者  
+   消息接收者  
 
 *mtype*  
-&nbsp;&nbsp;&nbsp;消息类型  
+   消息类型  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 #### Discussion
 创建发送命令消息(命令消息通过content字段或者extension字段存放命令信息)
@@ -158,19 +158,19 @@
 #### Parameters
 
 *attachment*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>  
+   <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>  
 
 *fromId*  
-&nbsp;&nbsp;&nbsp;发送id  
+   发送id  
 
 *toId*  
-&nbsp;&nbsp;&nbsp;接收id  
+   接收id  
 
 *mtype*  
-&nbsp;&nbsp;&nbsp;消息类型  
+   消息类型  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 #### Return Value
 BMXMessageObject
@@ -191,19 +191,19 @@ BMXMessageObject
 #### Parameters
 
 *content*  
-&nbsp;&nbsp;&nbsp;内容  
+   内容  
 
 *fromId*  
-&nbsp;&nbsp;&nbsp;发送id  
+   发送id  
 
 *toId*  
-&nbsp;&nbsp;&nbsp;接收id  
+   接收id  
 
 *mtype*  
-&nbsp;&nbsp;&nbsp;消息类型  
+   消息类型  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 #### Return Value
 BMXMessageObject
@@ -224,19 +224,19 @@ BMXMessageObject
 #### Parameters
 
 *message*  
-&nbsp;&nbsp;&nbsp;BMXMessageObject  
+   BMXMessageObject  
 
 *fromId*  
-&nbsp;&nbsp;&nbsp;发送id  
+   发送id  
 
 *toId*  
-&nbsp;&nbsp;&nbsp;接收id  
+   接收id  
 
 *mtype*  
-&nbsp;&nbsp;&nbsp;消息类型  
+   消息类型  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 #### Return Value
 BMXMessageObject
@@ -257,25 +257,25 @@ BMXMessageObject
 #### Parameters
 
 *attachment*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>  
+   <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>  
 
 *msgId*  
-&nbsp;&nbsp;&nbsp;消息id  
+   消息id  
 
 *fromId*  
-&nbsp;&nbsp;&nbsp;发送id  
+   发送id  
 
 *toId*  
-&nbsp;&nbsp;&nbsp;接收id  
+   接收id  
 
 *mtype*  
-&nbsp;&nbsp;&nbsp;消息类型  
+   消息类型  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 *timeStamp*  
-&nbsp;&nbsp;&nbsp;时间戳  
+   时间戳  
 
 #### Return Value
 BMXMessageObject
@@ -296,25 +296,25 @@ BMXMessageObject
 #### Parameters
 
 *content*  
-&nbsp;&nbsp;&nbsp;消息内容  
+   消息内容  
 
 *msgId*  
-&nbsp;&nbsp;&nbsp;消息id  
+   消息id  
 
 *fromId*  
-&nbsp;&nbsp;&nbsp;消息发送者  
+   消息发送者  
 
 *toId*  
-&nbsp;&nbsp;&nbsp;消息接收者  
+   消息接收者  
 
 *mtype*  
-&nbsp;&nbsp;&nbsp;消息类型  
+   消息类型  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 *timeStamp*  
-&nbsp;&nbsp;&nbsp;服务器时间戳  
+   服务器时间戳  
 
 #### Discussion
 创建收到的命令消息(命令消息通过content字段或者extension字段存放命令信息)
@@ -332,25 +332,25 @@ BMXMessageObject
 #### Parameters
 
 *content*  
-&nbsp;&nbsp;&nbsp;内容  
+   内容  
 
 *msgId*  
-&nbsp;&nbsp;&nbsp;消息id  
+   消息id  
 
 *fromId*  
-&nbsp;&nbsp;&nbsp;发送id  
+   发送id  
 
 *toId*  
-&nbsp;&nbsp;&nbsp;接收id  
+   接收id  
 
 *mtype*  
-&nbsp;&nbsp;&nbsp;消息类型  
+   消息类型  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 *timeStamp*  
-&nbsp;&nbsp;&nbsp;时间戳  
+   时间戳  
 
 #### Return Value
 BMXMessageObject

@@ -1,7 +1,7 @@
 # BMXDevice Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXDevice.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXDevice.h  
 
 ## Properties
 

@@ -1,7 +1,7 @@
 # BMXChatServiceProtocol Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXChatServiceProtocol.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXChatServiceProtocol.h  
 
 ## Instance Methods
 
@@ -15,10 +15,10 @@
 #### Parameters
 
 *conversation*  
-&nbsp;&nbsp;&nbsp;新创建的本地会话  
+   新创建的本地会话  
 
 *message*  
-&nbsp;&nbsp;&nbsp;会话的最新消息，存在返回不存在返回为空  
+   会话的最新消息，存在返回不存在返回为空  
 
 #### Discussion
 本地创建新会话成功
@@ -36,10 +36,10 @@
 #### Parameters
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;删除的本地会话id  
+   删除的本地会话id  
 
 *error*  
-&nbsp;&nbsp;&nbsp;状态错误码  
+   状态错误码  
 
 #### Discussion
 删除会话
@@ -57,7 +57,7 @@
 #### Parameters
 
 *unreadCount*  
-&nbsp;&nbsp;&nbsp;未读数  
+   未读数  
 
 #### Discussion
 更新总未读数
@@ -135,7 +135,7 @@
 
 收到删除消息 （多设备同步删除消息）
 
-`- (void)receiveDeleteMessages:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receiveDeleteMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到删除消息 （多设备同步删除消息）
@@ -148,7 +148,7 @@
 
 收到消息全部已读（多设备同步某消息之前消息全部设置为已读）
 
-`- (void)receiveReadAllMessages:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receiveReadAllMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到消息全部已读（多设备同步某消息之前消息全部设置为已读）
@@ -161,7 +161,7 @@
 
 收到消息已读取消（多设备其他设备同步消息已读状态变为未读）
 
-`- (void)receiveReadCancelsMessages:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receiveReadCancelsMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到消息已读取消（多设备其他设备同步消息已读状态变为未读）
@@ -174,7 +174,7 @@
 
 收到命令消息
 
-`- (void)receivedCommandMessages:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receivedCommandMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到命令消息
@@ -187,7 +187,7 @@
 
 收到消息已送达回执
 
-`- (void)receivedDeliverAcks:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receivedDeliverAcks:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到消息已送达回执
@@ -200,7 +200,7 @@
 
 收到消息
 
-`- (void)receivedMessages:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receivedMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到消息
@@ -213,7 +213,7 @@
 
 收到消息已读回执
 
-`- (void)receivedReadAcks:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receivedReadAcks:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到消息已读回执
@@ -226,7 +226,7 @@
 
 收到撤回消息
 
-`- (void)receivedRecallMessages:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receivedRecallMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到撤回消息
@@ -239,7 +239,7 @@
 
 收到系统通知消息
 
-`- (void)receivedSystemMessages:(NSArray&lt;BMXMessageObject*&gt; *)*messages*`
+`- (void)receivedSystemMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
 收到系统通知消息

@@ -1,7 +1,7 @@
 # BMXRosterManager Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXRosterManager.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXRosterManager.h  
 
 ## Instance Methods
 
@@ -21,19 +21,19 @@
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
-`- (void)addDelegate:(id&lt;BMXRosterServiceProtocol&gt;)*aDelegate*`
+`- (void)addDelegate:(id<BMXRosterServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 ### addDelegate:delegateQueue:
 
-`- (void)addDelegate:(id&lt;BMXRosterServiceProtocol&gt;)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
+`- (void)addDelegate:(id<BMXRosterServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/addRosterListener:" title="addRosterListener:"></a>
 ### addRosterListener:
 
 添加好友变化监听者
 
-`- (void)addRosterListener:(id&lt;BMXRosterServiceProtocol&gt;)*listener*`
+`- (void)addRosterListener:(id<BMXRosterServiceProtocol>)*listener*`
 
 #### Discussion
 添加好友变化监听者
@@ -118,10 +118,10 @@
 #### Parameters
 
 *forceRefresh*  
-&nbsp;&nbsp;&nbsp;如果forceRefresh == true，则强制从服务端拉取  
+   如果forceRefresh == true，则强制从服务端拉取  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BlockList ,Error  
+   BlockList ,Error  
 
 #### Discussion
 <ul>
@@ -143,10 +143,10 @@
 #### Parameters
 
 *forceRefresh*  
-&nbsp;&nbsp;&nbsp;如果forceRefresh == true，则强制从服务端拉取  
+   如果forceRefresh == true，则强制从服务端拉取  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;好友列表  
+   好友列表  
 
 #### Discussion
 <ul>
@@ -172,7 +172,7 @@
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 ### removeDelegate:
 
-`- (void)removeDelegate:(id&lt;BMXRosterServiceProtocol&gt;)*aDelegate*`
+`- (void)removeDelegate:(id<BMXRosterServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removeRosterById:withCompletion:" title="removeRosterById:withCompletion:"></a>
 ### removeRosterById:withCompletion:
@@ -205,7 +205,7 @@
 
 移除好友变化监听者
 
-`- (void)removeRosterListener:(id&lt;BMXRosterServiceProtocol&gt;)*listener*`
+`- (void)removeRosterListener:(id<BMXRosterServiceProtocol>)*listener*`
 
 #### Discussion
 移除好友变化监听者
@@ -223,10 +223,10 @@
 #### Parameters
 
 *name*  
-&nbsp;&nbsp;&nbsp;好友name  
+   好友name  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;好友  
+   好友  
 
 #### Discussion
 通过好友Name搜索
@@ -244,10 +244,10 @@
 #### Parameters
 
 *rosterId*  
-&nbsp;&nbsp;&nbsp;好友ID  
+   好友ID  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;好友  
+   好友  
 
 #### Discussion
 通过好友ID搜索
@@ -260,18 +260,18 @@
 
 批量搜索用户
 
-`- (void)searchRostersByRosterIdList:(NSArray&lt;NSNumber*&gt; *)*rosterIdList* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray&lt;BMXRoster*&gt; *rosterList , BMXError *error ))*aCompletionBlock*`
+`- (void)searchRostersByRosterIdList:(NSArray<NSNumber*> *)*rosterIdList* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray<BMXRoster*> *rosterList , BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *rosterIdList*  
-&nbsp;&nbsp;&nbsp;id  
+   id  
 
 *forceRefresh*  
-&nbsp;&nbsp;&nbsp;如果forceRefresh == true，则强制从服务端拉取  
+   如果forceRefresh == true，则强制从服务端拉取  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;rosterList,error  
+   rosterList,error  
 
 #### Discussion
 批量搜索用户

@@ -1,7 +1,7 @@
 # BMXChatManager Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXChatManager.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXChatManager.h  
 
 ## Overview
 
@@ -40,7 +40,7 @@
 
 添加聊天监听者
 
-`- (void)addChatListener:(id&lt;BMXChatServiceProtocol&gt;)*listener*`
+`- (void)addChatListener:(id<BMXChatServiceProtocol>)*listener*`
 
 #### Discussion
 添加聊天监听者
@@ -51,12 +51,12 @@
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
-`- (void)addDelegate:(id&lt;BMXChatServiceProtocol&gt;)*aDelegate*`
+`- (void)addDelegate:(id<BMXChatServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 ### addDelegate:delegateQueue:
 
-`- (void)addDelegate:(id&lt;BMXChatServiceProtocol&gt;)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
+`- (void)addDelegate:(id<BMXChatServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/deleteConversationByConversationId:synchronize:" title="deleteConversationByConversationId:synchronize:"></a>
 ### deleteConversationByConversationId:synchronize:
@@ -124,7 +124,7 @@
 #### Parameters
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;count  
+   count  
 
 #### Discussion
 获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内）
@@ -181,10 +181,10 @@
 #### Parameters
 
 *message*  
-&nbsp;&nbsp;&nbsp;需要获取未读用户id列表的消息  
+   需要获取未读用户id列表的消息  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;对该条消息未读的用户id列表，初始传入为空列表  
+   对该条消息未读的用户id列表，初始传入为空列表  
 
 #### Discussion
 获取发送的群组消息未读用户id列表
@@ -202,10 +202,10 @@
 #### Parameters
 
 *message*  
-&nbsp;&nbsp;&nbsp;需要获取已读用户id列表的消息  
+   需要获取已读用户id列表的消息  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;对该条消息已读的用户id列表，初始传入为空列表  
+   对该条消息已读的用户id列表，初始传入为空列表  
 
 #### Discussion
 获取发送的群组消息已读用户id列表
@@ -231,7 +231,7 @@
 
 插入消息
 
-`- (void)insetMessages:(NSArray&lt;BMXMessageObject*&gt; *)*list* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)insetMessages:(NSArray<BMXMessageObject*> *)*list* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 插入消息
@@ -298,7 +298,7 @@
 
 移除聊天监听者
 
-`- (void)removeChatListener:(id&lt;BMXChatServiceProtocol&gt;)*listener*`
+`- (void)removeChatListener:(id<BMXChatServiceProtocol>)*listener*`
 
 #### Discussion
 移除聊天监听者
@@ -309,7 +309,7 @@
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 ### removeDelegate:
 
-`- (void)removeDelegate:(id&lt;BMXChatServiceProtocol&gt;)*aDelegate*`
+`- (void)removeDelegate:(id<BMXChatServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removeMessage:synchronizeDeviceForce:" title="removeMessage:synchronizeDeviceForce:"></a>
 ### removeMessage:synchronizeDeviceForce:

@@ -1,9 +1,9 @@
 # BMXVoiceAttachment Class Reference
 
-&nbsp;&nbsp;**Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
+  **Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
 <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
 NSObject  
-&nbsp;&nbsp;**Declared in** BMXVoiceAttachment.h  
+  **Declared in** BMXVoiceAttachment.h  
 
 ## Properties
 
@@ -33,16 +33,16 @@ NSObject
 #### Parameters
 
 *aData*  
-&nbsp;&nbsp;&nbsp;音频Data  
+   音频Data  
 
 *displayName*  
-&nbsp;&nbsp;&nbsp;显示名称  
+   显示名称  
 
 *duration*  
-&nbsp;&nbsp;&nbsp;时长  
+   时长  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话Id  
+   会话Id  
 
 #### Discussion
 初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
@@ -60,13 +60,13 @@ NSObject
 #### Parameters
 
 *path*  
-&nbsp;&nbsp;&nbsp;音频路径  
+   音频路径  
 
 *displayName*  
-&nbsp;&nbsp;&nbsp;显示  
+   显示  
 
 *duration*  
-&nbsp;&nbsp;&nbsp;时长  
+   时长  
 
 #### Return Value
 <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>

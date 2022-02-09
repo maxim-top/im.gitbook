@@ -1,7 +1,7 @@
 # BMXMessageSetting Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXMessageSetting.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXMessageSetting.h  
 
 ## Properties
 

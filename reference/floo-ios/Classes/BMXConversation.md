@@ -1,7 +1,7 @@
 # BMXConversation Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXConversation.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXConversation.h  
 
 ## Properties
 
@@ -122,10 +122,10 @@
 #### Parameters
 
 *msg*  
-&nbsp;&nbsp;&nbsp;message  
+   message  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Result  
+   Result  
 
 #### Discussion
 插入一条消息
@@ -143,10 +143,10 @@
 #### Parameters
 
 *msgId*  
-&nbsp;&nbsp;&nbsp;msgId  
+   msgId  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Result  
+   Result  
 
 #### Discussion
 读取一条消息
@@ -164,13 +164,13 @@
 #### Parameters
 
 *reMsgId*  
-&nbsp;&nbsp;&nbsp;参考消息Id  
+   参考消息Id  
 
 *size*  
-&nbsp;&nbsp;&nbsp;size  
+   size  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Result：MessageList  
+   Result：MessageList  
 
 #### Discussion
 加载消息，从参考消息向前加载，如果不指定则从最新消息开始
@@ -188,7 +188,7 @@
 #### Parameters
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Result  
+   Result  
 
 #### Discussion
 删除会话中的所有消息
@@ -201,7 +201,7 @@
 
 搜索消息，如果不指定则从最新消息开始
 
-`- (void)searchMessagesByKeyWords:(NSString *)*keywords* refTime:(NSTimeInterval)*refTime* size:(NSUInteger)*size* directionType:(BMXMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray&lt;BMXMessageObject*&gt; *messageList , BMXError *error ))*aCompletionBlock*`
+`- (void)searchMessagesByKeyWords:(NSString *)*keywords* refTime:(NSTimeInterval)*refTime* size:(NSUInteger)*size* directionType:(BMXMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray<BMXMessageObject*> *messageList , BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 搜索消息，如果不指定则从最新消息开始
@@ -214,7 +214,7 @@
 
 按照类型搜索消息，如果不指定则从最新消息开始
 
-`- (void)searchMessagesBycontentType:(BMXContentType)*contentType* refTime:(NSTimeInterval)*refTime* size:(NSUInteger)*size* directionType:(BMXMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray&lt;BMXMessageObject*&gt; *messageList , BMXError *error ))*aCompletionBlock*`
+`- (void)searchMessagesBycontentType:(BMXContentType)*contentType* refTime:(NSTimeInterval)*refTime* size:(NSUInteger)*size* directionType:(BMXMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray<BMXMessageObject*> *messageList , BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 按照类型搜索消息，如果不指定则从最新消息开始
@@ -245,13 +245,13 @@
 #### Parameters
 
 *message*  
-&nbsp;&nbsp;&nbsp;message  
+   message  
 
 *status*  
-&nbsp;&nbsp;&nbsp;播放状态  
+   播放状态  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Result  
+   Result  
 
 #### Discussion
 设置消息播放状态（只对语音/视频消息有效）
@@ -269,13 +269,13 @@
 #### Parameters
 
 *message*  
-&nbsp;&nbsp;&nbsp;message  
+   message  
 
 *status*  
-&nbsp;&nbsp;&nbsp;是否已读  
+   是否已读  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Result  
+   Result  
 
 #### Discussion
 设置消息未读状态，更新未读消息数, 本地
@@ -293,10 +293,10 @@
 #### Parameters
 
 *message*  
-&nbsp;&nbsp;&nbsp;需要更改扩展信息的消息此时msg部分已经更新扩展字椴信息  
+   需要更改扩展信息的消息此时msg部分已经更新扩展字椴信息  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;更新结果  
+   更新结果  
 
 #### Discussion
 更新一条数据库存储消息的扩展字段信息

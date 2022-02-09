@@ -1,6 +1,6 @@
 # BMXLogLevel Constants Reference
 
-&nbsp;&nbsp;**Declared in** BMXDefines.h  
+  **Declared in** BMXDefines.h  
 
 ### BMXLogLevel
 
@@ -19,13 +19,13 @@
 
 <a name="" title="BMXLogLevelError"></a><code>BMXLogLevelError</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 
 <a name="" title="BMXLogLevelWarning"></a><code>BMXLogLevelWarning</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 
 <a name="" title="BMXLogLevelDebug"></a><code>BMXLogLevelDebug</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 

@@ -1,7 +1,7 @@
 # BMXPushUserProfile Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXPushUserProfile.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXPushUserProfile.h  
 
 ## Properties
 

@@ -1,7 +1,7 @@
 # BMXSDKConfig Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXSDKConfig.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXSDKConfig.h  
 
 ## Properties
 

@@ -1,7 +1,7 @@
 # BMXRoster Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXRoster.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXRoster.h  
 
 ## Properties
 

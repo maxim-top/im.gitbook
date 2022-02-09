@@ -1,9 +1,9 @@
 # BMXVideoAttachment Class Reference
 
-&nbsp;&nbsp;**Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
+  **Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
 <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
 NSObject  
-&nbsp;&nbsp;**Declared in** BMXVideoAttachment.h  
+  **Declared in** BMXVideoAttachment.h  
 
 ## Properties
 

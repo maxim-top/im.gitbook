@@ -1,29 +1,29 @@
 # BMXClient Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXClient.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXClient.h  
 
 ## Properties
 
 <a name="//api/name/chatService" title="chatService"></a>
 ### chatService
 
-`@property (nonatomic, strong, readonly) id&lt;BMXChatManager&gt; chatService`
+`@property (nonatomic, strong, readonly) id<BMXChatManager> chatService`
 
 <a name="//api/name/groupService" title="groupService"></a>
 ### groupService
 
-`@property (nonatomic, strong, readonly) id&lt;BMXGroupManager&gt; groupService`
+`@property (nonatomic, strong, readonly) id<BMXGroupManager> groupService`
 
 <a name="//api/name/pushService" title="pushService"></a>
 ### pushService
 
-`@property (nonatomic, strong, readonly) id&lt;BMXPushManager&gt; pushService`
+`@property (nonatomic, strong, readonly) id<BMXPushManager> pushService`
 
 <a name="//api/name/rosterService" title="rosterService"></a>
 ### rosterService
 
-`@property (nonatomic, strong, readonly) id&lt;BMXRosterManager&gt; rosterService`
+`@property (nonatomic, strong, readonly) id<BMXRosterManager> rosterService`
 
 <a name="//api/name/sdkConfig" title="sdkConfig"></a>
 ### sdkConfig
@@ -33,7 +33,7 @@
 <a name="//api/name/userService" title="userService"></a>
 ### userService
 
-`@property (nonatomic, strong, readonly) id&lt;BMXUserManager&gt; userService`
+`@property (nonatomic, strong, readonly) id<BMXUserManager> userService`
 
 <a title="Class Methods" name="class_methods"></a>
 ## Class Methods
@@ -61,7 +61,7 @@
 #### Parameters
 
 *appID*  
-&nbsp;&nbsp;&nbsp;新变更的appId  
+   新变更的appId  
 
 #### Discussion
 更改SDK的appId，本操作会同时更新BMXConfig中的appId。
@@ -131,7 +131,7 @@
 #### Parameters
 
 *isLocal*  
-&nbsp;&nbsp;&nbsp;为true则使用本地缓存的dns配置，为false则从服务器获取最新的配置。  
+   为true则使用本地缓存的dns配置，为false则从服务器获取最新的配置。  
 
 #### Discussion
 获取app的服务器网络配置，在初始化SDK之后登陆之前调用，可以提前获取服务器配置加快登陆速度。
@@ -149,10 +149,10 @@
 #### Parameters
 
 *type*  
-&nbsp;&nbsp;&nbsp;变化后的网络类型  
+   变化后的网络类型  
 
 *reconnect*  
-&nbsp;&nbsp;&nbsp;网络是否需要重连  
+   网络是否需要重连  
 
 #### Discussion
 处理网络状态发送变化
@@ -258,13 +258,13 @@
 #### Parameters
 
 *userName*  
-&nbsp;&nbsp;&nbsp;用户名  
+   用户名  
 
 *password*  
-&nbsp;&nbsp;&nbsp;密码  
+   密码  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;注册成功后从该函数处获取新注册用户的Profile信息，初始传入指向为空的shared_ptr对象即可。  
+   注册成功后从该函数处获取新注册用户的Profile信息，初始传入指向为空的shared_ptr对象即可。  
 
 #### Discussion
 注册新用户，username和password是必填参数

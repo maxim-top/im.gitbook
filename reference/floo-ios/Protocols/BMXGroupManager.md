@@ -1,7 +1,7 @@
 # BMXGroupManager Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXGroupManager.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXGroupManager.h  
 
 ## Instance Methods
 
@@ -36,21 +36,21 @@
 
   添加管理员
 
-`- (void)addAdmins:(BMXGroup *)*group* admins:(NSArray&lt;NSNumber*&gt; *)*admins* message:(NSString *)*message* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)addAdmins:(BMXGroup *)*group* admins:(NSArray<NSNumber*> *)*admins* message:(NSString *)*message* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *admins*  
-&nbsp;&nbsp;&nbsp;Array：id  
+   Array：id  
 
 *message*  
-&nbsp;&nbsp;&nbsp;String  
+   String  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BMXError  
+   BMXError  
 
 #### Discussion
   添加管理员
@@ -61,19 +61,19 @@
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
-`- (void)addDelegate:(id&lt;BMXGroupServiceProtocol&gt;)*aDelegate*`
+`- (void)addDelegate:(id<BMXGroupServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 ### addDelegate:delegateQueue:
 
-`- (void)addDelegate:(id&lt;BMXGroupServiceProtocol&gt;)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
+`- (void)addDelegate:(id<BMXGroupServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/addGroupListener:" title="addGroupListener:"></a>
 ### addGroupListener:
 
 添加群组变化监听者
 
-`- (void)addGroupListener:(id&lt;BMXGroupServiceProtocol&gt;)*listener*`
+`- (void)addGroupListener:(id<BMXGroupServiceProtocol>)*listener*`
 
 #### Discussion
 添加群组变化监听者
@@ -86,21 +86,21 @@
 
   添加群成员
 
-`- (void)addMembersToGroup:(BMXGroup *)*group* memberIdlist:(NSArray&lt;NSNumber*&gt; *)*memberIdlist* message:(NSString *)*message* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)addMembersToGroup:(BMXGroup *)*group* memberIdlist:(NSArray<NSNumber*> *)*memberIdlist* message:(NSString *)*message* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *memberIdlist*  
-&nbsp;&nbsp;&nbsp;id数组  
+   id数组  
 
 *message*  
-&nbsp;&nbsp;&nbsp;添加信息  
+   添加信息  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BMXError  
+   BMXError  
 
 #### Discussion
   添加群成员
@@ -126,7 +126,7 @@
 
 禁言
 
-`- (void)banMembers:(NSArray&lt;NSNumber*&gt; *)*members* group:(BMXGroup *)*group* reason:(NSString *)*reason* duration:(long long)*duration* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)banMembers:(NSArray<NSNumber*> *)*members* group:(BMXGroup *)*group* reason:(NSString *)*reason* duration:(long long)*duration* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 禁言
@@ -139,7 +139,7 @@
 
 添加黑名单
 
-`- (void)blockMembers:(BMXGroup *)*group* members:(NSArray&lt;NSNumber*&gt; *)*members* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)blockMembers:(BMXGroup *)*group* members:(NSArray<NSNumber*> *)*members* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 添加黑名单
@@ -157,10 +157,10 @@
 #### Parameters
 
 *option*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXCreatGroupOption.md">BMXCreatGroupOption</a>  
+   <a href="../Classes/BMXCreatGroupOption.md">BMXCreatGroupOption</a>  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Group info ,Error  
+   Group info ,Error  
 
 #### Discussion
 创建群
@@ -217,10 +217,10 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Error  
+   Error  
 
 #### Discussion
 销毁群(群主权限)
@@ -272,7 +272,7 @@
 
   获取Admins列表，如果设置了forceRefresh则从服务器拉取
 
-`- (void)getAdmins:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray&lt;BMXGroupMember*&gt; *, BMXError *error ))*aCompletionBlock*`
+`- (void)getAdmins:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray<BMXGroupMember*> *, BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
   获取Admins列表，如果设置了forceRefresh则从服务器拉取
@@ -311,7 +311,7 @@
 
 获取禁言列表
 
-`- (void)getBannedMembersByGroup:(BMXGroup *)*group* completion:(void ( ^ ) ( NSArray&lt;BMXGroupBannedMember*&gt; *bannedMemberList , BMXError *error ))*aCompletionBlock*`
+`- (void)getBannedMembersByGroup:(BMXGroup *)*group* completion:(void ( ^ ) ( NSArray<BMXGroupBannedMember*> *bannedMemberList , BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 获取禁言列表
@@ -329,13 +329,13 @@
 #### Parameters
 
 *cursor*  
-&nbsp;&nbsp;&nbsp;string  
+   string  
 
 *pageSize*  
-&nbsp;&nbsp;&nbsp;int  
+   int  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;NSArray<BMXGroupMember *> *memberList,  
+   NSArray<BMXGroupMember *> *memberList,  
 
 #### Discussion
   分页获取黑名单
@@ -348,7 +348,7 @@
 
 获取黑名单
 
-`- (void)getBlockListByGroup:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray&lt;BMXGroupMember*&gt; *, BMXError *error ))*aCompletionBlock*`
+`- (void)getBlockListByGroup:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray<BMXGroupMember*> *, BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 获取黑名单
@@ -366,10 +366,10 @@
 #### Parameters
 
 *name*  
-&nbsp;&nbsp;&nbsp;查询的群名称关键字  
+   查询的群名称关键字  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;搜索结果返回的群列表信息,<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>  
+   搜索结果返回的群列表信息,<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>  
 
 #### Discussion
 通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组
@@ -387,13 +387,13 @@
 #### Parameters
 
 *groupId*  
-&nbsp;&nbsp;&nbsp;群id  
+   群id  
 
 *forceRefresh*  
-&nbsp;&nbsp;&nbsp;如果设置了forceRefresh则从服务器拉取  
+   如果设置了forceRefresh则从服务器拉取  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;群  
+   群  
 
 #### Discussion
 获取群信息
@@ -406,7 +406,7 @@
 
 获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取
 
-`- (void)getGroupInfoByGroupIdArray:(NSArray&lt;NSNumber*&gt; *)*groupIdArray* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray *aGroups , BMXError *aError ))*aCompletionBlock*`
+`- (void)getGroupInfoByGroupIdArray:(NSArray<NSNumber*> *)*groupIdArray* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray *aGroups , BMXError *aError ))*aCompletionBlock*`
 
 #### Discussion
 获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取
@@ -424,10 +424,10 @@
 #### Parameters
 
 *forceRefresh*  
-&nbsp;&nbsp;&nbsp;如果设置了forceRefresh则从服务器拉取  
+   如果设置了forceRefresh则从服务器拉取  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;GroupList, Error  
+   GroupList, Error  
 
 #### Discussion
 获取群组列表
@@ -445,13 +445,13 @@
 #### Parameters
 
 *cursor*  
-&nbsp;&nbsp;&nbsp;string  
+   string  
 
 *pageSize*  
-&nbsp;&nbsp;&nbsp;int  
+   int  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;NSArray<BMXGroupInvitation *> *invitationList,  
+   NSArray<BMXGroupInvitation *> *invitationList,  
 
 #### Discussion
 分页获取群组邀请列表
@@ -482,16 +482,16 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *cursor*  
-&nbsp;&nbsp;&nbsp;String  
+   String  
 
 *pageSize*  
-&nbsp;&nbsp;&nbsp;int  
+   int  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;NSArray<BMXGroupMember *> *memberList,  
+   NSArray<BMXGroupMember *> *memberList,  
 
 #### Discussion
 分页获取群成员列表
@@ -504,18 +504,18 @@
 
 获取群成员列表，
 
-`- (void)getMembers:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray&lt;BMXGroupMember*&gt; *groupList , BMXError *error ))*aCompletionBlock*`
+`- (void)getMembers:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray<BMXGroupMember*> *groupList , BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *forceRefresh*  
-&nbsp;&nbsp;&nbsp;如果设置了forceRefresh则从服务器拉取，最多拉取1000人  
+   如果设置了forceRefresh则从服务器拉取，最多拉取1000人  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;List:BMXGroupMember ,BMXError  
+   List:BMXGroupMember ,BMXError  
 
 #### Discussion
 获取群成员列表，
@@ -528,7 +528,7 @@
 
 批量获取群组成员昵称
 
-`- (void)getMembersNickName:(BMXGroup *)*group* memberIdlist:(NSArray&lt;NSNumber*&gt; *)*memberIdlist* completion:(void ( ^ ) ( NSArray *aGroupMembers , BMXError *aError ))*aCompletionBlock*`
+`- (void)getMembersNickName:(BMXGroup *)*group* memberIdlist:(NSArray<NSNumber*> *)*memberIdlist* completion:(void ( ^ ) ( NSArray *aGroupMembers , BMXError *aError ))*aCompletionBlock*`
 
 #### Discussion
 批量获取群组成员昵称
@@ -541,7 +541,7 @@
 
 获取群共享文件列表
 
-`- (void)getSharedFilesListByGroup:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray&lt;BMXGroupSharedFile*&gt; *sharedFileList , BMXError *error ))*aCompletionBlock*`
+`- (void)getSharedFilesListByGroup:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( NSArray<BMXGroupSharedFile*> *sharedFileList , BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 获取群共享文件列表
@@ -559,13 +559,13 @@
 #### Parameters
 
 *cursor*  
-&nbsp;&nbsp;&nbsp;string  
+   string  
 
 *pageSize*  
-&nbsp;&nbsp;&nbsp;int  
+   int  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;NSArray<BMXGroupMember *> *memberList  
+   NSArray<BMXGroupMember *> *memberList  
 
 #### Discussion
 分页获取禁言列表
@@ -583,13 +583,13 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *message*  
-&nbsp;&nbsp;&nbsp;申请信息  
+   申请信息  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Error  
+   Error  
 
 #### Discussion
 加入一个群，根据群设置可能需要管理员批准
@@ -607,10 +607,10 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;Error  
+   Error  
 
 #### Discussion
 退出群
@@ -628,10 +628,10 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>,BMXError  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>,BMXError  
 
 #### Discussion
 获取群详情，从服务端拉取最新信息
@@ -657,21 +657,21 @@
 
 删除管理员
 
-`- (void)removeAdmins:(BMXGroup *)*group* admins:(NSArray&lt;NSNumber*&gt; *)*admins* reason:(NSString *)*reason* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)removeAdmins:(BMXGroup *)*group* admins:(NSArray<NSNumber*> *)*admins* reason:(NSString *)*reason* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *admins*  
-&nbsp;&nbsp;&nbsp;Array：id  
+   Array：id  
 
 *reason*  
-&nbsp;&nbsp;&nbsp;String  
+   String  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BMXError  
+   BMXError  
 
 #### Discussion
 删除管理员
@@ -682,14 +682,14 @@
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 ### removeDelegate:
 
-`- (void)removeDelegate:(id&lt;BMXGroupServiceProtocol&gt;)*aDelegate*`
+`- (void)removeDelegate:(id<BMXGroupServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removeGroupListener:" title="removeGroupListener:"></a>
 ### removeGroupListener:
 
 移除群组变化监听者
 
-`- (void)removeGroupListener:(id&lt;BMXGroupServiceProtocol&gt;)*listener*`
+`- (void)removeGroupListener:(id<BMXGroupServiceProtocol>)*listener*`
 
 #### Discussion
 移除群组变化监听者
@@ -702,21 +702,21 @@
 
 删除群成员
 
-`- (void)removeMembersWithGroup:(BMXGroup *)*group* memberlist:(NSArray&lt;NSNumber*&gt; *)*memberList* reason:(NSString *)*reason* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)removeMembersWithGroup:(BMXGroup *)*group* memberlist:(NSArray<NSNumber*> *)*memberList* reason:(NSString *)*reason* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;<a href="../Classes/BMXGroup.md">BMXGroup</a>  
+   <a href="../Classes/BMXGroup.md">BMXGroup</a>  
 
 *memberList*  
-&nbsp;&nbsp;&nbsp;memberlist  
+   memberlist  
 
 *reason*  
-&nbsp;&nbsp;&nbsp;reason  
+   reason  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BMXError  
+   BMXError  
 
 #### Discussion
 删除群成员
@@ -747,13 +747,13 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;进行操作的群组  
+   进行操作的群组  
 
 *enable*  
-&nbsp;&nbsp;&nbsp;是否允许操作  
+   是否允许操作  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BMXError  
+   BMXError  
 
 #### Discussion
 设置是否允许群成员设置群信息
@@ -784,13 +784,13 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;进行操作的群组  
+   进行操作的群组  
 
 *enable*  
-&nbsp;&nbsp;&nbsp;是否开启  
+   是否开启  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BMXError  
+   BMXError  
 
 #### Discussion
 设置是否开启群消息已读功能
@@ -847,13 +847,13 @@
 #### Parameters
 
 *group*  
-&nbsp;&nbsp;&nbsp;进行操作的群组  
+   进行操作的群组  
 
 *enable*  
-&nbsp;&nbsp;&nbsp;是否开启  
+   是否开启  
 
 *aCompletionBlock*  
-&nbsp;&nbsp;&nbsp;BMXError  
+   BMXError  
 
 #### Discussion
 设置群成员是否开可见群历史聊天记录
@@ -944,7 +944,7 @@
 
 解除禁言
 
-`- (void)unbanMembersByGroup:(BMXGroup *)*group* members:(NSArray&lt;NSNumber*&gt; *)*members* reason:(NSString *)*reason* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)unbanMembersByGroup:(BMXGroup *)*group* members:(NSArray<NSNumber*> *)*members* reason:(NSString *)*reason* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 解除禁言
@@ -957,7 +957,7 @@
 
 从黑名单删除
 
-`- (void)unblockMember:(BMXGroup *)*group* members:(NSArray&lt;NSNumber*&gt; *)*members* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
+`- (void)unblockMember:(BMXGroup *)*group* members:(NSArray<NSNumber*> *)*members* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 #### Discussion
 从黑名单删除

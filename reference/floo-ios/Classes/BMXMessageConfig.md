@@ -1,14 +1,14 @@
 # BMXMessageConfig Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXMessageConfig.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXMessageConfig.h  
 
 ## Properties
 
 <a name="//api/name/groupMemberList" title="groupMemberList"></a>
 ### groupMemberList
 
-`@property (nonatomic, strong) NSArray&lt;NSString*&gt; *groupMemberList`
+`@property (nonatomic, strong) NSArray<NSString*> *groupMemberList`
 
 <a name="//api/name/mentionAll" title="mentionAll"></a>
 ### mentionAll
@@ -18,7 +18,7 @@
 <a name="//api/name/mentionList" title="mentionList"></a>
 ### mentionList
 
-`@property (nonatomic, strong) NSArray&lt;NSString*&gt; *mentionList`
+`@property (nonatomic, strong) NSArray<NSString*> *mentionList`
 
 <a name="//api/name/mentionMessage" title="mentionMessage"></a>
 ### mentionMessage

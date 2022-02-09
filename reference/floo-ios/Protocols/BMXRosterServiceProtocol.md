@@ -1,7 +1,7 @@
 # BMXRosterServiceProtocol Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXRosterServiceProtocol.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXRosterServiceProtocol.h  
 
 ## Instance Methods
 
@@ -15,10 +15,10 @@
 #### Parameters
 
 *sponsorId*  
-&nbsp;&nbsp;&nbsp;发起方  
+   发起方  
 
 *recipientId*  
-&nbsp;&nbsp;&nbsp;接受方  
+   接受方  
 
 #### Discussion
 添加好友
@@ -38,10 +38,10 @@
 #### Parameters
 
 *sponsorId*  
-&nbsp;&nbsp;&nbsp;发起方  
+   发起方  
 
 *recipientId*  
-&nbsp;&nbsp;&nbsp;接受方  
+   接受方  
 
 #### Discussion
 <ul>
@@ -64,10 +64,10 @@
 #### Parameters
 
 *sponsorId*  
-&nbsp;&nbsp;&nbsp;发起方  
+   发起方  
 
 *recipientId*  
-&nbsp;&nbsp;&nbsp;接受方  
+   接受方  
 
 #### Discussion
 <ul>
@@ -91,13 +91,13 @@
 #### Parameters
 
 *sponsorId*  
-&nbsp;&nbsp;&nbsp;发起方  
+   发起方  
 
 *recipientId*  
-&nbsp;&nbsp;&nbsp;接受方  
+   接受方  
 
 *reason*  
-&nbsp;&nbsp;&nbsp;拒绝理由  
+   拒绝理由  
 
 #### Discussion
 <ul>
@@ -121,13 +121,13 @@
 #### Parameters
 
 *sponsorId*  
-&nbsp;&nbsp;&nbsp;发起方  
+   发起方  
 
 *recipientId*  
-&nbsp;&nbsp;&nbsp;接受方  
+   接受方  
 
 *message*  
-&nbsp;&nbsp;&nbsp;好友邀请信息  
+   好友邀请信息  
 
 #### Discussion
 <ul>
@@ -150,10 +150,10 @@
 #### Parameters
 
 *sponsorId*  
-&nbsp;&nbsp;&nbsp;发起方  
+   发起方  
 
 *recipientId*  
-&nbsp;&nbsp;&nbsp;接受方  
+   接受方  
 
 #### Discussion
 <ul>
@@ -178,10 +178,10 @@
 #### Parameters
 
 *sponsorId*  
-&nbsp;&nbsp;&nbsp;发起方  
+   发起方  
 
 *recipientId*  
-&nbsp;&nbsp;&nbsp;接受方  
+   接受方  
 
 #### Discussion
 <pre><code>删除好友

@@ -1,7 +1,7 @@
 # BMXUserProfile Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXUserProfile.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXUserProfile.h  
 
 ## Properties
 

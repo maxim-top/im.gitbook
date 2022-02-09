@@ -1,7 +1,7 @@
 # BMXUserServiceProtocol Protocol Reference
 
-&nbsp;&nbsp;**Conforms to** NSObject  
-&nbsp;&nbsp;**Declared in** BMXUserServiceProtocol.h  
+  **Conforms to** NSObject  
+  **Declared in** BMXUserServiceProtocol.h  
 
 ## Instance Methods
 
@@ -15,7 +15,7 @@
 #### Parameters
 
 *status*  
-&nbsp;&nbsp;&nbsp;网络状态  
+   网络状态  
 
 #### Discussion
 链接状态发生变化
@@ -72,7 +72,7 @@
 #### Parameters
 
 *userProflie*  
-&nbsp;&nbsp;&nbsp;用户信息  
+   用户信息  
 
 #### Discussion
 用户登陆
@@ -90,7 +90,7 @@
 #### Parameters
 
 *error*  
-&nbsp;&nbsp;&nbsp;错误码  
+   错误码  
 
 #### Discussion
 用户登出

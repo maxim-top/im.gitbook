@@ -1,8 +1,8 @@
 # BMXFileAttachment Class Reference
 
-&nbsp;&nbsp;**Inherits from** <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
+  **Inherits from** <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
 NSObject  
-&nbsp;&nbsp;**Declared in** BMXFileAttachment.h  
+  **Declared in** BMXFileAttachment.h  
 
 ## Properties
 
@@ -84,13 +84,13 @@ NSObject
 #### Parameters
 
 *aData*  
-&nbsp;&nbsp;&nbsp;文件数据  
+   文件数据  
 
 *displayName*  
-&nbsp;&nbsp;&nbsp;文件名称  
+   文件名称  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 #### Return Value
 BMXFileAttachment
@@ -111,13 +111,13 @@ BMXFileAttachment
 #### Parameters
 
 *path*  
-&nbsp;&nbsp;&nbsp;文件路径  
+   文件路径  
 
 *displayName*  
-&nbsp;&nbsp;&nbsp;文件名称  
+   文件名称  
 
 *conversationId*  
-&nbsp;&nbsp;&nbsp;会话id  
+   会话id  
 
 #### Discussion
 初始化文件BMXFileAttachment

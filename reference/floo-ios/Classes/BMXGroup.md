@@ -1,7 +1,7 @@
 # BMXGroup Class Reference
 
-&nbsp;&nbsp;**Inherits from** NSObject  
-&nbsp;&nbsp;**Declared in** BMXGroup.h  
+  **Inherits from** NSObject  
+  **Declared in** BMXGroup.h  
 
 ## Overview
 

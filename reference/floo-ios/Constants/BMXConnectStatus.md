@@ -1,6 +1,6 @@
 # BMXConnectStatus Constants Reference
 
-&nbsp;&nbsp;**Declared in** BMXDefines.h  
+  **Declared in** BMXDefines.h  
 
 ### BMXConnectStatus
 
@@ -17,9 +17,9 @@
 
 <a name="" title="BMXConnectStatusDisconnected"></a><code>BMXConnectStatusDisconnected</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 
 <a name="" title="BMXConnectStatusConnected"></a><code>BMXConnectStatusConnected</code>
 
-&nbsp;&nbsp;&nbsp;Declared In `BMXDefines.h`.
+   Declared In `BMXDefines.h`.
 
