@@ -1,5 +1,4 @@
 疫情期间免费提供高级技术顾问服务
-================
 
 美信拓扑 _2020-02-03 16:45_
 
@@ -97,4 +96,14 @@
 关注「美信拓扑」，一键启用多云架构的即时通讯云服务
 
 ![图片](../.gitbook/assets/articles/autogen-d6fd9dd440b83a813e637e31f30dd8434bac85e90417c2cd347ff36a3cac71bd.webp)
+
+***
+
+  
+
+扫描使用「美信拓扑IM」小程序版，在线咨询
+
+  
+
+![图片](../.gitbook/assets/articles/autogen-bfc4fb724a629f5d6a9649dd7cacc660374775d71667356cfdcd7a4f6afa022b.webp)
 
