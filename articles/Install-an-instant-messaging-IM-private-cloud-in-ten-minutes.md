@@ -3,7 +3,7 @@
 
 原创 一乐 美信拓扑 _2020-03-26 19:49_
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjK8e4fCibRUBW4dPicMHKibaCSxPXm2kl5ZugIzOeuPmEvyhULjMruWJrA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](../.gitbook/assets/articles/autogen-3327f0040a74492f5f4424d29ce2e9b8325971b165772ba135f1168b265a3c9e.webp)
 
 _Photo by Ben Kolde on Unsplash_
 
@@ -31,7 +31,7 @@ _Photo by Ben Kolde on Unsplash_
 
 登录控制台 点击创建应用。应用创建默认为免费版套餐，也可以升级为商业版。
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjJUU4OfMU4EXiczjQzBEpctOCgA3ZggrxWDDSXx7WW5ibMCiah6wnRu9Dw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-f38ceb53130c10ffd148096ad0f9f317f3232418ee3d5936f13a516411f81d52.webp) 
 
 ### 
 
@@ -45,21 +45,21 @@ _Photo by Ben Kolde on Unsplash_
 
 1\. 应用创建成功后，进入应用详情页面。 
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQje8AjiaFEsJwxUaibibSkRdwdsO8ekaibtVlbPSYhHBRSR37nde0URiaPIsA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-cded3629a354630e8068517297cb57e3ba8145e71cc70f8605aa1a0a0b4301e6.webp) 
 
 2\. 点击更改计划，选择私有云，点击“继续”。
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjd2Nia1tC3WvCslqHOwL2YibXaU2a57WNLv8uj1gLSJPtPwmYUbr8xUuA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-641c7e6796b1be818d6b1c1073ca5732d4b5658c550279b3fc3429b8b28183a2.webp) 
 
 3\. 点击私有云图标，进入私有云详情页面，下载安装包 maxim.ctl
 
     wget https://package.maximtop.com/linux/amd64/maxim.ctl
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQj76MFdic2SCtoBTAKKibIuicl9IGwrUqkAzRemt4kjH6G1KAIUREN6sXYg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)  
+ ![图片](../.gitbook/assets/articles/autogen-7005096df70f2318f868bc5e73e625906131bc631237fff954b6607fc05e9d22.webp)  
 
 4\. 获取安装token。可以复制到粘贴板，也可以下载到本地文件备用，安装脚本里我们用 maxim.token.XXXXXX.txt 演示。
 
-  ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjcRfusibtFSkbibIXnOA4WlJnaFhAnIqnSMVd09IAN334FjsEK2w7sqFA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+  ![图片](../.gitbook/assets/articles/autogen-48be1ea8facfd2d43290255724f900a36428d5a59763ff63fda6f185e7f30e20.webp) 
 
 ### 
 
@@ -100,7 +100,7 @@ _Photo by Ben Kolde on Unsplash_
 
 执行结果截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQj1YAwXNeN6ol9cgosqxXV3Y3fJP5YnvzFlsddibzqxn25R18JLQ9xiaibA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-e571529ce968949d53f0d21998ccdf45b50de845aad0c5eda31361f393137c56.webp) 
 
   
 
@@ -120,11 +120,11 @@ A. 如果安装服务器已有公网IP，执行如下命令开始安装。
 
 开始执行的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjAKE94ZmoYeA45yibC188Ehox7qNdBMqUyC6eYErA4DlZnqopgUWBeXg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-c9d288bfd19a75d715bfe1068305b9b37ccd99f11bf78d7a8060daa27ec1e3f0.webp) 
 
 安装完成的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjTchS3E9hBNJAPib6GOUAnOUR31KyVpraYROPa5gCcnHvCP18KT1zqjg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-29b7b0f50f102060638120767bee66c327f04cc1adffd911d893f089a0cd0eb.webp) 
 
   
 
@@ -140,11 +140,11 @@ B. 本地环境不可进行外部访问，安装时需要添加参数 --net inte
 
 开始执行的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjHwFqtX8xxq721JyLjLaibRN85HvOCKToNftgTZVBpVJffSGjCGcic6zA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-3d54cb3ccdf886a9c5e4a6bf4cd140de852488e4abf128cfa201d80c3a7418a2.webp) 
 
 安装完成的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjTchS3E9hBNJAPib6GOUAnOUR31KyVpraYROPa5gCcnHvCP18KT1zqjg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-29b7b0f50f102060638120767bee66c327f04cc1adffd911d893f089a0cd0eb.webp) 
 
 提示：等待安装完成，耗时10-15分钟左右，即可安装完成。
 
@@ -166,7 +166,7 @@ ssh登录master节点（172.16.0.78）执行如下命令，生成ssh用的公私
 
 执行结果截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjIkWbL0ZmL0RiaBsKklxlVzrT3X0NK1qK9ibWpj0UJ16UoSlUyK9TQicGQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-8aac49e00cd042f0fe1880b2eccd9a31400aca91d59b082802f334bbf47cff49.webp) 
 
   
 
@@ -176,21 +176,21 @@ ssh登录master节点（172.16.0.78）执行如下命令，生成ssh用的公私
 
 命令输出结果截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjIOPeMK9wHG5I94BPAK7sMTOiaM9KIWdeX5pbqon4X6IDbvWQmRx5TIg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-f120754ec03798943920f8f957c19430018c102f52c879f599a1e7e0c588d417.webp) 
 
   
 
 命令输出在172.16.0.78的执行结果：  
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQj591zmPfBcV8P6lKYqea9notMb59Zic59F52WF2A9sQYan5daSbY0Aag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-2d7b454465a8d4086cce07a689b20678be19aa965cc71c4788f9d6be80c226d9.webp) 
 
 命令输出在172.16.0.79的执行结果：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjGO3Bjs3mb0uXPCBlVXRtfCrUMicJCHWw4mjibJgNxr9C6LWnbKHFk8yg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-30f776bfc0be9e9fb3b531af5a7b86144cb4aa65f6852450951f289a6d7d4433.webp) 
 
 命令输出在172.16.0.80的执行结果：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjcJDzVSabCtmE1EJ26hGxvBZasjcH9OdJBYsvLKJz0nycFa8kkyoQjA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-eb8169381dfe95c908f3dd0b6b5a33fe026996cb52aa2fc388874b1e6d71ef73.webp) 
 
   
 
@@ -200,7 +200,7 @@ ssh登录master节点（172.16.0.78）执行如下命令，生成ssh用的公私
 
 执行结果截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjhh3LxiaJ6UZxSCia5TicHzFF54OmTYcKOzictj8PbzIkw6UeuH8WMunCEg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-28f1be69f9d1a8d5d23a5c24ec0cf99b2055b14fda99eecbde19ba6c33248111.webp) 
 
 3\. 运行安装
 
@@ -220,11 +220,11 @@ A. 如果服务器已有公网IP，执行如下命令开始安装。
 
 开始执行的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQj7RkhGDibKSmXH4u7zYgwRJ7iboEGBY2NYV0ytAeqcp7icUibghKicicLX7rg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-d99e0dee45d92cf9e1063fc4216ef27acaa4918376732a10e888fdb769956948.webp) 
 
 安装完成的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjDIYThDBwHVRibsQfgPWN1JYgtIC5xS0OOAPXicgFG4ndcpeVcovSY2KA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-815c3f0e9a93e3d71d6a12850151992ed97bd2b132c70f9503a6f11801b759e7.webp) 
 
   
 
@@ -238,11 +238,11 @@ B. 如果本地环境不可进行外部访问，安装时需要添加参数 --ne
 
 开始执行的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQj2BXbdyRKd6pCkCQG9G6mmWjrZKUeNPGNdBEiaQAvZSRochpAoYLVhiaQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-20c604bdd745d6ac05e330a5351fa3e6b27dfcd9e570ac96bf4dd39912f6cbe4.webp) 
 
 安装完成的截图：
 
- ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjDIYThDBwHVRibsQfgPWN1JYgtIC5xS0OOAPXicgFG4ndcpeVcovSY2KA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+ ![图片](../.gitbook/assets/articles/autogen-815c3f0e9a93e3d71d6a12850151992ed97bd2b132c70f9503a6f11801b759e7.webp) 
 
 提示：等待安装完成，耗时10-20分钟左右，即可安装完成。
 
@@ -258,13 +258,13 @@ B. 如果本地环境不可进行外部访问，安装时需要添加参数 --ne
 
 3\. 如何查看私有云安装进度，以及数据迁移状态？
 
-  ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjC94FDxufXEgUrfK7ShDhcRDbOER7Gic1ul0kOOZlkhLFPicqMfCEiaJ5w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1) 
+  ![图片](../.gitbook/assets/articles/autogen-5c7880eface5ec800aa3bf50e1493a4a0f39c124ce42c96e2085769a61395d0b.webp) 
 
   
 
 4\. 安装完成后，打开美信拓扑控制台进入系统状态页面。
 
-  ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjEib7TvnbCw8uJNa3QH8Giale9QqyWId7P5ts6yKRO3aTjVwCMEZmbmFw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+  ![图片](../.gitbook/assets/articles/autogen-8930e00c6e548fa9a8ad0b08f16906d502f707ae2823b4dad9b7241574edc036.webp)
 
   
 
@@ -276,4 +276,4 @@ www.maximtop.com
 
   
 
-关注「美信拓扑」公众号 ，了解一键启用多云架构的即时通讯云服务  ![图片](https://mmbiz.qpic.cn/mmbiz_png/p4t8bh5rKGrMRWWfH3Zs3H77aXiagJZQjvianu2IaMf1M5gtEuiahVo1lQWTKJaIabPfSRNLGNWzazN2ATMMRWc2Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+关注「美信拓扑」公众号 ，了解一键启用多云架构的即时通讯云服务  ![图片](../.gitbook/assets/articles/autogen-c8d075136a4c9362a33f0aec83bb43435c668ce4b52c292bf396c42278482745.webp)
