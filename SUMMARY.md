@@ -150,3 +150,5 @@
   * [骑最酷的车，做最酷的技术](articles/Ride-the-coolest-car-and-do-the-coolest-technology.md)
   * [SaaS定价一：每月￥199的 IM 云服务](articles/SaaS-Pricing-One-IM-cloud-service-of-199-per-month.md)
   * [SaaS定价二：按月付费的私有云](articles/SaaS-Pricing-Two-Monthly-Private-Cloud.md)
+  * [SaaS定价三：没有邻居的专有云](articles/SaaS-Pricing-Three-Proprietary-Cloud-Without-Neighbors.md)
+  
