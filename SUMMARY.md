@@ -145,4 +145,5 @@
   * [【科创人独家】美信拓扑创始人一乐：如何登山不是最重要的问题，山峰才是](articles/How-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.md)
   * [一毛钱一小时的 IM 私有云要吗？](articles/Want-an-IM-private-cloud-for-a-dime-an-hour.md)
   * [美信拓扑CEO一乐：从「玩物丧志」到「好高骛远」，我在坚持什么？](articles/From-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-I-insisting-on.md)
+  * [把握技术变革的机遇：看云服务浪潮如何演进 | TVP十日谈预告](articles/Grasping-the-Opportunity-of-Technological-Change-Seeing-the-Evolution-of-the-Cloud-Service-Wave-TVP-10-Day-Talk-Preview.md)
   
