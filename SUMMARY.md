@@ -143,4 +143,5 @@
   * [树莓派中的 IM 私有云支持多少并发？](articles/How-much-concurrency-is-supported-by-IM-Private-Cloud-in-Raspberry-Pi.md)
   * [用 SWIG 生成 Java 代码（IM SDK）](articles/Generating-Java-code-with-SWIG.md)
   * [【科创人独家】美信拓扑创始人一乐：如何登山不是最重要的问题，山峰才是](articles/How-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.md)
+  * [一毛钱一小时的 IM 私有云要吗？](articles/Want-an-IM-private-cloud-for-a-dime-an-hour.md)
   
