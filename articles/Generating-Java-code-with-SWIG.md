@@ -129,7 +129,37 @@ Photo by @JamieDotSt on @unsplash
 
 也因此，整个类库（floo-android）分为三部分：
 
-                                                     +---> BMXUserService
+```
+                                                 +---> BMXUserService
+                                                 |
+                              +---------------+  +---> BMXChatService
+                              |               |  |
+                          +---+ 低级 API: L/S  +------> BMXRosterService
+                          |   |               |  |
+                          |   +---------------+  +---> BMXGroupService
+                          |
+                          |                         +---> BMXUserManager
+                          |   +---------------+     |
++----------------------+  |   |               |     +---> BMXChatManager
+|                      |  +---+ 高级 API: H/A +-----+
+| 美信拓扑 IM SDK: Floo +--+   |               |     +---> BMXRosterManager
+|                      |  |   +---------------+     |
++----------------------+  |                         +---> BMXGroupManager
+                          |
+                          |                       +--->  BMXClient
+                          |   +----------------+  |
+                          |   |                |  +--->  BMXSDKConfig
+                          +---+ Utility：工具类 +--+
+                              |                |  +--->  BMXMessage
+                              +----------------+  |
+                                                  +--->  BMXConversation
+                                                  |
+                                                  +--->  BMXUserProfile
+                                                  |
+                                                  +--->  BMXGroup
+                                                  |
+                                                  +--->  BMXDevice
+```
 
 1. 低级 API (low-level)
 
@@ -160,23 +190,106 @@ TIPS：如果你已阅读到这里，可以给自己点个赞啦。
 ## 代码
 
 整个工程代码结构比较简单，IM API 相关的头文件和so文件已经放在工程里，而运行命令也只有关键的一行：  
-
-    /usr/local/bin/swig -debug-classes -debug-module 4 -debug-typemap -c++ -java -package im.floo.floolib -outdir src/main/java/im/floo/floolib/ -o src/main/cpp/floo_wrap.cxx -Ifloo/include -Ifloo/src swig/floo.i
-
+```
+/usr/local/bin/swig -debug-classes -debug-module 4 -debug-typemap -c++ -java -package im.floo.floolib -outdir src/main/java/im/floo/floolib/ -o src/main/cpp/floo_wrap.cxx -Ifloo/include -Ifloo/src swig/floo.i
+```
 指定输出 Java 代码的包名是 im.floo.floolib，指定 floo 头文件的地址，剩下的就是 SWIG 定义文件了，他们都放在 ./swig/floo.i \[7\] 里，下面是 49-126 行：  
 
-    %include "std_shared_ptr.i"
+```
+%include "std_shared_ptr.i"
+%include "std_vector.i"
+%include "std_string.i"
+%shared_ptr(floo::BMXMessageConfig)
+%shared_ptr(floo::BMXMessage)
+%template(BMXMessageList) std::vector<std::shared_ptr<floo::BMXMessage>>;
+
+typedef floo::BMXConversation::Type BMXConversationType;
+
+%shared_ptr(floo::BMXConversation)
+%template(BMXConversationList) std::vector<std::shared_ptr<floo::BMXConversation>>;
+
+%shared_ptr(floo::BMXRosterItem)
+%template(BMXRosterItemList) std::vector<std::shared_ptr<floo::BMXRosterItem>>;
+%shared_ptr(floo::BMXDevice)
+%template(BMXDeviceList) std::vector<std::shared_ptr<floo::BMXDevice>>;
+
+%shared_ptr(floo::BMXImageAttachment)
+%shared_ptr(floo::BMXLocationAttachment)
+%shared_ptr(floo::BMXMessageAttachment)
+%shared_ptr(floo::BMXNetworkListener)
+%shared_ptr(floo::BMXClient)
+%shared_ptr(floo::BMXBaseObject)
+%shared_ptr(floo::BMXSDKConfig)
+%shared_ptr(floo::BMXFileAttachment)
+%shared_ptr(floo::BMXGroup)
+%shared_ptr(floo::BMXGroup::Member)
+%shared_ptr(floo::BMXGroup::BannedMember)
+%shared_ptr(floo::BMXGroup::Announcement)
+%shared_ptr(floo::BMXGroup::SharedFile)
+%shared_ptr(floo::BMXRosterService::Application)
+%shared_ptr(floo::BMXGroup::Application)
+%shared_ptr(floo::BMXGroup::Invitation)
+%shared_ptr(floo::BMXUserProfile)
+%shared_ptr(floo::UserProfileImpl)
+%shared_ptr(floo::BMXVoiceAttachment)
+%shared_ptr(floo::BMXVideoAttachment)
+%shared_ptr(floo::BMXResultPage<floo::BMXMessage>)
+
+%template(BMXGroupList) std::vector<std::shared_ptr<floo::BMXGroup>>;
+%template(BMXGroupMemberList) std::vector<std::shared_ptr<floo::BMXGroup::Member>>;
+%template(BMXGroupBannedMemberList) std::vector<std::shared_ptr<floo::BMXGroup::BannedMember>>;
+%template(BMXGroupSharedFileList) std::vector<std::shared_ptr<floo::BMXGroup::SharedFile>>;
+%template(BMXGroupAnnouncementList) std::vector<std::shared_ptr<floo::BMXGroup::Announcement>>;
+%template(BMXRosterServiceApplicationList) std::vector<std::shared_ptr<floo::BMXRosterService::Application>>;
+%template(BMXGroupApplicationList) std::vector<std::shared_ptr<floo::BMXGroup::Application>>;
+%template(BMXGroupInvitationList) std::vector<std::shared_ptr<floo::BMXGroup::Invitation>>;
+
+%template(ListOfLongLong) std::vector<long long>;
+
+%include "bmx_error.h"
+%include "bmx_defines.h"
+%include "bmx_device.h"
+%include "bmx_base_object.h"
+%include "bmx_message_attachment.h"
+%include "bmx_message_config.h"
+%include "bmx_message.h"
+%include "bmx_conversation.h"
+%include "bmx_sdk_config.h"
+%include "bmx_network_listener.h"
+%include "bmx_chat_service.h"
+%include "bmx_chat_service_listener.h"
+%include "bmx_client.h"
+%include "bmx_file_attachment.h"
+%exception floo::BMXFileAttachment::dynamic_cast(floo::BMXMessageAttachment *attachment) {
+  $action
+    if (!result) {
+      jclass excep = jenv->FindClass("java/lang/ClassCastException");
+      if (excep) {
+        jenv->ThrowNew(excep, "dynamic_cast exception");
+      }
+    }
+}
+%extend floo::BMXFileAttachment {
+  static floo::BMXFileAttachment *dynamic_cast(floo::BMXMessageAttachment *attachment) {
+    return dynamic_cast<floo::BMXFileAttachment *>(attachment);
+  }
+};
+```
 
 详细代码可以去仓库里查看，这里只提几点，希望对你后续使用有所帮助：
 
 1. 标准库有专门头文件，如果你用了它们，也需要首先关联它们的定义文件
-
-    %include "std_shared_ptr.i"
-
+```
+%include "std_shared_ptr.i"
+```
 2\. 继承可以用 % entend 关键字
-
-    %extend floo::BMXFileAttachment {
-
+```
+%extend floo::BMXFileAttachment {
+  static floo::BMXFileAttachment *dynamic_cast(floo::BMXMessageAttachment *attachment) {
+    return dynamic_cast<floo::BMXFileAttachment *>(attachment);
+  }
+};
+```
 3\. 最后一点，也是最重要的一点是：顺序很重要，顺序很重要，顺序很重要！
 
 因为代码生成的过程是单次遍历，所以在生成当前代码的时候，如果用到的类没有被定义，就会重新级联生成一个新的辅助类，这样你会得到很多命名超长的类，很难看很难用。  
