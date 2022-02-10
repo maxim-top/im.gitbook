@@ -139,4 +139,3 @@
 * [文章](articles/README.md)
   * [云服务的下一个十年](articles/the-next-decade-of-cloud-services.md)
   * [十分钟安装一套即时通讯 IM 私有云](articles/Install-an-instant-messaging-IM-private-cloud-in-ten-minutes.md)
-  * [十分钟安装一套即时通讯 IM 私有云](articles/shi-fen-zhong-an-zhuang-yi-tao-ji-shi-tong-xun-im-si-you-yun.md)
