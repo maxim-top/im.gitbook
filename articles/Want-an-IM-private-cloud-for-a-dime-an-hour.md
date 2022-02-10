@@ -67,9 +67,9 @@
 第三步，查看已安装服务信息。
 
 购买完毕后服务器会自动启动，安装程序也会随机运行，自动安装美信拓扑 IM 私有云（大概需要十几分钟）。随后可以登录到服务器终端，执行命令获取用户名、密码、AppID等信息：
-
-    cat /etc/maxim/market
-
+```
+cat /etc/maxim/market
+```
 其中，用户名和密码用于登录美信拓扑控制台台， AppID 则用于客户端登录和服务端调用。
 
   
@@ -93,9 +93,9 @@
 ![图片](../.gitbook/assets/articles/autogen-715e3946ae437b7a8b271a1d3c147eb1c5e9d804069f45249aa03c6734232bf4.png)
 
 你也可选择第二种方式，即登陆服务器终端运行命令：  
-
-    kubectl -n $(kubectl get namespace|grep maxim-|awk ‘{print $1}’) get pods
-
+```
+kubectl -n $(kubectl get namespace|grep maxim-|awk ‘{print $1}’) get pods
+```
 如果所有 Kubernetes 内 Pod 均为 Running ，则系统运行正常。需要注意的是，第二种方式仅为服务运行，是否正常工作还要以控制台中巡检程序的结果为准。
 
 ### **2\. 如何调整规格**  
@@ -106,7 +106,10 @@
 
 然后登陆服务器，运行如下命令：
 
-    ln -sf /usr/bin/maxim-market /usr/bin/maxim.ctl ##老版本需要复制链接；
+```
+ln -sf /usr/bin/maxim-market /usr/bin/maxim.ctl ##老版本需要复制链接；
+/usr/bin/maxim.ctl update --token-file INSTALL_TOKEN_FILE
+```
 
 注意：更换规格会产生额外的费用，请确保控制台已充值相应金额，否则会导致服务被自动关停。
 
