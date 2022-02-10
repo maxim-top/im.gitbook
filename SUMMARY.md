@@ -138,4 +138,5 @@
     * [文件操作](reference/server-api/file.md)
 * [文章](articles/README.md)
   * [云服务的下一个十年](articles/the-next-decade-of-cloud-services.md)
+  * [疫情期间免费提供高级技术顾问服务](articles/Provide-free-senior-technical-consulting-services-during-the-epidemic.md)
   * [十分钟安装一套即时通讯 IM 私有云](articles/Install-an-instant-messaging-IM-private-cloud-in-ten-minutes.md)
