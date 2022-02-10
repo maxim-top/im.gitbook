@@ -83,7 +83,7 @@
 
 **点击下方小程序进行报名或点击文末阅读原文链接进行报名。**
 
-![](http://mmbiz.qpic.cn/mmbiz_png/ptfZoLiatnib6SW9r7ia042zyrgeOrZc52fM1JtRuVual7rEDqX2Bn4Q566Ko16ia836UO8rHOslFBNy3oQLb9LH1w/640?wx_fmt=png&wxfrom=200)TGO鲲鹏会会员服务，，，数字化转型与摩托车赛道开放日小程序
+![]( https://mmbiz.qpic.cn/mmbiz_png/ptfZoLiatnib6SW9r7ia042zyrgeOrZc52fM1JtRuVual7rEDqX2Bn4Q566Ko16ia836UO8rHOslFBNy3oQLb9LH1w/640?wx_fmt=png&wxfrom=200 )TGO鲲鹏会会员服务，，，数字化转型与摩托车赛道开放日小程序
 
 ## 关于创新企业研习营
 
