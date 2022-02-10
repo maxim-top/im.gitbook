@@ -4,7 +4,7 @@
 
 美信拓扑技术分享系列 0x01。关注「美信拓扑」微信公众号，第一时间阅读本系列后续文章，了解美信拓扑IM的协议、架构和源码。
 
-********4000人同时在线，这是美信拓扑 IM 私有云的数据。********是的，只需要一个400块的树莓派4B。注意，这不是长连数据，是登陆且发消息的场景，详细性能数据见文后压测报告。
+**4000人同时在线，这是美信拓扑 IM 私有云的数据。**是的，只需要一个400块的树莓派4B。注意，这不是长连数据，是登陆且发消息的场景，详细性能数据见文后压测报告。
 
 本文将会介绍美信拓扑IM私有云的架构，以及将其运行在树莓派上所做的技术改造，供私密通讯业务的开发人员参考，尤其适合在办公、家庭、工厂等受限网络运行的业务。
 
@@ -52,7 +52,7 @@
 
 这也就是说，十分钟安装的私有云不仅是只需要一台普通主机那么简单，重要的是，它跟亿级用户千万并发的公有云，是相同的架构，详情见下图：
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-985d54bec8e86d298e1a70267b4d96477444ff4751e73261aa57c697f2a7e247.webp)
 
 美信拓扑IM集群共有15个服务（公有云每个服务都会有多个节点），他们是为高伸缩性设计的，完全分层分离的三类服务。  
 
@@ -80,7 +80,7 @@
 
   
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-c1a7cc589e1158d03c1eadae28b0504301e5e6788f0bd7c179469a321560137e.webp)
 
 把美信拓扑IM云装进一台主机，我们主要做了三件事：
 
@@ -158,19 +158,19 @@ Tips：在国内安装k8s，要记得修改 DNS 服务器。
 
 1. 连接和请求速率：
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-996b8c16b9ab158c88a4d97792dc0731ae2a9550ffcadc2566267a338f2c73aa.webp)
 
 2\. 登录和聊天速率：  
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-f34827d6993535fffcc37e2e7764a8986973b0649b4b97d109b3ab1f290d88d3.webp)
 
 3\. 网络流量情况：  
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-e8595c8f2d482def2a8e3a158f8053d7f22bd1cfd5afc023bc0709de76766faf.webp)
 
 总体连接情况呢？看下图。
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-8e182b13d8390058cf7d0a8002f656cdd7696ad395cedf5f79e286d87401e945.webp)
 
 这条曲线，相信做过服务端的同学都会泪流满面。连接曲线和统计曲线重合在一起，意味着所有请求都被即时地处理了。
 
@@ -180,7 +180,7 @@ Tips：在国内安装k8s，要记得修改 DNS 服务器。
 
 整个压测期间，平均登陆时间为 72.59ms，最长登陆时间 180ms，最短 47.80ms。
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-a0142a8a56f31d1766c89dbc8add7ae24e17c143f8332fc8e859c62ca2c30f8b.webp)
 
 你猜对了吗？
 
@@ -196,7 +196,7 @@ Tips：在国内安装k8s，要记得修改 DNS 服务器。
 
   
 
-![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![图片](../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
 
 **做个手艺人吧！一起玩树莓派**
 
