@@ -12,43 +12,43 @@
 * [详细文档](reference/README.md)
   * [IOS SDK API (floo-ios)](reference/floo-ios.md)
     * [Classes](reference/floo-ios/classes.md)
-      * **class [BMXClient](reference/floo-ios/Classes/BMXClient.md)** <br>
-      * **class [BMXConversation](reference/floo-ios/Classes/BMXConversation.md)** <br>
-      * **class [BMXCreatGroupOption](reference/floo-ios/Classes/BMXCreatGroupOption.md)** <br>
-      * **class [BMXDevice](reference/floo-ios/Classes/BMXDevice.md)** <br>
-      * **class [BMXFileAttachment](reference/floo-ios/Classes/BMXFileAttachment.md)** <br>
-      * **class [BMXGroup](reference/floo-ios/Classes/BMXGroup.md)** <br>
-      * **class [BMXImageAttachment](reference/floo-ios/Classes/BMXImageAttachment.md)** <br>
-      * **class [BMXLocationAttachment](reference/floo-ios/Classes/BMXLocationAttachment.md)** <br>
-      * **class [BMXMessageAttachment](reference/floo-ios/Classes/BMXMessageAttachment.md)** <br>
-      * **class [BMXMessageConfig](reference/floo-ios/Classes/BMXMessageConfig.md)** <br>
-      * **class [BMXMessageObject](reference/floo-ios/Classes/BMXMessageObject.md)** <br>
-      * **class [BMXMessageSetting](reference/floo-ios/Classes/BMXMessageSetting.md)** <br>
-      * **class [BMXPushUserProfile](reference/floo-ios/Classes/BMXPushUserProfile.md)** <br>
-      * **class [BMXRoster](reference/floo-ios/Classes/BMXRoster.md)** <br>
-      * **class [BMXSDKConfig](reference/floo-ios/Classes/BMXSDKConfig.md)** <br>
-      * **class [BMXUserProfile](reference/floo-ios/Classes/BMXUserProfile.md)** <br>
-      * **class [BMXVideoAttachment](reference/floo-ios/Classes/BMXVideoAttachment.md)** <br>
-      * **class [BMXVoiceAttachment](reference/floo-ios/Classes/BMXVoiceAttachment.md)** <br>
+      * [BMXClient](reference/floo-ios/Classes/BMXClient.md)
+      * [BMXConversation](reference/floo-ios/Classes/BMXConversation.md)
+      * [BMXCreatGroupOption](reference/floo-ios/Classes/BMXCreatGroupOption.md)
+      * [BMXDevice](reference/floo-ios/Classes/BMXDevice.md)
+      * [BMXFileAttachment](reference/floo-ios/Classes/BMXFileAttachment.md)
+      * [BMXGroup](reference/floo-ios/Classes/BMXGroup.md)
+      * [BMXImageAttachment](reference/floo-ios/Classes/BMXImageAttachment.md)
+      * [BMXLocationAttachment](reference/floo-ios/Classes/BMXLocationAttachment.md)
+      * [BMXMessageAttachment](reference/floo-ios/Classes/BMXMessageAttachment.md)
+      * [BMXMessageConfig](reference/floo-ios/Classes/BMXMessageConfig.md)
+      * [BMXMessageObject](reference/floo-ios/Classes/BMXMessageObject.md)
+      * [BMXMessageSetting](reference/floo-ios/Classes/BMXMessageSetting.md)
+      * [BMXPushUserProfile](reference/floo-ios/Classes/BMXPushUserProfile.md)
+      * [BMXRoster](reference/floo-ios/Classes/BMXRoster.md)
+      * [BMXSDKConfig](reference/floo-ios/Classes/BMXSDKConfig.md)
+      * [BMXUserProfile](reference/floo-ios/Classes/BMXUserProfile.md)
+      * [BMXVideoAttachment](reference/floo-ios/Classes/BMXVideoAttachment.md)
+      * [BMXVoiceAttachment](reference/floo-ios/Classes/BMXVoiceAttachment.md)
     * [Protocols](reference/floo-ios/protocols.md)
-      * **protocol [BMXChatManager](reference/floo-ios/Protocols/BMXChatManager.md)** <br>
-      * **protocol [BMXChatServiceProtocol](reference/floo-ios/Protocols/BMXChatServiceProtocol.md)** <br>
-      * **protocol [BMXGroupManager](reference/floo-ios/Protocols/BMXGroupManager.md)** <br>
-      * **protocol [BMXGroupServiceProtocol](reference/floo-ios/Protocols/BMXGroupServiceProtocol.md)** <br>
-      * **protocol [BMXPushManager](reference/floo-ios/Protocols/BMXPushManager.md)** <br>
-      * **protocol [BMXPushServiceProtocol](reference/floo-ios/Protocols/BMXPushServiceProtocol.md)** <br>
-      * **protocol [BMXRosterManager](reference/floo-ios/Protocols/BMXRosterManager.md)** <br>
-      * **protocol [BMXRosterServiceProtocol](reference/floo-ios/Protocols/BMXRosterServiceProtocol.md)** <br>
-      * **protocol [BMXUserManager](reference/floo-ios/Protocols/BMXUserManager.md)** <br>
-      * **protocol [BMXUserServiceProtocol](reference/floo-ios/Protocols/BMXUserServiceProtocol.md)** <br>
+      * [BMXChatManager](reference/floo-ios/Protocols/BMXChatManager.md)
+      * [BMXChatServiceProtocol](reference/floo-ios/Protocols/BMXChatServiceProtocol.md)
+      * [BMXGroupManager](reference/floo-ios/Protocols/BMXGroupManager.md)
+      * [BMXGroupServiceProtocol](reference/floo-ios/Protocols/BMXGroupServiceProtocol.md)
+      * [BMXPushManager](reference/floo-ios/Protocols/BMXPushManager.md)
+      * [BMXPushServiceProtocol](reference/floo-ios/Protocols/BMXPushServiceProtocol.md)
+      * [BMXRosterManager](reference/floo-ios/Protocols/BMXRosterManager.md)
+      * [BMXRosterServiceProtocol](reference/floo-ios/Protocols/BMXRosterServiceProtocol.md)
+      * [BMXUserManager](reference/floo-ios/Protocols/BMXUserManager.md)
+      * [BMXUserServiceProtocol](reference/floo-ios/Protocols/BMXUserServiceProtocol.md)
     * [Constants](reference/floo-ios/constants.md)
-      * **constants [BMXAttachmentDownloadStatus](reference/floo-ios/Constants/BMXAttachmentDownloadStatus.md)** <br>
-      * **constants [BMXAttachmentType](reference/floo-ios/Constants/BMXAttachmentType.md)** <br>
-      * **constants [BMXConnectStatus](reference/floo-ios/Constants/BMXConnectStatus.md)** <br>
-      * **constants [BMXErrorCode](reference/floo-ios/Constants/BMXErrorCode.md)** <br>
-      * **constants [BMXLogLevel](reference/floo-ios/Constants/BMXLogLevel.md)** <br>
-      * **constants [BMXNetworkType](reference/floo-ios/Constants/BMXNetworkType.md)** <br>
-      * **constants [BMXSignInStatus](reference/floo-ios/Constants/BMXSignInStatus.md)** <br>
+      * [BMXAttachmentDownloadStatus](reference/floo-ios/Constants/BMXAttachmentDownloadStatus.md)
+      * [BMXAttachmentType](reference/floo-ios/Constants/BMXAttachmentType.md)
+      * [BMXConnectStatus](reference/floo-ios/Constants/BMXConnectStatus.md)
+      * [BMXErrorCode](reference/floo-ios/Constants/BMXErrorCode.md)
+      * [BMXLogLevel](reference/floo-ios/Constants/BMXLogLevel.md)
+      * [BMXNetworkType](reference/floo-ios/Constants/BMXNetworkType.md)
+      * [BMXSignInStatus](reference/floo-ios/Constants/BMXSignInStatus.md)
   * [Android SDK API (floo-android)](reference/floo-android.md)
     * [im::floo::floolib::BMXChatManager](reference/floo-android/classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_manager.md)
     * [im::floo::floolib::BMXChatService](reference/floo-android/classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md)
@@ -136,3 +136,5 @@
     * [群管理](reference/server-api/group.md)
     * [好友/花名册管理](reference/server-api/roster.md)
     * [文件操作](reference/server-api/file.md)
+* [文章](articles/README.md)
+  * [云服务的下一个十年](articles/yun-fu-wu-de-xia-yi-ge-shi-nian.md)
