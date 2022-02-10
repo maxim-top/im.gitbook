@@ -137,4 +137,4 @@
     * [好友/花名册管理](reference/server-api/roster.md)
     * [文件操作](reference/server-api/file.md)
 * [文章](articles/README.md)
-  * [云服务的下一个十年](articles/yun-fu-wu-de-xia-yi-ge-shi-nian.md)
+  * [云服务的下一个十年](articles/the-next-decade-of-cloud-services.md)
