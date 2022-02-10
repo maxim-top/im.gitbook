@@ -152,4 +152,4 @@
   * [SaaS定价二：按月付费的私有云](articles/SaaS-Pricing-Two-Monthly-Private-Cloud.md)
   * [SaaS定价三：没有邻居的专有云](articles/SaaS-Pricing-Three-Proprietary-Cloud-Without-Neighbors.md)
   * [【美信拓扑开源】IM SDK Web版开源](articles/MaximTop-open-source-IM-SDK-Web-version.md)
-  
+  * [汽车工厂里的数字孪生与智能制造](articles/Digital-twins-and-smart-manufacturing-in-automotive-factories.md)
