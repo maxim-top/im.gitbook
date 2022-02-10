@@ -147,4 +147,5 @@
   * [美信拓扑CEO一乐：从「玩物丧志」到「好高骛远」，我在坚持什么？](articles/From-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-I-insisting-on.md)
   * [把握技术变革的机遇：看云服务浪潮如何演进 | TVP十日谈预告](articles/Grasping-the-Opportunity-of-Technological-Change-Seeing-the-Evolution-of-the-Cloud-Service-Wave-TVP-10-Day-Talk-Preview.md)
   * [今晚，我们聊聊东山魁夷](articles/Tonight-let-us-talk-about-Dongshan-Kaii.md)
+  * [骑最酷的车，做最酷的技术](articles/Ride-the-coolest-car-and-do-the-coolest-technology.md)
   
