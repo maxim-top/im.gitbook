@@ -148,4 +148,5 @@
   * [把握技术变革的机遇：看云服务浪潮如何演进 | TVP十日谈预告](articles/Grasping-the-Opportunity-of-Technological-Change-Seeing-the-Evolution-of-the-Cloud-Service-Wave-TVP-10-Day-Talk-Preview.md)
   * [今晚，我们聊聊东山魁夷](articles/Tonight-let-us-talk-about-Dongshan-Kaii.md)
   * [骑最酷的车，做最酷的技术](articles/Ride-the-coolest-car-and-do-the-coolest-technology.md)
-  * [SaaS定价一：每月￥199的 IM 云服务](articles/SaaS-pricing-1-IM-cloud-service-of-199-per-month.md)
+  * [SaaS定价一：每月￥199的 IM 云服务](articles/SaaS-Pricing-One-IM-cloud-service-of-199-per-month.md)
+  * [SaaS定价二：按月付费的私有云](articles/SaaS-Pricing-Two-Monthly-Private-Cloud.md)
