@@ -26,9 +26,9 @@
 
 ## SWIG 是什么
 
-![图片](../.gitbook/assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp)
+![Photo by Marco Djallo on @unsplash](../.gitbook/assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp)
 
-Photo by Marco Djallo on @unsplash
+
 
 SWIG 全称是 Simplified Wrapper and Interface Generator \[2\]。这个名字相当直白，翻译过来就是简化的包装和接口生成器。官方介绍是一个联结 C/C++ 软件与其它各种高级编程语言的开发工具。其实主要做了一件事，就是把 C/C++ 写的软件库封装成其他高级编程语言可以调用的本地库。
 
@@ -85,9 +85,9 @@ SWIG 全称是 Simplified Wrapper and Interface Generator \[2\]。这个名字
 
 ## 如何掌握 IM API 
 
-![图片](../.gitbook/assets/articles/autogen-5a1ed68575ebd20a7a616e396eecc9b6b59e4704496429c5570987f8c0b1e86a.webp)
+![Photo by @JamieDotSt on @unsplash](../.gitbook/assets/articles/autogen-5a1ed68575ebd20a7a616e396eecc9b6b59e4704496429c5570987f8c0b1e86a.webp)
 
-Photo by @JamieDotSt on @unsplash
+
 
 在我们说起一个 IM SDK 的时候，经常有一种声音出现，他们说，IM嘛，不就一个聊天，能发消息就行呗。
 

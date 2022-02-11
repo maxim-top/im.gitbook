@@ -72,9 +72,9 @@ SaaS 模式的核心是什么？不讲武德！
 
   
 
-![图片](../.gitbook/assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
+![Photo by Matt Seymour on Unsplash](../.gitbook/assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
 
-Photo by Matt Seymour on Unsplash
+
 
 “免费版、专业版、旗舰版、商业版、
 
@@ -102,7 +102,7 @@ Photo by Matt Seymour on Unsplash
 
 ## 为什么需要私有云？
 
-![图片](../.gitbook/assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)Photo by Zunnoon Ahmed on Unsplash
+![Photo by Zunnoon Ahmed on Unsplash](../.gitbook/assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)
 
 我们处在一个云服务快速扩张的时期，Gartner 在前几天（2021.6.28）发布了最新报告\[3\]，2020年 IaaS 市场的增速依然高达40.8%，更别提 PaaS 和 SaaS 了。整个市场的客户支出预计在 2021 年也会保持 23% 的增速\[4\]。
 
@@ -151,7 +151,7 @@ Photo by Matt Seymour on Unsplash
 
   
 
-![图片](../.gitbook/assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)Photo by alevision.co on Unsplash
+![Photo by alevision.co on Unsplash](../.gitbook/assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)
 
 从服务提供者的角度来看，传统私有部署项目的成本主要有三部分：
 
