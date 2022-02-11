@@ -14,11 +14,11 @@
 >
 > \#美信拓扑7个
 
-遇到吵闹的邻居怎么办？这是租户的困扰，也是服务的问题。
-
-**这是关于 IM 云服务定价系列文章的第三篇，如果你要正在选型，这篇文章值得你阅读。**
-
-如果你也在做 PaaS/SaaS 服务定价，这篇文章也许会对你有所启发。
+> 遇到吵闹的邻居怎么办？这是租户的困扰，也是服务的问题。
+>
+> **这是关于 IM 云服务定价系列文章的第三篇，如果你要正在选型，这篇文章值得你阅读。**
+>
+> 如果你也在做 PaaS/SaaS 服务定价，这篇文章也许会对你有所启发。
 
 作者 | 一乐
 
@@ -82,7 +82,7 @@
 >
 > https://www.maximtop.com/plans/
 
-以上就是我们在专有云设计与定价的一些考虑，也是 SaaS 定价系列的第三篇，前两篇分别是《[SaaS定价一：每月￥199的 IM 云服务](http://mp.weixin.qq.com/s?\_\_biz=Mzg3NzEyMTc1OA==\&mid=2247483807\&idx=1\&sn=bbe9743663db23b75f7c5bbe95b08ca0\&chksm=cf26982ef85111382dc91709df3fafc91f835f1372a415ef79e5b864cb14d6cfed2780367b55\&scene=21#wechat\_redirect)》《[SaaS定价二：按月付费的私有云](http://mp.weixin.qq.com/s?\_\_biz=Mzg3NzEyMTc1OA==\&mid=2247483824\&idx=1\&sn=6ec1929d738e99b46ecac72cb9a6137a\&chksm=cf269801f85111176db44cc1426235acdf10363653e24a484da79da923606d2c581479b16f7f\&scene=21#wechat\_redirect)》，可一起参考阅读。
+以上就是我们在专有云设计与定价的一些考虑，也是 SaaS 定价系列的第三篇，前两篇分别是《[SaaS定价一：每月￥199的 IM 云服务](SaaS-Pricing-One-IM-cloud-service-of-199-per-month.md)》《[SaaS定价二：按月付费的私有云](SaaS-Pricing-Two-Monthly-Private-Cloud.md)》，可一起参考阅读。
 
 ## 后记
 
