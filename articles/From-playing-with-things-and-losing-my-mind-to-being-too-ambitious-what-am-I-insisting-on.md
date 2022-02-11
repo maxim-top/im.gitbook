@@ -119,7 +119,7 @@ Hi，这里是打造技术人的社区。本公众号服务于CTO训练营和CTO
 
 ![图片](../.gitbook/assets/articles/autogen-7cccf4032e9c9bcafd9ca1cda37086d7224efe1c5c61e6155ee2dc119015f8e9.webp)
 
-▲戳链接了解👉[美信拓扑](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)
+▲戳链接了解👉[美信拓扑](../articles/install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)
 
 一键启用多云架构的即时通讯云服务
 
