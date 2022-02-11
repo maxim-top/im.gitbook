@@ -5,7 +5,7 @@
 
 ## Overview
 
-Chatroom
+Group
 
 ## Properties
 

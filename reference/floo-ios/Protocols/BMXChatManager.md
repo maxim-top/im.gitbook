@@ -5,7 +5,7 @@
 
 ## Overview
 
-Thumbnail generation policy,
+Chat manager
 
 ## Instance Methods
 

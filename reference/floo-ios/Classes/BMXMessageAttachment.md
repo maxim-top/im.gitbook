@@ -5,7 +5,7 @@
 
 ## Overview
 
-Download canceled
+Message attachment
 
 ## Properties
 

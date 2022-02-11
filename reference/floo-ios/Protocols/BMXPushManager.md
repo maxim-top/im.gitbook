@@ -5,7 +5,7 @@
 
 ## Overview
 
-Offline
+Push manager
 
 ## Instance Methods
 
@@ -155,10 +155,10 @@ Get push user details, force pull from server-side if forceRefresh == true
 #### Parameters
 
 *forceRefresh*  
-   Push user profile information, initially passing in a pointing-to-empty shared_ptr object, fetch the user profile information here after function returned.  
-
-*aCompletionBlock*  
    Whether to force pull from server, automatically if local fetch failed  
+
+*profile*
+   Push user profile information, initially passing in a pointing-to-empty shared_ptr object, fetch the user profile information here after function returned.
 
 #### Discussion
 Get push user details, force pull from server-side if forceRefresh == true
