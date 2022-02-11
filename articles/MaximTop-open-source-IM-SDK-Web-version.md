@@ -12,9 +12,9 @@
 >
 > \#美信拓扑开源1个
 
-这是一份来自美信拓扑的七夕礼物，节日快乐！O(∩\_∩)O哈哈\~
-
-**截止到 2021.08.13，美信拓扑开源代码已达 163277 行。**
+> 这是一份来自美信拓扑的七夕礼物，节日快乐！O(∩\_∩)O哈哈\~
+>
+> **截止到 2021.08.13，美信拓扑开源代码已达 163277 行。**
 
 我们一直在认真的开源，因为我们知道，把代码开放简单，但做一个可靠让人喜欢的库就并没有那么容易。也因此即使我们花了很多精力在整理代码，只不过在开放的那一刻，还是会有一丝不好意思。
 
@@ -40,12 +40,12 @@
 
     给 PC Web 使用的 IM SDK Web 版，使用了 socket.io 作为传输层，同时也是美信拓扑IM PC 版的基础，后者通过 Electron 封装的是这个版本。
 
-    https://github.com/maxim-top/floo-web
+    [https://github.com/maxim-top/floo-web](https://github.com/maxim-top/floo-web)
 *   floo-uniapp
 
     给 H5 或小程序使用的 IM SDK Uniapp 版，使用 Uniapp 的 socket 作为传输层，完全兼容微信的传输层。
 
-    https://github.com/maxim-top/floo-uniapp
+    [https://github.com/maxim-top/floo-uniapp](https://github.com/maxim-top/floo-uniapp)
 
 经过一年多时间的迭代，以上两个库的协议解析层已经完成同步，也就是从 API 和事件处理的角度是完全一致的。这也是为什么我们会跟开发者说参考美信拓扑 IM DemoApp 使用 API 可以任意参考网页端或者小程序端的原因。
 
