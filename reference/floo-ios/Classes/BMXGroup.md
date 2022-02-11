@@ -5,7 +5,7 @@
 
 ## Overview
 
-聊天室
+群
 
 ## Properties
 

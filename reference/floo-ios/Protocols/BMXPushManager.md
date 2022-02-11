@@ -5,7 +5,7 @@
 
 ## Overview
 
-离线
+推送管理器
 
 ## Instance Methods
 
@@ -155,10 +155,10 @@
 #### Parameters
 
 *forceRefresh*  
-   推送用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。  
-
-*aCompletionBlock*  
    是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取  
+
+*profile*  
+   推送用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。  
 
 #### Discussion
 获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取

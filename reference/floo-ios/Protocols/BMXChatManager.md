@@ -5,7 +5,7 @@
 
 ## Overview
 
-缩略图生成策略,
+聊天管理器
 
 ## Instance Methods
 
