@@ -154,3 +154,5 @@
   * [【美信拓扑开源】IM SDK Web版开源](articles/MaximTop-open-source-IM-SDK-Web-version.md)
   * [汽车工厂里的数字孪生与智能制造](articles/Digital-twins-and-smart-manufacturing-in-automotive-factories.md)
   * [数字化转型遇上炫酷机车 | TGO北京活动](articles/Digital-Transformation-Meets-Cool-Locomotives-TGO-Beijing-Event.md)
+  * [美信拓扑 IM 登陆亚马逊云市场（中国区）](articles/MaximTop-IM-launched-on-Amazon-Cloud-Market-China.md)
+  
