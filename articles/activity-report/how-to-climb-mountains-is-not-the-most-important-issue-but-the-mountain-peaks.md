@@ -137,7 +137,7 @@
 
 “美信拓扑是一家很小的公司，但在 IM 产品的研发上，我们有足够的实力去帮助其他人。”
 
-**于是，他们在**\*\*[疫情期间的紧急技术支持](https://mp.weixin.qq.com/s?\_\_biz=Mzg3NzEyMTc1OA==\&mid=2247483659\&idx=1\&sn=03fb11a715ae59ea1803b71a84f0c064\&scene=21#wechat\_redirect)\*\*\*\*，为快速增长的在线教育和其他SaaS企业提供帮助。\*\*
+**于是，他们在**[**疫情期间的紧急技术支持**](../product-and-technologies/provide-free-senior-technical-consulting-services-during-the-epidemic.md)**，为快速增长的在线教育和其他SaaS企业提供帮助。**
 
 现在，美信拓扑正在召集合作伙伴：
 
