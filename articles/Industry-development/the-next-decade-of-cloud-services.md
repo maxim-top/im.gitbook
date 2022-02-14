@@ -42,9 +42,7 @@
 
 ## **2. 过去的十年**
 
-![图片](../../.gitbook/assets/articles/autogen-5aa2e869e4a47a1f9c9c829cccae95081be1583a8f9dfcab6c7d530fcf2bb731.webp)
-
-Cape Town, Photo by Douglas Bagg on Unsplash
+![Cape Town, Photo by Douglas Bagg on Unsplash](../../.gitbook/assets/articles/autogen-5aa2e869e4a47a1f9c9c829cccae95081be1583a8f9dfcab6c7d530fcf2bb731.webp)
 
 2004年底的时候，亚马逊IT部门的 Chris Pinkham 跑到南非开普敦，带领团队开始着手开发亚马逊的AWS的第一个产品，来实现「把基础设施当做一种服务卖出去」的点子，一个讨论了近一年的念想。这个产品就是我们后来熟知的弹性云计算 Elastic Compute Cloud，也就是EC2（参考链接2）。
 
