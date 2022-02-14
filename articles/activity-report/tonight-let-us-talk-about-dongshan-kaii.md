@@ -2,7 +2,7 @@
 
 原创 艾姆姐 美信拓扑 _2020-11-05 15:31_
 
-![图片](../../.gitbook/assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp)
+![](../../.gitbook/assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp)
 
 《绵云》
 
@@ -22,7 +22,7 @@
 
 这句话说的是下面这幅画，取材于京都清秀的风景：
 
-![图片](../../.gitbook/assets/articles/autogen-3bc4f7829ce30949063a0bdd76a1865a312048343d0a715e8aac7687de5e5e30.webp)
+![](../../.gitbook/assets/articles/autogen-3bc4f7829ce30949063a0bdd76a1865a312048343d0a715e8aac7687de5e5e30.webp)
 
 《冬华》
 
@@ -30,7 +30,7 @@
 
 东山魁夷与中国还是有不少缘分，1972年，日本田中角荣访华实现中日邦交正常化时，将东山魁夷的画作《春晓》赠送毛泽东主席，寓意中日之间的明媚春天即将开始。
 
-![图片](../../.gitbook/assets/articles/autogen-35e67579182b2814c5a19e7b7804705a2a733e9404858dfbf66585c39f126848.webp)
+![](../../.gitbook/assets/articles/autogen-35e67579182b2814c5a19e7b7804705a2a733e9404858dfbf66585c39f126848.webp)
 
 《春晓》
 
@@ -38,6 +38,6 @@
 
 今晚 11.5 19:30，刚好是51CTO技术经理研习营的公开直播课，我们（美信拓扑）CEO一乐作为最后一场分享嘉宾，会说说这件事与管理的关系，如果你刚好是技术管理者，欢迎来聊 :D
 
-![图片](../../.gitbook/assets/articles/autogen-465495d7c22b726d8c5e7ddcd001f6f2dc85c177f722fc2b4cc24840a7c7d148.webp)
+![](../../.gitbook/assets/articles/autogen-465495d7c22b726d8c5e7ddcd001f6f2dc85c177f722fc2b4cc24840a7c7d148.webp)
 
 > 51CTO技术经理研习营，由 51CTO 主办，面向 3-6 年技术人的线下学习实战课程，以技术管理底层方法论为基础，配合项目实战演练，梳理技术经理工作中的典型场景和困扰，逐一击破，带 来体系化的技术管理学习与实践。

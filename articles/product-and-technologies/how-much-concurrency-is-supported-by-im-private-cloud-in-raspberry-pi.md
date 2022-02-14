@@ -16,7 +16,7 @@
 
 ## 树莓派 4B
 
-![图片](../../.gitbook/assets/articles/autogen-dd0ff677dda4f887f4fd260f56f48de41348100154df7a28d3067bba999b4124.webp)
+![](../../.gitbook/assets/articles/autogen-dd0ff677dda4f887f4fd260f56f48de41348100154df7a28d3067bba999b4124.webp)
 
 2019年6月24日，树莓派发布了第四代产品 Raspberry Pi 4。新一代开发板经过了从里到外的全面革新，得益于制程和架构的提升，4 代性能预计可比上代树莓派 3B+提升 2-4 倍。树莓派基金会（Raspberry Pi Foundation）称，这款设备可以提供「与入门级 x86 PC 系统相媲美的桌面性能」\[4]。
 
@@ -46,7 +46,7 @@
 
 这也就是说，十分钟安装的私有云不仅是只需要一台普通主机那么简单，重要的是，它跟亿级用户千万并发的公有云，是相同的架构，详情见下图：
 
-![图片](../../.gitbook/assets/articles/autogen-985d54bec8e86d298e1a70267b4d96477444ff4751e73261aa57c697f2a7e247.webp)
+![](../../.gitbook/assets/articles/autogen-985d54bec8e86d298e1a70267b4d96477444ff4751e73261aa57c697f2a7e247.webp)
 
 美信拓扑IM集群共有15个服务（公有云每个服务都会有多个节点），他们是为高伸缩性设计的，完全分层分离的三类服务。
 
@@ -68,7 +68,7 @@
 
 ## 十分钟安装的私有云
 
-![图片](../../.gitbook/assets/articles/autogen-c1a7cc589e1158d03c1eadae28b0504301e5e6788f0bd7c179469a321560137e.webp)
+![](../../.gitbook/assets/articles/autogen-c1a7cc589e1158d03c1eadae28b0504301e5e6788f0bd7c179469a321560137e.webp)
 
 把美信拓扑IM云装进一台主机，我们主要做了三件事：
 
@@ -144,19 +144,19 @@ docker buildx build -t test/hello --platform=linux/arm64 . --push
 
 1\. 连接和请求速率：
 
-![图片](../../.gitbook/assets/articles/autogen-996b8c16b9ab158c88a4d97792dc0731ae2a9550ffcadc2566267a338f2c73aa.webp)
+![](../../.gitbook/assets/articles/autogen-996b8c16b9ab158c88a4d97792dc0731ae2a9550ffcadc2566267a338f2c73aa.webp)
 
 2\. 登录和聊天速率：
 
-![图片](../../.gitbook/assets/articles/autogen-f34827d6993535fffcc37e2e7764a8986973b0649b4b97d109b3ab1f290d88d3.webp)
+![](../../.gitbook/assets/articles/autogen-f34827d6993535fffcc37e2e7764a8986973b0649b4b97d109b3ab1f290d88d3.webp)
 
 3\. 网络流量情况：
 
-![图片](../../.gitbook/assets/articles/autogen-e8595c8f2d482def2a8e3a158f8053d7f22bd1cfd5afc023bc0709de76766faf.webp)
+![](../../.gitbook/assets/articles/autogen-e8595c8f2d482def2a8e3a158f8053d7f22bd1cfd5afc023bc0709de76766faf.webp)
 
 总体连接情况呢？看下图。
 
-![图片](../../.gitbook/assets/articles/autogen-8e182b13d8390058cf7d0a8002f656cdd7696ad395cedf5f79e286d87401e945.webp)
+![](../../.gitbook/assets/articles/autogen-8e182b13d8390058cf7d0a8002f656cdd7696ad395cedf5f79e286d87401e945.webp)
 
 这条曲线，相信做过服务端的同学都会泪流满面。连接曲线和统计曲线重合在一起，意味着所有请求都被即时地处理了。
 
@@ -166,7 +166,7 @@ docker buildx build -t test/hello --platform=linux/arm64 . --push
 
 整个压测期间，平均登陆时间为 72.59ms，最长登陆时间 180ms，最短 47.80ms。
 
-![图片](../../.gitbook/assets/articles/autogen-a0142a8a56f31d1766c89dbc8add7ae24e17c143f8332fc8e859c62ca2c30f8b.webp)
+![](../../.gitbook/assets/articles/autogen-a0142a8a56f31d1766c89dbc8add7ae24e17c143f8332fc8e859c62ca2c30f8b.webp)
 
 你猜对了吗？
 
@@ -178,7 +178,7 @@ docker buildx build -t test/hello --platform=linux/arm64 . --push
 
 这是美信拓扑技术分享系列的第一篇 0x01。如果你喜欢，欢迎关注公众号「美信拓扑」，后面会有关于「美信拓扑IM」相关的协议、架构、源码方面的文章继续分享。
 
-![图片](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
 
 **做个手艺人吧！一起玩树莓派**
 

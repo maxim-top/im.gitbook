@@ -41,7 +41,7 @@ SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相
 
 如前所述，美信拓扑IM SDK（研发代号 Floo ）底层使用 C++ 实现，各平台（Android、iOS、Linux等）在此基础上再行封装， 完成本地库的开发，以达到多平台复用的目的，并保持跨平台协议实现的一致性。如下图所示：
 
-![图片](../../.gitbook/assets/articles/autogen-50c4b239aa07b7781371f1dc7320b4bf03ad5434d38abeeb357c8eb919d6e659.webp)
+![](../../.gitbook/assets/articles/autogen-50c4b239aa07b7781371f1dc7320b4bf03ad5434d38abeeb357c8eb919d6e659.webp)
 
 左边蓝色是本地库，包括Android、iOS、Linux等，右边黄色是 Web，包括浏览器、小程序、H5等。所有库的分层基本一致，从下往上依次是
 
@@ -276,7 +276,7 @@ typedef floo::BMXConversation::Type BMXConversationType;
 
 今天的分享就到这里，欢迎试玩，也欢迎继续关注「美信拓扑」微信公众号，第一时间阅读本系列后续文章，了解美信拓扑IM的协议、架构和源码。
 
-![图片](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
 
 **美信拓扑**是一家很酷的技术公司。美信拓扑 IM 是第一个多云架构的即时通讯云服务，具有超强的伸缩能力，可以支撑从亿级用户千万并发的公有云服务，到一台主机十分钟安装完成的私有云。目前各种组件正在陆续开源。
 
