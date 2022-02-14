@@ -213,6 +213,8 @@ sudo ./maxim.ctl install --nodelist 172.16.0.78 172.16.0.79 172.16.0.80 --net in
 
 ![图片](../../.gitbook/assets/articles/autogen-8930e00c6e548fa9a8ad0b08f16906d502f707ae2823b4dad9b7241574edc036.webp)
 
-点击查看原文或者访问[美信拓扑官网](https://www.maximtop.com)了解更多
+点击查看原文或者访问美信拓扑官网了解更多
+
+www.maximtop.com
 
 关注「美信拓扑」公众号 ，了解一键启用多云架构的即时通讯云服务 ![图片](../../.gitbook/assets/articles/autogen-c8d075136a4c9362a33f0aec83bb43435c668ce4b52c292bf396c42278482745.webp)
