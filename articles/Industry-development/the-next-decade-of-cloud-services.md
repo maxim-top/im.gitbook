@@ -166,24 +166,10 @@ AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里�
 
 ## **参考链接**
 
-1.  阿里云与天猫双11这十年&#x20;
-
-    https://yq.aliyun.com/articles/669041
-2.  亚马逊改变格局的云服务是由南非的一票人构建的
-
-    https://www.businessinsider.com/amazons-game-changing-cloud-was-built-by-some-guys-in-south-africa-2012-3
-3.  Dropbox 埋葬硬盘的内幕
-
-    https://www.wired.com/2013/09/dropbox-2/
-4.  Dropbox 撤离亚马逊云帝国
-
-    https://www.wired.com/2016/03/epic-story-dropboxs-exodus-amazon-cloud-empire/
-5.  Github创始人：我如何放弃30万美元年薪创业
-
-    http://tom.preston-werner.com/2008/10/18/how-i-turned-down-300k.html
-6.  为什么 Github 用 Rackspace 而不用 Amazon EC2
-
-    https://www.quora.com/Why-did-GitHub-use-Rackspace-over-Amazon-EC2
-7.  美信拓扑：一键启用多云架构的即时通讯云服务
-
-    https://www.maximtop.com/
+1. [阿里云与天猫双11这十年](https://yq.aliyun.com/articles/669041)
+2. [亚马逊改变格局的云服务是由南非的一票人构建的](https://www.businessinsider.com/amazons-game-changing-cloud-was-built-by-some-guys-in-south-africa-2012-3)
+3. [Dropbox 埋葬硬盘的内幕](https://www.wired.com/2013/09/dropbox-2/)
+4. [Dropbox 撤离亚马逊云帝国](https://www.wired.com/2016/03/epic-story-dropboxs-exodus-amazon-cloud-empire/)
+5. [Github创始人：我如何放弃30万美元年薪创业](http://tom.preston-werner.com/2008/10/18/how-i-turned-down-300k.html)
+6. [为什么 Github 用 Rackspace 而不用 Amazon EC2](https://www.quora.com/Why-did-GitHub-use-Rackspace-over-Amazon-EC2)
+7. [美信拓扑：一键启用多云架构的即时通讯云服务](https://www.maximtop.com)
