@@ -91,18 +91,12 @@ ln -sf /usr/bin/maxim-market /usr/bin/maxim.ctl ##老版本需要复制链接；
 
 1、[十分钟安装一套即时通讯 IM 私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\
 2、[树莓派中的 IM 私有云支持多少并发？](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)\
-3、阿里云云市场产品：美信拓扑 IM 私有云\
-https://market.aliyun.com/products/56014009/cmjj00041852.html\
-4、美信拓扑官方控制台\
-https://console.maximtop.com/\
-5、美信拓扑 IM 私有部署指南\
-https://www.maximtop.com/docs/install\_maxim/\
-6、美信拓扑 IM 客户端与SDK下载\
-https://www.maximtop.com/downloads/\
-7、美信拓扑开源 Github 地址\
-https://github.com/maxim-top\
-8、美信拓扑 IM 客户端与SDK下载\
-https://www.maximtop.com/docs/install\_maxim/
+3、[阿里云云市场产品：美信拓扑 IM 私有云](https://market.aliyun.com/products/56014009/cmjj00041852.html)\
+4、[美信拓扑官方控制台](https://console.maximtop.com)\
+5、[美信拓扑 IM 私有部署指南](https://www.maximtop.com/docs/install\_maxim/)\
+6、[美信拓扑 IM 客户端与SDK下载](https://www.maximtop.com/downloads/)\
+7、[美信拓扑开源 Github 地址](https://github.com/maxim-top)\
+8、[美信拓扑 IM 客户端与SDK下载](https://www.maximtop.com/docs/install\_maxim/)
 
 ## 关于美信拓扑
 

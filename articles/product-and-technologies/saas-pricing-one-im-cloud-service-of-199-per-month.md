@@ -36,9 +36,7 @@
 
 以上图中价格数据都是公开的，可到以下页面查看最新价格和优惠：
 
-> 美信拓扑 IM 定价
->
-> https://www.maximtop.com/plans/
+> [美信拓扑 IM 定价](https://www.maximtop.com/plans/)
 
 你觉得这个价格怎么样？
 

@@ -158,11 +158,14 @@
 
 ## **引用**
 
-1、[AWS Outposts](https://aws.amazon.com/cn/about-aws/whats-new/2019/12/announcing-general-availability-of-aws-outposts/)\
-2、[Azure Stack Timeline](https://www.itprotoday.com/iaaspaas/azure-stack-timeline)\
-3、[Gartner Says Worldwide IaaS Public Cloud Services Market Grew 40.7% in 2020](https://www.gartner.com/en/newsroom/press-releases/2021-06-28-gartner-says-worldwide-iaas-public-cloud-services-market-grew-40-7-percent-in-2020) \
-4、[Gartner Forecasts Worldwide Public Cloud End-User Spending to Grow 23% in 2021](https://www.gartner.com/en/newsroom/press-releases/2021-04-21-gartner-forecasts-worldwide-public-cloud-end-user-spending-to-grow-23-percent-in-2021)\
-5、[Cloud Computing Market Size, Share & Trends Analysis Report](https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry)
+1、AWS Outposts \
+https://aws.amazon.com/cn/about-aws/whats-new/2019/12/announcing-general-availability-of-aws-outposts/\
+2、Azure Stack Timeline\
+https://www.itprotoday.com/iaaspaas/azure-stack-timeline\
+3、Gartner Says Worldwide IaaS Public Cloud Services Market Grew 40.7% in 2020 \
+https://www.gartner.com/en/newsroom/press-releases/2021-06-28-gartner-says-worldwide-iaas-public-cloud-services-market-grew-40-7-percent-in-2020 4、Gartner Forecasts Worldwide Public Cloud End-User Spending to Grow 23% in 2021\
+https://www.gartner.com/en/newsroom/press-releases/2021-04-21-gartner-forecasts-worldwide-public-cloud-end-user-spending-to-grow-23-percent-in-2021 5、Cloud Computing Market Size, Share & Trends Analysis Report \
+https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry
 
 关于美信拓扑
 
