@@ -20,7 +20,7 @@
 >
 > 来一起探讨面向未来的数字化转型。
 
-![图片](../.gitbook/assets/articles/autogen-e0b856024955be527f4451b91a9daab6b92610037695845e20749d8a8e31e4a2.webp)
+![图片](../../.gitbook/assets/articles/autogen-e0b856024955be527f4451b91a9daab6b92610037695845e20749d8a8e31e4a2.webp)
 
 企业数字化转型的号角早已吹响，技术人身处数字经济时代的前沿，对企业未来的探索是当下的使命，科技创新显然是重中之重。多云治理、数据安全、通讯等成为企业创新改革的重要衡量。
 
@@ -45,7 +45,7 @@
 
 感兴趣的同学请联系仙琳参与，**美信拓扑**作为数字化转型创新企业赞助此次活动。
 
-![图片](../.gitbook/assets/articles/autogen-3dc27588c4e55a8f7e93a0ca794b2723247a6d973ece1b07513ca27a19547892.webp)
+![图片](../../.gitbook/assets/articles/autogen-3dc27588c4e55a8f7e93a0ca794b2723247a6d973ece1b07513ca27a19547892.webp)
 
 ## TGO 鲲鹏会
 
@@ -90,4 +90,4 @@ TGO 鲲鹏会官网：https://tgo.infoq.cn/
 
 继续关注「美信拓扑」，了解按月付费十分钟安装的即时通讯私有云。
 
-![图片](../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![图片](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

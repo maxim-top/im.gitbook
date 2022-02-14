@@ -12,11 +12,11 @@
 
 作者 | 艾姆姐
 
-继上线阿里云、青云云市场后，美信拓扑新一代云原生 IM 正式上线亚马逊云市场，只需购买主机时选择镜像，即可启用[每小时一毛钱的 IM 私有云](Want-an-IM-private-cloud-for-a-dime-an-hour.md)服务。
+继上线阿里云、青云云市场后，美信拓扑新一代云原生 IM 正式上线亚马逊云市场，只需购买主机时选择镜像，即可启用[每小时一毛钱的 IM 私有云](want-an-im-private-cloud-for-a-dime-an-hour.md)服务。
 
 截至发稿，美信拓扑是第一个也是唯一上线亚马逊云市场（中国）的即时通讯云服务厂商，也仍然是唯一上线阿里云云市场的即时通讯云服务。
 
-![图片](../.gitbook/assets/articles/autogen-2337b77babe379f5fb6f8c3740f2e1e6ee7f07c4781b16a468ceff8eeac5edb4.webp)
+![图片](../../.gitbook/assets/articles/autogen-2337b77babe379f5fb6f8c3740f2e1e6ee7f07c4781b16a468ceff8eeac5edb4.webp)
 
 ## 新一代云原生 IM
 
@@ -34,7 +34,7 @@
 
 这个适应，用我们的方法就是将所有服务进行云原生改造，比如使用容器和 K8S 等技术。
 
-这也是我们的服务可以有极致伸缩性的基础，从可以支撑千人同时在线的[树莓派安装的 IM 私有云](How-much-concurrency-is-supported-by-IM-Private-Cloud-in-Raspberry-Pi.md)，到千万级同时在线的美信拓扑公有云/专有云服务，拥有同样的架构，也都可以[在十分钟内部署实施](Install-an-instant-messaging-IM-private-cloud-in-ten-minutes.md)。
+这也是我们的服务可以有极致伸缩性的基础，从可以支撑千人同时在线的[树莓派安装的 IM 私有云](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)，到千万级同时在线的美信拓扑公有云/专有云服务，拥有同样的架构，也都可以[在十分钟内部署实施](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)。
 
 ### 2. 统一管控
 
@@ -48,7 +48,7 @@
 
 我们讲过，云服务降本增效的核心是以租代售，也就是通过多租户设计共享资源，同时因为是租赁，则改变了原来终身可用为当期可用，这也是「订阅制」的由来。
 
-当租赁从公有云扩展到私有云的时候，相当于进一步降低了私有云的成本，因为在过去，后者都是终身授权，这往往意味着居高不下的价格。参考[SaaS定价二：按月付费的私有云](SaaS-Pricing-Two-Monthly-Private-Cloud.md)，云原生 IM 的私有云，价格仅为行业价格的百分之一。
+当租赁从公有云扩展到私有云的时候，相当于进一步降低了私有云的成本，因为在过去，后者都是终身授权，这往往意味着居高不下的价格。参考[SaaS定价二：按月付费的私有云](saas-pricing-two-monthly-private-cloud.md)，云原生 IM 的私有云，价格仅为行业价格的百分之一。
 
 ### 4. 云市场兼容
 
@@ -70,31 +70,31 @@ https://awsmarketplace.amazonaws.cn/marketplace/pp/prodview-rxkhawftzpws2
 
 第一步：选择服务区域和机器配置。
 
-![图片](../.gitbook/assets/articles/autogen-dc114d506201fa50e59fc8227bd8036754f96a2e8a6c1dee1f8b2dc678f84461.webp)
+![图片](../../.gitbook/assets/articles/autogen-dc114d506201fa50e59fc8227bd8036754f96a2e8a6c1dee1f8b2dc678f84461.webp)
 
 第二步：接受条款并订阅。
 
-![图片](../.gitbook/assets/articles/autogen-d919f8e2c4baa2c1e97084ba19ca988327748b512c7dddf6ac95283f6e89574f.webp)
+![图片](../../.gitbook/assets/articles/autogen-d919f8e2c4baa2c1e97084ba19ca988327748b512c7dddf6ac95283f6e89574f.webp)
 
 第三步：选择版本和区域。
 
-![图片](../.gitbook/assets/articles/autogen-18c6ec912ee25d7cf443c11ca26c9a8ff3ae3bfc28ecb4c42d11d36ad771f75b.webp)
+![图片](../../.gitbook/assets/articles/autogen-18c6ec912ee25d7cf443c11ca26c9a8ff3ae3bfc28ecb4c42d11d36ad771f75b.webp)
 
 第四步：选择机器配置。
 
-![图片](../.gitbook/assets/articles/autogen-e69886d4bcaff79a30f98044f857472e5c8aad136358631a96b5108b1c561cc.webp)
+![图片](../../.gitbook/assets/articles/autogen-e69886d4bcaff79a30f98044f857472e5c8aad136358631a96b5108b1c561cc.webp)
 
 第五步：创建网络和安全组。
 
-![图片](../.gitbook/assets/articles/autogen-e2144838997ee4ab0aaa43964aedefa194459838118acaf58cfb72d7fe44cea0.webp)
+![图片](../../.gitbook/assets/articles/autogen-e2144838997ee4ab0aaa43964aedefa194459838118acaf58cfb72d7fe44cea0.webp)
 
 第六步：基于供应商设置新建安全组。
 
-![图片](../.gitbook/assets/articles/autogen-97942a55f2d84f65f5764483f6888076ad3cc974d953c472e02598fa9e08327d.webp)
+![图片](../../.gitbook/assets/articles/autogen-97942a55f2d84f65f5764483f6888076ad3cc974d953c472e02598fa9e08327d.webp)
 
 第七步：设置密钥并启动机器。
 
-![图片](../.gitbook/assets/articles/autogen-9221aa8540abb47694dc4da64040f808688d5ebd11bcefdba5b93394c6696d33.webp)
+![图片](../../.gitbook/assets/articles/autogen-9221aa8540abb47694dc4da64040f808688d5ebd11bcefdba5b93394c6696d33.webp)
 
 最后一步：
 
@@ -106,14 +106,14 @@ cat /etc/maxim/market
 
 其中，用户名和密码用于登录美信拓扑控制台台， AppID 则用于客户端登录和服务端调用。
 
-如果需要进一步配置或定制，可参考阿里云云市场文章：[一毛钱一小时的 IM 私有云要吗？](Want-an-IM-private-cloud-for-a-dime-an-hour.md)
+如果需要进一步配置或定制，可参考阿里云云市场文章：[一毛钱一小时的 IM 私有云要吗？](want-an-im-private-cloud-for-a-dime-an-hour.md)
 
 祝玩得开心😊
 
 ## **引用**
 
-1、[十分钟安装一套即时通讯 IM 私有云](Install-an-instant-messaging-IM-private-cloud-in-ten-minutes.md)\
-2、[树莓派中的 IM 私有云支持多少并发？](How-much-concurrency-is-supported-by-IM-Private-Cloud-in-Raspberry-Pi.md)\
+1、[十分钟安装一套即时通讯 IM 私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\
+2、[树莓派中的 IM 私有云支持多少并发？](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)\
 3、阿里云云市场：美信拓扑 IM 私有\
 https://market.aliyun.com/products/56014009/cmjj00041852.html\
 4、美信拓扑官方控制台\
@@ -137,4 +137,4 @@ https://awsmarketplace.amazonaws.cn/marketplace/pp/prodview-rxkhawftzpws2
 
 继续关注「美信拓扑」，了解新一代云原生 IM、即时通讯技术与开源。
 
-![图片](../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![图片](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

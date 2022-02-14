@@ -59,10 +59,10 @@
 
 ### API详细文档
 
-1. [iOS API](reference/floo-ios/constants.md)
-2. [Android API](reference/floo-ios/protocols.md)
+1. [iOS API](reference/floo-ios/protocols.md)
+2. [Android API](reference/floo-android.md)
 3. [Web API](reference/floo-web.md)，微信小程序API与此完全相同
-4. [C++ API](reference/floo-android.md)
+4. [C++ API](reference/floo-ios/constants.md)
 
 ### 平台兼容
 

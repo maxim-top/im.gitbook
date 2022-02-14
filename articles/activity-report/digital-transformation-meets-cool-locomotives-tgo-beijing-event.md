@@ -14,7 +14,7 @@ TGO鲲鹏会 美信拓扑 _2021-09-03 19:06_
 >
 > \#101摩托车队2个
 
-![图片](../.gitbook/assets/articles/autogen-5327e45f40392b822a0f0f01b0a5bad337cd6c036618fced8f22099d62a6e208.webp)
+![图片](../../.gitbook/assets/articles/autogen-5327e45f40392b822a0f0f01b0a5bad337cd6c036618fced8f22099d62a6e208.webp)
 
 当略感神秘的技术管理者遇上令人心潮澎湃的摩托机车，会碰撞出什么样的火花？
 
@@ -36,37 +36,37 @@ TGO鲲鹏会
 
 上午的数字化转型闭门会，分享主题是《企业数字化领域的技术布局与团队管理》。TGO 学员们都是各个公司的技术管理者，在平常更多的是带领团队，答疑解惑，可是他们学习起来也丝毫不含糊，每个人都听得津津有味。在戚海飞的分享里，大家对宝马在企业数字化领域的进展有了清楚的认识，也对实践中如何在技术方面进行布局，如何提高团队管理水平等等有了新的认识。
 
-![图片](../.gitbook/assets/articles/autogen-93b2fdcc9278f3efca3b3b30477f969910080cb5c3d400e0e5ea96524b516b34.webp)
+![图片](../../.gitbook/assets/articles/autogen-93b2fdcc9278f3efca3b3b30477f969910080cb5c3d400e0e5ea96524b516b34.webp)
 
-![图片](../.gitbook/assets/articles/autogen-20b332abe14980682a3ee41b56334054bcd14e53495e5a357b24660ec7b15911.webp)
+![图片](../../.gitbook/assets/articles/autogen-20b332abe14980682a3ee41b56334054bcd14e53495e5a357b24660ec7b15911.webp)
 
 听完了干货满满的分享后，大家开始在宝马 4S 店进行实地参观，现场工作人员全程进行陪同，宝马汽车文化，以及目前宝马主要车型都有哪些，宝马汽车在性能上有哪些独特之处。工作人员细心的讲解，以及周到的服务让大家感觉此次参观非常舒服，体现了高端品牌的服务形象。
 
-![图片](../.gitbook/assets/articles/autogen-2905950e93cbb6185c03fcc575c1602ffc4a9e1563778a76ed2940444bacc790.webp)
+![图片](../../.gitbook/assets/articles/autogen-2905950e93cbb6185c03fcc575c1602ffc4a9e1563778a76ed2940444bacc790.webp)
 
 下午大家一起来到金港 GT 乐园，享受摩托机车的刺激。安全始终是第一位的，在骑行开始之前，由中国国家公路摩托车队的专业车手给大家进行了详细的技术讲解。大家也是充满了好奇，提出了很多疑惑，比如在摩托车快要摔倒时身体应该保持什么姿势，身体各部位如何协调，当然最关心的还是如何避免摔倒和摔倒时如何保护好自己。
 
-![图片](../.gitbook/assets/articles/autogen-a29dfc2b70247372c63794ba07ac4180e1a1f4dd32d5ea7d15a0fe7aae456f5b.webp)
+![图片](../../.gitbook/assets/articles/autogen-a29dfc2b70247372c63794ba07ac4180e1a1f4dd32d5ea7d15a0fe7aae456f5b.webp)
 
 为了让大家能够更好的听懂，赛车手骑上摩托机车，一点一滴给家进行示范，双手紧握车把，身体重心微微前倾，目视前方，在起的时候，身体重心要和摩托车保持协调，通过身体重心以及车把来调整方向变换。如果不慎摔倒要第一时间进行保护自己，不让四肢随便乱动造成更大伤害，不要再去想摩托车是否会摔坏，自身安全是第一位的。
 
-![图片](../.gitbook/assets/articles/autogen-d60a61ac4e2275fc5b1df9a15739058b0795956ebb44694fda200ae4ec8c9948.webp)
+![图片](../../.gitbook/assets/articles/autogen-d60a61ac4e2275fc5b1df9a15739058b0795956ebb44694fda200ae4ec8c9948.webp)
 
 理论教学结束后，TGO 学员们已经按奈不住内心的激动，迫不及待跃跃欲试。接下来到了热血时刻，学员们蓄势待发，体验摩托带来的洒脱。
 
 虽然有些学员是第一次骑车，但是经过一番培训之后，大家骑起来有模有样。打火启动，一气呵成，在骑行过程中还能保持合适的车距，遇到弯道，比较熟练的学员们则通过调整重心，在不减速的前提下快速完美地通过。
 
-![图片](../.gitbook/assets/articles/autogen-3cc23e013d94e12e9f1d858f4ab0df1b2e8de61da6a242af7627493d1229aa39.webp)
+![图片](../../.gitbook/assets/articles/autogen-3cc23e013d94e12e9f1d858f4ab0df1b2e8de61da6a242af7627493d1229aa39.webp)
 
 没有参与摩托车体验的学员，则选择了好玩的卡丁车进行体验，卡丁车底盘相对较低，所以稳定性强，但即使这样，学员们也都佩戴了安全头盔，卡丁车在赛道上快速穿梭，充满了奇妙的乐趣，仿佛置身于游戏世界跑跑卡丁车中。
 
-![图片](../.gitbook/assets/articles/autogen-8af2f1583b4437981866b115819e2e7e8f80797ec2c390e2e0c02e3066c2f61.webp)
+![图片](../../.gitbook/assets/articles/autogen-8af2f1583b4437981866b115819e2e7e8f80797ec2c390e2e0c02e3066c2f61.webp)
 
 虽然竞速摩托充满了一定风险性，但是在专业人士指导和专业保障下，也是一个让人非常刺激有趣的运动。
 
 就像我们的平常工作，有时候虽然有一定的困难，有可能会失败，但是当产品或项目成功了之后，那种经过自己努力达到成功的喜悦是无法言说的，只有自己才能明白。
 
-![图片](../.gitbook/assets/articles/autogen-7ca97dcfa9bc5a99bc3791fc7c76a5803d38a3fcd4e1c68c7f580f69046c55c4.webp)
+![图片](../../.gitbook/assets/articles/autogen-7ca97dcfa9bc5a99bc3791fc7c76a5803d38a3fcd4e1c68c7f580f69046c55c4.webp)
 
 短短的一天很快结束，所有活动安全圆满顺利结束。学员们学有所获，玩有所乐，是我们作为组织者最开心的事。
 
@@ -86,10 +86,10 @@ TGO 鲲鹏会是极客邦旗下科技领导者聚集和交流的组织，我们�
 
 美信拓扑，一家很酷的云服务公司，他们研发的新一代云原生 IM，是可以一键启用多云架构的即时通讯云服务。目前各种组件正在陆续开源。
 
-![图片](../.gitbook/assets/articles/autogen-8dba496aeee0a87c4728f94ee948235ba6984cc8212d3abea79289f437cd403d.gif)
+![图片](../../.gitbook/assets/articles/autogen-8dba496aeee0a87c4728f94ee948235ba6984cc8212d3abea79289f437cd403d.gif)
 
 **特别提示**
 
 继续关注「美信拓扑」，了解一键启用多云架构的即时通讯云服务。
 
-![图片](../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![图片](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

@@ -24,7 +24,7 @@
 
 编辑 | 艾姆姐
 
-[上一篇文章](SaaS-Pricing-One-IM-cloud-service-of-199-per-month.md)我们讲的是公有云，本篇文章作为 SaaS 定价系列的第二篇，我们主要讲私有云。跟之前一样，还是先讲价格，再讲背后的设计思想。
+[上一篇文章](saas-pricing-one-im-cloud-service-of-199-per-month.md)我们讲的是公有云，本篇文章作为 SaaS 定价系列的第二篇，我们主要讲私有云。跟之前一样，还是先讲价格，再讲背后的设计思想。
 
 前文提到，当前一套 IM 私有云的行业价格基本为 30 万起。而美信拓扑的 IM 私有云，在 100 人规格的情况下定价仅为 199 元/月，因此我们说价格按年费计算，也不及行业价格的百分之一。
 
@@ -40,11 +40,11 @@
 
 ## IM 行业价格对比：私有云
 
-![图片](../.gitbook/assets/articles/autogen-deae1cc87845ab06a1e9ded97a18e25f372a1c5dd375734a1172f3d55994705c.webp)
+![图片](../../.gitbook/assets/articles/autogen-deae1cc87845ab06a1e9ded97a18e25f372a1c5dd375734a1172f3d55994705c.webp)
 
 上图是 0 到 1 万用户区间价格对比，全部用户（ 0 到百万用户区间）见下图：
 
-![图片](../.gitbook/assets/articles/autogen-e1d7657585ffe8fc5bcaa403343a9dfa06748cdfba9d6fec71b191ab89b77170.webp)
+![图片](../../.gitbook/assets/articles/autogen-e1d7657585ffe8fc5bcaa403343a9dfa06748cdfba9d6fec71b191ab89b77170.webp)
 
 需要注意的是，以上两图中行业价格均已按月折算，但在实际情况下，传统私有部署通常会按照项目方式运作，从项目开始、上线到验收进行分阶段款项支付，并不支持按月付费。
 
@@ -62,7 +62,7 @@
 
 ## 私有云是什么？
 
-![Photo by Matt Seymour on Unsplash](../.gitbook/assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
+![Photo by Matt Seymour on Unsplash](../../.gitbook/assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
 
 “免费版、专业版、旗舰版、商业版、
 
@@ -90,7 +90,7 @@
 
 ## 为什么需要私有云？
 
-![Photo by Zunnoon Ahmed on Unsplash](../.gitbook/assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)
+![Photo by Zunnoon Ahmed on Unsplash](../../.gitbook/assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)
 
 我们处在一个云服务快速扩张的时期，Gartner 在前几天（2021.6.28）发布了最新报告\[3]，2020年 IaaS 市场的增速依然高达40.8%，更别提 PaaS 和 SaaS 了。整个市场的客户支出预计在 2021 年也会保持 23% 的增速\[4]。
 
@@ -132,7 +132,7 @@
 
 ## 私有云的成本以及定价
 
-![Photo by alevision.co on Unsplash](../.gitbook/assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)
+![Photo by alevision.co on Unsplash](../../.gitbook/assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)
 
 从服务提供者的角度来看，传统私有部署项目的成本主要有三部分：
 
@@ -146,7 +146,7 @@
 
 因此从整体上看来，其成本与传统软件公司相当。虽然软件有更华丽的名词，相对好的质量，但基本上还在同一维度竞争，主要竞争也发生在商务层面。
 
-而支持多云架构的云服务软件，在降低软件成本的基础上，服务成本大幅降低，像我们美信拓扑这样的 IM 软件，安装部署就像安装 Office 软件一样简单，[十分钟即可安装完毕](Install-an-instant-messaging-IM-private-cloud-in-ten-minutes.md)，系统也可以自动测试并巡检。比起传统私有部署动辄几十人日的部署调试时间来讲，体验上是质的提升，成本也是数量级的降低。
+而支持多云架构的云服务软件，在降低软件成本的基础上，服务成本大幅降低，像我们美信拓扑这样的 IM 软件，安装部署就像安装 Office 软件一样简单，[十分钟即可安装完毕](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)，系统也可以自动测试并巡检。比起传统私有部署动辄几十人日的部署调试时间来讲，体验上是质的提升，成本也是数量级的降低。
 
 进一步针对我们要目标的中小企业客户，销售策略是在线营销为主，因此商务成本也可以大幅降低。如前所述，整体成本的降低给了我们极大的定价灵活性，当我们定价降到十分之一甚至是百分之一的时候，**那些有商务关系能拿到项目的技术服务商，就可以有 90% 以上的利润空间**。
 
@@ -158,7 +158,7 @@
 
 我们在私有云定价时也充分考虑了客户的总体支出。当前**定价的总体原则是，提供与行业公有云相当的价格，同时让客户的私有云 TCO 大幅降低**。
 
-![图片](../.gitbook/assets/articles/autogen-ed44bdd754b8bc332d3cd9fa79c79a0adb4730f067d515a80bd7cd0baf61403b.webp)
+![图片](../../.gitbook/assets/articles/autogen-ed44bdd754b8bc332d3cd9fa79c79a0adb4730f067d515a80bd7cd0baf61403b.webp)
 
 如图所示，我们美信拓扑的私有云定价已经基本与行业公有云价格基本相当，TCO 也远远低于传统私有部署。
 
@@ -189,4 +189,4 @@ https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry
 
 继续关注「美信拓扑」，了解一键启用多云架构的即时通讯。
 
-![图片](../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![图片](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

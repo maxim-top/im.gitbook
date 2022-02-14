@@ -10,13 +10,13 @@
 >
 > 本文适合正在或即将进行即时通讯 IM 服务选型的朋友阅读，也适合所有做云服务的技术朋友阅读，欢迎留言讨论。
 
-继做完[十分钟安装一套即时通讯私有云](Install-an-instant-messaging-IM-private-cloud-in-ten-minutes.md)\[1]和[树莓派安装的 IM 私有云](How-much-concurrency-is-supported-by-IM-Private-Cloud-in-Raspberry-Pi.md)\[2]之后，就在今天，美信拓扑 IM 私有云正式上线阿里云云市场，IM 服务又朝着便宜可靠迈出了一大步。
+继做完[十分钟安装一套即时通讯私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\[1]和[树莓派安装的 IM 私有云](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)\[2]之后，就在今天，美信拓扑 IM 私有云正式上线阿里云云市场，IM 服务又朝着便宜可靠迈出了一大步。
 
 现在你只要在阿里云后台购买主机，选择美信拓扑 IM 私有云的镜像，就可以获得一台预装了 IM 私有云的云服务器。
 
 基础镜像定价 56 元/月，并且支持按量付费，也就意味着你可以用 0.1 元/小时 的价格开通使用。
 
-![图片](../.gitbook/assets/articles/autogen-157370c2dbfde01aa553752ba45d4201dc450e77e9646326e0c7930152c2a122.webp)
+![图片](../../.gitbook/assets/articles/autogen-157370c2dbfde01aa553752ba45d4201dc450e77e9646326e0c7930152c2a122.webp)
 
 **每小时只需要一毛钱，你就可以拥有自己的IM私有云。这是美信拓扑多云架构对在IM领域的最新实践，也是云原生技术再一次在技术服务领域发挥价值的案例。**
 
@@ -26,19 +26,19 @@
 
 购买美信拓扑 IM 私有云与购买普通云主机非常类似，只需进入美信拓扑 IM 私有云产品页面\[3]点击立即购买，一步步操作即可。
 
-![图片](../.gitbook/assets/articles/autogen-17ac31d227c8d26231a7c4a738d9d4d51d6e2e71b4d2744f34b86e26138457a.webp)
+![图片](../../.gitbook/assets/articles/autogen-17ac31d227c8d26231a7c4a738d9d4d51d6e2e71b4d2744f34b86e26138457a.webp)
 
 第一步，选择系统配置。
 
 系统镜像使用页面默认值不要修改，服务器配置为4核8G即可，如果你后面会更改规格可以适当提高（如何调整见后文）：
 
-![图片](../.gitbook/assets/articles/autogen-f3841a9b71ee2d0f3f552c5636c5c9934844b525eeb8d22fd099dbf26d2b0f98.webp)
+![图片](../../.gitbook/assets/articles/autogen-f3841a9b71ee2d0f3f552c5636c5c9934844b525eeb8d22fd099dbf26d2b0f98.webp)
 
 第二步，设置网络和安全组。
 
 外网带宽5M，安全组开放端口80和443、开放端口80和443、开放端口80和443（重要事情说三遍）：
 
-![图片](../.gitbook/assets/articles/autogen-a6a43f3082640ca65ae3e3a3c46ee031c253f53488e2e29162e07b668571012e.webp)
+![图片](../../.gitbook/assets/articles/autogen-a6a43f3082640ca65ae3e3a3c46ee031c253f53488e2e29162e07b668571012e.webp)
 
 第三步，查看已安装服务信息。
 
@@ -54,7 +54,7 @@ cat /etc/maxim/market
 
 ## 配置与定制
 
-![图片](../.gitbook/assets/articles/autogen-6e1fbbae4f45b118f9978bfb9abc41e70345f5386c758b99d91e66332cbd4a40.webp)
+![图片](../../.gitbook/assets/articles/autogen-6e1fbbae4f45b118f9978bfb9abc41e70345f5386c758b99d91e66332cbd4a40.webp)
 
 如图所示，美信拓扑 IM 私有云的所有配置均可通过官方控制台\[4]进行操作，云市场版本与官方下载版本相同，因此亦可参照官方私有部署文档\[5]。
 
@@ -62,7 +62,7 @@ cat /etc/maxim/market
 
 有两种方式可以查看服务状态，一种是通过美信拓扑控制台，登陆后在「系统状态」标签下查看系统状态，如下图：
 
-![图片](../.gitbook/assets/articles/autogen-715e3946ae437b7a8b271a1d3c147eb1c5e9d804069f45249aa03c6734232bf4.png)
+![图片](../../.gitbook/assets/articles/autogen-715e3946ae437b7a8b271a1d3c147eb1c5e9d804069f45249aa03c6734232bf4.png)
 
 你也可选择第二种方式，即登陆服务器终端运行命令：
 
@@ -76,7 +76,7 @@ kubectl -n $(kubectl get namespace|grep maxim-|awk '{print $1}') get pods
 
 当前云市场安装镜像默认是 20 人规格，如需要扩容调整，也是跟官网下载版本相同。通过前述操作步骤第 3 步获取的账号密码进入美信拓扑控制台，选择 market App，然后点击「私有云」标签，重新下载目标规格的 Token 文件：
 
-![图片](../.gitbook/assets/articles/autogen-48be1ea8facfd2d43290255724f900a36428d5a59763ff63fda6f185e7f30e20.webp)
+![图片](../../.gitbook/assets/articles/autogen-48be1ea8facfd2d43290255724f900a36428d5a59763ff63fda6f185e7f30e20.webp)
 
 然后登陆服务器，运行如下命令：
 
@@ -89,8 +89,8 @@ ln -sf /usr/bin/maxim-market /usr/bin/maxim.ctl ##老版本需要复制链接；
 
 ## **引用**
 
-1、[十分钟安装一套即时通讯 IM 私有云](Install-an-instant-messaging-IM-private-cloud-in-ten-minutes.md)\
-2、[树莓派中的 IM 私有云支持多少并发？](How-much-concurrency-is-supported-by-IM-Private-Cloud-in-Raspberry-Pi.md)\
+1、[十分钟安装一套即时通讯 IM 私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\
+2、[树莓派中的 IM 私有云支持多少并发？](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)\
 3、阿里云云市场产品：美信拓扑 IM 私有云\
 https://market.aliyun.com/products/56014009/cmjj00041852.html\
 4、美信拓扑官方控制台\
@@ -112,4 +112,4 @@ https://www.maximtop.com/docs/install\_maxim/
 
 扫码关注「美信拓扑」，了解一键启用多云架构的即时通讯云服务。
 
-![图片](../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![图片](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
