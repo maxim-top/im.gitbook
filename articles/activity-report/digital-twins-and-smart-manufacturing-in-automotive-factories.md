@@ -60,9 +60,8 @@
 
     **注**：摩托车与卡丁车交叉进行
 
-**点击下方小程序进行报名或点击文末阅读原文链接进行报名。**
-
-![](../../.gitbook/assets/articles/autogen-6e0c04ebef2caae104a9c1e3ff436ea0fffca59c7f5ba52dde0049a0b6fad58f.png)TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日小程序
+**扫描下方小程序进行报名。**
+![TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日小程序](https://mmbiz.qpic.cn/mmbiz_jpg/ptfZoLiatnib6HOXe01I8UNyUf8qWtlHYDYbJBpwOZ0TO5vdFNiaicyzKRMkcTjJS4ONlj7oaicFJugBxvVrVib4LA2Q/0)
 
 ## 关于创新企业研习营
 
