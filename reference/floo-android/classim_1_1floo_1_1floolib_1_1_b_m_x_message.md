@@ -581,7 +581,7 @@ inline void setPriority(
 
 **Parameters**: 
 
-  * **priority** 设置群消息未读数目 
+  * **priority** 优先级 
 
 
 ### function priority
