@@ -2,9 +2,7 @@
 
 原创 艾姆姐 美信拓扑 _2020-11-05 15:31_
 
-![](../../.gitbook/assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp)
-
-《绵云》
+![《绵云》](../../.gitbook/assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp)
 
 > 东山魁夷（Higashiyama Kaii），被认为是战后日本最重要的画家之一，作品以风景画为主，画风有着静谧而深厚的精神力量，1969年获得日本文化勋章与文化功劳者称号，2018年是其诞辰110周年。
 
@@ -22,9 +20,7 @@
 
 这句话说的是下面这幅画，取材于京都清秀的风景：
 
-![](../../.gitbook/assets/articles/autogen-3bc4f7829ce30949063a0bdd76a1865a312048343d0a715e8aac7687de5e5e30.webp)
-
-《冬华》
+![《冬华》](../../.gitbook/assets/articles/autogen-3bc4f7829ce30949063a0bdd76a1865a312048343d0a715e8aac7687de5e5e30.webp)
 
 介绍里是这样说的，“雾凇的树枝向天空伸展，如白色的珊瑚。树枝的交错编织出梦幻的韵律与冬天的寂静。”
 
