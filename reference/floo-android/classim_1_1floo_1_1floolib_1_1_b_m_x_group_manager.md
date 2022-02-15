@@ -68,7 +68,7 @@ Group Manager
 | void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadavatar)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final FileProgressListener listener, final BMXCallBack callBack)<br>Download group avatar  |
 | void | **[addGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addgrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>Add group change listener  |
 | void | **[removeGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removegrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>Remove group change listener  |
-| void | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setenablereadack)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean enable, final BMXCallBack callBack)<br>Set whether group message read is enabled  |
+| void | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setenablereadack)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean enable, final BMXCallBack callBack)<br>Set whether group message read acknowledgement is enabled  |
 
 ## Public Functions Documentation
 
@@ -969,7 +969,7 @@ Set nickname in group
 **Parameters**: 
 
   * **group** Group to operate on 
-  * **nickname** User nickname in group 
+  * **nickname** My nickname in group 
   * **callBack** [BMXErrorCode]
 
 
@@ -1110,7 +1110,7 @@ inline void setEnableReadAck(
 )
 ```
 
-Set whether group message read is enabled 
+Set whether group message read acknowledgement is enabled 
 
 **Parameters**: 
 

@@ -43,16 +43,16 @@ Inherits from BMXBaseObject
 | void | **[setClientTimestamp](classfloo_1_1_b_m_x_message.md#function-setclienttimestamp)**(int64_t )<br>Set message local timestamp  |
 | bool | **[isPlayed](classfloo_1_1_b_m_x_message.md#function-isplayed)**()<br>Whether voice or video message has been played, valid only for received audio/video messages  |
 | void | **[setIsPlayed](classfloo_1_1_b_m_x_message.md#function-setisplayed)**(bool )<br>Set whether a voice or video message has been played, valid only for received audio or video messages  |
-| bool | **[isPlayAcked](classfloo_1_1_b_m_x_message.md#function-isplayacked)**()<br>Means whether playback receipt received for sender, and whether playback receipt sent for receiver  |
-| void | **[setIsPlayAcked](classfloo_1_1_b_m_x_message.md#function-setisplayacked)**(bool )<br>Set playback receipt  |
+| bool | **[isPlayAcked](classfloo_1_1_b_m_x_message.md#function-isplayacked)**()<br>Means whether playback acknowledgement received for sender, and whether playback acknowledgement sent for receiver  |
+| void | **[setIsPlayAcked](classfloo_1_1_b_m_x_message.md#function-setisplayacked)**(bool )<br>Set playback acknowledgement  |
 | bool | **[isReceiveMsg](classfloo_1_1_b_m_x_message.md#function-isreceivemsg)**()<br>Message whether to receive  |
 | void | **[setIsReceiveMsg](classfloo_1_1_b_m_x_message.md#function-setisreceivemsg)**(bool )<br>Message to set receiving condition  |
 | bool | **[isRead](classfloo_1_1_b_m_x_message.md#function-isread)**()<br>Message read or unread mark  |
 | void | **[setIsRead](classfloo_1_1_b_m_x_message.md#function-setisread)**(bool )<br>Message read or unread mark  |
-| bool | **[isReadAcked](classfloo_1_1_b_m_x_message.md#function-isreadacked)**()<br>Show sender whether read receipt received, and show receiver whether message read receipt sent  |
-| void | **[setIsReadAcked](classfloo_1_1_b_m_x_message.md#function-setisreadacked)**(bool )<br>Set read receipt  |
-| bool | **[isDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-isdeliveryacked)**()<br>Show sender whether message has been delivered to the other party, and show receiver whether message delivered receipt has been sent  |
-| void | **[setIsDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-setisdeliveryacked)**(bool )<br>Set delivery receipt  |
+| bool | **[isReadAcked](classfloo_1_1_b_m_x_message.md#function-isreadacked)**()<br>Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent  |
+| void | **[setIsReadAcked](classfloo_1_1_b_m_x_message.md#function-setisreadacked)**(bool )<br>Set read acknowledgement  |
+| bool | **[isDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-isdeliveryacked)**()<br>Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent  |
+| void | **[setIsDeliveryAcked](classfloo_1_1_b_m_x_message.md#function-setisdeliveryacked)**(bool )<br>Set delivery acknowledgement  |
 | const std::string & | **[content](classfloo_1_1_b_m_x_message.md#function-content)**()<br>Message text content  |
 | void | **[setContent](classfloo_1_1_b_m_x_message.md#function-setcontent)**(const std::string & content)<br>Message text content  |
 | [ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) | **[contentType](classfloo_1_1_b_m_x_message.md#function-contenttype)**()<br>Message content type, attachment-type with attachment, text-type with no attachment  |
@@ -300,7 +300,7 @@ Set whether a voice or video message has been played, valid only for received au
 bool isPlayAcked()
 ```
 
-Means whether playback receipt received for sender, and whether playback receipt sent for receiver 
+Means whether playback acknowledgement received for sender, and whether playback acknowledgement sent for receiver 
 
 **Return**: bool 
 
@@ -312,7 +312,7 @@ void setIsPlayAcked(
 )
 ```
 
-Set playback receipt 
+Set playback acknowledgement 
 
 ### function isReceiveMsg
 
@@ -360,7 +360,7 @@ Message read or unread mark
 bool isReadAcked()
 ```
 
-Show sender whether read receipt received, and show receiver whether message read receipt sent 
+Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent 
 
 **Return**: bool 
 
@@ -372,7 +372,7 @@ void setIsReadAcked(
 )
 ```
 
-Set read receipt 
+Set read acknowledgement 
 
 ### function isDeliveryAcked
 
@@ -380,7 +380,7 @@ Set read receipt
 bool isDeliveryAcked()
 ```
 
-Show sender whether message has been delivered to the other party, and show receiver whether message delivered receipt has been sent 
+Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent 
 
 **Return**: bool 
 
@@ -392,7 +392,7 @@ void setIsDeliveryAcked(
 )
 ```
 
-Set delivery receipt 
+Set delivery acknowledgement 
 
 ### function content
 

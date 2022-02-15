@@ -12,12 +12,12 @@ Group
 <a name="//api/name/adminsCount" title="adminsCount"></a>
 ### adminsCount
 
-Group admin-number
+Number of group admins
 
 `@property (nonatomic, assign, readonly) NSInteger adminsCount`
 
 #### Discussion
-Group admin-number
+Number of group admins
 
 #### Declared In
 * `BMXGroup.h`
@@ -95,12 +95,12 @@ Expiration time of banning all members
 <a name="//api/name/capactiy" title="capactiy"></a>
 ### capactiy
 
-Max member-number
+Maximum number of group members
 
 `@property (nonatomic, assign, readonly) NSInteger capactiy`
 
 #### Discussion
-Max member-number
+Maximum number of group members
 
 #### Declared In
 * `BMXGroup.h`
@@ -121,12 +121,12 @@ Group creation time
 <a name="//api/name/enableReadAck" title="enableReadAck"></a>
 ### enableReadAck
 
-Whether group message read feature enabled
+Whether group message read acknowledgement feature enabled
 
 `@property (nonatomic, assign) BOOL enableReadAck`
 
 #### Discussion
-Whether group message read feature enabled
+Whether group message read acknowledgement feature enabled
 
 #### Declared In
 * `BMXGroup.h`
@@ -235,12 +235,12 @@ Group extension information
 <a name="//api/name/membersCount" title="membersCount"></a>
 ### membersCount
 
-Group member-number, including Owner, Admins and Members
+Number of group members, including Owner, Admins and Members
 
 `@property (nonatomic, assign, readonly) NSInteger membersCount`
 
 #### Discussion
-Group member-number, including Owner, Admins and Members
+Number of group members, including Owner, Admins and Members
 
 #### Declared In
 * `BMXGroup.h`
@@ -287,12 +287,12 @@ Group message notification type
 <a name="//api/name/myNickName" title="myNickName"></a>
 ### myNickName
 
-Group member nickname
+Group member nickname of mine
 
 `@property (nonatomic, copy, readonly) NSString *myNickName`
 
 #### Discussion
-Group member nickname
+Group member nickname of mine
 
 #### Declared In
 * `BMXGroup.h`

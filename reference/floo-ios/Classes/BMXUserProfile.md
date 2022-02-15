@@ -177,12 +177,12 @@ Public information
 <a name="//api/name/userCategory" title="userCategory"></a>
 ### userCategory
 
-User level
+User category
 
 `@property (nonatomic, assign) BMXUserCategory userCategory`
 
 #### Discussion
-User level
+User category
 
 #### Declared In
 * `BMXUserProfile.h`

@@ -34,12 +34,12 @@ Admin removed
 <a name="//api/name/groupAnnouncementUpdate:announcement:" title="groupAnnouncementUpdate:announcement:"></a>
 ### groupAnnouncementUpdate:announcement:
 
-Group announcement received
+Group announcement updated
 
 `- (void)groupAnnouncementUpdate:(BMXGroup *)*group* announcement:(BMXGroupAnnounment *)*announcement*`
 
 #### Discussion
-Group announcement received
+Group announcement updated
 
 #### Declared In
 * `BMXGroupServiceProtocol.h`
@@ -73,12 +73,12 @@ Join group rejected
 <a name="//api/name/groupDidCreated:" title="groupDidCreated:"></a>
 ### groupDidCreated:
 
-Create a group cross-device synchronously
+Create a group
 
 `- (void)groupDidCreated:(BMXGroup *)*group*`
 
 #### Discussion
-Create a group cross-device synchronously
+Create a group
 
 #### Declared In
 * `BMXGroupServiceProtocol.h`
@@ -268,12 +268,12 @@ Shared file deleted
 <a name="//api/name/groupSharedFileUploaded:sharedFile:" title="groupSharedFileUploaded:sharedFile:"></a>
 ### groupSharedFileUploaded:sharedFile:
 
-Share file received
+Shared file received
 
 `- (void)groupSharedFileUploaded:(BMXGroup *)*group* sharedFile:(BMXGroupSharedFile *)*sharedFile*`
 
 #### Discussion
-Share file received
+Shared file received
 
 #### Declared In
 * `BMXGroupServiceProtocol.h`

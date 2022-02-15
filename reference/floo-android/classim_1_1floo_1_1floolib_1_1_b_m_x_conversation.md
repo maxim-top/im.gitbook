@@ -20,9 +20,9 @@ Inherits from BMXBaseObject
 | long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-conversationid)**()<br>Conversation Id  |
 | BMXConversation.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-type)**()<br>Conversation type  |
 | [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[lastMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-lastmsg)**()<br>Latest message  |
-| int | **[unreadNumber](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-unreadnumber)**()<br>Unread message-number  |
-| int | **[messageCount](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-messagecount)**()<br>Total message-number in conversation  |
-| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-ismutenotification)**()<br>Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.  |
+| int | **[unreadNumber](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-unreadnumber)**()<br>Number of unread messages  |
+| int | **[messageCount](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-messagecount)**()<br>Total number of messages in conversation  |
+| boolean | **[isMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-ismutenotification)**()<br>Whether the user is alerted to the message, without which the conversation total number of unread messages does not count this conversation.  |
 | String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-extension)**()<br>Extension information  |
 | [BMXErrorCode] | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-setextension)**(String ext)<br>Set the Extension information  |
 | String | **[editMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md#function-editmessage)**()<br>Edit message  |
@@ -99,7 +99,7 @@ Latest message
 inline int unreadNumber()
 ```
 
-Unread message-number 
+Number of unread messages 
 
 **Return**: int32_t 
 
@@ -109,7 +109,7 @@ Unread message-number
 inline int messageCount()
 ```
 
-Total message-number in conversation 
+Total number of messages in conversation 
 
 **Return**: int32_t 
 
@@ -119,7 +119,7 @@ Total message-number in conversation
 inline boolean isMuteNotification()
 ```
 
-Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation. 
+Whether the user is alerted to the message, without which the conversation total number of unread messages does not count this conversation. 
 
 **Return**: bool 
 
@@ -195,7 +195,7 @@ Search for messages, starting with latest if not specified
 
   * **keywords** Keyword for search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of searched message results 
   * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
 
@@ -232,7 +232,7 @@ Search for messages by type, starting with latest if not specified
 
   * **type** Type of search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of searched message results 
   * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
 
@@ -386,7 +386,7 @@ Load message, starting with latest if not specified
 **Parameters**: 
 
   * **refMsgId** Start id of the message to load 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **arg3** Message loading direction, default to load earlier messages 
   * **callBack** Callback 
 
@@ -420,7 +420,7 @@ Search for messages, starting with latest if not specified
 
   * **keywords** Keyword for search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
   * **callBack** Callback 
 
@@ -455,7 +455,7 @@ Search for messages by type, starting with latest if not specified
 
   * **type** Type of search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **arg4** Message search direction, default (Direction::Up)means search from earlier messages. 
   * **callBack** Callback 
 

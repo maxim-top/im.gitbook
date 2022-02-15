@@ -448,7 +448,7 @@ Register message callback
 
     ```
       /**
-      * Message received
+      * Messages received
       **/
       - (void)receivedMessages:(NSArray<BMXMessageObject*> *)messages {
 
@@ -556,14 +556,14 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
       // ExtensionJson can be used to extend the message being edited, (json format, which can extend a variety of user-defined functions)
       @property (nonatomic, copy) NSString *extensionJson;
     ```
-*   Message read receipt
+*   Message read acknowledgement
 
     ```
       //Whether all messages read
       @property (nonatomic,assign) BOOL isRead;
-      //Whether to send a read receipt after message delivered
+      //Whether to send a read acknowledgement after message delivered
       @property (nonatomic,assign) BOOL isReadAcked;
-      //Whether to send a delivery receipt after message received
+      //Whether to send a delivery acknowledgement after message received
       @property (nonatomic, assign) BOOL isDeliveryAcked;
     ```
 *   Multi-terminal read message count synchronization

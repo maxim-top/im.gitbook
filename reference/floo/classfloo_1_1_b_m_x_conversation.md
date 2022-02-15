@@ -30,9 +30,9 @@ Inherits from BMXBaseObject
 | virtual int64_t | **[conversationId](classfloo_1_1_b_m_x_conversation.md#function-conversationid)**() =0<br>Conversation Id  |
 | virtual [Type](classfloo_1_1_b_m_x_conversation.md#enum-type) | **[type](classfloo_1_1_b_m_x_conversation.md#function-type)**() =0<br>Conversation type  |
 | virtual BMXMessagePtr | **[lastMsg](classfloo_1_1_b_m_x_conversation.md#function-lastmsg)**() =0<br>Latest message  |
-| virtual int32_t | **[unreadNumber](classfloo_1_1_b_m_x_conversation.md#function-unreadnumber)**() =0<br>Unread message-number  |
-| virtual int32_t | **[messageCount](classfloo_1_1_b_m_x_conversation.md#function-messagecount)**() =0<br>Total message-number in conversation  |
-| virtual bool | **[isMuteNotification](classfloo_1_1_b_m_x_conversation.md#function-ismutenotification)**() =0<br>Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.  |
+| virtual int32_t | **[unreadNumber](classfloo_1_1_b_m_x_conversation.md#function-unreadnumber)**() =0<br>Number of unread messages  |
+| virtual int32_t | **[messageCount](classfloo_1_1_b_m_x_conversation.md#function-messagecount)**() =0<br>Total number of messages in conversation  |
+| virtual bool | **[isMuteNotification](classfloo_1_1_b_m_x_conversation.md#function-ismutenotification)**() =0<br>Whether the user is alerted to the message, without which the conversation total number of unread messages does not count this conversation.  |
 | virtual const JSON & | **[extension](classfloo_1_1_b_m_x_conversation.md#function-extension)**() =0<br>Extension information  |
 | virtual BMXErrorCode | **[setExtension](classfloo_1_1_b_m_x_conversation.md#function-setextension)**(const std::string & ext) =0<br>Set the Extension information  |
 | virtual const std::string & | **[editMessage](classfloo_1_1_b_m_x_conversation.md#function-editmessage)**() =0<br>Edit message  |
@@ -128,7 +128,7 @@ Latest message
 virtual int32_t unreadNumber() =0
 ```
 
-Unread message-number 
+Number of unread messages 
 
 **Return**: int32_t 
 
@@ -138,7 +138,7 @@ Unread message-number
 virtual int32_t messageCount() =0
 ```
 
-Total message-number in conversation 
+Total number of messages in conversation 
 
 **Return**: int32_t 
 
@@ -148,7 +148,7 @@ Total message-number in conversation
 virtual bool isMuteNotification() =0
 ```
 
-Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation. 
+Whether the user is alerted to the message, without which the conversation total number of unread messages does not count this conversation. 
 
 **Return**: bool 
 
@@ -331,7 +331,7 @@ Load message, starting with latest if not specified
 **Parameters**: 
 
   * **refMsgId** Start id of the message to load 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of loaded messages returned by database 
   * **Direction** Message loading direction, default to load earlier messages 
 
@@ -356,7 +356,7 @@ Search for messages, starting with latest if not specified
 
   * **keywords** Keyword for search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of searched message results 
   * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
@@ -381,7 +381,7 @@ Deprecated.
 
   * **keywords** Keyword for search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of searched message results 
   * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
@@ -411,7 +411,7 @@ Search for messages by type, starting with latest if not specified
 
   * **type** Type of search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of searched message results 
   * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
@@ -436,7 +436,7 @@ Deprecated.
 
   * **type** Type of search message 
   * **refTime** Start time of message search 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of searched message results 
   * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 

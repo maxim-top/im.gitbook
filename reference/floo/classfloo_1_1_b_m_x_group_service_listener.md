@@ -19,7 +19,7 @@ Group change listener
 | -------------- | -------------- |
 | | **[BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**()<br>Constructor  |
 | virtual | **[~BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md#function-~bmxgroupservicelistener)**()<br>Destructor  |
-| virtual void | **[onGroupCreate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**(BMXGroupPtr group)<br>Create a group cross-device synchronously  |
+| virtual void | **[onGroupCreate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**(BMXGroupPtr group)<br>Create a group  |
 | virtual void | **[onGroupListUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**(const BMXGroupList & list)<br>Group list updated  |
 | virtual void | **[onGroupJoined](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupjoined)**(BMXGroupPtr group)<br>Join a group  |
 | virtual void | **[onGroupLeft](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupleft)**(BMXGroupPtr group, const std::string & reason)<br>Quit a group  |
@@ -38,8 +38,8 @@ Group change listener
 | virtual void | **[onOwnerAssigned](classfloo_1_1_b_m_x_group_service_listener.md#function-onownerassigned)**(BMXGroupPtr group)<br>Become group Owner  |
 | virtual void | **[onGroupInfoUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate)**(BMXGroupPtr group, [BMXGroup::UpdateInfoType](classfloo_1_1_b_m_x_group.md#enum-updateinfotype) type)<br>Group information changes  |
 | virtual void | **[onMemberChangeNickName](classfloo_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname)**(BMXGroupPtr group, int64_t memberId, const std::string & nickName)<br>Member nickname changed  |
-| virtual void | **[onAnnouncementUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**(BMXGroupPtr group, BMXGroup::AnnouncementPtr announcement)<br>Group announcement received  |
-| virtual void | **[onSharedFileUploaded](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>Share file received  |
+| virtual void | **[onAnnouncementUpdate](classfloo_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**(BMXGroupPtr group, BMXGroup::AnnouncementPtr announcement)<br>Group announcement updated  |
+| virtual void | **[onSharedFileUploaded](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>Shared file received  |
 | virtual void | **[onSharedFileDeleted](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>Shared file deleted  |
 | virtual void | **[onSharedFileUpdated](classfloo_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile)<br>Name of shared file updated  |
 | virtual void | **[onBlockListAdded](classfloo_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**(BMXGroupPtr group, const std::vector< int64_t > & members)<br>Add to blacklist  |
@@ -79,7 +79,7 @@ inline virtual void onGroupCreate(
 )
 ```
 
-Create a group cross-device synchronously 
+Create a group 
 
 **Parameters**: 
 
@@ -413,7 +413,7 @@ inline virtual void onAnnouncementUpdate(
 )
 ```
 
-Group announcement received 
+Group announcement updated 
 
 **Parameters**: 
 
@@ -430,7 +430,7 @@ inline virtual void onSharedFileUploaded(
 )
 ```
 
-Share file received 
+Shared file received 
 
 **Parameters**: 
 

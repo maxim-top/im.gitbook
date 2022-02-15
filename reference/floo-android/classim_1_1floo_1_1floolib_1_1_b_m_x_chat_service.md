@@ -18,11 +18,11 @@ Chat Service
 | void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-sendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send a message, and the message status change is notified via listener  |
 | void | **[resendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-resendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Resend this message, and the message status change is notified via listener  |
 | void | **[recallMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-recallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Recall a message, and the message status change is notified via listener  |
-| [BMXErrorCode] | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessageList list, [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) to, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) newMsg)<br>Merge forwarding messages  |
+| [BMXErrorCode] | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessageList list, [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) to, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) newMsg)<br> Merge and forward messages |
 | void | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()  |
-| void | **[ackMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send read receipt  |
-| void | **[ackMessageDelivered](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send delivery receipt  |
-| void | **[ackPlayMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackplaymessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send a playback receipt  |
+| void | **[ackMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send read acknowledgement  |
+| void | **[ackMessageDelivered](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send delivery acknowledgement  |
+| void | **[ackPlayMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackplaymessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Send a playback acknowledgement  |
 | void | **[readCancel](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readcancel)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Mark this message as unread and synchronize to all devices of the current user  |
 | void | **[readAllMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Mark this message and all previous messages as read, and synchronize to all current users' devices  |
 | void | **[removeMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removemessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, boolean synchronize)<br>Delete this message, which synchronizes to other devices of the current user  |
@@ -36,14 +36,14 @@ Chat Service
 | int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum)**()<br>Number of uploading/downloading files  |
 | [BMXErrorCode] | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-insertmessages)**(BMXMessageList list)<br>Insert a message  |
 | [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage)**(long msgId)<br>Read a message  |
-| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br>Delete conversation  |
+| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br> Delete a conversation  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId) |
 | [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>Launch a conversation  |
 | [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type) |
 | String | **[attachmentDir](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdir)**()<br>Get attachment saving path  |
 | String | **[attachmentDirForConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(long conversationId)<br>Get attachment saving path for a conversation  |
 | BMXConversationList | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversations)**()<br>Get all conversations  |
-| int | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**()<br>Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
+| int | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**()<br> Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
 | [BMXErrorCode] | **[retrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, long refMsgId, long size, BMXMessageList result)<br>Pull message history  |
 | [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>Search for messages  |
 | [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result) |
@@ -91,7 +91,7 @@ Send a message, and the message status change is notified via listener
 
 **Parameters**: 
 
-  * **msg** Sent message 
+  * **msg** Message to be sent 
 
 
 ### function resendMessage
@@ -134,13 +134,13 @@ inline BMXErrorCode forwardMessage(
 )
 ```
 
-Merge forwarding messages 
+ Merge and forward messages
 
 **Parameters**: 
 
-  * **list** List of forwarded messages 
+  * **list**  List of messages to be forwarded
   * **to** The conversation to which message is forwarded 
-  * **newMsg** The newly generated single forwarded message from the merging list of forwarded messages 
+  * **newMsg** The newly generated single forwarded message from the merging list of messages to be forwarded
 
 
 **Return**: [BMXErrorCode]
@@ -157,7 +157,7 @@ Simple forwarding messages, users should create forwarding messages first throug
 
 **Parameters**: 
 
-  * **msg** Forwarded message 
+  * **msg**  Messages to be forwarded 
 
 
 ### function ackMessage
@@ -168,11 +168,11 @@ inline void ackMessage(
 )
 ```
 
-Send read receipt 
+Send read acknowledgement 
 
 **Parameters**: 
 
-  * **msg** Message requiring a read receipt to be sent 
+  * **msg** Message requiring a read acknowledgement to be sent 
 
 
 ### function ackMessageDelivered
@@ -183,11 +183,11 @@ inline void ackMessageDelivered(
 )
 ```
 
-Send delivery receipt 
+Send delivery acknowledgement 
 
 **Parameters**: 
 
-  * **msg** Message that need to send a delivery receipt 
+  * **msg** Message that need to send a delivery acknowledgement 
 
 
 ### function ackPlayMessage
@@ -198,11 +198,11 @@ inline void ackPlayMessage(
 )
 ```
 
-Send a playback receipt 
+Send a playback acknowledgement 
 
 **Parameters**: 
 
-  * **msg** Messages that require to send a playback receipt 
+  * **msg** Messages that require to send a playback acknowledgement 
 
 
 ### function readCancel
@@ -404,7 +404,7 @@ inline void deleteConversation(
 )
 ```
 
-Delete conversation 
+ Delete a conversation 
 
 **Parameters**: 
 
@@ -495,7 +495,7 @@ Get all conversations
 inline int getAllConversationsUnreadCount()
 ```
 
-Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted) 
+ Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted) 
 
 **Return**: int 
 

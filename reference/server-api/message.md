@@ -2,7 +2,7 @@
 
 ## 6    Message processing
 
-## 6.1  Send read receipt
+## 6.1  Send read acknowledgement
 
 > GET  /message/ack
 

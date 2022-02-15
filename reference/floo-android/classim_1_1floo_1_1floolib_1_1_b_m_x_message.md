@@ -31,15 +31,15 @@ Inherits from BMXBaseObject
 | void | **[setClientTimestamp](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setclienttimestamp)**(long arg0)<br>Set message local timestamp  |
 | boolean | **[isPlayed](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isplayed)**()<br>Whether voice or video message has been played, valid only for received audio/video messages  |
 | void | **[setIsPlayed](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisplayed)**(boolean arg0) |
-| boolean | **[isPlayAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isplayacked)**()<br>Whether voice or video message receives a playback receipt, valid only for received audio/video messages  |
+| boolean | **[isPlayAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isplayacked)**()<br>Whether voice or video message receives a playback acknowledgement, valid only for received audio/video messages  |
 | void | **[setIsPlayAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisplayacked)**(boolean arg0) |
 | boolean | **[isReceiveMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isreceivemsg)**()<br>Message whether to receive  |
 | void | **[setIsReceiveMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisreceivemsg)**(boolean arg0) |
 | boolean | **[isRead](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isread)**()<br>Message read or unread mark  |
 | void | **[setIsRead](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisread)**(boolean arg0) |
-| boolean | **[isReadAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isreadacked)**()<br>Show sender whether read receipt received, and show receiver whether message read receipt sent  |
+| boolean | **[isReadAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isreadacked)**()<br>Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent  |
 | void | **[setIsReadAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisreadacked)**(boolean arg0) |
-| boolean | **[isDeliveryAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isdeliveryacked)**()<br>Show sender whether message has been delivered to the other party, and show receiver whether message delivered receipt has been sent  |
+| boolean | **[isDeliveryAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isdeliveryacked)**()<br>Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent  |
 | void | **[setIsDeliveryAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisdeliveryacked)**(boolean arg0) |
 | String | **[content](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-content)**()<br>Message text content  |
 | void | **[setContent](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setcontent)**(String content)<br>Message text content  |
@@ -60,9 +60,9 @@ Inherits from BMXBaseObject
 | boolean | **[groupAckReadAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupackreadall)**()<br>Whether all group messages are read  |
 | int | **[groupPlayAckCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackcount)**()<br>Get count of played group messages  |
 | void | **[setGroupPlayAckCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupplayackcount)**(int count) |
-| int | **[groupPlayAckUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackunreadcount)**()<br>Get count of unread playback receipts of group messages  |
+| int | **[groupPlayAckUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackunreadcount)**()<br>Get count of unread playback acknowledgements of group messages  |
 | void | **[setGroupPlayAckUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupplayackunreadcount)**(int count) |
-| boolean | **[groupPlayAckReadAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackreadall)**()<br>Set all playback receipts of group messages as read  |
+| boolean | **[groupPlayAckReadAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackreadall)**()<br>Set all playback acknowledgements of group messages as read  |
 | void | **[setPriority](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setpriority)**(int priority)<br>Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. Value range 0-10. The default level of messages sent by ordinary users in chatroom is 5, which can be discarded. Admin level defaults to 0 and will not be discarded. Other values can be set according to business.  |
 | int | **[priority](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-priority)**()<br>Message diffusion priority  |
 | void | **[setPushMessageMode](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setpushmessagemode)**(boolean arg0)<br>Set whether to push messages  |
@@ -237,7 +237,7 @@ inline void setIsPlayed(
 inline boolean isPlayAcked()
 ```
 
-Whether voice or video message receives a playback receipt, valid only for received audio/video messages 
+Whether voice or video message receives a playback acknowledgement, valid only for received audio/video messages 
 
 **Return**: bool 
 
@@ -294,7 +294,7 @@ inline void setIsRead(
 inline boolean isReadAcked()
 ```
 
-Show sender whether read receipt received, and show receiver whether message read receipt sent 
+Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent 
 
 **Return**: bool 
 
@@ -313,7 +313,7 @@ inline void setIsReadAcked(
 inline boolean isDeliveryAcked()
 ```
 
-Show sender whether message has been delivered to the other party, and show receiver whether message delivered receipt has been sent 
+Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent 
 
 **Return**: bool 
 
@@ -546,7 +546,7 @@ inline void setGroupPlayAckCount(
 inline int groupPlayAckUnreadCount()
 ```
 
-Get count of unread playback receipts of group messages 
+Get count of unread playback acknowledgements of group messages 
 
 **Return**: bool 
 
@@ -565,7 +565,7 @@ inline void setGroupPlayAckUnreadCount(
 inline boolean groupPlayAckReadAll()
 ```
 
-Set all playback receipts of group messages as read 
+Set all playback acknowledgements of group messages as read 
 
 **Return**: bool 
 

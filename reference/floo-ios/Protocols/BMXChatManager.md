@@ -12,12 +12,12 @@ Chat manager
 <a name="//api/name/ackMessage:" title="ackMessage:"></a>
 ### ackMessage:
 
-Send read receipt
+Send read acknowledgement
 
 `- (void)ackMessage:(BMXMessageObject *)*message*`
 
 #### Discussion
-Send read receipt
+Send read acknowledgement
 
 #### Declared In
 * `BMXChatManager.h`
@@ -25,12 +25,12 @@ Send read receipt
 <a name="//api/name/ackMessageDelivered:" title="ackMessageDelivered:"></a>
 ### ackMessageDelivered:
 
-Send delivery receipt
+Send delivery acknowledgement
 
 `- (void)ackMessageDelivered:(BMXMessageObject *)*message*`
 
 #### Discussion
-Send delivery receipt
+Send delivery acknowledgement
 
 #### Declared In
 * `BMXChatManager.h`
@@ -61,12 +61,12 @@ Add chat listener
 <a name="//api/name/deleteConversationByConversationId:synchronize:" title="deleteConversationByConversationId:synchronize:"></a>
 ### deleteConversationByConversationId:synchronize:
 
-Delete conversation
+ Delete a conversation
 
 `- (void)deleteConversationByConversationId:(NSInteger)*conversationId* synchronize:(BOOL)*synchronize*`
 
 #### Discussion
-Delete conversation
+ Delete a conversation
 
 #### Declared In
 * `BMXChatManager.h`
@@ -117,7 +117,7 @@ Simple forward message, user should first create the forward message via BMXMess
 <a name="//api/name/getAllConversationsUnreadCountWithCompletion:" title="getAllConversationsUnreadCountWithCompletion:"></a>
 ### getAllConversationsUnreadCountWithCompletion:
 
-Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)
+ Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)
 
 `- (void)getAllConversationsUnreadCountWithCompletion:(void ( ^ ) ( int count ))*aCompletionBlock*`
 
@@ -127,7 +127,7 @@ Get unread-number for all conversations (unreads for individuals and groups mark
    count  
 
 #### Discussion
-Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)
+ Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)
 
 #### Declared In
 * `BMXChatManager.h`

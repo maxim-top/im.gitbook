@@ -47,12 +47,12 @@ Extension information
 <a name="//api/name/isMuteNotication" title="isMuteNotication"></a>
 ### isMuteNotication
 
-Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.
+Whether the user is alerted to the message, without which the conversation total number of unread messages does not count this conversation.
 
 `@property (nonatomic, assign) BOOL isMuteNotication`
 
 #### Discussion
-Whether the user is alerted to the message, without which the conversation total unread-number does not count this conversation.
+Whether the user is alerted to the message, without which the conversation total number of unread messages does not count this conversation.
 
 #### Declared In
 * `BMXConversation.h`

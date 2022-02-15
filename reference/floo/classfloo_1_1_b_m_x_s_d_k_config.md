@@ -30,8 +30,8 @@ SDK settings management
 | const std::string & | **[getUserAgent](classfloo_1_1_b_m_x_s_d_k_config.md#function-getuseragent)**()<br>Get user proxy information  |
 | bool | **[carryUsernameInMessage](classfloo_1_1_b_m_x_s_d_k_config.md#function-carryusernameinmessage)**()<br>Whether the config sends message carrying  |
 | void | **[setCarryUsernameInMessage](classfloo_1_1_b_m_x_s_d_k_config.md#function-setcarryusernameinmessage)**(bool )<br>Set whether the config sends message carrying username  |
-| bool | **[enableDeliveryAck](classfloo_1_1_b_m_x_s_d_k_config.md#function-enabledeliveryack)**()<br>Whether to send message delivery receipt  |
-| void | **[setEnableDeliveryAck](classfloo_1_1_b_m_x_s_d_k_config.md#function-setenabledeliveryack)**(bool )<br>Set whether to send message delivery receipt  |
+| bool | **[enableDeliveryAck](classfloo_1_1_b_m_x_s_d_k_config.md#function-enabledeliveryack)**()<br>Whether to send message delivery acknowledgement  |
+| void | **[setEnableDeliveryAck](classfloo_1_1_b_m_x_s_d_k_config.md#function-setenabledeliveryack)**(bool )<br>Set whether to send message delivery acknowledgement  |
 | BMXLogLevel | **[getLogLevel](classfloo_1_1_b_m_x_s_d_k_config.md#function-getloglevel)**()<br>Log output level  |
 | void | **[setLogLevel](classfloo_1_1_b_m_x_s_d_k_config.md#function-setloglevel)**(BMXLogLevel )<br>Set Log output level  |
 | bool | **[getConsoleOutput](classfloo_1_1_b_m_x_s_d_k_config.md#function-getconsoleoutput)**()<br>Whether to output Log to Console.  |
@@ -89,7 +89,7 @@ Constructor
   * **SDKVersion** SDK version 
   * **pushCertName** Push certificate name 
   * **userAgent** User agent information 
-  * **deliveryAck** Whether to send message delivery receipt 
+  * **deliveryAck** Whether to send message delivery acknowledgement 
 
 
 ### function BMXSDKConfig
@@ -122,7 +122,7 @@ Constructor
   * **userAgent** User agent information 
   * **appId** User's appId 
   * **appSecret** User's appSecret (for users using push, both appId and appSecret must be set) 
-  * **deliveryAck** Whether to send message delivery receipt 
+  * **deliveryAck** Whether to send message delivery acknowledgement 
 
 
 ### function ~BMXSDKConfig
@@ -246,7 +246,7 @@ Set whether the config sends message carrying username
 bool enableDeliveryAck()
 ```
 
-Whether to send message delivery receipt 
+Whether to send message delivery acknowledgement 
 
 **Return**: bool 
 
@@ -258,11 +258,11 @@ void setEnableDeliveryAck(
 )
 ```
 
-Set whether to send message delivery receipt 
+Set whether to send message delivery acknowledgement 
 
 **Parameters**: 
 
-  * **bool** Whether to send message delivery receipt 
+  * **bool** Whether to send message delivery acknowledgement 
 
 
 ### function getLogLevel

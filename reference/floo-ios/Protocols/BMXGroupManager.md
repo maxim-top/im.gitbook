@@ -777,7 +777,7 @@ Set group avatar
 <a name="//api/name/setEnableReadAckWithGroup:enable:completion:" title="setEnableReadAckWithGroup:enable:completion:"></a>
 ### setEnableReadAckWithGroup:enable:completion:
 
-Set whether group message read is enabled
+Set whether group message read acknowledgement is enabled
 
 `- (void)setEnableReadAckWithGroup:(BMXGroup *)*group* enable:(BOOL)*enable* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -793,7 +793,7 @@ Set whether group message read is enabled
    BMXError  
 
 #### Discussion
-Set whether group message read is enabled
+Set whether group message read acknowledgement is enabled
 
 #### Declared In
 * `BMXGroupManager.h`

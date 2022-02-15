@@ -27,11 +27,11 @@ Chat Service
 | virtual void | **[sendMessage](classfloo_1_1_b_m_x_chat_service.md#function-sendmessage)**(BMXMessagePtr msg) =0<br>Send a message, and the message status change is notified via listener  |
 | virtual void | **[resendMessage](classfloo_1_1_b_m_x_chat_service.md#function-resendmessage)**(BMXMessagePtr msg) =0<br>Resend this message, and the message status change is notified via listener  |
 | virtual void | **[recallMessage](classfloo_1_1_b_m_x_chat_service.md#function-recallmessage)**(BMXMessagePtr msg) =0<br>Recall a message, and the message status change is notified via listener  |
-| virtual BMXErrorCode | **[forwardMessage](classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage)**(const BMXMessageList & list, BMXConversationPtr to, BMXMessagePtr & newMsg) =0<br>Merge forwarding messages  |
+| virtual BMXErrorCode | **[forwardMessage](classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage)**(const BMXMessageList & list, BMXConversationPtr to, BMXMessagePtr & newMsg) =0<br> Merge and forward messages |
 | virtual void | **[forwardMessage](classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessagePtr msg) =0<br>Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()  |
-| virtual void | **[ackMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackmessage)**(BMXMessagePtr msg) =0<br>Send read receipt  |
-| virtual void | **[ackMessageDelivered](classfloo_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**(BMXMessagePtr msg) =0<br>Send delivery receipt  |
-| virtual void | **[ackPlayMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackplaymessage)**(BMXMessagePtr msg) =0<br>Send an audio/video message playback receipt  |
+| virtual void | **[ackMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackmessage)**(BMXMessagePtr msg) =0<br>Send read acknowledgement  |
+| virtual void | **[ackMessageDelivered](classfloo_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**(BMXMessagePtr msg) =0<br>Send delivery acknowledgement  |
+| virtual void | **[ackPlayMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackplaymessage)**(BMXMessagePtr msg) =0<br>Send an audio/video message playback acknowledgement  |
 | virtual void | **[readCancel](classfloo_1_1_b_m_x_chat_service.md#function-readcancel)**(BMXMessagePtr msg) =0<br>Mark this message as unread and synchronize to all devices of the current user  |
 | virtual void | **[readAllMessage](classfloo_1_1_b_m_x_chat_service.md#function-readallmessage)**(BMXMessagePtr msg) =0<br>Mark this message and all previous messages as read, and synchronize to all current users' devices  |
 | virtual void | **[removeMessage](classfloo_1_1_b_m_x_chat_service.md#function-removemessage)**(BMXMessagePtr msg, bool synchronize =true) =0<br>Delete this message, which synchronizes to other devices of the current user  |
@@ -43,12 +43,12 @@ Chat Service
 | virtual int | **[transferingNum](classfloo_1_1_b_m_x_chat_service.md#function-transferingnum)**() =0<br>Number of uploading/downloading files  |
 | virtual BMXErrorCode | **[insertMessages](classfloo_1_1_b_m_x_chat_service.md#function-insertmessages)**(const BMXMessageList & list) =0<br>Insert a message  |
 | virtual BMXMessagePtr | **[getMessage](classfloo_1_1_b_m_x_chat_service.md#function-getmessage)**(int64_t msgId) =0<br>Read a message  |
-| virtual void | **[deleteConversation](classfloo_1_1_b_m_x_chat_service.md#function-deleteconversation)**(int64_t conversationId, bool synchronize =false) =0<br>Delete conversation  |
+| virtual void | **[deleteConversation](classfloo_1_1_b_m_x_chat_service.md#function-deleteconversation)**(int64_t conversationId, bool synchronize =false) =0<br> Delete a conversation  |
 | virtual BMXConversationPtr | **[openConversation](classfloo_1_1_b_m_x_chat_service.md#function-openconversation)**(int64_t conversationId, [BMXConversation::Type](classfloo_1_1_b_m_x_conversation.md#enum-type) type, bool createIfNotExist =true) =0<br>Launch a conversation  |
 | virtual std::string | **[attachmentDir](classfloo_1_1_b_m_x_chat_service.md#function-attachmentdir)**() =0<br>Get attachment saving path  |
 | virtual std::string | **[attachmentDirForConversation](classfloo_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(int64_t conversationId) =0<br>Get attachment saving path for a conversation  |
 | virtual BMXConversationList | **[getAllConversations](classfloo_1_1_b_m_x_chat_service.md#function-getallconversations)**() =0<br>Get all conversations  |
-| virtual int | **[getAllConversationsUnreadCount](classfloo_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**() =0<br>Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
+| virtual int | **[getAllConversationsUnreadCount](classfloo_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**() =0<br> Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
 | virtual BMXErrorCode | **[retrieveHistoryMessages](classfloo_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**(BMXConversationPtr conversation, int64_t refMsgId, size_t size, BMXMessageList & result) =0<br>Pull message history  |
 | virtual BMXErrorCode | **[searchMessagesByKeyWords](classfloo_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(const std::string & keywords, int64_t refTime, size_t size, std::vector< BMXMessageList > & result, [BMXConversation::Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[BMXConversation::Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Search for messages by keyword  |
 | virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_chat_service.md#function-searchmessages)**(const std::string & keywords, int64_t refTime, size_t size, std::vector< BMXMessageList > & result, [BMXConversation::Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[BMXConversation::Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
@@ -100,7 +100,7 @@ Send a message, and the message status change is notified via listener
 
 **Parameters**: 
 
-  * **msg** Sent message 
+  * **msg** Message to be sent 
 
 
 ### function resendMessage
@@ -143,13 +143,13 @@ virtual BMXErrorCode forwardMessage(
 ) =0
 ```
 
-Merge forwarding messages 
+ Merge and forward messages
 
 **Parameters**: 
 
-  * **list** List of forwarded messages 
+  * **list**  List of messages to be forwarded
   * **to** The conversation to which message is forwarded 
-  * **newMsg** The newly generated single forwarded message from the merging list of forwarded messages 
+  * **newMsg** The newly generated single forwarded message from the merging list of messages to be forwarded
 
 
 **Return**: BMXErrorCode 
@@ -166,7 +166,7 @@ Simple forwarding messages, users should create forwarding messages first throug
 
 **Parameters**: 
 
-  * **msg** Forwarded message 
+  * **msg**  Messages to be forwarded 
 
 
 ### function ackMessage
@@ -177,11 +177,11 @@ virtual void ackMessage(
 ) =0
 ```
 
-Send read receipt 
+Send read acknowledgement 
 
 **Parameters**: 
 
-  * **msg** Message requiring a read receipt to be sent 
+  * **msg** Message requiring a read acknowledgement to be sent 
 
 
 ### function ackMessageDelivered
@@ -192,7 +192,7 @@ virtual void ackMessageDelivered(
 ) =0
 ```
 
-Send delivery receipt 
+Send delivery acknowledgement 
 
 ### function ackPlayMessage
 
@@ -202,11 +202,11 @@ virtual void ackPlayMessage(
 ) =0
 ```
 
-Send an audio/video message playback receipt 
+Send an audio/video message playback acknowledgement 
 
 **Parameters**: 
 
-  * **msg** Message requiring a read receipt to be sent 
+  * **msg** Message requiring a read acknowledgement to be sent 
 
 
 ### function readCancel
@@ -383,7 +383,7 @@ virtual void deleteConversation(
 ) =0
 ```
 
-Delete conversation 
+ Delete a conversation 
 
 **Parameters**: 
 
@@ -455,7 +455,7 @@ Get all conversations
 virtual int getAllConversationsUnreadCount() =0
 ```
 
-Get unread-number for all conversations (unreads for individuals and groups marked as blocked is not counted) 
+ Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted) 
 
 **Return**: int 
 

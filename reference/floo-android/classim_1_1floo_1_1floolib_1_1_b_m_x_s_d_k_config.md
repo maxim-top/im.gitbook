@@ -108,7 +108,7 @@ Constructor
   * **dataDir** Storage path of chat data 
   * **cacheDir** Storage path of cached data 
   * **pushCertName** Push certificate name 
-  * **deliveryAck** Whether to send message delivery receipt 
+  * **deliveryAck** Whether to send message delivery acknowledgement 
 
 
 ### function BMXSDKConfig

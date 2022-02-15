@@ -739,7 +739,7 @@ private BMXChatServiceListener mChatListener = new BMXChatServiceListener() {
 
     @Override
     public void onReceive(BMXMessageList list) {
-    //Message received
+    //Messages received
     }
 
     @Override
@@ -749,12 +749,12 @@ private BMXChatServiceListener mChatListener = new BMXChatServiceListener() {
 
     @Override
     public void onReceiveReadAcks(BMXMessageList list) {
-    //Read receipt received
+    //Read acknowledgement received
     }
 
     @Override
     public void onReceiveDeliverAcks(BMXMessageList list) {
-    //Message delivery receipt received
+    //Message delivery acknowledgement received
     }
 
     @Override

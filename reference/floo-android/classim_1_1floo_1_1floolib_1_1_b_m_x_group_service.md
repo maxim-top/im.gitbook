@@ -82,7 +82,7 @@ Group Service
 | [BMXErrorCode] | **[setJoinAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setjoinauthmode)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.JoinAuthMode mode)<br>Set approval mode for joining group  |
 | [BMXErrorCode] | **[setInviteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setinvitemode)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.InviteMode mode)<br>Set invitation mode  |
 | [BMXErrorCode] | **[setAllowMemberModify](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setallowmembermodify)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean enable)<br>Set whether group members are allowed to set group information  |
-| [BMXErrorCode] | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setenablereadack)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean enable)<br>Set whether group message read is enabled  |
+| [BMXErrorCode] | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setenablereadack)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean enable)<br>Set whether group message read acknowledgement is enabled  |
 | [BMXErrorCode] | **[setHistoryVisible](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-sethistoryvisible)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean enable)<br>Set whether group members are allowed to enable visible message history  |
 | [BMXErrorCode] | **[setAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setavatar)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String avatarPath, FileProgressListener arg2)<br>Set group avatar  |
 | [BMXErrorCode] | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-downloadavatar)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean thumbnail, FileProgressListener arg2)<br>Download group avatar  |
@@ -1224,7 +1224,7 @@ Set nickname in group
 **Parameters**: 
 
   * **group** Group to operate on 
-  * **nickname** User nickname in group 
+  * **nickname** My nickname in group 
 
 
 **Return**: [BMXErrorCode]
@@ -1314,7 +1314,7 @@ inline BMXErrorCode setEnableReadAck(
 )
 ```
 
-Set whether group message read is enabled 
+Set whether group message read acknowledgement is enabled 
 
 **Parameters**: 
 

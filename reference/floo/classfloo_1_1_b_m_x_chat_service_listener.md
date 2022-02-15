@@ -19,26 +19,26 @@ Chat listener
 | -------------- | -------------- |
 | | **[BMXChatServiceListener](classfloo_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)**()<br>Constructor  |
 | virtual | **[~BMXChatServiceListener](classfloo_1_1_b_m_x_chat_service_listener.md#function-~bmxchatservicelistener)**()<br>Destructor  |
-| virtual void | **[onStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>Messaging state changed  |
+| virtual void | **[onStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>Message state changed  |
 | virtual void | **[onAttachmentUploadProgressChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentuploadprogresschanged)**(BMXMessagePtr msg, int percent)<br>Attachment upload state changed  |
 | virtual void | **[onRecallStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onrecallstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>Message recall state changed  |
-| virtual void | **[onReceive](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceive)**(const BMXMessageList & list)<br>Message received  |
+| virtual void | **[onReceive](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceive)**(const BMXMessageList & list)<br>Messages received  |
 | virtual void | **[onReceiveCommandMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivecommandmessages)**(const BMXMessageList & list)<br>Command received  |
-| virtual void | **[onReceiveSystemMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages)**(const BMXMessageList & list)<br>System notification message received  |
-| virtual void | **[onReceiveReadAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks)**(const BMXMessageList & list)<br>Receipt of message read received  |
-| virtual void | **[onReceiveDeliverAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks)**(const BMXMessageList & list)<br>Receipt of message delivered received  |
-| virtual void | **[onReceiveRecallMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages)**(const BMXMessageList & list)<br>Canceled message received  |
+| virtual void | **[onReceiveSystemMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages)**(const BMXMessageList & list)<br>System notification messages received  |
+| virtual void | **[onReceiveReadAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks)**(const BMXMessageList & list)<br>Read acknowledgement of messages received  |
+| virtual void | **[onReceiveDeliverAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks)**(const BMXMessageList & list)<br>Acknowledgement of message delivered received  |
+| virtual void | **[onReceiveRecallMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages)**(const BMXMessageList & list)<br>Canceled messages received  |
 | virtual void | **[onReceiveReadCancels](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadcancels)**(const BMXMessageList & list)<br>Message re-unread received (cross-device synchronization for changing message status into unread)  |
 | virtual void | **[onReceiveReadAllMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadallmessages)**(const BMXMessageList & list)<br>All received messages are read (all messages are set to read before cross-device synchronization)  |
-| virtual void | **[onReceiveDeleteMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages)**(const BMXMessageList & list)<br>Deletion received (delete messages cross devices synchronously)  |
-| virtual void | **[onReceivePlayAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks)**(const BMXMessageList & list)<br>Received receipt of audio/video message playback  |
+| virtual void | **[onReceiveDeleteMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages)**(const BMXMessageList & list)<br> Message deletions received (delete messages cross devices synchronously)  |
+| virtual void | **[onReceivePlayAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks)**(const BMXMessageList & list)<br>Received acknowledgement of audio/video message playback  |
 | virtual void | **[onAttachmentStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error, int percent)<br>Attachment download state changed  |
 | virtual void | **[onAttachmentDownloadByUrlStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged)**(int64_t msgId, BMXErrorCode error, int percent)<br>Attachment download state changed  |
 | virtual void | **[onRetrieveHistoryMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages)**(BMXConversationPtr conversation)<br>Pull message history  |
 | virtual void | **[onLoadAllConversation](classfloo_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>List of unread conversations has been loaded  |
 | virtual void | **[onConversationCreate](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**(BMXConversationPtr conversation, BMXMessagePtr msg)<br>Create a new conversation locally  |
-| virtual void | **[onConversationDelete](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(int64_t conversationId, BMXErrorCode error)<br>Delete conversation  |
-| virtual void | **[onTotalUnreadCountChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>Update total unread-number  |
+| virtual void | **[onConversationDelete](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(int64_t conversationId, BMXErrorCode error)<br> Delete a conversation  |
+| virtual void | **[onTotalUnreadCountChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>Update total number of unread messages  |
 | void | **[registerChatService](classfloo_1_1_b_m_x_chat_service_listener.md#function-registerchatservice)**([BMXChatService](classfloo_1_1_b_m_x_chat_service.md) * service)<br>Register BMXChatService to which BMXChatServiceListener is bound (automatic registration in SDK)  |
 
 ## Protected Attributes
@@ -74,7 +74,7 @@ inline virtual void onStatusChanged(
 )
 ```
 
-Messaging state changed 
+Message state changed 
 
 **Parameters**: 
 
@@ -124,7 +124,7 @@ inline virtual void onReceive(
 )
 ```
 
-Message received 
+Messages received 
 
 **Parameters**: 
 
@@ -154,7 +154,7 @@ inline virtual void onReceiveSystemMessages(
 )
 ```
 
-System notification message received 
+System notification messages received 
 
 **Parameters**: 
 
@@ -169,11 +169,11 @@ inline virtual void onReceiveReadAcks(
 )
 ```
 
-Receipt of message read received 
+Read acknowledgement of messages received 
 
 **Parameters**: 
 
-  * **list** List of received messages with read receipt 
+  * **list** List of received messages with read acknowledgement 
 
 
 ### function onReceiveDeliverAcks
@@ -184,11 +184,11 @@ inline virtual void onReceiveDeliverAcks(
 )
 ```
 
-Receipt of message delivered received 
+Acknowledgement of message delivered received 
 
 **Parameters**: 
 
-  * **list** List of received messages with delivered receipt 
+  * **list** List of received messages with delivered acknowledgement 
 
 
 ### function onReceiveRecallMessages
@@ -199,7 +199,7 @@ inline virtual void onReceiveRecallMessages(
 )
 ```
 
-Canceled message received 
+Canceled messages received 
 
 **Parameters**: 
 
@@ -218,7 +218,7 @@ Message re-unread received (cross-device synchronization for changing message st
 
 **Parameters**: 
 
-  * **list** List of received messages with re-unread receipt 
+  * **list** List of received messages with re-unread acknowledgement 
 
 
 ### function onReceiveReadAllMessages
@@ -233,7 +233,7 @@ All received messages are read (all messages are set to read before cross-device
 
 **Parameters**: 
 
-  * **list** List of received messages with all-read receipt 
+  * **list** List of received messages with all-read acknowledgement 
 
 
 ### function onReceiveDeleteMessages
@@ -244,7 +244,7 @@ inline virtual void onReceiveDeleteMessages(
 )
 ```
 
-Deletion received (delete messages cross devices synchronously) 
+ Message deletions received (delete messages cross devices synchronously) 
 
 **Parameters**: 
 
@@ -259,11 +259,11 @@ inline virtual void onReceivePlayAcks(
 )
 ```
 
-Received receipt of audio/video message playback 
+Received acknowledgement of audio/video message playback 
 
 **Parameters**: 
 
-  * **list** List of received audio/video messages with playback receipt 
+  * **list** List of received audio/video messages with playback acknowledgement 
 
 
 ### function onAttachmentStatusChanged
@@ -353,7 +353,7 @@ inline virtual void onConversationDelete(
 )
 ```
 
-Delete conversation 
+ Delete a conversation 
 
 **Parameters**: 
 
@@ -369,7 +369,7 @@ inline virtual void onTotalUnreadCountChanged(
 )
 ```
 
-Update total unread-number 
+Update total number of unread messages 
 
 **Parameters**: 
 

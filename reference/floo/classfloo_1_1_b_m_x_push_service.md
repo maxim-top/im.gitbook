@@ -23,7 +23,7 @@ title: floo::BMXPushService
 | virtual | **[~BMXPushService](classfloo_1_1_b_m_x_push_service.md#function-~bmxpushservice)**() |
 | virtual BMXErrorCode | **[start](classfloo_1_1_b_m_x_push_service.md#function-start)**(const std::string & alias ="", const std::string & bmxToken ="") =0<br>Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.  |
 | virtual BMXErrorCode | **[stop](classfloo_1_1_b_m_x_push_service.md#function-stop)**() =0<br>Shut push feature interface.  |
-| virtual BMXErrorCode | **[resume](classfloo_1_1_b_m_x_push_service.md#function-resume)**() =0<br>Restore push feature interface.  |
+| virtual BMXErrorCode | **[resume](classfloo_1_1_b_m_x_push_service.md#function-resume)**() =0<br>Resume push function.  |
 | virtual BMXErrorCode | **[unbindAlias](classfloo_1_1_b_m_x_push_service.md#function-unbindalias)**(const std::string & alias) =0<br>Unbind user alias.  |
 | virtual const std::string & | **[getToken](classfloo_1_1_b_m_x_push_service.md#function-gettoken)**() =0<br>Get user token to use after login.  |
 | virtual const std::string & | **[getCert](classfloo_1_1_b_m_x_push_service.md#function-getcert)**() =0<br>Get push certificate returned by server after login.  |
@@ -44,7 +44,7 @@ title: floo::BMXPushService
 | virtual void | **[clearNotification](classfloo_1_1_b_m_x_push_service.md#function-clearnotification)**(int64_t notificationId) =0<br>Clear notifications for the specified id.  |
 | virtual void | **[clearAllNotifications](classfloo_1_1_b_m_x_push_service.md#function-clearallnotifications)**() =0<br>Empty the drop-down notification bar for all notifications.  |
 | virtual void | **[sendMessage](classfloo_1_1_b_m_x_push_service.md#function-sendmessage)**(const std::string & content) =0<br>Send a push uplink message and notify the listener of a change in message status  |
-| virtual BMXErrorCode | **[loadLocalPushMessages](classfloo_1_1_b_m_x_push_service.md#function-loadlocalpushmessages)**(int64_t refMsgId, size_t size, BMXMessageList & result, [PushDirection](classfloo_1_1_b_m_x_push_service.md#enum-pushdirection)  =[PushDirection::Up](classfloo_1_1_b_m_x_push_service.md#enumvalue-up)) =0<br>Load push message stored locally in database. Start with latest message if not specified  |
+| virtual BMXErrorCode | **[loadLocalPushMessages](classfloo_1_1_b_m_x_push_service.md#function-loadlocalpushmessages)**(int64_t refMsgId, size_t size, BMXMessageList & result, [PushDirection](classfloo_1_1_b_m_x_push_service.md#enum-pushdirection)  =[PushDirection::Up](classfloo_1_1_b_m_x_push_service.md#enumvalue-up)) =0<br>Load push message stored in local database. Start with latest message if not specified  |
 | virtual void | **[addPushListener](classfloo_1_1_b_m_x_push_service.md#function-addpushlistener)**([BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md) * listener) =0<br>Add push listener  |
 | virtual void | **[removePushListener](classfloo_1_1_b_m_x_push_service.md#function-removepushlistener)**([BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md) * listener) =0<br>Remove push listener  |
 
@@ -118,7 +118,7 @@ Shut push feature interface.
 virtual BMXErrorCode resume() =0
 ```
 
-Restore push feature interface. 
+Resume push function. 
 
 **Return**: BMXErrorCode 
 
@@ -453,12 +453,12 @@ virtual BMXErrorCode loadLocalPushMessages(
 ) =0
 ```
 
-Load push message stored locally in database. Start with latest message if not specified 
+Load push message stored in local database. Start with latest message if not specified 
 
 **Parameters**: 
 
   * **refMsgId** Start id for loading pushes 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of loaded local pushes returned by database 
   * **Direction** Direction of loading pushes, default to load earlier messages 
 

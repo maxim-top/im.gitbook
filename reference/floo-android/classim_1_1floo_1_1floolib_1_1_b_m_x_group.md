@@ -27,7 +27,7 @@ Inherits from BMXBaseObject
 | synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-delete)**() |
 | long | **[groupId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-groupid)**()<br>Group Id  |
 | BMXGroup.GroupType | **[groupType](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-grouptype)**()<br>Type of the current group (Private, Public, Chatroom)  |
-| String | **[myNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-mynickname)**()<br>Group member nickname  |
+| String | **[myNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-mynickname)**()<br>Group member nickname of mine  |
 | String | **[name](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-name)**()<br>Group name  |
 | String | **[description](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-description)**()<br>Group description  |
 | String | **[avatarRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-avatarratelurl)**()<br>Ratel address of group avatar  |
@@ -38,9 +38,9 @@ Inherits from BMXBaseObject
 | long | **[createTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-createtime)**()<br>Group creation time  |
 | String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-extension)**()<br>Group extension information  |
 | long | **[ownerId](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-ownerid)**()<br>Group Owner  |
-| int | **[capacity](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-capacity)**()<br>Max member-number  |
-| int | **[membersCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-memberscount)**()<br>Group member-number, including Owner, Admins and Members  |
-| int | **[adminsCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-adminscount)**()<br>Group admin-number  |
+| int | **[capacity](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-capacity)**()<br>Maximum number of group members  |
+| int | **[membersCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-memberscount)**()<br>Number of group members, including Owner, Admins and Members  |
+| int | **[adminsCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-adminscount)**()<br>Number of group admins  |
 | int | **[blockListSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-blocklistsize)**()<br>Blacklisted user-number  |
 | int | **[bannedListSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-bannedlistsize)**()<br>Banned user-number  |
 | int | **[sharedFilesCount](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-sharedfilescount)**()<br>Shared file-number in group  |
@@ -52,7 +52,7 @@ Inherits from BMXBaseObject
 | BMXGroup.MsgMuteMode | **[msgMuteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-msgmutemode)**()<br>Group message blocking mode  |
 | BMXGroup.GroupStatus | **[groupStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-groupstatus)**()<br>state of the current group. (Normal, Destroyed)  |
 | boolean | **[isMember](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-ismember)**()<br>Deprecated use roleType instead.  |
-| boolean | **[enableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-enablereadack)**()<br>Whether group message read feature enabled  |
+| boolean | **[enableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-enablereadack)**()<br>Whether group message read acknowledgement feature enabled  |
 | boolean | **[historyVisible](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-historyvisible)**()<br>Whether to load and display the chat history  |
 | BMXGroup.MemberRoleType | **[roleType](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-roletype)**()<br>Type of a member role in group  |
 | long | **[banExpireTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md#function-banexpiretime)**()<br>Expiration time of banning all group members  |
@@ -113,7 +113,7 @@ Type of the current group (Private, Public, Chatroom)
 inline String myNickname()
 ```
 
-Group member nickname 
+Group member nickname of mine 
 
 **Return**: std::string 
 
@@ -223,7 +223,7 @@ Group Owner
 inline int capacity()
 ```
 
-Max member-number 
+Maximum number of group members 
 
 **Return**: int 
 
@@ -233,7 +233,7 @@ Max member-number
 inline int membersCount()
 ```
 
-Group member-number, including Owner, Admins and Members 
+Number of group members, including Owner, Admins and Members 
 
 **Return**: int 
 
@@ -243,7 +243,7 @@ Group member-number, including Owner, Admins and Members
 inline int adminsCount()
 ```
 
-Group admin-number 
+Number of group admins 
 
 **Return**: int 
 
@@ -366,7 +366,7 @@ Whether the current user is a group member
 inline boolean enableReadAck()
 ```
 
-Whether group message read feature enabled 
+Whether group message read acknowledgement feature enabled 
 
 **Return**: bool 
 

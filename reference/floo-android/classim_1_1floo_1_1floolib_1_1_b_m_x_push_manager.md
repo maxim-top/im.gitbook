@@ -19,7 +19,7 @@ Push manager
 | void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final String alias, final BMXCallBack callBack) |
 | void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final BMXCallBack callBack) |
 | void | **[stop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-stop)**(final BMXCallBack callBack)<br>Shut push feature interface.  |
-| void | **[resume](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-resume)**(final BMXCallBack callBack)<br>Restore push feature interface.  |
+| void | **[resume](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-resume)**(final BMXCallBack callBack)<br>Resume push function.  |
 | void | **[unbindAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-unbindalias)**(final String alias, final BMXCallBack callBack)<br>Unbind user alias.  |
 | String | **[getToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettoken)**()<br>Get user token to use after login.  |
 | String | **[getCert](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getcert)**()<br>Get push certificate returned by server after login.  |
@@ -44,7 +44,7 @@ Push manager
 | void | **[clearNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearnotification)**(final long notificationId)<br>Clear notifications for the specified id.  |
 | void | **[clearAllNotifications](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearallnotifications)**() |
 | void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-sendmessage)**(final String content)<br>Send a push uplink message and notify the listener of a change in message status  |
-| void | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)**(final long refMsgId, final long size, final BMXMessageList result, final BMXPushService.PushDirection arg3, final BMXCallBack callBack)<br>Load push message stored locally in database. Start with latest message if not specified  |
+| void | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)**(final long refMsgId, final long size, final BMXMessageList result, final BMXPushService.PushDirection arg3, final BMXCallBack callBack)<br>Load push message stored in local database. Start with latest message if not specified  |
 | void | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)**(final long refMsgId, final long size, final BMXMessageList result, final BMXCallBack callBack) |
 | void | **[addPushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-addpushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>Add push listener  |
 | void | **[removePushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-removepushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>Remove push listener  |
@@ -121,7 +121,7 @@ inline void resume(
 )
 ```
 
-Restore push feature interface. 
+Resume push function. 
 
 **Parameters**: 
 
@@ -490,12 +490,12 @@ inline void loadLocalPushMessages(
 )
 ```
 
-Load push message stored locally in database. Start with latest message if not specified 
+Load push message stored in local database. Start with latest message if not specified 
 
 **Parameters**: 
 
   * **refMsgId** Start id for loading pushes 
-  * **size** Maximum number of loaded messages 
+  * **size** Maximum number of searched messages 
   * **result** List of loaded local pushes returned by database 
   * **arg3** Direction of loading pushes, default to load earlier messages 
 

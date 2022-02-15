@@ -83,7 +83,7 @@ Group Service
 | virtual BMXErrorCode | **[setJoinAuthMode](classfloo_1_1_b_m_x_group_service.md#function-setjoinauthmode)**(BMXGroupPtr group, [BMXGroup::JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode) mode) =0<br>Set approval mode for joining group  |
 | virtual BMXErrorCode | **[setInviteMode](classfloo_1_1_b_m_x_group_service.md#function-setinvitemode)**(BMXGroupPtr group, [BMXGroup::InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode) mode) =0<br>Set invitation mode  |
 | virtual BMXErrorCode | **[setAllowMemberModify](classfloo_1_1_b_m_x_group_service.md#function-setallowmembermodify)**(BMXGroupPtr group, bool enable) =0<br>Set whether group members are allowed to set group information  |
-| virtual BMXErrorCode | **[setEnableReadAck](classfloo_1_1_b_m_x_group_service.md#function-setenablereadack)**(BMXGroupPtr group, bool enable) =0<br>Set whether group message read is enabled  |
+| virtual BMXErrorCode | **[setEnableReadAck](classfloo_1_1_b_m_x_group_service.md#function-setenablereadack)**(BMXGroupPtr group, bool enable) =0<br>Set whether group message read acknowledgement is enabled  |
 | virtual BMXErrorCode | **[setHistoryVisible](classfloo_1_1_b_m_x_group_service.md#function-sethistoryvisible)**(BMXGroupPtr group, bool enable) =0<br>Set whether group members are allowed to enable visible message history  |
 | virtual BMXErrorCode | **[setAvatar](classfloo_1_1_b_m_x_group_service.md#function-setavatar)**(BMXGroupPtr group, const std::string & avatarPath, Callback ) =0<br>Set group avatar  |
 | virtual BMXErrorCode | **[downloadAvatar](classfloo_1_1_b_m_x_group_service.md#function-downloadavatar)**(BMXGroupPtr group, bool thumbnail, Callback callback) =0<br>Download group avatar  |
@@ -1222,7 +1222,7 @@ Set nickname in group
 **Parameters**: 
 
   * **group** Group to operate on 
-  * **nickname** User nickname in group 
+  * **nickname** My nickname in group 
 
 
 **Return**: BMXErrorCode 
@@ -1312,7 +1312,7 @@ virtual BMXErrorCode setEnableReadAck(
 ) =0
 ```
 
-Set whether group message read is enabled 
+Set whether group message read acknowledgement is enabled 
 
 **Parameters**: 
 

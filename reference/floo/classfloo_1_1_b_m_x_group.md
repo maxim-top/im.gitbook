@@ -50,7 +50,7 @@ Inherits from BMXBaseObject
 | virtual | **[~BMXGroup](classfloo_1_1_b_m_x_group.md#function-~bmxgroup)**()<br>Destructor  |
 | virtual int64_t | **[groupId](classfloo_1_1_b_m_x_group.md#function-groupid)**() =0<br>Group Id  |
 | virtual [GroupType](classfloo_1_1_b_m_x_group.md#enum-grouptype) | **[groupType](classfloo_1_1_b_m_x_group.md#function-grouptype)**() =0<br>Type of the current group (Private, Public, Chatroom)  |
-| virtual const std::string & | **[myNickname](classfloo_1_1_b_m_x_group.md#function-mynickname)**() =0<br>Group member nickname  |
+| virtual const std::string & | **[myNickname](classfloo_1_1_b_m_x_group.md#function-mynickname)**() =0<br>Group member nickname of mine  |
 | virtual const std::string & | **[name](classfloo_1_1_b_m_x_group.md#function-name)**() =0<br>Group name  |
 | virtual const std::string & | **[description](classfloo_1_1_b_m_x_group.md#function-description)**() =0<br>Group description  |
 | virtual std::string | **[avatarRatelUrl](classfloo_1_1_b_m_x_group.md#function-avatarratelurl)**() =0<br>Url for group avatar Ratel server  |
@@ -61,9 +61,9 @@ Inherits from BMXBaseObject
 | virtual int64_t | **[createTime](classfloo_1_1_b_m_x_group.md#function-createtime)**() =0<br>Group creation time  |
 | virtual const JSON & | **[extension](classfloo_1_1_b_m_x_group.md#function-extension)**() =0<br>Group extension information  |
 | virtual int64_t | **[ownerId](classfloo_1_1_b_m_x_group.md#function-ownerid)**() =0<br>Group Owner  |
-| virtual int | **[capacity](classfloo_1_1_b_m_x_group.md#function-capacity)**() =0<br>Max member-number  |
-| virtual int | **[membersCount](classfloo_1_1_b_m_x_group.md#function-memberscount)**() =0<br>Group member-number, including Owner, Admins and Members  |
-| virtual int | **[adminsCount](classfloo_1_1_b_m_x_group.md#function-adminscount)**() =0<br>Group admin-number  |
+| virtual int | **[capacity](classfloo_1_1_b_m_x_group.md#function-capacity)**() =0<br>Maximum number of group members  |
+| virtual int | **[membersCount](classfloo_1_1_b_m_x_group.md#function-memberscount)**() =0<br>Number of group members, including Owner, Admins and Members  |
+| virtual int | **[adminsCount](classfloo_1_1_b_m_x_group.md#function-adminscount)**() =0<br>Number of group admins  |
 | virtual int | **[blockListSize](classfloo_1_1_b_m_x_group.md#function-blocklistsize)**() =0<br>Blacklisted user-number  |
 | virtual int | **[bannedListSize](classfloo_1_1_b_m_x_group.md#function-bannedlistsize)**() =0<br>Banned user-number  |
 | virtual int | **[sharedFilesCount](classfloo_1_1_b_m_x_group.md#function-sharedfilescount)**() =0<br>Shared file-number in group  |
@@ -75,7 +75,7 @@ Inherits from BMXBaseObject
 | virtual [MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode) | **[msgMuteMode](classfloo_1_1_b_m_x_group.md#function-msgmutemode)**() =0<br>Group message blocking mode  |
 | virtual [GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus) | **[groupStatus](classfloo_1_1_b_m_x_group.md#function-groupstatus)**() =0<br>state of the current group. (Normal, Destroyed)  |
 | virtual bool | **[isMember](classfloo_1_1_b_m_x_group.md#function-ismember)**() =0<br>Deprecated use roleType instead.  |
-| virtual bool | **[enableReadAck](classfloo_1_1_b_m_x_group.md#function-enablereadack)**() =0<br>Whether group message read feature enabled  |
+| virtual bool | **[enableReadAck](classfloo_1_1_b_m_x_group.md#function-enablereadack)**() =0<br>Whether group message read acknowledgement feature enabled  |
 | virtual bool | **[historyVisible](classfloo_1_1_b_m_x_group.md#function-historyvisible)**() =0<br>Whether to load and display the chat history  |
 | virtual [MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype) | **[roleType](classfloo_1_1_b_m_x_group.md#function-roletype)**() =0<br>Type of a member role in group  |
 | virtual int64_t | **[banExpireTime](classfloo_1_1_b_m_x_group.md#function-banexpiretime)**() =0<br>Expiration time of banning all group members  |
@@ -176,7 +176,7 @@ Group invitation mode
 | InviteMode | | Modify group invitation mode   |
 | MsgPushMode | | Modify group pushed message type   |
 | MsgMuteMode | | Modify whether to alert message   |
-| ReadAckMode | | Whether group message read feature enabled   |
+| ReadAckMode | | Whether group message read acknowledgement feature enabled   |
 | HistoryVisibleMode | | Whether group chat history is visible to new members   |
 | BanExpireTime | | Expiration time of banning all group members   |
 
@@ -350,7 +350,7 @@ Type of the current group (Private, Public, Chatroom)
 virtual const std::string & myNickname() =0
 ```
 
-Group member nickname 
+Group member nickname of mine 
 
 **Return**: std::string 
 
@@ -460,7 +460,7 @@ Group Owner
 virtual int capacity() =0
 ```
 
-Max member-number 
+Maximum number of group members 
 
 **Return**: int 
 
@@ -470,7 +470,7 @@ Max member-number
 virtual int membersCount() =0
 ```
 
-Group member-number, including Owner, Admins and Members 
+Number of group members, including Owner, Admins and Members 
 
 **Return**: int 
 
@@ -480,7 +480,7 @@ Group member-number, including Owner, Admins and Members
 virtual int adminsCount() =0
 ```
 
-Group admin-number 
+Number of group admins 
 
 **Return**: int 
 
@@ -603,7 +603,7 @@ Whether the current user is a group member
 virtual bool enableReadAck() =0
 ```
 
-Whether group message read feature enabled 
+Whether group message read acknowledgement feature enabled 
 
 **Return**: bool 
 

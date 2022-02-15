@@ -29,7 +29,7 @@ New conversation locally created
 <a name="//api/name/conversationDidDeletedConversationId:error:" title="conversationDidDeletedConversationId:error:"></a>
 ### conversationDidDeletedConversationId:error:
 
-Delete conversation
+ Delete a conversation
 
 `- (void)conversationDidDeletedConversationId:(NSInteger)*conversationId* error:(BMXError *)*error*`
 
@@ -42,7 +42,7 @@ Delete conversation
    State error code  
 
 #### Discussion
-Delete conversation
+ Delete a conversation
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -50,7 +50,7 @@ Delete conversation
 <a name="//api/name/conversationTotalCountChanged:" title="conversationTotalCountChanged:"></a>
 ### conversationTotalCountChanged:
 
-Update total unread-number
+Update total number of unread messages
 
 `- (void)conversationTotalCountChanged:(NSInteger)*unreadCount*`
 
@@ -60,7 +60,7 @@ Update total unread-number
    Number of unreads  
 
 #### Discussion
-Update total unread-number
+Update total number of unread messages
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -120,12 +120,12 @@ Message recall state changed
 <a name="//api/name/messageStatusChanged:error:" title="messageStatusChanged:error:"></a>
 ### messageStatusChanged:error:
 
-Messaging state changed
+Message state changed
 
 `- (void)messageStatusChanged:(BMXMessageObject *)*message* error:(BMXError *)*error*`
 
 #### Discussion
-Messaging state changed
+Message state changed
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -133,12 +133,12 @@ Messaging state changed
 <a name="//api/name/receiveDeleteMessages:" title="receiveDeleteMessages:"></a>
 ### receiveDeleteMessages:
 
-Deletion received (delete messages cross devices synchronously)
+ Message deletions received (delete messages cross devices synchronously)
 
 `- (void)receiveDeleteMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-Deletion received (delete messages cross devices synchronously)
+ Message deletions received (delete messages cross devices synchronously)
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -185,12 +185,12 @@ Command received
 <a name="//api/name/receivedDeliverAcks:" title="receivedDeliverAcks:"></a>
 ### receivedDeliverAcks:
 
-Receipt of message delivered received
+Acknowledgement of message delivered received
 
 `- (void)receivedDeliverAcks:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-Receipt of message delivered received
+Acknowledgement of message delivered received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -198,12 +198,12 @@ Receipt of message delivered received
 <a name="//api/name/receivedMessages:" title="receivedMessages:"></a>
 ### receivedMessages:
 
-Message received
+Messages received
 
 `- (void)receivedMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-Message received
+Messages received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -211,12 +211,12 @@ Message received
 <a name="//api/name/receivedReadAcks:" title="receivedReadAcks:"></a>
 ### receivedReadAcks:
 
-Receipt of message read received
+Read acknowledgement of messages received
 
 `- (void)receivedReadAcks:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-Receipt of message read received
+Read acknowledgement of messages received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -224,12 +224,12 @@ Receipt of message read received
 <a name="//api/name/receivedRecallMessages:" title="receivedRecallMessages:"></a>
 ### receivedRecallMessages:
 
-Canceled message received
+Canceled messages received
 
 `- (void)receivedRecallMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-Canceled message received
+Canceled messages received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`
@@ -237,12 +237,12 @@ Canceled message received
 <a name="//api/name/receivedSystemMessages:" title="receivedSystemMessages:"></a>
 ### receivedSystemMessages:
 
-System notification message received
+System notification messages received
 
 `- (void)receivedSystemMessages:(NSArray<BMXMessageObject*> *)*messages*`
 
 #### Discussion
-System notification message received
+System notification messages received
 
 #### Declared In
 * `BMXChatServiceProtocol.h`

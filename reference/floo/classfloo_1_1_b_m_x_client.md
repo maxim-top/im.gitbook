@@ -25,7 +25,7 @@ Inherits from [floo::BMXNetworkListener](classfloo_1_1_b_m_x_network_listener.md
 | virtual [BMXUserService](classfloo_1_1_b_m_x_user_service.md) & | **[getUserService](classfloo_1_1_b_m_x_client.md#function-getuserservice)**() =0<br>Get user Service  |
 | virtual [BMXChatService](classfloo_1_1_b_m_x_chat_service.md) & | **[getChatService](classfloo_1_1_b_m_x_client.md#function-getchatservice)**() =0<br>Get chat Service  |
 | virtual [BMXGroupService](classfloo_1_1_b_m_x_group_service.md) & | **[getGroupService](classfloo_1_1_b_m_x_client.md#function-getgroupservice)**() =0<br>Get group Service  |
-| virtual [BMXRosterService](classfloo_1_1_b_m_x_roster_service.md) & | **[getRosterService](classfloo_1_1_b_m_x_client.md#function-getrosterservice)**() =0<br>Get friend Service  |
+| virtual [BMXRosterService](classfloo_1_1_b_m_x_roster_service.md) & | **[getRosterService](classfloo_1_1_b_m_x_client.md#function-getrosterservice)**() =0<br>Get roster Service  |
 | virtual [BMXPushService](classfloo_1_1_b_m_x_push_service.md) & | **[getPushService](classfloo_1_1_b_m_x_client.md#function-getpushservice)**() =0<br>Get push Service  |
 | virtual BMXErrorCode | **[signUpNewUser](classfloo_1_1_b_m_x_client.md#function-signupnewuser)**(const std::string & username, const std::string & password, BMXUserProfilePtr & bmxUserProfilePtr) =0<br>To register a new user, username and password are required  |
 | virtual BMXErrorCode | **[signInByName](classfloo_1_1_b_m_x_client.md#function-signinbyname)**(const std::string & name, const std::string & password) =0<br>Login by username  |
@@ -40,7 +40,7 @@ Inherits from [floo::BMXNetworkListener](classfloo_1_1_b_m_x_network_listener.md
 | virtual void | **[disconnect](classfloo_1_1_b_m_x_client.md#function-disconnect)**() =0<br>Disconnect  |
 | virtual BMXErrorCode | **[changeAppId](classfloo_1_1_b_m_x_client.md#function-changeappid)**(const std::string & appId, const std::string & appSecret ="") =0<br>Change the appId of SDK, which also update the appId in BMXConfig.  |
 | virtual BMXErrorCode | **[initializeServerConfig](classfloo_1_1_b_m_x_client.md#function-initializeserverconfig)**(bool isLocal) =0<br>Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.  |
-| virtual void | **[sendMessage](classfloo_1_1_b_m_x_client.md#function-sendmessage)**(BMXMessagePtr msg) =0<br>When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read receipt enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself.  |
+| virtual void | **[sendMessage](classfloo_1_1_b_m_x_client.md#function-sendmessage)**(BMXMessagePtr msg) =0<br>When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself.  |
 
 ## Protected Functions
 
@@ -130,7 +130,7 @@ Get group Service
 virtual BMXRosterService & getRosterService() =0
 ```
 
-Get friend Service 
+Get roster Service 
 
 **Return**: [BMXRosterService](classfloo_1_1_b_m_x_roster_service.md)
 
@@ -359,11 +359,11 @@ virtual void sendMessage(
 ) =0
 ```
 
-When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read receipt enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself. 
+When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself. 
 
 **Parameters**: 
 
-  * **msg** Sent message 
+  * **msg** Message to be sent 
 
 
 ## Protected Functions Documentation

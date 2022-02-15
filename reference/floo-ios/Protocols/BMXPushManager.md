@@ -203,7 +203,7 @@ Get user token to use after login.
 <a name="//api/name/loadLocalPushMessagesFromMessageId:size:directionType:completion:" title="loadLocalPushMessagesFromMessageId:size:directionType:completion:"></a>
 ### loadLocalPushMessagesFromMessageId:size:directionType:completion:
 
-Load push message stored locally in database. Start with latest message if not specified
+Load push message stored in local database. Start with latest message if not specified
 
 `- (void)loadLocalPushMessagesFromMessageId:(long long)*reMsgId* size:(NSUInteger)*size* directionType:(BMXPushMessageDirection)*directionType* completion:(void ( ^ ) ( NSArray *messageList , BMXError *error ))*aCompletionBlock*`
 
@@ -213,7 +213,7 @@ Load push message stored locally in database. Start with latest message if not s
    Start id for loading pushes  
 
 *size*  
-   Maximum number of loaded messages  
+   Maximum number of searched messages  
 
 *directionType*  
    List of loaded local pushes returned by database  
@@ -222,7 +222,7 @@ Load push message stored locally in database. Start with latest message if not s
    Direction of loading pushes, default to load earlier messages  
 
 #### Discussion
-Load push message stored locally in database. Start with latest message if not specified
+Load push message stored in local database. Start with latest message if not specified
 
 #### Declared In
 * `BMXPushManager.h`
@@ -253,12 +253,12 @@ Remove chat listener
 <a name="//api/name/resume" title="resume"></a>
 ### resume
 
-Restore push feature interface.
+Resume push function.
 
 `- (void)resume`
 
 #### Discussion
-Restore push feature interface.
+Resume push function.
 
 #### Declared In
 * `BMXPushManager.h`

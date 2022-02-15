@@ -21,12 +21,12 @@ Inherits from [im.floo.floolib.BMXNetworkListener](classim_1_1floo_1_1floolib_1_
 | [BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md) | **[getUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getuserservice)**()<br>Get user Service  |
 | [BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md) | **[getChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getchatservice)**()<br>Get chat Service  |
 | [BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) | **[getGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getgroupservice)**()<br>Get group Service  |
-| [BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) | **[getRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getrosterservice)**()<br>Get friend Service  |
+| [BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) | **[getRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getrosterservice)**()<br>Get roster Service  |
 | [BMXPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md) | **[getPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getpushservice)**()<br>Get push Service  |
 | [BMXUserManager](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md) | **[getUserManager](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getusermanager)**()<br>Get user Manager  |
 | [BMXChatManager](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md) | **[getChatManager](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getchatmanager)**()<br>Get chat Manager  |
 | [BMXGroupManager](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md) | **[getGroupManager](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getgroupmanager)**()<br>Get group Manager  |
-| [BMXRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md) | **[getRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getrostermanager)**()<br>Get friend Manager  |
+| [BMXRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md) | **[getRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getrostermanager)**()<br>Get roster Manager  |
 | [BMXPushManager](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md) | **[getPushManager](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-getpushmanager)**()<br>Get push Manager  |
 | [BMXErrorCode] | **[signUpNewUser](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-signupnewuser)**(String username, String password, [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) bmxUserProfilePtr)<br>To register a new user, username and password are required  |
 | [BMXErrorCode] | **[signInByName](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-signinbyname)**(String name, String password)<br>Login by username  |
@@ -44,7 +44,7 @@ Inherits from [im.floo.floolib.BMXNetworkListener](classim_1_1floo_1_1floolib_1_
 | [BMXErrorCode] | **[changeAppId](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-changeappid)**(String appId, String appSecret)<br>Change the appId of SDK, which also update the appId in BMXConfig.  |
 | [BMXErrorCode] | **[changeAppId](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-changeappid)**(String appId)<br>Change the appId of SDK, which also update the appId in BMXConfig.  |
 | [BMXErrorCode] | **[initializeServerConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-initializeserverconfig)**(boolean isLocal)<br>Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.  |
-| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-sendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read receipt enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself.  |
+| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-sendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself.  |
 | [BMXClient](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md) | **[create](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md#function-create)**([BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md) config)<br>Create BMXClient  |
 
 ## Protected Functions
@@ -131,7 +131,7 @@ Get group Service
 inline BMXRosterService getRosterService()
 ```
 
-Get friend Service 
+Get roster Service 
 
 **Return**: [BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md)
 
@@ -181,7 +181,7 @@ Get group Manager
 inline BMXRosterManager getRosterManager()
 ```
 
-Get friend Manager 
+Get roster Manager 
 
 **Return**: [BMXRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md)
 
@@ -438,11 +438,11 @@ inline void sendMessage(
 )
 ```
 
-When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read receipt enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself. 
+When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself. 
 
 **Parameters**: 
 
-  * **msg** Sent message 
+  * **msg** Message to be sent 
 
 
 ### function create
