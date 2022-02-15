@@ -287,7 +287,7 @@ typedef floo::BMXConversation::Type BMXConversationType;
 3、[飞路粉（floo powder）](https://harrypotter.fandom.com/zh/wiki/%E9%A3%9E%E8%B7%AF%E7%B2%89)\
 4、[十分钟安装一套即时通讯 IM 私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\
 5、[树莓派中的 IM 私有云支持多少并发？](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)\
-6、[Floo-android reference 类库文档](../../reference/floo-ios/classes.md)\
+6、[Floo-android reference 类库文档](../../reference/floo-android.md)\
 7、[Floo-android Github 仓库里的 floo.i](https://github.com/maxim-top/floo-android/blob/master/app/swig/floo.i)\
 8、[十分钟安装的即时通讯私有云 美信拓扑](https://www.maximtop.com)
 
