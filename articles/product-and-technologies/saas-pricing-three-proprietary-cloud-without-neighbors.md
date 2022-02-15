@@ -40,7 +40,7 @@
 
 看图更直观：
 
-### IM 价格：专有云 vs 公有云
+## IM 价格：专有云 vs 公有云
 
 ![](../../.gitbook/assets/articles/autogen-4aa1a276d84a4c60538021007b86ca744a40d7006d049b968ba15536102e02f8.webp)
 
@@ -52,7 +52,7 @@
 
 这也是我们提多云架构的原因。因为如果不是多云架构，没有针对性的多集群架构支持，没有统一的控制台，没有自动化的运维管控体系，一个团队能够管理的云是有限的，成本只会比传统私有云还要高。
 
-### IM 价格：专有云 vs 私有云
+## IM 价格：专有云 vs 私有云
 
 ![](../../.gitbook/assets/articles/autogen-4451f0c7ea118b8a383d5ad2dc82f7054c771e2de30c2dacc5b8f89419b8b65f.webp)
 
@@ -70,7 +70,7 @@
 
 以上就是我们在专有云设计与定价的一些考虑，也是 SaaS 定价系列的第三篇，前两篇分别是《[SaaS定价一：每月￥199的 IM 云服务](saas-pricing-one-im-cloud-service-of-199-per-month.md)》《[SaaS定价二：按月付费的私有云](saas-pricing-two-monthly-private-cloud.md)》，可一起参考阅读。
 
-### 后记
+## 后记
 
 最近直播带货很多，很多都在重复使用过去电视购物的套路：
 
