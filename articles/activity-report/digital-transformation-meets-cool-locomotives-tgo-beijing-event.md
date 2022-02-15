@@ -16,9 +16,9 @@ TGO鲲鹏会 美信拓扑 _2021-09-03 19:06_
 
 以下视频来源于
 
-TGO鲲鹏会
+TGO鲲鹏会，时长02:17
 
-，时长02:17
+{% embed url="https://mp.weixin.qq.com/mp/readtemplate?auto=0&t=pages%2Fvideo_player_tmpl&vid=wxv_2031170889655828481" %}
 
 活动精彩视频一睹为快
 
