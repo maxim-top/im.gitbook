@@ -62,7 +62,7 @@
 
 **扫描下方小程序进行报名。**
 
-![TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日小程序](../../.gitbook/assets/articles/autogen-19be5dff5823d13a5138d8c421b4b71624a220f1e39fcd5e6518e33cda51a5df.jpeg)
+![TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日](../../.gitbook/assets/articles/autogen-19be5dff5823d13a5138d8c421b4b71624a220f1e39fcd5e6518e33cda51a5df.jpeg)
 
 ## 关于创新企业研习营
 
