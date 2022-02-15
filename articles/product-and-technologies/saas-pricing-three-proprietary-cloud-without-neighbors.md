@@ -66,7 +66,9 @@
 
 图中美信拓扑价格数据都是公开的，可到以下页面查看最新价格和优惠：
 
-> [美信拓扑 IM 定价](https://www.maximtop.com/plans/)
+> 美信拓扑 IM 定价
+>
+> [https://www.maximtop.com/plans/](https://www.maximtop.com/plans/)
 
 以上就是我们在专有云设计与定价的一些考虑，也是 SaaS 定价系列的第三篇，前两篇分别是《[SaaS定价一：每月￥199的 IM 云服务](saas-pricing-one-im-cloud-service-of-199-per-month.md)》《[SaaS定价二：按月付费的私有云](saas-pricing-two-monthly-private-cloud.md)》，可一起参考阅读。
 
