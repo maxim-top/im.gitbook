@@ -54,7 +54,7 @@
 
 ## 价格决定客户
 
-![](../../.gitbook/assets/articles/autogen-10e2661331f22b91be0e9dbff19bc5b8617d86de82bcbbd8a33494f39a74df08.webp)
+![Photo by Thom Milkovic on Unsplash](../../.gitbook/assets/articles/autogen-10e2661331f22b91be0e9dbff19bc5b8617d86de82bcbbd8a33494f39a74df08.webp)
 
 我曾经在《云服务的下一个十年》一文讲过，为什么云服务能够替代到传统 IDC 服务商：
 
@@ -62,7 +62,9 @@
 >
 > 而新的这些客户，原本可能并不会也没有预算来尝试使用服务。
 >
-> 一乐，公众号：一乐来了[云服务的下一个十年](../Industry-development/the-next-decade-of-cloud-services.md)
+> 一乐，公众号：一乐来了
+>
+> [云服务的下一个十年](../Industry-development/the-next-decade-of-cloud-services.md)
 
 云服务的价值，在于将服务成本降低到比原来低一个甚至数个数量级，然后激发上层应用的繁荣，最终从应用和市场的成长中获益。
 
@@ -111,7 +113,7 @@
 
 ## 不，不能免费
 
-![](../../.gitbook/assets/articles/autogen-1441678e056040c76061afed6a968dc1ffc359f59cd2e3edb67e933320b342e6.webp)
+![Photo by Clay Banks on Unsplash](../../.gitbook/assets/articles/autogen-1441678e056040c76061afed6a968dc1ffc359f59cd2e3edb67e933320b342e6.webp)
 
 > 她那时候还太年轻，不知道所有命运赠送的礼物，早已在暗中标好了价格。
 
@@ -138,7 +140,7 @@ IM 云服务是走过这条商业弯路的。但是受限于聊天数据的敏�
 
 ## 后记
 
-![](../../.gitbook/assets/articles/autogen-d89389332dd40323a5fdbc08ca9f890f63728279755802e8ce82b61cf299d2f4.webp)
+![Photo by Hello I‘m Nik on Unsplash](../../.gitbook/assets/articles/autogen-d89389332dd40323a5fdbc08ca9f890f63728279755802e8ce82b61cf299d2f4.webp)
 
 市场活动中，你永远不知道用户会有什么反应。
 
