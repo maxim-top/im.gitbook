@@ -1,7 +1,7 @@
 
 ## 3    User action
 
-## 3.1  Set how to validate when adding friend
+## 3.1  Set method to validate when adding friend
 
 > POST  /user/authmode
 
@@ -33,7 +33,7 @@
 
 
 
-## 3.2  Set how to validate when adding friend
+## 3.2  Set method to validate when adding friend
 
 > PUT  /user/authmode
 

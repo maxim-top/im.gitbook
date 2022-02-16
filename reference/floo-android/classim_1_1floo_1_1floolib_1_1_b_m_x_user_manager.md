@@ -33,7 +33,7 @@ User manager
 | void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-downloadavatar)**(final [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, final FileProgressListener listener, final BMXCallBack callBack)<br>Download avatar  |
 | void | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpublicinfo)**(final String publicInfo, final BMXCallBack callBack)<br>Set public extension information  |
 | void | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setprivateinfo)**(final String privateInfo, final BMXCallBack callBack)<br>Set private extension information  |
-| void | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setaddfriendauthmode)**(final BMXUserProfile.AddFriendAuthMode mode, final BMXCallBack callBack)<br>Set how to validate when adding friend  |
+| void | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setaddfriendauthmode)**(final BMXUserProfile.AddFriendAuthMode mode, final BMXCallBack callBack)<br>Set method to validate when adding friend  |
 | void | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setauthquestion)**(final BMXUserProfile.AuthQuestion authQuestion, final BMXCallBack callBack)<br>Set friend authentication questions  |
 | void | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepush)**(final boolean enable, final BMXCallBack callBack)<br>Set whether push is allowed  |
 | void | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepushdetaile)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to push details  |
@@ -364,7 +364,7 @@ inline void setAddFriendAuthMode(
 )
 ```
 
-Set how to validate when adding friend 
+Set method to validate when adding friend 
 
 **Parameters**: 
 

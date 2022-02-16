@@ -99,7 +99,7 @@ Get user details
 <a name="//api/name/setAddFriendAuthMode:completion:" title="setAddFriendAuthMode:completion:"></a>
 ### setAddFriendAuthMode:completion:
 
-Set how to validate when adding friend
+Set method to validate when adding friend
 
 `- (void)setAddFriendAuthMode:(BMXAddFriendAuthMode)*addFriendAuthMode* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
@@ -109,7 +109,7 @@ Set how to validate when adding friend
    BMXAddFriendAuthMode  
 
 #### Discussion
-Set how to validate when adding friend
+Set method to validate when adding friend
 
 #### Declared In
 * `BMXUserManager.h`

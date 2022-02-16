@@ -24,7 +24,7 @@ User Service
 | [BMXErrorCode] | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-downloadavatar)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, boolean thumbnail, FileProgressListener callback)<br>Download avatar, default to download thumbnail  |
 | [BMXErrorCode] | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpublicinfo)**(String publicInfo)<br>Set public extension information  |
 | [BMXErrorCode] | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setprivateinfo)**(String privateInfo)<br>Set private extension information  |
-| [BMXErrorCode] | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**(BMXUserProfile.AddFriendAuthMode mode)<br>Set how to validate when adding friend  |
+| [BMXErrorCode] | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**(BMXUserProfile.AddFriendAuthMode mode)<br>Set method to validate when adding friend  |
 | [BMXErrorCode] | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setauthquestion)**(BMXUserProfile.AuthQuestion authQuestion)<br>Set friend authentication questions  |
 | [BMXErrorCode] | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepush)**(boolean enable)<br>Set whether push is allowed  |
 | [BMXErrorCode] | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepushdetaile)**(boolean enable)<br>Set whether to push details  |
@@ -229,7 +229,7 @@ inline BMXErrorCode setAddFriendAuthMode(
 )
 ```
 
-Set how to validate when adding friend 
+Set method to validate when adding friend 
 
 **Parameters**: 
 
