@@ -58,7 +58,7 @@
 | amount | <code>number</code> | 拉取的条数 |
 
 ### sysManage.sendMentionMessage(params) ⇒ <code>number</code> {#module_sysmanage.sendmentionmessage}
-群发送&#64;消息
+群发送@消息
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
 **Returns**: <code>number</code> - 客户端生成的消息ID  
@@ -68,10 +68,10 @@
 | params | <code>object</code> |  |
 | params.gid | <code>number</code> | 群ID |
 | params.txt | <code>string</code> | 消息文本内容 |
-| params.mentionAll | <code>boolean</code> | 是否&#64;所有人 |
-| params.mentionList | <code>Array.&lt;number&gt;</code> | &#64;的成员ID列表 |
-| params.mentionedMessage | <code>string</code> | &#64;消息的显示内容 |
-| params.mentionedMessage | <code>string</code> | &#64;消息的推送内容 |
+| params.mentionAll | <code>boolean</code> | 是否@所有人 |
+| params.mentionList | <code>Array.&lt;number&gt;</code> | @的成员ID列表 |
+| params.mentionedMessage | <code>string</code> | @消息的显示内容 |
+| params.mentionedMessage | <code>string</code> | @消息的推送内容 |
 | params.senderNickname | <code>string</code> | 发送者昵称 |
 
 ### sysManage.sendInputStatusMessage(uid, status) ⇒ <code>number</code> {#module_sysmanage.sendinputstatusmessage}
