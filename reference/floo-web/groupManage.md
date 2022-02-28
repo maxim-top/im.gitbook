@@ -1,6 +1,6 @@
 # groupManage
 ## groupManage {#module_groupmanage}
-群管理
+Group management
 
 
 * [groupManage](#module_groupmanage)
@@ -62,626 +62,626 @@
     * [.asyncFileUpload(params)](#module_groupmanage.asyncfileupload) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code>
 
 ### groupManage.asyncGetGroupInfo(group_id, froce) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) {#module_groupmanage.asyncgetgroupinfo}
-获取群信息
+Get group information
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - 群信息  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - Group info  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群ID |
-| froce | <code>boolean</code> | 是否强制从服务器拉取： true - 从服务器拉取， false - 优先从本地存储获取 |
+| group_id | <code>number</code> | GroupID |
+| froce | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
 ### groupManage.asyncGetJoinedGroups(froce) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage.asyncgetjoinedgroups}
-获取加入的群组
+Get the group to join
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - 群组ID列表  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - Group ID list  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| froce | <code>boolean</code> | 是否强制从服务器拉取： true - 从服务器拉取， false - 优先从本地存储获取 |
+| froce | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
 ### groupManage.openGroup(group_id) {#module_groupmanage.opengroup}
-打开群组， 此方法会准备群组聊天界面的一些必备信息。
+Open group, this method will prepare some necessary information for the group chat screen.
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群组ID |
+| group_id | <code>number</code> | GroupID |
 
 ### groupManage.getAllGroupDetail() ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> {#module_groupmanage.getallgroupdetail}
-获取缓存的所有群组详情
+Get all cached group details
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> - 群组详情  
+**Returns**: <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> - Group details  
 ### groupManage.asyncGetGroupMembers(group_id) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage.asyncgetgroupmembers}
-获取群组成员（异步）
+Get group members (asynchronous)
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - 群成员列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - List of group members  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群组ID |
+| group_id | <code>number</code> | GroupID |
 
 ### groupManage.getGroupMembers(group_id) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types..groupmember) {#module_groupmanage.getgroupmembers}
-获取群组成员（同步）
+Get group members (synchronous)
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types..groupmember) - 群成员列表  
+**Returns**: [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types..groupmember) - List of group members  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群组ID |
+| group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncGetGroupListDetail(gids) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code> {#module_groupmanage.asyncgetgrouplistdetail}
-按id获取群组详情
+Get group details by id
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code> - 群组详情列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code> - List of group details  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| gids | <code>Array.&lt;number&gt;</code> | 群组ID列表 |
+| gids | <code>Array.&lt;number&gt;</code> | Group ID list |
 
 ### groupManage.getGruopMessage(gid) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types..meta) {#module_groupmanage.getgruopmessage}
-获取群消息
+Get group information
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Array.&lt;Meta&gt;</code>](types.md#module_types..meta) - 群消息列表  
+**Returns**: [<code>Array.&lt;Meta&gt;</code>](types.md#module_types..meta) - List of group messages  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| gid | <code>number</code> | 群ID |
+| gid | <code>number</code> | GroupID |
 
 ### groupManage.asyncGetInfo(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) {#module_groupmanage.asyncgetinfo}
-获取群组详情
+Get group details
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - 群组详情  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - Group details  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncGetMemberList(param) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage.asyncgetmemberlist}
-获取群成员列表
+Get group member list
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - 群成员列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - List of group members  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| param | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| param | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.readGroupMessage(group_id, mid) {#module_groupmanage.readgroupmessage}
-将群消息设置已读
+Set group message to read
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群组ID |
-| mid | <code>number</code> | 消息ID |
+| group_id | <code>number</code> | GroupID |
+| mid | <code>number</code> | MessageID |
 
 ### groupManage.recallMessage(uid, mid) {#module_groupmanage.recallmessage}
-撤回消息
+Revoke message
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| uid | <code>number</code> | 群组ID |
-| mid | <code>number</code> | 消息ID |
+| uid | <code>number</code> | GroupID |
+| mid | <code>number</code> | MessageID |
 
 ### groupManage.getUnreadCount(gid) ⇒ <code>number</code> {#module_groupmanage.getunreadcount}
-获取群未读消息数
+Get number of unread group messages
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>number</code> - 未读消息数  
+**Returns**: <code>number</code> - Unread message-number  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| gid | <code>number</code> | 群组ID |
+| gid | <code>number</code> | GroupID |
 
 ### groupManage.asyncGetAdminList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage.asyncgetadminlist}
-获取群管理员列表
+Get the list of group Admins
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - 群管理员列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - List of group admins  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncAdminAdd(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asyncadminadd}
-群添加管理员
+Add group Admin
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncAdminRemove(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asyncadminremove}
-移除管理员
+Remove group Admin
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncGetAnouncementById(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types..groupannouncement) {#module_groupmanage.asyncgetanouncementbyid}
-获取群公告详情
+Get group announcement details
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types..groupannouncement) - 群公告详情  
+**Returns**: [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types..groupannouncement) - Group announcement details  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.announcement_id | <code>Array.&lt;number&gt;</code> | 公告ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.announcement_id | <code>Array.&lt;number&gt;</code> | Announcement ID |
 
 ### groupManage.asyncAnouncementDelete(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncanouncementdelete}
-删除群公告
+Delete group announcement
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.announcement_id | <code>Array.&lt;number&gt;</code> | 公告ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.announcement_id | <code>Array.&lt;number&gt;</code> | Announcement ID |
 
 ### groupManage.asyncAnnouncementEdit(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types..groupannouncement) {#module_groupmanage.asyncannouncementedit}
-编辑群公告
+Edit group announcement
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types..groupannouncement) - 群公告详情  
+**Returns**: [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types..groupannouncement) - Group announcement details  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.title | <code>string</code> | 公告标题 |
-| params.content | <code>string</code> | 公告内容 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.title | <code>string</code> | Announcement tittle |
+| params.content | <code>string</code> | Announcement content |
 
 ### groupManage.asyncGetAnnouncementList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code> {#module_groupmanage.asyncgetannouncementlist}
-群公告列表
+Group announcement list
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code> - 群公告详情列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code> - List of group announcement details  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncCreate(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) {#module_groupmanage.asynccreate}
-创建群组
+Create group
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - 群详情  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - Group details  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | [<code>GroupInfoRequest</code>](types.md#module_types..groupinforequest) | 请求参数 |
+| params | [<code>GroupInfoRequest</code>](types.md#module_types..groupinforequest) | Request parameters |
 
 ### groupManage.asyncDestroy(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncdestroy}
-解散群组
+Dissolve group
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncUpdateAvatar(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdateavatar}
-更新群头像
+Update group avatar
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>string</code> | 头像地址 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | AvatarAddress |
 
 ### groupManage.asyncUpdateDescription(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdatedescription}
-更新群描述
+Update group description
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>string</code> | 群组描述 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | Group description |
 
 ### groupManage.asyncUpdateExt(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdateext}
-更新群扩展信息
+Update group extension information
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>string</code> | 扩展信息 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | Extension information |
 
 ### groupManage.asyncUpdateName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdatename}
-更新群名称
+Update group name
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>string</code> | 群名称 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | Group name |
 
 ### groupManage.asyncGroupMsgMutemode(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncgroupmsgmutemode}
-设置群消息免打扰情况
+Set do-not-disturb conditions for group message
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.msg_mute_mode | <code>number</code> | 群消息屏蔽模式: 0 - 表示不屏蔽, 1 - 表示屏蔽本地消息通知, 2 - 表示屏蔽消息，不接收消息 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.msg_mute_mode | <code>number</code> | Group message blocking mode: 0 - no blocking, 1 - blocking local message notifications, 2 - blocking all, means not receiving messages |
 
 ### groupManage.asyncGroupBannedList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code> {#module_groupmanage.asyncgroupbannedlist}
-获取群禁言列表
+Get group ban list
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code> - 禁言成员列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code> - List of banned members  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncGroupBab(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asyncgroupbab}
-禁言群成员
+Ban group member
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 请求结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of request results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | [<code>GroupBannedMemberRequest</code>](types.md#module_types..groupbannedmemberrequest) | 请求参数 |
+| params | [<code>GroupBannedMemberRequest</code>](types.md#module_types..groupbannedmemberrequest) | Request parameters |
 
 ### groupManage.asyncGroupUnban(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asyncgroupunban}
-解除成员禁言
+Unban group memberBan
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 请求结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of request results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncGetSettings(group_id) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) {#module_groupmanage.asyncgetsettings}
-获取群设置
+Get group settings
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - 群设置  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types..groupinfoandsettings) - Group settings  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群ID |
+| group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncUpdateAllowMemberInvitation(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdateallowmemberinvitation}
-设置群成员是否可以邀请
+Set whether group members can invite new member
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>boolean</code> | 群成员邀请设置: false - 不允许邀请, true - 允许邀请(默认) |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Group member invite settings: false - do not allow invitations, true - allow invitations (default) |
 
 ### groupManage.asyncUpdateAllowMemberModify(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdateallowmembermodify}
-设置群成员是否可以修改群信息
+Set whether group members can modify group information
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>boolean</code> | 群成员修改群信息设置:  false - 群成员不能修改群信息(默认), true - 群成员可以修改群信息 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Group members modify group info settings: false - group members can't modify group info (default), true - group members can modify group info |
 
 ### groupManage.asyncUpdateEnableReadack(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdateenablereadack}
-设置群是否开启已读模式
+Set whether to enable read mode in group
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>boolean</code> | 是否开启群消息已读功能:  false - 不开启, true - 开启 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Enable or disable group message read feature: false - disabled, true - enabled |
 
 ### groupManage.asyncUpdateHistoryVisible(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdatehistoryvisible}
-设置群历史是否可见
+Set whether group history is visible
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>boolean</code> | 设置群历史是否可见:  false - 不可见, true - 可见 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Set whether the group history is visible: false - not visible, true - visible |
 
 ### groupManage.asyncUpdateRequireadminapproval(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdaterequireadminapproval}
-设置入群是否需要申请
+Set whether need to apply for group joining
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.apply_approval | <code>boolean</code> | 入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.apply_approval | <code>boolean</code> | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
 
 ### groupManage.asyncBanAll(params) ⇒ [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types..groupbanallresponse) {#module_groupmanage.asyncbanall}
-全员禁言，只允许管理员发消息
+Ban all members, only Admins can send messages
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types..groupbanallresponse) - 结果  
+**Returns**: [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types..groupbanallresponse) - Results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.duration | <code>number</code> | 禁言时长，单位为分钟,int64 |
-| params.group_id | <code>number</code> | 群id,int64 |
+| params | <code>object</code> | Parameter |
+| params.duration | <code>number</code> | Duration of banned in minutes,int64 |
+| params.group_id | <code>number</code> | Group id,int64 |
 
 ### groupManage.asyncUnBanAll(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncunbanall}
-取消全员禁言
+Unban all members
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群id,int64 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | Group id,int64 |
 
 ### groupManage.asyncOwnerTransfer(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) {#module_groupmanage.asyncownertransfer}
-更换群主
+Change group Owner
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) - 结果  
+**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) - Results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.new_owner | <code>number</code> | 新群主的用户ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.new_owner | <code>number</code> | User ID of the new group owner |
 
 ### groupManage.asyncGetUserJoined(params) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage.asyncgetuserjoined}
-获取用户的群组列表
+Get the list of groups for the user
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - 群ID的列表  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - List of group IDs  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数, 空对象 |
+| params | <code>object</code> | Parameter, Empty object |
 
 ### groupManage.asyncApply(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) {#module_groupmanage.asyncapply}
-申请加入群
+Apply to join group
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) - 结果  
+**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) - Results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.reason | <code>string</code> | 申请入群原因 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.reason | <code>string</code> | Reason for membership application |
 
 ### groupManage.asyncApplyHandle(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) {#module_groupmanage.asyncapplyhandle}
-处理用户的入群申请
+Process user's group joining application
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) - 结果  
+**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types..groupuserrelationresponse) - Results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_id | <code>number</code> | 用户ID |
-| params.approval | <code>boolean</code> | 审批结果：true为同意，false为拒绝 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_id | <code>number</code> | User ID |
+| params.approval | <code>boolean</code> | Approval result: true for agree, false for reject |
 
 ### groupManage.asyncGroupBockedlist(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code> {#module_groupmanage.asyncgroupbockedlist}
-获取群黑名单
+Get group blacklist
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code> - 群黑名单列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code> - GroupList of blacklists  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncGroupBlock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asyncgroupblock}
-将成员加入黑名单
+Add member to blacklist
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncGroupUnblock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asyncgroupunblock}
-解除黑名单
+Remove member from blacklist
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncKick(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asynckick}
-踢出群组
+Kick out group member
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncGetInvitationList() ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> {#module_groupmanage.asyncgetinvitationlist}
-获取群邀请列表
+Get group invitation list
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> - 群邀请列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> - List of group invitations  
 ### groupManage.asyncInvite(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage.asyncinvite}
-邀请成员加入群
+Invite member to group
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - 结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncInviteHandle(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncinvitehandle}
-处理群邀请
+Process group invitations
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_id | <code>number</code> | 用户ID |
-| params.approval | <code>boolean</code> | 审批结果：true为同意，false为拒绝 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_id | <code>number</code> | User ID |
+| params.approval | <code>boolean</code> | Approval result: true for agree, false for reject |
 
 ### groupManage.asyncGetMemberDisplayName(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage.asyncgetmemberdisplayname}
-批量获取群成员的群名片
+Batch retrieval of group member profiles
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - 群成员列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - List of group members  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
 ### groupManage.asyncLeave(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncleave}
-退出群
+Quit group
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncUpdateDisplayName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage.asyncupdatedisplayname}
-修改群名片
+Modify group profile
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.value | <code>string</code> | 新名片 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | New user profile |
 
 ### groupManage.asncGetApplicationList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code> {#module_groupmanage.asncgetapplicationlist}
-获取群申请列表
+Get the list of group membership requests
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code> - 群申请列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code> - List of group applications  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_list | <code>Array.&lt;number&gt;</code> | 群列表 |
+| params | <code>object</code> | Parameter |
+| params.group_list | <code>Array.&lt;number&gt;</code> | List of groups |
 
 ### groupManage.asyncGetFileList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage.asyncgetfilelist}
-获取群文件列表
+Get the list of group files
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> - 群文件列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> - List of group files  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
 ### groupManage.asyncFileDelete(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code> {#module_groupmanage.asyncfiledelete}
-删除群文件
+Delete group file
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code> - 结果列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code> - List of results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群组ID |
-| params.file_list | <code>Array.&lt;number&gt;</code> | 文件ID列表 |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.file_list | <code>Array.&lt;number&gt;</code> | List of file IDs |
 
 ### groupManage.asyncFileUpload(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage.asyncfileupload}
-上传群文件
+Upload group file
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> - 群文件列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> - List of group files  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.group_id | <code>number</code> | 群id,int64 |
-| params.name | <code>string</code> | 文件名称 |
-| params.size | <code>number</code> | 文件大小,int64 |
-| params.type | <code>string</code> | 文件类型 |
-| params.url | <code>string</code> | 文件url |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | Group id,int64 |
+| params.name | <code>string</code> | File name |
+| params.size | <code>number</code> | File size,int64 |
+| params.type | <code>string</code> | File type |
+| params.url | <code>string</code> | File url |

@@ -58,567 +58,567 @@
     * [~EventCallback](#module_types..eventcallback) : <code>function</code>
 
 ### "flooNotice" (res) {#event_floonotice}
-Floo通知
+Floo notification
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| res | <code>object</code> | 结果 |
-| res.category | <code>string</code> | 类别 |
-| res.desc | <code>string</code> | 描述 |
+| res | <code>object</code> | Results |
+| res.category | <code>string</code> | Types |
+| res.desc | <code>string</code> | Description |
 
 **Example**  
 ```js
-{category: 'loginMessage',desc: 'socket connecting...'} // 开始建连接
-{category: 'loginMessage',desc: 'socket connect success...'} // 连接成功
-{category: 'loginMessage',desc: 'logining socket service...'} // 开始登录
-{category: 'loginMessage',desc: 'login socket failure ......'} // 登录失败
-{category: 'loginMessage',desc: 'login socket success.....'} // 登录成功
-{category: 'loginMessage', desc: 'getting token...' } //获取token
-{category: 'loginMessage',desc: 'token sucecc, getting roster lists..'} // 获取token成功，开始获取好友列表
-{category: 'loginMessage',desc: 'get roster list failure:' + ex.message} // 获取好友列表失败
-{category: 'action', desc: 'relogin' } // 需要自动登录
-{category: 'action', desc: 'relogin_manually' }  // 需要手动登录
-{category: 'conversation_deleted',desc: { id, source:'user_operation' }} // 会话被删除。ID：会话ID， source: 来源
-{category: 'userNotice', desc:'PASSWORD_CHANGED'} // 用户密码改变
-{category: 'userNotice', desc:'FROZEN'} // 用户账户被封禁
-{category: 'userNotice', desc:'REMOVED'} // 用户被删除
-{category: 'userNotice', desc:'KICK_BY_SAME_DEVICE'} // 当前设备被相同设备踢下线
-{category: 'userNotice', desc:'KICKED_BY_OTHER_DEVICE'} // 当前设备被其它设备踢下线
-{category: 'userNotice', desc:'INFO_UPDATED'} // 用户信息改变：profile或setting
-{category: 'userNotice', desc:'DEVICE_LOGIN'} // 用户其它设备上线
-{category: 'userNotice', desc:'DEVICE_LOGOUT'} // 用户其它设备下线
-{category: 'userNotice', desc:'DEVICE_ADDED'} // 新设备通知
-{category: 'userNotice', desc:'DEVICE_REMOVED'} // 设备被移除的通知
-{category: 'userNotice', desc:'CLUSTER_CHANGED'} // 用户所在集群改变 需要重新登录
+{category: 'loginMessage',desc: 'socket connecting...'} // Start connecting
+{category: 'loginMessage',desc: 'socket connect success...'} // Connected
+{category: 'loginMessage',desc: 'logining socket service...'} // Start logging in
+{category: 'loginMessage',desc: 'login socket failure ......'} // Login failed
+{category: 'loginMessage',desc: 'login socket success.....'} // Login succeeded
+{category: 'loginMessage', desc: 'getting token...' } //Get token
+{category: 'loginMessage',desc: 'token sucecc, getting roster lists..'} // Getting token succeeded, start to fetch friend list
+{category: 'loginMessage',desc: 'get roster list failure:' + ex.message} // Friend list fetching failed
+{category: 'action', desc: 'relogin' } // Need to automatically login
+{category: 'action', desc: 'relogin_manually' }  // Need to manually login
+{category: 'conversation_deleted',desc: { id, source:'user_operation' }} // Session deleted. ID:session ID, source: source
+{category: 'userNotice', desc:'PASSWORD_CHANGED'} // User password changed
+{category: 'userNotice', desc:'FROZEN'} // User account frozen
+{category: 'userNotice', desc:'REMOVED'} // User removed
+{category: 'userNotice', desc:'KICK_BY_SAME_DEVICE'} // Current device is kicked off the line by the same device
+{category: 'userNotice', desc:'KICKED_BY_OTHER_DEVICE'} // Current device is kicked off the line by other device
+{category: 'userNotice', desc:'INFO_UPDATED'} // User information changed:profile or setting
+{category: 'userNotice', desc:'DEVICE_LOGIN'} // User's other device logged-in
+{category: 'userNotice', desc:'DEVICE_LOGOUT'} // User's other device logged-out
+{category: 'userNotice', desc:'DEVICE_ADDED'} // New device notified
+{category: 'userNotice', desc:'DEVICE_REMOVED'} // Device removal notified
+{category: 'userNotice', desc:'CLUSTER_CHANGED'} // User's group changed, please re-login
 ```
 ### "flooError" (res) {#event_flooerror}
-Floo错误
+FlooError
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.category | <code>string</code> | 类别 |
-| res.desc | <code>string</code> | 描述 |
+| res.category | <code>string</code> | Types |
+| res.desc | <code>string</code> | Description |
 
 **Example**  
 ```js
-{category: 'USER_BANNED', desc:'用户被禁言'}
-{category: 'USER_FROZEN', desc:'用户被冻结，请联系App管理员。'}
-{category: 'APP_FROZEN', desc:'APP 被冻结，请登陆美信拓扑控制台查看详情。'}
-{category: 'LICENSE', desc:'无效 LICENSE，请确认服务已按时付费。'}
-{category: 'LICENSE', desc:'超出 LICENSE 用户数限制，请购买更高规格服务。'}
-{category: 'DNS_FAILED', desc: dnsServer } // DNS错误: 无法访问
+{category: 'USER_BANNED', desc:'User is banned'}
+{category: 'USER_FROZEN', desc:'User is frozen, please contact App Admin.'}
+{category: 'APP_FROZEN', desc:'APP is frozen, please login Maximtop Console for more details.'}
+{category: 'LICENSE', desc:'Invalid LICENSE, please make sure service is paid on time.'}
+{category: 'LICENSE', desc:'LICENSE user limit reached, please purchase higher service package.'}
+{category: 'DNS_FAILED', desc: dnsServer } // DNS error: unaccessible
 ```
 ### "loginFail" (desc) {#event_loginfail}
-登录失败
+Login failed
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| desc | <code>string</code> | 失败原因 |
+| desc | <code>string</code> | Cause of failure |
 
 ### "loginSuccess" (res) {#event_loginsuccess}
-登录成功
+Login successful
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| res | <code>object</code> | 空对象 |
+| res | <code>object</code> | Empty object |
 
 ### "onGroupListUpdate" (meta) {#event_ongrouplistupdate}
-群列表更新
+Group list updated
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) \| <code>undefined</code> | 通知消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) \| <code>undefined</code> | Notification message content |
 
 ### "onGroupMemberChanged" (groupId) {#event_ongroupmemberchanged}
-群成员列表更新
+Group member list updated
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| groupId | <code>number</code> | 群ID |
+| groupId | <code>number</code> | GroupID |
 
 ### "onGroupMessage" (meta) {#event_ongroupmessage}
-收到群消息
+Group message received
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content |
 
 ### "onInputStatusMessage" (res) {#event_oninputstatusmessage}
-对方正在输入
+The other party is typing
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.ext | <code>string</code> | 扩展字段 |
-| res.from | <code>string</code> | 发送者用户ID |
-| res.to | <code>string</code> | 接收者用户ID |
+| res.ext | <code>string</code> | Extension field |
+| res.from | <code>string</code> | Sender's user ID |
+| res.to | <code>string</code> | Receiver's user ID |
 
 ### "onMentionMessage" (meta) {#event_onmentionmessage}
-收到群组@消息
+Group @message received
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content |
 
 ### "onMessageCanceled" (res) {#event_onmessagecanceled}
-消息被取消已读
+Message is re-unread
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.uid | <code>string</code> | 会话ID |
-| res.mid | <code>string</code> | 消息ID |
+| res.uid | <code>string</code> | SessionID |
+| res.mid | <code>string</code> | MessageID |
 
 ### "onMessageDeleted" (res) {#event_onmessagedeleted}
-消息被删除
+MessageDeleted
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.uid | <code>string</code> | 会话ID |
-| res.mid | <code>string</code> | 消息ID |
+| res.uid | <code>string</code> | SessionID |
+| res.mid | <code>string</code> | MessageID |
 
 ### "onMessageRecalled" (res) {#event_onmessagerecalled}
-消息被撤回
+Message is withdrawn
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.uid | <code>string</code> | 会话ID |
-| res.mid | <code>string</code> | 消息ID |
+| res.uid | <code>string</code> | SessionID |
+| res.mid | <code>string</code> | MessageID |
 
 ### "onMessageStatusChanged" (res) {#event_onmessagestatuschanged}
-消息状态变更：撤回/删除/已读
+Message status changed: withdrawn/deleted/read
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.uid | <code>string</code> | 会话ID |
-| res.mid | <code>string</code> | 消息ID |
+| res.uid | <code>string</code> | SessionID |
+| res.mid | <code>string</code> | MessageID |
 
 ### "onReceiveHistoryMsg" (res) {#event_onreceivehistorymsg}
-收到历史消息
+Message history received
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.next | <code>number</code> | 下次取历史消息的key |
+| res.next | <code>number</code> | The key to get message history next time |
 
 ### "onRosterInfoUpdate" (res) {#event_onrosterinfoupdate}
-好友信息变更
+Friend info changed
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.rosterIds | <code>Array.&lt;number&gt;</code> | 好友的用户ID列表 |
+| res.rosterIds | <code>Array.&lt;number&gt;</code> | Friend's user ID list |
 
 ### "onRosterListUpdate" (meta) {#event_onrosterlistupdate}
-好友列表变更
+Friend list changed
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 好友通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of friend's notification |
 
 ### "onRosterMessage" (meta) {#event_onrostermessage}
-收到单聊消息
+Single chat message received
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content |
 
 ### "onSendingMessageStatusChanged" (res) {#event_onsendingmessagestatuschanged}
-消息发送状态变更
+Message sending status changed
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | res | <code>object</code> |  |
-| res.status: | <code>number</code> | 发送状态，取值为sending|failed|sent |
-| res.mid: | <code>number</code> | 客户端生成的client_mid |
+| res.status: | <code>number</code> | Sending status, can be valued as sending|failed|sent |
+| res.mid: | <code>number</code> | client_mid generated by client |
 
 ### "onUnreadChange" (cid) {#event_onunreadchange}
-未读数改变
+Unread count changed
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| cid | <code>number</code> | 会话ID |
+| cid | <code>number</code> | SessionID |
 
 ### "recentlistUpdate" {#event_recentlistupdate}
-最近会话更新
+Latest conversation updated
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 ### "onGroupCreated" (meta) {#event_ongroupcreated}
-群组创建通知
+Group creation notification
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 群通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
 
 ### "onGroupDestoryed" (meta) {#event_ongroupdestoryed}
-群组解散通知
+Group dismissal notification
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 群通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
 
 ### "onGroupJoined" (meta) {#event_ongroupjoined}
-成员入群通知
+Member joining application notification
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 群通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
 
 ### "onGroupApplyAccepted" (meta) {#event_ongroupapplyaccepted}
-群申请被通过
+Group joining application approved
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 群通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
 
 ### "onGroupApplyDeclined" (meta) {#event_ongroupapplydeclined}
-群申请被拒绝
+Group joining application rejected
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 群通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
 
 ### "onGroupBaned" (meta) {#event_ongroupbaned}
-被群禁言
+Banned in group
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 群通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
 
 ### "onGroupUnbaned" (meta) {#event_ongroupunbaned}
-被群取消禁言
+Unbanned in group
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | 群通知的消息内容 |
+| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
 
 ### types~RosterItem : <code>object</code> {#module_types..rosteritem}
-好友信息
+Friend info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| alias | <code>string</code> | 别名 |
-| auth_mode | <code>number</code> | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请,int32 |
-| auth_question | <code>string</code> | 验证问题 |
-| avatar | <code>string</code> | 头像 |
-| description | <code>string</code> | 描述信息 |
-| ext | <code>string</code> | 扩展信息 |
-| mute_notification | <code>boolean</code> | 是否接收消息提醒 |
-| nick_name | <code>string</code> | 昵称或名称 |
-| public_info | <code>string</code> | 公开信息，好友和陌生人可见 |
-| relation | <code>number</code> | 关系: 0 - 好友，1 - 被删除，2 - 陌生人, int32 |
-| user_id | <code>number</code> | 好友用户ID,int64 |
-| username | <code>string</code> | 用户名 |
+| alias | <code>string</code> | Alias |
+| auth_mode | <code>number</code> | Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests,int32 |
+| auth_question | <code>string</code> | Verification question |
+| avatar | <code>string</code> | Avatar |
+| description | <code>string</code> | Description |
+| ext | <code>string</code> | Extension information |
+| mute_notification | <code>boolean</code> | Whether to receive message alert |
+| nick_name | <code>string</code> | Nickname or name |
+| public_info | <code>string</code> | Public information, visible to both friends and strangers |
+| relation | <code>number</code> | Relationships: 0 - Friend, 1 - Deleted, 2 - Stranger, int32 |
+| user_id | <code>number</code> | Friend user ID,int64 |
+| username | <code>string</code> | Username |
 
 ### types~UserSettings : <code>object</code> {#module_types..usersettings}
-用户设置信息
+User settings information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| auth_answer | <code>string</code> | 验证问题答案 |
-| auth_mode | <code>number</code> | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请,int32 |
-| auth_question | <code>string</code> | 验证问题 |
-| auto_download | <code>boolean</code> | 是否自动下载 |
-| group_confirm | <code>boolean</code> | 邀请入群时是否需要用户确认: true - 需要用户同意才可加入， false - 自动同意邀请 |
-| id | <code>number</code> | 用户ID, int64 |
-| no_push | <code>boolean</code> | 是否关闭推送消息 |
-| no_push_detail | <code>boolean</code> | 是否推送详情 |
-| no_push_end_hour | <code>number</code> | 推送免打扰结束时间,int32 |
-| no_push_start_hour | <code>number</code> | 推送免打扰开始时间,int32 |
-| no_sounds | <code>boolean</code> | 收到消息时是否静音 |
-| push_nick_name | <code>string</code> | 推送昵称 |
-| push_token | <code>string</code> | 推送token |
-| silence_end_time | <code>number</code> | 推送不提醒结束时间,int32 |
-| silence_start_time | <code>number</code> | 推送不提醒开始时间,int32 |
-| user_id | <code>number</code> | 用户ID,int64 |
-| vibratory | <code>boolean</code> | 收到消息时否振动 |
+| auth_answer | <code>string</code> | Answer of verification question |
+| auth_mode | <code>number</code> | Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests,int32 |
+| auth_question | <code>string</code> | Verification question |
+| auto_download | <code>boolean</code> | Whether to download automatically |
+| group_confirm | <code>boolean</code> | Whether user consent is required when inviting to join group: true - user consent is required, false - invitation is automatically agreed |
+| id | <code>number</code> | User ID, int64 |
+| no_push | <code>boolean</code> | Whether to turn off push |
+| no_push_detail | <code>boolean</code> | Whether to push details |
+| no_push_end_hour | <code>number</code> | Start of push no-disturb time,int32 |
+| no_push_start_hour | <code>number</code> | End of push no-disturb time,int32 |
+| no_sounds | <code>boolean</code> | Whether to mute when message received |
+| push_nick_name | <code>string</code> | Push nickname |
+| push_token | <code>string</code> | Push token |
+| silence_end_time | <code>number</code> | End of push no-reminder time,int32 |
+| silence_start_time | <code>number</code> | Start of push no-reminder time,int32 |
+| user_id | <code>number</code> | User ID,int64 |
+| vibratory | <code>boolean</code> | Whether to vibrate when message received |
 
 ### types~UserProfile : <code>object</code> {#module_types..userprofile}
-用户信息
+User information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| avatar | <code>string</code> | 头像 url |
-| description | <code>string</code> | 描述信息 |
-| email | <code>string</code> | 邮箱 |
-| mobile | <code>string</code> | 手机号码 |
-| nick_name | <code>string</code> | 昵称 |
-| private_info | <code>string</code> | 私有信息，仅自己可见 |
-| public_info | <code>string</code> | 公开信息，好友和陌生人可见 |
-| user_id | <code>number</code> | 用户ID,int64 |
-| username | <code>string</code> | 用户名 |
+| avatar | <code>string</code> | Avatar url |
+| description | <code>string</code> | Description |
+| email | <code>string</code> | Email |
+| mobile | <code>string</code> | Mobile number |
+| nick_name | <code>string</code> | Nickname |
+| private_info | <code>string</code> | Private information, visible only to yourself |
+| public_info | <code>string</code> | Public information, visible to both friends and strangers |
+| user_id | <code>number</code> | User ID,int64 |
+| username | <code>string</code> | Username |
 
 ### types~Meta : <code>object</code> {#module_types..meta}
-消息体
+Message body
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| id | <code>string</code> | 消息ID |
-| from | <code>string</code> | 发送者 |
-| to | <code>string</code> | 接收者 |
-| content | <code>string</code> | 消息内容 |
-| type | <code>string</code> | 消息类型： text - 文本, image - 图片， audio - 语音, video - 视频，file - 文件, location - 位置， command - 命令, forward - 转发 |
-| ext | <code>string</code> \| <code>object</code> | 扩展字段 |
-| config | <code>string</code> \| <code>object</code> | SDK扩展字段 |
-| attach | <code>string</code> \| <code>object</code> | 附件信息 |
-| status | <code>number</code> | 消息状态： 0 - 未读, 1 - 已投递, 2 - 已读 |
-| timestamp | <code>string</code> | 消息发送时间戳（毫秒） |
-| toType | <code>string</code> | 接收者类型： roster - 好友， group - 群组 |
+| id | <code>string</code> | MessageID |
+| from | <code>string</code> | Sender |
+| to | <code>string</code> | Receiver |
+| content | <code>string</code> | Message content |
+| type | <code>string</code> | Message types: text, image, audio, video, file, location, command, forward |
+| ext | <code>string</code> \| <code>object</code> | Extension field |
+| config | <code>string</code> \| <code>object</code> | SDKExtension field |
+| attach | <code>string</code> \| <code>object</code> | Attachment info |
+| status | <code>number</code> | Message status: 0 - Unread, 1 - Delivered, 2 - Read |
+| timestamp | <code>string</code> | Message delivery timestamp (milliseconds) |
+| toType | <code>string</code> | Receiver types: roster - friend, group - group |
 
 ### types~RosterApplication : <code>object</code> {#module_types..rosterapplication}
-加好友申请列表项
+List entries of adding friend request
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| expired_time | <code>number</code> | 过期时间,int64 |
-| reason | <code>string</code> | 申请描述 |
-| status | <code>number</code> | 状态： 0 - 等待确认， 1 - 接受， 2 - 拒绝。 int32 |
-| user_id | <code>number</code> | 发起加好友申请的用户ID,int64 |
+| expired_time | <code>number</code> | Expiration time,int64 |
+| reason | <code>string</code> | Request description |
+| status | <code>number</code> | Status: 0 - Awaiting confirmation, 1 - Approved, 2 - Rejected int32 |
+| user_id | <code>number</code> | User ID that initiate adding friend,int64 |
 
 ### types~GroupInfoAndSettings : <code>object</code> {#module_types..groupinfoandsettings}
-群信息
+Group info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| apply_approval | <code>number</code> | 入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请 |
-| avatar | <code>string</code> | 群头像 |
-| ban_expire_time | <code>number</code> | 全员禁言过期时间（秒），禁言期间只允许管理员发消息， 为0或小于当前时间表示不禁言, -1表示永久禁言 |
-| created_at | <code>number</code> | 创建时间 |
-| description | <code>string</code> | 群描述 |
-| ext | <code>string</code> | 群扩展信息 |
-| group_id | <code>number</code> | 群id,int64 |
-| history_visible | <code>boolean</code> | 新成员可见历史聊天记录设置 |
-| member_invite | <code>boolean</code> | 群成员邀请设置: false - 不允许邀请, true - 允许邀请(默认) |
-| member_modify | <code>boolean</code> | 群成员修改群信息设置:  false - 群成员不能修改群信息(默认), true - 群成员可以修改群信息 |
-| msg_mute_mode | <code>number</code> | 群消息屏蔽模式: 0 - 表示不屏蔽, 1 - 表示屏蔽本地消息通知, 2 - 表示屏蔽消息，不接收消息 |
-| msg_push_mode | <code>number</code> | 群消息推送模式：0 - 接收所有推送，1 - 不接受推送，2 - 接收管理员和@消息推送， 3 - 只接收管理员消息推送， 4 - 只接收@消息推送 |
-| name | <code>string</code> | 群名称 |
-| owner_id | <code>number</code> | 群主id,int64 |
-| read_ack | <code>boolean</code> | 群消息已读功能设置 |
-| status | <code>number</code> | 群状态, 0：正常, 1：已解散 |
-| type | <code>number</code> | 群类型: 1表示公开群，0表示私有群, 2表示聊天室 |
-| updated_at | <code>number</code> | 更新时间,int64 |
-| count | <code>number</code> | 群成员数 |
-| capacity | <code>number</code> | 群容量 |
+| apply_approval | <code>number</code> | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
+| avatar | <code>string</code> | Group avatar |
+| ban_expire_time | <code>number</code> | Expiration time (second), during which only Admins are allowed to send messages, 0 or less than the current time means no banning, -1 means banned permanently |
+| created_at | <code>number</code> | Creation time |
+| description | <code>string</code> | Group description |
+| ext | <code>string</code> | Group extension information |
+| group_id | <code>number</code> | Group id,int64 |
+| history_visible | <code>boolean</code> | History chat visibility settings for new members |
+| member_invite | <code>boolean</code> | Group member invite settings: false - do not allow invitations, true - allow invitations (default) |
+| member_modify | <code>boolean</code> | Group members modify group info settings: false - group members can't modify group info (default), true - group members can modify group info |
+| msg_mute_mode | <code>number</code> | Group message blocking mode: 0 - no blocking, 1 - blocking local message notifications, 2 - blocking all, means not receiving messages |
+| msg_push_mode | <code>number</code> | Group message push mode: 0 - receive all pushes, 1 - block all pushes, 2 - receive admin and @message pushes, 3 - receive admin message pushes only, 4 - receive @message pushes only |
+| name | <code>string</code> | Group name |
+| owner_id | <code>number</code> | Group Owner id,int64 |
+| read_ack | <code>boolean</code> | Group message read function settings |
+| status | <code>number</code> | Group state, 0: normal, 1: dissolved |
+| type | <code>number</code> | Group types: 1 - public group, 0 - private group, 2 - chatroom |
+| updated_at | <code>number</code> | Update time,int64 |
+| count | <code>number</code> | Number of group members |
+| capacity | <code>number</code> | GroupCapacity |
 
 ### types~BriefGroupInfoAndSettings : <code>object</code> {#module_types..briefgroupinfoandsettings}
-群简要信息及用户设置
+Group profile and user settings
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| apply_approval | <code>number</code> | 入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请 |
-| avatar | <code>string</code> | 群头像 |
-| capacity | <code>number</code> | 群容量 |
-| count | <code>number</code> | 群成员数 |
-| group_id | <code>number</code> | 群id,int64 |
-| msg_mute_mode | <code>number</code> | 群消息屏蔽模式: 0 - 表示不屏蔽, 1 - 表示屏蔽本地消息通知, 2 - 表示屏蔽消息，不接收消息 |
-| msg_push_mode | <code>number</code> | 群消息推送模式：0 - 接收所有推送，1 - 不接受推送，2 - 接收管理员和@消息推送， 3 - 只接收管理员消息推送， 4 - 只接收@消息推送 |
-| name | <code>string</code> | 群名称 |
-| owner | <code>number</code> | 群主id,int64 |
-| status | <code>number</code> | 群状态, 0：正常, 1：已解散,int32 |
-| type | <code>number</code> | 群类型: 1表示公开群，0表示私有群, 2表示聊天室。int32 |
+| apply_approval | <code>number</code> | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
+| avatar | <code>string</code> | Group avatar |
+| capacity | <code>number</code> | GroupCapacity |
+| count | <code>number</code> | Number of group members |
+| group_id | <code>number</code> | Group id,int64 |
+| msg_mute_mode | <code>number</code> | Group message blocking mode: 0 - no blocking, 1 - blocking local message notifications, 2 - blocking all, means not receiving messages |
+| msg_push_mode | <code>number</code> | Group message push mode: 0 - receive all pushes, 1 - block all pushes, 2 - receive admin and @message pushes, 3 - receive admin message pushes only, 4 - receive @message pushes only |
+| name | <code>string</code> | Group name |
+| owner | <code>number</code> | Group Owner id,int64 |
+| status | <code>number</code> | Group state, 0: normal, 1: dissolved,int32 |
+| type | <code>number</code> | Group types: 1 - public group, 0 - private group, 2 - chatroom.int32 |
 
 ### types~GroupMember : <code>object</code> {#module_types..groupmember}
-群成员格式
+Group member format
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| display_name | <code>string</code> | 成员群名片 |
-| join_time | <code>number</code> | 成员入群时间,int64 |
-| user_id | <code>number</code> | 用户id,int64 |
-| avatar | <code>string</code> | 头像地址 |
+| display_name | <code>string</code> | Group member profile |
+| join_time | <code>number</code> | Member join time,int64 |
+| user_id | <code>number</code> | User id,int64 |
+| avatar | <code>string</code> | AvatarAddress |
 
 ### types~GroupMemberBanned : <code>object</code> {#module_types..groupmemberbanned}
-禁言成员
+Banned members
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| display_name | <code>string</code> | 成员群名片 |
-| join_time | <code>number</code> | 成员入群时间,int64 |
-| user_id | <code>number</code> | 用户id,int64 |
-| avatar | <code>string</code> | 头像地址 |
-| expired_time | <code>number</code> | 禁言过期时间 |
+| display_name | <code>string</code> | Group member profile |
+| join_time | <code>number</code> | Member join time,int64 |
+| user_id | <code>number</code> | User id,int64 |
+| avatar | <code>string</code> | AvatarAddress |
+| expired_time | <code>number</code> | BanExpiration time |
 
 ### types~GroupUserRelationResponse : <code>object</code> {#module_types..groupuserrelationresponse}
-群用户请求结果
+Group user's request result
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| reason | <code>string</code> | 原因 |
-| result | <code>string</code> | 结果 |
-| user_id | <code>number</code> | 用户ID，int64 |
+| reason | <code>string</code> | Reason |
+| result | <code>string</code> | Results |
+| user_id | <code>number</code> | User ID,int64 |
 
 ### types~GroupAnnouncement : <code>object</code> {#module_types..groupannouncement}
-群公告内容
+GroupAnnouncement content
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| author | <code>number</code> | 公告发布者,int64 |
-| content | <code>string</code> | 公告内容 |
-| created_at | <code>number</code> | 公告发布时间,int64 |
-| group_id | <code>number</code> | 群id,int64 |
-| id | <code>number</code> | 公告id,int64 |
-| title | <code>string</code> | 公告标题 |
+| author | <code>number</code> | Announcement publisher,int64 |
+| content | <code>string</code> | Announcement content |
+| created_at | <code>number</code> | Announcement publish time,int64 |
+| group_id | <code>number</code> | Group id,int64 |
+| id | <code>number</code> | Announcement id,int64 |
+| title | <code>string</code> | Announcement tittle |
 
 ### types~GroupInfoRequest : <code>object</code> {#module_types..groupinforequest}
-创建群
+Create group
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| avatar | <code>string</code> | 群头像 |
-| description | <code>string</code> | 群描述 |
-| name | <code>string</code> | 群名称 |
-| type | <code>number</code> | 群类型 1表示公开群，0表示私有群, 2表示聊天室,int32 |
-| user_list | <code>Array.&lt;number&gt;</code> | 邀请入群的用户id列表 |
+| avatar | <code>string</code> | Group avatar |
+| description | <code>string</code> | Group description |
+| name | <code>string</code> | Group name |
+| type | <code>number</code> | Group type: 1 for public group, 0 for private group, 2 for chatroom,int32 |
+| user_list | <code>Array.&lt;number&gt;</code> | List of user ids invited to join group |
 
 ### types~GroupBannedMemberRequest : <code>object</code> {#module_types..groupbannedmemberrequest}
-禁言请求
+Ban request
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| duration | <code>number</code> | 禁言时长，单位为分钟,int64 |
-| group_id | <code>number</code> | 群id,int64 |
-| user_list | <code>Array.&lt;number&gt;</code> | 用户id列表 |
+| duration | <code>number</code> | Duration of banned in minutes,int64 |
+| group_id | <code>number</code> | Group id,int64 |
+| user_list | <code>Array.&lt;number&gt;</code> | User id list |
 
 ### types~GroupBlockedListItem : <code>object</code> {#module_types..groupblockedlistitem}
-群组黑名单
+Group blacklist
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| user_id | <code>number</code> | 用户id,int64 |
-| group_id | <code>number</code> | 群id,int64 |
-| create_at | <code>string</code> | 创建时间 |
+| user_id | <code>number</code> | User id,int64 |
+| group_id | <code>number</code> | Group id,int64 |
+| create_at | <code>string</code> | Creation time |
 
 ### types~GroupInvitation : <code>object</code> {#module_types..groupinvitation}
-群组邀请信息
+Group invitation info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群ID |
-| inviter_id | <code>number</code> | 邀请者ID |
-| invitee_id | <code>number</code> | 被邀请者ID |
-| reason | <code>string</code> | 原因 |
-| status | <code>number</code> | 状态： 0 - 待处理，1 - 用户同意，2 - 用户拒绝 |
-| expire_time | <code>number</code> | 过期时间 |
-| create_at | <code>string</code> | 创建时间 |
+| group_id | <code>number</code> | GroupID |
+| inviter_id | <code>number</code> | Inviter ID |
+| invitee_id | <code>number</code> | Invitee ID |
+| reason | <code>string</code> | Reason |
+| status | <code>number</code> | Status: 0 - Pending, 1 - User agreed, 2 - User rejected |
+| expire_time | <code>number</code> | Expiration time |
+| create_at | <code>string</code> | Creation time |
 
 ### types~GroupApplication : <code>object</code> {#module_types..groupapplication}
-群申请信息
+GroupMembership application information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| group_id | <code>number</code> | 群ID |
-| applicant_id | <code>number</code> | 申请者ID |
-| reason | <code>string</code> | 原因 |
-| expire_time | <code>number</code> | 过期时间 |
-| status | <code>number</code> | 状态： 0 - 待处理，1 - 同意，2 - 拒绝 |
+| group_id | <code>number</code> | GroupID |
+| applicant_id | <code>number</code> | Applicant ID |
+| reason | <code>string</code> | Reason |
+| expire_time | <code>number</code> | Expiration time |
+| status | <code>number</code> | Status: 0 - Pending, 1 - Agreed, 2 - Rejected |
 
 ### types~GroupSharedFile : <code>object</code> {#module_types..groupsharedfile}
-群共享文件返回格式
+Returned format of group shared files
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
@@ -626,136 +626,136 @@ Floo错误
 | Name | Type | Description |
 | --- | --- | --- |
 | created_at | <code>number</code> | int64 |
-| file_id | <code>number</code> | 共享文件id,int64 |
-| group_id | <code>number</code> | 群id,int64 |
-| name | <code>string</code> | 共享文件名称 |
-| size | <code>number</code> | 共享文件大小,int64 |
-| type | <code>string</code> | 共享文件类型 |
+| file_id | <code>number</code> | Shared file id,int64 |
+| group_id | <code>number</code> | Group id,int64 |
+| name | <code>string</code> | Shared file name |
+| size | <code>number</code> | Shared file size,int64 |
+| type | <code>string</code> | Shared file type |
 | updated_at | <code>number</code> | int64 |
-| uploader | <code>number</code> | 共享文件上传者,int64 |
-| url | <code>string</code> | 共享文件url |
+| uploader | <code>number</code> | Shared file uploader,int64 |
+| url | <code>string</code> | Shared file url |
 
 ### types~GroupSharedFileResponse : <code>object</code> {#module_types..groupsharedfileresponse}
-删除群共享文件结果
+Result of group shared files deletion
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| file_id | <code>number</code> | 文件ID |
-| reason | <code>string</code> | 原因 |
-| result | <code>string</code> | 结果 |
+| file_id | <code>number</code> | FileID |
+| reason | <code>string</code> | Reason |
+| result | <code>string</code> | Results |
 
 ### types~GroupBanAllResponse : <code>object</code> {#module_types..groupbanallresponse}
-全员禁言结果
+Result of banning all members
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| ban_expire_time | <code>number</code> | 全员禁言过期时间,int64 |
+| ban_expire_time | <code>number</code> | Expiration time of banning all members,int64 |
 
 ### types~FileUpload : <code>object</code> {#module_types..fileupload}
-文件上传信息
+File uploading info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| download_url | <code>string</code> | 下载地址 |
-| oss_body_param | <code>object.&lt;string, string&gt;</code> | 额外参数 |
-| upload_url | <code>string</code> | 上传地址 |
+| download_url | <code>string</code> | Download address |
+| oss_body_param | <code>object.&lt;string, string&gt;</code> | Additional parameters |
+| upload_url | <code>string</code> | Upload address |
 
 ### types~FileUploadResult : <code>object</code> {#module_types..fileuploadresult}
-文件上传结果
+File uploading result
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| url | <code>string</code> | 下载地址 |
+| url | <code>string</code> | Download address |
 
 ### types~fileUploadProgress : <code>function</code> {#module_types..fileuploadprogress}
-文件上传进度回调
+FileUpload progressCallback
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| res | <code>object</code> | 进度 |
-| res.loaded | <code>number</code> | 已下载字节数 |
-| res.total | <code>number</code> | 总字节数 |
+| res | <code>object</code> | Progress |
+| res.loaded | <code>number</code> | Downloaded bytes |
+| res.total | <code>number</code> | Total bytes |
 
 ### types~ConversationItem : <code>object</code> {#module_types..conversationitem}
-会话信息
+Conversation info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| id | <code>number</code> | 会话ID |
-| content | <code>string</code> | 消息内容 |
-| timestamp | <code>string</code> | 消息发送时间戳（毫秒） |
-| type | <code>string</code> | 会话类型： roster - 单聊， group - 群聊 |
+| id | <code>number</code> | SessionID |
+| content | <code>string</code> | Message content |
+| timestamp | <code>string</code> | Message delivery timestamp (milliseconds) |
+| type | <code>string</code> | Session type: roster - Single chat, group - Group chat |
 
 ### types~UserProfile : <code>object</code> {#module_types..userprofile}
-用户信息
+User information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| avatar | <code>string</code> | 头像 url |
-| description | <code>string</code> | 描述信息 |
-| email | <code>string</code> | 邮箱 |
-| mobile | <code>string</code> | 手机号码 |
-| nick_name | <code>string</code> | 昵称 |
-| private_info | <code>string</code> | 私有信息，仅自己可见 |
-| public_info | <code>string</code> | 公开信息，好友和陌生人可见 |
-| user_id | <code>number</code> | 用户ID,int64 |
-| username | <code>string</code> | 用户名 |
+| avatar | <code>string</code> | Avatar url |
+| description | <code>string</code> | Description |
+| email | <code>string</code> | Email |
+| mobile | <code>string</code> | Mobile number |
+| nick_name | <code>string</code> | Nickname |
+| private_info | <code>string</code> | Private information, visible only to yourself |
+| public_info | <code>string</code> | Public information, visible to both friends and strangers |
+| user_id | <code>number</code> | User ID,int64 |
+| username | <code>string</code> | Username |
 
 ### types~UserSettings : <code>object</code> {#module_types..usersettings}
-用户设置信息
+User settings information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| auth_answer | <code>string</code> | 验证问题答案 |
-| auth_mode | <code>number</code> | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请,int32 |
-| auth_question | <code>string</code> | 验证问题 |
-| auto_download | <code>boolean</code> | 是否自动下载 |
-| group_confirm | <code>boolean</code> | 邀请入群时是否需要用户确认: true - 需要用户同意才可加入， false - 自动同意邀请 |
-| id | <code>number</code> | 设置ID |
-| no_push | <code>boolean</code> | 是否关闭推送消息 |
-| no_push_detail | <code>boolean</code> | 是否推送详情 |
-| no_push_end_hour | <code>number</code> | 推送免打扰结束时间,int32 |
-| no_push_start_hour | <code>number</code> | 推送免打扰开始时间,int32 |
-| no_sounds | <code>boolean</code> | 收到消息时是否静音 |
-| push_nick_name | <code>string</code> | 推送昵称 |
-| push_token | <code>string</code> | 推送token |
-| silence_end_time | <code>number</code> | 推送不提醒结束时间,int32 |
-| silence_start_time | <code>number</code> | 推送不提醒开始时间,int32 |
-| user_id | <code>number</code> | 用户ID,int64 |
-| vibratory | <code>boolean</code> | 收到消息时否振动 |
+| auth_answer | <code>string</code> | Answer of verification question |
+| auth_mode | <code>number</code> | Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests,int32 |
+| auth_question | <code>string</code> | Verification question |
+| auto_download | <code>boolean</code> | Whether to download automatically |
+| group_confirm | <code>boolean</code> | Whether user consent is required when inviting to join group: true - user consent is required, false - invitation is automatically agreed |
+| id | <code>number</code> | Set ID |
+| no_push | <code>boolean</code> | Whether to turn off push |
+| no_push_detail | <code>boolean</code> | Whether to push details |
+| no_push_end_hour | <code>number</code> | Start of push no-disturb time,int32 |
+| no_push_start_hour | <code>number</code> | End of push no-disturb time,int32 |
+| no_sounds | <code>boolean</code> | Whether to mute when message received |
+| push_nick_name | <code>string</code> | Push nickname |
+| push_token | <code>string</code> | Push token |
+| silence_end_time | <code>number</code> | End of push no-reminder time,int32 |
+| silence_start_time | <code>number</code> | Start of push no-reminder time,int32 |
+| user_id | <code>number</code> | User ID,int64 |
+| vibratory | <code>boolean</code> | Whether to vibrate when message received |
 
 ### types~Event : <code>string</code> {#module_types..event}
-监听事件名称
+Listening event name
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 ### types~EventCallback : <code>function</code> {#module_types..eventcallback}
-监听事件回调
+Listening event callback
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| res | [<code>flooNotice</code>](#event_floonotice) \| [<code>flooError</code>](#event_flooerror) \| [<code>loginFail</code>](#event_loginfail) \| [<code>loginSuccess</code>](#event_loginsuccess) \| [<code>onGroupListUpdate</code>](#event_ongrouplistupdate) \| [<code>onGroupMemberChanged</code>](#event_ongroupmemberchanged) \| [<code>onGroupMessage</code>](#event_ongroupmessage) \| [<code>onInputStatusMessage</code>](#event_oninputstatusmessage) \| [<code>onMentionMessage</code>](#event_onmentionmessage) \| [<code>onMessageCanceled</code>](#event_onmessagecanceled) \| [<code>onMessageDeleted</code>](#event_onmessagedeleted) \| [<code>onMessageRecalled</code>](#event_onmessagerecalled) \| [<code>onMessageStatusChanged</code>](#event_onmessagestatuschanged) \| [<code>onReceiveHistoryMsg</code>](#event_onreceivehistorymsg) \| [<code>onRosterInfoUpdate</code>](#event_onrosterinfoupdate) \| [<code>onRosterListUpdate</code>](#event_onrosterlistupdate) \| [<code>onRosterMessage</code>](#event_onrostermessage) \| [<code>onSendingMessageStatusChanged</code>](#event_onsendingmessagestatuschanged) \| [<code>onUnreadChange</code>](#event_onunreadchange) \| [<code>recentlistUpdate</code>](#event_recentlistupdate) \| [<code>onGroupCreated</code>](#event_ongroupcreated) \| [<code>onGroupDestoryed</code>](#event_ongroupdestoryed) \| [<code>onGroupJoined</code>](#event_ongroupjoined) \| [<code>onGroupApplyAccepted</code>](#event_ongroupapplyaccepted) \| [<code>onGroupApplyDeclined</code>](#event_ongroupapplydeclined) \| [<code>onGroupBaned</code>](#event_ongroupbaned) \| [<code>onGroupUnbaned</code>](#event_ongroupunbaned) | 事件结果 |
+| res | [<code>flooNotice</code>](#event_floonotice) \| [<code>flooError</code>](#event_flooerror) \| [<code>loginFail</code>](#event_loginfail) \| [<code>loginSuccess</code>](#event_loginsuccess) \| [<code>onGroupListUpdate</code>](#event_ongrouplistupdate) \| [<code>onGroupMemberChanged</code>](#event_ongroupmemberchanged) \| [<code>onGroupMessage</code>](#event_ongroupmessage) \| [<code>onInputStatusMessage</code>](#event_oninputstatusmessage) \| [<code>onMentionMessage</code>](#event_onmentionmessage) \| [<code>onMessageCanceled</code>](#event_onmessagecanceled) \| [<code>onMessageDeleted</code>](#event_onmessagedeleted) \| [<code>onMessageRecalled</code>](#event_onmessagerecalled) \| [<code>onMessageStatusChanged</code>](#event_onmessagestatuschanged) \| [<code>onReceiveHistoryMsg</code>](#event_onreceivehistorymsg) \| [<code>onRosterInfoUpdate</code>](#event_onrosterinfoupdate) \| [<code>onRosterListUpdate</code>](#event_onrosterlistupdate) \| [<code>onRosterMessage</code>](#event_onrostermessage) \| [<code>onSendingMessageStatusChanged</code>](#event_onsendingmessagestatuschanged) \| [<code>onUnreadChange</code>](#event_onunreadchange) \| [<code>recentlistUpdate</code>](#event_recentlistupdate) \| [<code>onGroupCreated</code>](#event_ongroupcreated) \| [<code>onGroupDestoryed</code>](#event_ongroupdestoryed) \| [<code>onGroupJoined</code>](#event_ongroupjoined) \| [<code>onGroupApplyAccepted</code>](#event_ongroupapplyaccepted) \| [<code>onGroupApplyDeclined</code>](#event_ongroupapplydeclined) \| [<code>onGroupBaned</code>](#event_ongroupbaned) \| [<code>onGroupUnbaned</code>](#event_ongroupunbaned) | Event result |

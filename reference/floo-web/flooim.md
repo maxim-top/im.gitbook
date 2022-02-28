@@ -13,18 +13,18 @@
     * [.logout()](#module_flooim.logout)
 
 ### flooim.flooim(config) ⇒ <code>object</code> {#module_flooim.flooim}
-初始化SDK
+InitializationSDK
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
-**Returns**: <code>object</code> - flooim对象  
+**Returns**: <code>object</code> - flooim object  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| config | <code>object</code> | SDK初始化设置 |
+| config | <code>object</code> | SDK initialization settings |
 | config.appid | <code>string</code> | APPID |
-| config.ws | <code>boolean</code> | 连接地址前缀是否为ws/wss: true - 连接地址前缀为ws或wss, false - 连接地址前缀为http/https |
-| config.autoLogin | <code>boolean</code> | 是否自动登录 |
-| config.dnsServer | <code>string</code> \| <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.maximtop.com/v2/app_dns |
+| config.ws | <code>boolean</code> | Whether the connection address is prefixed with ws/wss: ture - the connection address is prefixed with ws or wss; false - the connection address is prefixed with http/https |
+| config.autoLogin | <code>boolean</code> | Whether to login automatically |
+| config.dnsServer | <code>string</code> \| <code>undefined</code> | DNS server address, can be empty, default https://dns.maximtop.com/v2/app_dns |
 
 **Example**  
 ```js
@@ -38,63 +38,63 @@ import flooim from 'floo-2.0.0';
 const im = flooim(config);
 ```
 ### flooim.login(opt) {#module_flooim.login}
-登录
+Login
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | opt | <code>object</code> |  |
-| opt.name | <code>string</code> | 用户名 |
-| opt.password | <code>string</code> | 密码 |
+| opt.name | <code>string</code> | Username |
+| opt.password | <code>string</code> | Password |
 
 ### flooim.qrlogin(opt) {#module_flooim.qrlogin}
-二维码登录
+QR code login
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | opt | <code>object</code> |  |
-| opt.user_id | <code>number</code> | 用户ID |
-| opt.password | <code>string</code> | 密码 |
+| opt.user_id | <code>number</code> | User ID |
+| opt.password | <code>string</code> | Password |
 
 ### flooim.tokenLogin(opt) {#module_flooim.tokenlogin}
-token登录
+token login
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | opt | <code>object</code> |  |
-| opt.user_id | <code>number</code> | 用户ID |
+| opt.user_id | <code>number</code> | User ID |
 | opt.token | <code>string</code> | Token |
 
 ### flooim.idLogin(opt) {#module_flooim.idlogin}
-使用用户ID和密码登录
+Login with user ID and password
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | opt | <code>object</code> |  |
-| opt.user_id | <code>number</code> | 用户ID |
-| opt.password | <code>string</code> | 密码 |
+| opt.user_id | <code>number</code> | User ID |
+| opt.password | <code>string</code> | Password |
 
 ### flooim.isLogin() ⇒ <code>boolean</code> {#module_flooim.islogin}
-是否已登录
+Logged in or not
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
-**Returns**: <code>boolean</code> - 是否已登录  
+**Returns**: <code>boolean</code> - Logged in or not  
 ### flooim.on(options, ext) {#module_flooim.on}
-事件监听
+Event listening
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types..event) \| Object.&lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
-| ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
+| options | [<code>Event</code>](types.md#module_types..event) \| Object.&lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)&gt; | Can be event name, and also event name plus event callback |
+| ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | Event callback, only required if options is set as event name |
 
 **Example**  
 ```js
@@ -111,14 +111,14 @@ im.on({
  })
 ```
 ### flooim.off(options, ext) {#module_flooim.off}
-取消监听
+Unlisten
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types..event) \| Object.&lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
-| ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
+| options | [<code>Event</code>](types.md#module_types..event) \| Object.&lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)&gt; | Can be event name, and also event name plus event callback |
+| ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | Event callback, only required if options is set as event name |
 
 **Example**  
 ```js
@@ -135,6 +135,6 @@ const im = flooim(config);
  })
 ```
 ### flooim.logout() {#module_flooim.logout}
-退出账户
+Log out
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  

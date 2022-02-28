@@ -1,6 +1,6 @@
 # rosterManage
 ## rosterManage {#module_rostermanage}
-好友管理
+Friend management
 
 
 * [rosterManage](#module_rostermanage)
@@ -30,251 +30,251 @@
     * [.asyncSearchRosterById(params)](#module_rostermanage.asyncsearchrosterbyid) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem)
 
 ### rosterManage.asyncGetRosterIdList(force) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_rostermanage.asyncgetrosteridlist}
-获取好友id列表
+Get friend id list
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - 用户ID列表  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - List of user IDs  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| force | <code>boolean</code> | 是否强制从服务器拉取：true - 从服务器获取， false - 从本地存储获取 |
+| force | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - pull from local storage |
 
 ### rosterManage.asyncGetRosterInfo(roster_id, force) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) {#module_rostermanage.asyncgetrosterinfo}
-获取好友信息
+Get friend information
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - 好友信息  
+**Returns**: [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - Friend info  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| roster_id | <code>number</code> | 好友ID |
-| force | <code>boolean</code> | 是否强制从服务器拉取： true - 从服务器拉取， false - 优先从本地存储获取 |
+| roster_id | <code>number</code> | Friend ID |
+| force | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
 ### rosterManage.asyncRegester(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types..usersettings) {#module_rostermanage.asyncregester}
-用户注册
+User registeration
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types..usersettings) - 用户设置  
+**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types..usersettings) - User settings  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| opt | <code>object</code> | 用户信息 |
-| opt.username | <code>string</code> | 用户名 |
-| opt.password | <code>string</code> | 密码 |
+| opt | <code>object</code> | User information |
+| opt.username | <code>string</code> | Username |
+| opt.password | <code>string</code> | Password |
 
 ### rosterManage.asyncDeleteRoster(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage.asyncdeleteroster}
-删除好友
+Delete friend
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 请求结果  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Request results  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| param | <code>object</code> | 参数 |
-| param.user_id | <code>number</code> | 好友的用户ID |
+| param | <code>object</code> | Parameter |
+| param.user_id | <code>number</code> | Friend's user ID |
 
 ### rosterManage.asnycGetRosterListDetailByIds(roster_ids) ⇒ <code>Promise.&lt;Array.&lt;module:types~RosterItem&gt;&gt;</code> {#module_rostermanage.asnycgetrosterlistdetailbyids}
-根据id列表获取用户详细信息
+Get user details by id list
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~RosterItem&gt;&gt;</code> - 用户详细信息列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~RosterItem&gt;&gt;</code> - List of user details  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| roster_ids | <code>Array.&lt;number&gt;</code> | 用户ID列表 |
+| roster_ids | <code>Array.&lt;number&gt;</code> | List of user IDs |
 
 ### rosterManage.getAllRosterDetail() ⇒ [<code>Array.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) {#module_rostermanage.getallrosterdetail}
-获取缓存的所有用户详细信息
+Get all cached user details
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Array.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - 用户详细信息列表  
+**Returns**: [<code>Array.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - List of user details  
 ### rosterManage.asyncGetUserProfile(force) ⇒ [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types..userprofile) {#module_rostermanage.asyncgetuserprofile}
-获取自己的用户信息
+Get your own user info
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types..userprofile) - 用户信息  
+**Returns**: [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types..userprofile) - User information  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| force | <code>boolean</code> | 是否强制从服务器拉取： true - 从服务器拉取， false - 优先从本地存储获取 |
+| force | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
 ### rosterManage.getRosterMessageByRid(uid) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types..meta) {#module_rostermanage.getrostermessagebyrid}
-根据会话ID获取聊天消息
+Get chat messages based-on session ID
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Array.&lt;Meta&gt;</code>](types.md#module_types..meta) - 聊天消息列表  
+**Returns**: [<code>Array.&lt;Meta&gt;</code>](types.md#module_types..meta) - List of chat messages  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| uid | <code>number</code> | 会话ID |
+| uid | <code>number</code> | SessionID |
 
 ### rosterManage.readRosterMessage(roster_id, mid) {#module_rostermanage.readrostermessage}
-修改消息状态为已读
+Modify message status to read
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| roster_id | <code>number</code> | 会话ID |
-| mid | <code>number</code> | 消息ID |
+| roster_id | <code>number</code> | SessionID |
+| mid | <code>number</code> | MessageID |
 
 ### rosterManage.recallMessage(uid, mid) {#module_rostermanage.recallmessage}
-撤回消息，只能撤回5分钟内的
+Revoke a message, only valid for last 5 minutes
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| uid | <code>number</code> | 会话ID |
-| mid | <code>number</code> | 消息ID |
+| uid | <code>number</code> | SessionID |
+| mid | <code>number</code> | MessageID |
 
 ### rosterManage.unreadMessage(uid, mid) {#module_rostermanage.unreadmessage}
-设置消息成未读
+Set message to unread
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| uid | <code>number</code> | 会话ID |
-| mid | <code>number</code> | 消息ID |
+| uid | <code>number</code> | SessionID |
+| mid | <code>number</code> | MessageID |
 
 ### rosterManage.deleteMessage(uid, mid) {#module_rostermanage.deletemessage}
-删除消息
+Delete message
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| uid | <code>number</code> | 会话ID |
-| mid | <code>number</code> | 消息ID |
+| uid | <code>number</code> | SessionID |
+| mid | <code>number</code> | MessageID |
 
 ### rosterManage.getRosterInfo(rid) ⇒ [<code>RosterItem</code>](types.md#module_types..rosteritem) {#module_rostermanage.getrosterinfo}
-获取好友信息
+Get friend information
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>RosterItem</code>](types.md#module_types..rosteritem) - 好友信息  
+**Returns**: [<code>RosterItem</code>](types.md#module_types..rosteritem) - Friend info  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| rid | <code>number</code> | 好友ID |
+| rid | <code>number</code> | Friend ID |
 
 ### rosterManage.getUnreadCount(uid) ⇒ <code>number</code> {#module_rostermanage.getunreadcount}
-获取指定会话的未读数
+Get the number of unread messages for a given conversation
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>number</code> - 未读数  
+**Returns**: <code>number</code> - Number of unreads  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| uid | <code>number</code> | 会话IID |
+| uid | <code>number</code> | SessionIID |
 
 ### rosterManage.asyncGetApplyList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~RosterApplication&gt;&gt;</code> {#module_rostermanage.asyncgetapplylist}
-获取好友申请列表
+Get friend request list
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~RosterApplication&gt;&gt;</code> - 好友申请列表  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~RosterApplication&gt;&gt;</code> - List of friend requests  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.cursor | <code>number</code> | 从哪开始获取：可以传空字符串表示从头开始取 |
+| params | <code>object</code> | Parameter |
+| params.cursor | <code>number</code> | Get from where: you can pass an empty string to get from the beginning |
 
 ### rosterManage.asyncGetBlockedlist(params) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_rostermanage.asyncgetblockedlist}
-获取黑名单
+Get blacklist
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - 用户ID列表  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - List of user IDs  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数：空对象 |
+| params | <code>object</code> | Parameter:Empty object |
 
 ### rosterManage.asyncBlockeAdd(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage.asyncblockeadd}
-加入黑名单
+Add to blacklist
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.user_id | <code>number</code> | 用户ID |
+| params | <code>object</code> | Parameter |
+| params.user_id | <code>number</code> | User ID |
 
 ### rosterManage.asyncBlockeRemove(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage.asyncblockeremove}
-移除黑名单
+Remove blacklist
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.user_id | <code>number</code> | 用户ID |
+| params | <code>object</code> | Parameter |
+| params.user_id | <code>number</code> | User ID |
 
 ### rosterManage.asyncApply(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage.asyncapply}
-请求加为好友
+Request to add friend
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.user_id | <code>number</code> | 用户ID |
-| params.alias | <code>string</code> | 备注 |
+| params | <code>object</code> | Parameter |
+| params.user_id | <code>number</code> | User ID |
+| params.alias | <code>string</code> | Comment |
 
 ### rosterManage.asyncAccept(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage.asyncaccept}
-通过好友申请
+Approve add-friend request
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.user_id | <code>number</code> | 用户ID |
+| params | <code>object</code> | Parameter |
+| params.user_id | <code>number</code> | User ID |
 
 ### rosterManage.asyncDecline(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage.asyncdecline}
-拒绝好友申请
+Reject friend request
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.user_id | <code>number</code> | 用户ID |
+| params | <code>object</code> | Parameter |
+| params.user_id | <code>number</code> | User ID |
 
 ### rosterManage.asyncUpdateRosterExt(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage.asyncupdaterosterext}
-修改好友扩展字段
+Modify the Friend extension field
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.user_id | <code>number</code> | 用户ID |
-| params.ext | <code>string</code> | 扩展字段 |
+| params | <code>object</code> | Parameter |
+| params.user_id | <code>number</code> | User ID |
+| params.ext | <code>string</code> | Extension field |
 
 ### rosterManage.asyncSearchRosterByName(params) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) {#module_rostermanage.asyncsearchrosterbyname}
-按名称搜索用户
+Search for user by name
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - 用户信息  
+**Returns**: [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - User information  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.username | <code>string</code> | 用户名 |
+| params | <code>object</code> | Parameter |
+| params.username | <code>string</code> | Username |
 
 ### rosterManage.asyncSearchRosterById(params) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) {#module_rostermanage.asyncsearchrosterbyid}
-按ID搜索用户
+Search for user by ID
 
 **Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - 用户信息  
+**Returns**: [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types..rosteritem) - User information  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | 参数 |
-| params.user_id | <code>number</code> | 用户ID |
+| params | <code>object</code> | Parameter |
+| params.user_id | <code>number</code> | User ID |
