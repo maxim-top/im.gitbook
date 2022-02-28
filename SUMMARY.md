@@ -128,7 +128,7 @@
     * [floo::BMXVideoAttachment](reference/floo/classfloo\_1\_1\_b\_m\_x\_video\_attachment.md)
     * [floo::BMXVoiceAttachment](reference/floo/classfloo\_1\_1\_b\_m\_x\_voice\_attachment.md)
   * [Web SDK API (floo-web)](reference/floo-web.md)
-    * [base](reference/floo-web/flooim.md)
+    * [flooim](reference/floo-web/flooim.md)
     * [userManager](reference/floo-web/userManage.md)
     * [rosterManager](reference/floo-web/rosterManage.md)
     * [groupManager](reference/floo-web/groupManage.md)
