@@ -93,7 +93,7 @@ token登录
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types..event) \| <code>Object.&lt;module:types~Event, module:types~EventCallback&gt;</code> | 可以为事件名，也可以为事件名和事件回调 |
+| options | [<code>Event</code>](types.md#module_types..event) \| Object.<code>Object.&lt;module:types~Event, module:types~EventCallback&gt;</code>lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)<code>Object.&lt;module:types~Event, module:types~EventCallback&gt;</code>gt; | 可以为事件名，也可以为事件名和事件回调 |
 | ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
 
 **Example**  
@@ -117,7 +117,7 @@ im.on({
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types..event) \| <code>Object.&lt;module:types~Event, module:types~EventCallback&gt;</code> | 可以为事件名，也可以为事件名和事件回调 |
+| options | [<code>Event</code>](types.md#module_types..event) \| Object.<code>Object.&lt;module:types~Event, module:types~EventCallback&gt;</code>lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)<code>Object.&lt;module:types~Event, module:types~EventCallback&gt;</code>gt; | 可以为事件名，也可以为事件名和事件回调 |
 | ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
 
 **Example**  
