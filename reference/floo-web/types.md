@@ -171,7 +171,7 @@ Floo错误
 | res.to | <code>string</code> | 接收者用户ID |
 
 ### "onMentionMessage" (meta) {#event_onmentionmessage}
-收到群组&#64;消息
+收到群组@消息
 
 **Kind**: event emitted by [<code>types</code>](#module_types)  
 
@@ -465,7 +465,7 @@ Floo错误
 | member_invite | <code>boolean</code> | 群成员邀请设置: false - 不允许邀请, true - 允许邀请(默认) |
 | member_modify | <code>boolean</code> | 群成员修改群信息设置:  false - 群成员不能修改群信息(默认), true - 群成员可以修改群信息 |
 | msg_mute_mode | <code>number</code> | 群消息屏蔽模式: 0 - 表示不屏蔽, 1 - 表示屏蔽本地消息通知, 2 - 表示屏蔽消息，不接收消息 |
-| msg_push_mode | <code>number</code> | 群消息推送模式：0 - 接收所有推送，1 - 不接受推送，2 - 接收管理员和@消息推送， 3 - 只接收管理员消息推送， 4 - 只接收&#64;消息推送 |
+| msg_push_mode | <code>number</code> | 群消息推送模式：0 - 接收所有推送，1 - 不接受推送，2 - 接收管理员和@消息推送， 3 - 只接收管理员消息推送， 4 - 只接收@消息推送 |
 | name | <code>string</code> | 群名称 |
 | owner_id | <code>number</code> | 群主id,int64 |
 | read_ack | <code>boolean</code> | 群消息已读功能设置 |
@@ -489,7 +489,7 @@ Floo错误
 | count | <code>number</code> | 群成员数 |
 | group_id | <code>number</code> | 群id,int64 |
 | msg_mute_mode | <code>number</code> | 群消息屏蔽模式: 0 - 表示不屏蔽, 1 - 表示屏蔽本地消息通知, 2 - 表示屏蔽消息，不接收消息 |
-| msg_push_mode | <code>number</code> | 群消息推送模式：0 - 接收所有推送，1 - 不接受推送，2 - 接收管理员和@消息推送， 3 - 只接收管理员消息推送， 4 - 只接收&#64;消息推送 |
+| msg_push_mode | <code>number</code> | 群消息推送模式：0 - 接收所有推送，1 - 不接受推送，2 - 接收管理员和@消息推送， 3 - 只接收管理员消息推送， 4 - 只接收@消息推送 |
 | name | <code>string</code> | 群名称 |
 | owner | <code>number</code> | 群主id,int64 |
 | status | <code>number</code> | 群状态, 0：正常, 1：已解散,int32 |
