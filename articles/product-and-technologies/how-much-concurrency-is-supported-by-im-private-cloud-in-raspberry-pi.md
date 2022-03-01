@@ -192,12 +192,12 @@ Workshop 期间，可以一起聊聊天，关于程序员、架构师、技术�
 
 ## **引用**
 
-1、[树莓派4怎么样，可能的玩法有哪些    知乎](https://www.zhihu.com/question/331141310)\
+1、[树莓派4怎么样，可能的玩法有哪些 知乎](https://www.zhihu.com/question/331141310)\
 2、[美信拓扑私有云树莓派版本](https://www.maximtop.com/downloads/)\
 3、[十分钟安装一套即时通讯 IM 私有云 美信拓扑](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\
-4、[树莓派4正式上线！「PC级」性能，支持4K双屏，仅售241    机器之心](https://www.jiqizhixin.com/articles/2019-06-25)\
+4、[树莓派4正式上线！「PC级」性能，支持4K双屏，仅售241 机器之心](https://www.jiqizhixin.com/articles/2019-06-25)\
 5、[阿里云镜像托管服务](https://cn.aliyun.com/product/acr)\
-6、[深度解读阿里巴巴云原生镜像分发系统 Dragonfly    阿里云](https://yq.aliyun.com/articles/670136)\
+6、[深度解读阿里巴巴云原生镜像分发系统 Dragonfly 阿里云](https://yq.aliyun.com/articles/670136)\
 7、[Tsung is a high-performance benchmark framework for various protocols including HTTP, XMPP, LDAP, etc.](https://github.com/maxim-top/tsung)\
-8、[美信拓扑私有部署安装指南](https://www.maximtop.com/docs/install\_maxim/)\
+8、[美信拓扑私有部署安装指南](../../quick-start/how-to-deploy-private-cloud.md)\
 9、[How to install Ubuntu on your Raspberry Pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi)

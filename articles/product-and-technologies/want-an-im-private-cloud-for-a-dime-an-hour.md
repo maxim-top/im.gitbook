@@ -4,9 +4,15 @@
 
 > 云原生技术的成熟，意味着已经可以完全打破技术服务私有部署高成本重商务的旧规则。只要完成多云架构，完全可以同时满足客户对业务数据的掌控和公有云一样的低成本开支。
 >
+>
+>
 > 这一点，至少我们美信拓扑，可以做到。
 >
+>
+>
 > 而我们作为技术人的幸运，不应该止步于仅仅早于他人见识前沿技术，而是投身于这技术的洪流中，去创造去感受。一起来吧！
+>
+>
 >
 > 本文适合正在或即将进行即时通讯 IM 服务选型的朋友阅读，也适合所有做云服务的技术朋友阅读，欢迎留言讨论。
 
@@ -93,10 +99,9 @@ ln -sf /usr/bin/maxim-market /usr/bin/maxim.ctl ##老版本需要复制链接；
 2、[树莓派中的 IM 私有云支持多少并发？](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)\
 3、[阿里云云市场产品：美信拓扑 IM 私有云](https://market.aliyun.com/products/56014009/cmjj00041852.html)\
 4、[美信拓扑官方控制台](https://console.maximtop.com)\
-5、[美信拓扑 IM 私有部署指南](https://www.maximtop.com/docs/install\_maxim/)\
+5、[美信拓扑 IM 私有部署指南](../../quick-start/how-to-deploy-private-cloud.md)\
 6、[美信拓扑 IM 客户端与SDK下载](https://www.maximtop.com/downloads/)\
-7、[美信拓扑开源 Github 地址](https://github.com/maxim-top)\
-8、[美信拓扑 IM 客户端与SDK下载](https://www.maximtop.com/docs/install\_maxim/)
+7、[美信拓扑开源 Github 地址](https://github.com/maxim-top)
 
 ## 关于美信拓扑
 
