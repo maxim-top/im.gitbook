@@ -1,6 +1,6 @@
-# Web SDK (floo-web) 快速集成指南
+# Web 前端快速开发
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/web)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-web.md)
 
 ## 选型先读
 

@@ -1,6 +1,6 @@
-# C++ SDK (floo) 快速集成指南
+# Linux/C++ 客户端快速开发
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/floo)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo.md)
 
 ## SDK 整体架构
 

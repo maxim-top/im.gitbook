@@ -1,6 +1,6 @@
-# 推送 Push SDK 快速集成指南
+# 推送开发指南（PUSH）
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/android)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-android.md)
 
 ### 推送 SDK 集成说明
 

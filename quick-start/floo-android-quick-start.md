@@ -1,6 +1,6 @@
-# 安卓客户端快速开发（floo-android）
+# 安卓客户端快速开发
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/android)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-android.md)
 
 ### Android SDK 集成说明
 

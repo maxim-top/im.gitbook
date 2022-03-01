@@ -1,6 +1,6 @@
-# iOS SDK (floo-ios) 快速集成指南
+# IOS 客户端快速开发
 
-本页面供快速集成使用，了解更多请访问[详细文档](https://maximtop.com/docs/ios)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-ios.md)
 
 ## 前期准备
 
@@ -86,7 +86,6 @@ BMXSDKConfig *config = [[BMXSDKConfig alloc] initConfigWithDataDir:dataDir cache
 config.appID = @“Your AppID”;
 
 [[BMXClient sharedClient] registerWithSDKConfig:config];
-
 ```
 
 ### 二、注册用户
