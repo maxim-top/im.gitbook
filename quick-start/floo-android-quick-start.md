@@ -1,6 +1,6 @@
-# 安卓客户端快速开发（floo-android）
+# Android SDK Quick Start
 
-This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/android)
+This page is for quick integration, visit [detailed documentation](../reference/floo-android.md)
 
 ### Android SDK integration guide
 

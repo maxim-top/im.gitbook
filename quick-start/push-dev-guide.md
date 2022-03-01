@@ -1,10 +1,10 @@
-# Push Push SDK Quick integration guide
+# Push Development Guide
 
-This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/android)
+This page is for quick integration, visit [detailed documentation](../reference/floo-android.md)
 
 ### Push SDK integration description
 
-Maximtop Push is developed based on Maximtop IM technology, which can have both push and IM services with only one integration, improving R&D efficiency and greatly reducing IT expenditure of enterprises.
+Maximtop Push is developed based on Maximtop IM technology, which can have both push and IM services with only one integration, improving R\&D efficiency and greatly reducing IT expenditure of enterprises.
 
 No extra fee for using Maximtop Push.
 

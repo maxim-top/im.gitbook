@@ -1,6 +1,6 @@
-# Web SDK (floo-web) Quick integration指南
+# Web SDK Quick Start
 
-This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/web)
+This page is for quick integration, visit [detailed documentation](../reference/floo-web.md)
 
 ## Selection guide
 
@@ -238,7 +238,7 @@ const members = im.groupManage.getGroupMembers(state.sid);
 console.log(members);
 ```
 
-1. Get group list  Call groupManage’s asyncGetJoinedGroups method to get groups that all users joined
+1. Get group list Call groupManage’s asyncGetJoinedGroups method to get groups that all users joined
 
 ```
 im.groupManage.asyncGetJoinedGroups().then(res => {
@@ -246,7 +246,7 @@ im.groupManage.asyncGetJoinedGroups().then(res => {
 });
 ```
 
-1. Get group information  Call groupManage’s asyncGetGroupInfo method to get group details
+1. Get group information Call groupManage’s asyncGetGroupInfo method to get group details
 
 ```
 groupManage.asyncGetGroupInfo(group_id).then(res => {

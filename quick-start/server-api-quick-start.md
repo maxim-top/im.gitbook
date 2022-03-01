@@ -1,6 +1,6 @@
-# Server-side（server api）Quick integration guide
+# Server API Development Guide
 
-This page is for quick integration, visit [detailed documentation](https://maximtop.com/docs/api)
+This page is for quick integration, visit [detailed documentation](../reference/server-api/)
 
 ## Getting started
 
@@ -73,16 +73,16 @@ Some of the key APIs are demonstrated with the following values, which should be
 
     * Header parameter
 
-    | Parameter      | Description     | Comment |
-    | ------- | ------ | -- |
-    | app\_id | App id | Required |
+    | Parameter | Description | Comment  |
+    | --------- | ----------- | -------- |
+    | app\_id   | App id      | Required |
 
     * Request Body parameter
 
-    | Parameter       | Description  | Comment                                        |
-    | -------- | --- | ----------------------------------------- |
-    | username | Username | Required, username supports only alphanumeric and underscore combinations, and cannot be pure numbers nor begin with maxim, mta |
-    | password | Password  | Required                                        |
+    | Parameter | Description | Comment                                                                                                                         |
+    | --------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
+    | username  | Username    | Required, username supports only alphanumeric and underscore combinations, and cannot be pure numbers nor begin with maxim, mta |
+    | password  | Password    | Required                                                                                                                        |
 *   cURL request example
 
     ```
@@ -124,16 +124,16 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description
   *   Header parameter
 
-      | Parameter           | Description          | Comment |
-      | ------------ | ----------- | -- |
-      | app\_id      | APP ID      | Required |
-      | access-token | token       | Required |
+      | Parameter    | Description              | Comment  |
+      | ------------ | ------------------------ | -------- |
+      | app\_id      | APP ID                   | Required |
+      | access-token | token                    | Required |
       | user\_id     | user\_id of adding party | Required |
   *   Request Body parameter
 
-      | Parameter   | Description             | Comment |
-      | ---- | -------------- | -- |
-      | list | user\_id list of added party | Required |
+      | Parameter | Description                  | Comment  |
+      | --------- | ---------------------------- | -------- |
+      | list      | user\_id list of added party | Required |
 *   cURL request example
 
     ```
@@ -164,10 +164,10 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description
   *   Header parameter
 
-      | Parameter           | Description           | Comment |
-      | ------------ | ------------ | -- |
-      | app\_id      | APP ID       | Required |
-      | access-token | token        | Required |
+      | Parameter    | Description              | Comment  |
+      | ------------ | ------------------------ | -------- |
+      | app\_id      | APP ID                   | Required |
+      | access-token | token                    | Required |
       | user\_id     | user\_id of current user | Required |
   *   Request Body parameter
 
@@ -209,16 +209,16 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description
   *   Header parameter
 
-      | Parameter           | Description         | Comment |
-      | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | Required |
-      | access-token | token      | Required |
+      | Parameter    | Description             | Comment  |
+      | ------------ | ----------------------- | -------- |
+      | app\_id      | APP ID                  | Required |
+      | access-token | token                   | Required |
       | user\_id     | user\_id of group Owner | Required |
   *   Request Body parameter
 
-      | Parameter          | Description  | Comment |
-      | ----------- | --- | -- |
-      | name        | Group name | Required |
+      | Parameter   | Description       | Comment  |
+      | ----------- | ----------------- | -------- |
+      | name        | Group name        | Required |
       | description | Group description | Optional |
 *   cURL request example
 
@@ -264,16 +264,16 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description
   *   Header parameter
 
-      | Parameter           | Description         | Comment |
-      | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | Required |
-      | access-token | token      | Required |
+      | Parameter    | Description             | Comment  |
+      | ------------ | ----------------------- | -------- |
+      | app\_id      | APP ID                  | Required |
+      | access-token | token                   | Required |
       | user\_id     | user\_id of group Owner | Required |
   *   Request Body parameter
 
-      | Parameter         | Description     | Comment |
-      | ---------- | ------ | -- |
-      | group\_id  | Group id    | Required |
+      | Parameter  | Description  | Comment  |
+      | ---------- | ------------ | -------- |
+      | group\_id  | Group id     | Required |
       | user\_list | User id list | Required |
 *   cURL request example
 
@@ -311,18 +311,18 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description
   *   Header parameter
 
-      | Parameter           | Description         | Comment |
-      | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | Required |
-      | access-token | token      | Required |
+      | Parameter    | Description             | Comment  |
+      | ------------ | ----------------------- | -------- |
+      | app\_id      | APP ID                  | Required |
+      | access-token | token                   | Required |
       | user\_id     | user\_id of group Owner | Required |
   *   Query parameter
 
-      | Parameter        | Description       | Comment        |
-      | --------- | -------- | --------- |
-      | group\_id | Group id      | Required        |
-      | cursor    | Paged cursor     | Optional, default the first page |
-      | limit     | Number of members to fetch at once | Optional, default 1,000 |
+      | Parameter | Description                        | Comment                          |
+      | --------- | ---------------------------------- | -------------------------------- |
+      | group\_id | Group id                           | Required                         |
+      | cursor    | Paged cursor                       | Optional, default the first page |
+      | limit     | Number of members to fetch at once | Optional, default 1,000          |
 *   cURL request example
 
     ```
@@ -361,10 +361,10 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description
   *   Header parameter
 
-      | Parameter           | Description         | Comment |
-      | ------------ | ---------- | -- |
-      | app\_id      | APP ID     | Required |
-      | access-token | token      | Required |
+      | Parameter    | Description             | Comment  |
+      | ------------ | ----------------------- | -------- |
+      | app\_id      | APP ID                  | Required |
+      | access-token | token                   | Required |
       | user\_id     | user\_id of group Owner | Required |
 *   cURL request example
 
@@ -396,18 +396,18 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description
   *   Header parameter
 
-      | Parameter           | Description     | Comment |
-      | ------------ | ------ | -- |
-      | app\_id      | APP ID | Required |
-      | access-token | token  | Required |
+      | Parameter    | Description | Comment  |
+      | ------------ | ----------- | -------- |
+      | app\_id      | APP ID      | Required |
+      | access-token | token       | Required |
   *   Request Body parameter
 
-      | Parameter            | Description            | Comment |
-      | ------------- | ------------- | -- |
-      | targets       | List of target ids        | Required |
+      | Parameter     | Description                               | Comment  |
+      | ------------- | ----------------------------------------- | -------- |
+      | targets       | List of target ids                        | Required |
       | type          | Target type, 1: Single chat 2: Group chat | Required |
-      | content\_type | Message content type, 0: text-message | Required |
-      | ext           | Extension field          | Optional |
+      | content\_type | Message content type, 0: text-message     | Required |
+      | ext           | Extension field                           | Optional |
 *   cURL request example
 
     ```
@@ -439,16 +439,16 @@ Some of the key APIs are demonstrated with the following values, which should be
 * Parameter description：
   *   Header parameter
 
-      | Parameter           | Description     | Comment |
-      | ------------ | ------ | -- |
-      | app\_id      | APP ID | Required |
-      | access-token | token  | Required |
+      | Parameter    | Description | Comment  |
+      | ------------ | ----------- | -------- |
+      | app\_id      | APP ID      | Required |
+      | access-token | token       | Required |
   *   Request Body's main Parameter
 
-      | Parameter       | Description    | Comment |
-      | -------- | ----- | -- |
-      | audience | Push target  | Required |
-      | message  | Message body pushed | Required |
+      | Parameter | Description         | Comment  |
+      | --------- | ------------------- | -------- |
+      | audience  | Push target         | Required |
+      | message   | Message body pushed | Required |
   *   audience：Push target。Class type is string or JSONObject:
 
       ```
@@ -461,13 +461,13 @@ Some of the key APIs are demonstrated with the following values, which should be
       ```
   *   message:Message body pushed, the main Field is as follows，see API Details for full Field
 
-      | Parameter              | Description   | Comment                                          |
-      | --------------- | ---- | ------------------------------------------- |
+      | Parameter       | Description                | Comment                                                      |
+      | --------------- | -------------------------- | ------------------------------------------------------------ |
       | type            | Class Type of Notification | Optional，text，image， cmd - pass-through Message。Default text |
-      | title           | Notification Tittle | Optional                                          |
-      | body            | Notification Content | Optional                                          |
-      | attachment\_url | AttachmentAddress | Optional,Image/audio/video's URLAddress。                          |
-      | ext             | Extension field | Optional，Class型为JSONObject                            |
+      | title           | Notification Tittle        | Optional                                                     |
+      | body            | Notification Content       | Optional                                                     |
+      | attachment\_url | AttachmentAddress          | Optional,Image/audio/video's URLAddress。                     |
+      | ext             | Extension field            | Optional，Class型为JSONObject                                   |
 *   cURL request example
 
     ```
@@ -513,53 +513,53 @@ Some of the key APIs are demonstrated with the following values, which should be
 * 2xxxx indicates an issue related to group system
 * 3xxxx indicates an issue related to license
 
-| Error code   | Description                      |
-| ----- | ----------------------- |
-| 10000 | User does not exist                   |
-| 10001 | Incorrect verification code                  |
-| 10002 | Incorrect request parameter                 |
-| 10003 | Missing access-token parameter in header |
-| 10004 | User already exists                   |
-| 10005 | User already exists in friend list                |
-| 10006 | User already exists in blacklist                |
-| 10007 | Friend does not exist or expired             |
-| 10008 | Invalid access-token in header   |
-| 10009 | oss exception                   |
-| 10010 | User has no permission                   |
-| 10011 | user\_id bound             |
-| 10012 | User rejected friend request                |
-| 12001 | Upload PushImage to XiaomiPlatform failed           |
-| 12002 | PushImageFile size shall be smaller than 1M           |
-| 12003 | Upload PushImage to OPPOPlatform failed         |
-| 12004 | ImageAddressNone to Push cannot be downloaded            |
-| 12005 | Length of Push tartget list shall not exceed 500       |
-| 12006 | PushFeatures not enabled               |
-| 20000 | Server database exception                |
-| 20001 | Group does not exist                   |
-| 20002 | The user is not a group member                 |
-| 20003 | msg\_push\_mode value is illegal     |
-| 20004 | Group Owner cannot quit the group directly               |
-| 20005 | Group transfer error: Assignee is not a group member          |
-| 20006 | Group in repair mode                |
-| 20007 | Number of groups in App exceeds limit                |
-| 20008 | Number of user-created groups exceeds limit              |
-| 20009 | Number of user-joined groups exceeds limit              |
-| 20010 | Number of group members exceeds limit                   |
-| 20011 | This operation needs group member permission               |
-| 20012 | This operation needs group Admin permission              |
-| 20013 | This oeration needs group Owner permission                |
-| 20014 | Application of membership expired or processed             |
-| 20015 | Invitation of membership expired or processed             |
-| 20016 | Times of user’s kicked-out exceeds limit, can no longer join group       |
-| 20017 | User is already a group member                |
-| 20018 | User is already blacklisted               |
-| 20020 | Group announcement does not exist                  |
-| 20021 | Group announcement disabled by Admin               |
-| 20022 | Group shared file does not exist                |
-| 20023 | No permission to operate group shared file              |
-| 20024 | Group invitation QR Code is illegal               |
-| 20025 | Group invitation QR Code has expired               |
-| 30021 | Invalid MaxIM License         |
-| 30022 | Expired MaxIM License        |
-| 30023 | MaxIM License limit exceeded       |
-| 40000 | app\_id does not exist              |
+| Error code | Description                                                        |
+| ---------- | ------------------------------------------------------------------ |
+| 10000      | User does not exist                                                |
+| 10001      | Incorrect verification code                                        |
+| 10002      | Incorrect request parameter                                        |
+| 10003      | Missing access-token parameter in header                           |
+| 10004      | User already exists                                                |
+| 10005      | User already exists in friend list                                 |
+| 10006      | User already exists in blacklist                                   |
+| 10007      | Friend does not exist or expired                                   |
+| 10008      | Invalid access-token in header                                     |
+| 10009      | oss exception                                                      |
+| 10010      | User has no permission                                             |
+| 10011      | user\_id bound                                                     |
+| 10012      | User rejected friend request                                       |
+| 12001      | Upload PushImage to XiaomiPlatform failed                          |
+| 12002      | PushImageFile size shall be smaller than 1M                        |
+| 12003      | Upload PushImage to OPPOPlatform failed                            |
+| 12004      | ImageAddressNone to Push cannot be downloaded                      |
+| 12005      | Length of Push tartget list shall not exceed 500                   |
+| 12006      | PushFeatures not enabled                                           |
+| 20000      | Server database exception                                          |
+| 20001      | Group does not exist                                               |
+| 20002      | The user is not a group member                                     |
+| 20003      | msg\_push\_mode value is illegal                                   |
+| 20004      | Group Owner cannot quit the group directly                         |
+| 20005      | Group transfer error: Assignee is not a group member               |
+| 20006      | Group in repair mode                                               |
+| 20007      | Number of groups in App exceeds limit                              |
+| 20008      | Number of user-created groups exceeds limit                        |
+| 20009      | Number of user-joined groups exceeds limit                         |
+| 20010      | Number of group members exceeds limit                              |
+| 20011      | This operation needs group member permission                       |
+| 20012      | This operation needs group Admin permission                        |
+| 20013      | This oeration needs group Owner permission                         |
+| 20014      | Application of membership expired or processed                     |
+| 20015      | Invitation of membership expired or processed                      |
+| 20016      | Times of user’s kicked-out exceeds limit, can no longer join group |
+| 20017      | User is already a group member                                     |
+| 20018      | User is already blacklisted                                        |
+| 20020      | Group announcement does not exist                                  |
+| 20021      | Group announcement disabled by Admin                               |
+| 20022      | Group shared file does not exist                                   |
+| 20023      | No permission to operate group shared file                         |
+| 20024      | Group invitation QR Code is illegal                                |
+| 20025      | Group invitation QR Code has expired                               |
+| 30021      | Invalid MaxIM License                                              |
+| 30022      | Expired MaxIM License                                              |
+| 30023      | MaxIM License limit exceeded                                       |
+| 40000      | app\_id does not exist                                             |
