@@ -1,0 +1,132 @@
+{
+    "title": "美信拓扑文档",
+    "description": "API文档及文章分享",
+    "author": "jinhai",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.1",
+    "root": ".",
+    "structure": {
+        "readme": "README.md"
+    },
+    "plugins": [
+        "github-buttons@2.1.0",
+        "edit-link@^2.0.2",
+        "-sharing",
+        "sharing-plus@^0.0.2",
+        "-highlight",
+        "prism@^2.1.0",
+        "prism-themes@^0.0.2",
+        "-lunr",
+        "-search",
+        "search-plus@^0.0.11",
+        "advanced-emoji@^0.2.1",
+        "expandable-chapters-small@^0.1.7",
+        "tbfed-pagefooter@^0.0.1",
+        "versions-select@^0.1.1",
+        "terminal@^0.3.2",
+        "code@^0.1.0",
+        "splitter@^0.0.8",
+        "favicon@^0.0.2",
+
+        "logo@^0.0.2",
+        "intopic-toc@^1.1.1"
+    ],
+
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+        "github-buttons": {
+            "repo": "maxim-top/im.gitbook",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        },
+        "include-codeblock": {
+            "template": "ace",
+            "unindent": true,
+            "edit": true
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © maximtop.com 2022",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+        "edit-link": {
+            "base": "https://github.com/maxim-top/im.gitbook/blob/zh",
+            "label": "在GitHub上编辑"
+        },
+        "favicon": {
+            "shortcut": "/.gitbook/assets/favicon.ico",
+            "bookmark": "/.gitbook/assets/favicon.ico"
+        },
+        "terminal": {
+            "copyButtons": true,
+            "fade": false,
+            "style": "flat"
+        },
+
+        "versions": {
+            "type":"languages",
+            "options": [
+                {
+                    "value": "/",
+                    "text": "简体中文"
+                },
+                {
+                    "value": "/en/",
+                    "text": "en"
+                }
+            ]
+        },
+        "sharing": {
+           "douban": false,
+           "facebook": false,
+           "google": false,
+           "hatenaBookmark": false,
+           "instapaper": false,
+           "line": false,
+           "linkedin": false,
+           "messenger": false,
+           "pocket": false,
+           "qq": true,
+           "qzone": false,
+           "stumbleupon": false,
+           "twitter": false,
+           "viber": false,
+           "vk": false,
+           "weibo": true,
+           "whatsapp": false,
+           "all": [
+               "facebook", "google", "twitter",
+               "weibo", "instapaper", "linkedin",
+               "pocket", "stumbleupon", "qq", "qzone","douban"
+           ]
+       },
+       "logo":{
+	        "logo": "/.gitbook/assets/logob.png",
+            "logoStyle": "width: 200px;",
+            "url": "/"
+	    },
+        "intopic-toc": {
+            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
+            "mode": "nested",
+            "maxDepth": 3,
+            "isCollapsed": false,
+            "isScrollspyActive": true,
+            "visible": true,
+            "label": "内容"
+        }
+    }
+}

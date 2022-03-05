@@ -48,7 +48,7 @@ $ wget https://package.maximtop.com/linux/amd64/maxim.ctl
 
 > CPU 4核 内存 8G 硬盘100G
 
-* 如果选择安装集群版， 需要3台或更多服务器 
+* 如果选择安装集群版， 需要3台或更多服务器
 * 下载安装包 maxim.ctl
 
 ### 单机版

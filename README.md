@@ -37,11 +37,11 @@
 
 登录成功后，点击创建应用
 
-![](.gitbook/assets/1-1.create\_app.png)
+![](.gitbook/assets/1-1.create_app.png)
 
 创建应用成功后，应用信息页面内获得该应用的 App ID 等重要信息，也可以点击功能页进行配置。
 
-![](.gitbook/assets/1-2.app\_info.png)
+![](.gitbook/assets/1-2.app_info.png)
 
 ## 服务端
 
