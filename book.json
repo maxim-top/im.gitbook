@@ -69,8 +69,8 @@
             "label": "在GitHub上编辑"
         },
         "favicon": {
-            "shortcut": "/.gitbook/assets/favicon.ico",
-            "bookmark": "/.gitbook/assets/favicon.ico"
+            "shortcut": "/assets/favicon.ico",
+            "bookmark": "/assets/favicon.ico"
         },
         "terminal": {
             "copyButtons": true,
@@ -116,7 +116,7 @@
            ]
        },
        "logo":{
-	        "logo": "/.gitbook/assets/logob.png",
+	        "logo": "/assets/logob.png",
             "logoStyle": "width: 200px;",
             "url": "/"
 	    },

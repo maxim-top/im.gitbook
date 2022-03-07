@@ -4,7 +4,7 @@
 
 美信拓扑是可以一键启用多云架构的即时通讯云服务。企业可以通过集成即时通讯 IM SDK，配合使用云服务，可以为应用快速添加聊天功能。集成SDK后，典型的应用架构如下：
 
-![美信拓扑开放平台架构](.gitbook/assets/1.png)
+![美信拓扑开放平台架构](assets/1.png)
 
 依靠十余年的即时通讯 IM 技术积累，美信拓扑IM SDK和服务 API 都已经过优化设计，通过更加简单的接口提供更加专业的服务。
 
@@ -16,7 +16,7 @@
 
 美信拓扑 IM SDK 跨平台的，包括移动端（iOS/Android）、PC桌面端（Linux/Windows/Mac）、Web浏览器端（包括H5）以及微信小程序等。为了最大程度的复用，并提高服务质量，美信拓扑 IM SDK 技术栈如下：
 
-![美信拓扑IM SDK 技术栈](.gitbook/assets/2.jpeg)
+![美信拓扑IM SDK 技术栈](assets/2.jpeg)
 
 1. 统一设计并实现二进制即时通讯协议 XSYNC ，分别实现了 C++ 版和 Javascript 版；
 2. 在 C++ 通讯库的基础上封装了全平台的 C++ SDK，并以此为基础继续封装了移动端（iOS/Android）和PC桌面端（Linux/Windows/Mac）SDK；
@@ -37,11 +37,11 @@
 
 登录成功后，点击创建应用
 
-![](.gitbook/assets/1-1.create_app.png)
+![](assets/1-1.create_app.png)
 
 创建应用成功后，应用信息页面内获得该应用的 App ID 等重要信息，也可以点击功能页进行配置。
 
-![](.gitbook/assets/1-2.app_info.png)
+![](assets/1-2.app_info.png)
 
 ## 服务端
 

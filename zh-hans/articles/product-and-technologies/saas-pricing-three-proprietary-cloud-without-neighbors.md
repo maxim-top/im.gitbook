@@ -32,7 +32,7 @@
 
 从架构模式上看，这便是所谓的基于空间的架构。很多云厂商的「行业专有云」，都是这个模式。虽然空间分离了，但每个空间依然是多租户的，这就意味着在空间内资源依然是共享的，因此吵闹邻居的风险依然存在。
 
-![Photo by alevision.co on Unsplash](../../.gitbook/assets/articles/autogen-41b6aa066fabc2b23ca9539a6270866d5152dfa57043ebabf7e5b915dfdcab63.webp)
+![Photo by alevision.co on Unsplash](../../assets/articles/autogen-41b6aa066fabc2b23ca9539a6270866d5152dfa57043ebabf7e5b915dfdcab63.webp)
 
 真正解决这个问题，只有将资源彻底的隔离，保证客户对资源的独享。这只有两种方式能够做到，或者是独享的公有云，或者是托管的私有云。
 
@@ -42,7 +42,7 @@
 
 ## IM 价格：专有云 vs 公有云
 
-![](../../.gitbook/assets/articles/autogen-4aa1a276d84a4c60538021007b86ca744a40d7006d049b968ba15536102e02f8.webp)
+![](../../assets/articles/autogen-4aa1a276d84a4c60538021007b86ca744a40d7006d049b968ba15536102e02f8.webp)
 
 由于独立集群有初始资源占用，美信拓扑专有云（黄线）在起步价格上是高于行业公有云的。进一步，由于服务性能高，资源利用率得到了很好的控制，因此很快在 1000 日活档之后即保持了跟行业公有云相当的价格。
 
@@ -54,7 +54,7 @@
 
 ## IM 价格：专有云 vs 私有云
 
-![](../../.gitbook/assets/articles/autogen-4451f0c7ea118b8a383d5ad2dc82f7054c771e2de30c2dacc5b8f89419b8b65f.webp)
+![](../../assets/articles/autogen-4451f0c7ea118b8a383d5ad2dc82f7054c771e2de30c2dacc5b8f89419b8b65f.webp)
 
 在前面文章里，我们分析过私有云的 TCO 成本，这里也主要用它来跟专有云比较。可以看出，在起步成本上两者相当，随着用户增长，美信拓扑专有云（黄线）的价格比起私有云 TCO 的优势也开始逐渐扩大。
 
@@ -62,7 +62,7 @@
 
 而如果与传统私有云 TCO 对比来看，美信拓扑专有云（黄线）的优势则更为巨大：
 
-![](../../.gitbook/assets/articles/autogen-84b67ec5761d9a38064630a352605611999e4c2d0e274cfbd4903347a9a89313.webp)
+![](../../assets/articles/autogen-84b67ec5761d9a38064630a352605611999e4c2d0e274cfbd4903347a9a89313.webp)
 
 图中美信拓扑价格数据都是公开的，可到以下页面查看最新价格和优惠：
 
@@ -92,7 +92,7 @@
 
 这也是我们分享的原因，希望对你有所帮助 :P
 
-![Photo by Alexander Andrews on Unsplash](../../.gitbook/assets/articles/autogen-ceca10f5cc250c96cbc3246fb95012a96d2d240969c75437ce5c21ac1c2b3c7d.webp)
+![Photo by Alexander Andrews on Unsplash](../../assets/articles/autogen-ceca10f5cc250c96cbc3246fb95012a96d2d240969c75437ce5c21ac1c2b3c7d.webp)
 
 关于美信拓扑
 
@@ -104,4 +104,4 @@
 
 继续关注「美信拓扑」，了解一键启用多云架构的即时通讯。
 
-![](../../.gitbook/assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

@@ -4,7 +4,7 @@
 
 Maximtop is a one-click IM cloud service based on multi-cloud architecture. Enterprises can quickly add chat functions to applications by integrating instant messaging IM SDK and using cloud services. After SDK integrated, the typical application architecture is as follows:
 
-![Maximtop open platform architecture](.gitbook/assets/1.png)
+![Maximtop open platform architecture](assets/1.png)
 
 With the accumulation of instant messaging IM technology for more than ten years, Maximtop IM SDK and service API have been optimized to provide more professional services through simpler interfaces.
 
@@ -16,7 +16,7 @@ With the omnipotent console, there are only two things you need to do, one is to
 
 Maximtop IM SDK is cross-platform, including mobile (iOS/Android), PC desktop (Linux/Windows/Mac), Web browser (including H5) and WeChat applet. In order to maximize reuse and improve service quality, the IM SDK technology stack of Maximtop is as follows:
 
-![Maximtop IM SDK technology stack](.gitbook/assets/2.jpeg)
+![Maximtop IM SDK technology stack](assets/2.jpeg)
 
 1. Unified design and implementation of binary instant messaging protocol XSYNC, providing C++ version and JavaScript version respectively;
 2. Encapsulate the C++ SDK of the whole platform based on C++ communication library, and continue to encapsulate the SDK of mobile (iOS/Android) and PC desktop (Linux/Windows/Mac) on this basis;
@@ -37,11 +37,11 @@ Register and login [Maximtop Console](https://console.maximtop.com)
 
 After login, click to create application
 
-![](.gitbook/assets/1-1.create\_app.png)
+![](assets/1-1.create\_app.png)
 
 After application created, App ID and other important information can be obtained in Application Information page; or you can click on the function page to configure it.
 
-![](.gitbook/assets/1-2.app\_info.png)
+![](assets/1-2.app\_info.png)
 
 ## Server-side
 

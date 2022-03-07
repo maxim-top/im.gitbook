@@ -12,7 +12,7 @@
 >
 > 与上千位科技创业者共同关注科创人的成长心路。
 
-![](../../.gitbook/assets/articles/autogen-b6ae19203e360cb80e3078a4871a1f716a29eccb0717f7be9fcae2d1ddbd9c34.webp)
+![](../../assets/articles/autogen-b6ae19203e360cb80e3078a4871a1f716a29eccb0717f7be9fcae2d1ddbd9c34.webp)
 
 **—**
 
@@ -79,7 +79,7 @@
 
 “钱当然重要，但我还是不喜欢那种‘你只需要安稳做好就行’的生活，没有挑战，不刺激。我希望做一些只有我能做的事，希望生活里的每一天都对自己很满意。**这样选择，路可能会变得很难，但人生就像登山，如何登山不是最重要的问题，山峰才是。”**
 
-![](../../.gitbook/assets/articles/autogen-f46b044706445abfed7c32335696c765092c83ada7ed4773bc5c48c9e543dfe0.webp)
+![](../../assets/articles/autogen-f46b044706445abfed7c32335696c765092c83ada7ed4773bc5c48c9e543dfe0.webp)
 
 “我的山，就是让App都用上最好的 IM 技术吧。”
 
@@ -148,12 +148,12 @@ _**一乐的TMI：**_
 
 坚持跑步近10年。最初是因为常年头疼，多次寻医问药未果后尝试跑步，产生奇效。一直坚持至今，后拓展至打拳等其他运动。
 
-![](../../.gitbook/assets/articles/autogen-744af19a6c6ad1345a7f04d760d57c05b93ba79e0da4bd4949c37f319d29b512.gif)
+![](../../assets/articles/autogen-744af19a6c6ad1345a7f04d760d57c05b93ba79e0da4bd4949c37f319d29b512.gif)
 
 科创⼈社群，是由技术背景CEO、CTO、CIO、技术VP、技术总监等技术决策者组成的NPO组织，秉承⾃愿、互助、共赢原则， 以交流成长心得和创新、创业经验为主题，目前已拥有成员4000+。
 
 **-- 科创人·往期推荐--**
 
-[![](../../.gitbook/assets/articles/autogen-7c34f619b6f3175b18fd0a3ee6e6b7e3d032cea13225ee7365294ced8f999dfe.webp)](http://mp.weixin.qq.com/s?\_\_biz=MzI0OTc5ODE0MA==\&mid=2247484186\&idx=1\&sn=67e7bbdfff8fc631bdc90ba691a3e69b\&chksm=e98d4f89defac69fcef8ac023ae0a462e3b9ba2014d090bc4c856c939db94036f1425494acfd\&scene=21#wechat\_redirect)
+[![](../../assets/articles/autogen-7c34f619b6f3175b18fd0a3ee6e6b7e3d032cea13225ee7365294ced8f999dfe.webp)](http://mp.weixin.qq.com/s?\_\_biz=MzI0OTc5ODE0MA==\&mid=2247484186\&idx=1\&sn=67e7bbdfff8fc631bdc90ba691a3e69b\&chksm=e98d4f89defac69fcef8ac023ae0a462e3b9ba2014d090bc4c856c939db94036f1425494acfd\&scene=21#wechat\_redirect)
 
-[![](../../.gitbook/assets/articles/autogen-57d8ecf06fac90e5a44f28b1b411e6551d3ffb47423e0a6f30f483b96bc4ae09.webp)](http://mp.weixin.qq.com/s?\_\_biz=MzI0OTc5ODE0MA==\&mid=2247484163\&idx=1\&sn=ffd0c489ad2fefd13471211ddf612ea3\&chksm=e98d4f90defac686f166e07e451f198adefde6f12546fd24e0a16c96b23027efc468f927cbe8\&scene=21#wechat\_redirect)
+[![](../../assets/articles/autogen-57d8ecf06fac90e5a44f28b1b411e6551d3ffb47423e0a6f30f483b96bc4ae09.webp)](http://mp.weixin.qq.com/s?\_\_biz=MzI0OTc5ODE0MA==\&mid=2247484163\&idx=1\&sn=ffd0c489ad2fefd13471211ddf612ea3\&chksm=e98d4f90defac686f166e07e451f198adefde6f12546fd24e0a16c96b23027efc468f927cbe8\&scene=21#wechat\_redirect)
