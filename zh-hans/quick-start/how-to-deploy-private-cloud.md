@@ -42,7 +42,9 @@ $ wget https://package.maximtop.com/linux/amd64/maxim.ctl
 
 * 操作系统：
 
-> Linux 推荐 Ubuntu 18.04 或 CentOS 7/8 树莓派 推荐 Ubuntu 18.04 rasp3 MacOS 推荐 Catalina 10.15
+> Linux 推荐 Ubuntu 18.04 或 CentOS 7/8
+> 树莓派 推荐 Ubuntu 18.04 rasp3 
+> MacOS 推荐 Catalina 10.15
 
 * 硬件配置：
 
