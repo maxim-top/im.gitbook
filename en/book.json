@@ -64,7 +64,7 @@
             "skipFirstH1": true
         },
         "edit-link": {
-            "base": "https://github.com/maxim-top/im.gitbook/blob/zh",
+            "base": "https://github.com/maxim-top/im.gitbook/blob/master/en",
             "label": "在GitHub上编辑"
         },
         "favicon": {
