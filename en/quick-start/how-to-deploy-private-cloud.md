@@ -12,13 +12,13 @@ Maximtop Private Deployment provides two deployment modes: Single server version
 
 [Login Console](https://console.maximtop.com) Click to create application. Your application will use Free Edition package by default, or can be upgraded to Business Edition.
 
-![Create application](<../assets/1-1.create_app (1).png>)
+![Create application](../assets/1-1.create_app.png)
 
 ## Enable Private Cloud Services
 
 1. After application created, go to Application Details page.
 
-![Application information](<../assets/1-2.app_info (1).png>)
+![Application information](../assets/1-2.app_info.png)
 
 1. Click to change plan, select Private Cloud and then “Continue”.
 

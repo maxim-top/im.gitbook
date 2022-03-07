@@ -12,13 +12,13 @@
 
 [登录控制台](https://console.maximtop.com) 点击创建应用。应用创建默认为免费版套餐，也可以升级为商业版。
 
-![创建应用](<../assets/1-1.create_app (1).png>)
+![创建应用](../assets/1-1.create_app.png)
 
 ## 开通私有云服务
 
 1.应用创建成功后，进入应用详情页面。
 
-![应用信息](<../assets/1-2.app_info (1).png>)
+![应用信息](../assets/1-2.app_info.png)
 
 2.点击更改计划，选择私有云，点击“继续”。
 
