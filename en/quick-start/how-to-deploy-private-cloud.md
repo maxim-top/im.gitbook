@@ -12,17 +12,17 @@ Maximtop Private Deployment provides two deployment modes: Single server version
 
 [Login Console](https://console.maximtop.com) Click to create application. Your application will use Free Edition package by default, or can be upgraded to Business Edition.
 
-![Create application](<../assets/1-1.create\_app (1).png>)
+![Create application](<../assets/1-1.create_app (1).png>)
 
 ## Enable Private Cloud Services
 
 1. After application created, go to Application Details page.
 
-![Application information](<../assets/1-2.app\_info (1).png>)
+![Application information](<../assets/1-2.app_info (1).png>)
 
 1. Click to change plan, select Private Cloud and then “Continue”.
 
-![Enable Private Cloud Services](../assets/1-3.select\_private\_plan.png)
+![Enable Private Cloud Services](../assets/1-3.select_private_plan.png)
 
 1. Click the Private Cloud icon, go to the Private Cloud Details page, download installation package maxim.ctl
 
@@ -34,7 +34,7 @@ $ wget https://package.maximtop.com/linux/amd64/maxim.ctl
 
 1. Get the installation token, which can be copied to clipboard or downloaded as a local file for later use. In the installation script, we use maxim.token.XXXXXXX.txt to demonstrate.
 
-![Get Private Cloud installation token](../assets/1-5.get\_install\_token.png)
+![Get Private Cloud installation token](../assets/1-5.get_install_token.png)
 
 ## Setup Private Cloud
 
@@ -61,7 +61,7 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.
 
 Screenshot of execution result:
 
-![Single server version installation: Step 1](../assets/2-1.install\_single\_s1.png)
+![Single server version installation: Step 1](../assets/2-1.install_single_s1.png)
 
 1. Run installation
 
@@ -75,11 +75,11 @@ Note: “Enter maxim install token” hint, means please enter your copied insta
 
 Screenshot of execution started:
 
-![Single server version installation: Step 2](../assets/2-2.install\_single\_s2.png)
+![Single server version installation: Step 2](../assets/2-2.install_single_s2.png)
 
 Screenshot of installation completed
 
-![Single server version installation: Step 3](../assets/2-3.install\_single\_s3.png)
+![Single server version installation: Step 3](../assets/2-3.install_single_s3.png)
 
 * The local environment is not accessible externally, and the parameter --net internal needs to be added during installation to prompt the installer to select intranet IP registration.
 
@@ -93,11 +93,11 @@ Hint: The installation script hints “Enter maxim install token”, means pleas
 
 Screenshot of execution started:
 
-![Single server version installation: Step 4](../assets/2-4.install\_single\_s4.png)
+![Single server version installation: Step 4](../assets/2-4.install_single_s4.png)
 
 Screenshot of installation completed
 
-![Single server version installation: Step 5](../assets/2-5.install\_single\_s5.png)
+![Single server version installation: Step 5](../assets/2-5.install_single_s5.png)
 
 Hint: Wait for the installation to complete, which takes about 15 minutes.
 
@@ -117,7 +117,7 @@ sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''
 
 Screenshot of execution result:
 
-![Cluster permission configuration: Step 1](../assets/3-1-1.config\_cluster\_s1.png)
+![Cluster permission configuration: Step 1](../assets/3-1-1.config_cluster_s1.png)
 
 Execute the output of the following commands on hosts 172.16.0.78, 172.16.0.79, 172.16.0.80, respectively
 
@@ -127,19 +127,19 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 
 Screenshot of command output:
 
-![Cluster permission configuration: Step 2](../assets/3-1-2.config\_cluster\_s2.png)
+![Cluster permission configuration: Step 2](../assets/3-1-2.config_cluster_s2.png)
 
 Execution result of the command output at 172.16.0.78:
 
-![Cluster permission configuration: Step 3](../assets/3-1-3.config\_cluster\_s3.png)
+![Cluster permission configuration: Step 3](../assets/3-1-3.config_cluster_s3.png)
 
 Execution result of the command output at 172.16.0.79:
 
-![Cluster permission configuration: Step 4](../assets/3-1-4.config\_cluster\_s4.png)
+![Cluster permission configuration: Step 4](../assets/3-1-4.config_cluster_s4.png)
 
 Execution result of the command output at 172.16.0.80:
 
-![Cluster permission configuration: Step 5](../assets/3-1-5.config\_cluster\_s5.png)
+![Cluster permission configuration: Step 5](../assets/3-1-5.config_cluster_s5.png)
 
 1. ssh login on to the first host 172.16.0.78, execute the following command to download installation script and elevate executable permission:
 
@@ -149,7 +149,7 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.
 
 Screenshot of execution result:
 
-![Cluster version installation: Step 1](../assets/3-2-1.install\_cluster\_s1.png)
+![Cluster version installation: Step 1](../assets/3-2-1.install_cluster_s1.png)
 
 * Ensure the sever has a public network IP, execute the following command to start.
 
@@ -161,11 +161,11 @@ Hint: The installation script hints “Enter maxim install token”, means pleas
 
 Screenshot of execution started:
 
-![Cluster version installation: Step 2](../assets/3-2-2.install\_cluster\_s2.png)
+![Cluster version installation: Step 2](../assets/3-2-2.install_cluster_s2.png)
 
 Screenshot of installation completed
 
-![Cluster version installation: Step 3](../assets/3-2-3.install\_cluster\_s3.png)
+![Cluster version installation: Step 3](../assets/3-2-3.install_cluster_s3.png)
 
 * The local environment is not accessible externally, and the parameter --net internal needs to be added during installation to prompt the installer to select intranet IP registration.
 
@@ -179,11 +179,11 @@ Hint: The installation script hints “Enter maxim install token”, means pleas
 
 Screenshot of execution started:
 
-![Cluster version installation: Step 4](../assets/3-2-4.install\_cluster\_s4.png)
+![Cluster version installation: Step 4](../assets/3-2-4.install_cluster_s4.png)
 
 Screenshot of installation completed
 
-![Cluster version installation: Step 5](../assets/3-2-5.install\_cluster\_s5.png)
+![Cluster version installation: Step 5](../assets/3-2-5.install_cluster_s5.png)
 
 Hint: Wait for the installation to complete, which takes about 20 minutes.
 
@@ -238,8 +238,8 @@ sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-k
 2. If the host has a firewall, you need to ensure that ports 443 and 80 are accessible.
 3. How to check Private Cloud installation progress and data migration status?
 
-![Click “Private Cloud” to view the installation progress through the progress of node information](../assets/4-1.install\_progress.png)
+![Click “Private Cloud” to view the installation progress through the progress of node information](../assets/4-1.install_progress.png)
 
 1. After installation completed, open Maximtop Console to enter System Status page.
 
-![If all checks are normal, means the service is normal](../assets/4-2.service\_status.png)
+![If all checks are normal, means the service is normal](../assets/4-2.service_status.png)

@@ -37,11 +37,11 @@ Register and login [Maximtop Console](https://console.maximtop.com)
 
 After login, click to create application
 
-![](assets/1-1.create\_app.png)
+![](assets/1-1.create_app.png)
 
 After application created, App ID and other important information can be obtained in Application Information page; or you can click on the function page to configure it.
 
-![](assets/1-2.app\_info.png)
+![](assets/1-2.app_info.png)
 
 ## Server-side
 
@@ -73,7 +73,7 @@ Maximtop supports following platforms:
 | iOS      | iOS 9.0 +                                                                                             |
 | Android  | Android 4.1 +                                                                                         |
 | Web      | IE 10 and above, Chrome, Firefox, Safari                                                              |
-| PC       | Node.js version of the SDK supports Electron development framework, but only for x86\_64 architecture |
+| PC       | Node.js version of the SDK supports Electron development framework, but only for x86_64 architecture |
 | Linux    | C++ version of the SDK, supports x86/x86-x64/ARM/MIPS architecture                                    |
 
 ### Changelog
@@ -115,7 +115,7 @@ To be added, please refer [Source update](https://github.com/maxim-top/)
 | GroupServerDbError                | Server db error                                                           |
 | GroupNotExist                     | Group NOT Found                                                           |
 | GroupNotMemberFound               | User is NOT group member                                                  |
-| GroupMsgNotifyTypeUnknown         | Unknown msg\_notify\_type                                                 |
+| GroupMsgNotifyTypeUnknown         | Unknown msg_notify_type                                                 |
 | GroupOwnerCannotLeave             | Owner can not leave group                                                 |
 | GroupTransferNotAllowed           | Group only can transfer to group member                                   |
 | GroupRecoveryMode                 | Group is recovery mode                                                    |
