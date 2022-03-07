@@ -73,7 +73,7 @@
 | iOS     | 兼容iOS 9.0 +                                |
 | Android | 兼容Android 4.1 +                            |
 | Web     | 兼容 IE10 及以上、Chrome、Firefox、Safari等         |
-| PC      | Node.js版本SDK支持Electron开发框架，但仅支持 x86\_64 架构 |
+| PC      | Node.js版本SDK支持Electron开发框架，但仅支持 x86_64 架构 |
 | Linux   | C++版本SDK，支持 x86/x86-x64/ARM/MIPS 架构        |
 
 ### Changelog
@@ -115,7 +115,7 @@
 | GroupServerDbError                | Server db error                                                           |
 | GroupNotExist                     | Group NOT Found                                                           |
 | GroupNotMemberFound               | User is NOT group member                                                  |
-| GroupMsgNotifyTypeUnknown         | Unknown msg\_notify\_type                                                 |
+| GroupMsgNotifyTypeUnknown         | Unknown msg_notify_type                                                 |
 | GroupOwnerCannotLeave             | Owner can not leave group                                                 |
 | GroupTransferNotAllowed           | Group only can transfer to group member                                   |
 | GroupRecoveryMode                 | Group is recovery mode                                                    |
