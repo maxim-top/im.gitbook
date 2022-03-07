@@ -22,8 +22,8 @@
 
 **是的，熟悉的配方，更香浓的味道！**
 
-1.5GHz 四核 64-bit ARM Cortex-A72 CPU；\
-4GB LPDDR4 SDRAM；\
+1.5GHz 四核 64-bit ARM Cortex-A72 CPU；
+4GB LPDDR4 SDRAM；
 全吞吐量千兆以太网；
 
 作为一个即时通讯服务，我们需要的不少，但是这些已经足够。所以我们在第一时间就入手，并开始了树莓派的适配。
@@ -50,8 +50,8 @@
 
 美信拓扑IM集群共有15个服务（公有云每个服务都会有多个节点），他们是为高伸缩性设计的，完全分层分离的三类服务。
 
-1\. IM 通讯服务，包括长连接服务 Fireplace，发号器服务 Ticktick，巡检服务 Patrol；\
-2\. 平台服务 Ratel，包括分离开的平台接口服务 OpenAPI、内部RPC服务 Thrift、异步处理服务 Async（树莓派版被合并进了API服务）、回调服务 Callback、和推送服务 Push；\
+1\. IM 通讯服务，包括长连接服务 Fireplace，发号器服务 Ticktick，巡检服务 Patrol；
+2\. 平台服务 Ratel，包括分离开的平台接口服务 OpenAPI、内部RPC服务 Thrift、异步处理服务 Async（树莓派版被合并进了API服务）、回调服务 Callback、和推送服务 Push；
 3\. Infra 基础设施服务，包括数据库 MySQL、缓存/快速存储 Redis、队列服务 Kafka、文件服务 Ceph/Minio、高可用存储 Zookeeper、Etcd；
 
 我们平常所见的简单的IM系统，特别是开源的IM，大多是单体服务，这种服务在用户量增长后如何伸缩是个大问题。同时，缓存、异步化往往也还不够彻底，在不同业务的适配不够灵活，性能容易遇到瓶颈。
@@ -192,12 +192,12 @@ Workshop 期间，可以一起聊聊天，关于程序员、架构师、技术�
 
 ## **引用**
 
-1、[树莓派4怎么样，可能的玩法有哪些 知乎](https://www.zhihu.com/question/331141310)\
-2、[美信拓扑私有云树莓派版本](https://www.maximtop.com/downloads/)\
-3、[十分钟安装一套即时通讯 IM 私有云 美信拓扑](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\
-4、[树莓派4正式上线！「PC级」性能，支持4K双屏，仅售241 机器之心](https://www.jiqizhixin.com/articles/2019-06-25)\
-5、[阿里云镜像托管服务](https://cn.aliyun.com/product/acr)\
-6、[深度解读阿里巴巴云原生镜像分发系统 Dragonfly 阿里云](https://yq.aliyun.com/articles/670136)\
-7、[Tsung is a high-performance benchmark framework for various protocols including HTTP, XMPP, LDAP, etc.](https://github.com/maxim-top/tsung)\
-8、[美信拓扑私有部署安装指南](../../quick-start/how-to-deploy-private-cloud.md)\
+1、[树莓派4怎么样，可能的玩法有哪些 知乎](https://www.zhihu.com/question/331141310)
+2、[美信拓扑私有云树莓派版本](https://www.maximtop.com/downloads/)
+3、[十分钟安装一套即时通讯 IM 私有云 美信拓扑](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)
+4、[树莓派4正式上线！「PC级」性能，支持4K双屏，仅售241 机器之心](https://www.jiqizhixin.com/articles/2019-06-25)
+5、[阿里云镜像托管服务](https://cn.aliyun.com/product/acr)
+6、[深度解读阿里巴巴云原生镜像分发系统 Dragonfly 阿里云](https://yq.aliyun.com/articles/670136)
+7、[Tsung is a high-performance benchmark framework for various protocols including HTTP, XMPP, LDAP, etc.](https://github.com/maxim-top/tsung)
+8、[美信拓扑私有部署安装指南](../../quick-start/how-to-deploy-private-cloud.md)
 9、[How to install Ubuntu on your Raspberry Pi](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi)
