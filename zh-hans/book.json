@@ -10,7 +10,6 @@
         "readme": "README.md"
     },
     "plugins": [
-        "-livereload",
         "github-buttons@2.1.0",
         "edit-link@^2.0.2",
         "-sharing",
@@ -82,7 +81,7 @@
             "type":"languages",
             "options": [
                 {
-                    "value": "/zh-hans/",
+                    "value": "/",
                     "text": "简体中文"
                 },
                 {

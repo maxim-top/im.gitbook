@@ -3,14 +3,13 @@
     "description": "API文档及文章分享",
     "author": "jinhai",
     "output.name": "site",
-    "language": "zh-hans",
+    "language": "en",
     "gitbook": "3.2.3",
     "root": ".",
     "structure": {
         "readme": "README.md"
     },
     "plugins": [
-        "-livereload",
         "github-buttons@2.1.0",
         "edit-link@^2.0.2",
         "-sharing",
@@ -82,7 +81,7 @@
             "type":"languages",
             "options": [
                 {
-                    "value": "/zh-hans/",
+                    "value": "/",
                     "text": "简体中文"
                 },
                 {
@@ -128,9 +127,6 @@
             "isScrollspyActive": true,
             "visible": true,
             "label": "内容"
-        },
-        "language-picker": {
-            "grid-columns": 3
         }
     }
 }
