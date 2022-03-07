@@ -16,7 +16,7 @@
 >
 > 本文适合正在或即将进行即时通讯 IM 服务选型的朋友阅读，也适合所有做云服务的技术朋友阅读，欢迎留言讨论。
 
-继做完[十分钟安装一套即时通讯私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\[1]和[树莓派安装的 IM 私有云](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)\[2]之后，就在今天，美信拓扑 IM 私有云正式上线阿里云云市场，IM 服务又朝着便宜可靠迈出了一大步。
+继做完[十分钟安装一套即时通讯私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)[1]和[树莓派安装的 IM 私有云](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)[2]之后，就在今天，美信拓扑 IM 私有云正式上线阿里云云市场，IM 服务又朝着便宜可靠迈出了一大步。
 
 现在你只要在阿里云后台购买主机，选择美信拓扑 IM 私有云的镜像，就可以获得一台预装了 IM 私有云的云服务器。
 
@@ -30,7 +30,7 @@
 
 ## 如何购买使用
 
-购买美信拓扑 IM 私有云与购买普通云主机非常类似，只需进入美信拓扑 IM 私有云产品页面\[3]点击立即购买，一步步操作即可。
+购买美信拓扑 IM 私有云与购买普通云主机非常类似，只需进入美信拓扑 IM 私有云产品页面[3]点击立即购买，一步步操作即可。
 
 ![](../../assets/articles/autogen-17ac31d227c8d26231a7c4a738d9d4d51d6e2e71b4d2744f34b86e26138457a.webp)
 
@@ -62,7 +62,7 @@ cat /etc/maxim/market
 
 ![](../../assets/articles/autogen-6e1fbbae4f45b118f9978bfb9abc41e70345f5386c758b99d91e66332cbd4a40.webp)
 
-如图所示，美信拓扑 IM 私有云的所有配置均可通过官方控制台\[4]进行操作，云市场版本与官方下载版本相同，因此亦可参照官方私有部署文档\[5]。
+如图所示，美信拓扑 IM 私有云的所有配置均可通过官方控制台[4]进行操作，云市场版本与官方下载版本相同，因此亦可参照官方私有部署文档[5]。
 
 ### **1. 查看服务状态？**
 

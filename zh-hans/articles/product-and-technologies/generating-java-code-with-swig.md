@@ -15,7 +15,7 @@
 
 作者 | 一乐
 
-前几天在直播里介绍过的内部创新项目，代码正式开源了\[1]，喜欢玩的同学可以去 Github 看看（star）啦。
+前几天在直播里介绍过的内部创新项目，代码正式开源了[1]，喜欢玩的同学可以去 Github 看看（star）啦。
 
 为了更好的让大家理解项目，本文会介绍 SWIG 和本工程代码，同时也会介绍项目背景，也即美信拓扑跨平台 IM SDK 的设计与实践。
 
@@ -23,7 +23,7 @@
 
 ![Photo by Marco Djallo on @unsplash](../../assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp)
 
-SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相当直白，翻译过来就是简化的包装和接口生成器。官方介绍是一个联结 C/C++ 软件与其它各种高级编程语言的开发工具。其实主要做了一件事，就是把 C/C++ 写的软件库封装成其他高级编程语言可以调用的本地库。
+SWIG 全称是 Simplified Wrapper and Interface Generator [2]。这个名字相当直白，翻译过来就是简化的包装和接口生成器。官方介绍是一个联结 C/C++ 软件与其它各种高级编程语言的开发工具。其实主要做了一件事，就是把 C/C++ 写的软件库封装成其他高级编程语言可以调用的本地库。
 
 现在它支持的高级编程语言不仅包括 Javascript，Perl，PHP，Python，Tcl 以及 Ruby 这样的脚本语言，也支持非脚本语言如 C#，D，Golang，Java（包括Android），Lua，OCaml，Octave，Scilab 以及 R 语言。
 
@@ -53,7 +53,7 @@ SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相
 
 这样分层的好处在于协议之需要实现一次，即减少了工作量，又减少了潜在的Bug。在一个优秀的 IM 系统实现里，可靠高效的协议设计，与灵活柔性的客户端 SDK和高性能的服务端，是同等重要的。
 
-有朋友可能好奇 Floo 是什么意思？研发代号 Floo 来源于哈利波特里的飞路粉\[3]，根据介绍它是
+有朋友可能好奇 Floo 是什么意思？研发代号 Floo 来源于哈利波特里的飞路粉[3]，根据介绍它是
 
 > 一种亮晶晶的银色粉末，在男女巫师用飞路网旅行时使用。飞路网与绝大多数巫师家庭和魔法建筑相连接。
 >
@@ -61,7 +61,7 @@ SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相
 >
 > [https://harrypotter.fandom.com/zh/wiki/飞路粉](https://harrypotter.fandom.com/zh/wiki/%E9%A3%9E%E8%B7%AF%E7%B2%89)
 
-这也是我们服务端叫 Fireplace 的原因，如果你前几天跟我们一起玩过树莓派\[4]\[5]，在安装后的服务里会发现它。
+这也是我们服务端叫 Fireplace 的原因，如果你前几天跟我们一起玩过树莓派[4][5]，在安装后的服务里会发现它。
 
 ## 如何掌握 IM API
 
@@ -71,7 +71,7 @@ SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相
 
 大多时候我只是笑笑，心情好的时候还会说你说的对。
 
-但如果是好朋友，还会告诉他们，一个典型的 IM SDK，会有 40 余类几百个方法\[6]，因为要同时兼顾分层设计和灵活性，保证协议实现的质量，又要支持事件通知和自定义协议等确保业务逻辑的完整。
+但如果是好朋友，还会告诉他们，一个典型的 IM SDK，会有 40 余类几百个方法[6]，因为要同时兼顾分层设计和灵活性，保证协议实现的质量，又要支持事件通知和自定义协议等确保业务逻辑的完整。
 
 我会告诉他们，在移动网络这种长延迟不稳定链路下，要保证消息的有序投递，又要保证软实时且可靠，XMPP 协议有太多的限制，你需要全新设计和优化的 IM 协议。这也是现在真正高质量 IM 的基础。
 
@@ -135,13 +135,13 @@ SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相
                                                   +--->  BMXDevice
 ```
 
-1\. 低级 API (low-level)
+1. 低级 API (low-level)
 
 同步调用接口，类名以Service结尾，为方便理解，下文说明中用 L/S 表示，其中 L 表示 Low-level, S 表示 Sync。
 
 主要有 BMXUserService、BMXChatService、BMXRosterService、BMXGroupService。
 
-2\. 高级 API (high-level)
+2. 高级 API (high-level)
 
 异步调用接口，类名以Manager结尾，为方便理解，下文用 H/A 表示，其中 H 表示 High-level, A 表示 Async。
 
@@ -149,11 +149,11 @@ SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相
 
 简单来讲，相关调用会在子线程执行具体操作（例如：搜索好友），当前线程会直接返回而不阻塞。具体操作的结果则通过回调函数通知调用方，后者可以在其中处理 UI 刷新等业务逻辑。
 
-3\. 工具类 Utility
+3. 工具类 Utility
 
 包括客户端实例化类 BMXClient 、配置类 BMXSDKConfig、消息类 BMXMessage、会话类 BMXConversation、用户身份类 BMXUserProfile、群类 BMXGroup、设备类 BMXDevice等。
 
-我们这里不再赘述，如果需要参照可以阅读美信拓扑快速集成指南安卓版\[6]，或者查看详细类库文档\[7]，当然后者也是此次开源仓库自动生成的。
+我们这里不再赘述，如果需要参照可以阅读美信拓扑快速集成指南安卓版[6]，或者查看详细类库文档[7]，当然后者也是此次开源仓库自动生成的。
 
 最后，让我们看看代码吧。
 
@@ -167,7 +167,7 @@ TIPS：如果你已阅读到这里，可以给自己点个赞啦。
 /usr/local/bin/swig -debug-classes -debug-module 4 -debug-typemap -c++ -java -package im.floo.floolib -outdir src/main/java/im/floo/floolib/ -o src/main/cpp/floo_wrap.cxx -Ifloo/include -Ifloo/src swig/floo.i
 ```
 
-指定输出 Java 代码的包名是 im.floo.floolib，指定 floo 头文件的地址，剩下的就是 SWIG 定义文件了，他们都放在 ./swig/floo.i \[7] 里，下面是 49-126 行：
+指定输出 Java 代码的包名是 im.floo.floolib，指定 floo 头文件的地址，剩下的就是 SWIG 定义文件了，他们都放在 ./swig/floo.i [7] 里，下面是 49-126 行：
 
 ```
 %include "std_shared_ptr.i"
@@ -252,13 +252,13 @@ typedef floo::BMXConversation::Type BMXConversationType;
 
 详细代码可以去仓库里查看，这里只提几点，希望对你后续使用有所帮助：
 
-1\. 标准库有专门头文件，如果你用了它们，也需要首先关联它们的定义文件
+1. 标准库有专门头文件，如果你用了它们，也需要首先关联它们的定义文件
 
 ```
 %include "std_shared_ptr.i"
 ```
 
-2\. 继承可以用 % entend 关键字
+2. 继承可以用 % entend 关键字
 
 ```
 %extend floo::BMXFileAttachment {
@@ -268,7 +268,7 @@ typedef floo::BMXConversation::Type BMXConversationType;
 };
 ```
 
-3\. 最后一点，也是最重要的一点是：顺序很重要，顺序很重要，顺序很重要！
+3. 最后一点，也是最重要的一点是：顺序很重要，顺序很重要，顺序很重要！
 
 因为代码生成的过程是单次遍历，所以在生成当前代码的时候，如果用到的类没有被定义，就会重新级联生成一个新的辅助类，这样你会得到很多命名超长的类，很难看很难用。
 
