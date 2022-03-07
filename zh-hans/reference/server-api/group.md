@@ -6,7 +6,7 @@
 
 > POST  /group/admin/add
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -14,13 +14,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -33,7 +33,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -43,7 +43,7 @@
 
 > POST  /group/admin/remove
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -51,13 +51,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -70,7 +70,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -80,7 +80,7 @@
 
 > DELETE  /group/admin/remove
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -88,13 +88,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -107,7 +107,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -117,19 +117,19 @@
 
 > GET  /group/admin_list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -142,7 +142,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -152,20 +152,20 @@
 
 > GET  /group/announcement
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | announcement_id| | announcement_id| 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -181,7 +181,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -191,20 +191,20 @@
 
 > POST  /group/announcement/delete
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | announcement_id| | announcement_id| 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -214,7 +214,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -224,20 +224,20 @@
 
 > DELETE  /group/announcement/delete
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | announcement_id| | announcement_id| 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -247,7 +247,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -257,7 +257,7 @@
 
 > POST  /group/announcement/edit
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -265,14 +265,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  content| string| | false| 公告内容| 
 |  group_id| int32| | false| 群组id| 
 |  title| string| | false| 公告标题| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -288,7 +288,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -298,19 +298,19 @@
 
 > GET  /group/announcement/last
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -326,7 +326,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -336,19 +336,19 @@
 
 > GET  /group/announcement/list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -364,7 +364,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -374,7 +374,7 @@
 
 > POST  /group/application_list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -382,19 +382,19 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
 | limit| | limit| 
 | version| | version| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_list| array[int32]| | false| 群id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -407,7 +407,7 @@
 |  version| int32| | false| 版本，目前没用到，留作扩展| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -417,7 +417,7 @@
 
 > POST  /group/apply
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -425,13 +425,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  reason| string| | false| 申请入群原因| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -444,7 +444,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -454,7 +454,7 @@
 
 > POST  /group/apply/handle
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -462,14 +462,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| 审批，bool类型，true为同意，false为拒绝| 
 |  group_id| int32| | false| 群id| 
 |  user_id| int32| | false| 用户id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -482,7 +482,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -492,7 +492,7 @@
 
 > PUT  /group/apply/handle
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -500,14 +500,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| 审批，bool类型，true为同意，false为拒绝| 
 |  group_id| int32| | false| 群id| 
 |  user_id| int32| | false| 用户id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -520,7 +520,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -530,7 +530,7 @@
 
 > POST  /group/ban
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -538,14 +538,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  duration| int32| | false| 禁言时长，单位为分钟| 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -558,7 +558,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -568,14 +568,14 @@
 
 > GET  /group/banned_list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
@@ -583,7 +583,7 @@
 | limit| | limit| 
 | version| | version| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -596,7 +596,7 @@
 |  version| int32| | false| 版本，目前没用到，留作扩展| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -606,7 +606,7 @@
 
 > POST  /group/block
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -614,13 +614,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -633,7 +633,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -643,14 +643,14 @@
 
 > GET  /group/blocked_list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
@@ -658,7 +658,7 @@
 | limit| | limit| 
 | version| | version| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -671,7 +671,7 @@
 |  version| int32| | false| 版本，目前没用到，留作扩展| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -681,7 +681,7 @@
 
 > POST  /group/create
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -689,7 +689,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  avatar| string| | false| 群头像| 
@@ -698,7 +698,7 @@
 |  type| int32| | false| 群类型 1表示公开群，0表示私有群, 2表示聊天室| 
 |  user_list| array[int32]| | false| 邀请入群的用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -708,7 +708,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -718,19 +718,19 @@
 
 > POST  /group/destroy
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -740,7 +740,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -750,19 +750,19 @@
 
 > DELETE  /group/destroy
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -772,7 +772,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -782,7 +782,7 @@
 
 > POST  /group/display_name
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -790,13 +790,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -806,7 +806,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -816,7 +816,7 @@
 
 > PUT  /group/display_name
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -824,13 +824,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -840,7 +840,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -850,20 +850,20 @@
 
 > GET  /group/file
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | file_id| | file_id| 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -882,7 +882,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -892,7 +892,7 @@
 
 > POST  /group/file/delete
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -900,13 +900,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_list| array[int32]| | false| 文件id列表| 
 |  group_id| int32| | false| 群id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -919,7 +919,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -929,7 +929,7 @@
 
 > DELETE  /group/file/delete
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -937,13 +937,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_list| array[int32]| | false| 文件id列表| 
 |  group_id| int32| | false| 群id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -956,7 +956,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -966,19 +966,19 @@
 
 > GET  /group/file/list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -997,7 +997,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1007,7 +1007,7 @@
 
 > POST  /group/file/update_name
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1015,14 +1015,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_id| int32| | false| 文件id| 
 |  group_id| int32| | false| 群id| 
 |  name| string| | false| 文件新名称| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1032,7 +1032,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1042,7 +1042,7 @@
 
 > PUT  /group/file/update_name
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1050,14 +1050,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_id| int32| | false| 文件id| 
 |  group_id| int32| | false| 群id| 
 |  name| string| | false| 文件新名称| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1067,7 +1067,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1077,7 +1077,7 @@
 
 > POST  /group/file/upload
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1085,7 +1085,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
@@ -1094,7 +1094,7 @@
 |  type| string| | false| 文件类型| 
 |  url| string| | false| 文件url| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1113,7 +1113,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1123,19 +1123,19 @@
 
 > GET  /group/info
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1163,7 +1163,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1173,7 +1173,7 @@
 
 > POST  /group/info/avatar
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1181,13 +1181,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1197,7 +1197,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1207,7 +1207,7 @@
 
 > PUT  /group/info/avatar
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1215,13 +1215,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1231,7 +1231,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1241,7 +1241,7 @@
 
 > POST  /group/info/batch
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1249,12 +1249,12 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_list| array[int32]| | false| 群id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1275,7 +1275,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1285,7 +1285,7 @@
 
 > POST  /group/info/description
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1293,13 +1293,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1309,7 +1309,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1319,7 +1319,7 @@
 
 > PUT  /group/info/description
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1327,13 +1327,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1343,7 +1343,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1353,7 +1353,7 @@
 
 > POST  /group/info/ext
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1361,13 +1361,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1377,7 +1377,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1387,7 +1387,7 @@
 
 > PUT  /group/info/ext
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1395,13 +1395,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1411,7 +1411,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1421,7 +1421,7 @@
 
 > POST  /group/info/name
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1429,13 +1429,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1445,7 +1445,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1455,7 +1455,7 @@
 
 > PUT  /group/info/name
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1463,13 +1463,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| string| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1479,7 +1479,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1489,7 +1489,7 @@
 
 > GET  /group/invitation_list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1497,14 +1497,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
 | limit| | limit| 
 | version| | version| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1517,7 +1517,7 @@
 |  version| int32| | false| 版本，目前没用到，留作扩展| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1527,7 +1527,7 @@
 
 > POST  /group/invite
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1535,14 +1535,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  reason| string| | false| 邀请理由| 
 |  user_list| array[int32]| | false| 受邀请者id，List类型，单次可邀请多个用户入群| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1555,7 +1555,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1565,7 +1565,7 @@
 
 > POST  /group/invite/handle
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1573,14 +1573,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| 审批，bool类型，true为同意，false为拒绝| 
 |  group_id| int32| | false| 群id| 
 |  user_id| int32| | false| 用户id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1590,7 +1590,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1600,7 +1600,7 @@
 
 > PUT  /group/invite/handle
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1608,14 +1608,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| 审批，bool类型，true为同意，false为拒绝| 
 |  group_id| int32| | false| 群id| 
 |  user_id| int32| | false| 用户id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1625,7 +1625,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1635,7 +1635,7 @@
 
 > POST  /group/kick
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1643,13 +1643,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1662,7 +1662,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1672,7 +1672,7 @@
 
 > DELETE  /group/kick
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1680,13 +1680,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1699,7 +1699,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1709,19 +1709,19 @@
 
 > POST  /group/leave
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1731,7 +1731,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1741,19 +1741,19 @@
 
 > DELETE  /group/leave
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1763,7 +1763,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1773,14 +1773,14 @@
 
 > GET  /group/member_list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
@@ -1788,7 +1788,7 @@
 | limit| | limit| 
 | version| | version| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1804,7 +1804,7 @@
 |  version| int32| | false| 版本，目前没用到，留作扩展| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1814,7 +1814,7 @@
 
 > POST  /group/members/display_name
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1822,13 +1822,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1841,7 +1841,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1851,7 +1851,7 @@
 
 > POST  /group/msg/mute_mode
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1859,13 +1859,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  msg_mute_mode| int32| | false| 群消息屏蔽模式： 0 不屏蔽1 屏蔽本地消息通知2 屏蔽消息，不接收消息| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1875,7 +1875,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1885,7 +1885,7 @@
 
 > PUT  /group/msg/mute_mode
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1893,13 +1893,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  msg_mute_mode| int32| | false| 群消息屏蔽模式： 0 不屏蔽1 屏蔽本地消息通知2 屏蔽消息，不接收消息| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1909,7 +1909,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1919,7 +1919,7 @@
 
 > POST  /group/msg/push_mode
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1927,13 +1927,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  msg_push_mode| int32| | false| 群消息推送类型： 0:接收所有推送;1:不接受推送;2:接收管理员和@消息推送;3:只接收管理员消息推送;4:只接收@消息推送| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1943,7 +1943,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1953,7 +1953,7 @@
 
 > PUT  /group/msg/push_mode
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1961,13 +1961,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  msg_push_mode| int32| | false| 群消息推送类型： 0:接收所有推送;1:不接受推送;2:接收管理员和@消息推送;3:只接收管理员消息推送;4:只接收@消息推送| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -1977,7 +1977,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -1987,7 +1987,7 @@
 
 > GET  /group/public_list
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -1995,7 +1995,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2005,7 +2005,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2015,7 +2015,7 @@
 
 > POST  /group/qrcode/invite
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2023,12 +2023,12 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  qr_info| string| | false| | 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2038,7 +2038,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2048,19 +2048,19 @@
 
 > GET  /group/qrcode/sign
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2073,7 +2073,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2083,19 +2083,19 @@
 
 > GET  /group/settings
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
 | app_id| | 应用ID| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2123,7 +2123,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2133,7 +2133,7 @@
 
 > POST  /group/settings/allow_member_invitation
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2141,13 +2141,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2157,7 +2157,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2167,7 +2167,7 @@
 
 > PUT  /group/settings/allow_member_invitation
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2175,13 +2175,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2191,7 +2191,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2201,7 +2201,7 @@
 
 > POST  /group/settings/allow_member_modify
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2209,13 +2209,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2225,7 +2225,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2235,7 +2235,7 @@
 
 > PUT  /group/settings/allow_member_modify
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2243,13 +2243,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2259,7 +2259,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2269,7 +2269,7 @@
 
 > POST  /group/settings/ban_all
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2277,13 +2277,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  duration| int32| | false| 禁言时长，单位为分钟| 
 |  group_id| int32| | false| 群id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2294,7 +2294,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2304,7 +2304,7 @@
 
 > POST  /group/settings/enable_read_ack
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2312,13 +2312,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2328,7 +2328,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2338,7 +2338,7 @@
 
 > PUT  /group/settings/enable_read_ack
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2346,13 +2346,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2362,7 +2362,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2372,7 +2372,7 @@
 
 > POST  /group/settings/history_visible
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2380,13 +2380,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2396,7 +2396,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2406,7 +2406,7 @@
 
 > PUT  /group/settings/history_visible
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2414,13 +2414,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  value| boolean| | false| 更新内容| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2430,7 +2430,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2440,7 +2440,7 @@
 
 > POST  /group/settings/require_admin_approval
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2448,13 +2448,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  apply_approval| int32| | false| 入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请| 
 |  group_id| int32| | false| 群id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2464,7 +2464,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2474,7 +2474,7 @@
 
 > PUT  /group/settings/require_admin_approval
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2482,13 +2482,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  apply_approval| int32| | false| 入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请| 
 |  group_id| int32| | false| 群id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2498,7 +2498,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2508,7 +2508,7 @@
 
 > POST  /group/settings/unban_all
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2516,12 +2516,12 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2531,7 +2531,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2541,7 +2541,7 @@
 
 > POST  /group/transfer
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2549,13 +2549,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  new_owner| int32| | false| 新群主的user_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2568,7 +2568,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2578,7 +2578,7 @@
 
 > PUT  /group/transfer
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2586,13 +2586,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  new_owner| int32| | false| 新群主的user_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2605,7 +2605,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2615,7 +2615,7 @@
 
 > POST  /group/unban
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2623,13 +2623,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2642,7 +2642,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2652,7 +2652,7 @@
 
 > POST  /group/unblock
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2660,13 +2660,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2679,7 +2679,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2689,7 +2689,7 @@
 
 > DELETE  /group/unblock
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2697,13 +2697,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| 群id| 
 |  user_list| array[int32]| | false| 用户id列表| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2716,7 +2716,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -2726,7 +2726,7 @@
 
 > GET  /group/user_joined
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -2734,7 +2734,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -2744,7 +2744,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 

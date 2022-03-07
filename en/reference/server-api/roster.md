@@ -5,19 +5,19 @@
 
 > POST  /roster/accept
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -27,7 +27,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -37,19 +37,19 @@
 
 > PUT  /roster/accept
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -59,7 +59,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -69,7 +69,7 @@
 
 > POST  /roster/apply
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -77,7 +77,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  alias| string| | false| Name in comment| 
@@ -85,7 +85,7 @@
 |  reason| string| | false| Request description| 
 |  user_id| int32| | false| Invitee ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -95,7 +95,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -105,7 +105,7 @@
 
 > POST  /roster/apply/batch
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -113,14 +113,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  alias| string| | false| Name in comment| 
 |  reason| string| | false| Request description| 
 |  user_id| int32| | false| Invitee ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -134,7 +134,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -144,7 +144,7 @@
 
 > GET  /roster/apply/list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -152,13 +152,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
 | limit| | limit| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -174,7 +174,7 @@
 |  version| int32| | false| Version| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -184,19 +184,19 @@
 
 > POST  /roster/block
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -206,7 +206,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -216,19 +216,19 @@
 
 > PUT  /roster/block
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -238,7 +238,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -248,7 +248,7 @@
 
 > GET  /roster/blocked_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -256,7 +256,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -266,7 +266,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -276,7 +276,7 @@
 
 > POST  /roster/decline
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -284,13 +284,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  reason| string| | false| Reason for rejection| 
 |  user_id| int32| | false| Rejected user ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -300,7 +300,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -310,7 +310,7 @@
 
 > PUT  /roster/decline
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -318,13 +318,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  reason| string| | false| Reason for rejection| 
 |  user_id| int32| | false| Rejected user ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -334,7 +334,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -344,19 +344,19 @@
 
 > POST  /roster/delete
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -366,7 +366,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -376,19 +376,19 @@
 
 > DELETE  /roster/delete
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -398,7 +398,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -408,7 +408,7 @@
 
 > POST  /roster/ext
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -416,7 +416,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  alias| string| | false| Name in comment| 
@@ -424,7 +424,7 @@
 |  mute_notification| boolean| | false| Whether to receive message alert| 
 |  user_id| int32| | false| Friend user ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -434,7 +434,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -444,7 +444,7 @@
 
 > PUT  /roster/ext
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -452,7 +452,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  alias| string| | false| Name in comment| 
@@ -460,7 +460,7 @@
 |  mute_notification| boolean| | false| Whether to receive message alert| 
 |  user_id| int32| | false| Friend user ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -470,7 +470,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -480,19 +480,19 @@
 
 > GET  /roster/id
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | User ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -514,7 +514,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -524,7 +524,7 @@
 
 > GET  /roster/list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -532,13 +532,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
 | limit| | limit| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -550,7 +550,7 @@
 |  version| int32| | false| Version| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -560,7 +560,7 @@
 
 > POST  /roster/list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -568,12 +568,12 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  list| array[int32]| | false| | 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -595,7 +595,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -605,20 +605,20 @@
 
 > GET  /roster/may_message
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | roster_id| | roster_id| 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -628,7 +628,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -638,7 +638,7 @@
 
 > GET  /roster/mobile
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -646,12 +646,12 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | mobile| | mobile| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -673,7 +673,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -683,7 +683,7 @@
 
 > GET  /roster/name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -691,12 +691,12 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | username| | username| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -718,7 +718,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -728,19 +728,19 @@
 
 > POST  /roster/unblock
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -750,7 +750,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -760,19 +760,19 @@
 
 > DELETE  /roster/unblock
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | user_id| | user_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -782,7 +782,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 

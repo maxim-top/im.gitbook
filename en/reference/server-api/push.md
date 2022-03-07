@@ -5,7 +5,7 @@
 
 > GET  /push/certificate
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -13,13 +13,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | environment| | Run environment, 0 - development environment, 1 - production environment, default: 1| 
 | provider| | Certificate provider, 1-APNS,2-Huawei,3-Xiaomi,4-Meizu,5-VIVO, 6-OPPO, 7-FCM| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -34,7 +34,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -44,7 +44,7 @@
 
 > POST  /push/notify
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -52,7 +52,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  audience| object| | false| Target of push, cannot be blank. Type is string or JSONObject:<br>"all", means push to all devices<br>{"tag":["tag1","tag2"]} means push to devices labeled tag1 or tag2<br>{"alias":["alias1","alias2"]} means push to devices with alias1 or alias2<br>{"user_id":[111,222]} means push to devices with user ID 111 or 222<br>{"push_token":["push_token1","push_token2"]} means push to devices with PushToken push_token1 or push_token2<br>List length cannot exceed 500 when pushed with tag/alias/user ID/pushToken<br>| 
@@ -117,7 +117,7 @@
 | ⇥⇥ click_action| string| | false| What to do after notification clicked: intent to open a specific page; open_app to open App homepage. Can be blank.| 
 | ⇥⇥ intent| string| | false| Click notification to open a specific page: can be blank, unless click_action is intent. Ex. intent:#Intent;component= package name/activity full path; S.parm1=value1;S.parm2=value2;end| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -128,7 +128,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > Enable push function in background management to send push notification.
 Specific request parameters can be found in Model.
 Common request format as follows:
@@ -169,7 +169,7 @@ Common request format as follows:
 
 > POST  /push/task/detail
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -177,12 +177,12 @@ Common request format as follows:
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  list| array[int32]| | false| | 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -217,7 +217,7 @@ Common request format as follows:
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 

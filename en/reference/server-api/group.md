@@ -6,7 +6,7 @@
 
 > POST  /group/admin/add
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -14,13 +14,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -33,7 +33,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -43,7 +43,7 @@
 
 > POST  /group/admin/remove
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -51,13 +51,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -70,7 +70,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -80,7 +80,7 @@
 
 > DELETE  /group/admin/remove
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -88,13 +88,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -107,7 +107,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -117,19 +117,19 @@
 
 > GET  /group/admin_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -142,7 +142,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -152,20 +152,20 @@
 
 > GET  /group/announcement
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | announcement_id| | announcement_id| 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -181,7 +181,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -191,20 +191,20 @@
 
 > POST  /group/announcement/delete
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | announcement_id| | announcement_id| 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -214,7 +214,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -224,20 +224,20 @@
 
 > DELETE  /group/announcement/delete
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | announcement_id| | announcement_id| 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -247,7 +247,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -257,7 +257,7 @@
 
 > POST  /group/announcement/edit
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -265,14 +265,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  content| string| | false| Announcement content| 
 |  group_id| int32| | false| Group id| 
 |  title| string| | false| Announcement tittle| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -288,7 +288,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -298,19 +298,19 @@
 
 > GET  /group/announcement/last
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -326,7 +326,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -336,19 +336,19 @@
 
 > GET  /group/announcement/list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -364,7 +364,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -374,7 +374,7 @@
 
 > POST  /group/application_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -382,19 +382,19 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
 | limit| | limit| 
 | version| | version| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_list| array[int32]| | false| Group id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -407,7 +407,7 @@
 |  version| int32| | false| Version, not used at present, reserved for extension| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -417,7 +417,7 @@
 
 > POST  /group/apply
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -425,13 +425,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  reason| string| | false| Reason for membership application| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -444,7 +444,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -454,7 +454,7 @@
 
 > POST  /group/apply/handle
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -462,14 +462,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| Approval, bool type, true for approval, false for rejection| 
 |  group_id| int32| | false| Group id| 
 |  user_id| int32| | false| User id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -482,7 +482,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -492,7 +492,7 @@
 
 > PUT  /group/apply/handle
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -500,14 +500,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| Approval, bool type, true for approval, false for rejection| 
 |  group_id| int32| | false| Group id| 
 |  user_id| int32| | false| User id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -520,7 +520,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -530,7 +530,7 @@
 
 > POST  /group/ban
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -538,14 +538,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  duration| int32| | false| Duration of banned in minutes| 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -558,7 +558,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -568,14 +568,14 @@
 
 > GET  /group/banned_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
@@ -583,7 +583,7 @@
 | limit| | limit| 
 | version| | version| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -596,7 +596,7 @@
 |  version| int32| | false| Version, not used at present, reserved for extension| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -606,7 +606,7 @@
 
 > POST  /group/block
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -614,13 +614,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -633,7 +633,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -643,14 +643,14 @@
 
 > GET  /group/blocked_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
@@ -658,7 +658,7 @@
 | limit| | limit| 
 | version| | version| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -671,7 +671,7 @@
 |  version| int32| | false| Version, not used at present, reserved for extension| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -681,7 +681,7 @@
 
 > POST  /group/create
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -689,7 +689,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  avatar| string| | false| Group avatar| 
@@ -698,7 +698,7 @@
 |  type| int32| | false| Group type: 1 for public group, 0 for private group, 2 for chatroom| 
 |  user_list| array[int32]| | false| List of user ids invited to join group| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -708,7 +708,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -718,19 +718,19 @@
 
 > POST  /group/destroy
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -740,7 +740,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -750,19 +750,19 @@
 
 > DELETE  /group/destroy
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -772,7 +772,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -782,7 +782,7 @@
 
 > POST  /group/display_name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -790,13 +790,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -806,7 +806,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -816,7 +816,7 @@
 
 > PUT  /group/display_name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -824,13 +824,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -840,7 +840,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -850,20 +850,20 @@
 
 > GET  /group/file
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | file_id| | file_id| 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -882,7 +882,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -892,7 +892,7 @@
 
 > POST  /group/file/delete
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -900,13 +900,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_list| array[int32]| | false| File id list| 
 |  group_id| int32| | false| Group id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -919,7 +919,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -929,7 +929,7 @@
 
 > DELETE  /group/file/delete
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -937,13 +937,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_list| array[int32]| | false| File id list| 
 |  group_id| int32| | false| Group id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -956,7 +956,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -966,19 +966,19 @@
 
 > GET  /group/file/list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -997,7 +997,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1007,7 +1007,7 @@
 
 > POST  /group/file/update_name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1015,14 +1015,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_id| int32| | false| File id| 
 |  group_id| int32| | false| Group id| 
 |  name| string| | false| New file name| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1032,7 +1032,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1042,7 +1042,7 @@
 
 > PUT  /group/file/update_name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1050,14 +1050,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  file_id| int32| | false| File id| 
 |  group_id| int32| | false| Group id| 
 |  name| string| | false| New file name| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1067,7 +1067,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1077,7 +1077,7 @@
 
 > POST  /group/file/upload
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1085,7 +1085,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
@@ -1094,7 +1094,7 @@
 |  type| string| | false| File type| 
 |  url| string| | false| File url| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1113,7 +1113,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1123,19 +1123,19 @@
 
 > GET  /group/info
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1163,7 +1163,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1173,7 +1173,7 @@
 
 > POST  /group/info/avatar
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1181,13 +1181,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1197,7 +1197,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1207,7 +1207,7 @@
 
 > PUT  /group/info/avatar
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1215,13 +1215,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1231,7 +1231,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1241,7 +1241,7 @@
 
 > POST  /group/info/batch
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1249,12 +1249,12 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_list| array[int32]| | false| Group id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1275,7 +1275,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1285,7 +1285,7 @@
 
 > POST  /group/info/description
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1293,13 +1293,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1309,7 +1309,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1319,7 +1319,7 @@
 
 > PUT  /group/info/description
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1327,13 +1327,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1343,7 +1343,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1353,7 +1353,7 @@
 
 > POST  /group/info/ext
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1361,13 +1361,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1377,7 +1377,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1387,7 +1387,7 @@
 
 > PUT  /group/info/ext
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1395,13 +1395,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1411,7 +1411,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1421,7 +1421,7 @@
 
 > POST  /group/info/name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1429,13 +1429,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1445,7 +1445,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1455,7 +1455,7 @@
 
 > PUT  /group/info/name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1463,13 +1463,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| string| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1479,7 +1479,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1489,7 +1489,7 @@
 
 > GET  /group/invitation_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1497,14 +1497,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
 | limit| | limit| 
 | version| | version| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1517,7 +1517,7 @@
 |  version| int32| | false| Version, not used at present, reserved for extension| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1527,7 +1527,7 @@
 
 > POST  /group/invite
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1535,14 +1535,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  reason| string| | false| Invitation reason| 
 |  user_list| array[int32]| | false| Invitee id, List type, multiple users can be invited to a group at one time| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1555,7 +1555,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1565,7 +1565,7 @@
 
 > POST  /group/invite/handle
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1573,14 +1573,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| Approval, bool type, true for approval, false for rejection| 
 |  group_id| int32| | false| Group id| 
 |  user_id| int32| | false| User id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1590,7 +1590,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1600,7 +1600,7 @@
 
 > PUT  /group/invite/handle
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1608,14 +1608,14 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  approval| boolean| | false| Approval, bool type, true for approval, false for rejection| 
 |  group_id| int32| | false| Group id| 
 |  user_id| int32| | false| User id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1625,7 +1625,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1635,7 +1635,7 @@
 
 > POST  /group/kick
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1643,13 +1643,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1662,7 +1662,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1672,7 +1672,7 @@
 
 > DELETE  /group/kick
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1680,13 +1680,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1699,7 +1699,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1709,19 +1709,19 @@
 
 > POST  /group/leave
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1731,7 +1731,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1741,19 +1741,19 @@
 
 > DELETE  /group/leave
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1763,7 +1763,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1773,14 +1773,14 @@
 
 > GET  /group/member_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | cursor| | cursor| 
@@ -1788,7 +1788,7 @@
 | limit| | limit| 
 | version| | version| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1804,7 +1804,7 @@
 |  version| int32| | false| Version, not used at present, reserved for extension| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1814,7 +1814,7 @@
 
 > POST  /group/members/display_name
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1822,13 +1822,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1841,7 +1841,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1851,7 +1851,7 @@
 
 > POST  /group/msg/mute_mode
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1859,13 +1859,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  msg_mute_mode| int32| | false| Group message blocking mode: 0: No blocking; 1: Blocking local message notifications; 2: Blocking messages, not receiving messages| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1875,7 +1875,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1885,7 +1885,7 @@
 
 > PUT  /group/msg/mute_mode
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1893,13 +1893,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  msg_mute_mode| int32| | false| Group message blocking mode: 0: No blocking; 1: Blocking local message notifications; 2: Blocking messages, not receiving messages| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1909,7 +1909,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1919,7 +1919,7 @@
 
 > POST  /group/msg/push_mode
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1927,13 +1927,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  msg_push_mode| int32| | false| Group message push type: 0: Receive all pushes; 1: Do not accept push; 2: Receive Admin and @ pushes; 3. Only receive Admin pushes; 4: Only receive @ pushes| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1943,7 +1943,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1953,7 +1953,7 @@
 
 > PUT  /group/msg/push_mode
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1961,13 +1961,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  msg_push_mode| int32| | false| Group message push type: 0: Receive all pushes; 1: Do not accept push; 2: Receive Admin and @ pushes; 3. Only receive Admin pushes; 4: Only receive @ pushes| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -1977,7 +1977,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -1987,7 +1987,7 @@
 
 > GET  /group/public_list
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -1995,7 +1995,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2005,7 +2005,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2015,7 +2015,7 @@
 
 > POST  /group/qrcode/invite
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2023,12 +2023,12 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  qr_info| string| | false| | 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2038,7 +2038,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2048,19 +2048,19 @@
 
 > GET  /group/qrcode/sign
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2073,7 +2073,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2083,19 +2083,19 @@
 
 > GET  /group/settings
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
 | app_id| | App ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Query Param
+#### Query Param
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | group_id| | group_id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2123,7 +2123,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2133,7 +2133,7 @@
 
 > POST  /group/settings/allow_member_invitation
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2141,13 +2141,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2157,7 +2157,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2167,7 +2167,7 @@
 
 > PUT  /group/settings/allow_member_invitation
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2175,13 +2175,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2191,7 +2191,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2201,7 +2201,7 @@
 
 > POST  /group/settings/allow_member_modify
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2209,13 +2209,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2225,7 +2225,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2235,7 +2235,7 @@
 
 > PUT  /group/settings/allow_member_modify
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2243,13 +2243,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2259,7 +2259,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2269,7 +2269,7 @@
 
 > POST  /group/settings/ban_all
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2277,13 +2277,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  duration| int32| | false| Duration of banned in minutes| 
 |  group_id| int32| | false| Group id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2294,7 +2294,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2304,7 +2304,7 @@
 
 > POST  /group/settings/enable_read_ack
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2312,13 +2312,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2328,7 +2328,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2338,7 +2338,7 @@
 
 > PUT  /group/settings/enable_read_ack
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2346,13 +2346,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2362,7 +2362,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2372,7 +2372,7 @@
 
 > POST  /group/settings/history_visible
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2380,13 +2380,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2396,7 +2396,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2406,7 +2406,7 @@
 
 > PUT  /group/settings/history_visible
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2414,13 +2414,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  value| boolean| | false| Update content| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2430,7 +2430,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2440,7 +2440,7 @@
 
 > POST  /group/settings/require_admin_approval
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2448,13 +2448,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  apply_approval| int32| | false| Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests| 
 |  group_id| int32| | false| Group id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2464,7 +2464,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2474,7 +2474,7 @@
 
 > PUT  /group/settings/require_admin_approval
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2482,13 +2482,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  apply_approval| int32| | false| Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests| 
 |  group_id| int32| | false| Group id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2498,7 +2498,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2508,7 +2508,7 @@
 
 > POST  /group/settings/unban_all
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2516,12 +2516,12 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2531,7 +2531,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2541,7 +2541,7 @@
 
 > POST  /group/transfer
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2549,13 +2549,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  new_owner| int32| | false| User_id of new group Owner| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2568,7 +2568,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2578,7 +2578,7 @@
 
 > PUT  /group/transfer
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2586,13 +2586,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  new_owner| int32| | false| User_id of new group Owner| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2605,7 +2605,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2615,7 +2615,7 @@
 
 > POST  /group/unban
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2623,13 +2623,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2642,7 +2642,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2652,7 +2652,7 @@
 
 > POST  /group/unblock
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2660,13 +2660,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2679,7 +2679,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2689,7 +2689,7 @@
 
 > DELETE  /group/unblock
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2697,13 +2697,13 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Request Body
+#### Request Body
 |  Parameter name |  Data Type |  Default |  Not null |  Description | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  group_id| int32| | false| Group id| 
 |  user_list| array[int32]| | false| User id list| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2716,7 +2716,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 
@@ -2726,7 +2726,7 @@
 
 > GET  /group/user_joined
 
-### Request Header
+#### Request Header
 |  Parameter name |  Default |  Description | 
 |  ------ |  ------ |  ------ | 
 | access-token| | Token| 
@@ -2734,7 +2734,7 @@
 | group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
 | user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
 
-### Response Body
+#### Response Body
 ● 200 Response data format:JSON
 
 |  Parameter name |  Type |  Default |  Not null |  Description | 
@@ -2744,7 +2744,7 @@
 |  message| string| | false| Error information, null means success| 
 
 
-### Interface Description
+#### Interface Description
 > 
 
 

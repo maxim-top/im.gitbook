@@ -6,7 +6,7 @@
 
 > GET  /message/ack
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -14,14 +14,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | conversation_id| | conversation_id| 
 | device_sn| | device_sn| 
 | msg_id| | msg_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -31,7 +31,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -41,7 +41,7 @@
 
 > GET  /message/conversation
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -49,14 +49,14 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | limit| | limit| 
 | msg_id_start| | msg_id_start| 
 | opposite_id| | opposite_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -102,7 +102,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -112,7 +112,7 @@
 
 > DELETE  /message/conversation
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -120,12 +120,12 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | conversation_id| | conversation_id| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -135,7 +135,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -145,7 +145,7 @@
 
 > POST  /message/notify
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -153,7 +153,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  attachment| string| | false| | 
@@ -166,7 +166,7 @@
 |  transaction_id| int32| | false| 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重| 
 |  type| int32| | false| 目标类型，1 - 普通用户，2 - 群组| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -176,7 +176,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -186,7 +186,7 @@
 
 > PUT  /message/notify
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -194,7 +194,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  attachment| string| | false| | 
@@ -207,7 +207,7 @@
 |  transaction_id| int32| | false| 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重| 
 |  type| int32| | false| 目标类型，1 - 普通用户，2 - 群组| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -217,7 +217,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -227,7 +227,7 @@
 
 > POST  /message/send
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -235,7 +235,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  attachment| string| | false| | 
@@ -248,7 +248,7 @@
 |  transaction_id| int32| | false| 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重| 
 |  type| int32| | false| 目标类型，1 - 普通用户，2 - 群组| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -258,7 +258,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -268,7 +268,7 @@
 
 > PUT  /message/send
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -276,7 +276,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  attachment| string| | false| | 
@@ -289,7 +289,7 @@
 |  transaction_id| int32| | false| 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重| 
 |  type| int32| | false| 目标类型，1 - 普通用户，2 - 群组| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -299,7 +299,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -309,7 +309,7 @@
 
 > GET  /message/unread
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -317,7 +317,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -335,7 +335,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 

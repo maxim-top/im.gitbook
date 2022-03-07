@@ -5,7 +5,7 @@
 
 > GET  /push/certificate
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -13,13 +13,13 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求参数(Query Param)
+#### 请求参数(Query Param)
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | environment| | 运行环境， 0 - 开发环境， 1 - 生产环境 , 默认值：1| 
 | provider| | 证书提供方, 1-APNS，2-华为，3-小米，4-魅族，5-VIVO， 6-OPPO, 7-FCM| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -34,7 +34,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
@@ -44,7 +44,7 @@
 
 > POST  /push/notify
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -52,7 +52,7 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  audience| object| | false| 推送目标, 不可为空。类型为字符串或JSONObject:<br>"all", 表示发给所有设备<br>{"tag":["tag1","tag2"]} 表示发给标签为tag1或tag2的设备<br>{"alias":["alias1","alias2"]} 表示发给别名为alias1或alias2的设备<br>{"user_id":[111,222]} 表示发给用户ID为111或222的设备<br>{"push_token":["push_token1","push_token2"]} 表示发给PushToken为push_token1或push_token2的设备<br>使用标签/别名/用户ID/pushToken推送时，列表长度不能超过500<br>| 
@@ -117,7 +117,7 @@
 | ⇥⇥ click_action| string| | false| 点击通知的后续动作: intent 打开应用特定页面; open_app 打开应用首页。可为空| 
 | ⇥⇥ intent| string| | false| 点击通知打开应用特定页面: 可为空，click_action为intent时不可为空。示例：intent:#Intent;component=包名/activity全路径;S.parm1=value1;S.parm2=value2;end| 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -128,7 +128,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 发送推送通知需要在管理后台开通推送功能。
 具体请求参数可以参考Model里的定义。
 常用请求格式如下:
@@ -169,7 +169,7 @@
 
 > POST  /push/task/detail
 
-### 请求头
+#### 请求头
 |  参数名称 |  默认值 |  描述 | 
 |  ------ |  ------ |  ------ | 
 | access-token| | 令牌| 
@@ -177,12 +177,12 @@
 | group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
 | user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
 
-### 请求体(Request Body)
+#### 请求体(Request Body)
 |  参数名称 |  数据类型 |  默认值 |  不为空 |  描述 | 
 |  ------ |  ------ |  ------ |  ------ |  ------ | 
 |  list| array[int32]| | false| | 
 
-### 响应体
+#### 响应体
 ● 200 响应数据格式：JSON
 
 |  参数名称 |  类型 |  默认值 |  不为空 |  描述 | 
@@ -217,7 +217,7 @@
 |  message| string| | false| 错误信息，如果成功，该项为null| 
 
 
-### 接口描述
+#### 接口描述
 > 
 
 
