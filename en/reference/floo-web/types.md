@@ -138,7 +138,7 @@ Group list updated
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types__meta) \| <code>undefined</code> | Notification message content |
+| meta | [<code>Meta</code>](#module_types__meta) ¦ <code>undefined</code> | Notification message content |
 
 ### "onGroupMemberChanged" (groupId) {#event_ongroupmemberchanged}
 Group member list updated
@@ -426,9 +426,9 @@ Message body
 | to | <code>string</code> | Receiver |
 | content | <code>string</code> | Message content |
 | type | <code>string</code> | Message types: text, image, audio, video, file, location, command, forward |
-| ext | <code>string</code> \| <code>object</code> | Extension field |
-| config | <code>string</code> \| <code>object</code> | SDKExtension field |
-| attach | <code>string</code> \| <code>object</code> | Attachment info |
+| ext | <code>string</code> ¦ <code>object</code> | Extension field |
+| config | <code>string</code> ¦ <code>object</code> | SDKExtension field |
+| attach | <code>string</code> ¦ <code>object</code> | Attachment info |
 | status | <code>number</code> | Message status: 0 - Unread, 1 - Delivered, 2 - Read |
 | timestamp | <code>string</code> | Message delivery timestamp (milliseconds) |
 | toType | <code>string</code> | Receiver types: roster - friend, group - group |
@@ -758,4 +758,4 @@ Listening event callback
 
 | Param | Type | Description |
 | --- | --- | --- |
-| res | [<code>flooNotice</code>](#event_floonotice) \| [<code>flooError</code>](#event_flooerror) \| [<code>loginFail</code>](#event_loginfail) \| [<code>loginSuccess</code>](#event_loginsuccess) \| [<code>onGroupListUpdate</code>](#event_ongrouplistupdate) \| [<code>onGroupMemberChanged</code>](#event_ongroupmemberchanged) \| [<code>onGroupMessage</code>](#event_ongroupmessage) \| [<code>onInputStatusMessage</code>](#event_oninputstatusmessage) \| [<code>onMentionMessage</code>](#event_onmentionmessage) \| [<code>onMessageCanceled</code>](#event_onmessagecanceled) \| [<code>onMessageDeleted</code>](#event_onmessagedeleted) \| [<code>onMessageRecalled</code>](#event_onmessagerecalled) \| [<code>onMessageStatusChanged</code>](#event_onmessagestatuschanged) \| [<code>onReceiveHistoryMsg</code>](#event_onreceivehistorymsg) \| [<code>onRosterInfoUpdate</code>](#event_onrosterinfoupdate) \| [<code>onRosterListUpdate</code>](#event_onrosterlistupdate) \| [<code>onRosterMessage</code>](#event_onrostermessage) \| [<code>onSendingMessageStatusChanged</code>](#event_onsendingmessagestatuschanged) \| [<code>onUnreadChange</code>](#event_onunreadchange) \| [<code>recentlistUpdate</code>](#event_recentlistupdate) \| [<code>onGroupCreated</code>](#event_ongroupcreated) \| [<code>onGroupDestoryed</code>](#event_ongroupdestoryed) \| [<code>onGroupJoined</code>](#event_ongroupjoined) \| [<code>onGroupApplyAccepted</code>](#event_ongroupapplyaccepted) \| [<code>onGroupApplyDeclined</code>](#event_ongroupapplydeclined) \| [<code>onGroupBaned</code>](#event_ongroupbaned) \| [<code>onGroupUnbaned</code>](#event_ongroupunbaned) | Event result |
+| res | [<code>flooNotice</code>](#event_floonotice) ¦ [<code>flooError</code>](#event_flooerror) ¦ [<code>loginFail</code>](#event_loginfail) ¦ [<code>loginSuccess</code>](#event_loginsuccess) ¦ [<code>onGroupListUpdate</code>](#event_ongrouplistupdate) ¦ [<code>onGroupMemberChanged</code>](#event_ongroupmemberchanged) ¦ [<code>onGroupMessage</code>](#event_ongroupmessage) ¦ [<code>onInputStatusMessage</code>](#event_oninputstatusmessage) ¦ [<code>onMentionMessage</code>](#event_onmentionmessage) ¦ [<code>onMessageCanceled</code>](#event_onmessagecanceled) ¦ [<code>onMessageDeleted</code>](#event_onmessagedeleted) ¦ [<code>onMessageRecalled</code>](#event_onmessagerecalled) ¦ [<code>onMessageStatusChanged</code>](#event_onmessagestatuschanged) ¦ [<code>onReceiveHistoryMsg</code>](#event_onreceivehistorymsg) ¦ [<code>onRosterInfoUpdate</code>](#event_onrosterinfoupdate) ¦ [<code>onRosterListUpdate</code>](#event_onrosterlistupdate) ¦ [<code>onRosterMessage</code>](#event_onrostermessage) ¦ [<code>onSendingMessageStatusChanged</code>](#event_onsendingmessagestatuschanged) ¦ [<code>onUnreadChange</code>](#event_onunreadchange) ¦ [<code>recentlistUpdate</code>](#event_recentlistupdate) ¦ [<code>onGroupCreated</code>](#event_ongroupcreated) ¦ [<code>onGroupDestoryed</code>](#event_ongroupdestoryed) ¦ [<code>onGroupJoined</code>](#event_ongroupjoined) ¦ [<code>onGroupApplyAccepted</code>](#event_ongroupapplyaccepted) ¦ [<code>onGroupApplyDeclined</code>](#event_ongroupapplydeclined) ¦ [<code>onGroupBaned</code>](#event_ongroupbaned) ¦ [<code>onGroupUnbaned</code>](#event_ongroupunbaned) | Event result |

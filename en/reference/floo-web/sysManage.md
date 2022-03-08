@@ -27,8 +27,8 @@ SendSingle chat message
 | msg.uid | <code>string</code> | Receiver ID |
 | msg.content | <code>string</code> | Message content |
 | msg.type | <code>string</code> | Message types: text, image, audio, video, file, location, command, forward |
-| msg.ext | <code>string</code> \| <code>object</code> | Extension field |
-| msg.attachment | <code>string</code> \| <code>object</code> | Attachment info |
+| msg.ext | <code>string</code> ¦ <code>object</code> | Extension field |
+| msg.attachment | <code>string</code> ¦ <code>object</code> | Attachment info |
 
 ### sysManage.sendGroupMessage(msg) ⇒ <code>number</code> {#module_sysmanage__sendgroupmessage}
 SendGroup chat message
@@ -42,8 +42,8 @@ SendGroup chat message
 | msg.gid | <code>string</code> | GroupID |
 | msg.content | <code>string</code> | Message content |
 | msg.type | <code>string</code> | Message types: text, image, audio, video, file, location, command, forward |
-| msg.ext | <code>string</code> \| <code>object</code> | Extension field |
-| msg.attachment | <code>string</code> \| <code>object</code> | Attachment info |
+| msg.ext | <code>string</code> ¦ <code>object</code> | Extension field |
+| msg.attachment | <code>string</code> ¦ <code>object</code> | Attachment info |
 | msg.priority | <code>number</code> | Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. |
 
 ### sysManage.requireHistoryMessage(uid, sid, amount) {#module_sysmanage__requirehistorymessage}
