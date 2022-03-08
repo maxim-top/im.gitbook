@@ -2,17 +2,17 @@
 ## flooim {#module_flooim}
 
 * [flooim](#module_flooim)
-    * [.flooim(config)](#module_flooim.flooim) ⇒ <code>object</code>
-    * [.login(opt)](#module_flooim.login)
-    * [.qrlogin(opt)](#module_flooim.qrlogin)
-    * [.tokenLogin(opt)](#module_flooim.tokenlogin)
-    * [.idLogin(opt)](#module_flooim.idlogin)
-    * [.isLogin()](#module_flooim.islogin) ⇒ <code>boolean</code>
-    * [.on(options, ext)](#module_flooim.on)
-    * [.off(options, ext)](#module_flooim.off)
-    * [.logout()](#module_flooim.logout)
+    * [.flooim(config)](#module_flooim__flooim) ⇒ <code>object</code>
+    * [.login(opt)](#module_flooim__login)
+    * [.qrlogin(opt)](#module_flooim__qrlogin)
+    * [.tokenLogin(opt)](#module_flooim__tokenlogin)
+    * [.idLogin(opt)](#module_flooim__idlogin)
+    * [.isLogin()](#module_flooim__islogin) ⇒ <code>boolean</code>
+    * [.on(options, ext)](#module_flooim__on)
+    * [.off(options, ext)](#module_flooim__off)
+    * [.logout()](#module_flooim__logout)
 
-### flooim.flooim(config) ⇒ <code>object</code> {#module_flooim.flooim}
+### flooim.flooim(config) ⇒ <code>object</code> {#module_flooim__flooim}
 InitializationSDK
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
@@ -37,7 +37,7 @@ autoLogin: true
 import flooim from 'floo-2.0.0';
 const im = flooim(config);
 ```
-### flooim.login(opt) {#module_flooim.login}
+### flooim.login(opt) {#module_flooim__login}
 Login
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
@@ -48,7 +48,7 @@ Login
 | opt.name | <code>string</code> | Username |
 | opt.password | <code>string</code> | Password |
 
-### flooim.qrlogin(opt) {#module_flooim.qrlogin}
+### flooim.qrlogin(opt) {#module_flooim__qrlogin}
 QR code login
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
@@ -59,7 +59,7 @@ QR code login
 | opt.user_id | <code>number</code> | User ID |
 | opt.password | <code>string</code> | Password |
 
-### flooim.tokenLogin(opt) {#module_flooim.tokenlogin}
+### flooim.tokenLogin(opt) {#module_flooim__tokenlogin}
 token login
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
@@ -70,7 +70,7 @@ token login
 | opt.user_id | <code>number</code> | User ID |
 | opt.token | <code>string</code> | Token |
 
-### flooim.idLogin(opt) {#module_flooim.idlogin}
+### flooim.idLogin(opt) {#module_flooim__idlogin}
 Login with user ID and password
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
@@ -81,20 +81,20 @@ Login with user ID and password
 | opt.user_id | <code>number</code> | User ID |
 | opt.password | <code>string</code> | Password |
 
-### flooim.isLogin() ⇒ <code>boolean</code> {#module_flooim.islogin}
+### flooim.isLogin() ⇒ <code>boolean</code> {#module_flooim__islogin}
 Logged in or not
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 **Returns**: <code>boolean</code> - Logged in or not  
-### flooim.on(options, ext) {#module_flooim.on}
+### flooim.on(options, ext) {#module_flooim__on}
 Event listening
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types..event) \| Object.&lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)&gt; | Can be event name, and also event name plus event callback |
-| ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | Event callback, only required if options is set as event name |
+| options | [<code>Event</code>](types.md#module_types__event) \| Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) \| <code>undefined</code> | Event callback, only required if options is set as event name |
 
 **Example**  
 ```js
@@ -110,15 +110,15 @@ im.on({
    ...
  })
 ```
-### flooim.off(options, ext) {#module_flooim.off}
+### flooim.off(options, ext) {#module_flooim__off}
 Unlisten
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types..event) \| Object.&lt;[<code>Event</code>](types.md#module_types..event), [<code>EventCallback</code>](types.md#module_types..eventcallback)&gt; | Can be event name, and also event name plus event callback |
-| ext | [<code>EventCallback</code>](types.md#module_types..eventcallback) \| <code>undefined</code> | Event callback, only required if options is set as event name |
+| options | [<code>Event</code>](types.md#module_types__event) \| Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) \| <code>undefined</code> | Event callback, only required if options is set as event name |
 
 **Example**  
 ```js
@@ -134,7 +134,7 @@ const im = flooim(config);
  ...
  })
 ```
-### flooim.logout() {#module_flooim.logout}
+### flooim.logout() {#module_flooim__logout}
 Log out
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  

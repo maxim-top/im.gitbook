@@ -29,33 +29,33 @@
     * ["onGroupApplyDeclined" (meta)](#event_ongroupapplydeclined)
     * ["onGroupBaned" (meta)](#event_ongroupbaned)
     * ["onGroupUnbaned" (meta)](#event_ongroupunbaned)
-    * [~RosterItem](#module_types..rosteritem) : <code>object</code>
-    * [~UserSettings](#module_types..usersettings) : <code>object</code>
-    * [~UserProfile](#module_types..userprofile) : <code>object</code>
-    * [~Meta](#module_types..meta) : <code>object</code>
-    * [~RosterApplication](#module_types..rosterapplication) : <code>object</code>
-    * [~GroupInfoAndSettings](#module_types..groupinfoandsettings) : <code>object</code>
-    * [~BriefGroupInfoAndSettings](#module_types..briefgroupinfoandsettings) : <code>object</code>
-    * [~GroupMember](#module_types..groupmember) : <code>object</code>
-    * [~GroupMemberBanned](#module_types..groupmemberbanned) : <code>object</code>
-    * [~GroupUserRelationResponse](#module_types..groupuserrelationresponse) : <code>object</code>
-    * [~GroupAnnouncement](#module_types..groupannouncement) : <code>object</code>
-    * [~GroupInfoRequest](#module_types..groupinforequest) : <code>object</code>
-    * [~GroupBannedMemberRequest](#module_types..groupbannedmemberrequest) : <code>object</code>
-    * [~GroupBlockedListItem](#module_types..groupblockedlistitem) : <code>object</code>
-    * [~GroupInvitation](#module_types..groupinvitation) : <code>object</code>
-    * [~GroupApplication](#module_types..groupapplication) : <code>object</code>
-    * [~GroupSharedFile](#module_types..groupsharedfile) : <code>object</code>
-    * [~GroupSharedFileResponse](#module_types..groupsharedfileresponse) : <code>object</code>
-    * [~GroupBanAllResponse](#module_types..groupbanallresponse) : <code>object</code>
-    * [~FileUpload](#module_types..fileupload) : <code>object</code>
-    * [~FileUploadResult](#module_types..fileuploadresult) : <code>object</code>
-    * [~fileUploadProgress](#module_types..fileuploadprogress) : <code>function</code>
-    * [~ConversationItem](#module_types..conversationitem) : <code>object</code>
-    * [~UserProfile](#module_types..userprofile) : <code>object</code>
-    * [~UserSettings](#module_types..usersettings) : <code>object</code>
-    * [~Event](#module_types..event) : <code>string</code>
-    * [~EventCallback](#module_types..eventcallback) : <code>function</code>
+    * [~RosterItem](#module_types__rosteritem) : <code>object</code>
+    * [~UserSettings](#module_types__usersettings) : <code>object</code>
+    * [~UserProfile](#module_types__userprofile) : <code>object</code>
+    * [~Meta](#module_types__meta) : <code>object</code>
+    * [~RosterApplication](#module_types__rosterapplication) : <code>object</code>
+    * [~GroupInfoAndSettings](#module_types__groupinfoandsettings) : <code>object</code>
+    * [~BriefGroupInfoAndSettings](#module_types__briefgroupinfoandsettings) : <code>object</code>
+    * [~GroupMember](#module_types__groupmember) : <code>object</code>
+    * [~GroupMemberBanned](#module_types__groupmemberbanned) : <code>object</code>
+    * [~GroupUserRelationResponse](#module_types__groupuserrelationresponse) : <code>object</code>
+    * [~GroupAnnouncement](#module_types__groupannouncement) : <code>object</code>
+    * [~GroupInfoRequest](#module_types__groupinforequest) : <code>object</code>
+    * [~GroupBannedMemberRequest](#module_types__groupbannedmemberrequest) : <code>object</code>
+    * [~GroupBlockedListItem](#module_types__groupblockedlistitem) : <code>object</code>
+    * [~GroupInvitation](#module_types__groupinvitation) : <code>object</code>
+    * [~GroupApplication](#module_types__groupapplication) : <code>object</code>
+    * [~GroupSharedFile](#module_types__groupsharedfile) : <code>object</code>
+    * [~GroupSharedFileResponse](#module_types__groupsharedfileresponse) : <code>object</code>
+    * [~GroupBanAllResponse](#module_types__groupbanallresponse) : <code>object</code>
+    * [~FileUpload](#module_types__fileupload) : <code>object</code>
+    * [~FileUploadResult](#module_types__fileuploadresult) : <code>object</code>
+    * [~fileUploadProgress](#module_types__fileuploadprogress) : <code>function</code>
+    * [~ConversationItem](#module_types__conversationitem) : <code>object</code>
+    * [~UserProfile](#module_types__userprofile) : <code>object</code>
+    * [~UserSettings](#module_types__usersettings) : <code>object</code>
+    * [~Event](#module_types__event) : <code>string</code>
+    * [~EventCallback](#module_types__eventcallback) : <code>function</code>
 
 ### "flooNotice" (res) {#event_floonotice}
 Floo notification
@@ -138,7 +138,7 @@ Group list updated
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) \| <code>undefined</code> | Notification message content |
+| meta | [<code>Meta</code>](#module_types__meta) \| <code>undefined</code> | Notification message content |
 
 ### "onGroupMemberChanged" (groupId) {#event_ongroupmemberchanged}
 Group member list updated
@@ -156,7 +156,7 @@ Group message received
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content |
 
 ### "onInputStatusMessage" (res) {#event_oninputstatusmessage}
 The other party is typing
@@ -177,7 +177,7 @@ Group @message received
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content |
 
 ### "onMessageCanceled" (res) {#event_onmessagecanceled}
 Message is re-unread
@@ -250,7 +250,7 @@ Friend list changed
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of friend's notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of friend's notification |
 
 ### "onRosterMessage" (meta) {#event_onrostermessage}
 Single chat message received
@@ -259,7 +259,7 @@ Single chat message received
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content |
 
 ### "onSendingMessageStatusChanged" (res) {#event_onsendingmessagestatuschanged}
 Message sending status changed
@@ -292,7 +292,7 @@ Group creation notification
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of group notification |
 
 ### "onGroupDestoryed" (meta) {#event_ongroupdestoryed}
 Group dismissal notification
@@ -301,7 +301,7 @@ Group dismissal notification
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of group notification |
 
 ### "onGroupJoined" (meta) {#event_ongroupjoined}
 Member joining application notification
@@ -310,7 +310,7 @@ Member joining application notification
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of group notification |
 
 ### "onGroupApplyAccepted" (meta) {#event_ongroupapplyaccepted}
 Group joining application approved
@@ -319,7 +319,7 @@ Group joining application approved
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of group notification |
 
 ### "onGroupApplyDeclined" (meta) {#event_ongroupapplydeclined}
 Group joining application rejected
@@ -328,7 +328,7 @@ Group joining application rejected
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of group notification |
 
 ### "onGroupBaned" (meta) {#event_ongroupbaned}
 Banned in group
@@ -337,7 +337,7 @@ Banned in group
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of group notification |
 
 ### "onGroupUnbaned" (meta) {#event_ongroupunbaned}
 Unbanned in group
@@ -346,9 +346,9 @@ Unbanned in group
 
 | Param | Type | Description |
 | --- | --- | --- |
-| meta | [<code>Meta</code>](#module_types..meta) | Message content of group notification |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of group notification |
 
-### types~RosterItem : <code>object</code> {#module_types..rosteritem}
+### types~RosterItem : <code>object</code> {#module_types__rosteritem}
 Friend info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -369,7 +369,7 @@ Friend info
 | user_id | <code>number</code> | Friend user ID,int64 |
 | username | <code>string</code> | Username |
 
-### types~UserSettings : <code>object</code> {#module_types..usersettings}
+### types~UserSettings : <code>object</code> {#module_types__usersettings}
 User settings information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -395,7 +395,7 @@ User settings information
 | user_id | <code>number</code> | User ID,int64 |
 | vibratory | <code>boolean</code> | Whether to vibrate when message received |
 
-### types~UserProfile : <code>object</code> {#module_types..userprofile}
+### types~UserProfile : <code>object</code> {#module_types__userprofile}
 User information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -413,7 +413,7 @@ User information
 | user_id | <code>number</code> | User ID,int64 |
 | username | <code>string</code> | Username |
 
-### types~Meta : <code>object</code> {#module_types..meta}
+### types~Meta : <code>object</code> {#module_types__meta}
 Message body
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -433,7 +433,7 @@ Message body
 | timestamp | <code>string</code> | Message delivery timestamp (milliseconds) |
 | toType | <code>string</code> | Receiver types: roster - friend, group - group |
 
-### types~RosterApplication : <code>object</code> {#module_types..rosterapplication}
+### types~RosterApplication : <code>object</code> {#module_types__rosterapplication}
 List entries of adding friend request
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -446,7 +446,7 @@ List entries of adding friend request
 | status | <code>number</code> | Status: 0 - Awaiting confirmation, 1 - Approved, 2 - Rejected int32 |
 | user_id | <code>number</code> | User ID that initiate adding friend,int64 |
 
-### types~GroupInfoAndSettings : <code>object</code> {#module_types..groupinfoandsettings}
+### types~GroupInfoAndSettings : <code>object</code> {#module_types__groupinfoandsettings}
 Group info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -475,7 +475,7 @@ Group info
 | count | <code>number</code> | Number of group members |
 | capacity | <code>number</code> | GroupCapacity |
 
-### types~BriefGroupInfoAndSettings : <code>object</code> {#module_types..briefgroupinfoandsettings}
+### types~BriefGroupInfoAndSettings : <code>object</code> {#module_types__briefgroupinfoandsettings}
 Group profile and user settings
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -495,7 +495,7 @@ Group profile and user settings
 | status | <code>number</code> | Group state, 0: normal, 1: dissolved,int32 |
 | type | <code>number</code> | Group types: 1 - public group, 0 - private group, 2 - chatroom.int32 |
 
-### types~GroupMember : <code>object</code> {#module_types..groupmember}
+### types~GroupMember : <code>object</code> {#module_types__groupmember}
 Group member format
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -508,7 +508,7 @@ Group member format
 | user_id | <code>number</code> | User id,int64 |
 | avatar | <code>string</code> | AvatarAddress |
 
-### types~GroupMemberBanned : <code>object</code> {#module_types..groupmemberbanned}
+### types~GroupMemberBanned : <code>object</code> {#module_types__groupmemberbanned}
 Banned members
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -522,7 +522,7 @@ Banned members
 | avatar | <code>string</code> | AvatarAddress |
 | expired_time | <code>number</code> | BanExpiration time |
 
-### types~GroupUserRelationResponse : <code>object</code> {#module_types..groupuserrelationresponse}
+### types~GroupUserRelationResponse : <code>object</code> {#module_types__groupuserrelationresponse}
 Group user's request result
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -534,7 +534,7 @@ Group user's request result
 | result | <code>string</code> | Results |
 | user_id | <code>number</code> | User ID,int64 |
 
-### types~GroupAnnouncement : <code>object</code> {#module_types..groupannouncement}
+### types~GroupAnnouncement : <code>object</code> {#module_types__groupannouncement}
 GroupAnnouncement content
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -549,7 +549,7 @@ GroupAnnouncement content
 | id | <code>number</code> | Announcement id,int64 |
 | title | <code>string</code> | Announcement tittle |
 
-### types~GroupInfoRequest : <code>object</code> {#module_types..groupinforequest}
+### types~GroupInfoRequest : <code>object</code> {#module_types__groupinforequest}
 Create group
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -563,7 +563,7 @@ Create group
 | type | <code>number</code> | Group type: 1 for public group, 0 for private group, 2 for chatroom,int32 |
 | user_list | <code>Array.&lt;number&gt;</code> | List of user ids invited to join group |
 
-### types~GroupBannedMemberRequest : <code>object</code> {#module_types..groupbannedmemberrequest}
+### types~GroupBannedMemberRequest : <code>object</code> {#module_types__groupbannedmemberrequest}
 Ban request
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -575,7 +575,7 @@ Ban request
 | group_id | <code>number</code> | Group id,int64 |
 | user_list | <code>Array.&lt;number&gt;</code> | User id list |
 
-### types~GroupBlockedListItem : <code>object</code> {#module_types..groupblockedlistitem}
+### types~GroupBlockedListItem : <code>object</code> {#module_types__groupblockedlistitem}
 Group blacklist
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -587,7 +587,7 @@ Group blacklist
 | group_id | <code>number</code> | Group id,int64 |
 | create_at | <code>string</code> | Creation time |
 
-### types~GroupInvitation : <code>object</code> {#module_types..groupinvitation}
+### types~GroupInvitation : <code>object</code> {#module_types__groupinvitation}
 Group invitation info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -603,7 +603,7 @@ Group invitation info
 | expire_time | <code>number</code> | Expiration time |
 | create_at | <code>string</code> | Creation time |
 
-### types~GroupApplication : <code>object</code> {#module_types..groupapplication}
+### types~GroupApplication : <code>object</code> {#module_types__groupapplication}
 GroupMembership application information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -617,7 +617,7 @@ GroupMembership application information
 | expire_time | <code>number</code> | Expiration time |
 | status | <code>number</code> | Status: 0 - Pending, 1 - Agreed, 2 - Rejected |
 
-### types~GroupSharedFile : <code>object</code> {#module_types..groupsharedfile}
+### types~GroupSharedFile : <code>object</code> {#module_types__groupsharedfile}
 Returned format of group shared files
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -635,7 +635,7 @@ Returned format of group shared files
 | uploader | <code>number</code> | Shared file uploader,int64 |
 | url | <code>string</code> | Shared file url |
 
-### types~GroupSharedFileResponse : <code>object</code> {#module_types..groupsharedfileresponse}
+### types~GroupSharedFileResponse : <code>object</code> {#module_types__groupsharedfileresponse}
 Result of group shared files deletion
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -647,7 +647,7 @@ Result of group shared files deletion
 | reason | <code>string</code> | Reason |
 | result | <code>string</code> | Results |
 
-### types~GroupBanAllResponse : <code>object</code> {#module_types..groupbanallresponse}
+### types~GroupBanAllResponse : <code>object</code> {#module_types__groupbanallresponse}
 Result of banning all members
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -657,7 +657,7 @@ Result of banning all members
 | --- | --- | --- |
 | ban_expire_time | <code>number</code> | Expiration time of banning all members,int64 |
 
-### types~FileUpload : <code>object</code> {#module_types..fileupload}
+### types~FileUpload : <code>object</code> {#module_types__fileupload}
 File uploading info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -669,7 +669,7 @@ File uploading info
 | oss_body_param | <code>object.&lt;string, string&gt;</code> | Additional parameters |
 | upload_url | <code>string</code> | Upload address |
 
-### types~FileUploadResult : <code>object</code> {#module_types..fileuploadresult}
+### types~FileUploadResult : <code>object</code> {#module_types__fileuploadresult}
 File uploading result
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -679,7 +679,7 @@ File uploading result
 | --- | --- | --- |
 | url | <code>string</code> | Download address |
 
-### types~fileUploadProgress : <code>function</code> {#module_types..fileuploadprogress}
+### types~fileUploadProgress : <code>function</code> {#module_types__fileuploadprogress}
 FileUpload progressCallback
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -690,7 +690,7 @@ FileUpload progressCallback
 | res.loaded | <code>number</code> | Downloaded bytes |
 | res.total | <code>number</code> | Total bytes |
 
-### types~ConversationItem : <code>object</code> {#module_types..conversationitem}
+### types~ConversationItem : <code>object</code> {#module_types__conversationitem}
 Conversation info
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -703,7 +703,7 @@ Conversation info
 | timestamp | <code>string</code> | Message delivery timestamp (milliseconds) |
 | type | <code>string</code> | Session type: roster - Single chat, group - Group chat |
 
-### types~UserProfile : <code>object</code> {#module_types..userprofile}
+### types~UserProfile : <code>object</code> {#module_types__userprofile}
 User information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -721,7 +721,7 @@ User information
 | user_id | <code>number</code> | User ID,int64 |
 | username | <code>string</code> | Username |
 
-### types~UserSettings : <code>object</code> {#module_types..usersettings}
+### types~UserSettings : <code>object</code> {#module_types__usersettings}
 User settings information
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
@@ -747,11 +747,11 @@ User settings information
 | user_id | <code>number</code> | User ID,int64 |
 | vibratory | <code>boolean</code> | Whether to vibrate when message received |
 
-### types~Event : <code>string</code> {#module_types..event}
+### types~Event : <code>string</code> {#module_types__event}
 Listening event name
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  
-### types~EventCallback : <code>function</code> {#module_types..eventcallback}
+### types~EventCallback : <code>function</code> {#module_types__eventcallback}
 Listening event callback
 
 **Kind**: inner typedef of [<code>types</code>](#module_types)  

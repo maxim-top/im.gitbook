@@ -2,20 +2,20 @@
 ## sysManage {#module_sysmanage}
 
 * [sysManage](#module_sysmanage)
-    * [.sendRosterMessage(msg)](#module_sysmanage.sendrostermessage) ⇒ <code>number</code>
-    * [.sendGroupMessage(msg)](#module_sysmanage.sendgroupmessage) ⇒ <code>number</code>
-    * [.requireHistoryMessage(uid, sid, amount)](#module_sysmanage.requirehistorymessage)
-    * [.sendMentionMessage(params)](#module_sysmanage.sendmentionmessage) ⇒ <code>number</code>
-    * [.sendInputStatusMessage(uid, status)](#module_sysmanage.sendinputstatusmessage) ⇒ <code>number</code>
-    * [.forwardMessage(param)](#module_sysmanage.forwardmessage) ⇒ <code>number</code>
-    * [.getMessageStatus(cid, mid, isGroup)](#module_sysmanage.getmessagestatus) ⇒ <code>string</code>
-    * [.asyncFileUpload(param)](#module_sysmanage.asyncfileupload) ⇒ [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types..fileuploadresult)
-    * [.getImage(param)](#module_sysmanage.getimage) ⇒ <code>string</code>
-    * [.deleteConversation(id, other_devices)](#module_sysmanage.deleteconversation)
-    * [.asyncGetGroupAvatarUploadUrl(params)](#module_sysmanage.asyncgetgroupavataruploadurl) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types..fileupload)
-    * [.asyncGetFileUploadChatFileUrl(params)](#module_sysmanage.asyncgetfileuploadchatfileurl) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types..fileupload)
+    * [.sendRosterMessage(msg)](#module_sysmanage__sendrostermessage) ⇒ <code>number</code>
+    * [.sendGroupMessage(msg)](#module_sysmanage__sendgroupmessage) ⇒ <code>number</code>
+    * [.requireHistoryMessage(uid, sid, amount)](#module_sysmanage__requirehistorymessage)
+    * [.sendMentionMessage(params)](#module_sysmanage__sendmentionmessage) ⇒ <code>number</code>
+    * [.sendInputStatusMessage(uid, status)](#module_sysmanage__sendinputstatusmessage) ⇒ <code>number</code>
+    * [.forwardMessage(param)](#module_sysmanage__forwardmessage) ⇒ <code>number</code>
+    * [.getMessageStatus(cid, mid, isGroup)](#module_sysmanage__getmessagestatus) ⇒ <code>string</code>
+    * [.asyncFileUpload(param)](#module_sysmanage__asyncfileupload) ⇒ [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types__fileuploadresult)
+    * [.getImage(param)](#module_sysmanage__getimage) ⇒ <code>string</code>
+    * [.deleteConversation(id, other_devices)](#module_sysmanage__deleteconversation)
+    * [.asyncGetGroupAvatarUploadUrl(params)](#module_sysmanage__asyncgetgroupavataruploadurl) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload)
+    * [.asyncGetFileUploadChatFileUrl(params)](#module_sysmanage__asyncgetfileuploadchatfileurl) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload)
 
-### sysManage.sendRosterMessage(msg) ⇒ <code>number</code> {#module_sysmanage.sendrostermessage}
+### sysManage.sendRosterMessage(msg) ⇒ <code>number</code> {#module_sysmanage__sendrostermessage}
 SendSingle chat message
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -30,7 +30,7 @@ SendSingle chat message
 | msg.ext | <code>string</code> \| <code>object</code> | Extension field |
 | msg.attachment | <code>string</code> \| <code>object</code> | Attachment info |
 
-### sysManage.sendGroupMessage(msg) ⇒ <code>number</code> {#module_sysmanage.sendgroupmessage}
+### sysManage.sendGroupMessage(msg) ⇒ <code>number</code> {#module_sysmanage__sendgroupmessage}
 SendGroup chat message
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -46,7 +46,7 @@ SendGroup chat message
 | msg.attachment | <code>string</code> \| <code>object</code> | Attachment info |
 | msg.priority | <code>number</code> | Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. |
 
-### sysManage.requireHistoryMessage(uid, sid, amount) {#module_sysmanage.requirehistorymessage}
+### sysManage.requireHistoryMessage(uid, sid, amount) {#module_sysmanage__requirehistorymessage}
 Request history
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -57,7 +57,7 @@ Request history
 | sid | <code>number</code> | Message ID: the message to pull forward from, 0 means pulling from the latest message. |
 | amount | <code>number</code> | Number of messages to pull |
 
-### sysManage.sendMentionMessage(params) ⇒ <code>number</code> {#module_sysmanage.sendmentionmessage}
+### sysManage.sendMentionMessage(params) ⇒ <code>number</code> {#module_sysmanage__sendmentionmessage}
 Group-sent @message
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -74,7 +74,7 @@ Group-sent @message
 | params.mentionedMessage | <code>string</code> | Push content of @messages |
 | params.senderNickname | <code>string</code> | Sender's nickname |
 
-### sysManage.sendInputStatusMessage(uid, status) ⇒ <code>number</code> {#module_sysmanage.sendinputstatusmessage}
+### sysManage.sendInputStatusMessage(uid, status) ⇒ <code>number</code> {#module_sysmanage__sendinputstatusmessage}
 Send type status
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -85,7 +85,7 @@ Send type status
 | uid | <code>number</code> | SessionID |
 | status | <code>string</code> | Status: nothing - no typing, typing - typing |
 
-### sysManage.forwardMessage(param) ⇒ <code>number</code> {#module_sysmanage.forwardmessage}
+### sysManage.forwardMessage(param) ⇒ <code>number</code> {#module_sysmanage__forwardmessage}
 Forward message
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -98,7 +98,7 @@ Forward message
 | param.gid | <code>number</code> | Receiver's group ID (set only when forwarding a group chat) |
 | param.mid | <code>number</code> | Message to forwardID |
 
-### sysManage.getMessageStatus(cid, mid, isGroup) ⇒ <code>string</code> {#module_sysmanage.getmessagestatus}
+### sysManage.getMessageStatus(cid, mid, isGroup) ⇒ <code>string</code> {#module_sysmanage__getmessagestatus}
 Get message status
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -110,11 +110,11 @@ Get message status
 | mid | <code>number</code> |  | MessageID |
 | isGroup | <code>boolean</code> | <code>false</code> | Whether it is a group chat |
 
-### sysManage.asyncFileUpload(param) ⇒ [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types..fileuploadresult) {#module_sysmanage.asyncfileupload}
+### sysManage.asyncFileUpload(param) ⇒ [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types__fileuploadresult) {#module_sysmanage__asyncfileupload}
 Upload file
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
-**Returns**: [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types..fileuploadresult) - File uploading result  
+**Returns**: [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types__fileuploadresult) - File uploading result  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -125,9 +125,9 @@ Upload file
 | param.file | <code>File</code> | File |
 | param.fileType | <code>string</code> | File types: file - general chat file, audio - voice chat file (amr format), image - image chat file, video - video chat file, audio-mp3 - voice chat file (mp3 format), shareFile - general shared file, shareAudio - voice shared file, shareImage - image shared files, shareVideo - video shared files |
 | param.chatType | <code>number</code> | Chat types: roster - single chat, group - group chat |
-| param.processCallback | [<code>fileUploadProgress</code>](types.md#module_types..fileuploadprogress) | Upload progressCallback |
+| param.processCallback | [<code>fileUploadProgress</code>](types.md#module_types__fileuploadprogress) | Upload progressCallback |
 
-### sysManage.getImage(param) ⇒ <code>string</code> {#module_sysmanage.getimage}
+### sysManage.getImage(param) ⇒ <code>string</code> {#module_sysmanage__getimage}
 Assemble image path
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -141,7 +141,7 @@ Assemble image path
 | param.thumbnail | <code>boolean</code> | Thumbnail or not: true by default |
 | param.sdefault | <code>string</code> | Default image address |
 
-### sysManage.deleteConversation(id, other_devices) {#module_sysmanage.deleteconversation}
+### sysManage.deleteConversation(id, other_devices) {#module_sysmanage__deleteconversation}
 Delete session
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
@@ -151,22 +151,22 @@ Delete session
 | id | <code>number</code> |  | SessionID |
 | other_devices | <code>boolean</code> | <code>true</code> | Whether to delete conversations on other devices at the same time |
 
-### sysManage.asyncGetGroupAvatarUploadUrl(params) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types..fileupload) {#module_sysmanage.asyncgetgroupavataruploadurl}
+### sysManage.asyncGetGroupAvatarUploadUrl(params) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload) {#module_sysmanage__asyncgetgroupavataruploadurl}
 Get the URL of uploading group avatar
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
-**Returns**: [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types..fileupload) - File uploading info  
+**Returns**: [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload) - File uploading info  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
-### sysManage.asyncGetFileUploadChatFileUrl(params) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types..fileupload) {#module_sysmanage.asyncgetfileuploadchatfileurl}
+### sysManage.asyncGetFileUploadChatFileUrl(params) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload) {#module_sysmanage__asyncgetfileuploadchatfileurl}
 Get upload address of chat file
 
 **Kind**: static method of [<code>sysManage</code>](#module_sysmanage)  
-**Returns**: [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types..fileupload) - File uploading info  
+**Returns**: [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload) - File uploading info  
 
 | Param | Type | Description |
 | --- | --- | --- |
