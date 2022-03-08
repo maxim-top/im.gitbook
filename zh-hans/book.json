@@ -91,7 +91,7 @@
             ]
         },
         "sharing": {
-           "douban": false,
+           "douban": true,
            "facebook": false,
            "google": false,
            "hatenaBookmark": false,
@@ -111,12 +111,12 @@
            "all": [
                "facebook", "google", "twitter",
                "weibo", "instapaper", "linkedin",
-               "pocket", "stumbleupon", "qq", "qzone","douban"
+               "pocket", "stumbleupon", "qq", "qzone","douban","line","whatsapp"
            ]
        },
        "logo":{
 	        "logo": "/assets/logob.png",
-            "logoStyle": "width: 200px;",
+            "logoStyle": "width: 200px;align: left;",
             "url": "/"
 	    },
         "intopic-toc": {

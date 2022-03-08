@@ -56,7 +56,7 @@
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright © maximtop.com 2022",
-            "modify_label": "该文件修订时间：",
+            "modify_label": "Last modify time：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "simple-page-toc": {
@@ -65,7 +65,7 @@
         },
         "edit-link": {
             "base": "https://github.com/maxim-top/im.gitbook/blob/master",
-            "label": "在GitHub上编辑"
+            "label": "Edit On GitHub"
         },
         "favicon": {
             "shortcut": "/assets/favicon.ico",
@@ -92,32 +92,32 @@
         },
         "sharing": {
            "douban": false,
-           "facebook": false,
-           "google": false,
+           "facebook": true,
+           "google": true,
            "hatenaBookmark": false,
            "instapaper": false,
-           "line": false,
-           "linkedin": false,
+           "line": true,
+           "linkedin": true,
            "messenger": false,
            "pocket": false,
-           "qq": true,
+           "qq": false,
            "qzone": false,
            "stumbleupon": false,
-           "twitter": false,
+           "twitter": true,
            "viber": false,
            "vk": false,
            "weibo": true,
-           "whatsapp": false,
+           "whatsapp": true,
            "all": [
                "facebook", "google", "twitter",
                "weibo", "instapaper", "linkedin",
-               "pocket", "stumbleupon", "qq", "qzone","douban"
+               "pocket", "stumbleupon", "qq", "qzone","douban","line","whatsapp"
            ]
        },
        "logo":{
 	        "logo": "/assets/logob.png",
-            "logoStyle": "width: 200px;",
-            "url": "/"
+            "logoStyle": "width: 200px;aligh: left",
+            "url": "/en/"
 	    },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
@@ -126,7 +126,7 @@
             "isCollapsed": false,
             "isScrollspyActive": true,
             "visible": true,
-            "label": "内容"
+            "label": "Content"
         }
     }
 }

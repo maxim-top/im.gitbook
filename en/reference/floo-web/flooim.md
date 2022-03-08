@@ -24,7 +24,7 @@ InitializationSDK
 | config.appid | <code>string</code> | APPID |
 | config.ws | <code>boolean</code> | Whether the connection address is prefixed with ws/wss: ture - the connection address is prefixed with ws or wss; false - the connection address is prefixed with http/https |
 | config.autoLogin | <code>boolean</code> | Whether to login automatically |
-| config.dnsServer | <code>string</code> ¦ <code>undefined</code> | DNS server address, can be empty, default https://dns.maximtop.com/v2/app_dns |
+| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS server address, can be empty, default https://dns.maximtop.com/v2/app_dns |
 
 **Example**  
 ```js
@@ -93,8 +93,8 @@ Event listening
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types__event) ¦ Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
-| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) ¦ <code>undefined</code> | Event callback, only required if options is set as event name |
+| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | Event callback, only required if options is set as event name |
 
 **Example**  
 ```js
@@ -117,8 +117,8 @@ Unlisten
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types__event) ¦ Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
-| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) ¦ <code>undefined</code> | Event callback, only required if options is set as event name |
+| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | Event callback, only required if options is set as event name |
 
 **Example**  
 ```js

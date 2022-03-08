@@ -93,7 +93,7 @@
             ]
         },
         "sharing": {
-           "douban": false,
+           "douban": true,
            "facebook": false,
            "google": false,
            "hatenaBookmark": false,
@@ -113,7 +113,7 @@
            "all": [
                "facebook", "google", "twitter",
                "weibo", "instapaper", "linkedin",
-               "pocket", "stumbleupon", "qq", "qzone","douban"
+               "pocket", "stumbleupon", "qq", "qzone","douban","line","whatsapp"
            ]
        },
        "logo":{

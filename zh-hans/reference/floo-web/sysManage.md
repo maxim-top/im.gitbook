@@ -27,8 +27,8 @@
 | msg.uid | <code>string</code> | 接收者ID |
 | msg.content | <code>string</code> | 消息内容 |
 | msg.type | <code>string</code> | 消息类型： text - 文本, image - 图片， audio - 语音, video - 视频，file - 文件, location - 位置， command - 命令, forward - 转发 |
-| msg.ext | <code>string</code> ¦ <code>object</code> | 扩展字段 |
-| msg.attachment | <code>string</code> ¦ <code>object</code> | 附件信息 |
+| msg.ext | <code>string</code> &#124; <code>object</code> | 扩展字段 |
+| msg.attachment | <code>string</code> &#124; <code>object</code> | 附件信息 |
 
 ### sysManage.sendGroupMessage(msg) ⇒ <code>number</code> {#module_sysmanage__sendgroupmessage}
 发送群聊消息
@@ -42,8 +42,8 @@
 | msg.gid | <code>string</code> | 群组ID |
 | msg.content | <code>string</code> | 消息内容 |
 | msg.type | <code>string</code> | 消息类型： text - 文本, image - 图片， audio - 语音, video - 视频，file - 文件, location - 位置， command - 命令, forward - 转发 |
-| msg.ext | <code>string</code> ¦ <code>object</code> | 扩展字段 |
-| msg.attachment | <code>string</code> ¦ <code>object</code> | 附件信息 |
+| msg.ext | <code>string</code> &#124; <code>object</code> | 扩展字段 |
+| msg.attachment | <code>string</code> &#124; <code>object</code> | 附件信息 |
 | msg.priority | <code>number</code> | 设置消息的扩散优先级，默认为0。0表示扩散，数字越小扩散的越多。 |
 
 ### sysManage.requireHistoryMessage(uid, sid, amount) {#module_sysmanage__requirehistorymessage}

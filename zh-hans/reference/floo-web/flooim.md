@@ -24,7 +24,7 @@
 | config.appid | <code>string</code> | APPID |
 | config.ws | <code>boolean</code> | 连接地址前缀是否为ws/wss: true - 连接地址前缀为ws或wss, false - 连接地址前缀为http/https |
 | config.autoLogin | <code>boolean</code> | 是否自动登录 |
-| config.dnsServer | <code>string</code> ¦ <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.maximtop.com/v2/app_dns |
+| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.maximtop.com/v2/app_dns |
 
 **Example**  
 ```js
@@ -93,8 +93,8 @@ token登录
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types__event) ¦ Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
-| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) ¦ <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
+| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
 
 **Example**  
 ```js
@@ -117,8 +117,8 @@ im.on({
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types__event) ¦ Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
-| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) ¦ <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
+| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
 
 **Example**  
 ```js
