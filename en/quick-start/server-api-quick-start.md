@@ -1,6 +1,6 @@
 # Server API Development Guide
 
-This page is for quick integration, visit [detailed documentation](../reference/server-api/)
+This page is for quick integration, visit [detailed documentation](../reference/server-api/README.md)
 
 ## Getting started
 

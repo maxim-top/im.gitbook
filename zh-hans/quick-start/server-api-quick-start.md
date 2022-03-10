@@ -1,6 +1,6 @@
 # 服务端开发指南（API）
 
-本页面供快速集成使用，了解更多请访问[详细文档](../reference/server-api/)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/server-api/README.md)
 
 ## 入门
 

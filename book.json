@@ -118,7 +118,7 @@
        },
        "logo":{
 	        "logo": "/assets/logob.png",
-            "logoStyle": "width: 200px;",
+            "logoStyle": "width: 200px;align:left;",
             "url": "/"
 	    },
         "intopic-toc": {
