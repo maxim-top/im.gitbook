@@ -20,7 +20,6 @@
 
 ![](../../assets/articles/autogen-f38ceb53130c10ffd148096ad0f9f317f3232418ee3d5936f13a516411f81d52.webp)
 
-###
 
 ## 第二步 开通私有云服务
 
@@ -44,7 +43,6 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl
 
 ![](../../assets/articles/autogen-48be1ea8facfd2d43290255724f900a36428d5a59763ff63fda6f185e7f30e20.webp)
 
-###
 
 ## 第三步 安装私有云
 

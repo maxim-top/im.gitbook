@@ -1,7 +1,7 @@
 #!/usr/bin/env escript
 %% -*- mode: erlang;erlang-indent-level: 4;indent-tabs-mode: nil -*-
 %% ex: ft=erlang ts=4 sw=4 et
-main(Args) ->
+main(_Args) ->
     {ok, LinkListHtml} = file:read_file("scripts/subdirectory_summary.html"),
     {ok, LinkHtml} = file:read_file("scripts/subdirectory_summary_link.html"),
     put(linklist_html, LinkListHtml),
@@ -25,13 +25,13 @@ process_summary_1(SummaryFile, [Line|Lines]) ->
             maybe_gen_summary(Line, Children,SummaryFile),
             process_summary_1(SummaryFile, Lines)
     end;
-process_summary_1(SummaryFile, []) ->
+process_summary_1(_SummaryFile, []) ->
     ok.
 
-maybe_gen_summary(Parent, [], SummaryFile) ->
+maybe_gen_summary(_Parent, [], _SummaryFile) ->
     ok;
 maybe_gen_summary(Parent, Children, SummaryFile) ->
-    {Title, Link} = parse_line(Parent),
+    {_Title, Link} = parse_line(Parent),
     BaseDir = filename:dirname(SummaryFile),
     LinkFile = filename:join(BaseDir, Link),
     {ok, LinkData} = file:read_file(LinkFile),
@@ -80,8 +80,8 @@ links_title(BaseDir) ->
     maps:get(Lang, #{"zh-hans" => unicode:characters_to_binary("以下是本节中的文章："), "en" => <<"Here are the articles in this section:">>}).
 
 make_relative_link(ParentLink, Link) ->
-    PUrl = markdown_to_html_file(ParentLink),
-    Url = markdown_to_html_file(Link),
+    PUrl = markdown_to_html_url(ParentLink),
+    Url = markdown_to_html_url(Link),
     DirName = filename:dirname(PUrl),
     DirName = string:left(Url, length(DirName)),
     lists:sublist(Url, length(DirName)+2, length(Url)).
