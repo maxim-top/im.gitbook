@@ -1,11 +1,11 @@
 ## build
 ```
-make build
+gitbook build
 ```
 Output directory is _book
 ## serve
 ```
-make serve
+gitbook  serve
 ```
 ## release
 ```
