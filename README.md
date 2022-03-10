@@ -7,4 +7,7 @@ Output directory is _book
 ```
 make serve
 ```
-
+## release
+```
+make release
+```
