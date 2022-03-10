@@ -28,6 +28,7 @@
         "code@^0.1.0",
         "splitter@^0.0.8",
         "favicon@^0.0.2",
+        "image-captions@^3.1.0",
 
         "logo@^0.0.2",
         "intopic-toc@^1.1.1"
@@ -130,6 +131,9 @@
         },
         "language-picker": {
             "grid-columns": 3
+        },
+        "image-captions": {
+            "caption": "_CAPTION_"
         }
     }
 }
