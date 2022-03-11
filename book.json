@@ -89,7 +89,7 @@
                 },
                 {
                     "value": "/en/",
-                    "text": "en"
+                    "text": "English"
                 }
             ]
         },
@@ -120,7 +120,7 @@
        "logo":{
 	        "logo": "/assets/logob.png",
             "logoStyle": "width: 200px;align:left;",
-            "url": "/"
+            "url": "https://maximtop.com"
 	    },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",

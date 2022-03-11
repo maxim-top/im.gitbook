@@ -6,6 +6,9 @@
     "language": "zh-hans",
     "gitbook": "3.2.3",
     "root": ".",
+    "styles": {
+        "website": "assets/styles/website.css"
+    },
     "structure": {
         "readme": "README.md"
     },
@@ -56,7 +59,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © maximtop.com 2022",
+            "copyright": "© 2019-2022 美信拓扑 | <a href='https://maximtop.com'>官网</a>",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -87,7 +90,7 @@
                 },
                 {
                     "value": "/en/",
-                    "text": "en"
+                    "text": "English"
                 }
             ]
         },
@@ -118,7 +121,7 @@
        "logo":{
 	        "logo": "/assets/logob.png",
             "logoStyle": "width: 200px;align: left;",
-            "url": "/"
+            "url": "https://maximtop.com"
 	    },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
