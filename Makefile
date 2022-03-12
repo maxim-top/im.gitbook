@@ -1,5 +1,7 @@
 release: build refine
 
+install:
+	docker run -it -v `pwd`:/gitbook registry.cn-beijing.aliyuncs.com/maxim-resource/gitbook gitbook install
 build:
 	docker run -it -v `pwd`:/gitbook registry.cn-beijing.aliyuncs.com/maxim-resource/gitbook gitbook build
 

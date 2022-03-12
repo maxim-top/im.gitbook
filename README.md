@@ -1,3 +1,7 @@
+## install plugin
+```
+gitbook install
+```
 ## build
 ```
 gitbook build
