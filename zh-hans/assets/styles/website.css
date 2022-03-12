@@ -186,3 +186,13 @@
 .nav-link {
     white-space: nowrap;
 }
+
+.book .book-summary ul.summary li a:hover {
+    text-decoration: none;
+    background-color: rgb(235, 235, 235);
+}
+
+.versions-select select{
+    height: 35px;
+    background-color: rgb(250, 250, 250);
+}

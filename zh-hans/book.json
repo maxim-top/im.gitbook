@@ -59,7 +59,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "© 2019-2022 美信拓扑 | <a href='https://maximtop.com'>官网</a>",
+            "copyright": "© 2019-2022 美信拓扑 | <a href='https://maximtop.com' style='text-decoration:none!important;'>官网</a>",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
