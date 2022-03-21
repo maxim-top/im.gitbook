@@ -2168,7 +2168,7 @@
 > 
 
 
-## 3.63	List all users under the APP
+## 3.63	List all users in the APP
 
 > GET  /user/list
 #### Request Header
