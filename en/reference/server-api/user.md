@@ -2168,4 +2168,35 @@
 > 
 
 
+## 3.63	List all users under the APP
+
+> GET  /user/list
+#### Request Header
+|  Parameter name |  Default |  Description | 
+| ------ | ------ | ------ |
+|access-token||Token|
+|app_id||App ID|
+| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
+| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+
+#### Query Param
+|  Parameter name |  Default |  Description | 
+| ------ | ------ | ------ |
+|page_num|1|page_num|
+|page_size|50|page_size|
+
+#### Response Body
+● 200 Response data format:JSON
+
+|  Parameter name |  Type |  Default |  Not null |  Description | 
+| ------ | ------ | ------ | ------ | ------ |
+|  code| int32| | false| Return code, 200 is success| 
+| data|array[object]||false|Result data|
+|⇥ status|int32||false|0-active，1-forbidden|
+|⇥ user_id|int32||false||
+|⇥ username|string||false||
+| message|string||false|Error information, null means success|
+
+#### Interface Description
+> 
 

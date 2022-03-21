@@ -2182,8 +2182,8 @@
 #### 请求参数(Query Param)
 | 参数名称 | 默认值 | 描述 |
 | ------ | ------ | ------ |
-|page_num||page_num|
-|page_size||page_size|
+|page_num|1|page_num|
+|page_size|50|page_size|
 
 #### 响应体
 ● 200 响应数据格式：JSON
