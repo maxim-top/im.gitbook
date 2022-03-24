@@ -4,13 +4,21 @@
 main(_Args) ->
     Files = filelib:wildcard("_book/**/*.html"),
     Rules = [{<<"&#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;">>, unicode:characters_to_binary("本文档由 Gitbook 发布")},
-            {<<"all right reserved&#xFF0C;powered by Gitbook">>, <<>>}],
+            {<<"all right reserved&#xFF0C;powered by Gitbook">>, <<>>},
+            {"^_book/en/", <<"assets/lanying-logo-color.png">>, <<"assets/lanying-logo-color-en.png">>}],
     lists:foreach(
         fun(File) ->
             {ok, Bin} = file:read_file(File),
             NewBin = lists:foldl(
                 fun({OriginText, ReplaceText}, Acc) ->
-                    binary:replace(Acc, OriginText, ReplaceText)
+                    binary:replace(Acc, OriginText, ReplaceText);
+                ({Filter, OriginText, ReplaceText}, Acc) ->
+                    case re:run(File, Filter) of
+                        nomatch ->
+                            Acc;
+                        {match, _} ->
+                            binary:replace(Acc, OriginText, ReplaceText)
+                    end
                 end, Bin, Rules),
             case Bin /= NewBin of
                 true ->

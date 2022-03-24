@@ -118,8 +118,8 @@
            ]
        },
        "logo":{
-	        "logo": "/assets/logob.png",
-            "logoStyle": "width: 200px;align:left;",
+	        "logo": "/assets/lanying-logo-color.png",
+            "logoStyle": "width: 180px;align:left;",
             "url": "https://maximtop.com"
 	    },
         "intopic-toc": {
