@@ -119,7 +119,7 @@
        },
        "logo":{
 	        "logo": "/assets/lanying-logo-color.png",
-            "logoStyle": "width: 180px;align:left;",
+            "logoStyle": "height: 35px;align:left;",
             "url": "https://maximtop.com"
 	    },
         "intopic-toc": {
