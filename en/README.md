@@ -2,36 +2,40 @@
 
 ## Product Features
 
-Maximtop is a one-click IM cloud service based on multi-cloud architecture. Enterprises can quickly add chat functions to applications by integrating instant messaging IM SDK and using cloud services. After SDK integrated, the typical application architecture is as follows:
+Lanying IM, developed by [MaximTop](https://www.maximtop.com/) team, is a new generation IM cloud service. Benefits from cloud-native technologies and multi-cloud architecture, the private cloud is charged monthly as well as the public cloud.
 
-![Maximtop open platform architecture](assets/1.png)
+The SDK is designed in a minimalist approach and thus easy to integrate. Developers can effortlessly add chat functions to applications by integrating the SDK and the cloud API services. 
 
-With the accumulation of instant messaging IM technology for more than ten years, Maximtop IM SDK and service API have been optimized to provide more professional services through simpler interfaces.
+The typical application architecture is as follows:
 
-One-click enable multi-cloud architecture, which is the unique advantage of Maximtop IM Cloud Service.
+![Lanying IM cloud open platform architecture](assets/1.png)
+
+With the accumulation of instant messaging IM technology for more than ten years, Lanying IM SDK and service API have been optimized to provide more professional services through simpler interfaces.
+
+One-click enable multi-cloud architecture, which is the unique advantage of Lanying IM Cloud Service.
 
 One-click enable means from basic functions to service customization, all can be opened and used with one-click operation on the console; Multi-cloud architecture supports free migration of applications in different deployment modes of Public Cloud, Proprietary Cloud and Private Cloud, conforming to the business development stages, and implementing worry-free, seamless platform migration and switching.
 
-With the omnipotent console, there are only two things you need to do, one is to integrate Maximtop IM SDK on the client side, and the other is to connect Maximtop API service on the server side. This paper mainly introduces the work related to client SDK integration.
+With the omnipotent console, there are only two things you need to do, one is to integrate Lanying IM SDK on the client side, and the other is to connect Lanying API service on the server side. This paper mainly introduces the work related to client SDK integration.
 
-Maximtop IM SDK is cross-platform, including mobile (iOS/Android), PC desktop (Linux/Windows/Mac), Web browser (including H5) and WeChat applet. In order to maximize reuse and improve service quality, the IM SDK technology stack of Maximtop is as follows:
+Lanying IM SDK is cross-platform, including mobile (iOS/Android), PC desktop (Linux/Windows/Mac), Web browser (including H5) and WeChat applet. In order to maximize reuse and improve service quality, the IM SDK technology stack of Lanying is as follows:
 
-![Maximtop IM SDK technology stack](assets/2.jpeg)
+![Lanying IM SDK technology stack](assets/2.jpeg)
 
 1. Unified design and implementation of binary instant messaging protocol XSYNC, providing C++ version and JavaScript version respectively;
 2. Encapsulate the C++ SDK of the whole platform based on C++ communication library, and continue to encapsulate the SDK of mobile (iOS/Android) and PC desktop (Linux/Windows/Mac) on this basis;
-3. Both mobile terminals encapsulate the local UI Kit library before implementing the Maximtop DemoApp, but iOS and Android are slightly different. iOS encapsulates SDK through Object-C and then further transforms it into Swift library, while Android directly encapsulates Java library for upper layer use through Swig framework and JNI technology;
+3. Both mobile terminals encapsulate the local UI Kit library before implementing the Lanying IM DemoApp, but iOS and Android are slightly different. iOS encapsulates SDK through Object-C and then further transforms it into Swift library, while Android directly encapsulates Java library for upper layer use through Swig framework and JNI technology;
 4. PC desktop encapsulates C++ communication library through Electron, and shares a set of UI components implemented by Vue.js with Web browser end;
 5. Javascript communication library is provided to the Web browser (including H5) after being encrypted and encapsulated by WebAssembly;
 6. WeChat applet is different from Web browser except protocol library due to platform reasons. The system layer calls WeChat's network and repository, and the upper layer uses WeChat's UI Kit;
 
 ## Access Guide for Beginners
 
-Before you start integrating all clients, you need to create an application through Maximtop console, get the AppID of the application and set it on each side.
+Before you start integrating all clients, you need to create an application through Lanying IM cloud console, get the AppID of the application and set it on each side.
 
 1. Create account
 
-Register and login [Maximtop Console](https://console.maximtop.com)
+Register and login [Lanying IM Cloud Console](https://console.maximtop.com)
 
 1. Create application
 
@@ -55,7 +59,7 @@ Download the [Installation package](https://package.maximtop.com/linux/amd64/max
 
 ## Client SDK
 
-The codename of Maximtop IM Client SDK is Floo, which comes from The Wizarding World of Harry Potter. We'll use Floo to represent IMSDK in the following document.
+The codename of Lanying IM SDK is Floo, which comes from The Wizarding World of Harry Potter. We'll use Floo to represent IMSDK in the following document.
 
 ### API Details
 
@@ -66,7 +70,7 @@ The codename of Maximtop IM Client SDK is Floo, which comes from The Wizarding W
 
 ### Platform Compatibility
 
-Maximtop supports following platforms:
+Lanying IM supports following platforms:
 
 | Platform | Compatibility                                                                                         |
 | -------- | ----------------------------------------------------------------------------------------------------- |
