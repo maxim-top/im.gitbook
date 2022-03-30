@@ -6,7 +6,7 @@
 
 ### SDK 架构
 
-美信拓扑IM SDK（代号 floo ）底层使用 C++ 实现，各平台（Android、iOS、Linux等）在此基础上再行封装， 完成本地库的开发，以达到多平台复用的目的，并保持跨平台协议实现的一致性。 floo-android 作为供安卓使用的本地应用库，有两种 API 可供开发者使用，即低级 API 和高级 API，也即同步接口和异步接口。
+蓝莺IM SDK（代号 floo ）底层使用 C++ 实现，各平台（Android、iOS、Linux等）在此基础上再行封装， 完成本地库的开发，以达到多平台复用的目的，并保持跨平台协议实现的一致性。 floo-android 作为供安卓使用的本地应用库，有两种 API 可供开发者使用，即低级 API 和高级 API，也即同步接口和异步接口。
 
 #### 低级 API (low-level)
 
@@ -74,7 +74,7 @@
                           |   +---------------+     |
 +----------------------+  |   |               |     +---> BMXChatManager
 |                      |  +---+ 高级 API: H/A +-----+
-| 美信拓扑 IM SDK: Floo +--+   |               |     +---> BMXRosterManager
+| 蓝莺 IM SDK: Floo     +--+   |               |     +---> BMXRosterManager
 |                      |  |   +---------------+     |
 +----------------------+  |                         +---> BMXGroupManager
                           |
@@ -100,7 +100,7 @@ SDK导入可以选择aar格式或者jar+so格式
 #### aar格式
 
 * 下载aar文件到项目的libs目录
-* 在build.gradle文件dependencies块中增加依赖，参照[maxim-android源码](https://github.com/maxim-top/maxim-android/blob/master/app/build.gradle#L94)使用最新版。
+* 在build.gradle文件dependencies块中增加依赖，参照[lanying-im-android源码](https://github.com/maxim-top/lanying-im-android/blob/master/app/build.gradle#L94)使用最新版。
 
 ```
 implementation(name:'floo-android_2.3.1.20200428',ext:'aar')
@@ -557,11 +557,11 @@ H/A: 在BMXCallBack回调中根据BMXErrorCode判断。
 
 #### 消息的远程推送
 
-开发者配置好远程推送的证书，且在代码中申请好权限，并将 deviceToken 传给MaxIM服务器，当接收者不在线的时候，MaxIM服务器会自动通过远程推送将消息发过去。
+开发者配置好远程推送的证书，且在代码中申请好权限，并将 deviceToken 传给Lanying IM服务器，当接收者不在线的时候，Lanying IM服务器会自动通过远程推送将消息发过去。
 
 注： 推送的内容由发送消息接口的 pushContent 字段决定，内置消息发送的时候如果该字段没有值，将使用默认内容推送；自定义消息必须设置该字段，否则将不会推送。
 
-* deviceToken传给MaxIM接口
+* deviceToken传给Lanying IM接口
 
 > L/S: 通过返回值获取到BMXErrorCode判断是否成功。
 

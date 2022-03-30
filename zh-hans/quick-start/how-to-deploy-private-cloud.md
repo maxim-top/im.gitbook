@@ -2,15 +2,15 @@
 
 ## 概述
 
-美信拓扑私有云可以一键安装，省心高效。使用私有云，你将完全掌控你的数据和服务，并毫无限制地访问所有服务。
+蓝莺IM私有云可以一键安装，省心高效。使用私有云，你将完全掌控你的数据和服务，并毫无限制地访问所有服务。
 
-借助于最先进的容器技术，美信拓扑所有的服务有已完成云原生改造，这是私有云可以稳定可靠地运行在从裸机服务器、私有云计算平台到各种内部容器平台环境中的重要依靠。
+借助于最先进的容器技术，蓝莺IM所有的服务有已完成云原生改造，这是私有云可以稳定可靠地运行在从裸机服务器、私有云计算平台到各种内部容器平台环境中的重要依靠。
 
-美信拓扑私有部署提供两种部署模式：单机版和集群版。三步操作，十分钟安装，控制台提供了简洁的状态监控页面，系统运行状态实时掌控。
+蓝莺IM私有部署提供两种部署模式：单机版和集群版。三步操作，十分钟安装，控制台提供了简洁的状态监控页面，系统运行状态实时掌控。
 
 ## 创建应用
 
-[登录控制台](https://console.maximtop.com) 点击创建应用。应用创建默认为免费版套餐，也可以升级为商业版。
+[登录控制台](https://console.lanyingim.com) 点击创建应用。应用创建默认为免费版套餐，也可以升级为商业版。
 
 ![创建应用](../assets/1-1.create_app.png)
 
@@ -27,7 +27,7 @@
 3.点击私有云图标，进入私有云详情页面，下载安装包 maxim.ctl
 
 ```
-$ wget https://package.maximtop.com/linux/amd64/maxim.ctl
+$ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 ```
 
 ![私有云部署](../assets/1-4.deploy.png)
@@ -58,7 +58,7 @@ $ wget https://package.maximtop.com/linux/amd64/maxim.ctl
 1.首先，准备好一台用来私有部署的服务器，将ssh登录到这台服务器上。 然后，执行下载安装脚本命令，并增加可执行权限。命令如下：
 
 ```
-wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
+wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
 ```
 
 执行结果截图：
@@ -146,7 +146,7 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 2.ssh登录到第一台主机172.16.0.78上 执行如下命令下载安装脚本，并增加可执行权限
 
 ```
-wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
+wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
 ```
 
 执行结果截图：
@@ -242,6 +242,6 @@ sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-k
 
 ![安装进度点击“私有云”，通过节点信息的进度可以查看安装进度](../assets/4-1.install_progress.png)
 
-1. 安装完成后，打开美信拓扑控制台进入系统状态页面。
+1. 安装完成后，打开蓝莺IM控制台进入系统状态页面。
 
 ![如果所有检查项的状态都为正常，则表示服务已经正常](../assets/4-2.service_status.png)

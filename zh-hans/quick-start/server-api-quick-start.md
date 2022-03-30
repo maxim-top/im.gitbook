@@ -8,7 +8,7 @@
 
 * app_id
 
-    `app_id`是创建App时，MaxIM为App生成的唯一标识，是字符串类型。可从console"应用信息"页面获取。
+    `app_id`是创建App时，Lanying IM为App生成的唯一标识，是字符串类型。可从console"应用信息"页面获取。
 * api_endpoint
 
     `api_endpoint`是App所在API服务的地址。可从console"应用信息"页面获取。
@@ -18,11 +18,11 @@
 
 ### API概述
 
-MaxIM API服务基于HTTPS安全协议，保证了调用时数据传输的安全性。同时API服务提供访问控制，调用前先需要获取 特有的`access-token`，才有权限操作App下用户、群组等数据。涉及的`access-token`请妥善保存。
+Lanying IM API服务基于HTTPS安全协议，保证了调用时数据传输的安全性。同时API服务提供访问控制，调用前先需要获取 特有的`access-token`，才有权限操作App下用户、群组等数据。涉及的`access-token`请妥善保存。
 
-调用所有MaxIM API前，要获取参数`api_endpoint`、`app_id`、`access-token`。 参数`app_id`，`access-token`在请求的Header中使用，未特殊说明的请求Content-Type类型为`application/json`。
+调用所有Lanying IM API前，要获取参数`api_endpoint`、`app_id`、`access-token`。 参数`app_id`，`access-token`在请求的Header中使用，未特殊说明的请求Content-Type类型为`application/json`。
 
-调用MaxIM API的请求的通用示例（请根据具体值替换用`{}`表示的变量）：
+调用Lanying IM API的请求的通用示例（请根据具体值替换用`{}`表示的变量）：
 
 ```
 curl -X {METHOD} '{api_endpoint}/{URI}' \
@@ -33,17 +33,17 @@ curl -X {METHOD} '{api_endpoint}/{URI}' \
 
 ### API分类
 
-MaxIM API主要分为用户API、好友API、群组API、消息API、推送API。
+Lanying IM API主要分为用户API、好友API、群组API、消息API、推送API。
 
 * 用户API
 
     用户隶属于单个App，是即时通讯的基础。有了用户才能实现好友、群组功能。用户数据分为基本信息和设置信息。 基本信息包括邮箱、手机号、用户名、密码。设置信息包括是否自动下载缩略图和文件、邀请入群是否需要确认等。 总体上讲，用户API主要涉及到其基本信息的更新和用户的设置，相关API以`/user`开头，后面接具体的资源，如获取用户设置API为"GET /user/settings"。
 * 好友API
 
-    好友是用户之间的关系，MaxIM好友设计中用户可为好友设置备注、设置好友消息的通知方式、可申请加好友、拉黑好用等。 好友API提供了好友信息、好友申请、好友列表、好友黑名单列表等相关操作，其API以`/roster`开头。
+    好友是用户之间的关系，Lanying IM好友设计中用户可为好友设置备注、设置好友消息的通知方式、可申请加好友、拉黑好用等。 好友API提供了好友信息、好友申请、好友列表、好友黑名单列表等相关操作，其API以`/roster`开头。
 * 群组API
 
-    群组可以实现多用户通讯。MaxIM设计中群成员角色分为群主、群管理员、普通群成员，权限等级依次降低，群主拥有群的所有权限，管理员有操作 群成员和修改群信息群设置的权限，根据群设置能普通群成员是否具有修改群信息以及邀请用户加入群组的权限。群成员功能设计有入群邀请、入群申请、 群黑名单、群禁言列表。 主要API包括群组数据操作和群成员操作，群数据操作主要有创建群、解散群、转让群以及群信息、群设置的更新、 群公告操作、群共享文件操作，群成员操作主要有邀请用户入群、管理员处理邀请、用户申请入群、用户处理申请、设置群黑名单、设置群禁言列表、 用户退出群、将用户踢出群等，API以`/group`开头。
+    群组可以实现多用户通讯。Lanying IM设计中群成员角色分为群主、群管理员、普通群成员，权限等级依次降低，群主拥有群的所有权限，管理员有操作 群成员和修改群信息群设置的权限，根据群设置能普通群成员是否具有修改群信息以及邀请用户加入群组的权限。群成员功能设计有入群邀请、入群申请、 群黑名单、群禁言列表。 主要API包括群组数据操作和群成员操作，群数据操作主要有创建群、解散群、转让群以及群信息、群设置的更新、 群公告操作、群共享文件操作，群成员操作主要有邀请用户入群、管理员处理邀请、用户申请入群、用户处理申请、设置群黑名单、设置群禁言列表、 用户退出群、将用户踢出群等，API以`/group`开头。
 * 消息API
 
     消息相关API是对IM服务的封装，旨在为使用者提供简便方法以实现通讯功能。消息API以`/message`开头。
@@ -51,7 +51,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
 
     推送相关API用于推送通知到设备，其API以`/push`开头。
 
-一般情况下，请求到MaxIM服务的API如遇业务错误，则返回的http code为200，在response body会返回MaxIM自定义错误码。 具体错误码的含义见错误码页面。
+一般情况下，请求到Lanying IM服务的API如遇业务错误，则返回的http code为200，在response body会返回Lanying IM自定义错误码。 具体错误码的含义见错误码页面。
 
 下面以以下值为例介绍部分关键API，实际请求中请予以替换。
 
@@ -65,7 +65,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
 
 * API描述
 
-    为指定App注册MaxIM用户。
+    为指定App注册Lanying IM用户。
 * 请求说明
 
     Http方法: `POST` 资源路径: `/user/register/v2`
@@ -559,7 +559,7 @@ MaxIM API主要分为用户API、好友API、群组API、消息API、推送API�
 | 20023 | 无权限操作群共享文件              |
 | 20024 | 群邀请二维码不合法               |
 | 20025 | 群邀请二维码已过期               |
-| 30021 | MaxIM License无效         |
-| 30022 | MaxIM License已过期        |
-| 30023 | 超出MaxIM License限制       |
+| 30021 | Lanying IM License无效         |
+| 30022 | Lanying IM License已过期        |
+| 30023 | 超出Lanying IM License限制       |
 | 40000 | app_id不存在              |

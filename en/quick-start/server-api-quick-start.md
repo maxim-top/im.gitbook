@@ -8,7 +8,7 @@ This page is for quick integration, visit [detailed documentation](../reference/
 
 * app\_id
 
-    `app_id`is the unique identity that MaxIM generates for App when it is created and is of string type. Available from "Application Information" page in Console.
+    `app_id`is the unique identity that Lanying IM generates for App when it is created and is of string type. Available from "Application Information" page in Console.
 * api\_endpoint
 
     `api_endpoint`is the address of the API service where the app resides. Available from "Application Information" page in Console.
@@ -18,11 +18,11 @@ This page is for quick integration, visit [detailed documentation](../reference/
 
 ### API profile
 
-MaxIM API service is based on the HTTPS security protocol, which ensures the security of data transfer when invoked. At the same time, MaxIM API service provides access control, and it is necessary to obtain the unique`access-token`to operate users, groups and other data under App legally. Involved`access-token`shall be kept properly.
+Lanying IM API service is based on the HTTPS security protocol, which ensures the security of data transfer when invoked. At the same time, Lanying IM API service provides access control, and it is necessary to obtain the unique`access-token`to operate users, groups and other data under App legally. Involved`access-token`shall be kept properly.
 
-Before calling any MaxIM API, please get parameter first`api_endpoint`、`app_id`、`access-token`. Parameter`app_id`，`access-token`will be used in the header of request, and unspecified request Content-Type type is`application/json`。
+Before calling any Lanying IM API, please get parameter first`api_endpoint`、`app_id`、`access-token`. Parameter`app_id`，`access-token`will be used in the header of request, and unspecified request Content-Type type is`application/json`。
 
-a generic example of the request that calls MaxIM API (please replace the variable represented by`{}`with a specified value):
+a generic example of the request that calls Lanying IM API (please replace the variable represented by`{}`with a specified value):
 
 ```
 curl -X {METHOD} '{api_endpoint}/{URI}' \
@@ -33,17 +33,17 @@ curl -X {METHOD} '{api_endpoint}/{URI}' \
 
 ### API classification
 
-MaxIM API is mainly divided into user API, friend API, group API, message API and push API.
+Lanying IM API is mainly divided into user API, friend API, group API, message API and push API.
 
 * User API
 
     Users belong to a single App, which is the foundation of instant messaging. Only with users can we realize the functions of friends and groups. User data is divided into basic information and setting information. Basic information includes email address, mobile number, username and password. Setting information includes whether to download thumbnails and files automatically, whether to confirm the invitation to join group, etc. Generally speaking, the user API mainly involves the update of its basic information and user settings, and the related API starts with`/user`, followed by specific resources, ex. “GET /user/settings” to get user settings API.
 * Friend API
 
-    Friend is the relationship between users. In MaxIM friendship design, users can set remarks for friends, set the notification method of friend messages, apply for adding friends, and blacklist a friend. Friend API provides friend information, friend application, friend list, friend blacklist and other related operations, and its API starts with`/roster`.
+    Friend is the relationship between users. In Lanying IM friendship design, users can set remarks for friends, set the notification method of friend messages, apply for adding friends, and blacklist a friend. Friend API provides friend information, friend application, friend list, friend blacklist and other related operations, and its API starts with`/roster`.
 * Group API
 
-    Groups enable multi-user communication. In MaxIM design, the roles of group members are divided into group Owners, group Admins and group Members, and the authority levels are lowered in turn. The group Owners have all the permissions of the group, while the Admins have the permissions to operate group members and modify group information settings. According to group settings, ordinary group Members may have or not have the permissions to modify group information and invite users to join group. The functional design of group membership includes invitation to join group, application to join group, set group blacklist and group ban list. The main APIs include group data operations and group member operations. Group data operations mainly include create group, dissolve group, transfer group Owner, update group information and group settings, group announcement operation, group shared file operation; and group member operations mainly include invite user to join group, Admin process invitation, user apply to join group, user process application, set group blacklist, set group ban list, user quit group, kick user out of group, etc. APIs start with`/group`.
+    Groups enable multi-user communication. In Lanying IM design, the roles of group members are divided into group Owners, group Admins and group Members, and the authority levels are lowered in turn. The group Owners have all the permissions of the group, while the Admins have the permissions to operate group members and modify group information settings. According to group settings, ordinary group Members may have or not have the permissions to modify group information and invite users to join group. The functional design of group membership includes invitation to join group, application to join group, set group blacklist and group ban list. The main APIs include group data operations and group member operations. Group data operations mainly include create group, dissolve group, transfer group Owner, update group information and group settings, group announcement operation, group shared file operation; and group member operations mainly include invite user to join group, Admin process invitation, user apply to join group, user process application, set group blacklist, set group ban list, user quit group, kick user out of group, etc. APIs start with`/group`.
 * Message API
 
     Message APIs are encapsulations of IM services designed to provide an easy way for messaging. Message APIs start with`/message`.
@@ -51,7 +51,7 @@ MaxIM API is mainly divided into user API, friend API, group API, message API an
 
     Push API to send Push notification to device，which starts with `/push`.
 
-In general, the API requested to MaxIM service will return an http code of 200 in case of a business error, and a MaxIM custom error code will be returned in the response body. See the Error Code page for the specific meaning of error code.
+In general, the API requested to Lanying IM service will return an http code of 200 in case of a business error, and a Lanying IM custom error code will be returned in the response body. See the Error Code page for the specific meaning of error code.
 
 Some of the key APIs are demonstrated with the following values, which should be replaced in your actual request.
 
@@ -65,7 +65,7 @@ Some of the key APIs are demonstrated with the following values, which should be
 
 * API description
 
-    Register a MaxIM user for the specified App.
+    Register a Lanying IM user for the specified App.
 * Request description
 
     Http method: `POST` Resource path: `/user/register/v2`
@@ -558,7 +558,7 @@ Some of the key APIs are demonstrated with the following values, which should be
 | 20023      | No permission to operate group shared file                         |
 | 20024      | Group invitation QR Code is illegal                                |
 | 20025      | Group invitation QR Code has expired                               |
-| 30021      | Invalid MaxIM License                                              |
-| 30022      | Expired MaxIM License                                              |
-| 30023      | MaxIM License limit exceeded                                       |
+| 30021      | Invalid Lanying IM License                                              |
+| 30022      | Expired Lanying IM License                                              |
+| 30023      | Lanying IM License limit exceeded                                       |
 | 40000      | app\_id does not exist                                             |

@@ -2,7 +2,7 @@
 
 ## 产品概述
 
-蓝莺IM，是由[美信拓扑](https://www.maximtop.com/)团队研发的新一代即时通讯云服务，SDK设计简单集成方便，服务采用云原生技术和多云架构，私有云也可按月付费。
+蓝莺IM，是由[美信拓扑](https://www.lanyingim.com/)团队研发的新一代即时通讯云服务，SDK设计简单集成方便，服务采用云原生技术和多云架构，私有云也可按月付费。
 
 企业可以通过集成蓝莺IM SDK，配合使用云服务，为应用快速添加聊天功能。集成SDK后，典型的应用架构如下：
 
@@ -33,7 +33,7 @@
 
 1. 创建账号
 
-注册并登陆[蓝莺IM云服务控制台](https://console.maximtop.com)
+注册并登陆[蓝莺IM云服务控制台](https://console.lanyingim.com)
 
 1. 创建应用
 
@@ -53,7 +53,7 @@
 
 ### 私有部署安装
 
-下载[安装包](https://package.maximtop.com/linux/amd64/maxim.ctl) 后直接在控制台按照步骤操作，亦可查看[详细安装文档](quick-start/how-to-deploy-private-cloud.md)
+下载[安装包](https://package.lanyingim.com/linux/amd64/maxim.ctl) 后直接在控制台按照步骤操作，亦可查看[详细安装文档](quick-start/how-to-deploy-private-cloud.md)
 
 ## 客户端SDK
 

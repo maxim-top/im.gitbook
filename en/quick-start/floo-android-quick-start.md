@@ -6,7 +6,7 @@ This page is for quick integration, visit [detailed documentation](../reference/
 
 ### SDK architecture
 
-Maximtop IM SDK (codename floo) is implemented in C++, and each platform (Android, iOS, Linux, etc.) is encapsulated on this basis to complete the development of local library, so as to achieve the purpose of multi-platform reuse and keep the consistency of cross-platform protocol implementation. Floo-Android, as a native application library for Android, has two APIs available to developers, namely, low-level API and high-level API, in other words synchronous interface and asynchronous interface.
+Lanying IM SDK (codename floo) is implemented in C++, and each platform (Android, iOS, Linux, etc.) is encapsulated on this basis to complete the development of local library, so as to achieve the purpose of multi-platform reuse and keep the consistency of cross-platform protocol implementation. Floo-Android, as a native application library for Android, has two APIs available to developers, namely, low-level API and high-level API, in other words synchronous interface and asynchronous interface.
 
 #### Low level API (low-level)
 
@@ -74,7 +74,7 @@ Asynchronous service classes are as follows:
                           |   +---------------+     |
 +----------------------+  |   |               |     +---> BMXChatManager
 |                      |  +---+ High-level API: H/A +-----+
-| Maximtop IM SDK: Floo +--+   |               |     +---> BMXRosterManager
+| Lanying IM SDK: Floo +--+   |               |     +---> BMXRosterManager
 |                      |  |   +---------------+     |
 +----------------------+  |                         +---> BMXGroupManager
                           |
@@ -100,7 +100,7 @@ Aar or jar + so formats are selectable in SDK import
 #### aar format
 
 * Download aar file to /libs in project
-* Add dependency in the dependencies block of build.gradle file, refer to [maxim-android source](https://github.com/maxim-top/maxim-android/blob/master/app/build.gradle#L94)for the latest version.
+* Add dependency in the dependencies block of build.gradle file, refer to [lanying-im-android source](https://github.com/maxim-top/lanying-im-android/blob/master/app/build.gradle#L94)for the latest version.
 
 ```
 implementation(name:'floo-android_2.3.1.20200428',ext:'aar')
@@ -557,11 +557,11 @@ You can't chat until you login successfully. When sending messages, single chat 
 
 #### Message remote push
 
-Developer shall configure the certificate for remote push, apply for permission in code, and send the deviceToken to MaxIM server. When receiver is not online, MaxIM server will automatically send the message through remote push.
+Developer shall configure the certificate for remote push, apply for permission in code, and send the deviceToken to Lanying IM server. When receiver is not online, Lanying IM server will automatically send the message through remote push.
 
 Note: The pushed content is determined by the pushContent field of the sending message interface. If this field is empty-valued when the built-in message is sent, the default content will be pushed; user-defined messages must set this field, otherwise they will not be pushed.
 
-* deviceToken passed to MaxIM interface
+* deviceToken passed to Lanying IM interface
 
 > L/S: Success is judged by the value of returned BMXErrorCode.
 

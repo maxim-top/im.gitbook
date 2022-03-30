@@ -8,11 +8,11 @@
 | -------------- | ---------------------------- |
 | baseUrl        | http://s-1-3-api.maximtop.cn |
 
-## 2 Maximtop server-side API document
+## 2 Lanying IM server-side API document
 
 ### Description
 
-> Get the parameters api\_endpoint, app\_id, and access-token from Console before calling Maximtop API, api\_endpoint is the service address, app\_id and access-token are used in request Header. The default type of request Content-Type is application/json.
+> Get the parameters api_endpoint, app_id, and access-token from Console before calling Lanying IM API, api_endpoint is the service address, app_id and access-token are used in request Header. The default type of request Content-Type is application/json.
 
 ### Contact
 

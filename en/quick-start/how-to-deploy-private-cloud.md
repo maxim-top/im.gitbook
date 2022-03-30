@@ -2,15 +2,15 @@
 
 ## Profile
 
-One-click installation makes Maximtop Proprietary Cloud worry-free and efficient. With Private Cloud, you can complete control over your data and services, and access to all services unlimitedly.
+One-click installation makes Lanying IM Proprietary Cloud worry-free and efficient. With Private Cloud, you can complete control over your data and services, and access to all services unlimitedly.
 
-With cutting-edge container technology, all Maximtop services have completed Cloud-native transformation, commit to smooth, stable and reliable operation of bare-metal servers, private cloud platforms, and other on-premise container platforms.
+With cutting-edge container technology, all Lanying IM services have completed Cloud-native transformation, commit to smooth, stable and reliable operation of bare-metal servers, private cloud platforms, and other on-premise container platforms.
 
-Maximtop Private Deployment provides two deployment modes: Single server version and cluster version. 3 operates, 10 minutes to setup, the Console provides a concise state monitoring page for controlling system running state in real-time.
+Lanying IM Private Deployment provides two deployment modes: Single server version and cluster version. 3 operates, 10 minutes to setup, the Console provides a concise state monitoring page for controlling system running state in real-time.
 
 ## Create application
 
-[Login Console](https://console.maximtop.com) Click to create application. Your application will use Free Edition package by default, or can be upgraded to Business Edition.
+[Login Console](https://console.lanyingim.com) Click to create application. Your application will use Free Edition package by default, or can be upgraded to Business Edition.
 
 ![Create application](../assets/1-1.create_app.png)
 
@@ -27,7 +27,7 @@ Maximtop Private Deployment provides two deployment modes: Single server version
 1. Click the Private Cloud icon, go to the Private Cloud Details page, download installation package maxim.ctl
 
 ```
-$ wget https://package.maximtop.com/linux/amd64/maxim.ctl
+$ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 ```
 
 ![Private Cloud Deployment](../assets/1-4.deploy.png)
@@ -56,7 +56,7 @@ Installation prerequisites
 1. First, get a server ready for Private Deployment and log ssh on to it. Then, execute the download installation script command and elevate the executable permissions. The command is as follows:
 
 ```
-wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
+wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
 ```
 
 Screenshot of execution result:
@@ -144,7 +144,7 @@ Execution result of the command output at 172.16.0.80:
 1. ssh login on to the first host 172.16.0.78, execute the following command to download installation script and elevate executable permission:
 
 ```
-wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
+wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
 ```
 
 Screenshot of execution result:
@@ -240,6 +240,6 @@ sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-k
 
 ![Click “Private Cloud” to view the installation progress through the progress of node information](../assets/4-1.install_progress.png)
 
-1. After installation completed, open Maximtop Console to enter System Status page.
+1. After installation completed, open Lanying IM Console to enter System Status page.
 
 ![If all checks are normal, means the service is normal](../assets/4-2.service_status.png)
