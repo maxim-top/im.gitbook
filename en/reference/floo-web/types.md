@@ -108,7 +108,7 @@ FlooError
 ```js
 {category: 'USER_BANNED', desc:'User is banned'}
 {category: 'USER_FROZEN', desc:'User is frozen, please contact App Admin.'}
-{category: 'APP_FROZEN', desc:'APP is frozen, please login Maximtop Console for more details.'}
+{category: 'APP_FROZEN', desc:'APP is frozen, please login Lanying IM Console for more details.'}
 {category: 'LICENSE', desc:'Invalid LICENSE, please make sure service is paid on time.'}
 {category: 'LICENSE', desc:'LICENSE user limit reached, please purchase higher service package.'}
 {category: 'DNS_FAILED', desc: dnsServer } // DNS error: unaccessible

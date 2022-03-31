@@ -114,7 +114,7 @@ BMXConversationList list = client->getChatService().getAllConversations();
 
 ### 五、断开连接
 
-在断开与MaxIM服务器的连接时，默认会停止接收消息。
+在断开与蓝莺IM服务器的连接时，默认会停止接收消息。
 
 ```
 BMXErrorCode errorCode = client->getChatService().signOut();

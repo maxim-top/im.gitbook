@@ -2,7 +2,7 @@
 
 ## Product Features
 
-Lanying IM, developed by [MaximTop](https://www.maximtop.com/) team, is a new generation IM cloud service. Benefits from cloud-native technologies and multi-cloud architecture, the private cloud is charged monthly as well as the public cloud.
+Lanying IM, developed by [MaximTop](https://www.lanyingim.com/) team, is a new generation IM cloud service. Benefits from cloud-native technologies and multi-cloud architecture, the private cloud is charged monthly as well as the public cloud.
 
 The SDK is designed in a minimalist approach and thus easy to integrate. Developers can effortlessly add chat functions to applications by integrating the SDK and the cloud API services. 
 
@@ -35,7 +35,7 @@ Before you start integrating all clients, you need to create an application thro
 
 1. Create account
 
-Register and login [Lanying IM Cloud Console](https://console.maximtop.com)
+Register and login [Lanying IM Cloud Console](https://console.lanyingim.com)
 
 1. Create application
 
@@ -55,7 +55,7 @@ After application created, App ID and other important information can be obtaine
 
 ### Private Deployment
 
-Download the [Installation package](https://package.maximtop.com/linux/amd64/maxim.ctl) , then follow the steps from the console. View [installation document](quick-start/how-to-deploy-private-cloud.md) for details.
+Download the [Installation package](https://package.lanyingim.com/linux/amd64/maxim.ctl) , then follow the steps from the console. View [installation document](quick-start/how-to-deploy-private-cloud.md) for details.
 
 ## Client SDK
 

@@ -59,7 +59,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "© 2019-2022 MaximTop | <a href='https://maximtop.com' style='text-decoration:none!important;'>Homepage</a>",
+            "copyright": "© 2019-2022 MaximTop | <a href='https://lanyingim.com' style='text-decoration:none!important;'>Homepage</a>",
             "modify_label": "Last modified time:",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -121,7 +121,7 @@
        "logo":{
 	        "logo": "/assets/lanying-logo-color-en.png",
             "logoStyle": "width: 200px;align: left;",
-            "url": "https://maximtop.com"
+            "url": "https://lanyingim.com"
 	    },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",

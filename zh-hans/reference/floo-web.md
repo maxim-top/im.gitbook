@@ -1,25 +1,25 @@
-#  美信拓扑IM SDK：floo-web API介绍
+#  蓝莺IM SDK：floo-web API介绍
 
 ## 选型先读
 
-美信拓扑前端 Web SDK 共有三个版本，请按需选择：
+蓝莺IM前端 Web SDK 共有三个版本，请按需选择：
 
-1.  [Web版](https://github.com/maxim-top/maxim-web)，主要供 PC 桌面浏览器使用，适合各种传统前端应用；
-2.  [Uni-app版](https://github.com/maxim-top/maxim-uniapp)，基于 DCloud.io 的 uni-app 框架开发，供H5和各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝），也可发布到iOS、Android、快应用等平台；
-3.  [微信小程序版](https://github.com/maxim-top/maxim-miniprogram)，符合微信小程序标准的原生版本，功能跟 uni-app 版完全一致；
+1.  [Web版](https://github.com/maxim-top/lanying-im-web)，主要供 PC 桌面浏览器使用，适合各种传统前端应用；
+2.  [Uni-app版](https://github.com/maxim-top/lanying-im-uniapp)，基于 DCloud.io 的 uni-app 框架开发，供H5和各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝），也可发布到iOS、Android、快应用等平台；
+3.  [微信小程序版](https://github.com/maxim-top/lanying-im-miniprogram)，符合微信小程序标准的原生版本，功能跟 uni-app 版完全一致；
 
 以下文档以 Web 版为例，所有版本基本一致。与此同时，DemoApp 源码均已开放，建议直接参考开发。
 
 ## 前期准备
 
-下载对应 SDK 文件，桌面 Web 版地址为：[floo-2.0.0.js](https://package.maximtop.com/floo-2.0.0.js)，并在代码中引用。
+下载对应 SDK 文件，桌面 Web 版地址为：[floo-2.0.0.js](https://package.lanyingim.com/floo-2.0.0.js)，并在代码中引用。
 
 ## 初始化
 
 首先设置 AppID
 ```
     const config = {
-      // dnsServer: "https://dns.maximtop.com/v2/app_dns",
+      // dnsServer: "https://dns.lanyingim.com/v2/app_dns",
       appid: "YOUR_APP_ID",
       ws: false,
       autoLogin: true
@@ -35,7 +35,7 @@
     
     const im = new window.flooIM(config);
 ```
-这种方式主要为支持浏览器中使用 script 标签引用，但会存在初始化并发问题，所以要用 try-catch-retry，请参见[maxim-web源码](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85)。
+这种方式主要为支持浏览器中使用 script 标签引用，但会存在初始化并发问题，所以要用 try-catch-retry，请参见[lanying-im-web源码](https://github.com/maxim-top/lanying-im-web/blob/master/src/ui/index.vue#L85)。
 
 2.  module 方式，import flooim 后，使用 flooim()
 ```
@@ -946,7 +946,7 @@ token登录
 事件内容：({category, desc})
 {category: 'USER_BANNED', desc:'用户被禁言'}
 {category: 'USER_FROZEN', desc:'用户被冻结，请联系App管理员。'}
-{category: 'APP_FROZEN', desc:'APP 被冻结，请登陆美信拓扑控制台查看详情。'}
+{category: 'APP_FROZEN', desc:'APP 被冻结，请登陆蓝莺IM控制台查看详情。'}
 {category: 'LICENSE', desc:'无效 LICENSE，请确认服务已按时付费。'}
 {category: 'LICENSE', desc:'超出 LICENSE 用户数限制，请购买更高规格服务。'}
 {category: 'DNS_FAILED', desc: dnsServer } // DNS错误: 无法访问

@@ -1,25 +1,25 @@
-#  Maximtop IM SDK:floo-web API introduction
+#  Lanying IM SDK:floo-web API introduction
 
 ## Selection guide
 
-Maximtop front end provides 3 versions of Web SDK, please choose on needs:
+Lanying IM front end provides 3 versions of Web SDK, please choose on needs:
 
-1.  [Web version](https://github.com/maxim-top/maxim-web), which is mainly used by PC desktop browsers and suitable for various traditional front-end applications;
-2.  [Uni-app version](https://github.com/maxim-top/maxim-uniapp), developed based-on DCloud.io uni-app framework, for H5 and various Applets (WeChat/Alypay/Baidu/Toutiao/QQ/DingTalk/Taobao), and also suitable for iOS, Android, QuickApp and other platforms;
-3.  [WeChat Applet version](https://github.com/maxim-top/maxim-miniprogram), a native version for WeChat Applet standard, with the same features as the uni-app version;
+1.  [Web version](https://github.com/maxim-top/lanying-im-web), which is mainly used by PC desktop browsers and suitable for various traditional front-end applications;
+2.  [Uni-app version](https://github.com/maxim-top/lanying-im-uniapp), developed based-on DCloud.io uni-app framework, for H5 and various Applets (WeChat/Alypay/Baidu/Toutiao/QQ/DingTalk/Taobao), and also suitable for iOS, Android, QuickApp and other platforms;
+3.  [WeChat Applet version](https://github.com/maxim-top/lanying-im-miniprogram), a native version for WeChat Applet standard, with the same features as the uni-app version;
 
 The following documenting takes the Web version as an example, and all versions are basically the same. Our DemoApp source code has been opened already, so it is recommended to check for development.
 
 ## Previous preparation
 
-Download the corresponding SDK file, address of desktop Web version is :[floo-2.0.0.js](https://package.maximtop.com/floo-2.0.0.js), and refer to it in code.
+Download the corresponding SDK file, address of desktop Web version is :[floo-2.0.0.js](https://package.lanyingim.com/floo-2.0.0.js), and refer to it in code.
 
 ## Initialization
 
 Set AppID first
 ```
     const config = {
-      // dnsServer: "https://dns.maximtop.com/v2/app_dns",
+      // dnsServer: "https://dns.lanyingim.com/v2/app_dns",
       appid: "YOUR_APP_ID",
       ws: false,
       autoLogin: true
@@ -35,7 +35,7 @@ Two modes are currently supported:
     
     const im = new window.flooIM(config);
 ```
-This approach mainly supports script tag references in browsers, but there are initialization concurrency issues, so try-catch-retry is used, see[maxim-web source](https://github.com/maxim-top/maxim-web/blob/master/src/ui/index.vue#L85).
+This approach mainly supports script tag references in browsers, but there are initialization concurrency issues, so try-catch-retry is used, see[lanying-im-web source](https://github.com/maxim-top/lanying-im-web/blob/master/src/ui/index.vue#L85).
 
 2.  module mode,import flooim first,then use flooim()
 ```
@@ -946,7 +946,7 @@ Event name:flooError
 Event content:({category, desc})
 {category: 'USER_BANNED', desc:'User is banned'}
 {category: 'USER_FROZEN', desc:'User is frozen, please contact App Admin.'}
-{category: 'APP_FROZEN', desc:'APP is frozen, please login Maximtop Console for more details.'}
+{category: 'APP_FROZEN', desc:'APP is frozen, please login Lanying IM Console for more details.'}
 {category: 'LICENSE', desc:'Invalid LICENSE, please make sure service is paid on time.'}
 {category: 'LICENSE', desc:'LICENSE user limit reached, please purchase higher service package.'}
 {category: 'DNS_FAILED', desc: dnsServer } // DNS error: unaccessible

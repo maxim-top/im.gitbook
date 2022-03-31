@@ -4,7 +4,7 @@ This page is for quick integration, visit [detailed documentation](../reference/
 
 ## Previous preparation
 
-Maximtop IM SDK provides two ways to integrate our floo-ios, automatically through CocoaPods or manually add it to the project by downloading the floo-ios.framework model manually.
+Lanying IM SDK provides two ways to integrate our floo-ios, automatically through CocoaPods or manually add it to the project by downloading the floo-ios.framework model manually.
 
 ### Mode I: Auto integration/CocoaPods
 
@@ -29,7 +29,7 @@ Hint: If cocoapods is not installed, please refer to [CocoaPods installation](ht
 
 ### Mode II: Manual integration
 
-1. [Download floo-ios.framework](https://package.maximtop.com/floo-ios-v2.2.0.zip) , and then reference the file to your project.
+1. [Download floo-ios.framework](https://package.lanyingim.com/floo-ios-v2.2.0.zip) , and then reference the file to your project.
 2.  Add system library dependencies
 
     Before importing SDK to your project, please add the following system library references.
@@ -64,13 +64,13 @@ Hint: If cocoapods is not installed, please refer to [CocoaPods installation](ht
 
 ### I. Initialization
 
-Import the related header file in the class where you need to use MaxIM SDK functionality.
+Import the related header file in the class where you need to use Lanying IM SDK functionality.
 
 ```
 #import "BMXClient.h"
 ```
 
-You must call this method to initialize MaxIM SDK before you can use all of its features. You only need to initialize the SDK once in the whole life cycle of the App.
+You must call this method to initialize Lanying IM SDK before you can use all of its features. You only need to initialize the SDK once in the whole life cycle of the App.
 
 ```
 // Set storage path
@@ -143,7 +143,7 @@ If you need to get a list of offline conversations for multi-device synchronizat
 
 ### V. Disconnect
 
-devicetoken.When disconnected from MaxIM server, remote push is stopped by default and device devicetoken is automatically unbound.
+devicetoken.When disconnected from Lanying IM server, remote push is stopped by default and device devicetoken is automatically unbound.
 
 ```
  [[[BMXClient sharedClient] userService] signOutWithcompletion:^(BMXError *error) {
@@ -299,11 +299,11 @@ You can't chat until you login successfully. When sending messages, single chat 
 
 Remote push of messages:
 
-Developer shall configure the certificate for remote push, apply for permission in code, and send the deviceToken to MaxIM server. When receiver is not online, MaxIM server will automatically send the message through remote push.
+Developer shall configure the certificate for remote push, apply for permission in code, and send the deviceToken to Lanying IM server. When receiver is not online, Lanying IM server will automatically send the message through remote push.
 
 Note: The pushed content is determined by the pushContent field of the sending message interface. If this field is empty-valued when the built-in message is sent, the default content will be pushed; user-defined messages must set this field, otherwise they will not be pushed.
 
-Pass deviceToken to MaxIM interface as follows:
+Pass deviceToken to Lanying IM interface as follows:
 
 ```
 [[[BMXClient sharedClient] userService] bindDevice:deviceToken completion:^(BMXError *error) {

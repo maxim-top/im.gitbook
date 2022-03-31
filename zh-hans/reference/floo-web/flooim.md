@@ -24,12 +24,12 @@
 | config.appid | <code>string</code> | APPID |
 | config.ws | <code>boolean</code> | 连接地址前缀是否为ws/wss: true - 连接地址前缀为ws或wss, false - 连接地址前缀为http/https |
 | config.autoLogin | <code>boolean</code> | 是否自动登录 |
-| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.maximtop.com/v2/app_dns |
+| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.lanyingim.com/v2/app_dns |
 
 **Example**  
 ```js
 const config = {
-// dnsServer: "https://dns.maximtop.com/v2/app_dns",
+// dnsServer: "https://dns.lanyingim.com/v2/app_dns",
 appid: "YOUR_APP_ID",
 ws: false,
 autoLogin: true

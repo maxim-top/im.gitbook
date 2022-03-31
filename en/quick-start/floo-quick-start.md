@@ -114,7 +114,7 @@ BMXConversationList list = client->getChatService().getAllConversations();
 
 ### V. Disconnect
 
-When you disconnect from MaxIM server, it stops receiving later messages by default.
+When you disconnect from Lanying IM server, it stops receiving later messages by default.
 
 ```
 BMXErrorCode errorCode = client->getChatService().signOut();

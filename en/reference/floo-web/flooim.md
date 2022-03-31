@@ -24,12 +24,12 @@ InitializationSDK
 | config.appid | <code>string</code> | APPID |
 | config.ws | <code>boolean</code> | Whether the connection address is prefixed with ws/wss: ture - the connection address is prefixed with ws or wss; false - the connection address is prefixed with http/https |
 | config.autoLogin | <code>boolean</code> | Whether to login automatically |
-| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS server address, can be empty, default https://dns.maximtop.com/v2/app_dns |
+| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS server address, can be empty, default https://dns.lanyingim.com/v2/app_dns |
 
 **Example**  
 ```js
 const config = {
-// dnsServer: "https://dns.maximtop.com/v2/app_dns",
+// dnsServer: "https://dns.lanyingim.com/v2/app_dns",
 appid: "YOUR_APP_ID",
 ws: false,
 autoLogin: true

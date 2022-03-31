@@ -59,7 +59,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "© 2019-2022 美信拓扑 | <a href='https://maximtop.com' style='text-decoration:none!important;'>官网</a>",
+            "copyright": "© 2019-2022 美信拓扑 | <a href='https://lanyingim.com' style='text-decoration:none!important;'>官网</a>",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -121,7 +121,7 @@
        "logo":{
 	        "logo": "/assets/lanying-logo-color.png",
             "logoStyle": "width: 200px;align: left;",
-            "url": "https://maximtop.com"
+            "url": "https://lanyingim.com"
 	    },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",

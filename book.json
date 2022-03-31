@@ -58,7 +58,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © maximtop.com 2022",
+            "copyright": "Copyright © lanyingim.com 2022",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -120,7 +120,7 @@
        "logo":{
 	        "logo": "/assets/lanying-logo-color.png",
             "logoStyle": "height: 35px;align:left;",
-            "url": "https://maximtop.com"
+            "url": "https://lanyingim.com"
 	    },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
