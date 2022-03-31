@@ -64,13 +64,13 @@
 
 ### 一、初始化
 
-在您需要使用Lanying IM SDK 功能的类中，import 相关头文件。
+在您需要使用蓝莺IM SDK 功能的类中，import 相关头文件。
 
 ```
 #import "BMXClient.h"
 ```
 
-您在使用Lanying IM SDK 所有功能之前，您必须先调用此方法初始化 SDK。 在 App 的整个生命周期中，您只需要将 SDK 初始化一次。
+您在使用蓝莺IM SDK 所有功能之前，您必须先调用此方法初始化 SDK。 在 App 的整个生命周期中，您只需要将 SDK 初始化一次。
 
 ```
 // 设置存储路径
@@ -143,7 +143,7 @@ config.appID = @“Your AppID”;
 
 ### 五、断开连接
 
-在断开与Lanying IM服务器的连接时，默认会停止接收远程推送,会自动解绑设备devicetoken.
+在断开与蓝莺IM服务器的连接时，默认会停止接收远程推送,会自动解绑设备devicetoken.
 
 ```
  [[[BMXClient sharedClient] userService] signOutWithcompletion:^(BMXError *error) {
@@ -299,11 +299,11 @@ config.appID = @“Your AppID”;
 
 消息的远程推送：
 
-开发者配置好远程推送的证书，且在代码中申请好权限，并将 deviceToken 传给Lanying IM服务器，当接收者不在线的时候，Lanying IM服务器会自动通过远程推送将消息发过去。
+开发者配置好远程推送的证书，且在代码中申请好权限，并将 deviceToken 传给蓝莺IM服务器，当接收者不在线的时候，蓝莺IM服务器会自动通过远程推送将消息发过去。
 
 注： 推送的内容由发送消息接口的 pushContent 字段决定，内置消息发送的时候如果该字段没有值，将使用默认内容推送；自定义消息必须设置该字段，否则将不会推送。
 
-以下是将 deviceToken 传给Lanying IM接口
+以下是将 deviceToken 传给蓝莺IM接口
 
 ```
 [[[BMXClient sharedClient] userService] bindDevice:deviceToken completion:^(BMXError *error) {
