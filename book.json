@@ -31,6 +31,7 @@
         "favicon@^0.0.2",
         "github-tables@^0.0.2",
         "image-captions@^3.1.0",
+        "canonical-link@^2.0.3",
 
         "logo@^0.0.2",
         "intopic-toc@^1.1.1"
@@ -133,6 +134,9 @@
         },
         "language-picker": {
             "grid-columns": 3
+        },
+        "canonical-link": {
+            "baseURL": "https://docs.lanyingim.com"
         },
         "image-captions": {
             "caption": "_CAPTION_"
