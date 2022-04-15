@@ -166,7 +166,7 @@
 
 | Param | Type | Description |
 | --- | --- | --- |
-| uid | <code>number</code> | 会话IID |
+| uid | <code>number</code> | 会话ID |
 
 ### rosterManage.asyncGetApplyList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~RosterApplication&gt;&gt;</code> {#module_rostermanage__asyncgetapplylist}
 获取好友申请列表
