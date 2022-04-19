@@ -438,10 +438,10 @@ curl -X {METHOD} '{api_endpoint}/{URI}' \
 * 参数说明：
   - Header参数
 
-    | 参数           | 描述     | 备注 |
-    | ------------ | ------ | -- |
-    | app_id      | APP ID | 必填 |
-    | access-token | token  | 必填 |
+| 参数           | 描述     | 备注 |
+| ------------ | ------ | -- |
+| app_id      | APP ID | 必填 |
+| access-token | token  | 必填 |
 
   * Request Body主要参数
 

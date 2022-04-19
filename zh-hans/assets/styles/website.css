@@ -204,3 +204,11 @@
 .page-wrapper {
     width: 100%;
 }
+
+table td {
+    word-break: break-all;
+}
+
+table th {
+    word-break: break-all;
+}
