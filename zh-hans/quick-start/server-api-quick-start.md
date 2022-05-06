@@ -14,7 +14,7 @@
     `api_endpoint`是App所在API服务的地址。可从console"应用信息"页面获取。
 * access-token
 
-    `access-token`用作权限校验。可在console"Token管理"页面为App生成access-token或选用已有access-token。
+    `access-token`用作权限校验。可在console"[Token管理](https://console.lanyingim.com/#/home/token)"页面为App生成access-token或选用已有access-token。
 
 ### API概述
 

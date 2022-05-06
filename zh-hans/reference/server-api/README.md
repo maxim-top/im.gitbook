@@ -16,7 +16,7 @@
 
 ### 联系方式
 
-* **技术支持请访问：**[**https://github.com/maxim-top/maxims-bistro/issues/**](https://github.com/maxim-top/maxims-bistro/issues/)****
+* **技术支持请访问：**[https://github.com/maxim-top/maxims-bistro/issues/](https://github.com/maxim-top/maxims-bistro/issues/)
 
 ### 文档版本
 

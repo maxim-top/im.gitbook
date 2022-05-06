@@ -16,7 +16,7 @@
 
 ### Contact
 
-* **For technical support:** [**https://github.com/maxim-top/maxims-bistro/issues/**](https://github.com/maxim-top/maxims-bistro/issues/)****
+* **For technical support:** [https://github.com/maxim-top/maxims-bistro/issues/](https://github.com/maxim-top/maxims-bistro/issues/)
 
 ### Document version
 

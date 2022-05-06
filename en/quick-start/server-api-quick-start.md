@@ -14,7 +14,7 @@ This page is for quick integration, visit [detailed documentation](../reference/
     `api_endpoint`is the address of the API service where the app resides. Available from "Application Information" page in Console.
 * access-token
 
-    `access-token`is used for permission verification. You can generate access-token for App or select existing access-token from “Token Management” page in Console.
+    `access-token`is used for permission verification. You can generate access-token for App or select existing access-token from “[Token Management](https://console.lanyingim.com/#/home/token)” page in Console.
 
 ### API profile
 
