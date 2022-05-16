@@ -1,130 +1,116 @@
+# 2 token 接口{#token}
 
-## 5    token 接口
+## 2.1 通过用户ID和密码取普通用户token{#post__token_id}
 
-## 5.1  通过用户ID和密码取普通用户token
-
-> POST  /token/id
+> POST /token/id
 
 #### 请求头
-|  参数名称 |  默认值 |  描述 | 
-|  ------ |  ------ |  ------ | 
-| access-token| | 令牌| 
-| app_id| | 应用ID| 
-| group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
-| user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
 
 #### 请求体(Request Body)
-|  参数名称 |  数据类型 |  默认值 |  不能为空 |  描述 | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  device_guid| string| | false| 设备ID, 如果设置，则返回PushToken| 
-|  password| string| | false| | 
-|  user_id| int32| | false| 用户ID，仅用于用户ID登录| 
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| device_guid | string | false |  | 设备ID, 如果设置，则返回PushToken |
+| password | string | true |  |  |
+| user_id | int64 | true |  | 用户ID，仅用于用户ID登录 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
 
-|  参数名称 |  类型 |  默认值 |  不能为空 |  描述 | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| 返回码，200是成功| 
-|  data| object| | false| Token 信息| 
-| ⇥ access_key_secret| string| | false| 文件密钥| 
-| ⇥ encrypt_type| int32| | false| 是否启用加密连接| 
-| ⇥ expire| int32| | false| 过期时间戳| 
-| ⇥ public_key| string| | false| 公钥| 
-| ⇥ push_token| string| | false| 推送Token| 
-| ⇥ store_token| string| | false| 文件token| 
-| ⇥ token| string| | false| 访问token| 
-| ⇥ user_id| int32| | false| 用户ID| 
-|  message| string| | false| 错误信息，如果成功，该项为null| 
-
-
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | object | 结果数据 |
+|⇥ access_key_secret | string | 文件密钥 |
+|⇥ encrypt_type | int32 | 是否启用加密连接 |
+|⇥ expire | int64 | 过期时间戳 |
+|⇥ public_key | string | 公钥 |
+|⇥ push_token | string | 推送Token |
+|⇥ store_token | string | 文件token |
+|⇥ token | string | 访问token |
+|⇥ user_id | int64 | 用户ID |
+| message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
+## 2.2 通过用户名/手机号/邮箱取普通用户token{#post__token_login}
 
-
-
-## 5.2  通过用户名/手机号/邮箱取普通用户token
-
-> POST  /token/login
+> POST /token/login
 
 #### 请求头
-|  参数名称 |  默认值 |  描述 | 
-|  ------ |  ------ |  ------ | 
-| access-token| | 令牌| 
-| app_id| | 应用ID| 
-| group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
-| user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
 
 #### 请求体(Request Body)
-|  参数名称 |  数据类型 |  默认值 |  不能为空 |  描述 | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  device_guid| string| | false| 设备ID, 如果设置，则返回PushToken| 
-|  login_name| string| | false| 登录名，可以是手机号，邮箱，用户名| 
-|  password| string| | false| | 
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| device_guid | string | false |  | 设备ID, 如果设置，则返回PushToken |
+| login_name | string | true |  | 登录名，可以是手机号，邮箱，用户名 |
+| password | string | true |  |  |
 
 #### 响应体
 ● 200 响应数据格式：JSON
 
-|  参数名称 |  类型 |  默认值 |  不能为空 |  描述 | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| 返回码，200是成功| 
-|  data| object| | false| Token 信息| 
-| ⇥ access_key_secret| string| | false| 文件密钥| 
-| ⇥ encrypt_type| int32| | false| 是否启用加密连接| 
-| ⇥ expire| int32| | false| 过期时间戳| 
-| ⇥ public_key| string| | false| 公钥| 
-| ⇥ push_token| string| | false| 推送Token| 
-| ⇥ store_token| string| | false| 文件token| 
-| ⇥ token| string| | false| 访问token| 
-| ⇥ user_id| int32| | false| 用户ID| 
-|  message| string| | false| 错误信息，如果成功，该项为null| 
-
-
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | object | 结果数据 |
+|⇥ access_key_secret | string | 文件密钥 |
+|⇥ encrypt_type | int32 | 是否启用加密连接 |
+|⇥ expire | int64 | 过期时间戳 |
+|⇥ public_key | string | 公钥 |
+|⇥ push_token | string | 推送Token |
+|⇥ store_token | string | 文件token |
+|⇥ token | string | 访问token |
+|⇥ user_id | int64 | 用户ID |
+| message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
+## 2.3 通过用户名和密码取普通用户token{#post__token_user}
 
-
-
-## 5.3  通过用户名和密码取普通用户token
-
-> POST  /token/user
+> POST /token/user
 
 #### 请求头
-|  参数名称 |  默认值 |  描述 | 
-|  ------ |  ------ |  ------ | 
-| access-token| | 令牌| 
-| app_id| | 应用ID| 
-| group_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口| 
-| user_id| | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口| 
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
 
 #### 请求体(Request Body)
-|  参数名称 |  数据类型 |  默认值 |  不能为空 |  描述 | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  device_guid| string| | false| 设备ID, 如果设置，则返回PushToken| 
-|  name| string| | false| 用户名，仅用于用户名登录| 
-|  password| string| | false| | 
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| device_guid | string | false |  | 设备ID, 如果设置，则返回PushToken |
+| name | string | true |  | 用户名，仅用于用户名登录 |
+| password | string | true |  |  |
 
 #### 响应体
 ● 200 响应数据格式：JSON
 
-|  参数名称 |  类型 |  默认值 |  不能为空 |  描述 | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| 返回码，200是成功| 
-|  data| object| | false| Token 信息| 
-| ⇥ access_key_secret| string| | false| 文件密钥| 
-| ⇥ encrypt_type| int32| | false| 是否启用加密连接| 
-| ⇥ expire| int32| | false| 过期时间戳| 
-| ⇥ public_key| string| | false| 公钥| 
-| ⇥ push_token| string| | false| 推送Token| 
-| ⇥ store_token| string| | false| 文件token| 
-| ⇥ token| string| | false| 访问token| 
-| ⇥ user_id| int32| | false| 用户ID| 
-|  message| string| | false| 错误信息，如果成功，该项为null| 
-
-
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | object | 结果数据 |
+|⇥ access_key_secret | string | 文件密钥 |
+|⇥ encrypt_type | int32 | 是否启用加密连接 |
+|⇥ expire | int64 | 过期时间戳 |
+|⇥ public_key | string | 公钥 |
+|⇥ push_token | string | 推送Token |
+|⇥ store_token | string | 文件token |
+|⇥ token | string | 访问token |
+|⇥ user_id | int64 | 用户ID |
+| message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
-
 
