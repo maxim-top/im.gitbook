@@ -756,9 +756,32 @@
 #### 接口描述
 > 
 
-## 1.26 解绑标签{#delete__user_push_tag}
+## 1.26 获取标签{#get__user_push_tag}
 
-> DELETE /user/push/tag
+> GET /user/push/tag
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | array[string] | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 1.27 绑定标签{#post__user_push_tag}
+
+> POST /user/push/tag
 
 #### 请求头
 |  参数名称 |  数据类型 | 必填 |  描述 |
@@ -784,32 +807,9 @@
 #### 接口描述
 > 
 
-## 1.27 获取标签{#get__user_push_tag}
+## 1.28 解绑标签{#delete__user_push_tag}
 
-> GET /user/push/tag
-
-#### 请求头
-|  参数名称 |  数据类型 | 必填 |  描述 |
-|  ------ |  ------ |  ------ |  ------ |
-| access-token | string | false | 令牌 |
-| app_id | string | true | 应用ID |
-| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
-| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
-
-#### 响应体
-● 200 响应数据格式：JSON
-
-|  参数名称 |  类型 |  描述 |
-|  ------ |  ------ |  ------ |
-| code | int32 | 返回码，200是成功 |
-| data | array[string] | 结果数据 |
-| message | string | 错误信息，如果成功，该项为null |
-#### 接口描述
-> 
-
-## 1.28 绑定标签{#post__user_push_tag}
-
-> POST /user/push/tag
+> DELETE /user/push/tag
 
 #### 请求头
 |  参数名称 |  数据类型 | 必填 |  描述 |

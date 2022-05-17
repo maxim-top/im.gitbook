@@ -30,35 +30,7 @@
 #### 接口描述
 > 
 
-## 5.2 删除用户的指定会话{#delete__message_conversation}
-
-> DELETE /message/conversation
-
-#### 请求头
-|  参数名称 |  数据类型 | 必填 |  描述 |
-|  ------ |  ------ |  ------ |  ------ |
-| access-token | string | false | 令牌 |
-| app_id | string | true | 应用ID |
-| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
-| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
-
-#### 请求参数(Query Param)
-|  参数名称 |  数据类型 | 必填 |  描述 |
-|  ------ |  ------ |  ------ |  ------ |
-| conversation_id | int64 | true | conversation_id |
-
-#### 响应体
-● 200 响应数据格式：JSON
-
-|  参数名称 |  类型 |  描述 |
-|  ------ |  ------ |  ------ |
-| code | int32 | 返回码，200是成功 |
-| data | boolean | 结果数据 |
-| message | string | 错误信息，如果成功，该项为null |
-#### 接口描述
-> 
-
-## 5.3 取指定会话的消息{#get__message_conversation}
+## 5.2 取指定会话的消息{#get__message_conversation}
 
 > GET /message/conversation
 
@@ -120,6 +92,34 @@
 |⇥ set_is_last | boolean |  |
 |⇥ set_messages | boolean |  |
 |⇥ set_next_msg_id | boolean |  |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 5.3 删除用户的指定会话{#delete__message_conversation}
+
+> DELETE /message/conversation
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求参数(Query Param)
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| conversation_id | int64 | true | conversation_id |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
