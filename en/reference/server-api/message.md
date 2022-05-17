@@ -1,341 +1,233 @@
+# 5 Message processing{#message}
 
+## 5.1 Send read receipt{#get__message_ack}
 
-## 6    Message processing
-
-## 6.1  Send read acknowledgement
-
-> GET  /message/ack
+> GET /message/ack
 
 #### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | Token |
+| app_id | string | true | App ID |
+| group_id | int64 | false | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID |
+| user_id | int64 | false | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID |
 
 #### Query Param
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| conversation_id| | conversation_id| 
-| device_sn| | device_sn| 
-| msg_id| | msg_id| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| conversation_id | int64 | true | conversation_id |
+| device_sn | int32 | true | device_sn |
+| msg_id | int64 | true | msg_id |
 
 #### Response Body
 ● 200 Response data format:JSON
 
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| boolean| | false| Result data| 
-|  message| string| | false| Error information, null means success| 
-
-
+|  Parameter name |  Type |  Description |
+|  ------ |  ------ |  ------ |
+| code | int32 | Return code, 200 is success |
+| data | boolean | Result data |
+| message | string | Error information, null means success |
 #### Interface Description
 > 
 
+## 5.2 Get the message for the specified session{#get__message_conversation}
 
-
-
-## 6.2  Get the message for the specified conversation
-
-> GET  /message/conversation
+> GET /message/conversation
 
 #### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | Token |
+| app_id | string | true | App ID |
+| group_id | int64 | false | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID |
+| user_id | int64 | false | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID |
 
 #### Query Param
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| limit| | limit| 
-| msg_id_start| | msg_id_start| 
-| opposite_id| | opposite_id| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| limit | int32 | true | limit |
+| msg_id_start | int64 | true | msg_id_start |
+| opposite_id | int64 | true | opposite_id |
 
 #### Response Body
 ● 200 Response data format:JSON
 
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| object| | false| | 
-| ⇥ is_last| boolean| | false| | 
-| ⇥ messages| array[object]| | false| | 
-| ⇥⇥ attachment| string| | false| | 
-| ⇥⇥ config| string| | false| | 
-| ⇥⇥ content| string| | false| | 
-| ⇥⇥ ctype| string| | false| | 
-| ⇥⇥ ext| string| | false| | 
-| ⇥⇥ from_xid| object| | false| | 
-| ⇥⇥⇥ device_sn| int32| | false| | 
-| ⇥⇥⇥ set_device_sn| boolean| | false| | 
-| ⇥⇥⇥ set_uid| boolean| | false| | 
-| ⇥⇥⇥ uid| int32| | false| | 
-| ⇥⇥ msg_id| int32| | false| | 
-| ⇥⇥ set_attachment| boolean| | false| | 
-| ⇥⇥ set_config| boolean| | false| | 
-| ⇥⇥ set_content| boolean| | false| | 
-| ⇥⇥ set_ctype| boolean| | false| | 
-| ⇥⇥ set_ext| boolean| | false| | 
-| ⇥⇥ set_from_xid| boolean| | false| | 
-| ⇥⇥ set_msg_id| boolean| | false| | 
-| ⇥⇥ set_status| boolean| | false| | 
-| ⇥⇥ set_timestamp| boolean| | false| | 
-| ⇥⇥ set_to_xid| boolean| | false| | 
-| ⇥⇥ status| string| | false| | 
-| ⇥⇥ timestamp| int32| | false| | 
-| ⇥⇥ to_xid| object| | false| | 
-| ⇥⇥⇥ device_sn| int32| | false| | 
-| ⇥⇥⇥ set_device_sn| boolean| | false| | 
-| ⇥⇥⇥ set_uid| boolean| | false| | 
-| ⇥⇥⇥ uid| int32| | false| | 
-| ⇥ messages_iterator| object| | false| | 
-| ⇥ messages_size| int32| | false| | 
-| ⇥ next_msg_id| int32| | false| | 
-| ⇥ set_is_last| boolean| | false| | 
-| ⇥ set_messages| boolean| | false| | 
-| ⇥ set_next_msg_id| boolean| | false| | 
-|  message| string| | false| Error information, null means success| 
-
-
+|  Parameter name |  Type |  Description |
+|  ------ |  ------ |  ------ |
+| code | int32 | Return code, 200 is success |
+| data | object | Result data |
+|⇥ is_last | boolean |  |
+|⇥ messages | array[object] |  |
+|⇥⇥ attachment | string |  |
+|⇥⇥ config | string |  |
+|⇥⇥ content | string |  |
+|⇥⇥ ctype | string |  |
+|⇥⇥ ext | string |  |
+|⇥⇥ from_xid | object |  |
+|⇥⇥⇥ device_sn | int32 |  |
+|⇥⇥⇥ set_device_sn | boolean |  |
+|⇥⇥⇥ set_uid | boolean |  |
+|⇥⇥⇥ uid | int64 |  |
+|⇥⇥ msg_id | int64 |  |
+|⇥⇥ set_attachment | boolean |  |
+|⇥⇥ set_config | boolean |  |
+|⇥⇥ set_content | boolean |  |
+|⇥⇥ set_ctype | boolean |  |
+|⇥⇥ set_ext | boolean |  |
+|⇥⇥ set_from_xid | boolean |  |
+|⇥⇥ set_msg_id | boolean |  |
+|⇥⇥ set_status | boolean |  |
+|⇥⇥ set_timestamp | boolean |  |
+|⇥⇥ set_to_xid | boolean |  |
+|⇥⇥ status | string |  |
+|⇥⇥ timestamp | int64 |  |
+|⇥⇥ to_xid | object |  |
+|⇥⇥⇥ device_sn | int32 |  |
+|⇥⇥⇥ set_device_sn | boolean |  |
+|⇥⇥⇥ set_uid | boolean |  |
+|⇥⇥⇥ uid | int64 |  |
+|⇥ messages_iterator | object |  |
+|⇥ messages_size | int32 |  |
+|⇥ next_msg_id | int64 |  |
+|⇥ set_is_last | boolean |  |
+|⇥ set_messages | boolean |  |
+|⇥ set_next_msg_id | boolean |  |
+| message | string | Error information, null means success |
 #### Interface Description
 > 
 
+## 5.3 Delete the specified session for the user{#delete__message_conversation}
 
-
-
-## 6.3  Delete the specified conversation for the user
-
-> DELETE  /message/conversation
+> DELETE /message/conversation
 
 #### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | Token |
+| app_id | string | true | App ID |
+| group_id | int64 | false | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID |
+| user_id | int64 | false | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID |
 
 #### Query Param
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| conversation_id| | conversation_id| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| conversation_id | int64 | true | conversation_id |
 
 #### Response Body
 ● 200 Response data format:JSON
 
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| boolean| | false| Result data| 
-|  message| string| | false| Error information, null means success| 
-
-
+|  Parameter name |  Type |  Description |
+|  ------ |  ------ |  ------ |
+| code | int32 | Return code, 200 is success |
+| data | boolean | Result data |
+| message | string | Error information, null means success |
 #### Interface Description
 > 
 
+## 5.4 Send system notification{#put__message_notify}
 
+> PUT /message/notify
 
-
-## 6.4  Send system notification
-
-> POST  /message/notify
+> POST /message/notify
 
 #### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | Token |
+| app_id | string | true | App ID |
+| group_id | int64 | false | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID |
+| user_id | int64 | false | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID |
 
 #### Request Body
-|  Parameter name |  Data Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  attachment| string| | false| | 
-|  config| string| | false| | 
-|  content| string| | false| | 
-|  content_type| int32| | false| Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;| 
-|  ext| string| | false| | 
-|  from_user_id| int32| | false| Sender's user ID| 
-|  targets| array[int32]| | false| Receive user ID or group ID| 
-|  transaction_id| int32| | false| Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.| 
-|  type| int32| | false| Target type, 1 - normal user, 2 -- group| 
+|  Parameter name |  Data Type | Required  |  Default |  Description |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| attachment | string | false |  |  |
+| config | string | false |  |  |
+| content | string | false |  |  |
+| content_type | int32 | true |  | Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7; |
+| ext | string | false |  |  |
+| from_user_id | int64 | false |  | Sender's user ID |
+| targets | array[int64] | true |  | Receive user ID or group ID |
+| transaction_id | int64 | false |  | Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set. |
+| type | int32 | true |  | Target type, 1 - normal user, 2 -- group |
 
 #### Response Body
 ● 200 Response data format:JSON
 
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| boolean| | false| Result data| 
-|  message| string| | false| Error information, null means success| 
-
-
+|  Parameter name |  Type |  Description |
+|  ------ |  ------ |  ------ |
+| code | int32 | Return code, 200 is success |
+| data | boolean | Result data |
+| message | string | Error information, null means success |
 #### Interface Description
 > 
 
+## 5.5 Send a message{#put__message_send}
 
+> PUT /message/send
 
-
-## 6.5  Send system notification
-
-> PUT  /message/notify
+> POST /message/send
 
 #### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | Token |
+| app_id | string | true | App ID |
+| group_id | int64 | false | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID |
+| user_id | int64 | false | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID |
 
 #### Request Body
-|  Parameter name |  Data Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  attachment| string| | false| | 
-|  config| string| | false| | 
-|  content| string| | false| | 
-|  content_type| int32| | false| Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;| 
-|  ext| string| | false| | 
-|  from_user_id| int32| | false| Sender's user ID| 
-|  targets| array[int32]| | false| Receive user ID or group ID| 
-|  transaction_id| int32| | false| Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.| 
-|  type| int32| | false| Target type, 1 - normal user, 2 -- group| 
+|  Parameter name |  Data Type | Required  |  Default |  Description |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| attachment | string | false |  |  |
+| config | string | false |  |  |
+| content | string | false |  |  |
+| content_type | int32 | true |  | Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7; |
+| ext | string | false |  |  |
+| from_user_id | int64 | false |  | Sender's user ID |
+| targets | array[int64] | true |  | Receive user ID or group ID |
+| transaction_id | int64 | false |  | Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set. |
+| type | int32 | true |  | Target type, 1 - normal user, 2 -- group |
 
 #### Response Body
 ● 200 Response data format:JSON
 
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| boolean| | false| Result data| 
-|  message| string| | false| Error information, null means success| 
-
-
+|  Parameter name |  Type |  Description |
+|  ------ |  ------ |  ------ |
+| code | int32 | Return code, 200 is success |
+| data | boolean | Result data |
+| message | string | Error information, null means success |
 #### Interface Description
 > 
 
+## 5.6 Get the list of recent sessions for the specified user{#get__message_unread}
 
-
-
-## 6.6  Send a message
-
-> POST  /message/send
+> GET /message/unread
 
 #### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
-
-#### Request Body
-|  Parameter name |  Data Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  attachment| string| | false| | 
-|  config| string| | false| | 
-|  content| string| | false| | 
-|  content_type| int32| | false| Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;| 
-|  ext| string| | false| | 
-|  from_user_id| int32| | false| Sender's user ID| 
-|  targets| array[int32]| | false| Receive user ID or group ID| 
-|  transaction_id| int32| | false| Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.| 
-|  type| int32| | false| Target type, 1 - normal user, 2 -- group| 
+|  Parameter name |  Data Type | Required |  Description |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | Token |
+| app_id | string | true | App ID |
+| group_id | int64 | false | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID |
+| user_id | int64 | false | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID |
 
 #### Response Body
 ● 200 Response data format:JSON
 
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| boolean| | false| Result data| 
-|  message| string| | false| Error information, null means success| 
-
-
+|  Parameter name |  Type |  Description |
+|  ------ |  ------ |  ------ |
+| code | int32 | Return code, 200 is success |
+| data | array[object] | Result data |
+|⇥ conversation_id | object |  |
+|⇥⇥ device_sn | int32 |  |
+|⇥⇥ set_device_sn | boolean |  |
+|⇥⇥ set_uid | boolean |  |
+|⇥⇥ uid | int64 |  |
+|⇥ num | int32 |  |
+|⇥ set_conversation_id | boolean |  |
+|⇥ set_num | boolean |  |
+| message | string | Error information, null means success |
 #### Interface Description
 > 
-
-
-
-
-## 6.7  Send a message
-
-> PUT  /message/send
-
-#### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
-
-#### Request Body
-|  Parameter name |  Data Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  attachment| string| | false| | 
-|  config| string| | false| | 
-|  content| string| | false| | 
-|  content_type| int32| | false| Message type TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;| 
-|  ext| string| | false| | 
-|  from_user_id| int32| | false| Sender's user ID| 
-|  targets| array[int32]| | false| Receive user ID or group ID| 
-|  transaction_id| int32| | false| Request ID, which is used for message deduplication. If two requests with the same transaction_id are received in a short time, the second request will not be executed. No deduplication when request ID is not set.| 
-|  type| int32| | false| Target type, 1 - normal user, 2 -- group| 
-
-#### Response Body
-● 200 Response data format:JSON
-
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| boolean| | false| Result data| 
-|  message| string| | false| Error information, null means success| 
-
-
-#### Interface Description
-> 
-
-
-
-
-## 6.8  Get the list of recent conversations for the specified user
-
-> GET  /message/unread
-
-#### Request Header
-|  Parameter name |  Default |  Description | 
-|  ------ |  ------ |  ------ | 
-| access-token| | Token| 
-| app_id| | App ID| 
-| group_id| | This field can be set only if access-token is an Admin token, means call this interface as an Admin for this group ID| 
-| user_id| | This field can be set only if access-token is a user token, means call this interface as a group member for this user ID| 
-
-#### Response Body
-● 200 Response data format:JSON
-
-|  Parameter name |  Type |  Default |  Not null |  Description | 
-|  ------ |  ------ |  ------ |  ------ |  ------ | 
-|  code| int32| | false| Return code, 200 is success| 
-|  data| array[object]| | false| Result data| 
-| ⇥ conversation_id| object| | false| | 
-| ⇥⇥ device_sn| int32| | false| | 
-| ⇥⇥ set_device_sn| boolean| | false| | 
-| ⇥⇥ set_uid| boolean| | false| | 
-| ⇥⇥ uid| int32| | false| | 
-| ⇥ num| int32| | false| | 
-| ⇥ set_conversation_id| boolean| | false| | 
-| ⇥ set_num| boolean| | false| | 
-|  message| string| | false| Error information, null means success| 
-
-
-#### Interface Description
-> 
-
 

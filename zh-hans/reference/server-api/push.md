@@ -52,7 +52,7 @@
 | audience | object | false |  | 推送目标, 不可为空。类型为字符串或JSONObject:<br>"all", 表示发给所有设备<br>{"tag":["tag1","tag2"]} 表示发给标签为tag1或tag2的设备<br>{"alias":["alias1","alias2"]} 表示发给别名为alias1或alias2的设备<br>{"user_id":[111,222]} 表示发给用户ID为111或222的设备<br>{"push_token":["push_token1","push_token2"]} 表示发给PushToken为push_token1或push_token2的设备<br>使用标签/别名/用户ID/pushToken推送时，列表长度不能超过500 |
 | setting | object | false |  | 推送设置，可为空 |
 |⇥ request_id | string | false |  | 请求ID，用于请求去重，如果请求ID以前出现过，则不推送。可为空，为空则不去重。 |
-|⇥ distribution_strategy | string | false |  | 通知下发策略: combined - 表示先使用美信通道下发，美信不在线，则使用厂商通道下发；mxpush_only - 表示只使用美信通道下发; ospush_only - 表示只使用厂商通道下发。 可为空，为空则默认为combined |
+|⇥ distribution_strategy | string | false |  | 通知下发策略: combined - 表示先使用蓝莺通道下发，蓝莺不在线，则使用厂商通道下发；mxpush_only - 表示只使用蓝莺通道下发; ospush_only - 表示只使用厂商通道下发。 可为空，为空则默认为combined |
 |⇥ ospush_sequence | array[string] | false |  | 厂商推送顺序：ups - 国内厂商(小米/华为/魅族/oppo/vivo); fcm - FCM推送；huawei - 华为推送；xiaomi - 小米推送; oppo - OPPO推送; vivo - VIVO推送, meizu - 魅族推送。可为空，为空则默认为[ups,fcm] |
 | message | object | false |  | 推送消息体， 不可为空 |
 |⇥ type | string | false |  | 消息类型：text - 文本，image - 图片， cmd - 透传消息。可为空，为空则默认为text |
@@ -159,9 +159,9 @@
 |⇥ huawei_received | int64 | 华为通道送达数 |
 |⇥ huawei_sent | int64 | 华为通道发送数 |
 |⇥ huawei_target | int64 | 华为通道有效目标数 |
-|⇥ mxpush_received | int64 | 美信通道送达数 |
-|⇥ mxpush_sent | int64 | 美信通道发送数 |
-|⇥ mxpush_target | int64 | 美信通道有效目标数 |
+|⇥ mxpush_received | int64 | 蓝莺通道送达数 |
+|⇥ mxpush_sent | int64 | 蓝莺通道发送数 |
+|⇥ mxpush_target | int64 | 蓝莺通道有效目标数 |
 |⇥ oppo_received | int64 | oppo通道送达数 |
 |⇥ oppo_sent | int64 | oppo通道发送数 |
 |⇥ oppo_target | int64 | oppo通道有效目标数 |
