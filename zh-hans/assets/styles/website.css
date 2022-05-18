@@ -213,7 +213,7 @@ table th {
     word-break: break-all;
 }
 
-.intopic-toc ul {
+.intopic-toc ul.level-0 {
     max-height: calc( 100vh - 70px );
     overflow-y: auto;
 }
