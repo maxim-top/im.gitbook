@@ -212,3 +212,8 @@ table td {
 table th {
     word-break: break-all;
 }
+
+.intopic-toc ul {
+    max-height: calc( 100vh - 70px );
+    overflow-y: auto;
+}
