@@ -49,7 +49,6 @@ SDK 架构说明
 
 * libz 解压缩库
 * libcrypto openssl加密库
-* libsqlite3 sqlite3本地数据库
 * lcurl libcurl网络库
 * lcurses ncurses库，运行embedded版本demo需要使用
 
@@ -57,10 +56,12 @@ SDK 架构说明
 
 ```
 #include "bmx_client.h"
-config = BMXSDKConfigPtr(new BMXSDKConfig(BMXClientType::macOS, "10", "./data", "./data", "2.0", "1234", "userAgent"));
-config->setAppID("dxgeuidhhutk");
+config = BMXSDKConfigPtr(new BMXSDKConfig(BMXClientType::Linux, "", path, path, "3.0", "1234", "userAgent"));
+config->setAppID("welovemaxim");
+config->setDBCryptoKey("testkey");
 config->setDeviceUuid("b81f412e-fcb2-44fb-9f44-5e8e5b1e809e");
 config->setConsoleOutput(false);
+config->setLogLevel(BMXLogLevel::Debug);
 client = BMXClient::create(config);
 ```
 
@@ -68,7 +69,7 @@ client = BMXClient::create(config);
 
 ```
 BMXUserProfilePtr profile;
-BMXErrorCode errorCode = config->getUserService().signUpNewUser("maximtest1", "123456", "1", profile);
+BMXErrorCode errorCode = client->signUpNewUser("maximtest1", "123456", "1", profile);
 if (BMXErrorCode::NoError == errorCode) {
   std::cout << "signUpNewUser successs!" << std::endl;
 } else {
@@ -84,7 +85,7 @@ if (BMXErrorCode::NoError == errorCode) {
 提供两种登录模式：一种是普通手动登录，另一种是快速登录模式
 
 ```
-BMXErrorCode errorCode = client->getUserService().signInByName("maximtest1", "1");
+BMXErrorCode errorCode = client->signInByName("maximtest1", "1");
 if (BMXErrorCode::NoError == errorCode) {
   std::cout << "signInByName successs!" << std::endl;
 } else {
@@ -93,7 +94,7 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 
 // 快速登录,不需要获取token
-BMXErrorCode errorCode = client->getUserService().fastSignInByName("maximtest1", "1");
+BMXErrorCode errorCode = client->fastSignInByName("maximtest1", "1");
 if (BMXErrorCode::NoError == errorCode) {
   std::cout << "signInByName successs!" << std::endl;
 } else {
