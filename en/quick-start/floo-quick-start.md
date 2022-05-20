@@ -49,7 +49,6 @@ Relationship among main classes is as follows:
 
 * libz decompression library
 * libcrypto openssl encryption library
-* libsqlite3 sqlite3 local database
 * lcurl libcurl network library
 * lcurses ncurses library, which is required to run the embedded version of our demo
 
@@ -57,10 +56,12 @@ Relationship among main classes is as follows:
 
 ```
 #include "bmx_client.h"
-config = BMXSDKConfigPtr(new BMXSDKConfig(BMXClientType::macOS, "10", "./data", "./data", "2.0", "1234", "userAgent"));
-config->setAppID("dxgeuidhhutk");
+config = BMXSDKConfigPtr(new BMXSDKConfig(BMXClientType::Linux, "", path, path, "3.0", "1234", "userAgent"));
+config->setAppID("welovemaxim");
+config->setDBCryptoKey("testkey");
 config->setDeviceUuid("b81f412e-fcb2-44fb-9f44-5e8e5b1e809e");
 config->setConsoleOutput(false);
+config->setLogLevel(BMXLogLevel::Debug);
 client = BMXClient::create(config);
 ```
 
@@ -68,7 +69,7 @@ client = BMXClient::create(config);
 
 ```
 BMXUserProfilePtr profile;
-BMXErrorCode errorCode = config->getUserService().signUpNewUser("maximtest1", "123456", "1", profile);
+BMXErrorCode errorCode = client->signUpNewUser("maximtest1", "123456", "1", profile);
 if (BMXErrorCode::NoError == errorCode) {
   std::cout << "signUpNewUser successs!" << std::endl;
 } else {
@@ -84,7 +85,7 @@ Pass the account password you obtained in the previous step into the -signInById
 Two login modes provided: One for normal manual login, and the other for quick login
 
 ```
-BMXErrorCode errorCode = client->getUserService().signInByName("maximtest1", "1");
+BMXErrorCode errorCode = client->signInByName("maximtest1", "1");
 if (BMXErrorCode::NoError == errorCode) {
   std::cout << "signInByName successs!" << std::endl;
 } else {
@@ -93,7 +94,7 @@ if (BMXErrorCode::NoError == errorCode) {
 }
 
 // Quick login needs no getting token
-BMXErrorCode errorCode = client->getUserService().fastSignInByName("maximtest1", "1");
+BMXErrorCode errorCode = client->fastSignInByName("maximtest1", "1");
 if (BMXErrorCode::NoError == errorCode) {
   std::cout << "signInByName successs!" << std::endl;
 } else {
