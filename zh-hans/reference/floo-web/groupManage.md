@@ -8,7 +8,7 @@
     * [.asyncGetJoinedGroups(froce)](#module_groupmanage__asyncgetjoinedgroups) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.openGroup(group_id)](#module_groupmanage__opengroup)
     * [.getAllGroupDetail()](#module_groupmanage__getallgroupdetail) ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code>
-    * [.asyncGetGroupMembers(group_id)](#module_groupmanage__asyncgetgroupmembers) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code>
+    * [.asyncGetGroupMembers(group_id)](#module_groupmanage__asyncgetgroupmembers) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.getGroupMembers(group_id)](#module_groupmanage__getgroupmembers) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember)
     * [.asyncGetGroupListDetail(gids)](#module_groupmanage__asyncgetgrouplistdetail) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code>
     * [.getGruopMessage(gid)](#module_groupmanage__getgruopmessage) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta)
@@ -96,11 +96,11 @@
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 **Returns**: <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> - 群组详情  
-### groupManage.asyncGetGroupMembers(group_id) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetgroupmembers}
-获取群组成员（异步）
+### groupManage.asyncGetGroupMembers(group_id) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetgroupmembers}
+获取群组成员ID列表（异步）
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - 群成员列表  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - 群成员ID列表  
 
 | Param | Type | Description |
 | --- | --- | --- |
