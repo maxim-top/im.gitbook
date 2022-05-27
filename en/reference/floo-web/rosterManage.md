@@ -256,6 +256,8 @@ Modify the Friend extension field
 | params | <code>object</code> | Parameter |
 | params.user_id | <code>number</code> | User ID |
 | params.ext | <code>string</code> | Extension field |
+| params.alias | <code>string</code> | Alias |
+| params.mute_notification | <code>boolean</code> | Whether to receive message alert |
 
 ### rosterManage.asyncSearchRosterByName(params) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem) {#module_rostermanage__asyncsearchrosterbyname}
 Search for user by name

@@ -256,6 +256,8 @@
 | params | <code>object</code> | 参数 |
 | params.user_id | <code>number</code> | 用户ID |
 | params.ext | <code>string</code> | 扩展字段 |
+| params.alias | <code>string</code> | 备注名称 |
+| params.mute_notification | <code>boolean</code> | 是否接收消息提醒 |
 
 ### rosterManage.asyncSearchRosterByName(params) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem) {#module_rostermanage__asyncsearchrosterbyname}
 按名称搜索用户
