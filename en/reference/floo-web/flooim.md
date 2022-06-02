@@ -5,7 +5,7 @@
     * [.flooim(config)](#module_flooim__flooim) ⇒ <code>object</code>
     * [.login(opt)](#module_flooim__login)
     * [.qrlogin(opt)](#module_flooim__qrlogin)
-    * [.tokenLogin(opt)](#module_flooim__tokenlogin)
+    * [.tokenLogin(user_id, token)](#module_flooim__tokenlogin)
     * [.idLogin(opt)](#module_flooim__idlogin)
     * [.isLogin()](#module_flooim__islogin) ⇒ <code>boolean</code>
     * [.on(options, ext)](#module_flooim__on)
@@ -59,16 +59,15 @@ QR code login
 | opt.user_id | <code>number</code> | User ID |
 | opt.password | <code>string</code> | Password |
 
-### flooim.tokenLogin(opt) {#module_flooim__tokenlogin}
-token login
+### flooim.tokenLogin(user_id, token) {#module_flooim__tokenlogin}
+token登录
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| opt | <code>object</code> |  |
-| opt.user_id | <code>number</code> | User ID |
-| opt.token | <code>string</code> | Token |
+| user_id | <code>number</code> | User ID |
+| token | <code>string</code> | Token |
 
 ### flooim.idLogin(opt) {#module_flooim__idlogin}
 Login with user ID and password
