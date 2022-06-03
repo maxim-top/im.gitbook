@@ -18,7 +18,7 @@
 
 蓝莺IM SDK 是跨平台的，包括移动端（iOS/Android）、PC桌面端（Linux/Windows/Mac）、Web浏览器端（包括H5）以及微信小程序等。为了最大程度的复用，并提高服务质量，SDK 技术栈如下：
 
-![蓝莺IM SDK 技术栈](assets/2.jpeg)
+![蓝莺IM SDK 技术栈](assets/2.png)
 
 1. 统一设计并实现二进制即时通讯协议 XSYNC ，分别实现了 C++ 版和 Javascript 版；
 2. 在 C++ 通讯库的基础上封装了全平台的 C++ SDK，并以此为基础继续封装了移动端（iOS/Android）和PC桌面端（Linux/Windows/Mac）SDK；

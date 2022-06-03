@@ -20,7 +20,7 @@ With the omnipotent console, there are only two things you need to do, one is to
 
 Lanying IM SDK is cross-platform, including mobile (iOS/Android), PC desktop (Linux/Windows/Mac), Web browser (including H5) and WeChat applet. In order to maximize reuse and improve service quality, the IM SDK technology stack of Lanying is as follows:
 
-![Lanying IM SDK technology stack](assets/2.jpeg)
+![Lanying IM SDK technology stack](assets/2.png)
 
 1. Unified design and implementation of binary instant messaging protocol XSYNC, providing C++ version and JavaScript version respectively;
 2. Encapsulate the C++ SDK of the whole platform based on C++ communication library, and continue to encapsulate the SDK of mobile (iOS/Android) and PC desktop (Linux/Windows/Mac) on this basis;
