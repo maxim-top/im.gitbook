@@ -516,7 +516,7 @@
 | avatar | string | false |  | Group avatar |
 | description | string | false |  | Group description |
 | name | string | false |  | Group name |
-| type | int32 | false |  | Group type: 1 for public group, 0 for private group, 2 for chatroom |
+| type | int32 | false |  | Group type: 0 for private group, 2 for chatroom |
 | user_list | array[int64] | false |  | List of user ids invited to join group |
 
 #### Response Body
@@ -1269,7 +1269,7 @@
 #### Interface Description
 > 
 
-## 4.39 Get public group list{#get__group_public_list}
+## 4.39 Get public group list (Deprecated){#get__group_public_list}
 
 > GET /group/public_list
 

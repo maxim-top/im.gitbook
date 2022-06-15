@@ -516,7 +516,7 @@
 | avatar | string | false |  | 群头像 |
 | description | string | false |  | 群描述 |
 | name | string | false |  | 群名称 |
-| type | int32 | false |  | 群类型 1表示公开群，0表示私有群, 2表示聊天室 |
+| type | int32 | false |  | 群类型 0表示私有群, 2表示聊天室 |
 | user_list | array[int64] | false |  | 邀请入群的用户id列表 |
 
 #### 响应体
@@ -1269,7 +1269,7 @@
 #### 接口描述
 > 
 
-## 4.39 获取公开群列表{#get__group_public_list}
+## 4.39 获取公开群列表(已废弃){#get__group_public_list}
 
 > GET /group/public_list
 
