@@ -6,7 +6,6 @@
 * [rosterManage](#module_rostermanage)
     * [.asyncGetRosterIdList(force)](#module_rostermanage__asyncgetrosteridlist) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.asyncGetRosterInfo(roster_id, force)](#module_rostermanage__asyncgetrosterinfo) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem)
-    * [.asyncRegester(opt)](#module_rostermanage__asyncregester) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
     * [.asyncDeleteRoster(param)](#module_rostermanage__asyncdeleteroster) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asnycGetRosterListDetailByIds(roster_ids)](#module_rostermanage__asnycgetrosterlistdetailbyids) ⇒ <code>Promise.&lt;Array.&lt;module:types~RosterItem&gt;&gt;</code>
     * [.getAllRosterDetail()](#module_rostermanage__getallrosterdetail) ⇒ [<code>Array.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem)
@@ -49,18 +48,6 @@
 | --- | --- | --- |
 | roster_id | <code>number</code> | 好友ID |
 | force | <code>boolean</code> | 是否强制从服务器拉取： true - 从服务器拉取， false - 优先从本地存储获取 |
-
-### rosterManage.asyncRegester(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_rostermanage__asyncregester}
-用户注册
-
-**Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) - 用户设置  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| opt | <code>object</code> | 用户信息 |
-| opt.username | <code>string</code> | 用户名 |
-| opt.password | <code>string</code> | 密码 |
 
 ### rosterManage.asyncDeleteRoster(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage__asyncdeleteroster}
 删除好友

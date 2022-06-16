@@ -6,6 +6,7 @@
     * [.getUid()](#module_usermanage__getuid) ⇒ <code>number</code>
     * [.getAppid()](#module_usermanage__getappid) ⇒ <code>string</code>
     * [.getConversationList()](#module_usermanage__getconversationlist) ⇒ [<code>Array.&lt;ConversationItem&gt;</code>](types.md#module_types__conversationitem)
+    * [.asyncRegister(opt)](#module_usermanage__asyncregister) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
     * [.asyncUpdateAvatar(params)](#module_usermanage__asyncupdateavatar) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncUpdateNickName(params)](#module_usermanage__asyncupdatenickname) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncGetProfile()](#module_usermanage__asyncgetprofile) ⇒ [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types__userprofile)
@@ -32,6 +33,18 @@ Get appid
 Get list of recent conversations
 
 **Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+### userManage.asyncRegister(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_usermanage__asyncregister}
+User registeration
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) - User settings 
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opt | <code>object</code> | User information |
+| opt.username | <code>string</code> | Username |
+| opt.password | <code>string</code> | Password |
+
 ### userManage.asyncUpdateAvatar(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncupdateavatar}
 Update avatar
 

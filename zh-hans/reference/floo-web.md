@@ -96,7 +96,165 @@ token登录
         im.tokenLogin(user_id, token)
       
 ```
-## rosterManager
+## userManage
+用户注册
+```
+        userManage.asyncRegister({
+          username,
+          password
+        }).then(() => {
+          //
+        });
+      
+```
+
+获取登录用户的token
+```
+        const token =  im.userManage.getToken();
+      
+```
+获取登录用户的uid
+```
+        const cuid = im.userManage.getUid();
+      
+```
+获取appid
+```
+        const appid = im.userManage.getAppid();
+      
+```
+获取最近回话列表
+```
+        const list = im.userManage.getConversationList();
+      
+```
+发送验证码
+```
+        im.userManage
+        .asyncUserSendSms({
+          mobile,
+        })
+        .then(() => {
+          //
+        });
+      
+```
+发送验证码（通过图片验证码）
+```
+        im.userManage
+        .asyncCaptchaSms({
+          captcha,
+          image_id,
+          mobile,
+        })
+        .then(() => {
+          //
+        });
+      
+```
+检查用户名是否可用
+```
+        im.userManage.asyncUserNameCheck(username).then(() => {
+          //
+        });
+      
+```
+绑定手机号-使用签名绑定
+```
+        im.userManage.asyncUserMobileBindSign({
+            mobile,
+            sign,
+          }).then(() => {
+            //
+          });
+      
+```
+手机号验证码登录
+```
+        im.userManage.asyncUserMobileLogin({
+          captcha,
+          mobile
+        })
+        .then(res => {
+          //
+        });
+      
+```
+更新手机号
+```
+        im.userManage
+        .asyncUpdateMobile({ mobile })
+        .then(() => {
+          //
+        });
+      
+```
+更新头像
+```
+        im.userManage
+        .asyncUpdateAvatar({
+          avatar
+        })
+        .then(() => {
+          //
+        });
+      
+```
+更新昵称
+```
+        im.userManage.asyncUpdateNickName({ nick_name }).then(() => {
+          //
+        });
+      
+```
+获取用户profile
+```
+        im.userManage.asyncGetProfile(true).then(res => {
+          //
+        })
+      
+```
+更新用户profile
+```
+        im.userManage.asyncUpdateProfile({
+          username,
+          avatar
+        }).then(res => {
+          //
+        })
+      
+```
+获取用户设置信息
+```
+        im.userManage.asyncGetSettings().then(res => {
+          //
+        })
+      
+```
+修改用户设置
+```
+        im.userManage
+        .asyncUpdateSettings({ 
+          "auth_answer": "string",
+          "auth_mode": 0,
+          "auth_question": "string",
+          "auto_download": true,
+          "group_confirm": true,
+          "id": 0,
+          "no_push": true,
+          "no_push_detail": true,
+          "no_push_end_hour": 0,
+          "no_push_start_hour": 0,
+          "no_sounds": true,
+          "push_nick_name": "string",
+          "user_id",
+          "vibratory": true
+        }).then(() => {
+          //
+        });
+      
+```
+## rosterManage
 
 获取好友id列表
 ```
@@ -110,16 +268,6 @@ token登录
         im.rosterManage.asyncGetRosterInfo(state.sid).then(res => {
           //
         })
-      
-```
-用户注册
-```
-        rosterManage.asyncRegester({
-          username,
-          password
-        }).then(() => {
-          //
-        });
       
 ```
 根据id列表获取用户详细信息
@@ -259,7 +407,7 @@ token登录
         });
       
 ```
-## groupManager
+## groupManage
 
 获取群信息
 ```
@@ -661,7 +809,7 @@ token登录
         });
       
 ```
-## sysManager
+## sysManage
 
 发送好友消息
 ```
@@ -761,154 +909,6 @@ token登录
 拼装图片路径
 ```
         const image = im.sysManage.getImage({ avatar, type='roster', thumbnail=true });
-      
-```
-## userManager
-
-获取登录用户的token
-```
-        const token =  im.userManage.getToken();
-      
-```
-获取登录用户的uid
-```
-        const cuid = im.userManage.getUid();
-      
-```
-获取appid
-```
-        const appid = im.userManage.getAppid();
-      
-```
-获取最近回话列表
-```
-        const list = im.userManage.getConversationList();
-      
-```
-发送验证码
-```
-        im.userManage
-        .asyncUserSendSms({
-          mobile,
-        })
-        .then(() => {
-          //
-        });
-      
-```
-发送验证码（通过图片验证码）
-```
-        im.userManage
-        .asyncCaptchaSms({
-          captcha,
-          image_id,
-          mobile,
-        })
-        .then(() => {
-          //
-        });
-      
-```
-检查用户名是否可用
-```
-        im.userManage.asyncUserNameCheck(username).then(() => {
-          //
-        });
-      
-```
-绑定手机号-使用签名绑定
-```
-        im.userManage.asyncUserMobileBindSign({
-            mobile,
-            sign,
-          }).then(() => {
-            //
-          });
-      
-```
-手机号验证码登录
-```
-        im.userManage.asyncUserMobileLogin({
-          captcha,
-          mobile
-        })
-        .then(res => {
-          //
-        });
-      
-```
-更新手机号
-```
-        im.userManage
-        .asyncUpdateMobile({ mobile })
-        .then(() => {
-          //
-        });
-      
-```
-更新头像
-```
-        im.userManage
-        .asyncUpdateAvatar({
-          avatar
-        })
-        .then(() => {
-          //
-        });
-      
-```
-更新昵称
-```
-        im.userManage.asyncUpdateNickName({ nick_name }).then(() => {
-          //
-        });
-      
-```
-获取用户profile
-```
-        im.userManage.asyncGetProfile(true).then(res => {
-          //
-        })
-      
-```
-更新用户profile
-```
-        im.userManage.asyncUpdateProfile({
-          username,
-          avatar
-        }).then(res => {
-          //
-        })
-      
-```
-获取用户设置信息
-```
-        im.userManage.asyncGetSettings().then(res => {
-          //
-        })
-      
-```
-修改用户设置
-```
-        im.userManage
-        .asyncUpdateSettings({ 
-          "auth_answer": "string",
-          "auth_mode": 0,
-          "auth_question": "string",
-          "auto_download": true,
-          "group_confirm": true,
-          "id": 0,
-          "no_push": true,
-          "no_push_detail": true,
-          "no_push_end_hour": 0,
-          "no_push_start_hour": 0,
-          "no_sounds": true,
-          "push_nick_name": "string",
-          "user_id",
-          "vibratory": true
-        }).then(() => {
-          //
-        });
       
 ```
 ## 事件通知

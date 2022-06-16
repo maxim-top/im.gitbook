@@ -6,6 +6,7 @@
     * [.getUid()](#module_usermanage__getuid) ⇒ <code>number</code>
     * [.getAppid()](#module_usermanage__getappid) ⇒ <code>string</code>
     * [.getConversationList()](#module_usermanage__getconversationlist) ⇒ [<code>Array.&lt;ConversationItem&gt;</code>](types.md#module_types__conversationitem)
+    * [.asyncRegister(opt)](#module_usermanage__asyncregister) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
     * [.asyncUpdateAvatar(params)](#module_usermanage__asyncupdateavatar) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncUpdateNickName(params)](#module_usermanage__asyncupdatenickname) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncGetProfile()](#module_usermanage__asyncgetprofile) ⇒ [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types__userprofile)
@@ -32,6 +33,18 @@
 获取最近会话列表
 
 **Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+### userManage.asyncRegister(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_usermanage__asyncregister}
+用户注册
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) - 用户设置  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opt | <code>object</code> | 用户信息 |
+| opt.username | <code>string</code> | 用户名 |
+| opt.password | <code>string</code> | 密码 |
+
 ### userManage.asyncUpdateAvatar(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncupdateavatar}
 更新头像
 

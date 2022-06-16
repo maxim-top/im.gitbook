@@ -6,7 +6,6 @@ Friend management
 * [rosterManage](#module_rostermanage)
     * [.asyncGetRosterIdList(force)](#module_rostermanage__asyncgetrosteridlist) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.asyncGetRosterInfo(roster_id, force)](#module_rostermanage__asyncgetrosterinfo) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem)
-    * [.asyncRegester(opt)](#module_rostermanage__asyncregester) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
     * [.asyncDeleteRoster(param)](#module_rostermanage__asyncdeleteroster) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asnycGetRosterListDetailByIds(roster_ids)](#module_rostermanage__asnycgetrosterlistdetailbyids) ⇒ <code>Promise.&lt;Array.&lt;module:types~RosterItem&gt;&gt;</code>
     * [.getAllRosterDetail()](#module_rostermanage__getallrosterdetail) ⇒ [<code>Array.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem)
@@ -49,18 +48,6 @@ Get friend information
 | --- | --- | --- |
 | roster_id | <code>number</code> | Friend ID |
 | force | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
-
-### rosterManage.asyncRegester(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_rostermanage__asyncregester}
-User registeration
-
-**Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
-**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) - User settings  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| opt | <code>object</code> | User information |
-| opt.username | <code>string</code> | Username |
-| opt.password | <code>string</code> | Password |
 
 ### rosterManage.asyncDeleteRoster(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage__asyncdeleteroster}
 Delete friend

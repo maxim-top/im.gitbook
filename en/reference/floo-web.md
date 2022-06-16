@@ -96,7 +96,165 @@ token login
         im.tokenLogin(user_id, token)
       
 ```
-## rosterManager
+## userManage
+
+User registeration
+```
+        userManage.asyncRegister({
+          username,
+          password
+        }).then(() => {
+          //
+        });
+      
+```
+Get token of logged-in user
+```
+        const token =  im.userManage.getToken();
+      
+```
+Get uid of logged-in user
+```
+        const cuid = im.userManage.getUid();
+      
+```
+Get appid
+```
+        const appid = im.userManage.getAppid();
+      
+```
+Get recent reply list
+```
+        const list = im.userManage.getConversationList();
+      
+```
+Send verification code
+```
+        im.userManage
+        .asyncUserSendSms({
+          mobile,
+        })
+        .then(() => {
+          //
+        });
+      
+```
+Send verification code (in image)
+```
+        im.userManage
+        .asyncCaptchaSms({
+          captcha,
+          image_id,
+          mobile,
+        })
+        .then(() => {
+          //
+        });
+      
+```
+Check whether username is available
+```
+        im.userManage.asyncUserNameCheck(username).then(() => {
+          //
+        });
+      
+```
+Bind mobile number - bind with signature
+```
+        im.userManage.asyncUserMobileBindSign({
+            mobile,
+            sign,
+          }).then(() => {
+            //
+          });
+      
+```
+Login with mobile number and verification vode
+```
+        im.userManage.asyncUserMobileLogin({
+          captcha,
+          mobile
+        })
+        .then(res => {
+          //
+        });
+      
+```
+Update mobile number
+```
+        im.userManage
+        .asyncUpdateMobile({ mobile })
+        .then(() => {
+          //
+        });
+      
+```
+Update avatar
+```
+        im.userManage
+        .asyncUpdateAvatar({
+          avatar
+        })
+        .then(() => {
+          //
+        });
+      
+```
+Update nickname
+```
+        im.userManage.asyncUpdateNickName({ nick_name }).then(() => {
+          //
+        });
+      
+```
+Get user profile
+```
+        im.userManage.asyncGetProfile(true).then(res => {
+          //
+        })
+      
+```
+Update user profile
+```
+        im.userManage.asyncUpdateProfile({
+          username,
+          avatar
+        }).then(res => {
+          //
+        })
+      
+```
+Get user settings
+```
+        im.userManage.asyncGetSettings().then(res => {
+          //
+        })
+      
+```
+Modify user settings
+```
+        im.userManage
+        .asyncUpdateSettings({ 
+          "auth_answer": "string",
+          "auth_mode": 0,
+          "auth_question": "string",
+          "auto_download": true,
+          "group_confirm": true,
+          "id": 0,
+          "no_push": true,
+          "no_push_detail": true,
+          "no_push_end_hour": 0,
+          "no_push_start_hour": 0,
+          "no_sounds": true,
+          "push_nick_name": "string",
+          "user_id",
+          "vibratory": true
+        }).then(() => {
+          //
+        });
+      
+```
+## rosterManage
 
 Get friend id list
 ```
@@ -110,16 +268,6 @@ Get friend information
         im.rosterManage.asyncGetRosterInfo(state.sid).then(res => {
           //
         })
-      
-```
-User registeration
-```
-        rosterManage.asyncRegester({
-          username,
-          password
-        }).then(() => {
-          //
-        });
       
 ```
 Get user details by id list
@@ -259,7 +407,7 @@ Search for user by ID
         });
       
 ```
-## groupManager
+## groupManage
 
 Get group information
 ```
@@ -661,7 +809,7 @@ Delete group file
         });
       
 ```
-## sysManager
+## sysManage
 
 Send message to friend
 ```
@@ -761,154 +909,6 @@ Upload file
 Assemble image path
 ```
         const image = im.sysManage.getImage({ avatar, type='roster', thumbnail=true });
-      
-```
-## userManager
-
-Get token of logged-in user
-```
-        const token =  im.userManage.getToken();
-      
-```
-Get uid of logged-in user
-```
-        const cuid = im.userManage.getUid();
-      
-```
-Get appid
-```
-        const appid = im.userManage.getAppid();
-      
-```
-Get recent reply list
-```
-        const list = im.userManage.getConversationList();
-      
-```
-Send verification code
-```
-        im.userManage
-        .asyncUserSendSms({
-          mobile,
-        })
-        .then(() => {
-          //
-        });
-      
-```
-Send verification code (in image)
-```
-        im.userManage
-        .asyncCaptchaSms({
-          captcha,
-          image_id,
-          mobile,
-        })
-        .then(() => {
-          //
-        });
-      
-```
-Check whether username is available
-```
-        im.userManage.asyncUserNameCheck(username).then(() => {
-          //
-        });
-      
-```
-Bind mobile number - bind with signature
-```
-        im.userManage.asyncUserMobileBindSign({
-            mobile,
-            sign,
-          }).then(() => {
-            //
-          });
-      
-```
-Login with mobile number and verification vode
-```
-        im.userManage.asyncUserMobileLogin({
-          captcha,
-          mobile
-        })
-        .then(res => {
-          //
-        });
-      
-```
-Update mobile number
-```
-        im.userManage
-        .asyncUpdateMobile({ mobile })
-        .then(() => {
-          //
-        });
-      
-```
-Update avatar
-```
-        im.userManage
-        .asyncUpdateAvatar({
-          avatar
-        })
-        .then(() => {
-          //
-        });
-      
-```
-Update nickname
-```
-        im.userManage.asyncUpdateNickName({ nick_name }).then(() => {
-          //
-        });
-      
-```
-Get user profile
-```
-        im.userManage.asyncGetProfile(true).then(res => {
-          //
-        })
-      
-```
-Update user profile
-```
-        im.userManage.asyncUpdateProfile({
-          username,
-          avatar
-        }).then(res => {
-          //
-        })
-      
-```
-Get user settings
-```
-        im.userManage.asyncGetSettings().then(res => {
-          //
-        })
-      
-```
-Modify user settings
-```
-        im.userManage
-        .asyncUpdateSettings({ 
-          "auth_answer": "string",
-          "auth_mode": 0,
-          "auth_question": "string",
-          "auto_download": true,
-          "group_confirm": true,
-          "id": 0,
-          "no_push": true,
-          "no_push_detail": true,
-          "no_push_end_hour": 0,
-          "no_push_start_hour": 0,
-          "no_sounds": true,
-          "push_nick_name": "string",
-          "user_id",
-          "vibratory": true
-        }).then(() => {
-          //
-        });
       
 ```
 ## Event notification
