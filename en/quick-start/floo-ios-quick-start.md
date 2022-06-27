@@ -29,7 +29,7 @@ Hint: If cocoapods is not installed, please refer to [CocoaPods installation](ht
 
 ### Mode II: Manual integration
 
-1. [Download floo-ios.framework](https://package.lanyingim.com/floo-ios-v2.2.0.zip) , and then reference the file to your project.
+1. [Download floo-ios.framework](https://package.lanyingim.com/floo-ios.zip) , and then reference the file to your project.
 2.  Add system library dependencies
 
     Before importing SDK to your project, please add the following system library references.
