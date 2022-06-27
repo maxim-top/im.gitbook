@@ -29,7 +29,7 @@
 
 ### 方式二：手动集成
 
-1. [下载 floo-ios.framework](https://package.maximtop.com/floo-ios-v2.2.0.zip) , 然后将文件引用到您的项目中。
+1. [下载 floo-ios.framework](https://package.maximtop.com/floo-ios.zip) , 然后将文件引用到您的项目中。
 2.  添加系统库依赖
 
     您除了在工程中导入 SDK 之前，还需要添加如下系统库的引用。
