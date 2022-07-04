@@ -43,7 +43,9 @@ $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 * 操作系统：
 
 > Linux 推荐 Ubuntu 18.04 或 CentOS 7/8
+
 > 树莓派 推荐 Ubuntu 18.04 rasp3 
+
 > MacOS 推荐 Catalina 10.15
 
 * 硬件配置：
@@ -51,7 +53,8 @@ $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 > CPU 4核 内存 8G 硬盘100G
 
 * 如果选择安装集群版， 需要3台或更多服务器
-* 下载安装包 maxim.ctl
+
+* 安装方式分为在线安装和离线安装。离线安装不需要访问外网，适合没有外网的服务器来安装，但需要每个月激活一次license， 现在只支持Ubuntu 18.04
 
 ### 单机版
 
@@ -233,6 +236,158 @@ sudo ./maxim.ctl set_config --config kafka-server=172.16.1.10:9092,172.16.1.9:90
 ## file-storage-bucket-chat-file-chatroom为阿里云OSS的bucket名字
 sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-key-id=xxx file-storage-access-key-secret=xxx file-storage-access-endpoint=oss-cn-beijing.aliyuncs.com file-storage-bucket-chat-file=chat-xxx file-storage-bucket-user-profile=profile-xxx file-storage-bucket-chat-history=history-xxx file-storage-bucket-chat-file-chatroom=chat-file-chatroom-xxx
 ```
+
+### 单机版(离线安装)
+
+1.下载[离线安装包](https://package.lanyingim.com/lanying-im/lanying-im-server.iso), 并上传到用来私有部署的服务器上。
+
+2.执行下面命令挂载离线安装包，并添加maxim.ctl到可执行路径。
+
+```
+mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanying/maxim.ctl /usr/bin/
+```
+运行截图为：
+
+![挂载离线安装包，并添加maxim.ctl到可执行路径](../assets/offline_mount_and_add_exec.png)
+
+3.生成离线配置文件
+
+[登录控制台](https://console.lanyingim.com)，选择APP, 进入私有云页面，生成离线配置文件,并上传到服务器上。
+
+操作截图为：
+
+![生成离线配置文件](../assets/generate_offline_install_configration.png)
+
+4.运行安装
+
+```
+sudo maxim.ctl install --config-file maxim.config.*.txt
+```
+
+开始执行的截图：
+
+![单机版(离线安装）开始安装](../assets/single_offline_start_install.png)
+
+安装完成的截图：
+
+![单机版(离线安装）安装完成](../assets/single_offline_finish_install.png)
+
+提示：等待安装完成，耗时15分钟左右，即可安装完成。
+
+5.生成集群LicenseKey
+```
+sudo maxim.ctl export license-key
+```
+命令截图为：
+
+![生成集群LicenseKey](../assets/single_offline_export_license_key.png)
+
+6.激活集群
+
+在控制台私有云页面点击激活集群，在弹出的对话框中，选择集群规格，输入LicenseKey, 点击"激活集群", 然后将获取的激活命令在集群中执行
+
+操作截图为：
+
+![控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击"激活集群"](../assets/single_offline_activate.png)
+
+![激活命令](../assets/single_offline_activate_success.png)
+
+![在集群中执行激活命令](../assets/single_offline_exec_activate.png)
+
+### 集群版(离线安装)
+
+1.配置集群访问权限
+
+配置第一台主机对其余主机的ssh权限，以三台主机 172.16.0.78 、172.16.0.79 、172.16.0.80 为例。
+
+ssh登录master节点（172.16.0.78）
+
+执行如下命令,生成ssh用的公私钥：
+
+```
+sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''
+```
+
+执行结果截图：
+
+![集群权限步骤一](../assets/3-1-1.config_cluster_s1.png)
+
+执行如下命令, 将命令的输出分别在主机172.16.0.78 ，172.16.0.79 ，172.16.0.80上执行
+
+```
+sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
+```
+
+命令输出结果截图：
+
+![集群权限步骤二](../assets/3-1-2.config_cluster_s2.png)
+
+命令输出在172.16.0.78的执行结果：
+
+![集群权限步骤三](../assets/3-1-3.config_cluster_s3.png)
+
+命令输出在172.16.0.79的执行结果：
+
+![集群权限步骤四](../assets/3-1-4.config_cluster_s4.png)
+
+命令输出在172.16.0.80的执行结果：
+
+![集群权限步骤五](../assets/3-1-5.config_cluster_s5.png)
+
+2.下载[离线安装包](https://package.lanyingim.com/lanying-im/lanying-im-server.iso), 并上传到用来私有部署的服务器上。
+
+3.执行下面命令挂载离线安装包，并添加maxim.ctl到可执行路径。
+
+```
+mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanying/maxim.ctl /usr/bin/
+```
+运行截图为：
+
+![挂载离线安装包，并添加maxim.ctl到可执行路径](../assets/offline_mount_and_add_exec.png)
+
+4.生成离线配置文件
+
+[登录控制台](https://console.lanyingim.com)，选择APP, 进入私有云页面，生成离线配置文件,并上传到服务器上。
+
+操作截图为：
+
+![生成离线配置文件](../assets/generate_offline_install_configration.png)
+
+5.运行安装
+
+```
+sudo maxim.ctl install --config-file maxim.config.*.txt --nodelist 172.16.0.78 172.16.0.79 172.16.0.80
+```
+
+开始执行的截图：
+
+![集群版(离线安装）开始安装](../assets/multi_offline_start_install.png)
+
+安装完成的截图：
+
+![集群版(离线安装）安装完成](../assets/multi_offline_finish_install.png)
+
+提示：等待安装完成，耗时20分钟左右，即可安装完成。
+
+6.生成集群LicenseKeys
+```
+sudo maxim.ctl export license-key
+```
+命令截图为：
+
+![生成集群LicenseKey](../assets/single_offline_export_license_key.png)
+
+7.激活集群
+
+在控制台私有云页面点击激活集群，在弹出的对话框中，选择集群规格，输入LicenseKey, 点击"激活集群", 然后将获取的激活命令在集群中执行
+
+操作截图为：
+
+![控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击"激活集群"](../assets/single_offline_activate.png)
+
+![激活命令](../assets/single_offline_activate_success.png)
+
+![在集群中执行激活命令](../assets/single_offline_exec_activate.png)
 
 ## 其他注意事项
 

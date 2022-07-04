@@ -10,7 +10,7 @@
         "readme": "README.md"
     },
     "plugins": [
-        "-livereload",
+        "livereload",
         "github-buttons@2.1.0",
         "edit-link@^2.0.2",
         "fontsettings@^2.0.0",
