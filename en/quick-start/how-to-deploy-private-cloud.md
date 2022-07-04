@@ -295,6 +295,8 @@ Screenshot of the operation:
 
 ![Execute activation command in cluster](../assets/single_offline_exec_activate.png)
 
+7.After the activation is completed, perform steps 5 and 6 to update the license of the cluster every month, otherwise the cluster will prevent users from logging in because the license expires. If the configuration or administrator token is modified in the console, steps 5 and 6 also need to be performed to update the cluster.
+
 ### Cluster version (Offline installation)
 
 1.Configure cluster access
@@ -389,6 +391,8 @@ Screenshot of the operation:
 ![Activate command](../assets/single_offline_activate_success.png)
 
 ![Execute activation command in cluster](../assets/single_offline_exec_activate.png)
+
+8.After the activation is completed, perform steps 6 and 7 to update the license of the cluster every month, otherwise the cluster will prevent users from logging in because the license expires. If the configuration or administrator token is modified in the console, steps 6 and 7 also need to be performed to update the cluster.
 
 ## Other considerations
 

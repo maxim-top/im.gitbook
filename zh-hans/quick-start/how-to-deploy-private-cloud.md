@@ -294,6 +294,8 @@ sudo maxim.ctl export license-key
 
 ![在集群中执行激活命令](../assets/single_offline_exec_activate.png)
 
+7.激活完成后每个月都要执行步骤5和步骤6来更新集群的License,否则集群会因为License过期而阻止用户登录。如果在控制台修改了配置或管理员Token, 也需要执行步骤5和步骤6来更新到集群。
+
 ### 集群版(离线安装)
 
 1.配置集群访问权限
@@ -388,6 +390,8 @@ sudo maxim.ctl export license-key
 ![激活命令](../assets/single_offline_activate_success.png)
 
 ![在集群中执行激活命令](../assets/single_offline_exec_activate.png)
+
+8.激活完成后每个月都要执行步骤6和步骤7来更新集群的License,否则集群会因为License过期而阻止用户登录。如果在控制台修改了配置或管理员Token, 也需要执行步骤6和步骤7来更新到集群。
 
 ## 其他注意事项
 
