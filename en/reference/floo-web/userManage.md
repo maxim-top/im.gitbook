@@ -6,6 +6,9 @@
     * [.getUid()](#module_usermanage__getuid) ⇒ <code>number</code>
     * [.getAppid()](#module_usermanage__getappid) ⇒ <code>string</code>
     * [.getConversationList()](#module_usermanage__getconversationlist) ⇒ [<code>Array.&lt;ConversationItem&gt;</code>](types.md#module_types__conversationitem)
+    * [.getDeviceSN()](#module_usermanage__getdevicesn) ⇒ <code>number</code>
+    * [.asyncBindDeviceToken(param)](#module_usermanage__asyncbinddevicetoken) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUnbindDeviceToken(param)](#module_usermanage__asyncunbinddevicetoken) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncRegister(opt)](#module_usermanage__asyncregister) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
     * [.asyncUpdateAvatar(params)](#module_usermanage__asyncupdateavatar) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncUpdateNickName(params)](#module_usermanage__asyncupdatenickname) ⇒ <code>Promise.&lt;boolean&gt;</code>
@@ -33,6 +36,35 @@ Get appid
 Get list of recent conversations
 
 **Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+### userManage.getDeviceSN() ⇒ <code>number</code> {#module_usermanage__getdevicesn}
+Get device serial number
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>number</code> - Device serial number
+### userManage.asyncBindDeviceToken(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncbinddevicetoken}
+Bind push device
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| param | <code>object</code> | Bind request |
+| param.device_sn | <code>number</code> | Device serial number |
+| param.notifier_name | <code>string</code> | The certificate name, that is, the name set when uploading the certificate in the LanyingIM Console. |
+| param.device_token | <code>string</code> | Push device token |
+
+### userManage.asyncUnbindDeviceToken(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncunbinddevicetoken}
+Unbind push device
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not   
+
+| Param | Type | Description |
+| --- | --- | --- |
+| param | <code>object</code> | Unbind request |
+| param.deviceSn | <code>number</code> | Device serial number |
+
 ### userManage.asyncRegister(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_usermanage__asyncregister}
 User registeration
 

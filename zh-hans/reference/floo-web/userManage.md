@@ -6,6 +6,9 @@
     * [.getUid()](#module_usermanage__getuid) ⇒ <code>number</code>
     * [.getAppid()](#module_usermanage__getappid) ⇒ <code>string</code>
     * [.getConversationList()](#module_usermanage__getconversationlist) ⇒ [<code>Array.&lt;ConversationItem&gt;</code>](types.md#module_types__conversationitem)
+    * [.getDeviceSN()](#module_usermanage__getdevicesn) ⇒ <code>number</code>
+    * [.asyncBindDeviceToken(param)](#module_usermanage__asyncbinddevicetoken) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUnbindDeviceToken(param)](#module_usermanage__asyncunbinddevicetoken) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncRegister(opt)](#module_usermanage__asyncregister) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
     * [.asyncUpdateAvatar(params)](#module_usermanage__asyncupdateavatar) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncUpdateNickName(params)](#module_usermanage__asyncupdatenickname) ⇒ <code>Promise.&lt;boolean&gt;</code>
@@ -33,6 +36,35 @@
 获取最近会话列表
 
 **Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+### userManage.getDeviceSN() ⇒ <code>number</code> {#module_usermanage__getdevicesn}
+获取设备序号
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>number</code> - 设备序号  
+### userManage.asyncBindDeviceToken(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncbinddevicetoken}
+绑定推送设备
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| param | <code>object</code> | 绑定请求 |
+| param.device_sn | <code>number</code> | 设备序号 |
+| param.notifier_name | <code>string</code> | 证书名称，即在蓝莺IM控制台内上传证书时候设置的名称。 |
+| param.device_token | <code>string</code> | 推送设备Token |
+
+### userManage.asyncUnbindDeviceToken(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncunbinddevicetoken}
+解绑推送设备
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| param | <code>object</code> | 解绑请求 |
+| param.deviceSn | <code>number</code> | 设备序号 |
+
 ### userManage.asyncRegister(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_usermanage__asyncregister}
 用户注册
 
