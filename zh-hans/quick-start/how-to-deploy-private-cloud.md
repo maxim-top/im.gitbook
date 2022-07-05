@@ -261,7 +261,7 @@ mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanyin
 4.运行安装
 
 ```
-sudo maxim.ctl install --config-file maxim.config.*.txt
+sudo maxim.ctl install --config-file maxim.*.conf
 ```
 
 开始执行的截图：
@@ -358,7 +358,7 @@ mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanyin
 5.运行安装
 
 ```
-sudo maxim.ctl install --config-file maxim.config.*.txt --nodelist 172.16.0.78 172.16.0.79 172.16.0.80
+sudo maxim.ctl install --config-file maxim.*.conf --nodelist 172.16.0.78 172.16.0.79 172.16.0.80
 ```
 
 开始执行的截图：

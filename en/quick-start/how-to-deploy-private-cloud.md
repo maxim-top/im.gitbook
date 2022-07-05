@@ -261,7 +261,7 @@ Screenshot of the operation:
 4.Run installation
 
 ```
-sudo maxim.ctl install --config-file maxim.config.*.txt
+sudo maxim.ctl install --config-file maxim.*.conf
 ```
 
 Screenshot of execution started:
@@ -359,7 +359,7 @@ Screenshot of the operation:
 5.Run the installation
 
 ```
-sudo maxim.ctl install --config-file maxim.config.*.txt --nodelist 172.16.0.78 172.16.0.79 172.16.0.80
+sudo maxim.ctl install --config-file maxim.*.conf --nodelist 172.16.0.78 172.16.0.79 172.16.0.80
 ```
 
 Screenshot of execution started:
