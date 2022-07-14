@@ -211,7 +211,7 @@ devicetoken.When disconnected from Lanying IM server, remote push is stopped by 
 
 ### Single chat
 
-Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object.
+Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object. See demo code in [Message operation](#Message operation)
 
 ### Group chat
 
