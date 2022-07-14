@@ -111,7 +111,7 @@ config.appID = @“Your AppID”;
 提供两种登录模式：一种是普通手动登录，另一种是快速登录模式
 
 ```
-[[[BMXClient sharedClient] userService] signInById:userid password:password completion:^(BMXError *error) {
+[[BMXClient sharedClient] signInById:userid password:password completion:^(BMXError *error) {
         if (!error) {
             NSLog(@"登录成功 username = %lld , password = %@",userid, password);
           } else {
@@ -119,14 +119,14 @@ config.appID = @“Your AppID”;
         }
      }];
 
-     // 快速登录,不需要获取token
-     [[[BMXClient sharedClient] userService] fastSignInById: userid password:password  completion:^(BMXError *error) {
-         if (!error) {
-             NSLog(@"登录成功 username = %@ , password = %@", userid, password);
-         } else {
-             NSLog(@"失败 errorCode = %ld ", error.errorCode);
-         }
-      }];
+// 快速登录（跳过获取token环节）
+[[BMXClient sharedClient] fastSignInById: userid password:password  completion:^(BMXError *error) {
+ if (!error) {
+     NSLog(@"登录成功 username = %@ , password = %@", userid, password);
+ } else {
+     NSLog(@"失败 errorCode = %ld ", error.errorCode);
+ }
+}];
 ```
 
 ### 四、会话列表功能
