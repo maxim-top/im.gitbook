@@ -211,7 +211,7 @@ config.appID = @“Your AppID”;
 
 ### 单聊
 
-单聊是最基本的聊天界面，提供文字、表情、语音片段、图片等多种输入内容，解决 App 内用户的沟通瓶颈。单聊的 BMXConversationType 是 BMXConversationSingle，toId 是单聊对象的 userId。
+单聊是最基本的聊天界面，提供文字、表情、语音片段、图片等多种输入内容，解决 App 内用户的沟通瓶颈。单聊的 BMXConversationType 是 BMXConversationSingle，toId 是单聊对象的 userId。示例代码见后文“消息操作”一节：[消息操作](#%E6%B6%88%E6%81%AF%E6%93%8D%E4%BD%9C)
 
 ### 群聊
 
