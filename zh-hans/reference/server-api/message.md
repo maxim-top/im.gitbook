@@ -45,9 +45,9 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| limit | int32 | true | limit |
-| msg_id_start | int64 | true | msg_id_start |
-| opposite_id | int64 | true | opposite_id |
+| limit | int32 | false | 最多拉取多少条 |
+| msg_id_start | int64 | false | 从哪条消息开始拉取：传0表示最新的一条消息 |
+| opposite_id | int64 | false | 会话ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -56,42 +56,23 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ is_last | boolean |  |
-|⇥ messages | array[object] |  |
-|⇥⇥ attachment | string |  |
-|⇥⇥ config | string |  |
-|⇥⇥ content | string |  |
-|⇥⇥ ctype | string |  |
-|⇥⇥ ext | string |  |
-|⇥⇥ from_xid | object |  |
-|⇥⇥⇥ device_sn | int32 |  |
-|⇥⇥⇥ set_device_sn | boolean |  |
-|⇥⇥⇥ set_uid | boolean |  |
-|⇥⇥⇥ uid | int64 |  |
-|⇥⇥ msg_id | int64 |  |
-|⇥⇥ set_attachment | boolean |  |
-|⇥⇥ set_config | boolean |  |
-|⇥⇥ set_content | boolean |  |
-|⇥⇥ set_ctype | boolean |  |
-|⇥⇥ set_ext | boolean |  |
-|⇥⇥ set_from_xid | boolean |  |
-|⇥⇥ set_msg_id | boolean |  |
-|⇥⇥ set_status | boolean |  |
-|⇥⇥ set_timestamp | boolean |  |
-|⇥⇥ set_to_xid | boolean |  |
-|⇥⇥ status | string |  |
-|⇥⇥ timestamp | int64 |  |
-|⇥⇥ to_xid | object |  |
-|⇥⇥⇥ device_sn | int32 |  |
-|⇥⇥⇥ set_device_sn | boolean |  |
-|⇥⇥⇥ set_uid | boolean |  |
-|⇥⇥⇥ uid | int64 |  |
-|⇥ messages_iterator | object |  |
-|⇥ messages_size | int32 |  |
-|⇥ next_msg_id | int64 |  |
-|⇥ set_is_last | boolean |  |
-|⇥ set_messages | boolean |  |
-|⇥ set_next_msg_id | boolean |  |
+|⇥ is_last | boolean | 是否是最后一条消息: true - 表示后面没有消息了， false - 后面还有消息 |
+|⇥ messages | array[object] | 消息列表 |
+|⇥⇥ attachment | string | 消息附件: 消息类型为图片/语音/视频/文件时，此字段会包括文件地址 |
+|⇥⇥ config | string | SDK层使用的扩展字段 |
+|⇥⇥ content | string | 消息内容 |
+|⇥⇥ ctype | string | 消息内容类型: TEXT - 文本, IMAGE - 图片, AUDIO - 语音, VIDEO - 视频, FILE - 文件, LOCATION - 位置, COMMAND - 自定义， FORWARD 转发消息 |
+|⇥⇥ ext | string | 扩展字段 |
+|⇥⇥ from_xid | object | 消息发送者 |
+|⇥⇥⇥ device_sn | int32 | 设备序号 |
+|⇥⇥⇥ uid | int64 | 用户ID |
+|⇥⇥ msg_id | int64 | 消息ID |
+|⇥⇥ status | string | 消息状态：UNREAD- 未读 ，DELIVERED - 已投递 ， READ - 已读 |
+|⇥⇥ timestamp | int64 | 消息发送时间戳（毫秒） |
+|⇥⇥ to_xid | object | 消息接收者 |
+|⇥⇥⇥ device_sn | int32 | 设备序号 |
+|⇥⇥⇥ uid | int64 | 用户ID |
+|⇥ next_msg_id | int64 | 继续拉取需要设置的消息ID, 将此消息ID设置到请求参数的msg_id_start即可继续拉取消息 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
