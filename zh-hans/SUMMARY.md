@@ -144,6 +144,7 @@
     * [推送接口](reference/server-api/push.md)
 * [博客文章](articles/README.md)
   * [产品技术](articles/product-and-technologies/README.md)
+    * [未来在非洲，每出货两台智能手机就有一台使用蓝莺 IM 的技术](articles/product-and-technologies/one-out-of-two-smartphones-sold-in-africa-has-lanying-im-in-it.md)
     * [美信拓扑 IM 登陆亚马逊云市场（中国区）](articles/product-and-technologies/maximtop-im-launched-on-amazon-cloud-market-china.md)
     * [【美信拓扑开源】IM SDK Web版开源](articles/product-and-technologies/maximtop-open-source-im-sdk-web-version.md)
     * [SaaS定价三：没有邻居的专有云](articles/product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.md)
