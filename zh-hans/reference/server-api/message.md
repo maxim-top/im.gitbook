@@ -92,7 +92,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| conversation_id | int64 | true | conversation_id |
+| conversation_id | int64 | false | 会话ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -143,7 +143,38 @@
 #### 接口描述
 > 
 
-## 5.5 发送消息{#put__message_send}
+## 5.5 撤回消息{#put__message_recall}
+
+> PUT /message/recall
+
+> POST /message/recall
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| conversation_id | int64 | true |  | 会话ID |
+| msg_id | int64 | true |  | 消息ID |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 5.6 发送消息{#put__message_send}
 
 > PUT /message/send
 
@@ -181,7 +212,7 @@
 #### 接口描述
 > 
 
-## 5.6 取指定用户的最近会话列表{#get__message_unread}
+## 5.7 取指定用户的最近会话列表{#get__message_unread}
 
 > GET /message/unread
 
