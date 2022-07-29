@@ -17,7 +17,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| value | int32 | true | value |
+| value | int32 | true | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -79,7 +79,7 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | list | array[object] | false |  |  |
 |⇥ avatar | string | true |  | 头像 url |
-|⇥ user_id | int64 | false |  | 用户ID |
+|⇥ user_id | int64 | true |  | 用户ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -110,8 +110,8 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| new_password | string | false |  | new_password 新密码 |
-| old_password | string | false |  | old_password 旧密码 |
+| new_password | string | true |  | 新密码 |
+| old_password | string | true |  | 旧密码 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -124,7 +124,65 @@
 #### 接口描述
 > 
 
-## 1.5 设备列表{#get__user_device_list}
+## 1.5 管理员修改密码{#post__user_change_password_admin}
+
+> POST /user/change_password_admin
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| password | string | true |  | 密码 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 1.6 删除用户{#delete__user_delete}
+
+> DELETE /user/delete
+
+> POST /user/delete
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| password | string | false |  | 用户密码：如果是用户TOKEN,需要设置此字段；如果是管理员TOKEN则不需设置 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 1.7 设备列表{#get__user_device_list}
 
 > GET /user/device/list
 
@@ -144,16 +202,16 @@
 | code | int32 | 返回码，200是成功 |
 | cursor | string | 游标，返回结果中缺失 cursor，表示已经返回最后一页 |
 | data | array[object] | 结果数据 |
-|⇥ device_sn | int32 |  |
+|⇥ device_sn | int32 | 设备序号 |
 |⇥ platform | int32 | 设备平台, 1:ios, 2:android, 3:windows, 4:mac, 5:linux, 6:web |
-|⇥ user_agent | string |  |
+|⇥ user_agent | string | 设备信息 |
 |⇥ user_id | int64 | 用户 ID |
 | message | string | 错误信息，如果成功，该项为null |
 | version | int64 | 版本 |
 #### 接口描述
 > 
 
-## 1.6 删除device{#delete__user_device_remove}
+## 1.8 删除device{#delete__user_device_remove}
 
 > DELETE /user/device/remove
 
@@ -170,7 +228,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| device_sn | int32 | true | device_sn |
+| device_sn | int32 | true | 设备序号 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -183,7 +241,7 @@
 #### 接口描述
 > 
 
-## 1.7 封禁用户{#put__user_disable}
+## 1.9 封禁用户{#put__user_disable}
 
 > PUT /user/disable
 
@@ -198,7 +256,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| list | array[int64] | false |  |  |
+| list | array[int64] | true |  | 用户ID列表 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -211,7 +269,7 @@
 #### 接口描述
 > 
 
-## 1.8 设置是否自动下载缩略图和文件{#put__user_download}
+## 1.10 设置是否自动下载缩略图和文件{#put__user_download}
 
 > PUT /user/download
 
@@ -228,7 +286,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| value | boolean | true | value |
+| value | boolean | true | 是否自动下载缩略图和文件： true - 是， false - 否 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -241,7 +299,7 @@
 #### 接口描述
 > 
 
-## 1.9 解禁用户{#put__user_enable}
+## 1.11 解禁用户{#put__user_enable}
 
 > PUT /user/enable
 
@@ -256,7 +314,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| list | array[int64] | false |  |  |
+| list | array[int64] | true |  | 用户ID列表 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -269,7 +327,7 @@
 #### 接口描述
 > 
 
-## 1.10 踢指定设备下线{#put__user_kick}
+## 1.12 踢指定设备下线{#put__user_kick}
 
 > PUT /user/kick
 
@@ -286,7 +344,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| device_sn | int32 | false | 不传device_sn表示踢所有设备 |
+| device_sn | int32 | false | 设备序号：不设置表示踢所有设备 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -299,7 +357,7 @@
 #### 接口描述
 > 
 
-## 1.11 列出APP下所有用户{#get__user_list}
+## 1.13 列出APP下所有用户{#get__user_list}
 
 > GET /user/list
 
@@ -314,8 +372,8 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| page_num | int32 | false | page_num |
-| page_size | int32 | false | page_size |
+| page_num | int32 | false | 页数：必须大于0，默认为1 |
+| page_size | int32 | false | 每页大小：默认每页50条 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -324,14 +382,14 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | array[object] | 结果数据 |
-|⇥ status | int32 | 0-激活，1-禁用 |
-|⇥ user_id | int64 |  |
-|⇥ username | string |  |
+|⇥ status | int32 | 0-正常，1-封禁 |
+|⇥ user_id | int64 | 用户ID |
+|⇥ username | string | 用户名 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 1.12 设置手机号码{#put__user_mobile}
+## 1.14 设置手机号码{#put__user_mobile}
 
 > PUT /user/mobile
 
@@ -348,7 +406,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| mobile | string | true | mobile |
+| mobile | string | true | 手机号码 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -361,7 +419,7 @@
 #### 接口描述
 > 
 
-## 1.13 设置昵称{#put__user_nickname}
+## 1.15 设置昵称{#put__user_nickname}
 
 > PUT /user/nickname
 
@@ -378,7 +436,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| nick_name | string | true | nick_name |
+| nick_name | string | true | 昵称 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -391,7 +449,7 @@
 #### 接口描述
 > 
 
-## 1.14 查询用户在线状态{#get__user_online_status}
+## 1.16 查询用户在线状态{#get__user_online_status}
 
 > GET /user/online_status
 
@@ -415,7 +473,7 @@
 #### 接口描述
 > 
 
-## 1.15 设置私有扩展信息{#put__user_private}
+## 1.17 设置私有扩展信息{#put__user_private}
 
 > PUT /user/private
 
@@ -432,7 +490,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-|  | string | true |  |  |
+|  | string | true |  | 私有扩展信息 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -445,7 +503,7 @@
 #### 接口描述
 > 
 
-## 1.16 获取用户信息{#get__user_profile}
+## 1.18 获取用户信息{#get__user_profile}
 
 > GET /user/profile
 
@@ -477,7 +535,7 @@
 #### 接口描述
 > 
 
-## 1.17 更新用户信息{#put__user_profile}
+## 1.19 更新用户信息{#put__user_profile}
 
 > PUT /user/profile
 
@@ -510,7 +568,7 @@
 #### 接口描述
 > 
 
-## 1.18 批量更新用户信息{#put__user_profile_batch}
+## 1.20 批量更新用户信息{#put__user_profile_batch}
 
 > PUT /user/profile/batch
 
@@ -548,7 +606,7 @@
 #### 接口描述
 > 
 
-## 1.19 设置公开扩展信息{#put__user_public}
+## 1.21 设置公开扩展信息{#put__user_public}
 
 > PUT /user/public
 
@@ -565,7 +623,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-|  | string | true |  |  |
+|  | string | true |  | 公开扩展信息 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -578,7 +636,7 @@
 #### 接口描述
 > 
 
-## 1.20 设置是否关闭推送{#put__user_push}
+## 1.22 设置是否关闭推送{#put__user_push}
 
 > PUT /user/push
 
@@ -595,7 +653,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| value | boolean | true | value |
+| value | boolean | true | 是否关闭推送： true - 关闭推送， false - 不关闭推送 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -608,7 +666,7 @@
 #### 接口描述
 > 
 
-## 1.21 绑定别名{#post__user_push_alias}
+## 1.23 绑定别名{#post__user_push_alias}
 
 > POST /user/push/alias
 
@@ -637,7 +695,7 @@
 #### 接口描述
 > 
 
-## 1.22 设置badge{#post__user_push_badge}
+## 1.24 设置badge{#post__user_push_badge}
 
 > POST /user/push/badge
 
@@ -665,7 +723,7 @@
 #### 接口描述
 > 
 
-## 1.23 设置是否关闭推送详情{#put__user_push_detail}
+## 1.25 设置是否关闭推送详情{#put__user_push_detail}
 
 > PUT /user/push/detail
 
@@ -682,7 +740,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| value | boolean | true | value |
+| value | boolean | true | 是否关闭推送详情: true - 关闭推送详情, false - 不关闭推送详情 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -695,7 +753,7 @@
 #### 接口描述
 > 
 
-## 1.24 设置推送免打扰时间{#put__user_push_limit}
+## 1.26 设置推送免打扰时间{#put__user_push_limit}
 
 > PUT /user/push/limit
 
@@ -712,8 +770,8 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| no_push_end_hour | int32 | true | no_push_end_hour |
-| no_push_start_hour | int32 | true | no_push_start_hour |
+| no_push_end_hour | int32 | true | 推送免打扰结束的小时（0-23） |
+| no_push_start_hour | int32 | true | 推送免打扰开始的小时（0-23） |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -726,7 +784,7 @@
 #### 接口描述
 > 
 
-## 1.25 设置推送昵称{#put__user_push_nickname}
+## 1.27 设置推送昵称{#put__user_push_nickname}
 
 > PUT /user/push/nickname
 
@@ -743,7 +801,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| value | string | true | value |
+| value | string | true | 推送昵称 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -756,7 +814,7 @@
 #### 接口描述
 > 
 
-## 1.26 获取标签{#get__user_push_tag}
+## 1.28 获取标签{#get__user_push_tag}
 
 > GET /user/push/tag
 
@@ -779,7 +837,7 @@
 #### 接口描述
 > 
 
-## 1.27 绑定标签{#post__user_push_tag}
+## 1.29 绑定标签{#post__user_push_tag}
 
 > POST /user/push/tag
 
@@ -794,7 +852,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| tags | array[string] | false |  |  |
+| tags | array[string] | true |  | 标签列表 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -807,7 +865,7 @@
 #### 接口描述
 > 
 
-## 1.28 解绑标签{#delete__user_push_tag}
+## 1.30 解绑标签{#delete__user_push_tag}
 
 > DELETE /user/push/tag
 
@@ -822,7 +880,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| tags | array[string] | false |  |  |
+| tags | array[string] | true |  | 标签列表 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -835,7 +893,7 @@
 #### 接口描述
 > 
 
-## 1.29 删除所有标签{#delete__user_push_tag_all}
+## 1.31 删除所有标签{#delete__user_push_tag_all}
 
 > DELETE /user/push/tag/all
 
@@ -858,7 +916,7 @@
 #### 接口描述
 > 
 
-## 1.30 批量注册用户{#post__user_register_batch}
+## 1.32 批量注册用户{#post__user_register_batch}
 
 > POST /user/register/batch
 
@@ -874,8 +932,8 @@
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | list | array[object] | false |  |  |
-|⇥ password | string | true |  |  |
-|⇥ username | string | true |  |  |
+|⇥ password | string | true |  | 密码 |
+|⇥ username | string | true |  | 用户名 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -892,7 +950,7 @@
 #### 接口描述
 > 
 
-## 1.31 注册推送用户{#post__user_register_push}
+## 1.33 注册推送用户{#post__user_register_push}
 
 > POST /user/register/push
 
@@ -909,10 +967,10 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | alias | string | false |  | 别名 |
 | device_guid | string | false |  | 设备ID |
-| password | string | true |  |  |
+| password | string | true |  | 密码 |
 | push_token | string | false |  | 推送token |
 | sign | string | false |  | 签名 |
-| username | string | true |  |  |
+| username | string | true |  | 用户名 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -924,25 +982,25 @@
 |⇥ auth_answer | string | 验证问题答案 |
 |⇥ auth_mode | int32 | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 |⇥ auth_question | string | 验证问题 |
-|⇥ auto_download | boolean | 是否自动下载 |
+|⇥ auto_download | boolean | 是否自动下载: true - 自动下载, false - 不自动下载 |
 |⇥ group_confirm | boolean | 邀请入群时是否需要用户确认: true - 需要用户同意才可加入， false - 自动同意邀请 |
 |⇥ id | int64 |  |
-|⇥ no_push | boolean | 是否关闭推送消息 |
-|⇥ no_push_detail | boolean | 是否推送详情 |
-|⇥ no_push_end_hour | int32 | 推送免打扰结束时间 |
-|⇥ no_push_start_hour | int32 | 推送免打扰开始时间 |
-|⇥ no_sounds | boolean | 收到消息时是否静音 |
+|⇥ no_push | boolean | 是否关闭推送消息: true - 关闭推送消息, false - 不关闭推送消息 |
+|⇥ no_push_detail | boolean | 是否推送详情: true - 推送详情, false - 不推送详情 |
+|⇥ no_push_end_hour | int32 | 推送免打扰结束时间（小时 0-23） |
+|⇥ no_push_start_hour | int32 | 推送免打扰开始时间（小时 0-23） |
+|⇥ no_sounds | boolean | 收到消息时是否静音: true - 静音, false - 不静音 |
 |⇥ push_nick_name | string | 推送昵称 |
 |⇥ push_token | string | 推送token |
-|⇥ silence_end_time | int32 | 推送不提醒结束时间 |
-|⇥ silence_start_time | int32 | 推送不提醒开始时间 |
+|⇥ silence_end_time | int32 | 推送不提醒结束时间（小时 0-23） |
+|⇥ silence_start_time | int32 | 推送不提醒开始时间（小时 0-23） |
 |⇥ user_id | int64 | 用户ID |
-|⇥ vibratory | boolean | 收到消息时否振动 |
+|⇥ vibratory | boolean | 收到消息时否振动: true - 振动， false - 不振动 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 1.32 注册用户{#post__user_register_v2}
+## 1.34 注册用户{#post__user_register_v2}
 
 > POST /user/register/v2
 
@@ -957,8 +1015,8 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| password | string | true |  |  |
-| username | string | true |  |  |
+| password | string | true |  | 密码 |
+| username | string | true |  | 用户名 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -970,25 +1028,25 @@
 |⇥ auth_answer | string | 验证问题答案 |
 |⇥ auth_mode | int32 | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 |⇥ auth_question | string | 验证问题 |
-|⇥ auto_download | boolean | 是否自动下载 |
+|⇥ auto_download | boolean | 是否自动下载: true - 自动下载, false - 不自动下载 |
 |⇥ group_confirm | boolean | 邀请入群时是否需要用户确认: true - 需要用户同意才可加入， false - 自动同意邀请 |
 |⇥ id | int64 |  |
-|⇥ no_push | boolean | 是否关闭推送消息 |
-|⇥ no_push_detail | boolean | 是否推送详情 |
-|⇥ no_push_end_hour | int32 | 推送免打扰结束时间 |
-|⇥ no_push_start_hour | int32 | 推送免打扰开始时间 |
-|⇥ no_sounds | boolean | 收到消息时是否静音 |
+|⇥ no_push | boolean | 是否关闭推送消息: true - 关闭推送消息, false - 不关闭推送消息 |
+|⇥ no_push_detail | boolean | 是否推送详情: true - 推送详情, false - 不推送详情 |
+|⇥ no_push_end_hour | int32 | 推送免打扰结束时间（小时 0-23） |
+|⇥ no_push_start_hour | int32 | 推送免打扰开始时间（小时 0-23） |
+|⇥ no_sounds | boolean | 收到消息时是否静音: true - 静音, false - 不静音 |
 |⇥ push_nick_name | string | 推送昵称 |
 |⇥ push_token | string | 推送token |
-|⇥ silence_end_time | int32 | 推送不提醒结束时间 |
-|⇥ silence_start_time | int32 | 推送不提醒开始时间 |
+|⇥ silence_end_time | int32 | 推送不提醒结束时间（小时 0-23） |
+|⇥ silence_start_time | int32 | 推送不提醒开始时间（小时 0-23） |
 |⇥ user_id | int64 | 用户ID |
-|⇥ vibratory | boolean | 收到消息时否振动 |
+|⇥ vibratory | boolean | 收到消息时否振动: true - 振动， false - 不振动 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 1.33 获取用户设置{#get__user_settings}
+## 1.35 获取用户设置{#get__user_settings}
 
 > GET /user/settings
 
@@ -1010,25 +1068,25 @@
 |⇥ auth_answer | string | 验证问题答案 |
 |⇥ auth_mode | int32 | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 |⇥ auth_question | string | 验证问题 |
-|⇥ auto_download | boolean | 是否自动下载 |
+|⇥ auto_download | boolean | 是否自动下载: true - 自动下载, false - 不自动下载 |
 |⇥ group_confirm | boolean | 邀请入群时是否需要用户确认: true - 需要用户同意才可加入， false - 自动同意邀请 |
 |⇥ id | int64 |  |
-|⇥ no_push | boolean | 是否关闭推送消息 |
-|⇥ no_push_detail | boolean | 是否推送详情 |
-|⇥ no_push_end_hour | int32 | 推送免打扰结束时间 |
-|⇥ no_push_start_hour | int32 | 推送免打扰开始时间 |
-|⇥ no_sounds | boolean | 收到消息时是否静音 |
+|⇥ no_push | boolean | 是否关闭推送消息: true - 关闭推送消息, false - 不关闭推送消息 |
+|⇥ no_push_detail | boolean | 是否推送详情: true - 推送详情, false - 不推送详情 |
+|⇥ no_push_end_hour | int32 | 推送免打扰结束时间（小时 0-23） |
+|⇥ no_push_start_hour | int32 | 推送免打扰开始时间（小时 0-23） |
+|⇥ no_sounds | boolean | 收到消息时是否静音: true - 静音, false - 不静音 |
 |⇥ push_nick_name | string | 推送昵称 |
 |⇥ push_token | string | 推送token |
-|⇥ silence_end_time | int32 | 推送不提醒结束时间 |
-|⇥ silence_start_time | int32 | 推送不提醒开始时间 |
+|⇥ silence_end_time | int32 | 推送不提醒结束时间（小时 0-23） |
+|⇥ silence_start_time | int32 | 推送不提醒开始时间（小时 0-23） |
 |⇥ user_id | int64 | 用户ID |
-|⇥ vibratory | boolean | 收到消息时否振动 |
+|⇥ vibratory | boolean | 收到消息时否振动: true - 振动， false - 不振动 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 1.34 修改用户设置{#put__user_settings}
+## 1.36 修改用户设置{#put__user_settings}
 
 > PUT /user/settings
 
@@ -1048,20 +1106,20 @@
 | auth_answer | string | false |  | 验证问题答案 |
 | auth_mode | int32 | false |  | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 | auth_question | string | false |  | 验证问题 |
-| auto_download | boolean | false |  | 是否自动下载 |
+| auto_download | boolean | false |  | 是否自动下载: true - 自动下载, false - 不自动下载 |
 | group_confirm | boolean | false |  | 邀请入群时是否需要用户确认: true - 需要用户同意才可加入， false - 自动同意邀请 |
 | id | int64 | false |  |  |
-| no_push | boolean | false |  | 是否关闭推送消息 |
-| no_push_detail | boolean | false |  | 是否推送详情 |
-| no_push_end_hour | int32 | false |  | 推送免打扰结束时间 |
-| no_push_start_hour | int32 | false |  | 推送免打扰开始时间 |
-| no_sounds | boolean | false |  | 收到消息时是否静音 |
+| no_push | boolean | false |  | 是否关闭推送消息: true - 关闭推送消息, false - 不关闭推送消息 |
+| no_push_detail | boolean | false |  | 是否推送详情: true - 推送详情, false - 不推送详情 |
+| no_push_end_hour | int32 | false |  | 推送免打扰结束时间（小时 0-23） |
+| no_push_start_hour | int32 | false |  | 推送免打扰开始时间（小时 0-23） |
+| no_sounds | boolean | false |  | 收到消息时是否静音: true - 静音, false - 不静音 |
 | push_nick_name | string | false |  | 推送昵称 |
 | push_token | string | false |  | 推送token |
-| silence_end_time | int32 | false |  | 推送不提醒结束时间 |
-| silence_start_time | int32 | false |  | 推送不提醒开始时间 |
+| silence_end_time | int32 | false |  | 推送不提醒结束时间（小时 0-23） |
+| silence_start_time | int32 | false |  | 推送不提醒开始时间（小时 0-23） |
 | user_id | int64 | true |  | 用户ID |
-| vibratory | boolean | false |  | 收到消息时否振动 |
+| vibratory | boolean | false |  | 收到消息时否振动: true - 振动， false - 不振动 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -1074,7 +1132,7 @@
 #### 接口描述
 > 
 
-## 1.35 设置新消息是否关闭声音提醒{#put__user_sounds}
+## 1.37 设置新消息是否关闭声音提醒{#put__user_sounds}
 
 > PUT /user/sounds
 
@@ -1091,7 +1149,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| value | boolean | true | value |
+| value | boolean | true | 是否关闭声音提醒: true - 关闭声音提醒, false - 不关闭声音提醒 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -1104,7 +1162,7 @@
 #### 接口描述
 > 
 
-## 1.36 绑定token{#put__user_token_bind}
+## 1.38 绑定token{#put__user_token_bind}
 
 > PUT /user/token/bind
 
@@ -1121,7 +1179,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| device_sn | int32 | true |  | 设备SN |
+| device_sn | int32 | true |  | 设备序号 |
 | device_token | string | true |  | device token |
 | notifier_name | string | true |  | 证书名称 |
 
@@ -1136,7 +1194,7 @@
 #### 接口描述
 > 
 
-## 1.37 解绑token{#delete__user_token_unbind}
+## 1.39 解绑token{#delete__user_token_unbind}
 
 > DELETE /user/token/unbind
 
@@ -1153,7 +1211,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| deviceSn | int32 | true | deviceSn |
+| deviceSn | int32 | true | 设备序号 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -1166,7 +1224,7 @@
 #### 接口描述
 > 
 
-## 1.38 修改用户名{#put__user_username}
+## 1.40 修改用户名{#put__user_username}
 
 > PUT /user/username
 
@@ -1183,7 +1241,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| username | string | true | username |
+| username | string | true | 用户名 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -1196,7 +1254,7 @@
 #### 接口描述
 > 
 
-## 1.39 设置新消息是否振动{#put__user_vibratory}
+## 1.41 设置新消息是否振动{#put__user_vibratory}
 
 > PUT /user/vibratory
 
@@ -1213,7 +1271,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| value | boolean | true | value |
+| value | boolean | true | 是否振动： true-振动, false-不振动 |
 
 #### 响应体
 ● 200 响应数据格式：JSON

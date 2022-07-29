@@ -15,9 +15,9 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| conversation_id | int64 | true | conversation_id |
-| device_sn | int32 | true | device_sn |
-| msg_id | int64 | true | msg_id |
+| conversation_id | int64 | false | 会话ID |
+| device_sn | int32 | false | 设备序号 |
+| msg_id | int64 | false | 消息ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -45,9 +45,9 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| limit | int32 | false | 最多拉取多少条 |
-| msg_id_start | int64 | false | 从哪条消息开始拉取：传0表示最新的一条消息 |
-| opposite_id | int64 | false | 会话ID |
+| limit | int32 | true | 最多拉取多少条 |
+| msg_id_start | int64 | true | 从哪条消息开始向前拉取：传0表示最新的一条消息 |
+| opposite_id | int64 | true | 会话ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -92,7 +92,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| conversation_id | int64 | false | 会话ID |
+| conversation_id | int64 | true | 会话ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -122,11 +122,11 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| attachment | string | false |  |  |
-| config | string | false |  |  |
-| content | string | false |  |  |
+| attachment | string | true |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
+| config | string | false |  | SDK使用的扩展字段 |
+| content | string | true |  | 消息内容 |
 | content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7; |
-| ext | string | false |  |  |
+| ext | string | false |  | 扩展字段 |
 | from_user_id | int64 | false |  | 发送者的用户ID |
 | targets | array[int64] | true |  | 接收用户ID或群ID |
 | transaction_id | int64 | false |  | 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重 |
@@ -191,11 +191,11 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| attachment | string | false |  |  |
-| config | string | false |  |  |
-| content | string | false |  |  |
+| attachment | string | true |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
+| config | string | false |  | SDK使用的扩展字段 |
+| content | string | true |  | 消息内容 |
 | content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7; |
-| ext | string | false |  |  |
+| ext | string | false |  | 扩展字段 |
 | from_user_id | int64 | false |  | 发送者的用户ID |
 | targets | array[int64] | true |  | 接收用户ID或群ID |
 | transaction_id | int64 | false |  | 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重 |
@@ -231,14 +231,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | array[object] | 结果数据 |
-|⇥ conversation_id | object |  |
-|⇥⇥ device_sn | int32 |  |
-|⇥⇥ set_device_sn | boolean |  |
-|⇥⇥ set_uid | boolean |  |
-|⇥⇥ uid | int64 |  |
-|⇥ num | int32 |  |
-|⇥ set_conversation_id | boolean |  |
-|⇥ set_num | boolean |  |
+|⇥ conversation_id | object | 会话信息 |
+|⇥⇥ uid | int64 | 会话ID |
+|⇥ num | int32 | 未读消息数 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 

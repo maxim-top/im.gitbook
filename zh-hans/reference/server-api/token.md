@@ -16,7 +16,7 @@
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | device_guid | string | false |  | 设备ID, 如果设置，则返回PushToken |
-| password | string | true |  |  |
+| password | string | true |  | 密码 |
 | user_id | int64 | true |  | 用户ID，仅用于用户ID登录 |
 
 #### 响应体
@@ -32,7 +32,7 @@
 |⇥ public_key | string | 公钥 |
 |⇥ push_token | string | 推送Token |
 |⇥ store_token | string | 文件token |
-|⇥ token | string | 访问token |
+|⇥ token | string | 访问token, 即调用API时的access-token |
 |⇥ user_id | int64 | 用户ID |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
@@ -55,7 +55,7 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | device_guid | string | false |  | 设备ID, 如果设置，则返回PushToken |
 | login_name | string | true |  | 登录名，可以是手机号，邮箱，用户名 |
-| password | string | true |  |  |
+| password | string | true |  | 密码 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -70,7 +70,7 @@
 |⇥ public_key | string | 公钥 |
 |⇥ push_token | string | 推送Token |
 |⇥ store_token | string | 文件token |
-|⇥ token | string | 访问token |
+|⇥ token | string | 访问token, 即调用API时的access-token |
 |⇥ user_id | int64 | 用户ID |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
@@ -93,7 +93,7 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | device_guid | string | false |  | 设备ID, 如果设置，则返回PushToken |
 | name | string | true |  | 用户名，仅用于用户名登录 |
-| password | string | true |  |  |
+| password | string | true |  | 密码 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -108,7 +108,7 @@
 |⇥ public_key | string | 公钥 |
 |⇥ push_token | string | 推送Token |
 |⇥ store_token | string | 文件token |
-|⇥ token | string | 访问token |
+|⇥ token | string | 访问token, 即调用API时的access-token |
 |⇥ user_id | int64 | 用户ID |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
