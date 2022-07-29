@@ -31,7 +31,7 @@
 const config = {
 // dnsServer: "https://dns.lanyingim.com/v2/app_dns",
 appid: "YOUR_APP_ID",
-ws: false,
+ws: false, // uniapp版需要设置为true, web版需要设置为false
 autoLogin: true
 };
 import flooim from 'floo-2.0.0';
