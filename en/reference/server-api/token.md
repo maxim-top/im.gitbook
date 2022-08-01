@@ -16,7 +16,7 @@
 |  Parameter name |  Data Type | Required  |  Default |  Description |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | device_guid | string | false |  | Device ID, if set, returns PushToken |
-| password | string | true |  |  |
+| password | string | true |  | Password |
 | user_id | int64 | true |  | User ID, for login by user ID only |
 
 #### Response Body
@@ -32,7 +32,7 @@
 |⇥ public_key | string | Public key |
 |⇥ push_token | string | Push Token |
 |⇥ store_token | string | File token |
-|⇥ token | string | Access token |
+|⇥ token | string | Access token, The access-token when calling the API |
 |⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
@@ -55,7 +55,7 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | device_guid | string | false |  | Device ID, if set, returns PushToken |
 | login_name | string | true |  | Login name, which can be mobile number, email, username |
-| password | string | true |  |  |
+| password | string | true |  | Password |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -70,7 +70,7 @@
 |⇥ public_key | string | Public key |
 |⇥ push_token | string | Push Token |
 |⇥ store_token | string | File token |
-|⇥ token | string | Access token |
+|⇥ token | string | Access token, The access-token when calling the API |
 |⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
@@ -93,7 +93,7 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | device_guid | string | false |  | Device ID, if set, returns PushToken |
 | name | string | true |  | Username, for login by username only |
-| password | string | true |  |  |
+| password | string | true |  | Password |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -108,7 +108,7 @@
 |⇥ public_key | string | Public key |
 |⇥ push_token | string | Push Token |
 |⇥ store_token | string | File token |
-|⇥ token | string | Access token |
+|⇥ token | string | Access token, The access-token when calling the API |
 |⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description

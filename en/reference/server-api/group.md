@@ -25,9 +25,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -59,9 +59,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -80,7 +80,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -90,7 +90,8 @@
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
 |⇥ display_name | string | Group member profile |
-|⇥ join_time | int64 | Member join time |
+|⇥ expired_time | int64 | BanExpiration time(milliseconds) |
+|⇥ join_time | int64 | Member join time(milliseconds) |
 |⇥ user_id | int64 | User id |
 | message | string | Error information, null means success |
 #### Interface Description
@@ -110,8 +111,8 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| announcement_id | int64 | true | announcement_id |
-| group_id | int64 | true | group_id |
+| announcement_id | int64 | true | Announcement ID |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -122,7 +123,7 @@
 | data | object | Result data |
 |⇥ author | int64 | Announcement publisher |
 |⇥ content | string | Announcement content |
-|⇥ created_at | int64 | Announcement publish time |
+|⇥ created_at | int64 | Announcement publish time(milliseconds) |
 |⇥ group_id | int64 | Group id |
 |⇥ id | int64 | Announcement id |
 |⇥ title | string | Announcement tittle |
@@ -146,8 +147,8 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| announcement_id | int64 | true | announcement_id |
-| group_id | int64 | true | group_id |
+| announcement_id | int64 | true | Announcement ID |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -188,7 +189,7 @@
 | data | object | Result data |
 |⇥ author | int64 | Announcement publisher |
 |⇥ content | string | Announcement content |
-|⇥ created_at | int64 | Announcement publish time |
+|⇥ created_at | int64 | Announcement publish time(milliseconds) |
 |⇥ group_id | int64 | Group id |
 |⇥ id | int64 | Announcement id |
 |⇥ title | string | Announcement tittle |
@@ -210,7 +211,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -221,7 +222,7 @@
 | data | object | Result data |
 |⇥ author | int64 | Announcement publisher |
 |⇥ content | string | Announcement content |
-|⇥ created_at | int64 | Announcement publish time |
+|⇥ created_at | int64 | Announcement publish time(milliseconds) |
 |⇥ group_id | int64 | Group id |
 |⇥ id | int64 | Announcement id |
 |⇥ title | string | Announcement tittle |
@@ -243,7 +244,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -254,7 +255,7 @@
 | data | array[object] | Result data |
 |⇥ author | int64 | Announcement publisher |
 |⇥ content | string | Announcement content |
-|⇥ created_at | int64 | Announcement publish time |
+|⇥ created_at | int64 | Announcement publish time(milliseconds) |
 |⇥ group_id | int64 | Group id |
 |⇥ id | int64 | Announcement id |
 |⇥ title | string | Announcement tittle |
@@ -277,9 +278,9 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| limit | int32 | false | limit |
-| version | int64 | false | version |
+| cursor | string | false | Cursor: where to start fetching |
+| limit | int32 | false | How many to fetch |
+| version | int64 | false | Version |
 
 #### Request Body
 |  Parameter name |  Data Type | Required  |  Default |  Description |
@@ -293,7 +294,12 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | cursor | string | Cursor for page turning |
-| data | object | Result data |
+| data | array[object] | Result data |
+|⇥ applicant_id | int64 | Applicant's User ID |
+|⇥ expired_time | int64 | Application Expiration Timestamp(milliseconds) |
+|⇥ group_id | int64 | GroupID |
+|⇥ reason | string | Reason |
+|⇥ status | int32 | Status: 0 - Pending, 1 - Agreed, 2 - Rejected |
 | message | string | Error information, null means success |
 | total | int64 | Total |
 | version | int64 | Version, not used at present, reserved for extension |
@@ -325,9 +331,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -360,9 +366,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -393,9 +399,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -414,10 +420,10 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| group_id | int64 | true | group_id |
-| limit | int32 | false | limit |
-| version | int64 | false | version |
+| cursor | string | false | Cursor:where to start fetching |
+| group_id | int64 | true | GroupID |
+| limit | int32 | false | How many to fetch |
+| version | int64 | false | Version |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -426,7 +432,11 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | cursor | string | Cursor for page turning |
-| data | object | Result data |
+| data | array[object] | Result data |
+|⇥ display_name | string | Group member profile |
+|⇥ expired_time | int64 | BanExpiration time(milliseconds) |
+|⇥ join_time | int64 | Member join time(milliseconds) |
+|⇥ user_id | int64 | User id |
 | message | string | Error information, null means success |
 | total | int64 | Total |
 | version | int64 | Version, not used at present, reserved for extension |
@@ -458,9 +468,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -479,10 +489,10 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| group_id | int64 | true | group_id |
-| limit | int32 | false | limit |
-| version | int64 | false | version |
+| cursor | string | false | Cursor:where to start fetching |
+| group_id | int64 | true | GroupID |
+| limit | int32 | false | How many to fetch |
+| version | int64 | false | Version |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -491,7 +501,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | cursor | string | Cursor for page turning |
-| data | object | Result data |
+| data | array[object] | Result data |
+|⇥ created_at | string | Creation time |
+|⇥ group_id | int64 | GroupID |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 | total | int64 | Total |
 | version | int64 | Version, not used at present, reserved for extension |
@@ -516,7 +529,7 @@
 | avatar | string | false |  | Group avatar |
 | description | string | false |  | Group description |
 | name | string | false |  | Group name |
-| type | int32 | false |  | Group type: 0 for private group, 2 for chatroom |
+| type | int32 | false |  | Group type: 0 - private group, 2 - chatroom |
 | user_list | array[int64] | false |  | List of user ids invited to join group |
 
 #### Response Body
@@ -546,7 +559,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -604,8 +617,8 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| file_id | int64 | true | file_id |
-| group_id | int64 | true | group_id |
+| file_id | int64 | true | FileID |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -614,13 +627,13 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ created_at | int64 |  |
+|⇥ created_at | int64 | Creation time(milliseconds) |
 |⇥ file_id | int64 | Shared file id |
 |⇥ group_id | int64 | Group id |
 |⇥ name | string | Shared file name |
 |⇥ size | int64 | Shared file size |
 |⇥ type | string | Shared file type |
-|⇥ updated_at | int64 |  |
+|⇥ updated_at | int64 | Update time(milliseconds) |
 |⇥ uploader | int64 | Shared file uploader |
 |⇥ url | string | Shared file url |
 | message | string | Error information, null means success |
@@ -654,9 +667,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ file_id | int64 |  |
-|⇥ reason | string |  |
-|⇥ result | string |  |
+|⇥ file_id | int64 | FileID |
+|⇥ reason | string | Reason |
+|⇥ result | string | Result: success/fail |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -675,7 +688,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -684,13 +697,13 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ created_at | int64 |  |
+|⇥ created_at | int64 | Creation time(milliseconds) |
 |⇥ file_id | int64 | Shared file id |
 |⇥ group_id | int64 | Group id |
 |⇥ name | string | Shared file name |
 |⇥ size | int64 | Shared file size |
 |⇥ type | string | Shared file type |
-|⇥ updated_at | int64 |  |
+|⇥ updated_at | int64 | Update time(milliseconds) |
 |⇥ uploader | int64 | Shared file uploader |
 |⇥ url | string | Shared file url |
 | message | string | Error information, null means success |
@@ -724,7 +737,7 @@
 |  Parameter name |  Type |  Description |
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
-| data | object | Result data |
+| data | boolean | Result data |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -757,13 +770,13 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ created_at | int64 |  |
+|⇥ created_at | int64 | Creation time(milliseconds) |
 |⇥ file_id | int64 | Shared file id |
 |⇥ group_id | int64 | Group id |
 |⇥ name | string | Shared file name |
 |⇥ size | int64 | Shared file size |
 |⇥ type | string | Shared file type |
-|⇥ updated_at | int64 |  |
+|⇥ updated_at | int64 | Update time(milliseconds) |
 |⇥ uploader | int64 | Shared file uploader |
 |⇥ url | string | Shared file url |
 | message | string | Error information, null means success |
@@ -784,7 +797,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -796,21 +809,23 @@
 |⇥ apply_approval | int32 | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
 |⇥ avatar | string | Group avatar |
 |⇥ ban_expire_time | int64 | Expiration time (second), during which only Admins are allowed to send messages, 0 or less than the current time means no banning, -1 means banned permanently |
-|⇥ created_at | int64 | Creation time |
+|⇥ capacity | int64 | GroupCapacity |
+|⇥ count | int64 | Current count of group member |
+|⇥ created_at | int64 | Creation time(milliseconds) |
 |⇥ description | string | Group description |
 |⇥ ext | string | Group extension information |
 |⇥ group_id | int64 | Group id |
-|⇥ history_visible | boolean | History chat visibility settings for new members |
-|⇥ member_invite | boolean | Group member invitation settings |
-|⇥ member_modify | boolean | Group information modification settings for members |
-|⇥ msg_mute_mode | int32 | Group message blocking mode |
-|⇥ msg_push_mode | int32 | Push mode of group messages |
+|⇥ history_visible | boolean | History chat visibility settings for new members: true - New members can see chat history, false - New members invisible chat history |
+|⇥ member_invite | boolean | Whether to allow group members to invite others into the group: true - Group members are allowed to invite others into the group, false - Group members are not allowed to invite others into the group |
+|⇥ member_modify | boolean | Group members modify group information settings: true - Allow group members to modify group information, false - Do not allow group members to modify group information |
+|⇥ msg_mute_mode | int32 | Group message blocking mode: 0 - not blocking, 1 - blocking local message notifications, 2 - blocking messages, not receiving messages |
+|⇥ msg_push_mode | int32 | Group message push mode: 0 - receive all pushes, 1 - not accept pushes, 2 - receive admin and @message pushes, 3 - only receive admin pushes, 4 - only receive @message pushes |
 |⇥ name | string | Group name |
 |⇥ owner_id | int64 | Group Owner id |
-|⇥ read_ack | boolean | Group message read function settings |
+|⇥ read_ack | boolean | Whether to enable the read function of group messages: true - enable the read function of group messages, false - disable the read function of group messages |
 |⇥ status | int32 | Group state, 0: normal, 1: dissolved |
-|⇥ type | int32 | Group type |
-|⇥ updated_at | int64 | Update time |
+|⇥ type | int32 | Group type: 0 - private group, 2 - chatroom |
+|⇥ updated_at | int64 | Update time(milliseconds) |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -871,16 +886,16 @@
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
 |⇥ apply_approval | int32 | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
-|⇥ avatar | string |  |
-|⇥ capacity | int64 |  |
-|⇥ count | int64 |  |
-|⇥ group_id | int64 |  |
-|⇥ msg_mute_mode | int32 | Group message blocking settings |
-|⇥ msg_push_mode | int32 | Group message push settings |
-|⇥ name | string |  |
-|⇥ owner | int64 |  |
+|⇥ avatar | string | Group avatar |
+|⇥ capacity | int64 | GroupCapacity |
+|⇥ count | int64 | Current count of group member |
+|⇥ group_id | int64 | GroupID |
+|⇥ msg_mute_mode | int32 | Group message blocking mode: 0 - not blocking, 1 - blocking local message notifications, 2 - blocking messages, not receiving messages |
+|⇥ msg_push_mode | int32 | Group message push mode: 0 - receive all pushes, 1 - not accept pushes, 2 - receive admin and @message pushes, 3 - only receive admin pushes, 4 - only receive @message pushes |
+|⇥ name | string | Group name |
+|⇥ owner | int64 | Group Owner id |
 |⇥ status | int32 | Group state, 0: normal, 1: dissolved |
-|⇥ type | int32 |  |
+|⇥ type | int32 | Group type: 0 - private group, 2 - chatroom |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -993,9 +1008,9 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| limit | int32 | false | limit |
-| version | int64 | false | version |
+| cursor | string | false | Cursor: where to start fetching |
+| limit | int32 | false | How many to fetch |
+| version | int64 | false | Version |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -1004,7 +1019,14 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | cursor | string | Cursor for page turning |
-| data | object | Result data |
+| data | array[object] | Result data |
+|⇥ expired_time | int64 | Expiration timestamp(milliseconds) |
+|⇥ group_id | int64 | GroupID |
+|⇥ invitee_id | int64 | Invitee ID |
+|⇥ inviter_id | int64 | Inviter ID |
+|⇥ reason | string | Reason |
+|⇥ status | int32 | Status: 0 - Pending, 1 - User agreed, 2 - User rejected |
+|⇥ updated_at | string | Update time |
 | message | string | Error information, null means success |
 | total | int64 | Total |
 | version | int64 | Version, not used at present, reserved for extension |
@@ -1037,9 +1059,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -1103,9 +1125,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -1126,7 +1148,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -1153,10 +1175,10 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| group_id | int64 | true | group_id |
-| limit | int32 | false | limit |
-| version | int64 | false | version |
+| cursor | string | false | Cursor:where to start fetching |
+| group_id | int64 | true | GroupID |
+| limit | int32 | false | How many to fetch |
+| version | int64 | false | Version |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -1167,7 +1189,8 @@
 | cursor | string | Cursor for page turning |
 | data | array[object] | Result data |
 |⇥ display_name | string | Group member profile |
-|⇥ join_time | int64 | Member join time |
+|⇥ expired_time | int64 | BanExpiration time(milliseconds) |
+|⇥ join_time | int64 | Member join time(milliseconds) |
 |⇥ user_id | int64 | User id |
 | message | string | Error information, null means success |
 | total | int64 | Total |
@@ -1201,7 +1224,8 @@
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
 |⇥ display_name | string | Group member profile |
-|⇥ join_time | int64 | Member join time |
+|⇥ expired_time | int64 | BanExpiration time(milliseconds) |
+|⇥ join_time | int64 | Member join time(milliseconds) |
 |⇥ user_id | int64 | User id |
 | message | string | Error information, null means success |
 #### Interface Description
@@ -1225,7 +1249,7 @@
 |  Parameter name |  Data Type | Required  |  Default |  Description |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | group_id | int64 | true |  | Group id |
-| msg_mute_mode | int32 | true |  | Group message blocking mode: 0: No blocking; 1: Blocking local message notifications; 2: Blocking messages, not receiving messages |
+| msg_mute_mode | int32 | true |  | Group message blocking mode: 0 - No blocking1 - Block local message notification2 - Block message, no message received |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -1269,7 +1293,7 @@
 #### Interface Description
 > 
 
-## 4.39 Get public group list (Deprecated){#get__group_public_list}
+## 4.39 Get public group list(Deprecated){#get__group_public_list}
 
 > GET /group/public_list
 
@@ -1307,7 +1331,7 @@
 #### Request Body
 |  Parameter name |  Data Type | Required  |  Default |  Description |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| qr_info | string | false |  |  |
+| qr_info | string | true |  | QR code information:It can be obtained by GET /group/qrcode/sign |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -1334,7 +1358,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -1343,8 +1367,8 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ create_at | int64 | QR code generation time |
-|⇥ expire_at | int64 | QR code expiration time |
+|⇥ create_at | int64 | QR code generation time(milliseconds) |
+|⇥ expire_at | int64 | QR code expiration time(milliseconds) |
 |⇥ qr_info | string | QR code information |
 | message | string | Error information, null means success |
 #### Interface Description
@@ -1364,7 +1388,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| group_id | int64 | true | group_id |
+| group_id | int64 | true | GroupID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -1376,21 +1400,23 @@
 |⇥ apply_approval | int32 | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
 |⇥ avatar | string | Group avatar |
 |⇥ ban_expire_time | int64 | Expiration time (second), during which only Admins are allowed to send messages, 0 or less than the current time means no banning, -1 means banned permanently |
-|⇥ created_at | int64 | Creation time |
+|⇥ capacity | int64 | GroupCapacity |
+|⇥ count | int64 | Current count of group member |
+|⇥ created_at | int64 | Creation time(milliseconds) |
 |⇥ description | string | Group description |
 |⇥ ext | string | Group extension information |
 |⇥ group_id | int64 | Group id |
-|⇥ history_visible | boolean | History chat visibility settings for new members |
-|⇥ member_invite | boolean | Group member invitation settings |
-|⇥ member_modify | boolean | Group information modification settings for members |
-|⇥ msg_mute_mode | int32 | Group message blocking mode |
-|⇥ msg_push_mode | int32 | Push mode of group messages |
+|⇥ history_visible | boolean | History chat visibility settings for new members: true - New members can see chat history, false - New members invisible chat history |
+|⇥ member_invite | boolean | Whether to allow group members to invite others into the group: true - Group members are allowed to invite others into the group, false - Group members are not allowed to invite others into the group |
+|⇥ member_modify | boolean | Group members modify group information settings: true - Allow group members to modify group information, false - Do not allow group members to modify group information |
+|⇥ msg_mute_mode | int32 | Group message blocking mode: 0 - not blocking, 1 - blocking local message notifications, 2 - blocking messages, not receiving messages |
+|⇥ msg_push_mode | int32 | Group message push mode: 0 - receive all pushes, 1 - not accept pushes, 2 - receive admin and @message pushes, 3 - only receive admin pushes, 4 - only receive @message pushes |
 |⇥ name | string | Group name |
 |⇥ owner_id | int64 | Group Owner id |
-|⇥ read_ack | boolean | Group message read function settings |
+|⇥ read_ack | boolean | Whether to enable the read function of group messages: true - enable the read function of group messages, false - disable the read function of group messages |
 |⇥ status | int32 | Group state, 0: normal, 1: dissolved |
-|⇥ type | int32 | Group type |
-|⇥ updated_at | int64 | Update time |
+|⇥ type | int32 | Group type: 0 - private group, 2 - chatroom |
+|⇥ updated_at | int64 | Update time(milliseconds) |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -1482,7 +1508,7 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ ban_expire_time | int64 | Expiration time of banning all members |
+|⇥ ban_expire_time | int64 | Expiration time (second), during which only Admins are allowed to send messages, 0 or less than the current time means no banning, -1 means banned permanently |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -1635,9 +1661,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -1667,9 +1693,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -1701,9 +1727,9 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ reason | string |  |
-|⇥ result | string |  |
-|⇥ user_id | int64 |  |
+|⇥ reason | string | Error message |
+|⇥ result | string | Operation result: success/fail |
+|⇥ user_id | int64 | User ID |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
