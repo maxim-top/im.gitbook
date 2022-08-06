@@ -539,6 +539,26 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
+|⇥ apply_approval | int32 | 入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请 |
+|⇥ avatar | string | 群头像 |
+|⇥ ban_expire_time | int64 | 全员禁言过期时间（秒），禁言期间只允许管理员发消息， 为0或小于当前时间表示不禁言, -1表示永久禁言 |
+|⇥ capacity | int64 | 群容量 |
+|⇥ count | int64 | 当前人数 |
+|⇥ created_at | int64 | 创建时间(毫秒） |
+|⇥ description | string | 群描述 |
+|⇥ ext | string | 群扩展信息 |
+|⇥ group_id | int64 | 群id |
+|⇥ history_visible | boolean | 新成员可见历史聊天记录设置： true - 新成员可见历史聊天记录， false - 新成员不可见历史聊天记录 |
+|⇥ member_invite | boolean | 是否允许群成员邀请其他人入群: true - 群成员允许邀请其他人入群， false - 群成员不允许邀请其他人入群 |
+|⇥ member_modify | boolean | 群成员修改群信息设置： true - 允许群成员修改群信息， false - 不允许群成员修改群信息 |
+|⇥ msg_mute_mode | int32 | 群消息屏蔽模式：0 - 表示不屏蔽， 1 - 表示屏蔽本地消息通知， 2 - 表示屏蔽消息，不接收消息 |
+|⇥ msg_push_mode | int32 | 群消息推送模式：0 - 接收所有推送， 1 - 不接受推送， 2 - 接收管理员和@消息推送， 3 - 只接收管理员消息推送，4 - 只接收@消息推送 |
+|⇥ name | string | 群名称 |
+|⇥ owner_id | int64 | 群主id |
+|⇥ read_ack | boolean | 是否开启群消息已读功能设置：true - 开启群消息已读功能， false - 不开启群消息已读功能 |
+|⇥ status | int32 | 群状态, 0：正常, 1：已解散 |
+|⇥ type | int32 | 群类型： 0 - 表示私有群, 2 - 表示聊天室 |
+|⇥ updated_at | int64 | 更新时间（毫秒） |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -856,7 +876,7 @@
 |  参数名称 |  类型 |  描述 |
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
-| data | object | 结果数据 |
+| data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -926,7 +946,7 @@
 |  参数名称 |  类型 |  描述 |
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
-| data | object | 结果数据 |
+| data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -957,7 +977,7 @@
 |  参数名称 |  类型 |  描述 |
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
-| data | object | 结果数据 |
+| data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -988,7 +1008,7 @@
 |  参数名称 |  类型 |  描述 |
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
-| data | object | 结果数据 |
+| data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -1093,7 +1113,7 @@
 |  参数名称 |  类型 |  描述 |
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
-| data | object | 结果数据 |
+| data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 

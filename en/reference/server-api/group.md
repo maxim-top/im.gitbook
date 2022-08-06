@@ -539,6 +539,26 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
+|⇥ apply_approval | int32 | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
+|⇥ avatar | string | Group avatar |
+|⇥ ban_expire_time | int64 | Expiration time (second), during which only Admins are allowed to send messages, 0 or less than the current time means no banning, -1 means banned permanently |
+|⇥ capacity | int64 | GroupCapacity |
+|⇥ count | int64 | Current count of group member |
+|⇥ created_at | int64 | Creation time(milliseconds) |
+|⇥ description | string | Group description |
+|⇥ ext | string | Group extension information |
+|⇥ group_id | int64 | Group id |
+|⇥ history_visible | boolean | History chat visibility settings for new members: true - New members can see chat history, false - New members invisible chat history |
+|⇥ member_invite | boolean | Whether to allow group members to invite others into the group: true - Group members are allowed to invite others into the group, false - Group members are not allowed to invite others into the group |
+|⇥ member_modify | boolean | Group members modify group information settings: true - Allow group members to modify group information, false - Do not allow group members to modify group information |
+|⇥ msg_mute_mode | int32 | Group message blocking mode: 0 - not blocking, 1 - blocking local message notifications, 2 - blocking messages, not receiving messages |
+|⇥ msg_push_mode | int32 | Group message push mode: 0 - receive all pushes, 1 - not accept pushes, 2 - receive admin and @message pushes, 3 - only receive admin pushes, 4 - only receive @message pushes |
+|⇥ name | string | Group name |
+|⇥ owner_id | int64 | Group Owner id |
+|⇥ read_ack | boolean | Whether to enable the read function of group messages: true - enable the read function of group messages, false - disable the read function of group messages |
+|⇥ status | int32 | Group state, 0: normal, 1: dissolved |
+|⇥ type | int32 | Group type: 0 - private group, 2 - chatroom |
+|⇥ updated_at | int64 | Update time(milliseconds) |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -856,7 +876,7 @@
 |  Parameter name |  Type |  Description |
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
-| data | object | Result data |
+| data | boolean | Result data |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -926,7 +946,7 @@
 |  Parameter name |  Type |  Description |
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
-| data | object | Result data |
+| data | boolean | Result data |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -957,7 +977,7 @@
 |  Parameter name |  Type |  Description |
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
-| data | object | Result data |
+| data | boolean | Result data |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -988,7 +1008,7 @@
 |  Parameter name |  Type |  Description |
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
-| data | object | Result data |
+| data | boolean | Result data |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -1093,7 +1113,7 @@
 |  Parameter name |  Type |  Description |
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
-| data | object | Result data |
+| data | boolean | Result data |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
