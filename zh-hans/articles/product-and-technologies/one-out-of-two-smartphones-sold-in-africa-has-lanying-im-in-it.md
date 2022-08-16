@@ -91,4 +91,4 @@
 >
 > 另外，微博关注 @蓝莺IM，参与文章转发，有机会获得「蓝莺IM礼盒」哦~
 
-![图片](../../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)
+![](../../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)
