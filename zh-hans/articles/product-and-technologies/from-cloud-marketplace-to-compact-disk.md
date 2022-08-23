@@ -8,13 +8,9 @@
 >
 > 阅读全文，了解云原生软件先锋蓝莺IM的最新动态。
 
-昨天（2022年8月22日），亚马逊云科技宣布，由西云数据运营的亚马逊云科技Marketplace（中国区）正式支持付费AMI (Amazon Machine Image) 镜像产品，通过灵活的定价模式，客户将实现按需或按年付费并快速部署AMI产品。此项发布简化了客户购买流程，进一步提升亚马逊云科技Marketplace（中国区）的用户体验，同时也为独立软件供应商提供了更多的销售机会。首批上架的付费AMI产品来自Fortinet、红帽、SUSE、TigerGraph、映云和美信拓扑等亚马逊云科技合作伙伴网络成员。
+昨天（2022年8月22日），亚马逊云科技宣布，由西云数据运营的[亚马逊云科技Marketplace（中国区）正式支持付费AMI (Amazon Machine Image) 镜像产品](https://www.amazonaws.cn/en/newsroom/2022/0822-Marketplace/)，通过灵活的定价模式，客户将实现按需或按年付费并快速部署AMI产品。此项发布简化了客户购买流程，进一步提升亚马逊云科技Marketplace（中国区）的用户体验，同时也为独立软件供应商提供了更多的销售机会。首批上架的付费AMI产品来自Fortinet、红帽、SUSE、TigerGraph、映云和美信拓扑等亚马逊云科技合作伙伴网络成员。
 
-> https://www.amazonaws.cn/en/newsroom/2022/0822-Marketplace/
-
-是的，美信拓扑荣幸成为首批上架产品的亚马逊云科技合作伙伴网络成员，这次上的是全新升级的「蓝莺IM私有云」百人版和千人版：
-
-> https://awsmarketplace.amazonaws.cn/marketplace/search/results?x=0&y=0&searchTerms=Lanying+IM+Server
+是的，美信拓扑荣幸成为首批上架产品的亚马逊云科技合作伙伴网络成员，这次上的是全新升级的[「蓝莺IM私有云」百人版和千人版](https://awsmarketplace.amazonaws.cn/marketplace/search/results?x=0&y=0&searchTerms=Lanying+IM+Server).
 
 去年我们发布免费版的时候，已经发过操作指南，所以这里不再赘述，感兴趣的同学可以阅读《[美信拓扑 IM 登陆亚马逊云市场（中国区）](maximtop-im-launched-on-amazon-cloud-market-china.md)》《[一毛钱一小时的 IM 私有云要吗？](want-an-im-private-cloud-for-a-dime-an-hour.md)》。
 
@@ -30,9 +26,7 @@
 
 你可能会好奇，私有云跟随镜像启动之前就做了，这次发布有什么新的改进呢？  
 
-我们发布的原因，当然部分是因为收费云市场在国内第一次发布，以及两年过去，蓝莺IM仍然是「应用开发」类别里唯一支持按小时售卖的云服务产品：
-
-> https://awsmarketplace.amazonaws.cn/marketplace/search/results?page=1&filters=PricingPlan&PricingPlan=Hourly&searchTerms=&category=3c015f8c-b83c-4b7d-a544-29e87950c267
+我们发布的原因，当然部分是因为收费云市场在国内第一次发布，以及两年过去，蓝莺IM仍然是[「应用开发」类别里唯一支持按小时售卖的云服务产品](https://awsmarketplace.amazonaws.cn/marketplace/search/results?page=1&filters=PricingPlan&PricingPlan=Hourly&searchTerms=&category=3c015f8c-b83c-4b7d-a544-29e87950c267)。
 
 还有一部分原因是，随着云市场的这次发布，蓝莺IM的光盘版也发布了！🎉🎉🎉
 
@@ -66,9 +60,7 @@
 
 License 管理要保证开通合适的规格，并执行有效期管控到期关停，而且要防止底层复制。因此在安装后会需要根据安装系统生成一个集群指纹，我们称其为 License-Key，通过控制台获取相应的 License，可以用来激活服务。
 
-下载则改变之前下载引导程序的方式为下载一个 iso 文件，里面打包了所有的可执行程序。直接挂载或者刻成光盘，随意使用。详细文档可参考：
-
-> https://docs.lanyingim.com/quick-start/how-to-deploy-private-cloud.html#单机版离线安装
+下载则改变之前下载引导程序的方式为下载一个 iso 文件，里面打包了所有的可执行程序。直接挂载或者刻成光盘，随意使用。详细文档可参考[蓝莺IM私有云离线安装指南](https://docs.lanyingim.com/quick-start/how-to-deploy-private-cloud.html#单机版离线安装)。
 
 我们称其为光盘版，是因为只有光盘能够表达一个与世界隔绝安装过程中那种隐隐在发生什么的奇妙的感觉。
 
