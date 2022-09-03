@@ -36,6 +36,7 @@ autoLogin: true
 };
 import flooim from 'floo-2.0.0';
 const im = flooim(config);
+{% lanying_code_snippet repo="lanying-im-web",class="",function="flooim" %}{% endlanying_code_snippet %}
 ```
 ### flooim.login(opt) {#module_flooim__login}
 登录
@@ -48,6 +49,10 @@ const im = flooim(config);
 | opt.name | <code>string</code> | 用户名 |
 | opt.password | <code>string</code> | 密码 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="login" %}{% endlanying_code_snippet %}
+```
 ### flooim.qrlogin(opt) {#module_flooim__qrlogin}
 二维码登录
 
@@ -59,6 +64,10 @@ const im = flooim(config);
 | opt.user_id | <code>number</code> | 用户ID |
 | opt.password | <code>string</code> | 密码 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="qrlogin" %}{% endlanying_code_snippet %}
+```
 ### flooim.tokenLogin(user_id, token) {#module_flooim__tokenlogin}
 token登录
 
@@ -69,6 +78,10 @@ token登录
 | user_id | <code>number</code> | 用户ID |
 | token | <code>string</code> | Token |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="tokenLogin" %}{% endlanying_code_snippet %}
+```
 ### flooim.idLogin(opt) {#module_flooim__idlogin}
 使用用户ID和密码登录
 
@@ -80,11 +93,19 @@ token登录
 | opt.user_id | <code>number</code> | 用户ID |
 | opt.password | <code>string</code> | 密码 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="idLogin" %}{% endlanying_code_snippet %}
+```
 ### flooim.isLogin() ⇒ <code>boolean</code> {#module_flooim__islogin}
 是否已登录
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
 **Returns**: <code>boolean</code> - 是否已登录  
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="isLogin" %}{% endlanying_code_snippet %}
+```
 ### flooim.on(options, ext) {#module_flooim__on}
 事件监听
 
@@ -108,6 +129,7 @@ im.on({
    },
    ...
  })
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="on" %}{% endlanying_code_snippet %}
 ```
 ### flooim.off(options, ext) {#module_flooim__off}
 取消监听
@@ -132,8 +154,13 @@ const im = flooim(config);
    },
  ...
  })
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="off" %}{% endlanying_code_snippet %}
 ```
 ### flooim.logout() {#module_flooim__logout}
 退出账户
 
 **Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="logout" %}{% endlanying_code_snippet %}
+```
