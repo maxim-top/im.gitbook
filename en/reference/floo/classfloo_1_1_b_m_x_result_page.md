@@ -49,6 +49,10 @@ inline BMXResultPage()
 
 Constructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+```
 ### function BMXResultPage
 
 ```cpp
@@ -66,6 +70,10 @@ Constructor
   * **offset** Offset 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+```
 ### function BMXResultPage
 
 ```cpp
@@ -83,6 +91,10 @@ Constructor
   * **cursor** cursor offset 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+```
 ### function BMXResultPage
 
 ```cpp
@@ -98,6 +110,10 @@ Constructor
   * **from** BMXResultPage object 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+```
 ### function BMXResultPage
 
 ```cpp
@@ -113,6 +129,10 @@ Constructor
   * **from** BMXResultPage object 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+```
 ### function operator=
 
 ```cpp
@@ -130,6 +150,10 @@ Assignment function
 
 **Return**: [BMXResultPage](classfloo_1_1_b_m_x_result_page.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="operator=" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXResultPage
 
 ```cpp
@@ -138,6 +162,10 @@ inline virtual ~BMXResultPage()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="~BMXResultPage" %}{% endlanying_code_snippet %}
+```
 ### function count
 
 ```cpp
@@ -148,6 +176,10 @@ Size of vector object-array
 
 **Return**: size_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="count" %}{% endlanying_code_snippet %}
+```
 ### function offset
 
 ```cpp
@@ -158,6 +190,10 @@ Offset
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="offset" %}{% endlanying_code_snippet %}
+```
 ### function cursor
 
 ```cpp
@@ -168,6 +204,10 @@ cursor offset
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="cursor" %}{% endlanying_code_snippet %}
+```
 ### function result
 
 ```cpp
@@ -178,6 +218,10 @@ vector object-array
 
 **Return**: std::vector<T> 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="result" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

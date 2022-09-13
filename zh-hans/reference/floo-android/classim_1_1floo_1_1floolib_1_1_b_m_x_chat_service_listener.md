@@ -64,6 +64,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function swigReleaseOwnership
 
 ```java
@@ -71,6 +75,10 @@ inline void swigReleaseOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+```
 ### function swigTakeOwnership
 
 ```java
@@ -78,6 +86,10 @@ inline void swigTakeOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+```
 ### function onStatusChanged
 
 ```java
@@ -95,6 +107,10 @@ inline void onStatusChanged(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentUploadProgressChanged
 
 ```java
@@ -112,6 +128,10 @@ inline void onAttachmentUploadProgressChanged(
   * **percent** 附件上传的进度 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onAttachmentUploadProgressChanged" %}{% endlanying_code_snippet %}
+```
 ### function onRecallStatusChanged
 
 ```java
@@ -129,6 +149,10 @@ inline void onRecallStatusChanged(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onRecallStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onReceive
 
 ```java
@@ -144,6 +168,10 @@ inline void onReceive(
   * **list** 接收到的消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceive" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveCommandMessages
 
 ```java
@@ -159,6 +187,10 @@ inline void onReceiveCommandMessages(
   * **list** 接收到的消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveCommandMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveSystemMessages
 
 ```java
@@ -174,6 +206,10 @@ inline void onReceiveSystemMessages(
   * **list** 接收到的系统消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveSystemMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadAcks
 
 ```java
@@ -189,6 +225,10 @@ inline void onReceiveReadAcks(
   * **list** 接收到的已读回执消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveReadAcks" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveDeliverAcks
 
 ```java
@@ -204,6 +244,10 @@ inline void onReceiveDeliverAcks(
   * **list** 接收到的已送达回执消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveDeliverAcks" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveRecallMessages
 
 ```java
@@ -219,6 +263,10 @@ inline void onReceiveRecallMessages(
   * **list** 接收到的撤回消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveRecallMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadCancels
 
 ```java
@@ -234,6 +282,10 @@ inline void onReceiveReadCancels(
   * **list** 接收到的消息已读取消消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveReadCancels" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadAllMessages
 
 ```java
@@ -249,6 +301,10 @@ inline void onReceiveReadAllMessages(
   * **list** 接收到的消息全部已读消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveReadAllMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveDeleteMessages
 
 ```java
@@ -264,6 +320,10 @@ inline void onReceiveDeleteMessages(
   * **list** 接收到的删除消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveDeleteMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceivePlayAcks
 
 ```java
@@ -279,6 +339,10 @@ inline void onReceivePlayAcks(
   * **list** 接收到的已读回执消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceivePlayAcks" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentStatusChanged
 
 ```java
@@ -298,6 +362,10 @@ inline void onAttachmentStatusChanged(
   * **percent** 附件下载的进度 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onAttachmentStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentDownloadByUrlStatusChanged
 
 ```java
@@ -317,6 +385,10 @@ inline void onAttachmentDownloadByUrlStatusChanged(
   * **percent** 附件下载的进度 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onAttachmentDownloadByUrlStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onRetrieveHistoryMessages
 
 ```java
@@ -332,6 +404,10 @@ inline void onRetrieveHistoryMessages(
   * **conversation** 发生了拉取指历史消息的会话 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onRetrieveHistoryMessages" %}{% endlanying_code_snippet %}
+```
 ### function onLoadAllConversation
 
 ```java
@@ -340,6 +416,10 @@ inline void onLoadAllConversation()
 
 已经加载完未读会话列表 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onLoadAllConversation" %}{% endlanying_code_snippet %}
+```
 ### function onConversationCreate
 
 ```java
@@ -357,6 +437,10 @@ inline void onConversationCreate(
   * **msg** 会话的最新消息，存在返回不存在返回为空 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onConversationCreate" %}{% endlanying_code_snippet %}
+```
 ### function onConversationDelete
 
 ```java
@@ -374,6 +458,10 @@ inline void onConversationDelete(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onConversationDelete" %}{% endlanying_code_snippet %}
+```
 ### function onTotalUnreadCountChanged
 
 ```java
@@ -389,6 +477,10 @@ inline void onTotalUnreadCountChanged(
   * **unreadCount** 本地全部会话未读总数 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onTotalUnreadCountChanged" %}{% endlanying_code_snippet %}
+```
 ### function BMXChatServiceListener
 
 ```java
@@ -396,6 +488,10 @@ inline BMXChatServiceListener()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="BMXChatServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function registerChatService
 
 ```java
@@ -407,6 +503,10 @@ inline void registerChatService(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="registerChatService" %}{% endlanying_code_snippet %}
+```
 ### function BMXChatServiceListener
 
 ```java
@@ -417,6 +517,10 @@ inline BMXChatServiceListener(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="BMXChatServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -424,6 +528,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function swigDirectorDisconnect
 
 ```java
@@ -431,6 +539,10 @@ inline void swigDirectorDisconnect()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -449,6 +561,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

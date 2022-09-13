@@ -134,6 +134,10 @@ Insert a message
 * `BMXConversation.h`
 
 <a name="//api/name/loadMessage:completion:" title="loadMessage:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="insertMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### loadMessage:completion:
 
 Read a message
@@ -155,6 +159,10 @@ Read a message
 * `BMXConversation.h`
 
 <a name="//api/name/loadMessageFromMessageId:size:completion:" title="loadMessageFromMessageId:size:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### loadMessageFromMessageId:size:completion:
 
 Load messages, starting from the reference message to load earlier messages; starting from the latest message if not specified
@@ -179,6 +187,10 @@ Load messages, starting from the reference message to load earlier messages; sta
 * `BMXConversation.h`
 
 <a name="//api/name/removeAllMessagescompletion:" title="removeAllMessagescompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessageFromMessageId:size:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeAllMessagescompletion:
 
 Delete all messages in sesstion
@@ -197,6 +209,10 @@ Delete all messages in sesstion
 * `BMXConversation.h`
 
 <a name="//api/name/searchMessagesByKeyWords:refTime:size:directionType:completion:" title="searchMessagesByKeyWords:refTime:size:directionType:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="removeAllMessagescompletion:" %}{% endlanying_code_snippet %}
+```
 ### searchMessagesByKeyWords:refTime:size:directionType:completion:
 
 Search for messages, starting with latest if not specified
@@ -210,6 +226,10 @@ Search for messages, starting with latest if not specified
 * `BMXConversation.h`
 
 <a name="//api/name/searchMessagesBycontentType:refTime:size:directionType:completion:" title="searchMessagesBycontentType:refTime:size:directionType:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWords:refTime:size:directionType:completion:" %}{% endlanying_code_snippet %}
+```
 ### searchMessagesBycontentType:refTime:size:directionType:completion:
 
 Search for messages by type, starting with latest if not specified
@@ -223,6 +243,10 @@ Search for messages by type, starting with latest if not specified
 * `BMXConversation.h`
 
 <a name="//api/name/setAllMessagesReadCompletion:" title="setAllMessagesReadCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesBycontentType:refTime:size:directionType:completion:" %}{% endlanying_code_snippet %}
+```
 ### setAllMessagesReadCompletion:
 
 Set all messages to read, update number of unread messages
@@ -236,6 +260,10 @@ Set all messages to read, update number of unread messages
 * `BMXConversation.h`
 
 <a name="//api/name/setMessagePlayedStatus:status:completion:" title="setMessagePlayedStatus:status:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setAllMessagesReadCompletion:" %}{% endlanying_code_snippet %}
+```
 ### setMessagePlayedStatus:status:completion:
 
 Set message playback state (valid only for voice/video messages)
@@ -260,6 +288,10 @@ Set message playback state (valid only for voice/video messages)
 * `BMXConversation.h`
 
 <a name="//api/name/setMessageReadStatus:status:completion:" title="setMessageReadStatus:status:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessagePlayedStatus:status:completion:" %}{% endlanying_code_snippet %}
+```
 ### setMessageReadStatus:status:completion:
 
 Set message unread state, update the number of unread messages locally
@@ -284,6 +316,10 @@ Set message unread state, update the number of unread messages locally
 * `BMXConversation.h`
 
 <a name="//api/name/updateMessageExtension:completion:" title="updateMessageExtension:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessageReadStatus:status:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateMessageExtension:completion:
 
 Update the extend field info of a database-stored message
@@ -304,3 +340,7 @@ Update the extend field info of a database-stored message
 #### Declared In
 * `BMXConversation.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="updateMessageExtension:completion:" %}{% endlanying_code_snippet %}
+```

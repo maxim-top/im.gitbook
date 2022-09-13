@@ -87,6 +87,10 @@ Constructor to build the message attachment of sent file
   * **displayName** Display name of file 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXFileAttachment
 
 ```cpp
@@ -106,6 +110,10 @@ Constructor to build the message attachment of received file
   * **fileLength** File size 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXFileAttachment
 
 ```cpp
@@ -114,6 +122,10 @@ inline virtual ~BMXFileAttachment()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="~BMXFileAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -130,6 +142,10 @@ Type of returned file
 **Reimplemented by**: [floo::BMXImageAttachment::type](classfloo_1_1_b_m_x_image_attachment.md#function-type), [floo::BMXVideoAttachment::type](classfloo_1_1_b_m_x_video_attachment.md#function-type), [floo::BMXVoiceAttachment::type](classfloo_1_1_b_m_x_voice_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```cpp
@@ -146,6 +162,10 @@ Cloning function
 **Reimplemented by**: [floo::BMXImageAttachment::clone](classfloo_1_1_b_m_x_image_attachment.md#function-clone), [floo::BMXVideoAttachment::clone](classfloo_1_1_b_m_x_video_attachment.md#function-clone), [floo::BMXVoiceAttachment::clone](classfloo_1_1_b_m_x_voice_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function path
 
 ```cpp
@@ -156,6 +176,10 @@ Local path
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="path" %}{% endlanying_code_snippet %}
+```
 ### function displayName
 
 ```cpp
@@ -166,6 +190,10 @@ Display name
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="displayName" %}{% endlanying_code_snippet %}
+```
 ### function ratelUrl
 
 ```cpp
@@ -176,6 +204,10 @@ URL for remote ratel
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="ratelUrl" %}{% endlanying_code_snippet %}
+```
 ### function url
 
 ```cpp
@@ -186,6 +218,10 @@ URL for remote
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="url" %}{% endlanying_code_snippet %}
+```
 ### function fileLength
 
 ```cpp
@@ -196,6 +232,10 @@ File length
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="fileLength" %}{% endlanying_code_snippet %}
+```
 ### function downloadStatus
 
 ```cpp
@@ -270,6 +310,10 @@ friend class Decoder< BMXFileAttachment >(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXFileAttachment",function="downloadStatus" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

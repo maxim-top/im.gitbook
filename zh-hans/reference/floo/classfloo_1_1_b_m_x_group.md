@@ -324,6 +324,10 @@ inline virtual ~BMXGroup()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="~BMXGroup" %}{% endlanying_code_snippet %}
+```
 ### function groupId
 
 ```cpp
@@ -334,6 +338,10 @@ virtual int64_t groupId() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupId" %}{% endlanying_code_snippet %}
+```
 ### function groupType
 
 ```cpp
@@ -344,6 +352,10 @@ virtual GroupType groupType() =0
 
 **Return**: GroupType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupType" %}{% endlanying_code_snippet %}
+```
 ### function myNickname
 
 ```cpp
@@ -354,6 +366,10 @@ virtual const std::string & myNickname() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="myNickname" %}{% endlanying_code_snippet %}
+```
 ### function name
 
 ```cpp
@@ -364,6 +380,10 @@ virtual const std::string & name() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="name" %}{% endlanying_code_snippet %}
+```
 ### function description
 
 ```cpp
@@ -374,6 +394,10 @@ virtual const std::string & description() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="description" %}{% endlanying_code_snippet %}
+```
 ### function avatarRatelUrl
 
 ```cpp
@@ -384,6 +408,10 @@ virtual std::string avatarRatelUrl() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarUrl
 
 ```cpp
@@ -394,6 +422,10 @@ virtual std::string avatarUrl() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarPath
 
 ```cpp
@@ -404,6 +436,10 @@ virtual std::string avatarPath() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarPath" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailUrl
 
 ```cpp
@@ -414,6 +450,10 @@ virtual std::string avatarThumbnailUrl() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailPath
 
 ```cpp
@@ -424,6 +464,10 @@ virtual std::string avatarThumbnailPath() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function createTime
 
 ```cpp
@@ -434,6 +478,10 @@ virtual int64_t createTime() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="createTime" %}{% endlanying_code_snippet %}
+```
 ### function extension
 
 ```cpp
@@ -444,6 +492,10 @@ virtual const JSON & extension() =0
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="extension" %}{% endlanying_code_snippet %}
+```
 ### function ownerId
 
 ```cpp
@@ -454,6 +506,10 @@ virtual int64_t ownerId() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="ownerId" %}{% endlanying_code_snippet %}
+```
 ### function capacity
 
 ```cpp
@@ -464,6 +520,10 @@ virtual int capacity() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="capacity" %}{% endlanying_code_snippet %}
+```
 ### function membersCount
 
 ```cpp
@@ -474,6 +534,10 @@ virtual int membersCount() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="membersCount" %}{% endlanying_code_snippet %}
+```
 ### function adminsCount
 
 ```cpp
@@ -484,6 +548,10 @@ virtual int adminsCount() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="adminsCount" %}{% endlanying_code_snippet %}
+```
 ### function blockListSize
 
 ```cpp
@@ -494,6 +562,10 @@ virtual int blockListSize() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="blockListSize" %}{% endlanying_code_snippet %}
+```
 ### function bannedListSize
 
 ```cpp
@@ -504,6 +576,10 @@ virtual int bannedListSize() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="bannedListSize" %}{% endlanying_code_snippet %}
+```
 ### function sharedFilesCount
 
 ```cpp
@@ -514,6 +590,10 @@ virtual int sharedFilesCount() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="sharedFilesCount" %}{% endlanying_code_snippet %}
+```
 ### function latestAnnouncementId
 
 ```cpp
@@ -524,6 +604,10 @@ virtual int64_t latestAnnouncementId() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="latestAnnouncementId" %}{% endlanying_code_snippet %}
+```
 ### function msgPushMode
 
 ```cpp
@@ -534,6 +618,10 @@ virtual MsgPushMode msgPushMode() =0
 
 **Return**: MsgPushMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="msgPushMode" %}{% endlanying_code_snippet %}
+```
 ### function modifyMode
 
 ```cpp
@@ -544,6 +632,10 @@ virtual ModifyMode modifyMode() =0
 
 **Return**: ModifyMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="modifyMode" %}{% endlanying_code_snippet %}
+```
 ### function joinAuthMode
 
 ```cpp
@@ -554,6 +646,10 @@ virtual JoinAuthMode joinAuthMode() =0
 
 **Return**: JoinAuthMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="joinAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function inviteMode
 
 ```cpp
@@ -564,6 +660,10 @@ virtual InviteMode inviteMode() =0
 
 **Return**: InviteMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="inviteMode" %}{% endlanying_code_snippet %}
+```
 ### function msgMuteMode
 
 ```cpp
@@ -574,6 +674,10 @@ virtual MsgMuteMode msgMuteMode() =0
 
 **Return**: MsgMuteMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="msgMuteMode" %}{% endlanying_code_snippet %}
+```
 ### function groupStatus
 
 ```cpp
@@ -584,6 +688,10 @@ virtual GroupStatus groupStatus() =0
 
 **Return**: GroupStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupStatus" %}{% endlanying_code_snippet %}
+```
 ### function isMember
 
 ```cpp
@@ -597,6 +705,10 @@ Deprecated use roleType instead.
 当前用户是否是群成员 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="isMember" %}{% endlanying_code_snippet %}
+```
 ### function enableReadAck
 
 ```cpp
@@ -607,6 +719,10 @@ virtual bool enableReadAck() =0
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="enableReadAck" %}{% endlanying_code_snippet %}
+```
 ### function historyVisible
 
 ```cpp
@@ -617,6 +733,10 @@ virtual bool historyVisible() =0
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="historyVisible" %}{% endlanying_code_snippet %}
+```
 ### function roleType
 
 ```cpp
@@ -627,6 +747,10 @@ virtual MemberRoleType roleType() =0
 
 **Return**: MemberRoleType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="roleType" %}{% endlanying_code_snippet %}
+```
 ### function banExpireTime
 
 ```cpp
@@ -639,6 +763,10 @@ virtual int64_t banExpireTime() =0
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="banExpireTime" %}{% endlanying_code_snippet %}
+```
 ### function BMXGroup
 
 ```cpp
@@ -646,6 +774,10 @@ inline BMXGroup()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="BMXGroup" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

@@ -41,11 +41,19 @@ NSObject
 `- (instancetype)initWithData:(NSData *)*aData* thumbnailData:(NSData *)*aThumbnailData* imageSize:(CGSize)*imageSize* conversationId:(NSString *)*conversationId*`
 
 <a name="//api/name/initWithLocalPath:thumbnailPath:size:displayName:conversationId:" title="initWithLocalPath:thumbnailPath:size:displayName:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="initWithData:thumbnailData:imageSize:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithLocalPath:thumbnailPath:size:displayName:conversationId:
 
 `- (instancetype)initWithLocalPath:(NSString *)*aLocalPath* thumbnailPath:(NSString *)*aThumbnailPath* size:(CGSize)*size* displayName:(NSString *)*aDisplayName* conversationId:(NSString *)*conversationId*`
 
 <a name="//api/name/setReceiveThumbnailUrl:thumbnailSize:fileLength:" title="setReceiveThumbnailUrl:thumbnailSize:fileLength:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="initWithLocalPath:thumbnailPath:size:displayName:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### setReceiveThumbnailUrl:thumbnailSize:fileLength:
 
 设置接收图片消息缩略图
@@ -59,6 +67,10 @@ NSObject
 * `BMXImageAttachment.h`
 
 <a name="//api/name/setsendThumbnailPath:" title="setsendThumbnailPath:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="setReceiveThumbnailUrl:thumbnailSize:fileLength:" %}{% endlanying_code_snippet %}
+```
 ### setsendThumbnailPath:
 
 设置发送图片消息缩略图
@@ -71,3 +83,7 @@ NSObject
 #### Declared In
 * `BMXImageAttachment.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="setsendThumbnailPath:" %}{% endlanying_code_snippet %}
+```

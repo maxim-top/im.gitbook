@@ -85,6 +85,10 @@ inline synchronized void delete()
 **Reimplements**: [im::floo::floolib::BMXNetworkListener::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_network_listener.md#function-delete)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function getSDKConfig
 
 ```java
@@ -95,6 +99,10 @@ Get SDK settings
 
 **Return**: BMXSDKConfigPtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function getUserService
 
 ```java
@@ -105,6 +113,10 @@ Get user Service
 
 **Return**: [BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getUserService" %}{% endlanying_code_snippet %}
+```
 ### function getChatService
 
 ```java
@@ -115,6 +127,10 @@ Get chat Service
 
 **Return**: [BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getChatService" %}{% endlanying_code_snippet %}
+```
 ### function getGroupService
 
 ```java
@@ -125,6 +141,10 @@ Get group Service
 
 **Return**: [BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getGroupService" %}{% endlanying_code_snippet %}
+```
 ### function getRosterService
 
 ```java
@@ -135,6 +155,10 @@ Get roster Service
 
 **Return**: [BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getRosterService" %}{% endlanying_code_snippet %}
+```
 ### function getPushService
 
 ```java
@@ -145,6 +169,10 @@ Get push Service
 
 **Return**: [BMXPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getPushService" %}{% endlanying_code_snippet %}
+```
 ### function getUserManager
 
 ```java
@@ -155,6 +183,10 @@ Get user Manager
 
 **Return**: [BMXUserManager](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getUserManager" %}{% endlanying_code_snippet %}
+```
 ### function getChatManager
 
 ```java
@@ -165,6 +197,10 @@ Get chat Manager
 
 **Return**: [BMXChatManager](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getChatManager" %}{% endlanying_code_snippet %}
+```
 ### function getGroupManager
 
 ```java
@@ -175,6 +211,10 @@ Get group Manager
 
 **Return**: [BMXGroupManager](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getGroupManager" %}{% endlanying_code_snippet %}
+```
 ### function getRosterManager
 
 ```java
@@ -185,6 +225,10 @@ Get roster Manager
 
 **Return**: [BMXRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getRosterManager" %}{% endlanying_code_snippet %}
+```
 ### function getPushManager
 
 ```java
@@ -195,6 +239,10 @@ Get push Manager
 
 **Return**: [BMXPushManager](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getPushManager" %}{% endlanying_code_snippet %}
+```
 ### function signUpNewUser
 
 ```java
@@ -216,6 +264,10 @@ To register a new user, username and password are required
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="signUpNewUser" %}{% endlanying_code_snippet %}
+```
 ### function signInByName
 
 ```java
@@ -235,6 +287,10 @@ Login by username
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="signInByName" %}{% endlanying_code_snippet %}
+```
 ### function signInById
 
 ```java
@@ -254,6 +310,10 @@ Login by user ID
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="signInById" %}{% endlanying_code_snippet %}
+```
 ### function fastSignInByName
 
 ```java
@@ -273,6 +333,10 @@ Quick login by username (requires a successful previous login, faster login)
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="fastSignInByName" %}{% endlanying_code_snippet %}
+```
 ### function fastSignInById
 
 ```java
@@ -292,6 +356,10 @@ Quick login by user ID (requires a successful previous login, faster login)
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="fastSignInById" %}{% endlanying_code_snippet %}
+```
 ### function signOut
 
 ```java
@@ -311,6 +379,10 @@ Log out
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="signOut" %}{% endlanying_code_snippet %}
+```
 ### function signOut
 
 ```java
@@ -320,6 +392,10 @@ inline BMXErrorCode signOut(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="signOut" %}{% endlanying_code_snippet %}
+```
 ### function signOut
 
 ```java
@@ -327,6 +403,10 @@ inline BMXErrorCode signOut()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="signOut" %}{% endlanying_code_snippet %}
+```
 ### function connectStatus
 
 ```java
@@ -337,6 +417,10 @@ Get the current connection state with server
 
 **Return**: [BMXConnectStatus]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="connectStatus" %}{% endlanying_code_snippet %}
+```
 ### function signInStatus
 
 ```java
@@ -347,6 +431,10 @@ Get the current login state
 
 **Return**: [BMXSignInStatus]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="signInStatus" %}{% endlanying_code_snippet %}
+```
 ### function reconnect
 
 ```java
@@ -355,6 +443,10 @@ inline void reconnect()
 
 Force reconnection 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="reconnect" %}{% endlanying_code_snippet %}
+```
 ### function onNetworkChanged
 
 ```java
@@ -375,6 +467,10 @@ Process network changes in messaging
 **Reimplements**: [im::floo::floolib::BMXNetworkListener::onNetworkChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_network_listener.md#function-onnetworkchanged)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="onNetworkChanged" %}{% endlanying_code_snippet %}
+```
 ### function disconnect
 
 ```java
@@ -383,6 +479,10 @@ inline void disconnect()
 
 Disconnect 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="disconnect" %}{% endlanying_code_snippet %}
+```
 ### function changeAppId
 
 ```java
@@ -400,6 +500,10 @@ Change the appId of SDK, which also update the appId in BMXConfig.
   * **appSecret** Newly changed appSecret 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="changeAppId" %}{% endlanying_code_snippet %}
+```
 ### function changeAppId
 
 ```java
@@ -415,6 +519,10 @@ Change the appId of SDK, which also update the appId in BMXConfig.
   * **appId** Newly changed appId 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="changeAppId" %}{% endlanying_code_snippet %}
+```
 ### function initializeServerConfig
 
 ```java
@@ -430,6 +538,10 @@ Get the server network configuration of app, which can be called after initializ
   * **isLocal** True to use locally cached DNS configuration, false to get the latest configuration from server. 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="initializeServerConfig" %}{% endlanying_code_snippet %}
+```
 ### function sendMessage
 
 ```java
@@ -445,6 +557,10 @@ When send a message, the change of message status will be notified by listener. 
   * **msg** Message to be sent 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="sendMessage" %}{% endlanying_code_snippet %}
+```
 ### function create
 
 ```java
@@ -464,6 +580,10 @@ Create BMXClient
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="create" %}{% endlanying_code_snippet %}
+```
 ### function BMXClient
 
 ```java
@@ -474,6 +594,10 @@ inline BMXClient(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="BMXClient" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -484,6 +608,10 @@ inline void finalize()
 **Reimplements**: [im::floo::floolib::BMXNetworkListener::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_network_listener.md#function-finalize)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -493,6 +621,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXClient",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

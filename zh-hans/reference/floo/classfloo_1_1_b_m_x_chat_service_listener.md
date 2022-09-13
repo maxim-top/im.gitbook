@@ -57,6 +57,10 @@ inline BMXChatServiceListener()
 
 构造函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="BMXChatServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXChatServiceListener
 
 ```cpp
@@ -65,6 +69,10 @@ inline virtual ~BMXChatServiceListener()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="~BMXChatServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onStatusChanged
 
 ```cpp
@@ -82,6 +90,10 @@ inline virtual void onStatusChanged(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentUploadProgressChanged
 
 ```cpp
@@ -99,6 +111,10 @@ inline virtual void onAttachmentUploadProgressChanged(
   * **percent** 附件上传的进度 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentUploadProgressChanged" %}{% endlanying_code_snippet %}
+```
 ### function onRecallStatusChanged
 
 ```cpp
@@ -116,6 +132,10 @@ inline virtual void onRecallStatusChanged(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onRecallStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onReceive
 
 ```cpp
@@ -131,6 +151,10 @@ inline virtual void onReceive(
   * **list** 接收到的消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceive" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveCommandMessages
 
 ```cpp
@@ -146,6 +170,10 @@ inline virtual void onReceiveCommandMessages(
   * **list** 接收到的消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveCommandMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveSystemMessages
 
 ```cpp
@@ -161,6 +189,10 @@ inline virtual void onReceiveSystemMessages(
   * **list** 接收到的系统消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveSystemMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadAcks
 
 ```cpp
@@ -176,6 +208,10 @@ inline virtual void onReceiveReadAcks(
   * **list** 接收到的已读回执消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadAcks" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveDeliverAcks
 
 ```cpp
@@ -191,6 +227,10 @@ inline virtual void onReceiveDeliverAcks(
   * **list** 接收到的已送达回执消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveDeliverAcks" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveRecallMessages
 
 ```cpp
@@ -206,6 +246,10 @@ inline virtual void onReceiveRecallMessages(
   * **list** 接收到的撤回消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveRecallMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadCancels
 
 ```cpp
@@ -221,6 +265,10 @@ inline virtual void onReceiveReadCancels(
   * **list** 接收到的消息已读取消消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadCancels" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadAllMessages
 
 ```cpp
@@ -236,6 +284,10 @@ inline virtual void onReceiveReadAllMessages(
   * **list** 接收到的消息全部已读消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadAllMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveDeleteMessages
 
 ```cpp
@@ -251,6 +303,10 @@ inline virtual void onReceiveDeleteMessages(
   * **list** 接收到的删除消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveDeleteMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceivePlayAcks
 
 ```cpp
@@ -266,6 +322,10 @@ inline virtual void onReceivePlayAcks(
   * **list** 接收到的音频/视频消息已播放回执消息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceivePlayAcks" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentStatusChanged
 
 ```cpp
@@ -285,6 +345,10 @@ inline virtual void onAttachmentStatusChanged(
   * **percent** 附件下载的进度 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentDownloadByUrlStatusChanged
 
 ```cpp
@@ -304,6 +368,10 @@ inline virtual void onAttachmentDownloadByUrlStatusChanged(
   * **percent** 附件下载的进度 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentDownloadByUrlStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onRetrieveHistoryMessages
 
 ```cpp
@@ -319,6 +387,10 @@ inline virtual void onRetrieveHistoryMessages(
   * **conversation** 发生了拉取指历史消息的会话 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onRetrieveHistoryMessages" %}{% endlanying_code_snippet %}
+```
 ### function onLoadAllConversation
 
 ```cpp
@@ -327,6 +399,10 @@ inline virtual void onLoadAllConversation()
 
 已经加载完未读会话列表 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onLoadAllConversation" %}{% endlanying_code_snippet %}
+```
 ### function onConversationCreate
 
 ```cpp
@@ -344,6 +420,10 @@ inline virtual void onConversationCreate(
   * **msg** 会话的最新消息，存在返回不存在返回为空 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onConversationCreate" %}{% endlanying_code_snippet %}
+```
 ### function onConversationDelete
 
 ```cpp
@@ -361,6 +441,10 @@ inline virtual void onConversationDelete(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onConversationDelete" %}{% endlanying_code_snippet %}
+```
 ### function onTotalUnreadCountChanged
 
 ```cpp
@@ -376,6 +460,10 @@ inline virtual void onTotalUnreadCountChanged(
   * **unreadCount** 本地全部会话未读总数 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onTotalUnreadCountChanged" %}{% endlanying_code_snippet %}
+```
 ### function registerChatService
 
 ```cpp
@@ -400,6 +488,10 @@ BMXChatService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="registerChatService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

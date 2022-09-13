@@ -19,16 +19,28 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="acceptRosterById:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:
 
 `- (void)addDelegate:(id<BMXRosterServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addDelegate:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXRosterServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/addRosterListener:" title="addRosterListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+```
 ### addRosterListener:
 
 添加好友变化监听者
@@ -42,6 +54,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/addToBlockList:withCompletion:" title="addToBlockList:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addRosterListener:" %}{% endlanying_code_snippet %}
+```
 ### addToBlockList:withCompletion:
 
 加入黑名单
@@ -55,6 +71,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/applyAddRoster:reason:completion:" title="applyAddRoster:reason:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addToBlockList:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### applyAddRoster:reason:completion:
 
 申请添加好友
@@ -68,6 +88,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/declineRosterById:withReason:completion:" title="declineRosterById:withReason:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="applyAddRoster:reason:completion:" %}{% endlanying_code_snippet %}
+```
 ### declineRosterById:withReason:completion:
 
 拒绝加好友申请
@@ -81,6 +105,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/downloadAvatarWithRoster:progress:completion:" title="downloadAvatarWithRoster:progress:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="declineRosterById:withReason:completion:" %}{% endlanying_code_snippet %}
+```
 ### downloadAvatarWithRoster:progress:completion:
 
 下载头像
@@ -94,6 +122,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/getApplicationListWithCursor:pageSize:completion:" title="getApplicationListWithCursor:pageSize:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="downloadAvatarWithRoster:progress:completion:" %}{% endlanying_code_snippet %}
+```
 ### getApplicationListWithCursor:pageSize:completion:
 
 获取申请添加好友列表
@@ -107,6 +139,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/getBlockListforceRefresh:completion:" title="getBlockListforceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="getApplicationListWithCursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
 ### getBlockListforceRefresh:completion:
 
 <ul>
@@ -132,6 +168,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/getRosterListforceRefresh:completion:" title="getRosterListforceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="getBlockListforceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getRosterListforceRefresh:completion:
 
 <ul>
@@ -157,6 +197,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/muteNotificationByRoster:muteNotificationStatus:completion:" title="muteNotificationByRoster:muteNotificationStatus:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="getRosterListforceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### muteNotificationByRoster:muteNotificationStatus:completion:
 
 设置是否拒收用户消息
@@ -170,11 +214,19 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="muteNotificationByRoster:muteNotificationStatus:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeDelegate:
 
 `- (void)removeDelegate:(id<BMXRosterServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removeRosterById:withCompletion:" title="removeRosterById:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeDelegate:" %}{% endlanying_code_snippet %}
+```
 ### removeRosterById:withCompletion:
 
 删除好友
@@ -188,6 +240,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/removeRosterFromBlockList:withCompletion:" title="removeRosterFromBlockList:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeRosterById:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### removeRosterFromBlockList:withCompletion:
 
 从黑名单移除
@@ -201,6 +257,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/removeRosterListener:" title="removeRosterListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeRosterFromBlockList:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### removeRosterListener:
 
 移除好友变化监听者
@@ -214,6 +274,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/searchByRoserName:forceRefresh:completion:" title="searchByRoserName:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeRosterListener:" %}{% endlanying_code_snippet %}
+```
 ### searchByRoserName:forceRefresh:completion:
 
 通过好友Name搜索
@@ -235,6 +299,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/searchByRosterId:forceRefresh:completion:" title="searchByRosterId:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="searchByRoserName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### searchByRosterId:forceRefresh:completion:
 
 通过好友ID搜索
@@ -256,6 +324,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/searchRostersByRosterIdList:forceRefresh:completion:" title="searchRostersByRosterIdList:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="searchByRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### searchRostersByRosterIdList:forceRefresh:completion:
 
 批量搜索用户
@@ -280,6 +352,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/updateItemAliasByRoster:aliasJson:completion:" title="updateItemAliasByRoster:aliasJson:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="searchRostersByRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateItemAliasByRoster:aliasJson:completion:
 
 更新好友别名
@@ -293,6 +369,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/updateItemExtensionByRoster:extensionJson:completion:" title="updateItemExtensionByRoster:extensionJson:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="updateItemAliasByRoster:aliasJson:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateItemExtensionByRoster:extensionJson:completion:
 
 更新好友扩展信息
@@ -306,6 +386,10 @@
 * `BMXRosterManager.h`
 
 <a name="//api/name/updateItemLocalExtensionByRoster:localExtensionJson:completion:" title="updateItemLocalExtensionByRoster:localExtensionJson:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="updateItemExtensionByRoster:extensionJson:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateItemLocalExtensionByRoster:localExtensionJson:completion:
 
 更新好友本地扩展信息
@@ -318,3 +402,7 @@
 #### Declared In
 * `BMXRosterManager.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="updateItemLocalExtensionByRoster:localExtensionJson:completion:" %}{% endlanying_code_snippet %}
+```

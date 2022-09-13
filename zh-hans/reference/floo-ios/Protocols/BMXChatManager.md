@@ -23,6 +23,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/ackMessageDelivered:" title="ackMessageDelivered:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="ackMessage:" %}{% endlanying_code_snippet %}
+```
 ### ackMessageDelivered:
 
 发送送达回执
@@ -36,6 +40,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/addChatListener:" title="addChatListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="ackMessageDelivered:" %}{% endlanying_code_snippet %}
+```
 ### addChatListener:
 
 添加聊天监听者
@@ -49,16 +57,28 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="addChatListener:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:
 
 `- (void)addDelegate:(id<BMXChatServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="addDelegate:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXChatServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/deleteConversationByConversationId:synchronize:" title="deleteConversationByConversationId:synchronize:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+```
 ### deleteConversationByConversationId:synchronize:
 
 删除会话
@@ -72,6 +92,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/downloadAttachment:" title="downloadAttachment:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="deleteConversationByConversationId:synchronize:" %}{% endlanying_code_snippet %}
+```
 ### downloadAttachment:
 
 下载附件，下载状态变化和进度通过listener通知
@@ -85,6 +109,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/downloadThumbnail:strategy:" title="downloadThumbnail:strategy:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="downloadAttachment:" %}{% endlanying_code_snippet %}
+```
 ### downloadThumbnail:strategy:
 
 下载缩略图，下载状态变化和进度通过listener通知
@@ -100,6 +128,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/forwardMessage:" title="forwardMessage:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="downloadThumbnail:strategy:" %}{% endlanying_code_snippet %}
+```
 ### forwardMessage:
 
 简单转发消息，用户应当通过BMXMessagse::createForwardMessage()先创建转发消息
@@ -115,6 +147,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/getAllConversationsUnreadCountWithCompletion:" title="getAllConversationsUnreadCountWithCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="forwardMessage:" %}{% endlanying_code_snippet %}
+```
 ### getAllConversationsUnreadCountWithCompletion:
 
 获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内）
@@ -133,6 +169,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/getAllConversationsWithCompletion:" title="getAllConversationsWithCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="getAllConversationsUnreadCountWithCompletion:" %}{% endlanying_code_snippet %}
+```
 ### getAllConversationsWithCompletion:
 
 获取所有会话
@@ -146,6 +186,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/getAttachmentDir" title="getAttachmentDir"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="getAllConversationsWithCompletion:" %}{% endlanying_code_snippet %}
+```
 ### getAttachmentDir
 
 获取附件保存路径
@@ -159,6 +203,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/getAttachmentDirForConversationWith:" title="getAttachmentDirForConversationWith:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="getAttachmentDir" %}{% endlanying_code_snippet %}
+```
 ### getAttachmentDirForConversationWith:
 
 获取会话的附件保存路径
@@ -172,6 +220,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/getGroupAckMessageUnreadUserIdListWithMessage:completion:" title="getGroupAckMessageUnreadUserIdListWithMessage:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="getAttachmentDirForConversationWith:" %}{% endlanying_code_snippet %}
+```
 ### getGroupAckMessageUnreadUserIdListWithMessage:completion:
 
 获取发送的群组消息未读用户id列表
@@ -193,6 +245,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/getGroupAckMessageUserIdListWithMessage:completion:" title="getGroupAckMessageUserIdListWithMessage:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="getGroupAckMessageUnreadUserIdListWithMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### getGroupAckMessageUserIdListWithMessage:completion:
 
 获取发送的群组消息已读用户id列表
@@ -214,6 +270,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/getMessage:completion:" title="getMessage:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="getGroupAckMessageUserIdListWithMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### getMessage:completion:
 
 读取一条消息
@@ -227,6 +287,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/insetMessages:completion:" title="insetMessages:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="getMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### insetMessages:completion:
 
 插入消息
@@ -240,6 +304,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/openConversation:type:createIfNotExist:" title="openConversation:type:createIfNotExist:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="insetMessages:completion:" %}{% endlanying_code_snippet %}
+```
 ### openConversation:type:createIfNotExist:
 
 打开一个会话
@@ -253,6 +321,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/readAllMessage:" title="readAllMessage:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="openConversation:type:createIfNotExist:" %}{% endlanying_code_snippet %}
+```
 ### readAllMessage:
 
 标记此消息及之前全部消息为已读，该消息同步到当前用户的所有设备
@@ -266,6 +338,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/readCancel:" title="readCancel:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="readAllMessage:" %}{% endlanying_code_snippet %}
+```
 ### readCancel:
 
 标记此消息为未读，该消息同步到当前用户的所有设备
@@ -279,6 +355,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/recallMessage:completion:" title="recallMessage:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="readCancel:" %}{% endlanying_code_snippet %}
+```
 ### recallMessage:completion:
 
 撤回消息，消息状态变化会通过listener通知
@@ -294,6 +374,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/removeChatListener:" title="removeChatListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="recallMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeChatListener:
 
 移除聊天监听者
@@ -307,11 +391,19 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="removeChatListener:" %}{% endlanying_code_snippet %}
+```
 ### removeDelegate:
 
 `- (void)removeDelegate:(id<BMXChatServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removeMessage:synchronizeDeviceForce:" title="removeMessage:synchronizeDeviceForce:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="removeDelegate:" %}{% endlanying_code_snippet %}
+```
 ### removeMessage:synchronizeDeviceForce:
 
 删除此消息，该消息同步到当前用户的其它设备
@@ -325,6 +417,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/resendMessage:completion:" title="resendMessage:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="removeMessage:synchronizeDeviceForce:" %}{% endlanying_code_snippet %}
+```
 ### resendMessage:completion:
 
 重新发送消息，消息状态变化会通过listener通知
@@ -340,6 +436,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/retrieveHistoryBMXconversation:msgId:size:completion:" title="retrieveHistoryBMXconversation:msgId:size:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="resendMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### retrieveHistoryBMXconversation:msgId:size:completion:
 
 拉取历史消息
@@ -353,6 +453,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/searchMessagesByKeyWords:refTime:size:directionType:completion:" title="searchMessagesByKeyWords:refTime:size:directionType:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="retrieveHistoryBMXconversation:msgId:size:completion:" %}{% endlanying_code_snippet %}
+```
 ### searchMessagesByKeyWords:refTime:size:directionType:completion:
 
 搜索消息
@@ -366,6 +470,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/sendMessage:" title="sendMessage:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="searchMessagesByKeyWords:refTime:size:directionType:completion:" %}{% endlanying_code_snippet %}
+```
 ### sendMessage:
 
 发送消息，消息状态变化会通过listener通知
@@ -381,6 +489,10 @@
 * `BMXChatManager.h`
 
 <a name="//api/name/transferingNum" title="transferingNum"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="sendMessage:" %}{% endlanying_code_snippet %}
+```
 ### transferingNum
 
 上传或下载中的文件数
@@ -393,3 +505,7 @@
 #### Declared In
 * `BMXChatManager.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatManager",function="transferingNum" %}{% endlanying_code_snippet %}
+```

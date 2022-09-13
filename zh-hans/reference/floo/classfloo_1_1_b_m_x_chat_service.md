@@ -88,6 +88,10 @@ inline virtual ~BMXChatService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="~BMXChatService" %}{% endlanying_code_snippet %}
+```
 ### function sendMessage
 
 ```cpp
@@ -103,6 +107,10 @@ virtual void sendMessage(
   * **msg** 发送的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="sendMessage" %}{% endlanying_code_snippet %}
+```
 ### function resendMessage
 
 ```cpp
@@ -118,6 +126,10 @@ virtual void resendMessage(
   * **msg** 重新发送的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="resendMessage" %}{% endlanying_code_snippet %}
+```
 ### function recallMessage
 
 ```cpp
@@ -133,6 +145,10 @@ virtual void recallMessage(
   * **msg** 撤回的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="recallMessage" %}{% endlanying_code_snippet %}
+```
 ### function forwardMessage
 
 ```cpp
@@ -154,6 +170,10 @@ virtual BMXErrorCode forwardMessage(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="forwardMessage" %}{% endlanying_code_snippet %}
+```
 ### function forwardMessage
 
 ```cpp
@@ -169,6 +189,10 @@ virtual void forwardMessage(
   * **msg** 转发的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="forwardMessage" %}{% endlanying_code_snippet %}
+```
 ### function ackMessage
 
 ```cpp
@@ -184,6 +208,10 @@ virtual void ackMessage(
   * **msg** 需要发送已读回执的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="ackMessage" %}{% endlanying_code_snippet %}
+```
 ### function ackMessageDelivered
 
 ```cpp
@@ -194,6 +222,10 @@ virtual void ackMessageDelivered(
 
 发送送达回执 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="ackMessageDelivered" %}{% endlanying_code_snippet %}
+```
 ### function ackPlayMessage
 
 ```cpp
@@ -209,6 +241,10 @@ virtual void ackPlayMessage(
   * **msg** 需要发送已读回执的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="ackPlayMessage" %}{% endlanying_code_snippet %}
+```
 ### function readCancel
 
 ```cpp
@@ -224,6 +260,10 @@ virtual void readCancel(
   * **msg** 需要发送消息已读取消的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="readCancel" %}{% endlanying_code_snippet %}
+```
 ### function readAllMessage
 
 ```cpp
@@ -239,6 +279,10 @@ virtual void readAllMessage(
   * **msg** 需要标记为此消息以前全部消息为已读的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="readAllMessage" %}{% endlanying_code_snippet %}
+```
 ### function removeMessage
 
 ```cpp
@@ -256,6 +300,10 @@ virtual void removeMessage(
   * **synchronize** 是否同步到其它设备，不同步的情况下只会删除本地存储的该条消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="removeMessage" %}{% endlanying_code_snippet %}
+```
 ### function downloadThumbnail
 
 ```cpp
@@ -273,6 +321,10 @@ virtual void downloadThumbnail(
   * **strategy** 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="downloadThumbnail" %}{% endlanying_code_snippet %}
+```
 ### function downloadAttachment
 
 ```cpp
@@ -288,6 +340,10 @@ virtual void downloadAttachment(
   * **msg** 需要下载附件的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="downloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function downloadAttachmentByUrl
 
 ```cpp
@@ -300,6 +356,10 @@ virtual void downloadAttachmentByUrl(
 
 下载附件，下载状态变化和进度通过listener通知 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="downloadAttachmentByUrl" %}{% endlanying_code_snippet %}
+```
 ### function cancelUploadAttachment
 
 ```cpp
@@ -315,6 +375,10 @@ virtual void cancelUploadAttachment(
   * **msg** 需要取消上传附件的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="cancelUploadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function cancelDownloadAttachment
 
 ```cpp
@@ -330,6 +394,10 @@ virtual void cancelDownloadAttachment(
   * **msg** 需要取消下载附件的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="cancelDownloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function transferingNum
 
 ```cpp
@@ -340,6 +408,10 @@ virtual int transferingNum() =0
 
 **Return**: 文件数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="transferingNum" %}{% endlanying_code_snippet %}
+```
 ### function insertMessages
 
 ```cpp
@@ -357,6 +429,10 @@ virtual BMXErrorCode insertMessages(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="insertMessages" %}{% endlanying_code_snippet %}
+```
 ### function getMessage
 
 ```cpp
@@ -374,6 +450,10 @@ virtual BMXMessagePtr getMessage(
 
 **Return**: BMXMessagePtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getMessage" %}{% endlanying_code_snippet %}
+```
 ### function deleteConversation
 
 ```cpp
@@ -391,6 +471,10 @@ virtual void deleteConversation(
   * **synchronize** 是否同步删除其它设备该会话，默认为false，仅删除本设备会话 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="deleteConversation" %}{% endlanying_code_snippet %}
+```
 ### function openConversation
 
 ```cpp
@@ -412,6 +496,10 @@ virtual BMXConversationPtr openConversation(
 
 **Return**: BMXConversationPtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="openConversation" %}{% endlanying_code_snippet %}
+```
 ### function attachmentDir
 
 ```cpp
@@ -422,6 +510,10 @@ virtual std::string attachmentDir() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="attachmentDir" %}{% endlanying_code_snippet %}
+```
 ### function attachmentDirForConversation
 
 ```cpp
@@ -439,6 +531,10 @@ virtual std::string attachmentDirForConversation(
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="attachmentDirForConversation" %}{% endlanying_code_snippet %}
+```
 ### function getAllConversations
 
 ```cpp
@@ -449,6 +545,10 @@ virtual BMXConversationList getAllConversations() =0
 
 **Return**: BMXConversationList 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getAllConversations" %}{% endlanying_code_snippet %}
+```
 ### function getAllConversationsUnreadCount
 
 ```cpp
@@ -459,6 +559,10 @@ virtual int getAllConversationsUnreadCount() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getAllConversationsUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function retrieveHistoryMessages
 
 ```cpp
@@ -482,6 +586,10 @@ virtual BMXErrorCode retrieveHistoryMessages(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="retrieveHistoryMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessagesByKeyWords
 
 ```cpp
@@ -507,6 +615,10 @@ virtual BMXErrorCode searchMessagesByKeyWords(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```cpp
@@ -537,6 +649,10 @@ use searchMessagesByKeyWords instead.
 搜索消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function getGroupAckMessageUserIdList
 
 ```cpp
@@ -556,6 +672,10 @@ virtual BMXErrorCode getGroupAckMessageUserIdList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupAckMessageUserIdList" %}{% endlanying_code_snippet %}
+```
 ### function getGroupAckMessageUnreadUserIdList
 
 ```cpp
@@ -575,6 +695,10 @@ virtual BMXErrorCode getGroupAckMessageUnreadUserIdList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupAckMessageUnreadUserIdList" %}{% endlanying_code_snippet %}
+```
 ### function getGroupPlayAckMessageUserIdList
 
 ```cpp
@@ -594,6 +718,10 @@ virtual BMXErrorCode getGroupPlayAckMessageUserIdList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupPlayAckMessageUserIdList" %}{% endlanying_code_snippet %}
+```
 ### function getGroupUnPlayAckMessageUserIdList
 
 ```cpp
@@ -613,6 +741,10 @@ virtual BMXErrorCode getGroupUnPlayAckMessageUserIdList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupUnPlayAckMessageUserIdList" %}{% endlanying_code_snippet %}
+```
 ### function addChatListener
 
 ```cpp
@@ -628,6 +760,10 @@ virtual void addChatListener(
   * **listener** 聊天监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="addChatListener" %}{% endlanying_code_snippet %}
+```
 ### function removeChatListener
 
 ```cpp
@@ -645,6 +781,10 @@ virtual void removeChatListener(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="removeChatListener" %}{% endlanying_code_snippet %}
+```
 ### function BMXChatService
 
 ```cpp
@@ -652,6 +792,10 @@ inline BMXChatService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="BMXChatService" %}{% endlanying_code_snippet %}
+```
 ### function updateMessageId
 
 ```cpp
@@ -662,6 +806,10 @@ void updateMessageId(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="updateMessageId" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

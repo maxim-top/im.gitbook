@@ -121,6 +121,10 @@ inline virtual ~BMXGroupService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="~BMXGroupService" %}{% endlanying_code_snippet %}
+```
 ### function get
 
 ```cpp
@@ -140,6 +144,10 @@ virtual BMXErrorCode get(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="get" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```cpp
@@ -164,6 +172,10 @@ use get instead.
 获取群组列表，如果设置了forceRefresh则从服务器拉取 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchGroupsByIdList
 
 ```cpp
@@ -185,6 +197,10 @@ virtual BMXErrorCode fetchGroupsByIdList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="fetchGroupsByIdList" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```cpp
@@ -211,6 +227,10 @@ use fetchGroupsByIdList instead.
 获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchGroupById
 
 ```cpp
@@ -232,6 +252,10 @@ virtual BMXErrorCode fetchGroupById(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="fetchGroupById" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```cpp
@@ -258,6 +282,10 @@ use fetchGroupById instead.
 获取群信息，如果设置了forceRefresh则从服务器拉取 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchLocalGroupsByName
 
 ```cpp
@@ -277,6 +305,10 @@ virtual BMXErrorCode fetchLocalGroupsByName(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="fetchLocalGroupsByName" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```cpp
@@ -301,6 +333,10 @@ use fetchLocalGroupsByName instead.
 通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function create
 
 ```cpp
@@ -320,6 +356,10 @@ virtual BMXErrorCode create(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="create" %}{% endlanying_code_snippet %}
+```
 ### function destroy
 
 ```cpp
@@ -337,6 +377,10 @@ virtual BMXErrorCode destroy(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="destroy" %}{% endlanying_code_snippet %}
+```
 ### function join
 
 ```cpp
@@ -356,6 +400,10 @@ virtual BMXErrorCode join(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="join" %}{% endlanying_code_snippet %}
+```
 ### function leave
 
 ```cpp
@@ -373,6 +421,10 @@ virtual BMXErrorCode leave(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="leave" %}{% endlanying_code_snippet %}
+```
 ### function getInfo
 
 ```cpp
@@ -390,6 +442,10 @@ virtual BMXErrorCode getInfo(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getInfo" %}{% endlanying_code_snippet %}
+```
 ### function getMembersNickname
 
 ```cpp
@@ -411,6 +467,10 @@ virtual BMXErrorCode getMembersNickname(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembersNickname" %}{% endlanying_code_snippet %}
+```
 ### function getInvitationList
 
 ```cpp
@@ -432,6 +492,10 @@ virtual BMXErrorCode getInvitationList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getInvitationList" %}{% endlanying_code_snippet %}
+```
 ### function getApplicationList
 
 ```cpp
@@ -455,6 +519,10 @@ virtual BMXErrorCode getApplicationList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getApplicationList" %}{% endlanying_code_snippet %}
+```
 ### function getMembers
 
 ```cpp
@@ -478,6 +546,10 @@ virtual BMXErrorCode getMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
+```
 ### function getMembers
 
 ```cpp
@@ -499,6 +571,10 @@ virtual BMXErrorCode getMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
+```
 ### function addMembers
 
 ```cpp
@@ -520,6 +596,10 @@ virtual BMXErrorCode addMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="addMembers" %}{% endlanying_code_snippet %}
+```
 ### function removeMembers
 
 ```cpp
@@ -541,6 +621,10 @@ virtual BMXErrorCode removeMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeMembers" %}{% endlanying_code_snippet %}
+```
 ### function addAdmins
 
 ```cpp
@@ -562,6 +646,10 @@ virtual BMXErrorCode addAdmins(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="addAdmins" %}{% endlanying_code_snippet %}
+```
 ### function removeAdmins
 
 ```cpp
@@ -583,6 +671,10 @@ virtual BMXErrorCode removeAdmins(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeAdmins" %}{% endlanying_code_snippet %}
+```
 ### function getAdmins
 
 ```cpp
@@ -604,6 +696,10 @@ virtual BMXErrorCode getAdmins(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getAdmins" %}{% endlanying_code_snippet %}
+```
 ### function blockMembers
 
 ```cpp
@@ -623,6 +719,10 @@ virtual BMXErrorCode blockMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="blockMembers" %}{% endlanying_code_snippet %}
+```
 ### function unblockMembers
 
 ```cpp
@@ -642,6 +742,10 @@ virtual BMXErrorCode unblockMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="unblockMembers" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```cpp
@@ -665,6 +769,10 @@ virtual BMXErrorCode getBlockList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```cpp
@@ -686,6 +794,10 @@ virtual BMXErrorCode getBlockList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function banMembers
 
 ```cpp
@@ -709,6 +821,10 @@ virtual BMXErrorCode banMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="banMembers" %}{% endlanying_code_snippet %}
+```
 ### function banGroup
 
 ```cpp
@@ -728,6 +844,10 @@ virtual BMXErrorCode banGroup(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="banGroup" %}{% endlanying_code_snippet %}
+```
 ### function unbanMembers
 
 ```cpp
@@ -747,6 +867,10 @@ virtual BMXErrorCode unbanMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="unbanMembers" %}{% endlanying_code_snippet %}
+```
 ### function unbanGroup
 
 ```cpp
@@ -764,6 +888,10 @@ virtual BMXErrorCode unbanGroup(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="unbanGroup" %}{% endlanying_code_snippet %}
+```
 ### function getBannedMembers
 
 ```cpp
@@ -787,6 +915,10 @@ virtual BMXErrorCode getBannedMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
+```
 ### function getBannedMembers
 
 ```cpp
@@ -806,6 +938,10 @@ virtual BMXErrorCode getBannedMembers(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
+```
 ### function muteMessage
 
 ```cpp
@@ -825,6 +961,10 @@ virtual BMXErrorCode muteMessage(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="muteMessage" %}{% endlanying_code_snippet %}
+```
 ### function acceptApplication
 
 ```cpp
@@ -844,6 +984,10 @@ virtual BMXErrorCode acceptApplication(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="acceptApplication" %}{% endlanying_code_snippet %}
+```
 ### function declineApplication
 
 ```cpp
@@ -865,6 +1009,10 @@ virtual BMXErrorCode declineApplication(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="declineApplication" %}{% endlanying_code_snippet %}
+```
 ### function acceptInvitation
 
 ```cpp
@@ -884,6 +1032,10 @@ virtual BMXErrorCode acceptInvitation(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="acceptInvitation" %}{% endlanying_code_snippet %}
+```
 ### function declineInvitation
 
 ```cpp
@@ -905,6 +1057,10 @@ virtual BMXErrorCode declineInvitation(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="declineInvitation" %}{% endlanying_code_snippet %}
+```
 ### function transferOwner
 
 ```cpp
@@ -924,6 +1080,10 @@ virtual BMXErrorCode transferOwner(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="transferOwner" %}{% endlanying_code_snippet %}
+```
 ### function uploadSharedFile
 
 ```cpp
@@ -949,6 +1109,10 @@ virtual BMXErrorCode uploadSharedFile(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="uploadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function cancelUploadSharedFile
 
 ```cpp
@@ -968,6 +1132,10 @@ virtual BMXErrorCode cancelUploadSharedFile(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="cancelUploadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function removeSharedFile
 
 ```cpp
@@ -987,6 +1155,10 @@ virtual BMXErrorCode removeSharedFile(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function downloadSharedFile
 
 ```cpp
@@ -1008,6 +1180,10 @@ virtual BMXErrorCode downloadSharedFile(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="downloadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function cancelDownloadSharedFile
 
 ```cpp
@@ -1027,6 +1203,10 @@ virtual BMXErrorCode cancelDownloadSharedFile(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="cancelDownloadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function getSharedFilesList
 
 ```cpp
@@ -1048,6 +1228,10 @@ virtual BMXErrorCode getSharedFilesList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getSharedFilesList" %}{% endlanying_code_snippet %}
+```
 ### function changeSharedFileName
 
 ```cpp
@@ -1069,6 +1253,10 @@ virtual BMXErrorCode changeSharedFileName(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="changeSharedFileName" %}{% endlanying_code_snippet %}
+```
 ### function getLatestAnnouncement
 
 ```cpp
@@ -1090,6 +1278,10 @@ virtual BMXErrorCode getLatestAnnouncement(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getLatestAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function getAnnouncementList
 
 ```cpp
@@ -1111,6 +1303,10 @@ virtual BMXErrorCode getAnnouncementList(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getAnnouncementList" %}{% endlanying_code_snippet %}
+```
 ### function editAnnouncement
 
 ```cpp
@@ -1132,6 +1328,10 @@ virtual BMXErrorCode editAnnouncement(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="editAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function deleteAnnouncement
 
 ```cpp
@@ -1151,6 +1351,10 @@ virtual BMXErrorCode deleteAnnouncement(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="deleteAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function setName
 
 ```cpp
@@ -1170,6 +1374,10 @@ virtual BMXErrorCode setName(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setName" %}{% endlanying_code_snippet %}
+```
 ### function setDescription
 
 ```cpp
@@ -1189,6 +1397,10 @@ virtual BMXErrorCode setDescription(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setDescription" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```cpp
@@ -1208,6 +1420,10 @@ virtual BMXErrorCode setExtension(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function setMyNickname
 
 ```cpp
@@ -1227,6 +1443,10 @@ virtual BMXErrorCode setMyNickname(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setMyNickname" %}{% endlanying_code_snippet %}
+```
 ### function setMsgPushMode
 
 ```cpp
@@ -1246,6 +1466,10 @@ virtual BMXErrorCode setMsgPushMode(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setMsgPushMode" %}{% endlanying_code_snippet %}
+```
 ### function setJoinAuthMode
 
 ```cpp
@@ -1265,6 +1489,10 @@ virtual BMXErrorCode setJoinAuthMode(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setJoinAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function setInviteMode
 
 ```cpp
@@ -1284,6 +1512,10 @@ virtual BMXErrorCode setInviteMode(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setInviteMode" %}{% endlanying_code_snippet %}
+```
 ### function setAllowMemberModify
 
 ```cpp
@@ -1303,6 +1535,10 @@ virtual BMXErrorCode setAllowMemberModify(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setAllowMemberModify" %}{% endlanying_code_snippet %}
+```
 ### function setEnableReadAck
 
 ```cpp
@@ -1322,6 +1558,10 @@ virtual BMXErrorCode setEnableReadAck(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setEnableReadAck" %}{% endlanying_code_snippet %}
+```
 ### function setHistoryVisible
 
 ```cpp
@@ -1341,6 +1581,10 @@ virtual BMXErrorCode setHistoryVisible(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setHistoryVisible" %}{% endlanying_code_snippet %}
+```
 ### function setAvatar
 
 ```cpp
@@ -1362,6 +1606,10 @@ virtual BMXErrorCode setAvatar(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setAvatar" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```cpp
@@ -1383,6 +1631,10 @@ virtual BMXErrorCode downloadAvatar(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function addGroupListener
 
 ```cpp
@@ -1398,6 +1650,10 @@ virtual void addGroupListener(
   * **listener** 群组变化监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="addGroupListener" %}{% endlanying_code_snippet %}
+```
 ### function removeGroupListener
 
 ```cpp
@@ -1415,6 +1671,10 @@ virtual void removeGroupListener(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeGroupListener" %}{% endlanying_code_snippet %}
+```
 ### function BMXGroupService
 
 ```cpp
@@ -1422,6 +1682,10 @@ inline BMXGroupService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="BMXGroupService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

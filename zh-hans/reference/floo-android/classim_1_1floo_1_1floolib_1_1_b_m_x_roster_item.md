@@ -58,6 +58,10 @@ inline BMXRosterItem()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="BMXRosterItem" %}{% endlanying_code_snippet %}
+```
 ### function delete
 
 ```java
@@ -65,6 +69,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function rosterId
 
 ```java
@@ -75,6 +83,10 @@ inline long rosterId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="rosterId" %}{% endlanying_code_snippet %}
+```
 ### function username
 
 ```java
@@ -85,6 +97,10 @@ inline String username()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="username" %}{% endlanying_code_snippet %}
+```
 ### function nickname
 
 ```java
@@ -95,6 +111,10 @@ inline String nickname()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="nickname" %}{% endlanying_code_snippet %}
+```
 ### function avatarRatelUrl
 
 ```java
@@ -105,6 +125,10 @@ inline String avatarRatelUrl()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarUrl
 
 ```java
@@ -115,6 +139,10 @@ inline String avatarUrl()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarPath
 
 ```java
@@ -125,6 +153,10 @@ inline String avatarPath()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="avatarPath" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailUrl
 
 ```java
@@ -135,6 +167,10 @@ inline String avatarThumbnailUrl()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailPath
 
 ```java
@@ -145,6 +181,10 @@ inline String avatarThumbnailPath()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function publicInfo
 
 ```java
@@ -155,6 +195,10 @@ inline String publicInfo()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="publicInfo" %}{% endlanying_code_snippet %}
+```
 ### function alias
 
 ```java
@@ -165,6 +209,10 @@ inline String alias()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="alias" %}{% endlanying_code_snippet %}
+```
 ### function ext
 
 ```java
@@ -175,6 +223,10 @@ inline String ext()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="ext" %}{% endlanying_code_snippet %}
+```
 ### function localExt
 
 ```java
@@ -185,6 +237,10 @@ inline String localExt()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="localExt" %}{% endlanying_code_snippet %}
+```
 ### function relation
 
 ```java
@@ -195,6 +251,10 @@ inline BMXRosterItem.RosterRelation relation()
 
 **Return**: [RosterRelation]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="relation" %}{% endlanying_code_snippet %}
+```
 ### function isMuteNotification
 
 ```java
@@ -205,6 +265,10 @@ inline boolean isMuteNotification()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="isMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function addFriendAuthMode
 
 ```java
@@ -215,6 +279,10 @@ roster的好友添加验证方式。
 
 **Return**: [AddFriendAuthMode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function authQuestion
 
 ```java
@@ -227,6 +295,10 @@ roster的好友验证问题。
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="authQuestion" %}{% endlanying_code_snippet %}
+```
 ### function BMXRosterItem
 
 ```java
@@ -237,6 +309,10 @@ inline BMXRosterItem(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="BMXRosterItem" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -244,6 +320,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -262,6 +342,10 @@ transient long swigCPtr;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterItem",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

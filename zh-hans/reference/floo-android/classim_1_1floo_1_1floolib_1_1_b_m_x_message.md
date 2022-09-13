@@ -92,6 +92,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function msgId
 
 ```java
@@ -102,6 +106,10 @@ inline long msgId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="msgId" %}{% endlanying_code_snippet %}
+```
 ### function clientMsgId
 
 ```java
@@ -112,6 +120,10 @@ inline long clientMsgId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="clientMsgId" %}{% endlanying_code_snippet %}
+```
 ### function fromId
 
 ```java
@@ -122,6 +134,10 @@ inline long fromId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="fromId" %}{% endlanying_code_snippet %}
+```
 ### function toId
 
 ```java
@@ -132,6 +148,10 @@ inline long toId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="toId" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```java
@@ -142,6 +162,10 @@ inline BMXMessage.MessageType type()
 
 **Return**: [MessageType]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="type" %}{% endlanying_code_snippet %}
+```
 ### function conversationId
 
 ```java
@@ -152,6 +176,10 @@ inline long conversationId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="conversationId" %}{% endlanying_code_snippet %}
+```
 ### function deliveryStatus
 
 ```java
@@ -162,6 +190,10 @@ inline BMXMessage.DeliveryStatus deliveryStatus()
 
 **Return**: [DeliveryStatus]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="deliveryStatus" %}{% endlanying_code_snippet %}
+```
 ### function setDeliveryStatus
 
 ```java
@@ -172,6 +204,10 @@ inline void setDeliveryStatus(
 
 设置消息投递状态 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setDeliveryStatus" %}{% endlanying_code_snippet %}
+```
 ### function serverTimestamp
 
 ```java
@@ -182,6 +218,10 @@ inline long serverTimestamp()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="serverTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function setServerTimestamp
 
 ```java
@@ -192,6 +232,10 @@ inline void setServerTimestamp(
 
 设置时间戳（服务端收到时的时间） 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setServerTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function clientTimestamp
 
 ```java
@@ -202,6 +246,10 @@ inline long clientTimestamp()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="clientTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function setClientTimestamp
 
 ```java
@@ -212,6 +260,10 @@ inline void setClientTimestamp(
 
 设置消息本地时间戳 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setClientTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function isPlayed
 
 ```java
@@ -222,6 +274,10 @@ inline boolean isPlayed()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isPlayed" %}{% endlanying_code_snippet %}
+```
 ### function setIsPlayed
 
 ```java
@@ -231,6 +287,10 @@ inline void setIsPlayed(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsPlayed" %}{% endlanying_code_snippet %}
+```
 ### function isPlayAcked
 
 ```java
@@ -241,6 +301,10 @@ inline boolean isPlayAcked()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isPlayAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsPlayAcked
 
 ```java
@@ -250,6 +314,10 @@ inline void setIsPlayAcked(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsPlayAcked" %}{% endlanying_code_snippet %}
+```
 ### function isReceiveMsg
 
 ```java
@@ -260,6 +328,10 @@ inline boolean isReceiveMsg()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isReceiveMsg" %}{% endlanying_code_snippet %}
+```
 ### function setIsReceiveMsg
 
 ```java
@@ -269,6 +341,10 @@ inline void setIsReceiveMsg(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsReceiveMsg" %}{% endlanying_code_snippet %}
+```
 ### function isRead
 
 ```java
@@ -279,6 +355,10 @@ inline boolean isRead()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isRead" %}{% endlanying_code_snippet %}
+```
 ### function setIsRead
 
 ```java
@@ -288,6 +368,10 @@ inline void setIsRead(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsRead" %}{% endlanying_code_snippet %}
+```
 ### function isReadAcked
 
 ```java
@@ -298,6 +382,10 @@ inline boolean isReadAcked()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isReadAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsReadAcked
 
 ```java
@@ -307,6 +395,10 @@ inline void setIsReadAcked(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsReadAcked" %}{% endlanying_code_snippet %}
+```
 ### function isDeliveryAcked
 
 ```java
@@ -317,6 +409,10 @@ inline boolean isDeliveryAcked()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsDeliveryAcked
 
 ```java
@@ -326,6 +422,10 @@ inline void setIsDeliveryAcked(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsDeliveryAcked" %}{% endlanying_code_snippet %}
+```
 ### function content
 
 ```java
@@ -336,6 +436,10 @@ inline String content()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="content" %}{% endlanying_code_snippet %}
+```
 ### function setContent
 
 ```java
@@ -351,6 +455,10 @@ inline void setContent(
   * **content** 消息文本内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setContent" %}{% endlanying_code_snippet %}
+```
 ### function contentType
 
 ```java
@@ -361,6 +469,10 @@ inline BMXMessage.ContentType contentType()
 
 **Return**: [ContentType]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="contentType" %}{% endlanying_code_snippet %}
+```
 ### function attachment
 
 ```java
@@ -371,6 +483,10 @@ inline BMXMessageAttachment attachment()
 
 **Return**: BMXMessageAttachmentPtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="attachment" %}{% endlanying_code_snippet %}
+```
 ### function config
 
 ```java
@@ -381,6 +497,10 @@ inline BMXMessageConfig config()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="config" %}{% endlanying_code_snippet %}
+```
 ### function setConfig
 
 ```java
@@ -391,6 +511,10 @@ inline void setConfig(
 
 设置消息配置信息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setConfig" %}{% endlanying_code_snippet %}
+```
 ### function extension
 
 ```java
@@ -401,6 +525,10 @@ inline String extension()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="extension" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```java
@@ -411,6 +539,10 @@ inline void setExtension(
 
 设置消息扩展信息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function deliveryQos
 
 ```java
@@ -421,6 +553,10 @@ inline BMXMessage.DeliveryQos deliveryQos()
 
 **Return**: [DeliveryQos]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="deliveryQos" %}{% endlanying_code_snippet %}
+```
 ### function setDeliveryQos
 
 ```java
@@ -436,6 +572,10 @@ inline void setDeliveryQos(
   * **qos** 消息投递QOS 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setDeliveryQos" %}{% endlanying_code_snippet %}
+```
 ### function senderName
 
 ```java
@@ -446,6 +586,10 @@ inline String senderName()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="senderName" %}{% endlanying_code_snippet %}
+```
 ### function setSenderName
 
 ```java
@@ -461,6 +605,10 @@ inline void setSenderName(
   * **senderName** 消息文本内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setSenderName" %}{% endlanying_code_snippet %}
+```
 ### function groupAckCount
 
 ```java
@@ -471,6 +619,10 @@ inline int groupAckCount()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupAckCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupAckCount
 
 ```java
@@ -486,6 +638,10 @@ inline void setGroupAckCount(
   * **count** 设置群消息已读数目 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupAckCount" %}{% endlanying_code_snippet %}
+```
 ### function groupAckUnreadCount
 
 ```java
@@ -496,6 +652,10 @@ inline int groupAckUnreadCount()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupAckUnreadCount
 
 ```java
@@ -511,6 +671,10 @@ inline void setGroupAckUnreadCount(
   * **count** 设置群消息未读数目 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function groupAckReadAll
 
 ```java
@@ -521,6 +685,10 @@ inline boolean groupAckReadAll()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupAckReadAll" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckCount
 
 ```java
@@ -531,6 +699,10 @@ inline int groupPlayAckCount()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupPlayAckCount
 
 ```java
@@ -540,6 +712,10 @@ inline void setGroupPlayAckCount(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupPlayAckCount" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckUnreadCount
 
 ```java
@@ -550,6 +726,10 @@ inline int groupPlayAckUnreadCount()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupPlayAckUnreadCount
 
 ```java
@@ -559,6 +739,10 @@ inline void setGroupPlayAckUnreadCount(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckReadAll
 
 ```java
@@ -569,6 +753,10 @@ inline boolean groupPlayAckReadAll()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
+```
 ### function setPriority
 
 ```java
@@ -584,6 +772,10 @@ inline void setPriority(
   * **priority** 优先级 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setPriority" %}{% endlanying_code_snippet %}
+```
 ### function priority
 
 ```java
@@ -594,6 +786,10 @@ inline int priority()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="priority" %}{% endlanying_code_snippet %}
+```
 ### function setPushMessageMode
 
 ```java
@@ -604,6 +800,10 @@ inline void setPushMessageMode(
 
 设置是否推送消息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setPushMessageMode" %}{% endlanying_code_snippet %}
+```
 ### function isPushMessage
 
 ```java
@@ -614,6 +814,10 @@ inline boolean isPushMessage()
 
 **Return**: boolean 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isPushMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```java
@@ -637,6 +841,10 @@ static inline BMXMessage createMessage(
   * **content** 消息内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```java
@@ -660,6 +868,10 @@ static inline BMXMessage createMessage(
   * **attachment** 附件 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createCommandMessage
 
 ```java
@@ -683,6 +895,10 @@ static inline BMXMessage createCommandMessage(
   * **content** 消息内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```java
@@ -710,6 +926,10 @@ static inline BMXMessage createMessage(
   * **serverTimestamp** 服务器时间戳 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```java
@@ -737,6 +957,10 @@ static inline BMXMessage createMessage(
   * **serverTimestamp** 服务器时间戳 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createCommandMessage
 
 ```java
@@ -764,6 +988,10 @@ static inline BMXMessage createCommandMessage(
   * **serverTimestamp** 服务器时间戳 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
+```
 ### function createForwardMessage
 
 ```java
@@ -789,6 +1017,10 @@ static inline BMXMessage createForwardMessage(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createForwardMessage" %}{% endlanying_code_snippet %}
+```
 ### function BMXMessage
 
 ```java
@@ -799,6 +1031,10 @@ inline BMXMessage(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="BMXMessage" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -806,6 +1042,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -815,6 +1055,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

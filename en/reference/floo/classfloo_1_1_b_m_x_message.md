@@ -154,6 +154,10 @@ virtual ~BMXMessage()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="~BMXMessage" %}{% endlanying_code_snippet %}
+```
 ### function msgId
 
 ```cpp
@@ -164,6 +168,10 @@ Message unique ID
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="msgId" %}{% endlanying_code_snippet %}
+```
 ### function clientMsgId
 
 ```cpp
@@ -174,6 +182,10 @@ Message client ID, only exists on message sender-side
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="clientMsgId" %}{% endlanying_code_snippet %}
+```
 ### function fromId
 
 ```cpp
@@ -184,6 +196,10 @@ Message sender ID
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="fromId" %}{% endlanying_code_snippet %}
+```
 ### function toId
 
 ```cpp
@@ -194,6 +210,10 @@ Message receiver ID
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="toId" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -204,6 +224,10 @@ Message type
 
 **Return**: MessageType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="type" %}{% endlanying_code_snippet %}
+```
 ### function conversationId
 
 ```cpp
@@ -214,6 +238,10 @@ Conversation ID that message belongs to
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="conversationId" %}{% endlanying_code_snippet %}
+```
 ### function deliveryStatus
 
 ```cpp
@@ -224,6 +252,10 @@ Messaging state
 
 **Return**: DeliveryStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="deliveryStatus" %}{% endlanying_code_snippet %}
+```
 ### function setDeliveryStatus
 
 ```cpp
@@ -234,6 +266,10 @@ void setDeliveryStatus(
 
 Set messaging state 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setDeliveryStatus" %}{% endlanying_code_snippet %}
+```
 ### function serverTimestamp
 
 ```cpp
@@ -244,6 +280,10 @@ Message timestamp (when received by server-side)
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="serverTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function setServerTimestamp
 
 ```cpp
@@ -254,6 +294,10 @@ void setServerTimestamp(
 
 Set message timestamp (when received by server-side) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setServerTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function clientTimestamp
 
 ```cpp
@@ -264,6 +308,10 @@ Local timestamp (local time when message created or received)
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="clientTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function setClientTimestamp
 
 ```cpp
@@ -274,6 +322,10 @@ void setClientTimestamp(
 
 Set message local timestamp 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setClientTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function isPlayed
 
 ```cpp
@@ -284,6 +336,10 @@ Whether voice or video message has been played, valid only for received audio/vi
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isPlayed" %}{% endlanying_code_snippet %}
+```
 ### function setIsPlayed
 
 ```cpp
@@ -294,6 +350,10 @@ void setIsPlayed(
 
 Set whether a voice or video message has been played, valid only for received audio or video messages 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsPlayed" %}{% endlanying_code_snippet %}
+```
 ### function isPlayAcked
 
 ```cpp
@@ -304,6 +364,10 @@ Means whether playback acknowledgement received for sender, and whether playback
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isPlayAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsPlayAcked
 
 ```cpp
@@ -314,6 +378,10 @@ void setIsPlayAcked(
 
 Set playback acknowledgement 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsPlayAcked" %}{% endlanying_code_snippet %}
+```
 ### function isReceiveMsg
 
 ```cpp
@@ -324,6 +392,10 @@ Message whether to receive
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isReceiveMsg" %}{% endlanying_code_snippet %}
+```
 ### function setIsReceiveMsg
 
 ```cpp
@@ -334,6 +406,10 @@ void setIsReceiveMsg(
 
 Message to set receiving condition 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsReceiveMsg" %}{% endlanying_code_snippet %}
+```
 ### function isRead
 
 ```cpp
@@ -344,6 +420,10 @@ Message read or unread mark
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isRead" %}{% endlanying_code_snippet %}
+```
 ### function setIsRead
 
 ```cpp
@@ -354,6 +434,10 @@ void setIsRead(
 
 Message read or unread mark 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsRead" %}{% endlanying_code_snippet %}
+```
 ### function isReadAcked
 
 ```cpp
@@ -364,6 +448,10 @@ Show sender whether read acknowledgement received, and show receiver whether mes
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isReadAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsReadAcked
 
 ```cpp
@@ -374,6 +462,10 @@ void setIsReadAcked(
 
 Set read acknowledgement 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsReadAcked" %}{% endlanying_code_snippet %}
+```
 ### function isDeliveryAcked
 
 ```cpp
@@ -384,6 +476,10 @@ Show sender whether message has been delivered to the other party, and show rece
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsDeliveryAcked
 
 ```cpp
@@ -394,6 +490,10 @@ void setIsDeliveryAcked(
 
 Set delivery acknowledgement 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsDeliveryAcked" %}{% endlanying_code_snippet %}
+```
 ### function content
 
 ```cpp
@@ -404,6 +504,10 @@ Message text content
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="content" %}{% endlanying_code_snippet %}
+```
 ### function setContent
 
 ```cpp
@@ -419,6 +523,10 @@ Message text content
   * **content** Message text content 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setContent" %}{% endlanying_code_snippet %}
+```
 ### function contentType
 
 ```cpp
@@ -429,6 +537,10 @@ Message content type, attachment-type with attachment, text-type with no attachm
 
 **Return**: ContentType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="contentType" %}{% endlanying_code_snippet %}
+```
 ### function attachment
 
 ```cpp
@@ -439,6 +551,10 @@ Message attachment, BMXMessage owns the attachment and is responsible for releas
 
 **Return**: BMXMessageAttachmentPtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="attachment" %}{% endlanying_code_snippet %}
+```
 ### function config
 
 ```cpp
@@ -449,6 +565,10 @@ Message settings
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="config" %}{% endlanying_code_snippet %}
+```
 ### function setConfig
 
 ```cpp
@@ -459,6 +579,10 @@ void setConfig(
 
 Set message config information 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setConfig" %}{% endlanying_code_snippet %}
+```
 ### function extension
 
 ```cpp
@@ -469,6 +593,10 @@ Message extension information
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="extension" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```cpp
@@ -479,6 +607,10 @@ void setExtension(
 
 Set message extension information 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function deliveryQos
 
 ```cpp
@@ -489,6 +621,10 @@ QOS of messaging
 
 **Return**: DeliveryQos 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="deliveryQos" %}{% endlanying_code_snippet %}
+```
 ### function setDeliveryQos
 
 ```cpp
@@ -504,6 +640,10 @@ Set QOS of messaging
   * **qos** QOS of messaging 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setDeliveryQos" %}{% endlanying_code_snippet %}
+```
 ### function senderName
 
 ```cpp
@@ -514,6 +654,10 @@ Display name of message sender
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="senderName" %}{% endlanying_code_snippet %}
+```
 ### function setSenderName
 
 ```cpp
@@ -529,6 +673,10 @@ Set display name of message sender
   * **senderName** Message text content 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setSenderName" %}{% endlanying_code_snippet %}
+```
 ### function groupAckCount
 
 ```cpp
@@ -539,6 +687,10 @@ AckCount of read group messages
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupAckCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupAckCount
 
 ```cpp
@@ -554,6 +706,10 @@ Set groupAckCount of read messages (an SDK internal calling interface that shall
   * **count** Set the number of read group messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupAckCount" %}{% endlanying_code_snippet %}
+```
 ### function groupAckUnreadCount
 
 ```cpp
@@ -564,6 +720,10 @@ AckCount of unread group messages
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupAckUnreadCount
 
 ```cpp
@@ -579,6 +739,10 @@ Set groupAckCount of unread messages (an SDK internal calling interface that sha
   * **count** Set the number of unread group messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function groupAckReadAll
 
 ```cpp
@@ -589,6 +753,10 @@ Whether all group messages are read
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupAckReadAll" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckCount
 
 ```cpp
@@ -599,6 +767,10 @@ AckCount of played group messages (valid only for messages with audio/video atta
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupPlayAckCount
 
 ```cpp
@@ -614,6 +786,10 @@ Set groupAckCount of played messages (an SDK internal calling interface that sha
   * **count** Set the number of read group messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupPlayAckCount" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckUnreadCount
 
 ```cpp
@@ -624,6 +800,10 @@ AckCount of unplayed group messages (valid only for messages with audio/video at
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupPlayAckUnreadCount
 
 ```cpp
@@ -639,6 +819,10 @@ Set groupAckCount of unplayed messages (an SDK internal calling interface that s
   * **count** Set the number of unplayed group messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckReadAll
 
 ```cpp
@@ -649,6 +833,10 @@ Whether all group messages have been played
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
+```
 ### function setPriority
 
 ```cpp
@@ -667,6 +855,10 @@ Set message diffusion priority, default 0. 0 means diffusion, and the smaller th
 Value range 0-10. The default level of messages sent by ordinary users in chatroom is 5, which can be discarded. Admin level defaults to 0 and will not be discarded. Other values can be set according to business. 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setPriority" %}{% endlanying_code_snippet %}
+```
 ### function priority
 
 ```cpp
@@ -677,6 +869,10 @@ Message diffusion priority
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="priority" %}{% endlanying_code_snippet %}
+```
 ### function setPushMessageMode
 
 ```cpp
@@ -687,6 +883,10 @@ void setPushMessageMode(
 
 Set whether the message is a push. 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setPushMessageMode" %}{% endlanying_code_snippet %}
+```
 ### function isPushMessage
 
 ```cpp
@@ -697,6 +897,10 @@ Whether the message is a push
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isPushMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -720,6 +924,10 @@ Create a text message
   * **content** Message content 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -743,6 +951,10 @@ Create a sent-attachment message
   * **attachment** Attachment 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createCommandMessage
 
 ```cpp
@@ -766,6 +978,10 @@ Create a sent command message (command message holds command information in a co
   * **content** Message content 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -793,6 +1009,10 @@ Create a received message
   * **serverTimestamp** Server timestamp 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -820,6 +1040,10 @@ Create a received message
   * **serverTimestamp** Server timestamp 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createCommandMessage
 
 ```cpp
@@ -847,6 +1071,10 @@ Create a received command message (command message holds command information in 
   * **serverTimestamp** Server timestamp 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
+```
 ### function createForwardMessage
 
 ```cpp
@@ -870,6 +1098,10 @@ Create a forwarding message
   * **conversationId** Conversation id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createForwardMessage" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

@@ -59,3 +59,7 @@ BMXLocationAttachment
 #### Declared In
 * `BMXLocationAttachment.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="initWithLatitude:longitude:address:" %}{% endlanying_code_snippet %}
+```

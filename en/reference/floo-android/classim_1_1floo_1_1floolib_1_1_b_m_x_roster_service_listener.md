@@ -53,6 +53,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function swigReleaseOwnership
 
 ```java
@@ -60,6 +64,10 @@ inline void swigReleaseOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+```
 ### function swigTakeOwnership
 
 ```java
@@ -67,6 +75,10 @@ inline void swigTakeOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+```
 ### function onFriendAdded
 
 ```java
@@ -84,6 +96,10 @@ Add friend
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onFriendAdded" %}{% endlanying_code_snippet %}
+```
 ### function onFriendRemoved
 
 ```java
@@ -101,6 +117,10 @@ Delete friend
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onFriendRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onApplied
 
 ```java
@@ -120,6 +140,10 @@ Request of adding friend received
   * **message** Friend request message 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationAccepted
 
 ```java
@@ -137,6 +161,10 @@ Request of adding friend approved
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationDeclined
 
 ```java
@@ -156,6 +184,10 @@ Request of adding friend rejected
   * **reason** Reason for application rejection 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListAdded
 
 ```java
@@ -173,6 +205,10 @@ Add to blacklist
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListRemoved
 
 ```java
@@ -190,6 +226,10 @@ Delete blacklist
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onRosterInfoUpdate
 
 ```java
@@ -205,6 +245,10 @@ Update user information
   * **item** Updated friend information 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onRosterInfoUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onRosterListUpdate
 
 ```java
@@ -213,6 +257,10 @@ inline void onRosterListUpdate()
 
 Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onRosterListUpdate" %}{% endlanying_code_snippet %}
+```
 ### function BMXRosterServiceListener
 
 ```java
@@ -220,6 +268,10 @@ inline BMXRosterServiceListener()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function registerRosterService
 
 ```java
@@ -231,6 +283,10 @@ inline void registerRosterService(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="registerRosterService" %}{% endlanying_code_snippet %}
+```
 ### function BMXRosterServiceListener
 
 ```java
@@ -241,6 +297,10 @@ inline BMXRosterServiceListener(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -248,6 +308,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function swigDirectorDisconnect
 
 ```java
@@ -255,6 +319,10 @@ inline void swigDirectorDisconnect()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -273,6 +341,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

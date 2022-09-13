@@ -114,6 +114,10 @@ Constructor to build the video attachment to send
   * **displayName** Display name of file 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="BMXVideoAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXVideoAttachment
 
 ```cpp
@@ -137,6 +141,10 @@ Constructor to build the video attachment to send
   * **displayName** Display name of file 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="BMXVideoAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXVideoAttachment
 
 ```cpp
@@ -160,6 +168,10 @@ Constructor to build the video attachment to receive
   * **fileLength** File size 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="BMXVideoAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXVideoAttachment
 
 ```cpp
@@ -185,6 +197,10 @@ Constructor to build the video attachment to receive
   * **fileLength** File size 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="BMXVideoAttachment" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXVideoAttachment
 
 ```cpp
@@ -193,6 +209,10 @@ inline virtual ~BMXVideoAttachment()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="~BMXVideoAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -206,6 +226,10 @@ Type of returned file
 **Reimplements**: [floo::BMXFileAttachment::type](classfloo_1_1_b_m_x_file_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```cpp
@@ -219,6 +243,10 @@ Cloning function
 **Reimplements**: [floo::BMXFileAttachment::clone](classfloo_1_1_b_m_x_file_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function size
 
 ```cpp
@@ -229,6 +257,10 @@ Video size, width, and height
 
 **Return**: Size 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="size" %}{% endlanying_code_snippet %}
+```
 ### function duration
 
 ```cpp
@@ -239,6 +271,10 @@ Length of video clip
 
 **Return**: int32_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="duration" %}{% endlanying_code_snippet %}
+```
 ### function setThumbnail
 
 ```cpp
@@ -254,6 +290,10 @@ Set the thumbnail for video clip to send
   * **path** Thumbnail of video clip message 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="setThumbnail" %}{% endlanying_code_snippet %}
+```
 ### function thumbnailPath
 
 ```cpp
@@ -264,6 +304,10 @@ Local path of thumbnail
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="thumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function thumbnailUrl
 
 ```cpp
@@ -274,6 +318,10 @@ URL for remote thumbnail
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="thumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### function setThumbnailRatelUrl
 
 ```cpp
@@ -289,6 +337,10 @@ Set thumbnail ratel server path to send video clip message
   * **thumbnailRatelUrl** Thumbnail server path for video clip message 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="setThumbnailRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function thumbnailRatelUrl
 
 ```cpp
@@ -299,6 +351,10 @@ Thumbnail ratel server path
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="thumbnailRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function thumbnailDownloadStatus
 
 ```cpp
@@ -329,6 +385,10 @@ friend class Decoder< BMXVideoAttachment >(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVideoAttachment",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

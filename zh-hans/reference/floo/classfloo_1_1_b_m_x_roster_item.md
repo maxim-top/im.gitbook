@@ -88,6 +88,10 @@ inline virtual ~BMXRosterItem()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="~BMXRosterItem" %}{% endlanying_code_snippet %}
+```
 ### function rosterId
 
 ```cpp
@@ -98,6 +102,10 @@ virtual int64_t rosterId() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="rosterId" %}{% endlanying_code_snippet %}
+```
 ### function username
 
 ```cpp
@@ -108,6 +116,10 @@ virtual const std::string & username() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="username" %}{% endlanying_code_snippet %}
+```
 ### function nickname
 
 ```cpp
@@ -118,6 +130,10 @@ virtual const std::string & nickname() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="nickname" %}{% endlanying_code_snippet %}
+```
 ### function avatarRatelUrl
 
 ```cpp
@@ -128,6 +144,10 @@ virtual std::string avatarRatelUrl() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarUrl
 
 ```cpp
@@ -138,6 +158,10 @@ virtual std::string avatarUrl() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarPath
 
 ```cpp
@@ -148,6 +172,10 @@ virtual std::string avatarPath() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarPath" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailUrl
 
 ```cpp
@@ -158,6 +186,10 @@ virtual std::string avatarThumbnailUrl() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailPath
 
 ```cpp
@@ -168,6 +200,10 @@ virtual std::string avatarThumbnailPath() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function publicInfo
 
 ```cpp
@@ -178,6 +214,10 @@ virtual const JSON & publicInfo() =0
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="publicInfo" %}{% endlanying_code_snippet %}
+```
 ### function alias
 
 ```cpp
@@ -188,6 +228,10 @@ virtual const JSON & alias() =0
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="alias" %}{% endlanying_code_snippet %}
+```
 ### function ext
 
 ```cpp
@@ -198,6 +242,10 @@ virtual const JSON & ext() =0
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="ext" %}{% endlanying_code_snippet %}
+```
 ### function localExt
 
 ```cpp
@@ -208,6 +256,10 @@ virtual const JSON & localExt() =0
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="localExt" %}{% endlanying_code_snippet %}
+```
 ### function relation
 
 ```cpp
@@ -218,6 +270,10 @@ virtual RosterRelation relation() =0
 
 **Return**: RosterRelation 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="relation" %}{% endlanying_code_snippet %}
+```
 ### function isMuteNotification
 
 ```cpp
@@ -228,6 +284,10 @@ virtual bool isMuteNotification() =0
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="isMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function addFriendAuthMode
 
 ```cpp
@@ -238,6 +298,10 @@ roster的好友添加验证方式。
 
 **Return**: AddFriendAuthMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function authQuestion
 
 ```cpp
@@ -250,6 +314,10 @@ roster的好友验证问题。
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="authQuestion" %}{% endlanying_code_snippet %}
+```
 ### function BMXRosterItem
 
 ```cpp
@@ -257,6 +325,10 @@ inline BMXRosterItem()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="BMXRosterItem" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

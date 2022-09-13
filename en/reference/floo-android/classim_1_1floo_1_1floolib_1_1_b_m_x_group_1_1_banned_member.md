@@ -48,6 +48,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function BannedMember
 
 ```java
@@ -55,6 +59,10 @@ inline BannedMember()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="BannedMember" %}{% endlanying_code_snippet %}
+```
 ### function setMUid
 
 ```java
@@ -64,6 +72,10 @@ inline void setMUid(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMUid" %}{% endlanying_code_snippet %}
+```
 ### function getMUid
 
 ```java
@@ -71,6 +83,10 @@ inline long getMUid()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMUid" %}{% endlanying_code_snippet %}
+```
 ### function setMGroupNickname
 
 ```java
@@ -80,6 +96,10 @@ inline void setMGroupNickname(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMGroupNickname" %}{% endlanying_code_snippet %}
+```
 ### function getMGroupNickname
 
 ```java
@@ -87,6 +107,10 @@ inline String getMGroupNickname()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMGroupNickname" %}{% endlanying_code_snippet %}
+```
 ### function setMCreateTime
 
 ```java
@@ -96,6 +120,10 @@ inline void setMCreateTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMCreateTime" %}{% endlanying_code_snippet %}
+```
 ### function getMCreateTime
 
 ```java
@@ -103,6 +131,10 @@ inline long getMCreateTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMCreateTime" %}{% endlanying_code_snippet %}
+```
 ### function setMExpired
 
 ```java
@@ -112,6 +144,10 @@ inline void setMExpired(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMExpired" %}{% endlanying_code_snippet %}
+```
 ### function getMExpired
 
 ```java
@@ -121,6 +157,10 @@ inline long getMExpired()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMExpired" %}{% endlanying_code_snippet %}
+```
 ### function BannedMember
 
 ```java
@@ -131,6 +171,10 @@ inline BannedMember(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="BannedMember" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -138,6 +182,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -156,6 +204,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

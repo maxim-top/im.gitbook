@@ -116,6 +116,10 @@ inline virtual ~BMXRosterService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="~BMXRosterService" %}{% endlanying_code_snippet %}
+```
 ### function get
 
 ```cpp
@@ -135,6 +139,10 @@ Get friend list, force pull from server-side if forceRefresh == true
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="get" %}{% endlanying_code_snippet %}
+```
 ### function fetchRosterById
 
 ```cpp
@@ -156,6 +164,10 @@ Search for user by contact id
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="fetchRosterById" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```cpp
@@ -182,6 +194,10 @@ use fetchRosterById instead.
 Search for users 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchRosterByName
 
 ```cpp
@@ -203,6 +219,10 @@ Search for user by username
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="fetchRosterByName" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```cpp
@@ -229,6 +249,10 @@ use fetchRosterByName instead.
 Search for users 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchRostersByIdList
 
 ```cpp
@@ -250,6 +274,10 @@ Search for user in batch by contact id list
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="fetchRostersByIdList" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```cpp
@@ -276,6 +304,10 @@ use fetchRostersByIdList instead.
 Batch search for users 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function setItemLocalExtension
 
 ```cpp
@@ -295,6 +327,10 @@ Update friend's local extension information
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemLocalExtension" %}{% endlanying_code_snippet %}
+```
 ### function setItemExtension
 
 ```cpp
@@ -314,6 +350,10 @@ Update friend server extension information
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemExtension" %}{% endlanying_code_snippet %}
+```
 ### function setItemAlias
 
 ```cpp
@@ -333,6 +373,10 @@ Update friend's alias
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemAlias" %}{% endlanying_code_snippet %}
+```
 ### function setItemMuteNotification
 
 ```cpp
@@ -352,6 +396,10 @@ Set whether to reject user message
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function getApplicationList
 
 ```cpp
@@ -373,6 +421,10 @@ Get list of adding friend requests
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="getApplicationList" %}{% endlanying_code_snippet %}
+```
 ### function apply
 
 ```cpp
@@ -393,6 +445,10 @@ Request to add friend
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="apply" %}{% endlanying_code_snippet %}
+```
 ### function remove
 
 ```cpp
@@ -410,6 +466,10 @@ Delete friend
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="remove" %}{% endlanying_code_snippet %}
+```
 ### function accept
 
 ```cpp
@@ -427,6 +487,10 @@ Accept adding friend request
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="accept" %}{% endlanying_code_snippet %}
+```
 ### function decline
 
 ```cpp
@@ -446,6 +510,10 @@ Reject adding friend request
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="decline" %}{% endlanying_code_snippet %}
+```
 ### function block
 
 ```cpp
@@ -463,6 +531,10 @@ Add to blacklist
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="block" %}{% endlanying_code_snippet %}
+```
 ### function unblock
 
 ```cpp
@@ -480,6 +552,10 @@ Remove from blacklist
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="unblock" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```cpp
@@ -499,6 +575,10 @@ Get blacklist, force pull from server-side if forceRefresh == true
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```cpp
@@ -520,6 +600,10 @@ Download avatar
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function addRosterListener
 
 ```cpp
@@ -535,6 +619,10 @@ Add friend change listener
   * **listener** Friend change listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="addRosterListener" %}{% endlanying_code_snippet %}
+```
 ### function removeRosterListener
 
 ```cpp
@@ -552,6 +640,10 @@ Remove friend change listener
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="removeRosterListener" %}{% endlanying_code_snippet %}
+```
 ### function BMXRosterService
 
 ```cpp
@@ -559,6 +651,10 @@ inline BMXRosterService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="BMXRosterService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

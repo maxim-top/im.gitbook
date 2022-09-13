@@ -24,6 +24,10 @@
 * `BMXUserServiceProtocol.h`
 
 <a name="//api/name/userInfoDidUpdated:" title="userInfoDidUpdated:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="connectStatusDidChanged:" %}{% endlanying_code_snippet %}
+```
 ### userInfoDidUpdated:
 
 同步用户信息更新（其他设备操作发生用户信息变更）
@@ -37,6 +41,10 @@
 * `BMXUserServiceProtocol.h`
 
 <a name="//api/name/userOtherDeviceDidSignIn:" title="userOtherDeviceDidSignIn:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userInfoDidUpdated:" %}{% endlanying_code_snippet %}
+```
 ### userOtherDeviceDidSignIn:
 
 用户在其他设备上登陆
@@ -50,6 +58,10 @@
 * `BMXUserServiceProtocol.h`
 
 <a name="//api/name/userOtherDeviceDidSignOut:" title="userOtherDeviceDidSignOut:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userOtherDeviceDidSignIn:" %}{% endlanying_code_snippet %}
+```
 ### userOtherDeviceDidSignOut:
 
 用户在其他设备上登出
@@ -63,6 +75,10 @@
 * `BMXUserServiceProtocol.h`
 
 <a name="//api/name/userSignIn:" title="userSignIn:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userOtherDeviceDidSignOut:" %}{% endlanying_code_snippet %}
+```
 ### userSignIn:
 
 用户登陆
@@ -81,6 +97,10 @@
 * `BMXUserServiceProtocol.h`
 
 <a name="//api/name/userSignOut:userId:" title="userSignOut:userId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userSignIn:" %}{% endlanying_code_snippet %}
+```
 ### userSignOut:userId:
 
 用户登出
@@ -98,3 +118,7 @@
 #### Declared In
 * `BMXUserServiceProtocol.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userSignOut:userId:" %}{% endlanying_code_snippet %}
+```

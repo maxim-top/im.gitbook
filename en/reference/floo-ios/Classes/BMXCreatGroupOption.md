@@ -136,3 +136,7 @@ Create group entity
 #### Declared In
 * `BMXCreatGroupOption.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXCreatGroupOption",function="initWithGroupName:groupDescription:isPublic:" %}{% endlanying_code_snippet %}
+```

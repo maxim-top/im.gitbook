@@ -149,6 +149,10 @@
 * `BMXMessageObject.h`
 
 <a name="//api/name/initWithBMXMessageAttachment:fromId:toId:type:conversationId:" title="initWithBMXMessageAttachment:fromId:toId:type:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageObject",function="initWithBMXCommandMessageText:fromId:toId:type:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithBMXMessageAttachment:fromId:toId:type:conversationId:
 
 创建附件消息
@@ -182,6 +186,10 @@ BMXMessageObject
 * `BMXMessageObject.h`
 
 <a name="//api/name/initWithBMXMessageText:fromId:toId:type:conversationId:" title="initWithBMXMessageText:fromId:toId:type:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageObject",function="initWithBMXMessageAttachment:fromId:toId:type:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithBMXMessageText:fromId:toId:type:conversationId:
 
 创建文本消息
@@ -215,6 +223,10 @@ BMXMessageObject
 * `BMXMessageObject.h`
 
 <a name="//api/name/initWithForwardMessage:fromId:toId:type:conversationId:" title="initWithForwardMessage:fromId:toId:type:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageObject",function="initWithBMXMessageText:fromId:toId:type:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithForwardMessage:fromId:toId:type:conversationId:
 
 创建转发消息
@@ -248,6 +260,10 @@ BMXMessageObject
 * `BMXMessageObject.h`
 
 <a name="//api/name/initWithRecieveBMXMessageAttachment:msgId:fromId:toId:type:conversationId:timeStamp:" title="initWithRecieveBMXMessageAttachment:msgId:fromId:toId:type:conversationId:timeStamp:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageObject",function="initWithForwardMessage:fromId:toId:type:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithRecieveBMXMessageAttachment:msgId:fromId:toId:type:conversationId:timeStamp:
 
 创建接收附件消息
@@ -287,6 +303,10 @@ BMXMessageObject
 * `BMXMessageObject.h`
 
 <a name="//api/name/initWithRecieveBMXMessageCommandMessageText:msgId:fromId:toId:type:conversationId:timeStamp:" title="initWithRecieveBMXMessageCommandMessageText:msgId:fromId:toId:type:conversationId:timeStamp:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageObject",function="initWithRecieveBMXMessageAttachment:msgId:fromId:toId:type:conversationId:timeStamp:" %}{% endlanying_code_snippet %}
+```
 ### initWithRecieveBMXMessageCommandMessageText:msgId:fromId:toId:type:conversationId:timeStamp:
 
 创建收到的命令消息(命令消息通过content字段或者extension字段存放命令信息)
@@ -323,6 +343,10 @@ BMXMessageObject
 * `BMXMessageObject.h`
 
 <a name="//api/name/initWithRecieveBMXMessageText:msgId:fromId:toId:type:conversationId:timeStamp:" title="initWithRecieveBMXMessageText:msgId:fromId:toId:type:conversationId:timeStamp:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageObject",function="initWithRecieveBMXMessageCommandMessageText:msgId:fromId:toId:type:conversationId:timeStamp:" %}{% endlanying_code_snippet %}
+```
 ### initWithRecieveBMXMessageText:msgId:fromId:toId:type:conversationId:timeStamp:
 
 创建接收文本消息
@@ -361,3 +385,7 @@ BMXMessageObject
 #### Declared In
 * `BMXMessageObject.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageObject",function="initWithRecieveBMXMessageText:msgId:fromId:toId:type:conversationId:timeStamp:" %}{% endlanying_code_snippet %}
+```

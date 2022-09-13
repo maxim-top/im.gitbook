@@ -27,6 +27,10 @@
 * `BMXRosterServiceProtocol.h`
 
 <a name="//api/name/friendAddedtoBlockListSponsorId:recipientId:" title="friendAddedtoBlockListSponsorId:recipientId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendAddedSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+```
 ### friendAddedtoBlockListSponsorId:recipientId:
 
 <ul>
@@ -52,6 +56,10 @@
 * `BMXRosterServiceProtocol.h`
 
 <a name="//api/name/friendDidApplicationAcceptedFromSponsorId:recipientId:" title="friendDidApplicationAcceptedFromSponsorId:recipientId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendAddedtoBlockListSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+```
 ### friendDidApplicationAcceptedFromSponsorId:recipientId:
 
 <ul>
@@ -79,6 +87,10 @@
 * `BMXRosterServiceProtocol.h`
 
 <a name="//api/name/friendDidApplicationDeclinedFromSponsorId:recipientId:reson:" title="friendDidApplicationDeclinedFromSponsorId:recipientId:reson:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidApplicationAcceptedFromSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+```
 ### friendDidApplicationDeclinedFromSponsorId:recipientId:reson:
 
 <ul>
@@ -109,6 +121,10 @@
 * `BMXRosterServiceProtocol.h`
 
 <a name="//api/name/friendDidRecivedAppliedSponsorId:recipientId:message:" title="friendDidRecivedAppliedSponsorId:recipientId:message:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidApplicationDeclinedFromSponsorId:recipientId:reson:" %}{% endlanying_code_snippet %}
+```
 ### friendDidRecivedAppliedSponsorId:recipientId:message:
 
 <ul>
@@ -139,6 +155,10 @@
 * `BMXRosterServiceProtocol.h`
 
 <a name="//api/name/friendRemovedFromBlockListSponsorId:recipientId:" title="friendRemovedFromBlockListSponsorId:recipientId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidRecivedAppliedSponsorId:recipientId:message:" %}{% endlanying_code_snippet %}
+```
 ### friendRemovedFromBlockListSponsorId:recipientId:
 
 <ul>
@@ -164,6 +184,10 @@
 * `BMXRosterServiceProtocol.h`
 
 <a name="//api/name/friendRemovedSponsorId:recipientId:" title="friendRemovedSponsorId:recipientId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendRemovedFromBlockListSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+```
 ### friendRemovedSponsorId:recipientId:
 
 <pre><code>删除好友
@@ -195,6 +219,10 @@
 * `BMXRosterServiceProtocol.h`
 
 <a name="//api/name/rosterInfoDidUpdate:" title="rosterInfoDidUpdate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendRemovedSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+```
 ### rosterInfoDidUpdate:
 
 用户信息更新
@@ -207,3 +235,7 @@
 #### Declared In
 * `BMXRosterServiceProtocol.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="rosterInfoDidUpdate:" %}{% endlanying_code_snippet %}
+```

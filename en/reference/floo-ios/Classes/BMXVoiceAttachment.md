@@ -51,6 +51,10 @@ Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 * `BMXVoiceAttachment.h`
 
 <a name="//api/name/initWithPath:displayName:duration:conversationId:" title="initWithPath:displayName:duration:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithData:displayName:fileLength:duration:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithPath:displayName:duration:conversationId:
 
 Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
@@ -77,3 +81,7 @@ Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 #### Declared In
 * `BMXVoiceAttachment.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithPath:displayName:duration:conversationId:" %}{% endlanying_code_snippet %}
+```

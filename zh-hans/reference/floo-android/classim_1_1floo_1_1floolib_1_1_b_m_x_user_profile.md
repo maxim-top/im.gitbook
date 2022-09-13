@@ -58,6 +58,10 @@ inline BMXUserProfile()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="BMXUserProfile" %}{% endlanying_code_snippet %}
+```
 ### function delete
 
 ```java
@@ -65,6 +69,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function userId
 
 ```java
@@ -75,6 +83,10 @@ inline long userId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="userId" %}{% endlanying_code_snippet %}
+```
 ### function category
 
 ```java
@@ -85,6 +97,10 @@ inline BMXUserProfile.UserCategory category()
 
 **Return**: [UserCategory]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="category" %}{% endlanying_code_snippet %}
+```
 ### function username
 
 ```java
@@ -95,6 +111,10 @@ inline String username()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="username" %}{% endlanying_code_snippet %}
+```
 ### function nickname
 
 ```java
@@ -105,6 +125,10 @@ inline String nickname()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="nickname" %}{% endlanying_code_snippet %}
+```
 ### function avatarRatelUrl
 
 ```java
@@ -115,6 +139,10 @@ inline String avatarRatelUrl()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarUrl
 
 ```java
@@ -125,6 +153,10 @@ inline String avatarUrl()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarPath
 
 ```java
@@ -135,6 +167,10 @@ inline String avatarPath()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="avatarPath" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailPath
 
 ```java
@@ -145,6 +181,10 @@ inline String avatarThumbnailPath()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function mobilePhone
 
 ```java
@@ -155,6 +195,10 @@ inline String mobilePhone()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="mobilePhone" %}{% endlanying_code_snippet %}
+```
 ### function email
 
 ```java
@@ -165,6 +209,10 @@ inline String email()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="email" %}{% endlanying_code_snippet %}
+```
 ### function publicInfo
 
 ```java
@@ -175,6 +223,10 @@ inline String publicInfo()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="publicInfo" %}{% endlanying_code_snippet %}
+```
 ### function privateInfo
 
 ```java
@@ -185,6 +237,10 @@ inline String privateInfo()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="privateInfo" %}{% endlanying_code_snippet %}
+```
 ### function addFriendAuthMode
 
 ```java
@@ -195,6 +251,10 @@ inline BMXUserProfile.AddFriendAuthMode addFriendAuthMode()
 
 **Return**: [AddFriendAuthMode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function authQuestion
 
 ```java
@@ -205,6 +265,10 @@ inline BMXUserProfile.AuthQuestion authQuestion()
 
 **Return**: AuthQuestion 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="authQuestion" %}{% endlanying_code_snippet %}
+```
 ### function messageSetting
 
 ```java
@@ -215,6 +279,10 @@ inline BMXUserProfile.MessageSetting messageSetting()
 
 **Return**: MessageSetting 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="messageSetting" %}{% endlanying_code_snippet %}
+```
 ### function isAutoAcceptGroupInvite
 
 ```java
@@ -227,6 +295,10 @@ inline boolean isAutoAcceptGroupInvite()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="isAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+```
 ### function BMXUserProfile
 
 ```java
@@ -237,6 +309,10 @@ inline BMXUserProfile(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="BMXUserProfile" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -244,6 +320,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -262,6 +342,10 @@ transient long swigCPtr;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserProfile",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

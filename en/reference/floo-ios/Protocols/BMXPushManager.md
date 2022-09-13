@@ -15,11 +15,19 @@ Push manager
 `- (void)addDelegate:(id<BMXPushServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="addDelegate:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXPushServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/addPushListener:" title="addPushListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+```
 ### addPushListener:
 
 Add chat listener
@@ -38,6 +46,10 @@ Add chat listener
 * `BMXPushManager.h`
 
 <a name="//api/name/bindDeviceToken:completion:" title="bindDeviceToken:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="addPushListener:" %}{% endlanying_code_snippet %}
+```
 ### bindDeviceToken:completion:
 
 Push binding device token.
@@ -59,6 +71,10 @@ Push binding device token.
 * `BMXPushManager.h`
 
 <a name="//api/name/clearAllNotifications" title="clearAllNotifications"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="bindDeviceToken:completion:" %}{% endlanying_code_snippet %}
+```
 ### clearAllNotifications
 
 Used to remove all pushes displayed in Notification
@@ -72,6 +88,10 @@ Used to remove all pushes displayed in Notification
 * `BMXPushManager.h`
 
 <a name="//api/name/clearNotification:" title="clearNotification:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+```
 ### clearNotification:
 
   Used to remove the specified push displayed in Notification
@@ -94,6 +114,10 @@ Used to remove all pushes displayed in Notification
 * `BMXPushManager.h`
 
 <a name="//api/name/clearTagsByOperationId:" title="clearTagsByOperationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="clearNotification:" %}{% endlanying_code_snippet %}
+```
 ### clearTagsByOperationId:
 
 Clear tags of the push user.
@@ -112,6 +136,10 @@ Clear tags of the push user.
 * `BMXPushManager.h`
 
 <a name="//api/name/deleteTags:operationId:" title="deleteTags:operationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="clearTagsByOperationId:" %}{% endlanying_code_snippet %}
+```
 ### deleteTags:operationId:
 
 Delete tags of the push user.
@@ -133,6 +161,10 @@ Delete tags of the push user.
 * `BMXPushManager.h`
 
 <a name="//api/name/getCertification" title="getCertification"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="deleteTags:operationId:" %}{% endlanying_code_snippet %}
+```
 ### getCertification
 
 Get push certificate returned by server after login.
@@ -146,6 +178,10 @@ Get push certificate returned by server after login.
 * `BMXPushManager.h`
 
 <a name="//api/name/getPushProfileForceRefresh:completion:" title="getPushProfileForceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getCertification" %}{% endlanying_code_snippet %}
+```
 ### getPushProfileForceRefresh:completion:
 
 Get push user details, force pull from server-side if forceRefresh == true
@@ -167,6 +203,10 @@ Get push user details, force pull from server-side if forceRefresh == true
 * `BMXPushManager.h`
 
 <a name="//api/name/getTagsByOperationId:withCompletion:" title="getTagsByOperationId:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getPushProfileForceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getTagsByOperationId:withCompletion:
 
 Get tags of the push user.
@@ -188,6 +228,10 @@ Get tags of the push user.
 * `BMXPushManager.h`
 
 <a name="//api/name/getToken" title="getToken"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getTagsByOperationId:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### getToken
 
 Get user token to use after login.
@@ -201,6 +245,10 @@ Get user token to use after login.
 * `BMXPushManager.h`
 
 <a name="//api/name/loadLocalPushMessagesFromMessageId:size:directionType:completion:" title="loadLocalPushMessagesFromMessageId:size:directionType:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getToken" %}{% endlanying_code_snippet %}
+```
 ### loadLocalPushMessagesFromMessageId:size:directionType:completion:
 
 Load push message stored in local database. Start with latest message if not specified
@@ -228,11 +276,19 @@ Load push message stored in local database. Start with latest message if not spe
 * `BMXPushManager.h`
 
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="loadLocalPushMessagesFromMessageId:size:directionType:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeDelegate:
 
 `- (void)removeDelegate:(id<BMXPushServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removePushListener:" title="removePushListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="removeDelegate:" %}{% endlanying_code_snippet %}
+```
 ### removePushListener:
 
 Remove chat listener
@@ -251,6 +307,10 @@ Remove chat listener
 * `BMXPushManager.h`
 
 <a name="//api/name/resume" title="resume"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="removePushListener:" %}{% endlanying_code_snippet %}
+```
 ### resume
 
 Resume push function.
@@ -264,6 +324,10 @@ Resume push function.
 * `BMXPushManager.h`
 
 <a name="//api/name/sendMessage:" title="sendMessage:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="resume" %}{% endlanying_code_snippet %}
+```
 ### sendMessage:
 
 Send a push uplink message and notify the listener of a change in message status
@@ -282,6 +346,10 @@ Send a push uplink message and notify the listener of a change in message status
 * `BMXPushManager.h`
 
 <a name="//api/name/setBadge:" title="setBadge:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="sendMessage:" %}{% endlanying_code_snippet %}
+```
 ### setBadge:
 
 Set unread badge for push user.
@@ -300,6 +368,10 @@ Set unread badge for push user.
 * `BMXPushManager.h`
 
 <a name="//api/name/setPushMode:" title="setPushMode:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setBadge:" %}{% endlanying_code_snippet %}
+```
 ### setPushMode:
 
 Set push enabled state. Default enabled.
@@ -318,6 +390,10 @@ Set push enabled state. Default enabled.
 * `BMXPushManager.h`
 
 <a name="//api/name/setPushTimeStartHour:endHour:" title="setPushTimeStartHour:endHour:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setPushMode:" %}{% endlanying_code_snippet %}
+```
 ### setPushTimeStartHour:endHour:
 
 Set allowed push time.
@@ -339,6 +415,10 @@ Set allowed push time.
 * `BMXPushManager.h`
 
 <a name="//api/name/setSlienceTimeStartHour:endHour:" title="setSlienceTimeStartHour:endHour:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setPushTimeStartHour:endHour:" %}{% endlanying_code_snippet %}
+```
 ### setSlienceTimeStartHour:endHour:
 
 Set the start and end time of silent push.
@@ -360,6 +440,10 @@ Set the start and end time of silent push.
 * `BMXPushManager.h`
 
 <a name="//api/name/setTags:operationId:" title="setTags:operationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setSlienceTimeStartHour:endHour:" %}{% endlanying_code_snippet %}
+```
 ### setTags:operationId:
 
 Set tags of push user.
@@ -381,6 +465,10 @@ Set tags of push user.
 * `BMXPushManager.h`
 
 <a name="//api/name/start" title="start"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setTags:operationId:" %}{% endlanying_code_snippet %}
+```
 ### start
 
 Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
@@ -394,6 +482,10 @@ Initialize push sdk. Use this interface to initialize the push sdk in the case o
 * `BMXPushManager.h`
 
 <a name="//api/name/startWithAlias:" title="startWithAlias:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+```
 ### startWithAlias:
 
 Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
@@ -412,6 +504,10 @@ Initialize push sdk. Use this interface to initialize the push sdk in the case o
 * `BMXPushManager.h`
 
 <a name="//api/name/startWithAlias:bmxToken:" title="startWithAlias:bmxToken:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="startWithAlias:" %}{% endlanying_code_snippet %}
+```
 ### startWithAlias:bmxToken:
 
 Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
@@ -433,6 +529,10 @@ Initialize push sdk. Use this interface to initialize the push sdk in the case o
 * `BMXPushManager.h`
 
 <a name="//api/name/status" title="status"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="startWithAlias:bmxToken:" %}{% endlanying_code_snippet %}
+```
 ### status
 
 Push the current state of sdk.
@@ -446,6 +546,10 @@ Push the current state of sdk.
 * `BMXPushManager.h`
 
 <a name="//api/name/stop" title="stop"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="status" %}{% endlanying_code_snippet %}
+```
 ### stop
 
 Function interface for stop push
@@ -459,6 +563,10 @@ Function interface for stop push
 * `BMXPushManager.h`
 
 <a name="//api/name/unbindAlias:" title="unbindAlias:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="stop" %}{% endlanying_code_snippet %}
+```
 ### unbindAlias:
 
 Unbind user alias.
@@ -476,3 +584,7 @@ Unbind user alias.
 #### Declared In
 * `BMXPushManager.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="unbindAlias:" %}{% endlanying_code_snippet %}
+```

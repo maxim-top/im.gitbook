@@ -59,6 +59,10 @@ inline BMXUserManager(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="BMXUserManager" %}{% endlanying_code_snippet %}
+```
 ### function signUpNewUser
 
 ```java
@@ -78,6 +82,10 @@ inline void signUpNewUser(
   * **callBack** [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signUpNewUser" %}{% endlanying_code_snippet %}
+```
 ### function signInByName
 
 ```java
@@ -97,6 +105,10 @@ inline void signInByName(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signInByName" %}{% endlanying_code_snippet %}
+```
 ### function signInById
 
 ```java
@@ -116,6 +128,10 @@ id 登陆
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signInById" %}{% endlanying_code_snippet %}
+```
 ### function autoSignInByName
 
 ```java
@@ -135,6 +151,10 @@ inline void autoSignInByName(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="autoSignInByName" %}{% endlanying_code_snippet %}
+```
 ### function autoSignInById
 
 ```java
@@ -154,6 +174,10 @@ inline void autoSignInById(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="autoSignInById" %}{% endlanying_code_snippet %}
+```
 ### function signOut
 
 ```java
@@ -169,6 +193,10 @@ inline void signOut(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signOut" %}{% endlanying_code_snippet %}
+```
 ### function signOut
 
 ```java
@@ -185,6 +213,10 @@ inline void signOut(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signOut" %}{% endlanying_code_snippet %}
+```
 ### function connectStatus
 
 ```java
@@ -193,6 +225,10 @@ inline BMXConnectStatus connectStatus()
 
 获取当前和服务器的连接状态 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="connectStatus" %}{% endlanying_code_snippet %}
+```
 ### function signInStatus
 
 ```java
@@ -201,6 +237,10 @@ inline BMXSignInStatus signInStatus()
 
 获取当前的登录状态 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signInStatus" %}{% endlanying_code_snippet %}
+```
 ### function bindDevice
 
 ```java
@@ -218,6 +258,10 @@ inline void bindDevice(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="bindDevice" %}{% endlanying_code_snippet %}
+```
 ### function getDeviceList
 
 ```java
@@ -233,6 +277,10 @@ inline void getDeviceList(
   * **callBack** [BMXErrorCode] 登录的设备列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="getDeviceList" %}{% endlanying_code_snippet %}
+```
 ### function deleteDevice
 
 ```java
@@ -249,6 +297,10 @@ inline void deleteDevice(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="deleteDevice" %}{% endlanying_code_snippet %}
+```
 ### function getProfile
 
 ```java
@@ -266,6 +318,10 @@ inline void getProfile(
   * **callBack** [BMXErrorCode],用户详情 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="getProfile" %}{% endlanying_code_snippet %}
+```
 ### function setNickname
 
 ```java
@@ -283,6 +339,10 @@ inline void setNickname(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setNickname" %}{% endlanying_code_snippet %}
+```
 ### function uploadAvatar
 
 ```java
@@ -302,6 +362,10 @@ inline void uploadAvatar(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="uploadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```java
@@ -321,6 +385,10 @@ inline void downloadAvatar(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function setPublicInfo
 
 ```java
@@ -338,6 +406,10 @@ inline void setPublicInfo(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPublicInfo" %}{% endlanying_code_snippet %}
+```
 ### function setPrivateInfo
 
 ```java
@@ -355,6 +427,10 @@ inline void setPrivateInfo(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPrivateInfo" %}{% endlanying_code_snippet %}
+```
 ### function setAddFriendAuthMode
 
 ```java
@@ -372,6 +448,10 @@ inline void setAddFriendAuthMode(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAddFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function setAuthQuestion
 
 ```java
@@ -389,6 +469,10 @@ inline void setAuthQuestion(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAuthQuestion" %}{% endlanying_code_snippet %}
+```
 ### function setEnablePush
 
 ```java
@@ -406,6 +490,10 @@ inline void setEnablePush(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setEnablePush" %}{% endlanying_code_snippet %}
+```
 ### function setEnablePushDetaile
 
 ```java
@@ -423,6 +511,10 @@ inline void setEnablePushDetaile(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setEnablePushDetaile" %}{% endlanying_code_snippet %}
+```
 ### function setPushNickname
 
 ```java
@@ -440,6 +532,10 @@ inline void setPushNickname(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPushNickname" %}{% endlanying_code_snippet %}
+```
 ### function setPushAlias
 
 ```java
@@ -459,6 +555,10 @@ inline void setPushAlias(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPushAlias" %}{% endlanying_code_snippet %}
+```
 ### function setNotificationSound
 
 ```java
@@ -476,6 +576,10 @@ inline void setNotificationSound(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setNotificationSound" %}{% endlanying_code_snippet %}
+```
 ### function setNotificationVibrate
 
 ```java
@@ -493,6 +597,10 @@ inline void setNotificationVibrate(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setNotificationVibrate" %}{% endlanying_code_snippet %}
+```
 ### function setAutoDownloadAttachment
 
 ```java
@@ -510,6 +618,10 @@ inline void setAutoDownloadAttachment(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAutoDownloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function setAutoAcceptGroupInvite
 
 ```java
@@ -527,6 +639,10 @@ inline void setAutoAcceptGroupInvite(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+```
 ### function addUserListener
 
 ```java
@@ -542,6 +658,10 @@ inline void addUserListener(
   * **listener** 用户状态监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="addUserListener" %}{% endlanying_code_snippet %}
+```
 ### function removeUserListener
 
 ```java
@@ -557,6 +677,10 @@ inline void removeUserListener(
   * **listener** 用户状态监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="removeUserListener" %}{% endlanying_code_snippet %}
+```
 ### function changeAppId
 
 ```java
@@ -573,6 +697,10 @@ inline void changeAppId(
   * **appId** appId 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="changeAppId" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

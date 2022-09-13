@@ -156,3 +156,7 @@ Get user-defined dns server address, set user-defined server address, use the us
 
 `- (instancetype)initConfigWithDataDir:(NSString *)*dataDir* cacheDir:(NSString *)*cacheDir* pushCertName:(NSString *)*pushCertName* userAgent:(NSString *)*userAgent*`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initConfigWithDataDir:cacheDir:pushCertName:userAgent:" %}{% endlanying_code_snippet %}
+```

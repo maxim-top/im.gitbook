@@ -54,6 +54,10 @@ inline synchronized void delete()
 **Reimplements**: [im::floo::floolib::BMXMessageAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-delete)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function BMXLocationAttachment
 
 ```java
@@ -73,6 +77,10 @@ Constructor
   * **address** Address name 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="BMXLocationAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```java
@@ -86,6 +94,10 @@ Return the type of location attachment
 **Reimplements**: [im::floo::floolib::BMXMessageAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```java
@@ -99,6 +111,10 @@ Cloning function
 **Reimplements**: [im::floo::floolib::BMXMessageAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function latitude
 
 ```java
@@ -109,6 +125,10 @@ Latitude
 
 **Return**: double 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="latitude" %}{% endlanying_code_snippet %}
+```
 ### function longitude
 
 ```java
@@ -119,6 +139,10 @@ Longitude
 
 **Return**: double 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="longitude" %}{% endlanying_code_snippet %}
+```
 ### function address
 
 ```java
@@ -129,6 +153,10 @@ Address
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="address" %}{% endlanying_code_snippet %}
+```
 ### function dynamic_cast
 
 ```java
@@ -140,6 +168,10 @@ static inline BMXLocationAttachment dynamic_cast(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="dynamic_cast" %}{% endlanying_code_snippet %}
+```
 ### function BMXLocationAttachment
 
 ```java
@@ -150,6 +182,10 @@ inline BMXLocationAttachment(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="BMXLocationAttachment" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -160,6 +196,10 @@ inline void finalize()
 **Reimplements**: [im::floo::floolib::BMXMessageAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-finalize)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -169,6 +209,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXLocationAttachment",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

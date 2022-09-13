@@ -19,16 +19,28 @@ Accept adding friend request
 * `BMXRosterManager.h`
 
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="acceptRosterById:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:
 
 `- (void)addDelegate:(id<BMXRosterServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addDelegate:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXRosterServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/addRosterListener:" title="addRosterListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+```
 ### addRosterListener:
 
 Add friend change listener
@@ -42,6 +54,10 @@ Add friend change listener
 * `BMXRosterManager.h`
 
 <a name="//api/name/addToBlockList:withCompletion:" title="addToBlockList:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addRosterListener:" %}{% endlanying_code_snippet %}
+```
 ### addToBlockList:withCompletion:
 
 Add to blacklist
@@ -55,6 +71,10 @@ Add to blacklist
 * `BMXRosterManager.h`
 
 <a name="//api/name/applyAddRoster:reason:completion:" title="applyAddRoster:reason:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="addToBlockList:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### applyAddRoster:reason:completion:
 
 Request to add friend
@@ -68,6 +88,10 @@ Request to add friend
 * `BMXRosterManager.h`
 
 <a name="//api/name/declineRosterById:withReason:completion:" title="declineRosterById:withReason:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="applyAddRoster:reason:completion:" %}{% endlanying_code_snippet %}
+```
 ### declineRosterById:withReason:completion:
 
 Reject adding friend request
@@ -81,6 +105,10 @@ Reject adding friend request
 * `BMXRosterManager.h`
 
 <a name="//api/name/downloadAvatarWithRoster:progress:completion:" title="downloadAvatarWithRoster:progress:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="declineRosterById:withReason:completion:" %}{% endlanying_code_snippet %}
+```
 ### downloadAvatarWithRoster:progress:completion:
 
 Download avatar
@@ -94,6 +122,10 @@ Download avatar
 * `BMXRosterManager.h`
 
 <a name="//api/name/getApplicationListWithCursor:pageSize:completion:" title="getApplicationListWithCursor:pageSize:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="downloadAvatarWithRoster:progress:completion:" %}{% endlanying_code_snippet %}
+```
 ### getApplicationListWithCursor:pageSize:completion:
 
 Get list of adding friend requests
@@ -107,6 +139,10 @@ Get list of adding friend requests
 * `BMXRosterManager.h`
 
 <a name="//api/name/getBlockListforceRefresh:completion:" title="getBlockListforceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="getApplicationListWithCursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
 ### getBlockListforceRefresh:completion:
 
 <ul>
@@ -132,6 +168,10 @@ Get list of adding friend requests
 * `BMXRosterManager.h`
 
 <a name="//api/name/getRosterListforceRefresh:completion:" title="getRosterListforceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="getBlockListforceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getRosterListforceRefresh:completion:
 
 <ul>
@@ -157,6 +197,10 @@ Get list of adding friend requests
 * `BMXRosterManager.h`
 
 <a name="//api/name/muteNotificationByRoster:muteNotificationStatus:completion:" title="muteNotificationByRoster:muteNotificationStatus:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="getRosterListforceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### muteNotificationByRoster:muteNotificationStatus:completion:
 
 Set whether to reject user message
@@ -170,11 +214,19 @@ Set whether to reject user message
 * `BMXRosterManager.h`
 
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="muteNotificationByRoster:muteNotificationStatus:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeDelegate:
 
 `- (void)removeDelegate:(id<BMXRosterServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removeRosterById:withCompletion:" title="removeRosterById:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeDelegate:" %}{% endlanying_code_snippet %}
+```
 ### removeRosterById:withCompletion:
 
 Delete friend
@@ -188,6 +240,10 @@ Delete friend
 * `BMXRosterManager.h`
 
 <a name="//api/name/removeRosterFromBlockList:withCompletion:" title="removeRosterFromBlockList:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeRosterById:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### removeRosterFromBlockList:withCompletion:
 
 Remove from blacklist
@@ -201,6 +257,10 @@ Remove from blacklist
 * `BMXRosterManager.h`
 
 <a name="//api/name/removeRosterListener:" title="removeRosterListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeRosterFromBlockList:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### removeRosterListener:
 
 Remove friend change listener
@@ -214,6 +274,10 @@ Remove friend change listener
 * `BMXRosterManager.h`
 
 <a name="//api/name/searchByRoserName:forceRefresh:completion:" title="searchByRoserName:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="removeRosterListener:" %}{% endlanying_code_snippet %}
+```
 ### searchByRoserName:forceRefresh:completion:
 
 Search by friend Name
@@ -235,6 +299,10 @@ Search by friend Name
 * `BMXRosterManager.h`
 
 <a name="//api/name/searchByRosterId:forceRefresh:completion:" title="searchByRosterId:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="searchByRoserName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### searchByRosterId:forceRefresh:completion:
 
 Search by friend ID
@@ -256,6 +324,10 @@ Search by friend ID
 * `BMXRosterManager.h`
 
 <a name="//api/name/searchRostersByRosterIdList:forceRefresh:completion:" title="searchRostersByRosterIdList:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="searchByRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### searchRostersByRosterIdList:forceRefresh:completion:
 
 Batch search for users
@@ -280,6 +352,10 @@ Batch search for users
 * `BMXRosterManager.h`
 
 <a name="//api/name/updateItemAliasByRoster:aliasJson:completion:" title="updateItemAliasByRoster:aliasJson:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="searchRostersByRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateItemAliasByRoster:aliasJson:completion:
 
 Update friend's alias
@@ -293,6 +369,10 @@ Update friend's alias
 * `BMXRosterManager.h`
 
 <a name="//api/name/updateItemExtensionByRoster:extensionJson:completion:" title="updateItemExtensionByRoster:extensionJson:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="updateItemAliasByRoster:aliasJson:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateItemExtensionByRoster:extensionJson:completion:
 
 Update friend extension information
@@ -306,6 +386,10 @@ Update friend extension information
 * `BMXRosterManager.h`
 
 <a name="//api/name/updateItemLocalExtensionByRoster:localExtensionJson:completion:" title="updateItemLocalExtensionByRoster:localExtensionJson:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="updateItemExtensionByRoster:extensionJson:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateItemLocalExtensionByRoster:localExtensionJson:completion:
 
 Update friend's local extension information
@@ -318,3 +402,7 @@ Update friend's local extension information
 #### Declared In
 * `BMXRosterManager.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterManager",function="updateItemLocalExtensionByRoster:localExtensionJson:completion:" %}{% endlanying_code_snippet %}
+```
