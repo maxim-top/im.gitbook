@@ -27,6 +27,10 @@ New conversation locally created
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/conversationDidDeletedConversationId:error:" title="conversationDidDeletedConversationId:error:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="conversationDidCreatedConversation:message:" %}{% endlanying_code_snippet %}
+```
 ### conversationDidDeletedConversationId:error:
 
  Delete a conversation
@@ -48,6 +52,10 @@ New conversation locally created
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/conversationTotalCountChanged:" title="conversationTotalCountChanged:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="conversationDidDeletedConversationId:error:" %}{% endlanying_code_snippet %}
+```
 ### conversationTotalCountChanged:
 
 Update total number of unread messages
@@ -66,6 +74,10 @@ Update total number of unread messages
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/loadAllConversationDidFinished" title="loadAllConversationDidFinished"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="conversationTotalCountChanged:" %}{% endlanying_code_snippet %}
+```
 ### loadAllConversationDidFinished
 
 List of unread conversations has been loaded
@@ -79,6 +91,10 @@ List of unread conversations has been loaded
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/messageAttachmentStatusDidChanged:error:percent:" title="messageAttachmentStatusDidChanged:error:percent:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="loadAllConversationDidFinished" %}{% endlanying_code_snippet %}
+```
 ### messageAttachmentStatusDidChanged:error:percent:
 
 Attachment download state changed
@@ -92,6 +108,10 @@ Attachment download state changed
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/messageAttachmentUploadProgressChanged:percent:" title="messageAttachmentUploadProgressChanged:percent:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageAttachmentStatusDidChanged:error:percent:" %}{% endlanying_code_snippet %}
+```
 ### messageAttachmentUploadProgressChanged:percent:
 
 Attachment upload state changed
@@ -105,6 +125,10 @@ Attachment upload state changed
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/messageRecallStatusDidChanged:error:" title="messageRecallStatusDidChanged:error:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageAttachmentUploadProgressChanged:percent:" %}{% endlanying_code_snippet %}
+```
 ### messageRecallStatusDidChanged:error:
 
 Message recall state changed
@@ -118,6 +142,10 @@ Message recall state changed
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/messageStatusChanged:error:" title="messageStatusChanged:error:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageRecallStatusDidChanged:error:" %}{% endlanying_code_snippet %}
+```
 ### messageStatusChanged:error:
 
 Message state changed
@@ -131,6 +159,10 @@ Message state changed
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receiveDeleteMessages:" title="receiveDeleteMessages:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageStatusChanged:error:" %}{% endlanying_code_snippet %}
+```
 ### receiveDeleteMessages:
 
  Message deletions received (delete messages cross devices synchronously)
@@ -144,6 +176,10 @@ Message state changed
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receiveReadAllMessages:" title="receiveReadAllMessages:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receiveDeleteMessages:" %}{% endlanying_code_snippet %}
+```
 ### receiveReadAllMessages:
 
 All received messages are read (all messages are set to read before cross-device synchronization)
@@ -157,6 +193,10 @@ All received messages are read (all messages are set to read before cross-device
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receiveReadCancelsMessages:" title="receiveReadCancelsMessages:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receiveReadAllMessages:" %}{% endlanying_code_snippet %}
+```
 ### receiveReadCancelsMessages:
 
 Message re-unread received (cross-device synchronization for changing message status into unread)
@@ -170,6 +210,10 @@ Message re-unread received (cross-device synchronization for changing message st
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receivedCommandMessages:" title="receivedCommandMessages:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receiveReadCancelsMessages:" %}{% endlanying_code_snippet %}
+```
 ### receivedCommandMessages:
 
 Command received
@@ -183,6 +227,10 @@ Command received
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receivedDeliverAcks:" title="receivedDeliverAcks:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedCommandMessages:" %}{% endlanying_code_snippet %}
+```
 ### receivedDeliverAcks:
 
 Acknowledgement of message delivered received
@@ -196,6 +244,10 @@ Acknowledgement of message delivered received
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receivedMessages:" title="receivedMessages:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedDeliverAcks:" %}{% endlanying_code_snippet %}
+```
 ### receivedMessages:
 
 Messages received
@@ -209,6 +261,10 @@ Messages received
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receivedReadAcks:" title="receivedReadAcks:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedMessages:" %}{% endlanying_code_snippet %}
+```
 ### receivedReadAcks:
 
 Read acknowledgement of messages received
@@ -222,6 +278,10 @@ Read acknowledgement of messages received
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receivedRecallMessages:" title="receivedRecallMessages:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedReadAcks:" %}{% endlanying_code_snippet %}
+```
 ### receivedRecallMessages:
 
 Canceled messages received
@@ -235,6 +295,10 @@ Canceled messages received
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/receivedSystemMessages:" title="receivedSystemMessages:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedRecallMessages:" %}{% endlanying_code_snippet %}
+```
 ### receivedSystemMessages:
 
 System notification messages received
@@ -248,6 +312,10 @@ System notification messages received
 * `BMXChatServiceProtocol.h`
 
 <a name="//api/name/retrieveHistoryMessagesConversation:" title="retrieveHistoryMessagesConversation:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedSystemMessages:" %}{% endlanying_code_snippet %}
+```
 ### retrieveHistoryMessagesConversation:
 
 Pull message history
@@ -260,3 +328,7 @@ Pull message history
 #### Declared In
 * `BMXChatServiceProtocol.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="retrieveHistoryMessagesConversation:" %}{% endlanying_code_snippet %}
+```

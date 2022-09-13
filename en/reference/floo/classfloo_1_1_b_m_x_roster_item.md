@@ -88,6 +88,10 @@ inline virtual ~BMXRosterItem()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="~BMXRosterItem" %}{% endlanying_code_snippet %}
+```
 ### function rosterId
 
 ```cpp
@@ -98,6 +102,10 @@ Friend id
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="rosterId" %}{% endlanying_code_snippet %}
+```
 ### function username
 
 ```cpp
@@ -108,6 +116,10 @@ Friend name
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="username" %}{% endlanying_code_snippet %}
+```
 ### function nickname
 
 ```cpp
@@ -118,6 +130,10 @@ Friend nickname
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="nickname" %}{% endlanying_code_snippet %}
+```
 ### function avatarRatelUrl
 
 ```cpp
@@ -128,6 +144,10 @@ Ratel server address of friend avatar
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarUrl
 
 ```cpp
@@ -138,6 +158,10 @@ Friend avatar thumbnail server address
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarPath
 
 ```cpp
@@ -148,6 +172,10 @@ Local storage path of friend avatar
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarPath" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailUrl
 
 ```cpp
@@ -158,6 +186,10 @@ Server address of friend avatar thumbnail
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailPath
 
 ```cpp
@@ -168,6 +200,10 @@ Local storage path of friend avatar thumbnail
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function publicInfo
 
 ```cpp
@@ -178,6 +214,10 @@ Extension information which is visible to user's friends, such as address, perso
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="publicInfo" %}{% endlanying_code_snippet %}
+```
 ### function alias
 
 ```cpp
@@ -188,6 +228,10 @@ Comments added by user to adding friend
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="alias" %}{% endlanying_code_snippet %}
+```
 ### function ext
 
 ```cpp
@@ -198,6 +242,10 @@ User's server extension information
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="ext" %}{% endlanying_code_snippet %}
+```
 ### function localExt
 
 ```cpp
@@ -208,6 +256,10 @@ User's local extension information
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="localExt" %}{% endlanying_code_snippet %}
+```
 ### function relation
 
 ```cpp
@@ -218,6 +270,10 @@ Contact relationship
 
 **Return**: RosterRelation 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="relation" %}{% endlanying_code_snippet %}
+```
 ### function isMuteNotification
 
 ```cpp
@@ -228,6 +284,10 @@ Whether to alert user for message
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="isMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function addFriendAuthMode
 
 ```cpp
@@ -238,6 +298,10 @@ How roster to validate adding friend.
 
 **Return**: AddFriendAuthMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function authQuestion
 
 ```cpp
@@ -250,6 +314,10 @@ How roster to validate friend.
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="authQuestion" %}{% endlanying_code_snippet %}
+```
 ### function BMXRosterItem
 
 ```cpp
@@ -257,6 +325,10 @@ inline BMXRosterItem()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterItem",function="BMXRosterItem" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

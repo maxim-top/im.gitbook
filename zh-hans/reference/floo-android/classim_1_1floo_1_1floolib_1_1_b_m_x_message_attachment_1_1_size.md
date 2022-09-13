@@ -46,6 +46,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function Size
 
 ```java
@@ -56,6 +60,10 @@ inline Size(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="Size" %}{% endlanying_code_snippet %}
+```
 ### function Size
 
 ```java
@@ -65,6 +73,10 @@ inline Size(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="Size" %}{% endlanying_code_snippet %}
+```
 ### function Size
 
 ```java
@@ -72,6 +84,10 @@ inline Size()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="Size" %}{% endlanying_code_snippet %}
+```
 ### function setMWidth
 
 ```java
@@ -81,6 +97,10 @@ inline void setMWidth(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="setMWidth" %}{% endlanying_code_snippet %}
+```
 ### function getMWidth
 
 ```java
@@ -88,6 +108,10 @@ inline double getMWidth()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="getMWidth" %}{% endlanying_code_snippet %}
+```
 ### function setMHeight
 
 ```java
@@ -97,6 +121,10 @@ inline void setMHeight(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="setMHeight" %}{% endlanying_code_snippet %}
+```
 ### function getMHeight
 
 ```java
@@ -106,6 +134,10 @@ inline double getMHeight()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="getMHeight" %}{% endlanying_code_snippet %}
+```
 ### function Size
 
 ```java
@@ -116,6 +148,10 @@ inline Size(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="Size" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -123,6 +159,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -141,6 +181,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Size",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

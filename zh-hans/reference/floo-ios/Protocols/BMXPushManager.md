@@ -15,11 +15,19 @@
 `- (void)addDelegate:(id<BMXPushServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="addDelegate:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXPushServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/addPushListener:" title="addPushListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+```
 ### addPushListener:
 
 添加聊天监听者
@@ -38,6 +46,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/bindDeviceToken:completion:" title="bindDeviceToken:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="addPushListener:" %}{% endlanying_code_snippet %}
+```
 ### bindDeviceToken:completion:
 
 推送绑定设备token。
@@ -59,6 +71,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/clearAllNotifications" title="clearAllNotifications"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="bindDeviceToken:completion:" %}{% endlanying_code_snippet %}
+```
 ### clearAllNotifications
 
 用于移除在通知中心显示的所有推送
@@ -72,6 +88,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/clearNotification:" title="clearNotification:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+```
 ### clearNotification:
 
   用于移除在通知中心显示的指定推送
@@ -94,6 +114,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/clearTagsByOperationId:" title="clearTagsByOperationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="clearNotification:" %}{% endlanying_code_snippet %}
+```
 ### clearTagsByOperationId:
 
 清空推送用户的标签。
@@ -112,6 +136,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/deleteTags:operationId:" title="deleteTags:operationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="clearTagsByOperationId:" %}{% endlanying_code_snippet %}
+```
 ### deleteTags:operationId:
 
 删除推送用户的标签。
@@ -133,6 +161,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/getCertification" title="getCertification"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="deleteTags:operationId:" %}{% endlanying_code_snippet %}
+```
 ### getCertification
 
 获取登陆后服务器返回的推送证书。
@@ -146,6 +178,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/getPushProfileForceRefresh:completion:" title="getPushProfileForceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getCertification" %}{% endlanying_code_snippet %}
+```
 ### getPushProfileForceRefresh:completion:
 
 获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取
@@ -167,6 +203,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/getTagsByOperationId:withCompletion:" title="getTagsByOperationId:withCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getPushProfileForceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getTagsByOperationId:withCompletion:
 
 获取推送用户的标签。
@@ -188,6 +228,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/getToken" title="getToken"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getTagsByOperationId:withCompletion:" %}{% endlanying_code_snippet %}
+```
 ### getToken
 
 获取登陆后使用的用户token。
@@ -201,6 +245,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/loadLocalPushMessagesFromMessageId:size:directionType:completion:" title="loadLocalPushMessagesFromMessageId:size:directionType:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="getToken" %}{% endlanying_code_snippet %}
+```
 ### loadLocalPushMessagesFromMessageId:size:directionType:completion:
 
 加载数据库本地存储的推送消息。如果不指定则从最新消息开始
@@ -228,11 +276,19 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="loadLocalPushMessagesFromMessageId:size:directionType:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeDelegate:
 
 `- (void)removeDelegate:(id<BMXPushServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removePushListener:" title="removePushListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="removeDelegate:" %}{% endlanying_code_snippet %}
+```
 ### removePushListener:
 
 移除聊天监听者
@@ -251,6 +307,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/resume" title="resume"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="removePushListener:" %}{% endlanying_code_snippet %}
+```
 ### resume
 
 恢复推送功能接口。
@@ -264,6 +324,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/sendMessage:" title="sendMessage:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="resume" %}{% endlanying_code_snippet %}
+```
 ### sendMessage:
 
 发送推送上行消息，消息状态变化会通过listener通知
@@ -282,6 +346,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/setBadge:" title="setBadge:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="sendMessage:" %}{% endlanying_code_snippet %}
+```
 ### setBadge:
 
 设置推送用户的未读角标。
@@ -300,6 +368,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/setPushMode:" title="setPushMode:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setBadge:" %}{% endlanying_code_snippet %}
+```
 ### setPushMode:
 
 设置推送启用状态。默认为使用推送。
@@ -318,6 +390,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/setPushTimeStartHour:endHour:" title="setPushTimeStartHour:endHour:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setPushMode:" %}{% endlanying_code_snippet %}
+```
 ### setPushTimeStartHour:endHour:
 
 设置允许推送时间。
@@ -339,6 +415,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/setSlienceTimeStartHour:endHour:" title="setSlienceTimeStartHour:endHour:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setPushTimeStartHour:endHour:" %}{% endlanying_code_snippet %}
+```
 ### setSlienceTimeStartHour:endHour:
 
 设置推送静默的起始结束时间。
@@ -360,6 +440,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/setTags:operationId:" title="setTags:operationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setSlienceTimeStartHour:endHour:" %}{% endlanying_code_snippet %}
+```
 ### setTags:operationId:
 
 设置推送用户的标签。
@@ -381,6 +465,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/start" title="start"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="setTags:operationId:" %}{% endlanying_code_snippet %}
+```
 ### start
 
 初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
@@ -394,6 +482,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/startWithAlias:" title="startWithAlias:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+```
 ### startWithAlias:
 
 初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
@@ -412,6 +504,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/startWithAlias:bmxToken:" title="startWithAlias:bmxToken:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="startWithAlias:" %}{% endlanying_code_snippet %}
+```
 ### startWithAlias:bmxToken:
 
 初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
@@ -433,6 +529,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/status" title="status"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="startWithAlias:bmxToken:" %}{% endlanying_code_snippet %}
+```
 ### status
 
 推送sdk当前的状态。
@@ -446,6 +546,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/stop" title="stop"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="status" %}{% endlanying_code_snippet %}
+```
 ### stop
 
 停止推送功能接口
@@ -459,6 +563,10 @@
 * `BMXPushManager.h`
 
 <a name="//api/name/unbindAlias:" title="unbindAlias:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="stop" %}{% endlanying_code_snippet %}
+```
 ### unbindAlias:
 
 解除用户别名绑定。
@@ -476,3 +584,7 @@
 #### Declared In
 * `BMXPushManager.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushManager",function="unbindAlias:" %}{% endlanying_code_snippet %}
+```

@@ -22,3 +22,7 @@ Message attachment
 
 `- (instancetype)init`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachment",function="init" %}{% endlanying_code_snippet %}
+```

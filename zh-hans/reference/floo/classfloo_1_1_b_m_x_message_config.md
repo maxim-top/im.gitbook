@@ -88,6 +88,10 @@ inline virtual ~BMXMessageConfig()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="~BMXMessageConfig" %}{% endlanying_code_snippet %}
+```
 ### function setMentionAll
 
 ```cpp
@@ -103,6 +107,10 @@ void setMentionAll(
   * **mentionAll** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionAll" %}{% endlanying_code_snippet %}
+```
 ### function getMentionAll
 
 ```cpp
@@ -113,6 +121,10 @@ bool getMentionAll()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionAll" %}{% endlanying_code_snippet %}
+```
 ### function setMentionList
 
 ```cpp
@@ -128,6 +140,10 @@ void setMentionList(
   * **mentionList** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionList" %}{% endlanying_code_snippet %}
+```
 ### function getMentionList
 
 ```cpp
@@ -138,6 +154,10 @@ std::vector< int64_t > getMentionList()
 
 **Return**: std::vector<int64_t> 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionList" %}{% endlanying_code_snippet %}
+```
 ### function setMentionedMessage
 
 ```cpp
@@ -153,6 +173,10 @@ void setMentionedMessage(
   * **mentionedMessage** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionedMessage" %}{% endlanying_code_snippet %}
+```
 ### function getMentionedMessage
 
 ```cpp
@@ -163,6 +187,10 @@ std::string getMentionedMessage()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionedMessage" %}{% endlanying_code_snippet %}
+```
 ### function setPushMessage
 
 ```cpp
@@ -178,6 +206,10 @@ void setPushMessage(
   * **pushMessage** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushMessage" %}{% endlanying_code_snippet %}
+```
 ### function getPushMessage
 
 ```cpp
@@ -188,6 +220,10 @@ std::string getPushMessage()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushMessage" %}{% endlanying_code_snippet %}
+```
 ### function setSenderNickname
 
 ```cpp
@@ -203,6 +239,10 @@ void setSenderNickname(
   * **senderNickname** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setSenderNickname" %}{% endlanying_code_snippet %}
+```
 ### function getSenderNickname
 
 ```cpp
@@ -213,6 +253,10 @@ std::string getSenderNickname()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getSenderNickname" %}{% endlanying_code_snippet %}
+```
 ### function setGroupMemberList
 
 ```cpp
@@ -228,6 +272,10 @@ void setGroupMemberList(
   * **groupMemberList** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setGroupMemberList" %}{% endlanying_code_snippet %}
+```
 ### function getGroupMemberList
 
 ```cpp
@@ -238,6 +286,10 @@ std::vector< int64_t > getGroupMemberList()
 
 **Return**: std::vector<int64_t> 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getGroupMemberList" %}{% endlanying_code_snippet %}
+```
 ### function addGroupMember
 
 ```cpp
@@ -248,6 +300,10 @@ void addGroupMember(
 
 添加群已读消息的群成员id列表成员 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="addGroupMember" %}{% endlanying_code_snippet %}
+```
 ### function removeGroupMember
 
 ```cpp
@@ -260,6 +316,10 @@ void removeGroupMember(
 
 **Return**: std::vector<int64_t> 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="removeGroupMember" %}{% endlanying_code_snippet %}
+```
 ### function clearGroupMemberList
 
 ```cpp
@@ -268,6 +328,10 @@ void clearGroupMemberList()
 
 清空群已读消息的群成员id列表 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="clearGroupMemberList" %}{% endlanying_code_snippet %}
+```
 ### function setIOSConfig
 
 ```cpp
@@ -283,6 +347,10 @@ void setIOSConfig(
   * **iosConfig** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setIOSConfig" %}{% endlanying_code_snippet %}
+```
 ### function getIOSConfig
 
 ```cpp
@@ -293,6 +361,10 @@ std::string getIOSConfig()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getIOSConfig" %}{% endlanying_code_snippet %}
+```
 ### function setAndroidConfig
 
 ```cpp
@@ -308,6 +380,10 @@ void setAndroidConfig(
   * **androidConfig** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setAndroidConfig" %}{% endlanying_code_snippet %}
+```
 ### function getAndroidConfig
 
 ```cpp
@@ -318,6 +394,10 @@ std::string getAndroidConfig()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getAndroidConfig" %}{% endlanying_code_snippet %}
+```
 ### function setPushShowBeginTime
 
 ```cpp
@@ -333,6 +413,10 @@ void setPushShowBeginTime(
   * **beginTime** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushShowBeginTime" %}{% endlanying_code_snippet %}
+```
 ### function getPushShowBeginTime
 
 ```cpp
@@ -343,6 +427,10 @@ int getPushShowBeginTime()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushShowBeginTime" %}{% endlanying_code_snippet %}
+```
 ### function setPushShowEndTime
 
 ```cpp
@@ -358,6 +446,10 @@ void setPushShowEndTime(
   * **endTime** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushShowEndTime" %}{% endlanying_code_snippet %}
+```
 ### function getPushShowEndTime
 
 ```cpp
@@ -368,6 +460,10 @@ int getPushShowEndTime()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushShowEndTime" %}{% endlanying_code_snippet %}
+```
 ### function setPushTitle
 
 ```cpp
@@ -383,6 +479,10 @@ void setPushTitle(
   * **pushTitle** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushTitle" %}{% endlanying_code_snippet %}
+```
 ### function getPushTitle
 
 ```cpp
@@ -393,6 +493,10 @@ std::string getPushTitle()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushTitle" %}{% endlanying_code_snippet %}
+```
 ### function isSilence
 
 ```cpp
@@ -403,6 +507,10 @@ bool isSilence()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="isSilence" %}{% endlanying_code_snippet %}
+```
 ### function getBadgeCountType
 
 ```cpp
@@ -413,6 +521,10 @@ BadgeCountType getBadgeCountType()
 
 **Return**: BadgeCountType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getBadgeCountType" %}{% endlanying_code_snippet %}
+```
 ### function getBadgeCount
 
 ```cpp
@@ -425,6 +537,10 @@ int getBadgeCount(
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getBadgeCount" %}{% endlanying_code_snippet %}
+```
 ### function setUsername
 
 ```cpp
@@ -440,6 +556,10 @@ void setUsername(
   * **username** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setUsername" %}{% endlanying_code_snippet %}
+```
 ### function getUsername
 
 ```cpp
@@ -450,6 +570,10 @@ std::string getUsername()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getUsername" %}{% endlanying_code_snippet %}
+```
 ### function serialize
 
 ```cpp
@@ -460,6 +584,10 @@ std::string serialize() const
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="serialize" %}{% endlanying_code_snippet %}
+```
 ### function createMessageConfig
 
 ```cpp
@@ -489,6 +617,10 @@ friend BMXMessageConfigPtr decodeBMXMessageConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="createMessageConfig" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

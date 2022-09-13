@@ -46,6 +46,10 @@ inline BMXRosterServiceListener()
 
 Constructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXRosterServiceListener
 
 ```cpp
@@ -54,6 +58,10 @@ inline virtual ~BMXRosterServiceListener()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="~BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onFriendAdded
 
 ```cpp
@@ -71,6 +79,10 @@ Add friend
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onFriendAdded" %}{% endlanying_code_snippet %}
+```
 ### function onFriendRemoved
 
 ```cpp
@@ -88,6 +100,10 @@ Delete friend
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onFriendRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onApplied
 
 ```cpp
@@ -107,6 +123,10 @@ Request of adding friend received
   * **message** Friend request message 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationAccepted
 
 ```cpp
@@ -124,6 +144,10 @@ Request of adding friend approved
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationDeclined
 
 ```cpp
@@ -143,6 +167,10 @@ Request of adding friend rejected
   * **reason** Reason for application rejection 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListAdded
 
 ```cpp
@@ -160,6 +188,10 @@ Add to blacklist
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListRemoved
 
 ```cpp
@@ -177,6 +209,10 @@ Delete blacklist
   * **recipientId** Operation recipient 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onRosterInfoUpdate
 
 ```cpp
@@ -192,6 +228,10 @@ Update user information
   * **item** Updated friend information 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onRosterInfoUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onRosterListUpdate
 
 ```cpp
@@ -200,6 +240,10 @@ inline virtual void onRosterListUpdate()
 
 Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onRosterListUpdate" %}{% endlanying_code_snippet %}
+```
 ### function registerRosterService
 
 ```cpp
@@ -224,6 +268,10 @@ BMXRosterService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="registerRosterService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

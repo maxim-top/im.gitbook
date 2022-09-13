@@ -76,6 +76,10 @@ static BMXClientPtr create(
 
 **Return**: BMXClientPtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="create" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXClient
 
 ```cpp
@@ -84,6 +88,10 @@ inline virtual ~BMXClient()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="~BMXClient" %}{% endlanying_code_snippet %}
+```
 ### function getSDKConfig
 
 ```cpp
@@ -94,6 +102,10 @@ virtual BMXSDKConfigPtr getSDKConfig() =0
 
 **Return**: BMXSDKConfigPtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function getUserService
 
 ```cpp
@@ -104,6 +116,10 @@ virtual BMXUserService & getUserService() =0
 
 **Return**: [BMXUserService](classfloo_1_1_b_m_x_user_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getUserService" %}{% endlanying_code_snippet %}
+```
 ### function getChatService
 
 ```cpp
@@ -114,6 +130,10 @@ virtual BMXChatService & getChatService() =0
 
 **Return**: [BMXChatService](classfloo_1_1_b_m_x_chat_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getChatService" %}{% endlanying_code_snippet %}
+```
 ### function getGroupService
 
 ```cpp
@@ -124,6 +144,10 @@ virtual BMXGroupService & getGroupService() =0
 
 **Return**: [BMXGroupService](classfloo_1_1_b_m_x_group_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getGroupService" %}{% endlanying_code_snippet %}
+```
 ### function getRosterService
 
 ```cpp
@@ -134,6 +158,10 @@ virtual BMXRosterService & getRosterService() =0
 
 **Return**: [BMXRosterService](classfloo_1_1_b_m_x_roster_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getRosterService" %}{% endlanying_code_snippet %}
+```
 ### function getPushService
 
 ```cpp
@@ -144,6 +172,10 @@ virtual BMXPushService & getPushService() =0
 
 **Return**: [BMXPushService](classfloo_1_1_b_m_x_push_service.md)
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getPushService" %}{% endlanying_code_snippet %}
+```
 ### function signUpNewUser
 
 ```cpp
@@ -165,6 +197,10 @@ virtual BMXErrorCode signUpNewUser(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signUpNewUser" %}{% endlanying_code_snippet %}
+```
 ### function signInByName
 
 ```cpp
@@ -184,6 +220,10 @@ virtual BMXErrorCode signInByName(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signInByName" %}{% endlanying_code_snippet %}
+```
 ### function signInById
 
 ```cpp
@@ -203,6 +243,10 @@ virtual BMXErrorCode signInById(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signInById" %}{% endlanying_code_snippet %}
+```
 ### function fastSignInByName
 
 ```cpp
@@ -222,6 +266,10 @@ virtual BMXErrorCode fastSignInByName(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="fastSignInByName" %}{% endlanying_code_snippet %}
+```
 ### function fastSignInById
 
 ```cpp
@@ -241,6 +289,10 @@ virtual BMXErrorCode fastSignInById(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="fastSignInById" %}{% endlanying_code_snippet %}
+```
 ### function signOut
 
 ```cpp
@@ -260,6 +312,10 @@ virtual BMXErrorCode signOut(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signOut" %}{% endlanying_code_snippet %}
+```
 ### function connectStatus
 
 ```cpp
@@ -270,6 +326,10 @@ virtual BMXConnectStatus connectStatus() =0
 
 **Return**: BMXConnectStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="connectStatus" %}{% endlanying_code_snippet %}
+```
 ### function signInStatus
 
 ```cpp
@@ -280,6 +340,10 @@ virtual BMXSignInStatus signInStatus() =0
 
 **Return**: BMXSignInStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signInStatus" %}{% endlanying_code_snippet %}
+```
 ### function reconnect
 
 ```cpp
@@ -288,6 +352,10 @@ virtual void reconnect() =0
 
 强制重新连接 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="reconnect" %}{% endlanying_code_snippet %}
+```
 ### function onNetworkChanged
 
 ```cpp
@@ -308,6 +376,10 @@ virtual void onNetworkChanged(
 **Reimplements**: [floo::BMXNetworkListener::onNetworkChanged](classfloo_1_1_b_m_x_network_listener.md#function-onnetworkchanged)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="onNetworkChanged" %}{% endlanying_code_snippet %}
+```
 ### function disconnect
 
 ```cpp
@@ -316,6 +388,10 @@ virtual void disconnect() =0
 
 断开网络连接 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="disconnect" %}{% endlanying_code_snippet %}
+```
 ### function changeAppId
 
 ```cpp
@@ -334,6 +410,10 @@ virtual BMXErrorCode changeAppId(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="changeAppId" %}{% endlanying_code_snippet %}
+```
 ### function initializeServerConfig
 
 ```cpp
@@ -351,6 +431,10 @@ virtual BMXErrorCode initializeServerConfig(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="initializeServerConfig" %}{% endlanying_code_snippet %}
+```
 ### function sendMessage
 
 ```cpp
@@ -368,6 +452,10 @@ virtual void sendMessage(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="sendMessage" %}{% endlanying_code_snippet %}
+```
 ### function BMXClient
 
 ```cpp
@@ -375,6 +463,10 @@ BMXClient()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="BMXClient" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

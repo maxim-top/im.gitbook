@@ -44,6 +44,10 @@ Message(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="Message",function="Message" %}{% endlanying_code_snippet %}
+```
 ### function ~Message
 
 ```cpp
@@ -109,6 +113,10 @@ JSON extension;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="Message",function="~Message" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

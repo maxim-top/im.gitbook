@@ -94,17 +94,33 @@ video size
 `- (instancetype)initWithData:(NSData *)*aData* duration:(int)*duration* videoSize:(CGSize)*videoSize* displayName:(NSString *)*displayName* conversationId:(NSString *)*conversationId*`
 
 <a name="//api/name/initWithData:duration:videoSize:displayName:thumbnailData:conversationId:" title="initWithData:duration:videoSize:displayName:thumbnailData:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithData:duration:videoSize:displayName:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithData:duration:videoSize:displayName:thumbnailData:conversationId:
 
 `- (instancetype)initWithData:(NSData *)*aData* duration:(int)*duration* videoSize:(CGSize)*videoSize* displayName:(NSString *)*displayName* thumbnailData:(NSData *)*thumbnailData* conversationId:(NSString *)*conversationId*`
 
 <a name="//api/name/initWithLocalPath:duration:size:displayName:conversationId:" title="initWithLocalPath:duration:size:displayName:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithData:duration:videoSize:displayName:thumbnailData:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithLocalPath:duration:size:displayName:conversationId:
 
 `- (instancetype)initWithLocalPath:(NSString *)*aLocalPath* duration:(int)*duration* size:(CGSize)*size* displayName:(NSString *)*aDisplayName* conversationId:(NSString *)*conversationId*`
 
 <a name="//api/name/initWithLocalPath:duration:size:thumbnailPath:displayName:conversationId:" title="initWithLocalPath:duration:size:thumbnailPath:displayName:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithLocalPath:duration:size:displayName:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithLocalPath:duration:size:thumbnailPath:displayName:conversationId:
 
 `- (instancetype)initWithLocalPath:(NSString *)*aLocalPath* duration:(int)*duration* size:(CGSize)*size* thumbnailPath:(NSString *)*thumbnailPath* displayName:(NSString *)*aDisplayName* conversationId:(NSString *)*conversationId*`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithLocalPath:duration:size:thumbnailPath:displayName:conversationId:" %}{% endlanying_code_snippet %}
+```

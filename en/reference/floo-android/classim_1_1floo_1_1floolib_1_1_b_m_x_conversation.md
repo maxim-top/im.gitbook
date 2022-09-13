@@ -63,6 +63,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function conversationId
 
 ```java
@@ -73,6 +77,10 @@ Conversation Id
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="conversationId" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```java
@@ -83,6 +91,10 @@ Conversation type
 
 **Return**: [Type]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="type" %}{% endlanying_code_snippet %}
+```
 ### function lastMsg
 
 ```java
@@ -93,6 +105,10 @@ Latest message
 
 **Return**: BMXMessagePtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="lastMsg" %}{% endlanying_code_snippet %}
+```
 ### function unreadNumber
 
 ```java
@@ -103,6 +119,10 @@ Number of unread messages
 
 **Return**: int32_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="unreadNumber" %}{% endlanying_code_snippet %}
+```
 ### function messageCount
 
 ```java
@@ -113,6 +133,10 @@ Total number of messages in conversation
 
 **Return**: int32_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="messageCount" %}{% endlanying_code_snippet %}
+```
 ### function isMuteNotification
 
 ```java
@@ -123,6 +147,10 @@ Whether the user is alerted to the message, without which the conversation total
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="isMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function extension
 
 ```java
@@ -133,6 +161,10 @@ Extension information
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="extension" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```java
@@ -150,6 +182,10 @@ Set the Extension information
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function editMessage
 
 ```java
@@ -160,6 +196,10 @@ Edit message
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="editMessage" %}{% endlanying_code_snippet %}
+```
 ### function setEditMessage
 
 ```java
@@ -177,6 +217,10 @@ Set the Edit Message
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="setEditMessage" %}{% endlanying_code_snippet %}
+```
 ### function searchMessagesByKeyWords
 
 ```java
@@ -202,6 +246,10 @@ Search for messages, starting with latest if not specified
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
+```
 ### function searchMessagesByKeyWords
 
 ```java
@@ -214,6 +262,10 @@ inline BMXErrorCode searchMessagesByKeyWords(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
+```
 ### function searchMessagesByType
 
 ```java
@@ -239,6 +291,10 @@ Search for messages by type, starting with latest if not specified
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessagesByType" %}{% endlanying_code_snippet %}
+```
 ### function searchMessagesByType
 
 ```java
@@ -251,6 +307,10 @@ inline BMXErrorCode searchMessagesByType(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessagesByType" %}{% endlanying_code_snippet %}
+```
 ### function setMessagePlayedStatus
 
 ```java
@@ -270,6 +330,10 @@ Set message playback state (valid only for voice/video messages)
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="setMessagePlayedStatus" %}{% endlanying_code_snippet %}
+```
 ### function setMessageReadStatus
 
 ```java
@@ -289,6 +353,10 @@ Set message unread state, update unread message-number
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="setMessageReadStatus" %}{% endlanying_code_snippet %}
+```
 ### function setAllMessagesRead
 
 ```java
@@ -304,6 +372,10 @@ Set all messages to read, update number of unread messages
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="setAllMessagesRead" %}{% endlanying_code_snippet %}
+```
 ### function updateMessageExtension
 
 ```java
@@ -321,6 +393,10 @@ Update the extend field info of a database-stored message
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="updateMessageExtension" %}{% endlanying_code_snippet %}
+```
 ### function insertMessage
 
 ```java
@@ -338,6 +414,10 @@ Insert a message
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="insertMessage" %}{% endlanying_code_snippet %}
+```
 ### function loadMessage
 
 ```java
@@ -355,6 +435,10 @@ Read a message
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="loadMessage" %}{% endlanying_code_snippet %}
+```
 ### function removeAllMessages
 
 ```java
@@ -370,6 +454,10 @@ Delete all messages in sesstion
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="removeAllMessages" %}{% endlanying_code_snippet %}
+```
 ### function loadMessages
 
 ```java
@@ -391,6 +479,10 @@ Load message, starting with latest if not specified
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="loadMessages" %}{% endlanying_code_snippet %}
+```
 ### function loadMessages
 
 ```java
@@ -402,6 +494,10 @@ inline void loadMessages(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="loadMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```java
@@ -425,6 +521,10 @@ Search for messages, starting with latest if not specified
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```java
@@ -437,6 +537,10 @@ inline void searchMessages(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```java
@@ -460,6 +564,10 @@ Search for messages by type, starting with latest if not specified
   * **callBack** Callback 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```java
@@ -472,6 +580,10 @@ inline void searchMessages(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function refreshConversation
 
 ```java
@@ -489,6 +601,10 @@ Read the total message-number from current conversation of the database, forces 
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="refreshConversation" %}{% endlanying_code_snippet %}
+```
 ### function BMXConversation
 
 ```java
@@ -499,6 +615,10 @@ inline BMXConversation(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="BMXConversation" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -506,6 +626,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -515,6 +639,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXConversation",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

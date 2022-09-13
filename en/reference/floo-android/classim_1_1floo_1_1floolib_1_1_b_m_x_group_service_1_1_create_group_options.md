@@ -55,6 +55,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function CreateGroupOptions
 
 ```java
@@ -62,6 +66,10 @@ inline CreateGroupOptions()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="CreateGroupOptions" %}{% endlanying_code_snippet %}
+```
 ### function CreateGroupOptions
 
 ```java
@@ -74,6 +82,10 @@ inline CreateGroupOptions(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="CreateGroupOptions" %}{% endlanying_code_snippet %}
+```
 ### function CreateGroupOptions
 
 ```java
@@ -85,6 +97,10 @@ inline CreateGroupOptions(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="CreateGroupOptions" %}{% endlanying_code_snippet %}
+```
 ### function CreateGroupOptions
 
 ```java
@@ -95,6 +111,10 @@ inline CreateGroupOptions(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="CreateGroupOptions" %}{% endlanying_code_snippet %}
+```
 ### function setMName
 
 ```java
@@ -104,6 +124,10 @@ inline void setMName(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="setMName" %}{% endlanying_code_snippet %}
+```
 ### function getMName
 
 ```java
@@ -111,6 +135,10 @@ inline String getMName()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="getMName" %}{% endlanying_code_snippet %}
+```
 ### function setMDescription
 
 ```java
@@ -120,6 +148,10 @@ inline void setMDescription(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="setMDescription" %}{% endlanying_code_snippet %}
+```
 ### function getMDescription
 
 ```java
@@ -127,6 +159,10 @@ inline String getMDescription()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="getMDescription" %}{% endlanying_code_snippet %}
+```
 ### function setMIsPublic
 
 ```java
@@ -136,6 +172,10 @@ inline void setMIsPublic(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="setMIsPublic" %}{% endlanying_code_snippet %}
+```
 ### function getMIsPublic
 
 ```java
@@ -143,6 +183,10 @@ inline boolean getMIsPublic()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="getMIsPublic" %}{% endlanying_code_snippet %}
+```
 ### function setMIsChatroom
 
 ```java
@@ -152,6 +196,10 @@ inline void setMIsChatroom(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="setMIsChatroom" %}{% endlanying_code_snippet %}
+```
 ### function getMIsChatroom
 
 ```java
@@ -159,6 +207,10 @@ inline boolean getMIsChatroom()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="getMIsChatroom" %}{% endlanying_code_snippet %}
+```
 ### function setMMessage
 
 ```java
@@ -168,6 +220,10 @@ inline void setMMessage(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="setMMessage" %}{% endlanying_code_snippet %}
+```
 ### function getMMessage
 
 ```java
@@ -175,6 +231,10 @@ inline String getMMessage()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="getMMessage" %}{% endlanying_code_snippet %}
+```
 ### function setMMembers
 
 ```java
@@ -184,6 +244,10 @@ inline void setMMembers(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="setMMembers" %}{% endlanying_code_snippet %}
+```
 ### function getMMembers
 
 ```java
@@ -193,6 +257,10 @@ inline ListOfLongLong getMMembers()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="getMMembers" %}{% endlanying_code_snippet %}
+```
 ### function CreateGroupOptions
 
 ```java
@@ -203,6 +271,10 @@ inline CreateGroupOptions(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="CreateGroupOptions" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -210,6 +282,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -228,6 +304,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="CreateGroupOptions",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

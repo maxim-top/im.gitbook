@@ -50,6 +50,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function swigReleaseOwnership
 
 ```java
@@ -57,6 +61,10 @@ inline void swigReleaseOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+```
 ### function swigTakeOwnership
 
 ```java
@@ -64,6 +72,10 @@ inline void swigTakeOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+```
 ### function onConnectStatusChanged
 
 ```java
@@ -79,6 +91,10 @@ Channel state changed
   * **status** Connection state 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onConnectStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onUserSignIn
 
 ```java
@@ -94,6 +110,10 @@ User login
   * **profile** User profile 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onUserSignIn" %}{% endlanying_code_snippet %}
+```
 ### function onUserSignOut
 
 ```java
@@ -110,6 +130,10 @@ User logout
   * **error** State error code 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onUserSignOut" %}{% endlanying_code_snippet %}
+```
 ### function onInfoUpdated
 
 ```java
@@ -125,6 +149,10 @@ Synchronize user information updates (when user information changes in other dev
   * **profile** User profile 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onInfoUpdated" %}{% endlanying_code_snippet %}
+```
 ### function onOtherDeviceSingIn
 
 ```java
@@ -140,6 +168,10 @@ User login on another device
   * **deviceSN** Device serial number 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onOtherDeviceSingIn" %}{% endlanying_code_snippet %}
+```
 ### function onOtherDeviceSingOut
 
 ```java
@@ -155,6 +187,10 @@ User logout on another device
   * **deviceSN** Device serial number 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onOtherDeviceSingOut" %}{% endlanying_code_snippet %}
+```
 ### function BMXUserServiceListener
 
 ```java
@@ -162,6 +198,10 @@ inline BMXUserServiceListener()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="BMXUserServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function registerUserService
 
 ```java
@@ -173,6 +213,10 @@ inline void registerUserService(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="registerUserService" %}{% endlanying_code_snippet %}
+```
 ### function BMXUserServiceListener
 
 ```java
@@ -183,6 +227,10 @@ inline BMXUserServiceListener(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="BMXUserServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -190,6 +238,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function swigDirectorDisconnect
 
 ```java
@@ -197,6 +249,10 @@ inline void swigDirectorDisconnect()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -215,6 +271,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

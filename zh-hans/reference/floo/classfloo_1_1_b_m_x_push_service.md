@@ -83,6 +83,10 @@ inline virtual ~BMXPushService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="~BMXPushService" %}{% endlanying_code_snippet %}
+```
 ### function start
 
 ```cpp
@@ -102,6 +106,10 @@ virtual BMXErrorCode start(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="start" %}{% endlanying_code_snippet %}
+```
 ### function stop
 
 ```cpp
@@ -112,6 +120,10 @@ virtual BMXErrorCode stop() =0
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="stop" %}{% endlanying_code_snippet %}
+```
 ### function resume
 
 ```cpp
@@ -122,6 +134,10 @@ virtual BMXErrorCode resume() =0
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="resume" %}{% endlanying_code_snippet %}
+```
 ### function unbindAlias
 
 ```cpp
@@ -139,6 +155,10 @@ virtual BMXErrorCode unbindAlias(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="unbindAlias" %}{% endlanying_code_snippet %}
+```
 ### function getToken
 
 ```cpp
@@ -149,6 +169,10 @@ virtual const std::string & getToken() =0
 
 **Return**: std::stirng 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getToken" %}{% endlanying_code_snippet %}
+```
 ### function getCert
 
 ```cpp
@@ -159,6 +183,10 @@ virtual const std::string & getCert() =0
 
 **Return**: std::stirng 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getCert" %}{% endlanying_code_snippet %}
+```
 ### function status
 
 ```cpp
@@ -169,6 +197,10 @@ virtual PushSdkStatus status() =0
 
 **Return**: PushSdkStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="status" %}{% endlanying_code_snippet %}
+```
 ### function bindDeviceToken
 
 ```cpp
@@ -186,6 +218,10 @@ virtual BMXErrorCode bindDeviceToken(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="bindDeviceToken" %}{% endlanying_code_snippet %}
+```
 ### function bindVoipToken
 
 ```cpp
@@ -203,6 +239,10 @@ virtual BMXErrorCode bindVoipToken(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="bindVoipToken" %}{% endlanying_code_snippet %}
+```
 ### function getPushProfile
 
 ```cpp
@@ -222,6 +262,10 @@ virtual BMXErrorCode getPushProfile(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getPushProfile" %}{% endlanying_code_snippet %}
+```
 ### function setTags
 
 ```cpp
@@ -241,6 +285,10 @@ virtual BMXErrorCode setTags(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setTags" %}{% endlanying_code_snippet %}
+```
 ### function getTags
 
 ```cpp
@@ -260,6 +308,10 @@ virtual BMXErrorCode getTags(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getTags" %}{% endlanying_code_snippet %}
+```
 ### function deleteTags
 
 ```cpp
@@ -279,6 +331,10 @@ virtual BMXErrorCode deleteTags(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="deleteTags" %}{% endlanying_code_snippet %}
+```
 ### function clearTags
 
 ```cpp
@@ -296,6 +352,10 @@ virtual BMXErrorCode clearTags(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearTags" %}{% endlanying_code_snippet %}
+```
 ### function setBadge
 
 ```cpp
@@ -313,6 +373,10 @@ virtual BMXErrorCode setBadge(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setBadge" %}{% endlanying_code_snippet %}
+```
 ### function setPushMode
 
 ```cpp
@@ -330,6 +394,10 @@ virtual BMXErrorCode setPushMode(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setPushMode" %}{% endlanying_code_snippet %}
+```
 ### function setPushTime
 
 ```cpp
@@ -349,6 +417,10 @@ virtual BMXErrorCode setPushTime(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setPushTime" %}{% endlanying_code_snippet %}
+```
 ### function setSilenceTime
 
 ```cpp
@@ -368,6 +440,10 @@ virtual BMXErrorCode setSilenceTime(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setSilenceTime" %}{% endlanying_code_snippet %}
+```
 ### function setRunBackgroundMode
 
 ```cpp
@@ -385,6 +461,10 @@ virtual BMXErrorCode setRunBackgroundMode(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+```
 ### function setGeoFenceMode
 
 ```cpp
@@ -404,6 +484,10 @@ virtual BMXErrorCode setGeoFenceMode(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+```
 ### function clearNotification
 
 ```cpp
@@ -419,6 +503,10 @@ virtual void clearNotification(
   * **notificationId** 通知id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearNotification" %}{% endlanying_code_snippet %}
+```
 ### function clearAllNotifications
 
 ```cpp
@@ -427,6 +515,10 @@ virtual void clearAllNotifications() =0
 
 清空下拉通知栏全部通知。 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+```
 ### function sendMessage
 
 ```cpp
@@ -442,6 +534,10 @@ virtual void sendMessage(
   * **content** 发送的上行推送消息内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="sendMessage" %}{% endlanying_code_snippet %}
+```
 ### function loadLocalPushMessages
 
 ```cpp
@@ -463,6 +559,10 @@ virtual BMXErrorCode loadLocalPushMessages(
   * **Direction** 加载推送消息的方向，默认是加载更早的消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+```
 ### function addPushListener
 
 ```cpp
@@ -478,6 +578,10 @@ virtual void addPushListener(
   * **listener** 推送监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="addPushListener" %}{% endlanying_code_snippet %}
+```
 ### function removePushListener
 
 ```cpp
@@ -493,6 +597,10 @@ virtual void removePushListener(
   * **listener** 推送监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="removePushListener" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

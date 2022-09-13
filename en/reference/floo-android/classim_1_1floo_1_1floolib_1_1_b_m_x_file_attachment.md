@@ -64,6 +64,10 @@ inline synchronized void delete()
 **Reimplemented by**: [im::floo::floolib::BMXImageAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-delete), [im::floo::floolib::BMXVideoAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-delete), [im::floo::floolib::BMXVoiceAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-delete)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function BMXFileAttachment
 
 ```java
@@ -81,6 +85,10 @@ Constructor to build the message attachment of sent file
   * **displayName** Display name of file 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXFileAttachment
 
 ```java
@@ -90,6 +98,10 @@ inline BMXFileAttachment(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXFileAttachment
 
 ```java
@@ -109,6 +121,10 @@ Constructor to build the message attachment of received file
   * **fileLength** File size 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```java
@@ -125,6 +141,10 @@ Type of returned file
 **Reimplemented by**: [im::floo::floolib::BMXImageAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-type), [im::floo::floolib::BMXVideoAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-type), [im::floo::floolib::BMXVoiceAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```java
@@ -141,6 +161,10 @@ Cloning function
 **Reimplemented by**: [im::floo::floolib::BMXImageAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-clone), [im::floo::floolib::BMXVideoAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-clone), [im::floo::floolib::BMXVoiceAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function path
 
 ```java
@@ -151,6 +175,10 @@ Local path
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="path" %}{% endlanying_code_snippet %}
+```
 ### function displayName
 
 ```java
@@ -161,6 +189,10 @@ Display name
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="displayName" %}{% endlanying_code_snippet %}
+```
 ### function ratelUrl
 
 ```java
@@ -168,6 +200,10 @@ inline String ratelUrl()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="ratelUrl" %}{% endlanying_code_snippet %}
+```
 ### function url
 
 ```java
@@ -178,6 +214,10 @@ Remote URL
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="url" %}{% endlanying_code_snippet %}
+```
 ### function fileLength
 
 ```java
@@ -188,6 +228,10 @@ File length
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="fileLength" %}{% endlanying_code_snippet %}
+```
 ### function downloadStatus
 
 ```java
@@ -198,6 +242,10 @@ Attachment download state
 
 **Return**: DownloadStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="downloadStatus" %}{% endlanying_code_snippet %}
+```
 ### function dynamic_cast
 
 ```java
@@ -212,6 +260,10 @@ static inline BMXFileAttachment dynamic_cast(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="dynamic_cast" %}{% endlanying_code_snippet %}
+```
 ### function BMXFileAttachment
 
 ```java
@@ -222,6 +274,10 @@ inline BMXFileAttachment(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -235,6 +291,10 @@ inline void finalize()
 **Reimplemented by**: [im::floo::floolib::BMXImageAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-finalize), [im::floo::floolib::BMXVideoAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-finalize), [im::floo::floolib::BMXVoiceAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-finalize)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -244,6 +304,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

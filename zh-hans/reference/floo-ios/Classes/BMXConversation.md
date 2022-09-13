@@ -134,6 +134,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/loadMessage:completion:" title="loadMessage:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="insertMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### loadMessage:completion:
 
 读取一条消息
@@ -155,6 +159,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/loadMessageFromMessageId:size:completion:" title="loadMessageFromMessageId:size:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessage:completion:" %}{% endlanying_code_snippet %}
+```
 ### loadMessageFromMessageId:size:completion:
 
 加载消息，从参考消息向前加载，如果不指定则从最新消息开始
@@ -179,6 +187,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/removeAllMessagescompletion:" title="removeAllMessagescompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessageFromMessageId:size:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeAllMessagescompletion:
 
 删除会话中的所有消息
@@ -197,6 +209,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/searchMessagesByKeyWords:refTime:size:directionType:completion:" title="searchMessagesByKeyWords:refTime:size:directionType:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="removeAllMessagescompletion:" %}{% endlanying_code_snippet %}
+```
 ### searchMessagesByKeyWords:refTime:size:directionType:completion:
 
 搜索消息，如果不指定则从最新消息开始
@@ -210,6 +226,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/searchMessagesBycontentType:refTime:size:directionType:completion:" title="searchMessagesBycontentType:refTime:size:directionType:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWords:refTime:size:directionType:completion:" %}{% endlanying_code_snippet %}
+```
 ### searchMessagesBycontentType:refTime:size:directionType:completion:
 
 按照类型搜索消息，如果不指定则从最新消息开始
@@ -223,6 +243,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/setAllMessagesReadCompletion:" title="setAllMessagesReadCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesBycontentType:refTime:size:directionType:completion:" %}{% endlanying_code_snippet %}
+```
 ### setAllMessagesReadCompletion:
 
 把所有消息设置为已读，更新未读消息数
@@ -236,6 +260,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/setMessagePlayedStatus:status:completion:" title="setMessagePlayedStatus:status:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setAllMessagesReadCompletion:" %}{% endlanying_code_snippet %}
+```
 ### setMessagePlayedStatus:status:completion:
 
 设置消息播放状态（只对语音/视频消息有效）
@@ -260,6 +288,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/setMessageReadStatus:status:completion:" title="setMessageReadStatus:status:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessagePlayedStatus:status:completion:" %}{% endlanying_code_snippet %}
+```
 ### setMessageReadStatus:status:completion:
 
 设置消息未读状态，更新未读消息数, 本地
@@ -284,6 +316,10 @@
 * `BMXConversation.h`
 
 <a name="//api/name/updateMessageExtension:completion:" title="updateMessageExtension:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessageReadStatus:status:completion:" %}{% endlanying_code_snippet %}
+```
 ### updateMessageExtension:completion:
 
 更新一条数据库存储消息的扩展字段信息
@@ -304,3 +340,7 @@
 #### Declared In
 * `BMXConversation.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="updateMessageExtension:completion:" %}{% endlanying_code_snippet %}
+```

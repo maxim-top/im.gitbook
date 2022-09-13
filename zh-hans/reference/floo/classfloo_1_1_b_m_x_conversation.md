@@ -92,6 +92,10 @@ inline virtual ~BMXConversation()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="~BMXConversation" %}{% endlanying_code_snippet %}
+```
 ### function conversationId
 
 ```cpp
@@ -102,6 +106,10 @@ virtual int64_t conversationId() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="conversationId" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -112,6 +120,10 @@ virtual Type type() =0
 
 **Return**: Type 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="type" %}{% endlanying_code_snippet %}
+```
 ### function lastMsg
 
 ```cpp
@@ -122,6 +134,10 @@ virtual BMXMessagePtr lastMsg() =0
 
 **Return**: BMXMessagePtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="lastMsg" %}{% endlanying_code_snippet %}
+```
 ### function unreadNumber
 
 ```cpp
@@ -132,6 +148,10 @@ virtual int32_t unreadNumber() =0
 
 **Return**: int32_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="unreadNumber" %}{% endlanying_code_snippet %}
+```
 ### function messageCount
 
 ```cpp
@@ -142,6 +162,10 @@ virtual int32_t messageCount() =0
 
 **Return**: int32_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="messageCount" %}{% endlanying_code_snippet %}
+```
 ### function isMuteNotification
 
 ```cpp
@@ -152,6 +176,10 @@ virtual bool isMuteNotification() =0
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="isMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function extension
 
 ```cpp
@@ -162,6 +190,10 @@ virtual const JSON & extension() =0
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="extension" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```cpp
@@ -179,6 +211,10 @@ virtual BMXErrorCode setExtension(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function editMessage
 
 ```cpp
@@ -189,6 +225,10 @@ virtual const std::string & editMessage() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="editMessage" %}{% endlanying_code_snippet %}
+```
 ### function setEditMessage
 
 ```cpp
@@ -206,6 +246,10 @@ virtual BMXErrorCode setEditMessage(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setEditMessage" %}{% endlanying_code_snippet %}
+```
 ### function setMessagePlayedStatus
 
 ```cpp
@@ -225,6 +269,10 @@ virtual BMXErrorCode setMessagePlayedStatus(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setMessagePlayedStatus" %}{% endlanying_code_snippet %}
+```
 ### function setMessageReadStatus
 
 ```cpp
@@ -244,6 +292,10 @@ virtual BMXErrorCode setMessageReadStatus(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setMessageReadStatus" %}{% endlanying_code_snippet %}
+```
 ### function setAllMessagesRead
 
 ```cpp
@@ -254,6 +306,10 @@ virtual BMXErrorCode setAllMessagesRead() =0
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setAllMessagesRead" %}{% endlanying_code_snippet %}
+```
 ### function updateMessageExtension
 
 ```cpp
@@ -271,6 +327,10 @@ virtual BMXErrorCode updateMessageExtension(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="updateMessageExtension" %}{% endlanying_code_snippet %}
+```
 ### function insertMessage
 
 ```cpp
@@ -288,6 +348,10 @@ virtual BMXErrorCode insertMessage(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="insertMessage" %}{% endlanying_code_snippet %}
+```
 ### function loadMessage
 
 ```cpp
@@ -305,6 +369,10 @@ virtual BMXMessagePtr loadMessage(
 
 **Return**: BMXMessagePtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="loadMessage" %}{% endlanying_code_snippet %}
+```
 ### function removeAllMessages
 
 ```cpp
@@ -315,6 +383,10 @@ virtual BMXErrorCode removeAllMessages() =0
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="removeAllMessages" %}{% endlanying_code_snippet %}
+```
 ### function loadMessages
 
 ```cpp
@@ -338,6 +410,10 @@ virtual BMXErrorCode loadMessages(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="loadMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessagesByKeyWords
 
 ```cpp
@@ -363,6 +439,10 @@ virtual BMXErrorCode searchMessagesByKeyWords(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```cpp
@@ -393,6 +473,10 @@ use searchMessagesByKeyWords instead.
 搜索消息，如果不指定则从最新消息开始 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessagesByType
 
 ```cpp
@@ -418,6 +502,10 @@ virtual BMXErrorCode searchMessagesByType(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessagesByType" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```cpp
@@ -448,6 +536,10 @@ use searchMessagesByType instead.
 按照类型搜索消息，如果不指定则从最新消息开始 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function refreshConversation
 
 ```cpp
@@ -460,6 +552,10 @@ virtual BMXErrorCode refreshConversation() =0
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="refreshConversation" %}{% endlanying_code_snippet %}
+```
 ### function BMXConversation
 
 ```cpp
@@ -467,6 +563,10 @@ inline BMXConversation()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="BMXConversation" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

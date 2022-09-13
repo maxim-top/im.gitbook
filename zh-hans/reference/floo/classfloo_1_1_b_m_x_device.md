@@ -43,6 +43,10 @@ inline virtual ~BMXDevice()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="~BMXDevice" %}{% endlanying_code_snippet %}
+```
 ### function deviceSN
 
 ```cpp
@@ -53,6 +57,10 @@ virtual int deviceSN() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="deviceSN" %}{% endlanying_code_snippet %}
+```
 ### function userId
 
 ```cpp
@@ -63,6 +71,10 @@ virtual int64_t userId() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="userId" %}{% endlanying_code_snippet %}
+```
 ### function platform
 
 ```cpp
@@ -73,6 +85,10 @@ virtual int platform() =0
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="platform" %}{% endlanying_code_snippet %}
+```
 ### function userAgent
 
 ```cpp
@@ -83,6 +99,10 @@ virtual std::string userAgent() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="userAgent" %}{% endlanying_code_snippet %}
+```
 ### function setUserAgent
 
 ```cpp
@@ -98,6 +118,10 @@ virtual void setUserAgent(
   * **userAgent** 用户代理信息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="setUserAgent" %}{% endlanying_code_snippet %}
+```
 ### function isCurrentDevice
 
 ```cpp
@@ -110,6 +134,10 @@ virtual bool isCurrentDevice() =0
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="isCurrentDevice" %}{% endlanying_code_snippet %}
+```
 ### function BMXDevice
 
 ```cpp
@@ -117,6 +145,10 @@ inline BMXDevice()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="BMXDevice" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

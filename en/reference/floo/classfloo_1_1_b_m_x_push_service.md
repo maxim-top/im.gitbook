@@ -83,6 +83,10 @@ inline virtual ~BMXPushService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="~BMXPushService" %}{% endlanying_code_snippet %}
+```
 ### function start
 
 ```cpp
@@ -102,6 +106,10 @@ Initialize push sdk. Use this interface to initialize the push sdk in the case o
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="start" %}{% endlanying_code_snippet %}
+```
 ### function stop
 
 ```cpp
@@ -112,6 +120,10 @@ Shut push feature interface.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="stop" %}{% endlanying_code_snippet %}
+```
 ### function resume
 
 ```cpp
@@ -122,6 +134,10 @@ Resume push function.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="resume" %}{% endlanying_code_snippet %}
+```
 ### function unbindAlias
 
 ```cpp
@@ -139,6 +155,10 @@ Unbind user alias.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="unbindAlias" %}{% endlanying_code_snippet %}
+```
 ### function getToken
 
 ```cpp
@@ -149,6 +169,10 @@ Get user token to use after login.
 
 **Return**: std::stirng 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getToken" %}{% endlanying_code_snippet %}
+```
 ### function getCert
 
 ```cpp
@@ -159,6 +183,10 @@ Get push certificate returned by server after login.
 
 **Return**: std::stirng 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getCert" %}{% endlanying_code_snippet %}
+```
 ### function status
 
 ```cpp
@@ -169,6 +197,10 @@ Push the current state of sdk.
 
 **Return**: PushSdkStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="status" %}{% endlanying_code_snippet %}
+```
 ### function bindDeviceToken
 
 ```cpp
@@ -186,6 +218,10 @@ Push binding device token.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="bindDeviceToken" %}{% endlanying_code_snippet %}
+```
 ### function bindVoipToken
 
 ```cpp
@@ -203,6 +239,10 @@ Bind voiptoken of push device
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="bindVoipToken" %}{% endlanying_code_snippet %}
+```
 ### function getPushProfile
 
 ```cpp
@@ -222,6 +262,10 @@ Get push user details, force pull from server-side if forceRefresh == true
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getPushProfile" %}{% endlanying_code_snippet %}
+```
 ### function setTags
 
 ```cpp
@@ -241,6 +285,10 @@ Set tags of push user.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setTags" %}{% endlanying_code_snippet %}
+```
 ### function getTags
 
 ```cpp
@@ -260,6 +308,10 @@ Get tags of the push user.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getTags" %}{% endlanying_code_snippet %}
+```
 ### function deleteTags
 
 ```cpp
@@ -279,6 +331,10 @@ Delete tags of the push user.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="deleteTags" %}{% endlanying_code_snippet %}
+```
 ### function clearTags
 
 ```cpp
@@ -296,6 +352,10 @@ Clear tags of the push user.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearTags" %}{% endlanying_code_snippet %}
+```
 ### function setBadge
 
 ```cpp
@@ -313,6 +373,10 @@ Set unread badge for push user.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setBadge" %}{% endlanying_code_snippet %}
+```
 ### function setPushMode
 
 ```cpp
@@ -330,6 +394,10 @@ Set push enabled state. Default enabled.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setPushMode" %}{% endlanying_code_snippet %}
+```
 ### function setPushTime
 
 ```cpp
@@ -349,6 +417,10 @@ Set allowed push time.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setPushTime" %}{% endlanying_code_snippet %}
+```
 ### function setSilenceTime
 
 ```cpp
@@ -368,6 +440,10 @@ Set the start and end time of silent push.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setSilenceTime" %}{% endlanying_code_snippet %}
+```
 ### function setRunBackgroundMode
 
 ```cpp
@@ -385,6 +461,10 @@ Set whether to run push in background, default false.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+```
 ### function setGeoFenceMode
 
 ```cpp
@@ -404,6 +484,10 @@ Set whether to run push geo-fencing feature.
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+```
 ### function clearNotification
 
 ```cpp
@@ -419,6 +503,10 @@ Clear notifications for the specified id.
   * **notificationId** Notification id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearNotification" %}{% endlanying_code_snippet %}
+```
 ### function clearAllNotifications
 
 ```cpp
@@ -427,6 +515,10 @@ virtual void clearAllNotifications() =0
 
 Empty the drop-down notification bar for all notifications. 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+```
 ### function sendMessage
 
 ```cpp
@@ -442,6 +534,10 @@ Send a push uplink message and notify the listener of a change in message status
   * **content** Sent uplink push content 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="sendMessage" %}{% endlanying_code_snippet %}
+```
 ### function loadLocalPushMessages
 
 ```cpp
@@ -463,6 +559,10 @@ Load push message stored in local database. Start with latest message if not spe
   * **Direction** Direction of loading pushes, default to load earlier messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+```
 ### function addPushListener
 
 ```cpp
@@ -478,6 +578,10 @@ Add push listener
   * **listener** Push listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="addPushListener" %}{% endlanying_code_snippet %}
+```
 ### function removePushListener
 
 ```cpp
@@ -493,6 +597,10 @@ Remove push listener
   * **listener** Push listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="removePushListener" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

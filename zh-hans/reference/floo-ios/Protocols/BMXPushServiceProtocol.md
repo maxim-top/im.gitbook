@@ -24,6 +24,10 @@ Push初始化完成后获取推送证书。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/clearedTags:" title="clearedTags:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="certRetrieved:" %}{% endlanying_code_snippet %}
+```
 ### clearedTags:
 
 清空用户推送成功回调。
@@ -42,6 +46,10 @@ Push初始化完成后获取推送证书。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/deleteTagsDidFinished:" title="deleteTagsDidFinished:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="clearedTags:" %}{% endlanying_code_snippet %}
+```
 ### deleteTagsDidFinished:
 
 删除用户推送标签成功回调
@@ -60,6 +68,10 @@ Push初始化完成后获取推送证书。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/getTagsDidFinished:" title="getTagsDidFinished:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="deleteTagsDidFinished:" %}{% endlanying_code_snippet %}
+```
 ### getTagsDidFinished:
 
 获取用户推送标签成功回调。
@@ -78,6 +90,10 @@ Push初始化完成后获取推送证书。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/pushMessageStatusChanged:error:" title="pushMessageStatusChanged:error:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="getTagsDidFinished:" %}{% endlanying_code_snippet %}
+```
 ### pushMessageStatusChanged:error:
 
 发送Push上行消息状态变化通知。
@@ -99,6 +115,10 @@ Push初始化完成后获取推送证书。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/pushStartDidFinished:" title="pushStartDidFinished:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushMessageStatusChanged:error:" %}{% endlanying_code_snippet %}
+```
 ### pushStartDidFinished:
 
 Push初始化完成通知。
@@ -117,6 +137,10 @@ Push初始化完成通知。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/pushStartDidStopped" title="pushStartDidStopped"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidFinished:" %}{% endlanying_code_snippet %}
+```
 ### pushStartDidStopped
 
 Push功能停止通知。
@@ -130,6 +154,10 @@ Push功能停止通知。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/receivedPush:" title="receivedPush:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidStopped" %}{% endlanying_code_snippet %}
+```
 ### receivedPush:
 
 接收到新的Push通知
@@ -148,6 +176,10 @@ Push功能停止通知。
 * `BMXPushServiceProtocol.h`
 
 <a name="//api/name/setTagsDidFinished:" title="setTagsDidFinished:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="receivedPush:" %}{% endlanying_code_snippet %}
+```
 ### setTagsDidFinished:
 
 设置用户推送标签成功回调。
@@ -165,3 +197,7 @@ Push功能停止通知。
 #### Declared In
 * `BMXPushServiceProtocol.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="setTagsDidFinished:" %}{% endlanying_code_snippet %}
+```

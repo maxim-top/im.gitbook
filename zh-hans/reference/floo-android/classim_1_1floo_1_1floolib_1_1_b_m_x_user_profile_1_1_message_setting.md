@@ -60,6 +60,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function MessageSetting
 
 ```java
@@ -67,6 +71,10 @@ inline MessageSetting()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="MessageSetting" %}{% endlanying_code_snippet %}
+```
 ### function setMPushEnabled
 
 ```java
@@ -76,6 +84,10 @@ inline void setMPushEnabled(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMPushEnabled" %}{% endlanying_code_snippet %}
+```
 ### function getMPushEnabled
 
 ```java
@@ -83,6 +95,10 @@ inline boolean getMPushEnabled()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMPushEnabled" %}{% endlanying_code_snippet %}
+```
 ### function setMPushDetail
 
 ```java
@@ -92,6 +108,10 @@ inline void setMPushDetail(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMPushDetail" %}{% endlanying_code_snippet %}
+```
 ### function getMPushDetail
 
 ```java
@@ -99,6 +119,10 @@ inline boolean getMPushDetail()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMPushDetail" %}{% endlanying_code_snippet %}
+```
 ### function setMPushNickname
 
 ```java
@@ -108,6 +132,10 @@ inline void setMPushNickname(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMPushNickname" %}{% endlanying_code_snippet %}
+```
 ### function getMPushNickname
 
 ```java
@@ -115,6 +143,10 @@ inline String getMPushNickname()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMPushNickname" %}{% endlanying_code_snippet %}
+```
 ### function setMNotificationSound
 
 ```java
@@ -124,6 +156,10 @@ inline void setMNotificationSound(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMNotificationSound" %}{% endlanying_code_snippet %}
+```
 ### function getMNotificationSound
 
 ```java
@@ -131,6 +167,10 @@ inline boolean getMNotificationSound()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMNotificationSound" %}{% endlanying_code_snippet %}
+```
 ### function setMNotificationVibrate
 
 ```java
@@ -140,6 +180,10 @@ inline void setMNotificationVibrate(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMNotificationVibrate" %}{% endlanying_code_snippet %}
+```
 ### function getMNotificationVibrate
 
 ```java
@@ -147,6 +191,10 @@ inline boolean getMNotificationVibrate()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMNotificationVibrate" %}{% endlanying_code_snippet %}
+```
 ### function setMAutoDownloadAttachment
 
 ```java
@@ -156,6 +204,10 @@ inline void setMAutoDownloadAttachment(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMAutoDownloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function getMAutoDownloadAttachment
 
 ```java
@@ -163,6 +215,10 @@ inline boolean getMAutoDownloadAttachment()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMAutoDownloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function setMSilenceStartTime
 
 ```java
@@ -172,6 +228,10 @@ inline void setMSilenceStartTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMSilenceStartTime" %}{% endlanying_code_snippet %}
+```
 ### function getMSilenceStartTime
 
 ```java
@@ -179,6 +239,10 @@ inline int getMSilenceStartTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMSilenceStartTime" %}{% endlanying_code_snippet %}
+```
 ### function setMSilenceEndTime
 
 ```java
@@ -188,6 +252,10 @@ inline void setMSilenceEndTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMSilenceEndTime" %}{% endlanying_code_snippet %}
+```
 ### function getMSilenceEndTime
 
 ```java
@@ -195,6 +263,10 @@ inline int getMSilenceEndTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMSilenceEndTime" %}{% endlanying_code_snippet %}
+```
 ### function setMPushStartTime
 
 ```java
@@ -204,6 +276,10 @@ inline void setMPushStartTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMPushStartTime" %}{% endlanying_code_snippet %}
+```
 ### function getMPushStartTime
 
 ```java
@@ -211,6 +287,10 @@ inline int getMPushStartTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMPushStartTime" %}{% endlanying_code_snippet %}
+```
 ### function setMPushEndTime
 
 ```java
@@ -220,6 +300,10 @@ inline void setMPushEndTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="setMPushEndTime" %}{% endlanying_code_snippet %}
+```
 ### function getMPushEndTime
 
 ```java
@@ -229,6 +313,10 @@ inline int getMPushEndTime()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getMPushEndTime" %}{% endlanying_code_snippet %}
+```
 ### function MessageSetting
 
 ```java
@@ -239,6 +327,10 @@ inline MessageSetting(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="MessageSetting" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -246,6 +338,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -264,6 +360,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessageSetting",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

@@ -92,6 +92,10 @@ BMXSDKConfig(
   * **deliveryAck** 是否发送消息送达回执 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function BMXSDKConfig
 
 ```cpp
@@ -125,6 +129,10 @@ BMXSDKConfig(
   * **deliveryAck** 是否发送消息送达回执 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXSDKConfig
 
 ```cpp
@@ -133,6 +141,10 @@ virtual ~BMXSDKConfig()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="~BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function getDataDir
 
 ```cpp
@@ -143,6 +155,10 @@ const std::string & getDataDir()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDataDir" %}{% endlanying_code_snippet %}
+```
 ### function getCacheDir
 
 ```cpp
@@ -153,6 +169,10 @@ const std::string & getCacheDir()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getCacheDir" %}{% endlanying_code_snippet %}
+```
 ### function getClientType
 
 ```cpp
@@ -163,6 +183,10 @@ BMXClientType getClientType()
 
 **Return**: BMXClientType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getClientType" %}{% endlanying_code_snippet %}
+```
 ### function getVsn
 
 ```cpp
@@ -173,6 +197,10 @@ const std::string & getVsn()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getVsn" %}{% endlanying_code_snippet %}
+```
 ### function getSDKVersion
 
 ```cpp
@@ -183,6 +211,10 @@ SDK版本
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getSDKVersion" %}{% endlanying_code_snippet %}
+```
 ### function getPushCertName
 
 ```cpp
@@ -193,6 +225,10 @@ const std::string & getPushCertName()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getPushCertName" %}{% endlanying_code_snippet %}
+```
 ### function setPushCertName
 
 ```cpp
@@ -205,6 +241,10 @@ void setPushCertName(
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setPushCertName" %}{% endlanying_code_snippet %}
+```
 ### function getUserAgent
 
 ```cpp
@@ -215,6 +255,10 @@ const std::string & getUserAgent()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getUserAgent" %}{% endlanying_code_snippet %}
+```
 ### function carryUsernameInMessage
 
 ```cpp
@@ -225,6 +269,10 @@ bool carryUsernameInMessage()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="carryUsernameInMessage" %}{% endlanying_code_snippet %}
+```
 ### function setCarryUsernameInMessage
 
 ```cpp
@@ -240,6 +288,10 @@ void setCarryUsernameInMessage(
   * **bool** 设置是否在送消息的config中携带用户名 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setCarryUsernameInMessage" %}{% endlanying_code_snippet %}
+```
 ### function enableDeliveryAck
 
 ```cpp
@@ -250,6 +302,10 @@ bool enableDeliveryAck()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="enableDeliveryAck" %}{% endlanying_code_snippet %}
+```
 ### function setEnableDeliveryAck
 
 ```cpp
@@ -265,6 +321,10 @@ void setEnableDeliveryAck(
   * **bool** 是否发送消息送达回执 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setEnableDeliveryAck" %}{% endlanying_code_snippet %}
+```
 ### function getLogLevel
 
 ```cpp
@@ -275,6 +335,10 @@ Log输出等级
 
 **Return**: BMXLogLevel 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getLogLevel" %}{% endlanying_code_snippet %}
+```
 ### function setLogLevel
 
 ```cpp
@@ -290,6 +354,10 @@ void setLogLevel(
   * **BMXLogLevel** Log输出等级 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setLogLevel" %}{% endlanying_code_snippet %}
+```
 ### function getConsoleOutput
 
 ```cpp
@@ -300,6 +368,10 @@ Log是否输出到Console.
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getConsoleOutput" %}{% endlanying_code_snippet %}
+```
 ### function setConsoleOutput
 
 ```cpp
@@ -315,6 +387,10 @@ void setConsoleOutput(
   * **bool** 设置Log是否输出到Console 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setConsoleOutput" %}{% endlanying_code_snippet %}
+```
 ### function setHostConfig
 
 ```cpp
@@ -330,6 +406,10 @@ void setHostConfig(
   * **config** 服务器配置 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setHostConfig" %}{% endlanying_code_snippet %}
+```
 ### function getHostConfig
 
 ```cpp
@@ -340,6 +420,10 @@ const HostConfig & getHostConfig()
 
 **Return**: [HostConfig]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getHostConfig" %}{% endlanying_code_snippet %}
+```
 ### function getLoadAllServerConversations
 
 ```cpp
@@ -350,6 +434,10 @@ bool getLoadAllServerConversations()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getLoadAllServerConversations" %}{% endlanying_code_snippet %}
+```
 ### function setLoadAllServerConversations
 
 ```cpp
@@ -365,6 +453,10 @@ void setLoadAllServerConversations(
   * **enable** 是否根据服务器返回未读列表创建所有会话 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
+```
 ### function getDeviceUuid
 
 ```cpp
@@ -375,6 +467,10 @@ const std::string & getDeviceUuid()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDeviceUuid" %}{% endlanying_code_snippet %}
+```
 ### function setDeviceUuid
 
 ```cpp
@@ -390,6 +486,10 @@ void setDeviceUuid(
   * **uuid** 设备的唯一识别码。 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setDeviceUuid" %}{% endlanying_code_snippet %}
+```
 ### function getDBCryptoKey
 
 ```cpp
@@ -400,6 +500,10 @@ const std::string & getDBCryptoKey()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDBCryptoKey" %}{% endlanying_code_snippet %}
+```
 ### function setDBCryptoKey
 
 ```cpp
@@ -415,6 +519,10 @@ void setDBCryptoKey(
   * **cryptoKey** 本地数据库的加密密钥。 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setDBCryptoKey" %}{% endlanying_code_snippet %}
+```
 ### function getVerifyCertificate
 
 ```cpp
@@ -425,6 +533,10 @@ bool getVerifyCertificate()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getVerifyCertificate" %}{% endlanying_code_snippet %}
+```
 ### function setVerifyCertificate
 
 ```cpp
@@ -440,6 +552,10 @@ void setVerifyCertificate(
   * **verify** https请求是否验证服务器端证书 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
+```
 ### function getEnableDNS
 
 ```cpp
@@ -450,6 +566,10 @@ bool getEnableDNS()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getEnableDNS" %}{% endlanying_code_snippet %}
+```
 ### function setEnableDNS
 
 ```cpp
@@ -465,6 +585,10 @@ void setEnableDNS(
   * **enable** 是否启用dns功能 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
+```
 ### function getUserDNSAddress
 
 ```cpp
@@ -475,6 +599,10 @@ std::string getUserDNSAddress()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getUserDNSAddress" %}{% endlanying_code_snippet %}
+```
 ### function setUserDNSAddress
 
 ```cpp
@@ -490,6 +618,10 @@ void setUserDNSAddress(
   * **dns** 用户自定义dns服务器地址 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setUserDNSAddress" %}{% endlanying_code_snippet %}
+```
 ### function getAppID
 
 ```cpp
@@ -500,6 +632,10 @@ std::string getAppID()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getAppID" %}{% endlanying_code_snippet %}
+```
 ### function setAppID
 
 ```cpp
@@ -515,6 +651,10 @@ void setAppID(
   * **appID** 用户的appID 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setAppID" %}{% endlanying_code_snippet %}
+```
 ### function getAppSecret
 
 ```cpp
@@ -525,6 +665,10 @@ std::string getAppSecret()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getAppSecret" %}{% endlanying_code_snippet %}
+```
 ### function setAppSecret
 
 ```cpp
@@ -540,6 +684,10 @@ void setAppSecret(
   * **appID** 用户的appSecret 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setAppSecret" %}{% endlanying_code_snippet %}
+```
 ### function getPushProviderType
 
 ```cpp
@@ -550,6 +698,10 @@ BMXPushProviderType getPushProviderType()
 
 **Return**: BMXPushProviderType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getPushProviderType" %}{% endlanying_code_snippet %}
+```
 ### function setPushProviderType
 
 ```cpp
@@ -565,6 +717,10 @@ void setPushProviderType(
   * **type** 用户的推送提供商类型 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setPushProviderType" %}{% endlanying_code_snippet %}
+```
 ### function getPushEnvironmentType
 
 ```cpp
@@ -575,6 +731,10 @@ BMXPushEnvironmentType getPushEnvironmentType()
 
 **Return**: BMXPushEnvironmentType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getPushEnvironmentType" %}{% endlanying_code_snippet %}
+```
 ### function setEnvironmentType
 
 ```cpp
@@ -590,6 +750,10 @@ void setEnvironmentType(
   * **type** 用户的推送环境类型 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setEnvironmentType" %}{% endlanying_code_snippet %}
+```
 ### function getDebugLogReceiverId
 
 ```cpp
@@ -600,6 +764,10 @@ int64_t getDebugLogReceiverId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDebugLogReceiverId" %}{% endlanying_code_snippet %}
+```
 ### function setDebugLogReceiverId
 
 ```cpp
@@ -615,6 +783,10 @@ void setDebugLogReceiverId(
   * **uid** 调试log接收者id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setDebugLogReceiverId" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

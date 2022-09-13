@@ -63,6 +63,10 @@ inline BMXGroupServiceListener()
 
 构造函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="BMXGroupServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXGroupServiceListener
 
 ```cpp
@@ -71,6 +75,10 @@ inline virtual ~BMXGroupServiceListener()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="~BMXGroupServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onGroupCreate
 
 ```cpp
@@ -86,6 +94,10 @@ inline virtual void onGroupCreate(
   * **group** 新创建的群组 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupCreate" %}{% endlanying_code_snippet %}
+```
 ### function onGroupListUpdate
 
 ```cpp
@@ -101,6 +113,10 @@ inline virtual void onGroupListUpdate(
   * **list** 更新的群组列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onGroupJoined
 
 ```cpp
@@ -116,6 +132,10 @@ inline virtual void onGroupJoined(
   * **group** 加入的群组 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupJoined" %}{% endlanying_code_snippet %}
+```
 ### function onGroupLeft
 
 ```cpp
@@ -133,6 +153,10 @@ inline virtual void onGroupLeft(
   * **reason** 退出原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupLeft" %}{% endlanying_code_snippet %}
+```
 ### function onInvitated
 
 ```cpp
@@ -152,6 +176,10 @@ inline virtual void onInvitated(
   * **message** 邀请原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onInvitated" %}{% endlanying_code_snippet %}
+```
 ### function onInvitationAccepted
 
 ```cpp
@@ -169,6 +197,10 @@ inline virtual void onInvitationAccepted(
   * **inviteeId** 被邀请者id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onInvitationAccepted" %}{% endlanying_code_snippet %}
+```
 ### function onInvitationDeclined
 
 ```cpp
@@ -188,6 +220,10 @@ inline virtual void onInvitationDeclined(
   * **reason** 拒绝原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onInvitationDeclined" %}{% endlanying_code_snippet %}
+```
 ### function onApplied
 
 ```cpp
@@ -207,6 +243,10 @@ inline virtual void onApplied(
   * **message** 申请原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationAccepted
 
 ```cpp
@@ -224,6 +264,10 @@ inline virtual void onApplicationAccepted(
   * **approver** 申请的批准者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationDeclined
 
 ```cpp
@@ -243,6 +287,10 @@ inline virtual void onApplicationDeclined(
   * **reason** 拒绝的原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
+```
 ### function onMembersBanned
 
 ```cpp
@@ -262,6 +310,10 @@ inline virtual void onMembersBanned(
   * **duration** 禁言时长 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMembersBanned" %}{% endlanying_code_snippet %}
+```
 ### function onMembersUnbanned
 
 ```cpp
@@ -279,6 +331,10 @@ inline virtual void onMembersUnbanned(
   * **members** 被解除禁言的群成员id列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMembersUnbanned" %}{% endlanying_code_snippet %}
+```
 ### function onMemberJoined
 
 ```cpp
@@ -298,6 +354,10 @@ inline virtual void onMemberJoined(
   * **inviter** 邀请者id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMemberJoined" %}{% endlanying_code_snippet %}
+```
 ### function onMemberLeft
 
 ```cpp
@@ -317,6 +377,10 @@ inline virtual void onMemberLeft(
   * **reason** 退出的原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMemberLeft" %}{% endlanying_code_snippet %}
+```
 ### function onAdminsAdded
 
 ```cpp
@@ -334,6 +398,10 @@ inline virtual void onAdminsAdded(
   * **members** 被提升为管理员的成员列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onAdminsAdded" %}{% endlanying_code_snippet %}
+```
 ### function onAdminsRemoved
 
 ```cpp
@@ -353,6 +421,10 @@ inline virtual void onAdminsRemoved(
   * **reason** 被移除的原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onAdminsRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onOwnerAssigned
 
 ```cpp
@@ -368,6 +440,10 @@ inline virtual void onOwnerAssigned(
   * **group** 被转让为群主的群组 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onOwnerAssigned" %}{% endlanying_code_snippet %}
+```
 ### function onGroupInfoUpdate
 
 ```cpp
@@ -385,6 +461,10 @@ inline virtual void onGroupInfoUpdate(
   * **type** 发生变更的群信息类型 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupInfoUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onMemberChangeNickName
 
 ```cpp
@@ -404,6 +484,10 @@ inline virtual void onMemberChangeNickName(
   * **nickName** 变更后的群昵称 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMemberChangeNickName" %}{% endlanying_code_snippet %}
+```
 ### function onAnnouncementUpdate
 
 ```cpp
@@ -421,6 +505,10 @@ inline virtual void onAnnouncementUpdate(
   * **announcement** 变更后的最新的群更高 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onAnnouncementUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onSharedFileUploaded
 
 ```cpp
@@ -438,6 +526,10 @@ inline virtual void onSharedFileUploaded(
   * **sharedFile** 新上传的群共享文件 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onSharedFileUploaded" %}{% endlanying_code_snippet %}
+```
 ### function onSharedFileDeleted
 
 ```cpp
@@ -455,6 +547,10 @@ inline virtual void onSharedFileDeleted(
   * **sharedFile** 被删除的群共享文件 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onSharedFileDeleted" %}{% endlanying_code_snippet %}
+```
 ### function onSharedFileUpdated
 
 ```cpp
@@ -472,6 +568,10 @@ inline virtual void onSharedFileUpdated(
   * **sharedFile** 更新的群共享文件 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onSharedFileUpdated" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListAdded
 
 ```cpp
@@ -489,6 +589,10 @@ inline virtual void onBlockListAdded(
   * **members** 添加的黑名单成员列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListRemoved
 
 ```cpp
@@ -506,6 +610,10 @@ inline virtual void onBlockListRemoved(
   * **members** 删除的黑名单成员列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onGroupListUpdate
 
 ```cpp
@@ -514,6 +622,10 @@ inline virtual void onGroupListUpdate()
 
 客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
+```
 ### function registerGroupService
 
 ```cpp
@@ -538,6 +650,10 @@ BMXGroupService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="registerGroupService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

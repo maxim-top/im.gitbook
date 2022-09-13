@@ -70,6 +70,10 @@ inline virtual ~BMXUserService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="~BMXUserService" %}{% endlanying_code_snippet %}
+```
 ### function bindDevice
 
 ```cpp
@@ -87,6 +91,10 @@ Binding device push token
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="bindDevice" %}{% endlanying_code_snippet %}
+```
 ### function getDeviceList
 
 ```cpp
@@ -104,6 +112,10 @@ Get device list
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="getDeviceList" %}{% endlanying_code_snippet %}
+```
 ### function deleteDevice
 
 ```cpp
@@ -121,6 +133,10 @@ Delete device
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="deleteDevice" %}{% endlanying_code_snippet %}
+```
 ### function getProfile
 
 ```cpp
@@ -140,6 +156,10 @@ Get user details, force pull from server if forceRefresh == true
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="getProfile" %}{% endlanying_code_snippet %}
+```
 ### function setNickname
 
 ```cpp
@@ -157,6 +177,10 @@ Set nickname
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setNickname" %}{% endlanying_code_snippet %}
+```
 ### function uploadAvatar
 
 ```cpp
@@ -176,6 +200,10 @@ Upload avatar
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="uploadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```cpp
@@ -197,6 +225,10 @@ Download avatar, default to download thumbnail
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function setPublicInfo
 
 ```cpp
@@ -214,6 +246,10 @@ Set public extension information
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPublicInfo" %}{% endlanying_code_snippet %}
+```
 ### function setPrivateInfo
 
 ```cpp
@@ -231,6 +267,10 @@ Set private extension information
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPrivateInfo" %}{% endlanying_code_snippet %}
+```
 ### function setAddFriendAuthMode
 
 ```cpp
@@ -248,6 +288,10 @@ Set method to validate when adding friend
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAddFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function setAuthQuestion
 
 ```cpp
@@ -265,6 +309,10 @@ Set friend authentication questions
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAuthQuestion" %}{% endlanying_code_snippet %}
+```
 ### function setEnablePush
 
 ```cpp
@@ -282,6 +330,10 @@ Set whether push is allowed
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setEnablePush" %}{% endlanying_code_snippet %}
+```
 ### function setEnablePushDetaile
 
 ```cpp
@@ -299,6 +351,10 @@ Set whether to push details
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setEnablePushDetaile" %}{% endlanying_code_snippet %}
+```
 ### function setPushNickname
 
 ```cpp
@@ -316,6 +372,10 @@ Set push nickname
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPushNickname" %}{% endlanying_code_snippet %}
+```
 ### function setPushAlias
 
 ```cpp
@@ -333,6 +393,10 @@ virtual BMXErrorCode setPushAlias(
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPushAlias" %}{% endlanying_code_snippet %}
+```
 ### function setNotificationSound
 
 ```cpp
@@ -350,6 +414,10 @@ Set whether a new message is audibly alerted
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setNotificationSound" %}{% endlanying_code_snippet %}
+```
 ### function setNotificationVibrate
 
 ```cpp
@@ -367,6 +435,10 @@ Set whether a new message is alerted in vibration
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setNotificationVibrate" %}{% endlanying_code_snippet %}
+```
 ### function setAutoDownloadAttachment
 
 ```cpp
@@ -384,6 +456,10 @@ Set whether to automatically download thumbnail and voice attachment
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAutoDownloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function setAutoAcceptGroupInvite
 
 ```cpp
@@ -401,6 +477,10 @@ Set whether to automatically accept group invitations
 
 **Return**: BMXErrorCode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+```
 ### function addUserListener
 
 ```cpp
@@ -416,6 +496,10 @@ Add user state listener
   * **listener** User state listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="addUserListener" %}{% endlanying_code_snippet %}
+```
 ### function removeUserListener
 
 ```cpp
@@ -433,6 +517,10 @@ Remove user state listener
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="removeUserListener" %}{% endlanying_code_snippet %}
+```
 ### function BMXUserService
 
 ```cpp
@@ -440,6 +528,10 @@ inline BMXUserService()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="BMXUserService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

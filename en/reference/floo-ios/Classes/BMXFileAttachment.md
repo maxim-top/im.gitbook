@@ -102,6 +102,10 @@ Initialize file BMXFileAttachment
 * `BMXFileAttachment.h`
 
 <a name="//api/name/initWithPath:displayName:conversationId:" title="initWithPath:displayName:conversationId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="initWithData:displayName:conversationId:" %}{% endlanying_code_snippet %}
+```
 ### initWithPath:displayName:conversationId:
 
 Initialize file BMXFileAttachment
@@ -125,3 +129,7 @@ Initialize file BMXFileAttachment
 #### Declared In
 * `BMXFileAttachment.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="initWithPath:displayName:conversationId:" %}{% endlanying_code_snippet %}
+```

@@ -103,6 +103,10 @@ BMXVoiceAttachment(
   * **displayName** 文件展示名 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVoiceAttachment",function="BMXVoiceAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXVoiceAttachment
 
 ```cpp
@@ -124,6 +128,10 @@ BMXVoiceAttachment(
   * **fileLength** 文件大小 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVoiceAttachment",function="BMXVoiceAttachment" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXVoiceAttachment
 
 ```cpp
@@ -132,6 +140,10 @@ inline virtual ~BMXVoiceAttachment()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVoiceAttachment",function="~BMXVoiceAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -145,6 +157,10 @@ inline virtual Type type() const
 **Reimplements**: [floo::BMXFileAttachment::type](classfloo_1_1_b_m_x_file_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVoiceAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```cpp
@@ -158,6 +174,10 @@ virtual BMXMessageAttachmentPtr clone() const
 **Reimplements**: [floo::BMXFileAttachment::clone](classfloo_1_1_b_m_x_file_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVoiceAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function duration
 
 ```cpp
@@ -188,6 +208,10 @@ friend class Decoder< BMXVoiceAttachment >(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXVoiceAttachment",function="duration" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

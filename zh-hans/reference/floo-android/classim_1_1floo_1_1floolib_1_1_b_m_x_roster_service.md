@@ -68,6 +68,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function get
 
 ```java
@@ -87,6 +91,10 @@ inline BMXErrorCode get(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="get" %}{% endlanying_code_snippet %}
+```
 ### function fetchRosterById
 
 ```java
@@ -108,6 +116,10 @@ inline BMXErrorCode fetchRosterById(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="fetchRosterById" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -129,6 +141,10 @@ inline BMXErrorCode search(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchRosterByName
 
 ```java
@@ -150,6 +166,10 @@ inline BMXErrorCode fetchRosterByName(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="fetchRosterByName" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -171,6 +191,10 @@ inline BMXErrorCode search(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchRostersByIdList
 
 ```java
@@ -192,6 +216,10 @@ inline BMXErrorCode fetchRostersByIdList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="fetchRostersByIdList" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -213,6 +241,10 @@ inline BMXErrorCode search(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function setItemLocalExtension
 
 ```java
@@ -232,6 +264,10 @@ inline BMXErrorCode setItemLocalExtension(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="setItemLocalExtension" %}{% endlanying_code_snippet %}
+```
 ### function setItemExtension
 
 ```java
@@ -251,6 +287,10 @@ inline BMXErrorCode setItemExtension(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="setItemExtension" %}{% endlanying_code_snippet %}
+```
 ### function setItemAlias
 
 ```java
@@ -270,6 +310,10 @@ inline BMXErrorCode setItemAlias(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="setItemAlias" %}{% endlanying_code_snippet %}
+```
 ### function setItemMuteNotification
 
 ```java
@@ -289,6 +333,10 @@ inline BMXErrorCode setItemMuteNotification(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="setItemMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function getApplicationList
 
 ```java
@@ -310,6 +358,10 @@ inline BMXErrorCode getApplicationList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="getApplicationList" %}{% endlanying_code_snippet %}
+```
 ### function apply
 
 ```java
@@ -321,6 +373,10 @@ inline BMXErrorCode apply(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="apply" %}{% endlanying_code_snippet %}
+```
 ### function apply
 
 ```java
@@ -340,6 +396,10 @@ inline BMXErrorCode apply(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="apply" %}{% endlanying_code_snippet %}
+```
 ### function remove
 
 ```java
@@ -357,6 +417,10 @@ inline BMXErrorCode remove(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="remove" %}{% endlanying_code_snippet %}
+```
 ### function accept
 
 ```java
@@ -374,6 +438,10 @@ inline BMXErrorCode accept(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="accept" %}{% endlanying_code_snippet %}
+```
 ### function decline
 
 ```java
@@ -393,6 +461,10 @@ inline BMXErrorCode decline(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="decline" %}{% endlanying_code_snippet %}
+```
 ### function block
 
 ```java
@@ -410,6 +482,10 @@ inline BMXErrorCode block(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="block" %}{% endlanying_code_snippet %}
+```
 ### function unblock
 
 ```java
@@ -427,6 +503,10 @@ inline BMXErrorCode unblock(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="unblock" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```java
@@ -446,6 +526,10 @@ inline BMXErrorCode getBlockList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```java
@@ -467,6 +551,10 @@ inline BMXErrorCode downloadAvatar(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function addRosterListener
 
 ```java
@@ -482,6 +570,10 @@ inline void addRosterListener(
   * **listener** 好友变化监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="addRosterListener" %}{% endlanying_code_snippet %}
+```
 ### function removeRosterListener
 
 ```java
@@ -499,6 +591,10 @@ inline void removeRosterListener(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="removeRosterListener" %}{% endlanying_code_snippet %}
+```
 ### function BMXRosterService
 
 ```java
@@ -509,6 +605,10 @@ inline BMXRosterService(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="BMXRosterService" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -516,6 +616,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -534,6 +638,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterService",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

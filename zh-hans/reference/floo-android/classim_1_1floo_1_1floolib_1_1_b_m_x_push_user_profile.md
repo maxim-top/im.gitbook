@@ -51,6 +51,10 @@ inline BMXPushUserProfile()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="BMXPushUserProfile" %}{% endlanying_code_snippet %}
+```
 ### function delete
 
 ```java
@@ -58,6 +62,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function userId
 
 ```java
@@ -65,6 +73,10 @@ inline long userId()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="userId" %}{% endlanying_code_snippet %}
+```
 ### function pushAlias
 
 ```java
@@ -72,6 +84,10 @@ inline String pushAlias()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="pushAlias" %}{% endlanying_code_snippet %}
+```
 ### function pushToken
 
 ```java
@@ -79,6 +95,10 @@ inline String pushToken()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="pushToken" %}{% endlanying_code_snippet %}
+```
 ### function messagePushSetting
 
 ```java
@@ -88,6 +108,10 @@ inline BMXPushUserProfile.MessagePushSetting messagePushSetting()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="messagePushSetting" %}{% endlanying_code_snippet %}
+```
 ### function BMXPushUserProfile
 
 ```java
@@ -98,6 +122,10 @@ inline BMXPushUserProfile(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="BMXPushUserProfile" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -105,6 +133,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -123,6 +155,10 @@ transient long swigCPtr;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushUserProfile",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

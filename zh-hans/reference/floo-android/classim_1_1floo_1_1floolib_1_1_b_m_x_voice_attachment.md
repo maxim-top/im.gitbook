@@ -74,6 +74,10 @@ inline synchronized void delete()
 **Reimplements**: [im::floo::floolib::BMXFileAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-delete)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function BMXVoiceAttachment
 
 ```java
@@ -93,6 +97,10 @@ inline BMXVoiceAttachment(
   * **displayName** 文件展示名 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="BMXVoiceAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXVoiceAttachment
 
 ```java
@@ -103,6 +111,10 @@ inline BMXVoiceAttachment(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="BMXVoiceAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXVoiceAttachment
 
 ```java
@@ -124,6 +136,10 @@ inline BMXVoiceAttachment(
   * **fileLength** 文件大小 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="BMXVoiceAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```java
@@ -137,6 +153,10 @@ inline BMXMessageAttachment.Type type()
 **Reimplements**: [im::floo::floolib::BMXFileAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```java
@@ -150,6 +170,10 @@ inline BMXMessageAttachment clone()
 **Reimplements**: [im::floo::floolib::BMXFileAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function duration
 
 ```java
@@ -160,6 +184,10 @@ inline int duration()
 
 **Return**: int32_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="duration" %}{% endlanying_code_snippet %}
+```
 ### function dynamic_cast
 
 ```java
@@ -174,6 +202,10 @@ static inline BMXVoiceAttachment dynamic_cast(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="dynamic_cast" %}{% endlanying_code_snippet %}
+```
 ### function BMXVoiceAttachment
 
 ```java
@@ -184,6 +216,10 @@ inline BMXVoiceAttachment(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="BMXVoiceAttachment" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -194,6 +230,10 @@ inline void finalize()
 **Reimplements**: [im::floo::floolib::BMXFileAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-finalize)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -203,6 +243,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXVoiceAttachment",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

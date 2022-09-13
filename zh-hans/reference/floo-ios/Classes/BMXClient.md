@@ -44,6 +44,10 @@
 `+ (NSString *)getCacheDir`
 
 <a name="//api/name/sharedClient" title="sharedClient"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="getCacheDir" %}{% endlanying_code_snippet %}
+```
 ### sharedClient
 
 `+ (instancetype)sharedClient`
@@ -52,6 +56,10 @@
 ## Instance Methods
 
 <a name="//api/name/changeAppID:completion:" title="changeAppID:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sharedClient" %}{% endlanying_code_snippet %}
+```
 ### changeAppID:completion:
 
 更改SDK的appId，本操作会同时更新BMXConfig中的appId。
@@ -70,6 +78,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/connectStatus" title="connectStatus"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppID:completion:" %}{% endlanying_code_snippet %}
+```
 ### connectStatus
 
 获取当前和服务器的连接状态
@@ -83,6 +95,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/disConnect" title="disConnect"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="connectStatus" %}{% endlanying_code_snippet %}
+```
 ### disConnect
 
 断开网络连接
@@ -96,6 +112,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/fastSignInById:password:completion:" title="fastSignInById:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="disConnect" %}{% endlanying_code_snippet %}
+```
 ### fastSignInById:password:completion:
 
 通过用户ID自动登录（要求之前成功登录过，登录速度较快）
@@ -109,6 +129,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/fastSignInByName:password:completion:" title="fastSignInByName:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInById:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### fastSignInByName:password:completion:
 
 通过用户名自动登录（要求之前成功登录过，登录速度较快）
@@ -122,6 +146,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/initializeServerConfig:" title="initializeServerConfig:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByName:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### initializeServerConfig:
 
 获取app的服务器网络配置，在初始化SDK之后登陆之前调用，可以提前获取服务器配置加快登陆速度。
@@ -140,6 +168,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/networkDidChangedType:reconnect:" title="networkDidChangedType:reconnect:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="initializeServerConfig:" %}{% endlanying_code_snippet %}
+```
 ### networkDidChangedType:reconnect:
 
 处理网络状态发送变化
@@ -161,6 +193,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/reconnect" title="reconnect"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="networkDidChangedType:reconnect:" %}{% endlanying_code_snippet %}
+```
 ### reconnect
 
 强制重新连接
@@ -174,11 +210,19 @@
 * `BMXClient.h`
 
 <a name="//api/name/registerWithSDKConfig:" title="registerWithSDKConfig:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="reconnect" %}{% endlanying_code_snippet %}
+```
 ### registerWithSDKConfig:
 
 `- (void)registerWithSDKConfig:(BMXSDKConfig *)*config*`
 
 <a name="//api/name/signInById:password:completion:" title="signInById:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="registerWithSDKConfig:" %}{% endlanying_code_snippet %}
+```
 ### signInById:password:completion:
 
 通过用户ID登录
@@ -192,6 +236,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/signInById:withToken:completion:" title="signInById:withToken:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInById:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### signInById:withToken:completion:
 
 通过用户ID和token登录
@@ -205,6 +253,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/signInByName:password:completion:" title="signInByName:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInById:withToken:completion:" %}{% endlanying_code_snippet %}
+```
 ### signInByName:password:completion:
 
 通过用户名登录
@@ -218,6 +270,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/signInStatus" title="signInStatus"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByName:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### signInStatus
 
 获取当前的登录状态
@@ -231,6 +287,10 @@
 * `BMXClient.h`
 
 <a name="//api/name/signOutID:ignoreUnbindDevice:completion:" title="signOutID:ignoreUnbindDevice:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInStatus" %}{% endlanying_code_snippet %}
+```
 ### signOutID:ignoreUnbindDevice:completion:
 
 退出登录
@@ -244,11 +304,19 @@
 * `BMXClient.h`
 
 <a name="//api/name/signOutignoreUnbindDevice:completion:" title="signOutignoreUnbindDevice:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutID:ignoreUnbindDevice:completion:" %}{% endlanying_code_snippet %}
+```
 ### signOutignoreUnbindDevice:completion:
 
 `- (void)signOutignoreUnbindDevice:(BOOL)*ignoreUnbindDevice* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 <a name="//api/name/signUpNewUser:password:completion:" title="signUpNewUser:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutignoreUnbindDevice:completion:" %}{% endlanying_code_snippet %}
+```
 ### signUpNewUser:password:completion:
 
 注册新用户，username和password是必填参数
@@ -272,3 +340,7 @@
 #### Declared In
 * `BMXClient.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signUpNewUser:password:completion:" %}{% endlanying_code_snippet %}
+```

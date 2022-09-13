@@ -19,6 +19,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/acceptInvitationByGroup:inviter:completion:" title="acceptInvitationByGroup:inviter:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="acceptApplicationByGroup:applicantId:completion:" %}{% endlanying_code_snippet %}
+```
 ### acceptInvitationByGroup:inviter:completion:
 
 接受入群邀请
@@ -32,6 +36,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/addAdmins:admins:message:completion:" title="addAdmins:admins:message:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="acceptInvitationByGroup:inviter:completion:" %}{% endlanying_code_snippet %}
+```
 ### addAdmins:admins:message:completion:
 
   添加管理员
@@ -59,16 +67,28 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="addAdmins:admins:message:completion:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:
 
 `- (void)addDelegate:(id<BMXGroupServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="addDelegate:" %}{% endlanying_code_snippet %}
+```
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXGroupServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
 <a name="//api/name/addGroupListener:" title="addGroupListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+```
 ### addGroupListener:
 
 添加群组变化监听者
@@ -82,6 +102,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/addMembersToGroup:memberIdlist:message:completion:" title="addMembersToGroup:memberIdlist:message:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="addGroupListener:" %}{% endlanying_code_snippet %}
+```
 ### addMembersToGroup:memberIdlist:message:completion:
 
   添加群成员
@@ -109,6 +133,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/banGroup:duration:completion:" title="banGroup:duration:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="addMembersToGroup:memberIdlist:message:completion:" %}{% endlanying_code_snippet %}
+```
 ### banGroup:duration:completion:
 
 全员禁言
@@ -122,6 +150,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/banMembers:group:reason:duration:completion:" title="banMembers:group:reason:duration:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="banGroup:duration:completion:" %}{% endlanying_code_snippet %}
+```
 ### banMembers:group:reason:duration:completion:
 
 禁言
@@ -135,6 +167,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/blockMembers:members:completion:" title="blockMembers:members:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="banMembers:group:reason:duration:completion:" %}{% endlanying_code_snippet %}
+```
 ### blockMembers:members:completion:
 
 添加黑名单
@@ -148,6 +184,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/creatGroupWithCreateGroupOption:completion:" title="creatGroupWithCreateGroupOption:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="blockMembers:members:completion:" %}{% endlanying_code_snippet %}
+```
 ### creatGroupWithCreateGroupOption:completion:
 
 创建群
@@ -169,6 +209,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/declineApplicationByGroup:applicantId:completion:" title="declineApplicationByGroup:applicantId:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="creatGroupWithCreateGroupOption:completion:" %}{% endlanying_code_snippet %}
+```
 ### declineApplicationByGroup:applicantId:completion:
 
 拒绝入群申请
@@ -182,6 +226,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/declineInvitationByGroup:inviter:completion:" title="declineInvitationByGroup:inviter:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="declineApplicationByGroup:applicantId:completion:" %}{% endlanying_code_snippet %}
+```
 ### declineInvitationByGroup:inviter:completion:
 
 拒绝入群邀请
@@ -195,6 +243,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/deleteAnnouncementWithGroup:announcementId:completion:" title="deleteAnnouncementWithGroup:announcementId:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="declineInvitationByGroup:inviter:completion:" %}{% endlanying_code_snippet %}
+```
 ### deleteAnnouncementWithGroup:announcementId:completion:
 
 删除群公告
@@ -208,6 +260,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/destroyGroup:completion:" title="destroyGroup:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="deleteAnnouncementWithGroup:announcementId:completion:" %}{% endlanying_code_snippet %}
+```
 ### destroyGroup:completion:
 
 销毁群(群主权限)
@@ -229,6 +285,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/downloadAvatarWithGroup:progress:completion:" title="downloadAvatarWithGroup:progress:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="destroyGroup:completion:" %}{% endlanying_code_snippet %}
+```
 ### downloadAvatarWithGroup:progress:completion:
 
 下载群头像
@@ -242,6 +302,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/downloadSharedFileFromGroup:shareFile:progress:completion:" title="downloadSharedFileFromGroup:shareFile:progress:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="downloadAvatarWithGroup:progress:completion:" %}{% endlanying_code_snippet %}
+```
 ### downloadSharedFileFromGroup:shareFile:progress:completion:
 
 下载群共享文件
@@ -255,6 +319,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/editGroupAnnouncement:title:content:completion:" title="editGroupAnnouncement:title:content:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="downloadSharedFileFromGroup:shareFile:progress:completion:" %}{% endlanying_code_snippet %}
+```
 ### editGroupAnnouncement:title:content:completion:
 
 设置群公告
@@ -268,6 +336,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getAdmins:forceRefresh:completion:" title="getAdmins:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="editGroupAnnouncement:title:content:completion:" %}{% endlanying_code_snippet %}
+```
 ### getAdmins:forceRefresh:completion:
 
   获取Admins列表，如果设置了forceRefresh则从服务器拉取
@@ -281,6 +353,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getAnnouncementListWithGroup:forceRefresh:completion:" title="getAnnouncementListWithGroup:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getAdmins:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getAnnouncementListWithGroup:forceRefresh:completion:
 
 获取群公告列表
@@ -294,6 +370,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getApplicationListByCursor:pageSize:completion:" title="getApplicationListByCursor:pageSize:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getAnnouncementListWithGroup:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getApplicationListByCursor:pageSize:completion:
 
 分页获取群组申请列表
@@ -307,6 +387,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getBannedMembersByGroup:completion:" title="getBannedMembersByGroup:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getApplicationListByCursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
 ### getBannedMembersByGroup:completion:
 
 获取禁言列表
@@ -320,6 +404,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getBlockList:cursor:pageSize:completion:" title="getBlockList:cursor:pageSize:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getBannedMembersByGroup:completion:" %}{% endlanying_code_snippet %}
+```
 ### getBlockList:cursor:pageSize:completion:
 
   分页获取黑名单
@@ -344,6 +432,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getBlockListByGroup:forceRefresh:completion:" title="getBlockListByGroup:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getBlockList:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
 ### getBlockListByGroup:forceRefresh:completion:
 
 获取黑名单
@@ -357,6 +449,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getGroupByName:completion:" title="getGroupByName:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getBlockListByGroup:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getGroupByName:completion:
 
 通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组
@@ -378,6 +474,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getGroupInfoByGroupId:forceRefresh:completion:" title="getGroupInfoByGroupId:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getGroupByName:completion:" %}{% endlanying_code_snippet %}
+```
 ### getGroupInfoByGroupId:forceRefresh:completion:
 
 获取群信息
@@ -402,6 +502,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getGroupInfoByGroupIdArray:forceRefresh:completion:" title="getGroupInfoByGroupIdArray:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getGroupInfoByGroupId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getGroupInfoByGroupIdArray:forceRefresh:completion:
 
 获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取
@@ -415,6 +519,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getGroupListForceRefresh:completion:" title="getGroupListForceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getGroupInfoByGroupIdArray:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getGroupListForceRefresh:completion:
 
 获取群组列表
@@ -436,6 +544,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getInvitationListByCursor:pageSize:completion:" title="getInvitationListByCursor:pageSize:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getGroupListForceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getInvitationListByCursor:pageSize:completion:
 
 分页获取群组邀请列表
@@ -460,6 +572,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getLatestAnnouncementWithGroup:forceRefresh:completion:" title="getLatestAnnouncementWithGroup:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getInvitationListByCursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
 ### getLatestAnnouncementWithGroup:forceRefresh:completion:
 
 获取最新的群公告
@@ -473,6 +589,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getMemberList:cursor:pageSize:completion:" title="getMemberList:cursor:pageSize:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getLatestAnnouncementWithGroup:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getMemberList:cursor:pageSize:completion:
 
 分页获取群成员列表
@@ -500,6 +620,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getMembers:forceRefresh:completion:" title="getMembers:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getMemberList:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
 ### getMembers:forceRefresh:completion:
 
 获取群成员列表，
@@ -524,6 +648,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getMembersNickName:memberIdlist:completion:" title="getMembersNickName:memberIdlist:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getMembers:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getMembersNickName:memberIdlist:completion:
 
 批量获取群组成员昵称
@@ -537,6 +665,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getSharedFilesListByGroup:forceRefresh:completion:" title="getSharedFilesListByGroup:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getMembersNickName:memberIdlist:completion:" %}{% endlanying_code_snippet %}
+```
 ### getSharedFilesListByGroup:forceRefresh:completion:
 
 获取群共享文件列表
@@ -550,6 +682,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/getbannedMemberListGroup:cursor:pageSize:completion:" title="getbannedMemberListGroup:cursor:pageSize:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getSharedFilesListByGroup:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+```
 ### getbannedMemberListGroup:cursor:pageSize:completion:
 
 分页获取禁言列表
@@ -574,6 +710,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/joinGroup:message:completion:" title="joinGroup:message:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="getbannedMemberListGroup:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
 ### joinGroup:message:completion:
 
 加入一个群，根据群设置可能需要管理员批准
@@ -598,6 +738,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/leaveGroup:completion:" title="leaveGroup:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="joinGroup:message:completion:" %}{% endlanying_code_snippet %}
+```
 ### leaveGroup:completion:
 
 退出群
@@ -619,6 +763,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/loadGroupInfo:completion:" title="loadGroupInfo:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="leaveGroup:completion:" %}{% endlanying_code_snippet %}
+```
 ### loadGroupInfo:completion:
 
 获取群详情，从服务端拉取最新信息
@@ -640,6 +788,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/muteMessageByGroup:msgMuteMode:completion:" title="muteMessageByGroup:msgMuteMode:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="loadGroupInfo:completion:" %}{% endlanying_code_snippet %}
+```
 ### muteMessageByGroup:msgMuteMode:completion:
 
 屏蔽群消息
@@ -653,6 +805,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/removeAdmins:admins:reason:completion:" title="removeAdmins:admins:reason:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="muteMessageByGroup:msgMuteMode:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeAdmins:admins:reason:completion:
 
 删除管理员
@@ -680,11 +836,19 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="removeAdmins:admins:reason:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeDelegate:
 
 `- (void)removeDelegate:(id<BMXGroupServiceProtocol>)*aDelegate*`
 
 <a name="//api/name/removeGroupListener:" title="removeGroupListener:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="removeDelegate:" %}{% endlanying_code_snippet %}
+```
 ### removeGroupListener:
 
 移除群组变化监听者
@@ -698,6 +862,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/removeMembersWithGroup:memberlist:reason:completion:" title="removeMembersWithGroup:memberlist:reason:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="removeGroupListener:" %}{% endlanying_code_snippet %}
+```
 ### removeMembersWithGroup:memberlist:reason:completion:
 
 删除群成员
@@ -725,6 +893,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/removeSharedFileFromGroup:file:completion:" title="removeSharedFileFromGroup:file:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="removeMembersWithGroup:memberlist:reason:completion:" %}{% endlanying_code_snippet %}
+```
 ### removeSharedFileFromGroup:file:completion:
 
 移除群共享文件
@@ -738,6 +910,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setAllowMemberModifyWithGroup:enable:completion:" title="setAllowMemberModifyWithGroup:enable:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="removeSharedFileFromGroup:file:completion:" %}{% endlanying_code_snippet %}
+```
 ### setAllowMemberModifyWithGroup:enable:completion:
 
 设置是否允许群成员设置群信息
@@ -762,6 +938,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setAvatarWithGroup:avatarData:progress:completion:" title="setAvatarWithGroup:avatarData:progress:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setAllowMemberModifyWithGroup:enable:completion:" %}{% endlanying_code_snippet %}
+```
 ### setAvatarWithGroup:avatarData:progress:completion:
 
 设置群头像
@@ -775,6 +955,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setEnableReadAckWithGroup:enable:completion:" title="setEnableReadAckWithGroup:enable:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setAvatarWithGroup:avatarData:progress:completion:" %}{% endlanying_code_snippet %}
+```
 ### setEnableReadAckWithGroup:enable:completion:
 
 设置是否开启群消息已读功能
@@ -799,6 +983,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setGroupDescription:description:completion:" title="setGroupDescription:description:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setEnableReadAckWithGroup:enable:completion:" %}{% endlanying_code_snippet %}
+```
 ### setGroupDescription:description:completion:
 
 设置群描述信息
@@ -812,6 +1000,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setGroupExtensionWithGroup:extension:completion:" title="setGroupExtensionWithGroup:extension:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setGroupDescription:description:completion:" %}{% endlanying_code_snippet %}
+```
 ### setGroupExtensionWithGroup:extension:completion:
 
 设置群扩展信息
@@ -825,6 +1017,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setGroupName:name:completion:" title="setGroupName:name:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setGroupExtensionWithGroup:extension:completion:" %}{% endlanying_code_snippet %}
+```
 ### setGroupName:name:completion:
 
 设置群名称
@@ -838,6 +1034,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setHistoryVisibleWithGroup:enable:completion:" title="setHistoryVisibleWithGroup:enable:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setGroupName:name:completion:" %}{% endlanying_code_snippet %}
+```
 ### setHistoryVisibleWithGroup:enable:completion:
 
 设置群成员是否开可见群历史聊天记录
@@ -862,6 +1062,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setInviteModeWithGroup:mode:completion:" title="setInviteModeWithGroup:mode:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setHistoryVisibleWithGroup:enable:completion:" %}{% endlanying_code_snippet %}
+```
 ### setInviteModeWithGroup:mode:completion:
 
 设置邀请模式
@@ -875,6 +1079,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setJoinAuthModeWithGroup:joinAuthMode:completion:" title="setJoinAuthModeWithGroup:joinAuthMode:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setInviteModeWithGroup:mode:completion:" %}{% endlanying_code_snippet %}
+```
 ### setJoinAuthModeWithGroup:joinAuthMode:completion:
 
 设置入群审批模式
@@ -888,6 +1096,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setMsgPushModeWithGroup:mode:completion:" title="setMsgPushModeWithGroup:mode:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setJoinAuthModeWithGroup:joinAuthMode:completion:" %}{% endlanying_code_snippet %}
+```
 ### setMsgPushModeWithGroup:mode:completion:
 
 设置群消息通知模式
@@ -901,6 +1113,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/setMyNicknameWithGroup:nickName:completion:" title="setMyNicknameWithGroup:nickName:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setMsgPushModeWithGroup:mode:completion:" %}{% endlanying_code_snippet %}
+```
 ### setMyNicknameWithGroup:nickName:completion:
 
 设置在群里的昵称
@@ -914,6 +1130,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/transferOwnerByGroup:newOwnerId:completion:" title="transferOwnerByGroup:newOwnerId:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="setMyNicknameWithGroup:nickName:completion:" %}{% endlanying_code_snippet %}
+```
 ### transferOwnerByGroup:newOwnerId:completion:
 
 转移群主
@@ -927,6 +1147,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/unbanGroup:completion:" title="unbanGroup:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="transferOwnerByGroup:newOwnerId:completion:" %}{% endlanying_code_snippet %}
+```
 ### unbanGroup:completion:
 
 解除全员禁言
@@ -940,6 +1164,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/unbanMembersByGroup:members:reason:completion:" title="unbanMembersByGroup:members:reason:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="unbanGroup:completion:" %}{% endlanying_code_snippet %}
+```
 ### unbanMembersByGroup:members:reason:completion:
 
 解除禁言
@@ -953,6 +1181,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/unblockMember:members:completion:" title="unblockMember:members:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="unbanMembersByGroup:members:reason:completion:" %}{% endlanying_code_snippet %}
+```
 ### unblockMember:members:completion:
 
 从黑名单删除
@@ -966,6 +1198,10 @@
 * `BMXGroupManager.h`
 
 <a name="//api/name/uploadSharedFileToGroup:filePathStr:displayName:extionName:progress:completion:" title="uploadSharedFileToGroup:filePathStr:displayName:extionName:progress:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="unblockMember:members:completion:" %}{% endlanying_code_snippet %}
+```
 ### uploadSharedFileToGroup:filePathStr:displayName:extionName:progress:completion:
 
 添加群共享文件
@@ -978,3 +1214,7 @@
 #### Declared In
 * `BMXGroupManager.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupManager",function="uploadSharedFileToGroup:filePathStr:displayName:extionName:progress:completion:" %}{% endlanying_code_snippet %}
+```

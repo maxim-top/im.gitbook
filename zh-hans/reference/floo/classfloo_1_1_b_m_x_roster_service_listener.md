@@ -46,6 +46,10 @@ inline BMXRosterServiceListener()
 
 构造函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXRosterServiceListener
 
 ```cpp
@@ -54,6 +58,10 @@ inline virtual ~BMXRosterServiceListener()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="~BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onFriendAdded
 
 ```cpp
@@ -71,6 +79,10 @@ inline virtual void onFriendAdded(
   * **recipientId** 操作的接受者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onFriendAdded" %}{% endlanying_code_snippet %}
+```
 ### function onFriendRemoved
 
 ```cpp
@@ -88,6 +100,10 @@ inline virtual void onFriendRemoved(
   * **recipientId** 操作的接受者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onFriendRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onApplied
 
 ```cpp
@@ -107,6 +123,10 @@ inline virtual void onApplied(
   * **message** 好友申请消息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationAccepted
 
 ```cpp
@@ -124,6 +144,10 @@ inline virtual void onApplicationAccepted(
   * **recipientId** 操作的接受者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationDeclined
 
 ```cpp
@@ -143,6 +167,10 @@ inline virtual void onApplicationDeclined(
   * **reason** 申请拒绝原因 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListAdded
 
 ```cpp
@@ -160,6 +188,10 @@ inline virtual void onBlockListAdded(
   * **recipientId** 操作的接受者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListRemoved
 
 ```cpp
@@ -177,6 +209,10 @@ inline virtual void onBlockListRemoved(
   * **recipientId** 操作的接受者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onRosterInfoUpdate
 
 ```cpp
@@ -192,6 +228,10 @@ inline virtual void onRosterInfoUpdate(
   * **item** 更新的好友信息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onRosterInfoUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onRosterListUpdate
 
 ```cpp
@@ -200,6 +240,10 @@ inline virtual void onRosterListUpdate()
 
 客户端从服务器拉取到新联系人时触发，用于用户联系人列表更新，从SDK调用本地获取联系人即可取得全部成员信息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="onRosterListUpdate" %}{% endlanying_code_snippet %}
+```
 ### function registerRosterService
 
 ```cpp
@@ -224,6 +268,10 @@ BMXRosterService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterServiceListener",function="registerRosterService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

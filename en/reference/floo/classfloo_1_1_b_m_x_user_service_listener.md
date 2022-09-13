@@ -43,6 +43,10 @@ inline BMXUserServiceListener()
 
 Constructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="BMXUserServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXUserServiceListener
 
 ```cpp
@@ -51,6 +55,10 @@ inline virtual ~BMXUserServiceListener()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="~BMXUserServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onConnectStatusChanged
 
 ```cpp
@@ -66,6 +74,10 @@ Channel state changed
   * **status** Connection state 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onConnectStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onUserSignIn
 
 ```cpp
@@ -81,6 +93,10 @@ User login
   * **profile** User profile 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onUserSignIn" %}{% endlanying_code_snippet %}
+```
 ### function onUserSignOut
 
 ```cpp
@@ -97,6 +113,10 @@ User logout
   * **error** State error code 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onUserSignOut" %}{% endlanying_code_snippet %}
+```
 ### function onInfoUpdated
 
 ```cpp
@@ -112,6 +132,10 @@ Synchronize user information updates (when user information changes in other dev
   * **profile** User profile 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onInfoUpdated" %}{% endlanying_code_snippet %}
+```
 ### function onOtherDeviceSingIn
 
 ```cpp
@@ -127,6 +151,10 @@ User login on another device
   * **deviceSN** Device serial number 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onOtherDeviceSingIn" %}{% endlanying_code_snippet %}
+```
 ### function onOtherDeviceSingOut
 
 ```cpp
@@ -142,6 +170,10 @@ User logout on another device
   * **deviceSN** Device serial number 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onOtherDeviceSingOut" %}{% endlanying_code_snippet %}
+```
 ### function registerUserService
 
 ```cpp
@@ -166,6 +198,10 @@ BMXUserService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="registerUserService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

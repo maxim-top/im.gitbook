@@ -44,6 +44,10 @@
 `+ (NSString *)getCacheDir`
 
 <a name="//api/name/sharedClient" title="sharedClient"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="getCacheDir" %}{% endlanying_code_snippet %}
+```
 ### sharedClient
 
 `+ (instancetype)sharedClient`
@@ -52,6 +56,10 @@
 ## Instance Methods
 
 <a name="//api/name/changeAppID:completion:" title="changeAppID:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sharedClient" %}{% endlanying_code_snippet %}
+```
 ### changeAppID:completion:
 
 Change the appId of SDK, which also update the appId in BMXConfig.
@@ -70,6 +78,10 @@ Change the appId of SDK, which also update the appId in BMXConfig.
 * `BMXClient.h`
 
 <a name="//api/name/connectStatus" title="connectStatus"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppID:completion:" %}{% endlanying_code_snippet %}
+```
 ### connectStatus
 
 Get the current connection state with server
@@ -83,6 +95,10 @@ Get the current connection state with server
 * `BMXClient.h`
 
 <a name="//api/name/disConnect" title="disConnect"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="connectStatus" %}{% endlanying_code_snippet %}
+```
 ### disConnect
 
 Disconnect
@@ -96,6 +112,10 @@ Disconnect
 * `BMXClient.h`
 
 <a name="//api/name/fastSignInById:password:completion:" title="fastSignInById:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="disConnect" %}{% endlanying_code_snippet %}
+```
 ### fastSignInById:password:completion:
 
 Login automatically by user ID (a successful login before required, faster)
@@ -109,6 +129,10 @@ Login automatically by user ID (a successful login before required, faster)
 * `BMXClient.h`
 
 <a name="//api/name/fastSignInByName:password:completion:" title="fastSignInByName:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInById:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### fastSignInByName:password:completion:
 
 Login automatically by username (a successful login before required, faster)
@@ -122,6 +146,10 @@ Login automatically by username (a successful login before required, faster)
 * `BMXClient.h`
 
 <a name="//api/name/initializeServerConfig:" title="initializeServerConfig:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByName:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### initializeServerConfig:
 
 Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.
@@ -140,6 +168,10 @@ Get the server network configuration of app, which can be called after initializ
 * `BMXClient.h`
 
 <a name="//api/name/networkDidChangedType:reconnect:" title="networkDidChangedType:reconnect:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="initializeServerConfig:" %}{% endlanying_code_snippet %}
+```
 ### networkDidChangedType:reconnect:
 
 Process network changes in messaging
@@ -161,6 +193,10 @@ Process network changes in messaging
 * `BMXClient.h`
 
 <a name="//api/name/reconnect" title="reconnect"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="networkDidChangedType:reconnect:" %}{% endlanying_code_snippet %}
+```
 ### reconnect
 
 Force reconnection
@@ -174,11 +210,19 @@ Force reconnection
 * `BMXClient.h`
 
 <a name="//api/name/registerWithSDKConfig:" title="registerWithSDKConfig:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="reconnect" %}{% endlanying_code_snippet %}
+```
 ### registerWithSDKConfig:
 
 `- (void)registerWithSDKConfig:(BMXSDKConfig *)*config*`
 
 <a name="//api/name/signInById:password:completion:" title="signInById:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="registerWithSDKConfig:" %}{% endlanying_code_snippet %}
+```
 ### signInById:password:completion:
 
 Login by user ID
@@ -192,6 +236,10 @@ Login by user ID
 * `BMXClient.h`
 
 <a name="//api/name/signInById:withToken:completion:" title="signInById:withToken:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInById:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### signInById:withToken:completion:
 
 Login by user ID and token
@@ -205,6 +253,10 @@ Login by user ID and token
 * `BMXClient.h`
 
 <a name="//api/name/signInByName:password:completion:" title="signInByName:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInById:withToken:completion:" %}{% endlanying_code_snippet %}
+```
 ### signInByName:password:completion:
 
 Login by username
@@ -218,6 +270,10 @@ Login by username
 * `BMXClient.h`
 
 <a name="//api/name/signInStatus" title="signInStatus"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByName:password:completion:" %}{% endlanying_code_snippet %}
+```
 ### signInStatus
 
 Get the current login state
@@ -231,6 +287,10 @@ Get the current login state
 * `BMXClient.h`
 
 <a name="//api/name/signOutID:ignoreUnbindDevice:completion:" title="signOutID:ignoreUnbindDevice:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInStatus" %}{% endlanying_code_snippet %}
+```
 ### signOutID:ignoreUnbindDevice:completion:
 
 Log out
@@ -244,11 +304,19 @@ Log out
 * `BMXClient.h`
 
 <a name="//api/name/signOutignoreUnbindDevice:completion:" title="signOutignoreUnbindDevice:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutID:ignoreUnbindDevice:completion:" %}{% endlanying_code_snippet %}
+```
 ### signOutignoreUnbindDevice:completion:
 
 `- (void)signOutignoreUnbindDevice:(BOOL)*ignoreUnbindDevice* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
 <a name="//api/name/signUpNewUser:password:completion:" title="signUpNewUser:password:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutignoreUnbindDevice:completion:" %}{% endlanying_code_snippet %}
+```
 ### signUpNewUser:password:completion:
 
 To register a new user, username and password are required
@@ -272,3 +340,7 @@ To register a new user, username and password are required
 #### Declared In
 * `BMXClient.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signUpNewUser:password:completion:" %}{% endlanying_code_snippet %}
+```

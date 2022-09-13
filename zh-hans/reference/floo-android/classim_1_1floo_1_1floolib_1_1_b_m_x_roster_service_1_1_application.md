@@ -48,6 +48,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function Application
 
 ```java
@@ -55,6 +59,10 @@ inline Application()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="Application" %}{% endlanying_code_snippet %}
+```
 ### function setMRosterId
 
 ```java
@@ -64,6 +72,10 @@ inline void setMRosterId(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="setMRosterId" %}{% endlanying_code_snippet %}
+```
 ### function getMRosterId
 
 ```java
@@ -71,6 +83,10 @@ inline long getMRosterId()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="getMRosterId" %}{% endlanying_code_snippet %}
+```
 ### function setMReason
 
 ```java
@@ -80,6 +96,10 @@ inline void setMReason(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="setMReason" %}{% endlanying_code_snippet %}
+```
 ### function getMReason
 
 ```java
@@ -87,6 +107,10 @@ inline String getMReason()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="getMReason" %}{% endlanying_code_snippet %}
+```
 ### function setMStatus
 
 ```java
@@ -96,6 +120,10 @@ inline void setMStatus(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="setMStatus" %}{% endlanying_code_snippet %}
+```
 ### function getMStatus
 
 ```java
@@ -103,6 +131,10 @@ inline BMXRosterService.ApplicationStatus getMStatus()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="getMStatus" %}{% endlanying_code_snippet %}
+```
 ### function setMExpire
 
 ```java
@@ -112,6 +144,10 @@ inline void setMExpire(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="setMExpire" %}{% endlanying_code_snippet %}
+```
 ### function getMExpire
 
 ```java
@@ -121,6 +157,10 @@ inline long getMExpire()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="getMExpire" %}{% endlanying_code_snippet %}
+```
 ### function Application
 
 ```java
@@ -131,6 +171,10 @@ inline Application(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="Application" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -138,6 +182,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -156,6 +204,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Application",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

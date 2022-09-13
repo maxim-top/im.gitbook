@@ -45,6 +45,10 @@ inline BMXRosterManager(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="BMXRosterManager" %}{% endlanying_code_snippet %}
+```
 ### function get
 
 ```java
@@ -62,6 +66,10 @@ Get friend list, force pull from server-side if forceRefresh == true
   * **callBack** [BMXErrorCode] friend id list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="get" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -81,6 +89,10 @@ Search for users
   * **callBack** [BMXErrorCode] user information returned by query 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -100,6 +112,10 @@ Search for users
   * **callBack** [BMXErrorCode] user information returned by query 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -119,6 +135,10 @@ Batch search for users
   * **callBack** [BMXErrorCode] List of friend information returned 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+```
 ### function setItemExtension
 
 ```java
@@ -138,6 +158,10 @@ Update friend's local extension information
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemExtension" %}{% endlanying_code_snippet %}
+```
 ### function setItemAlias
 
 ```java
@@ -157,6 +181,10 @@ Update friend's alias
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemAlias" %}{% endlanying_code_snippet %}
+```
 ### function setItemMuteNotification
 
 ```java
@@ -176,6 +204,10 @@ Set whether to reject user message
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function apply
 
 ```java
@@ -195,6 +227,10 @@ Request to add friend
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="apply" %}{% endlanying_code_snippet %}
+```
 ### function remove
 
 ```java
@@ -212,6 +248,10 @@ Delete friend
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="remove" %}{% endlanying_code_snippet %}
+```
 ### function getApplicationList
 
 ```java
@@ -231,6 +271,10 @@ Get list of adding friend requests
   * **callBack** [BMXErrorCode] List of friend requests returned 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="getApplicationList" %}{% endlanying_code_snippet %}
+```
 ### function accept
 
 ```java
@@ -248,6 +292,10 @@ Accept adding friend request
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="accept" %}{% endlanying_code_snippet %}
+```
 ### function decline
 
 ```java
@@ -267,6 +315,10 @@ Reject adding friend request
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="decline" %}{% endlanying_code_snippet %}
+```
 ### function block
 
 ```java
@@ -284,6 +336,10 @@ Add to blacklist
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="block" %}{% endlanying_code_snippet %}
+```
 ### function unblock
 
 ```java
@@ -301,6 +357,10 @@ Remove from blacklist
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="unblock" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```java
@@ -318,6 +378,10 @@ Get blacklist, force pull from server-side if forceRefresh == true
   * **callBack** [BMXErrorCode] friend id list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```java
@@ -337,6 +401,10 @@ Download avatar
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function addRosterListener
 
 ```java
@@ -352,6 +420,10 @@ Add friend change listener
   * **listener** Friend change listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="addRosterListener" %}{% endlanying_code_snippet %}
+```
 ### function removeRosterListener
 
 ```java
@@ -367,6 +439,10 @@ Remove friend change listener
   * **listener** Friend change listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="removeRosterListener" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

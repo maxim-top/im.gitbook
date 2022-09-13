@@ -56,6 +56,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function SharedFile
 
 ```java
@@ -63,6 +67,10 @@ inline SharedFile()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="SharedFile" %}{% endlanying_code_snippet %}
+```
 ### function setMFileId
 
 ```java
@@ -72,6 +80,10 @@ inline void setMFileId(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMFileId" %}{% endlanying_code_snippet %}
+```
 ### function getMFileId
 
 ```java
@@ -79,6 +91,10 @@ inline long getMFileId()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMFileId" %}{% endlanying_code_snippet %}
+```
 ### function setMGroupId
 
 ```java
@@ -88,6 +104,10 @@ inline void setMGroupId(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMGroupId" %}{% endlanying_code_snippet %}
+```
 ### function getMGroupId
 
 ```java
@@ -95,6 +115,10 @@ inline long getMGroupId()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMGroupId" %}{% endlanying_code_snippet %}
+```
 ### function setMUploader
 
 ```java
@@ -104,6 +128,10 @@ inline void setMUploader(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMUploader" %}{% endlanying_code_snippet %}
+```
 ### function getMUploader
 
 ```java
@@ -111,6 +139,10 @@ inline long getMUploader()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMUploader" %}{% endlanying_code_snippet %}
+```
 ### function setMSize
 
 ```java
@@ -120,6 +152,10 @@ inline void setMSize(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMSize" %}{% endlanying_code_snippet %}
+```
 ### function getMSize
 
 ```java
@@ -127,6 +163,10 @@ inline int getMSize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMSize" %}{% endlanying_code_snippet %}
+```
 ### function setMCreateTime
 
 ```java
@@ -136,6 +176,10 @@ inline void setMCreateTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMCreateTime" %}{% endlanying_code_snippet %}
+```
 ### function getMCreateTime
 
 ```java
@@ -143,6 +187,10 @@ inline long getMCreateTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMCreateTime" %}{% endlanying_code_snippet %}
+```
 ### function setMUpdateTime
 
 ```java
@@ -152,6 +200,10 @@ inline void setMUpdateTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMUpdateTime" %}{% endlanying_code_snippet %}
+```
 ### function getMUpdateTime
 
 ```java
@@ -159,6 +211,10 @@ inline long getMUpdateTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMUpdateTime" %}{% endlanying_code_snippet %}
+```
 ### function setMRatelUrl
 
 ```java
@@ -168,6 +224,10 @@ inline void setMRatelUrl(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function getMRatelUrl
 
 ```java
@@ -175,6 +235,10 @@ inline String getMRatelUrl()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function setMUrl
 
 ```java
@@ -184,6 +248,10 @@ inline void setMUrl(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMUrl" %}{% endlanying_code_snippet %}
+```
 ### function getMUrl
 
 ```java
@@ -191,6 +259,10 @@ inline String getMUrl()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMUrl" %}{% endlanying_code_snippet %}
+```
 ### function setMPath
 
 ```java
@@ -200,6 +272,10 @@ inline void setMPath(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMPath" %}{% endlanying_code_snippet %}
+```
 ### function getMPath
 
 ```java
@@ -207,6 +283,10 @@ inline String getMPath()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMPath" %}{% endlanying_code_snippet %}
+```
 ### function setMDisplayName
 
 ```java
@@ -216,6 +296,10 @@ inline void setMDisplayName(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMDisplayName" %}{% endlanying_code_snippet %}
+```
 ### function getMDisplayName
 
 ```java
@@ -223,6 +307,10 @@ inline String getMDisplayName()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMDisplayName" %}{% endlanying_code_snippet %}
+```
 ### function setMType
 
 ```java
@@ -232,6 +320,10 @@ inline void setMType(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMType" %}{% endlanying_code_snippet %}
+```
 ### function getMType
 
 ```java
@@ -241,6 +333,10 @@ inline String getMType()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMType" %}{% endlanying_code_snippet %}
+```
 ### function SharedFile
 
 ```java
@@ -251,6 +347,10 @@ inline SharedFile(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="SharedFile" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -258,6 +358,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -267,6 +371,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

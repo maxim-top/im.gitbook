@@ -45,6 +45,10 @@ inline BMXRosterManager(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="BMXRosterManager" %}{% endlanying_code_snippet %}
+```
 ### function get
 
 ```java
@@ -62,6 +66,10 @@ inline void get(
   * **callBack** [BMXErrorCode] 好友id列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="get" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -81,6 +89,10 @@ inline void search(
   * **callBack** [BMXErrorCode] 查询返回的用户的信息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -100,6 +112,10 @@ inline void search(
   * **callBack** [BMXErrorCode] 查询返回的用户的信息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -119,6 +135,10 @@ inline void search(
   * **callBack** [BMXErrorCode] 返回的好友信息列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+```
 ### function setItemExtension
 
 ```java
@@ -138,6 +158,10 @@ inline void setItemExtension(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemExtension" %}{% endlanying_code_snippet %}
+```
 ### function setItemAlias
 
 ```java
@@ -157,6 +181,10 @@ inline void setItemAlias(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemAlias" %}{% endlanying_code_snippet %}
+```
 ### function setItemMuteNotification
 
 ```java
@@ -176,6 +204,10 @@ inline void setItemMuteNotification(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemMuteNotification" %}{% endlanying_code_snippet %}
+```
 ### function apply
 
 ```java
@@ -195,6 +227,10 @@ inline void apply(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="apply" %}{% endlanying_code_snippet %}
+```
 ### function remove
 
 ```java
@@ -212,6 +248,10 @@ inline void remove(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="remove" %}{% endlanying_code_snippet %}
+```
 ### function getApplicationList
 
 ```java
@@ -231,6 +271,10 @@ inline void getApplicationList(
   * **callBack** [BMXErrorCode] 返回的申请好友列表信息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="getApplicationList" %}{% endlanying_code_snippet %}
+```
 ### function accept
 
 ```java
@@ -248,6 +292,10 @@ inline void accept(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="accept" %}{% endlanying_code_snippet %}
+```
 ### function decline
 
 ```java
@@ -267,6 +315,10 @@ inline void decline(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="decline" %}{% endlanying_code_snippet %}
+```
 ### function block
 
 ```java
@@ -284,6 +336,10 @@ inline void block(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="block" %}{% endlanying_code_snippet %}
+```
 ### function unblock
 
 ```java
@@ -301,6 +357,10 @@ inline void unblock(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="unblock" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```java
@@ -318,6 +378,10 @@ inline void getBlockList(
   * **callBack** [BMXErrorCode] 好友id列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```java
@@ -337,6 +401,10 @@ inline void downloadAvatar(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function addRosterListener
 
 ```java
@@ -352,6 +420,10 @@ inline void addRosterListener(
   * **listener** 好友变化监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="addRosterListener" %}{% endlanying_code_snippet %}
+```
 ### function removeRosterListener
 
 ```java
@@ -367,6 +439,10 @@ inline void removeRosterListener(
   * **listener** 好友变化监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="removeRosterListener" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

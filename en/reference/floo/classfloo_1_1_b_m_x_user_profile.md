@@ -86,6 +86,10 @@ inline virtual ~BMXUserProfile()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="~BMXUserProfile" %}{% endlanying_code_snippet %}
+```
 ### function userId
 
 ```cpp
@@ -96,6 +100,10 @@ User ID (unique)
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="userId" %}{% endlanying_code_snippet %}
+```
 ### function category
 
 ```cpp
@@ -106,6 +114,10 @@ User policy
 
 **Return**: UserCategory 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="category" %}{% endlanying_code_snippet %}
+```
 ### function username
 
 ```cpp
@@ -116,6 +128,10 @@ Username (unique)
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="username" %}{% endlanying_code_snippet %}
+```
 ### function nickname
 
 ```cpp
@@ -126,6 +142,10 @@ User nickname
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="nickname" %}{% endlanying_code_snippet %}
+```
 ### function avatarRatelUrl
 
 ```cpp
@@ -136,6 +156,10 @@ User ratel server avatar url
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarUrl
 
 ```cpp
@@ -146,6 +170,10 @@ User avatar url
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarPath
 
 ```cpp
@@ -156,6 +184,10 @@ Local storage path of user avatar
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="avatarPath" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailPath
 
 ```cpp
@@ -166,6 +198,10 @@ Local storage path of user avatar thumbnail
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function mobilePhone
 
 ```cpp
@@ -176,6 +212,10 @@ User mobile phone
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="mobilePhone" %}{% endlanying_code_snippet %}
+```
 ### function email
 
 ```cpp
@@ -186,6 +226,10 @@ User email
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="email" %}{% endlanying_code_snippet %}
+```
 ### function publicInfo
 
 ```cpp
@@ -196,6 +240,10 @@ User public extension information, visible to friends
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="publicInfo" %}{% endlanying_code_snippet %}
+```
 ### function privateInfo
 
 ```cpp
@@ -206,6 +254,10 @@ User private extension information, not visible to friends
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="privateInfo" %}{% endlanying_code_snippet %}
+```
 ### function addFriendAuthMode
 
 ```cpp
@@ -216,6 +268,10 @@ How to validate when adding friend
 
 **Return**: AddFriendAuthMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function authQuestion
 
 ```cpp
@@ -226,6 +282,10 @@ Authentication questions when adding friend
 
 **Return**: [AuthQuestion]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="authQuestion" %}{% endlanying_code_snippet %}
+```
 ### function messageSetting
 
 ```cpp
@@ -236,6 +296,10 @@ User message settings
 
 **Return**: [MessageSetting]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="messageSetting" %}{% endlanying_code_snippet %}
+```
 ### function isAutoAcceptGroupInvite
 
 ```cpp
@@ -248,6 +312,10 @@ Whether to automatically agree to join group when a group invitation is received
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="isAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+```
 ### function BMXUserProfile
 
 ```cpp
@@ -255,6 +323,10 @@ inline BMXUserProfile()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserProfile",function="BMXUserProfile" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

@@ -57,6 +57,10 @@ inline BMXChatServiceListener()
 
 Constructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="BMXChatServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXChatServiceListener
 
 ```cpp
@@ -65,6 +69,10 @@ inline virtual ~BMXChatServiceListener()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="~BMXChatServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onStatusChanged
 
 ```cpp
@@ -82,6 +90,10 @@ Message state changed
   * **error** State error code 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentUploadProgressChanged
 
 ```cpp
@@ -99,6 +111,10 @@ Attachment upload state changed
   * **percent** Progress of attachment uploading 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentUploadProgressChanged" %}{% endlanying_code_snippet %}
+```
 ### function onRecallStatusChanged
 
 ```cpp
@@ -116,6 +132,10 @@ Message recall state changed
   * **error** State error code 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onRecallStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onReceive
 
 ```cpp
@@ -131,6 +151,10 @@ Messages received
   * **list** List of received messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceive" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveCommandMessages
 
 ```cpp
@@ -146,6 +170,10 @@ Command received
   * **list** List of received messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveCommandMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveSystemMessages
 
 ```cpp
@@ -161,6 +189,10 @@ System notification messages received
   * **list** List of received system messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveSystemMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadAcks
 
 ```cpp
@@ -176,6 +208,10 @@ Read acknowledgement of messages received
   * **list** List of received messages with read acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadAcks" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveDeliverAcks
 
 ```cpp
@@ -191,6 +227,10 @@ Acknowledgement of message delivered received
   * **list** List of received messages with delivered acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveDeliverAcks" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveRecallMessages
 
 ```cpp
@@ -206,6 +246,10 @@ Canceled messages received
   * **list** List of canceled messages received 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveRecallMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadCancels
 
 ```cpp
@@ -221,6 +265,10 @@ Message re-unread received (cross-device synchronization for changing message st
   * **list** List of received messages with re-unread acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadCancels" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveReadAllMessages
 
 ```cpp
@@ -236,6 +284,10 @@ All received messages are read (all messages are set to read before cross-device
   * **list** List of received messages with all-read acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadAllMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceiveDeleteMessages
 
 ```cpp
@@ -251,6 +303,10 @@ inline virtual void onReceiveDeleteMessages(
   * **list** List of deleted messages received 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveDeleteMessages" %}{% endlanying_code_snippet %}
+```
 ### function onReceivePlayAcks
 
 ```cpp
@@ -266,6 +322,10 @@ Received acknowledgement of audio/video message playback
   * **list** List of received audio/video messages with playback acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceivePlayAcks" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentStatusChanged
 
 ```cpp
@@ -285,6 +345,10 @@ Attachment download state changed
   * **percent** Progress of attachment downloading 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onAttachmentDownloadByUrlStatusChanged
 
 ```cpp
@@ -304,6 +368,10 @@ Attachment download state changed
   * **percent** Progress of attachment downloading 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentDownloadByUrlStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function onRetrieveHistoryMessages
 
 ```cpp
@@ -319,6 +387,10 @@ Pull message history
   * **conversation** Conversation for which a specific message history was pulled 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onRetrieveHistoryMessages" %}{% endlanying_code_snippet %}
+```
 ### function onLoadAllConversation
 
 ```cpp
@@ -327,6 +399,10 @@ inline virtual void onLoadAllConversation()
 
 List of unread conversations has been loaded 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onLoadAllConversation" %}{% endlanying_code_snippet %}
+```
 ### function onConversationCreate
 
 ```cpp
@@ -344,6 +420,10 @@ Create a new conversation locally
   * **msg** Latest message for conversation, return for existing, empty for no existing 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onConversationCreate" %}{% endlanying_code_snippet %}
+```
 ### function onConversationDelete
 
 ```cpp
@@ -361,6 +441,10 @@ inline virtual void onConversationDelete(
   * **error** State error code 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onConversationDelete" %}{% endlanying_code_snippet %}
+```
 ### function onTotalUnreadCountChanged
 
 ```cpp
@@ -376,6 +460,10 @@ Update total number of unread messages
   * **unreadCount** Total number of local unread conversations 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onTotalUnreadCountChanged" %}{% endlanying_code_snippet %}
+```
 ### function registerChatService
 
 ```cpp
@@ -400,6 +488,10 @@ BMXChatService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="registerChatService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800
