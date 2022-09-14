@@ -8,7 +8,7 @@ Group management
     * [.asyncGetJoinedGroups(froce)](#module_groupmanage__asyncgetjoinedgroups) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.openGroup(group_id)](#module_groupmanage__opengroup)
     * [.getAllGroupDetail()](#module_groupmanage__getallgroupdetail) ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code>
-    * [.asyncGetGroupMembers(group_id)](#module_groupmanage__asyncgetgroupmembers) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>    
+    * [.asyncGetGroupMembers(group_id)](#module_groupmanage__asyncgetgroupmembers) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.getGroupMembers(group_id)](#module_groupmanage__getgroupmembers) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember)
     * [.asyncGetGroupListDetail(gids)](#module_groupmanage__asyncgetgrouplistdetail) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code>
     * [.getGruopMessage(gid)](#module_groupmanage__getgruopmessage) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta)
@@ -72,6 +72,10 @@ Get group information
 | group_id | <code>number</code> | GroupID |
 | froce | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupInfo" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetJoinedGroups(froce) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetjoinedgroups}
 Get the group to join
 
@@ -82,6 +86,10 @@ Get the group to join
 | --- | --- | --- |
 | froce | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetJoinedGroups" %}{% endlanying_code_snippet %}
+```
 ### groupManage.openGroup(group_id) {#module_groupmanage__opengroup}
 Open group, this method will prepare some necessary information for the group chat screen.
 
@@ -91,11 +99,19 @@ Open group, this method will prepare some necessary information for the group ch
 | --- | --- | --- |
 | group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="openGroup" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getAllGroupDetail() ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> {#module_groupmanage__getallgroupdetail}
 Get all cached group details
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 **Returns**: <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> - Group details  
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getAllGroupDetail" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetGroupMembers(group_id) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetgroupmembers}
 Get group member ids (asynchronous)
 
@@ -106,6 +122,10 @@ Get group member ids (asynchronous)
 | --- | --- | --- |
 | group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupMembers" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getGroupMembers(group_id) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember) {#module_groupmanage__getgroupmembers}
 Get group members (synchronous)
 
@@ -116,6 +136,10 @@ Get group members (synchronous)
 | --- | --- | --- |
 | group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getGroupMembers" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetGroupListDetail(gids) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code> {#module_groupmanage__asyncgetgrouplistdetail}
 Get group details by id
 
@@ -126,6 +150,10 @@ Get group details by id
 | --- | --- | --- |
 | gids | <code>Array.&lt;number&gt;</code> | Group ID list |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupListDetail" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getGruopMessage(gid) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta) {#module_groupmanage__getgruopmessage}
 Get group information
 
@@ -136,6 +164,10 @@ Get group information
 | --- | --- | --- |
 | gid | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getGruopMessage" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetInfo(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asyncgetinfo}
 Get group details
 
@@ -147,6 +179,10 @@ Get group details
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetInfo" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetMemberList(param) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetmemberlist}
 Get group member list
 
@@ -158,6 +194,10 @@ Get group member list
 | param | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetMemberList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.readGroupMessage(group_id, mid) {#module_groupmanage__readgroupmessage}
 Set group message to read
 
@@ -168,6 +208,10 @@ Set group message to read
 | group_id | <code>number</code> | GroupID |
 | mid | <code>number</code> | MessageID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="readGroupMessage" %}{% endlanying_code_snippet %}
+```
 ### groupManage.recallMessage(uid, mid) {#module_groupmanage__recallmessage}
 Revoke message
 
@@ -178,6 +222,10 @@ Revoke message
 | uid | <code>number</code> | GroupID |
 | mid | <code>number</code> | MessageID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="recallMessage" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getUnreadCount(gid) ⇒ <code>number</code> {#module_groupmanage__getunreadcount}
 Get number of unread group messages
 
@@ -188,6 +236,10 @@ Get number of unread group messages
 | --- | --- | --- |
 | gid | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetAdminList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetadminlist}
 Get the list of group Admins
 
@@ -199,6 +251,10 @@ Get the list of group Admins
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAdminList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAdminAdd(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncadminadd}
 Add group Admin
 
@@ -211,6 +267,10 @@ Add group Admin
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAdminAdd" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAdminRemove(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncadminremove}
 Remove group Admin
 
@@ -223,6 +283,10 @@ Remove group Admin
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAdminRemove" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetAnouncementById(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) {#module_groupmanage__asyncgetanouncementbyid}
 Get group announcement details
 
@@ -235,6 +299,10 @@ Get group announcement details
 | params.group_id | <code>number</code> | GroupID |
 | params.announcement_id | <code>Array.&lt;number&gt;</code> | Announcement ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAnouncementById" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAnouncementDelete(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncanouncementdelete}
 Delete group announcement
 
@@ -247,6 +315,10 @@ Delete group announcement
 | params.group_id | <code>number</code> | GroupID |
 | params.announcement_id | <code>Array.&lt;number&gt;</code> | Announcement ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAnouncementDelete" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAnnouncementEdit(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) {#module_groupmanage__asyncannouncementedit}
 Edit group announcement
 
@@ -260,6 +332,10 @@ Edit group announcement
 | params.title | <code>string</code> | Announcement tittle |
 | params.content | <code>string</code> | Announcement content |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAnnouncementEdit" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetAnnouncementList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code> {#module_groupmanage__asyncgetannouncementlist}
 Group announcement list
 
@@ -271,6 +347,10 @@ Group announcement list
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAnnouncementList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncCreate(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asynccreate}
 Create group
 
@@ -281,6 +361,10 @@ Create group
 | --- | --- | --- |
 | params | [<code>GroupInfoRequest</code>](types.md#module_types__groupinforequest) | Request parameters |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncCreate" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncDestroy(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncdestroy}
 Dissolve group
 
@@ -292,6 +376,10 @@ Dissolve group
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncDestroy" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateAvatar(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateavatar}
 Update group avatar
 
@@ -304,6 +392,10 @@ Update group avatar
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>string</code> | AvatarAddress |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAvatar" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateDescription(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatedescription}
 Update group description
 
@@ -316,6 +408,10 @@ Update group description
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>string</code> | Group description |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateDescription" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateExt(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateext}
 Update group extension information
 
@@ -328,6 +424,10 @@ Update group extension information
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>string</code> | Extension information |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateExt" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatename}
 Update group name
 
@@ -340,6 +440,10 @@ Update group name
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>string</code> | Group name |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateName" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupMsgMutemode(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncgroupmsgmutemode}
 Set do-not-disturb conditions for group message
 
@@ -352,6 +456,10 @@ Set do-not-disturb conditions for group message
 | params.group_id | <code>number</code> | GroupID |
 | params.msg_mute_mode | <code>number</code> | Group message blocking mode: 0 - no blocking, 1 - blocking local message notifications, 2 - blocking all, means not receiving messages |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupMsgMutemode" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBannedList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code> {#module_groupmanage__asyncgroupbannedlist}
 Get group ban list
 
@@ -363,6 +471,10 @@ Get group ban list
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBannedList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBab(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupbab}
 Ban group member
 
@@ -373,6 +485,10 @@ Ban group member
 | --- | --- | --- |
 | params | [<code>GroupBannedMemberRequest</code>](types.md#module_types__groupbannedmemberrequest) | Request parameters |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBab" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupUnban(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupunban}
 Unban group memberBan
 
@@ -385,6 +501,10 @@ Unban group memberBan
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupUnban" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetSettings(group_id) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asyncgetsettings}
 Get group settings
 
@@ -395,6 +515,10 @@ Get group settings
 | --- | --- | --- |
 | group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetSettings" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateAllowMemberInvitation(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateallowmemberinvitation}
 Set whether group members can invite new member
 
@@ -407,6 +531,10 @@ Set whether group members can invite new member
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>boolean</code> | Group member invite settings: false - do not allow invitations, true - allow invitations (default) |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAllowMemberInvitation" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateAllowMemberModify(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateallowmembermodify}
 Set whether group members can modify group information
 
@@ -419,6 +547,10 @@ Set whether group members can modify group information
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>boolean</code> | Group members modify group info settings: false - group members can't modify group info (default), true - group members can modify group info |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAllowMemberModify" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateEnableReadack(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateenablereadack}
 Set whether to enable read mode in group
 
@@ -431,6 +563,10 @@ Set whether to enable read mode in group
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>boolean</code> | Enable or disable group message read feature: false - disabled, true - enabled |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateEnableReadack" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateHistoryVisible(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatehistoryvisible}
 Set whether group history is visible
 
@@ -443,6 +579,10 @@ Set whether group history is visible
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>boolean</code> | Set whether the group history is visible: false - not visible, true - visible |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateHistoryVisible" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateRequireadminapproval(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdaterequireadminapproval}
 Set whether need to apply for group joining
 
@@ -455,6 +595,10 @@ Set whether need to apply for group joining
 | params.group_id | <code>number</code> | GroupID |
 | params.apply_approval | <code>boolean</code> | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateRequireadminapproval" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncBanAll(params) ⇒ [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types__groupbanallresponse) {#module_groupmanage__asyncbanall}
 Ban all members, only Admins can send messages
 
@@ -467,6 +611,10 @@ Ban all members, only Admins can send messages
 | params.duration | <code>number</code> | Duration of banned in minutes,int64 |
 | params.group_id | <code>number</code> | Group id,int64 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncBanAll" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUnBanAll(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncunbanall}
 Unban all members
 
@@ -478,6 +626,10 @@ Unban all members
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | Group id,int64 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUnBanAll" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncOwnerTransfer(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncownertransfer}
 Change group Owner
 
@@ -490,6 +642,10 @@ Change group Owner
 | params.group_id | <code>number</code> | GroupID |
 | params.new_owner | <code>number</code> | User ID of the new group owner |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncOwnerTransfer" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetUserJoined(params) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetuserjoined}
 Get the list of groups for the user
 
@@ -500,6 +656,10 @@ Get the list of groups for the user
 | --- | --- | --- |
 | params | <code>object</code> | Parameter, Empty object |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetUserJoined" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncApply(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncapply}
 Apply to join group
 
@@ -512,6 +672,10 @@ Apply to join group
 | params.group_id | <code>number</code> | GroupID |
 | params.reason | <code>string</code> | Reason for membership application |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncApply" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncApplyHandle(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncapplyhandle}
 Process user's group joining application
 
@@ -525,6 +689,10 @@ Process user's group joining application
 | params.user_id | <code>number</code> | User ID |
 | params.approval | <code>boolean</code> | Approval result: true for agree, false for reject |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncApplyHandle" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBockedlist(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code> {#module_groupmanage__asyncgroupbockedlist}
 Get group blacklist
 
@@ -536,6 +704,10 @@ Get group blacklist
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBockedlist" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBlock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupblock}
 Add member to blacklist
 
@@ -548,6 +720,10 @@ Add member to blacklist
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBlock" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupUnblock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupunblock}
 Remove member from blacklist
 
@@ -560,6 +736,10 @@ Remove member from blacklist
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupUnblock" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncKick(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asynckick}
 Kick out group member
 
@@ -572,11 +752,19 @@ Kick out group member
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncKick" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetInvitationList() ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> {#module_groupmanage__asyncgetinvitationlist}
 Get group invitation list
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 **Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> - List of group invitations  
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetInvitationList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncInvite(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncinvite}
 Invite member to group
 
@@ -589,6 +777,10 @@ Invite member to group
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncInvite" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncInviteHandle(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncinvitehandle}
 Process group invitations
 
@@ -602,6 +794,10 @@ Process group invitations
 | params.user_id | <code>number</code> | User ID |
 | params.approval | <code>boolean</code> | Approval result: true for agree, false for reject |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncInviteHandle" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetMemberDisplayName(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetmemberdisplayname}
 Batch retrieval of group member profiles
 
@@ -614,6 +810,10 @@ Batch retrieval of group member profiles
 | params.group_id | <code>number</code> | GroupID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetMemberDisplayName" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncLeave(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncleave}
 Quit group
 
@@ -625,6 +825,10 @@ Quit group
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncLeave" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateDisplayName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatedisplayname}
 Modify group profile
 
@@ -637,6 +841,10 @@ Modify group profile
 | params.group_id | <code>number</code> | GroupID |
 | params.value | <code>string</code> | New user profile |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateDisplayName" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asncGetApplicationList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code> {#module_groupmanage__asncgetapplicationlist}
 Get the list of group membership requests
 
@@ -648,6 +856,10 @@ Get the list of group membership requests
 | params | <code>object</code> | Parameter |
 | params.group_list | <code>Array.&lt;number&gt;</code> | List of groups |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asncGetApplicationList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetFileList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage__asyncgetfilelist}
 Get the list of group files
 
@@ -659,6 +871,10 @@ Get the list of group files
 | params | <code>object</code> | Parameter |
 | params.group_id | <code>number</code> | GroupID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetFileList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncFileDelete(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code> {#module_groupmanage__asyncfiledelete}
 Delete group file
 
@@ -671,6 +887,10 @@ Delete group file
 | params.group_id | <code>number</code> | GroupID |
 | params.file_list | <code>Array.&lt;number&gt;</code> | List of file IDs |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncFileDelete" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncFileUpload(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage__asyncfileupload}
 Upload group file
 
@@ -685,3 +905,8 @@ Upload group file
 | params.size | <code>number</code> | File size,int64 |
 | params.type | <code>string</code> | File type |
 | params.url | <code>string</code> | File url |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncFileUpload" %}{% endlanying_code_snippet %}
+```

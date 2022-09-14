@@ -30,6 +30,10 @@ SendSingle chat message
 | msg.ext | <code>string</code> &#124; <code>object</code> | Extension field |
 | msg.attachment | <code>string</code> &#124; <code>object</code> | Attachment info |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendRosterMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.sendGroupMessage(msg) ⇒ <code>number</code> {#module_sysmanage__sendgroupmessage}
 SendGroup chat message
 
@@ -46,6 +50,10 @@ SendGroup chat message
 | msg.attachment | <code>string</code> &#124; <code>object</code> | Attachment info |
 | msg.priority | <code>number</code> | Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendGroupMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.requireHistoryMessage(uid, sid, amount) {#module_sysmanage__requirehistorymessage}
 Request history
 
@@ -57,6 +65,10 @@ Request history
 | sid | <code>number</code> | Message ID: the message to pull forward from, 0 means pulling from the latest message. |
 | amount | <code>number</code> | Number of messages to pull |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="requireHistoryMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.sendMentionMessage(params) ⇒ <code>number</code> {#module_sysmanage__sendmentionmessage}
 Group-sent @message
 
@@ -74,6 +86,10 @@ Group-sent @message
 | params.mentionedMessage | <code>string</code> | Push content of @messages |
 | params.senderNickname | <code>string</code> | Sender's nickname |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendMentionMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.sendInputStatusMessage(uid, status) ⇒ <code>number</code> {#module_sysmanage__sendinputstatusmessage}
 Send type status
 
@@ -85,6 +101,10 @@ Send type status
 | uid | <code>number</code> | SessionID |
 | status | <code>string</code> | Status: nothing - no typing, typing - typing |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendInputStatusMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.forwardMessage(param) ⇒ <code>number</code> {#module_sysmanage__forwardmessage}
 Forward message
 
@@ -98,6 +118,10 @@ Forward message
 | param.gid | <code>number</code> | Receiver's group ID (set only when forwarding a group chat) |
 | param.mid | <code>number</code> | Message to forwardID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="forwardMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.getMessageStatus(cid, mid, isGroup) ⇒ <code>string</code> {#module_sysmanage__getmessagestatus}
 Get message status
 
@@ -110,6 +134,10 @@ Get message status
 | mid | <code>number</code> |  | MessageID |
 | isGroup | <code>boolean</code> | <code>false</code> | Whether it is a group chat |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="getMessageStatus" %}{% endlanying_code_snippet %}
+```
 ### sysManage.asyncFileUpload(param) ⇒ [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types__fileuploadresult) {#module_sysmanage__asyncfileupload}
 Upload file
 
@@ -127,6 +155,10 @@ Upload file
 | param.chatType | <code>number</code> | Chat types: roster - single chat, group - group chat |
 | param.processCallback | [<code>fileUploadProgress</code>](types.md#module_types__fileuploadprogress) | Upload progressCallback |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="asyncFileUpload" %}{% endlanying_code_snippet %}
+```
 ### sysManage.getImage(param) ⇒ <code>string</code> {#module_sysmanage__getimage}
 Assemble image path
 
@@ -141,6 +173,10 @@ Assemble image path
 | param.thumbnail | <code>boolean</code> | Thumbnail or not: true by default |
 | param.sdefault | <code>string</code> | Default image address |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="getImage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.deleteConversation(id, other_devices) {#module_sysmanage__deleteconversation}
 Delete session
 
@@ -151,6 +187,10 @@ Delete session
 | id | <code>number</code> |  | SessionID |
 | other_devices | <code>boolean</code> | <code>true</code> | Whether to delete conversations on other devices at the same time |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="deleteConversation" %}{% endlanying_code_snippet %}
+```
 ### sysManage.asyncGetGroupAvatarUploadUrl(params) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload) {#module_sysmanage__asyncgetgroupavataruploadurl}
 Get the URL of uploading group avatar
 

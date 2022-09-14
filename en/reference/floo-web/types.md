@@ -262,7 +262,6 @@ Friend application received
 | --- | --- | --- |
 | meta | [<code>Meta</code>](#module_types__meta) | Message content of friend's application |
 
-
 ### "onRosterMessage" (meta) {#event_onrostermessage}
 Single chat message received
 
