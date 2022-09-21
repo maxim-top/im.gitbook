@@ -1,0 +1,2711 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>蓝莺 IM - 专业SDK，私有云按月付费</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="jinhai">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lanying-code-snippet/lanying-code-snippet.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../assets/styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    
+    <meta name="keywords" content="&#x84DD;&#x83BA;IM, &#x7F8E;&#x4FE1;&#x62D3;&#x6251;, IM SDK, &#x5373;&#x65F6;&#x901A;&#x8BAF;, &#x5373;&#x65F6;&#x901A;&#x8BAF;&#x4E91;, IM&#x4E91;&#x670D;&#x52A1;, &#x79FB;&#x52A8;IM, &#x5F00;&#x6E90;IM, &#x4F01;&#x4E1A;IM, &#x804A;&#x5929;&#x8F6F;&#x4EF6;, &#x79FB;&#x52A8;&#x5BA2;&#x670D;, &#x5728;&#x7EBF;&#x5BA2;&#x670D;, IM&#x4E1A;&#x52A1;&#x573A;&#x666F;, APP&#x793E;&#x4EA4;, &#x5F00;&#x53D1;&#x8005;&#x670D;&#x52A1;, &#x76F4;&#x64AD;&#x804A;&#x5929;&#x5BA4;, &#x5B9E;&#x65F6;&#x97F3;&#x89C6;&#x9891;, &#x97F3;&#x89C6;&#x9891;, &#x76F4;&#x64AD;&#x5E73;&#x53F0;, &#x7F8E;&#x4FE1;&#x53CD;&#x5783;&#x573E;, &#x5185;&#x5BB9;&#x5B89;&#x5168;">
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.html">
+    
+
+
+    <link rel="canonical" href="https://docs.lanyingim.com/articles/activity-report/how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.html">
+
+    
+        <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+    
+    
+        <link rel="bookmark" href="../../assets/favicon.ico" type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"maxim-top/im.gitbook","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary"><a href="https://www.lanyingim.com" class="book-logo-root"><div class="book-logo" style="text-align: center; padding: 20px;"><img src="/assets/lanying-logo-color.png" style="height: 35px;align:left;"></div></a>
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x5373;&#x65F6;&#x901A;&#x8BAF;&#x5F00;&#x53D1;&#x6307;&#x5357;&#xFF08;IM&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../quick-start/">
+            
+                <a href="../../quick-start/">
+            
+                    
+                    &#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../quick-start/floo-ios-quick-start.html">
+            
+                <a href="../../quick-start/floo-ios-quick-start.html">
+            
+                    
+                    IOS &#x5BA2;&#x6237;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../quick-start/floo-android-quick-start.html">
+            
+                <a href="../../quick-start/floo-android-quick-start.html">
+            
+                    
+                    &#x5B89;&#x5353;&#x5BA2;&#x6237;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../quick-start/floo-quick-start.html">
+            
+                <a href="../../quick-start/floo-quick-start.html">
+            
+                    
+                    Linux/C++ &#x5BA2;&#x6237;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../quick-start/floo-web-quick-start.html">
+            
+                <a href="../../quick-start/floo-web-quick-start.html">
+            
+                    
+                    Web &#x524D;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../quick-start/server-api-quick-start.html">
+            
+                <a href="../../quick-start/server-api-quick-start.html">
+            
+                    
+                    &#x670D;&#x52A1;&#x7AEF;&#x5F00;&#x53D1;&#x6307;&#x5357;&#xFF08;API&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../quick-start/push-dev-guide.html">
+            
+                <a href="../../quick-start/push-dev-guide.html">
+            
+                    
+                    &#x63A8;&#x9001;&#x5F00;&#x53D1;&#x6307;&#x5357;&#xFF08;PUSH&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../quick-start/how-to-deploy-private-cloud.html">
+            
+                <a href="../../quick-start/how-to-deploy-private-cloud.html">
+            
+                    
+                    &#x79C1;&#x6709;&#x4E91;&#x90E8;&#x7F72;&#x6587;&#x6863;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../reference/">
+            
+                <a href="../../reference/">
+            
+                    
+                    &#x8BE6;&#x7EC6;&#x6587;&#x6863;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../reference/floo-ios.html">
+            
+                <a href="../../reference/floo-ios.html">
+            
+                    
+                    IOS SDK API (floo-ios)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../reference/floo-ios/classes.html">
+            
+                <a href="../../reference/floo-ios/classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../../reference/floo-ios/Classes/BMXClient.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXClient.html">
+            
+                    
+                    BMXClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="../../reference/floo-ios/Classes/BMXConversation.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXConversation.html">
+            
+                    
+                    BMXConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.3" data-path="../../reference/floo-ios/Classes/BMXCreatGroupOption.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXCreatGroupOption.html">
+            
+                    
+                    BMXCreatGroupOption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.4" data-path="../../reference/floo-ios/Classes/BMXDevice.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXDevice.html">
+            
+                    
+                    BMXDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.5" data-path="../../reference/floo-ios/Classes/BMXFileAttachment.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXFileAttachment.html">
+            
+                    
+                    BMXFileAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.6" data-path="../../reference/floo-ios/Classes/BMXGroup.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXGroup.html">
+            
+                    
+                    BMXGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.7" data-path="../../reference/floo-ios/Classes/BMXImageAttachment.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXImageAttachment.html">
+            
+                    
+                    BMXImageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.8" data-path="../../reference/floo-ios/Classes/BMXLocationAttachment.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXLocationAttachment.html">
+            
+                    
+                    BMXLocationAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.9" data-path="../../reference/floo-ios/Classes/BMXMessageAttachment.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXMessageAttachment.html">
+            
+                    
+                    BMXMessageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.10" data-path="../../reference/floo-ios/Classes/BMXMessageConfig.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXMessageConfig.html">
+            
+                    
+                    BMXMessageConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.11" data-path="../../reference/floo-ios/Classes/BMXMessageObject.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXMessageObject.html">
+            
+                    
+                    BMXMessageObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.12" data-path="../../reference/floo-ios/Classes/BMXMessageSetting.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXMessageSetting.html">
+            
+                    
+                    BMXMessageSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.13" data-path="../../reference/floo-ios/Classes/BMXPushUserProfile.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXPushUserProfile.html">
+            
+                    
+                    BMXPushUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.14" data-path="../../reference/floo-ios/Classes/BMXRoster.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXRoster.html">
+            
+                    
+                    BMXRoster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.15" data-path="../../reference/floo-ios/Classes/BMXSDKConfig.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXSDKConfig.html">
+            
+                    
+                    BMXSDKConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.16" data-path="../../reference/floo-ios/Classes/BMXUserProfile.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXUserProfile.html">
+            
+                    
+                    BMXUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.17" data-path="../../reference/floo-ios/Classes/BMXVideoAttachment.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXVideoAttachment.html">
+            
+                    
+                    BMXVideoAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.18" data-path="../../reference/floo-ios/Classes/BMXVoiceAttachment.html">
+            
+                <a href="../../reference/floo-ios/Classes/BMXVoiceAttachment.html">
+            
+                    
+                    BMXVoiceAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../reference/floo-ios/protocols.html">
+            
+                <a href="../../reference/floo-ios/protocols.html">
+            
+                    
+                    Protocols
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../../reference/floo-ios/Protocols/BMXChatManager.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXChatManager.html">
+            
+                    
+                    BMXChatManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../../reference/floo-ios/Protocols/BMXChatServiceProtocol.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXChatServiceProtocol.html">
+            
+                    
+                    BMXChatServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="../../reference/floo-ios/Protocols/BMXGroupManager.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXGroupManager.html">
+            
+                    
+                    BMXGroupManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="../../reference/floo-ios/Protocols/BMXGroupServiceProtocol.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXGroupServiceProtocol.html">
+            
+                    
+                    BMXGroupServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.5" data-path="../../reference/floo-ios/Protocols/BMXPushManager.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXPushManager.html">
+            
+                    
+                    BMXPushManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.6" data-path="../../reference/floo-ios/Protocols/BMXPushServiceProtocol.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXPushServiceProtocol.html">
+            
+                    
+                    BMXPushServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.7" data-path="../../reference/floo-ios/Protocols/BMXRosterManager.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXRosterManager.html">
+            
+                    
+                    BMXRosterManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.8" data-path="../../reference/floo-ios/Protocols/BMXRosterServiceProtocol.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXRosterServiceProtocol.html">
+            
+                    
+                    BMXRosterServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.9" data-path="../../reference/floo-ios/Protocols/BMXUserManager.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXUserManager.html">
+            
+                    
+                    BMXUserManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.10" data-path="../../reference/floo-ios/Protocols/BMXUserServiceProtocol.html">
+            
+                <a href="../../reference/floo-ios/Protocols/BMXUserServiceProtocol.html">
+            
+                    
+                    BMXUserServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../reference/floo-ios/constants.html">
+            
+                <a href="../../reference/floo-ios/constants.html">
+            
+                    
+                    Constants
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../../reference/floo-ios/Constants/BMXAttachmentDownloadStatus.html">
+            
+                <a href="../../reference/floo-ios/Constants/BMXAttachmentDownloadStatus.html">
+            
+                    
+                    BMXAttachmentDownloadStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../../reference/floo-ios/Constants/BMXAttachmentType.html">
+            
+                <a href="../../reference/floo-ios/Constants/BMXAttachmentType.html">
+            
+                    
+                    BMXAttachmentType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="../../reference/floo-ios/Constants/BMXConnectStatus.html">
+            
+                <a href="../../reference/floo-ios/Constants/BMXConnectStatus.html">
+            
+                    
+                    BMXConnectStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="../../reference/floo-ios/Constants/BMXErrorCode.html">
+            
+                <a href="../../reference/floo-ios/Constants/BMXErrorCode.html">
+            
+                    
+                    BMXErrorCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.5" data-path="../../reference/floo-ios/Constants/BMXLogLevel.html">
+            
+                <a href="../../reference/floo-ios/Constants/BMXLogLevel.html">
+            
+                    
+                    BMXLogLevel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6" data-path="../../reference/floo-ios/Constants/BMXNetworkType.html">
+            
+                <a href="../../reference/floo-ios/Constants/BMXNetworkType.html">
+            
+                    
+                    BMXNetworkType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7" data-path="../../reference/floo-ios/Constants/BMXSignInStatus.html">
+            
+                <a href="../../reference/floo-ios/Constants/BMXSignInStatus.html">
+            
+                    
+                    BMXSignInStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../reference/floo-android.html">
+            
+                <a href="../../reference/floo-android.html">
+            
+                    
+                    Android SDK API (floo-android)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.html">
+            
+                    
+                    im::floo::floolib::BMXChatManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.html">
+            
+                    
+                    im::floo::floolib::BMXChatService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXChatServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_client.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_client.html">
+            
+                    
+                    im::floo::floolib::BMXClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.html">
+            
+                    
+                    im::floo::floolib::BMXConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_device.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_device.html">
+            
+                    
+                    im::floo::floolib::BMXDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXFileAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group.html">
+            
+                    
+                    im::floo::floolib::BMXGroup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.8.1" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_announcement.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_announcement.html">
+            
+                    
+                    Announcement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8.2" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_application.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_application.html">
+            
+                    
+                    Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::BannedMember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.10" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::Invitation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.11" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_member.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_member.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::Member
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.12" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::SharedFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.13" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.html">
+            
+                    
+                    im::floo::floolib::BMXGroupManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.14" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.html">
+            
+                    
+                    im::floo::floolib::BMXGroupService
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.14.1" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_1_1_create_group_options.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_1_1_create_group_options.html">
+            
+                    
+                    CreateGroupOptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.15" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXGroupServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.16" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXImageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.17" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXLocationAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.18" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message.html">
+            
+                    
+                    im::floo::floolib::BMXMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.19" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXMessageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.20" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment_1_1_size.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment_1_1_size.html">
+            
+                    
+                    im::floo::floolib::BMXMessageAttachment::Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.21" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.html">
+            
+                    
+                    im::floo::floolib::BMXMessageConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.22" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_network_listener.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_network_listener.html">
+            
+                    
+                    im::floo::floolib::BMXNetworkListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.23" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.html">
+            
+                    
+                    im::floo::floolib::BMXPushManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.24" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.html">
+            
+                    
+                    im::floo::floolib::BMXPushService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.25" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXPushServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.26" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.html">
+            
+                    
+                    im::floo::floolib::BMXPushUserProfile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.26.1" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile_1_1_message_push_setting.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile_1_1_message_push_setting.html">
+            
+                    
+                    MessagePushSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.27" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.html">
+            
+                    
+                    im::floo::floolib::BMXRosterItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.28" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.html">
+            
+                    
+                    im::floo::floolib::BMXRosterManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.29" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.html">
+            
+                    
+                    im::floo::floolib::BMXRosterService
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.29.1" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_1_1_application.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_1_1_application.html">
+            
+                    
+                    Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.30" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXRosterServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.31" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.html">
+            
+                    
+                    im::floo::floolib::BMXSDKConfig
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.31.1" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.html">
+            
+                    
+                    HostConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.32" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.html">
+            
+                    
+                    im::floo::floolib::BMXUserManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.33" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.html">
+            
+                    
+                    im::floo::floolib::BMXUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.34" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_auth_question.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_auth_question.html">
+            
+                    
+                    im::floo::floolib::BMXUserProfile::AuthQuestion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.35" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_message_setting.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_message_setting.html">
+            
+                    
+                    im::floo::floolib::BMXUserProfile::MessageSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.36" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.html">
+            
+                    
+                    im::floo::floolib::BMXUserService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.37" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXUserServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.38" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXVideoAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.39" data-path="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.html">
+            
+                <a href="../../reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXVoiceAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../reference/floo.html">
+            
+                <a href="../../reference/floo.html">
+            
+                    
+                    C++ SDK API (floo)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../reference/floo/classfloo_1_1_b_m_x_chat_service.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_chat_service.html">
+            
+                    
+                    floo::BMXChatService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../reference/floo/classfloo_1_1_b_m_x_chat_service_listener.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_chat_service_listener.html">
+            
+                    
+                    floo::BMXChatServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../../reference/floo/classfloo_1_1_b_m_x_client.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_client.html">
+            
+                    
+                    floo::BMXClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../../reference/floo/classfloo_1_1_b_m_x_conversation.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_conversation.html">
+            
+                    
+                    floo::BMXConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../../reference/floo/classfloo_1_1_b_m_x_device.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_device.html">
+            
+                    
+                    floo::BMXDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../../reference/floo/classfloo_1_1_b_m_x_error.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_error.html">
+            
+                    
+                    floo::BMXError
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../../reference/floo/classfloo_1_1_b_m_x_file_attachment.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_file_attachment.html">
+            
+                    
+                    floo::BMXFileAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../../reference/floo/classfloo_1_1_b_m_x_forward_attachment.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_forward_attachment.html">
+            
+                    
+                    floo::BMXForwardAttachment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.8.1" data-path="../../reference/floo/classfloo_1_1_b_m_x_forward_attachment_1_1_message.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_forward_attachment_1_1_message.html">
+            
+                    
+                    Message
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../../reference/floo/classfloo_1_1_b_m_x_group.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_group.html">
+            
+                    
+                    floo::BMXGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../../reference/floo/classfloo_1_1_b_m_x_group_service.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_group_service.html">
+            
+                    
+                    floo::BMXGroupService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../../reference/floo/classfloo_1_1_b_m_x_group_service_listener.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_group_service_listener.html">
+            
+                    
+                    floo::BMXGroupServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../../reference/floo/classfloo_1_1_b_m_x_image_attachment.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_image_attachment.html">
+            
+                    
+                    floo::BMXImageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../../reference/floo/classfloo_1_1_b_m_x_location_attachment.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_location_attachment.html">
+            
+                    
+                    floo::BMXLocationAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../../reference/floo/classfloo_1_1_b_m_x_message.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_message.html">
+            
+                    
+                    floo::BMXMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.15" data-path="../../reference/floo/classfloo_1_1_b_m_x_message_attachment.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_message_attachment.html">
+            
+                    
+                    floo::BMXMessageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.16" data-path="../../reference/floo/classfloo_1_1_b_m_x_message_config.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_message_config.html">
+            
+                    
+                    floo::BMXMessageConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.17" data-path="../../reference/floo/classfloo_1_1_b_m_x_network_listener.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_network_listener.html">
+            
+                    
+                    floo::BMXNetworkListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.18" data-path="../../reference/floo/classfloo_1_1_b_m_x_push_service.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_push_service.html">
+            
+                    
+                    floo::BMXPushService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.19" data-path="../../reference/floo/classfloo_1_1_b_m_x_push_service_listener.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_push_service_listener.html">
+            
+                    
+                    floo::BMXPushServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.20" data-path="../../reference/floo/classfloo_1_1_b_m_x_push_user_profile.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_push_user_profile.html">
+            
+                    
+                    floo::BMXPushUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.21" data-path="../../reference/floo/classfloo_1_1_b_m_x_result_page.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_result_page.html">
+            
+                    
+                    floo::BMXResultPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.22" data-path="../../reference/floo/classfloo_1_1_b_m_x_roster_item.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_roster_item.html">
+            
+                    
+                    floo::BMXRosterItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.23" data-path="../../reference/floo/classfloo_1_1_b_m_x_roster_service.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_roster_service.html">
+            
+                    
+                    floo::BMXRosterService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.24" data-path="../../reference/floo/classfloo_1_1_b_m_x_roster_service_listener.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_roster_service_listener.html">
+            
+                    
+                    floo::BMXRosterServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.25" data-path="../../reference/floo/classfloo_1_1_b_m_x_s_d_k_config.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_s_d_k_config.html">
+            
+                    
+                    floo::BMXSDKConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.26" data-path="../../reference/floo/classfloo_1_1_b_m_x_user_profile.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_user_profile.html">
+            
+                    
+                    floo::BMXUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.27" data-path="../../reference/floo/classfloo_1_1_b_m_x_user_service.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_user_service.html">
+            
+                    
+                    floo::BMXUserService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.28" data-path="../../reference/floo/classfloo_1_1_b_m_x_user_service_listener.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_user_service_listener.html">
+            
+                    
+                    floo::BMXUserServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.29" data-path="../../reference/floo/classfloo_1_1_b_m_x_video_attachment.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_video_attachment.html">
+            
+                    
+                    floo::BMXVideoAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.30" data-path="../../reference/floo/classfloo_1_1_b_m_x_voice_attachment.html">
+            
+                <a href="../../reference/floo/classfloo_1_1_b_m_x_voice_attachment.html">
+            
+                    
+                    floo::BMXVoiceAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../reference/floo-web.html">
+            
+                <a href="../../reference/floo-web.html">
+            
+                    
+                    Web SDK API (floo-web)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../reference/floo-web/flooim.html">
+            
+                <a href="../../reference/floo-web/flooim.html">
+            
+                    
+                    flooim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../reference/floo-web/userManage.html">
+            
+                <a href="../../reference/floo-web/userManage.html">
+            
+                    
+                    userManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../reference/floo-web/rosterManage.html">
+            
+                <a href="../../reference/floo-web/rosterManage.html">
+            
+                    
+                    rosterManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../reference/floo-web/groupManage.html">
+            
+                <a href="../../reference/floo-web/groupManage.html">
+            
+                    
+                    groupManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../../reference/floo-web/sysManage.html">
+            
+                <a href="../../reference/floo-web/sysManage.html">
+            
+                    
+                    sysManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../../reference/floo-web/types.html">
+            
+                <a href="../../reference/floo-web/types.html">
+            
+                    
+                    types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../reference/server-api/">
+            
+                <a href="../../reference/server-api/">
+            
+                    
+                    Server API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../reference/server-api/user.html">
+            
+                <a href="../../reference/server-api/user.html">
+            
+                    
+                    &#x7528;&#x6237;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../reference/server-api/token.html">
+            
+                <a href="../../reference/server-api/token.html">
+            
+                    
+                    Token&#x63A5;&#x53E3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../reference/server-api/roster.html">
+            
+                <a href="../../reference/server-api/roster.html">
+            
+                    
+                    &#x597D;&#x53CB;/&#x82B1;&#x540D;&#x518C;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../../reference/server-api/group.html">
+            
+                <a href="../../reference/server-api/group.html">
+            
+                    
+                    &#x7FA4;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../../reference/server-api/message.html">
+            
+                <a href="../../reference/server-api/message.html">
+            
+                    
+                    &#x6D88;&#x606F;&#x64CD;&#x4F5C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../../reference/server-api/file.html">
+            
+                <a href="../../reference/server-api/file.html">
+            
+                    
+                    &#x6587;&#x4EF6;&#x64CD;&#x4F5C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../../reference/server-api/push.html">
+            
+                <a href="../../reference/server-api/push.html">
+            
+                    
+                    &#x63A8;&#x9001;&#x63A5;&#x53E3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    &#x535A;&#x5BA2;&#x6587;&#x7AE0;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Industry-development/">
+            
+                <a href="../Industry-development/">
+            
+                    
+                    &#x884C;&#x4E1A;&#x53D1;&#x5C55;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.html">
+            
+                <a href="../Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.html">
+            
+                    
+                    &#x8FC7;&#x53BB;&#x7684;&#x5341;&#x4E94;&#x5E74;&#xFF0C;&#x6211;&#x4EEC;&#x600E;&#x6837;&#x505A; IM&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../Industry-development/the-next-decade-of-cloud-services.html">
+            
+                <a href="../Industry-development/the-next-decade-of-cloud-services.html">
+            
+                    
+                    &#x4E91;&#x670D;&#x52A1;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5341;&#x5E74;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../product-and-technologies/">
+            
+                <a href="../product-and-technologies/">
+            
+                    
+                    &#x4EA7;&#x54C1;&#x6280;&#x672F;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../product-and-technologies/ninety-percent-of-privately-deployed-softwares-have-no-push-notifications.html">
+            
+                <a href="../product-and-technologies/ninety-percent-of-privately-deployed-softwares-have-no-push-notifications.html">
+            
+                    
+                    90%&#x7684;&#x79C1;&#x6709;&#x8F6F;&#x4EF6;&#x9879;&#x76EE;&#x6CA1;&#x6709;&#x63A8;&#x9001;&#x63D0;&#x9192;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../product-and-technologies/from-cloud-marketplace-to-compact-disk.html">
+            
+                <a href="../product-and-technologies/from-cloud-marketplace-to-compact-disk.html">
+            
+                    
+                    &#x4ECE;&#x4E91;&#x5E02;&#x573A; Marketplace &#x5230;&#x5149;&#x76D8;&#x884C;&#x52A8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../product-and-technologies/one-out-of-two-smartphones-sold-in-africa-has-lanying-im-in-it.html">
+            
+                <a href="../product-and-technologies/one-out-of-two-smartphones-sold-in-africa-has-lanying-im-in-it.html">
+            
+                    
+                    &#x672A;&#x6765;&#x5728;&#x975E;&#x6D32;&#xFF0C;&#x6BCF;&#x51FA;&#x8D27;&#x4E24;&#x53F0;&#x667A;&#x80FD;&#x624B;&#x673A;&#x5C31;&#x6709;&#x4E00;&#x53F0;&#x4F7F;&#x7528;&#x84DD;&#x83BA; IM &#x7684;&#x6280;&#x672F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../product-and-technologies/maximtop-im-launched-on-amazon-cloud-market-china.html">
+            
+                <a href="../product-and-technologies/maximtop-im-launched-on-amazon-cloud-market-china.html">
+            
+                    
+                    &#x7F8E;&#x4FE1;&#x62D3;&#x6251; IM &#x767B;&#x9646;&#x4E9A;&#x9A6C;&#x900A;&#x4E91;&#x5E02;&#x573A;&#xFF08;&#x4E2D;&#x56FD;&#x533A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../product-and-technologies/maximtop-open-source-im-sdk-web-version.html">
+            
+                <a href="../product-and-technologies/maximtop-open-source-im-sdk-web-version.html">
+            
+                    
+                    &#x3010;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x5F00;&#x6E90;&#x3011;IM SDK Web&#x7248;&#x5F00;&#x6E90;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html">
+            
+                <a href="../product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html">
+            
+                    
+                    SaaS&#x5B9A;&#x4EF7;&#x4E09;&#xFF1A;&#x6CA1;&#x6709;&#x90BB;&#x5C45;&#x7684;&#x4E13;&#x6709;&#x4E91;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../product-and-technologies/saas-pricing-two-monthly-private-cloud.html">
+            
+                <a href="../product-and-technologies/saas-pricing-two-monthly-private-cloud.html">
+            
+                    
+                    SaaS&#x5B9A;&#x4EF7;&#x4E8C;&#xFF1A;&#x6309;&#x6708;&#x4ED8;&#x8D39;&#x7684;&#x79C1;&#x6709;&#x4E91;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="../product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html">
+            
+                <a href="../product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html">
+            
+                    
+                    SaaS&#x5B9A;&#x4EF7;&#x4E00;&#xFF1A;&#x6BCF;&#x6708;&#xFFE5;199&#x7684; IM &#x4E91;&#x670D;&#x52A1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="../product-and-technologies/want-an-im-private-cloud-for-a-dime-an-hour.html">
+            
+                <a href="../product-and-technologies/want-an-im-private-cloud-for-a-dime-an-hour.html">
+            
+                    
+                    &#x4E00;&#x6BDB;&#x94B1;&#x4E00;&#x5C0F;&#x65F6;&#x7684; IM &#x79C1;&#x6709;&#x4E91;&#x8981;&#x5417;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.10" data-path="../product-and-technologies/generating-java-code-with-swig.html">
+            
+                <a href="../product-and-technologies/generating-java-code-with-swig.html">
+            
+                    
+                    &#x7528; SWIG &#x751F;&#x6210; Java &#x4EE3;&#x7801;&#xFF08;IM SDK&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.11" data-path="../product-and-technologies/how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.html">
+            
+                <a href="../product-and-technologies/how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.html">
+            
+                    
+                    &#x6811;&#x8393;&#x6D3E;&#x4E2D;&#x7684; IM &#x79C1;&#x6709;&#x4E91;&#x652F;&#x6301;&#x591A;&#x5C11;&#x5E76;&#x53D1;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.12" data-path="../product-and-technologies/install-an-instant-messaging-im-private-cloud-in-ten-minutes.html">
+            
+                <a href="../product-and-technologies/install-an-instant-messaging-im-private-cloud-in-ten-minutes.html">
+            
+                    
+                    &#x5341;&#x5206;&#x949F;&#x5B89;&#x88C5;&#x4E00;&#x5957;&#x5373;&#x65F6;&#x901A;&#x8BAF; IM &#x79C1;&#x6709;&#x4E91;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.13" data-path="../product-and-technologies/provide-free-senior-technical-consulting-services-during-the-epidemic.html">
+            
+                <a href="../product-and-technologies/provide-free-senior-technical-consulting-services-during-the-epidemic.html">
+            
+                    
+                    &#x75AB;&#x60C5;&#x671F;&#x95F4;&#x514D;&#x8D39;&#x63D0;&#x4F9B;&#x9AD8;&#x7EA7;&#x6280;&#x672F;&#x987E;&#x95EE;&#x670D;&#x52A1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    &#x6D3B;&#x52A8;&#x62A5;&#x5BFC;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="digital-transformation-meets-cool-locomotives-tgo-beijing-event.html">
+            
+                <a href="digital-transformation-meets-cool-locomotives-tgo-beijing-event.html">
+            
+                    
+                    &#x6570;&#x5B57;&#x5316;&#x8F6C;&#x578B;&#x9047;&#x4E0A;&#x70AB;&#x9177;&#x673A;&#x8F66; | TGO&#x5317;&#x4EAC;&#x6D3B;&#x52A8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="digital-twins-and-smart-manufacturing-in-automotive-factories.html">
+            
+                <a href="digital-twins-and-smart-manufacturing-in-automotive-factories.html">
+            
+                    
+                    &#x6C7D;&#x8F66;&#x5DE5;&#x5382;&#x91CC;&#x7684;&#x6570;&#x5B57;&#x5B6A;&#x751F;&#x4E0E;&#x667A;&#x80FD;&#x5236;&#x9020;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="ride-the-coolest-car-and-do-the-coolest-technology.html">
+            
+                <a href="ride-the-coolest-car-and-do-the-coolest-technology.html">
+            
+                    
+                    &#x9A91;&#x6700;&#x9177;&#x7684;&#x8F66;&#xFF0C;&#x505A;&#x6700;&#x9177;&#x7684;&#x6280;&#x672F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="tonight-let-us-talk-about-dongshan-kaii.html">
+            
+                <a href="tonight-let-us-talk-about-dongshan-kaii.html">
+            
+                    
+                    &#x4ECA;&#x665A;&#xFF0C;&#x6211;&#x4EEC;&#x804A;&#x804A;&#x4E1C;&#x5C71;&#x9B41;&#x5937;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="grasping-the-opportunity-of-technological-change-seeing-the-evolution-of-the-cloud-service-wave-tvp.html">
+            
+                <a href="grasping-the-opportunity-of-technological-change-seeing-the-evolution-of-the-cloud-service-wave-tvp.html">
+            
+                    
+                    &#x628A;&#x63E1;&#x6280;&#x672F;&#x53D8;&#x9769;&#x7684;&#x673A;&#x9047;&#xFF1A;&#x770B;&#x4E91;&#x670D;&#x52A1;&#x6D6A;&#x6F6E;&#x5982;&#x4F55;&#x6F14;&#x8FDB; | TVP&#x5341;&#x65E5;&#x8C08;&#x9884;&#x544A;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.html">
+            
+                <a href="from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.html">
+            
+                    
+                    &#x7F8E;&#x4FE1;&#x62D3;&#x6251;CEO&#x4E00;&#x4E50;&#xFF1A;&#x4ECE;&#x300C;&#x73A9;&#x7269;&#x4E27;&#x5FD7;&#x300D;&#x5230;&#x300C;&#x597D;&#x9AD8;&#x9A9B;&#x8FDC;&#x300D;&#xFF0C;&#x6211;&#x5728;&#x575A;&#x6301;&#x4EC0;&#x4E48;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.7" data-path="how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.html">
+            
+                <a href="how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.html">
+            
+                    
+                    &#x3010;&#x79D1;&#x521B;&#x4EBA;&#x72EC;&#x5BB6;&#x3011;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x521B;&#x59CB;&#x4EBA;&#x4E00;&#x4E50;&#xFF1A;&#x5982;&#x4F55;&#x767B;&#x5C71;&#x4E0D;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C71;&#x5CF0;&#x624D;&#x662F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本文档由 Gitbook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">&#x3010;&#x79D1;&#x521B;&#x4EBA;&#x72EC;&#x5BB6;&#x3011;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x521B;&#x59CB;&#x4EBA;&#x4E00;&#x4E50;&#xFF1A;&#x5982;&#x4F55;&#x767B;&#x5C71;&#x4E0D;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C71;&#x5CF0;&#x624D;&#x662F;</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x3010;&#x79D1;&#x521B;&#x4EBA;&#x72EC;&#x5BB6;&#x3011;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x521B;&#x59CB;&#x4EBA;&#x4E00;&#x4E50;&#xFF1A;&#x5982;&#x4F55;&#x767B;&#x5C71;&#x4E0D;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C71;&#x5CF0;&#x624D;&#x662F;">&#x3010;&#x79D1;&#x521B;&#x4EBA;&#x72EC;&#x5BB6;&#x3011;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x521B;&#x59CB;&#x4EBA;&#x4E00;&#x4E50;&#xFF1A;&#x5982;&#x4F55;&#x767B;&#x5C71;&#x4E0D;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C71;&#x5CF0;&#x624D;&#x662F;</h1>
+<p>&#x7F8E;&#x4FE1;&#x62D3;&#x6251; <em>2020-06-19 19:34</em></p>
+<blockquote>
+<p>&#x4EE5;&#x4E0B;&#x6587;&#x7AE0;&#x6765;&#x6E90;&#x4E8E;&#x79D1;&#x521B;&#x4EBA; &#xFF0C;&#x4F5C;&#x8005;babayage</p>
+<p><img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM7rv8KPVNIAB2XV52saFmnYibXPyXAIicp51joacHek6Taw/0" alt></p>
+<p><strong>&#x79D1;&#x521B;&#x4EBA;</strong>.</p>
+<p>&#x8BB0;&#x5F55;&#x79D1;&#x521B;&#x5148;&#x884C;&#x8005;&#x7684;&#x6210;&#x957F;&#x4E4B;&#x8DEF;</p>
+<p>&#x4E0E;&#x4E0A;&#x5343;&#x4F4D;&#x79D1;&#x6280;&#x521B;&#x4E1A;&#x8005;&#x5171;&#x540C;&#x5173;&#x6CE8;&#x79D1;&#x521B;&#x4EBA;&#x7684;&#x6210;&#x957F;&#x5FC3;&#x8DEF;&#x3002;</p>
+</blockquote>
+<p><img src="../../assets/articles/autogen-b6ae19203e360cb80e3078a4871a1f716a29eccb0717f7be9fcae2d1ddbd9c34.webp" alt></p>
+<p><strong>&#x2014;</strong></p>
+<p><strong>&#x6587;|</strong> babayage</p>
+<p><strong>&#x7F16;&#x8F91; |&#x7B11; &#x7B11;</strong></p>
+<p><strong>&#x201C;&#x6BCF;&#x4E00;&#x6BB5;&#x7ECF;&#x5386;&#x91CC;&#x90FD;&#x6709;&#x8BA9;&#x4EBA;&#x6E05;&#x9192;&#x7684;&#x73B0;&#x5B9E;&#xFF0C;&#x4E5F;&#x90FD;&#x6709;&#x771F;&#x5FC3;&#x7684;&#x4EA4;&#x5F80;&#x548C;&#x575A;&#x6301;&#x8FFD;&#x6C42;&#x7684;&#x7406;&#x60F3;&#xFF0C;&#x6211;&#x4E0D;&#x4F1A;&#x5FD8;&#x8BB0;&#xFF0C;&#x4E5F;&#x4F1A;&#x6C38;&#x8FDC;&#x611F;&#x6FC0;&#x3002;&#x201D;</strong></p>
+<p>&#x4E00;&#x4E50;&#xFF0C;&#x5373;&#x65F6;&#x901A;&#x8BAF; IM &#x9886;&#x57DF;&#x6280;&#x672F;&#x4E13;&#x5BB6;&#xFF0C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x521B;&#x59CB;&#x4EBA;&#xFF0C;&#x539F;&#x73AF;&#x4FE1;&#x4E91;&#x901A;&#x8BAF;&#x4E8B;&#x4E1A;&#x90E8;&#x603B;&#x7ECF;&#x7406;&#x3001;&#x9996;&#x5E2D;&#x67B6;&#x6784;&#x5E08;&#xFF0C;&#x539F;&#x65B0;&#x6D6A;&#x5FAE;&#x535A;&#x901A;&#x8BAF;&#x6280;&#x672F;&#x4E13;&#x5BB6;&#xFF0C;&#x559C;&#x6B22;&#x8DD1;&#x6B65;&#x3001;&#x9A91;&#x8F66;&#xFF0C;&#x559C;&#x6B22;Leonard Cohen&#x548C;&#x75DB;&#x82E6;&#x7684;&#x4FE1;&#x4EF0;&#x3002;IT&#x5708;&#x5185;&#x597D;&#x53CB;&#x751A;&#x591A;&#xFF0C;&#x6253;&#x78E8;&#x3001;&#x8FED;&#x4EE3;&#x4EA7;&#x54C1;&#x65F6;&#x670B;&#x53CB;&#x4EEC;&#x4E00;&#x4E2A;&#x4E2A;&#x6BD4;&#x4ED6;&#x8FD8;&#x6025;&#xFF0C;&#x201C;&#x4E1C;&#x897F;&#x5565;&#x65F6;&#x5019;&#x51FA;&#x6765;&#x5E2E;&#x4F60;&#x63A8;&#x5440;&#x201D;&#x2014;&#x2014;&#x672C;&#x6B21;&#x91C7;&#x8BBF;&#x4FBF;&#x7F18;&#x81EA;&#x4E00;&#x4F4D;&#x597D;&#x53CB;&#x7684;&#x5F15;&#x8350;&#x3002;</p>
+<h2 id="&#x9762;&#x5BF9;&#x5DE8;&#x989D;&#x4E8F;&#x635F;&#x7684;&#x80CC;&#x6C34;&#x4E00;&#x6218;"><strong>&#x9762;&#x5BF9;&#x5DE8;&#x989D;&#x4E8F;&#x635F;&#x7684;&#x80CC;&#x6C34;&#x4E00;&#x6218;</strong></h2>
+<p>&#x201C;&#x6211;&#x7684;&#x5B57;&#x5178;&#x91CC;&#x53EA;&#x6709;&#x524D;&#x8FDB;&#xFF0C;&#x575A;&#x5B9A;&#x5730;&#x5411;&#x524D;&#x3002;&#x201D;</p>
+<p>&#x4E00;&#x4E50;&#x7684;&#x521B;&#x4E1A;&#x52A8;&#x56E0;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0A;&#x6EAF;&#x81F3;&#x4ECE;&#x65B0;&#x6D6A;&#x5FAE;&#x535A;&#x51FA;&#x6765;&#x7684;&#x90A3;&#x4E00;&#x5929;&#xFF0C;&#x7528;&#x4ED6;&#x7684;&#x8BDD;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x201C;&#x544A;&#x522B;&#x5929;&#x5929;&#x5F00;&#x4F1A;&#x7684;&#x751F;&#x6D3B;&#xFF0C;&#x8981;&#x628A;&#x751F;&#x547D;&#x7528;&#x5728;&#x521B;&#x9020;&#x4EF7;&#x503C;&#x7684;&#x5730;&#x65B9;&#x201D;&#x3002;&#x4E0D;&#x8FC7;&#x771F;&#x6B63;&#x51B3;&#x5B9A;&#x521B;&#x4E1A;&#xFF0C;&#x8FD8;&#x8981;&#x4ECE;&#x4ED6;&#x625B;&#x8D77;&#x73AF;&#x4FE1; IM &#x4E8B;&#x4E1A;&#x90E8;&#x7684;&#x90A3;&#x4E00;&#x5929;&#x8BF4;&#x8D77;&#x3002;</p>
+<p>2016&#x5E74;&#xFF0C;&#x7ECF;&#x8FC7;&#x4E24;&#x5E74;&#x7684;&#x8270;&#x82E6;&#x653B;&#x5173;&#xFF0C;&#x73AF;&#x4FE1;&#x7684;&#x65B0;&#x4E00;&#x4EE3; IM &#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x7814;&#x53D1;&#x5E76;&#x7A33;&#x5B9A;&#x670D;&#x52A1;&#x5BA2;&#x6237;&#x3002;&#x4F46;&#x5BF9;&#x4E8E; IM &#x4E1A;&#x52A1;&#x5982;&#x4F55;&#x53D1;&#x5C55;&#xFF0C;&#x5374;&#x9677;&#x5165;&#x4E86;&#x4E89;&#x8BBA;&#x3002;&#x5F53;&#x65F6;&#x7684;&#x60C5;&#x51B5;&#x662F;&#xFF0C;&#x73AF;&#x4FE1;&#x867D;&#x7136;&#x81EA;2015&#x5E74;&#x5F00;&#x59CB;&#x6218;&#x7565;&#x8F6C;&#x578B;&#x5BA2;&#x670D;&#xFF0C;&#x7528;&#x6237;&#x89C4;&#x6A21;&#x505A;&#x6210;&#x4E86;&#x5E02;&#x573A;&#x7B2C;&#x4E00;&#xFF0C;&#x6536;&#x5165;&#x5374;&#x5F88;&#x4E0D;&#x6210;&#x6BD4;&#x4F8B;&#xFF0C;&#x6574;&#x4E2A;&#x516C;&#x53F8;&#x4ECD;&#x5728;&#x4E0D;&#x65AD;&#x70E7;&#x94B1;&#x3002;&#x5927;&#x90E8;&#x5206;&#x4E8F;&#x635F;&#x6765;&#x81EA;&#x4E8E; IM &#x4E1A;&#x52A1;&#xFF0C;&#x201C;IM PaaS &#x5E73;&#x53F0;&#x7A76;&#x7ADF;&#x80FD;&#x4E0D;&#x80FD;&#x8D5A;&#x94B1;&#x201D;&#x6210;&#x4E3A;&#x4E86;&#x65E0;&#x6570;&#x6B21;&#x4F1A;&#x8BAE;&#x4E89;&#x8BBA;&#x7684;&#x7126;&#x70B9;&#xFF0C;&#x6709;&#x6295;&#x8D44;&#x65B9;&#x5F00;&#x59CB;&#x5EFA;&#x8BAE;&#x5C06; IM &#x4E1A;&#x52A1;&#x51FA;&#x552E;&#x3002;</p>
+<p>&#x6700;&#x7EC8;&#x516C;&#x53F8;&#x51B3;&#x5B9A;&#x91C7;&#x53D6;&#x4E8B;&#x4E1A;&#x90E8;&#x5236;&#xFF0C;&#x5C06;&#x4E8B;&#x4E1A;&#x90E8;&#x72EC;&#x7ACB;&#x6838;&#x7B97;&#xFF0C;&#x5982;&#x679C; IM &#x505A;&#x5230;&#x76C8;&#x4E8F;&#x5E73;&#x8861;&#x5219;&#x518D;&#x72EC;&#x7ACB;&#x6210;&#x5B50;&#x516C;&#x53F8;&#x5355;&#x72EC;&#x8FD0;&#x8425;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x5219;&#x8003;&#x8651;&#x5173;&#x505C;&#x4E1A;&#x52A1;&#x3002;</p>
+<p>&#x65F6;&#x4EFB;&#x73AF;&#x4FE1;&#x6280;&#x672F;&#x603B;&#x76D1;&#x7684;&#x4E00;&#x4E50;&#x4E3B;&#x52A8;&#x8BF7;&#x7F28;&#x62C5;&#x4EFB;&#x4E91;&#x901A;&#x8BAF;&#x4E8B;&#x4E1A;&#x90E8;&#x4E00;&#x628A;&#x624B;&#xFF0C;&#x6280;&#x672F;&#x3001;&#x4E1A;&#x52A1;&#x4E00;&#x628A;&#x6293;&#x3002;&#x76F8;&#x6BD4;&#x6280;&#x672F;&#x4E13;&#x5BB6;&#x4EEC;&#x666E;&#x904D;&#x88AB;&#x52A8;&#x7684;&#x4EBA;&#x751F;&#x8F6C;&#x578B;&#xFF0C;&#x8FD9;&#x52C7;&#x6562;&#x4E00;&#x8DC3;&#x7684;&#x80CC;&#x540E;&#xFF0C;&#x6C89;&#x6DC0;&#x4E86;&#x8BF8;&#x822C;&#x601D;&#x8003;&#xFF1A;</p>
+<p>&#x201C;&#x76C8;&#x4E8F;&#x5E73;&#x8861;&#xFF0C;&#x4E0D;&#x5916;&#x4E4E;&#x4E24;&#x4EF6;&#x4E8B;&#xFF0C;&#x964D;&#x4F4E;&#x6210;&#x672C;&#x548C;&#x589E;&#x52A0;&#x6536;&#x5165;&#x3002;&#x5F88;&#x591A;&#x4EBA;&#x60F3;&#x5F53;&#x7136;&#x8BA4;&#x4E3A;&#x589E;&#x52A0;&#x6536;&#x5165;&#x4E0D;&#x786E;&#x5B9A;&#x53C8;&#x662F;&#x957F;&#x671F;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x964D;&#x4F4E;&#x6210;&#x672C;&#x5374;&#x53EF;&#x4EE5;&#x7ACB;&#x7AFF;&#x89C1;&#x5F71;&#xFF0C;&#x56E0;&#x6B64;&#x5EFA;&#x8BAE;&#x5C06;&#x91CD;&#x5FC3;&#x653E;&#x5728;&#x540E;&#x8005;&#xFF0C;&#x6211;&#x5E76;&#x4E0D;&#x8D5E;&#x540C;&#x3002;&#x56E0;&#x4E3A;<strong>&#x5F53;&#x65F6;&#x7EBF;&#x4E0A;&#x5DF2;&#x7ECF;&#x6709;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x7CFB;&#x7EDF;&#x5E76;&#x884C;&#x8FD0;&#x884C;&#xFF0C;&#x51E0;&#x5343;&#x4E07;&#x7684;&#x65E5;&#x6D3B;&#x7528;&#x6237;&#xFF0C;&#x7531;&#x4E8E;&#x957F;&#x671F;&#x7814;&#x53D1;&#x6295;&#x5165;&#x4E0D;&#x8DB3;&#xFF0C;&#x5F88;&#x591A;&#x53EF;&#x7528;&#x6027;&#x6539;&#x9020;&#x90FD;&#x6CA1;&#x6709;&#x505A;&#xFF0C;&#x7275;&#x4E00;&#x53D1;&#x52A8;&#x5168;&#x8EAB;&#xFF0C;&#x8C03;&#x6574;&#x56E2;&#x961F;&#x6216;&#x8005;&#x670D;&#x52A1;&#x90FD;&#x4F1A;&#x5BF9;&#x670D;&#x52A1;&#x8D28;&#x91CF;&#x4EA7;&#x751F;&#x5DE8;&#x5927;&#x5F71;&#x54CD;&#xFF1B;&#x800C;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#x8001;&#x5316;&#xFF0C;&#x52A0;&#x4E0A;&#x9500;&#x552E;&#x60EF;&#x6027;&#x4F7F;&#x7136;&#xFF0C;&#x589E;&#x52A0;&#x6536;&#x5165;&#x65B9;&#x9762;&#x53CD;&#x800C;&#x6709;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x7A7A;&#x95F4;</strong>&#x3002;&#x6211;&#x76F8;&#x4FE1;&#x81EA;&#x5DF1;&#x7684;&#x9009;&#x62E9;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x4E5F;&#x4E0D;&#x5E0C;&#x671B;&#x56E0;&#x4E3A;&#x9000;&#x7F29;&#x8BA9;&#x4E1A;&#x52A1;&#x8D70;&#x5230;&#x66F4;&#x5371;&#x9669;&#x7684;&#x9053;&#x8DEF;&#x4E0A;&#x53BB;&#xFF0C;&#x4E8E;&#x662F;&#x7ECF;&#x8FC7;&#x4E00;&#x756A;&#x6743;&#x8861;&#x5206;&#x6790;&#xFF0C;&#x63A5;&#x4E0B;&#x4E86;&#x8FD9;&#x770B;&#x4F3C;&#x4E0D;&#x53EF;&#x80FD;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x201D;</p>
+<p>&#x6700;&#x7EC8;&#xFF0C;&#x4E00;&#x4E50;&#x6210;&#x4E3A;&#x73AF;&#x4FE1;&#x4E91;&#x901A;&#x8BAF;&#x4E8B;&#x4E1A;&#x90E8;&#x603B;&#x7ECF;&#x7406;&#xFF0C;&#x76EE;&#x6807;&#x662F;&#x4E00;&#x5E74;&#x5185;&#x5C06; IM &#x4E1A;&#x52A1;&#x505A;&#x5230;&#x76C8;&#x4E8F;&#x5E73;&#x8861;&#xFF0C;&#x5982;&#x679C;&#x80FD;&#x5076;&#x505A;&#x6210;&#xFF0C;&#x4E8B;&#x4E1A;&#x90E8;&#x5C06;&#x72EC;&#x7ACB;&#x62C6;&#x5206;&#xFF0C;&#x6210;&#x7ACB;&#x5B50;&#x516C;&#x53F8;&#x5355;&#x72EC;&#x8FD0;&#x8425;&#x3002;</p>
+<p>&#x8FD9;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x6B21;&#x5BF9;&#x8D4C;&#xFF0C;&#x505A;&#x4E0D;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x4E0D;&#x8A00;&#x800C;&#x55BB;&#x3002;&#x770B;&#x4F3C;&#x5E73;&#x5E38;&#x7684;&#x8C03;&#x6574;&#x4E4B;&#x4E0B;&#x6697;&#x6D41;&#x6D8C;&#x52A8;&#xFF0C;<strong>&#x4E91;&#x901A;&#x8BAF;&#x4E8B;&#x4E1A;&#x90E8;&#x5F53;&#x65F6;&#x6240;&#x9762;&#x4E34;&#x7684;&#x5916;&#x90E8;&#x6311;&#x6218;&#x4E0D;&#x5BB9;&#x4E50;&#x89C2;&#xFF1A;&#x884C;&#x4E1A;&#x6559;&#x80B2;&#x4E86;&#x4E24;&#x5E74;&#x591A;&#xFF0C;&#x6536;&#x5165;&#x589E;&#x957F;&#x4F9D;&#x65E7;&#x4E4F;&#x529B;&#xFF0C;&#x4E0E;&#x5BF9;&#x624B;&#x7684;&#x7ADE;&#x4E89;&#x4E5F;&#x8FDB;&#x5165;&#x5173;&#x952E;&#x9636;&#x6BB5;&#x3002;</strong></p>
+<h2 id="&#x4F01;&#x4E1A;&#x670D;&#x52A1;&#x6A21;&#x5F0F;&#x7684;&#x5927;&#x8F6C;&#x6298;"><strong>&#x4F01;&#x4E1A;&#x670D;&#x52A1;&#x6A21;&#x5F0F;&#x7684;&#x5927;&#x8F6C;&#x6298;</strong></h2>
+<p><strong>&#x201C;&#x4F01;&#x4E1A;&#x670D;&#x52A1;&#x5982;&#x679C;&#x6709;&#x4EF7;&#x503C;&#xFF0C;&#x5C31;&#x8981;&#x4ECE;&#x670D;&#x52A1;&#x672C;&#x8EAB;&#x6536;&#x8D39;&#xFF0C;&#x6CA1;&#x6709;&#x4EF7;&#x503C;&#x5C31;&#x4E0D;&#x8981;&#x670D;&#x52A1;&#x3002;&#x201D;</strong></p>
+<p>&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#x6210;&#x4E3A;&#x4E00;&#x4E50;&#x9996;&#x5148;&#x4E0B;&#x624B;&#x7684;&#x75C5;&#x7076;&#xFF0C;&#x7ECF;&#x8FC7;&#x5206;&#x6790;&#x548C;&#x6DF1;&#x5165;&#x8BA8;&#x8BBA;&#xFF0C;&#x4ED6;&#x4EEC;&#x9996;&#x5148;&#x6539;&#x6389;&#x4E86;&#x4E4B;&#x524D;&#x4EE5;&#x201C;&#x514D;&#x8D39;&#x5E26;&#x6765;&#x7528;&#x6237;&#x6570;&#x636E;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x53D8;&#x73B0;&#x201D;&#x7684;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#xFF0C;&#x91C7;&#x53D6;&#x4E86; &#x201C;&#x670D;&#x52A1;&#x5373;&#x6536;&#x8D39;&#x201D;&#x7684;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x8FD9;&#x4E0D;&#x662F;&#x62CD;&#x8111;&#x95E8;&#x7684;&#x51B3;&#x5B9A;&#xFF0C;&#x800C;&#x662F;&#x57FA;&#x4E8E;&#x5BF9;&#x79EF;&#x7D2F;&#x5BA2;&#x6237;&#x4E0E;&#x6570;&#x636E;&#x7684;&#x6DF1;&#x5EA6;&#x5206;&#x6790;&#x800C;&#x5F97;&#x51FA;&#x7684;&#x7ED3;&#x8BBA;&#x3002;</p>
+<p>&#x539F;&#x5148;&#x7684;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x201C;30&#x4E07;&#x65E5;&#x6D3B;&#x4EE5;&#x4E0B;&#x7528;&#x6237;&#x514D;&#x8D39;&#x201D;&#xFF0C;&#x4F46;&#x6574;&#x4E2A;&#x5E73;&#x53F0;&#x5341;&#x51E0;&#x4E07;&#x4F01;&#x4E1A;&#xFF0C;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x91CF;&#x7EA7;&#x7684;&#x51E4;&#x6BDB;&#x9E9F;&#x89D2;&#xFF0C;&#x80FD;&#x6536;&#x4E0A;&#x6765;&#x7684;&#x8D39;&#x7528;&#x4E5F;&#x662F;&#x676F;&#x6C34;&#x8F66;&#x85AA;&#x3002;&#x5927;&#x91CF;&#x5BA2;&#x6237;&#x867D;&#x7136;&#x65E5;&#x6D3B;&#x4E0D;&#x9AD8;&#xFF0C;&#x5374;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x652F;&#x4ED8;&#x80FD;&#x529B;&#x548C;&#x610F;&#x613F;&#xFF0C;&#x53EF;&#x4EE5;&#x6210;&#x4E3A;&#x4F01;&#x4E1A;&#x6536;&#x5165;&#x65B0;&#x7684;&#x589E;&#x957F;&#x6765;&#x6E90;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x8C03;&#x6574;&#x5F53;&#x7136;&#x6709;&#x5DE8;&#x5927;&#x7684;&#x98CE;&#x9669;&#xFF0C;&#x5F00;&#x59CB;&#x6536;&#x8D39;&#xFF0C;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x7740;&#x5BA2;&#x6237;&#x4E00;&#x5B9A;&#x4F1A;&#x9009;&#x62E9;&#x4ED8;&#x8D39;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E5F;&#x5F88;&#x53EF;&#x80FD;&#x6539;&#x6295;&#x522B;&#x5BB6;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E00;&#x98CE;&#x9669;&#x7684;&#x62C5;&#x5FE7;&#x5728;&#x73AF;&#x4FE1;&#x5185;&#x90E8;&#x9010;&#x6E10;&#x53D1;&#x9175;&#xFF0C;&#x5E76;&#x8F6C;&#x5316;&#x4E3A;&#x6765;&#x81EA;&#x9500;&#x552E;&#x56E2;&#x961F;&#x7684;&#x538B;&#x529B;&#xFF0C;&#x201C;&#x670D;&#x52A1;&#x5230;&#x5E95;&#x503C;&#x4E0D;&#x503C;&#x90A3;&#x4E48;&#x591A;&#x94B1;&#xFF1F;&#x201D;&#x5F88;&#x591A;&#x9500;&#x552E;&#x4EBA;&#x5458;&#x62C5;&#x5FE7;&#x91CD;&#x91CD;&#xFF0C;&#x201C;&#x6536;&#x8D39;&#x518D;&#x4F4E;&#x4E5F;&#x6709;&#x4E1A;&#x7EE9;&#x548C;&#x63D0;&#x6210;&#xFF0C;&#x5982;&#x679C;&#x6536;&#x8D39;&#x592A;&#x9AD8;&#x5BA2;&#x6237;&#x6D41;&#x5931;&#xFF0C;&#x90A3;&#x5C31;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x4E86;&#x3002;&#x201D;</p>
+<p>&#x4E00;&#x4E50;&#x6CA1;&#x6709;&#x72B9;&#x8C6B;&#xFF0C;&#x4EB2;&#x81EA;&#x4E0E;&#x9500;&#x552E;&#x6C9F;&#x901A;&#xFF0C;&#x5E76;&#x76F4;&#x63A5;&#x53C2;&#x4E0E;&#x5230;&#x5927;&#x5BA2;&#x6237;&#x8C08;&#x5224;&#x4E2D;&#x53BB;&#xFF0C;&#x6700;&#x540E;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x591A;&#x4E2A;TOP&#x7EA7;&#x5BA2;&#x6237;&#x7684;&#x7B7E;&#x5355;&#x548C;&#x7EED;&#x7EA6;&#x3002;</p>
+<p>&#x201C;&#x5176;&#x5B9E;&#x4E3B;&#x8981;&#x662F;&#x89E3;&#x91CA;&#xFF0C;&#x89E3;&#x91CA;&#x6210;&#x672C;&#x538B;&#x529B;&#x548C;&#x5B9A;&#x4EF7;&#x903B;&#x8F91;&#xFF0C;&#x8BA9;&#x5BA2;&#x6237;&#x76F8;&#x4FE1;&#x4ED6;&#x4EEC;&#x6CA1;&#x6709;&#x88AB;&#x5E73;&#x53F0;&#x7ED1;&#x67B6;&#x3002;&#x5F53;&#x4ED6;&#x4EEC;&#x610F;&#x8BC6;&#x5230;&#x662F;&#x5728;&#x8DDF;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x62EF;&#x6551;&#x8FD9;&#x4E2A;&#x5E73;&#x53F0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F88;&#x591A;&#x5BA2;&#x6237;&#x8FD8;&#x662F;&#x5F88;&#x901A;&#x60C5;&#x8FBE;&#x7406;&#x7684;&#x3002;&#x201D;</p>
+<p>&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x4E00;&#x5E74;&#x8FC7;&#x540E;&#xFF0C;&#x4E00;&#x4E50;&#x4EA4;&#x51FA;&#x4E86;&#x7B54;&#x5377;&#xFF1A;&#x4E91;&#x901A;&#x8BAF;&#x4E8B;&#x4E1A;&#x90E8;&#x6210;&#x529F;&#x6B62;&#x635F;&#xFF0C;&#x8FBE;&#x5230;&#x5F53;&#x6708;&#x76C8;&#x4E8F;&#x5E73;&#x8861;&#x3002;</p>
+<p>&#x4E00;&#x4E50;&#x7684;&#x4F01;&#x4E1A;&#x670D;&#x52A1;&#x5FC3;&#x5F97;</p>
+<ol>
+<li>To B &#x4E0D;&#x662F;To C&#xFF0C;&#x7528;&#x6237;&#x5E26;&#x6765;&#x7684;&#x6210;&#x672C;&#x8FDC;&#x9AD8;&#x4E8E;&#x5176;&#x6570;&#x636E;&#x4EF7;&#x503C;&#xFF0C;&#x670D;&#x52A1;&#x672C;&#x8EAB;&#x5FC5;&#x987B;&#x8D5A;&#x94B1;&#x3002;</li>
+<li>&#x5B9A;&#x4EF7;&#x5373;&#x7ECF;&#x8425;&#xFF0C;&#x901A;&#x8FC7;&#x5B9A;&#x4EF7;&#x8FC7;&#x6EE4;&#x4E0D;&#x5408;&#x9002;&#x7684;&#x5BA2;&#x6237;&#x3002;&#x6709;&#x7684;&#x4F01;&#x4E1A;&#x5BA2;&#x6237;&#x672C;&#x8EAB;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#x4E5F;&#x4E0D;&#x6E05;&#x6670;&#xFF0C;&#x5728;&#x514D;&#x8D39;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x7684;&#x65E0;&#x6548;&#x8FD0;&#x8425;&#x4F1A;&#x6781;&#x5927;&#x6D6A;&#x8D39;&#x5E73;&#x53F0;&#x8D44;&#x6E90;&#x3002;</li>
+<li>&#x5B9A;&#x4EF7;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x7BA1;&#x7406;&#x5BA2;&#x6237;&#x7684;&#x670D;&#x52A1;&#x9884;&#x671F;&#x3002;&#x4EF7;&#x683C;&#x80FD;&#x591F;&#x6307;&#x5BFC;&#x5BA2;&#x6237;&#x5EFA;&#x7ACB;&#x5BF9;&#x670D;&#x52A1;&#x7684;&#x9884;&#x671F;&#xFF0C;1&#x4E07;&#x5757;&#x662F;&#x4EC0;&#x4E48;&#x670D;&#x52A1;&#xFF0C;10&#x4E07;&#x5757;&#x662F;&#x4EC0;&#x4E48;&#x670D;&#x52A1;&#xFF0C;&#x6709;&#x4EF7;&#x683C;&#x610F;&#x5473;&#x7740;&#x6709;&#x8FB9;&#x754C;&#x3002;&#x514D;&#x8D39;&#x76F8;&#x5F53;&#x4E8E;&#x6253;&#x7834;&#x4E86;&#x8FD9;&#x4E00;&#x8FB9;&#x754C;&#xFF0C;&#x7528;&#x6237;&#x4F1A;&#x89C9;&#x5F97;&#x4F60;&#x8981;&#x63D0;&#x4F9B;&#x65E0;&#x9650;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x670D;&#x52A1;&#x6210;&#x672C;&#x53CD;&#x800C;&#x4F1A;&#x5F88;&#x9AD8;&#x3002;</li>
+<li>&#x7EC4;&#x7EC7;&#x67B6;&#x6784;&#x8C03;&#x6574;&#x8981;&#x4E3A;&#x6218;&#x7565;&#x76EE;&#x6807;&#x670D;&#x52A1;&#x3002;&#x4E8B;&#x4E1A;&#x90E8;&#x62C6;&#x5206;&#xFF0C;&#x9500;&#x552E;&#x90E8;&#x95E8;&#x5374;&#x6CA1;&#x6709;&#x62C6;&#x5206;&#xFF0C;&#x751A;&#x81F3;&#x4E0D;&#x627F;&#x62C5;&#x8425;&#x6536;&#x5E73;&#x8861;&#x76EE;&#x6807;&#xFF0C;&#x6267;&#x884C;&#x65F6;&#x4F1A;&#x9020;&#x6210;&#x5927;&#x91CF;&#x6469;&#x64E6;&#x3002;</li>
+</ol>
+<p>&#x7136;&#x800C;&#xFF0C;<strong>&#x6210;&#x5E74;&#x4EBA;&#x7684;&#x4E16;&#x754C;&#x91CC;&#xFF0C;&#x201C;&#x6210;&#x679C;&#x201D;&#x4E0E;&#x201C;&#x7ED3;&#x679C;&#x201D;&#x662F;&#x4E24;&#x4E2A;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x8BCD;&#x6C47;&#x3002;</strong></p>
+<p>&#x4E8B;&#x60C5;&#x7684;&#x8D70;&#x5411;&#x4E0E;&#x9884;&#x671F;&#x622A;&#x7136;&#x76F8;&#x53CD;&#xFF0C;&#x540C;&#x671F;&#x62C6;&#x5206;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4E8B;&#x4E1A;&#x90E8;&#x4E8F;&#x635F;&#x6269;&#x5927;&#xFF0C;&#x4E91;&#x901A;&#x8BAF;&#x4E8B;&#x4E1A;&#x90E8;&#x4ECE;&#x516C;&#x53F8;&#x7684;&#x8D1F;&#x62C5;&#x53D8;&#x6210;&#x7EDD;&#x5BF9;&#x7684;&#x4F18;&#x8D28;&#x8D44;&#x4EA7;&#xFF0C;&#x8FDB;&#x4E00;&#x6B65;&#x62C6;&#x5206;&#x7684;&#x627F;&#x8BFA;&#x5DF2;&#x65E0;&#x6CD5;&#x5151;&#x73B0;&#x3002;</p>
+<p>&#x4E00;&#x4E50;&#x9012;&#x4E0A;&#x4E86;&#x8F9E;&#x804C;&#x4FE1;&#xFF0C;&#x4E0E;&#x4E00;&#x8D77;&#x594B;&#x6597;&#x8FC7;&#x7684;&#x540C;&#x4E8B;&#x4EEC;&#x9053;&#x522B;&#xFF0C;&#x79BB;&#x5F00;&#x4E86;&#x73AF;&#x4FE1;&#x3002;&#x867D;&#x7136;&#x6CA1;&#x6709;&#x7ADE;&#x4E1A;&#x534F;&#x8BAE;&#x3001;&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#x65B9;&#x5411;&#x6CA1;&#x6709;&#x9650;&#x5236;&#xFF0C;2018&#x5E74;&#x7684;&#x4E00;&#x4E50;&#x5374;&#x53E6;&#x6709;&#x6253;&#x7B97;&#x3002;</p>
+<p>&#x5341;&#x591A;&#x5E74;&#x7684;&#x5373;&#x65F6;&#x901A;&#x8BAF; IM &#x7ECF;&#x9A8C;&#xFF0C;&#x5728;&#x73AF;&#x4FE1;&#x7684;&#x7CBE;&#x5F69;&#x4E00;&#x6218;&#x4EE5;&#x53CA;&#x597D;&#x53CB;&#x4EEC;&#x7684;&#x5E2E;&#x52A9;&#xFF0C;&#x7ED9;&#x4E00;&#x4E50;&#x5E26;&#x6765;&#x4E86;&#x8BF8;&#x591A;&#x673A;&#x4F1A;&#x3002;<strong>&#x5F53;&#x65F6;&#x6446;&#x5728;&#x4ED6;&#x9762;&#x524D;&#x7684;&#x51E0;&#x4E2A;&#x9009;&#x62E9;&#xFF0C;&#x4E00;&#x4E2A;&#x6BD4;&#x4E00;&#x4E2A;&#x98CE;&#x53E3;&#xFF1A;&#x6D41;&#x91CF;&#x53D8;&#x73B0;&#x4E4B;&#x738B;&#x4E92;&#x8054;&#x7F51;&#x5E7F;&#x544A;&#x4E1A;&#x52A1;&#x3001;&#x7BA1;&#x5236;&#x524D;&#x7684;&#x4E92;&#x8054;&#x7F51;&#x91D1;&#x878D;&#x4F01;&#x4E1A;&#xFF0C;&#x4EE5;&#x53CA;&#x6570;&#x5B57;&#x8D27;&#x5E01;&#x70ED;&#x6F6E;&#x4E0B;&#x7684;&#x533A;&#x5757;&#x94FE;&#x884C;&#x4E1A;&#x3002;</strong></p>
+<p>&#x6240;&#x6709;&#x4E1A;&#x52A1;&#x90FD;&#x6BD4;&#x505A; IM &#x4E91;&#x670D;&#x52A1;&#x66F4;&#x8D5A;&#x94B1;&#xFF0C;&#x201C;&#x6CA1;&#x5FC3;&#x52A8;&#x8FC7;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x7684;&#x201D;&#xFF0C;&#x4E00;&#x4E50;&#x611F;&#x6168;&#x9053;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x201C;&#x94B1;&#x201D;&#x5374;&#x5E76;&#x4E0D;&#x662F;&#x505A;&#x9009;&#x62E9;&#x7684;&#x552F;&#x4E00;&#x6807;&#x51C6;&#x3002;</p>
+<p>&#x201C;&#x94B1;&#x5F53;&#x7136;&#x91CD;&#x8981;&#xFF0C;&#x4F46;&#x6211;&#x8FD8;&#x662F;&#x4E0D;&#x559C;&#x6B22;&#x90A3;&#x79CD;&#x2018;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x5B89;&#x7A33;&#x505A;&#x597D;&#x5C31;&#x884C;&#x2019;&#x7684;&#x751F;&#x6D3B;&#xFF0C;&#x6CA1;&#x6709;&#x6311;&#x6218;&#xFF0C;&#x4E0D;&#x523A;&#x6FC0;&#x3002;&#x6211;&#x5E0C;&#x671B;&#x505A;&#x4E00;&#x4E9B;&#x53EA;&#x6709;&#x6211;&#x80FD;&#x505A;&#x7684;&#x4E8B;&#xFF0C;&#x5E0C;&#x671B;&#x751F;&#x6D3B;&#x91CC;&#x7684;&#x6BCF;&#x4E00;&#x5929;&#x90FD;&#x5BF9;&#x81EA;&#x5DF1;&#x5F88;&#x6EE1;&#x610F;&#x3002;<strong>&#x8FD9;&#x6837;&#x9009;&#x62E9;&#xFF0C;&#x8DEF;&#x53EF;&#x80FD;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x96BE;&#xFF0C;&#x4F46;&#x4EBA;&#x751F;&#x5C31;&#x50CF;&#x767B;&#x5C71;&#xFF0C;&#x5982;&#x4F55;&#x767B;&#x5C71;&#x4E0D;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C71;&#x5CF0;&#x624D;&#x662F;&#x3002;&#x201D;</strong></p>
+<p><img src="../../assets/articles/autogen-f46b044706445abfed7c32335696c765092c83ada7ed4773bc5c48c9e543dfe0.webp" alt></p>
+<p>&#x201C;&#x6211;&#x7684;&#x5C71;&#xFF0C;&#x5C31;&#x662F;&#x8BA9;App&#x90FD;&#x7528;&#x4E0A;&#x6700;&#x597D;&#x7684; IM &#x6280;&#x672F;&#x5427;&#x3002;&#x201D;</p>
+<p>&#x4E8E;&#x662F;&#x4ED6;&#x5A49;&#x62D2;&#x4E86;&#x70ED;&#x60C5;&#x9080;&#x8BF7;&#xFF0C;&#x5168;&#x5FC3;&#x6295;&#x5165;&#x4E8E;&#x533A;&#x5757;&#x94FE;&#x6280;&#x672F;&#x7684;&#x7814;&#x7A76;&#xFF0C;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;&#x80FD;&#x591F;&#x652F;&#x6491;&#x5927;&#x89C4;&#x6A21; IM &#x670D;&#x52A1;&#x7684;&#x901A;&#x8BAF;&#x516C;&#x94FE;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x901A;&#x8BAF;&#x516C;&#x94FE;&#xFF0C;&#x8BA9; IM &#x8DD1;&#x5728;&#x4E00;&#x4E2A;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x7F51;&#x7EDC;&#x91CC;&#xFF0C;&#x4E3A;&#x6240;&#x6709;&#x7528;&#x6237;&#x548C;&#x5E94;&#x7528;&#x63D0;&#x4F9B;&#x516C;&#x5171;&#x7684;&#x3001;&#x4E0D;&#x53D7;&#x63A7;&#x5236;&#x7684; IM &#x80FD;&#x529B;&#x3002;</p>
+<p><strong>&#x9009;&#x62E9;&#x5F53;&#x524D;&#xFF0C;&#x624D;&#x80FD;&#x4E86;&#x89E3;&#x5FC3;&#x5E95;&#x7684;&#x70ED;&#x7231;&#x2014;&#x2014;&#x4F46;&#x4F60;&#x70ED;&#x7231;&#x7684;&#xFF0C;&#x672A;&#x5FC5;&#x80FD;&#x6210;&#x4E3A;&#x4F60;&#x7684;&#x9009;&#x62E9;&#x3002;</strong></p>
+<p>2018&#x5E74;&#xFF0C;&#x751F;&#x6D3B;&#x8DDF;&#x4E00;&#x4E50;&#x5F00;&#x4E86;&#x4E2A;&#x73A9;&#x7B11;&#xFF0C;&#x5F53;&#x4ED6;&#x201C;&#x5DEE;&#x4E0D;&#x591A;&#x628A;&#x9EC4;&#x76AE;&#x4E66;&#x90FD;&#x5199;&#x51FA;&#x6765;&#x4E86;&#x201D;&#xFF0C;&#x533A;&#x5757;&#x94FE;&#x884C;&#x4E1A;&#x5374;&#x53D1;&#x751F;&#x4E86;&#x7FFB;&#x5929;&#x8986;&#x5730;&#x7684;&#x53D8;&#x5316;&#xFF1A;&#x653F;&#x7B56;&#x7684;&#x6781;&#x5927;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x4EE5;&#x53CA;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x5E02;&#x573A;&#x7684;&#x4E00;&#x8DEF;&#x72C2;&#x8DCC;&#xFF0C;&#x8BA9;&#x9879;&#x76EE;&#x7684;&#x610F;&#x5411;&#x6295;&#x8D44;&#x65B9;&#x90FD;&#x4E0D;&#x5F97;&#x4E0D;&#x6536;&#x7F29;&#x6218;&#x7EBF;&#x2026;&#x2026;</p>
+<p>&#x4E00;&#x4E50;&#x63E1;&#x7740;&#x521A;&#x51FA;&#x7089;&#x7684;&#x9EC4;&#x76AE;&#x4E66;&#xFF0C;&#x4ED7;&#x5251;&#x56DB;&#x987E;&#xFF0C;&#x53F9;&#x606F;&#x65F6;&#x4E0D;&#x6211;&#x4E0E;&#x3002;</p>
+<p>&#x6709;&#x610F;&#x601D;&#x7684;&#x662F;&#xFF0C;&#x4E4B;&#x524D;&#x65E0;&#x5FC3;&#x63D2;&#x67F3;&#x7684;&#x4E00;&#x6B21;&#x5408;&#x4F5C;&#x53CD;&#x800C;&#x786E;&#x5B9A;&#x4E0B;&#x6765;&#x3002;&#x6700;&#x7EC8;&#xFF0C;&#x6765;&#x81EA;&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x7684;&#x5408;&#x540C;&#x786E;&#x5B9A;&#xFF0C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x4E5F;&#x6B63;&#x5F0F;&#x542F;&#x52A8;&#xFF0C;&#x56DE;&#x5F52; IM &#x4F01;&#x4E1A;&#x670D;&#x52A1;&#x5E02;&#x573A;&#x3002;</p>
+<h2 id="&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x7684;&#x5F00;&#x59CB;"><strong>&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x7684;&#x5F00;&#x59CB;</strong></h2>
+<p>2018&#x5E74;8&#x6708;&#xFF0C;&#x9524;&#x5B50;&#x79D1;&#x6280;&#x590F;&#x5B63;&#x53D1;&#x5E03;&#x4F1A;&#x5F53;&#x5929;&#xFF0C;&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x6B63;&#x5F0F;&#x5F00;&#x653E;&#x4E0B;&#x8F7D;&#xFF0C;&#x4EC5;&#x4EC5;&#x7528;&#x4E86;&#x4E24;&#x5929;&#x65F6;&#x95F4;&#xFF0C;&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x5C31;&#x51B2;&#x5230;&#x4E86;App Store&#x793E;&#x4EA4;&#x699C;&#x699C;&#x9996;&#xFF0C;&#x4E0A;&#x7EBF;7&#x5929;&#x4FBF;&#x5B8C;&#x6210;&#x7B2C;&#x4E00;&#x8F6E;1.5&#x4EBF;&#x5143;&#x878D;&#x8D44;&#x3002;</p>
+<p>&#x65E9;&#x5728;&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x7ACB;&#x9879;&#x4E4B;&#x521D;&#xFF0C;&#x9524;&#x79D1;&#x4FBF;&#x5411;&#x4E00;&#x4E50;&#x629B;&#x51FA;&#x4E86;&#x6A44;&#x6984;&#x679D;&#xFF0C;&#x4E0D;&#x8FC7;&#x5408;&#x4F5C;&#x5E76;&#x6CA1;&#x6709;&#x5B9E;&#x8D28;&#x6027;&#x7684;&#x8FDB;&#x5C55;&#x3002;&#x76F4;&#x5230; 8&#x6708;&#x518D;&#x6B21;&#x89C1;&#x9762;&#xFF0C;&#x624D;&#x786E;&#x8BA4;&#x5168;&#x65B0;&#x7814;&#x53D1;&#x4E00;&#x6B3E;&#x80FD;&#x627F;&#x8F7D;&#x5343;&#x4E07;&#x7528;&#x6237;&#x540C;&#x65F6;&#x5728;&#x7EBF;&#x7684; IM &#x7CFB;&#x7EDF;&#x3002;<strong>&#x8FD9;&#x4E2A;&#x4EA7;&#x54C1;&#x7684;&#x6280;&#x672F;&#x96BE;&#x70B9;&#x5728;&#x4E8E;&#xFF0C;&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x4EE5;&#x627F;&#x8F7D;&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x672A;&#x6765;&#x7684;&#x4EA7;&#x54C1;&#x89C4;&#x5212;&#x3002;</strong></p>
+<p>&#x201C;&#x7F57;&#x8001;&#x5E08;&#x5728;&#x4EA7;&#x54C1;&#x4E0A;&#x7684;&#x60F3;&#x6CD5;&#x5F88;&#x591A;&#xFF0C;&#x4F46;&#x6211;&#x4E4B;&#x524D;&#x505A;&#x8FC7;&#x516C;&#x6709;&#x4E91;&#xFF0C;&#x51E0;&#x5341;&#x4E07;&#x5BB6;&#x4F01;&#x4E1A;&#x7684;&#x4E1A;&#x52A1;&#x90FD;&#x8DD1;&#x5728;&#x4E0A;&#x9762;&#xFF0C;&#x5404;&#x79CD;&#x9700;&#x6C42;&#x90FD;&#x63A5;&#x89E6;&#x8FC7;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x62C5;&#x5FC3;&#x4EA4;&#x4ED8;&#x95EE;&#x9898;&#x3002;&#x201D;</p>
+<p>&#x5728;&#x5B50;&#x5F39;&#x77ED;&#x4FE1;&#x548C;&#x53E6;&#x4E00;&#x5BB6;&#x5927;&#x5BA2;&#x6237;&#x7684;&#x8BA2;&#x5355;&#x652F;&#x6301;&#x4E0B;&#xFF0C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x5168;&#x529B;&#x8FD0;&#x8F6C;&#xFF0C;&#x4E00;&#x9762;&#x4E3A;&#x5BA2;&#x6237;&#x5B9A;&#x5236;&#xFF0C;&#x4E00;&#x8FB9;&#x5B9E;&#x73B0;&#x7740;&#x4E00;&#x4E50;&#x5FC3;&#x4E2D;&#x7684;&#x65B0;&#x4E00;&#x4EE3; IM &#x4EA7;&#x54C1;&#xFF1A;<strong>&#x4E00;&#x6B3E;&#x80FD;&#x591F;&#x8BA9;&#x5C0F;&#x5FAE;&#x5BA2;&#x6237;&#x4ED8;&#x51FA;&#x6781;&#x4F4E;&#x6210;&#x672C;&#x5C31;&#x80FD;&#x4EAB;&#x53D7;&#x5230;&#x7684;&#x5546;&#x7528;&#x7EA7; IM &#x670D;&#x52A1;&#x7684;&#x4EA7;&#x54C1;&#x3002;</strong></p>
+<p>&#x5C3D;&#x7BA1;&#x4E24;&#x4EFD;&#x65E9;&#x671F;&#x8BA2;&#x5355;&#x90FD;&#x9677;&#x5165;&#x4E86;&#x5C3E;&#x6B3E;&#x9EBB;&#x70E6;&#x2014;&#x2014;&#x4E00;&#x4E50;&#x4E5F;&#x6210;&#x4E3A;&#x4E86;&#x201C;&#x8001;&#x7F57;&#x7684;&#x503A;&#x4E3B;&#x201D;&#x4E4B;&#x4E00;&#xFF0C;&#x4F46;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x7684; IM &#x4E91;&#x4EA7;&#x54C1;&#x987A;&#x5229;&#x964D;&#x751F;&#x3002;</p>
+<h2 id="&#x8BA9;app&#x7528;&#x4E0A;&#x6700;&#x597D;&#x7684;-im-&#x6280;&#x672F;"><strong>&#x8BA9;App&#x7528;&#x4E0A;&#x6700;&#x597D;&#x7684; IM &#x6280;&#x672F;</strong></h2>
+<p>&#x5728;&#x4E00;&#x4E50;&#x8FD1;&#x4E4E;&#x504F;&#x6267;&#x5730;&#x5B8C;&#x7F8E;&#x6253;&#x78E8;&#x4E0B;&#xFF08;&#x4EE3;&#x4EF7;&#x662F;&#x4E00;&#x518D;&#x5EF6;&#x671F;&#xFF09;&#xFF0C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x7684; IM &#x4EA7;&#x54C1;&#x5728;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x548C;&#x4F7F;&#x7528;&#x6210;&#x672C;&#x4E0A;&#x8FBE;&#x5230;&#x4E86;&#x6740;&#x624B;&#x7EA7;&#xFF1A;<strong>&#x51E0;&#x4E4E;&#x4E0D;&#x61C2;&#x6280;&#x672F;&#x7684;&#x9500;&#x552E;&#x4EBA;&#x5458;&#xFF0C;&#x4EC5;&#x9700;15&#x5206;&#x949F;&#x4FBF;&#x80FD;&#x5B8C;&#x6210;&#x7F8E;&#x4FE1;&#x62D3;&#x6251; IM &#x79C1;&#x6709;&#x4E91;&#x7684;&#x90E8;&#x7F72;&#xFF0C;&#x5BF9;&#x6BD4;&#x4E4B;&#x4E0B;&#xFF0C;&#x67D0;&#x6B3E;&#x7ADE;&#x54C1;&#x9700;&#x8981;5&#x4EBA;&#x4EE5;&#x4E0A;&#x7684;&#x56E2;&#x961F;&#x6D88;&#x8017;&#x4E00;&#x5468;&#x4EE5;&#x4E0A;&#x7684;&#x65F6;&#x95F4;&#xFF1B;&#x4EF7;&#x683C;&#x65B9;&#x9762;&#xFF0C;&#x5E02;&#x9762;&#x79C1;&#x6709;&#x90E8;&#x7F72;&#x7C7B;&#x4EA7;&#x54C1;&#x666E;&#x904D;&#x5B9A;&#x4EF7;20&#x4E07;&#x5143;&#x4EE5;&#x4E0A;&#xFF0C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x53EA;&#x9700;2-3&#x4E07;&#x7684;&#x5E74;&#x8D39;&#xFF0C;&#x751A;&#x81F3;&#x652F;&#x6301;&#x6309;&#x6708;&#x4ED8;&#x8D39;&#xFF0C;&#x5BF9;&#x4E8E;&#x8BD5;&#x9A8C;&#x6027;&#x9879;&#x76EE;&#x800C;&#x8A00;&#x6210;&#x672C;&#x964D;&#x4F4E;&#x5230;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x4E0D;&#x8BA1;&#x3002;</strong></p>
+<p>&#x201C;&#x4EF7;&#x683C;&#x81EA;&#x5DF1;&#x4F1A;&#x8BF4;&#x8BDD;&#x3002;&#x201D;</p>
+<p>&#x4E00;&#x4E50;&#x5BF9;&#x4E8E;&#x201C; IM &#x4E91;&#x670D;&#x52A1;&#x7A76;&#x7ADF;&#x5E94;&#x5F53;&#x670D;&#x52A1;&#x8C01;&#x201D;&#x6709;&#x7740;&#x6DF1;&#x523B;&#x7684;&#x601D;&#x8003;&#xFF0C;&#x8FC7;&#x5F80;&#x7ECF;&#x5386;&#x544A;&#x8BC9;&#x4ED6;&#xFF0C;<strong>&#x79C1;&#x6709;&#x4E91;&#x5927;&#x5BA2;&#x6237;&#x867D;&#x7136;&#x5355;&#x4EF7;&#x9AD8;&#xFF0C;&#x4F46;&#x662F;&#x5546;&#x52A1;&#x6210;&#x672C;&#x4E5F;&#x9AD8;&#xFF0C;&#x4E00;&#x4E2A;&#x4E1A;&#x52A1;&#x5982;&#x679C;&#x4F9D;&#x8D56;&#x4E8E;&#x5927;&#x5BA2;&#x6237;&#xFF0C;&#x4F1A;&#x9762;&#x4E34;&#x5F88;&#x5927;&#x7684;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x3002;&#x53EF;&#x5982;&#x679C;&#x6253;&#x9020;&#x51FA;&#x652F;&#x6301;&#x4E2D;&#x5C0F;&#x5BA2;&#x6237;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x5B9E;&#x73B0;&#x805A;&#x6C99;&#x6210;&#x5854;&#x7684;&#x89C4;&#x6A21;&#x6548;&#x76CA;&#xFF0C;&#x5C06;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x957F;&#x671F;&#x6301;&#x7EED;&#x53D1;&#x5C55;&#x7684;&#x4E1A;&#x52A1;&#x3002;</strong></p>
+<p>&#x8FD9;&#x5728;&#x4E4B;&#x524D;&#x51E0;&#x4E4E;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4E91;&#x670D;&#x52A1;&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x652F;&#x6491;&#x6D77;&#x91CF;&#x7528;&#x6237;&#xFF08; IM &#x4E91;&#x670D;&#x52A1;&#x57FA;&#x672C;&#x8981;&#x6C42;&#x662F;&#x5343;&#x4E07;&#x7EA7;&#x7528;&#x6237;&#x540C;&#x65F6;&#x5728;&#x7EBF;&#xFF09;&#xFF0C;&#x67B6;&#x6784;&#x5BF9;&#x4F38;&#x7F29;&#x6027;&#x7684;&#x6709;&#x5F88;&#x9AD8;&#x8981;&#x6C42;&#xFF0C;&#x4F7F;&#x5F97;&#x670D;&#x52A1;&#x9700;&#x8981;&#x62C6;&#x5206;&#x6210;&#x4F17;&#x591A;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#xFF0C;&#x6781;&#x5927;&#x589E;&#x52A0;&#x4E86;&#x79C1;&#x6709;&#x90E8;&#x7F72;&#x7684;&#x5B9E;&#x65BD;&#x3001;&#x8FD0;&#x7EF4;&#x96BE;&#x5EA6;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x5F88;&#x591A;&#x4E91;&#x5382;&#x5546;&#x4EF7;&#x683C;&#x5C45;&#x9AD8;&#x4E0D;&#x4E0B;&#x7684;&#x91CD;&#x8981;&#x539F;&#x56E0;&#x3002;</p>
+<p>&#x4F46;&#x662F;<strong>&#x4EE5; Kubernetes &#x4E3A;&#x4EE3;&#x8868;&#x7684;&#x4E91;&#x539F;&#x751F;&#x6280;&#x672F;&#x5FEB;&#x901F;&#x53D1;&#x5C55;&#xFF0C;&#x5DF2;&#x7ECF;&#x8BA9;&#x4E0D;&#x53EF;&#x80FD;&#x53D8;&#x4E3A;&#x4E86;&#x53EF;&#x80FD;&#xFF0C;&#x4E5F;&#x5728;&#x4ECE;&#x6839;&#x672C;&#x4E0A;&#x5728;&#x91CD;&#x6784;&#x6574;&#x4E2A; IT &#x4E1A;&#x52A1;&#xFF0C;&#x964D;&#x4F4E;&#x4E86;&#x79C1;&#x6709;&#x4E91;&#x6210;&#x672C;&#xFF0C;&#x8BA9;&#x4F01;&#x4E1A;&#x4E0A;&#x4E91;&#x62E5;&#x6709;&#x66F4;&#x7ECF;&#x6D4E;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x4E0D;&#x5FC5;&#x7EE7;&#x7EED;&#x5728;&#x201C;&#x9AD8;&#x6210;&#x672C;&#x79C1;&#x6709;&#x90E8;&#x7F72;&#x201D;&#x548C;&#x201C;&#x4F7F;&#x7528;&#x516C;&#x6709;&#x4E91;&#x201D;&#x8FD9;&#x4EC5;&#x6709;&#x7684;&#x4E24;&#x96BE;&#x9009;&#x62E9;&#x4E0A;&#x7EA0;&#x7ED3;&#x3002;</strong></p>
+<p>&#x201C;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x7528; SaaS &#x6A21;&#x5F0F;&#x505A;&#x79C1;&#x6709;&#x4E91;&#xFF0C;&#x4FBF;&#x5B9C;&#xFF0C;&#x5F88;&#x4FBF;&#x5B9C;&#x3002;&#x201D;&#x4E00;&#x4E50;&#x8865;&#x5145;&#x9053;&#xFF0C;&#x201C;&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x8BB2;&#x7684;&#x591A;&#x4E91;&#x67B6;&#x6784;&#x8D8B;&#x52BF;&#xFF0C;&#x6EE1;&#x8DB3;&#x4F01;&#x4E1A;&#x9700;&#x6C42;&#x7684;&#x4EA7;&#x54C1;&#x51FA;&#x73B0;&#xFF0C;&#x80AF;&#x5B9A;&#x4F1A;&#x5E26;&#x52A8;&#x76F8;&#x5173;&#x9700;&#x6C42;&#x7684;&#x53D1;&#x5C55;&#x3002;&#x201D;</p>
+<p>&#x7136;&#x800C;2020&#x5E74;&#x521D;&#x7684;&#x8FD9;&#x573A;&#x75AB;&#x60C5;&#xFF0C;&#x8BA9;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x8DDF;&#x4F17;&#x591A;&#x521B;&#x4E1A;&#x516C;&#x53F8;&#x4E00;&#x6837;&#xFF0C;&#x9762;&#x5BF9;&#x8D85;&#x4E4E;&#x9884;&#x671F;&#x7684;&#x8270;&#x96BE;&#x8003;&#x9A8C;&#x3002;</p>
+<h2 id="&#x6218;&#x75AB;&#x5BF9;&#x7B56;&#xFF1A;&#x5168;&#x529B;&#x652F;&#x6301;isvsi&#x5408;&#x4F5C;&#x4F19;&#x4F34;"><strong>&#x6218;&#x75AB;&#x5BF9;&#x7B56;&#xFF1A;&#x5168;&#x529B;&#x652F;&#x6301;ISV/SI&#x5408;&#x4F5C;&#x4F19;&#x4F34;</strong></h2>
+<p>&#x4E00;&#x4E50;&#x7684;&#x521B;&#x4E1A;&#x89C4;&#x5212;&#x4E0D;&#x53EF;&#x8C13;&#x4E0D;&#x5468;&#x5168;&#xFF0C;&#x5BF9;&#x4E8E;&#x8D44;&#x91D1;&#x7684;&#x8C28;&#x614E;&#x4F7F;&#x7528;&#xFF0C;&#x8BA9;&#x4ED6;&#x80FD;&#x591F;&#x8DE8;&#x8FC7;&#x201C;&#x5BA2;&#x6237;&#x56DE;&#x6B3E;&#x96BE;&#x201D;&#x8FD9;&#x5EA7;&#x5927;&#x5C71;&#xFF0C;&#x4F46;&#x75AB;&#x60C5;&#x7684;&#x51B2;&#x51FB;&#x4E4B;&#x5927;&#xFF0C;&#x4ECD;&#x7136;&#x8FDC;&#x8D85;&#x60F3;&#x8C61;&#x3002;</p>
+<p>&#x201C;&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x6311;&#x6218;&#xFF0C;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x673A;&#x4F1A;&#x3002;&#x201D;</p>
+<p><strong>&#x75AB;&#x60C5;&#x5BF9;&#x5F88;&#x591A;&#x516C;&#x53F8;&#x548C;&#x4E1A;&#x52A1;&#x90FD;&#x4EA7;&#x751F;&#x4E86;&#x5DE8;&#x5927;&#x7684;&#x51B2;&#x51FB;&#xFF0C;&#x6BCF;&#x4E2A;&#x4F01;&#x4E1A;&#x90FD;&#x5F00;&#x59CB;&#x5BA1;&#x89C6;&#x81EA;&#x5DF1;&#x6210;&#x672C;&#x548C;&#x4EBA;&#x6548;&#xFF0C;&#x5F00;&#x59CB;&#x63D0;&#x5021;&#x7CBE;&#x76CA;&#x5316;&#x8FD0;&#x8425;</strong>&#x3002;&#x5BF9;&#x4ED6;&#x4EEC;&#x800C;&#x8A00;&#xFF0C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x7684; IM &#x4EA7;&#x54C1;&#x662F;&#x4ED6;&#x4EEC;&#x80FD;&#x627E;&#x5230;&#x7684;&#x6700;&#x4F73;&#x9009;&#x62E9;&#x4E4B;&#x4E00;&#x3002;</p>
+<p>&#x201C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x662F;&#x4E00;&#x5BB6;&#x5F88;&#x5C0F;&#x7684;&#x516C;&#x53F8;&#xFF0C;&#x4F46;&#x5728; IM &#x4EA7;&#x54C1;&#x7684;&#x7814;&#x53D1;&#x4E0A;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x5B9E;&#x529B;&#x53BB;&#x5E2E;&#x52A9;&#x5176;&#x4ED6;&#x4EBA;&#x3002;&#x201D;</p>
+<p><strong>&#x4E8E;&#x662F;&#xFF0C;&#x4ED6;&#x4EEC;&#x5728;</strong><a href="../product-and-technologies/provide-free-senior-technical-consulting-services-during-the-epidemic.html"><strong>&#x75AB;&#x60C5;&#x671F;&#x95F4;&#x7684;&#x7D27;&#x6025;&#x6280;&#x672F;&#x652F;&#x6301;</strong></a><strong>&#xFF0C;&#x4E3A;&#x5FEB;&#x901F;&#x589E;&#x957F;&#x7684;&#x5728;&#x7EBF;&#x6559;&#x80B2;&#x548C;&#x5176;&#x4ED6;SaaS&#x4F01;&#x4E1A;&#x63D0;&#x4F9B;&#x5E2E;&#x52A9;&#x3002;</strong></p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x6B63;&#x5728;&#x53EC;&#x96C6;&#x5408;&#x4F5C;&#x4F19;&#x4F34;&#xFF1A;</p>
+<ol>
+<li>ISV&#x5408;&#x4F5C;&#x4F19;&#x4F34;&#xFF0C;&#x4E3B;&#x8981;&#x9488;&#x5BF9; ISV/SI &#x7B49;&#x5916;&#x5305;&#x4F01;&#x4E1A;&#x548C;&#x56E2;&#x961F;&#xFF0C;&#x5E2E;&#x52A9;&#x4ED6;&#x4EEC;&#x6280;&#x672F;&#x63D0;&#x5347;&#xFF0C;&#x66F4;&#x597D;&#x6539;&#x9020;&#x670D;&#x52A1;&#x5229;&#x7528;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x591A;&#x4E91;&#x67B6;&#x6784;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x964D;&#x4F4E;&#x6210;&#x672C;&#xFF0C;&#x63D0;&#x9AD8;&#x4EA7;&#x54C1;&#x4EA4;&#x4ED8;&#x6548;&#x7387;&#xFF1B;</li>
+<li>&#x5546;&#x52A1;&#x9500;&#x552E;&#x5408;&#x4F5C;&#x4F19;&#x4F34;&#xFF0C;&#x4E3B;&#x8981;&#x9488;&#x5BF9;&#x4E2A;&#x4EBA;&#xFF0C;&#x5BF9;&#x63D0;&#x4F9B;&#x9500;&#x552E;&#x7EBF;&#x7D22;&#xFF0C;&#x4FC3;&#x8FDB;&#x9879;&#x76EE;&#x843D;&#x5730;&#x7684;&#x5408;&#x4F5C;&#x4F19;&#x4F34;&#x9AD8;&#x989D;&#x7684;&#x63D0;&#x6210;&#x3002;</li>
+</ol>
+<p>&#x611F;&#x5174;&#x8DA3;&#x7684;&#x4F01;&#x4E1A;&#x548C;&#x4E2A;&#x4EBA;&#xFF0C;&#x53EF;&#x4EE5;&#x300C;&#x67E5;&#x770B;&#x539F;&#x6587;&#x300D;&#x5728;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x5B98;&#x7F51;&#x586B;&#x5199;&#x5546;&#x52A1;&#x5408;&#x4F5C;&#x7533;&#x8BF7;&#x3002;</p>
+<p><strong>&#x201C;&#x6700;&#x597D;&#x7684;&#x4F01;&#x4E1A;&#x670D;&#x52A1;&#xFF0C;&#x5F53;&#x7136;&#x662F;&#x8981;&#x80FD;&#x8DDF;&#x670D;&#x52A1;&#x7684;&#x4F01;&#x4E1A;&#x4E00;&#x8D77;&#x8D70;&#x4E0B;&#x53BB;&#xFF0C;&#x8BA9;&#x4ED6;&#x4EEC;&#x4E5F;&#x80FD;&#x505A;&#x597D;&#x3002;&#x91C7;&#x7528;&#x6211;&#x4EEC; IM &#x79C1;&#x6709;&#x4E91;&#x7684;&#x8F6F;&#x4EF6;&#x9879;&#x76EE;&#xFF0C;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;80%&#x4EE5;&#x4E0A;&#x7684;&#x6210;&#x672C;&#xFF0C;&#x8FDB;&#x800C;&#x62E5;&#x6709;&#x5DE8;&#x5927;&#x7684;&#x5229;&#x6DA6;&#x7A7A;&#x95F4;&#x3002;&#x201D;</strong></p>
+<p><strong>&#x4E00;&#x4E50;&#x5BF9;&#x672A;&#x6765;&#x4ECD;&#x5145;&#x6EE1;&#x4FE1;&#x5FC3;&#x3002;</strong></p>
+<p><em><strong>&#x4E00;&#x4E50;&#x7684;TMI&#xFF1A;</strong></em></p>
+<p>&#x575A;&#x6301;&#x8DD1;&#x6B65;&#x8FD1;10&#x5E74;&#x3002;&#x6700;&#x521D;&#x662F;&#x56E0;&#x4E3A;&#x5E38;&#x5E74;&#x5934;&#x75BC;&#xFF0C;&#x591A;&#x6B21;&#x5BFB;&#x533B;&#x95EE;&#x836F;&#x672A;&#x679C;&#x540E;&#x5C1D;&#x8BD5;&#x8DD1;&#x6B65;&#xFF0C;&#x4EA7;&#x751F;&#x5947;&#x6548;&#x3002;&#x4E00;&#x76F4;&#x575A;&#x6301;&#x81F3;&#x4ECA;&#xFF0C;&#x540E;&#x62D3;&#x5C55;&#x81F3;&#x6253;&#x62F3;&#x7B49;&#x5176;&#x4ED6;&#x8FD0;&#x52A8;&#x3002;</p>
+<p><img src="../../assets/articles/autogen-744af19a6c6ad1345a7f04d760d57c05b93ba79e0da4bd4949c37f319d29b512.gif" alt></p>
+<p>&#x79D1;&#x521B;&#x2F08;&#x793E;&#x7FA4;&#xFF0C;&#x662F;&#x7531;&#x6280;&#x672F;&#x80CC;&#x666F;CEO&#x3001;CTO&#x3001;CIO&#x3001;&#x6280;&#x672F;VP&#x3001;&#x6280;&#x672F;&#x603B;&#x76D1;&#x7B49;&#x6280;&#x672F;&#x51B3;&#x7B56;&#x8005;&#x7EC4;&#x6210;&#x7684;NPO&#x7EC4;&#x7EC7;&#xFF0C;&#x79C9;&#x627F;&#x2F83;&#x613F;&#x3001;&#x4E92;&#x52A9;&#x3001;&#x5171;&#x8D62;&#x539F;&#x5219;&#xFF0C; &#x4EE5;&#x4EA4;&#x6D41;&#x6210;&#x957F;&#x5FC3;&#x5F97;&#x548C;&#x521B;&#x65B0;&#x3001;&#x521B;&#x4E1A;&#x7ECF;&#x9A8C;&#x4E3A;&#x4E3B;&#x9898;&#xFF0C;&#x76EE;&#x524D;&#x5DF2;&#x62E5;&#x6709;&#x6210;&#x5458;4000+&#x3002;</p>
+<p><strong>-- &#x79D1;&#x521B;&#x4EBA;&#xB7;&#x5F80;&#x671F;&#x63A8;&#x8350;--</strong></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzI0OTc5ODE0MA==&amp;mid=2247484186&amp;idx=1&amp;sn=67e7bbdfff8fc631bdc90ba691a3e69b&amp;chksm=e98d4f89defac69fcef8ac023ae0a462e3b9ba2014d090bc4c856c939db94036f1425494acfd&amp;scene=21#wechat_redirect" target="_blank"><img src="../../assets/articles/autogen-7c34f619b6f3175b18fd0a3ee6e6b7e3d032cea13225ee7365294ced8f999dfe.webp" alt></a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzI0OTc5ODE0MA==&amp;mid=2247484163&amp;idx=1&amp;sn=ffd0c489ad2fefd13471211ddf612ea3&amp;chksm=e98d4f90defac686f166e07e451f198adefde6f12546fd24e0a16c96b23027efc468f927cbe8&amp;scene=21#wechat_redirect" target="_blank"><img src="../../assets/articles/autogen-57d8ecf06fac90e5a44f28b1b411e6551d3ffb47423e0a6f30f483b96bc4ae09.webp" alt></a></p>
+<footer class="page-footer"><span class="copyright">&#xA9; 2019-2022 &#x7F8E;&#x4FE1;&#x62D3;&#x6251; | <a href="https://lanyingim.com" style="text-decoration:none!important;" target="_blank">&#x5B98;&#x7F51;</a> </span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-09-21 11:43:07
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: &#x7F8E;&#x4FE1;&#x62D3;&#x6251;CEO&#x4E00;&#x4E50;&#xFF1A;&#x4ECE;&#x300C;&#x73A9;&#x7269;&#x4E27;&#x5FD7;&#x300D;&#x5230;&#x300C;&#x597D;&#x9AD8;&#x9A9B;&#x8FDC;&#x300D;&#xFF0C;&#x6211;&#x5728;&#x575A;&#x6301;&#x4EC0;&#x4E48;&#xFF1F;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"【科创人独家】美信拓扑创始人一乐：如何登山不是最重要的问题，山峰才是","level":"1.4.3.7","depth":3,"previous":{"title":"美信拓扑CEO一乐：从「玩物丧志」到「好高骛远」，我在坚持什么？","level":"1.4.3.6","depth":3,"path":"articles/activity-report/from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.md","ref":"articles/activity-report/from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link@^2.0.2","fontsettings@^2.0.0","-sharing","sharing-plus@^0.0.2","-highlight","prism@^2.1.0","prism-themes@^0.0.2","-lunr","-search","lanying-code-snippet@^1.1.8","search-plus@^0.0.11","advanced-emoji@^0.2.1","expandable-chapters-small@^0.1.7","tbfed-pagefooter@^0.0.1","versions-select@^0.1.1","terminal@^0.3.2","code@^0.1.0","splitter@^0.0.8","favicon@^0.0.2","image-captions@^3.1.0","auto-scroll-table@^0.0.5","logo@^0.0.2","intopic-toc@^1.1.1","meta@^0.1.12","logo@^0.0.2","intopic-toc@^1.1.1","meta@^0.1.12"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2019-2022 美信拓扑 | <a href='https://lanyingim.com' style='text-decoration:none!important;'>官网</a>","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"language-picker":{"grid-columns":3},"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"内容","maxDepth":3,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","visible":true},"livereload":{},"meta":{"content":"","data":[{"name":"keywords","content":"蓝莺IM, 美信拓扑, IM SDK, 即时通讯, 即时通讯云, IM云服务, 移动IM, 开源IM, 企业IM, 聊天软件, 移动客服, 在线客服, IM业务场景, APP社交, 开发者服务, 直播聊天室, 实时音视频, 音视频, 直播平台, 美信反垃圾, 内容安全"}],"name":""},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"lanying-code-snippet":{"showLink":true,"reindent":true,"maxLine":20,"maxSnippetCount":5,"repositories":[{"name":"lanying-im-web","url":"https://github.com/maxim-top/lanying-im-web.git","branch":"master","cacheDir":"../cache/lanying-im-web"},{"name":"lanying-im-android","url":"https://github.com/maxim-top/lanying-im-android.git","branch":"master","cacheDir":"../cache/lanying-im-android"},{"name":"lanying-im-embedded","url":"https://github.com/maxim-top/lanying-im-embedded.git","branch":"master","cacheDir":"../cache/lanying-im-embedded"},{"name":"lanying-im-ios","url":"https://github.com/maxim-top/lanying-im-ios.git","branch":"master","cacheDir":"../cache/lanying-im-ios"}]},"logo":{"logo":"/assets/lanying-logo-color.png","logoStyle":"width: 200px;align: left;","url":"https://www.lanyingim.com"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"github-tables":{"myConfigKey":"it's the default value"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"canonical-link":{"baseURL":"https://docs.lanyingim.com"},"favicon":{"shortcut":"/assets/favicon.ico","bookmark":"/assets/favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"maxim-top/im.gitbook","types":["star"],"size":"small"},"expandable-chapters-small":{},"versions":{"type":"languages","options":[{"value":"/","text":"简体中文"},{"value":"/en/","text":"English"}]},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone","douban","line","whatsapp"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"在GitHub上编辑","base":"https://github.com/maxim-top/im.gitbook/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"jinhai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: 蓝莺IM云服务开放平台架构","alt":"蓝莺IM云服务开放平台架构","nro":1,"url":"assets/1.png","index":1,"caption_template":"_CAPTION_","label":"蓝莺IM云服务开放平台架构","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"index.html#fig1.1.2","level":"1.1","list_caption":"Figure: 蓝莺IM SDK 技术栈","alt":"蓝莺IM SDK 技术栈","nro":2,"url":"assets/2.png","index":2,"caption_template":"_CAPTION_","label":"蓝莺IM SDK 技术栈","attributes":{},"skip":false,"key":"1.1.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.1","level":"1.2.7","list_caption":"Figure: 创建应用","alt":"创建应用","nro":3,"url":"../assets/1-1.create_app.png","index":1,"caption_template":"_CAPTION_","label":"创建应用","attributes":{},"skip":false,"key":"1.2.7.1"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.2","level":"1.2.7","list_caption":"Figure: 应用信息","alt":"应用信息","nro":4,"url":"../assets/1-2.app_info.png","index":2,"caption_template":"_CAPTION_","label":"应用信息","attributes":{},"skip":false,"key":"1.2.7.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.3","level":"1.2.7","list_caption":"Figure: 开通私有云服务","alt":"开通私有云服务","nro":5,"url":"../assets/1-3.select_private_plan.png","index":3,"caption_template":"_CAPTION_","label":"开通私有云服务","attributes":{},"skip":false,"key":"1.2.7.3"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.4","level":"1.2.7","list_caption":"Figure: 私有云部署","alt":"私有云部署","nro":6,"url":"../assets/1-4.deploy.png","index":4,"caption_template":"_CAPTION_","label":"私有云部署","attributes":{},"skip":false,"key":"1.2.7.4"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.5","level":"1.2.7","list_caption":"Figure: 获取私有云安装token","alt":"获取私有云安装token","nro":7,"url":"../assets/1-5.get_install_token.png","index":5,"caption_template":"_CAPTION_","label":"获取私有云安装token","attributes":{},"skip":false,"key":"1.2.7.5"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.6","level":"1.2.7","list_caption":"Figure: 单机版安装步骤一","alt":"单机版安装步骤一","nro":8,"url":"../assets/2-1.install_single_s1.png","index":6,"caption_template":"_CAPTION_","label":"单机版安装步骤一","attributes":{},"skip":false,"key":"1.2.7.6"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.7","level":"1.2.7","list_caption":"Figure: 单机版安装步骤二","alt":"单机版安装步骤二","nro":9,"url":"../assets/2-2.install_single_s2.png","index":7,"caption_template":"_CAPTION_","label":"单机版安装步骤二","attributes":{},"skip":false,"key":"1.2.7.7"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.8","level":"1.2.7","list_caption":"Figure: 单机版安装步骤三","alt":"单机版安装步骤三","nro":10,"url":"../assets/2-3.install_single_s3.png","index":8,"caption_template":"_CAPTION_","label":"单机版安装步骤三","attributes":{},"skip":false,"key":"1.2.7.8"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.9","level":"1.2.7","list_caption":"Figure: 单机版安装步骤四","alt":"单机版安装步骤四","nro":11,"url":"../assets/2-4.install_single_s4.png","index":9,"caption_template":"_CAPTION_","label":"单机版安装步骤四","attributes":{},"skip":false,"key":"1.2.7.9"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.10","level":"1.2.7","list_caption":"Figure: 单机版安装步骤五","alt":"单机版安装步骤五","nro":12,"url":"../assets/2-5.install_single_s5.png","index":10,"caption_template":"_CAPTION_","label":"单机版安装步骤五","attributes":{},"skip":false,"key":"1.2.7.10"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.11","level":"1.2.7","list_caption":"Figure: 集群权限步骤一","alt":"集群权限步骤一","nro":13,"url":"../assets/3-1-1.config_cluster_s1.png","index":11,"caption_template":"_CAPTION_","label":"集群权限步骤一","attributes":{},"skip":false,"key":"1.2.7.11"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.12","level":"1.2.7","list_caption":"Figure: 集群权限步骤二","alt":"集群权限步骤二","nro":14,"url":"../assets/3-1-2.config_cluster_s2.png","index":12,"caption_template":"_CAPTION_","label":"集群权限步骤二","attributes":{},"skip":false,"key":"1.2.7.12"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.13","level":"1.2.7","list_caption":"Figure: 集群权限步骤三","alt":"集群权限步骤三","nro":15,"url":"../assets/3-1-3.config_cluster_s3.png","index":13,"caption_template":"_CAPTION_","label":"集群权限步骤三","attributes":{},"skip":false,"key":"1.2.7.13"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.14","level":"1.2.7","list_caption":"Figure: 集群权限步骤四","alt":"集群权限步骤四","nro":16,"url":"../assets/3-1-4.config_cluster_s4.png","index":14,"caption_template":"_CAPTION_","label":"集群权限步骤四","attributes":{},"skip":false,"key":"1.2.7.14"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.15","level":"1.2.7","list_caption":"Figure: 集群权限步骤五","alt":"集群权限步骤五","nro":17,"url":"../assets/3-1-5.config_cluster_s5.png","index":15,"caption_template":"_CAPTION_","label":"集群权限步骤五","attributes":{},"skip":false,"key":"1.2.7.15"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.16","level":"1.2.7","list_caption":"Figure: 集群版安装步骤一","alt":"集群版安装步骤一","nro":18,"url":"../assets/3-2-1.install_cluster_s1.png","index":16,"caption_template":"_CAPTION_","label":"集群版安装步骤一","attributes":{},"skip":false,"key":"1.2.7.16"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.17","level":"1.2.7","list_caption":"Figure: 集群版安装步骤二","alt":"集群版安装步骤二","nro":19,"url":"../assets/3-2-2.install_cluster_s2.png","index":17,"caption_template":"_CAPTION_","label":"集群版安装步骤二","attributes":{},"skip":false,"key":"1.2.7.17"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.18","level":"1.2.7","list_caption":"Figure: 集群版安装步骤三","alt":"集群版安装步骤三","nro":20,"url":"../assets/3-2-3.install_cluster_s3.png","index":18,"caption_template":"_CAPTION_","label":"集群版安装步骤三","attributes":{},"skip":false,"key":"1.2.7.18"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.19","level":"1.2.7","list_caption":"Figure: 集群版安装步骤四","alt":"集群版安装步骤四","nro":21,"url":"../assets/3-2-4.install_cluster_s4.png","index":19,"caption_template":"_CAPTION_","label":"集群版安装步骤四","attributes":{},"skip":false,"key":"1.2.7.19"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.20","level":"1.2.7","list_caption":"Figure: 集群版安装步骤五","alt":"集群版安装步骤五","nro":22,"url":"../assets/3-2-5.install_cluster_s5.png","index":20,"caption_template":"_CAPTION_","label":"集群版安装步骤五","attributes":{},"skip":false,"key":"1.2.7.20"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.21","level":"1.2.7","list_caption":"Figure: 挂载离线安装包，并添加maxim.ctl到可执行路径","alt":"挂载离线安装包，并添加maxim.ctl到可执行路径","nro":23,"url":"../assets/offline_mount_and_add_exec.png","index":21,"caption_template":"_CAPTION_","label":"挂载离线安装包，并添加maxim.ctl到可执行路径","attributes":{},"skip":false,"key":"1.2.7.21"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.22","level":"1.2.7","list_caption":"Figure: 生成离线配置文件","alt":"生成离线配置文件","nro":24,"url":"../assets/generate_offline_install_configration.png","index":22,"caption_template":"_CAPTION_","label":"生成离线配置文件","attributes":{},"skip":false,"key":"1.2.7.22"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.23","level":"1.2.7","list_caption":"Figure: 单机版(离线安装）开始安装","alt":"单机版(离线安装）开始安装","nro":25,"url":"../assets/single_offline_start_install.png","index":23,"caption_template":"_CAPTION_","label":"单机版(离线安装）开始安装","attributes":{},"skip":false,"key":"1.2.7.23"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.24","level":"1.2.7","list_caption":"Figure: 单机版(离线安装）安装完成","alt":"单机版(离线安装）安装完成","nro":26,"url":"../assets/single_offline_finish_install.png","index":24,"caption_template":"_CAPTION_","label":"单机版(离线安装）安装完成","attributes":{},"skip":false,"key":"1.2.7.24"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.25","level":"1.2.7","list_caption":"Figure: 生成集群LicenseKey","alt":"生成集群LicenseKey","nro":27,"url":"../assets/single_offline_export_license_key.png","index":25,"caption_template":"_CAPTION_","label":"生成集群LicenseKey","attributes":{},"skip":false,"key":"1.2.7.25"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.26","level":"1.2.7","list_caption":"Figure: 控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","alt":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","nro":28,"url":"../assets/single_offline_activate.png","index":26,"caption_template":"_CAPTION_","label":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","attributes":{},"skip":false,"key":"1.2.7.26"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.27","level":"1.2.7","list_caption":"Figure: 激活命令","alt":"激活命令","nro":29,"url":"../assets/single_offline_activate_success.png","index":27,"caption_template":"_CAPTION_","label":"激活命令","attributes":{},"skip":false,"key":"1.2.7.27"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.28","level":"1.2.7","list_caption":"Figure: 在集群中执行激活命令","alt":"在集群中执行激活命令","nro":30,"url":"../assets/single_offline_exec_activate.png","index":28,"caption_template":"_CAPTION_","label":"在集群中执行激活命令","attributes":{},"skip":false,"key":"1.2.7.28"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.29","level":"1.2.7","list_caption":"Figure: 集群权限步骤一","alt":"集群权限步骤一","nro":31,"url":"../assets/3-1-1.config_cluster_s1.png","index":29,"caption_template":"_CAPTION_","label":"集群权限步骤一","attributes":{},"skip":false,"key":"1.2.7.29"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.30","level":"1.2.7","list_caption":"Figure: 集群权限步骤二","alt":"集群权限步骤二","nro":32,"url":"../assets/3-1-2.config_cluster_s2.png","index":30,"caption_template":"_CAPTION_","label":"集群权限步骤二","attributes":{},"skip":false,"key":"1.2.7.30"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.31","level":"1.2.7","list_caption":"Figure: 集群权限步骤三","alt":"集群权限步骤三","nro":33,"url":"../assets/3-1-3.config_cluster_s3.png","index":31,"caption_template":"_CAPTION_","label":"集群权限步骤三","attributes":{},"skip":false,"key":"1.2.7.31"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.32","level":"1.2.7","list_caption":"Figure: 集群权限步骤四","alt":"集群权限步骤四","nro":34,"url":"../assets/3-1-4.config_cluster_s4.png","index":32,"caption_template":"_CAPTION_","label":"集群权限步骤四","attributes":{},"skip":false,"key":"1.2.7.32"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.33","level":"1.2.7","list_caption":"Figure: 集群权限步骤五","alt":"集群权限步骤五","nro":35,"url":"../assets/3-1-5.config_cluster_s5.png","index":33,"caption_template":"_CAPTION_","label":"集群权限步骤五","attributes":{},"skip":false,"key":"1.2.7.33"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.34","level":"1.2.7","list_caption":"Figure: 挂载离线安装包，并添加maxim.ctl到可执行路径","alt":"挂载离线安装包，并添加maxim.ctl到可执行路径","nro":36,"url":"../assets/offline_mount_and_add_exec.png","index":34,"caption_template":"_CAPTION_","label":"挂载离线安装包，并添加maxim.ctl到可执行路径","attributes":{},"skip":false,"key":"1.2.7.34"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.35","level":"1.2.7","list_caption":"Figure: 生成离线配置文件","alt":"生成离线配置文件","nro":37,"url":"../assets/generate_offline_install_configration.png","index":35,"caption_template":"_CAPTION_","label":"生成离线配置文件","attributes":{},"skip":false,"key":"1.2.7.35"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.36","level":"1.2.7","list_caption":"Figure: 集群版(离线安装）开始安装","alt":"集群版(离线安装）开始安装","nro":38,"url":"../assets/multi_offline_start_install.png","index":36,"caption_template":"_CAPTION_","label":"集群版(离线安装）开始安装","attributes":{},"skip":false,"key":"1.2.7.36"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.37","level":"1.2.7","list_caption":"Figure: 集群版(离线安装）安装完成","alt":"集群版(离线安装）安装完成","nro":39,"url":"../assets/multi_offline_finish_install.png","index":37,"caption_template":"_CAPTION_","label":"集群版(离线安装）安装完成","attributes":{},"skip":false,"key":"1.2.7.37"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.38","level":"1.2.7","list_caption":"Figure: 生成集群LicenseKey","alt":"生成集群LicenseKey","nro":40,"url":"../assets/single_offline_export_license_key.png","index":38,"caption_template":"_CAPTION_","label":"生成集群LicenseKey","attributes":{},"skip":false,"key":"1.2.7.38"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.39","level":"1.2.7","list_caption":"Figure: 控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","alt":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","nro":41,"url":"../assets/single_offline_activate.png","index":39,"caption_template":"_CAPTION_","label":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","attributes":{},"skip":false,"key":"1.2.7.39"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.40","level":"1.2.7","list_caption":"Figure: 激活命令","alt":"激活命令","nro":42,"url":"../assets/single_offline_activate_success.png","index":40,"caption_template":"_CAPTION_","label":"激活命令","attributes":{},"skip":false,"key":"1.2.7.40"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.41","level":"1.2.7","list_caption":"Figure: 在集群中执行激活命令","alt":"在集群中执行激活命令","nro":43,"url":"../assets/single_offline_exec_activate.png","index":41,"caption_template":"_CAPTION_","label":"在集群中执行激活命令","attributes":{},"skip":false,"key":"1.2.7.41"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.42","level":"1.2.7","list_caption":"Figure: 安装进度点击“私有云”，通过节点信息的进度可以查看安装进度","alt":"安装进度点击“私有云”，通过节点信息的进度可以查看安装进度","nro":44,"url":"../assets/4-1.install_progress.png","index":42,"caption_template":"_CAPTION_","label":"安装进度点击“私有云”，通过节点信息的进度可以查看安装进度","attributes":{},"skip":false,"key":"1.2.7.42"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.43","level":"1.2.7","list_caption":"Figure: 如果所有检查项的状态都为正常，则表示服务已经正常","alt":"如果所有检查项的状态都为正常，则表示服务已经正常","nro":45,"url":"../assets/4-2.service_status.png","index":43,"caption_template":"_CAPTION_","label":"如果所有检查项的状态都为正常，则表示服务已经正常","attributes":{},"skip":false,"key":"1.2.7.43"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.1","level":"1.4.1.2","list_caption":"Figure: Photo by guille pozzi on Unsplash","alt":"Photo by guille pozzi on Unsplash","nro":46,"url":"../../assets/articles/autogen-fbf9287e68d8dc44ac7e075c891de0083d47120135cb2a3efbfb60ca0561b69b.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by guille pozzi on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.1"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.2","level":"1.4.1.2","list_caption":"Figure: Cape Town, Photo by Douglas Bagg on Unsplash","alt":"Cape Town, Photo by Douglas Bagg on Unsplash","nro":47,"url":"../../assets/articles/autogen-5aa2e869e4a47a1f9c9c829cccae95081be1583a8f9dfcab6c7d530fcf2bb731.webp","index":2,"caption_template":"_CAPTION_","label":"Cape Town, Photo by Douglas Bagg on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.2"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.3","level":"1.4.1.2","list_caption":"Figure: Photo by imgix on Unsplash","alt":"Photo by imgix on Unsplash","nro":48,"url":"../../assets/articles/autogen-8deb904309c595b2448cb2f3b926ce92fb4559a81b6bcba404d7892d854afbe9.webp","index":3,"caption_template":"_CAPTION_","label":"Photo by imgix on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.3"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.4","level":"1.4.1.2","list_caption":"Figure: Photo by Drew Beamer on Unsplash","alt":"Photo by Drew Beamer on Unsplash","nro":49,"url":"../../assets/articles/autogen-152027303d568271895c190d96ad3a8dd2563c1148d9a3de6ae292ff6b2ba154.webp","index":4,"caption_template":"_CAPTION_","label":"Photo by Drew Beamer on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.4"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.5","level":"1.4.1.2","list_caption":"Figure: Photo by Frank Park on Unsplash","alt":"Photo by Frank Park on Unsplash","nro":50,"url":"../../assets/articles/autogen-37d1ed97a050b08599422d44b4c3287f90cadf1a680b370c64580c620bdfd99a.webp","index":5,"caption_template":"_CAPTION_","label":"Photo by Frank Park on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.5"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.6","level":"1.4.1.2","list_caption":"Figure: Photo by Stefan Gessert on Unsplash","alt":"Photo by Stefan Gessert on Unsplash","nro":51,"url":"../../assets/articles/autogen-350a98b8a2653828a338c8eb221879f6ede228c0cafd3f5a7dd1932ddaba1b46.webp","index":6,"caption_template":"_CAPTION_","label":"Photo by Stefan Gessert on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.6"},{"backlink":"articles/product-and-technologies/ninety-percent-of-privately-deployed-softwares-have-no-push-notifications.html#fig1.4.2.1.1","level":"1.4.2.1","list_caption":"Figure: Photo by Jeremy Bezanger on Unsplash","alt":"Photo by Jeremy Bezanger on Unsplash","nro":52,"url":"../../assets/articles/autogen-96595b292da717c037b637e792e08a34f303f16c4507e05258a7baa5a71eec03.jpeg","index":1,"caption_template":"_CAPTION_","label":"Photo by Jeremy Bezanger on Unsplash","attributes":{},"skip":false,"key":"1.4.2.1.1"},{"backlink":"articles/product-and-technologies/from-cloud-marketplace-to-compact-disk.html#fig1.4.2.2.1","level":"1.4.2.2","list_caption":"Figure: Photo by Chris Yates on Unsplash","alt":"Photo by Chris Yates on Unsplash","nro":53,"url":"../../assets/articles/autogen-15a3d16a05a169df3774aa584f7ca52804cffac69d928aa3d66f746a9719a659.jpeg","index":1,"caption_template":"_CAPTION_","label":"Photo by Chris Yates on Unsplash","attributes":{},"skip":false,"key":"1.4.2.2.1"},{"backlink":"articles/product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html#fig1.4.2.6.1","level":"1.4.2.6","list_caption":"Figure: Photo by alevision.co on Unsplash","alt":"Photo by alevision.co on Unsplash","nro":54,"url":"../../assets/articles/autogen-41b6aa066fabc2b23ca9539a6270866d5152dfa57043ebabf7e5b915dfdcab63.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by alevision.co on Unsplash","attributes":{},"skip":false,"key":"1.4.2.6.1"},{"backlink":"articles/product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html#fig1.4.2.6.2","level":"1.4.2.6","list_caption":"Figure: Photo by Alexander Andrews on Unsplash","alt":"Photo by Alexander Andrews on Unsplash","nro":55,"url":"../../assets/articles/autogen-ceca10f5cc250c96cbc3246fb95012a96d2d240969c75437ce5c21ac1c2b3c7d.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by Alexander Andrews on Unsplash","attributes":{},"skip":false,"key":"1.4.2.6.2"},{"backlink":"articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html#fig1.4.2.7.1","level":"1.4.2.7","list_caption":"Figure: Photo by Matt Seymour on Unsplash","alt":"Photo by Matt Seymour on Unsplash","nro":56,"url":"../../assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Matt Seymour on Unsplash","attributes":{},"skip":false,"key":"1.4.2.7.1"},{"backlink":"articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html#fig1.4.2.7.2","level":"1.4.2.7","list_caption":"Figure: Photo by Zunnoon Ahmed on Unsplash","alt":"Photo by Zunnoon Ahmed on Unsplash","nro":57,"url":"../../assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by Zunnoon Ahmed on Unsplash","attributes":{},"skip":false,"key":"1.4.2.7.2"},{"backlink":"articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html#fig1.4.2.7.3","level":"1.4.2.7","list_caption":"Figure: Photo by alevision.co on Unsplash","alt":"Photo by alevision.co on Unsplash","nro":58,"url":"../../assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp","index":3,"caption_template":"_CAPTION_","label":"Photo by alevision.co on Unsplash","attributes":{},"skip":false,"key":"1.4.2.7.3"},{"backlink":"articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html#fig1.4.2.8.1","level":"1.4.2.8","list_caption":"Figure: Photo by Thom Milkovic on Unsplash","alt":"Photo by Thom Milkovic on Unsplash","nro":59,"url":"../../assets/articles/autogen-10e2661331f22b91be0e9dbff19bc5b8617d86de82bcbbd8a33494f39a74df08.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Thom Milkovic on Unsplash","attributes":{},"skip":false,"key":"1.4.2.8.1"},{"backlink":"articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html#fig1.4.2.8.2","level":"1.4.2.8","list_caption":"Figure: Photo by Clay Banks on Unsplash","alt":"Photo by Clay Banks on Unsplash","nro":60,"url":"../../assets/articles/autogen-1441678e056040c76061afed6a968dc1ffc359f59cd2e3edb67e933320b342e6.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by Clay Banks on Unsplash","attributes":{},"skip":false,"key":"1.4.2.8.2"},{"backlink":"articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html#fig1.4.2.8.3","level":"1.4.2.8","list_caption":"Figure: Photo by Hello I‘m Nik on Unsplash","alt":"Photo by Hello I‘m Nik on Unsplash","nro":61,"url":"../../assets/articles/autogen-d89389332dd40323a5fdbc08ca9f890f63728279755802e8ce82b61cf299d2f4.webp","index":3,"caption_template":"_CAPTION_","label":"Photo by Hello I‘m Nik on Unsplash","attributes":{},"skip":false,"key":"1.4.2.8.3"},{"backlink":"articles/product-and-technologies/generating-java-code-with-swig.html#fig1.4.2.10.1","level":"1.4.2.10","list_caption":"Figure: Photo by Marco Djallo on @unsplash","alt":"Photo by Marco Djallo on @unsplash","nro":62,"url":"../../assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Marco Djallo on @unsplash","attributes":{},"skip":false,"key":"1.4.2.10.1"},{"backlink":"articles/product-and-technologies/generating-java-code-with-swig.html#fig1.4.2.10.2","level":"1.4.2.10","list_caption":"Figure: Photo by @JamieDotSt on @unsplash","alt":"Photo by @JamieDotSt on @unsplash","nro":63,"url":"../../assets/articles/autogen-5a1ed68575ebd20a7a616e396eecc9b6b59e4704496429c5570987f8c0b1e86a.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by @JamieDotSt on @unsplash","attributes":{},"skip":false,"key":"1.4.2.10.2"},{"backlink":"articles/product-and-technologies/install-an-instant-messaging-im-private-cloud-in-ten-minutes.html#fig1.4.2.12.1","level":"1.4.2.12","list_caption":"Figure: Photo by Ben Kolde on Unsplash","alt":"Photo by Ben Kolde on Unsplash","nro":64,"url":"../../assets/articles/autogen-3327f0040a74492f5f4424d29ce2e9b8325971b165772ba135f1168b265a3c9e.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Ben Kolde on Unsplash","attributes":{},"skip":false,"key":"1.4.2.12.1"},{"backlink":"articles/activity-report/digital-twins-and-smart-manufacturing-in-automotive-factories.html#fig1.4.3.2.1","level":"1.4.3.2","list_caption":"Figure: TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日","alt":"TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日","nro":65,"url":"../../assets/articles/autogen-19be5dff5823d13a5138d8c421b4b71624a220f1e39fcd5e6518e33cda51a5df.jpeg","index":1,"caption_template":"_CAPTION_","label":"TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日","attributes":{},"skip":false,"key":"1.4.3.2.1"},{"backlink":"articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html#fig1.4.3.4.1","level":"1.4.3.4","list_caption":"Figure: 《绵云》","alt":"《绵云》","nro":66,"url":"../../assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp","index":1,"caption_template":"_CAPTION_","label":"《绵云》","attributes":{},"skip":false,"key":"1.4.3.4.1"},{"backlink":"articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html#fig1.4.3.4.2","level":"1.4.3.4","list_caption":"Figure: 《冬华》","alt":"《冬华》","nro":67,"url":"../../assets/articles/autogen-3bc4f7829ce30949063a0bdd76a1865a312048343d0a715e8aac7687de5e5e30.webp","index":2,"caption_template":"_CAPTION_","label":"《冬华》","attributes":{},"skip":false,"key":"1.4.3.4.2"},{"backlink":"articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html#fig1.4.3.4.3","level":"1.4.3.4","list_caption":"Figure: 《春晓》","alt":"《春晓》","nro":68,"url":"../../assets/articles/autogen-35e67579182b2814c5a19e7b7804705a2a733e9404858dfbf66585c39f126848.webp","index":3,"caption_template":"_CAPTION_","label":"《春晓》","attributes":{},"skip":false,"key":"1.4.3.4.3"}]},"title":"蓝莺 IM - 专业SDK，私有云按月付费","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"API文档及文章分享"},"file":{"path":"articles/activity-report/how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.md","mtime":"2022-09-21T03:43:07.255Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"0000-00-00T00:00:00.000Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+

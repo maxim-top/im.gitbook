@@ -1,0 +1,211 @@
+.maximtop_summary {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    user-select: none;
+    pointer-events: auto;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    align-items: stretch;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    z-index: 0;
+    margin-left: 0px;
+    padding-bottom: 40px;
+}
+
+.maximtop_summary_title {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    user-select: none;
+    pointer-events: auto;
+    -webkit-box-direction: normal;
+    unicode-bidi: isolate;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: inline;
+    font: 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(59,69,78,1.00);
+}
+
+.maximtop_summary_links {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    user-select: none;
+    pointer-events: auto;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    z-index: 0;
+    padding-top: 24px;
+    flex-wrap: wrap;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+}
+
+.maximtop_summary_link_item {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    pointer-events: auto;
+    color: inherit;
+    font: inherit;
+    list-style: none;
+    text-align: inherit;
+    text-decoration: none;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: flex;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 0px;
+    position: relative;
+    z-index: 0;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-color: rgba(227,232,237,1.00);
+    border-left-color: rgba(227,232,237,1.00);
+    border-right-color: rgba(227,232,237,1.00);
+    border-top-color: rgba(227,232,237,1.00);
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    background-color: rgba(255,255,255,1.00);
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    transition-property: opacity;
+    user-select: none;
+    cursor: pointer;
+    touch-action: manipulation;
+    flex-basis: 0%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.12);
+    margin-bottom: 8px;
+    margin-left: 8px;
+    min-width: calc(50% - 8px);
+    transition-duration: 0s;
+}
+.maximtop_summary_link_text{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    pointer-events: auto;
+    list-style: none;
+    text-align: inherit;
+    -webkit-box-direction: normal;
+    user-select: none;
+    cursor: pointer;
+    unicode-bidi: isolate;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: inline;
+    font: 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+    font-family: gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(59,69,78,1.00);
+    font-weight: 500;
+}
+
+.nav-link {
+    white-space: nowrap;
+}
+
+.book .book-summary ul.summary li a:hover {
+    text-decoration: none;
+    background-color: rgb(235, 235, 235);
+}
+
+.versions-select select{
+    height: 35px;
+    background-color: rgb(250, 250, 250);
+}
+
+.page-inner {
+    width: 100% !important;
+}
+
+.page-wrapper {
+    width: 100%;
+}
+
+.intopic-toc ul.level-0 {
+    max-height: calc( 100vh - 70px );
+    overflow-y: auto;
+}
