@@ -104,6 +104,8 @@ Aar or jar + so formats are selectable in SDK import
 
 ```
 implementation(name:'floo-android_2.3.1.20200428',ext:'aar')
+implementation 'com.squareup.okhttp3:okhttp:3.12.3'
+implementation 'com.squareup.okio:okio:1.12.0'
 ```
 
 #### jar+so format
