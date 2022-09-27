@@ -34,9 +34,7 @@
 
     您除了在工程中导入 SDK 之前，还需要添加如下系统库的引用。
 
-    * libsqlite3.tbd
     * libc++abi.tbd
-    * libsqlite3.tbd
     * libstdc++.tbd
     * libz.tbd
     * libc++.tbd
