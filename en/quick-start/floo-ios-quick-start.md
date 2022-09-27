@@ -34,9 +34,7 @@ Hint: If cocoapods is not installed, please refer to [CocoaPods installation](ht
 
     Before importing SDK to your project, please add the following system library references.
 
-    * libsqlite3.tbd
     * libc++abi.tbd
-    * libsqlite3.tbd
     * libstdc++.tbd
     * libz.tbd
     * libc++.tbd
