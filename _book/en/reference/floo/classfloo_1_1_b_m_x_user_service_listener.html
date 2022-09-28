@@ -2232,7 +2232,21 @@
 <li><strong>status</strong> Connection state </li>
 </ul>
 <p><strong>Example</strong>:</p>
-<p></p>
+<p><pre class="language-"><code class="lang-c"><span class="token keyword">void</span> UserListener<span class="token operator">::</span><span class="token function">onConnectStatusChanged</span><span class="token punctuation">(</span>BMXConnectStatus status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">draw_notify</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;UserListener onConnectStatusChanged&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> BMXConnectStatus<span class="token operator">::</span>Disconnected<span class="token operator">:</span>
+      <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;Disconnected&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> BMXConnectStatus<span class="token operator">::</span>Connected<span class="token operator">:</span>
+      <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;Connected&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">touchwin</span><span class="token punctuation">(</span>stdscr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/userManage.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/userManage.cc#L23" target="_blank">Github Source: test/src/userManage.cc (line 23)</a></div></p>
 <h3 id="function-onusersignin">function onUserSignIn</h3>
 <pre class="language-"><code class="lang-cpp"><span class="token keyword">inline</span> <span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">onUserSignIn</span><span class="token punctuation">(</span>
     BMXUserProfilePtr profile
@@ -2244,7 +2258,11 @@
 <li><strong>profile</strong> User profile </li>
 </ul>
 <p><strong>Example</strong>:</p>
-<p></p>
+<p><pre class="language-"><code class="lang-c"><span class="token keyword">void</span> UserListener<span class="token operator">::</span><span class="token function">onUserSignIn</span><span class="token punctuation">(</span>BMXUserProfilePtr profile<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">draw_notify</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;UserListener onUserSignIn&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">touchwin</span><span class="token punctuation">(</span>stdscr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/userManage.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/userManage.cc#L40" target="_blank">Github Source: test/src/userManage.cc (line 40)</a></div></p>
 <h3 id="function-onusersignout">function onUserSignOut</h3>
 <pre class="language-"><code class="lang-cpp"><span class="token keyword">inline</span> <span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">onUserSignOut</span><span class="token punctuation">(</span>
     BMXErrorCode error<span class="token punctuation">,</span>
@@ -2257,7 +2275,11 @@
 <li><strong>error</strong> State error code </li>
 </ul>
 <p><strong>Example</strong>:</p>
-<p></p>
+<p><pre class="language-"><code class="lang-c"><span class="token keyword">void</span> UserListener<span class="token operator">::</span><span class="token function">onUserSignOut</span><span class="token punctuation">(</span>BMXErrorCode error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">draw_notify</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;UserListener onUserSignOut&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">touchwin</span><span class="token punctuation">(</span>stdscr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/userManage.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/userManage.cc#L47" target="_blank">Github Source: test/src/userManage.cc (line 47)</a></div></p>
 <h3 id="function-oninfoupdated">function onInfoUpdated</h3>
 <pre class="language-"><code class="lang-cpp"><span class="token keyword">inline</span> <span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">onInfoUpdated</span><span class="token punctuation">(</span>
     BMXUserProfilePtr profile
@@ -2281,7 +2303,12 @@
 <li><strong>deviceSN</strong> Device serial number </li>
 </ul>
 <p><strong>Example</strong>:</p>
-<p></p>
+<p><pre class="language-"><code class="lang-c"><span class="token keyword">void</span> UserListener<span class="token operator">::</span><span class="token function">onOtherDeviceSingIn</span><span class="token punctuation">(</span><span class="token keyword">int</span> deviceSN<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">draw_notify</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;UserListener onOtherDeviceSingIn&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> std<span class="token operator">::</span><span class="token function">to_string</span><span class="token punctuation">(</span>deviceSN<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">touchwin</span><span class="token punctuation">(</span>stdscr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/userManage.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/userManage.cc#L54" target="_blank">Github Source: test/src/userManage.cc (line 54)</a></div></p>
 <h3 id="function-onotherdevicesingout">function onOtherDeviceSingOut</h3>
 <pre class="language-"><code class="lang-cpp"><span class="token keyword">inline</span> <span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">onOtherDeviceSingOut</span><span class="token punctuation">(</span>
     <span class="token keyword">int</span> deviceSN
@@ -2293,7 +2320,12 @@
 <li><strong>deviceSN</strong> Device serial number </li>
 </ul>
 <p><strong>Example</strong>:</p>
-<p></p>
+<p><pre class="language-"><code class="lang-c"><span class="token keyword">void</span> UserListener<span class="token operator">::</span><span class="token function">onOtherDeviceSingOut</span><span class="token punctuation">(</span><span class="token keyword">int</span> deviceSN<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">draw_notify</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;UserListener onOtherDeviceSingOut&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">mvwaddstr</span><span class="token punctuation">(</span>notifyWindow<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> std<span class="token operator">::</span><span class="token function">to_string</span><span class="token punctuation">(</span>deviceSN<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">touchwin</span><span class="token punctuation">(</span>stdscr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/userManage.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/userManage.cc#L62" target="_blank">Github Source: test/src/userManage.cc (line 62)</a></div></p>
 <h3 id="function-registeruserservice">function registerUserService</h3>
 <pre class="language-"><code class="lang-cpp"><span class="token keyword">inline</span> <span class="token keyword">void</span> <span class="token function">registerUserService</span><span class="token punctuation">(</span>
     BMXUserService <span class="token operator">*</span> service

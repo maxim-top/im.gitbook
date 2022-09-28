@@ -1,10 +1,5 @@
-release: build refine
-
-install:
-	docker run -it -v `pwd`:/gitbook registry.cn-beijing.aliyuncs.com/maxim-resource/gitbook gitbook install
-build:
-	docker run -it -v `pwd`:/gitbook registry.cn-beijing.aliyuncs.com/maxim-resource/gitbook gitbook build
-
+serve:
+	gitbook serve --log=debug --debug
 refine:
 	docker run -it -w /gitbook -v `pwd`:/gitbook erlang:21  escript scripts/subdirectory_summary.escript
 	docker run -it -w /gitbook -v `pwd`:/gitbook erlang:21  escript scripts/gitbook_text_replace.escript
