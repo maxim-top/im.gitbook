@@ -4206,4 +4206,5 @@ i = 解绑推送设备
 i = 解绑请求
 i = 证书名称，即在蓝莺IM控制台内上传证书时候设置的名称。
 i = 推送设备Token
+i = 安装须知
 statistics = total:48488 duplicate:115486

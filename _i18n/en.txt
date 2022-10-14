@@ -4206,4 +4206,5 @@ i = Unbind push device
 i = Unbind request
 i = The certificate name, that is, the name set when uploading the certificate in the LanyingIM Console.
 i = Push device token
+i = Notes
 statistics = total:48488 duplicate:115486

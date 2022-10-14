@@ -394,7 +394,7 @@ Screenshot of the operation:
 
 8.After the activation is completed, perform steps 6 and 7 to update the license of the cluster every month, otherwise the cluster will prevent users from logging in because the license expires. If the configuration or administrator token is modified in the console, steps 6 and 7 also need to be performed to update the cluster.
 
-## Other considerations
+## Notes
 
 1. After the service is installed, you need to contact the server for self-inspection. If it is determined that the local environment cannot be accessed externally, you need to add the parameter --net internal to prompt the installer to select intranet IP registration.
 2. If the host has a firewall, you need to ensure that ports 443 and 80 are accessible.
