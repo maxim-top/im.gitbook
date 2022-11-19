@@ -1,6 +1,6 @@
 # 服务端开发指南（API）
 
-本页面供快速集成使用，了解更多请访问[详细文档](../reference/server-api/README.md)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/server-api/README.md)，或者直接访问 [Swagger页面](https://docs.lanyingim.com/reference/server-api/swagger/)。
 
 ## 入门
 
