@@ -147,6 +147,7 @@
     * [过去的十五年，我们怎样做 IM？](articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.md)
     * [云服务的下一个十年](articles/Industry-development/the-next-decade-of-cloud-services.md)
   * [产品技术](articles/product-and-technologies/README.md)
+    * [【国产信创】蓝莺IM私有云企业版发布，与麒麟软件完成兼容性互认证](articles/product-and-technologies/lanying-im-private-cloud-enterprise-edition-published-and-kylin-os-neocertify.md)
     * [如何为开源仓库文档添加示例代码](articles/product-and-technologies/how-to-add-code-snippets-to-gitbook-documents-for-open-source-projects.md)
     * [90%的私有软件项目没有推送提醒](articles/product-and-technologies/ninety-percent-of-privately-deployed-softwares-have-no-push-notifications.md)
     * [从云市场 Marketplace 到光盘行动](articles/product-and-technologies/from-cloud-marketplace-to-compact-disk.md)
