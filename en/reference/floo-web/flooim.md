@@ -11,6 +11,7 @@
     * [.on(options, ext)](#module_flooim__on)
     * [.off(options, ext)](#module_flooim__off)
     * [.logout()](#module_flooim__logout)
+    * [.setLogLevel(logLevel)](#module_flooim__setloglevel)
 
 ### flooim.flooim(config) ⇒ <code>object</code> {#module_flooim__flooim}
 InitializationSDK
@@ -25,6 +26,7 @@ InitializationSDK
 | config.ws | <code>boolean</code> | Whether the connection address is prefixed with ws/wss: ture - the connection address is prefixed with ws or wss; false - the connection address is prefixed with http/https |
 | config.autoLogin | <code>boolean</code> | Whether to login automatically |
 | config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS server address, can be empty, default https://dns.lanyingim.com/v2/app_dns |
+| config.logLevel | <code>string</code> | SDK log level, the default is debug, and the value is debug|info|warn|error|off , where off means not to print logs. |
 
 **Example**  
 ```js
@@ -163,4 +165,17 @@ Log out
 **Example**  
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="im",function="logout" %}{% endlanying_code_snippet %}
+```
+### flooim.setLogLevel(logLevel) {#module_flooim__setloglevel}
+set log level
+
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| logLevel | <code>string</code> | SDK log level, the default is debug, and the value is debug|info|warn|error|off , where off means not to print logs. |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="setLogLevel" %}{% endlanying_code_snippet %}
 ```

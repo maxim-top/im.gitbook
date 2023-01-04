@@ -4214,4 +4214,6 @@ i = Can be empty, the type is JSONObject, for example
 i = User and device
 i = Unread conversations
 i = LANYING.IM - Professional SDK, Monthly Charged Private Cloud
+i = set log level
+i = SDK log level, the default is debug, and the value is debug|info|warn|error|off , where off means not to print logs.
 statistics = total:48488 duplicate:115486

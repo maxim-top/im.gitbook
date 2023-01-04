@@ -11,6 +11,7 @@
     * [.on(options, ext)](#module_flooim__on)
     * [.off(options, ext)](#module_flooim__off)
     * [.logout()](#module_flooim__logout)
+    * [.setLogLevel(logLevel)](#module_flooim__setloglevel)
 
 ### flooim.flooim(config) ⇒ <code>object</code> {#module_flooim__flooim}
 初始化SDK
@@ -25,6 +26,7 @@
 | config.ws | <code>boolean</code> | 连接地址前缀是否为ws/wss: true - 连接地址前缀为ws或wss, false - 连接地址前缀为http/https |
 | config.autoLogin | <code>boolean</code> | 是否自动登录 |
 | config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.lanyingim.com/v2/app_dns |
+| config.logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug|info|warn|error|off , 其中off为不打印日志。 |
 
 **Example**  
 ```js
@@ -163,4 +165,17 @@ const im = flooim(config);
 **Example**  
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="im",function="logout" %}{% endlanying_code_snippet %}
+```
+### flooim.setLogLevel(logLevel) {#module_flooim__setloglevel}
+设置日志等级
+
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug|info|warn|error|off , 其中off为不打印日志。 |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="setLogLevel" %}{% endlanying_code_snippet %}
 ```
