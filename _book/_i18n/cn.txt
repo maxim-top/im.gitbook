@@ -4214,4 +4214,6 @@ i = 可为空，类型为JSONObject, 例如
 i = 用户和设备
 i = 未读会话
 i = 蓝莺 IM - 专业SDK，私有云按月付费
+i = 设置日志等级
+i = SDK的日志等级， 默认为debug, 取值为 debug、info、warn、error 或 off, 其中off为不打印日志。
 statistics = total:48488 duplicate:115486
