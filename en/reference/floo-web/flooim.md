@@ -26,7 +26,7 @@ InitializationSDK
 | config.ws | <code>boolean</code> | Whether the connection address is prefixed with ws/wss: ture - the connection address is prefixed with ws or wss; false - the connection address is prefixed with http/https |
 | config.autoLogin | <code>boolean</code> | Whether to login automatically |
 | config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS server address, can be empty, default https://dns.lanyingim.com/v2/app_dns |
-| config.logLevel | <code>string</code> | SDK log level, the default is debug, and the value is debug|info|warn|error|off , where off means not to print logs. |
+| config.logLevel | <code>string</code> | The log level of the SDK, the default is debug, and the value can be debug, info, warn, error or off, where off means no log is printed. |
 
 **Example**  
 ```js
@@ -173,7 +173,7 @@ set log level
 
 | Param | Type | Description |
 | --- | --- | --- |
-| logLevel | <code>string</code> | SDK log level, the default is debug, and the value is debug|info|warn|error|off , where off means not to print logs. |
+| logLevel | <code>string</code> | The log level of the SDK, the default is debug, and the value can be debug, info, warn, error or off, where off means no log is printed. |
 
 **Example**  
 ```js

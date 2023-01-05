@@ -26,7 +26,7 @@
 | config.ws | <code>boolean</code> | 连接地址前缀是否为ws/wss: true - 连接地址前缀为ws或wss, false - 连接地址前缀为http/https |
 | config.autoLogin | <code>boolean</code> | 是否自动登录 |
 | config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.lanyingim.com/v2/app_dns |
-| config.logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug|info|warn|error|off , 其中off为不打印日志。 |
+| config.logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug、info、warn、error 或 off, 其中off为不打印日志。 |
 
 **Example**  
 ```js
@@ -173,7 +173,7 @@ const im = flooim(config);
 
 | Param | Type | Description |
 | --- | --- | --- |
-| logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug|info|warn|error|off , 其中off为不打印日志。 |
+| logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug、info、warn、error 或 off, 其中off为不打印日志。 |
 
 **Example**  
 ```js

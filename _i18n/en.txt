@@ -4215,5 +4215,5 @@ i = User and device
 i = Unread conversations
 i = LANYING.IM - Professional SDK, Monthly Charged Private Cloud
 i = set log level
-i = SDK log level, the default is debug, and the value is debug|info|warn|error|off , where off means not to print logs.
+i = The log level of the SDK, the default is debug, and the value can be debug, info, warn, error or off, where off means no log is printed.
 statistics = total:48488 duplicate:115486
