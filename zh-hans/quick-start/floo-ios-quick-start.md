@@ -71,19 +71,51 @@
 您在使用蓝莺IM SDK 所有功能之前，您必须先调用此方法初始化 SDK。 在 App 的整个生命周期中，您只需要将 SDK 初始化一次。
 
 ```
-// 设置存储路径
+    //设置数据和缓存目录路径
+    NSString* dataDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"ChatData"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:dataDir]) {
+        [fileManager createDirectoryAtPath:dataDir withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    NSString* cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingString:@"UserCache"];
+    if (![fileManager fileExistsAtPath:cacheDir]) {
+        [fileManager createDirectoryAtPath:cacheDir withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    NSLog(@"dataDir = %@", dataDir);
+    NSLog(@"cacheDir = %@", cacheDir);
+  
+    NSString* phoneName = [[UIDevice currentDevice] name];
+    NSString* localizedModel = [[UIDevice currentDevice] localizedModel];
+    NSString* systemName = [[UIDevice currentDevice] systemName];
+    NSString* phoneVersion = [[UIDevice currentDevice] systemVersion];
+  
+    NSString *phone = [NSString stringWithFormat:NSLocalizedString(@"Device_name_name", @"设备名称:%@;%@;%@;%@"), phoneName,localizedModel,systemName,phoneVersion];
+    // pushCertName: DEV: apns_maximtop_dev_2022_11; DIST: apns_maximtop_distribution_2022_11
+    BMXSDKConfig *config  = [[BMXSDKConfig alloc] initWithType:BMXClientType_iOS vsn:@"1" dataDir:dataDir
+        cacheDir:cacheDir sDKVersion:@"1" pushCertName:@"apns_maximtop_distribution_2022_11" userAgent:phone
+        appId:[AppIDManager sharedManager].appid.appId appSecret:@"47B13PBIAPDARZKD" deliveryAck:false];
+    config.appID = [AppIDManager sharedManager].appid.appId;
+    config.appSecret = @"47B13PBIAPDARZKD";
+    config.loadAllServerConversations = YES;
+    [config setLogLevel: BMXLogLevel_Debug];
+    
+    IMAcount *accout = [IMAcountInfoStorage loadObject];
+    if (accout.isLogin) {
+        if ([HostConfigManager checkLocalConfig]) {
+            BMXSDKConfigHostConfig * hostConfig = [[BMXSDKConfigHostConfig alloc]initWithIm:[HostConfigManager sharedManager].IMServer port:[[HostConfigManager sharedManager].IMPort intValue] rest:[HostConfigManager sharedManager].restServer];
+            config.hostConfig = hostConfig;
+            config.enableDNS = NO;
 
-NSString* dataDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@“ChatData”];
+        } else {
+            config.enableDNS = YES;
+        }
+    } else {
+        config.enableDNS = YES;
 
-NSString* cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingString:@“UserCache”];
-
-// 初始化
-
-BMXSDKConfig *config = [[BMXSDKConfig alloc] initConfigWithDataDir:dataDir cacheDir:cacheDir pushCertName:@“Your APNS Certification” userAgent:@“userAgent”];
-
-config.appID = @“Your AppID”;
-
-[[BMXClient sharedClient] registerWithSDKConfig:config];
+    }
+    
+    config.verifyCertificate = NO;
+    [BMXClient createWithConfig: config];
 ```
 
 ### 二、注册用户
