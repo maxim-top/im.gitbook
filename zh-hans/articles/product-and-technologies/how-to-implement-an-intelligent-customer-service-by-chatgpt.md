@@ -145,7 +145,7 @@ ChatGPT发布当月，我们在控制台第三方服务增加OpenAI Chatbot配�
 
 当我们问它一个「蓝莺IM SDK怎么集成」的问题，它的回答是这样：
 
-![](../../assets/articles/autogen-bdc5c684101376a347f6d7084e7d5f41579257c23c4316b0eda3df8bea3b04d5.jpeg)
+![](../../assets/articles/autogen-bdc5c684101376a347f6d7084e7d5f41579257c23c4316b0eda3df8bea3b04d5.jpeg@40p)
 
 如何集成蓝莺IM SDK？
 
@@ -173,7 +173,7 @@ ChatGPT发布当月，我们在控制台第三方服务增加OpenAI Chatbot配�
 
 但也正因为这个，那些八竿子打不到的事情，也会被强行关联上。在小蓝AI刚上线的时候，由于我们使用的是GPT-3模型，因为没有胡锡进的信息，所以当有用户问到胡锡进时，它的回答是这样的：
 
-![](../../assets/articles/autogen-e78b584e89704700f8019ba1cb3094383258c6d7105d593464cc16efedbb3655.png)
+![](../../assets/articles/autogen-e78b584e89704700f8019ba1cb3094383258c6d7105d593464cc16efedbb3655.png@40p)
 
 真实情况是，你问任何一个人，如果它不认识，它就会往公司上关联，给他安排各种头衔和履历。
 
