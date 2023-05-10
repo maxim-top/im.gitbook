@@ -1,517 +1,1109 @@
 # BMXErrorCode Constants Reference
 
-  **Declared in** BMXErrorCode.h  
+  **Declared in** floo_proxy.h  
 
 ### BMXErrorCode
 
+错误码
+
+BMXErrorCode_NoError:
+&ldquo;The operation was performed successfully without error.&rdquo;
+BMXErrorCode_GeneralError:
+&ldquo;A generic error occurred during operation execution.&rdquo;
+BMXErrorCode_InvalidParam:
+&ldquo;There are invalid parameters in the input parameters.&rdquo;
+BMXErrorCode_NotFound:
+&ldquo;The path or file does not exist.&rdquo;
+BMXErrorCode_DbOperationFailed:
+&ldquo;The local database operation failed.&rdquo;
+BMXErrorCode_SignInCancelled:
+&ldquo;The user has cancelled the login operation.&rdquo;
+BMXErrorCode_SignInTimeout:
+&ldquo;The user login operation has timed out.&rdquo;
+BMXErrorCode_SignInFailed:
+&ldquo;The user login operation has failed.&rdquo;
+BMXErrorCode_UserNotLogin:
+&ldquo;The user hasn&rsquo;t logged in yet.&rdquo;
+BMXErrorCode_UserAlreadyLogin:
+&ldquo;Other user has logged in.&rdquo;
+BMXErrorCode_UserAuthFailed:
+&ldquo;User authentication failed, username/id or password is incorrect.&rdquo;
+BMXErrorCode_UserPermissionDenied:
+&ldquo;The user does not have permission to perform this action.&rdquo;
+BMXErrorCode_UserNotExist:
+&ldquo;The user does not exist.&rdquo;
+BMXErrorCode_UserAlreadyExist:
+&ldquo;The user is already exist.&rdquo;
+BMXErrorCode_UserFrozen:
+&ldquo;The user has been frozen.&rdquo;
+BMXErrorCode_UserBanned:
+&ldquo;The use has been banned from sending messages.&rdquo;
+BMXErrorCode_UserRemoved:
+&ldquo;The user has been removed.&rdquo;
+BMXErrorCode_UserTooManyDevice:
+&ldquo;The use has logged into too many devices.&rdquo;
+BMXErrorCode_UserPasswordChanged:
+&ldquo;The user has changed passwords on other device.&rdquo;
+BMXErrorCode_UserKickedBySameDevice:
+&ldquo;The user is kicked out by the same device.&rdquo;
+BMXErrorCode_UserKickedByOtherDevices:
+&ldquo;The user is kicked out by other device.&rdquo;
+BMXErrorCode_UserAbnormal:
+&ldquo;The user login status is not normal, the user is advised to login again.&rdquo;
+BMXErrorCode_UserCancel:
+&ldquo;The user has cancelled the operation.&rdquo;
+BMXErrorCode_UserOldPasswordNotMatch:
+&ldquo;The old password does not match when the password is changed.&rdquo;
+BMXErrorCode_UserSigningIn:
+&ldquo;The user is signning in.&rdquo;
+BMXErrorCode_PushTokenInvalid:
+&ldquo;The push token is not valid.&rdquo;
+BMXErrorCode_PushAliasBindByOtherUser:
+&ldquo;The push alias is bound by other user.&rdquo;
+BMXErrorCode_PushAliasTokenNotMatch:
+&ldquo;The push alias does not match the token.&rdquo;
+BMXErrorCode_InvalidVerificationCode:
+&ldquo;The verification code is not valid.&rdquo;
+BMXErrorCode_InvalidRequestParameter:
+&ldquo;The request parameters are not valid.&rdquo;
+BMXErrorCode_InvalidUserNameParameter:
+&ldquo;The username parameter is not valid.&rdquo;
+BMXErrorCode_MissingAccessToken:
+&ldquo;The access token parameter is missing.&rdquo;
+BMXErrorCode_CurrentUserIsInRoster:
+&ldquo;The current user is already in the roster list.&rdquo;
+BMXErrorCode_CurrentUserIsInBlocklist:
+&ldquo;The current user is already in the blocked list.&rdquo;
+BMXErrorCode_AnswerFailed:
+&ldquo;The application does not exist or has already expired.&rdquo;
+BMXErrorCode_InvalidToken:
+&ldquo;The current token is not valid.&rdquo;
+BMXErrorCode_InvalidFileSign:
+&ldquo;The current file signature is not valid.&rdquo;
+BMXErrorCode_InvalidFileObjectType:
+&ldquo;The current file object type is not valid.&rdquo;
+BMXErrorCode_InvalidFileUploadToType:
+&ldquo;The to type of the uploaded file is not valid.&rdquo;
+BMXErrorCode_InvalidFileDownloadUrl:
+&ldquo;The file download url is not valid.&rdquo;
+BMXErrorCode_MessageInvalid:
+&ldquo;The current message format is not valid.&rdquo;
+BMXErrorCode_MessageOutRecallTime:
+&ldquo;The current message has exceeded the allowed recall time.&rdquo;
+BMXErrorCode_MessageRecallDisabled:
+&ldquo;The current message is not recallable.&rdquo;
+BMXErrorCode_MessageCensored:
+&ldquo;The current message include censored content.&rdquo;
+BMXErrorCode_MessageInvalidType:
+&ldquo;This operation is not supported by the current message type.&rdquo;
+BMXErrorCode_MessageBadArg:
+&ldquo;The current message contains illegal characters.&rdquo;
+BMXErrorCode_MessageRateLimitExceeded:
+&ldquo;The message sending frequency has reached the limit.&rdquo;
+BMXErrorCode_RosterNotFriend:
+&ldquo;The current roster is not a friend.&rdquo;
+BMXErrorCode_RosterBlockListExist:
+&ldquo;The current roster is already on the blocklist.&rdquo;
+BMXErrorCode_RosterRejectApplication:
+&ldquo;The current user does not accept any application.&rdquo;
+BMXErrorCode_RosterHasDeletedFromSystem:
+&ldquo;The current roster has been deleted from the system.&rdquo;
+BMXErrorCode_GroupServerDbError:
+&ldquo;An error occurred in the server database.&rdquo;
+BMXErrorCode_GroupNotExist:
+&ldquo;The Specified group not found.&rdquo;
+BMXErrorCode_GroupNotMemberFound:
+&ldquo;The user is not in the specified group.&rdquo;
+BMXErrorCode_GroupMsgNotifyTypeUnknown:
+&ldquo;The group message notification type is unknown.&rdquo;
+BMXErrorCode_GroupOwnerCannotLeave:
+&ldquo;The group owner cannot leave the group.&rdquo;
+BMXErrorCode_GroupTransferNotAllowed:
+&ldquo;Group owners can only be transferred to group members. The currently specified user is not a group member.&rdquo;
+BMXErrorCode_GroupRecoveryMode:
+&ldquo;Group is recovery mode.&rdquo;
+BMXErrorCode_GroupExceedLimitGlobal:
+&ldquo;The number of global groups reaches the limit.&rdquo;
+BMXErrorCode_GroupExceedLimitUserCreate:
+&ldquo;The number of incoming members reached the limit when the group was created.&rdquo;
+BMXErrorCode_GroupExceedLimitUserJoin:
+&ldquo;The number of group members has reached the limit.&rdquo;
+BMXErrorCode_GroupCapacityExceedLimit:
+&ldquo;The maximum group capacity is limited.&rdquo;
+BMXErrorCode_GroupMemberPermissionRequired:
+&ldquo;This operation needs group member permission.&rdquo;
+BMXErrorCode_GroupAdminPermissionRequired:
+&ldquo;This operation needs group admin permission.&rdquo;
+BMXErrorCode_GroupOwnerPermissionRequired:
+&ldquo;This operation needs group owner permission.&rdquo;
+BMXErrorCode_GroupApplicationExpiredOrHandled:
+&ldquo;The current group application has expired or be handled.&rdquo;
+BMXErrorCode_GroupInvitationExpiredOrHandled:
+&ldquo;The current group invitation  has expired or be handled.&rdquo;
+BMXErrorCode_GroupKickTooManyTimes:
+&ldquo;The current user has been kicked more than 3 times.&rdquo;
+BMXErrorCode_GroupMemberExist:
+&ldquo;The current user is already in the group.&rdquo;
+BMXErrorCode_GroupBlockListExist:
+&ldquo;The current user is already in group blocklist.&rdquo;
+BMXErrorCode_GroupAnnouncementNotFound:
+&ldquo;The current group announcement with the specified id was not found.&rdquo;
+BMXErrorCode_GroupAnnouncementForbidden:
+&ldquo;Group announcement has been forbidden by system admin.&rdquo;
+BMXErrorCode_GroupSharedFileNotFound:
+&ldquo;Group shared file is not found.&rdquo;
+BMXErrorCode_GroupSharedFileOperateNotAllowed:
+&ldquo;Do not have permission to operate group shared files.&rdquo;
+BMXErrorCode_GroupMemberBanned:
+&ldquo;Group banned member to send message.&rdquo;
+BMXErrorCode_ServerNotReachable:
+&ldquo;The current server not reachable.&rdquo;
+BMXErrorCode_ServerUnknownError:
+&ldquo;An unknown error occurred on the server.&rdquo;
+BMXErrorCode_ServerInvalid:
+&ldquo;The current server host is not valid.&rdquo;
+BMXErrorCode_ServerDecryptionFailed:
+&ldquo;A decryption failed error occurred on the server.&rdquo;
+BMXErrorCode_ServerEncryptMethodUnsupported:
+&ldquo;The server does not currently support the specified encryption method.&rdquo;
+BMXErrorCode_ServerBusy:
+&ldquo;The server is currently busy.&rdquo;
+BMXErrorCode_ServerNeedRetry:
+&ldquo;The server needs to retry.&rdquo;
+BMXErrorCode_ServerTimeOut:
+&ldquo;A timeout error occurred on the server.&rdquo;
+BMXErrorCode_ServerConnectFailed:
+&ldquo;A connection failure error occurred on the server.&rdquo;
+BMXErrorCode_ServerDNSFailed:
+&ldquo;The current server failed to obtain the dns list.&rdquo;
+BMXErrorCode_ServerNeedReconnected:
+&ldquo;The current server has changed and needs to be reconnected.&rdquo;
+BMXErrorCode_ServerFileUploadUnknownError:
+&ldquo;An unknown file upload error occurred on the server.&rdquo;
+BMXErrorCode_ServerFileDownloadUnknownError:
+&ldquo;An unknown file download error occurred on the server.&rdquo;
+BMXErrorCode_ServerInvalidLicense:
+&ldquo;An invalid license error occurred on the server.&rdquo;
+BMXErrorCode_ServerLicenseLimit:
+&ldquo;A license limit error occurred on the server.&rdquo;
+BMXErrorCode_ServerAppFrozen:
+&ldquo;An app freeze error occurred on the server.&rdquo;
+BMXErrorCode_ServerTooManyRequest:
+&ldquo;The server is being accessed too many times.&rdquo;
+BMXErrorCode_ServerNotAllowOpenRegister:
+&ldquo;The server is not allowed open registration.&rdquo;
+BMXErrorCode_ServerFireplaceUnknownError:
+&ldquo;An unknown error occurred on the fireplace server.&rdquo;
+BMXErrorCode_ServerResponseInvalid:
+&ldquo;The current response returned by the server is not valid.&rdquo;
+BMXErrorCode_ServerInvalidUploadUrl:
+&ldquo;The current upload server url is not valid.&rdquo;
+BMXErrorCode_ServerAppLicenseInvalid:
+&ldquo;The current server app license is not valid.&rdquo;
+BMXErrorCode_ServerAppLicenseExpired:
+&ldquo;The current server app license has expired.&rdquo;
+BMXErrorCode_ServerAppLicenseExceedLimit:
+&ldquo;The current server app license has reached its limit.&rdquo;
+BMXErrorCode_ServerAppIdMissing:
+&ldquo;The current server appid is missing.&rdquo;
+BMXErrorCode_ServerAppIdInvalid:
+&ldquo;The current server appid is not valid.&rdquo;
+BMXErrorCode_ServerAppSignInvalid:
+&ldquo;The current server app signature is not valid.&rdquo;
+BMXErrorCode_ServerAppNotifierNotExist:
+&ldquo;The current server app notifier not exist.&rdquo;
+BMXErrorCode_ServerNoClusterInfoForClusterId:
+&ldquo;The specified cluster id has no cluster information.&rdquo;
+BMXErrorCode_ServerFileDownloadFailure:
+&ldquo;A download error occurred on the server.&rdquo;
+BMXErrorCode_ServerAppStatusNotNormal:
+&ldquo;The current status of the server app is not normal.&rdquo;
+BMXErrorCode_ServerPlatformNotAllowed:
+&ldquo;The server does not support the currently logged in device platform.&rdquo;
+BMXErrorCode_ServerCannotCreateDeviceSn:
+&ldquo;The server cannot generate the serial number of the currently logged in device.&rdquo;
+BMXErrorCode_ServerRtcNotOpen:
+&ldquo;The RTC service is not open.&rdquo;
+
 #### Definition
-    typedef NS_ENUM(NSUInteger, BMXErrorCode ) {   
+    typedef NS_ENUM(NSInteger, BMXErrorCode ) {   
         
-        BMXNoError,
+        BMXErrorCode_NoError,
         
-        BMXGeneralError,
+        BMXErrorCode_GeneralError,
         
-        BMXInvalidParam,
+        BMXErrorCode_InvalidParam,
         
-        BMXNotFound,
+        BMXErrorCode_NotFound,
         
-        BMXUserNotLogin,
+        BMXErrorCode_DbOperationFailed,
         
-        BMXUserAlreadyLogin,
+        BMXErrorCode_SignInCancelled,
         
-        BMXUserAuthFailed,
+        BMXErrorCode_SignInTimeout,
         
-        BMXUserPermissionDenied,
+        BMXErrorCode_SignInFailed,
         
-        BMXUserNotExist,
+        BMXErrorCode_UserNotLogin = 100,
         
-        BMXUserAlreadyExist,
+        BMXErrorCode_UserAlreadyLogin,
         
-        BMXUserFrozen,
+        BMXErrorCode_UserAuthFailed,
         
-        BMXUserBanned,
+        BMXErrorCode_UserPermissionDenied,
         
-        BMXUserRemoved,
+        BMXErrorCode_UserNotExist,
         
-        BMXUserTooManyDevice,
+        BMXErrorCode_UserAlreadyExist,
         
-        BMXUserPasswordChanged,
+        BMXErrorCode_UserFrozen,
         
-        BMXUserKickedBySameDevice,
+        BMXErrorCode_UserBanned,
         
-        BMXUserKickedByOtherDevices,
+        BMXErrorCode_UserRemoved,
         
-        BMXUserAbnormal,
+        BMXErrorCode_UserTooManyDevice,
         
-        BMXUserCancel,
+        BMXErrorCode_UserPasswordChanged,
         
-        BMXInvalidVerificationCode,
+        BMXErrorCode_UserKickedBySameDevice,
         
-        BMXInvalidRequestParameter,
+        BMXErrorCode_UserKickedByOtherDevices,
         
-        BMXInvalidUserNameParameter,
+        BMXErrorCode_UserAbnormal,
         
-        BMXMissingAccessToken,
+        BMXErrorCode_UserCancel,
         
-        BMXCurrentUserIsInRoster,
+        BMXErrorCode_UserOldPasswordNotMatch,
         
-        BMXCurrentUserIsInBlocklist,
+        BMXErrorCode_UserSigningIn,
         
-        BMXAnswerFailed,
+        BMXErrorCode_PushTokenInvalid = 200,
         
-        BMXInvalidToken,
+        BMXErrorCode_PushAliasBindByOtherUser,
         
-        BMXRosterNotFriend,
+        BMXErrorCode_PushAliasTokenNotMatch,
         
-        BMXRosterBlockListExist,
+        BMXErrorCode_InvalidVerificationCode = 300,
         
-        BMXRosterRejectApplication,
+        BMXErrorCode_InvalidRequestParameter,
         
-        BMXGroupServerDbError,
+        BMXErrorCode_InvalidUserNameParameter,
         
-        BMXGroupNotExist,
+        BMXErrorCode_MissingAccessToken,
         
-        BMXGroupNotMemberFound,
+        BMXErrorCode_CurrentUserIsInRoster,
         
-        BMXGroupMsgNotifyTypeUnknown,
+        BMXErrorCode_CurrentUserIsInBlocklist,
         
-        BMXGroupOwnerCannotLeave,
+        BMXErrorCode_AnswerFailed,
         
-        BMXGroupTransferNotAllowed,
+        BMXErrorCode_InvalidToken,
         
-        BMXGroupRecoveryMode,
+        BMXErrorCode_InvalidFileSign,
         
-        BMXGroupExceedLimitGlobal,
+        BMXErrorCode_InvalidFileObjectType,
         
-        BMXGroupExceedLimitUserCreate,
+        BMXErrorCode_InvalidFileUploadToType,
         
-        BMXGroupExceedLimitUserJoin,
+        BMXErrorCode_InvalidFileDownloadUrl,
         
-        BMXGroupCapacityExceedLimit,
+        BMXErrorCode_MessageInvalid = 400,
         
-        BMXGroupMemberPermissionRequired,
+        BMXErrorCode_MessageOutRecallTime,
         
-        BMXGroupAdminPermissionRequired,
+        BMXErrorCode_MessageRecallDisabled,
         
-        BMXGroupOwnerPermissionRequired,
+        BMXErrorCode_MessageCensored,
         
-        BMXGroupApplicationExpiredOrHandled,
+        BMXErrorCode_MessageInvalidType,
         
-        BMXGroupInvitationExpiredOrHandled,
+        BMXErrorCode_MessageBadArg,
         
-        BMXGroupKickTooManyTimes,
+        BMXErrorCode_MessageRateLimitExceeded,
         
-        BMXGroupMemberExist,
+        BMXErrorCode_RosterNotFriend = 500,
         
-        BMXGroupBlockListExist,
+        BMXErrorCode_RosterBlockListExist,
         
-        BMXGroupAnnouncementNotFound,
+        BMXErrorCode_RosterRejectApplication,
         
-        BMXGroupAnnouncementForbidden,
+        BMXErrorCode_RosterHasDeletedFromSystem,
         
-        BMXGroupSharedFileNotFound,
+        BMXErrorCode_GroupServerDbError = 600,
         
-        BMXGroupSharedFileOperateNotAllowed,
+        BMXErrorCode_GroupNotExist,
         
-        BMXGroupMemberBanned,
+        BMXErrorCode_GroupNotMemberFound,
         
-        BMXSignInCancelled,
+        BMXErrorCode_GroupMsgNotifyTypeUnknown,
         
-        BMXSignInTimeout,
+        BMXErrorCode_GroupOwnerCannotLeave,
         
-        BMXSignInFailed,
+        BMXErrorCode_GroupTransferNotAllowed,
         
-        BMXDbOperationFailed,
+        BMXErrorCode_GroupRecoveryMode,
         
-        BMXMessageInvalid,
+        BMXErrorCode_GroupExceedLimitGlobal,
         
-        BMXMessageOutRecallTime,
+        BMXErrorCode_GroupExceedLimitUserCreate,
         
-        BMXMessageRecallDisabled,
+        BMXErrorCode_GroupExceedLimitUserJoin,
         
-        BMXMessageCensored,
+        BMXErrorCode_GroupCapacityExceedLimit,
         
-        BMXMessageInvalidType,
+        BMXErrorCode_GroupMemberPermissionRequired,
         
-        BMXServerNotReachable,
+        BMXErrorCode_GroupAdminPermissionRequired,
         
-        BMXServerUnknownError,
+        BMXErrorCode_GroupOwnerPermissionRequired,
         
-        BMXServerInvalid,
+        BMXErrorCode_GroupApplicationExpiredOrHandled,
         
-        BMXServerDecryptionFailed,
+        BMXErrorCode_GroupInvitationExpiredOrHandled,
         
-        BMXServerEncryptMethodUnsupported,
+        BMXErrorCode_GroupKickTooManyTimes,
         
-        BMXServerBusy,
+        BMXErrorCode_GroupMemberExist,
         
-        BMXServerNeedRetry,
+        BMXErrorCode_GroupBlockListExist,
         
-        BMXServerTimeOut,
+        BMXErrorCode_GroupAnnouncementNotFound,
         
-        BMXServerConnectFailed,
+        BMXErrorCode_GroupAnnouncementForbidden,
         
-        BMXServerDNSFailed,
+        BMXErrorCode_GroupSharedFileNotFound,
         
-        BMXServerNeedReconnected,
+        BMXErrorCode_GroupSharedFileOperateNotAllowed,
         
-        BMXServerFileUploadUnknownError,
+        BMXErrorCode_GroupMemberBanned,
         
-        BMXServerFileDownloadUnknownError,
+        BMXErrorCode_ServerNotReachable = 700,
         
-        BMXServerInvalidLicense,
+        BMXErrorCode_ServerUnknownError,
         
-        BMXServerLicenseLimit,
+        BMXErrorCode_ServerInvalid,
         
-        BMXServerAppFrozen,
+        BMXErrorCode_ServerDecryptionFailed,
         
-        BMXServerTooManyRequest,
+        BMXErrorCode_ServerEncryptMethodUnsupported,
         
-        BMXServerNotAllowOpenRegister,
+        BMXErrorCode_ServerBusy,
         
-        BMXServerFireplaceUnknownError,
+        BMXErrorCode_ServerNeedRetry,
         
-        BMXServerResponseInvalid,
+        BMXErrorCode_ServerTimeOut,
         
-        BMXServerInvalidUploadUrl,
+        BMXErrorCode_ServerConnectFailed,
+        
+        BMXErrorCode_ServerDNSFailed,
+        
+        BMXErrorCode_ServerNeedReconnected,
+        
+        BMXErrorCode_ServerFileUploadUnknownError,
+        
+        BMXErrorCode_ServerFileDownloadUnknownError,
+        
+        BMXErrorCode_ServerInvalidLicense,
+        
+        BMXErrorCode_ServerLicenseLimit,
+        
+        BMXErrorCode_ServerAppFrozen,
+        
+        BMXErrorCode_ServerTooManyRequest,
+        
+        BMXErrorCode_ServerNotAllowOpenRegister,
+        
+        BMXErrorCode_ServerFireplaceUnknownError,
+        
+        BMXErrorCode_ServerResponseInvalid,
+        
+        BMXErrorCode_ServerInvalidUploadUrl,
+        
+        BMXErrorCode_ServerAppLicenseInvalid,
+        
+        BMXErrorCode_ServerAppLicenseExpired,
+        
+        BMXErrorCode_ServerAppLicenseExceedLimit,
+        
+        BMXErrorCode_ServerAppIdMissing,
+        
+        BMXErrorCode_ServerAppIdInvalid,
+        
+        BMXErrorCode_ServerAppSignInvalid,
+        
+        BMXErrorCode_ServerAppNotifierNotExist,
+        
+        BMXErrorCode_ServerNoClusterInfoForClusterId,
+        
+        BMXErrorCode_ServerFileDownloadFailure,
+        
+        BMXErrorCode_ServerAppStatusNotNormal,
+        
+        BMXErrorCode_ServerPlatformNotAllowed,
+        
+        BMXErrorCode_ServerCannotCreateDeviceSn,
+        
+        BMXErrorCode_ServerRtcNotOpen,
         
     };
 
 #### Constants
 
-<a name="" title="BMXNoError"></a><code>BMXNoError</code>
+<a name="" title="BMXErrorCode_NoError"></a><code>BMXErrorCode_NoError</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGeneralError"></a><code>BMXGeneralError</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_GeneralError"></a><code>BMXErrorCode_GeneralError</code>
 
-<a name="" title="BMXInvalidParam"></a><code>BMXInvalidParam</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXNotFound"></a><code>BMXNotFound</code>
+<a name="" title="BMXErrorCode_InvalidParam"></a><code>BMXErrorCode_InvalidParam</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXUserNotLogin"></a><code>BMXUserNotLogin</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_NotFound"></a><code>BMXErrorCode_NotFound</code>
 
-<a name="" title="BMXUserAlreadyLogin"></a><code>BMXUserAlreadyLogin</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXUserAuthFailed"></a><code>BMXUserAuthFailed</code>
+<a name="" title="BMXErrorCode_DbOperationFailed"></a><code>BMXErrorCode_DbOperationFailed</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXUserPermissionDenied"></a><code>BMXUserPermissionDenied</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_SignInCancelled"></a><code>BMXErrorCode_SignInCancelled</code>
 
-<a name="" title="BMXUserNotExist"></a><code>BMXUserNotExist</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXUserAlreadyExist"></a><code>BMXUserAlreadyExist</code>
+<a name="" title="BMXErrorCode_SignInTimeout"></a><code>BMXErrorCode_SignInTimeout</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXUserFrozen"></a><code>BMXUserFrozen</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_SignInFailed"></a><code>BMXErrorCode_SignInFailed</code>
 
-<a name="" title="BMXUserBanned"></a><code>BMXUserBanned</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXUserRemoved"></a><code>BMXUserRemoved</code>
+<a name="" title="BMXErrorCode_UserNotLogin"></a><code>BMXErrorCode_UserNotLogin</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXUserTooManyDevice"></a><code>BMXUserTooManyDevice</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserAlreadyLogin"></a><code>BMXErrorCode_UserAlreadyLogin</code>
 
-<a name="" title="BMXUserPasswordChanged"></a><code>BMXUserPasswordChanged</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXUserKickedBySameDevice"></a><code>BMXUserKickedBySameDevice</code>
+<a name="" title="BMXErrorCode_UserAuthFailed"></a><code>BMXErrorCode_UserAuthFailed</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXUserKickedByOtherDevices"></a><code>BMXUserKickedByOtherDevices</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserPermissionDenied"></a><code>BMXErrorCode_UserPermissionDenied</code>
 
-<a name="" title="BMXUserAbnormal"></a><code>BMXUserAbnormal</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXUserCancel"></a><code>BMXUserCancel</code>
+<a name="" title="BMXErrorCode_UserNotExist"></a><code>BMXErrorCode_UserNotExist</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXInvalidVerificationCode"></a><code>BMXInvalidVerificationCode</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserAlreadyExist"></a><code>BMXErrorCode_UserAlreadyExist</code>
 
-<a name="" title="BMXInvalidRequestParameter"></a><code>BMXInvalidRequestParameter</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXInvalidUserNameParameter"></a><code>BMXInvalidUserNameParameter</code>
+<a name="" title="BMXErrorCode_UserFrozen"></a><code>BMXErrorCode_UserFrozen</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXMissingAccessToken"></a><code>BMXMissingAccessToken</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserBanned"></a><code>BMXErrorCode_UserBanned</code>
 
-<a name="" title="BMXCurrentUserIsInRoster"></a><code>BMXCurrentUserIsInRoster</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXCurrentUserIsInBlocklist"></a><code>BMXCurrentUserIsInBlocklist</code>
+<a name="" title="BMXErrorCode_UserRemoved"></a><code>BMXErrorCode_UserRemoved</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXAnswerFailed"></a><code>BMXAnswerFailed</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserTooManyDevice"></a><code>BMXErrorCode_UserTooManyDevice</code>
 
-<a name="" title="BMXInvalidToken"></a><code>BMXInvalidToken</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXRosterNotFriend"></a><code>BMXRosterNotFriend</code>
+<a name="" title="BMXErrorCode_UserPasswordChanged"></a><code>BMXErrorCode_UserPasswordChanged</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXRosterBlockListExist"></a><code>BMXRosterBlockListExist</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserKickedBySameDevice"></a><code>BMXErrorCode_UserKickedBySameDevice</code>
 
-<a name="" title="BMXRosterRejectApplication"></a><code>BMXRosterRejectApplication</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupServerDbError"></a><code>BMXGroupServerDbError</code>
+<a name="" title="BMXErrorCode_UserKickedByOtherDevices"></a><code>BMXErrorCode_UserKickedByOtherDevices</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupNotExist"></a><code>BMXGroupNotExist</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserAbnormal"></a><code>BMXErrorCode_UserAbnormal</code>
 
-<a name="" title="BMXGroupNotMemberFound"></a><code>BMXGroupNotMemberFound</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupMsgNotifyTypeUnknown"></a><code>BMXGroupMsgNotifyTypeUnknown</code>
+<a name="" title="BMXErrorCode_UserCancel"></a><code>BMXErrorCode_UserCancel</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupOwnerCannotLeave"></a><code>BMXGroupOwnerCannotLeave</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_UserOldPasswordNotMatch"></a><code>BMXErrorCode_UserOldPasswordNotMatch</code>
 
-<a name="" title="BMXGroupTransferNotAllowed"></a><code>BMXGroupTransferNotAllowed</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupRecoveryMode"></a><code>BMXGroupRecoveryMode</code>
+<a name="" title="BMXErrorCode_UserSigningIn"></a><code>BMXErrorCode_UserSigningIn</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupExceedLimitGlobal"></a><code>BMXGroupExceedLimitGlobal</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_PushTokenInvalid"></a><code>BMXErrorCode_PushTokenInvalid</code>
 
-<a name="" title="BMXGroupExceedLimitUserCreate"></a><code>BMXGroupExceedLimitUserCreate</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupExceedLimitUserJoin"></a><code>BMXGroupExceedLimitUserJoin</code>
+<a name="" title="BMXErrorCode_PushAliasBindByOtherUser"></a><code>BMXErrorCode_PushAliasBindByOtherUser</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupCapacityExceedLimit"></a><code>BMXGroupCapacityExceedLimit</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_PushAliasTokenNotMatch"></a><code>BMXErrorCode_PushAliasTokenNotMatch</code>
 
-<a name="" title="BMXGroupMemberPermissionRequired"></a><code>BMXGroupMemberPermissionRequired</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupAdminPermissionRequired"></a><code>BMXGroupAdminPermissionRequired</code>
+<a name="" title="BMXErrorCode_InvalidVerificationCode"></a><code>BMXErrorCode_InvalidVerificationCode</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupOwnerPermissionRequired"></a><code>BMXGroupOwnerPermissionRequired</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_InvalidRequestParameter"></a><code>BMXErrorCode_InvalidRequestParameter</code>
 
-<a name="" title="BMXGroupApplicationExpiredOrHandled"></a><code>BMXGroupApplicationExpiredOrHandled</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupInvitationExpiredOrHandled"></a><code>BMXGroupInvitationExpiredOrHandled</code>
+<a name="" title="BMXErrorCode_InvalidUserNameParameter"></a><code>BMXErrorCode_InvalidUserNameParameter</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupKickTooManyTimes"></a><code>BMXGroupKickTooManyTimes</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_MissingAccessToken"></a><code>BMXErrorCode_MissingAccessToken</code>
 
-<a name="" title="BMXGroupMemberExist"></a><code>BMXGroupMemberExist</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupBlockListExist"></a><code>BMXGroupBlockListExist</code>
+<a name="" title="BMXErrorCode_CurrentUserIsInRoster"></a><code>BMXErrorCode_CurrentUserIsInRoster</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupAnnouncementNotFound"></a><code>BMXGroupAnnouncementNotFound</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_CurrentUserIsInBlocklist"></a><code>BMXErrorCode_CurrentUserIsInBlocklist</code>
 
-<a name="" title="BMXGroupAnnouncementForbidden"></a><code>BMXGroupAnnouncementForbidden</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXGroupSharedFileNotFound"></a><code>BMXGroupSharedFileNotFound</code>
+<a name="" title="BMXErrorCode_AnswerFailed"></a><code>BMXErrorCode_AnswerFailed</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXGroupSharedFileOperateNotAllowed"></a><code>BMXGroupSharedFileOperateNotAllowed</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_InvalidToken"></a><code>BMXErrorCode_InvalidToken</code>
 
-<a name="" title="BMXGroupMemberBanned"></a><code>BMXGroupMemberBanned</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXSignInCancelled"></a><code>BMXSignInCancelled</code>
+<a name="" title="BMXErrorCode_InvalidFileSign"></a><code>BMXErrorCode_InvalidFileSign</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXSignInTimeout"></a><code>BMXSignInTimeout</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_InvalidFileObjectType"></a><code>BMXErrorCode_InvalidFileObjectType</code>
 
-<a name="" title="BMXSignInFailed"></a><code>BMXSignInFailed</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXDbOperationFailed"></a><code>BMXDbOperationFailed</code>
+<a name="" title="BMXErrorCode_InvalidFileUploadToType"></a><code>BMXErrorCode_InvalidFileUploadToType</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXMessageInvalid"></a><code>BMXMessageInvalid</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_InvalidFileDownloadUrl"></a><code>BMXErrorCode_InvalidFileDownloadUrl</code>
 
-<a name="" title="BMXMessageOutRecallTime"></a><code>BMXMessageOutRecallTime</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXMessageRecallDisabled"></a><code>BMXMessageRecallDisabled</code>
+<a name="" title="BMXErrorCode_MessageInvalid"></a><code>BMXErrorCode_MessageInvalid</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXMessageCensored"></a><code>BMXMessageCensored</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_MessageOutRecallTime"></a><code>BMXErrorCode_MessageOutRecallTime</code>
 
-<a name="" title="BMXMessageInvalidType"></a><code>BMXMessageInvalidType</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXServerNotReachable"></a><code>BMXServerNotReachable</code>
+<a name="" title="BMXErrorCode_MessageRecallDisabled"></a><code>BMXErrorCode_MessageRecallDisabled</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXServerUnknownError"></a><code>BMXServerUnknownError</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_MessageCensored"></a><code>BMXErrorCode_MessageCensored</code>
 
-<a name="" title="BMXServerInvalid"></a><code>BMXServerInvalid</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXServerDecryptionFailed"></a><code>BMXServerDecryptionFailed</code>
+<a name="" title="BMXErrorCode_MessageInvalidType"></a><code>BMXErrorCode_MessageInvalidType</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXServerEncryptMethodUnsupported"></a><code>BMXServerEncryptMethodUnsupported</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_MessageBadArg"></a><code>BMXErrorCode_MessageBadArg</code>
 
-<a name="" title="BMXServerBusy"></a><code>BMXServerBusy</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXServerNeedRetry"></a><code>BMXServerNeedRetry</code>
+<a name="" title="BMXErrorCode_MessageRateLimitExceeded"></a><code>BMXErrorCode_MessageRateLimitExceeded</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXServerTimeOut"></a><code>BMXServerTimeOut</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_RosterNotFriend"></a><code>BMXErrorCode_RosterNotFriend</code>
 
-<a name="" title="BMXServerConnectFailed"></a><code>BMXServerConnectFailed</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXServerDNSFailed"></a><code>BMXServerDNSFailed</code>
+<a name="" title="BMXErrorCode_RosterBlockListExist"></a><code>BMXErrorCode_RosterBlockListExist</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXServerNeedReconnected"></a><code>BMXServerNeedReconnected</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_RosterRejectApplication"></a><code>BMXErrorCode_RosterRejectApplication</code>
 
-<a name="" title="BMXServerFileUploadUnknownError"></a><code>BMXServerFileUploadUnknownError</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXServerFileDownloadUnknownError"></a><code>BMXServerFileDownloadUnknownError</code>
+<a name="" title="BMXErrorCode_RosterHasDeletedFromSystem"></a><code>BMXErrorCode_RosterHasDeletedFromSystem</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXServerInvalidLicense"></a><code>BMXServerInvalidLicense</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_GroupServerDbError"></a><code>BMXErrorCode_GroupServerDbError</code>
 
-<a name="" title="BMXServerLicenseLimit"></a><code>BMXServerLicenseLimit</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXServerAppFrozen"></a><code>BMXServerAppFrozen</code>
+<a name="" title="BMXErrorCode_GroupNotExist"></a><code>BMXErrorCode_GroupNotExist</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXServerTooManyRequest"></a><code>BMXServerTooManyRequest</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_GroupNotMemberFound"></a><code>BMXErrorCode_GroupNotMemberFound</code>
 
-<a name="" title="BMXServerNotAllowOpenRegister"></a><code>BMXServerNotAllowOpenRegister</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXServerFireplaceUnknownError"></a><code>BMXServerFireplaceUnknownError</code>
+<a name="" title="BMXErrorCode_GroupMsgNotifyTypeUnknown"></a><code>BMXErrorCode_GroupMsgNotifyTypeUnknown</code>
 
-   Declared In `BMXErrorCode.h`.
+错误码
 
-<a name="" title="BMXServerResponseInvalid"></a><code>BMXServerResponseInvalid</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXErrorCode.h`.
+<a name="" title="BMXErrorCode_GroupOwnerCannotLeave"></a><code>BMXErrorCode_GroupOwnerCannotLeave</code>
 
-<a name="" title="BMXServerInvalidUploadUrl"></a><code>BMXServerInvalidUploadUrl</code>
+错误码
 
-   Declared In `BMXErrorCode.h`.
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupTransferNotAllowed"></a><code>BMXErrorCode_GroupTransferNotAllowed</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupRecoveryMode"></a><code>BMXErrorCode_GroupRecoveryMode</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupExceedLimitGlobal"></a><code>BMXErrorCode_GroupExceedLimitGlobal</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupExceedLimitUserCreate"></a><code>BMXErrorCode_GroupExceedLimitUserCreate</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupExceedLimitUserJoin"></a><code>BMXErrorCode_GroupExceedLimitUserJoin</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupCapacityExceedLimit"></a><code>BMXErrorCode_GroupCapacityExceedLimit</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupMemberPermissionRequired"></a><code>BMXErrorCode_GroupMemberPermissionRequired</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupAdminPermissionRequired"></a><code>BMXErrorCode_GroupAdminPermissionRequired</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupOwnerPermissionRequired"></a><code>BMXErrorCode_GroupOwnerPermissionRequired</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupApplicationExpiredOrHandled"></a><code>BMXErrorCode_GroupApplicationExpiredOrHandled</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupInvitationExpiredOrHandled"></a><code>BMXErrorCode_GroupInvitationExpiredOrHandled</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupKickTooManyTimes"></a><code>BMXErrorCode_GroupKickTooManyTimes</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupMemberExist"></a><code>BMXErrorCode_GroupMemberExist</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupBlockListExist"></a><code>BMXErrorCode_GroupBlockListExist</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupAnnouncementNotFound"></a><code>BMXErrorCode_GroupAnnouncementNotFound</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupAnnouncementForbidden"></a><code>BMXErrorCode_GroupAnnouncementForbidden</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupSharedFileNotFound"></a><code>BMXErrorCode_GroupSharedFileNotFound</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupSharedFileOperateNotAllowed"></a><code>BMXErrorCode_GroupSharedFileOperateNotAllowed</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_GroupMemberBanned"></a><code>BMXErrorCode_GroupMemberBanned</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerNotReachable"></a><code>BMXErrorCode_ServerNotReachable</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerUnknownError"></a><code>BMXErrorCode_ServerUnknownError</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerInvalid"></a><code>BMXErrorCode_ServerInvalid</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerDecryptionFailed"></a><code>BMXErrorCode_ServerDecryptionFailed</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerEncryptMethodUnsupported"></a><code>BMXErrorCode_ServerEncryptMethodUnsupported</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerBusy"></a><code>BMXErrorCode_ServerBusy</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerNeedRetry"></a><code>BMXErrorCode_ServerNeedRetry</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerTimeOut"></a><code>BMXErrorCode_ServerTimeOut</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerConnectFailed"></a><code>BMXErrorCode_ServerConnectFailed</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerDNSFailed"></a><code>BMXErrorCode_ServerDNSFailed</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerNeedReconnected"></a><code>BMXErrorCode_ServerNeedReconnected</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerFileUploadUnknownError"></a><code>BMXErrorCode_ServerFileUploadUnknownError</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerFileDownloadUnknownError"></a><code>BMXErrorCode_ServerFileDownloadUnknownError</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerInvalidLicense"></a><code>BMXErrorCode_ServerInvalidLicense</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerLicenseLimit"></a><code>BMXErrorCode_ServerLicenseLimit</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppFrozen"></a><code>BMXErrorCode_ServerAppFrozen</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerTooManyRequest"></a><code>BMXErrorCode_ServerTooManyRequest</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerNotAllowOpenRegister"></a><code>BMXErrorCode_ServerNotAllowOpenRegister</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerFireplaceUnknownError"></a><code>BMXErrorCode_ServerFireplaceUnknownError</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerResponseInvalid"></a><code>BMXErrorCode_ServerResponseInvalid</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerInvalidUploadUrl"></a><code>BMXErrorCode_ServerInvalidUploadUrl</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppLicenseInvalid"></a><code>BMXErrorCode_ServerAppLicenseInvalid</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppLicenseExpired"></a><code>BMXErrorCode_ServerAppLicenseExpired</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppLicenseExceedLimit"></a><code>BMXErrorCode_ServerAppLicenseExceedLimit</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppIdMissing"></a><code>BMXErrorCode_ServerAppIdMissing</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppIdInvalid"></a><code>BMXErrorCode_ServerAppIdInvalid</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppSignInvalid"></a><code>BMXErrorCode_ServerAppSignInvalid</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppNotifierNotExist"></a><code>BMXErrorCode_ServerAppNotifierNotExist</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerNoClusterInfoForClusterId"></a><code>BMXErrorCode_ServerNoClusterInfoForClusterId</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerFileDownloadFailure"></a><code>BMXErrorCode_ServerFileDownloadFailure</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerAppStatusNotNormal"></a><code>BMXErrorCode_ServerAppStatusNotNormal</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerPlatformNotAllowed"></a><code>BMXErrorCode_ServerPlatformNotAllowed</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerCannotCreateDeviceSn"></a><code>BMXErrorCode_ServerCannotCreateDeviceSn</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXErrorCode_ServerRtcNotOpen"></a><code>BMXErrorCode_ServerRtcNotOpen</code>
+
+错误码
+
+   Declared In `floo_proxy.h`.
+
+#### Declared In
+`floo_proxy.h`
 
