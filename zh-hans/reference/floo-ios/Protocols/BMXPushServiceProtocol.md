@@ -1,7 +1,11 @@
 # BMXPushServiceProtocol Protocol Reference
 
   **Conforms to** NSObject  
-  **Declared in** BMXPushServiceProtocol.h  
+  **Declared in** floo_proxy.h  
+
+## Overview
+
+@protocol 推送服务监听者
 
 ## Instance Methods
 
@@ -21,13 +25,9 @@ Push初始化完成后获取推送证书。
 Push初始化完成后获取推送证书。
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/clearedTags:" title="clearedTags:"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="certRetrieved:" %}{% endlanying_code_snippet %}
-```
 ### clearedTags:
 
 清空用户推送成功回调。
@@ -43,13 +43,9 @@ Push初始化完成后获取推送证书。
 清空用户推送成功回调。
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/deleteTagsDidFinished:" title="deleteTagsDidFinished:"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="clearedTags:" %}{% endlanying_code_snippet %}
-```
 ### deleteTagsDidFinished:
 
 删除用户推送标签成功回调
@@ -65,13 +61,9 @@ Push初始化完成后获取推送证书。
 删除用户推送标签成功回调
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/getTagsDidFinished:" title="getTagsDidFinished:"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="deleteTagsDidFinished:" %}{% endlanying_code_snippet %}
-```
 ### getTagsDidFinished:
 
 获取用户推送标签成功回调。
@@ -87,18 +79,14 @@ Push初始化完成后获取推送证书。
 获取用户推送标签成功回调。
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/pushMessageStatusChanged:error:" title="pushMessageStatusChanged:error:"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="getTagsDidFinished:" %}{% endlanying_code_snippet %}
-```
 ### pushMessageStatusChanged:error:
 
 发送Push上行消息状态变化通知。
 
-`- (void)pushMessageStatusChanged:(BMXMessageObject *)*message* error:(BMXError *)*error*`
+`- (void)pushMessageStatusChanged:(BMXMessage *)*message* error:(BMXError *)*error*`
 
 #### Parameters
 
@@ -112,13 +100,9 @@ Push初始化完成后获取推送证书。
 发送Push上行消息状态变化通知。
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/pushStartDidFinished:" title="pushStartDidFinished:"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushMessageStatusChanged:error:" %}{% endlanying_code_snippet %}
-```
 ### pushStartDidFinished:
 
 Push初始化完成通知。
@@ -134,13 +118,9 @@ Push初始化完成通知。
 Push初始化完成通知。
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/pushStartDidStopped" title="pushStartDidStopped"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidFinished:" %}{% endlanying_code_snippet %}
-```
 ### pushStartDidStopped
 
 Push功能停止通知。
@@ -151,18 +131,14 @@ Push功能停止通知。
 Push功能停止通知。
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/receivedPush:" title="receivedPush:"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidStopped" %}{% endlanying_code_snippet %}
-```
 ### receivedPush:
 
 接收到新的Push通知
 
-`- (void)receivedPush:(NSArray<BMXMessageObject*> *)*messages*`
+`- (void)receivedPush:(NSArray<BMXMessage*> *)*messages*`
 
 #### Parameters
 
@@ -173,13 +149,9 @@ Push功能停止通知。
 接收到新的Push通知
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
 <a name="//api/name/setTagsDidFinished:" title="setTagsDidFinished:"></a>
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="receivedPush:" %}{% endlanying_code_snippet %}
-```
 ### setTagsDidFinished:
 
 设置用户推送标签成功回调。
@@ -195,9 +167,5 @@ Push功能停止通知。
 设置用户推送标签成功回调。
 
 #### Declared In
-* `BMXPushServiceProtocol.h`
+* `floo_proxy.h`
 
-**Example**:
-```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="setTagsDidFinished:" %}{% endlanying_code_snippet %}
-```

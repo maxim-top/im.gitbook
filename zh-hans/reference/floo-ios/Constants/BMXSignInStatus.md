@@ -1,25 +1,42 @@
 # BMXSignInStatus Constants Reference
 
-  **Declared in** BMXDefines.h  
+  **Declared in** floo_proxy.h  
 
 ### BMXSignInStatus
 
+登录状态
+
 #### Definition
-    typedef NS_ENUM(NSUInteger, BMXSignInStatus ) {   
+    typedef NS_ENUM(NSInteger, BMXSignInStatus ) {   
         
-        BMXSignInStatusSignOut,
+        BMXSignInStatus_SignOut,
         
-        BMXSignInStatusSignIn,
+        BMXSignInStatus_SignIn,
+        
+        BMXSignInStatus_SigningIn,
         
     };
 
 #### Constants
 
-<a name="" title="BMXSignInStatusSignOut"></a><code>BMXSignInStatusSignOut</code>
+<a name="" title="BMXSignInStatus_SignOut"></a><code>BMXSignInStatus_SignOut</code>
 
-   Declared In `BMXDefines.h`.
+登录状态
 
-<a name="" title="BMXSignInStatusSignIn"></a><code>BMXSignInStatusSignIn</code>
+   Declared In `floo_proxy.h`.
 
-   Declared In `BMXDefines.h`.
+<a name="" title="BMXSignInStatus_SignIn"></a><code>BMXSignInStatus_SignIn</code>
+
+未登录状态
+
+   Declared In `floo_proxy.h`.
+
+<a name="" title="BMXSignInStatus_SigningIn"></a><code>BMXSignInStatus_SigningIn</code>
+
+登录状态
+
+   Declared In `floo_proxy.h`.
+
+#### Declared In
+`floo_proxy.h`
 
