@@ -1,348 +1,551 @@
 # BMXGroup Class Reference
 
-  **Inherits from** NSObject  
-  **Declared in** BMXGroup.h  
+  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
+NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
-Group
+@interface Group
 
-## Properties
+## Instance Methods
 
 <a name="//api/name/adminsCount" title="adminsCount"></a>
 ### adminsCount
 
-Number of group admins
+The number of administrators
 
-`@property (nonatomic, assign, readonly) NSInteger adminsCount`
+`- (int)adminsCount`
 
-#### Discussion
-Number of group admins
+#### Return Value
+int
 
 #### Declared In
-* `BMXGroup.h`
-
-<a name="//api/name/annountment" title="annountment"></a>
-### annountment
-
-`@property (nonatomic, strong) BMXGroupAnnounment *annountment`
+* `floo_proxy.h`
 
 <a name="//api/name/avatarPath" title="avatarPath"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="adminsCount" %}{% endlanying_code_snippet %}
+```
 ### avatarPath
 
-Local path of downloaded group avatar
+The local file path of group avatar
 
-`@property (nonatomic, copy, readonly) NSString *avatarPath`
+`- (NSString *)avatarPath`
 
-#### Discussion
-Local path of downloaded group avatar
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
+
+<a name="//api/name/avatarRatelUrl" title="avatarRatelUrl"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="avatarPath" %}{% endlanying_code_snippet %}
+```
+### avatarRatelUrl
+
+The group avatar URL on REST server
+
+`- (NSString *)avatarRatelUrl`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### avatarThumbnailPath
 
-Local path of downloaded group avatar thumbnail
+The local file path of group avatar thumbnail
 
-`@property (nonatomic, copy, readonly) NSString *avatarThumbnailPath`
+`- (NSString *)avatarThumbnailPath`
 
-#### Discussion
-Local path of downloaded group avatar thumbnail
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/avatarThumbnailUrl" title="avatarThumbnailUrl"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### avatarThumbnailUrl
 
-Group avatar thumbnail
+The group avatar thumbnail URL on HTTP server
 
-`@property (nonatomic, copy, readonly) NSString *avatarThumbnailUrl`
+`- (NSString *)avatarThumbnailUrl`
 
-#### Discussion
-Group avatar thumbnail
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/avatarUrl" title="avatarUrl"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### avatarUrl
 
-Group avatar
+The group avatar URL on HTTP server
 
-`@property (nonatomic, copy, readonly) NSString *avatarUrl`
+`- (NSString *)avatarUrl`
 
-#### Discussion
-Group avatar
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/banExpireTime" title="banExpireTime"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### banExpireTime
 
-Expiration time of banning all members
+The expiration time of all group members banned
 
-`@property (nonatomic, assign, readonly) long long banExpireTime`
+`- (long long)banExpireTime`
 
-#### Discussion
-Expiration time of banning all members
+#### Return Value
+long long
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
-<a name="//api/name/capactiy" title="capactiy"></a>
-### capactiy
+<a name="//api/name/bannedListSize" title="bannedListSize"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="banExpireTime" %}{% endlanying_code_snippet %}
+```
+### bannedListSize
+
+The number of group members banned
+
+`- (int)bannedListSize`
+
+#### Return Value
+int
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/blockListSize" title="blockListSize"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="bannedListSize" %}{% endlanying_code_snippet %}
+```
+### blockListSize
+
+The number of group members blocked
+
+`- (int)blockListSize`
+
+#### Return Value
+int
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/capacity" title="capacity"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="blockListSize" %}{% endlanying_code_snippet %}
+```
+### capacity
 
 Maximum number of group members
 
-`@property (nonatomic, assign, readonly) NSInteger capactiy`
+`- (int)capacity`
 
-#### Discussion
-Maximum number of group members
-
-#### Declared In
-* `BMXGroup.h`
-
-<a name="//api/name/creatTime" title="creatTime"></a>
-### creatTime
-
-Group creation time
-
-`@property (nonatomic, readonly) long long creatTime`
-
-#### Discussion
-Group creation time
+#### Return Value
+int
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
+
+<a name="//api/name/createTime" title="createTime"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="capacity" %}{% endlanying_code_snippet %}
+```
+### createTime
+
+The created time of group
+
+`- (long long)createTime`
+
+#### Return Value
+long long
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/dealloc" title="dealloc"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="createTime" %}{% endlanying_code_snippet %}
+```
+### dealloc
+
+`- (void)dealloc`
+
+<a name="//api/name/description" title="description"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+```
+### description
+
+Group discription
+
+`- (NSString *)description`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/enableReadAck" title="enableReadAck"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="description" %}{% endlanying_code_snippet %}
+```
 ### enableReadAck
 
-Whether group message read acknowledgement feature enabled
+Enable read ACK of group message
 
-`@property (nonatomic, assign) BOOL enableReadAck`
+`- (BOOL)enableReadAck`
 
-#### Discussion
-Whether group message read acknowledgement feature enabled
-
-#### Declared In
-* `BMXGroup.h`
-
-<a name="//api/name/groupDescription" title="groupDescription"></a>
-### groupDescription
-
-Group description
-
-`@property (nonatomic, copy, readonly) NSString *groupDescription`
-
-#### Discussion
-Group description
+#### Return Value
+BOOL
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
+
+<a name="//api/name/extension" title="extension"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="enableReadAck" %}{% endlanying_code_snippet %}
+```
+### extension
+
+Group extension information
+
+`- (NSString *)extension`
+
+#### Return Value
+JSON(std::string)
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/groupId" title="groupId"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="extension" %}{% endlanying_code_snippet %}
+```
 ### groupId
 
-Group Id
+Group ID
 
-`@property (nonatomic, assign, readonly) long long groupId`
+`- (long long)groupId`
 
-#### Discussion
-Group Id
+#### Return Value
+long long
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/groupStatus" title="groupStatus"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="groupId" %}{% endlanying_code_snippet %}
+```
 ### groupStatus
 
-state of the current group. (Normal, Destroyed)
+Group status(Normal|Destroyed)
 
-`@property (nonatomic, assign) BMXGroupStatus groupStatus`
+`- (BMXGroup_GroupStatus)groupStatus`
 
-#### Discussion
-state of the current group. (Normal, Destroyed)
+#### Return Value
+<a href="../Constants/BMXGroup_GroupStatus.md">BMXGroup_GroupStatus</a>
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/groupType" title="groupType"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="groupStatus" %}{% endlanying_code_snippet %}
+```
 ### groupType
 
-`@property (nonatomic, assign, readonly) BMXGroupType groupType`
+Group type(Private|Public|Chatroom)
+
+`- (BMXGroup_GroupType)groupType`
+
+#### Return Value
+<a href="../Constants/BMXGroup_GroupType.md">BMXGroup_GroupType</a>
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/historyVisible" title="historyVisible"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="groupType" %}{% endlanying_code_snippet %}
+```
 ### historyVisible
 
-Whether to load and display the chat history
+Dispaly the history messages
 
-`@property (nonatomic, assign) BOOL historyVisible`
+`- (BOOL)historyVisible`
 
-#### Discussion
-Whether to load and display the chat history
+#### Return Value
+BOOL
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/inviteMode" title="inviteMode"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="historyVisible" %}{% endlanying_code_snippet %}
+```
 ### inviteMode
 
-Group invitation mode
+Invitation mode
 
-`@property (nonatomic, assign, readonly) BMXGroupInviteMode inviteMode`
+`- (BMXGroup_InviteMode)inviteMode`
 
-#### Discussion
-Group invitation mode
+#### Return Value
+<a href="../Constants/BMXGroup_InviteMode.md">BMXGroup_InviteMode</a>
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/isMember" title="isMember"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="inviteMode" %}{% endlanying_code_snippet %}
+```
 ### isMember
 
-`@property (nonatomic, assign, readonly) BOOL isMember`
+I am the group member
+
+`- (BOOL)isMember`
+
+#### Return Value
+BOOL
+
+#### Discussion
+Deprecated use <a href="#//api/name/roleType">roleType</a> instead.
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/joinAuthMode" title="joinAuthMode"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="isMember" %}{% endlanying_code_snippet %}
+```
 ### joinAuthMode
 
-Join approval mode
+Authorization mode
 
-`@property (nonatomic, assign, readonly) BMXGroupJoinAuthMode joinAuthMode`
+`- (BMXGroup_JoinAuthMode)joinAuthMode`
 
-#### Discussion
-Join approval mode
-
-#### Declared In
-* `BMXGroup.h`
-
-<a name="//api/name/jsonextension" title="jsonextension"></a>
-### jsonextension
-
-Group extension information
-
-`@property (nonatomic, copy, readonly) NSString *jsonextension`
-
-#### Discussion
-Group extension information
+#### Return Value
+<a href="../Constants/BMXGroup_JoinAuthMode.md">BMXGroup_JoinAuthMode</a>
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
+
+<a name="//api/name/latestAnnouncementId" title="latestAnnouncementId"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="joinAuthMode" %}{% endlanying_code_snippet %}
+```
+### latestAnnouncementId
+
+Latest group announcement ID
+
+`- (long long)latestAnnouncementId`
+
+#### Return Value
+long long
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/membersCount" title="membersCount"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="latestAnnouncementId" %}{% endlanying_code_snippet %}
+```
 ### membersCount
 
-Number of group members, including Owner, Admins and Members
+The number of all group member
 
-`@property (nonatomic, assign, readonly) NSInteger membersCount`
+`- (int)membersCount`
 
-#### Discussion
-Number of group members, including Owner, Admins and Members
+#### Return Value
+int
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/modifyMode" title="modifyMode"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="membersCount" %}{% endlanying_code_snippet %}
+```
 ### modifyMode
 
-Group information modification mode
+Modification mode of group information
 
-`@property (nonatomic, assign, readonly) BMXGroupModifyMode modifyMode`
+`- (BMXGroup_ModifyMode)modifyMode`
 
-#### Discussion
-Group information modification mode
+#### Return Value
+<a href="../Constants/BMXGroup_ModifyMode.md">BMXGroup_ModifyMode</a>
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/msgMuteMode" title="msgMuteMode"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="modifyMode" %}{% endlanying_code_snippet %}
+```
 ### msgMuteMode
 
-Group message blocking mode
+Mute mode of group messages
 
-`@property (nonatomic, assign) BMXGroupMsgMuteMode msgMuteMode`
+`- (BMXGroup_MsgMuteMode)msgMuteMode`
 
-#### Discussion
-Group message blocking mode
+#### Return Value
+<a href="../Constants/BMXGroup_MsgMuteMode.md">BMXGroup_MsgMuteMode</a>
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/msgPushMode" title="msgPushMode"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="msgMuteMode" %}{% endlanying_code_snippet %}
+```
 ### msgPushMode
 
-Group message notification type
+Group message push mode
 
-`@property (nonatomic, assign, readonly) BMXGroupMsgPushMode msgPushMode`
+`- (BMXGroup_MsgPushMode)msgPushMode`
 
-#### Discussion
-Group message notification type
-
-#### Declared In
-* `BMXGroup.h`
-
-<a name="//api/name/myNickName" title="myNickName"></a>
-### myNickName
-
-Group member nickname of mine
-
-`@property (nonatomic, copy, readonly) NSString *myNickName`
-
-#### Discussion
-Group member nickname of mine
+#### Return Value
+MsgPushMode
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
+
+<a name="//api/name/myNickname" title="myNickname"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="msgPushMode" %}{% endlanying_code_snippet %}
+```
+### myNickname
+
+My nick name in this group
+
+`- (NSString *)myNickname`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/name" title="name"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="myNickname" %}{% endlanying_code_snippet %}
+```
 ### name
 
 Group name
 
-`@property (nonatomic, copy, readonly) NSString *name`
+`- (NSString *)name`
 
-#### Discussion
-Group name
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/ownerId" title="ownerId"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="name" %}{% endlanying_code_snippet %}
+```
 ### ownerId
 
-Group members
+Group owner ID
 
-`@property (nonatomic, assign, readonly) NSInteger ownerId`
+`- (long long)ownerId`
 
-#### Discussion
-Group members
+#### Return Value
+long long
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
 <a name="//api/name/roleType" title="roleType"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="ownerId" %}{% endlanying_code_snippet %}
+```
 ### roleType
 
-`@property (nonatomic, assign) BMXGroupMemberRoleType roleType`
+The role type of group member
 
-<a name="//api/name/shareFile" title="shareFile"></a>
-### shareFile
+`- (BMXGroup_MemberRoleType)roleType`
 
-`@property (nonatomic, strong, readonly) BMXGroupSharedFile *shareFile`
-
-<a name="//api/name/sharedFilesCount" title="sharedFilesCount"></a>
-### sharedFilesCount
-
-Shared file-number in group
-
-`@property (nonatomic, assign, readonly) NSInteger sharedFilesCount`
-
-#### Discussion
-Shared file-number in group
+#### Return Value
+<a href="../Constants/BMXGroup_MemberRoleType.md">BMXGroup_MemberRoleType</a>
 
 #### Declared In
-* `BMXGroup.h`
+* `floo_proxy.h`
 
+<a name="//api/name/sharedFilesCount" title="sharedFilesCount"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="roleType" %}{% endlanying_code_snippet %}
+```
+### sharedFilesCount
+
+The number of file shared in the group
+
+`- (int)sharedFilesCount`
+
+#### Return Value
+int
+
+#### Declared In
+* `floo_proxy.h`
+
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="sharedFilesCount" %}{% endlanying_code_snippet %}
+```

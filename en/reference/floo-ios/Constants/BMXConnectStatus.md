@@ -1,25 +1,30 @@
 # BMXConnectStatus Constants Reference
 
-  **Declared in** BMXDefines.h  
+  **Declared in** floo_proxy.h  
 
 ### BMXConnectStatus
 
+Client connection status
+
 #### Definition
-    typedef NS_ENUM(NSUInteger, BMXConnectStatus ) {   
+    typedef NS_ENUM(NSInteger, BMXConnectStatus ) {   
         
-        BMXConnectStatusDisconnected,
+        BMXConnectStatus_Disconnected,
         
-        BMXConnectStatusConnected,
+        BMXConnectStatus_Connected,
         
     };
 
 #### Constants
 
-<a name="" title="BMXConnectStatusDisconnected"></a><code>BMXConnectStatusDisconnected</code>
+<a name="" title="BMXConnectStatus_Disconnected"></a><code>BMXConnectStatus_Disconnected</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXConnectStatusConnected"></a><code>BMXConnectStatusConnected</code>
+<a name="" title="BMXConnectStatus_Connected"></a><code>BMXConnectStatus_Connected</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
+
+#### Declared In
+`floo_proxy.h`
 
