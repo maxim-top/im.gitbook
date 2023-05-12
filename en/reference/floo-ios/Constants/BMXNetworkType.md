@@ -1,37 +1,42 @@
 # BMXNetworkType Constants Reference
 
-  **Declared in** BMXDefines.h  
+  **Declared in** floo_proxy.h  
 
 ### BMXNetworkType
 
+Network type
+
 #### Definition
-    typedef NS_ENUM(NSUInteger, BMXNetworkType ) {   
+    typedef NS_ENUM(NSInteger, BMXNetworkType ) {   
         
-        BMXNetworkTypeMobile,
+        BMXNetworkType_Mobile,
         
-        BMXNetworkTypeWifi,
+        BMXNetworkType_Wifi,
         
-        BMXNetworkTypeCable,
+        BMXNetworkType_Cable,
         
-        BMXNetworkTypeNone,
+        BMXNetworkType_None,
         
     };
 
 #### Constants
 
-<a name="" title="BMXNetworkTypeMobile"></a><code>BMXNetworkTypeMobile</code>
+<a name="" title="BMXNetworkType_Mobile"></a><code>BMXNetworkType_Mobile</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXNetworkTypeWifi"></a><code>BMXNetworkTypeWifi</code>
+<a name="" title="BMXNetworkType_Wifi"></a><code>BMXNetworkType_Wifi</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXNetworkTypeCable"></a><code>BMXNetworkTypeCable</code>
+<a name="" title="BMXNetworkType_Cable"></a><code>BMXNetworkType_Cable</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXNetworkTypeNone"></a><code>BMXNetworkTypeNone</code>
+<a name="" title="BMXNetworkType_None"></a><code>BMXNetworkType_None</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
+
+#### Declared In
+`floo_proxy.h`
 

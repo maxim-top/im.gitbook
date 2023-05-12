@@ -2,86 +2,159 @@
 
   **Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
 <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
+<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
 NSObject  
-  **Declared in** BMXVoiceAttachment.h  
+  **Declared in** floo_proxy.h  
 
-## Properties
+## Overview
 
-<a name="//api/name/duration" title="duration"></a>
-### duration
+@interface Voice message attachment
 
-Length
+## Class Methods
 
-`@property (nonatomic, assign) int duration`
+<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
+### dynamicCastWithAttachment:
 
-#### Discussion
-Length
+Type casting
+
+`+ (BMXVoiceAttachment *)dynamicCastWithAttachment:(BMXMessageAttachment *)*attachment*`
+
+#### Parameters
+
+*attachment*  
+   The attachment
+
+#### Return Value
+BMXVoiceAttachment
 
 #### Declared In
-* `BMXVoiceAttachment.h`
+* `floo_proxy.h`
 
 <a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/initWithData:displayName:fileLength:duration:conversationId:" title="initWithData:displayName:fileLength:duration:conversationId:"></a>
-### initWithData:displayName:fileLength:duration:conversationId:
-
-Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
-
-`- (instancetype)initWithData:(NSData *)*aData* displayName:(NSString *)*displayName* fileLength:(NSInteger)*fileLength* duration:(NSInteger)*duration* conversationId:(NSString *)*conversationId*`
-
-#### Parameters
-
-*aData*  
-   Audio Data  
-
-*displayName*  
-   Display name  
-
-*duration*  
-   Length  
-
-*conversationId*  
-   Conversation Id  
-
-#### Discussion
-Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
-
-#### Declared In
-* `BMXVoiceAttachment.h`
-
-<a name="//api/name/initWithPath:displayName:duration:conversationId:" title="initWithPath:displayName:duration:conversationId:"></a>
+<a name="//api/name/clone" title="clone"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithData:displayName:fileLength:duration:conversationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="floo-ios",class="",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
 ```
-### initWithPath:displayName:duration:conversationId:
+### clone
 
-Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
 
-`- (instancetype)initWithPath:(NSString *)*path* displayName:(NSString *)*displayName* duration:(NSInteger)*duration* conversationId:(NSString *)*conversationId*`
+`- (BMXMessageAttachment *)clone`
+
+#### Return Value
+<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/dealloc" title="dealloc"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="clone" %}{% endlanying_code_snippet %}
+```
+### dealloc
+
+`- (void)dealloc`
+
+<a name="//api/name/duration" title="duration"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+```
+### duration
+
+Duration of the voice
+
+`- (int)duration`
+
+#### Return Value
+int
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithPath:duration:" title="initWithPath:duration:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="duration" %}{% endlanying_code_snippet %}
+```
+### initWithPath:duration:
+
+`- (id)initWithPath:(NSString *)*path* duration:(int)*duration*`
+
+<a name="//api/name/initWithPath:duration:displayName:" title="initWithPath:duration:displayName:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:duration:" %}{% endlanying_code_snippet %}
+```
+### initWithPath:duration:displayName:
+
+Constructor
+
+`- (id)initWithPath:(NSString *)*path* duration:(int)*duration* displayName:(NSString *)*displayName*`
 
 #### Parameters
 
 *path*  
-   Audio path  
-
-*displayName*  
-   Display  
+   Local file path
 
 *duration*  
-   Length  
+   Duration of the voice file
 
-#### Return Value
-<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
-
-#### Discussion
-Initialization<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+*displayName*  
+   Attachment name displayed in UI pages
 
 #### Declared In
-* `BMXVoiceAttachment.h`
+* `floo_proxy.h`
+
+<a name="//api/name/initWithRatelUrl:duration:displayName:fileLength:" title="initWithRatelUrl:duration:displayName:fileLength:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:duration:displayName:" %}{% endlanying_code_snippet %}
+```
+### initWithRatelUrl:duration:displayName:fileLength:
+
+Constructor
+
+`- (id)initWithRatelUrl:(NSString *)*ratelUrl* duration:(int)*duration* displayName:(NSString *)*displayName* fileLength:(long long)*fileLength*`
+
+#### Parameters
+
+*ratelUrl*  
+   The file URL on REST server
+
+*duration*  
+   Duration of the voice file
+
+*displayName*  
+   Attachment name displayed in UI pages
+
+*fileLength*  
+   File length 
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/type" title="type"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="floo-ios",class="",function="initWithRatelUrl:duration:displayName:fileLength:" %}{% endlanying_code_snippet %}
+```
+### type
+
+Attachment type
+
+`- (BMXMessageAttachment_Type)type`
+
+#### Return Value
+<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
+
+#### Declared In
+* `floo_proxy.h`
 
 **Example**:
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithPath:displayName:duration:conversationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="floo-ios",class="",function="type" %}{% endlanying_code_snippet %}
 ```
