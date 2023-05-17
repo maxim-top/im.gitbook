@@ -30,7 +30,7 @@
 <a name="//api/name/getMOptionalInfo" title="getMOptionalInfo"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMOptionalInfo
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMRoomId" title="getMRoomId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMOptionalInfo" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="getMOptionalInfo" %}{% endlanying_code_snippet %}
 ```
 ### getMRoomId
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getMToken" title="getMToken"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMRoomId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="getMRoomId" %}{% endlanying_code_snippet %}
 ```
 ### getMToken
 
@@ -57,7 +57,7 @@
 <a name="//api/name/getMUserId" title="getMUserId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMToken" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="getMToken" %}{% endlanying_code_snippet %}
 ```
 ### getMUserId
 
@@ -66,7 +66,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMUserId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="getMUserId" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -75,7 +75,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -84,7 +84,7 @@
 <a name="//api/name/setMOptionalInfo:" title="setMOptionalInfo:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMOptionalInfo:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/setMRoomId:" title="setMRoomId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMOptionalInfo:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="setMOptionalInfo:" %}{% endlanying_code_snippet %}
 ```
 ### setMRoomId:
 
@@ -102,7 +102,7 @@
 <a name="//api/name/setMToken:" title="setMToken:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMRoomId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="setMRoomId:" %}{% endlanying_code_snippet %}
 ```
 ### setMToken:
 
@@ -111,7 +111,7 @@
 <a name="//api/name/setMUserId:" title="setMUserId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMToken:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="setMToken:" %}{% endlanying_code_snippet %}
 ```
 ### setMUserId:
 
@@ -119,5 +119,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMUserId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRoomAuth",function="setMUserId:" %}{% endlanying_code_snippet %}
 ```

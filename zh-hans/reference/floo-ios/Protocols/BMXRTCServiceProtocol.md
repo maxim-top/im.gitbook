@@ -21,6 +21,10 @@
 * `floo_proxy.h`
 
 <a name="//api/name/onRTCHangupMessageReceiveWithMsg:" title="onRTCHangupMessageReceiveWithMsg:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCCallMessageReceiveWithMsg:" %}{% endlanying_code_snippet %}
+```
 ### onRTCHangupMessageReceiveWithMsg:
 
 接收到挂断消息
@@ -32,6 +36,10 @@
 * `floo_proxy.h`
 
 <a name="//api/name/onRTCMessageStatusChangedWithMsg:error:" title="onRTCMessageStatusChangedWithMsg:error:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCHangupMessageReceiveWithMsg:" %}{% endlanying_code_snippet %}
+```
 ### onRTCMessageStatusChangedWithMsg:error:
 
 发送信令消息状态变化
@@ -48,6 +56,10 @@
 * `floo_proxy.h`
 
 <a name="//api/name/onRTCPickupMessageReceiveWithMsg:" title="onRTCPickupMessageReceiveWithMsg:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCMessageStatusChangedWithMsg:error:" %}{% endlanying_code_snippet %}
+```
 ### onRTCPickupMessageReceiveWithMsg:
 
 接收到接通消息
@@ -58,3 +70,7 @@
 #### Declared In
 * `floo_proxy.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCPickupMessageReceiveWithMsg:" %}{% endlanying_code_snippet %}
+```

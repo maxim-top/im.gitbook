@@ -40,7 +40,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMAutoDownloadAttachment" title="getMAutoDownloadAttachment"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMAutoDownloadAttachment
 
@@ -49,7 +49,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMNotificationSound" title="getMNotificationSound"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMAutoDownloadAttachment" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMAutoDownloadAttachment" %}{% endlanying_code_snippet %}
 ```
 ### getMNotificationSound
 
@@ -58,7 +58,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMNotificationVibrate" title="getMNotificationVibrate"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMNotificationSound" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMNotificationSound" %}{% endlanying_code_snippet %}
 ```
 ### getMNotificationVibrate
 
@@ -67,7 +67,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMPushDetail" title="getMPushDetail"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMNotificationVibrate" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMNotificationVibrate" %}{% endlanying_code_snippet %}
 ```
 ### getMPushDetail
 
@@ -76,7 +76,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMPushEnabled" title="getMPushEnabled"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushDetail" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMPushDetail" %}{% endlanying_code_snippet %}
 ```
 ### getMPushEnabled
 
@@ -85,7 +85,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMPushEndTime" title="getMPushEndTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushEnabled" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMPushEnabled" %}{% endlanying_code_snippet %}
 ```
 ### getMPushEndTime
 
@@ -94,7 +94,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMPushNickname" title="getMPushNickname"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushEndTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMPushEndTime" %}{% endlanying_code_snippet %}
 ```
 ### getMPushNickname
 
@@ -103,7 +103,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMPushStartTime" title="getMPushStartTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushNickname" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMPushNickname" %}{% endlanying_code_snippet %}
 ```
 ### getMPushStartTime
 
@@ -112,7 +112,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMSilenceEndTime" title="getMSilenceEndTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushStartTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMPushStartTime" %}{% endlanying_code_snippet %}
 ```
 ### getMSilenceEndTime
 
@@ -121,7 +121,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/getMSilenceStartTime" title="getMSilenceStartTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMSilenceEndTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMSilenceEndTime" %}{% endlanying_code_snippet %}
 ```
 ### getMSilenceStartTime
 
@@ -130,7 +130,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMSilenceStartTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="getMSilenceStartTime" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -139,7 +139,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -148,7 +148,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMAutoDownloadAttachment:" title="setMAutoDownloadAttachment:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMAutoDownloadAttachment:
 
@@ -157,7 +157,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMNotificationSound:" title="setMNotificationSound:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMAutoDownloadAttachment:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMAutoDownloadAttachment:" %}{% endlanying_code_snippet %}
 ```
 ### setMNotificationSound:
 
@@ -166,7 +166,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMNotificationVibrate:" title="setMNotificationVibrate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMNotificationSound:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMNotificationSound:" %}{% endlanying_code_snippet %}
 ```
 ### setMNotificationVibrate:
 
@@ -175,7 +175,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMPushDetail:" title="setMPushDetail:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMNotificationVibrate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMNotificationVibrate:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushDetail:
 
@@ -184,7 +184,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMPushEnabled:" title="setMPushEnabled:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushDetail:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMPushDetail:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushEnabled:
 
@@ -193,7 +193,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMPushEndTime:" title="setMPushEndTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushEnabled:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMPushEnabled:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushEndTime:
 
@@ -202,7 +202,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMPushNickname:" title="setMPushNickname:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushEndTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMPushEndTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushNickname:
 
@@ -211,7 +211,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMPushStartTime:" title="setMPushStartTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushNickname:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMPushNickname:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushStartTime:
 
@@ -220,7 +220,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMSilenceEndTime:" title="setMSilenceEndTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushStartTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMPushStartTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMSilenceEndTime:
 
@@ -229,7 +229,7 @@ mPushEndTime 允许推送结束时间
 <a name="//api/name/setMSilenceStartTime:" title="setMSilenceStartTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMSilenceEndTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMSilenceEndTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMSilenceStartTime:
 
@@ -237,5 +237,5 @@ mPushEndTime 允许推送结束时间
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMSilenceStartTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileMessageSetting",function="setMSilenceStartTime:" %}{% endlanying_code_snippet %}
 ```

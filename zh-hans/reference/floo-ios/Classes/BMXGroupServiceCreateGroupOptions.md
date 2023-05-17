@@ -30,7 +30,7 @@
 <a name="//api/name/getMDescription" title="getMDescription"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMDescription
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMIsChatroom" title="getMIsChatroom"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMDescription" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="getMDescription" %}{% endlanying_code_snippet %}
 ```
 ### getMIsChatroom
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getMIsPublic" title="getMIsPublic"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMIsChatroom" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="getMIsChatroom" %}{% endlanying_code_snippet %}
 ```
 ### getMIsPublic
 
@@ -57,7 +57,7 @@
 <a name="//api/name/getMMembers" title="getMMembers"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMIsPublic" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="getMIsPublic" %}{% endlanying_code_snippet %}
 ```
 ### getMMembers
 
@@ -66,7 +66,7 @@
 <a name="//api/name/getMMessage" title="getMMessage"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMMembers" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="getMMembers" %}{% endlanying_code_snippet %}
 ```
 ### getMMessage
 
@@ -75,7 +75,7 @@
 <a name="//api/name/getMName" title="getMName"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMMessage" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="getMMessage" %}{% endlanying_code_snippet %}
 ```
 ### getMName
 
@@ -84,7 +84,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMName" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="getMName" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -93,7 +93,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -102,7 +102,7 @@
 <a name="//api/name/initWithName:description:" title="initWithName:description:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### initWithName:description:
 
@@ -111,7 +111,7 @@
 <a name="//api/name/initWithName:description:isPublic:" title="initWithName:description:isPublic:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithName:description:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="initWithName:description:" %}{% endlanying_code_snippet %}
 ```
 ### initWithName:description:isPublic:
 
@@ -120,7 +120,7 @@
 <a name="//api/name/initWithName:description:isPublic:isChatroom:" title="initWithName:description:isPublic:isChatroom:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithName:description:isPublic:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="initWithName:description:isPublic:" %}{% endlanying_code_snippet %}
 ```
 ### initWithName:description:isPublic:isChatroom:
 
@@ -129,7 +129,7 @@
 <a name="//api/name/setMDescription:" title="setMDescription:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithName:description:isPublic:isChatroom:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="initWithName:description:isPublic:isChatroom:" %}{% endlanying_code_snippet %}
 ```
 ### setMDescription:
 
@@ -138,7 +138,7 @@
 <a name="//api/name/setMIsChatroom:" title="setMIsChatroom:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMDescription:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="setMDescription:" %}{% endlanying_code_snippet %}
 ```
 ### setMIsChatroom:
 
@@ -147,7 +147,7 @@
 <a name="//api/name/setMIsPublic:" title="setMIsPublic:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMIsChatroom:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="setMIsChatroom:" %}{% endlanying_code_snippet %}
 ```
 ### setMIsPublic:
 
@@ -156,7 +156,7 @@
 <a name="//api/name/setMMembers:" title="setMMembers:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMIsPublic:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="setMIsPublic:" %}{% endlanying_code_snippet %}
 ```
 ### setMMembers:
 
@@ -165,7 +165,7 @@
 <a name="//api/name/setMMessage:" title="setMMessage:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMMembers:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="setMMembers:" %}{% endlanying_code_snippet %}
 ```
 ### setMMessage:
 
@@ -174,7 +174,7 @@
 <a name="//api/name/setMName:" title="setMName:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMMessage:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="setMMessage:" %}{% endlanying_code_snippet %}
 ```
 ### setMName:
 
@@ -182,5 +182,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMName:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupServiceCreateGroupOptions",function="setMName:" %}{% endlanying_code_snippet %}
 ```

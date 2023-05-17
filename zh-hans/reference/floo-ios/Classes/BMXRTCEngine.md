@@ -40,7 +40,7 @@
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### addDelegate:delegateQueue:
 
@@ -49,7 +49,7 @@
 <a name="//api/name/addRTCEngineListener:" title="addRTCEngineListener:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
 ### addRTCEngineListener:
 
@@ -58,7 +58,7 @@
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addRTCEngineListener:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="addRTCEngineListener:" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -67,7 +67,7 @@
 <a name="//api/name/destroy" title="destroy"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### destroy
 
@@ -81,7 +81,7 @@
 <a name="//api/name/getRTCConfig" title="getRTCConfig"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="destroy" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="destroy" %}{% endlanying_code_snippet %}
 ```
 ### getRTCConfig
 
@@ -98,7 +98,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCConfig" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="getRTCConfig" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -107,7 +107,7 @@
 <a name="//api/name/joinRoomWithAuth:" title="joinRoomWithAuth:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### joinRoomWithAuth:
 
@@ -129,7 +129,7 @@
 <a name="//api/name/leaveRoom" title="leaveRoom"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="joinRoomWithAuth:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="joinRoomWithAuth:" %}{% endlanying_code_snippet %}
 ```
 ### leaveRoom
 
@@ -146,7 +146,7 @@
 <a name="//api/name/muteLocalAudioWithMute:" title="muteLocalAudioWithMute:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="leaveRoom" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="leaveRoom" %}{% endlanying_code_snippet %}
 ```
 ### muteLocalAudioWithMute:
 
@@ -168,7 +168,7 @@
 <a name="//api/name/muteLocalVideoWithType:mute:" title="muteLocalVideoWithType:mute:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="muteLocalAudioWithMute:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteLocalAudioWithMute:" %}{% endlanying_code_snippet %}
 ```
 ### muteLocalVideoWithType:mute:
 
@@ -193,7 +193,7 @@
 <a name="//api/name/muteRemoteAudioWithStream:mute:" title="muteRemoteAudioWithStream:mute:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="muteLocalVideoWithType:mute:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteLocalVideoWithType:mute:" %}{% endlanying_code_snippet %}
 ```
 ### muteRemoteAudioWithStream:mute:
 
@@ -218,7 +218,7 @@
 <a name="//api/name/muteRemoteVideoWithStream:mute:" title="muteRemoteVideoWithStream:mute:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="muteRemoteAudioWithStream:mute:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteRemoteAudioWithStream:mute:" %}{% endlanying_code_snippet %}
 ```
 ### muteRemoteVideoWithStream:mute:
 
@@ -243,7 +243,7 @@
 <a name="//api/name/publishWithType:hasVideo:hasAudio:" title="publishWithType:hasVideo:hasAudio:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="muteRemoteVideoWithStream:mute:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteRemoteVideoWithStream:mute:" %}{% endlanying_code_snippet %}
 ```
 ### publishWithType:hasVideo:hasAudio:
 
@@ -271,7 +271,7 @@
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="publishWithType:hasVideo:hasAudio:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="publishWithType:hasVideo:hasAudio:" %}{% endlanying_code_snippet %}
 ```
 ### removeDelegate:
 
@@ -290,7 +290,7 @@
 <a name="//api/name/removeRTCEngineListener:" title="removeRTCEngineListener:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### removeRTCEngineListener:
 
@@ -299,7 +299,7 @@
 <a name="//api/name/setAudioProfile:" title="setAudioProfile:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeRTCEngineListener:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="removeRTCEngineListener:" %}{% endlanying_code_snippet %}
 ```
 ### setAudioProfile:
 
@@ -321,7 +321,7 @@
 <a name="//api/name/setRoomType:" title="setRoomType:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAudioProfile:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setAudioProfile:" %}{% endlanying_code_snippet %}
 ```
 ### setRoomType:
 
@@ -343,7 +343,7 @@
 <a name="//api/name/setStreamRole:" title="setStreamRole:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setRoomType:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setRoomType:" %}{% endlanying_code_snippet %}
 ```
 ### setStreamRole:
 
@@ -365,7 +365,7 @@
 <a name="//api/name/setVideoCodec:" title="setVideoCodec:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setStreamRole:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setStreamRole:" %}{% endlanying_code_snippet %}
 ```
 ### setVideoCodec:
 
@@ -387,7 +387,7 @@
 <a name="//api/name/setVideoProfile:" title="setVideoProfile:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setVideoCodec:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setVideoCodec:" %}{% endlanying_code_snippet %}
 ```
 ### setVideoProfile:
 
@@ -409,7 +409,7 @@
 <a name="//api/name/startPreviewWithCanvas:" title="startPreviewWithCanvas:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setVideoProfile:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setVideoProfile:" %}{% endlanying_code_snippet %}
 ```
 ### startPreviewWithCanvas:
 
@@ -431,7 +431,7 @@
 <a name="//api/name/startRemoteViewWithCanvas:" title="startRemoteViewWithCanvas:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="startPreviewWithCanvas:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="startPreviewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
 ### startRemoteViewWithCanvas:
 
@@ -453,7 +453,7 @@
 <a name="//api/name/stopPreviewWithCanvas:" title="stopPreviewWithCanvas:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="startRemoteViewWithCanvas:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="startRemoteViewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
 ### stopPreviewWithCanvas:
 
@@ -475,7 +475,7 @@
 <a name="//api/name/stopRemoteViewWithCanvas:" title="stopRemoteViewWithCanvas:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="stopPreviewWithCanvas:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="stopPreviewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
 ### stopRemoteViewWithCanvas:
 
@@ -497,7 +497,7 @@
 <a name="//api/name/subscribeWithStream:" title="subscribeWithStream:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="stopRemoteViewWithCanvas:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="stopRemoteViewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
 ### subscribeWithStream:
 
@@ -514,7 +514,7 @@
 <a name="//api/name/switchCamera" title="switchCamera"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="subscribeWithStream:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="subscribeWithStream:" %}{% endlanying_code_snippet %}
 ```
 ### switchCamera
 
@@ -531,7 +531,7 @@
 <a name="//api/name/unPublishWithType:" title="unPublishWithType:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="switchCamera" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="switchCamera" %}{% endlanying_code_snippet %}
 ```
 ### unPublishWithType:
 
@@ -553,7 +553,7 @@
 <a name="//api/name/unSubscribeWithStream:" title="unSubscribeWithStream:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="unPublishWithType:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="unPublishWithType:" %}{% endlanying_code_snippet %}
 ```
 ### unSubscribeWithStream:
 
@@ -569,5 +569,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="unSubscribeWithStream:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="unSubscribeWithStream:" %}{% endlanying_code_snippet %}
 ```

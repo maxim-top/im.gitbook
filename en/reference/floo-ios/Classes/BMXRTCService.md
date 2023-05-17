@@ -39,7 +39,7 @@ Add a RTCService listener
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### addDelegate:delegateQueue:
 
@@ -48,7 +48,7 @@ Add a RTCService listener
 <a name="//api/name/addRTCListener:" title="addRTCListener:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
 ### addRTCListener:
 
@@ -66,7 +66,7 @@ Add a RTCService listener
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addRTCListener:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addRTCListener:" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -75,7 +75,7 @@ Add a RTCService listener
 <a name="//api/name/getBMXRTCSignalService" title="getBMXRTCSignalService"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getBMXRTCSignalService
 
@@ -89,7 +89,7 @@ Get the RTC signal service
 <a name="//api/name/getRTCEngine" title="getRTCEngine"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getBMXRTCSignalService" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="getBMXRTCSignalService" %}{% endlanying_code_snippet %}
 ```
 ### getRTCEngine
 
@@ -106,7 +106,7 @@ BMXRTCEngine*
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCEngine" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="getRTCEngine" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -115,7 +115,7 @@ BMXRTCEngine*
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### removeDelegate:
 
@@ -133,7 +133,7 @@ Remove a RTCService listener
 <a name="//api/name/removeRTCListener:" title="removeRTCListener:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### removeRTCListener:
 
@@ -151,7 +151,7 @@ Remove a RTCService listener
 <a name="//api/name/sendRTCMessageWithMsg:" title="sendRTCMessageWithMsg:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeRTCListener:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="removeRTCListener:" %}{% endlanying_code_snippet %}
 ```
 ### sendRTCMessageWithMsg:
 
@@ -169,7 +169,7 @@ Send a RTC message
 <a name="//api/name/sendRTCMessageWithMsg:completion:" title="sendRTCMessageWithMsg:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="sendRTCMessageWithMsg:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="sendRTCMessageWithMsg:" %}{% endlanying_code_snippet %}
 ```
 ### sendRTCMessageWithMsg:completion:
 
@@ -187,7 +187,7 @@ Send a RTC message
 <a name="//api/name/setupRTCEngine:" title="setupRTCEngine:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="sendRTCMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="sendRTCMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setupRTCEngine:
 
@@ -204,5 +204,5 @@ Initialize the RTC engine
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setupRTCEngine:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="setupRTCEngine:" %}{% endlanying_code_snippet %}
 ```

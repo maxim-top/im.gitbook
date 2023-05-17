@@ -18,7 +18,7 @@ NSObject
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clone" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -27,7 +27,7 @@ NSObject
 <a name="//api/name/type" title="type"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachment",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### type
 
@@ -43,5 +43,5 @@ Type
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="type" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachment",function="type" %}{% endlanying_code_snippet %}
 ```

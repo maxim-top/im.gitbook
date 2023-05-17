@@ -40,7 +40,7 @@ NSObject
 <a name="//api/name/createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createCommandMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createCommandMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
 ```
 ### createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
@@ -77,7 +77,7 @@ NSObject
 <a name="//api/name/createForwardMessageWithMsg:from:to:type:conversationId:" title="createForwardMessageWithMsg:from:to:type:conversationId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
 ```
 ### createForwardMessageWithMsg:from:to:type:conversationId:
 
@@ -108,7 +108,7 @@ NSObject
 <a name="//api/name/createMessageWithFrom:to:type:conversationId:attachment:" title="createMessageWithFrom:to:type:conversationId:attachment:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createForwardMessageWithMsg:from:to:type:conversationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createForwardMessageWithMsg:from:to:type:conversationId:" %}{% endlanying_code_snippet %}
 ```
 ### createMessageWithFrom:to:type:conversationId:attachment:
 
@@ -139,7 +139,7 @@ NSObject
 <a name="//api/name/createMessageWithFrom:to:type:conversationId:content:" title="createMessageWithFrom:to:type:conversationId:content:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createMessageWithFrom:to:type:conversationId:attachment:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithFrom:to:type:conversationId:attachment:" %}{% endlanying_code_snippet %}
 ```
 ### createMessageWithFrom:to:type:conversationId:content:
 
@@ -170,7 +170,7 @@ NSObject
 <a name="//api/name/createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:" title="createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
 ```
 ### createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:
 
@@ -207,7 +207,7 @@ NSObject
 <a name="//api/name/createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:" %}{% endlanying_code_snippet %}
 ```
 ### createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
@@ -244,7 +244,7 @@ NSObject
 <a name="//api/name/createRTCMessageWithFrom:to:type:conversationId:content:" title="createRTCMessageWithFrom:to:type:conversationId:content:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
 ```
 ### createRTCMessageWithFrom:to:type:conversationId:content:
 
@@ -275,7 +275,7 @@ NSObject
 <a name="//api/name/createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createRTCMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createRTCMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
 ```
 ### createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
@@ -315,7 +315,7 @@ NSObject
 <a name="//api/name/attachment" title="attachment"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
 ```
 ### attachment
 
@@ -332,7 +332,7 @@ NSObject
 <a name="//api/name/clientMsgId" title="clientMsgId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="attachment" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="attachment" %}{% endlanying_code_snippet %}
 ```
 ### clientMsgId
 
@@ -349,7 +349,7 @@ long long
 <a name="//api/name/clientTimestamp" title="clientTimestamp"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clientMsgId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="clientMsgId" %}{% endlanying_code_snippet %}
 ```
 ### clientTimestamp
 
@@ -366,7 +366,7 @@ long long
 <a name="//api/name/config" title="config"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clientTimestamp" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="clientTimestamp" %}{% endlanying_code_snippet %}
 ```
 ### config
 
@@ -383,7 +383,7 @@ long long
 <a name="//api/name/content" title="content"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="config" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="config" %}{% endlanying_code_snippet %}
 ```
 ### content
 
@@ -400,7 +400,7 @@ NSString
 <a name="//api/name/contentType" title="contentType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="content" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="content" %}{% endlanying_code_snippet %}
 ```
 ### contentType
 
@@ -417,7 +417,7 @@ ContentType
 <a name="//api/name/conversationId" title="conversationId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="contentType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="contentType" %}{% endlanying_code_snippet %}
 ```
 ### conversationId
 
@@ -434,7 +434,7 @@ long long
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="conversationId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="conversationId" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -443,7 +443,7 @@ long long
 <a name="//api/name/deliveryQos" title="deliveryQos"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### deliveryQos
 
@@ -460,7 +460,7 @@ long long
 <a name="//api/name/deliveryStatus" title="deliveryStatus"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deliveryQos" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="deliveryQos" %}{% endlanying_code_snippet %}
 ```
 ### deliveryStatus
 
@@ -477,7 +477,7 @@ long long
 <a name="//api/name/extension" title="extension"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deliveryStatus" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="deliveryStatus" %}{% endlanying_code_snippet %}
 ```
 ### extension
 
@@ -494,7 +494,7 @@ NSString
 <a name="//api/name/fromId" title="fromId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="extension" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="extension" %}{% endlanying_code_snippet %}
 ```
 ### fromId
 
@@ -511,7 +511,7 @@ long long
 <a name="//api/name/groupAckCount" title="groupAckCount"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fromId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="fromId" %}{% endlanying_code_snippet %}
 ```
 ### groupAckCount
 
@@ -528,7 +528,7 @@ int
 <a name="//api/name/groupAckReadAll" title="groupAckReadAll"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupAckCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckCount" %}{% endlanying_code_snippet %}
 ```
 ### groupAckReadAll
 
@@ -545,7 +545,7 @@ BOOL
 <a name="//api/name/groupAckUnreadCount" title="groupAckUnreadCount"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupAckReadAll" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckReadAll" %}{% endlanying_code_snippet %}
 ```
 ### groupAckUnreadCount
 
@@ -562,7 +562,7 @@ int
 <a name="//api/name/groupPlayAckCount" title="groupPlayAckCount"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
 ```
 ### groupPlayAckCount
 
@@ -579,7 +579,7 @@ int
 <a name="//api/name/groupPlayAckReadAll" title="groupPlayAckReadAll"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
 ```
 ### groupPlayAckReadAll
 
@@ -596,7 +596,7 @@ BOOL
 <a name="//api/name/groupPlayAckUnreadCount" title="groupPlayAckUnreadCount"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
 ```
 ### groupPlayAckUnreadCount
 
@@ -613,7 +613,7 @@ int
 <a name="//api/name/isDeliveryAcked" title="isDeliveryAcked"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
 ```
 ### isDeliveryAcked
 
@@ -630,7 +630,7 @@ BOOL
 <a name="//api/name/isPlayAcked" title="isPlayAcked"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
 ```
 ### isPlayAcked
 
@@ -647,7 +647,7 @@ BOOL
 <a name="//api/name/isPlayed" title="isPlayed"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isPlayAcked" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPlayAcked" %}{% endlanying_code_snippet %}
 ```
 ### isPlayed
 
@@ -664,7 +664,7 @@ BOOL
 <a name="//api/name/isPushMessage" title="isPushMessage"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isPlayed" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPlayed" %}{% endlanying_code_snippet %}
 ```
 ### isPushMessage
 
@@ -681,7 +681,7 @@ BOOL
 <a name="//api/name/isRead" title="isRead"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isPushMessage" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPushMessage" %}{% endlanying_code_snippet %}
 ```
 ### isRead
 
@@ -698,7 +698,7 @@ BOOL
 <a name="//api/name/isReadAcked" title="isReadAcked"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isRead" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isRead" %}{% endlanying_code_snippet %}
 ```
 ### isReadAcked
 
@@ -715,7 +715,7 @@ BOOL
 <a name="//api/name/isReceiveMsg" title="isReceiveMsg"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isReadAcked" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isReadAcked" %}{% endlanying_code_snippet %}
 ```
 ### isReceiveMsg
 
@@ -732,7 +732,7 @@ BOOL
 <a name="//api/name/msgId" title="msgId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isReceiveMsg" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isReceiveMsg" %}{% endlanying_code_snippet %}
 ```
 ### msgId
 
@@ -749,7 +749,7 @@ long long
 <a name="//api/name/priority" title="priority"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="msgId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="msgId" %}{% endlanying_code_snippet %}
 ```
 ### priority
 
@@ -766,7 +766,7 @@ int
 <a name="//api/name/senderName" title="senderName"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="priority" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="priority" %}{% endlanying_code_snippet %}
 ```
 ### senderName
 
@@ -783,7 +783,7 @@ NSString
 <a name="//api/name/serverTimestamp" title="serverTimestamp"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="senderName" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="senderName" %}{% endlanying_code_snippet %}
 ```
 ### serverTimestamp
 
@@ -800,7 +800,7 @@ long long
 <a name="//api/name/setClientTimestamp:" title="setClientTimestamp:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="serverTimestamp" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="serverTimestamp" %}{% endlanying_code_snippet %}
 ```
 ### setClientTimestamp:
 
@@ -814,7 +814,7 @@ long long
 <a name="//api/name/setConfig:" title="setConfig:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setClientTimestamp:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setClientTimestamp:" %}{% endlanying_code_snippet %}
 ```
 ### setConfig:
 
@@ -828,7 +828,7 @@ long long
 <a name="//api/name/setContent:" title="setContent:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setConfig:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setConfig:" %}{% endlanying_code_snippet %}
 ```
 ### setContent:
 
@@ -847,7 +847,7 @@ long long
 <a name="//api/name/setDeliveryQos:" title="setDeliveryQos:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setContent:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setContent:" %}{% endlanying_code_snippet %}
 ```
 ### setDeliveryQos:
 
@@ -866,7 +866,7 @@ long long
 <a name="//api/name/setDeliveryStatus:" title="setDeliveryStatus:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setDeliveryQos:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setDeliveryQos:" %}{% endlanying_code_snippet %}
 ```
 ### setDeliveryStatus:
 
@@ -880,7 +880,7 @@ long long
 <a name="//api/name/setExtension:" title="setExtension:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setDeliveryStatus:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setDeliveryStatus:" %}{% endlanying_code_snippet %}
 ```
 ### setExtension:
 
@@ -894,7 +894,7 @@ long long
 <a name="//api/name/setGroupAckCount:" title="setGroupAckCount:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setExtension:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setExtension:" %}{% endlanying_code_snippet %}
 ```
 ### setGroupAckCount:
 
@@ -913,7 +913,7 @@ long long
 <a name="//api/name/setGroupAckUnreadCount:" title="setGroupAckUnreadCount:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGroupAckCount:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupAckCount:" %}{% endlanying_code_snippet %}
 ```
 ### setGroupAckUnreadCount:
 
@@ -932,7 +932,7 @@ long long
 <a name="//api/name/setGroupPlayAckCount:" title="setGroupPlayAckCount:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGroupAckUnreadCount:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupAckUnreadCount:" %}{% endlanying_code_snippet %}
 ```
 ### setGroupPlayAckCount:
 
@@ -951,7 +951,7 @@ long long
 <a name="//api/name/setGroupPlayAckUnreadCount:" title="setGroupPlayAckUnreadCount:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGroupPlayAckCount:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupPlayAckCount:" %}{% endlanying_code_snippet %}
 ```
 ### setGroupPlayAckUnreadCount:
 
@@ -970,7 +970,7 @@ long long
 <a name="//api/name/setIsDeliveryAcked:" title="setIsDeliveryAcked:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGroupPlayAckUnreadCount:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupPlayAckUnreadCount:" %}{% endlanying_code_snippet %}
 ```
 ### setIsDeliveryAcked:
 
@@ -984,7 +984,7 @@ long long
 <a name="//api/name/setIsPlayAcked:" title="setIsPlayAcked:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setIsDeliveryAcked:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsDeliveryAcked:" %}{% endlanying_code_snippet %}
 ```
 ### setIsPlayAcked:
 
@@ -998,7 +998,7 @@ long long
 <a name="//api/name/setIsPlayed:" title="setIsPlayed:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setIsPlayAcked:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsPlayAcked:" %}{% endlanying_code_snippet %}
 ```
 ### setIsPlayed:
 
@@ -1012,7 +1012,7 @@ long long
 <a name="//api/name/setIsRead:" title="setIsRead:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setIsPlayed:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsPlayed:" %}{% endlanying_code_snippet %}
 ```
 ### setIsRead:
 
@@ -1026,7 +1026,7 @@ long long
 <a name="//api/name/setIsReadAcked:" title="setIsReadAcked:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setIsRead:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsRead:" %}{% endlanying_code_snippet %}
 ```
 ### setIsReadAcked:
 
@@ -1040,7 +1040,7 @@ long long
 <a name="//api/name/setIsReceiveMsg:" title="setIsReceiveMsg:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setIsReadAcked:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsReadAcked:" %}{% endlanying_code_snippet %}
 ```
 ### setIsReceiveMsg:
 
@@ -1054,7 +1054,7 @@ long long
 <a name="//api/name/setPriority:" title="setPriority:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setIsReceiveMsg:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsReceiveMsg:" %}{% endlanying_code_snippet %}
 ```
 ### setPriority:
 
@@ -1073,7 +1073,7 @@ long long
 <a name="//api/name/setPushMessageMode:" title="setPushMessageMode:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPriority:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setPriority:" %}{% endlanying_code_snippet %}
 ```
 ### setPushMessageMode:
 
@@ -1087,7 +1087,7 @@ long long
 <a name="//api/name/setSenderName:" title="setSenderName:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushMessageMode:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setPushMessageMode:" %}{% endlanying_code_snippet %}
 ```
 ### setSenderName:
 
@@ -1106,7 +1106,7 @@ long long
 <a name="//api/name/setServerTimestamp:" title="setServerTimestamp:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setSenderName:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setSenderName:" %}{% endlanying_code_snippet %}
 ```
 ### setServerTimestamp:
 
@@ -1120,7 +1120,7 @@ long long
 <a name="//api/name/toId" title="toId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setServerTimestamp:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setServerTimestamp:" %}{% endlanying_code_snippet %}
 ```
 ### toId
 
@@ -1137,7 +1137,7 @@ long long
 <a name="//api/name/type" title="type"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="toId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="toId" %}{% endlanying_code_snippet %}
 ```
 ### type
 
@@ -1153,5 +1153,5 @@ long long
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="type" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="type" %}{% endlanying_code_snippet %}
 ```

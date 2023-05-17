@@ -36,7 +36,7 @@ BMXVideoAttachment
 <a name="//api/name/clone" title="clone"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
 ```
 ### clone
 
@@ -52,7 +52,7 @@ BMXVideoAttachment
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clone" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -61,7 +61,7 @@ BMXVideoAttachment
 <a name="//api/name/duration" title="duration"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### duration
 
@@ -78,7 +78,7 @@ int
 <a name="//api/name/initWithPath:duration:size:" title="initWithPath:duration:size:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="duration" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="duration" %}{% endlanying_code_snippet %}
 ```
 ### initWithPath:duration:size:
 
@@ -87,7 +87,7 @@ int
 <a name="//api/name/initWithPath:duration:size:displayName:" title="initWithPath:duration:size:displayName:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:duration:size:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:duration:size:" %}{% endlanying_code_snippet %}
 ```
 ### initWithPath:duration:size:displayName:
 
@@ -115,7 +115,7 @@ Constructor
 <a name="//api/name/initWithPath:thumbnailPath:duration:size:" title="initWithPath:thumbnailPath:duration:size:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
 ```
 ### initWithPath:thumbnailPath:duration:size:
 
@@ -124,7 +124,7 @@ Constructor
 <a name="//api/name/initWithPath:thumbnailPath:duration:size:displayName:" title="initWithPath:thumbnailPath:duration:size:displayName:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:thumbnailPath:duration:size:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:thumbnailPath:duration:size:" %}{% endlanying_code_snippet %}
 ```
 ### initWithPath:thumbnailPath:duration:size:displayName:
 
@@ -155,7 +155,7 @@ Constructor
 <a name="//api/name/initWithRatelUrl:duration:size:displayName:fileLength:" title="initWithRatelUrl:duration:size:displayName:fileLength:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:thumbnailPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:thumbnailPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
 ```
 ### initWithRatelUrl:duration:size:displayName:fileLength:
 
@@ -186,7 +186,7 @@ Constructor
 <a name="//api/name/initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:" title="initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
 ```
 ### initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:
 
@@ -220,7 +220,7 @@ Constructor
 <a name="//api/name/setThumbnail:" title="setThumbnail:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
 ```
 ### setThumbnail:
 
@@ -239,7 +239,7 @@ Set thumbnail of video
 <a name="//api/name/setThumbnailRatelUrl:" title="setThumbnailRatelUrl:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setThumbnail:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="setThumbnail:" %}{% endlanying_code_snippet %}
 ```
 ### setThumbnailRatelUrl:
 
@@ -258,7 +258,7 @@ Set the thumbnail URL on REST server
 <a name="//api/name/size" title="size"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setThumbnailRatelUrl:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="setThumbnailRatelUrl:" %}{% endlanying_code_snippet %}
 ```
 ### size
 
@@ -275,7 +275,7 @@ Width and height of the video
 <a name="//api/name/thumbnailDownloadStatus" title="thumbnailDownloadStatus"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="size" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="size" %}{% endlanying_code_snippet %}
 ```
 ### thumbnailDownloadStatus
 
@@ -292,7 +292,7 @@ DownloadStatus
 <a name="//api/name/thumbnailPath" title="thumbnailPath"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
 ```
 ### thumbnailPath
 
@@ -309,7 +309,7 @@ NSString
 <a name="//api/name/thumbnailRatelUrl" title="thumbnailRatelUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="thumbnailPath" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailPath" %}{% endlanying_code_snippet %}
 ```
 ### thumbnailRatelUrl
 
@@ -326,7 +326,7 @@ NSString
 <a name="//api/name/thumbnailUrl" title="thumbnailUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="thumbnailRatelUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailRatelUrl" %}{% endlanying_code_snippet %}
 ```
 ### thumbnailUrl
 
@@ -343,7 +343,7 @@ NSString
 <a name="//api/name/type" title="type"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="thumbnailUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailUrl" %}{% endlanying_code_snippet %}
 ```
 ### type
 
@@ -359,5 +359,5 @@ Attachment type
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="type" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="type" %}{% endlanying_code_snippet %}
 ```

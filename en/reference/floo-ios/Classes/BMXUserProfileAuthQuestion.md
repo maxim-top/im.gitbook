@@ -30,7 +30,7 @@
 <a name="//api/name/getMAnswer" title="getMAnswer"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileAuthQuestion",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMAnswer
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMQuestion" title="getMQuestion"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMAnswer" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileAuthQuestion",function="getMAnswer" %}{% endlanying_code_snippet %}
 ```
 ### getMQuestion
 
@@ -48,7 +48,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMQuestion" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileAuthQuestion",function="getMQuestion" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -57,7 +57,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileAuthQuestion",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -66,7 +66,7 @@
 <a name="//api/name/setMAnswer:" title="setMAnswer:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileAuthQuestion",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMAnswer:
 
@@ -75,7 +75,7 @@
 <a name="//api/name/setMQuestion:" title="setMQuestion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMAnswer:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileAuthQuestion",function="setMAnswer:" %}{% endlanying_code_snippet %}
 ```
 ### setMQuestion:
 
@@ -83,5 +83,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMQuestion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfileAuthQuestion",function="setMQuestion:" %}{% endlanying_code_snippet %}
 ```

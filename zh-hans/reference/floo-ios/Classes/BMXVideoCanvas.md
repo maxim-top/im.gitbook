@@ -30,7 +30,7 @@
 <a name="//api/name/getMMirrodMode" title="getMMirrodMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMMirrodMode
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMRenderMode" title="getMRenderMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMMirrodMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="getMMirrodMode" %}{% endlanying_code_snippet %}
 ```
 ### getMRenderMode
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getMStream" title="getMStream"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMRenderMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="getMRenderMode" %}{% endlanying_code_snippet %}
 ```
 ### getMStream
 
@@ -57,7 +57,7 @@
 <a name="//api/name/getMUserId" title="getMUserId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMStream" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="getMStream" %}{% endlanying_code_snippet %}
 ```
 ### getMUserId
 
@@ -66,7 +66,7 @@
 <a name="//api/name/getMView" title="getMView"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMUserId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="getMUserId" %}{% endlanying_code_snippet %}
 ```
 ### getMView
 
@@ -75,7 +75,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMView" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="getMView" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -84,7 +84,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/setMMirrodMode:" title="setMMirrodMode:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMMirrodMode:
 
@@ -102,7 +102,7 @@
 <a name="//api/name/setMRenderMode:" title="setMRenderMode:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMMirrodMode:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="setMMirrodMode:" %}{% endlanying_code_snippet %}
 ```
 ### setMRenderMode:
 
@@ -111,7 +111,7 @@
 <a name="//api/name/setMStream:" title="setMStream:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMRenderMode:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="setMRenderMode:" %}{% endlanying_code_snippet %}
 ```
 ### setMStream:
 
@@ -120,7 +120,7 @@
 <a name="//api/name/setMUserId:" title="setMUserId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMStream:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="setMStream:" %}{% endlanying_code_snippet %}
 ```
 ### setMUserId:
 
@@ -129,7 +129,7 @@
 <a name="//api/name/setMView:" title="setMView:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMUserId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="setMUserId:" %}{% endlanying_code_snippet %}
 ```
 ### setMView:
 
@@ -137,5 +137,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMView:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoCanvas",function="setMView:" %}{% endlanying_code_snippet %}
 ```

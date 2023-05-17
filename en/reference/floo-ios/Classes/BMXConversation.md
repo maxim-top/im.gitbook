@@ -26,7 +26,7 @@ long long
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="conversationId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="conversationId" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -35,7 +35,7 @@ long long
 <a name="//api/name/editMessage" title="editMessage"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### editMessage
 
@@ -52,7 +52,7 @@ NSString
 <a name="//api/name/extension" title="extension"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="editMessage" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="editMessage" %}{% endlanying_code_snippet %}
 ```
 ### extension
 
@@ -69,7 +69,7 @@ NSString
 <a name="//api/name/insertMessageWithMsg:" title="insertMessageWithMsg:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="extension" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="extension" %}{% endlanying_code_snippet %}
 ```
 ### insertMessageWithMsg:
 
@@ -91,7 +91,7 @@ Insert a message
 <a name="//api/name/insertMessageWithMsg:completion:" title="insertMessageWithMsg:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="insertMessageWithMsg:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="insertMessageWithMsg:" %}{% endlanying_code_snippet %}
 ```
 ### insertMessageWithMsg:completion:
 
@@ -113,7 +113,7 @@ Insert a message
 <a name="//api/name/isMuteNotification" title="isMuteNotification"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="insertMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="insertMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```
 ### isMuteNotification
 
@@ -130,7 +130,7 @@ BOOL
 <a name="//api/name/lastMsg" title="lastMsg"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isMuteNotification" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="isMuteNotification" %}{% endlanying_code_snippet %}
 ```
 ### lastMsg
 
@@ -147,7 +147,7 @@ The last message
 <a name="//api/name/loadMessageWithMsgId:" title="loadMessageWithMsgId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="lastMsg" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="lastMsg" %}{% endlanying_code_snippet %}
 ```
 ### loadMessageWithMsgId:
 
@@ -169,7 +169,7 @@ Get a message by ID
 <a name="//api/name/loadMessageWithMsgId:completion:" title="loadMessageWithMsgId:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadMessageWithMsgId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessageWithMsgId:" %}{% endlanying_code_snippet %}
 ```
 ### loadMessageWithMsgId:completion:
 
@@ -191,7 +191,7 @@ Get a message by ID
 <a name="//api/name/loadMessagesWithRefMsgId:size:arg4:completion:" title="loadMessagesWithRefMsgId:size:arg4:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadMessageWithMsgId:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessageWithMsgId:completion:" %}{% endlanying_code_snippet %}
 ```
 ### loadMessagesWithRefMsgId:size:arg4:completion:
 
@@ -222,7 +222,7 @@ Get messages from the starting message ID
 <a name="//api/name/loadMessagesWithRefMsgId:size:completion:" title="loadMessagesWithRefMsgId:size:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadMessagesWithRefMsgId:size:arg4:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:arg4:completion:" %}{% endlanying_code_snippet %}
 ```
 ### loadMessagesWithRefMsgId:size:completion:
 
@@ -256,7 +256,7 @@ Search messages by message ID
 <a name="//api/name/loadMessagesWithRefMsgId:size:result:" title="loadMessagesWithRefMsgId:size:result:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadMessagesWithRefMsgId:size:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:completion:" %}{% endlanying_code_snippet %}
 ```
 ### loadMessagesWithRefMsgId:size:result:
 
@@ -265,7 +265,7 @@ Search messages by message ID
 <a name="//api/name/loadMessagesWithRefMsgId:size:result:arg4:" title="loadMessagesWithRefMsgId:size:result:arg4:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadMessagesWithRefMsgId:size:result:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:result:" %}{% endlanying_code_snippet %}
 ```
 ### loadMessagesWithRefMsgId:size:result:arg4:
 
@@ -296,7 +296,7 @@ Load messages
 <a name="//api/name/messageCount" title="messageCount"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadMessagesWithRefMsgId:size:result:arg4:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:result:arg4:" %}{% endlanying_code_snippet %}
 ```
 ### messageCount
 
@@ -313,7 +313,7 @@ int
 <a name="//api/name/refreshConversation" title="refreshConversation"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="messageCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="messageCount" %}{% endlanying_code_snippet %}
 ```
 ### refreshConversation
 
@@ -330,7 +330,7 @@ Force update the total number of messages and unread messages for the conversati
 <a name="//api/name/refreshConversationWithCompletion:" title="refreshConversationWithCompletion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="refreshConversation" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="refreshConversation" %}{% endlanying_code_snippet %}
 ```
 ### refreshConversationWithCompletion:
 
@@ -347,7 +347,7 @@ Force update the total number of messages and unread messages for the conversati
 <a name="//api/name/removeAllMessages" title="removeAllMessages"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="refreshConversationWithCompletion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="refreshConversationWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### removeAllMessages
 
@@ -364,7 +364,7 @@ Remove all messages in the conversation
 <a name="//api/name/removeAllMessagesWithCompletion:" title="removeAllMessagesWithCompletion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeAllMessages" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="removeAllMessages" %}{% endlanying_code_snippet %}
 ```
 ### removeAllMessagesWithCompletion:
 
@@ -381,7 +381,7 @@ Remove all messages in the conversation
 <a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeAllMessagesWithCompletion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="removeAllMessagesWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:
 
@@ -418,7 +418,7 @@ Deprecated. use searchMessagesByKeyWords instead.
 <a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:completion:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:completion:
 
@@ -427,7 +427,7 @@ Deprecated. use searchMessagesByKeyWords instead.
 <a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:result:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:result:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByKeyWordsWithKeywords:refTime:size:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:result:
 
@@ -436,7 +436,7 @@ Deprecated. use searchMessagesByKeyWords instead.
 <a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByKeyWordsWithKeywords:refTime:size:result:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:result:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:
 
@@ -470,7 +470,7 @@ Search messages by keywords
 <a name="//api/name/searchMessagesByTypeWithType:refTime:size:arg5:completion:" title="searchMessagesByTypeWithType:refTime:size:arg5:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByTypeWithType:refTime:size:arg5:completion:
 
@@ -504,7 +504,7 @@ Search messages by type
 <a name="//api/name/searchMessagesByTypeWithType:refTime:size:completion:" title="searchMessagesByTypeWithType:refTime:size:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByTypeWithType:refTime:size:arg5:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:arg5:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByTypeWithType:refTime:size:completion:
 
@@ -513,7 +513,7 @@ Search messages by type
 <a name="//api/name/searchMessagesByTypeWithType:refTime:size:result:" title="searchMessagesByTypeWithType:refTime:size:result:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByTypeWithType:refTime:size:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByTypeWithType:refTime:size:result:
 
@@ -522,7 +522,7 @@ Search messages by type
 <a name="//api/name/searchMessagesByTypeWithType:refTime:size:result:arg5:" title="searchMessagesByTypeWithType:refTime:size:result:arg5:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByTypeWithType:refTime:size:result:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:result:" %}{% endlanying_code_snippet %}
 ```
 ### searchMessagesByTypeWithType:refTime:size:result:arg5:
 
@@ -556,7 +556,7 @@ Search messages by type
 <a name="//api/name/setAllMessagesRead" title="setAllMessagesRead"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchMessagesByTypeWithType:refTime:size:result:arg5:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:result:arg5:" %}{% endlanying_code_snippet %}
 ```
 ### setAllMessagesRead
 
@@ -573,7 +573,7 @@ Set all messages as read
 <a name="//api/name/setAllMessagesReadWithCompletion:" title="setAllMessagesReadWithCompletion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAllMessagesRead" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setAllMessagesRead" %}{% endlanying_code_snippet %}
 ```
 ### setAllMessagesReadWithCompletion:
 
@@ -590,7 +590,7 @@ Set all messages as read
 <a name="//api/name/setEditMessage:" title="setEditMessage:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAllMessagesReadWithCompletion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setAllMessagesReadWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### setEditMessage:
 
@@ -612,7 +612,7 @@ Set message in editting
 <a name="//api/name/setExtension:" title="setExtension:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEditMessage:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setEditMessage:" %}{% endlanying_code_snippet %}
 ```
 ### setExtension:
 
@@ -634,7 +634,7 @@ Set extension information of messages
 <a name="//api/name/setMessagePlayedStatus:status:" title="setMessagePlayedStatus:status:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setExtension:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setExtension:" %}{% endlanying_code_snippet %}
 ```
 ### setMessagePlayedStatus:status:
 
@@ -659,7 +659,7 @@ Set palyed status of messages
 <a name="//api/name/setMessagePlayedStatus:status:completion:" title="setMessagePlayedStatus:status:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMessagePlayedStatus:status:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessagePlayedStatus:status:" %}{% endlanying_code_snippet %}
 ```
 ### setMessagePlayedStatus:status:completion:
 
@@ -684,7 +684,7 @@ Set the palyed status of messages
 <a name="//api/name/setMessageReadStatus:status:" title="setMessageReadStatus:status:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMessagePlayedStatus:status:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessagePlayedStatus:status:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setMessageReadStatus:status:
 
@@ -709,7 +709,7 @@ Set the read status of messages
 <a name="//api/name/setMessageReadStatus:status:completion:" title="setMessageReadStatus:status:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMessageReadStatus:status:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessageReadStatus:status:" %}{% endlanying_code_snippet %}
 ```
 ### setMessageReadStatus:status:completion:
 
@@ -734,7 +734,7 @@ Set the read status of messages
 <a name="//api/name/type" title="type"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMessageReadStatus:status:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessageReadStatus:status:completion:" %}{% endlanying_code_snippet %}
 ```
 ### type
 
@@ -751,7 +751,7 @@ Conversation type
 <a name="//api/name/unreadNumber" title="unreadNumber"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="type" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="type" %}{% endlanying_code_snippet %}
 ```
 ### unreadNumber
 
@@ -768,7 +768,7 @@ int
 <a name="//api/name/updateMessageExtensionWithMsg:" title="updateMessageExtensionWithMsg:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="unreadNumber" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="unreadNumber" %}{% endlanying_code_snippet %}
 ```
 ### updateMessageExtensionWithMsg:
 
@@ -790,7 +790,7 @@ Update the extension information of a message
 <a name="//api/name/updateMessageExtensionWithMsg:completion:" title="updateMessageExtensionWithMsg:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="updateMessageExtensionWithMsg:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="updateMessageExtensionWithMsg:" %}{% endlanying_code_snippet %}
 ```
 ### updateMessageExtensionWithMsg:completion:
 
@@ -811,5 +811,5 @@ Update the extension information of a message
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="updateMessageExtensionWithMsg:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="updateMessageExtensionWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```

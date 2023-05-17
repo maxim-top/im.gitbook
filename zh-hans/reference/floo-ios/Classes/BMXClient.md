@@ -64,7 +64,7 @@ BMXClient
 <a name="//api/name/sharedClient" title="sharedClient"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createWithConfig:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="createWithConfig:" %}{% endlanying_code_snippet %}
 ```
 ### sharedClient
 
@@ -76,7 +76,7 @@ BMXClient
 <a name="//api/name/changeAppIdWithAppId:" title="changeAppIdWithAppId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="sharedClient" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sharedClient" %}{% endlanying_code_snippet %}
 ```
 ### changeAppIdWithAppId:
 
@@ -85,7 +85,7 @@ BMXClient
 <a name="//api/name/changeAppIdWithAppId:appSecret:" title="changeAppIdWithAppId:appSecret:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="changeAppIdWithAppId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:" %}{% endlanying_code_snippet %}
 ```
 ### changeAppIdWithAppId:appSecret:
 
@@ -107,7 +107,7 @@ BMXClient
 <a name="//api/name/changeAppIdWithAppId:appSecret:completion:" title="changeAppIdWithAppId:appSecret:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="changeAppIdWithAppId:appSecret:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:appSecret:" %}{% endlanying_code_snippet %}
 ```
 ### changeAppIdWithAppId:appSecret:completion:
 
@@ -129,7 +129,7 @@ BMXClient
 <a name="//api/name/changeAppIdWithAppId:completion:" title="changeAppIdWithAppId:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="changeAppIdWithAppId:appSecret:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:appSecret:completion:" %}{% endlanying_code_snippet %}
 ```
 ### changeAppIdWithAppId:completion:
 
@@ -138,7 +138,7 @@ BMXClient
 <a name="//api/name/connectStatus" title="connectStatus"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="changeAppIdWithAppId:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:completion:" %}{% endlanying_code_snippet %}
 ```
 ### connectStatus
 
@@ -155,7 +155,7 @@ BMXClient
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="connectStatus" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="connectStatus" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -164,7 +164,7 @@ BMXClient
 <a name="//api/name/deleteAccountWithPassword:" title="deleteAccountWithPassword:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### deleteAccountWithPassword:
 
@@ -186,7 +186,7 @@ BMXClient
 <a name="//api/name/deleteAccountWithPassword:completion:" title="deleteAccountWithPassword:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deleteAccountWithPassword:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="deleteAccountWithPassword:" %}{% endlanying_code_snippet %}
 ```
 ### deleteAccountWithPassword:completion:
 
@@ -208,7 +208,7 @@ BMXClient
 <a name="//api/name/disconnect" title="disconnect"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deleteAccountWithPassword:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="deleteAccountWithPassword:completion:" %}{% endlanying_code_snippet %}
 ```
 ### disconnect
 
@@ -222,7 +222,7 @@ BMXClient
 <a name="//api/name/disconnectWithCompletion:" title="disconnectWithCompletion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="disconnect" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="disconnect" %}{% endlanying_code_snippet %}
 ```
 ### disconnectWithCompletion:
 
@@ -236,7 +236,7 @@ BMXClient
 <a name="//api/name/fastSignInByIdWithUid:password:" title="fastSignInByIdWithUid:password:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="disconnectWithCompletion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="disconnectWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### fastSignInByIdWithUid:password:
 
@@ -261,7 +261,7 @@ BMXClient
 <a name="//api/name/fastSignInByIdWithUid:password:completion:" title="fastSignInByIdWithUid:password:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fastSignInByIdWithUid:password:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByIdWithUid:password:" %}{% endlanying_code_snippet %}
 ```
 ### fastSignInByIdWithUid:password:completion:
 
@@ -286,7 +286,7 @@ BMXClient
 <a name="//api/name/fastSignInByNameWithName:password:" title="fastSignInByNameWithName:password:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fastSignInByIdWithUid:password:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByIdWithUid:password:completion:" %}{% endlanying_code_snippet %}
 ```
 ### fastSignInByNameWithName:password:
 
@@ -311,7 +311,7 @@ BMXClient
 <a name="//api/name/fastSignInByNameWithName:password:completion:" title="fastSignInByNameWithName:password:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fastSignInByNameWithName:password:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByNameWithName:password:" %}{% endlanying_code_snippet %}
 ```
 ### fastSignInByNameWithName:password:completion:
 
@@ -336,7 +336,7 @@ BMXClient
 <a name="//api/name/getSDKConfig" title="getSDKConfig"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fastSignInByNameWithName:password:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByNameWithName:password:completion:" %}{% endlanying_code_snippet %}
 ```
 ### getSDKConfig
 
@@ -353,7 +353,7 @@ BMXClient
 <a name="//api/name/initializeServerConfigWithIsLocal:" title="initializeServerConfigWithIsLocal:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getSDKConfig" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="getSDKConfig" %}{% endlanying_code_snippet %}
 ```
 ### initializeServerConfigWithIsLocal:
 
@@ -375,7 +375,7 @@ BMXClient
 <a name="//api/name/initializeServerConfigWithIsLocal:completion:" title="initializeServerConfigWithIsLocal:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initializeServerConfigWithIsLocal:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="initializeServerConfigWithIsLocal:" %}{% endlanying_code_snippet %}
 ```
 ### initializeServerConfigWithIsLocal:completion:
 
@@ -397,7 +397,7 @@ BMXClient
 <a name="//api/name/onNetworkChangedWithType:reconnect:" title="onNetworkChangedWithType:reconnect:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initializeServerConfigWithIsLocal:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="initializeServerConfigWithIsLocal:completion:" %}{% endlanying_code_snippet %}
 ```
 ### onNetworkChangedWithType:reconnect:
 
@@ -419,7 +419,7 @@ BMXClient
 <a name="//api/name/reconnect" title="reconnect"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="onNetworkChangedWithType:reconnect:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="onNetworkChangedWithType:reconnect:" %}{% endlanying_code_snippet %}
 ```
 ### reconnect
 
@@ -433,7 +433,7 @@ BMXClient
 <a name="//api/name/reconnectWithCompletion:" title="reconnectWithCompletion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="reconnect" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="reconnect" %}{% endlanying_code_snippet %}
 ```
 ### reconnectWithCompletion:
 
@@ -447,7 +447,7 @@ BMXClient
 <a name="//api/name/sendMessageWithMsg:" title="sendMessageWithMsg:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="reconnectWithCompletion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="reconnectWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### sendMessageWithMsg:
 
@@ -467,7 +467,7 @@ BMXClient
 <a name="//api/name/sendMessageWithMsg:completion:" title="sendMessageWithMsg:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="sendMessageWithMsg:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sendMessageWithMsg:" %}{% endlanying_code_snippet %}
 ```
 ### sendMessageWithMsg:completion:
 
@@ -487,7 +487,7 @@ BMXClient
 <a name="//api/name/signInByIdWithArg1:password:" title="signInByIdWithArg1:password:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="sendMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sendMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```
 ### signInByIdWithArg1:password:
 
@@ -512,7 +512,7 @@ BMXClient
 <a name="//api/name/signInByIdWithArg1:password:completion:" title="signInByIdWithArg1:password:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signInByIdWithArg1:password:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByIdWithArg1:password:" %}{% endlanying_code_snippet %}
 ```
 ### signInByIdWithArg1:password:completion:
 
@@ -537,7 +537,7 @@ BMXClient
 <a name="//api/name/signInByNameWithName:password:" title="signInByNameWithName:password:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signInByIdWithArg1:password:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByIdWithArg1:password:completion:" %}{% endlanying_code_snippet %}
 ```
 ### signInByNameWithName:password:
 
@@ -562,7 +562,7 @@ BMXClient
 <a name="//api/name/signInByNameWithName:password:completion:" title="signInByNameWithName:password:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signInByNameWithName:password:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByNameWithName:password:" %}{% endlanying_code_snippet %}
 ```
 ### signInByNameWithName:password:completion:
 
@@ -587,7 +587,7 @@ BMXClient
 <a name="//api/name/signInStatus" title="signInStatus"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signInByNameWithName:password:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByNameWithName:password:completion:" %}{% endlanying_code_snippet %}
 ```
 ### signInStatus
 
@@ -604,7 +604,7 @@ BMXClient
 <a name="//api/name/signOut" title="signOut"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signInStatus" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInStatus" %}{% endlanying_code_snippet %}
 ```
 ### signOut
 
@@ -613,7 +613,7 @@ BMXClient
 <a name="//api/name/signOutWithCompletion:" title="signOutWithCompletion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signOut" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOut" %}{% endlanying_code_snippet %}
 ```
 ### signOutWithCompletion:
 
@@ -622,7 +622,7 @@ BMXClient
 <a name="//api/name/signOutWithUid:" title="signOutWithUid:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signOutWithCompletion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### signOutWithUid:
 
@@ -631,7 +631,7 @@ BMXClient
 <a name="//api/name/signOutWithUid:completion:" title="signOutWithUid:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signOutWithUid:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:" %}{% endlanying_code_snippet %}
 ```
 ### signOutWithUid:completion:
 
@@ -640,7 +640,7 @@ BMXClient
 <a name="//api/name/signOutWithUid:ignoreUnbindDevice:" title="signOutWithUid:ignoreUnbindDevice:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signOutWithUid:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:completion:" %}{% endlanying_code_snippet %}
 ```
 ### signOutWithUid:ignoreUnbindDevice:
 
@@ -665,7 +665,7 @@ BMXClient
 <a name="//api/name/signOutWithUid:ignoreUnbindDevice:completion:" title="signOutWithUid:ignoreUnbindDevice:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signOutWithUid:ignoreUnbindDevice:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:ignoreUnbindDevice:" %}{% endlanying_code_snippet %}
 ```
 ### signOutWithUid:ignoreUnbindDevice:completion:
 
@@ -690,7 +690,7 @@ BMXClient
 <a name="//api/name/signUpNewUserWithUsername:password:bmxUserProfilePtr:" title="signUpNewUserWithUsername:password:bmxUserProfilePtr:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signOutWithUid:ignoreUnbindDevice:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:ignoreUnbindDevice:completion:" %}{% endlanying_code_snippet %}
 ```
 ### signUpNewUserWithUsername:password:bmxUserProfilePtr:
 
@@ -718,7 +718,7 @@ BMXClient
 <a name="//api/name/signUpNewUserWithUsername:password:completion:" title="signUpNewUserWithUsername:password:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signUpNewUserWithUsername:password:bmxUserProfilePtr:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signUpNewUserWithUsername:password:bmxUserProfilePtr:" %}{% endlanying_code_snippet %}
 ```
 ### signUpNewUserWithUsername:password:completion:
 
@@ -745,5 +745,5 @@ BMXClient
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="signUpNewUserWithUsername:password:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signUpNewUserWithUsername:password:completion:" %}{% endlanying_code_snippet %}
 ```

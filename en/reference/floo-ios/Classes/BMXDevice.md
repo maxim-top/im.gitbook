@@ -30,7 +30,7 @@
 <a name="//api/name/deviceSN" title="deviceSN"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### deviceSN
 
@@ -47,7 +47,7 @@ int
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deviceSN" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="deviceSN" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -56,7 +56,7 @@ int
 <a name="//api/name/isCurrentDevice" title="isCurrentDevice"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### isCurrentDevice
 
@@ -73,7 +73,7 @@ BOOL
 <a name="//api/name/platform" title="platform"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isCurrentDevice" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="isCurrentDevice" %}{% endlanying_code_snippet %}
 ```
 ### platform
 
@@ -90,7 +90,7 @@ int
 <a name="//api/name/setUserAgent:" title="setUserAgent:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="platform" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="platform" %}{% endlanying_code_snippet %}
 ```
 ### setUserAgent:
 
@@ -109,7 +109,7 @@ Set user agent
 <a name="//api/name/userAgent" title="userAgent"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setUserAgent:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="setUserAgent:" %}{% endlanying_code_snippet %}
 ```
 ### userAgent
 
@@ -126,7 +126,7 @@ NSString
 <a name="//api/name/userId" title="userId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="userAgent" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="userAgent" %}{% endlanying_code_snippet %}
 ```
 ### userId
 
@@ -142,5 +142,5 @@ long long
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="userId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="userId" %}{% endlanying_code_snippet %}
 ```

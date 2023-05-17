@@ -21,7 +21,7 @@ NSObject
 <a name="//api/name/addGroupMemberWithMemberId:" title="addGroupMemberWithMemberId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createMessageConfigWithMentionAll:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="createMessageConfigWithMentionAll:" %}{% endlanying_code_snippet %}
 ```
 ### addGroupMemberWithMemberId:
 
@@ -35,7 +35,7 @@ Add ID list of group members who read the message
 <a name="//api/name/clearGroupMemberList" title="clearGroupMemberList"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addGroupMemberWithMemberId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="addGroupMemberWithMemberId:" %}{% endlanying_code_snippet %}
 ```
 ### clearGroupMemberList
 
@@ -49,7 +49,7 @@ Clear the ID list of group members who read the message
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clearGroupMemberList" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="clearGroupMemberList" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -58,7 +58,7 @@ Clear the ID list of group members who read the message
 <a name="//api/name/getAndroidConfig" title="getAndroidConfig"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getAndroidConfig
 
@@ -75,7 +75,7 @@ NSString
 <a name="//api/name/getBadgeCount:" title="getBadgeCount:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getAndroidConfig" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getAndroidConfig" %}{% endlanying_code_snippet %}
 ```
 ### getBadgeCount:
 
@@ -92,7 +92,7 @@ int
 <a name="//api/name/getBadgeCountType" title="getBadgeCountType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getBadgeCount:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getBadgeCount:" %}{% endlanying_code_snippet %}
 ```
 ### getBadgeCountType
 
@@ -109,7 +109,7 @@ BadgeCountType
 <a name="//api/name/getGroupMemberList" title="getGroupMemberList"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getBadgeCountType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getBadgeCountType" %}{% endlanying_code_snippet %}
 ```
 ### getGroupMemberList
 
@@ -126,7 +126,7 @@ Get group members of the message
 <a name="//api/name/getIOSConfig" title="getIOSConfig"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getGroupMemberList" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getGroupMemberList" %}{% endlanying_code_snippet %}
 ```
 ### getIOSConfig
 
@@ -143,7 +143,7 @@ NSString
 <a name="//api/name/getMentionAll" title="getMentionAll"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getIOSConfig" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getIOSConfig" %}{% endlanying_code_snippet %}
 ```
 ### getMentionAll
 
@@ -160,7 +160,7 @@ BOOL
 <a name="//api/name/getMentionList" title="getMentionList"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMentionAll" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getMentionAll" %}{% endlanying_code_snippet %}
 ```
 ### getMentionList
 
@@ -177,7 +177,7 @@ Get a list of members to be mentioned
 <a name="//api/name/getMentionedMessage" title="getMentionedMessage"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMentionList" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getMentionList" %}{% endlanying_code_snippet %}
 ```
 ### getMentionedMessage
 
@@ -194,7 +194,7 @@ NSString
 <a name="//api/name/getPushMessage" title="getPushMessage"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMentionedMessage" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getMentionedMessage" %}{% endlanying_code_snippet %}
 ```
 ### getPushMessage
 
@@ -211,7 +211,7 @@ NSString
 <a name="//api/name/getPushShowBeginTime" title="getPushShowBeginTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushMessage" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getPushMessage" %}{% endlanying_code_snippet %}
 ```
 ### getPushShowBeginTime
 
@@ -228,7 +228,7 @@ int
 <a name="//api/name/getPushShowEndTime" title="getPushShowEndTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushShowBeginTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getPushShowBeginTime" %}{% endlanying_code_snippet %}
 ```
 ### getPushShowEndTime
 
@@ -245,7 +245,7 @@ int
 <a name="//api/name/getPushTitle" title="getPushTitle"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushShowEndTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getPushShowEndTime" %}{% endlanying_code_snippet %}
 ```
 ### getPushTitle
 
@@ -262,7 +262,7 @@ NSString
 <a name="//api/name/getRTCAction" title="getRTCAction"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushTitle" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getPushTitle" %}{% endlanying_code_snippet %}
 ```
 ### getRTCAction
 
@@ -279,7 +279,7 @@ int
 <a name="//api/name/getRTCCallId" title="getRTCCallId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCAction" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getRTCAction" %}{% endlanying_code_snippet %}
 ```
 ### getRTCCallId
 
@@ -296,7 +296,7 @@ NSString
 <a name="//api/name/getRTCCallType" title="getRTCCallType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCCallId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getRTCCallId" %}{% endlanying_code_snippet %}
 ```
 ### getRTCCallType
 
@@ -313,7 +313,7 @@ RTCCallType
 <a name="//api/name/getRTCInitiator" title="getRTCInitiator"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCCallType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getRTCCallType" %}{% endlanying_code_snippet %}
 ```
 ### getRTCInitiator
 
@@ -330,7 +330,7 @@ long long
 <a name="//api/name/getRTCPin" title="getRTCPin"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCInitiator" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getRTCInitiator" %}{% endlanying_code_snippet %}
 ```
 ### getRTCPin
 
@@ -347,7 +347,7 @@ NSString
 <a name="//api/name/getRTCRoomId" title="getRTCRoomId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCPin" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getRTCPin" %}{% endlanying_code_snippet %}
 ```
 ### getRTCRoomId
 
@@ -364,7 +364,7 @@ long long
 <a name="//api/name/getRTCRoomType" title="getRTCRoomType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCRoomId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getRTCRoomId" %}{% endlanying_code_snippet %}
 ```
 ### getRTCRoomType
 
@@ -381,7 +381,7 @@ Get RTC room type
 <a name="//api/name/getSenderNickname" title="getSenderNickname"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRTCRoomType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getRTCRoomType" %}{% endlanying_code_snippet %}
 ```
 ### getSenderNickname
 
@@ -398,7 +398,7 @@ NSString
 <a name="//api/name/getUsername" title="getUsername"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getSenderNickname" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getSenderNickname" %}{% endlanying_code_snippet %}
 ```
 ### getUsername
 
@@ -415,7 +415,7 @@ NSString
 <a name="//api/name/isSilence" title="isSilence"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getUsername" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="getUsername" %}{% endlanying_code_snippet %}
 ```
 ### isSilence
 
@@ -432,7 +432,7 @@ BOOL
 <a name="//api/name/removeGroupMemberWithMemberId:" title="removeGroupMemberWithMemberId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isSilence" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="isSilence" %}{% endlanying_code_snippet %}
 ```
 ### removeGroupMemberWithMemberId:
 
@@ -449,7 +449,7 @@ Remove the ID list of group members who read the message
 <a name="//api/name/serialize" title="serialize"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeGroupMemberWithMemberId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="removeGroupMemberWithMemberId:" %}{% endlanying_code_snippet %}
 ```
 ### serialize
 
@@ -464,7 +464,7 @@ NSString
 <a name="//api/name/setAndroidConfig:" title="setAndroidConfig:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="serialize" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="serialize" %}{% endlanying_code_snippet %}
 ```
 ### setAndroidConfig:
 
@@ -479,7 +479,7 @@ Set message config for android device
 <a name="//api/name/setGroupMemberList:" title="setGroupMemberList:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAndroidConfig:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setAndroidConfig:" %}{% endlanying_code_snippet %}
 ```
 ### setGroupMemberList:
 
@@ -494,7 +494,7 @@ Set the ID list of group members who should read the message
 <a name="//api/name/setIOSConfig:" title="setIOSConfig:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGroupMemberList:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setGroupMemberList:" %}{% endlanying_code_snippet %}
 ```
 ### setIOSConfig:
 
@@ -509,7 +509,7 @@ Set message config for iOS device
 <a name="//api/name/setMentionAll:" title="setMentionAll:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setIOSConfig:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setIOSConfig:" %}{% endlanying_code_snippet %}
 ```
 ### setMentionAll:
 
@@ -524,7 +524,7 @@ Set whether to mention all members
 <a name="//api/name/setMentionList:" title="setMentionList:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMentionAll:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setMentionAll:" %}{% endlanying_code_snippet %}
 ```
 ### setMentionList:
 
@@ -539,7 +539,7 @@ Set mentioned member list
 <a name="//api/name/setMentionedMessage:" title="setMentionedMessage:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMentionList:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setMentionList:" %}{% endlanying_code_snippet %}
 ```
 ### setMentionedMessage:
 
@@ -554,7 +554,7 @@ Set mentioned message
 <a name="//api/name/setPushMessage:" title="setPushMessage:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMentionedMessage:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setMentionedMessage:" %}{% endlanying_code_snippet %}
 ```
 ### setPushMessage:
 
@@ -569,7 +569,7 @@ Set push message
 <a name="//api/name/setPushShowBeginTime:" title="setPushShowBeginTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushMessage:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setPushMessage:" %}{% endlanying_code_snippet %}
 ```
 ### setPushShowBeginTime:
 
@@ -584,7 +584,7 @@ Set push begin time
 <a name="//api/name/setPushShowEndTime:" title="setPushShowEndTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushShowBeginTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setPushShowBeginTime:" %}{% endlanying_code_snippet %}
 ```
 ### setPushShowEndTime:
 
@@ -599,7 +599,7 @@ Set push end time
 <a name="//api/name/setPushTitle:" title="setPushTitle:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushShowEndTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setPushShowEndTime:" %}{% endlanying_code_snippet %}
 ```
 ### setPushTitle:
 
@@ -614,7 +614,7 @@ Set push title
 <a name="//api/name/setRTCCallInfo:roomId:initiator:roomType:pin:" title="setRTCCallInfo:roomId:initiator:roomType:pin:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushTitle:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setPushTitle:" %}{% endlanying_code_snippet %}
 ```
 ### setRTCCallInfo:roomId:initiator:roomType:pin:
 
@@ -643,7 +643,7 @@ Set RTC call info
 <a name="//api/name/setRTCHangupInfo:" title="setRTCHangupInfo:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setRTCCallInfo:roomId:initiator:roomType:pin:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setRTCCallInfo:roomId:initiator:roomType:pin:" %}{% endlanying_code_snippet %}
 ```
 ### setRTCHangupInfo:
 
@@ -662,7 +662,7 @@ Set RTC call hang up information
 <a name="//api/name/setRTCPickupInfo:" title="setRTCPickupInfo:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setRTCHangupInfo:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setRTCHangupInfo:" %}{% endlanying_code_snippet %}
 ```
 ### setRTCPickupInfo:
 
@@ -681,7 +681,7 @@ Set RTC pickup information
 <a name="//api/name/setSenderNickname:" title="setSenderNickname:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setRTCPickupInfo:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setRTCPickupInfo:" %}{% endlanying_code_snippet %}
 ```
 ### setSenderNickname:
 
@@ -696,7 +696,7 @@ Set sender nickname
 <a name="//api/name/setUsername:" title="setUsername:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setSenderNickname:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setSenderNickname:" %}{% endlanying_code_snippet %}
 ```
 ### setUsername:
 
@@ -710,5 +710,5 @@ Set username
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setUsername:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageConfig",function="setUsername:" %}{% endlanying_code_snippet %}
 ```
