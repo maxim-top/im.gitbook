@@ -24,6 +24,10 @@ Connection status changed
 * `floo_proxy.h`
 
 <a name="//api/name/userInfoDidUpdated:" title="userInfoDidUpdated:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="connectStatusDidChanged:" %}{% endlanying_code_snippet %}
+```
 ### userInfoDidUpdated:
 
 User information updated
@@ -36,6 +40,10 @@ User information updated
 * `floo_proxy.h`
 
 <a name="//api/name/userOtherDeviceDidSignIn:" title="userOtherDeviceDidSignIn:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userInfoDidUpdated:" %}{% endlanying_code_snippet %}
+```
 ### userOtherDeviceDidSignIn:
 
 User signed in the other device
@@ -48,6 +56,10 @@ User signed in the other device
 * `floo_proxy.h`
 
 <a name="//api/name/userOtherDeviceDidSignOut:" title="userOtherDeviceDidSignOut:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userOtherDeviceDidSignIn:" %}{% endlanying_code_snippet %}
+```
 ### userOtherDeviceDidSignOut:
 
 User signed out the other device
@@ -60,6 +72,10 @@ User signed out the other device
 * `floo_proxy.h`
 
 <a name="//api/name/userSignIn:" title="userSignIn:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userOtherDeviceDidSignOut:" %}{% endlanying_code_snippet %}
+```
 ### userSignIn:
 
 User signed in
@@ -74,6 +90,10 @@ User signed in
 * `floo_proxy.h`
 
 <a name="//api/name/userSignOut:userId:" title="userSignOut:userId:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userSignIn:" %}{% endlanying_code_snippet %}
+```
 ### userSignOut:userId:
 
 User signed out
@@ -87,3 +107,7 @@ User signed out
 #### Declared In
 * `floo_proxy.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userSignOut:userId:" %}{% endlanying_code_snippet %}
+```

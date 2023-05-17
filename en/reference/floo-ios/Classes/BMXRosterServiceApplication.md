@@ -30,7 +30,7 @@
 <a name="//api/name/getMExpire" title="getMExpire"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMExpire
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMReason" title="getMReason"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMExpire" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="getMExpire" %}{% endlanying_code_snippet %}
 ```
 ### getMReason
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getMRosterId" title="getMRosterId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMReason" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="getMReason" %}{% endlanying_code_snippet %}
 ```
 ### getMRosterId
 
@@ -57,7 +57,7 @@
 <a name="//api/name/getMStatus" title="getMStatus"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMRosterId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="getMRosterId" %}{% endlanying_code_snippet %}
 ```
 ### getMStatus
 
@@ -66,7 +66,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMStatus" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="getMStatus" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -75,7 +75,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -84,7 +84,7 @@
 <a name="//api/name/setMExpire:" title="setMExpire:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMExpire:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/setMReason:" title="setMReason:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMExpire:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="setMExpire:" %}{% endlanying_code_snippet %}
 ```
 ### setMReason:
 
@@ -102,7 +102,7 @@
 <a name="//api/name/setMRosterId:" title="setMRosterId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMReason:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="setMReason:" %}{% endlanying_code_snippet %}
 ```
 ### setMRosterId:
 
@@ -111,7 +111,7 @@
 <a name="//api/name/setMStatus:" title="setMStatus:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMRosterId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="setMRosterId:" %}{% endlanying_code_snippet %}
 ```
 ### setMStatus:
 
@@ -119,5 +119,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMStatus:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceApplication",function="setMStatus:" %}{% endlanying_code_snippet %}
 ```

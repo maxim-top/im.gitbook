@@ -30,7 +30,7 @@
 <a name="//api/name/getFrameRate" title="getFrameRate"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getFrameRate
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getHeight" title="getHeight"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getFrameRate" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getFrameRate" %}{% endlanying_code_snippet %}
 ```
 ### getHeight
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getProfile" title="getProfile"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getHeight" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getHeight" %}{% endlanying_code_snippet %}
 ```
 ### getProfile
 
@@ -57,7 +57,7 @@
 <a name="//api/name/getWidth" title="getWidth"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getProfile" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getProfile" %}{% endlanying_code_snippet %}
 ```
 ### getWidth
 
@@ -66,7 +66,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getWidth" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getWidth" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -75,7 +75,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -84,7 +84,7 @@
 <a name="//api/name/setFrameRate:" title="setFrameRate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setFrameRate:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/setHeight:" title="setHeight:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setFrameRate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setFrameRate:" %}{% endlanying_code_snippet %}
 ```
 ### setHeight:
 
@@ -102,7 +102,7 @@
 <a name="//api/name/setProfile:" title="setProfile:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setHeight:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setHeight:" %}{% endlanying_code_snippet %}
 ```
 ### setProfile:
 
@@ -111,7 +111,7 @@
 <a name="//api/name/setWidth:" title="setWidth:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setProfile:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setProfile:" %}{% endlanying_code_snippet %}
 ```
 ### setWidth:
 
@@ -119,5 +119,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setWidth:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setWidth:" %}{% endlanying_code_snippet %}
 ```

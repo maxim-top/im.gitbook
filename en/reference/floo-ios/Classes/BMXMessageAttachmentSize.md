@@ -30,7 +30,7 @@
 <a name="//api/name/getMHeight" title="getMHeight"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMHeight
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMWidth" title="getMWidth"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMHeight" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="getMHeight" %}{% endlanying_code_snippet %}
 ```
 ### getMWidth
 
@@ -48,7 +48,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMWidth" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="getMWidth" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -57,7 +57,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -66,7 +66,7 @@
 <a name="//api/name/initWithWidth:" title="initWithWidth:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### initWithWidth:
 
@@ -75,7 +75,7 @@
 <a name="//api/name/initWithWidth:height:" title="initWithWidth:height:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithWidth:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="initWithWidth:" %}{% endlanying_code_snippet %}
 ```
 ### initWithWidth:height:
 
@@ -84,7 +84,7 @@
 <a name="//api/name/setMHeight:" title="setMHeight:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithWidth:height:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="initWithWidth:height:" %}{% endlanying_code_snippet %}
 ```
 ### setMHeight:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/setMWidth:" title="setMWidth:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMHeight:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="setMHeight:" %}{% endlanying_code_snippet %}
 ```
 ### setMWidth:
 
@@ -101,5 +101,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMWidth:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="setMWidth:" %}{% endlanying_code_snippet %}
 ```

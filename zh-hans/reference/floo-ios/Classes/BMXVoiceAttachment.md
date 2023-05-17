@@ -36,7 +36,7 @@ BMXVoiceAttachment
 <a name="//api/name/clone" title="clone"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
 ```
 ### clone
 
@@ -53,7 +53,7 @@ BMXVoiceAttachment
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clone" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -62,7 +62,7 @@ BMXVoiceAttachment
 <a name="//api/name/duration" title="duration"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### duration
 
@@ -79,7 +79,7 @@ int
 <a name="//api/name/initWithPath:duration:" title="initWithPath:duration:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="duration" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="duration" %}{% endlanying_code_snippet %}
 ```
 ### initWithPath:duration:
 
@@ -88,7 +88,7 @@ int
 <a name="//api/name/initWithPath:duration:displayName:" title="initWithPath:duration:displayName:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:duration:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithPath:duration:" %}{% endlanying_code_snippet %}
 ```
 ### initWithPath:duration:displayName:
 
@@ -113,7 +113,7 @@ int
 <a name="//api/name/initWithRatelUrl:duration:displayName:fileLength:" title="initWithRatelUrl:duration:displayName:fileLength:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithPath:duration:displayName:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithPath:duration:displayName:" %}{% endlanying_code_snippet %}
 ```
 ### initWithRatelUrl:duration:displayName:fileLength:
 
@@ -141,7 +141,7 @@ int
 <a name="//api/name/type" title="type"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithRatelUrl:duration:displayName:fileLength:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithRatelUrl:duration:displayName:fileLength:" %}{% endlanying_code_snippet %}
 ```
 ### type
 
@@ -157,5 +157,5 @@ int
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="type" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="type" %}{% endlanying_code_snippet %}
 ```

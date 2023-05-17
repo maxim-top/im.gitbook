@@ -30,7 +30,7 @@
 <a name="//api/name/getImHost" title="getImHost"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getImHost
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getImPort" title="getImPort"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getImHost" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="getImHost" %}{% endlanying_code_snippet %}
 ```
 ### getImPort
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getRestHost" title="getRestHost"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getImPort" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="getImPort" %}{% endlanying_code_snippet %}
 ```
 ### getRestHost
 
@@ -57,7 +57,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getRestHost" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="getRestHost" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -66,7 +66,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -75,7 +75,7 @@
 <a name="//api/name/initWithIm:port:rest:" title="initWithIm:port:rest:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### initWithIm:port:rest:
 
@@ -100,7 +100,7 @@
 <a name="//api/name/setImHost:" title="setImHost:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithIm:port:rest:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="initWithIm:port:rest:" %}{% endlanying_code_snippet %}
 ```
 ### setImHost:
 
@@ -109,7 +109,7 @@
 <a name="//api/name/setImPort:" title="setImPort:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setImHost:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="setImHost:" %}{% endlanying_code_snippet %}
 ```
 ### setImPort:
 
@@ -118,7 +118,7 @@
 <a name="//api/name/setRestHost:" title="setRestHost:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setImPort:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="setImPort:" %}{% endlanying_code_snippet %}
 ```
 ### setRestHost:
 
@@ -126,5 +126,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setRestHost:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfigHostConfig",function="setRestHost:" %}{% endlanying_code_snippet %}
 ```

@@ -18,7 +18,7 @@ NSObject
 <a name="//api/name/messagePushSetting" title="messagePushSetting"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### messagePushSetting
 
@@ -35,7 +35,7 @@ Push settings for the user
 <a name="//api/name/pushAlias" title="pushAlias"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="messagePushSetting" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="messagePushSetting" %}{% endlanying_code_snippet %}
 ```
 ### pushAlias
 
@@ -52,7 +52,7 @@ NSString
 <a name="//api/name/pushToken" title="pushToken"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="pushAlias" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="pushAlias" %}{% endlanying_code_snippet %}
 ```
 ### pushToken
 
@@ -69,7 +69,7 @@ NSString
 <a name="//api/name/userId" title="userId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="pushToken" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="pushToken" %}{% endlanying_code_snippet %}
 ```
 ### userId
 
@@ -85,5 +85,5 @@ long long
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="userId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="userId" %}{% endlanying_code_snippet %}
 ```

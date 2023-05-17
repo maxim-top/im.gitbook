@@ -43,7 +43,7 @@
 <a name="//api/name/bindVoipTokenWithToken:" title="bindVoipTokenWithToken:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="bindDeviceTokenWithToken:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="bindDeviceTokenWithToken:" %}{% endlanying_code_snippet %}
 ```
 ### bindVoipTokenWithToken:
 
@@ -65,7 +65,7 @@
 <a name="//api/name/clearAllNotifications" title="clearAllNotifications"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="bindVoipTokenWithToken:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="bindVoipTokenWithToken:" %}{% endlanying_code_snippet %}
 ```
 ### clearAllNotifications
 
@@ -79,7 +79,7 @@
 <a name="//api/name/clearNotificationWithNotificationId:" title="clearNotificationWithNotificationId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="clearAllNotifications" %}{% endlanying_code_snippet %}
 ```
 ### clearNotificationWithNotificationId:
 
@@ -98,7 +98,7 @@
 <a name="//api/name/clearTagsWithOperationId:" title="clearTagsWithOperationId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clearNotificationWithNotificationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="clearNotificationWithNotificationId:" %}{% endlanying_code_snippet %}
 ```
 ### clearTagsWithOperationId:
 
@@ -120,7 +120,7 @@
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clearTagsWithOperationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="clearTagsWithOperationId:" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -129,7 +129,7 @@
 <a name="//api/name/deleteTagsWithTags:operationId:" title="deleteTagsWithTags:operationId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### deleteTagsWithTags:operationId:
 
@@ -154,7 +154,7 @@
 <a name="//api/name/getCert" title="getCert"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deleteTagsWithTags:operationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="deleteTagsWithTags:operationId:" %}{% endlanying_code_snippet %}
 ```
 ### getCert
 
@@ -171,7 +171,7 @@ NSString
 <a name="//api/name/getPushProfile:forceRefresh:" title="getPushProfile:forceRefresh:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getCert" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="getCert" %}{% endlanying_code_snippet %}
 ```
 ### getPushProfile:forceRefresh:
 
@@ -196,7 +196,7 @@ NSString
 <a name="//api/name/getTags:operationId:" title="getTags:operationId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushProfile:forceRefresh:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="getPushProfile:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
 ### getTags:operationId:
 
@@ -221,7 +221,7 @@ NSString
 <a name="//api/name/getToken" title="getToken"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getTags:operationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="getTags:operationId:" %}{% endlanying_code_snippet %}
 ```
 ### getToken
 
@@ -238,7 +238,7 @@ NSString
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getToken" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="getToken" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -247,7 +247,7 @@ NSString
 <a name="//api/name/loadLocalPushMessagesWithRefMsgId:size:result:" title="loadLocalPushMessagesWithRefMsgId:size:result:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### loadLocalPushMessagesWithRefMsgId:size:result:
 
@@ -256,7 +256,7 @@ NSString
 <a name="//api/name/loadLocalPushMessagesWithRefMsgId:size:result:arg4:" title="loadLocalPushMessagesWithRefMsgId:size:result:arg4:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadLocalPushMessagesWithRefMsgId:size:result:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="loadLocalPushMessagesWithRefMsgId:size:result:" %}{% endlanying_code_snippet %}
 ```
 ### loadLocalPushMessagesWithRefMsgId:size:result:arg4:
 
@@ -284,7 +284,7 @@ NSString
 <a name="//api/name/resume" title="resume"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="loadLocalPushMessagesWithRefMsgId:size:result:arg4:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="loadLocalPushMessagesWithRefMsgId:size:result:arg4:" %}{% endlanying_code_snippet %}
 ```
 ### resume
 
@@ -301,7 +301,7 @@ NSString
 <a name="//api/name/sendMessageWithContent:" title="sendMessageWithContent:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="resume" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="resume" %}{% endlanying_code_snippet %}
 ```
 ### sendMessageWithContent:
 
@@ -320,7 +320,7 @@ NSString
 <a name="//api/name/setBadge:" title="setBadge:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="sendMessageWithContent:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="sendMessageWithContent:" %}{% endlanying_code_snippet %}
 ```
 ### setBadge:
 
@@ -342,7 +342,7 @@ NSString
 <a name="//api/name/setGeoFenceMode" title="setGeoFenceMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setBadge:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setBadge:" %}{% endlanying_code_snippet %}
 ```
 ### setGeoFenceMode
 
@@ -351,7 +351,7 @@ NSString
 <a name="//api/name/setGeoFenceMode:" title="setGeoFenceMode:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
 ```
 ### setGeoFenceMode:
 
@@ -360,7 +360,7 @@ NSString
 <a name="//api/name/setGeoFenceMode:isAllow:" title="setGeoFenceMode:isAllow:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGeoFenceMode:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setGeoFenceMode:" %}{% endlanying_code_snippet %}
 ```
 ### setGeoFenceMode:isAllow:
 
@@ -385,7 +385,7 @@ NSString
 <a name="//api/name/setPushMode" title="setPushMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setGeoFenceMode:isAllow:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setGeoFenceMode:isAllow:" %}{% endlanying_code_snippet %}
 ```
 ### setPushMode
 
@@ -410,7 +410,7 @@ NSString
 <a name="//api/name/setPushMode:" title="setPushMode:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setPushMode" %}{% endlanying_code_snippet %}
 ```
 ### setPushMode:
 
@@ -432,7 +432,7 @@ NSString
 <a name="//api/name/setPushTime:endHour:" title="setPushTime:endHour:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushMode:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setPushMode:" %}{% endlanying_code_snippet %}
 ```
 ### setPushTime:endHour:
 
@@ -441,7 +441,7 @@ NSString
 <a name="//api/name/setRunBackgroundMode" title="setRunBackgroundMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushTime:endHour:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setPushTime:endHour:" %}{% endlanying_code_snippet %}
 ```
 ### setRunBackgroundMode
 
@@ -450,7 +450,7 @@ NSString
 <a name="//api/name/setRunBackgroundMode:" title="setRunBackgroundMode:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
 ```
 ### setRunBackgroundMode:
 
@@ -472,7 +472,7 @@ NSString
 <a name="//api/name/setSilenceTime:endHour:" title="setSilenceTime:endHour:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setRunBackgroundMode:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setRunBackgroundMode:" %}{% endlanying_code_snippet %}
 ```
 ### setSilenceTime:endHour:
 
@@ -497,7 +497,7 @@ NSString
 <a name="//api/name/setTags:operationId:" title="setTags:operationId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setSilenceTime:endHour:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setSilenceTime:endHour:" %}{% endlanying_code_snippet %}
 ```
 ### setTags:operationId:
 
@@ -522,7 +522,7 @@ NSString
 <a name="//api/name/start" title="start"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setTags:operationId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="setTags:operationId:" %}{% endlanying_code_snippet %}
 ```
 ### start
 
@@ -531,7 +531,7 @@ NSString
 <a name="//api/name/startWithAlias:" title="startWithAlias:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="start" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="start" %}{% endlanying_code_snippet %}
 ```
 ### startWithAlias:
 
@@ -540,7 +540,7 @@ NSString
 <a name="//api/name/startWithAlias:bmxToken:" title="startWithAlias:bmxToken:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="startWithAlias:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="startWithAlias:" %}{% endlanying_code_snippet %}
 ```
 ### startWithAlias:bmxToken:
 
@@ -565,7 +565,7 @@ NSString
 <a name="//api/name/status" title="status"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="startWithAlias:bmxToken:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="startWithAlias:bmxToken:" %}{% endlanying_code_snippet %}
 ```
 ### status
 
@@ -582,7 +582,7 @@ NSString
 <a name="//api/name/stop" title="stop"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="status" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="status" %}{% endlanying_code_snippet %}
 ```
 ### stop
 
@@ -599,7 +599,7 @@ NSString
 <a name="//api/name/unbindAliasWithAlias:" title="unbindAliasWithAlias:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="stop" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="stop" %}{% endlanying_code_snippet %}
 ```
 ### unbindAliasWithAlias:
 
@@ -620,5 +620,5 @@ NSString
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="unbindAliasWithAlias:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushService",function="unbindAliasWithAlias:" %}{% endlanying_code_snippet %}
 ```

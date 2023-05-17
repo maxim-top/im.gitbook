@@ -30,7 +30,7 @@
 <a name="//api/name/getMExpired" title="getMExpired"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMExpired
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMGroupId" title="getMGroupId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMExpired" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="getMExpired" %}{% endlanying_code_snippet %}
 ```
 ### getMGroupId
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getMInviterId" title="getMInviterId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMGroupId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="getMGroupId" %}{% endlanying_code_snippet %}
 ```
 ### getMInviterId
 
@@ -57,7 +57,7 @@
 <a name="//api/name/getMReason" title="getMReason"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMInviterId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="getMInviterId" %}{% endlanying_code_snippet %}
 ```
 ### getMReason
 
@@ -66,7 +66,7 @@
 <a name="//api/name/getMStatus" title="getMStatus"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMReason" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="getMReason" %}{% endlanying_code_snippet %}
 ```
 ### getMStatus
 
@@ -75,7 +75,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMStatus" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="getMStatus" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -84,7 +84,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/setMExpired:" title="setMExpired:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMExpired:
 
@@ -102,7 +102,7 @@
 <a name="//api/name/setMGroupId:" title="setMGroupId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMExpired:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="setMExpired:" %}{% endlanying_code_snippet %}
 ```
 ### setMGroupId:
 
@@ -111,7 +111,7 @@
 <a name="//api/name/setMInviterId:" title="setMInviterId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMGroupId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="setMGroupId:" %}{% endlanying_code_snippet %}
 ```
 ### setMInviterId:
 
@@ -120,7 +120,7 @@
 <a name="//api/name/setMReason:" title="setMReason:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMInviterId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="setMInviterId:" %}{% endlanying_code_snippet %}
 ```
 ### setMReason:
 
@@ -129,7 +129,7 @@
 <a name="//api/name/setMStatus:" title="setMStatus:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMReason:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="setMReason:" %}{% endlanying_code_snippet %}
 ```
 ### setMStatus:
 
@@ -137,5 +137,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMStatus:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupInvitation",function="setMStatus:" %}{% endlanying_code_snippet %}
 ```

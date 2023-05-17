@@ -30,7 +30,7 @@
 <a name="//api/name/getMCreateTime" title="getMCreateTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMCreateTime
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMGroupNickname" title="getMGroupNickname"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMCreateTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMCreateTime" %}{% endlanying_code_snippet %}
 ```
 ### getMGroupNickname
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getMUid" title="getMUid"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMGroupNickname" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMGroupNickname" %}{% endlanying_code_snippet %}
 ```
 ### getMUid
 
@@ -57,7 +57,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMUid" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMUid" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -66,7 +66,7 @@
 <a name="//api/name/initWithUid:nickname:createTime:" title="initWithUid:nickname:createTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### initWithUid:nickname:createTime:
 
@@ -75,7 +75,7 @@
 <a name="//api/name/setMCreateTime:" title="setMCreateTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithUid:nickname:createTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="initWithUid:nickname:createTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMCreateTime:
 
@@ -84,7 +84,7 @@
 <a name="//api/name/setMGroupNickname:" title="setMGroupNickname:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMCreateTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMCreateTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMGroupNickname:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/setMUid:" title="setMUid:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMGroupNickname:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMGroupNickname:" %}{% endlanying_code_snippet %}
 ```
 ### setMUid:
 
@@ -101,5 +101,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMUid:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMUid:" %}{% endlanying_code_snippet %}
 ```

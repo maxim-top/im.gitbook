@@ -35,7 +35,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/getMPushEnabled" title="getMPushEnabled"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMPushEnabled
 
@@ -44,7 +44,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/getMPushEndTime" title="getMPushEndTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushEnabled" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="getMPushEnabled" %}{% endlanying_code_snippet %}
 ```
 ### getMPushEndTime
 
@@ -53,7 +53,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/getMPushStartTime" title="getMPushStartTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushEndTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="getMPushEndTime" %}{% endlanying_code_snippet %}
 ```
 ### getMPushStartTime
 
@@ -62,7 +62,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/getMSilenceEndTime" title="getMSilenceEndTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPushStartTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="getMPushStartTime" %}{% endlanying_code_snippet %}
 ```
 ### getMSilenceEndTime
 
@@ -71,7 +71,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/getMSilenceStartTime" title="getMSilenceStartTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMSilenceEndTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="getMSilenceEndTime" %}{% endlanying_code_snippet %}
 ```
 ### getMSilenceStartTime
 
@@ -80,7 +80,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMSilenceStartTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="getMSilenceStartTime" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -89,7 +89,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -98,7 +98,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/setMPushEnabled:" title="setMPushEnabled:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushEnabled:
 
@@ -107,7 +107,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/setMPushEndTime:" title="setMPushEndTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushEnabled:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="setMPushEnabled:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushEndTime:
 
@@ -116,7 +116,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/setMPushStartTime:" title="setMPushStartTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushEndTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="setMPushEndTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMPushStartTime:
 
@@ -125,7 +125,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/setMSilenceEndTime:" title="setMSilenceEndTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPushStartTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="setMPushStartTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMSilenceEndTime:
 
@@ -134,7 +134,7 @@ mPushEndTime Push notifications enabled end time
 <a name="//api/name/setMSilenceStartTime:" title="setMSilenceStartTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMSilenceEndTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="setMSilenceEndTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMSilenceStartTime:
 
@@ -142,5 +142,5 @@ mPushEndTime Push notifications enabled end time
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMSilenceStartTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfileMessagePushSetting",function="setMSilenceStartTime:" %}{% endlanying_code_snippet %}
 ```

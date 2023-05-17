@@ -38,7 +38,7 @@ BOOL
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="carryUsernameInMessage" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="carryUsernameInMessage" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -47,7 +47,7 @@ BOOL
 <a name="//api/name/enableDeliveryAck" title="enableDeliveryAck"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### enableDeliveryAck
 
@@ -64,7 +64,7 @@ BOOL
 <a name="//api/name/getAppID" title="getAppID"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="enableDeliveryAck" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="enableDeliveryAck" %}{% endlanying_code_snippet %}
 ```
 ### getAppID
 
@@ -81,7 +81,7 @@ NSString
 <a name="//api/name/getAppSecret" title="getAppSecret"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getAppID" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getAppID" %}{% endlanying_code_snippet %}
 ```
 ### getAppSecret
 
@@ -98,7 +98,7 @@ NSString
 <a name="//api/name/getCacheDir" title="getCacheDir"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getAppSecret" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getAppSecret" %}{% endlanying_code_snippet %}
 ```
 ### getCacheDir
 
@@ -115,7 +115,7 @@ NSString
 <a name="//api/name/getClientType" title="getClientType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getCacheDir" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getCacheDir" %}{% endlanying_code_snippet %}
 ```
 ### getClientType
 
@@ -132,7 +132,7 @@ NSString
 <a name="//api/name/getConsoleOutput" title="getConsoleOutput"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getClientType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getClientType" %}{% endlanying_code_snippet %}
 ```
 ### getConsoleOutput
 
@@ -149,7 +149,7 @@ BOOL
 <a name="//api/name/getDBCryptoKey" title="getDBCryptoKey"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getConsoleOutput" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getConsoleOutput" %}{% endlanying_code_snippet %}
 ```
 ### getDBCryptoKey
 
@@ -166,7 +166,7 @@ NSString
 <a name="//api/name/getDataDir" title="getDataDir"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getDBCryptoKey" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDBCryptoKey" %}{% endlanying_code_snippet %}
 ```
 ### getDataDir
 
@@ -183,7 +183,7 @@ NSString
 <a name="//api/name/getDebugLogReceiverId" title="getDebugLogReceiverId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getDataDir" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDataDir" %}{% endlanying_code_snippet %}
 ```
 ### getDebugLogReceiverId
 
@@ -200,7 +200,7 @@ long long
 <a name="//api/name/getDeviceUuid" title="getDeviceUuid"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getDebugLogReceiverId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDebugLogReceiverId" %}{% endlanying_code_snippet %}
 ```
 ### getDeviceUuid
 
@@ -217,7 +217,7 @@ NSString
 <a name="//api/name/getEnableDNS" title="getEnableDNS"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getDeviceUuid" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDeviceUuid" %}{% endlanying_code_snippet %}
 ```
 ### getEnableDNS
 
@@ -234,7 +234,7 @@ BOOL
 <a name="//api/name/getHostConfig" title="getHostConfig"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getEnableDNS" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getEnableDNS" %}{% endlanying_code_snippet %}
 ```
 ### getHostConfig
 
@@ -251,7 +251,7 @@ BOOL
 <a name="//api/name/getLoadAllServerConversations" title="getLoadAllServerConversations"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getHostConfig" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getHostConfig" %}{% endlanying_code_snippet %}
 ```
 ### getLoadAllServerConversations
 
@@ -268,7 +268,7 @@ BOOL
 <a name="//api/name/getLogLevel" title="getLogLevel"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getLoadAllServerConversations" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getLoadAllServerConversations" %}{% endlanying_code_snippet %}
 ```
 ### getLogLevel
 
@@ -285,7 +285,7 @@ Log输出等级
 <a name="//api/name/getPushCertName" title="getPushCertName"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getLogLevel" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getLogLevel" %}{% endlanying_code_snippet %}
 ```
 ### getPushCertName
 
@@ -302,7 +302,7 @@ NSString
 <a name="//api/name/getPushEnvironmentType" title="getPushEnvironmentType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushCertName" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getPushCertName" %}{% endlanying_code_snippet %}
 ```
 ### getPushEnvironmentType
 
@@ -319,7 +319,7 @@ NSString
 <a name="//api/name/getPushProviderType" title="getPushProviderType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushEnvironmentType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getPushEnvironmentType" %}{% endlanying_code_snippet %}
 ```
 ### getPushProviderType
 
@@ -336,7 +336,7 @@ NSString
 <a name="//api/name/getSDKVersion" title="getSDKVersion"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getPushProviderType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getPushProviderType" %}{% endlanying_code_snippet %}
 ```
 ### getSDKVersion
 
@@ -353,7 +353,7 @@ NSString
 <a name="//api/name/getUserAgent" title="getUserAgent"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getSDKVersion" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getSDKVersion" %}{% endlanying_code_snippet %}
 ```
 ### getUserAgent
 
@@ -370,7 +370,7 @@ NSString
 <a name="//api/name/getUserDNSAddress" title="getUserDNSAddress"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getUserAgent" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getUserAgent" %}{% endlanying_code_snippet %}
 ```
 ### getUserDNSAddress
 
@@ -387,7 +387,7 @@ NSString
 <a name="//api/name/getVerifyCertificate" title="getVerifyCertificate"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getUserDNSAddress" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getUserDNSAddress" %}{% endlanying_code_snippet %}
 ```
 ### getVerifyCertificate
 
@@ -404,7 +404,7 @@ BOOL
 <a name="//api/name/getVsn" title="getVsn"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getVerifyCertificate" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getVerifyCertificate" %}{% endlanying_code_snippet %}
 ```
 ### getVsn
 
@@ -421,7 +421,7 @@ NSString
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getVsn" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getVsn" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -430,7 +430,7 @@ NSString
 <a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:
 
@@ -439,7 +439,7 @@ NSString
 <a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:" %}{% endlanying_code_snippet %}
 ```
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:
 
@@ -448,7 +448,7 @@ NSString
 <a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:" %}{% endlanying_code_snippet %}
 ```
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:
 
@@ -494,7 +494,7 @@ NSString
 <a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:" %}{% endlanying_code_snippet %}
 ```
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:
 
@@ -534,7 +534,7 @@ NSString
 <a name="//api/name/setAppID:" title="setAppID:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:" %}{% endlanying_code_snippet %}
 ```
 ### setAppID:
 
@@ -553,7 +553,7 @@ NSString
 <a name="//api/name/setAppSecret:" title="setAppSecret:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAppID:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setAppID:" %}{% endlanying_code_snippet %}
 ```
 ### setAppSecret:
 
@@ -572,7 +572,7 @@ NSString
 <a name="//api/name/setCarryUsernameInMessage:" title="setCarryUsernameInMessage:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAppSecret:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setAppSecret:" %}{% endlanying_code_snippet %}
 ```
 ### setCarryUsernameInMessage:
 
@@ -591,7 +591,7 @@ NSString
 <a name="//api/name/setConsoleOutput:" title="setConsoleOutput:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setCarryUsernameInMessage:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setCarryUsernameInMessage:" %}{% endlanying_code_snippet %}
 ```
 ### setConsoleOutput:
 
@@ -610,7 +610,7 @@ NSString
 <a name="//api/name/setDBCryptoKey:" title="setDBCryptoKey:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setConsoleOutput:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setConsoleOutput:" %}{% endlanying_code_snippet %}
 ```
 ### setDBCryptoKey:
 
@@ -629,7 +629,7 @@ NSString
 <a name="//api/name/setDebugLogReceiverId:" title="setDebugLogReceiverId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setDBCryptoKey:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setDBCryptoKey:" %}{% endlanying_code_snippet %}
 ```
 ### setDebugLogReceiverId:
 
@@ -648,7 +648,7 @@ NSString
 <a name="//api/name/setDeviceUuid:" title="setDeviceUuid:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setDebugLogReceiverId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setDebugLogReceiverId:" %}{% endlanying_code_snippet %}
 ```
 ### setDeviceUuid:
 
@@ -667,7 +667,7 @@ NSString
 <a name="//api/name/setEnableDNS" title="setEnableDNS"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setDeviceUuid:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setDeviceUuid:" %}{% endlanying_code_snippet %}
 ```
 ### setEnableDNS
 
@@ -676,7 +676,7 @@ NSString
 <a name="//api/name/setEnableDNS:" title="setEnableDNS:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnableDNS" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
 ```
 ### setEnableDNS:
 
@@ -695,7 +695,7 @@ NSString
 <a name="//api/name/setEnableDeliveryAck:" title="setEnableDeliveryAck:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnableDNS:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnableDNS:" %}{% endlanying_code_snippet %}
 ```
 ### setEnableDeliveryAck:
 
@@ -714,7 +714,7 @@ NSString
 <a name="//api/name/setEnvironmentType:" title="setEnvironmentType:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnableDeliveryAck:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnableDeliveryAck:" %}{% endlanying_code_snippet %}
 ```
 ### setEnvironmentType:
 
@@ -733,7 +733,7 @@ NSString
 <a name="//api/name/setHostConfig:" title="setHostConfig:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnvironmentType:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnvironmentType:" %}{% endlanying_code_snippet %}
 ```
 ### setHostConfig:
 
@@ -752,7 +752,7 @@ NSString
 <a name="//api/name/setLoadAllServerConversations" title="setLoadAllServerConversations"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setHostConfig:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setHostConfig:" %}{% endlanying_code_snippet %}
 ```
 ### setLoadAllServerConversations
 
@@ -761,7 +761,7 @@ NSString
 <a name="//api/name/setLoadAllServerConversations:" title="setLoadAllServerConversations:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
 ```
 ### setLoadAllServerConversations:
 
@@ -780,7 +780,7 @@ NSString
 <a name="//api/name/setLogLevel:" title="setLogLevel:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setLoadAllServerConversations:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setLoadAllServerConversations:" %}{% endlanying_code_snippet %}
 ```
 ### setLogLevel:
 
@@ -799,7 +799,7 @@ NSString
 <a name="//api/name/setPushCertName:" title="setPushCertName:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setLogLevel:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setLogLevel:" %}{% endlanying_code_snippet %}
 ```
 ### setPushCertName:
 
@@ -816,7 +816,7 @@ NSString
 <a name="//api/name/setPushProviderType:" title="setPushProviderType:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushCertName:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setPushCertName:" %}{% endlanying_code_snippet %}
 ```
 ### setPushProviderType:
 
@@ -835,7 +835,7 @@ NSString
 <a name="//api/name/setUserDNSAddress:" title="setUserDNSAddress:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushProviderType:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setPushProviderType:" %}{% endlanying_code_snippet %}
 ```
 ### setUserDNSAddress:
 
@@ -854,7 +854,7 @@ NSString
 <a name="//api/name/setVerifyCertificate" title="setVerifyCertificate"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setUserDNSAddress:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setUserDNSAddress:" %}{% endlanying_code_snippet %}
 ```
 ### setVerifyCertificate
 
@@ -863,7 +863,7 @@ NSString
 <a name="//api/name/setVerifyCertificate:" title="setVerifyCertificate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
 ```
 ### setVerifyCertificate:
 
@@ -884,5 +884,5 @@ NSString
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setVerifyCertificate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setVerifyCertificate:" %}{% endlanying_code_snippet %}
 ```

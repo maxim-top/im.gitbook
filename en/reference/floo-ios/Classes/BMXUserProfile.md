@@ -26,7 +26,7 @@ Friend authorization mode
 <a name="//api/name/authQuestion" title="authQuestion"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
 ```
 ### authQuestion
 
@@ -43,7 +43,7 @@ AuthQuestion
 <a name="//api/name/avatarPath" title="avatarPath"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="authQuestion" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="authQuestion" %}{% endlanying_code_snippet %}
 ```
 ### avatarPath
 
@@ -60,7 +60,7 @@ NSString
 <a name="//api/name/avatarRatelUrl" title="avatarRatelUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarPath" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarPath" %}{% endlanying_code_snippet %}
 ```
 ### avatarRatelUrl
 
@@ -77,7 +77,7 @@ NSString
 <a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
 ```
 ### avatarThumbnailPath
 
@@ -94,7 +94,7 @@ NSString
 <a name="//api/name/avatarUrl" title="avatarUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
 ```
 ### avatarUrl
 
@@ -111,7 +111,7 @@ NSString
 <a name="//api/name/category" title="category"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarUrl" %}{% endlanying_code_snippet %}
 ```
 ### category
 
@@ -128,7 +128,7 @@ User grade(Normal|Advanced)
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="category" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="category" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -137,7 +137,7 @@ User grade(Normal|Advanced)
 <a name="//api/name/email" title="email"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### email
 
@@ -154,7 +154,7 @@ NSString
 <a name="//api/name/isAutoAcceptGroupInvite" title="isAutoAcceptGroupInvite"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="email" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="email" %}{% endlanying_code_snippet %}
 ```
 ### isAutoAcceptGroupInvite
 
@@ -171,7 +171,7 @@ BOOL
 <a name="//api/name/messageSetting" title="messageSetting"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="isAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
 ```
 ### messageSetting
 
@@ -188,7 +188,7 @@ Message settings
 <a name="//api/name/mobilePhone" title="mobilePhone"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="messageSetting" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="messageSetting" %}{% endlanying_code_snippet %}
 ```
 ### mobilePhone
 
@@ -205,7 +205,7 @@ NSString
 <a name="//api/name/nickname" title="nickname"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="mobilePhone" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="mobilePhone" %}{% endlanying_code_snippet %}
 ```
 ### nickname
 
@@ -222,7 +222,7 @@ NSString
 <a name="//api/name/privateInfo" title="privateInfo"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="nickname" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="nickname" %}{% endlanying_code_snippet %}
 ```
 ### privateInfo
 
@@ -239,7 +239,7 @@ NSString
 <a name="//api/name/publicInfo" title="publicInfo"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="privateInfo" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="privateInfo" %}{% endlanying_code_snippet %}
 ```
 ### publicInfo
 
@@ -256,7 +256,7 @@ NSString
 <a name="//api/name/userId" title="userId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="publicInfo" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="publicInfo" %}{% endlanying_code_snippet %}
 ```
 ### userId
 
@@ -271,7 +271,7 @@ long long
 <a name="//api/name/username" title="username"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="userId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="userId" %}{% endlanying_code_snippet %}
 ```
 ### username
 
@@ -285,5 +285,5 @@ NSString
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="username" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="username" %}{% endlanying_code_snippet %}
 ```

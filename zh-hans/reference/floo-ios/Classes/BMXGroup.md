@@ -26,7 +26,7 @@ int
 <a name="//api/name/avatarPath" title="avatarPath"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="adminsCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="adminsCount" %}{% endlanying_code_snippet %}
 ```
 ### avatarPath
 
@@ -43,7 +43,7 @@ NSString
 <a name="//api/name/avatarRatelUrl" title="avatarRatelUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarPath" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarPath" %}{% endlanying_code_snippet %}
 ```
 ### avatarRatelUrl
 
@@ -60,7 +60,7 @@ NSString
 <a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
 ```
 ### avatarThumbnailPath
 
@@ -77,7 +77,7 @@ NSString
 <a name="//api/name/avatarThumbnailUrl" title="avatarThumbnailUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
 ```
 ### avatarThumbnailUrl
 
@@ -94,7 +94,7 @@ NSString
 <a name="//api/name/avatarUrl" title="avatarUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
 ```
 ### avatarUrl
 
@@ -111,7 +111,7 @@ NSString
 <a name="//api/name/banExpireTime" title="banExpireTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="avatarUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarUrl" %}{% endlanying_code_snippet %}
 ```
 ### banExpireTime
 
@@ -128,7 +128,7 @@ long long
 <a name="//api/name/bannedListSize" title="bannedListSize"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="banExpireTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="banExpireTime" %}{% endlanying_code_snippet %}
 ```
 ### bannedListSize
 
@@ -145,7 +145,7 @@ int
 <a name="//api/name/blockListSize" title="blockListSize"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="bannedListSize" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="bannedListSize" %}{% endlanying_code_snippet %}
 ```
 ### blockListSize
 
@@ -162,7 +162,7 @@ int
 <a name="//api/name/capacity" title="capacity"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="blockListSize" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="blockListSize" %}{% endlanying_code_snippet %}
 ```
 ### capacity
 
@@ -179,7 +179,7 @@ int
 <a name="//api/name/createTime" title="createTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="capacity" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="capacity" %}{% endlanying_code_snippet %}
 ```
 ### createTime
 
@@ -196,7 +196,7 @@ long long
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="createTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="createTime" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -205,7 +205,7 @@ long long
 <a name="//api/name/description" title="description"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### description
 
@@ -222,7 +222,7 @@ NSString
 <a name="//api/name/enableReadAck" title="enableReadAck"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="description" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="description" %}{% endlanying_code_snippet %}
 ```
 ### enableReadAck
 
@@ -239,7 +239,7 @@ BOOL
 <a name="//api/name/extension" title="extension"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="enableReadAck" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="enableReadAck" %}{% endlanying_code_snippet %}
 ```
 ### extension
 
@@ -256,7 +256,7 @@ JSON(std::string)
 <a name="//api/name/groupId" title="groupId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="extension" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="extension" %}{% endlanying_code_snippet %}
 ```
 ### groupId
 
@@ -273,7 +273,7 @@ long long
 <a name="//api/name/groupStatus" title="groupStatus"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="groupId" %}{% endlanying_code_snippet %}
 ```
 ### groupStatus
 
@@ -290,7 +290,7 @@ long long
 <a name="//api/name/groupType" title="groupType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupStatus" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="groupStatus" %}{% endlanying_code_snippet %}
 ```
 ### groupType
 
@@ -307,7 +307,7 @@ long long
 <a name="//api/name/historyVisible" title="historyVisible"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="groupType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="groupType" %}{% endlanying_code_snippet %}
 ```
 ### historyVisible
 
@@ -324,7 +324,7 @@ BOOL
 <a name="//api/name/inviteMode" title="inviteMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="historyVisible" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="historyVisible" %}{% endlanying_code_snippet %}
 ```
 ### inviteMode
 
@@ -341,7 +341,7 @@ BOOL
 <a name="//api/name/isMember" title="isMember"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="inviteMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="inviteMode" %}{% endlanying_code_snippet %}
 ```
 ### isMember
 
@@ -361,7 +361,7 @@ Deprecated use <a href="#//api/name/roleType">roleType</a> instead.
 <a name="//api/name/joinAuthMode" title="joinAuthMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="isMember" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="isMember" %}{% endlanying_code_snippet %}
 ```
 ### joinAuthMode
 
@@ -378,7 +378,7 @@ Deprecated use <a href="#//api/name/roleType">roleType</a> instead.
 <a name="//api/name/latestAnnouncementId" title="latestAnnouncementId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="joinAuthMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="joinAuthMode" %}{% endlanying_code_snippet %}
 ```
 ### latestAnnouncementId
 
@@ -395,7 +395,7 @@ long long
 <a name="//api/name/membersCount" title="membersCount"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="latestAnnouncementId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="latestAnnouncementId" %}{% endlanying_code_snippet %}
 ```
 ### membersCount
 
@@ -412,7 +412,7 @@ int
 <a name="//api/name/modifyMode" title="modifyMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="membersCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="membersCount" %}{% endlanying_code_snippet %}
 ```
 ### modifyMode
 
@@ -429,7 +429,7 @@ int
 <a name="//api/name/msgMuteMode" title="msgMuteMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="modifyMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="modifyMode" %}{% endlanying_code_snippet %}
 ```
 ### msgMuteMode
 
@@ -446,7 +446,7 @@ int
 <a name="//api/name/msgPushMode" title="msgPushMode"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="msgMuteMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="msgMuteMode" %}{% endlanying_code_snippet %}
 ```
 ### msgPushMode
 
@@ -463,7 +463,7 @@ MsgPushMode
 <a name="//api/name/myNickname" title="myNickname"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="msgPushMode" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="msgPushMode" %}{% endlanying_code_snippet %}
 ```
 ### myNickname
 
@@ -480,7 +480,7 @@ NSString
 <a name="//api/name/name" title="name"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="myNickname" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="myNickname" %}{% endlanying_code_snippet %}
 ```
 ### name
 
@@ -497,7 +497,7 @@ NSString
 <a name="//api/name/ownerId" title="ownerId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="name" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="name" %}{% endlanying_code_snippet %}
 ```
 ### ownerId
 
@@ -514,7 +514,7 @@ long long
 <a name="//api/name/roleType" title="roleType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="ownerId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="ownerId" %}{% endlanying_code_snippet %}
 ```
 ### roleType
 
@@ -531,7 +531,7 @@ long long
 <a name="//api/name/sharedFilesCount" title="sharedFilesCount"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="roleType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="roleType" %}{% endlanying_code_snippet %}
 ```
 ### sharedFilesCount
 
@@ -547,5 +547,5 @@ int
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="sharedFilesCount" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="sharedFilesCount" %}{% endlanying_code_snippet %}
 ```

@@ -40,7 +40,7 @@
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### addDelegate:delegateQueue:
 
@@ -49,7 +49,7 @@
 <a name="//api/name/bindDeviceWithToken:" title="bindDeviceWithToken:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
 ### bindDeviceWithToken:
 
@@ -71,7 +71,7 @@
 <a name="//api/name/bindDeviceWithToken:completion:" title="bindDeviceWithToken:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="bindDeviceWithToken:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="bindDeviceWithToken:" %}{% endlanying_code_snippet %}
 ```
 ### bindDeviceWithToken:completion:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="bindDeviceWithToken:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="bindDeviceWithToken:completion:" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -102,7 +102,7 @@
 <a name="//api/name/deleteDeviceWithDeviceSn:" title="deleteDeviceWithDeviceSn:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### deleteDeviceWithDeviceSn:
 
@@ -124,7 +124,7 @@
 <a name="//api/name/deleteDeviceWithDeviceSn:completion:" title="deleteDeviceWithDeviceSn:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deleteDeviceWithDeviceSn:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="deleteDeviceWithDeviceSn:" %}{% endlanying_code_snippet %}
 ```
 ### deleteDeviceWithDeviceSn:completion:
 
@@ -146,7 +146,7 @@
 <a name="//api/name/downloadAvatarWithProfile:thumbnail:callback:" title="downloadAvatarWithProfile:thumbnail:callback:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="deleteDeviceWithDeviceSn:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="deleteDeviceWithDeviceSn:completion:" %}{% endlanying_code_snippet %}
 ```
 ### downloadAvatarWithProfile:thumbnail:callback:
 
@@ -174,7 +174,7 @@
 <a name="//api/name/downloadAvatarWithProfile:thumbnail:callback:completion:" title="downloadAvatarWithProfile:thumbnail:callback:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="downloadAvatarWithProfile:thumbnail:callback:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="downloadAvatarWithProfile:thumbnail:callback:" %}{% endlanying_code_snippet %}
 ```
 ### downloadAvatarWithProfile:thumbnail:callback:completion:
 
@@ -202,7 +202,7 @@
 <a name="//api/name/getDeviceList:" title="getDeviceList:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="downloadAvatarWithProfile:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="downloadAvatarWithProfile:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
 ```
 ### getDeviceList:
 
@@ -224,7 +224,7 @@
 <a name="//api/name/getDeviceListWithCompletion:" title="getDeviceListWithCompletion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getDeviceList:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getDeviceList:" %}{% endlanying_code_snippet %}
 ```
 ### getDeviceListWithCompletion:
 
@@ -246,7 +246,7 @@
 <a name="//api/name/getProfile:completion:" title="getProfile:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getDeviceListWithCompletion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getDeviceListWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### getProfile:completion:
 
@@ -271,7 +271,7 @@
 <a name="//api/name/getProfile:forceRefresh:" title="getProfile:forceRefresh:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getProfile:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getProfile:completion:" %}{% endlanying_code_snippet %}
 ```
 ### getProfile:forceRefresh:
 
@@ -296,7 +296,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getProfile:forceRefresh:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getProfile:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -305,7 +305,7 @@
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### removeDelegate:
 
@@ -324,7 +324,7 @@
 <a name="//api/name/setAddFriendAuthMode:" title="setAddFriendAuthMode:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### setAddFriendAuthMode:
 
@@ -346,7 +346,7 @@
 <a name="//api/name/setAddFriendAuthMode:completion:" title="setAddFriendAuthMode:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAddFriendAuthMode:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAddFriendAuthMode:" %}{% endlanying_code_snippet %}
 ```
 ### setAddFriendAuthMode:completion:
 
@@ -368,7 +368,7 @@
 <a name="//api/name/setAuthQuestion:" title="setAuthQuestion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAddFriendAuthMode:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAddFriendAuthMode:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setAuthQuestion:
 
@@ -390,7 +390,7 @@
 <a name="//api/name/setAuthQuestion:completion:" title="setAuthQuestion:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAuthQuestion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAuthQuestion:" %}{% endlanying_code_snippet %}
 ```
 ### setAuthQuestion:completion:
 
@@ -412,7 +412,7 @@
 <a name="//api/name/setAutoAcceptGroupInvite:" title="setAutoAcceptGroupInvite:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAuthQuestion:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAuthQuestion:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setAutoAcceptGroupInvite:
 
@@ -434,7 +434,7 @@
 <a name="//api/name/setAutoAcceptGroupInvite:completion:" title="setAutoAcceptGroupInvite:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAutoAcceptGroupInvite:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoAcceptGroupInvite:" %}{% endlanying_code_snippet %}
 ```
 ### setAutoAcceptGroupInvite:completion:
 
@@ -456,7 +456,7 @@
 <a name="//api/name/setAutoDownloadAttachment:" title="setAutoDownloadAttachment:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAutoAcceptGroupInvite:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoAcceptGroupInvite:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setAutoDownloadAttachment:
 
@@ -478,7 +478,7 @@
 <a name="//api/name/setAutoDownloadAttachment:completion:" title="setAutoDownloadAttachment:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAutoDownloadAttachment:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoDownloadAttachment:" %}{% endlanying_code_snippet %}
 ```
 ### setAutoDownloadAttachment:completion:
 
@@ -500,7 +500,7 @@
 <a name="//api/name/setEnablePush:" title="setEnablePush:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setAutoDownloadAttachment:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoDownloadAttachment:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setEnablePush:
 
@@ -522,7 +522,7 @@
 <a name="//api/name/setEnablePush:completion:" title="setEnablePush:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnablePush:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePush:" %}{% endlanying_code_snippet %}
 ```
 ### setEnablePush:completion:
 
@@ -544,7 +544,7 @@
 <a name="//api/name/setEnablePushDetaile:" title="setEnablePushDetaile:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnablePush:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePush:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setEnablePushDetaile:
 
@@ -566,7 +566,7 @@
 <a name="//api/name/setEnablePushDetaile:completion:" title="setEnablePushDetaile:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnablePushDetaile:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePushDetaile:" %}{% endlanying_code_snippet %}
 ```
 ### setEnablePushDetaile:completion:
 
@@ -588,7 +588,7 @@
 <a name="//api/name/setNickname:" title="setNickname:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setEnablePushDetaile:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePushDetaile:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setNickname:
 
@@ -610,7 +610,7 @@
 <a name="//api/name/setNickname:completion:" title="setNickname:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setNickname:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNickname:" %}{% endlanying_code_snippet %}
 ```
 ### setNickname:completion:
 
@@ -632,7 +632,7 @@
 <a name="//api/name/setNotificationSound:" title="setNotificationSound:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setNickname:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNickname:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setNotificationSound:
 
@@ -654,7 +654,7 @@
 <a name="//api/name/setNotificationSound:completion:" title="setNotificationSound:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setNotificationSound:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationSound:" %}{% endlanying_code_snippet %}
 ```
 ### setNotificationSound:completion:
 
@@ -676,7 +676,7 @@
 <a name="//api/name/setNotificationVibrate:" title="setNotificationVibrate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setNotificationSound:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationSound:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setNotificationVibrate:
 
@@ -698,7 +698,7 @@
 <a name="//api/name/setNotificationVibrate:completion:" title="setNotificationVibrate:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setNotificationVibrate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationVibrate:" %}{% endlanying_code_snippet %}
 ```
 ### setNotificationVibrate:completion:
 
@@ -720,7 +720,7 @@
 <a name="//api/name/setPrivateInfo:" title="setPrivateInfo:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setNotificationVibrate:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationVibrate:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setPrivateInfo:
 
@@ -742,7 +742,7 @@
 <a name="//api/name/setPrivateInfo:completion:" title="setPrivateInfo:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPrivateInfo:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPrivateInfo:" %}{% endlanying_code_snippet %}
 ```
 ### setPrivateInfo:completion:
 
@@ -764,7 +764,7 @@
 <a name="//api/name/setPublicInfo:" title="setPublicInfo:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPrivateInfo:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPrivateInfo:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setPublicInfo:
 
@@ -786,7 +786,7 @@
 <a name="//api/name/setPublicInfo:completion:" title="setPublicInfo:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPublicInfo:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPublicInfo:" %}{% endlanying_code_snippet %}
 ```
 ### setPublicInfo:completion:
 
@@ -808,7 +808,7 @@
 <a name="//api/name/setPushAlias:bmxPushToken:" title="setPushAlias:bmxPushToken:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPublicInfo:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPublicInfo:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setPushAlias:bmxPushToken:
 
@@ -833,7 +833,7 @@
 <a name="//api/name/setPushAlias:bmxPushToken:completion:" title="setPushAlias:bmxPushToken:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushAlias:bmxPushToken:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushAlias:bmxPushToken:" %}{% endlanying_code_snippet %}
 ```
 ### setPushAlias:bmxPushToken:completion:
 
@@ -858,7 +858,7 @@
 <a name="//api/name/setPushNickname:" title="setPushNickname:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushAlias:bmxPushToken:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushAlias:bmxPushToken:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setPushNickname:
 
@@ -880,7 +880,7 @@
 <a name="//api/name/setPushNickname:completion:" title="setPushNickname:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushNickname:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushNickname:" %}{% endlanying_code_snippet %}
 ```
 ### setPushNickname:completion:
 
@@ -902,7 +902,7 @@
 <a name="//api/name/uploadAvatarWithAvatarPath:callback:" title="uploadAvatarWithAvatarPath:callback:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setPushNickname:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushNickname:completion:" %}{% endlanying_code_snippet %}
 ```
 ### uploadAvatarWithAvatarPath:callback:
 
@@ -927,7 +927,7 @@
 <a name="//api/name/uploadAvatarWithAvatarPath:callback:completion:" title="uploadAvatarWithAvatarPath:callback:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="uploadAvatarWithAvatarPath:callback:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="uploadAvatarWithAvatarPath:callback:" %}{% endlanying_code_snippet %}
 ```
 ### uploadAvatarWithAvatarPath:callback:completion:
 
@@ -951,5 +951,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="uploadAvatarWithAvatarPath:callback:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="uploadAvatarWithAvatarPath:callback:completion:" %}{% endlanying_code_snippet %}
 ```

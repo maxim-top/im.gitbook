@@ -43,7 +43,7 @@
 <a name="//api/name/acceptWithRosterId:completion:" title="acceptWithRosterId:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="acceptWithRosterId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="acceptWithRosterId:" %}{% endlanying_code_snippet %}
 ```
 ### acceptWithRosterId:completion:
 
@@ -65,7 +65,7 @@
 <a name="//api/name/addDelegate:" title="addDelegate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="acceptWithRosterId:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="acceptWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```
 ### addDelegate:
 
@@ -84,7 +84,7 @@
 <a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### addDelegate:delegateQueue:
 
@@ -93,7 +93,7 @@
 <a name="//api/name/addRosterListener:" title="addRosterListener:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
 ### addRosterListener:
 
@@ -112,7 +112,7 @@
 <a name="//api/name/applyWithRosterId:message:" title="applyWithRosterId:message:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="addRosterListener:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="addRosterListener:" %}{% endlanying_code_snippet %}
 ```
 ### applyWithRosterId:message:
 
@@ -121,7 +121,7 @@
 <a name="//api/name/applyWithRosterId:message:authAnswer:" title="applyWithRosterId:message:authAnswer:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="applyWithRosterId:message:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:" %}{% endlanying_code_snippet %}
 ```
 ### applyWithRosterId:message:authAnswer:
 
@@ -146,7 +146,7 @@
 <a name="//api/name/applyWithRosterId:message:authAnswer:completion:" title="applyWithRosterId:message:authAnswer:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="applyWithRosterId:message:authAnswer:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:authAnswer:" %}{% endlanying_code_snippet %}
 ```
 ### applyWithRosterId:message:authAnswer:completion:
 
@@ -171,7 +171,7 @@
 <a name="//api/name/applyWithRosterId:message:completion:" title="applyWithRosterId:message:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="applyWithRosterId:message:authAnswer:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:authAnswer:completion:" %}{% endlanying_code_snippet %}
 ```
 ### applyWithRosterId:message:completion:
 
@@ -180,7 +180,7 @@
 <a name="//api/name/blockWithRosterId:" title="blockWithRosterId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="applyWithRosterId:message:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:completion:" %}{% endlanying_code_snippet %}
 ```
 ### blockWithRosterId:
 
@@ -202,7 +202,7 @@
 <a name="//api/name/blockWithRosterId:completion:" title="blockWithRosterId:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="blockWithRosterId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="blockWithRosterId:" %}{% endlanying_code_snippet %}
 ```
 ### blockWithRosterId:completion:
 
@@ -224,7 +224,7 @@
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="blockWithRosterId:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="blockWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -233,7 +233,7 @@
 <a name="//api/name/declineWithRosterId:reason:" title="declineWithRosterId:reason:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### declineWithRosterId:reason:
 
@@ -258,7 +258,7 @@
 <a name="//api/name/declineWithRosterId:reason:completion:" title="declineWithRosterId:reason:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="declineWithRosterId:reason:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="declineWithRosterId:reason:" %}{% endlanying_code_snippet %}
 ```
 ### declineWithRosterId:reason:completion:
 
@@ -283,7 +283,7 @@
 <a name="//api/name/downloadAvatarWithItem:thumbnail:callback:" title="downloadAvatarWithItem:thumbnail:callback:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="declineWithRosterId:reason:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="declineWithRosterId:reason:completion:" %}{% endlanying_code_snippet %}
 ```
 ### downloadAvatarWithItem:thumbnail:callback:
 
@@ -311,7 +311,7 @@
 <a name="//api/name/downloadAvatarWithItem:thumbnail:callback:completion:" title="downloadAvatarWithItem:thumbnail:callback:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="downloadAvatarWithItem:thumbnail:callback:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="downloadAvatarWithItem:thumbnail:callback:" %}{% endlanying_code_snippet %}
 ```
 ### downloadAvatarWithItem:thumbnail:callback:completion:
 
@@ -339,7 +339,7 @@
 <a name="//api/name/fetchRosterByIdWithRosterId:forceRefresh:completion:" title="fetchRosterByIdWithRosterId:forceRefresh:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="downloadAvatarWithItem:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="downloadAvatarWithItem:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
 ```
 ### fetchRosterByIdWithRosterId:forceRefresh:completion:
 
@@ -367,7 +367,7 @@
 <a name="//api/name/fetchRosterByIdWithRosterId:forceRefresh:item:" title="fetchRosterByIdWithRosterId:forceRefresh:item:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fetchRosterByIdWithRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByIdWithRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
 ### fetchRosterByIdWithRosterId:forceRefresh:item:
 
@@ -395,7 +395,7 @@
 <a name="//api/name/fetchRosterByNameWithName:forceRefresh:completion:" title="fetchRosterByNameWithName:forceRefresh:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fetchRosterByIdWithRosterId:forceRefresh:item:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByIdWithRosterId:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
 ### fetchRosterByNameWithName:forceRefresh:completion:
 
@@ -423,7 +423,7 @@
 <a name="//api/name/fetchRosterByNameWithName:forceRefresh:item:" title="fetchRosterByNameWithName:forceRefresh:item:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fetchRosterByNameWithName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByNameWithName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
 ### fetchRosterByNameWithName:forceRefresh:item:
 
@@ -451,7 +451,7 @@
 <a name="//api/name/fetchRostersByIdListWithRosterIdList:forceRefresh:completion:" title="fetchRostersByIdListWithRosterIdList:forceRefresh:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fetchRosterByNameWithName:forceRefresh:item:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByNameWithName:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
 ### fetchRostersByIdListWithRosterIdList:forceRefresh:completion:
 
@@ -479,7 +479,7 @@
 <a name="//api/name/fetchRostersByIdListWithRosterIdList:list:forceRefresh:" title="fetchRostersByIdListWithRosterIdList:list:forceRefresh:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fetchRostersByIdListWithRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRostersByIdListWithRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
 ### fetchRostersByIdListWithRosterIdList:list:forceRefresh:
 
@@ -507,7 +507,7 @@
 <a name="//api/name/get:completion:" title="get:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="fetchRostersByIdListWithRosterIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRostersByIdListWithRosterIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
 ### get:completion:
 
@@ -532,7 +532,7 @@
 <a name="//api/name/get:forceRefresh:" title="get:forceRefresh:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="get:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="get:completion:" %}{% endlanying_code_snippet %}
 ```
 ### get:forceRefresh:
 
@@ -557,7 +557,7 @@
 <a name="//api/name/getApplicationList:completion:" title="getApplicationList:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="get:forceRefresh:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="get:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
 ### getApplicationList:completion:
 
@@ -566,7 +566,7 @@
 <a name="//api/name/getApplicationList:cursor:" title="getApplicationList:cursor:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getApplicationList:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:completion:" %}{% endlanying_code_snippet %}
 ```
 ### getApplicationList:cursor:
 
@@ -575,7 +575,7 @@
 <a name="//api/name/getApplicationList:cursor:pageSize:" title="getApplicationList:cursor:pageSize:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getApplicationList:cursor:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:cursor:" %}{% endlanying_code_snippet %}
 ```
 ### getApplicationList:cursor:pageSize:
 
@@ -603,7 +603,7 @@
 <a name="//api/name/getApplicationList:pageSize:completion:" title="getApplicationList:pageSize:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getApplicationList:cursor:pageSize:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:cursor:pageSize:" %}{% endlanying_code_snippet %}
 ```
 ### getApplicationList:pageSize:completion:
 
@@ -631,7 +631,7 @@
 <a name="//api/name/getBlockList:completion:" title="getBlockList:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getApplicationList:pageSize:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:pageSize:completion:" %}{% endlanying_code_snippet %}
 ```
 ### getBlockList:completion:
 
@@ -656,7 +656,7 @@
 <a name="//api/name/getBlockList:forceRefresh:" title="getBlockList:forceRefresh:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getBlockList:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getBlockList:completion:" %}{% endlanying_code_snippet %}
 ```
 ### getBlockList:forceRefresh:
 
@@ -681,7 +681,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getBlockList:forceRefresh:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getBlockList:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -690,7 +690,7 @@
 <a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### removeDelegate:
 
@@ -709,7 +709,7 @@
 <a name="//api/name/removeRosterListener:" title="removeRosterListener:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeDelegate:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
 ### removeRosterListener:
 
@@ -728,7 +728,7 @@
 <a name="//api/name/removeWithRosterId:" title="removeWithRosterId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeRosterListener:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeRosterListener:" %}{% endlanying_code_snippet %}
 ```
 ### removeWithRosterId:
 
@@ -750,7 +750,7 @@
 <a name="//api/name/removeWithRosterId:completion:" title="removeWithRosterId:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeWithRosterId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeWithRosterId:" %}{% endlanying_code_snippet %}
 ```
 ### removeWithRosterId:completion:
 
@@ -772,7 +772,7 @@
 <a name="//api/name/searchWithName:forceRefresh:completion:" title="searchWithName:forceRefresh:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="removeWithRosterId:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithName:forceRefresh:completion:
 
@@ -781,7 +781,7 @@
 <a name="//api/name/searchWithName:forceRefresh:item:" title="searchWithName:forceRefresh:item:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchWithName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithName:forceRefresh:item:
 
@@ -790,7 +790,7 @@
 <a name="//api/name/searchWithRosterId:forceRefresh:completion:" title="searchWithRosterId:forceRefresh:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchWithName:forceRefresh:item:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithName:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithRosterId:forceRefresh:completion:
 
@@ -821,7 +821,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/searchWithRosterId:forceRefresh:item:" title="searchWithRosterId:forceRefresh:item:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchWithRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithRosterId:forceRefresh:item:
 
@@ -852,7 +852,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/searchWithRosterIdList:forceRefresh:completion:" title="searchWithRosterIdList:forceRefresh:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchWithRosterId:forceRefresh:item:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterId:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithRosterIdList:forceRefresh:completion:
 
@@ -861,7 +861,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/searchWithRosterIdList:list:forceRefresh:" title="searchWithRosterIdList:list:forceRefresh:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchWithRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithRosterIdList:list:forceRefresh:
 
@@ -870,7 +870,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemAlias:alias:" title="setItemAlias:alias:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="searchWithRosterIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
 ### setItemAlias:alias:
 
@@ -895,7 +895,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemAlias:alias:completion:" title="setItemAlias:alias:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemAlias:alias:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemAlias:alias:" %}{% endlanying_code_snippet %}
 ```
 ### setItemAlias:alias:completion:
 
@@ -920,7 +920,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemExtension:extension:" title="setItemExtension:extension:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemAlias:alias:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemAlias:alias:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setItemExtension:extension:
 
@@ -945,7 +945,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemExtension:extension:completion:" title="setItemExtension:extension:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemExtension:extension:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemExtension:extension:" %}{% endlanying_code_snippet %}
 ```
 ### setItemExtension:extension:completion:
 
@@ -970,7 +970,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemLocalExtension:extension:" title="setItemLocalExtension:extension:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemExtension:extension:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemExtension:extension:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setItemLocalExtension:extension:
 
@@ -995,7 +995,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemLocalExtension:extension:completion:" title="setItemLocalExtension:extension:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemLocalExtension:extension:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemLocalExtension:extension:" %}{% endlanying_code_snippet %}
 ```
 ### setItemLocalExtension:extension:completion:
 
@@ -1020,7 +1020,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemMuteNotification:status:" title="setItemMuteNotification:status:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemLocalExtension:extension:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemLocalExtension:extension:completion:" %}{% endlanying_code_snippet %}
 ```
 ### setItemMuteNotification:status:
 
@@ -1045,7 +1045,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/setItemMuteNotification:status:completion:" title="setItemMuteNotification:status:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemMuteNotification:status:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemMuteNotification:status:" %}{% endlanying_code_snippet %}
 ```
 ### setItemMuteNotification:status:completion:
 
@@ -1070,7 +1070,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/unblockWithRosterId:" title="unblockWithRosterId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setItemMuteNotification:status:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemMuteNotification:status:completion:" %}{% endlanying_code_snippet %}
 ```
 ### unblockWithRosterId:
 
@@ -1092,7 +1092,7 @@ Deprecated. use fetchRosterById instead.
 <a name="//api/name/unblockWithRosterId:completion:" title="unblockWithRosterId:completion:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="unblockWithRosterId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="unblockWithRosterId:" %}{% endlanying_code_snippet %}
 ```
 ### unblockWithRosterId:completion:
 
@@ -1113,5 +1113,5 @@ Deprecated. use fetchRosterById instead.
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="unblockWithRosterId:completion:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="unblockWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```

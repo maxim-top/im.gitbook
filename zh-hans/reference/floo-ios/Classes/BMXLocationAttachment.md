@@ -35,7 +35,7 @@ BMXLocationAttachment
 <a name="//api/name/address" title="address"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
 ```
 ### address
 
@@ -52,7 +52,7 @@ NSString
 <a name="//api/name/clone" title="clone"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="address" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="address" %}{% endlanying_code_snippet %}
 ```
 ### clone
 
@@ -69,7 +69,7 @@ NSString
 <a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="clone" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
 ### dealloc
 
@@ -78,7 +78,7 @@ NSString
 <a name="//api/name/initWithLatitude:longitude:address:" title="initWithLatitude:longitude:address:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### initWithLatitude:longitude:address:
 
@@ -103,7 +103,7 @@ NSString
 <a name="//api/name/latitude" title="latitude"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithLatitude:longitude:address:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="initWithLatitude:longitude:address:" %}{% endlanying_code_snippet %}
 ```
 ### latitude
 
@@ -120,7 +120,7 @@ double
 <a name="//api/name/longitude" title="longitude"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="latitude" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="latitude" %}{% endlanying_code_snippet %}
 ```
 ### longitude
 
@@ -137,7 +137,7 @@ double
 <a name="//api/name/type" title="type"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="longitude" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="longitude" %}{% endlanying_code_snippet %}
 ```
 ### type
 
@@ -153,5 +153,5 @@ double
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="type" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="type" %}{% endlanying_code_snippet %}
 ```

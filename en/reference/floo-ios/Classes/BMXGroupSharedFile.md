@@ -30,7 +30,7 @@
 <a name="//api/name/getMCreateTime" title="getMCreateTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="dealloc" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="dealloc" %}{% endlanying_code_snippet %}
 ```
 ### getMCreateTime
 
@@ -39,7 +39,7 @@
 <a name="//api/name/getMDisplayName" title="getMDisplayName"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMCreateTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMCreateTime" %}{% endlanying_code_snippet %}
 ```
 ### getMDisplayName
 
@@ -48,7 +48,7 @@
 <a name="//api/name/getMFileId" title="getMFileId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMDisplayName" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMDisplayName" %}{% endlanying_code_snippet %}
 ```
 ### getMFileId
 
@@ -57,7 +57,7 @@
 <a name="//api/name/getMGroupId" title="getMGroupId"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMFileId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMFileId" %}{% endlanying_code_snippet %}
 ```
 ### getMGroupId
 
@@ -66,7 +66,7 @@
 <a name="//api/name/getMPath" title="getMPath"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMGroupId" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMGroupId" %}{% endlanying_code_snippet %}
 ```
 ### getMPath
 
@@ -75,7 +75,7 @@
 <a name="//api/name/getMRatelUrl" title="getMRatelUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMPath" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMPath" %}{% endlanying_code_snippet %}
 ```
 ### getMRatelUrl
 
@@ -84,7 +84,7 @@
 <a name="//api/name/getMSize" title="getMSize"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMRatelUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMRatelUrl" %}{% endlanying_code_snippet %}
 ```
 ### getMSize
 
@@ -93,7 +93,7 @@
 <a name="//api/name/getMType" title="getMType"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMSize" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMSize" %}{% endlanying_code_snippet %}
 ```
 ### getMType
 
@@ -102,7 +102,7 @@
 <a name="//api/name/getMUpdateTime" title="getMUpdateTime"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMType" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMType" %}{% endlanying_code_snippet %}
 ```
 ### getMUpdateTime
 
@@ -111,7 +111,7 @@
 <a name="//api/name/getMUploader" title="getMUploader"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMUpdateTime" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMUpdateTime" %}{% endlanying_code_snippet %}
 ```
 ### getMUploader
 
@@ -120,7 +120,7 @@
 <a name="//api/name/getMUrl" title="getMUrl"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMUploader" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMUploader" %}{% endlanying_code_snippet %}
 ```
 ### getMUrl
 
@@ -129,7 +129,7 @@
 <a name="//api/name/init" title="init"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="getMUrl" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMUrl" %}{% endlanying_code_snippet %}
 ```
 ### init
 
@@ -138,7 +138,7 @@
 <a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="init" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="init" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -147,7 +147,7 @@
 <a name="//api/name/setMCreateTime:" title="setMCreateTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
 ### setMCreateTime:
 
@@ -156,7 +156,7 @@
 <a name="//api/name/setMDisplayName:" title="setMDisplayName:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMCreateTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMCreateTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMDisplayName:
 
@@ -165,7 +165,7 @@
 <a name="//api/name/setMFileId:" title="setMFileId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMDisplayName:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMDisplayName:" %}{% endlanying_code_snippet %}
 ```
 ### setMFileId:
 
@@ -174,7 +174,7 @@
 <a name="//api/name/setMGroupId:" title="setMGroupId:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMFileId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMFileId:" %}{% endlanying_code_snippet %}
 ```
 ### setMGroupId:
 
@@ -183,7 +183,7 @@
 <a name="//api/name/setMPath:" title="setMPath:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMGroupId:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMGroupId:" %}{% endlanying_code_snippet %}
 ```
 ### setMPath:
 
@@ -192,7 +192,7 @@
 <a name="//api/name/setMRatelUrl:" title="setMRatelUrl:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMPath:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMPath:" %}{% endlanying_code_snippet %}
 ```
 ### setMRatelUrl:
 
@@ -201,7 +201,7 @@
 <a name="//api/name/setMSize:" title="setMSize:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMRatelUrl:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMRatelUrl:" %}{% endlanying_code_snippet %}
 ```
 ### setMSize:
 
@@ -210,7 +210,7 @@
 <a name="//api/name/setMType:" title="setMType:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMSize:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMSize:" %}{% endlanying_code_snippet %}
 ```
 ### setMType:
 
@@ -219,7 +219,7 @@
 <a name="//api/name/setMUpdateTime:" title="setMUpdateTime:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMType:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMType:" %}{% endlanying_code_snippet %}
 ```
 ### setMUpdateTime:
 
@@ -228,7 +228,7 @@
 <a name="//api/name/setMUploader:" title="setMUploader:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMUpdateTime:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMUpdateTime:" %}{% endlanying_code_snippet %}
 ```
 ### setMUploader:
 
@@ -237,7 +237,7 @@
 <a name="//api/name/setMUrl:" title="setMUrl:"></a>
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMUploader:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMUploader:" %}{% endlanying_code_snippet %}
 ```
 ### setMUrl:
 
@@ -245,5 +245,5 @@
 
 **Example**:
 ```
-{% lanying_code_snippet repo="floo-ios",class="",function="setMUrl:" %}{% endlanying_code_snippet %}
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMUrl:" %}{% endlanying_code_snippet %}
 ```
