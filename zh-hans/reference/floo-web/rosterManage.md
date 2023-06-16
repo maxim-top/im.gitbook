@@ -131,7 +131,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | roster_id | <code>number</code> | 会话ID |
-| mid | <code>number</code> | 消息ID |
+| mid | <code>number</code> | 消息ID： 如果不设置 表示把这个会话所有消息设为已读 |
 
 **Example**  
 ```js
