@@ -16,7 +16,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | Consent user ID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -87,10 +87,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ fails | array[object] |  |
+|⇥ fails | array[object] | list of failure messages |
 |⇥⇥ reason | string | Cause of failure |
 |⇥⇥ user_id | int64 | User ID |
-|⇥ success | array[int64] |  |
+|⇥ success | array[int64] | List of successful user IDs |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -110,8 +110,8 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| limit | int32 | false | limit |
+| cursor | string | false | Cursor: Where to start fetching |
+| limit | int32 | false | How many to fetch |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -121,9 +121,9 @@
 | code | int32 | Return code, 200 is success |
 | cursor | string | Cursor, no cursor in returned result means the last page has been returned |
 | data | array[object] | Result data |
-|⇥ expired_time | int64 | Expiration time |
+|⇥ expired_time | int64 | Expiration timestamp(milliseconds) |
 |⇥ reason | string | Request description |
-|⇥ status | int32 |  |
+|⇥ status | int32 | Status: 0 - waiting for confirmation, 1 - accepted, 2 - rejected |
 |⇥ user_id | int64 | User ID that initiate adding friend |
 | message | string | Error information, null means success |
 | version | int64 | Version |
@@ -146,7 +146,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | User ID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -229,7 +229,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | User ID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -261,7 +261,7 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | alias | string | false |  | Name in comment |
 | ext | string | false |  | Extension information |
-| mute_notification | boolean | false |  | Whether to receive message alert |
+| mute_notification | boolean | false |  | Mute message notification: true - mute message notification, false - do not mute message notification |
 | user_id | int64 | true |  | Friend user ID |
 
 #### Response Body
@@ -298,16 +298,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ alias | string |  |
+|⇥ alias | string | Name in comment |
 |⇥ auth_mode | int32 | Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests |
 |⇥ auth_question | string | Verification question |
 |⇥ avatar | string | Avatar |
 |⇥ description | string | Description |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | Extension information |
+|⇥ mute_notification | boolean | Mute message notification: true - mute message notification, false - do not mute message notification |
 |⇥ nick_name | string | Nickname or name |
 |⇥ public_info | string | Public information, visible to both friends and strangers |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | Relationships: 0 - friend, 1 - deleted friend, 2 - stranger, 3 - blacklist |
 |⇥ user_id | int64 | Friend user ID |
 |⇥ username | string | Username |
 | message | string | Error information, null means success |
@@ -329,8 +329,8 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| limit | int32 | false | limit |
+| cursor | string | false | Cursor:where to start fetching |
+| limit | int32 | false | How many to fetch |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -360,7 +360,7 @@
 #### Request Body
 |  Parameter name |  Data Type | Required  |  Default |  Description |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| list | array[int64] | false |  |  |
+| list | array[int64] | true |  | Friends ID list |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -369,16 +369,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | array[object] | Result data |
-|⇥ alias | string |  |
+|⇥ alias | string | Name in comment |
 |⇥ auth_mode | int32 | Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests |
 |⇥ auth_question | string | Verification question |
 |⇥ avatar | string | Avatar |
 |⇥ description | string | Description |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | Extension information |
+|⇥ mute_notification | boolean | Mute message notification: true - mute message notification, false - do not mute message notification |
 |⇥ nick_name | string | Nickname or name |
 |⇥ public_info | string | Public information, visible to both friends and strangers |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | Relationships: 0 - friend, 1 - deleted friend, 2 - stranger, 3 - blacklist |
 |⇥ user_id | int64 | Friend user ID |
 |⇥ username | string | Username |
 | message | string | Error information, null means success |
@@ -399,8 +399,8 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| roster_id | int64 | true | roster_id |
-| user_id | int64 | true | user_id |
+| roster_id | int64 | true | Friend ID |
+| user_id | int64 | true | User ID |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -428,7 +428,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| mobile | string | true | mobile |
+| mobile | string | true | Mobile number |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -437,16 +437,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ alias | string |  |
+|⇥ alias | string | Name in comment |
 |⇥ auth_mode | int32 | Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests |
 |⇥ auth_question | string | Verification question |
 |⇥ avatar | string | Avatar |
 |⇥ description | string | Description |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | Extension information |
+|⇥ mute_notification | boolean | Mute message notification: true - mute message notification, false - do not mute message notification |
 |⇥ nick_name | string | Nickname or name |
 |⇥ public_info | string | Public information, visible to both friends and strangers |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | Relationships: 0 - friend, 1 - deleted friend, 2 - stranger, 3 - blacklist |
 |⇥ user_id | int64 | Friend user ID |
 |⇥ username | string | Username |
 | message | string | Error information, null means success |
@@ -468,7 +468,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| username | string | true | username |
+| username | string | true | Username |
 
 #### Response Body
 ● 200 Response data format:JSON
@@ -477,16 +477,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ alias | string |  |
+|⇥ alias | string | Name in comment |
 |⇥ auth_mode | int32 | Verification method: 0 - No verification, anyone can be added as a friend; 1 - consent is required to be added as a friend; 2 - answer questions correctly to be added as a friend; 3 - reject all adding friend requests |
 |⇥ auth_question | string | Verification question |
 |⇥ avatar | string | Avatar |
 |⇥ description | string | Description |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | Extension information |
+|⇥ mute_notification | boolean | Mute message notification: true - mute message notification, false - do not mute message notification |
 |⇥ nick_name | string | Nickname or name |
 |⇥ public_info | string | Public information, visible to both friends and strangers |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | Relationships: 0 - friend, 1 - deleted friend, 2 - stranger, 3 - blacklist |
 |⇥ user_id | int64 | Friend user ID |
 |⇥ username | string | Username |
 | message | string | Error information, null means success |
@@ -509,7 +509,7 @@
 #### Query Param
 |  Parameter name |  Data Type | Required |  Description |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | User ID |
 
 #### Response Body
 ● 200 Response data format:JSON

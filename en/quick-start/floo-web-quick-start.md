@@ -27,7 +27,7 @@ Set AppID first
 const config = {
   // dnsServer: "https://dns.lanyingim.com/v2/app_dns",
   appid: "YOUR_APP_ID",
-  ws: false,
+  ws: false, // The uniapp version needs to be set to true, the web version needs to be set to false
   autoLogin: true
   };
 ```

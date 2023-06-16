@@ -83,10 +83,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ download_url | string |  |
-|⇥ oss_body_param | object |  |
-|⇥ upload_method | string |  |
-|⇥ upload_url | string |  |
+|⇥ download_url | string | Download address |
+|⇥ oss_body_param | object | OSS parameters to be set when uploading |
+|⇥ upload_method | string | Upload method: POST/PUT |
+|⇥ upload_url | string | Upload address |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -110,10 +110,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ download_url | string |  |
-|⇥ oss_body_param | object |  |
-|⇥ upload_method | string |  |
-|⇥ upload_url | string |  |
+|⇥ download_url | string | Download address |
+|⇥ oss_body_param | object | OSS parameters to be set when uploading |
+|⇥ upload_method | string | Upload method: POST/PUT |
+|⇥ upload_url | string | Upload address |
 | message | string | Error information, null means success |
 #### Interface Description
 > 
@@ -144,10 +144,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | Return code, 200 is success |
 | data | object | Result data |
-|⇥ download_url | string |  |
-|⇥ oss_body_param | object |  |
-|⇥ upload_method | string |  |
-|⇥ upload_url | string |  |
+|⇥ download_url | string | Download address |
+|⇥ oss_body_param | object | OSS parameters to be set when uploading |
+|⇥ upload_method | string | Upload method: POST/PUT |
+|⇥ upload_url | string | Upload address |
 | message | string | Error information, null means success |
 #### Interface Description
 > 

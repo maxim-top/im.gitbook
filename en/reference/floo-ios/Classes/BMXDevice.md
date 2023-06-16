@@ -1,72 +1,146 @@
 # BMXDevice Class Reference
 
   **Inherits from** NSObject  
-  **Declared in** BMXDevice.h  
+  **Declared in** floo_proxy.h  
+
+## Overview
+
+@interface Device information
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
+### swigCMemOwn
+
+`@property (nonatomic) BOOL swigCMemOwn`
+
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
+### swigCPtr
+
+`@property (nonatomic) void *swigCPtr`
+
+<a title="Instance Methods" name="instance_methods"></a>
+## Instance Methods
+
+<a name="//api/name/dealloc" title="dealloc"></a>
+### dealloc
+
+`- (void)dealloc`
+
 <a name="//api/name/deviceSN" title="deviceSN"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="dealloc" %}{% endlanying_code_snippet %}
+```
 ### deviceSN
 
 Device serial number
 
-`@property (nonatomic, assign, readonly) int deviceSN`
+`- (int)deviceSN`
 
-#### Discussion
-Device serial number
+#### Return Value
+int
 
 #### Declared In
-* `BMXDevice.h`
+* `floo_proxy.h`
+
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="deviceSN" %}{% endlanying_code_snippet %}
+```
+### initWithCptr:swigOwnCObject:
+
+`- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
 <a name="//api/name/isCurrentDevice" title="isCurrentDevice"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+```
 ### isCurrentDevice
 
-Whether for the current device
+Is the current device
 
-`@property (nonatomic, assign, readonly) BOOL isCurrentDevice`
+`- (BOOL)isCurrentDevice`
 
-#### Discussion
-Whether for the current device
+#### Return Value
+BOOL
 
 #### Declared In
-* `BMXDevice.h`
+* `floo_proxy.h`
 
 <a name="//api/name/platform" title="platform"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="isCurrentDevice" %}{% endlanying_code_snippet %}
+```
 ### platform
 
-Platform
+Client platform
 
-`@property (nonatomic, assign, readonly) int platform`
+`- (int)platform`
 
-#### Discussion
-Platform
+#### Return Value
+int
 
 #### Declared In
-* `BMXDevice.h`
+* `floo_proxy.h`
+
+<a name="//api/name/setUserAgent:" title="setUserAgent:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="platform" %}{% endlanying_code_snippet %}
+```
+### setUserAgent:
+
+Set user agent
+
+`- (void)setUserAgent:(NSString *)*userAgent*`
+
+#### Parameters
+
+*userAgent*  
+   The user agent  
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/userAgent" title="userAgent"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="setUserAgent:" %}{% endlanying_code_snippet %}
+```
 ### userAgent
 
-UA
+User agent
 
-`@property (nonatomic, copy) NSString *userAgent`
+`- (NSString *)userAgent`
 
-#### Discussion
-UA
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXDevice.h`
+* `floo_proxy.h`
 
 <a name="//api/name/userId" title="userId"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="userAgent" %}{% endlanying_code_snippet %}
+```
 ### userId
 
-User id
+User ID
 
-`@property (nonatomic, assign, readonly) long long userId`
+`- (long long)userId`
 
-#### Discussion
-User id
+#### Return Value
+long long
 
 #### Declared In
-* `BMXDevice.h`
+* `floo_proxy.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXDevice",function="userId" %}{% endlanying_code_snippet %}
+```

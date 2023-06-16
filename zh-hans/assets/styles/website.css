@@ -205,14 +205,6 @@
     width: 100%;
 }
 
-table td {
-    word-break: break-all;
-}
-
-table th {
-    word-break: break-all;
-}
-
 .intopic-toc ul.level-0 {
     max-height: calc( 100vh - 70px );
     overflow-y: auto;

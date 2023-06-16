@@ -46,6 +46,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function HostConfig
 
 ```java
@@ -53,6 +57,10 @@ inline HostConfig()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="HostConfig" %}{% endlanying_code_snippet %}
+```
 ### function HostConfig
 
 ```java
@@ -72,6 +80,10 @@ Service settings
   * **rest** ratel server address 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="HostConfig" %}{% endlanying_code_snippet %}
+```
 ### function setImHost
 
 ```java
@@ -81,6 +93,10 @@ inline void setImHost(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="setImHost" %}{% endlanying_code_snippet %}
+```
 ### function getImHost
 
 ```java
@@ -88,6 +104,10 @@ inline String getImHost()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getImHost" %}{% endlanying_code_snippet %}
+```
 ### function setImPort
 
 ```java
@@ -97,6 +117,10 @@ inline void setImPort(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="setImPort" %}{% endlanying_code_snippet %}
+```
 ### function getImPort
 
 ```java
@@ -104,6 +128,10 @@ inline int getImPort()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getImPort" %}{% endlanying_code_snippet %}
+```
 ### function setRestHost
 
 ```java
@@ -113,6 +141,10 @@ inline void setRestHost(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="setRestHost" %}{% endlanying_code_snippet %}
+```
 ### function getRestHost
 
 ```java
@@ -122,6 +154,10 @@ inline String getRestHost()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getRestHost" %}{% endlanying_code_snippet %}
+```
 ### function HostConfig
 
 ```java
@@ -132,6 +168,10 @@ inline HostConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="HostConfig" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -139,6 +179,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -157,6 +201,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

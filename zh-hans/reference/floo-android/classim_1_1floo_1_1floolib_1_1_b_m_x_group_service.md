@@ -112,6 +112,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function get
 
 ```java
@@ -131,6 +135,10 @@ inline BMXErrorCode get(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="get" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -150,6 +158,10 @@ inline BMXErrorCode search(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchGroupsByIdList
 
 ```java
@@ -171,6 +183,10 @@ inline BMXErrorCode fetchGroupsByIdList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="fetchGroupsByIdList" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -192,6 +208,10 @@ inline BMXErrorCode search(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchGroupById
 
 ```java
@@ -213,6 +233,10 @@ inline BMXErrorCode fetchGroupById(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="fetchGroupById" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -234,6 +258,10 @@ inline BMXErrorCode search(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function fetchLocalGroupsByName
 
 ```java
@@ -253,6 +281,10 @@ inline BMXErrorCode fetchLocalGroupsByName(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="fetchLocalGroupsByName" %}{% endlanying_code_snippet %}
+```
 ### function search
 
 ```java
@@ -272,6 +304,10 @@ inline BMXErrorCode search(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+```
 ### function create
 
 ```java
@@ -291,6 +327,10 @@ inline BMXErrorCode create(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="create" %}{% endlanying_code_snippet %}
+```
 ### function destroy
 
 ```java
@@ -308,6 +348,10 @@ inline BMXErrorCode destroy(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="destroy" %}{% endlanying_code_snippet %}
+```
 ### function join
 
 ```java
@@ -327,6 +371,10 @@ inline BMXErrorCode join(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="join" %}{% endlanying_code_snippet %}
+```
 ### function leave
 
 ```java
@@ -344,6 +392,10 @@ inline BMXErrorCode leave(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="leave" %}{% endlanying_code_snippet %}
+```
 ### function getInfo
 
 ```java
@@ -361,6 +413,10 @@ inline BMXErrorCode getInfo(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getInfo" %}{% endlanying_code_snippet %}
+```
 ### function getMembersNickname
 
 ```java
@@ -382,6 +438,10 @@ inline BMXErrorCode getMembersNickname(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembersNickname" %}{% endlanying_code_snippet %}
+```
 ### function getInvitationList
 
 ```java
@@ -403,6 +463,10 @@ inline BMXErrorCode getInvitationList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getInvitationList" %}{% endlanying_code_snippet %}
+```
 ### function getApplicationList
 
 ```java
@@ -426,6 +490,10 @@ inline BMXErrorCode getApplicationList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getApplicationList" %}{% endlanying_code_snippet %}
+```
 ### function getMembers
 
 ```java
@@ -449,6 +517,10 @@ inline BMXErrorCode getMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
+```
 ### function getMembers
 
 ```java
@@ -470,6 +542,10 @@ inline BMXErrorCode getMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
+```
 ### function addMembers
 
 ```java
@@ -491,6 +567,10 @@ inline BMXErrorCode addMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="addMembers" %}{% endlanying_code_snippet %}
+```
 ### function removeMembers
 
 ```java
@@ -512,6 +592,10 @@ inline BMXErrorCode removeMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeMembers" %}{% endlanying_code_snippet %}
+```
 ### function addAdmins
 
 ```java
@@ -533,6 +617,10 @@ inline BMXErrorCode addAdmins(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="addAdmins" %}{% endlanying_code_snippet %}
+```
 ### function removeAdmins
 
 ```java
@@ -554,6 +642,10 @@ inline BMXErrorCode removeAdmins(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeAdmins" %}{% endlanying_code_snippet %}
+```
 ### function getAdmins
 
 ```java
@@ -575,6 +667,10 @@ inline BMXErrorCode getAdmins(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getAdmins" %}{% endlanying_code_snippet %}
+```
 ### function blockMembers
 
 ```java
@@ -594,6 +690,10 @@ inline BMXErrorCode blockMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="blockMembers" %}{% endlanying_code_snippet %}
+```
 ### function unblockMembers
 
 ```java
@@ -613,6 +713,10 @@ inline BMXErrorCode unblockMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="unblockMembers" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```java
@@ -636,6 +740,10 @@ inline BMXErrorCode getBlockList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```java
@@ -657,6 +765,10 @@ inline BMXErrorCode getBlockList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function banMembers
 
 ```java
@@ -680,6 +792,10 @@ inline BMXErrorCode banMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="banMembers" %}{% endlanying_code_snippet %}
+```
 ### function banMembers
 
 ```java
@@ -691,6 +807,10 @@ inline BMXErrorCode banMembers(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="banMembers" %}{% endlanying_code_snippet %}
+```
 ### function banGroup
 
 ```java
@@ -710,6 +830,10 @@ inline BMXErrorCode banGroup(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="banGroup" %}{% endlanying_code_snippet %}
+```
 ### function unbanMembers
 
 ```java
@@ -729,6 +853,10 @@ inline BMXErrorCode unbanMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="unbanMembers" %}{% endlanying_code_snippet %}
+```
 ### function unbanGroup
 
 ```java
@@ -746,6 +874,10 @@ inline BMXErrorCode unbanGroup(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="unbanGroup" %}{% endlanying_code_snippet %}
+```
 ### function getBannedMembers
 
 ```java
@@ -769,6 +901,10 @@ inline BMXErrorCode getBannedMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
+```
 ### function getBannedMembers
 
 ```java
@@ -788,6 +924,10 @@ inline BMXErrorCode getBannedMembers(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
+```
 ### function muteMessage
 
 ```java
@@ -807,6 +947,10 @@ inline BMXErrorCode muteMessage(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="muteMessage" %}{% endlanying_code_snippet %}
+```
 ### function acceptApplication
 
 ```java
@@ -826,6 +970,10 @@ inline BMXErrorCode acceptApplication(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="acceptApplication" %}{% endlanying_code_snippet %}
+```
 ### function declineApplication
 
 ```java
@@ -847,6 +995,10 @@ inline BMXErrorCode declineApplication(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineApplication" %}{% endlanying_code_snippet %}
+```
 ### function declineApplication
 
 ```java
@@ -857,6 +1009,10 @@ inline BMXErrorCode declineApplication(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineApplication" %}{% endlanying_code_snippet %}
+```
 ### function acceptInvitation
 
 ```java
@@ -876,6 +1032,10 @@ inline BMXErrorCode acceptInvitation(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="acceptInvitation" %}{% endlanying_code_snippet %}
+```
 ### function declineInvitation
 
 ```java
@@ -897,6 +1057,10 @@ inline BMXErrorCode declineInvitation(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineInvitation" %}{% endlanying_code_snippet %}
+```
 ### function declineInvitation
 
 ```java
@@ -907,6 +1071,10 @@ inline BMXErrorCode declineInvitation(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineInvitation" %}{% endlanying_code_snippet %}
+```
 ### function transferOwner
 
 ```java
@@ -926,6 +1094,10 @@ inline BMXErrorCode transferOwner(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="transferOwner" %}{% endlanying_code_snippet %}
+```
 ### function uploadSharedFile
 
 ```java
@@ -951,6 +1123,10 @@ inline BMXErrorCode uploadSharedFile(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="uploadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function cancelUploadSharedFile
 
 ```java
@@ -970,6 +1146,10 @@ inline BMXErrorCode cancelUploadSharedFile(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="cancelUploadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function removeSharedFile
 
 ```java
@@ -989,6 +1169,10 @@ inline BMXErrorCode removeSharedFile(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function downloadSharedFile
 
 ```java
@@ -1010,6 +1194,10 @@ inline BMXErrorCode downloadSharedFile(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="downloadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function cancelDownloadSharedFile
 
 ```java
@@ -1029,6 +1217,10 @@ inline BMXErrorCode cancelDownloadSharedFile(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="cancelDownloadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function getSharedFilesList
 
 ```java
@@ -1050,6 +1242,10 @@ inline BMXErrorCode getSharedFilesList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getSharedFilesList" %}{% endlanying_code_snippet %}
+```
 ### function changeSharedFileName
 
 ```java
@@ -1071,6 +1267,10 @@ inline BMXErrorCode changeSharedFileName(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="changeSharedFileName" %}{% endlanying_code_snippet %}
+```
 ### function getLatestAnnouncement
 
 ```java
@@ -1092,6 +1292,10 @@ inline BMXErrorCode getLatestAnnouncement(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getLatestAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function getAnnouncementList
 
 ```java
@@ -1113,6 +1317,10 @@ inline BMXErrorCode getAnnouncementList(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getAnnouncementList" %}{% endlanying_code_snippet %}
+```
 ### function editAnnouncement
 
 ```java
@@ -1134,6 +1342,10 @@ inline BMXErrorCode editAnnouncement(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="editAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function deleteAnnouncement
 
 ```java
@@ -1153,6 +1365,10 @@ inline BMXErrorCode deleteAnnouncement(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="deleteAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function setName
 
 ```java
@@ -1172,6 +1388,10 @@ inline BMXErrorCode setName(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setName" %}{% endlanying_code_snippet %}
+```
 ### function setDescription
 
 ```java
@@ -1191,6 +1411,10 @@ inline BMXErrorCode setDescription(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setDescription" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```java
@@ -1210,6 +1434,10 @@ inline BMXErrorCode setExtension(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function setMyNickname
 
 ```java
@@ -1229,6 +1457,10 @@ inline BMXErrorCode setMyNickname(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setMyNickname" %}{% endlanying_code_snippet %}
+```
 ### function setMsgPushMode
 
 ```java
@@ -1248,6 +1480,10 @@ inline BMXErrorCode setMsgPushMode(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setMsgPushMode" %}{% endlanying_code_snippet %}
+```
 ### function setJoinAuthMode
 
 ```java
@@ -1267,6 +1503,10 @@ inline BMXErrorCode setJoinAuthMode(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setJoinAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function setInviteMode
 
 ```java
@@ -1286,6 +1526,10 @@ inline BMXErrorCode setInviteMode(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setInviteMode" %}{% endlanying_code_snippet %}
+```
 ### function setAllowMemberModify
 
 ```java
@@ -1305,6 +1549,10 @@ inline BMXErrorCode setAllowMemberModify(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setAllowMemberModify" %}{% endlanying_code_snippet %}
+```
 ### function setEnableReadAck
 
 ```java
@@ -1324,6 +1572,10 @@ inline BMXErrorCode setEnableReadAck(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setEnableReadAck" %}{% endlanying_code_snippet %}
+```
 ### function setHistoryVisible
 
 ```java
@@ -1343,6 +1595,10 @@ inline BMXErrorCode setHistoryVisible(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setHistoryVisible" %}{% endlanying_code_snippet %}
+```
 ### function setAvatar
 
 ```java
@@ -1364,6 +1620,10 @@ inline BMXErrorCode setAvatar(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setAvatar" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```java
@@ -1385,6 +1645,10 @@ inline BMXErrorCode downloadAvatar(
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function addGroupListener
 
 ```java
@@ -1400,6 +1664,10 @@ inline void addGroupListener(
   * **listener** 群组变化监听者 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="addGroupListener" %}{% endlanying_code_snippet %}
+```
 ### function removeGroupListener
 
 ```java
@@ -1417,6 +1685,10 @@ inline void removeGroupListener(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeGroupListener" %}{% endlanying_code_snippet %}
+```
 ### function BMXGroupService
 
 ```java
@@ -1427,6 +1699,10 @@ inline BMXGroupService(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="BMXGroupService" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -1434,6 +1710,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -1452,6 +1732,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

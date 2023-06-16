@@ -52,6 +52,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function swigReleaseOwnership
 
 ```java
@@ -59,6 +63,10 @@ inline void swigReleaseOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+```
 ### function swigTakeOwnership
 
 ```java
@@ -66,6 +74,10 @@ inline void swigTakeOwnership()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+```
 ### function onPushStart
 
 ```java
@@ -81,6 +93,10 @@ Push初始化完成通知。
   * **bmxToken** 当前push使用bmxToken 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onPushStart" %}{% endlanying_code_snippet %}
+```
 ### function onPushStop
 
 ```java
@@ -89,6 +105,10 @@ inline void onPushStop()
 
 Push功能停止通知。 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onPushStop" %}{% endlanying_code_snippet %}
+```
 ### function onCertRetrieved
 
 ```java
@@ -104,6 +124,10 @@ Push初始化完成后获取推送证书。
   * **cert** 从服务器获取的推送证书 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onCertRetrieved" %}{% endlanying_code_snippet %}
+```
 ### function onSetTags
 
 ```java
@@ -119,6 +143,10 @@ inline void onSetTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onSetTags" %}{% endlanying_code_snippet %}
+```
 ### function onGetTags
 
 ```java
@@ -134,6 +162,10 @@ inline void onGetTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onGetTags" %}{% endlanying_code_snippet %}
+```
 ### function onDeleteTags
 
 ```java
@@ -149,6 +181,10 @@ inline void onDeleteTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onDeleteTags" %}{% endlanying_code_snippet %}
+```
 ### function onClearTags
 
 ```java
@@ -164,6 +200,10 @@ inline void onClearTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onClearTags" %}{% endlanying_code_snippet %}
+```
 ### function onReceivePush
 
 ```java
@@ -179,6 +219,10 @@ inline void onReceivePush(
   * **list** Push通知列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onReceivePush" %}{% endlanying_code_snippet %}
+```
 ### function onStatusChanged
 
 ```java
@@ -196,6 +240,10 @@ inline void onStatusChanged(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function BMXPushServiceListener
 
 ```java
@@ -203,6 +251,10 @@ inline BMXPushServiceListener()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="BMXPushServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function registerPushService
 
 ```java
@@ -214,6 +266,10 @@ inline void registerPushService(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="registerPushService" %}{% endlanying_code_snippet %}
+```
 ### function BMXPushServiceListener
 
 ```java
@@ -224,6 +280,10 @@ inline BMXPushServiceListener(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="BMXPushServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -231,6 +291,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function swigDirectorDisconnect
 
 ```java
@@ -238,6 +302,10 @@ inline void swigDirectorDisconnect()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -256,6 +324,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

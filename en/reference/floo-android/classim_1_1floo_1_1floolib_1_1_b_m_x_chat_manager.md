@@ -53,6 +53,10 @@ inline BMXChatManager(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="BMXChatManager" %}{% endlanying_code_snippet %}
+```
 ### function sendMessage
 
 ```java
@@ -68,6 +72,10 @@ Send a message, and the message status change is notified via listener
   * **msg** Message to be sent 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="sendMessage" %}{% endlanying_code_snippet %}
+```
 ### function resendMessage
 
 ```java
@@ -83,6 +91,10 @@ Resend this message, and the message status change is notified via listener
   * **msg** Resent message 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="resendMessage" %}{% endlanying_code_snippet %}
+```
 ### function recallMessage
 
 ```java
@@ -98,6 +110,10 @@ Recall a message, and the message status change is notified via listener
   * **msg** Recalled message 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="recallMessage" %}{% endlanying_code_snippet %}
+```
 ### function forwardMessage
 
 ```java
@@ -119,6 +135,10 @@ inline void forwardMessage(
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="forwardMessage" %}{% endlanying_code_snippet %}
+```
 ### function forwardMessage
 
 ```java
@@ -134,6 +154,10 @@ Simple forwarding messages, users should create forwarding messages first throug
   * **msg**  Messages to be forwarded 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="forwardMessage" %}{% endlanying_code_snippet %}
+```
 ### function readAllMessage
 
 ```java
@@ -149,6 +173,10 @@ Mark this message and all previous messages as read, and synchronize to all curr
   * **msg** The message for which all earlier messages need to be marked as read 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="readAllMessage" %}{% endlanying_code_snippet %}
+```
 ### function removeMessage
 
 ```java
@@ -166,6 +194,10 @@ Delete this message, which synchronizes to other devices of the current user
   * **synchronize** Whether to synchronize to other devices, otherwise only the locally stored message will be deleted 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="removeMessage" %}{% endlanying_code_snippet %}
+```
 ### function removeMessage
 
 ```java
@@ -175,6 +207,10 @@ inline void removeMessage(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="removeMessage" %}{% endlanying_code_snippet %}
+```
 ### function ackMessage
 
 ```java
@@ -185,6 +221,10 @@ inline void ackMessage(
 
 Send read acknowledgement 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="ackMessage" %}{% endlanying_code_snippet %}
+```
 ### function readCancel
 
 ```java
@@ -195,6 +235,10 @@ inline void readCancel(
 
 Set unread 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="readCancel" %}{% endlanying_code_snippet %}
+```
 ### function downloadThumbnail
 
 ```java
@@ -210,6 +254,10 @@ Download thumbnail, downloading state changes and progress notified via listener
   * **msg** Message requiring to download thumbnail 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="downloadThumbnail" %}{% endlanying_code_snippet %}
+```
 ### function downloadAttachment
 
 ```java
@@ -225,6 +273,10 @@ Downloaded attachments, and download state changes and progress are notified via
   * **msg** Message requiring to download attachment 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="downloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function cancelDownloadAttachment
 
 ```java
@@ -240,6 +292,10 @@ Cancel attachment downloading
   * **msg** Message requiring to download attachment 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="cancelDownloadAttachment" %}{% endlanying_code_snippet %}
+```
 ### function transferingNum
 
 ```java
@@ -250,6 +306,10 @@ Number of uploading/downloading files
 
 **Return**: Number of files in transfer 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="transferingNum" %}{% endlanying_code_snippet %}
+```
 ### function insertMessages
 
 ```java
@@ -267,6 +327,10 @@ Insert a message
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="insertMessages" %}{% endlanying_code_snippet %}
+```
 ### function getMessage
 
 ```java
@@ -284,6 +348,10 @@ Read a message
   * **callBack** [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="getMessage" %}{% endlanying_code_snippet %}
+```
 ### function deleteConversation
 
 ```java
@@ -301,6 +369,10 @@ inline void deleteConversation(
   * **sync** Whether to delete the conversation on other devices synchronously, default false, means only delete the conversation on the current device 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="deleteConversation" %}{% endlanying_code_snippet %}
+```
 ### function openConversation
 
 ```java
@@ -322,6 +394,10 @@ Launch a conversation
   * **callBack** [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="openConversation" %}{% endlanying_code_snippet %}
+```
 ### function getAllConversations
 
 ```java
@@ -337,6 +413,10 @@ Get all conversations
   * **callBack** BMXConversationList 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="getAllConversations" %}{% endlanying_code_snippet %}
+```
 ### function getAllConversationsUnreadCount
 
 ```java
@@ -352,6 +432,10 @@ inline void getAllConversationsUnreadCount(
   * **callBack** Number of unreads 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="getAllConversationsUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function retrieveHistoryMessages
 
 ```java
@@ -373,6 +457,10 @@ Pull message history
   * **callBack** BMXErrorCode,Message list obtained by pull 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="retrieveHistoryMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```java
@@ -396,6 +484,10 @@ Search for messages
   * **callBack** BMXErrorCode,List of searched message results 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function searchMessages
 
 ```java
@@ -408,6 +500,10 @@ inline void searchMessages(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="searchMessages" %}{% endlanying_code_snippet %}
+```
 ### function getGroupAckMessageUserIdList
 
 ```java
@@ -425,6 +521,10 @@ Get the list of user-ids that have read group messages
   * **callBack** [BMXErrorCode], list of user ids that have read this message 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="getGroupAckMessageUserIdList" %}{% endlanying_code_snippet %}
+```
 ### function addChatListener
 
 ```java
@@ -440,6 +540,10 @@ Add chat listener
   * **listener** Chat listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="addChatListener" %}{% endlanying_code_snippet %}
+```
 ### function removeChatListener
 
 ```java
@@ -455,6 +559,10 @@ Remove chat listener
   * **listener** Chat listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="removeChatListener" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

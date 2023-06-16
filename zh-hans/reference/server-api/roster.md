@@ -16,7 +16,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | 被同意的用户ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -87,10 +87,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ fails | array[object] |  |
+|⇥ fails | array[object] | 失败信息列表 |
 |⇥⇥ reason | string | 失败原因 |
 |⇥⇥ user_id | int64 | 用户ID |
-|⇥ success | array[int64] |  |
+|⇥ success | array[int64] | 成功的用户ID列表 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -110,8 +110,8 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| limit | int32 | false | limit |
+| cursor | string | false | 游标: 从哪开始拉取 |
+| limit | int32 | false | 最多拉取多少条 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -121,9 +121,9 @@
 | code | int32 | 返回码，200是成功 |
 | cursor | string | 游标，返回结果中缺失 cursor，表示已经返回最后一页 |
 | data | array[object] | 结果数据 |
-|⇥ expired_time | int64 | 过期时间 |
+|⇥ expired_time | int64 | 过期时间戳(毫秒) |
 |⇥ reason | string | 申请描述 |
-|⇥ status | int32 |  |
+|⇥ status | int32 | 状态:  0 - 等待确认, 1 - 接受, 2 - 拒绝 |
 |⇥ user_id | int64 | 发起加好友申请的用户ID |
 | message | string | 错误信息，如果成功，该项为null |
 | version | int64 | 版本 |
@@ -146,7 +146,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | 用户ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -229,7 +229,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | 用户ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -261,7 +261,7 @@
 |  ------ |  ------ |  ------ |  ------ |  ------ |
 | alias | string | false |  | 备注名称 |
 | ext | string | false |  | 扩展信息 |
-| mute_notification | boolean | false |  | 是否接收消息提醒 |
+| mute_notification | boolean | false |  | 是否消息免打扰: true - 消息免打扰, false - 不消息免打扰 |
 | user_id | int64 | true |  | 好友用户ID |
 
 #### 响应体
@@ -298,16 +298,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ alias | string |  |
+|⇥ alias | string | 备注名称 |
 |⇥ auth_mode | int32 | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 |⇥ auth_question | string | 验证问题 |
 |⇥ avatar | string | 头像 |
 |⇥ description | string | 描述信息 |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | 扩展信息 |
+|⇥ mute_notification | boolean | 是否消息免打扰: true - 消息免打扰, false - 不消息免打扰 |
 |⇥ nick_name | string | 昵称或名称 |
 |⇥ public_info | string | 公开信息，好友和陌生人可见 |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | 关系: 0 - 好友, 1 - 被删除的好友, 2 - 陌生人, 3 - 黑名单 |
 |⇥ user_id | int64 | 好友用户ID |
 |⇥ username | string | 用户名 |
 | message | string | 错误信息，如果成功，该项为null |
@@ -329,8 +329,8 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| cursor | string | false | cursor |
-| limit | int32 | false | limit |
+| cursor | string | false | 游标：从哪开始取 |
+| limit | int32 | false | 最多取多少条 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -360,7 +360,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| list | array[int64] | false |  |  |
+| list | array[int64] | true |  | 好友ID列表 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -369,16 +369,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | array[object] | 结果数据 |
-|⇥ alias | string |  |
+|⇥ alias | string | 备注名称 |
 |⇥ auth_mode | int32 | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 |⇥ auth_question | string | 验证问题 |
 |⇥ avatar | string | 头像 |
 |⇥ description | string | 描述信息 |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | 扩展信息 |
+|⇥ mute_notification | boolean | 是否消息免打扰: true - 消息免打扰, false - 不消息免打扰 |
 |⇥ nick_name | string | 昵称或名称 |
 |⇥ public_info | string | 公开信息，好友和陌生人可见 |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | 关系: 0 - 好友, 1 - 被删除的好友, 2 - 陌生人, 3 - 黑名单 |
 |⇥ user_id | int64 | 好友用户ID |
 |⇥ username | string | 用户名 |
 | message | string | 错误信息，如果成功，该项为null |
@@ -399,8 +399,8 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| roster_id | int64 | true | roster_id |
-| user_id | int64 | true | user_id |
+| roster_id | int64 | true | 好友ID |
+| user_id | int64 | true | 用户ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -428,7 +428,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| mobile | string | true | mobile |
+| mobile | string | true | 手机号 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -437,16 +437,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ alias | string |  |
+|⇥ alias | string | 备注名称 |
 |⇥ auth_mode | int32 | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 |⇥ auth_question | string | 验证问题 |
 |⇥ avatar | string | 头像 |
 |⇥ description | string | 描述信息 |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | 扩展信息 |
+|⇥ mute_notification | boolean | 是否消息免打扰: true - 消息免打扰, false - 不消息免打扰 |
 |⇥ nick_name | string | 昵称或名称 |
 |⇥ public_info | string | 公开信息，好友和陌生人可见 |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | 关系: 0 - 好友, 1 - 被删除的好友, 2 - 陌生人, 3 - 黑名单 |
 |⇥ user_id | int64 | 好友用户ID |
 |⇥ username | string | 用户名 |
 | message | string | 错误信息，如果成功，该项为null |
@@ -468,7 +468,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| username | string | true | username |
+| username | string | true | 用户名 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -477,16 +477,16 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ alias | string |  |
+|⇥ alias | string | 备注名称 |
 |⇥ auth_mode | int32 | 验证方式, 0 - 无需验证，任何人可以加为好友, 1 - 需要同意方可加为好友, 2 - 需要回答问题正确方可加为好友, 3 - 拒绝所有加好友申请 |
 |⇥ auth_question | string | 验证问题 |
 |⇥ avatar | string | 头像 |
 |⇥ description | string | 描述信息 |
-|⇥ ext | string |  |
-|⇥ mute_notification | boolean |  |
+|⇥ ext | string | 扩展信息 |
+|⇥ mute_notification | boolean | 是否消息免打扰: true - 消息免打扰, false - 不消息免打扰 |
 |⇥ nick_name | string | 昵称或名称 |
 |⇥ public_info | string | 公开信息，好友和陌生人可见 |
-|⇥ relation | int32 |  |
+|⇥ relation | int32 | 关系: 0 - 好友, 1 - 被删除的好友, 2 - 陌生人, 3 - 黑名单 |
 |⇥ user_id | int64 | 好友用户ID |
 |⇥ username | string | 用户名 |
 | message | string | 错误信息，如果成功，该项为null |
@@ -509,7 +509,7 @@
 #### 请求参数(Query Param)
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
-| user_id | int64 | true | user_id |
+| user_id | int64 | true | 用户ID |
 
 #### 响应体
 ● 200 响应数据格式：JSON

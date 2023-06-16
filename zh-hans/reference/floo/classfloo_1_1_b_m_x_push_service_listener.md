@@ -42,6 +42,10 @@ inline BMXPushServiceListener()
 
 构造函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="BMXPushServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXPushServiceListener
 
 ```cpp
@@ -50,6 +54,10 @@ inline virtual ~BMXPushServiceListener()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="~BMXPushServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onPushStart
 
 ```cpp
@@ -65,6 +73,10 @@ Push初始化完成通知。
   * **bmxToken** 当前push使用bmxToken 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onPushStart" %}{% endlanying_code_snippet %}
+```
 ### function onPushStop
 
 ```cpp
@@ -73,6 +85,10 @@ inline virtual void onPushStop()
 
 Push功能停止通知。 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onPushStop" %}{% endlanying_code_snippet %}
+```
 ### function onCertRetrieved
 
 ```cpp
@@ -88,6 +104,10 @@ Push初始化完成后获取推送证书。
   * **cert** 从服务器获取的推送证书 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onCertRetrieved" %}{% endlanying_code_snippet %}
+```
 ### function onSetTags
 
 ```cpp
@@ -103,6 +123,10 @@ inline virtual void onSetTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onSetTags" %}{% endlanying_code_snippet %}
+```
 ### function onGetTags
 
 ```cpp
@@ -118,6 +142,10 @@ inline virtual void onGetTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onGetTags" %}{% endlanying_code_snippet %}
+```
 ### function onDeleteTags
 
 ```cpp
@@ -133,6 +161,10 @@ inline virtual void onDeleteTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onDeleteTags" %}{% endlanying_code_snippet %}
+```
 ### function onClearTags
 
 ```cpp
@@ -148,6 +180,10 @@ inline virtual void onClearTags(
   * **operationId** 操作id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onClearTags" %}{% endlanying_code_snippet %}
+```
 ### function onReceivePush
 
 ```cpp
@@ -163,6 +199,10 @@ inline virtual void onReceivePush(
   * **list** Push通知列表 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onReceivePush" %}{% endlanying_code_snippet %}
+```
 ### function onStatusChanged
 
 ```cpp
@@ -180,6 +220,10 @@ inline virtual void onStatusChanged(
   * **error** 状态错误码 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function registerPushService
 
 ```cpp
@@ -204,6 +248,10 @@ BMXPushService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="registerPushService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

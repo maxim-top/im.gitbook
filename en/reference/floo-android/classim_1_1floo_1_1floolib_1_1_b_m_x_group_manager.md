@@ -81,6 +81,10 @@ inline BMXGroupManager(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="BMXGroupManager" %}{% endlanying_code_snippet %}
+```
 ### function getGroupList
 
 ```java
@@ -98,6 +102,10 @@ Get group list, pull from server if forceRefreshed is set
   * **callBack** [BMXErrorCode], group id list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getGroupList" %}{% endlanying_code_snippet %}
+```
 ### function getGroupList
 
 ```java
@@ -117,6 +125,10 @@ Get the list of group information for the incoming group id, pull from server if
   * **callBack** [BMXErrorCode], group details list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getGroupList" %}{% endlanying_code_snippet %}
+```
 ### function getGroupList
 
 ```java
@@ -136,6 +148,10 @@ Get group information, pull from server if forceRefreshed is set
   * **callBack** [BMXErrorCode], group details returned by search 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getGroupList" %}{% endlanying_code_snippet %}
+```
 ### function getInvitationList
 
 ```java
@@ -155,6 +171,10 @@ Get group invitation list in pages
   * **callBack** [BMXErrorCode], paged list of group invitation 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getInvitationList" %}{% endlanying_code_snippet %}
+```
 ### function getApplicationList
 
 ```java
@@ -176,6 +196,10 @@ Get a list of group applications in pages
   * **callBack** [BMXErrorCode], paged list of group application 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getApplicationList" %}{% endlanying_code_snippet %}
+```
 ### function create
 
 ```java
@@ -193,6 +217,10 @@ Create group
   * **callBack** [BMXErrorCode], created group 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="create" %}{% endlanying_code_snippet %}
+```
 ### function destroy
 
 ```java
@@ -209,6 +237,10 @@ Destroy group
   * **callBack** BMXErrorCode,Group to destroy 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="destroy" %}{% endlanying_code_snippet %}
+```
 ### function join
 
 ```java
@@ -228,6 +260,10 @@ Join a group, which may require admin approval depending on group settings
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="join" %}{% endlanying_code_snippet %}
+```
 ### function leave
 
 ```java
@@ -245,6 +281,10 @@ Quit group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="leave" %}{% endlanying_code_snippet %}
+```
 ### function getInfo
 
 ```java
@@ -261,6 +301,10 @@ Get group details, pull the latest information from server
   * **callBack** [BMXErrorCode], the group to get its latest information 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getInfo" %}{% endlanying_code_snippet %}
+```
 ### function getMembers
 
 ```java
@@ -282,6 +326,10 @@ Get group member list, pull from server if forceRefresh is set, up to 1,000
   * **callBack** [BMXErrorCode], group member list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembers" %}{% endlanying_code_snippet %}
+```
 ### function getMembers
 
 ```java
@@ -301,6 +349,10 @@ Get group member list, pull from server if forceRefresh is set, up to 1,000
   * **callBack** [BMXErrorCode], group member list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembers" %}{% endlanying_code_snippet %}
+```
 ### function addMembers
 
 ```java
@@ -322,6 +374,10 @@ Add group member
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="addMembers" %}{% endlanying_code_snippet %}
+```
 ### function removeMembers
 
 ```java
@@ -343,6 +399,10 @@ Remove group member
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeMembers" %}{% endlanying_code_snippet %}
+```
 ### function addAdmins
 
 ```java
@@ -364,6 +424,10 @@ Add Admin
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="addAdmins" %}{% endlanying_code_snippet %}
+```
 ### function removeAdmins
 
 ```java
@@ -385,6 +449,10 @@ Remove admin
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeAdmins" %}{% endlanying_code_snippet %}
+```
 ### function getAdmins
 
 ```java
@@ -404,6 +472,10 @@ Get Admins list, pull from server if forceRefreshed is set
   * **callBack** [BMXErrorCode], list of group Admins 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getAdmins" %}{% endlanying_code_snippet %}
+```
 ### function blockMembers
 
 ```java
@@ -423,6 +495,10 @@ Add to blacklist
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="blockMembers" %}{% endlanying_code_snippet %}
+```
 ### function unblockMembers
 
 ```java
@@ -442,6 +518,10 @@ Unblacklist
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="unblockMembers" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```java
@@ -463,6 +543,10 @@ Get blacklist
   * **callBack** [BMXErrorCode], list of group blacklists 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function getBlockList
 
 ```java
@@ -482,6 +566,10 @@ Get blacklist
   * **callBack** [BMXErrorCode], list of group blacklists 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBlockList" %}{% endlanying_code_snippet %}
+```
 ### function banMembers
 
 ```java
@@ -505,6 +593,10 @@ Ban
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="banMembers" %}{% endlanying_code_snippet %}
+```
 ### function banGroup
 
 ```java
@@ -524,6 +616,10 @@ Ban all members
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="banGroup" %}{% endlanying_code_snippet %}
+```
 ### function unbanMembers
 
 ```java
@@ -543,6 +639,10 @@ Unban
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="unbanMembers" %}{% endlanying_code_snippet %}
+```
 ### function unbanGroup
 
 ```java
@@ -560,6 +660,10 @@ Unban all members
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="unbanGroup" %}{% endlanying_code_snippet %}
+```
 ### function getBannedMembers
 
 ```java
@@ -581,6 +685,10 @@ Get a list of banned members
   * **callBack** [BMXErrorCode], list of group bans 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBannedMembers" %}{% endlanying_code_snippet %}
+```
 ### function getBannedMembers
 
 ```java
@@ -598,6 +706,10 @@ Get a list of banned members
   * **callBack** [BMXErrorCode], list of group bans 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBannedMembers" %}{% endlanying_code_snippet %}
+```
 ### function muteMessage
 
 ```java
@@ -617,6 +729,10 @@ Set whether to block group messages
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="muteMessage" %}{% endlanying_code_snippet %}
+```
 ### function acceptApplication
 
 ```java
@@ -636,6 +752,10 @@ Accept application of membership
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="acceptApplication" %}{% endlanying_code_snippet %}
+```
 ### function declineApplication
 
 ```java
@@ -657,6 +777,10 @@ Reject application of membership
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="declineApplication" %}{% endlanying_code_snippet %}
+```
 ### function acceptInvitation
 
 ```java
@@ -676,6 +800,10 @@ Accept to join group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="acceptInvitation" %}{% endlanying_code_snippet %}
+```
 ### function declineInvitation
 
 ```java
@@ -695,6 +823,10 @@ Reject invitation to join group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="declineInvitation" %}{% endlanying_code_snippet %}
+```
 ### function transferOwner
 
 ```java
@@ -714,6 +846,10 @@ Transfer of group Owner
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="transferOwner" %}{% endlanying_code_snippet %}
+```
 ### function uploadSharedFile
 
 ```java
@@ -739,6 +875,10 @@ Add shared file in group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="uploadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function removeSharedFile
 
 ```java
@@ -758,6 +898,10 @@ Remove shared file in group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function downloadSharedFile
 
 ```java
@@ -779,6 +923,10 @@ Download share file in group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="downloadSharedFile" %}{% endlanying_code_snippet %}
+```
 ### function getSharedFilesList
 
 ```java
@@ -798,6 +946,10 @@ Get a list of share files in group
   * **callBack** [BMXErrorCode], list of group shared files 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getSharedFilesList" %}{% endlanying_code_snippet %}
+```
 ### function changeSharedFileName
 
 ```java
@@ -819,6 +971,10 @@ Modify shared file name in group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="changeSharedFileName" %}{% endlanying_code_snippet %}
+```
 ### function getLatestAnnouncement
 
 ```java
@@ -838,6 +994,10 @@ Get the latest group announcement
   * **callBack** [BMXErrorCode], latest group announcement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getLatestAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function getAnnouncementList
 
 ```java
@@ -857,6 +1017,10 @@ Get group announcements list
   * **callBack** [BMXErrorCode], list of group announcements 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getAnnouncementList" %}{% endlanying_code_snippet %}
+```
 ### function editAnnouncement
 
 ```java
@@ -878,6 +1042,10 @@ Write group announcement
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="editAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function deleteAnnouncement
 
 ```java
@@ -897,6 +1065,10 @@ Delete group announcement
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="deleteAnnouncement" %}{% endlanying_code_snippet %}
+```
 ### function setName
 
 ```java
@@ -916,6 +1088,10 @@ Set group name
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setName" %}{% endlanying_code_snippet %}
+```
 ### function setDescription
 
 ```java
@@ -935,6 +1111,10 @@ Set group description
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setDescription" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```java
@@ -954,6 +1134,10 @@ Set group extension information
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function setMyNickname
 
 ```java
@@ -973,6 +1157,10 @@ Set nickname in group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setMyNickname" %}{% endlanying_code_snippet %}
+```
 ### function setMsgPushMode
 
 ```java
@@ -992,6 +1180,10 @@ Set group message notification mode
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setMsgPushMode" %}{% endlanying_code_snippet %}
+```
 ### function setJoinAuthMode
 
 ```java
@@ -1011,6 +1203,10 @@ Set approval mode for joining group
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setJoinAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function setInviteMode
 
 ```java
@@ -1030,6 +1226,10 @@ Set invitation mode
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setInviteMode" %}{% endlanying_code_snippet %}
+```
 ### function setAvatar
 
 ```java
@@ -1051,6 +1251,10 @@ Set group avatar
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setAvatar" %}{% endlanying_code_snippet %}
+```
 ### function downloadAvatar
 
 ```java
@@ -1070,6 +1274,10 @@ Download group avatar
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="downloadAvatar" %}{% endlanying_code_snippet %}
+```
 ### function addGroupListener
 
 ```java
@@ -1085,6 +1293,10 @@ Add group change listener
   * **listener** Group change listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="addGroupListener" %}{% endlanying_code_snippet %}
+```
 ### function removeGroupListener
 
 ```java
@@ -1100,6 +1312,10 @@ Remove group change listener
   * **listener** Group change listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeGroupListener" %}{% endlanying_code_snippet %}
+```
 ### function setEnableReadAck
 
 ```java
@@ -1119,6 +1335,10 @@ Set whether group message read acknowledgement is enabled
   * **callBack** [BMXErrorCode]
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setEnableReadAck" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

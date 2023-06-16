@@ -138,7 +138,7 @@
 #### Request Body
 |  Parameter name |  Data Type | Required  |  Default |  Description |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| list | array[int64] | false |  |  |
+| list | array[int64] | true |  | List of task IDs |
 
 #### Response Body
 ● 200 Response data format:JSON

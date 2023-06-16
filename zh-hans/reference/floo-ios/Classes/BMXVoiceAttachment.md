@@ -2,78 +2,160 @@
 
   **Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
 <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
+<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
 NSObject  
-  **Declared in** BMXVoiceAttachment.h  
+  **Declared in** floo_proxy.h  
 
-## Properties
+## Overview
 
-<a name="//api/name/duration" title="duration"></a>
-### duration
+@interface 音频消息附件
 
-时长
+## Class Methods
 
-`@property (nonatomic, assign) int duration`
+<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
+### dynamicCastWithAttachment:
 
-#### Discussion
-时长
+消息附件强制转换为语音附件
+
+`+ (BMXVoiceAttachment *)dynamicCastWithAttachment:(BMXMessageAttachment *)*attachment*`
+
+#### Parameters
+
+*attachment*  
+   附件  
+
+#### Return Value
+BMXVoiceAttachment
 
 #### Declared In
-* `BMXVoiceAttachment.h`
+* `floo_proxy.h`
 
 <a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/initWithData:displayName:fileLength:duration:conversationId:" title="initWithData:displayName:fileLength:duration:conversationId:"></a>
-### initWithData:displayName:fileLength:duration:conversationId:
+<a name="//api/name/clone" title="clone"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+```
+### clone
 
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+克隆函数
 
-`- (instancetype)initWithData:(NSData *)*aData* displayName:(NSString *)*displayName* fileLength:(NSInteger)*fileLength* duration:(NSInteger)*duration* conversationId:(NSString *)*conversationId*`
+`- (BMXMessageAttachment *)clone`
 
-#### Parameters
-
-*aData*  
-   音频Data  
-
-*displayName*  
-   显示名称  
-
-*duration*  
-   时长  
-
-*conversationId*  
-   会话Id  
-
-#### Discussion
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+#### Return Value
+<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
 
 #### Declared In
-* `BMXVoiceAttachment.h`
+* `floo_proxy.h`
 
-<a name="//api/name/initWithPath:displayName:duration:conversationId:" title="initWithPath:displayName:duration:conversationId:"></a>
-### initWithPath:displayName:duration:conversationId:
+<a name="//api/name/dealloc" title="dealloc"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
+### dealloc
 
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+`- (void)dealloc`
 
-`- (instancetype)initWithPath:(NSString *)*path* displayName:(NSString *)*displayName* duration:(NSInteger)*duration* conversationId:(NSString *)*conversationId*`
+<a name="//api/name/duration" title="duration"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="dealloc" %}{% endlanying_code_snippet %}
+```
+### duration
+
+语音时长
+
+`- (int)duration`
+
+#### Return Value
+int
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithPath:duration:" title="initWithPath:duration:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="duration" %}{% endlanying_code_snippet %}
+```
+### initWithPath:duration:
+
+`- (id)initWithPath:(NSString *)*path* duration:(int)*duration*`
+
+<a name="//api/name/initWithPath:duration:displayName:" title="initWithPath:duration:displayName:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithPath:duration:" %}{% endlanying_code_snippet %}
+```
+### initWithPath:duration:displayName:
+
+构造函数，构建发送音频消息附件
+
+`- (id)initWithPath:(NSString *)*path* duration:(int)*duration* displayName:(NSString *)*displayName*`
 
 #### Parameters
 
 *path*  
-   音频路径  
-
-*displayName*  
-   显示  
+   文件的本地路径  
 
 *duration*  
-   时长  
+   音频时长  
 
-#### Return Value
-<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
-
-#### Discussion
-初始化<a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a>
+*displayName*  
+   文件展示名  
 
 #### Declared In
-* `BMXVoiceAttachment.h`
+* `floo_proxy.h`
 
+<a name="//api/name/initWithRatelUrl:duration:displayName:fileLength:" title="initWithRatelUrl:duration:displayName:fileLength:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithPath:duration:displayName:" %}{% endlanying_code_snippet %}
+```
+### initWithRatelUrl:duration:displayName:fileLength:
+
+构造函数，构建接收音频消息附件
+
+`- (id)initWithRatelUrl:(NSString *)*ratelUrl* duration:(int)*duration* displayName:(NSString *)*displayName* fileLength:(long long)*fileLength*`
+
+#### Parameters
+
+*ratelUrl*  
+   ratel文件服务器地址  
+
+*duration*  
+   音频时长  
+
+*displayName*  
+   文件展示名  
+
+*fileLength*  
+   文件大小  
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/type" title="type"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="initWithRatelUrl:duration:displayName:fileLength:" %}{% endlanying_code_snippet %}
+```
+### type
+
+返回文件类型
+
+`- (BMXMessageAttachment_Type)type`
+
+#### Return Value
+<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVoiceAttachment",function="type" %}{% endlanying_code_snippet %}
+```

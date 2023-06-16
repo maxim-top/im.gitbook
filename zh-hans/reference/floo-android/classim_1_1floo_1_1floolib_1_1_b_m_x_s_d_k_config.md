@@ -86,6 +86,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function BMXSDKConfig
 
 ```java
@@ -111,6 +115,10 @@ inline BMXSDKConfig(
   * **deliveryAck** 是否发送消息送达回执 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function BMXSDKConfig
 
 ```java
@@ -124,6 +132,10 @@ inline BMXSDKConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function BMXSDKConfig
 
 ```java
@@ -140,6 +152,10 @@ inline BMXSDKConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function BMXSDKConfig
 
 ```java
@@ -155,6 +171,10 @@ inline BMXSDKConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function getDataDir
 
 ```java
@@ -162,6 +182,10 @@ inline String getDataDir()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDataDir" %}{% endlanying_code_snippet %}
+```
 ### function getCacheDir
 
 ```java
@@ -169,6 +193,10 @@ inline String getCacheDir()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getCacheDir" %}{% endlanying_code_snippet %}
+```
 ### function getClientType
 
 ```java
@@ -176,6 +204,10 @@ inline BMXClientType getClientType()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getClientType" %}{% endlanying_code_snippet %}
+```
 ### function getVsn
 
 ```java
@@ -183,6 +215,10 @@ inline String getVsn()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getVsn" %}{% endlanying_code_snippet %}
+```
 ### function getSDKVersion
 
 ```java
@@ -190,6 +226,10 @@ inline String getSDKVersion()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getSDKVersion" %}{% endlanying_code_snippet %}
+```
 ### function getPushCertName
 
 ```java
@@ -197,6 +237,10 @@ inline String getPushCertName()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getPushCertName" %}{% endlanying_code_snippet %}
+```
 ### function setPushCertName
 
 ```java
@@ -206,6 +250,10 @@ inline void setPushCertName(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setPushCertName" %}{% endlanying_code_snippet %}
+```
 ### function getUserAgent
 
 ```java
@@ -213,6 +261,10 @@ inline String getUserAgent()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getUserAgent" %}{% endlanying_code_snippet %}
+```
 ### function carryUsernameInMessage
 
 ```java
@@ -220,6 +272,10 @@ inline boolean carryUsernameInMessage()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="carryUsernameInMessage" %}{% endlanying_code_snippet %}
+```
 ### function setCarryUsernameInMessage
 
 ```java
@@ -229,6 +285,10 @@ inline void setCarryUsernameInMessage(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setCarryUsernameInMessage" %}{% endlanying_code_snippet %}
+```
 ### function enableDeliveryAck
 
 ```java
@@ -236,6 +296,10 @@ inline boolean enableDeliveryAck()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="enableDeliveryAck" %}{% endlanying_code_snippet %}
+```
 ### function setEnableDeliveryAck
 
 ```java
@@ -245,6 +309,10 @@ inline void setEnableDeliveryAck(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnableDeliveryAck" %}{% endlanying_code_snippet %}
+```
 ### function getLogLevel
 
 ```java
@@ -252,6 +320,10 @@ inline BMXLogLevel getLogLevel()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getLogLevel" %}{% endlanying_code_snippet %}
+```
 ### function setLogLevel
 
 ```java
@@ -261,6 +333,10 @@ inline void setLogLevel(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setLogLevel" %}{% endlanying_code_snippet %}
+```
 ### function getConsoleOutput
 
 ```java
@@ -268,6 +344,10 @@ inline boolean getConsoleOutput()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getConsoleOutput" %}{% endlanying_code_snippet %}
+```
 ### function setConsoleOutput
 
 ```java
@@ -277,6 +357,10 @@ inline void setConsoleOutput(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setConsoleOutput" %}{% endlanying_code_snippet %}
+```
 ### function setHostConfig
 
 ```java
@@ -286,6 +370,10 @@ inline void setHostConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setHostConfig" %}{% endlanying_code_snippet %}
+```
 ### function getHostConfig
 
 ```java
@@ -293,6 +381,10 @@ inline BMXSDKConfig.HostConfig getHostConfig()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getHostConfig" %}{% endlanying_code_snippet %}
+```
 ### function getLoadAllServerConversations
 
 ```java
@@ -300,6 +392,10 @@ inline boolean getLoadAllServerConversations()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getLoadAllServerConversations" %}{% endlanying_code_snippet %}
+```
 ### function setLoadAllServerConversations
 
 ```java
@@ -309,6 +405,10 @@ inline void setLoadAllServerConversations(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
+```
 ### function setLoadAllServerConversations
 
 ```java
@@ -316,6 +416,10 @@ inline void setLoadAllServerConversations()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
+```
 ### function getDeviceUuid
 
 ```java
@@ -323,6 +427,10 @@ inline String getDeviceUuid()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDeviceUuid" %}{% endlanying_code_snippet %}
+```
 ### function setDeviceUuid
 
 ```java
@@ -332,6 +440,10 @@ inline void setDeviceUuid(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setDeviceUuid" %}{% endlanying_code_snippet %}
+```
 ### function getDBCryptoKey
 
 ```java
@@ -339,6 +451,10 @@ inline String getDBCryptoKey()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDBCryptoKey" %}{% endlanying_code_snippet %}
+```
 ### function setDBCryptoKey
 
 ```java
@@ -348,6 +464,10 @@ inline void setDBCryptoKey(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setDBCryptoKey" %}{% endlanying_code_snippet %}
+```
 ### function getVerifyCertificate
 
 ```java
@@ -355,6 +475,10 @@ inline boolean getVerifyCertificate()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getVerifyCertificate" %}{% endlanying_code_snippet %}
+```
 ### function setVerifyCertificate
 
 ```java
@@ -364,6 +488,10 @@ inline void setVerifyCertificate(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
+```
 ### function setVerifyCertificate
 
 ```java
@@ -371,6 +499,10 @@ inline void setVerifyCertificate()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
+```
 ### function getEnableDNS
 
 ```java
@@ -378,6 +510,10 @@ inline boolean getEnableDNS()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getEnableDNS" %}{% endlanying_code_snippet %}
+```
 ### function setEnableDNS
 
 ```java
@@ -387,6 +523,10 @@ inline void setEnableDNS(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
+```
 ### function setEnableDNS
 
 ```java
@@ -394,6 +534,10 @@ inline void setEnableDNS()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
+```
 ### function getUserDNSAddress
 
 ```java
@@ -401,6 +545,10 @@ inline String getUserDNSAddress()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getUserDNSAddress" %}{% endlanying_code_snippet %}
+```
 ### function setUserDNSAddress
 
 ```java
@@ -410,6 +558,10 @@ inline void setUserDNSAddress(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setUserDNSAddress" %}{% endlanying_code_snippet %}
+```
 ### function getAppID
 
 ```java
@@ -417,6 +569,10 @@ inline String getAppID()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getAppID" %}{% endlanying_code_snippet %}
+```
 ### function setAppID
 
 ```java
@@ -426,6 +582,10 @@ inline void setAppID(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setAppID" %}{% endlanying_code_snippet %}
+```
 ### function getAppSecret
 
 ```java
@@ -433,6 +593,10 @@ inline String getAppSecret()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getAppSecret" %}{% endlanying_code_snippet %}
+```
 ### function setAppSecret
 
 ```java
@@ -442,6 +606,10 @@ inline void setAppSecret(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setAppSecret" %}{% endlanying_code_snippet %}
+```
 ### function getPushProviderType
 
 ```java
@@ -449,6 +617,10 @@ inline BMXPushProviderType getPushProviderType()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getPushProviderType" %}{% endlanying_code_snippet %}
+```
 ### function setPushProviderType
 
 ```java
@@ -458,6 +630,10 @@ inline void setPushProviderType(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setPushProviderType" %}{% endlanying_code_snippet %}
+```
 ### function getPushEnvironmentType
 
 ```java
@@ -465,6 +641,10 @@ inline BMXPushEnvironmentType getPushEnvironmentType()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getPushEnvironmentType" %}{% endlanying_code_snippet %}
+```
 ### function setEnvironmentType
 
 ```java
@@ -474,6 +654,10 @@ inline void setEnvironmentType(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnvironmentType" %}{% endlanying_code_snippet %}
+```
 ### function getDebugLogReceiverId
 
 ```java
@@ -481,6 +665,10 @@ inline long getDebugLogReceiverId()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDebugLogReceiverId" %}{% endlanying_code_snippet %}
+```
 ### function setDebugLogReceiverId
 
 ```java
@@ -492,6 +680,10 @@ inline void setDebugLogReceiverId(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setDebugLogReceiverId" %}{% endlanying_code_snippet %}
+```
 ### function BMXSDKConfig
 
 ```java
@@ -502,6 +694,10 @@ inline BMXSDKConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -509,6 +705,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -518,6 +718,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

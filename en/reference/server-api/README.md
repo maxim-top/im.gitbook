@@ -4,9 +4,9 @@
 
 ### Default environment
 
-| Parameter name | Field value                  |
-| -------------- | ---------------------------- |
-| baseUrl        | http://s-1-3-api.maximtop.cn |
+| Parameter name  | Field value                       |
+| ------- | ---------------------------- |
+| baseUrl | http://s-1-3-api.maximtop.cn |
 
 ## 2 Lanying IM server-side API document
 

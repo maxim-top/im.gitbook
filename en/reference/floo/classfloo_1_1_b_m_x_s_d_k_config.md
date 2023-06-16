@@ -92,6 +92,10 @@ Constructor
   * **deliveryAck** Whether to send message delivery acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function BMXSDKConfig
 
 ```cpp
@@ -125,6 +129,10 @@ Constructor
   * **deliveryAck** Whether to send message delivery acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXSDKConfig
 
 ```cpp
@@ -133,6 +141,10 @@ virtual ~BMXSDKConfig()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="~BMXSDKConfig" %}{% endlanying_code_snippet %}
+```
 ### function getDataDir
 
 ```cpp
@@ -143,6 +155,10 @@ Get storage path of chat data, including messages, attachments, and more
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDataDir" %}{% endlanying_code_snippet %}
+```
 ### function getCacheDir
 
 ```cpp
@@ -153,6 +169,10 @@ Get storage path of cached data, including user avatar and more
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getCacheDir" %}{% endlanying_code_snippet %}
+```
 ### function getClientType
 
 ```cpp
@@ -163,6 +183,10 @@ Client type
 
 **Return**: BMXClientType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getClientType" %}{% endlanying_code_snippet %}
+```
 ### function getVsn
 
 ```cpp
@@ -173,6 +197,10 @@ Client OS version
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getVsn" %}{% endlanying_code_snippet %}
+```
 ### function getSDKVersion
 
 ```cpp
@@ -183,6 +211,10 @@ SDK version
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getSDKVersion" %}{% endlanying_code_snippet %}
+```
 ### function getPushCertName
 
 ```cpp
@@ -193,6 +225,10 @@ Get Push certificate name
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getPushCertName" %}{% endlanying_code_snippet %}
+```
 ### function setPushCertName
 
 ```cpp
@@ -205,6 +241,10 @@ Set Push certificate name
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setPushCertName" %}{% endlanying_code_snippet %}
+```
 ### function getUserAgent
 
 ```cpp
@@ -215,6 +255,10 @@ Get user proxy information
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getUserAgent" %}{% endlanying_code_snippet %}
+```
 ### function carryUsernameInMessage
 
 ```cpp
@@ -225,6 +269,10 @@ Whether the config sends message carrying
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="carryUsernameInMessage" %}{% endlanying_code_snippet %}
+```
 ### function setCarryUsernameInMessage
 
 ```cpp
@@ -240,6 +288,10 @@ Set whether the config sends message carrying username
   * **bool** Set whether the config sends message carrying username 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setCarryUsernameInMessage" %}{% endlanying_code_snippet %}
+```
 ### function enableDeliveryAck
 
 ```cpp
@@ -250,6 +302,10 @@ Whether to send message delivery acknowledgement
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="enableDeliveryAck" %}{% endlanying_code_snippet %}
+```
 ### function setEnableDeliveryAck
 
 ```cpp
@@ -265,6 +321,10 @@ Set whether to send message delivery acknowledgement
   * **bool** Whether to send message delivery acknowledgement 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setEnableDeliveryAck" %}{% endlanying_code_snippet %}
+```
 ### function getLogLevel
 
 ```cpp
@@ -275,6 +335,10 @@ Log output level
 
 **Return**: BMXLogLevel 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getLogLevel" %}{% endlanying_code_snippet %}
+```
 ### function setLogLevel
 
 ```cpp
@@ -290,6 +354,10 @@ Set Log output level
   * **BMXLogLevel** Log output level 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setLogLevel" %}{% endlanying_code_snippet %}
+```
 ### function getConsoleOutput
 
 ```cpp
@@ -300,6 +368,10 @@ Whether to output Log to Console.
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getConsoleOutput" %}{% endlanying_code_snippet %}
+```
 ### function setConsoleOutput
 
 ```cpp
@@ -315,6 +387,10 @@ Set whether to output Log to Console
   * **bool** Set whether to output Log to Console 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setConsoleOutput" %}{% endlanying_code_snippet %}
+```
 ### function setHostConfig
 
 ```cpp
@@ -330,6 +406,10 @@ Set server configuration
   * **config** Server configuration 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setHostConfig" %}{% endlanying_code_snippet %}
+```
 ### function getHostConfig
 
 ```cpp
@@ -340,6 +420,10 @@ Get server configuration
 
 **Return**: [HostConfig]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getHostConfig" %}{% endlanying_code_snippet %}
+```
 ### function getLoadAllServerConversations
 
 ```cpp
@@ -350,6 +434,10 @@ Whether to create all conversations based on the unread list returned by server.
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getLoadAllServerConversations" %}{% endlanying_code_snippet %}
+```
 ### function setLoadAllServerConversations
 
 ```cpp
@@ -365,6 +453,10 @@ Whether to create all conversations based on the unread list returned by server,
   * **enable** Whether to create all conversations based on the unread list returned by server 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
+```
 ### function getDeviceUuid
 
 ```cpp
@@ -375,6 +467,10 @@ Get the unique identifier of device
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDeviceUuid" %}{% endlanying_code_snippet %}
+```
 ### function setDeviceUuid
 
 ```cpp
@@ -390,6 +486,10 @@ Set the unique ID of the device, which should always be consistent before the ap
   * **uuid** Unique identifier of device. 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setDeviceUuid" %}{% endlanying_code_snippet %}
+```
 ### function getDBCryptoKey
 
 ```cpp
@@ -400,6 +500,10 @@ Get the local database encryption key for the device.
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDBCryptoKey" %}{% endlanying_code_snippet %}
+```
 ### function setDBCryptoKey
 
 ```cpp
@@ -415,6 +519,10 @@ Set the encryption key of the local database, which should always be kept until 
   * **cryptoKey** Local database encryption key. 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setDBCryptoKey" %}{% endlanying_code_snippet %}
+```
 ### function getVerifyCertificate
 
 ```cpp
@@ -425,6 +533,10 @@ Whether need to verify server-side certificate when get https request.
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getVerifyCertificate" %}{% endlanying_code_snippet %}
+```
 ### function setVerifyCertificate
 
 ```cpp
@@ -440,6 +552,10 @@ Set whether https request verify server-side certificate.
   * **verify** Whether https request verify server-side certificate 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
+```
 ### function getEnableDNS
 
 ```cpp
@@ -450,6 +566,10 @@ Whether to enable dns function for get.
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getEnableDNS" %}{% endlanying_code_snippet %}
+```
 ### function setEnableDNS
 
 ```cpp
@@ -465,6 +585,10 @@ Set whether to enable dns function for get, default enabled.
   * **enable** Whether to enable dns function 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
+```
 ### function getUserDNSAddress
 
 ```cpp
@@ -475,6 +599,10 @@ Get user-defined dns server address.
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getUserDNSAddress" %}{% endlanying_code_snippet %}
+```
 ### function setUserDNSAddress
 
 ```cpp
@@ -490,6 +618,10 @@ Set user-defined dns server address, preferring user dns if dns server has been 
   * **dns** User-defined dns server address 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setUserDNSAddress" %}{% endlanying_code_snippet %}
+```
 ### function getAppID
 
 ```cpp
@@ -500,6 +632,10 @@ Get user's appID.
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getAppID" %}{% endlanying_code_snippet %}
+```
 ### function setAppID
 
 ```cpp
@@ -515,6 +651,10 @@ Set user's appID.
   * **appID** User's appID 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setAppID" %}{% endlanying_code_snippet %}
+```
 ### function getAppSecret
 
 ```cpp
@@ -525,6 +665,10 @@ Get user's appSecret.
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getAppSecret" %}{% endlanying_code_snippet %}
+```
 ### function setAppSecret
 
 ```cpp
@@ -540,6 +684,10 @@ Set user's appSecret.
   * **appID** User's appSecret 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setAppSecret" %}{% endlanying_code_snippet %}
+```
 ### function getPushProviderType
 
 ```cpp
@@ -550,6 +698,10 @@ Get user's Push provider type.
 
 **Return**: BMXPushProviderType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getPushProviderType" %}{% endlanying_code_snippet %}
+```
 ### function setPushProviderType
 
 ```cpp
@@ -565,6 +717,10 @@ Set user's Push provider type.
   * **type** User's push provider type 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setPushProviderType" %}{% endlanying_code_snippet %}
+```
 ### function getPushEnvironmentType
 
 ```cpp
@@ -575,6 +731,10 @@ Get user's Push environment type.
 
 **Return**: BMXPushEnvironmentType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getPushEnvironmentType" %}{% endlanying_code_snippet %}
+```
 ### function setEnvironmentType
 
 ```cpp
@@ -590,6 +750,10 @@ Set user's Push environment type.
   * **type** User's push environment type 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setEnvironmentType" %}{% endlanying_code_snippet %}
+```
 ### function getDebugLogReceiverId
 
 ```cpp
@@ -600,6 +764,10 @@ Get debug log receiving account (for SDK debugging only, used for receiving clie
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="getDebugLogReceiverId" %}{% endlanying_code_snippet %}
+```
 ### function setDebugLogReceiverId
 
 ```cpp
@@ -615,6 +783,10 @@ Set debug log receiving account (for SDK debugging only, used for receiving clie
   * **uid** Debug log receiver id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXSDKConfig",function="setDebugLogReceiverId" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

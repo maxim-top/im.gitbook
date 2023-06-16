@@ -44,6 +44,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function AuthQuestion
 
 ```java
@@ -51,6 +55,10 @@ inline AuthQuestion()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="AuthQuestion" %}{% endlanying_code_snippet %}
+```
 ### function setMQuestion
 
 ```java
@@ -60,6 +68,10 @@ inline void setMQuestion(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="setMQuestion" %}{% endlanying_code_snippet %}
+```
 ### function getMQuestion
 
 ```java
@@ -67,6 +79,10 @@ inline String getMQuestion()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="getMQuestion" %}{% endlanying_code_snippet %}
+```
 ### function setMAnswer
 
 ```java
@@ -76,6 +92,10 @@ inline void setMAnswer(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="setMAnswer" %}{% endlanying_code_snippet %}
+```
 ### function getMAnswer
 
 ```java
@@ -85,6 +105,10 @@ inline String getMAnswer()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="getMAnswer" %}{% endlanying_code_snippet %}
+```
 ### function AuthQuestion
 
 ```java
@@ -95,6 +119,10 @@ inline AuthQuestion(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="AuthQuestion" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -102,6 +130,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -120,6 +152,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="AuthQuestion",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

@@ -66,6 +66,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function setMentionAll
 
 ```java
@@ -81,6 +85,10 @@ inline void setMentionAll(
   * **mentionAll** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setMentionAll" %}{% endlanying_code_snippet %}
+```
 ### function getMentionAll
 
 ```java
@@ -91,6 +99,10 @@ inline boolean getMentionAll()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getMentionAll" %}{% endlanying_code_snippet %}
+```
 ### function setMentionList
 
 ```java
@@ -106,6 +118,10 @@ inline void setMentionList(
   * **mentionList** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setMentionList" %}{% endlanying_code_snippet %}
+```
 ### function getMentionList
 
 ```java
@@ -116,6 +132,10 @@ inline ListOfLongLong getMentionList()
 
 **Return**: std::vector<int64_t> 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getMentionList" %}{% endlanying_code_snippet %}
+```
 ### function setMentionedMessage
 
 ```java
@@ -131,6 +151,10 @@ inline void setMentionedMessage(
   * **mentionedMessage** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setMentionedMessage" %}{% endlanying_code_snippet %}
+```
 ### function getMentionedMessage
 
 ```java
@@ -141,6 +165,10 @@ inline String getMentionedMessage()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getMentionedMessage" %}{% endlanying_code_snippet %}
+```
 ### function setPushMessage
 
 ```java
@@ -156,6 +184,10 @@ inline void setPushMessage(
   * **pushMessage** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setPushMessage" %}{% endlanying_code_snippet %}
+```
 ### function getPushMessage
 
 ```java
@@ -166,6 +198,10 @@ inline String getPushMessage()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getPushMessage" %}{% endlanying_code_snippet %}
+```
 ### function setSenderNickname
 
 ```java
@@ -181,6 +217,10 @@ inline void setSenderNickname(
   * **senderNickname** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setSenderNickname" %}{% endlanying_code_snippet %}
+```
 ### function getSenderNickname
 
 ```java
@@ -191,6 +231,10 @@ inline String getSenderNickname()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getSenderNickname" %}{% endlanying_code_snippet %}
+```
 ### function setGroupMemberList
 
 ```java
@@ -206,6 +250,10 @@ inline void setGroupMemberList(
   * **groupMemberList** 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setGroupMemberList" %}{% endlanying_code_snippet %}
+```
 ### function getGroupMemberList
 
 ```java
@@ -216,6 +264,10 @@ inline ListOfLongLong getGroupMemberList()
 
 **Return**: std::vector<int64_t> 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getGroupMemberList" %}{% endlanying_code_snippet %}
+```
 ### function addGroupMember
 
 ```java
@@ -226,6 +278,10 @@ inline void addGroupMember(
 
 添加群已读消息的群成员id列表成员 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="addGroupMember" %}{% endlanying_code_snippet %}
+```
 ### function removeGroupMember
 
 ```java
@@ -236,6 +292,10 @@ inline void removeGroupMember(
 
 清除需要群已读消息的群成员id列表成员 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="removeGroupMember" %}{% endlanying_code_snippet %}
+```
 ### function clearGroupMemberList
 
 ```java
@@ -244,6 +304,10 @@ inline void clearGroupMemberList()
 
 清空群已读消息的群成员id列表 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="clearGroupMemberList" %}{% endlanying_code_snippet %}
+```
 ### function setIOSConfig
 
 ```java
@@ -253,6 +317,10 @@ inline void setIOSConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setIOSConfig" %}{% endlanying_code_snippet %}
+```
 ### function getIOSConfig
 
 ```java
@@ -261,6 +329,10 @@ inline String getIOSConfig()
 
 获取iOS消息配置 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getIOSConfig" %}{% endlanying_code_snippet %}
+```
 ### function setAndroidConfig
 
 ```java
@@ -270,6 +342,10 @@ inline void setAndroidConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setAndroidConfig" %}{% endlanying_code_snippet %}
+```
 ### function getAndroidConfig
 
 ```java
@@ -278,6 +354,10 @@ inline String getAndroidConfig()
 
 获取Android消息配置 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getAndroidConfig" %}{% endlanying_code_snippet %}
+```
 ### function setPushShowBeginTime
 
 ```java
@@ -287,6 +367,10 @@ inline void setPushShowBeginTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setPushShowBeginTime" %}{% endlanying_code_snippet %}
+```
 ### function getPushShowBeginTime
 
 ```java
@@ -295,6 +379,10 @@ inline int getPushShowBeginTime()
 
 获取推送消息开始展示时间 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getPushShowBeginTime" %}{% endlanying_code_snippet %}
+```
 ### function setPushShowEndTime
 
 ```java
@@ -304,6 +392,10 @@ inline void setPushShowEndTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setPushShowEndTime" %}{% endlanying_code_snippet %}
+```
 ### function getPushShowEndTime
 
 ```java
@@ -312,6 +404,10 @@ inline int getPushShowEndTime()
 
 获取推送消息结束展示时间 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getPushShowEndTime" %}{% endlanying_code_snippet %}
+```
 ### function setPushTitle
 
 ```java
@@ -321,6 +417,10 @@ inline void setPushTitle(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="setPushTitle" %}{% endlanying_code_snippet %}
+```
 ### function getPushTitle
 
 ```java
@@ -329,6 +429,10 @@ inline String getPushTitle()
 
 获取推送消息标题 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getPushTitle" %}{% endlanying_code_snippet %}
+```
 ### function isSilence
 
 ```java
@@ -336,6 +440,10 @@ inline boolean isSilence()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="isSilence" %}{% endlanying_code_snippet %}
+```
 ### function getBadgeCountType
 
 ```java
@@ -343,6 +451,10 @@ inline BMXMessageConfig.BadgeCountType getBadgeCountType()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getBadgeCountType" %}{% endlanying_code_snippet %}
+```
 ### function getBadgeCount
 
 ```java
@@ -352,6 +464,10 @@ inline int getBadgeCount(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getBadgeCount" %}{% endlanying_code_snippet %}
+```
 ### function getUsername
 
 ```java
@@ -360,6 +476,10 @@ inline String getUsername()
 
 获取消息发送者用户名 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getUsername" %}{% endlanying_code_snippet %}
+```
 ### function serialize
 
 ```java
@@ -370,6 +490,10 @@ inline String serialize()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="serialize" %}{% endlanying_code_snippet %}
+```
 ### function createMessageConfig
 
 ```java
@@ -381,6 +505,10 @@ static inline BMXMessageConfig createMessageConfig(
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="createMessageConfig" %}{% endlanying_code_snippet %}
+```
 ### function BMXMessageConfig
 
 ```java
@@ -391,6 +519,10 @@ inline BMXMessageConfig(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="BMXMessageConfig" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -398,6 +530,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -407,6 +543,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageConfig",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

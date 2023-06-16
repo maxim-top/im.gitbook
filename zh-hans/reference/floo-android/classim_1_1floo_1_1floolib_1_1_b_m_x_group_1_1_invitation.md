@@ -50,6 +50,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function Invitation
 
 ```java
@@ -57,6 +61,10 @@ inline Invitation()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="Invitation" %}{% endlanying_code_snippet %}
+```
 ### function setMGroupId
 
 ```java
@@ -66,6 +74,10 @@ inline void setMGroupId(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMGroupId" %}{% endlanying_code_snippet %}
+```
 ### function getMGroupId
 
 ```java
@@ -73,6 +85,10 @@ inline long getMGroupId()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMGroupId" %}{% endlanying_code_snippet %}
+```
 ### function setMInviterId
 
 ```java
@@ -82,6 +98,10 @@ inline void setMInviterId(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMInviterId" %}{% endlanying_code_snippet %}
+```
 ### function getMInviterId
 
 ```java
@@ -89,6 +109,10 @@ inline long getMInviterId()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMInviterId" %}{% endlanying_code_snippet %}
+```
 ### function setMReason
 
 ```java
@@ -98,6 +122,10 @@ inline void setMReason(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMReason" %}{% endlanying_code_snippet %}
+```
 ### function getMReason
 
 ```java
@@ -105,6 +133,10 @@ inline String getMReason()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMReason" %}{% endlanying_code_snippet %}
+```
 ### function setMStatus
 
 ```java
@@ -114,6 +146,10 @@ inline void setMStatus(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMStatus" %}{% endlanying_code_snippet %}
+```
 ### function getMStatus
 
 ```java
@@ -121,6 +157,10 @@ inline BMXGroup.InvitationStatus getMStatus()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMStatus" %}{% endlanying_code_snippet %}
+```
 ### function setMExpired
 
 ```java
@@ -130,6 +170,10 @@ inline void setMExpired(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMExpired" %}{% endlanying_code_snippet %}
+```
 ### function getMExpired
 
 ```java
@@ -139,6 +183,10 @@ inline long getMExpired()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMExpired" %}{% endlanying_code_snippet %}
+```
 ### function Invitation
 
 ```java
@@ -149,6 +197,10 @@ inline Invitation(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="Invitation" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -156,6 +208,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -174,6 +230,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

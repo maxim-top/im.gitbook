@@ -324,6 +324,10 @@ inline virtual ~BMXGroup()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="~BMXGroup" %}{% endlanying_code_snippet %}
+```
 ### function groupId
 
 ```cpp
@@ -334,6 +338,10 @@ Group Id
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupId" %}{% endlanying_code_snippet %}
+```
 ### function groupType
 
 ```cpp
@@ -344,6 +352,10 @@ Type of the current group (Private, Public, Chatroom)
 
 **Return**: GroupType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupType" %}{% endlanying_code_snippet %}
+```
 ### function myNickname
 
 ```cpp
@@ -354,6 +366,10 @@ Group member nickname of mine
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="myNickname" %}{% endlanying_code_snippet %}
+```
 ### function name
 
 ```cpp
@@ -364,6 +380,10 @@ Group name
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="name" %}{% endlanying_code_snippet %}
+```
 ### function description
 
 ```cpp
@@ -374,6 +394,10 @@ Group description
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="description" %}{% endlanying_code_snippet %}
+```
 ### function avatarRatelUrl
 
 ```cpp
@@ -384,6 +408,10 @@ Url for group avatar Ratel server
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarUrl
 
 ```cpp
@@ -394,6 +422,10 @@ Url for group avatar server
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarPath
 
 ```cpp
@@ -404,6 +436,10 @@ Local path of downloaded group avatar
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarPath" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailUrl
 
 ```cpp
@@ -414,6 +450,10 @@ Url for group avatar thumbnail server
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### function avatarThumbnailPath
 
 ```cpp
@@ -424,6 +464,10 @@ Local path of downloaded group avatar thumbnail
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function createTime
 
 ```cpp
@@ -434,6 +478,10 @@ Group creation time
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="createTime" %}{% endlanying_code_snippet %}
+```
 ### function extension
 
 ```cpp
@@ -444,6 +492,10 @@ Group extension information
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="extension" %}{% endlanying_code_snippet %}
+```
 ### function ownerId
 
 ```cpp
@@ -454,6 +506,10 @@ Group Owner
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="ownerId" %}{% endlanying_code_snippet %}
+```
 ### function capacity
 
 ```cpp
@@ -464,6 +520,10 @@ Maximum number of group members
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="capacity" %}{% endlanying_code_snippet %}
+```
 ### function membersCount
 
 ```cpp
@@ -474,6 +534,10 @@ Number of group members, including Owner, Admins and Members
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="membersCount" %}{% endlanying_code_snippet %}
+```
 ### function adminsCount
 
 ```cpp
@@ -484,6 +548,10 @@ Number of group admins
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="adminsCount" %}{% endlanying_code_snippet %}
+```
 ### function blockListSize
 
 ```cpp
@@ -494,6 +562,10 @@ Blacklisted user-number
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="blockListSize" %}{% endlanying_code_snippet %}
+```
 ### function bannedListSize
 
 ```cpp
@@ -504,6 +576,10 @@ Banned user-number
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="bannedListSize" %}{% endlanying_code_snippet %}
+```
 ### function sharedFilesCount
 
 ```cpp
@@ -514,6 +590,10 @@ Shared file-number in group
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="sharedFilesCount" %}{% endlanying_code_snippet %}
+```
 ### function latestAnnouncementId
 
 ```cpp
@@ -524,6 +604,10 @@ Latest group announcement id
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="latestAnnouncementId" %}{% endlanying_code_snippet %}
+```
 ### function msgPushMode
 
 ```cpp
@@ -534,6 +618,10 @@ Group message notification type
 
 **Return**: MsgPushMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="msgPushMode" %}{% endlanying_code_snippet %}
+```
 ### function modifyMode
 
 ```cpp
@@ -544,6 +632,10 @@ Group information modification mode
 
 **Return**: ModifyMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="modifyMode" %}{% endlanying_code_snippet %}
+```
 ### function joinAuthMode
 
 ```cpp
@@ -554,6 +646,10 @@ Join approval mode
 
 **Return**: JoinAuthMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="joinAuthMode" %}{% endlanying_code_snippet %}
+```
 ### function inviteMode
 
 ```cpp
@@ -564,6 +660,10 @@ Group invitation mode
 
 **Return**: InviteMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="inviteMode" %}{% endlanying_code_snippet %}
+```
 ### function msgMuteMode
 
 ```cpp
@@ -574,6 +674,10 @@ Group message blocking mode
 
 **Return**: MsgMuteMode 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="msgMuteMode" %}{% endlanying_code_snippet %}
+```
 ### function groupStatus
 
 ```cpp
@@ -584,6 +688,10 @@ state of the current group. (Normal, Destroyed)
 
 **Return**: GroupStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupStatus" %}{% endlanying_code_snippet %}
+```
 ### function isMember
 
 ```cpp
@@ -597,6 +705,10 @@ Deprecated use roleType instead.
 Whether the current user is a group member 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="isMember" %}{% endlanying_code_snippet %}
+```
 ### function enableReadAck
 
 ```cpp
@@ -607,6 +719,10 @@ Whether group message read acknowledgement feature enabled
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="enableReadAck" %}{% endlanying_code_snippet %}
+```
 ### function historyVisible
 
 ```cpp
@@ -617,6 +733,10 @@ Whether to load and display the chat history
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="historyVisible" %}{% endlanying_code_snippet %}
+```
 ### function roleType
 
 ```cpp
@@ -627,6 +747,10 @@ Type of a member role in group
 
 **Return**: MemberRoleType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="roleType" %}{% endlanying_code_snippet %}
+```
 ### function banExpireTime
 
 ```cpp
@@ -639,6 +763,10 @@ Expiration time of banning all group members
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="banExpireTime" %}{% endlanying_code_snippet %}
+```
 ### function BMXGroup
 
 ```cpp
@@ -646,6 +774,10 @@ inline BMXGroup()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="BMXGroup" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

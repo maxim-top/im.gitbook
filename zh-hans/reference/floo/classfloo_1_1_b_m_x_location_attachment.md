@@ -72,6 +72,10 @@ BMXLocationAttachment(
   * **address** 地址名称 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="BMXLocationAttachment" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXLocationAttachment
 
 ```cpp
@@ -80,6 +84,10 @@ inline virtual ~BMXLocationAttachment()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="~BMXLocationAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -93,6 +101,10 @@ inline virtual Type type() const
 **Reimplements**: [floo::BMXMessageAttachment::type](classfloo_1_1_b_m_x_message_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```cpp
@@ -106,6 +118,10 @@ virtual BMXMessageAttachmentPtr clone() const
 **Reimplements**: [floo::BMXMessageAttachment::clone](classfloo_1_1_b_m_x_message_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function latitude
 
 ```cpp
@@ -116,6 +132,10 @@ double latitude() const
 
 **Return**: double 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="latitude" %}{% endlanying_code_snippet %}
+```
 ### function longitude
 
 ```cpp
@@ -126,6 +146,10 @@ double longitude() const
 
 **Return**: double 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="longitude" %}{% endlanying_code_snippet %}
+```
 ### function address
 
 ```cpp
@@ -156,6 +180,10 @@ friend class Decoder< BMXLocationAttachment >(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="address" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

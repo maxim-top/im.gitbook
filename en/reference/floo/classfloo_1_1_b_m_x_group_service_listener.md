@@ -63,6 +63,10 @@ inline BMXGroupServiceListener()
 
 Constructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="BMXGroupServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXGroupServiceListener
 
 ```cpp
@@ -71,6 +75,10 @@ inline virtual ~BMXGroupServiceListener()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="~BMXGroupServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onGroupCreate
 
 ```cpp
@@ -86,6 +94,10 @@ Create a group
   * **group** Newly created group 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupCreate" %}{% endlanying_code_snippet %}
+```
 ### function onGroupListUpdate
 
 ```cpp
@@ -101,6 +113,10 @@ Group list updated
   * **list** Updated group list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onGroupJoined
 
 ```cpp
@@ -116,6 +132,10 @@ Join a group
   * **group** Group to join 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupJoined" %}{% endlanying_code_snippet %}
+```
 ### function onGroupLeft
 
 ```cpp
@@ -133,6 +153,10 @@ Quit a group
   * **reason** Quit reason 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupLeft" %}{% endlanying_code_snippet %}
+```
 ### function onInvitated
 
 ```cpp
@@ -152,6 +176,10 @@ Group invitation received
   * **message** Invitation reason 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onInvitated" %}{% endlanying_code_snippet %}
+```
 ### function onInvitationAccepted
 
 ```cpp
@@ -169,6 +197,10 @@ Group invitation accepted
   * **inviteeId** Invitee id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onInvitationAccepted" %}{% endlanying_code_snippet %}
+```
 ### function onInvitationDeclined
 
 ```cpp
@@ -188,6 +220,10 @@ Join group rejected
   * **reason** Rejection reason 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onInvitationDeclined" %}{% endlanying_code_snippet %}
+```
 ### function onApplied
 
 ```cpp
@@ -207,6 +243,10 @@ Group membership application received
   * **message** Application reason 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationAccepted
 
 ```cpp
@@ -224,6 +264,10 @@ Join group accepted
   * **approver** Approver of the application 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
+```
 ### function onApplicationDeclined
 
 ```cpp
@@ -243,6 +287,10 @@ Join group rejected
   * **reason** Reason for rejection 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
+```
 ### function onMembersBanned
 
 ```cpp
@@ -262,6 +310,10 @@ Member banned
   * **duration** Duration of banned 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMembersBanned" %}{% endlanying_code_snippet %}
+```
 ### function onMembersUnbanned
 
 ```cpp
@@ -279,6 +331,10 @@ Member unbanned
   * **members** List of unbanned group member ids 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMembersUnbanned" %}{% endlanying_code_snippet %}
+```
 ### function onMemberJoined
 
 ```cpp
@@ -298,6 +354,10 @@ New member added
   * **inviter** Inviter id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMemberJoined" %}{% endlanying_code_snippet %}
+```
 ### function onMemberLeft
 
 ```cpp
@@ -317,6 +377,10 @@ Member quit
   * **reason** Reason for quitting 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMemberLeft" %}{% endlanying_code_snippet %}
+```
 ### function onAdminsAdded
 
 ```cpp
@@ -334,6 +398,10 @@ New Admin added
   * **members** List of members promoted to Admins 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onAdminsAdded" %}{% endlanying_code_snippet %}
+```
 ### function onAdminsRemoved
 
 ```cpp
@@ -353,6 +421,10 @@ Admin removed
   * **reason** Reason for removal 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onAdminsRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onOwnerAssigned
 
 ```cpp
@@ -368,6 +440,10 @@ Become group Owner
   * **group** A group in which group Owner transferred 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onOwnerAssigned" %}{% endlanying_code_snippet %}
+```
 ### function onGroupInfoUpdate
 
 ```cpp
@@ -385,6 +461,10 @@ Group information changes
   * **type** Type of group information that changed 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupInfoUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onMemberChangeNickName
 
 ```cpp
@@ -404,6 +484,10 @@ Member nickname changed
   * **nickName** Changed group nickname 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onMemberChangeNickName" %}{% endlanying_code_snippet %}
+```
 ### function onAnnouncementUpdate
 
 ```cpp
@@ -421,6 +505,10 @@ Group announcement updated
   * **announcement** Latest group announcement after changed 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onAnnouncementUpdate" %}{% endlanying_code_snippet %}
+```
 ### function onSharedFileUploaded
 
 ```cpp
@@ -438,6 +526,10 @@ Shared file received
   * **sharedFile** Newly uploaded group shared file 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onSharedFileUploaded" %}{% endlanying_code_snippet %}
+```
 ### function onSharedFileDeleted
 
 ```cpp
@@ -455,6 +547,10 @@ Shared file deleted
   * **sharedFile** Deleted group shared file 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onSharedFileDeleted" %}{% endlanying_code_snippet %}
+```
 ### function onSharedFileUpdated
 
 ```cpp
@@ -472,6 +568,10 @@ Name of shared file updated
   * **sharedFile** Updated group shared file 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onSharedFileUpdated" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListAdded
 
 ```cpp
@@ -489,6 +589,10 @@ Add to blacklist
   * **members** List of blacklisted members 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
+```
 ### function onBlockListRemoved
 
 ```cpp
@@ -506,6 +610,10 @@ Delete blacklist
   * **members** List of unblacklisted members 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
+```
 ### function onGroupListUpdate
 
 ```cpp
@@ -514,6 +622,10 @@ inline virtual void onGroupListUpdate()
 
 Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
+```
 ### function registerGroupService
 
 ```cpp
@@ -538,6 +650,10 @@ BMXGroupService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupServiceListener",function="registerGroupService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

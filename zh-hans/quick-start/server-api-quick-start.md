@@ -1,6 +1,6 @@
 # 服务端开发指南（API）
 
-本页面供快速集成使用，了解更多请访问[详细文档](../reference/server-api/README.md)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/server-api/README.md)，或者直接访问 [Swagger页面](https://docs.lanyingim.com/reference/server-api/swagger/)。
 
 ## 入门
 
@@ -8,13 +8,13 @@
 
 * app_id
 
-    `app_id`是创建App时，蓝莺IM为App生成的唯一标识，是字符串类型。可从console"应用信息"页面获取。
+    `app_id`是创建App时，蓝莺IM为App生成的唯一标识，是字符串类型。可从云控制台"应用信息"页面获取。
 * api_endpoint
 
-    `api_endpoint`是App所在API服务的地址。可从console"应用信息"页面获取。
+    `api_endpoint`是App所在API服务的地址。可从云控制台"应用信息"页面获取。
 * access-token
 
-    `access-token`用作权限校验。可在console"[Token管理](https://console.lanyingim.com/#/home/token)"页面为App生成access-token或选用已有access-token。
+    `access-token`用作权限校验。可在云控制台"[Token管理](https://console.lanyingim.com/#/home/token)"页面为App生成access-token或选用已有access-token。
 
 ### API概述
 

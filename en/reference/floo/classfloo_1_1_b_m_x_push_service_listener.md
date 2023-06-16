@@ -42,6 +42,10 @@ inline BMXPushServiceListener()
 
 Constructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="BMXPushServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXPushServiceListener
 
 ```cpp
@@ -50,6 +54,10 @@ inline virtual ~BMXPushServiceListener()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="~BMXPushServiceListener" %}{% endlanying_code_snippet %}
+```
 ### function onPushStart
 
 ```cpp
@@ -65,6 +73,10 @@ Notification of push initialization complete.
   * **bmxToken** bmxToken used in current push 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onPushStart" %}{% endlanying_code_snippet %}
+```
 ### function onPushStop
 
 ```cpp
@@ -73,6 +85,10 @@ inline virtual void onPushStop()
 
 Notification of push feature stop. 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onPushStop" %}{% endlanying_code_snippet %}
+```
 ### function onCertRetrieved
 
 ```cpp
@@ -88,6 +104,10 @@ Get push certificate after push initialization.
   * **cert** Push certificate obtained from server 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onCertRetrieved" %}{% endlanying_code_snippet %}
+```
 ### function onSetTags
 
 ```cpp
@@ -103,6 +123,10 @@ Set callback of user push success.
   * **operationId** Operation id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onSetTags" %}{% endlanying_code_snippet %}
+```
 ### function onGetTags
 
 ```cpp
@@ -118,6 +142,10 @@ Get callback of user push success.
   * **operationId** Operation id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onGetTags" %}{% endlanying_code_snippet %}
+```
 ### function onDeleteTags
 
 ```cpp
@@ -133,6 +161,10 @@ Delete callback of user push success.
   * **operationId** Operation id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onDeleteTags" %}{% endlanying_code_snippet %}
+```
 ### function onClearTags
 
 ```cpp
@@ -148,6 +180,10 @@ Clear callback of user push success.
   * **operationId** Operation id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onClearTags" %}{% endlanying_code_snippet %}
+```
 ### function onReceivePush
 
 ```cpp
@@ -163,6 +199,10 @@ New push notification received.
   * **list** Push notification list 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onReceivePush" %}{% endlanying_code_snippet %}
+```
 ### function onStatusChanged
 
 ```cpp
@@ -180,6 +220,10 @@ Send notification of push uplink message status change.
   * **error** State error code 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+```
 ### function registerPushService
 
 ```cpp
@@ -204,6 +248,10 @@ BMXPushService * mService;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushServiceListener",function="registerPushService" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

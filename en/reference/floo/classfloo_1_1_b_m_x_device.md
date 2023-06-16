@@ -43,6 +43,10 @@ inline virtual ~BMXDevice()
 
 Destructor 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="~BMXDevice" %}{% endlanying_code_snippet %}
+```
 ### function deviceSN
 
 ```cpp
@@ -53,6 +57,10 @@ Device serial number
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="deviceSN" %}{% endlanying_code_snippet %}
+```
 ### function userId
 
 ```cpp
@@ -63,6 +71,10 @@ User id
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="userId" %}{% endlanying_code_snippet %}
+```
 ### function platform
 
 ```cpp
@@ -73,6 +85,10 @@ Software platform
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="platform" %}{% endlanying_code_snippet %}
+```
 ### function userAgent
 
 ```cpp
@@ -83,6 +99,10 @@ User agent information
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="userAgent" %}{% endlanying_code_snippet %}
+```
 ### function setUserAgent
 
 ```cpp
@@ -98,6 +118,10 @@ Set user agent information
   * **userAgent** User agent information 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="setUserAgent" %}{% endlanying_code_snippet %}
+```
 ### function isCurrentDevice
 
 ```cpp
@@ -110,6 +134,10 @@ Whether for the current device
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="isCurrentDevice" %}{% endlanying_code_snippet %}
+```
 ### function BMXDevice
 
 ```cpp
@@ -117,6 +145,10 @@ inline BMXDevice()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="BMXDevice" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

@@ -18,6 +18,7 @@
     * ["onReceiveHistoryMsg" (res)](#event_onreceivehistorymsg)
     * ["onRosterInfoUpdate" (res)](#event_onrosterinfoupdate)
     * ["onRosterListUpdate" (meta)](#event_onrosterlistupdate)
+    * ["onRosterApplied" (meta)](#event_onrosterapplied)
     * ["onRosterMessage" (meta)](#event_onrostermessage)
     * ["onSendingMessageStatusChanged" (res)](#event_onsendingmessagestatuschanged)
     * ["onUnreadChange" (cid)](#event_onunreadchange)
@@ -251,6 +252,15 @@ Floo错误
 | Param | Type | Description |
 | --- | --- | --- |
 | meta | [<code>Meta</code>](#module_types__meta) | 好友通知的消息内容 |
+
+### "onRosterApplied" (meta) {#event_onrosterapplied}
+收到好友申请
+
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | 好友申请的消息内容 |
 
 ### "onRosterMessage" (meta) {#event_onrostermessage}
 收到单聊消息

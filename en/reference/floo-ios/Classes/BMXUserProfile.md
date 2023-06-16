@@ -1,215 +1,289 @@
 # BMXUserProfile Class Reference
 
-  **Inherits from** NSObject  
-  **Declared in** BMXUserProfile.h  
+  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
+NSObject  
+  **Declared in** floo_proxy.h  
 
-## Properties
+## Overview
+
+@interface User Profile
+
+## Instance Methods
 
 <a name="//api/name/addFriendAuthMode" title="addFriendAuthMode"></a>
 ### addFriendAuthMode
 
-Friend authentication mode
+Friend authorization mode
 
-`@property (nonatomic, assign) BMXAddFriendAuthMode addFriendAuthMode`
+`- (BMXUserProfile_AddFriendAuthMode)addFriendAuthMode`
 
-#### Discussion
-Friend authentication mode
+#### Return Value
+<a href="../Constants/BMXUserProfile_AddFriendAuthMode.md">BMXUserProfile_AddFriendAuthMode</a>
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
 <a name="//api/name/authQuestion" title="authQuestion"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+```
 ### authQuestion
 
-Verification question
+Authorization question
 
-`@property (nonatomic, strong) BMXAuthQuestion *authQuestion`
+`- (BMXUserProfileAuthQuestion *)authQuestion`
 
-#### Discussion
-Verification question
+#### Return Value
+AuthQuestion
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
 <a name="//api/name/avatarPath" title="avatarPath"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="authQuestion" %}{% endlanying_code_snippet %}
+```
 ### avatarPath
 
-Local path of avatar
+Local path of my avatar
 
-`@property (nonatomic, copy) NSString *avatarPath`
+`- (NSString *)avatarPath`
 
-#### Discussion
-Local path of avatar
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
+
+<a name="//api/name/avatarRatelUrl" title="avatarRatelUrl"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarPath" %}{% endlanying_code_snippet %}
+```
+### avatarRatelUrl
+
+The avatar file URL on REST server
+
+`- (NSString *)avatarRatelUrl`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+```
 ### avatarThumbnailPath
 
-Local path of avatar thumbnail
+The avatar thumbnail file URL on HTTP server
 
-`@property (nonatomic, copy) NSString *avatarThumbnailPath`
+`- (NSString *)avatarThumbnailPath`
 
-#### Discussion
-Local path of avatar thumbnail
-
-#### Declared In
-* `BMXUserProfile.h`
-
-<a name="//api/name/avatarThumbnailUrl" title="avatarThumbnailUrl"></a>
-### avatarThumbnailUrl
-
-url of avatar thumbnail
-
-`@property (nonatomic, copy) NSString *avatarThumbnailUrl`
-
-#### Discussion
-url of avatar thumbnail
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
 <a name="//api/name/avatarUrl" title="avatarUrl"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### avatarUrl
 
-Avatar url
+The avatar file URL on HTTP server
 
-`@property (nonatomic, copy) NSString *avatarUrl`
+`- (NSString *)avatarUrl`
 
-#### Discussion
-Avatar url
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
+
+<a name="//api/name/category" title="category"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarUrl" %}{% endlanying_code_snippet %}
+```
+### category
+
+User grade(Normal|Advanced)
+
+`- (BMXUserProfile_UserCategory)category`
+
+#### Return Value
+<a href="../Constants/BMXUserProfile_UserCategory.md">BMXUserProfile_UserCategory</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/dealloc" title="dealloc"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="category" %}{% endlanying_code_snippet %}
+```
+### dealloc
+
+`- (void)dealloc`
 
 <a name="//api/name/email" title="email"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="dealloc" %}{% endlanying_code_snippet %}
+```
 ### email
 
-  User email
+Email
 
-`@property (nonatomic, copy) NSString *email`
+`- (NSString *)email`
 
-#### Discussion
-  User email
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
 <a name="//api/name/isAutoAcceptGroupInvite" title="isAutoAcceptGroupInvite"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="email" %}{% endlanying_code_snippet %}
+```
 ### isAutoAcceptGroupInvite
 
-Automatically receive group invitations
+Whether to accept group invitation automatically
 
-`@property (nonatomic, assign) BOOL isAutoAcceptGroupInvite`
+`- (BOOL)isAutoAcceptGroupInvite`
 
-#### Discussion
-Automatically receive group invitations
+#### Return Value
+BOOL
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
 <a name="//api/name/messageSetting" title="messageSetting"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="isAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+```
 ### messageSetting
 
 Message settings
 
-`@property (nonatomic, strong) BMXMessageSetting *messageSetting`
+`- (BMXUserProfileMessageSetting *)messageSetting`
 
-#### Discussion
-Message settings
+#### Return Value
+<a href="../Classes/BMXUserProfileMessageSetting.md">BMXUserProfileMessageSetting</a>
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
 <a name="//api/name/mobilePhone" title="mobilePhone"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="messageSetting" %}{% endlanying_code_snippet %}
+```
 ### mobilePhone
 
-Mobile number
+User phone number
 
-`@property (nonatomic, copy) NSString *mobilePhone`
+`- (NSString *)mobilePhone`
 
-#### Discussion
-Mobile number
-
-#### Declared In
-* `BMXUserProfile.h`
-
-<a name="//api/name/nickName" title="nickName"></a>
-### nickName
-
-Nickname
-
-`@property (nonatomic, copy) NSString *nickName`
-
-#### Discussion
-Nickname
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
-<a name="//api/name/privateInfoJson" title="privateInfoJson"></a>
-### privateInfoJson
+<a name="//api/name/nickname" title="nickname"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="mobilePhone" %}{% endlanying_code_snippet %}
+```
+### nickname
 
-Private information
+User nickname
 
-`@property (nonatomic, copy) NSString *privateInfoJson`
+`- (NSString *)nickname`
 
-#### Discussion
-Private information
-
-#### Declared In
-* `BMXUserProfile.h`
-
-<a name="//api/name/publicInfoJson" title="publicInfoJson"></a>
-### publicInfoJson
-
-Public information
-
-`@property (nonatomic, copy) NSString *publicInfoJson`
-
-#### Discussion
-Public information
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
-<a name="//api/name/userCategory" title="userCategory"></a>
-### userCategory
+<a name="//api/name/privateInfo" title="privateInfo"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="nickname" %}{% endlanying_code_snippet %}
+```
+### privateInfo
 
-User category
+Extension information for user(Not visible to friends)
 
-`@property (nonatomic, assign) BMXUserCategory userCategory`
+`- (NSString *)privateInfo`
 
-#### Discussion
-User category
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
+
+<a name="//api/name/publicInfo" title="publicInfo"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="privateInfo" %}{% endlanying_code_snippet %}
+```
+### publicInfo
+
+Extension information for user(Visible to friends)
+
+`- (NSString *)publicInfo`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
 
 <a name="//api/name/userId" title="userId"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="publicInfo" %}{% endlanying_code_snippet %}
+```
 ### userId
 
-User id
+`- (long long)userId`
 
-`@property (nonatomic, assign) long long userId`
-
-#### Discussion
-User id
+#### Return Value
+long long
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
-<a name="//api/name/userName" title="userName"></a>
-### userName
+<a name="//api/name/username" title="username"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="userId" %}{% endlanying_code_snippet %}
+```
+### username
 
-Username
+`- (NSString *)username`
 
-`@property (nonatomic, copy) NSString *userName`
-
-#### Discussion
-Username
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXUserProfile.h`
+* `floo_proxy.h`
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="username" %}{% endlanying_code_snippet %}
+```

@@ -23,6 +23,7 @@
         "prism-themes@^0.0.2",
         "-lunr",
         "-search",
+        "lanying-code-snippet@^1.1.9",
         "search-plus@^0.0.11",
         "advanced-emoji@^0.2.1",
         "expandable-chapters-small@^0.1.7",
@@ -33,6 +34,7 @@
         "splitter@^0.0.8",
         "favicon@^0.0.2",
         "image-captions@^3.1.0",
+        "auto-scroll-table@^0.0.5",
 
         "logo@^0.0.2",
         "intopic-toc@^1.1.1",
@@ -61,7 +63,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "© 2019-2022 MaximTop | <a href='https://lanyingim.com' style='text-decoration:none!important;'>Homepage</a>",
+            "copyright": "© 2019-2023 MaximTop | <a href='https://lanyingim.com' style='text-decoration:none!important;'>Homepage</a>",
             "modify_label": "Last modified time:",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -136,6 +138,38 @@
         },
         "image-captions": {
             "caption": "_CAPTION_"
+        },
+        "lanying-code-snippet": {
+            "showLink": true,
+            "reindent": true,
+            "maxLine": 20,
+            "maxSnippetCount": 8,
+            "repositories": [
+                {
+                    "name":"lanying-im-web",
+                    "url":"https://github.com/maxim-top/lanying-im-web.git",
+                    "branch":"master",
+                    "cacheDir": "../cache/lanying-im-web"
+                },
+                {
+                    "name":"lanying-im-android",
+                    "url":"https://github.com/maxim-top/lanying-im-android.git",
+                    "branch":"master",
+                    "cacheDir": "../cache/lanying-im-android"
+                },
+                {
+                    "name":"lanying-im-embedded",
+                    "url":"https://github.com/maxim-top/lanying-im-embedded.git",
+                    "branch":"master",
+                    "cacheDir": "../cache/lanying-im-embedded"
+                },
+                {
+                    "name":"lanying-im-ios-",
+                    "url":"https://github.com/maxim-top/lanying-im-ios.git",
+                    "branch":"master",
+                    "cacheDir": "../cache/lanying-im-ios"
+                }
+            ]
         },
         "meta": {
             "data": [

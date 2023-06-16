@@ -18,6 +18,7 @@
     * ["onReceiveHistoryMsg" (res)](#event_onreceivehistorymsg)
     * ["onRosterInfoUpdate" (res)](#event_onrosterinfoupdate)
     * ["onRosterListUpdate" (meta)](#event_onrosterlistupdate)
+    * ["onRosterApplied" (meta)](#event_onrosterapplied)
     * ["onRosterMessage" (meta)](#event_onrostermessage)
     * ["onSendingMessageStatusChanged" (res)](#event_onsendingmessagestatuschanged)
     * ["onUnreadChange" (cid)](#event_onunreadchange)
@@ -251,6 +252,15 @@ Friend list changed
 | Param | Type | Description |
 | --- | --- | --- |
 | meta | [<code>Meta</code>](#module_types__meta) | Message content of friend's notification |
+
+### "onRosterApplied" (meta) {#event_onrosterapplied}
+Friend application received
+
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | Message content of friend's application |
 
 ### "onRosterMessage" (meta) {#event_onrostermessage}
 Single chat message received

@@ -2,109 +2,362 @@
 
   **Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
 <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
+<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
 NSObject  
-  **Declared in** BMXVideoAttachment.h  
+  **Declared in** floo_proxy.h  
 
-## Properties
+## Overview
 
-<a name="//api/name/duration" title="duration"></a>
-### duration
+@interface Video message attachment
 
-Length
+## Class Methods
 
-`@property (nonatomic, assign) int duration`
+<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
+### dynamicCastWithAttachment:
 
-#### Discussion
-Length
+Type casting
 
-#### Declared In
-* `BMXVideoAttachment.h`
+`+ (BMXVideoAttachment *)dynamicCastWithAttachment:(BMXMessageAttachment *)*attachment*`
 
-<a name="//api/name/thumbnailFileLength" title="thumbnailFileLength"></a>
-### thumbnailFileLength
+#### Parameters
 
-thumbnail file size
+*attachment*  
+   The attachment
 
-`@property (nonatomic) long long thumbnailFileLength`
-
-#### Discussion
-thumbnail file size
+#### Return Value
+BMXVideoAttachment
 
 #### Declared In
-* `BMXVideoAttachment.h`
-
-<a name="//api/name/thumbnailPath" title="thumbnailPath"></a>
-### thumbnailPath
-
-Thumbnail path
-
-`@property (nonatomic, copy) NSString *thumbnailPath`
-
-#### Discussion
-Thumbnail path
-
-#### Declared In
-* `BMXVideoAttachment.h`
-
-<a name="//api/name/thumbnailUrl" title="thumbnailUrl"></a>
-### thumbnailUrl
-
-Thumbnail url
-
-`@property (nonatomic, copy) NSString *thumbnailUrl`
-
-#### Discussion
-Thumbnail url
-
-#### Declared In
-* `BMXVideoAttachment.h`
-
-<a name="//api/name/thumbnaildownLoadStatus" title="thumbnaildownLoadStatus"></a>
-### thumbnaildownLoadStatus
-
-Video download status
-
-`@property (nonatomic, assign) BMXAttachmentDownloadStatus thumbnaildownLoadStatus`
-
-#### Discussion
-Video download status
-
-#### Declared In
-* `BMXVideoAttachment.h`
-
-<a name="//api/name/videoSize" title="videoSize"></a>
-### videoSize
-
-video size
-
-`@property (nonatomic) CGSize videoSize`
-
-#### Discussion
-video size
-
-#### Declared In
-* `BMXVideoAttachment.h`
+* `floo_proxy.h`
 
 <a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/initWithData:duration:videoSize:displayName:conversationId:" title="initWithData:duration:videoSize:displayName:conversationId:"></a>
-### initWithData:duration:videoSize:displayName:conversationId:
+<a name="//api/name/clone" title="clone"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+```
+### clone
 
-`- (instancetype)initWithData:(NSData *)*aData* duration:(int)*duration* videoSize:(CGSize)*videoSize* displayName:(NSString *)*displayName* conversationId:(NSString *)*conversationId*`
 
-<a name="//api/name/initWithData:duration:videoSize:displayName:thumbnailData:conversationId:" title="initWithData:duration:videoSize:displayName:thumbnailData:conversationId:"></a>
-### initWithData:duration:videoSize:displayName:thumbnailData:conversationId:
+`- (BMXMessageAttachment *)clone`
 
-`- (instancetype)initWithData:(NSData *)*aData* duration:(int)*duration* videoSize:(CGSize)*videoSize* displayName:(NSString *)*displayName* thumbnailData:(NSData *)*thumbnailData* conversationId:(NSString *)*conversationId*`
+#### Return Value
+<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
 
-<a name="//api/name/initWithLocalPath:duration:size:displayName:conversationId:" title="initWithLocalPath:duration:size:displayName:conversationId:"></a>
-### initWithLocalPath:duration:size:displayName:conversationId:
+#### Declared In
+* `floo_proxy.h`
 
-`- (instancetype)initWithLocalPath:(NSString *)*aLocalPath* duration:(int)*duration* size:(CGSize)*size* displayName:(NSString *)*aDisplayName* conversationId:(NSString *)*conversationId*`
+<a name="//api/name/dealloc" title="dealloc"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
+### dealloc
 
-<a name="//api/name/initWithLocalPath:duration:size:thumbnailPath:displayName:conversationId:" title="initWithLocalPath:duration:size:thumbnailPath:displayName:conversationId:"></a>
-### initWithLocalPath:duration:size:thumbnailPath:displayName:conversationId:
+`- (void)dealloc`
 
-`- (instancetype)initWithLocalPath:(NSString *)*aLocalPath* duration:(int)*duration* size:(CGSize)*size* thumbnailPath:(NSString *)*thumbnailPath* displayName:(NSString *)*aDisplayName* conversationId:(NSString *)*conversationId*`
+<a name="//api/name/duration" title="duration"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="dealloc" %}{% endlanying_code_snippet %}
+```
+### duration
 
+Duration of the video
+
+`- (int)duration`
+
+#### Return Value
+int
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithPath:duration:size:" title="initWithPath:duration:size:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="duration" %}{% endlanying_code_snippet %}
+```
+### initWithPath:duration:size:
+
+`- (id)initWithPath:(NSString *)*path* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size*`
+
+<a name="//api/name/initWithPath:duration:size:displayName:" title="initWithPath:duration:size:displayName:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:duration:size:" %}{% endlanying_code_snippet %}
+```
+### initWithPath:duration:size:displayName:
+
+Constructor
+
+`- (id)initWithPath:(NSString *)*path* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size* displayName:(NSString *)*displayName*`
+
+#### Parameters
+
+*path*  
+   Local file path
+
+*duration*  
+   Duration of the video
+
+*size*  
+   Width and height of the video
+
+*displayName*  
+   Attachment name displayed in UI pages
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithPath:thumbnailPath:duration:size:" title="initWithPath:thumbnailPath:duration:size:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
+```
+### initWithPath:thumbnailPath:duration:size:
+
+`- (id)initWithPath:(NSString *)*path* thumbnailPath:(NSString *)*thumbnailPath* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size*`
+
+<a name="//api/name/initWithPath:thumbnailPath:duration:size:displayName:" title="initWithPath:thumbnailPath:duration:size:displayName:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:thumbnailPath:duration:size:" %}{% endlanying_code_snippet %}
+```
+### initWithPath:thumbnailPath:duration:size:displayName:
+
+Constructor
+
+`- (id)initWithPath:(NSString *)*path* thumbnailPath:(NSString *)*thumbnailPath* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size* displayName:(NSString *)*displayName*`
+
+#### Parameters
+
+*path*  
+   Local file path
+
+*thumbnailPath*  
+   Local file path of thumbnail
+
+*duration*  
+   Duration of the video
+
+*size*  
+   Width and height of the video 
+
+*displayName*  
+   Attachment name displayed in UI pages
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithRatelUrl:duration:size:displayName:fileLength:" title="initWithRatelUrl:duration:size:displayName:fileLength:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:thumbnailPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
+```
+### initWithRatelUrl:duration:size:displayName:fileLength:
+
+Constructor
+
+`- (id)initWithRatelUrl:(NSString *)*ratelUrl* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size* displayName:(NSString *)*displayName* fileLength:(long long)*fileLength*`
+
+#### Parameters
+
+*ratelUrl*  
+   The file URL on REST server
+
+*duration*  
+   Duration of the video
+
+*size*  
+   Width and height of the video
+
+*displayName*  
+   Attachment name displayed in UI pages
+
+*fileLength*  
+   File length
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:" title="initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
+```
+### initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:
+
+Constructor
+
+`- (id)initWithRatelUrl:(NSString *)*ratelUrl* thumbnailRatelUrl:(NSString *)*thumbnailRatelUrl* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size* displayName:(NSString *)*displayName* fileLength:(long long)*fileLength*`
+
+#### Parameters
+
+*ratelUrl*  
+   The file URL on REST server
+
+*thumbnailRatelUrl*  
+   The thumbnail URL on REST server
+
+*duration*  
+   Duration of the video
+
+*size*  
+   Width and height of the video
+
+*displayName*  
+   Attachment name displayed in UI pages
+
+*fileLength*  
+   File length
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/setThumbnail:" title="setThumbnail:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
+```
+### setThumbnail:
+
+Set thumbnail of video
+
+`- (void)setThumbnail:(NSString *)*path*`
+
+#### Parameters
+
+*path*  
+   Local file path 
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/setThumbnailRatelUrl:" title="setThumbnailRatelUrl:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="setThumbnail:" %}{% endlanying_code_snippet %}
+```
+### setThumbnailRatelUrl:
+
+Set the thumbnail URL on REST server
+
+`- (void)setThumbnailRatelUrl:(NSString *)*thumbnailRatelUrl*`
+
+#### Parameters
+
+*thumbnailRatelUrl*  
+   The thumbnail URL on REST server
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/size" title="size"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="setThumbnailRatelUrl:" %}{% endlanying_code_snippet %}
+```
+### size
+
+Width and height of the video
+
+`- (BMXMessageAttachmentSize *)size`
+
+#### Return Value
+<a href="../Classes/BMXMessageAttachmentSize.md">BMXMessageAttachmentSize</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/thumbnailDownloadStatus" title="thumbnailDownloadStatus"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="size" %}{% endlanying_code_snippet %}
+```
+### thumbnailDownloadStatus
+
+Download status of thumbnail
+
+`- (BMXMessageAttachment_DownloadStatus)thumbnailDownloadStatus`
+
+#### Return Value
+DownloadStatus
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/thumbnailPath" title="thumbnailPath"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
+```
+### thumbnailPath
+
+Local file path of thumbnail
+
+`- (NSString *)thumbnailPath`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/thumbnailRatelUrl" title="thumbnailRatelUrl"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailPath" %}{% endlanying_code_snippet %}
+```
+### thumbnailRatelUrl
+
+The thumbnail URL on REST server
+
+`- (NSString *)thumbnailRatelUrl`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/thumbnailUrl" title="thumbnailUrl"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailRatelUrl" %}{% endlanying_code_snippet %}
+```
+### thumbnailUrl
+
+The thumbnail URL on HTTP server
+
+`- (NSString *)thumbnailUrl`
+
+#### Return Value
+NSString
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/type" title="type"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailUrl" %}{% endlanying_code_snippet %}
+```
+### type
+
+Attachment type
+
+`- (BMXMessageAttachment_Type)type`
+
+#### Return Value
+<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="type" %}{% endlanying_code_snippet %}
+```

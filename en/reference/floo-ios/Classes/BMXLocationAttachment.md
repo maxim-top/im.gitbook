@@ -1,61 +1,153 @@
 # BMXLocationAttachment Class Reference
 
   **Inherits from** <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
+<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
 NSObject  
-  **Declared in** BMXLocationAttachment.h  
+  **Declared in** floo_proxy.h  
 
-## Properties
+## Overview
 
-<a name="//api/name/address" title="address"></a>
-### address
+@interface Location message attachment
 
-Address
+## Class Methods
 
-`@property (nonatomic, copy) NSString *address`
+<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
+### dynamicCastWithAttachment:
 
-#### Discussion
-Address
+Type casting
 
-#### Declared In
-* `BMXLocationAttachment.h`
-
-<a name="//api/name/latitude" title="latitude"></a>
-### latitude
-
-`@property (nonatomic) double latitude`
-
-<a name="//api/name/longitude" title="longitude"></a>
-### longitude
-
-`@property (nonatomic) double longitude`
-
-<a title="Instance Methods" name="instance_methods"></a>
-## Instance Methods
-
-<a name="//api/name/initWithLatitude:longitude:address:" title="initWithLatitude:longitude:address:"></a>
-### initWithLatitude:longitude:address:
-
-Initialize BMXLocationAttachment
-
-`- (instancetype)initWithLatitude:(double)*aLatitude* longitude:(double)*aLongitude* address:(NSString *)*aAddress*`
+`+ (BMXLocationAttachment *)dynamicCastWithAttachment:(BMXMessageAttachment *)*attachment*`
 
 #### Parameters
 
-*aLatitude*  
-   Latitude  
-
-*aLongitude*  
-   Longitude  
-
-*aAddress*  
-   Address  
+*attachment*  
+   The attachment  
 
 #### Return Value
 BMXLocationAttachment
 
-#### Discussion
-Initialize BMXLocationAttachment
+#### Declared In
+* `floo_proxy.h`
+
+<a title="Instance Methods" name="instance_methods"></a>
+## Instance Methods
+
+<a name="//api/name/address" title="address"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+```
+### address
+
+The address
+
+`- (NSString *)address`
+
+#### Return Value
+NSString
 
 #### Declared In
-* `BMXLocationAttachment.h`
+* `floo_proxy.h`
 
+<a name="//api/name/clone" title="clone"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="address" %}{% endlanying_code_snippet %}
+```
+### clone
+
+
+`- (BMXMessageAttachment *)clone`
+
+#### Return Value
+<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/dealloc" title="dealloc"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
+### dealloc
+
+`- (void)dealloc`
+
+<a name="//api/name/initWithLatitude:longitude:address:" title="initWithLatitude:longitude:address:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="dealloc" %}{% endlanying_code_snippet %}
+```
+### initWithLatitude:longitude:address:
+
+Constructor
+
+`- (id)initWithLatitude:(double)*latitude* longitude:(double)*longitude* address:(NSString *)*address*`
+
+#### Parameters
+
+*latitude*    
+
+*longitude*  
+
+*address*  
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/latitude" title="latitude"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="initWithLatitude:longitude:address:" %}{% endlanying_code_snippet %}
+```
+### latitude
+
+The latitude
+
+`- (double)latitude`
+
+#### Return Value
+double
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/longitude" title="longitude"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="latitude" %}{% endlanying_code_snippet %}
+```
+### longitude
+
+The longitude
+
+`- (double)longitude`
+
+#### Return Value
+double
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/type" title="type"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="longitude" %}{% endlanying_code_snippet %}
+```
+### type
+
+Attachment type
+
+`- (BMXMessageAttachment_Type)type`
+
+#### Return Value
+<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="type" %}{% endlanying_code_snippet %}
+```

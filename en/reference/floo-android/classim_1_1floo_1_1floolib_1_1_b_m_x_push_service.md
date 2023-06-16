@@ -71,6 +71,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function start
 
 ```java
@@ -90,6 +94,10 @@ Initialize push sdk. Use this interface to initialize the push sdk in the case o
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="start" %}{% endlanying_code_snippet %}
+```
 ### function start
 
 ```java
@@ -99,6 +107,10 @@ inline BMXErrorCode start(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="start" %}{% endlanying_code_snippet %}
+```
 ### function start
 
 ```java
@@ -106,6 +118,10 @@ inline BMXErrorCode start()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="start" %}{% endlanying_code_snippet %}
+```
 ### function stop
 
 ```java
@@ -116,6 +132,10 @@ Shut push feature interface.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="stop" %}{% endlanying_code_snippet %}
+```
 ### function resume
 
 ```java
@@ -126,6 +146,10 @@ Resume push function.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="resume" %}{% endlanying_code_snippet %}
+```
 ### function unbindAlias
 
 ```java
@@ -143,6 +167,10 @@ Unbind user alias.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="unbindAlias" %}{% endlanying_code_snippet %}
+```
 ### function getToken
 
 ```java
@@ -151,6 +179,10 @@ inline String getToken()
 
 Get user token to use after login. 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="getToken" %}{% endlanying_code_snippet %}
+```
 ### function getCert
 
 ```java
@@ -159,6 +191,10 @@ inline String getCert()
 
 Get push certificate returned by server after login. 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="getCert" %}{% endlanying_code_snippet %}
+```
 ### function status
 
 ```java
@@ -169,6 +205,10 @@ Push the current state of sdk.
 
 **Return**: [PushSdkStatus]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="status" %}{% endlanying_code_snippet %}
+```
 ### function bindDeviceToken
 
 ```java
@@ -186,6 +226,10 @@ Push binding device token.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="bindDeviceToken" %}{% endlanying_code_snippet %}
+```
 ### function bindVoipToken
 
 ```java
@@ -203,6 +247,10 @@ Bind voiptoken of push device
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="bindVoipToken" %}{% endlanying_code_snippet %}
+```
 ### function getPushProfile
 
 ```java
@@ -222,6 +270,10 @@ Get push user details, force pull from server-side if forceRefresh == true
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="getPushProfile" %}{% endlanying_code_snippet %}
+```
 ### function setTags
 
 ```java
@@ -241,6 +293,10 @@ Set tags of push user.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setTags" %}{% endlanying_code_snippet %}
+```
 ### function getTags
 
 ```java
@@ -260,6 +316,10 @@ Get tags of the push user.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="getTags" %}{% endlanying_code_snippet %}
+```
 ### function deleteTags
 
 ```java
@@ -279,6 +339,10 @@ Delete tags of the push user.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="deleteTags" %}{% endlanying_code_snippet %}
+```
 ### function clearTags
 
 ```java
@@ -296,6 +360,10 @@ Clear tags of the push user.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="clearTags" %}{% endlanying_code_snippet %}
+```
 ### function setBadge
 
 ```java
@@ -313,6 +381,10 @@ Set unread badge for push user.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setBadge" %}{% endlanying_code_snippet %}
+```
 ### function setPushMode
 
 ```java
@@ -330,6 +402,10 @@ Set push enabled state. Default enabled.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setPushMode" %}{% endlanying_code_snippet %}
+```
 ### function setPushMode
 
 ```java
@@ -337,6 +413,10 @@ inline BMXErrorCode setPushMode()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setPushMode" %}{% endlanying_code_snippet %}
+```
 ### function setPushTime
 
 ```java
@@ -356,6 +436,10 @@ Set allowed push time.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setPushTime" %}{% endlanying_code_snippet %}
+```
 ### function setSilenceTime
 
 ```java
@@ -375,6 +459,10 @@ Set the start and end time of silent push.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setSilenceTime" %}{% endlanying_code_snippet %}
+```
 ### function setRunBackgroundMode
 
 ```java
@@ -392,6 +480,10 @@ Set whether to run push in background, default false.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+```
 ### function setRunBackgroundMode
 
 ```java
@@ -399,6 +491,10 @@ inline BMXErrorCode setRunBackgroundMode()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+```
 ### function setGeoFenceMode
 
 ```java
@@ -418,6 +514,10 @@ Set whether to run push geo-fencing feature.
 
 **Return**: [BMXErrorCode]
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+```
 ### function setGeoFenceMode
 
 ```java
@@ -427,6 +527,10 @@ inline BMXErrorCode setGeoFenceMode(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+```
 ### function setGeoFenceMode
 
 ```java
@@ -434,6 +538,10 @@ inline BMXErrorCode setGeoFenceMode()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+```
 ### function clearNotification
 
 ```java
@@ -449,6 +557,10 @@ Clear notifications for the specified id.
   * **notificationId** Notification id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="clearNotification" %}{% endlanying_code_snippet %}
+```
 ### function clearAllNotifications
 
 ```java
@@ -456,6 +568,10 @@ inline void clearAllNotifications()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+```
 ### function sendMessage
 
 ```java
@@ -471,6 +587,10 @@ Send a push uplink message and notify the listener of a change in message status
   * **content** Sent uplink push content 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="sendMessage" %}{% endlanying_code_snippet %}
+```
 ### function loadLocalPushMessages
 
 ```java
@@ -492,6 +612,10 @@ Load push message stored in local database. Start with latest message if not spe
   * **arg3** Direction of loading pushes, default to load earlier messages 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+```
 ### function loadLocalPushMessages
 
 ```java
@@ -503,6 +627,10 @@ inline BMXErrorCode loadLocalPushMessages(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+```
 ### function addPushListener
 
 ```java
@@ -518,6 +646,10 @@ Add push listener
   * **listener** Push listener 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="addPushListener" %}{% endlanying_code_snippet %}
+```
 ### function removePushListener
 
 ```java
@@ -535,6 +667,10 @@ Remove push listener
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="removePushListener" %}{% endlanying_code_snippet %}
+```
 ### function BMXPushService
 
 ```java
@@ -545,6 +681,10 @@ inline BMXPushService(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="BMXPushService" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -552,6 +692,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -570,6 +714,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXPushService",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

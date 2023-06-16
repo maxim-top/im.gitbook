@@ -107,6 +107,10 @@ BMXImageAttachment(
   * **displayName** 展示名 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="BMXImageAttachment" %}{% endlanying_code_snippet %}
+```
 ### function BMXImageAttachment
 
 ```cpp
@@ -128,6 +132,10 @@ BMXImageAttachment(
   * **fileLength** 文件大小 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="BMXImageAttachment" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXImageAttachment
 
 ```cpp
@@ -136,6 +144,10 @@ inline virtual ~BMXImageAttachment()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="~BMXImageAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -149,6 +161,10 @@ inline virtual Type type() const
 **Reimplements**: [floo::BMXFileAttachment::type](classfloo_1_1_b_m_x_file_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```cpp
@@ -162,6 +178,10 @@ virtual BMXMessageAttachmentPtr clone() const
 **Reimplements**: [floo::BMXFileAttachment::clone](classfloo_1_1_b_m_x_file_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 ### function size
 
 ```cpp
@@ -172,6 +192,10 @@ const Size & size() const
 
 **Return**: Size 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="size" %}{% endlanying_code_snippet %}
+```
 ### function thumbnailUrl
 
 ```cpp
@@ -182,6 +206,10 @@ const std::string & thumbnailUrl() const
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="thumbnailUrl" %}{% endlanying_code_snippet %}
+```
 ### function setThumbnail
 
 ```cpp
@@ -197,6 +225,10 @@ void setThumbnail(
   * **path** 本地路径 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="setThumbnail" %}{% endlanying_code_snippet %}
+```
 ### function thumbnailPath
 
 ```cpp
@@ -207,6 +239,10 @@ const std::string & thumbnailPath() const
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="thumbnailPath" %}{% endlanying_code_snippet %}
+```
 ### function thumbnailDownloadStatus
 
 ```cpp
@@ -237,6 +273,10 @@ friend class Decoder< BMXImageAttachment >(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

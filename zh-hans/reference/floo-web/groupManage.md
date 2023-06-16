@@ -8,7 +8,7 @@
     * [.asyncGetJoinedGroups(froce)](#module_groupmanage__asyncgetjoinedgroups) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.openGroup(group_id)](#module_groupmanage__opengroup)
     * [.getAllGroupDetail()](#module_groupmanage__getallgroupdetail) ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code>
-    * [.asyncGetGroupMembers(group_id)](#module_groupmanage__asyncgetgroupmembers) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code>
+    * [.asyncGetGroupMembers(group_id)](#module_groupmanage__asyncgetgroupmembers) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
     * [.getGroupMembers(group_id)](#module_groupmanage__getgroupmembers) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember)
     * [.asyncGetGroupListDetail(gids)](#module_groupmanage__asyncgetgrouplistdetail) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code>
     * [.getGruopMessage(gid)](#module_groupmanage__getgruopmessage) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta)
@@ -72,6 +72,10 @@
 | group_id | <code>number</code> | 群ID |
 | froce | <code>boolean</code> | 是否强制从服务器拉取： true - 从服务器拉取， false - 优先从本地存储获取 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupInfo" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetJoinedGroups(froce) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetjoinedgroups}
 获取加入的群组
 
@@ -82,6 +86,10 @@
 | --- | --- | --- |
 | froce | <code>boolean</code> | 是否强制从服务器拉取： true - 从服务器拉取， false - 优先从本地存储获取 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetJoinedGroups" %}{% endlanying_code_snippet %}
+```
 ### groupManage.openGroup(group_id) {#module_groupmanage__opengroup}
 打开群组， 此方法会准备群组聊天界面的一些必备信息。
 
@@ -91,21 +99,33 @@
 | --- | --- | --- |
 | group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="openGroup" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getAllGroupDetail() ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> {#module_groupmanage__getallgroupdetail}
 获取缓存的所有群组详情
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 **Returns**: <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> - 群组详情  
-### groupManage.asyncGetGroupMembers(group_id) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetgroupmembers}
-获取群组成员（异步）
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getAllGroupDetail" %}{% endlanying_code_snippet %}
+```
+### groupManage.asyncGetGroupMembers(group_id) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetgroupmembers}
+获取群组成员ID列表（异步）
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
-**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - 群成员列表  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - 群成员ID列表  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupMembers" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getGroupMembers(group_id) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember) {#module_groupmanage__getgroupmembers}
 获取群组成员（同步）
 
@@ -116,6 +136,10 @@
 | --- | --- | --- |
 | group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getGroupMembers" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetGroupListDetail(gids) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code> {#module_groupmanage__asyncgetgrouplistdetail}
 按id获取群组详情
 
@@ -126,6 +150,10 @@
 | --- | --- | --- |
 | gids | <code>Array.&lt;number&gt;</code> | 群组ID列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupListDetail" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getGruopMessage(gid) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta) {#module_groupmanage__getgruopmessage}
 获取群消息
 
@@ -136,6 +164,10 @@
 | --- | --- | --- |
 | gid | <code>number</code> | 群ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getGruopMessage" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetInfo(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asyncgetinfo}
 获取群组详情
 
@@ -147,6 +179,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetInfo" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetMemberList(param) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetmemberlist}
 获取群成员列表
 
@@ -158,6 +194,10 @@
 | param | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetMemberList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.readGroupMessage(group_id, mid) {#module_groupmanage__readgroupmessage}
 将群消息设置已读
 
@@ -168,6 +208,10 @@
 | group_id | <code>number</code> | 群组ID |
 | mid | <code>number</code> | 消息ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="readGroupMessage" %}{% endlanying_code_snippet %}
+```
 ### groupManage.recallMessage(uid, mid) {#module_groupmanage__recallmessage}
 撤回消息
 
@@ -178,6 +222,10 @@
 | uid | <code>number</code> | 群组ID |
 | mid | <code>number</code> | 消息ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="recallMessage" %}{% endlanying_code_snippet %}
+```
 ### groupManage.getUnreadCount(gid) ⇒ <code>number</code> {#module_groupmanage__getunreadcount}
 获取群未读消息数
 
@@ -188,6 +236,10 @@
 | --- | --- | --- |
 | gid | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetAdminList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetadminlist}
 获取群管理员列表
 
@@ -199,6 +251,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAdminList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAdminAdd(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncadminadd}
 群添加管理员
 
@@ -211,6 +267,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAdminAdd" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAdminRemove(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncadminremove}
 移除管理员
 
@@ -223,6 +283,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAdminRemove" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetAnouncementById(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) {#module_groupmanage__asyncgetanouncementbyid}
 获取群公告详情
 
@@ -235,6 +299,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.announcement_id | <code>Array.&lt;number&gt;</code> | 公告ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAnouncementById" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAnouncementDelete(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncanouncementdelete}
 删除群公告
 
@@ -247,6 +315,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.announcement_id | <code>Array.&lt;number&gt;</code> | 公告ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAnouncementDelete" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncAnnouncementEdit(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) {#module_groupmanage__asyncannouncementedit}
 编辑群公告
 
@@ -260,6 +332,10 @@
 | params.title | <code>string</code> | 公告标题 |
 | params.content | <code>string</code> | 公告内容 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAnnouncementEdit" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetAnnouncementList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code> {#module_groupmanage__asyncgetannouncementlist}
 群公告列表
 
@@ -271,6 +347,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAnnouncementList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncCreate(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asynccreate}
 创建群组
 
@@ -281,6 +361,10 @@
 | --- | --- | --- |
 | params | [<code>GroupInfoRequest</code>](types.md#module_types__groupinforequest) | 请求参数 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncCreate" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncDestroy(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncdestroy}
 解散群组
 
@@ -292,6 +376,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncDestroy" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateAvatar(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateavatar}
 更新群头像
 
@@ -304,6 +392,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>string</code> | 头像地址 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAvatar" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateDescription(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatedescription}
 更新群描述
 
@@ -316,6 +408,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>string</code> | 群组描述 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateDescription" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateExt(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateext}
 更新群扩展信息
 
@@ -328,6 +424,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>string</code> | 扩展信息 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateExt" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatename}
 更新群名称
 
@@ -340,6 +440,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>string</code> | 群名称 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateName" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupMsgMutemode(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncgroupmsgmutemode}
 设置群消息免打扰情况
 
@@ -352,6 +456,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.msg_mute_mode | <code>number</code> | 群消息屏蔽模式: 0 - 表示不屏蔽, 1 - 表示屏蔽本地消息通知, 2 - 表示屏蔽消息，不接收消息 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupMsgMutemode" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBannedList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code> {#module_groupmanage__asyncgroupbannedlist}
 获取群禁言列表
 
@@ -363,6 +471,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBannedList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBab(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupbab}
 禁言群成员
 
@@ -373,6 +485,10 @@
 | --- | --- | --- |
 | params | [<code>GroupBannedMemberRequest</code>](types.md#module_types__groupbannedmemberrequest) | 请求参数 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBab" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupUnban(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupunban}
 解除成员禁言
 
@@ -385,6 +501,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupUnban" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetSettings(group_id) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asyncgetsettings}
 获取群设置
 
@@ -395,6 +515,10 @@
 | --- | --- | --- |
 | group_id | <code>number</code> | 群ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetSettings" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateAllowMemberInvitation(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateallowmemberinvitation}
 设置群成员是否可以邀请
 
@@ -407,6 +531,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>boolean</code> | 群成员邀请设置: false - 不允许邀请, true - 允许邀请(默认) |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAllowMemberInvitation" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateAllowMemberModify(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateallowmembermodify}
 设置群成员是否可以修改群信息
 
@@ -419,6 +547,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>boolean</code> | 群成员修改群信息设置:  false - 群成员不能修改群信息(默认), true - 群成员可以修改群信息 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAllowMemberModify" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateEnableReadack(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateenablereadack}
 设置群是否开启已读模式
 
@@ -431,6 +563,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>boolean</code> | 是否开启群消息已读功能:  false - 不开启, true - 开启 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateEnableReadack" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateHistoryVisible(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatehistoryvisible}
 设置群历史是否可见
 
@@ -443,6 +579,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>boolean</code> | 设置群历史是否可见:  false - 不可见, true - 可见 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateHistoryVisible" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateRequireadminapproval(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdaterequireadminapproval}
 设置入群是否需要申请
 
@@ -455,6 +595,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.apply_approval | <code>boolean</code> | 入群申请审批设置, 0:同意所有申请 1:需要管理员确认 2:拒绝所有申请 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateRequireadminapproval" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncBanAll(params) ⇒ [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types__groupbanallresponse) {#module_groupmanage__asyncbanall}
 全员禁言，只允许管理员发消息
 
@@ -467,6 +611,10 @@
 | params.duration | <code>number</code> | 禁言时长，单位为分钟,int64 |
 | params.group_id | <code>number</code> | 群id,int64 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncBanAll" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUnBanAll(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncunbanall}
 取消全员禁言
 
@@ -478,6 +626,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群id,int64 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUnBanAll" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncOwnerTransfer(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncownertransfer}
 更换群主
 
@@ -490,6 +642,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.new_owner | <code>number</code> | 新群主的用户ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncOwnerTransfer" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetUserJoined(params) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetuserjoined}
 获取用户的群组列表
 
@@ -500,6 +656,10 @@
 | --- | --- | --- |
 | params | <code>object</code> | 参数, 空对象 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetUserJoined" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncApply(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncapply}
 申请加入群
 
@@ -512,6 +672,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.reason | <code>string</code> | 申请入群原因 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncApply" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncApplyHandle(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncapplyhandle}
 处理用户的入群申请
 
@@ -525,6 +689,10 @@
 | params.user_id | <code>number</code> | 用户ID |
 | params.approval | <code>boolean</code> | 审批结果：true为同意，false为拒绝 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncApplyHandle" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBockedlist(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code> {#module_groupmanage__asyncgroupbockedlist}
 获取群黑名单
 
@@ -536,6 +704,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBockedlist" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupBlock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupblock}
 将成员加入黑名单
 
@@ -548,6 +720,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBlock" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGroupUnblock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupunblock}
 解除黑名单
 
@@ -560,6 +736,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupUnblock" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncKick(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asynckick}
 踢出群组
 
@@ -572,11 +752,19 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncKick" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetInvitationList() ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> {#module_groupmanage__asyncgetinvitationlist}
 获取群邀请列表
 
 **Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 **Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> - 群邀请列表  
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetInvitationList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncInvite(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncinvite}
 邀请成员加入群
 
@@ -589,6 +777,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncInvite" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncInviteHandle(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncinvitehandle}
 处理群邀请
 
@@ -602,6 +794,10 @@
 | params.user_id | <code>number</code> | 用户ID |
 | params.approval | <code>boolean</code> | 审批结果：true为同意，false为拒绝 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncInviteHandle" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetMemberDisplayName(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetmemberdisplayname}
 批量获取群成员的群名片
 
@@ -614,6 +810,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.user_list | <code>Array.&lt;number&gt;</code> | 群成员列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetMemberDisplayName" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncLeave(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncleave}
 退出群
 
@@ -625,6 +825,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncLeave" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncUpdateDisplayName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatedisplayname}
 修改群名片
 
@@ -637,6 +841,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.value | <code>string</code> | 新名片 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateDisplayName" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asncGetApplicationList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code> {#module_groupmanage__asncgetapplicationlist}
 获取群申请列表
 
@@ -648,6 +856,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_list | <code>Array.&lt;number&gt;</code> | 群列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asncGetApplicationList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncGetFileList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage__asyncgetfilelist}
 获取群文件列表
 
@@ -659,6 +871,10 @@
 | params | <code>object</code> | 参数 |
 | params.group_id | <code>number</code> | 群组ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetFileList" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncFileDelete(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code> {#module_groupmanage__asyncfiledelete}
 删除群文件
 
@@ -671,6 +887,10 @@
 | params.group_id | <code>number</code> | 群组ID |
 | params.file_list | <code>Array.&lt;number&gt;</code> | 文件ID列表 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncFileDelete" %}{% endlanying_code_snippet %}
+```
 ### groupManage.asyncFileUpload(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage__asyncfileupload}
 上传群文件
 
@@ -685,3 +905,8 @@
 | params.size | <code>number</code> | 文件大小,int64 |
 | params.type | <code>string</code> | 文件类型 |
 | params.url | <code>string</code> | 文件url |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncFileUpload" %}{% endlanying_code_snippet %}
+```

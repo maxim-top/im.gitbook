@@ -154,6 +154,10 @@ virtual ~BMXMessage()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="~BMXMessage" %}{% endlanying_code_snippet %}
+```
 ### function msgId
 
 ```cpp
@@ -164,6 +168,10 @@ int64_t msgId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="msgId" %}{% endlanying_code_snippet %}
+```
 ### function clientMsgId
 
 ```cpp
@@ -174,6 +182,10 @@ int64_t clientMsgId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="clientMsgId" %}{% endlanying_code_snippet %}
+```
 ### function fromId
 
 ```cpp
@@ -184,6 +196,10 @@ int64_t fromId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="fromId" %}{% endlanying_code_snippet %}
+```
 ### function toId
 
 ```cpp
@@ -194,6 +210,10 @@ int64_t toId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="toId" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -204,6 +224,10 @@ MessageType type()
 
 **Return**: MessageType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="type" %}{% endlanying_code_snippet %}
+```
 ### function conversationId
 
 ```cpp
@@ -214,6 +238,10 @@ int64_t conversationId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="conversationId" %}{% endlanying_code_snippet %}
+```
 ### function deliveryStatus
 
 ```cpp
@@ -224,6 +252,10 @@ DeliveryStatus deliveryStatus()
 
 **Return**: DeliveryStatus 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="deliveryStatus" %}{% endlanying_code_snippet %}
+```
 ### function setDeliveryStatus
 
 ```cpp
@@ -234,6 +266,10 @@ void setDeliveryStatus(
 
 设置消息投递状态 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setDeliveryStatus" %}{% endlanying_code_snippet %}
+```
 ### function serverTimestamp
 
 ```cpp
@@ -244,6 +280,10 @@ int64_t serverTimestamp()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="serverTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function setServerTimestamp
 
 ```cpp
@@ -254,6 +294,10 @@ void setServerTimestamp(
 
 设置时间戳（服务端收到时的时间） 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setServerTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function clientTimestamp
 
 ```cpp
@@ -264,6 +308,10 @@ int64_t clientTimestamp()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="clientTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function setClientTimestamp
 
 ```cpp
@@ -274,6 +322,10 @@ void setClientTimestamp(
 
 设置消息本地时间戳 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setClientTimestamp" %}{% endlanying_code_snippet %}
+```
 ### function isPlayed
 
 ```cpp
@@ -284,6 +336,10 @@ bool isPlayed()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isPlayed" %}{% endlanying_code_snippet %}
+```
 ### function setIsPlayed
 
 ```cpp
@@ -294,6 +350,10 @@ void setIsPlayed(
 
 设置语音或者视频消息是否播放过，仅对收到的音视频消息有效 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsPlayed" %}{% endlanying_code_snippet %}
+```
 ### function isPlayAcked
 
 ```cpp
@@ -304,6 +364,10 @@ bool isPlayAcked()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isPlayAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsPlayAcked
 
 ```cpp
@@ -314,6 +378,10 @@ void setIsPlayAcked(
 
 设置已播放回执 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsPlayAcked" %}{% endlanying_code_snippet %}
+```
 ### function isReceiveMsg
 
 ```cpp
@@ -324,6 +392,10 @@ bool isReceiveMsg()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isReceiveMsg" %}{% endlanying_code_snippet %}
+```
 ### function setIsReceiveMsg
 
 ```cpp
@@ -334,6 +406,10 @@ void setIsReceiveMsg(
 
 设置是否接收的消息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsReceiveMsg" %}{% endlanying_code_snippet %}
+```
 ### function isRead
 
 ```cpp
@@ -344,6 +420,10 @@ bool isRead()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isRead" %}{% endlanying_code_snippet %}
+```
 ### function setIsRead
 
 ```cpp
@@ -354,6 +434,10 @@ void setIsRead(
 
 消息是否已读标志 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsRead" %}{% endlanying_code_snippet %}
+```
 ### function isReadAcked
 
 ```cpp
@@ -364,6 +448,10 @@ bool isReadAcked()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isReadAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsReadAcked
 
 ```cpp
@@ -374,6 +462,10 @@ void setIsReadAcked(
 
 设置已读回执 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsReadAcked" %}{% endlanying_code_snippet %}
+```
 ### function isDeliveryAcked
 
 ```cpp
@@ -384,6 +476,10 @@ bool isDeliveryAcked()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
+```
 ### function setIsDeliveryAcked
 
 ```cpp
@@ -394,6 +490,10 @@ void setIsDeliveryAcked(
 
 设置投递回执 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setIsDeliveryAcked" %}{% endlanying_code_snippet %}
+```
 ### function content
 
 ```cpp
@@ -404,6 +504,10 @@ const std::string & content()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="content" %}{% endlanying_code_snippet %}
+```
 ### function setContent
 
 ```cpp
@@ -419,6 +523,10 @@ void setContent(
   * **content** 消息文本内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setContent" %}{% endlanying_code_snippet %}
+```
 ### function contentType
 
 ```cpp
@@ -429,6 +537,10 @@ ContentType contentType()
 
 **Return**: ContentType 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="contentType" %}{% endlanying_code_snippet %}
+```
 ### function attachment
 
 ```cpp
@@ -439,6 +551,10 @@ BMXMessageAttachmentPtr attachment()
 
 **Return**: BMXMessageAttachmentPtr 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="attachment" %}{% endlanying_code_snippet %}
+```
 ### function config
 
 ```cpp
@@ -449,6 +565,10 @@ BMXMessageConfigPtr config()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="config" %}{% endlanying_code_snippet %}
+```
 ### function setConfig
 
 ```cpp
@@ -459,6 +579,10 @@ void setConfig(
 
 设置消息配置信息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setConfig" %}{% endlanying_code_snippet %}
+```
 ### function extension
 
 ```cpp
@@ -469,6 +593,10 @@ const JSON & extension()
 
 **Return**: JSON(std::string) 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="extension" %}{% endlanying_code_snippet %}
+```
 ### function setExtension
 
 ```cpp
@@ -479,6 +607,10 @@ void setExtension(
 
 设置消息扩展信息 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setExtension" %}{% endlanying_code_snippet %}
+```
 ### function deliveryQos
 
 ```cpp
@@ -489,6 +621,10 @@ DeliveryQos deliveryQos()
 
 **Return**: DeliveryQos 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="deliveryQos" %}{% endlanying_code_snippet %}
+```
 ### function setDeliveryQos
 
 ```cpp
@@ -504,6 +640,10 @@ void setDeliveryQos(
   * **qos** 消息投递QOS 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setDeliveryQos" %}{% endlanying_code_snippet %}
+```
 ### function senderName
 
 ```cpp
@@ -514,6 +654,10 @@ const std::string & senderName()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="senderName" %}{% endlanying_code_snippet %}
+```
 ### function setSenderName
 
 ```cpp
@@ -529,6 +673,10 @@ void setSenderName(
   * **senderName** 消息文本内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setSenderName" %}{% endlanying_code_snippet %}
+```
 ### function groupAckCount
 
 ```cpp
@@ -539,6 +687,10 @@ int groupAckCount()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupAckCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupAckCount
 
 ```cpp
@@ -554,6 +706,10 @@ void setGroupAckCount(
   * **count** 设置群消息已读数目 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupAckCount" %}{% endlanying_code_snippet %}
+```
 ### function groupAckUnreadCount
 
 ```cpp
@@ -564,6 +720,10 @@ int groupAckUnreadCount()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupAckUnreadCount
 
 ```cpp
@@ -579,6 +739,10 @@ void setGroupAckUnreadCount(
   * **count** 设置群消息未读数目 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function groupAckReadAll
 
 ```cpp
@@ -589,6 +753,10 @@ bool groupAckReadAll()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupAckReadAll" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckCount
 
 ```cpp
@@ -599,6 +767,10 @@ int groupPlayAckCount()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupPlayAckCount
 
 ```cpp
@@ -614,6 +786,10 @@ void setGroupPlayAckCount(
   * **count** 设置群消息已读数目 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupPlayAckCount" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckUnreadCount
 
 ```cpp
@@ -624,6 +800,10 @@ int groupPlayAckUnreadCount()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function setGroupPlayAckUnreadCount
 
 ```cpp
@@ -639,6 +819,10 @@ void setGroupPlayAckUnreadCount(
   * **count** 设置群消息未播放数目 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setGroupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+```
 ### function groupPlayAckReadAll
 
 ```cpp
@@ -649,6 +833,10 @@ bool groupPlayAckReadAll()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
+```
 ### function setPriority
 
 ```cpp
@@ -667,6 +855,10 @@ void setPriority(
 取值范围0-10。普通人在聊天室发送的消息级别默认为5，可以丢弃。管理员默认为0不会丢弃。其它值可以根据业务自行设置。 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setPriority" %}{% endlanying_code_snippet %}
+```
 ### function priority
 
 ```cpp
@@ -677,6 +869,10 @@ int priority()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="priority" %}{% endlanying_code_snippet %}
+```
 ### function setPushMessageMode
 
 ```cpp
@@ -687,6 +883,10 @@ void setPushMessageMode(
 
 设置消息是否为推送消息。 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="setPushMessageMode" %}{% endlanying_code_snippet %}
+```
 ### function isPushMessage
 
 ```cpp
@@ -697,6 +897,10 @@ bool isPushMessage()
 
 **Return**: bool 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="isPushMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -720,6 +924,10 @@ static BMXMessagePtr createMessage(
   * **content** 消息内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -743,6 +951,10 @@ static BMXMessagePtr createMessage(
   * **attachment** 附件 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createCommandMessage
 
 ```cpp
@@ -766,6 +978,10 @@ static BMXMessagePtr createCommandMessage(
   * **content** 消息内容 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -793,6 +1009,10 @@ static BMXMessagePtr createMessage(
   * **serverTimestamp** 服务器时间戳 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createMessage
 
 ```cpp
@@ -820,6 +1040,10 @@ static BMXMessagePtr createMessage(
   * **serverTimestamp** 服务器时间戳 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
+```
 ### function createCommandMessage
 
 ```cpp
@@ -847,6 +1071,10 @@ static BMXMessagePtr createCommandMessage(
   * **serverTimestamp** 服务器时间戳 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
+```
 ### function createForwardMessage
 
 ```cpp
@@ -870,6 +1098,10 @@ static BMXMessagePtr createForwardMessage(
   * **conversationId** 会话id 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessage",function="createForwardMessage" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

@@ -57,6 +57,10 @@ inline BMXForwardAttachment()
 
 构造函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="BMXForwardAttachment" %}{% endlanying_code_snippet %}
+```
 ### function ~BMXForwardAttachment
 
 ```cpp
@@ -65,6 +69,10 @@ inline virtual ~BMXForwardAttachment()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="~BMXForwardAttachment" %}{% endlanying_code_snippet %}
+```
 ### function type
 
 ```cpp
@@ -78,6 +86,10 @@ inline virtual Type type() const
 **Reimplements**: [floo::BMXMessageAttachment::type](classfloo_1_1_b_m_x_message_attachment.md#function-type)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="type" %}{% endlanying_code_snippet %}
+```
 ### function clone
 
 ```cpp
@@ -91,6 +103,10 @@ virtual BMXMessageAttachmentPtr clone() const
 **Reimplements**: [floo::BMXMessageAttachment::clone](classfloo_1_1_b_m_x_message_attachment.md#function-clone)
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="clone" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

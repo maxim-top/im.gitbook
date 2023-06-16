@@ -49,6 +49,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function MessagePushSetting
 
 ```java
@@ -56,6 +60,10 @@ inline MessagePushSetting()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="MessagePushSetting" %}{% endlanying_code_snippet %}
+```
 ### function setMPushEnabled
 
 ```java
@@ -65,6 +73,10 @@ inline void setMPushEnabled(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="setMPushEnabled" %}{% endlanying_code_snippet %}
+```
 ### function getMPushEnabled
 
 ```java
@@ -72,6 +84,10 @@ inline boolean getMPushEnabled()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="getMPushEnabled" %}{% endlanying_code_snippet %}
+```
 ### function setMSilenceStartTime
 
 ```java
@@ -81,6 +97,10 @@ inline void setMSilenceStartTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="setMSilenceStartTime" %}{% endlanying_code_snippet %}
+```
 ### function getMSilenceStartTime
 
 ```java
@@ -88,6 +108,10 @@ inline int getMSilenceStartTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="getMSilenceStartTime" %}{% endlanying_code_snippet %}
+```
 ### function setMSilenceEndTime
 
 ```java
@@ -97,6 +121,10 @@ inline void setMSilenceEndTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="setMSilenceEndTime" %}{% endlanying_code_snippet %}
+```
 ### function getMSilenceEndTime
 
 ```java
@@ -104,6 +132,10 @@ inline int getMSilenceEndTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="getMSilenceEndTime" %}{% endlanying_code_snippet %}
+```
 ### function setMPushStartTime
 
 ```java
@@ -113,6 +145,10 @@ inline void setMPushStartTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="setMPushStartTime" %}{% endlanying_code_snippet %}
+```
 ### function getMPushStartTime
 
 ```java
@@ -120,6 +156,10 @@ inline int getMPushStartTime()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="getMPushStartTime" %}{% endlanying_code_snippet %}
+```
 ### function setMPushEndTime
 
 ```java
@@ -129,6 +169,10 @@ inline void setMPushEndTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="setMPushEndTime" %}{% endlanying_code_snippet %}
+```
 ### function getMPushEndTime
 
 ```java
@@ -138,6 +182,10 @@ inline int getMPushEndTime()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="getMPushEndTime" %}{% endlanying_code_snippet %}
+```
 ### function MessagePushSetting
 
 ```java
@@ -148,6 +196,10 @@ inline MessagePushSetting(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="MessagePushSetting" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -155,6 +207,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -173,6 +229,10 @@ transient boolean swigCMemOwn;
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="MessagePushSetting",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

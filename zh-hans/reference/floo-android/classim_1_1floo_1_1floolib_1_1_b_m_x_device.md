@@ -39,6 +39,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function deviceSN
 
 ```java
@@ -49,6 +53,10 @@ inline int deviceSN()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="deviceSN" %}{% endlanying_code_snippet %}
+```
 ### function userId
 
 ```java
@@ -59,6 +67,10 @@ inline long userId()
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="userId" %}{% endlanying_code_snippet %}
+```
 ### function platform
 
 ```java
@@ -69,6 +81,10 @@ inline int platform()
 
 **Return**: int 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="platform" %}{% endlanying_code_snippet %}
+```
 ### function userAgent
 
 ```java
@@ -79,6 +95,10 @@ inline String userAgent()
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="userAgent" %}{% endlanying_code_snippet %}
+```
 ### function setUserAgent
 
 ```java
@@ -94,6 +114,10 @@ inline void setUserAgent(
   * **userAgent** 用户代理信息 
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="setUserAgent" %}{% endlanying_code_snippet %}
+```
 ### function isCurrentDevice
 
 ```java
@@ -106,6 +130,10 @@ inline boolean isCurrentDevice()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="isCurrentDevice" %}{% endlanying_code_snippet %}
+```
 ### function BMXDevice
 
 ```java
@@ -116,6 +144,10 @@ inline BMXDevice(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="BMXDevice" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -123,6 +155,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -132,6 +168,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXDevice",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

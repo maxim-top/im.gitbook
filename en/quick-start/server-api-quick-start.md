@@ -1,6 +1,6 @@
 # Server API Development Guide
 
-This page is for quick integration, visit [detailed documentation](../reference/server-api/README.md)
+This page is for quick integration, visit [detailed documentation](../reference/server-api/README.md), or visit the [Swagger page](https://docs.lanyingim.com/en/reference/server-api/swagger/) directly.
 
 ## Getting started
 

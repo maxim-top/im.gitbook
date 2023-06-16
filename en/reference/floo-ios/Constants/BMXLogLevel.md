@@ -1,31 +1,36 @@
 # BMXLogLevel Constants Reference
 
-  **Declared in** BMXDefines.h  
+  **Declared in** floo_proxy.h  
 
 ### BMXLogLevel
 
+Log level
+
 #### Definition
-    typedef NS_ENUM(NSUInteger, BMXLogLevel ) {   
+    typedef NS_ENUM(NSInteger, BMXLogLevel ) {   
         
-        BMXLogLevelError,
+        BMXLogLevel_Error,
         
-        BMXLogLevelWarning,
+        BMXLogLevel_Warning,
         
-        BMXLogLevelDebug,
+        BMXLogLevel_Debug,
         
     };
 
 #### Constants
 
-<a name="" title="BMXLogLevelError"></a><code>BMXLogLevelError</code>
+<a name="" title="BMXLogLevel_Error"></a><code>BMXLogLevel_Error</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXLogLevelWarning"></a><code>BMXLogLevelWarning</code>
+<a name="" title="BMXLogLevel_Warning"></a><code>BMXLogLevel_Warning</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
 
-<a name="" title="BMXLogLevelDebug"></a><code>BMXLogLevelDebug</code>
+<a name="" title="BMXLogLevel_Debug"></a><code>BMXLogLevel_Debug</code>
 
-   Declared In `BMXDefines.h`.
+   Declared In `floo_proxy.h`.
+
+#### Declared In
+`floo_proxy.h`
 

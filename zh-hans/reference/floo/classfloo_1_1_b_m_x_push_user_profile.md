@@ -41,6 +41,10 @@ inline virtual ~BMXPushUserProfile()
 
 析构函数 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="~BMXPushUserProfile" %}{% endlanying_code_snippet %}
+```
 ### function userId
 
 ```cpp
@@ -51,6 +55,10 @@ virtual int64_t userId() =0
 
 **Return**: int64_t 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="userId" %}{% endlanying_code_snippet %}
+```
 ### function pushAlias
 
 ```cpp
@@ -61,6 +69,10 @@ virtual std::string pushAlias() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="pushAlias" %}{% endlanying_code_snippet %}
+```
 ### function pushToken
 
 ```cpp
@@ -71,6 +83,10 @@ virtual std::string pushToken() =0
 
 **Return**: std::string 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="pushToken" %}{% endlanying_code_snippet %}
+```
 ### function messagePushSetting
 
 ```cpp
@@ -83,6 +99,10 @@ virtual const MessagePushSetting & messagePushSetting() =0
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="messagePushSetting" %}{% endlanying_code_snippet %}
+```
 ### function BMXPushUserProfile
 
 ```cpp
@@ -90,6 +110,10 @@ inline BMXPushUserProfile()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="BMXPushUserProfile" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

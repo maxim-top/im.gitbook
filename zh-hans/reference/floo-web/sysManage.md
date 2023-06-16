@@ -30,6 +30,10 @@
 | msg.ext | <code>string</code> &#124; <code>object</code> | 扩展字段 |
 | msg.attachment | <code>string</code> &#124; <code>object</code> | 附件信息 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendRosterMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.sendGroupMessage(msg) ⇒ <code>number</code> {#module_sysmanage__sendgroupmessage}
 发送群聊消息
 
@@ -46,6 +50,10 @@
 | msg.attachment | <code>string</code> &#124; <code>object</code> | 附件信息 |
 | msg.priority | <code>number</code> | 设置消息的扩散优先级，默认为0。0表示扩散，数字越小扩散的越多。 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendGroupMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.requireHistoryMessage(uid, sid, amount) {#module_sysmanage__requirehistorymessage}
 请求历史消息
 
@@ -57,6 +65,10 @@
 | sid | <code>number</code> | 消息ID: 从哪个消息向前拉取，传0表示从最新一条消息开始拉取。 |
 | amount | <code>number</code> | 拉取的条数 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="requireHistoryMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.sendMentionMessage(params) ⇒ <code>number</code> {#module_sysmanage__sendmentionmessage}
 群发送@消息
 
@@ -74,6 +86,10 @@
 | params.mentionedMessage | <code>string</code> | @消息的推送内容 |
 | params.senderNickname | <code>string</code> | 发送者昵称 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendMentionMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.sendInputStatusMessage(uid, status) ⇒ <code>number</code> {#module_sysmanage__sendinputstatusmessage}
 发送输入状态消息
 
@@ -85,6 +101,10 @@
 | uid | <code>number</code> | 会话ID |
 | status | <code>string</code> | 状态： nothing - 未输入， typing - 正在输入 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="sendInputStatusMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.forwardMessage(param) ⇒ <code>number</code> {#module_sysmanage__forwardmessage}
 转发消息
 
@@ -98,6 +118,10 @@
 | param.gid | <code>number</code> | 接收方群组ID（仅转发群聊时设置） |
 | param.mid | <code>number</code> | 要转发的消息ID |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="forwardMessage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.getMessageStatus(cid, mid, isGroup) ⇒ <code>string</code> {#module_sysmanage__getmessagestatus}
 获取消息的状态
 
@@ -110,6 +134,10 @@
 | mid | <code>number</code> |  | 消息ID |
 | isGroup | <code>boolean</code> | <code>false</code> | 是否是群聊 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="getMessageStatus" %}{% endlanying_code_snippet %}
+```
 ### sysManage.asyncFileUpload(param) ⇒ [<code>Promise.&lt;FileUploadResult&gt;</code>](types.md#module_types__fileuploadresult) {#module_sysmanage__asyncfileupload}
 上传文件
 
@@ -127,6 +155,10 @@
 | param.chatType | <code>number</code> | 聊天类型： roster - 单聊, group - 群聊 |
 | param.processCallback | [<code>fileUploadProgress</code>](types.md#module_types__fileuploadprogress) | 上传进度回调 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="asyncFileUpload" %}{% endlanying_code_snippet %}
+```
 ### sysManage.getImage(param) ⇒ <code>string</code> {#module_sysmanage__getimage}
 拼装图片路径
 
@@ -141,6 +173,10 @@
 | param.thumbnail | <code>boolean</code> | 是否缩略图：默认为true |
 | param.sdefault | <code>string</code> | 默认图片地址 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="getImage" %}{% endlanying_code_snippet %}
+```
 ### sysManage.deleteConversation(id, other_devices) {#module_sysmanage__deleteconversation}
 删除会话
 
@@ -151,6 +187,10 @@
 | id | <code>number</code> |  | 会话ID |
 | other_devices | <code>boolean</code> | <code>true</code> | 是否同时删除其它设备上的会话 |
 
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="sysManage",function="deleteConversation" %}{% endlanying_code_snippet %}
+```
 ### sysManage.asyncGetGroupAvatarUploadUrl(params) ⇒ [<code>Promise.&lt;FileUpload&gt;</code>](types.md#module_types__fileupload) {#module_sysmanage__asyncgetgroupavataruploadurl}
 获取上传群头像URL
 

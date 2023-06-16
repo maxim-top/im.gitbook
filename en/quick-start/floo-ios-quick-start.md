@@ -29,14 +29,12 @@ Hint: If cocoapods is not installed, please refer to [CocoaPods installation](ht
 
 ### Mode II: Manual integration
 
-1. [Download floo-ios.framework](https://package.lanyingim.com/floo-ios-v2.2.0.zip) , and then reference the file to your project.
+1. [Download floo-ios.framework](https://package.lanyingim.com/floo-ios.zip) , and then reference the file to your project.
 2.  Add system library dependencies
 
     Before importing SDK to your project, please add the following system library references.
 
-    * libsqlite3.tbd
     * libc++abi.tbd
-    * libsqlite3.tbd
     * libstdc++.tbd
     * libz.tbd
     * libc++.tbd
@@ -111,7 +109,7 @@ Pass the account password you obtained in the previous step into the -signInById
 Two login modes provided: One for normal manual login, and the other for quick login
 
 ```
-[[[BMXClient sharedClient] userService] signInById:userid password:password completion:^(BMXError *error) {
+[[BMXClient sharedClient] signInById:userid password:password completion:^(BMXError *error) {
         if (!error) {
             NSLog(@"Login successful username = %lld , password = %@",userid, password);
           } else {
@@ -119,14 +117,14 @@ Two login modes provided: One for normal manual login, and the other for quick l
         }
      }];
 
-     // Quick login needs no getting token
-     [[[BMXClient sharedClient] userService] fastSignInById: userid password:password  completion:^(BMXError *error) {
-         if (!error) {
-             NSLog(@"Registered username = %@ , password = %@", userid, password);
-         } else {
-             NSLog(@"Failed errorCode = %ld ", error.errorCode);
-         }
-      }];
+// Quick login without getting token
+[[BMXClient sharedClient] fastSignInById: userid password:password  completion:^(BMXError *error) {
+ if (!error) {
+     NSLog(@"Login successful username = %@ , password = %@", userid, password);
+ } else {
+     NSLog(@"Failed errorCode = %ld ", error.errorCode);
+ }
+}];
 ```
 
 ### IV. Conversation list function
@@ -211,7 +209,7 @@ devicetoken.When disconnected from Lanying IM server, remote push is stopped by 
 
 ### Single chat
 
-Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object.
+Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object. See demo code in [Message operation](#Message operation)
 
 ### Group chat
 

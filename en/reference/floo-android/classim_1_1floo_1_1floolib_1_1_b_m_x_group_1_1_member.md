@@ -40,6 +40,10 @@ inline synchronized void delete()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="delete" %}{% endlanying_code_snippet %}
+```
 ### function Member
 
 ```java
@@ -51,6 +55,10 @@ inline Member(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="Member" %}{% endlanying_code_snippet %}
+```
 ### function setMUid
 
 ```java
@@ -60,6 +68,10 @@ inline void setMUid(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="setMUid" %}{% endlanying_code_snippet %}
+```
 ### function getMUid
 
 ```java
@@ -67,6 +79,10 @@ inline long getMUid()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="getMUid" %}{% endlanying_code_snippet %}
+```
 ### function setMGroupNickname
 
 ```java
@@ -76,6 +92,10 @@ inline void setMGroupNickname(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="setMGroupNickname" %}{% endlanying_code_snippet %}
+```
 ### function getMGroupNickname
 
 ```java
@@ -83,6 +103,10 @@ inline String getMGroupNickname()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="getMGroupNickname" %}{% endlanying_code_snippet %}
+```
 ### function setMCreateTime
 
 ```java
@@ -92,6 +116,10 @@ inline void setMCreateTime(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="setMCreateTime" %}{% endlanying_code_snippet %}
+```
 ### function getMCreateTime
 
 ```java
@@ -101,6 +129,10 @@ inline long getMCreateTime()
 
 ## Protected Functions Documentation
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="getMCreateTime" %}{% endlanying_code_snippet %}
+```
 ### function Member
 
 ```java
@@ -111,6 +143,10 @@ inline Member(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="Member" %}{% endlanying_code_snippet %}
+```
 ### function finalize
 
 ```java
@@ -118,6 +154,10 @@ inline void finalize()
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="finalize" %}{% endlanying_code_snippet %}
+```
 ### function getCPtr
 
 ```java
@@ -127,6 +167,10 @@ static inline long getCPtr(
 ```
 
 
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="Member",function="getCPtr" %}{% endlanying_code_snippet %}
+```
 -------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

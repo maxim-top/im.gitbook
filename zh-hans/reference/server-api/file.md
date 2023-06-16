@@ -83,10 +83,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ download_url | string |  |
-|⇥ oss_body_param | object |  |
-|⇥ upload_method | string |  |
-|⇥ upload_url | string |  |
+|⇥ download_url | string | 下载地址 |
+|⇥ oss_body_param | object | 上传时需要设置的OSS参数 |
+|⇥ upload_method | string | 上传方式: POST/PUT |
+|⇥ upload_url | string | 上传地址 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -110,10 +110,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ download_url | string |  |
-|⇥ oss_body_param | object |  |
-|⇥ upload_method | string |  |
-|⇥ upload_url | string |  |
+|⇥ download_url | string | 下载地址 |
+|⇥ oss_body_param | object | 上传时需要设置的OSS参数 |
+|⇥ upload_method | string | 上传方式: POST/PUT |
+|⇥ upload_url | string | 上传地址 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
@@ -144,10 +144,10 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
-|⇥ download_url | string |  |
-|⇥ oss_body_param | object |  |
-|⇥ upload_method | string |  |
-|⇥ upload_url | string |  |
+|⇥ download_url | string | 下载地址 |
+|⇥ oss_body_param | object | 上传时需要设置的OSS参数 |
+|⇥ upload_method | string | 上传方式: POST/PUT |
+|⇥ upload_url | string | 上传地址 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 

@@ -1,0 +1,4073 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>蓝莺 IM - 专业SDK，私有云按月付费</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="jinhai">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lanying-code-snippet/lanying-code-snippet.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../assets/styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    
+    <meta name="keywords" content="&#x84DD;&#x83BA;IM, &#x7F8E;&#x4FE1;&#x62D3;&#x6251;, IM SDK, &#x5373;&#x65F6;&#x901A;&#x8BAF;, &#x5373;&#x65F6;&#x901A;&#x8BAF;&#x4E91;, IM&#x4E91;&#x670D;&#x52A1;, &#x79FB;&#x52A8;IM, &#x5F00;&#x6E90;IM, &#x4F01;&#x4E1A;IM, &#x804A;&#x5929;&#x8F6F;&#x4EF6;, &#x79FB;&#x52A8;&#x5BA2;&#x670D;, &#x5728;&#x7EBF;&#x5BA2;&#x670D;, IM&#x4E1A;&#x52A1;&#x573A;&#x666F;, APP&#x793E;&#x4EA4;, &#x5F00;&#x53D1;&#x8005;&#x670D;&#x52A1;, &#x76F4;&#x64AD;&#x804A;&#x5929;&#x5BA4;, &#x5B9E;&#x65F6;&#x97F3;&#x89C6;&#x9891;, &#x97F3;&#x89C6;&#x9891;, &#x76F4;&#x64AD;&#x5E73;&#x53F0;, &#x7F8E;&#x4FE1;&#x53CD;&#x5783;&#x573E;, &#x5185;&#x5BB9;&#x5B89;&#x5168;">
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classfloo_1_1_b_m_x_user_profile.html">
+    
+    
+    <link rel="prev" href="classfloo_1_1_b_m_x_roster_service_listener.html">
+    
+
+
+    <link rel="canonical" href="https://docs.lanyingim.com/reference/floo/classfloo_1_1_b_m_x_s_d_k_config.html">
+
+    
+        <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+    
+    
+        <link rel="bookmark" href="../../assets/favicon.ico" type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"maxim-top/im.gitbook","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary"><a href="https://www.lanyingim.com" class="book-logo-root"><div class="book-logo" style="text-align: center; padding: 20px;"><img src="/assets/lanying-logo-color.png" style="height: 35px;align:left;"></div></a>
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x5373;&#x65F6;&#x901A;&#x8BAF;&#x5F00;&#x53D1;&#x6307;&#x5357;&#xFF08;IM&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../quick-start/">
+            
+                <a href="../../quick-start/">
+            
+                    
+                    &#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../quick-start/floo-ios-quick-start.html">
+            
+                <a href="../../quick-start/floo-ios-quick-start.html">
+            
+                    
+                    IOS &#x5BA2;&#x6237;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../quick-start/floo-android-quick-start.html">
+            
+                <a href="../../quick-start/floo-android-quick-start.html">
+            
+                    
+                    &#x5B89;&#x5353;&#x5BA2;&#x6237;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../quick-start/floo-quick-start.html">
+            
+                <a href="../../quick-start/floo-quick-start.html">
+            
+                    
+                    Linux/C++ &#x5BA2;&#x6237;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../quick-start/floo-web-quick-start.html">
+            
+                <a href="../../quick-start/floo-web-quick-start.html">
+            
+                    
+                    Web &#x524D;&#x7AEF;&#x5FEB;&#x901F;&#x5F00;&#x53D1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../quick-start/server-api-quick-start.html">
+            
+                <a href="../../quick-start/server-api-quick-start.html">
+            
+                    
+                    &#x670D;&#x52A1;&#x7AEF;&#x5F00;&#x53D1;&#x6307;&#x5357;&#xFF08;API&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../quick-start/push-dev-guide.html">
+            
+                <a href="../../quick-start/push-dev-guide.html">
+            
+                    
+                    &#x63A8;&#x9001;&#x5F00;&#x53D1;&#x6307;&#x5357;&#xFF08;PUSH&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../quick-start/how-to-deploy-private-cloud.html">
+            
+                <a href="../../quick-start/how-to-deploy-private-cloud.html">
+            
+                    
+                    &#x79C1;&#x6709;&#x4E91;&#x90E8;&#x7F72;&#x6587;&#x6863;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    &#x8BE6;&#x7EC6;&#x6587;&#x6863;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../floo-ios.html">
+            
+                <a href="../floo-ios.html">
+            
+                    
+                    IOS SDK API (floo-ios)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../floo-ios/classes.html">
+            
+                <a href="../floo-ios/classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../floo-ios/Classes/BMXChatService.html">
+            
+                <a href="../floo-ios/Classes/BMXChatService.html">
+            
+                    
+                    BMXChatService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="../floo-ios/Classes/BMXClient.html">
+            
+                <a href="../floo-ios/Classes/BMXClient.html">
+            
+                    
+                    BMXClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.3" data-path="../floo-ios/Classes/BMXConversation.html">
+            
+                <a href="../floo-ios/Classes/BMXConversation.html">
+            
+                    
+                    BMXConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.4" data-path="../floo-ios/Classes/BMXDevice.html">
+            
+                <a href="../floo-ios/Classes/BMXDevice.html">
+            
+                    
+                    BMXDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.5" data-path="../floo-ios/Classes/BMXFileAttachment.html">
+            
+                <a href="../floo-ios/Classes/BMXFileAttachment.html">
+            
+                    
+                    BMXFileAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.6" data-path="../floo-ios/Classes/BMXGroup.html">
+            
+                <a href="../floo-ios/Classes/BMXGroup.html">
+            
+                    
+                    BMXGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.7" data-path="../floo-ios/Classes/BMXGroupAnnouncement.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupAnnouncement.html">
+            
+                    
+                    BMXGroupAnnouncement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.8" data-path="../floo-ios/Classes/BMXGroupApplication.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupApplication.html">
+            
+                    
+                    BMXGroupApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.9" data-path="../floo-ios/Classes/BMXGroupBannedMember.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupBannedMember.html">
+            
+                    
+                    BMXGroupBannedMember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.10" data-path="../floo-ios/Classes/BMXGroupInvitation.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupInvitation.html">
+            
+                    
+                    BMXGroupInvitation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.11" data-path="../floo-ios/Classes/BMXGroupMember.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupMember.html">
+            
+                    
+                    BMXGroupMember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.12" data-path="../floo-ios/Classes/BMXGroupService.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupService.html">
+            
+                    
+                    BMXGroupService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.13" data-path="../floo-ios/Classes/BMXGroupServiceCreateGroupOptions.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupServiceCreateGroupOptions.html">
+            
+                    
+                    BMXGroupServiceCreateGroupOptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.14" data-path="../floo-ios/Classes/BMXGroupSharedFile.html">
+            
+                <a href="../floo-ios/Classes/BMXGroupSharedFile.html">
+            
+                    
+                    BMXGroupSharedFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.15" data-path="../floo-ios/Classes/BMXImageAttachment.html">
+            
+                <a href="../floo-ios/Classes/BMXImageAttachment.html">
+            
+                    
+                    BMXImageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.16" data-path="../floo-ios/Classes/BMXLocationAttachment.html">
+            
+                <a href="../floo-ios/Classes/BMXLocationAttachment.html">
+            
+                    
+                    BMXLocationAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.17" data-path="../floo-ios/Classes/BMXMessage.html">
+            
+                <a href="../floo-ios/Classes/BMXMessage.html">
+            
+                    
+                    BMXMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.18" data-path="../floo-ios/Classes/BMXMessageAttachment.html">
+            
+                <a href="../floo-ios/Classes/BMXMessageAttachment.html">
+            
+                    
+                    BMXMessageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.19" data-path="../floo-ios/Classes/BMXMessageAttachmentSize.html">
+            
+                <a href="../floo-ios/Classes/BMXMessageAttachmentSize.html">
+            
+                    
+                    BMXMessageAttachmentSize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.20" data-path="../floo-ios/Classes/BMXMessageConfig.html">
+            
+                <a href="../floo-ios/Classes/BMXMessageConfig.html">
+            
+                    
+                    BMXMessageConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.21" data-path="../floo-ios/Classes/BMXPushService.html">
+            
+                <a href="../floo-ios/Classes/BMXPushService.html">
+            
+                    
+                    BMXPushService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.22" data-path="../floo-ios/Classes/BMXPushUserProfile.html">
+            
+                <a href="../floo-ios/Classes/BMXPushUserProfile.html">
+            
+                    
+                    BMXPushUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.23" data-path="../floo-ios/Classes/BMXPushUserProfileMessagePushSetting.html">
+            
+                <a href="../floo-ios/Classes/BMXPushUserProfileMessagePushSetting.html">
+            
+                    
+                    BMXPushUserProfileMessagePushSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.24" data-path="../floo-ios/Classes/BMXRTCEngine.html">
+            
+                <a href="../floo-ios/Classes/BMXRTCEngine.html">
+            
+                    
+                    BMXRTCEngine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.25" data-path="../floo-ios/Classes/BMXRTCService.html">
+            
+                <a href="../floo-ios/Classes/BMXRTCService.html">
+            
+                    
+                    BMXRTCService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.26" data-path="../floo-ios/Classes/BMXRoomAuth.html">
+            
+                <a href="../floo-ios/Classes/BMXRoomAuth.html">
+            
+                    
+                    BMXRoomAuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.27" data-path="../floo-ios/Classes/BMXRosterItem.html">
+            
+                <a href="../floo-ios/Classes/BMXRosterItem.html">
+            
+                    
+                    BMXRosterItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.28" data-path="../floo-ios/Classes/BMXRosterService.html">
+            
+                <a href="../floo-ios/Classes/BMXRosterService.html">
+            
+                    
+                    BMXRosterService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.29" data-path="../floo-ios/Classes/BMXRosterServiceApplication.html">
+            
+                <a href="../floo-ios/Classes/BMXRosterServiceApplication.html">
+            
+                    
+                    BMXRosterServiceApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.30" data-path="../floo-ios/Classes/BMXSDKConfig.html">
+            
+                <a href="../floo-ios/Classes/BMXSDKConfig.html">
+            
+                    
+                    BMXSDKConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.31" data-path="../floo-ios/Classes/BMXSDKConfigHostConfig.html">
+            
+                <a href="../floo-ios/Classes/BMXSDKConfigHostConfig.html">
+            
+                    
+                    BMXSDKConfigHostConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.32" data-path="../floo-ios/Classes/BMXStream.html">
+            
+                <a href="../floo-ios/Classes/BMXStream.html">
+            
+                    
+                    BMXStream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.33" data-path="../floo-ios/Classes/BMXUserProfile.html">
+            
+                <a href="../floo-ios/Classes/BMXUserProfile.html">
+            
+                    
+                    BMXUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.34" data-path="../floo-ios/Classes/BMXUserProfileAuthQuestion.html">
+            
+                <a href="../floo-ios/Classes/BMXUserProfileAuthQuestion.html">
+            
+                    
+                    BMXUserProfileAuthQuestion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.35" data-path="../floo-ios/Classes/BMXUserProfileMessageSetting.html">
+            
+                <a href="../floo-ios/Classes/BMXUserProfileMessageSetting.html">
+            
+                    
+                    BMXUserProfileMessageSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.36" data-path="../floo-ios/Classes/BMXUserService.html">
+            
+                <a href="../floo-ios/Classes/BMXUserService.html">
+            
+                    
+                    BMXUserService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.37" data-path="../floo-ios/Classes/BMXVideoAttachment.html">
+            
+                <a href="../floo-ios/Classes/BMXVideoAttachment.html">
+            
+                    
+                    BMXVideoAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.38" data-path="../floo-ios/Classes/BMXVideoCanvas.html">
+            
+                <a href="../floo-ios/Classes/BMXVideoCanvas.html">
+            
+                    
+                    BMXVideoCanvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.39" data-path="../floo-ios/Classes/BMXVideoConfig.html">
+            
+                <a href="../floo-ios/Classes/BMXVideoConfig.html">
+            
+                    
+                    BMXVideoConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.40" data-path="../floo-ios/Classes/BMXVoiceAttachment.html">
+            
+                <a href="../floo-ios/Classes/BMXVoiceAttachment.html">
+            
+                    
+                    BMXVoiceAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../floo-ios/protocols.html">
+            
+                <a href="../floo-ios/protocols.html">
+            
+                    
+                    Protocols
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../floo-ios/Protocols/BMXChatServiceProtocol.html">
+            
+                <a href="../floo-ios/Protocols/BMXChatServiceProtocol.html">
+            
+                    
+                    BMXChatServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../floo-ios/Protocols/BMXGroupServiceProtocol.html">
+            
+                <a href="../floo-ios/Protocols/BMXGroupServiceProtocol.html">
+            
+                    
+                    BMXGroupServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="../floo-ios/Protocols/BMXPushServiceProtocol.html">
+            
+                <a href="../floo-ios/Protocols/BMXPushServiceProtocol.html">
+            
+                    
+                    BMXPushServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="../floo-ios/Protocols/BMXRTCEngineProtocol.html">
+            
+                <a href="../floo-ios/Protocols/BMXRTCEngineProtocol.html">
+            
+                    
+                    BMXRTCEngineProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.5" data-path="../floo-ios/Protocols/BMXRTCServiceProtocol.html">
+            
+                <a href="../floo-ios/Protocols/BMXRTCServiceProtocol.html">
+            
+                    
+                    BMXRTCServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.6" data-path="../floo-ios/Protocols/BMXRosterServiceProtocol.html">
+            
+                <a href="../floo-ios/Protocols/BMXRosterServiceProtocol.html">
+            
+                    
+                    BMXRosterServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.7" data-path="../floo-ios/Protocols/BMXUserServiceProtocol.html">
+            
+                <a href="../floo-ios/Protocols/BMXUserServiceProtocol.html">
+            
+                    
+                    BMXUserServiceProtocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../floo-ios/constants.html">
+            
+                <a href="../floo-ios/constants.html">
+            
+                    
+                    Constants
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../floo-ios/Constants/BMXChatService_ThumbnailStrategy.html">
+            
+                <a href="../floo-ios/Constants/BMXChatService_ThumbnailStrategy.html">
+            
+                    
+                    BMXChatService_ThumbnailStrategy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../floo-ios/Constants/BMXClientType.html">
+            
+                <a href="../floo-ios/Constants/BMXClientType.html">
+            
+                    
+                    BMXClientType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="../floo-ios/Constants/BMXConnectStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXConnectStatus.html">
+            
+                    
+                    BMXConnectStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="../floo-ios/Constants/BMXConversation_Direction.html">
+            
+                <a href="../floo-ios/Constants/BMXConversation_Direction.html">
+            
+                    
+                    BMXConversation_Direction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.5" data-path="../floo-ios/Constants/BMXConversation_Type.html">
+            
+                <a href="../floo-ios/Constants/BMXConversation_Type.html">
+            
+                    
+                    BMXConversation_Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6" data-path="../floo-ios/Constants/BMXErrorCode.html">
+            
+                <a href="../floo-ios/Constants/BMXErrorCode.html">
+            
+                    
+                    BMXErrorCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7" data-path="../floo-ios/Constants/BMXGroup_ApplicationStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_ApplicationStatus.html">
+            
+                    
+                    BMXGroup_ApplicationStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.8" data-path="../floo-ios/Constants/BMXGroup_GroupStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_GroupStatus.html">
+            
+                    
+                    BMXGroup_GroupStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.9" data-path="../floo-ios/Constants/BMXGroup_GroupType.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_GroupType.html">
+            
+                    
+                    BMXGroup_GroupType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.10" data-path="../floo-ios/Constants/BMXGroup_InvitationStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_InvitationStatus.html">
+            
+                    
+                    BMXGroup_InvitationStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.11" data-path="../floo-ios/Constants/BMXGroup_InviteMode.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_InviteMode.html">
+            
+                    
+                    BMXGroup_InviteMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.12" data-path="../floo-ios/Constants/BMXGroup_JoinAuthMode.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_JoinAuthMode.html">
+            
+                    
+                    BMXGroup_JoinAuthMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.13" data-path="../floo-ios/Constants/BMXGroup_MemberRoleType.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_MemberRoleType.html">
+            
+                    
+                    BMXGroup_MemberRoleType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.14" data-path="../floo-ios/Constants/BMXGroup_ModifyMode.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_ModifyMode.html">
+            
+                    
+                    BMXGroup_ModifyMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.15" data-path="../floo-ios/Constants/BMXGroup_MsgMuteMode.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_MsgMuteMode.html">
+            
+                    
+                    BMXGroup_MsgMuteMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.16" data-path="../floo-ios/Constants/BMXGroup_MsgPushMode.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_MsgPushMode.html">
+            
+                    
+                    BMXGroup_MsgPushMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.17" data-path="../floo-ios/Constants/BMXGroup_UpdateInfoType.html">
+            
+                <a href="../floo-ios/Constants/BMXGroup_UpdateInfoType.html">
+            
+                    
+                    BMXGroup_UpdateInfoType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.18" data-path="../floo-ios/Constants/BMXLogLevel.html">
+            
+                <a href="../floo-ios/Constants/BMXLogLevel.html">
+            
+                    
+                    BMXLogLevel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.19" data-path="../floo-ios/Constants/BMXMessageAttachment_DownloadStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXMessageAttachment_DownloadStatus.html">
+            
+                    
+                    BMXMessageAttachment_DownloadStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.20" data-path="../floo-ios/Constants/BMXMessageAttachment_Type.html">
+            
+                <a href="../floo-ios/Constants/BMXMessageAttachment_Type.html">
+            
+                    
+                    BMXMessageAttachment_Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.21" data-path="../floo-ios/Constants/BMXMessageConfig_BadgeCountType.html">
+            
+                <a href="../floo-ios/Constants/BMXMessageConfig_BadgeCountType.html">
+            
+                    
+                    BMXMessageConfig_BadgeCountType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.22" data-path="../floo-ios/Constants/BMXMessageConfig_RTCCallType.html">
+            
+                <a href="../floo-ios/Constants/BMXMessageConfig_RTCCallType.html">
+            
+                    
+                    BMXMessageConfig_RTCCallType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.23" data-path="../floo-ios/Constants/BMXMessageConfig_RTCRoomType.html">
+            
+                <a href="../floo-ios/Constants/BMXMessageConfig_RTCRoomType.html">
+            
+                    
+                    BMXMessageConfig_RTCRoomType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.24" data-path="../floo-ios/Constants/BMXMessage_ContentType.html">
+            
+                <a href="../floo-ios/Constants/BMXMessage_ContentType.html">
+            
+                    
+                    BMXMessage_ContentType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.25" data-path="../floo-ios/Constants/BMXMessage_DeliveryQos.html">
+            
+                <a href="../floo-ios/Constants/BMXMessage_DeliveryQos.html">
+            
+                    
+                    BMXMessage_DeliveryQos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.26" data-path="../floo-ios/Constants/BMXMessage_DeliveryStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXMessage_DeliveryStatus.html">
+            
+                    
+                    BMXMessage_DeliveryStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.27" data-path="../floo-ios/Constants/BMXMessage_MessageType.html">
+            
+                <a href="../floo-ios/Constants/BMXMessage_MessageType.html">
+            
+                    
+                    BMXMessage_MessageType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.28" data-path="../floo-ios/Constants/BMXNetworkType.html">
+            
+                <a href="../floo-ios/Constants/BMXNetworkType.html">
+            
+                    
+                    BMXNetworkType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.29" data-path="../floo-ios/Constants/BMXPushEnvironmentType.html">
+            
+                <a href="../floo-ios/Constants/BMXPushEnvironmentType.html">
+            
+                    
+                    BMXPushEnvironmentType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.30" data-path="../floo-ios/Constants/BMXPushProviderType.html">
+            
+                <a href="../floo-ios/Constants/BMXPushProviderType.html">
+            
+                    
+                    BMXPushProviderType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.31" data-path="../floo-ios/Constants/BMXPushService_PushDirection.html">
+            
+                <a href="../floo-ios/Constants/BMXPushService_PushDirection.html">
+            
+                    
+                    BMXPushService_PushDirection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.32" data-path="../floo-ios/Constants/BMXPushService_PushSdkStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXPushService_PushSdkStatus.html">
+            
+                    
+                    BMXPushService_PushSdkStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.33" data-path="../floo-ios/Constants/BMXRenderMode.html">
+            
+                <a href="../floo-ios/Constants/BMXRenderMode.html">
+            
+                    
+                    BMXRenderMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.34" data-path="../floo-ios/Constants/BMXRoomType.html">
+            
+                <a href="../floo-ios/Constants/BMXRoomType.html">
+            
+                    
+                    BMXRoomType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.35" data-path="../floo-ios/Constants/BMXRosterItem_AddFriendAuthMode.html">
+            
+                <a href="../floo-ios/Constants/BMXRosterItem_AddFriendAuthMode.html">
+            
+                    
+                    BMXRosterItem_AddFriendAuthMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.36" data-path="../floo-ios/Constants/BMXRosterItem_RosterRelation.html">
+            
+                <a href="../floo-ios/Constants/BMXRosterItem_RosterRelation.html">
+            
+                    
+                    BMXRosterItem_RosterRelation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.37" data-path="../floo-ios/Constants/BMXRosterService_ApplicationStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXRosterService_ApplicationStatus.html">
+            
+                    
+                    BMXRosterService_ApplicationStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.38" data-path="../floo-ios/Constants/BMXSignInStatus.html">
+            
+                <a href="../floo-ios/Constants/BMXSignInStatus.html">
+            
+                    
+                    BMXSignInStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.39" data-path="../floo-ios/Constants/BMXUserProfile_AddFriendAuthMode.html">
+            
+                <a href="../floo-ios/Constants/BMXUserProfile_AddFriendAuthMode.html">
+            
+                    
+                    BMXUserProfile_AddFriendAuthMode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.40" data-path="../floo-ios/Constants/BMXUserProfile_UserCategory.html">
+            
+                <a href="../floo-ios/Constants/BMXUserProfile_UserCategory.html">
+            
+                    
+                    BMXUserProfile_UserCategory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.41" data-path="../floo-ios/Constants/BMXVideoMediaType.html">
+            
+                <a href="../floo-ios/Constants/BMXVideoMediaType.html">
+            
+                    
+                    BMXVideoMediaType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.42" data-path="../floo-ios/Constants/BMXVideoProfile.html">
+            
+                <a href="../floo-ios/Constants/BMXVideoProfile.html">
+            
+                    
+                    BMXVideoProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../floo-rtc-ios.html">
+            
+                <a href="../floo-rtc-ios.html">
+            
+                    
+                    IOS SDK API (floo-rtc-ios)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../floo-rtc-ios/classes.html">
+            
+                <a href="../floo-rtc-ios/classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="../floo-rtc-ios/Classes/RTCEngineManager.html">
+            
+                <a href="../floo-rtc-ios/Classes/RTCEngineManager.html">
+            
+                    
+                    RTCEngineManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../floo-android.html">
+            
+                <a href="../floo-android.html">
+            
+                    
+                    Android SDK API (floo-android)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.html">
+            
+                    
+                    im::floo::floolib::BMXChatManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.html">
+            
+                    
+                    im::floo::floolib::BMXChatService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXChatServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_client.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_client.html">
+            
+                    
+                    im::floo::floolib::BMXClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.html">
+            
+                    
+                    im::floo::floolib::BMXConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_device.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_device.html">
+            
+                    
+                    im::floo::floolib::BMXDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXFileAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group.html">
+            
+                    
+                    im::floo::floolib::BMXGroup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.8.1" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_announcement.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_announcement.html">
+            
+                    
+                    Announcement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8.2" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_application.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_application.html">
+            
+                    
+                    Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::BannedMember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::Invitation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_member.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_member.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::Member
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.html">
+            
+                    
+                    im::floo::floolib::BMXGroup::SharedFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.html">
+            
+                    
+                    im::floo::floolib::BMXGroupManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.html">
+            
+                    
+                    im::floo::floolib::BMXGroupService
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.14.1" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_1_1_create_group_options.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_1_1_create_group_options.html">
+            
+                    
+                    CreateGroupOptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.15" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXGroupServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.16" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXImageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.17" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXLocationAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.18" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message.html">
+            
+                    
+                    im::floo::floolib::BMXMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.19" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXMessageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.20" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment_1_1_size.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment_1_1_size.html">
+            
+                    
+                    im::floo::floolib::BMXMessageAttachment::Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.21" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.html">
+            
+                    
+                    im::floo::floolib::BMXMessageConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.22" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_network_listener.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_network_listener.html">
+            
+                    
+                    im::floo::floolib::BMXNetworkListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.23" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.html">
+            
+                    
+                    im::floo::floolib::BMXPushManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.24" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.html">
+            
+                    
+                    im::floo::floolib::BMXPushService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.25" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXPushServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.26" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.html">
+            
+                    
+                    im::floo::floolib::BMXPushUserProfile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.26.1" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile_1_1_message_push_setting.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile_1_1_message_push_setting.html">
+            
+                    
+                    MessagePushSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.27" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.html">
+            
+                    
+                    im::floo::floolib::BMXRosterItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.28" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.html">
+            
+                    
+                    im::floo::floolib::BMXRosterManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.29" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.html">
+            
+                    
+                    im::floo::floolib::BMXRosterService
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.29.1" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_1_1_application.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_1_1_application.html">
+            
+                    
+                    Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.30" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXRosterServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.31" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.html">
+            
+                    
+                    im::floo::floolib::BMXSDKConfig
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.31.1" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.html">
+            
+                    
+                    HostConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.32" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.html">
+            
+                    
+                    im::floo::floolib::BMXUserManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.33" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.html">
+            
+                    
+                    im::floo::floolib::BMXUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.34" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_auth_question.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_auth_question.html">
+            
+                    
+                    im::floo::floolib::BMXUserProfile::AuthQuestion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.35" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_message_setting.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile_1_1_message_setting.html">
+            
+                    
+                    im::floo::floolib::BMXUserProfile::MessageSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.36" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.html">
+            
+                    
+                    im::floo::floolib::BMXUserService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.37" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.html">
+            
+                    
+                    im::floo::floolib::BMXUserServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.38" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXVideoAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.39" data-path="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.html">
+            
+                <a href="../floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.html">
+            
+                    
+                    im::floo::floolib::BMXVoiceAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../floo.html">
+            
+                <a href="../floo.html">
+            
+                    
+                    C++ SDK API (floo)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="classfloo_1_1_b_m_x_chat_service.html">
+            
+                <a href="classfloo_1_1_b_m_x_chat_service.html">
+            
+                    
+                    floo::BMXChatService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="classfloo_1_1_b_m_x_chat_service_listener.html">
+            
+                <a href="classfloo_1_1_b_m_x_chat_service_listener.html">
+            
+                    
+                    floo::BMXChatServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="classfloo_1_1_b_m_x_client.html">
+            
+                <a href="classfloo_1_1_b_m_x_client.html">
+            
+                    
+                    floo::BMXClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="classfloo_1_1_b_m_x_conversation.html">
+            
+                <a href="classfloo_1_1_b_m_x_conversation.html">
+            
+                    
+                    floo::BMXConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="classfloo_1_1_b_m_x_device.html">
+            
+                <a href="classfloo_1_1_b_m_x_device.html">
+            
+                    
+                    floo::BMXDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="classfloo_1_1_b_m_x_error.html">
+            
+                <a href="classfloo_1_1_b_m_x_error.html">
+            
+                    
+                    floo::BMXError
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="classfloo_1_1_b_m_x_file_attachment.html">
+            
+                <a href="classfloo_1_1_b_m_x_file_attachment.html">
+            
+                    
+                    floo::BMXFileAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.8" data-path="classfloo_1_1_b_m_x_forward_attachment.html">
+            
+                <a href="classfloo_1_1_b_m_x_forward_attachment.html">
+            
+                    
+                    floo::BMXForwardAttachment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.8.1" data-path="classfloo_1_1_b_m_x_forward_attachment_1_1_message.html">
+            
+                <a href="classfloo_1_1_b_m_x_forward_attachment_1_1_message.html">
+            
+                    
+                    Message
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.9" data-path="classfloo_1_1_b_m_x_group.html">
+            
+                <a href="classfloo_1_1_b_m_x_group.html">
+            
+                    
+                    floo::BMXGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.10" data-path="classfloo_1_1_b_m_x_group_service.html">
+            
+                <a href="classfloo_1_1_b_m_x_group_service.html">
+            
+                    
+                    floo::BMXGroupService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.11" data-path="classfloo_1_1_b_m_x_group_service_listener.html">
+            
+                <a href="classfloo_1_1_b_m_x_group_service_listener.html">
+            
+                    
+                    floo::BMXGroupServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.12" data-path="classfloo_1_1_b_m_x_image_attachment.html">
+            
+                <a href="classfloo_1_1_b_m_x_image_attachment.html">
+            
+                    
+                    floo::BMXImageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.13" data-path="classfloo_1_1_b_m_x_location_attachment.html">
+            
+                <a href="classfloo_1_1_b_m_x_location_attachment.html">
+            
+                    
+                    floo::BMXLocationAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.14" data-path="classfloo_1_1_b_m_x_message.html">
+            
+                <a href="classfloo_1_1_b_m_x_message.html">
+            
+                    
+                    floo::BMXMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.15" data-path="classfloo_1_1_b_m_x_message_attachment.html">
+            
+                <a href="classfloo_1_1_b_m_x_message_attachment.html">
+            
+                    
+                    floo::BMXMessageAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.16" data-path="classfloo_1_1_b_m_x_message_config.html">
+            
+                <a href="classfloo_1_1_b_m_x_message_config.html">
+            
+                    
+                    floo::BMXMessageConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.17" data-path="classfloo_1_1_b_m_x_network_listener.html">
+            
+                <a href="classfloo_1_1_b_m_x_network_listener.html">
+            
+                    
+                    floo::BMXNetworkListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.18" data-path="classfloo_1_1_b_m_x_push_service.html">
+            
+                <a href="classfloo_1_1_b_m_x_push_service.html">
+            
+                    
+                    floo::BMXPushService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.19" data-path="classfloo_1_1_b_m_x_push_service_listener.html">
+            
+                <a href="classfloo_1_1_b_m_x_push_service_listener.html">
+            
+                    
+                    floo::BMXPushServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.20" data-path="classfloo_1_1_b_m_x_push_user_profile.html">
+            
+                <a href="classfloo_1_1_b_m_x_push_user_profile.html">
+            
+                    
+                    floo::BMXPushUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.21" data-path="classfloo_1_1_b_m_x_result_page.html">
+            
+                <a href="classfloo_1_1_b_m_x_result_page.html">
+            
+                    
+                    floo::BMXResultPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.22" data-path="classfloo_1_1_b_m_x_roster_item.html">
+            
+                <a href="classfloo_1_1_b_m_x_roster_item.html">
+            
+                    
+                    floo::BMXRosterItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.23" data-path="classfloo_1_1_b_m_x_roster_service.html">
+            
+                <a href="classfloo_1_1_b_m_x_roster_service.html">
+            
+                    
+                    floo::BMXRosterService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.24" data-path="classfloo_1_1_b_m_x_roster_service_listener.html">
+            
+                <a href="classfloo_1_1_b_m_x_roster_service_listener.html">
+            
+                    
+                    floo::BMXRosterServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4.25" data-path="classfloo_1_1_b_m_x_s_d_k_config.html">
+            
+                <a href="classfloo_1_1_b_m_x_s_d_k_config.html">
+            
+                    
+                    floo::BMXSDKConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.26" data-path="classfloo_1_1_b_m_x_user_profile.html">
+            
+                <a href="classfloo_1_1_b_m_x_user_profile.html">
+            
+                    
+                    floo::BMXUserProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.27" data-path="classfloo_1_1_b_m_x_user_service.html">
+            
+                <a href="classfloo_1_1_b_m_x_user_service.html">
+            
+                    
+                    floo::BMXUserService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.28" data-path="classfloo_1_1_b_m_x_user_service_listener.html">
+            
+                <a href="classfloo_1_1_b_m_x_user_service_listener.html">
+            
+                    
+                    floo::BMXUserServiceListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.29" data-path="classfloo_1_1_b_m_x_video_attachment.html">
+            
+                <a href="classfloo_1_1_b_m_x_video_attachment.html">
+            
+                    
+                    floo::BMXVideoAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.30" data-path="classfloo_1_1_b_m_x_voice_attachment.html">
+            
+                <a href="classfloo_1_1_b_m_x_voice_attachment.html">
+            
+                    
+                    floo::BMXVoiceAttachment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../floo-web.html">
+            
+                <a href="../floo-web.html">
+            
+                    
+                    Web SDK API (floo-web)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../floo-web/flooim.html">
+            
+                <a href="../floo-web/flooim.html">
+            
+                    
+                    flooim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../floo-web/userManage.html">
+            
+                <a href="../floo-web/userManage.html">
+            
+                    
+                    userManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../floo-web/rosterManage.html">
+            
+                <a href="../floo-web/rosterManage.html">
+            
+                    
+                    rosterManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../floo-web/groupManage.html">
+            
+                <a href="../floo-web/groupManage.html">
+            
+                    
+                    groupManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../floo-web/sysManage.html">
+            
+                <a href="../floo-web/sysManage.html">
+            
+                    
+                    sysManage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../floo-web/types.html">
+            
+                <a href="../floo-web/types.html">
+            
+                    
+                    types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../server-api/">
+            
+                <a href="../server-api/">
+            
+                    
+                    Server API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../server-api/user.html">
+            
+                <a href="../server-api/user.html">
+            
+                    
+                    &#x7528;&#x6237;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../server-api/token.html">
+            
+                <a href="../server-api/token.html">
+            
+                    
+                    Token&#x63A5;&#x53E3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../server-api/roster.html">
+            
+                <a href="../server-api/roster.html">
+            
+                    
+                    &#x597D;&#x53CB;/&#x82B1;&#x540D;&#x518C;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../server-api/group.html">
+            
+                <a href="../server-api/group.html">
+            
+                    
+                    &#x7FA4;&#x7BA1;&#x7406;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../server-api/message.html">
+            
+                <a href="../server-api/message.html">
+            
+                    
+                    &#x6D88;&#x606F;&#x64CD;&#x4F5C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../server-api/file.html">
+            
+                <a href="../server-api/file.html">
+            
+                    
+                    &#x6587;&#x4EF6;&#x64CD;&#x4F5C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../server-api/push.html">
+            
+                <a href="../server-api/push.html">
+            
+                    
+                    &#x63A8;&#x9001;&#x63A5;&#x53E3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../articles/">
+            
+                <a href="../../articles/">
+            
+                    
+                    &#x535A;&#x5BA2;&#x6587;&#x7AE0;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../articles/Industry-development/">
+            
+                <a href="../../articles/Industry-development/">
+            
+                    
+                    &#x884C;&#x4E1A;&#x53D1;&#x5C55;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.html">
+            
+                <a href="../../articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.html">
+            
+                    
+                    &#x8FC7;&#x53BB;&#x7684;&#x5341;&#x4E94;&#x5E74;&#xFF0C;&#x6211;&#x4EEC;&#x600E;&#x6837;&#x505A; IM&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../articles/Industry-development/the-next-decade-of-cloud-services.html">
+            
+                <a href="../../articles/Industry-development/the-next-decade-of-cloud-services.html">
+            
+                    
+                    &#x4E91;&#x670D;&#x52A1;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5341;&#x5E74;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../articles/product-and-technologies/">
+            
+                <a href="../../articles/product-and-technologies/">
+            
+                    
+                    &#x4EA7;&#x54C1;&#x6280;&#x672F;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../articles/product-and-technologies/lanying-linkchat-turning-content-marketing-into-interactive-marketing.html">
+            
+                <a href="../../articles/product-and-technologies/lanying-linkchat-turning-content-marketing-into-interactive-marketing.html">
+            
+                    
+                    &#x84DD;&#x83BA;LinkChat&#xFF1A;&#x628A;&#x5185;&#x5BB9;&#x8425;&#x9500;&#x53D8;&#x6210;&#x4E92;&#x52A8;&#x8425;&#x9500;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html">
+            
+                <a href="../../articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html">
+            
+                    
+                    ChatGPT&#x505A;&#x667A;&#x80FD;&#x5BA2;&#x670D;&#x7684;&#x5341;&#x6761;&#x670D;&#x52A1;&#x51C6;&#x5219;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../articles/product-and-technologies/how-to-implement-an-intelligent-customer-service-by-chatgpt.html">
+            
+                <a href="../../articles/product-and-technologies/how-to-implement-an-intelligent-customer-service-by-chatgpt.html">
+            
+                    
+                    ChatGPT&#x80FD;&#x7528;&#x6765;&#x505A;&#x667A;&#x80FD;&#x5BA2;&#x670D;&#x5417;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../articles/product-and-technologies/how-to-add-chatgpt-to-your-app.html">
+            
+                <a href="../../articles/product-and-technologies/how-to-add-chatgpt-to-your-app.html">
+            
+                    
+                    &#x5982;&#x4F55;&#x5728;APP&#x4E2D;&#x589E;&#x52A0;ChatGPT&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../articles/product-and-technologies/lanying-im-private-cloud-enterprise-edition-published-and-kylin-os-neocertify.html">
+            
+                <a href="../../articles/product-and-technologies/lanying-im-private-cloud-enterprise-edition-published-and-kylin-os-neocertify.html">
+            
+                    
+                    &#x3010;&#x56FD;&#x4EA7;&#x4FE1;&#x521B;&#x3011;&#x84DD;&#x83BA;IM&#x79C1;&#x6709;&#x4E91;&#x4F01;&#x4E1A;&#x7248;&#x53D1;&#x5E03;&#xFF0C;&#x4E0E;&#x9E92;&#x9E9F;&#x8F6F;&#x4EF6;&#x5B8C;&#x6210;&#x517C;&#x5BB9;&#x6027;&#x4E92;&#x8BA4;&#x8BC1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../../articles/product-and-technologies/how-to-add-code-snippets-to-gitbook-documents-for-open-source-projects.html">
+            
+                <a href="../../articles/product-and-technologies/how-to-add-code-snippets-to-gitbook-documents-for-open-source-projects.html">
+            
+                    
+                    &#x5982;&#x4F55;&#x4E3A;&#x5F00;&#x6E90;&#x4ED3;&#x5E93;&#x6587;&#x6863;&#x6DFB;&#x52A0;&#x793A;&#x4F8B;&#x4EE3;&#x7801;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../../articles/product-and-technologies/ninety-percent-of-privately-deployed-softwares-have-no-push-notifications.html">
+            
+                <a href="../../articles/product-and-technologies/ninety-percent-of-privately-deployed-softwares-have-no-push-notifications.html">
+            
+                    
+                    90%&#x7684;&#x79C1;&#x6709;&#x8F6F;&#x4EF6;&#x9879;&#x76EE;&#x6CA1;&#x6709;&#x63A8;&#x9001;&#x63D0;&#x9192;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="../../articles/product-and-technologies/from-cloud-marketplace-to-compact-disk.html">
+            
+                <a href="../../articles/product-and-technologies/from-cloud-marketplace-to-compact-disk.html">
+            
+                    
+                    &#x4ECE;&#x4E91;&#x5E02;&#x573A; Marketplace &#x5230;&#x5149;&#x76D8;&#x884C;&#x52A8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="../../articles/product-and-technologies/one-out-of-two-smartphones-sold-in-africa-has-lanying-im-in-it.html">
+            
+                <a href="../../articles/product-and-technologies/one-out-of-two-smartphones-sold-in-africa-has-lanying-im-in-it.html">
+            
+                    
+                    &#x672A;&#x6765;&#x5728;&#x975E;&#x6D32;&#xFF0C;&#x6BCF;&#x51FA;&#x8D27;&#x4E24;&#x53F0;&#x667A;&#x80FD;&#x624B;&#x673A;&#x5C31;&#x6709;&#x4E00;&#x53F0;&#x4F7F;&#x7528;&#x84DD;&#x83BA; IM &#x7684;&#x6280;&#x672F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.10" data-path="../../articles/product-and-technologies/maximtop-im-launched-on-amazon-cloud-market-china.html">
+            
+                <a href="../../articles/product-and-technologies/maximtop-im-launched-on-amazon-cloud-market-china.html">
+            
+                    
+                    &#x7F8E;&#x4FE1;&#x62D3;&#x6251; IM &#x767B;&#x9646;&#x4E9A;&#x9A6C;&#x900A;&#x4E91;&#x5E02;&#x573A;&#xFF08;&#x4E2D;&#x56FD;&#x533A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.11" data-path="../../articles/product-and-technologies/maximtop-open-source-im-sdk-web-version.html">
+            
+                <a href="../../articles/product-and-technologies/maximtop-open-source-im-sdk-web-version.html">
+            
+                    
+                    &#x3010;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x5F00;&#x6E90;&#x3011;IM SDK Web&#x7248;&#x5F00;&#x6E90;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.12" data-path="../../articles/product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html">
+            
+                <a href="../../articles/product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html">
+            
+                    
+                    SaaS&#x5B9A;&#x4EF7;&#x4E09;&#xFF1A;&#x6CA1;&#x6709;&#x90BB;&#x5C45;&#x7684;&#x4E13;&#x6709;&#x4E91;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.13" data-path="../../articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html">
+            
+                <a href="../../articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html">
+            
+                    
+                    SaaS&#x5B9A;&#x4EF7;&#x4E8C;&#xFF1A;&#x6309;&#x6708;&#x4ED8;&#x8D39;&#x7684;&#x79C1;&#x6709;&#x4E91;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.14" data-path="../../articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html">
+            
+                <a href="../../articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html">
+            
+                    
+                    SaaS&#x5B9A;&#x4EF7;&#x4E00;&#xFF1A;&#x6BCF;&#x6708;&#xFFE5;199&#x7684; IM &#x4E91;&#x670D;&#x52A1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.15" data-path="../../articles/product-and-technologies/want-an-im-private-cloud-for-a-dime-an-hour.html">
+            
+                <a href="../../articles/product-and-technologies/want-an-im-private-cloud-for-a-dime-an-hour.html">
+            
+                    
+                    &#x4E00;&#x6BDB;&#x94B1;&#x4E00;&#x5C0F;&#x65F6;&#x7684; IM &#x79C1;&#x6709;&#x4E91;&#x8981;&#x5417;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.16" data-path="../../articles/product-and-technologies/generating-java-code-with-swig.html">
+            
+                <a href="../../articles/product-and-technologies/generating-java-code-with-swig.html">
+            
+                    
+                    &#x7528; SWIG &#x751F;&#x6210; Java &#x4EE3;&#x7801;&#xFF08;IM SDK&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.17" data-path="../../articles/product-and-technologies/how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.html">
+            
+                <a href="../../articles/product-and-technologies/how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.html">
+            
+                    
+                    &#x6811;&#x8393;&#x6D3E;&#x4E2D;&#x7684; IM &#x79C1;&#x6709;&#x4E91;&#x652F;&#x6301;&#x591A;&#x5C11;&#x5E76;&#x53D1;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.18" data-path="../../articles/product-and-technologies/install-an-instant-messaging-im-private-cloud-in-ten-minutes.html">
+            
+                <a href="../../articles/product-and-technologies/install-an-instant-messaging-im-private-cloud-in-ten-minutes.html">
+            
+                    
+                    &#x5341;&#x5206;&#x949F;&#x5B89;&#x88C5;&#x4E00;&#x5957;&#x5373;&#x65F6;&#x901A;&#x8BAF; IM &#x79C1;&#x6709;&#x4E91;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.19" data-path="../../articles/product-and-technologies/provide-free-senior-technical-consulting-services-during-the-epidemic.html">
+            
+                <a href="../../articles/product-and-technologies/provide-free-senior-technical-consulting-services-during-the-epidemic.html">
+            
+                    
+                    &#x75AB;&#x60C5;&#x671F;&#x95F4;&#x514D;&#x8D39;&#x63D0;&#x4F9B;&#x9AD8;&#x7EA7;&#x6280;&#x672F;&#x987E;&#x95EE;&#x670D;&#x52A1;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../articles/activity-report/">
+            
+                <a href="../../articles/activity-report/">
+            
+                    
+                    &#x6D3B;&#x52A8;&#x62A5;&#x5BFC;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../articles/activity-report/digital-transformation-meets-cool-locomotives-tgo-beijing-event.html">
+            
+                <a href="../../articles/activity-report/digital-transformation-meets-cool-locomotives-tgo-beijing-event.html">
+            
+                    
+                    &#x6570;&#x5B57;&#x5316;&#x8F6C;&#x578B;&#x9047;&#x4E0A;&#x70AB;&#x9177;&#x673A;&#x8F66; | TGO&#x5317;&#x4EAC;&#x6D3B;&#x52A8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../articles/activity-report/digital-twins-and-smart-manufacturing-in-automotive-factories.html">
+            
+                <a href="../../articles/activity-report/digital-twins-and-smart-manufacturing-in-automotive-factories.html">
+            
+                    
+                    &#x6C7D;&#x8F66;&#x5DE5;&#x5382;&#x91CC;&#x7684;&#x6570;&#x5B57;&#x5B6A;&#x751F;&#x4E0E;&#x667A;&#x80FD;&#x5236;&#x9020;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../../articles/activity-report/ride-the-coolest-car-and-do-the-coolest-technology.html">
+            
+                <a href="../../articles/activity-report/ride-the-coolest-car-and-do-the-coolest-technology.html">
+            
+                    
+                    &#x9A91;&#x6700;&#x9177;&#x7684;&#x8F66;&#xFF0C;&#x505A;&#x6700;&#x9177;&#x7684;&#x6280;&#x672F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../../articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html">
+            
+                <a href="../../articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html">
+            
+                    
+                    &#x4ECA;&#x665A;&#xFF0C;&#x6211;&#x4EEC;&#x804A;&#x804A;&#x4E1C;&#x5C71;&#x9B41;&#x5937;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="../../articles/activity-report/grasping-the-opportunity-of-technological-change-seeing-the-evolution-of-the-cloud-service-wave-tvp.html">
+            
+                <a href="../../articles/activity-report/grasping-the-opportunity-of-technological-change-seeing-the-evolution-of-the-cloud-service-wave-tvp.html">
+            
+                    
+                    &#x628A;&#x63E1;&#x6280;&#x672F;&#x53D8;&#x9769;&#x7684;&#x673A;&#x9047;&#xFF1A;&#x770B;&#x4E91;&#x670D;&#x52A1;&#x6D6A;&#x6F6E;&#x5982;&#x4F55;&#x6F14;&#x8FDB; | TVP&#x5341;&#x65E5;&#x8C08;&#x9884;&#x544A;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="../../articles/activity-report/from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.html">
+            
+                <a href="../../articles/activity-report/from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.html">
+            
+                    
+                    &#x7F8E;&#x4FE1;&#x62D3;&#x6251;CEO&#x4E00;&#x4E50;&#xFF1A;&#x4ECE;&#x300C;&#x73A9;&#x7269;&#x4E27;&#x5FD7;&#x300D;&#x5230;&#x300C;&#x597D;&#x9AD8;&#x9A9B;&#x8FDC;&#x300D;&#xFF0C;&#x6211;&#x5728;&#x575A;&#x6301;&#x4EC0;&#x4E48;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.7" data-path="../../articles/activity-report/how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.html">
+            
+                <a href="../../articles/activity-report/how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.html">
+            
+                    
+                    &#x3010;&#x79D1;&#x521B;&#x4EBA;&#x72EC;&#x5BB6;&#x3011;&#x7F8E;&#x4FE1;&#x62D3;&#x6251;&#x521B;&#x59CB;&#x4EBA;&#x4E00;&#x4E50;&#xFF1A;&#x5982;&#x4F55;&#x767B;&#x5C71;&#x4E0D;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C71;&#x5CF0;&#x624D;&#x662F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本文档由 Gitbook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">floo::BMXSDKConfig</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="floobmxsdkconfig">floo::BMXSDKConfig</h1>
+<p>SDK&#x8BBE;&#x7F6E;&#x7BA1;&#x7406; </p>
+<p><code>#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bmx_sdk_config.h</span><span class="token punctuation">&gt;</span></span></code></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-bmxsdkconfig">BMXSDKConfig</a></strong>(BMXClientType type, const std::string &amp; vsn, const std::string &amp; dataDir, const std::string &amp; cacheDir, const std::string &amp; SDKVersion, const std::string &amp; pushCertName, const std::string &amp; userAgent, bool deliveryAck =false)<br>&#x6784;&#x9020;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-bmxsdkconfig">BMXSDKConfig</a></strong>(BMXClientType type, const std::string &amp; vsn, const std::string &amp; dataDir, const std::string &amp; cacheDir, const std::string &amp; SDKVersion, const std::string &amp; pushCertName, const std::string &amp; userAgent, const std::string &amp; appId, const std::string &amp; appSecret, bool deliveryAck =false)<br>&#x6784;&#x9020;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-~bmxsdkconfig">~BMXSDKConfig</a></strong>()<br>&#x6790;&#x6784;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getdatadir">getDataDir</a></strong>()<br>&#x83B7;&#x53D6;&#x804A;&#x5929;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#xFF0C;&#x5305;&#x542B;&#x6D88;&#x606F;&#x3001;&#x9644;&#x4EF6;&#x7B49;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getcachedir">getCacheDir</a></strong>()<br>&#x83B7;&#x53D6;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x5934;&#x50CF;</td>
+</tr>
+<tr>
+<td>BMXClientType</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getclienttype">getClientType</a></strong>()<br>&#x5BA2;&#x6237;&#x7AEF;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getvsn">getVsn</a></strong>()<br>&#x5BA2;&#x6237;&#x7AEF;OS&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getsdkversion">getSDKVersion</a></strong>()<br>SDK&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getpushcertname">getPushCertName</a></strong>()<br>&#x83B7;&#x53D6;Push&#x8BC1;&#x4E66;&#x540D;&#x5B57;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setpushcertname">setPushCertName</a></strong>(const std::string &amp; )<br>&#x8BBE;&#x7F6E;Push&#x8BC1;&#x4E66;&#x540D;&#x5B57;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getuseragent">getUserAgent</a></strong>()<br>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-carryusernameinmessage">carryUsernameInMessage</a></strong>()<br>&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;config&#x4E2D;&#x662F;&#x5426;&#x643A;&#x5E26;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setcarryusernameinmessage">setCarryUsernameInMessage</a></strong>(bool )<br>&#x8BBE;&#x7F6E;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;config&#x4E2D;&#x662F;&#x5426;&#x643A;&#x5E26;&#x7528;&#x6237;&#x540D;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-enabledeliveryack">enableDeliveryAck</a></strong>()<br>&#x662F;&#x5426;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x9001;&#x8FBE;&#x56DE;&#x6267;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setenabledeliveryack">setEnableDeliveryAck</a></strong>(bool )<br>&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x9001;&#x8FBE;&#x56DE;&#x6267;</td>
+</tr>
+<tr>
+<td>BMXLogLevel</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getloglevel">getLogLevel</a></strong>()<br>Log&#x8F93;&#x51FA;&#x7B49;&#x7EA7;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setloglevel">setLogLevel</a></strong>(BMXLogLevel )<br>&#x8BBE;&#x7F6E;Log&#x8F93;&#x51FA;&#x7B49;&#x7EA7;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getconsoleoutput">getConsoleOutput</a></strong>()<br>Log&#x662F;&#x5426;&#x8F93;&#x51FA;&#x5230;Console.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setconsoleoutput">setConsoleOutput</a></strong>(bool )<br>&#x8BBE;&#x7F6E;Log&#x662F;&#x5426;&#x8F93;&#x51FA;&#x5230;Console</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-sethostconfig">setHostConfig</a></strong>(const [HostConfig] &amp; config)<br>&#x8BBE;&#x7F6E;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>const [HostConfig] &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-gethostconfig">getHostConfig</a></strong>()<br>&#x83B7;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getloadallserverconversations">getLoadAllServerConversations</a></strong>()<br>&#x662F;&#x5426;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x672A;&#x8BFB;&#x5217;&#x8868;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x4F1A;&#x8BDD;.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setloadallserverconversations">setLoadAllServerConversations</a></strong>(bool enable =false)<br>&#x662F;&#x5426;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x672A;&#x8BFB;&#x5217;&#x8868;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x4F1A;&#x8BDD;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false&#xFF0C;&#x53EA;&#x4F1A;&#x521B;&#x5EFA;&#x6709;&#x672A;&#x8BFB;&#x6D88;&#x606F;&#x7684;&#x4F1A;&#x8BDD;&#x3002;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getdeviceuuid">getDeviceUuid</a></strong>()<br>&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00;&#x8BC6;&#x522B;&#x7801;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setdeviceuuid">setDeviceUuid</a></strong>(const std::string &amp; uuid)<br>&#x8BBE;&#x7F6E;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00;&#x8BC6;&#x522B;&#x7801;&#xFF0C;&#x5728;app&#x5378;&#x8F7D;&#x4E4B;&#x524D;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;app&#x5220;&#x9664;&#x540E;&#x518D;&#x6B21;&#x5B89;&#x88C5;&#x65F6;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x5907;&#x8BC6;&#x522B;&#x7801;&#x3002;</td>
+</tr>
+<tr>
+<td>const std::string &amp;</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getdbcryptokey">getDBCryptoKey</a></strong>()<br>&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setdbcryptokey">setDBCryptoKey</a></strong>(const std::string &amp; cryptoKey)<br>&#x8BBE;&#x7F6E;&#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x7684;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF0C;&#x5728;app&#x5378;&#x8F7D;&#x4E4B;&#x524D;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x4E00;&#x76F4;&#xFF0C;app&#x5220;&#x9664;&#x540E;&#x518D;&#x6B21;&#x5B89;&#x88C5;&#x65F6;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x5BC6;&#x94A5;&#x3002;&#x7528;&#x4E8E;&#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x5BC6;&#x3002;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getverifycertificate">getVerifyCertificate</a></strong>()<br>&#x83B7;&#x53D6;https&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BC1;&#x4E66;&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setverifycertificate">setVerifyCertificate</a></strong>(bool verify =true)<br>&#x8BBE;&#x7F6E;https&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BC1;&#x4E66;&#x3002;</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getenabledns">getEnableDNS</a></strong>()<br>&#x83B7;&#x53D6;&#x662F;&#x5426;&#x542F;&#x7528;dns&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setenabledns">setEnableDNS</a></strong>(bool enable =true)<br>&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x542F;&#x7528;dns&#x529F;&#x80FD;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x5F00;&#x542F;&#x7684;&#x3002;</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getuserdnsaddress">getUserDNSAddress</a></strong>()<br>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;dns&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setuserdnsaddress">setUserDNSAddress</a></strong>(const std::string &amp; dns)<br>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;dns&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x4E86;dns&#x670D;&#x52A1;&#x5668;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x7528;&#x6237;dns&#x3002;</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getappid">getAppID</a></strong>()<br>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;appID&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setappid">setAppID</a></strong>(const std::string &amp; appID)<br>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;appID&#x3002;</td>
+</tr>
+<tr>
+<td>std::string</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getappsecret">getAppSecret</a></strong>()<br>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;appSecret&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setappsecret">setAppSecret</a></strong>(const std::string &amp; appSecret)<br>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;appSecret&#x3002;</td>
+</tr>
+<tr>
+<td>BMXPushProviderType</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getpushprovidertype">getPushProviderType</a></strong>()<br>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x63D0;&#x4F9B;&#x5546;&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setpushprovidertype">setPushProviderType</a></strong>(BMXPushProviderType type)<br>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x63D0;&#x4F9B;&#x5546;&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>BMXPushEnvironmentType</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getpushenvironmenttype">getPushEnvironmentType</a></strong>()<br>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x73AF;&#x5883;&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setenvironmenttype">setEnvironmentType</a></strong>(BMXPushEnvironmentType type)<br>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x73AF;&#x5883;&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>int64_t</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-getdebuglogreceiverid">getDebugLogReceiverId</a></strong>()<br>&#x83B7;&#x53D6;&#x8C03;&#x8BD5;log&#x63A5;&#x6536;&#x7740;&#x8D26;&#x53F7;(&#x4EC5;&#x7528;&#x4E8E;SDK&#x8C03;&#x8BD5;&#xFF0C;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;log&#x65E5;&#x5FD7;&#x4F7F;&#x7528;)</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classfloo_1_1_b_m_x_s_d_k_config.html#function-setdebuglogreceiverid">setDebugLogReceiverId</a></strong>(int64_t uid)<br>&#x8BBE;&#x7F6E;&#x8C03;&#x8BD5;log&#x63A5;&#x6536;&#x8D26;&#x53F7;(&#x4EC5;&#x7528;&#x4E8E;SDK&#x8C03;&#x8BD5;&#xFF0C;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;log&#x65E5;&#x5FD7;&#x4F7F;&#x7528;)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-bmxsdkconfig">function BMXSDKConfig</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token function">BMXSDKConfig</span><span class="token punctuation">(</span>
+    BMXClientType type<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> vsn<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> dataDir<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> cacheDir<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> SDKVersion<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> pushCertName<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> userAgent<span class="token punctuation">,</span>
+    <span class="token keyword">bool</span> deliveryAck <span class="token operator">=</span><span class="token boolean">false</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>type</strong> &#x5BA2;&#x6237;&#x7AEF;&#x7C7B;&#x578B; </li>
+<li><strong>vsn</strong> &#x5BA2;&#x6237;&#x7AEF;OS&#x7248;&#x672C; </li>
+<li><strong>dataDir</strong> &#x804A;&#x5929;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84; </li>
+<li><strong>cacheDir</strong> &#x7F13;&#x5B58;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84; </li>
+<li><strong>SDKVersion</strong> SDK&#x7248;&#x672C; </li>
+<li><strong>pushCertName</strong> Push&#x8BC1;&#x4E66;&#x540D;&#x5B57; </li>
+<li><strong>userAgent</strong> &#x7528;&#x6237;&#x4EE3;&#x7406;&#x4FE1;&#x606F; </li>
+<li><strong>deliveryAck</strong> &#x662F;&#x5426;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x9001;&#x8FBE;&#x56DE;&#x6267; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-bmxsdkconfig">function BMXSDKConfig</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token function">BMXSDKConfig</span><span class="token punctuation">(</span>
+    BMXClientType type<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> vsn<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> dataDir<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> cacheDir<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> SDKVersion<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> pushCertName<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> userAgent<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> appId<span class="token punctuation">,</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> appSecret<span class="token punctuation">,</span>
+    <span class="token keyword">bool</span> deliveryAck <span class="token operator">=</span><span class="token boolean">false</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>type</strong> &#x5BA2;&#x6237;&#x7AEF;&#x7C7B;&#x578B; </li>
+<li><strong>vsn</strong> &#x5BA2;&#x6237;&#x7AEF;OS&#x7248;&#x672C; </li>
+<li><strong>dataDir</strong> &#x804A;&#x5929;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84; </li>
+<li><strong>cacheDir</strong> &#x7F13;&#x5B58;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84; </li>
+<li><strong>SDKVersion</strong> SDK&#x7248;&#x672C; </li>
+<li><strong>pushCertName</strong> Push&#x8BC1;&#x4E66;&#x540D;&#x5B57; </li>
+<li><strong>userAgent</strong> &#x7528;&#x6237;&#x4EE3;&#x7406;&#x4FE1;&#x606F; </li>
+<li><strong>appId</strong> &#x7528;&#x6237;&#x7684;appId </li>
+<li><strong>appSecret</strong> &#x7528;&#x6237;&#x7684;appSecret&#xFF08;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x63A8;&#x9001;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;appId&#x548C;appSecret&#xFF09; </li>
+<li><strong>deliveryAck</strong> &#x662F;&#x5426;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x9001;&#x8FBE;&#x56DE;&#x6267; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-bmxsdkconfig">function ~BMXSDKConfig</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">virtual</span> <span class="token operator">~</span><span class="token function">BMXSDKConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6790;&#x6784;&#x51FD;&#x6570; </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getdatadir">function getDataDir</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getDataDir</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x804A;&#x5929;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#xFF0C;&#x5305;&#x542B;&#x6D88;&#x606F;&#x3001;&#x9644;&#x4EF6;&#x7B49; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getcachedir">function getCacheDir</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getCacheDir</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x5934;&#x50CF; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getclienttype">function getClientType</h3>
+<pre class="language-"><code class="lang-cpp">BMXClientType <span class="token function">getClientType</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x7C7B;&#x578B; </p>
+<p><strong>Return</strong>: BMXClientType </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getvsn">function getVsn</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getVsn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;OS&#x7248;&#x672C; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getsdkversion">function getSDKVersion</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getSDKVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>SDK&#x7248;&#x672C; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getpushcertname">function getPushCertName</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getPushCertName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;Push&#x8BC1;&#x4E66;&#x540D;&#x5B57; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setpushcertname">function setPushCertName</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setPushCertName</span><span class="token punctuation">(</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> 
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;Push&#x8BC1;&#x4E66;&#x540D;&#x5B57; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getuseragent">function getUserAgent</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getUserAgent</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x4FE1;&#x606F; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-carryusernameinmessage">function carryUsernameInMessage</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> <span class="token function">carryUsernameInMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;config&#x4E2D;&#x662F;&#x5426;&#x643A;&#x5E26; </p>
+<p><strong>Return</strong>: bool </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setcarryusernameinmessage">function setCarryUsernameInMessage</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setCarryUsernameInMessage</span><span class="token punctuation">(</span>
+    <span class="token keyword">bool</span> 
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;config&#x4E2D;&#x662F;&#x5426;&#x643A;&#x5E26;&#x7528;&#x6237;&#x540D; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>bool</strong> &#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x5728;&#x9001;&#x6D88;&#x606F;&#x7684;config&#x4E2D;&#x643A;&#x5E26;&#x7528;&#x6237;&#x540D; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-enabledeliveryack">function enableDeliveryAck</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> <span class="token function">enableDeliveryAck</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x662F;&#x5426;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x9001;&#x8FBE;&#x56DE;&#x6267; </p>
+<p><strong>Return</strong>: bool </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setenabledeliveryack">function setEnableDeliveryAck</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setEnableDeliveryAck</span><span class="token punctuation">(</span>
+    <span class="token keyword">bool</span> 
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x9001;&#x8FBE;&#x56DE;&#x6267; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>bool</strong> &#x662F;&#x5426;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x9001;&#x8FBE;&#x56DE;&#x6267; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getloglevel">function getLogLevel</h3>
+<pre class="language-"><code class="lang-cpp">BMXLogLevel <span class="token function">getLogLevel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Log&#x8F93;&#x51FA;&#x7B49;&#x7EA7; </p>
+<p><strong>Return</strong>: BMXLogLevel </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setloglevel">function setLogLevel</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setLogLevel</span><span class="token punctuation">(</span>
+    BMXLogLevel 
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;Log&#x8F93;&#x51FA;&#x7B49;&#x7EA7; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>BMXLogLevel</strong> Log&#x8F93;&#x51FA;&#x7B49;&#x7EA7; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p><pre class="language-"><code class="lang-c">config<span class="token operator">-&gt;</span><span class="token function">setLogLevel</span><span class="token punctuation">(</span>BMXLogLevel<span class="token operator">::</span>Debug<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/main.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/main.cc#L33" target="_blank">Github Source: test/src/main.cc (line 33)</a></div></p>
+<h3 id="function-getconsoleoutput">function getConsoleOutput</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> <span class="token function">getConsoleOutput</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Log&#x662F;&#x5426;&#x8F93;&#x51FA;&#x5230;Console. </p>
+<p><strong>Return</strong>: bool </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setconsoleoutput">function setConsoleOutput</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setConsoleOutput</span><span class="token punctuation">(</span>
+    <span class="token keyword">bool</span> 
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;Log&#x662F;&#x5426;&#x8F93;&#x51FA;&#x5230;Console </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>bool</strong> &#x8BBE;&#x7F6E;Log&#x662F;&#x5426;&#x8F93;&#x51FA;&#x5230;Console </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p><pre class="language-"><code class="lang-c">config<span class="token operator">-&gt;</span><span class="token function">setConsoleOutput</span><span class="token punctuation">(</span>false<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/main.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/main.cc#L32" target="_blank">Github Source: test/src/main.cc (line 32)</a></div></p>
+<h3 id="function-sethostconfig">function setHostConfig</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setHostConfig</span><span class="token punctuation">(</span>
+    <span class="token keyword">const</span> HostConfig <span class="token operator">&amp;</span> config
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>config</strong> &#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-gethostconfig">function getHostConfig</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> HostConfig <span class="token operator">&amp;</span> <span class="token function">getHostConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E; </p>
+<p><strong>Return</strong>: [HostConfig]</p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getloadallserverconversations">function getLoadAllServerConversations</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> <span class="token function">getLoadAllServerConversations</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x662F;&#x5426;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x672A;&#x8BFB;&#x5217;&#x8868;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x4F1A;&#x8BDD;. </p>
+<p><strong>Return</strong>: bool </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setloadallserverconversations">function setLoadAllServerConversations</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setLoadAllServerConversations</span><span class="token punctuation">(</span>
+    <span class="token keyword">bool</span> enable <span class="token operator">=</span><span class="token boolean">false</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x662F;&#x5426;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x672A;&#x8BFB;&#x5217;&#x8868;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x4F1A;&#x8BDD;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false&#xFF0C;&#x53EA;&#x4F1A;&#x521B;&#x5EFA;&#x6709;&#x672A;&#x8BFB;&#x6D88;&#x606F;&#x7684;&#x4F1A;&#x8BDD;&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>enable</strong> &#x662F;&#x5426;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x672A;&#x8BFB;&#x5217;&#x8868;&#x521B;&#x5EFA;&#x6240;&#x6709;&#x4F1A;&#x8BDD; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getdeviceuuid">function getDeviceUuid</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getDeviceUuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00;&#x8BC6;&#x522B;&#x7801; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setdeviceuuid">function setDeviceUuid</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setDeviceUuid</span><span class="token punctuation">(</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> uuid
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00;&#x8BC6;&#x522B;&#x7801;&#xFF0C;&#x5728;app&#x5378;&#x8F7D;&#x4E4B;&#x524D;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;app&#x5220;&#x9664;&#x540E;&#x518D;&#x6B21;&#x5B89;&#x88C5;&#x65F6;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x5907;&#x8BC6;&#x522B;&#x7801;&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>uuid</strong> &#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00;&#x8BC6;&#x522B;&#x7801;&#x3002; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p><pre class="language-"><code class="lang-c">config<span class="token operator">-&gt;</span><span class="token function">setDeviceUuid</span><span class="token punctuation">(</span><span class="token string">&quot;b81f412e-fcb2-44fb-9f44-5e8e5b1e809e&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/main.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/main.cc#L31" target="_blank">Github Source: test/src/main.cc (line 31)</a></div></p>
+<h3 id="function-getdbcryptokey">function getDBCryptoKey</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> <span class="token function">getDBCryptoKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x3002; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setdbcryptokey">function setDBCryptoKey</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setDBCryptoKey</span><span class="token punctuation">(</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> cryptoKey
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x7684;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF0C;&#x5728;app&#x5378;&#x8F7D;&#x4E4B;&#x524D;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x4E00;&#x76F4;&#xFF0C;app&#x5220;&#x9664;&#x540E;&#x518D;&#x6B21;&#x5B89;&#x88C5;&#x65F6;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x5BC6;&#x94A5;&#x3002;&#x7528;&#x4E8E;&#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x5BC6;&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>cryptoKey</strong> &#x672C;&#x5730;&#x6570;&#x636E;&#x5E93;&#x7684;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x3002; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p><pre class="language-"><code class="lang-c">config<span class="token operator">-&gt;</span><span class="token function">setDBCryptoKey</span><span class="token punctuation">(</span><span class="token string">&quot;testkey&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/main.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/main.cc#L30" target="_blank">Github Source: test/src/main.cc (line 30)</a></div></p>
+<h3 id="function-getverifycertificate">function getVerifyCertificate</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> <span class="token function">getVerifyCertificate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;https&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BC1;&#x4E66;&#x3002; </p>
+<p><strong>Return</strong>: bool </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setverifycertificate">function setVerifyCertificate</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setVerifyCertificate</span><span class="token punctuation">(</span>
+    <span class="token keyword">bool</span> verify <span class="token operator">=</span><span class="token boolean">true</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;https&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BC1;&#x4E66;&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>verify</strong> https&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BC1;&#x4E66; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getenabledns">function getEnableDNS</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">bool</span> <span class="token function">getEnableDNS</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x662F;&#x5426;&#x542F;&#x7528;dns&#x529F;&#x80FD;&#x3002; </p>
+<p><strong>Return</strong>: bool </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setenabledns">function setEnableDNS</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setEnableDNS</span><span class="token punctuation">(</span>
+    <span class="token keyword">bool</span> enable <span class="token operator">=</span><span class="token boolean">true</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x542F;&#x7528;dns&#x529F;&#x80FD;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x5F00;&#x542F;&#x7684;&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>enable</strong> &#x662F;&#x5426;&#x542F;&#x7528;dns&#x529F;&#x80FD; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getuserdnsaddress">function getUserDNSAddress</h3>
+<pre class="language-"><code class="lang-cpp">std<span class="token double-colon punctuation">::</span>string <span class="token function">getUserDNSAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;dns&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setuserdnsaddress">function setUserDNSAddress</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setUserDNSAddress</span><span class="token punctuation">(</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> dns
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;dns&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x4E86;dns&#x670D;&#x52A1;&#x5668;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x7528;&#x6237;dns&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>dns</strong> &#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;dns&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getappid">function getAppID</h3>
+<pre class="language-"><code class="lang-cpp">std<span class="token double-colon punctuation">::</span>string <span class="token function">getAppID</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;appID&#x3002; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setappid">function setAppID</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setAppID</span><span class="token punctuation">(</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> appID
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;appID&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>appID</strong> &#x7528;&#x6237;&#x7684;appID </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p><pre class="language-"><code class="lang-c">config<span class="token operator">-&gt;</span><span class="token function">setAppID</span><span class="token punctuation">(</span><span class="token string">&quot;welovemaxim&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><div class="lanying-code-snippet-caption"><a title="Show Full Source of test/src/main.cc" href="https://github.com/maxim-top/lanying-im-embedded/blob/627174db5e32a33704deb1f3b109f7e25b59cac6/test/src/main.cc#L29" target="_blank">Github Source: test/src/main.cc (line 29)</a></div></p>
+<h3 id="function-getappsecret">function getAppSecret</h3>
+<pre class="language-"><code class="lang-cpp">std<span class="token double-colon punctuation">::</span>string <span class="token function">getAppSecret</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;appSecret&#x3002; </p>
+<p><strong>Return</strong>: std::string </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setappsecret">function setAppSecret</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setAppSecret</span><span class="token punctuation">(</span>
+    <span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string <span class="token operator">&amp;</span> appSecret
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;appSecret&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>appID</strong> &#x7528;&#x6237;&#x7684;appSecret </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getpushprovidertype">function getPushProviderType</h3>
+<pre class="language-"><code class="lang-cpp">BMXPushProviderType <span class="token function">getPushProviderType</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x63D0;&#x4F9B;&#x5546;&#x7C7B;&#x578B;&#x3002; </p>
+<p><strong>Return</strong>: BMXPushProviderType </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setpushprovidertype">function setPushProviderType</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setPushProviderType</span><span class="token punctuation">(</span>
+    BMXPushProviderType type
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x63D0;&#x4F9B;&#x5546;&#x7C7B;&#x578B;&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>type</strong> &#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x63D0;&#x4F9B;&#x5546;&#x7C7B;&#x578B; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getpushenvironmenttype">function getPushEnvironmentType</h3>
+<pre class="language-"><code class="lang-cpp">BMXPushEnvironmentType <span class="token function">getPushEnvironmentType</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x73AF;&#x5883;&#x7C7B;&#x578B;&#x3002; </p>
+<p><strong>Return</strong>: BMXPushEnvironmentType </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setenvironmenttype">function setEnvironmentType</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setEnvironmentType</span><span class="token punctuation">(</span>
+    BMXPushEnvironmentType type
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x73AF;&#x5883;&#x7C7B;&#x578B;&#x3002; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>type</strong> &#x7528;&#x6237;&#x7684;&#x63A8;&#x9001;&#x73AF;&#x5883;&#x7C7B;&#x578B; </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-getdebuglogreceiverid">function getDebugLogReceiverId</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int64_t</span> <span class="token function">getDebugLogReceiverId</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x8C03;&#x8BD5;log&#x63A5;&#x6536;&#x7740;&#x8D26;&#x53F7;(&#x4EC5;&#x7528;&#x4E8E;SDK&#x8C03;&#x8BD5;&#xFF0C;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;log&#x65E5;&#x5FD7;&#x4F7F;&#x7528;) </p>
+<p><strong>Return</strong>: int64_t </p>
+<p><strong>Example</strong>:</p>
+<p></p>
+<h3 id="function-setdebuglogreceiverid">function setDebugLogReceiverId</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">setDebugLogReceiverId</span><span class="token punctuation">(</span>
+    <span class="token keyword">int64_t</span> uid
+<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x8C03;&#x8BD5;log&#x63A5;&#x6536;&#x8D26;&#x53F7;(&#x4EC5;&#x7528;&#x4E8E;SDK&#x8C03;&#x8BD5;&#xFF0C;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;log&#x65E5;&#x5FD7;&#x4F7F;&#x7528;) </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>uid</strong> &#x8C03;&#x8BD5;log&#x63A5;&#x6536;&#x8005;id </li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p></p>
+<hr>
+<p>Updated on 2022-01-26 at 17:20:40 +0800 </p>
+<footer class="page-footer"><span class="copyright">&#xA9; 2019-2023 &#x7F8E;&#x4FE1;&#x62D3;&#x6251; | <a href="https://lanyingim.com" style="text-decoration:none!important;" target="_blank">&#x5B98;&#x7F51;</a> </span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-09-21 11:43:07
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="classfloo_1_1_b_m_x_roster_service_listener.html" class="navigation navigation-prev " aria-label="Previous page: floo::BMXRosterServiceListener">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classfloo_1_1_b_m_x_user_profile.html" class="navigation navigation-next " aria-label="Next page: floo::BMXUserProfile">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"floo::BMXSDKConfig","summary":"SDK设置管理","level":"1.3.4.25","depth":3,"next":{"title":"floo::BMXUserProfile","level":"1.3.4.26","depth":3,"path":"reference/floo/classfloo_1_1_b_m_x_user_profile.md","ref":"reference/floo/classfloo_1_1_b_m_x_user_profile.md","articles":[]},"previous":{"title":"floo::BMXRosterServiceListener","level":"1.3.4.24","depth":3,"path":"reference/floo/classfloo_1_1_b_m_x_roster_service_listener.md","ref":"reference/floo/classfloo_1_1_b_m_x_roster_service_listener.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link@^2.0.2","fontsettings@^2.0.0","-sharing","sharing-plus@^0.0.2","-highlight","prism@^2.1.0","prism-themes@^0.0.2","-lunr","-search","lanying-code-snippet@^1.1.8","search-plus@^0.0.11","advanced-emoji@^0.2.1","expandable-chapters-small@^0.1.7","tbfed-pagefooter@^0.0.1","versions-select@^0.1.1","terminal@^0.3.2","code@^0.1.0","splitter@^0.0.8","favicon@^0.0.2","image-captions@^3.1.0","auto-scroll-table@^0.0.5","logo@^0.0.2","intopic-toc@^1.1.1","meta@^0.1.12","logo@^0.0.2","intopic-toc@^1.1.1","meta@^0.1.12"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2019-2023 美信拓扑 | <a href='https://lanyingim.com' style='text-decoration:none!important;'>官网</a>","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"language-picker":{"grid-columns":3},"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"内容","maxDepth":3,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","visible":true},"livereload":{},"meta":{"content":"","data":[{"name":"keywords","content":"蓝莺IM, 美信拓扑, IM SDK, 即时通讯, 即时通讯云, IM云服务, 移动IM, 开源IM, 企业IM, 聊天软件, 移动客服, 在线客服, IM业务场景, APP社交, 开发者服务, 直播聊天室, 实时音视频, 音视频, 直播平台, 美信反垃圾, 内容安全"}],"name":""},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"lanying-code-snippet":{"showLink":true,"reindent":true,"maxLine":20,"maxSnippetCount":8,"repositories":[{"name":"lanying-im-web","url":"https://github.com/maxim-top/lanying-im-web.git","branch":"master","cacheDir":"../cache/lanying-im-web"},{"name":"lanying-im-android","url":"https://github.com/maxim-top/lanying-im-android.git","branch":"master","cacheDir":"../cache/lanying-im-android"},{"name":"lanying-im-embedded","url":"https://github.com/maxim-top/lanying-im-embedded.git","branch":"master","cacheDir":"../cache/lanying-im-embedded"},{"name":"lanying-im-ios-","url":"https://github.com/maxim-top/lanying-im-ios.git","branch":"master","cacheDir":"../cache/lanying-im-ios"}]},"logo":{"logo":"/assets/lanying-logo-color.png","logoStyle":"width: 200px;align: left;","url":"https://www.lanyingim.com"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"github-tables":{"myConfigKey":"it's the default value"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"canonical-link":{"baseURL":"https://docs.lanyingim.com"},"favicon":{"shortcut":"/assets/favicon.ico","bookmark":"/assets/favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"maxim-top/im.gitbook","types":["star"],"size":"small"},"expandable-chapters-small":{},"versions":{"type":"languages","options":[{"value":"/","text":"简体中文"},{"value":"/en/","text":"English"}]},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone","douban","line","whatsapp"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"在GitHub上编辑","base":"https://github.com/maxim-top/im.gitbook/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"jinhai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: 蓝莺IM云服务开放平台架构","alt":"蓝莺IM云服务开放平台架构","nro":1,"url":"assets/1.png","index":1,"caption_template":"_CAPTION_","label":"蓝莺IM云服务开放平台架构","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"index.html#fig1.1.2","level":"1.1","list_caption":"Figure: 蓝莺IM SDK 技术栈","alt":"蓝莺IM SDK 技术栈","nro":2,"url":"assets/2.png","index":2,"caption_template":"_CAPTION_","label":"蓝莺IM SDK 技术栈","attributes":{},"skip":false,"key":"1.1.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.1","level":"1.2.7","list_caption":"Figure: 创建应用","alt":"创建应用","nro":3,"url":"../assets/1-1.create_app.png","index":1,"caption_template":"_CAPTION_","label":"创建应用","attributes":{},"skip":false,"key":"1.2.7.1"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.2","level":"1.2.7","list_caption":"Figure: 应用信息","alt":"应用信息","nro":4,"url":"../assets/1-2.app_info.png","index":2,"caption_template":"_CAPTION_","label":"应用信息","attributes":{},"skip":false,"key":"1.2.7.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.3","level":"1.2.7","list_caption":"Figure: 开通私有云服务","alt":"开通私有云服务","nro":5,"url":"../assets/1-3.select_private_plan.png","index":3,"caption_template":"_CAPTION_","label":"开通私有云服务","attributes":{},"skip":false,"key":"1.2.7.3"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.4","level":"1.2.7","list_caption":"Figure: 私有云部署","alt":"私有云部署","nro":6,"url":"../assets/1-4.deploy.png","index":4,"caption_template":"_CAPTION_","label":"私有云部署","attributes":{},"skip":false,"key":"1.2.7.4"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.5","level":"1.2.7","list_caption":"Figure: 获取私有云安装token","alt":"获取私有云安装token","nro":7,"url":"../assets/1-5.get_install_token.png","index":5,"caption_template":"_CAPTION_","label":"获取私有云安装token","attributes":{},"skip":false,"key":"1.2.7.5"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.6","level":"1.2.7","list_caption":"Figure: 单机版安装步骤一","alt":"单机版安装步骤一","nro":8,"url":"../assets/2-1.install_single_s1.png","index":6,"caption_template":"_CAPTION_","label":"单机版安装步骤一","attributes":{},"skip":false,"key":"1.2.7.6"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.7","level":"1.2.7","list_caption":"Figure: 单机版安装步骤二","alt":"单机版安装步骤二","nro":9,"url":"../assets/2-2.install_single_s2.png","index":7,"caption_template":"_CAPTION_","label":"单机版安装步骤二","attributes":{},"skip":false,"key":"1.2.7.7"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.8","level":"1.2.7","list_caption":"Figure: 单机版安装步骤三","alt":"单机版安装步骤三","nro":10,"url":"../assets/2-3.install_single_s3.png","index":8,"caption_template":"_CAPTION_","label":"单机版安装步骤三","attributes":{},"skip":false,"key":"1.2.7.8"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.9","level":"1.2.7","list_caption":"Figure: 单机版安装步骤四","alt":"单机版安装步骤四","nro":11,"url":"../assets/2-4.install_single_s4.png","index":9,"caption_template":"_CAPTION_","label":"单机版安装步骤四","attributes":{},"skip":false,"key":"1.2.7.9"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.10","level":"1.2.7","list_caption":"Figure: 单机版安装步骤五","alt":"单机版安装步骤五","nro":12,"url":"../assets/2-5.install_single_s5.png","index":10,"caption_template":"_CAPTION_","label":"单机版安装步骤五","attributes":{},"skip":false,"key":"1.2.7.10"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.11","level":"1.2.7","list_caption":"Figure: 集群权限步骤一","alt":"集群权限步骤一","nro":13,"url":"../assets/3-1-1.config_cluster_s1.png","index":11,"caption_template":"_CAPTION_","label":"集群权限步骤一","attributes":{},"skip":false,"key":"1.2.7.11"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.12","level":"1.2.7","list_caption":"Figure: 集群权限步骤二","alt":"集群权限步骤二","nro":14,"url":"../assets/3-1-2.config_cluster_s2.png","index":12,"caption_template":"_CAPTION_","label":"集群权限步骤二","attributes":{},"skip":false,"key":"1.2.7.12"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.13","level":"1.2.7","list_caption":"Figure: 集群权限步骤三","alt":"集群权限步骤三","nro":15,"url":"../assets/3-1-3.config_cluster_s3.png","index":13,"caption_template":"_CAPTION_","label":"集群权限步骤三","attributes":{},"skip":false,"key":"1.2.7.13"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.14","level":"1.2.7","list_caption":"Figure: 集群权限步骤四","alt":"集群权限步骤四","nro":16,"url":"../assets/3-1-4.config_cluster_s4.png","index":14,"caption_template":"_CAPTION_","label":"集群权限步骤四","attributes":{},"skip":false,"key":"1.2.7.14"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.15","level":"1.2.7","list_caption":"Figure: 集群权限步骤五","alt":"集群权限步骤五","nro":17,"url":"../assets/3-1-5.config_cluster_s5.png","index":15,"caption_template":"_CAPTION_","label":"集群权限步骤五","attributes":{},"skip":false,"key":"1.2.7.15"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.16","level":"1.2.7","list_caption":"Figure: 集群版安装步骤一","alt":"集群版安装步骤一","nro":18,"url":"../assets/3-2-1.install_cluster_s1.png","index":16,"caption_template":"_CAPTION_","label":"集群版安装步骤一","attributes":{},"skip":false,"key":"1.2.7.16"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.17","level":"1.2.7","list_caption":"Figure: 集群版安装步骤二","alt":"集群版安装步骤二","nro":19,"url":"../assets/3-2-2.install_cluster_s2.png","index":17,"caption_template":"_CAPTION_","label":"集群版安装步骤二","attributes":{},"skip":false,"key":"1.2.7.17"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.18","level":"1.2.7","list_caption":"Figure: 集群版安装步骤三","alt":"集群版安装步骤三","nro":20,"url":"../assets/3-2-3.install_cluster_s3.png","index":18,"caption_template":"_CAPTION_","label":"集群版安装步骤三","attributes":{},"skip":false,"key":"1.2.7.18"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.19","level":"1.2.7","list_caption":"Figure: 集群版安装步骤四","alt":"集群版安装步骤四","nro":21,"url":"../assets/3-2-4.install_cluster_s4.png","index":19,"caption_template":"_CAPTION_","label":"集群版安装步骤四","attributes":{},"skip":false,"key":"1.2.7.19"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.20","level":"1.2.7","list_caption":"Figure: 集群版安装步骤五","alt":"集群版安装步骤五","nro":22,"url":"../assets/3-2-5.install_cluster_s5.png","index":20,"caption_template":"_CAPTION_","label":"集群版安装步骤五","attributes":{},"skip":false,"key":"1.2.7.20"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.21","level":"1.2.7","list_caption":"Figure: 挂载离线安装包，并添加maxim.ctl到可执行路径","alt":"挂载离线安装包，并添加maxim.ctl到可执行路径","nro":23,"url":"../assets/offline_mount_and_add_exec.png","index":21,"caption_template":"_CAPTION_","label":"挂载离线安装包，并添加maxim.ctl到可执行路径","attributes":{},"skip":false,"key":"1.2.7.21"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.22","level":"1.2.7","list_caption":"Figure: 生成离线配置文件","alt":"生成离线配置文件","nro":24,"url":"../assets/generate_offline_install_configration.png","index":22,"caption_template":"_CAPTION_","label":"生成离线配置文件","attributes":{},"skip":false,"key":"1.2.7.22"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.23","level":"1.2.7","list_caption":"Figure: 单机版(离线安装）开始安装","alt":"单机版(离线安装）开始安装","nro":25,"url":"../assets/single_offline_start_install.png","index":23,"caption_template":"_CAPTION_","label":"单机版(离线安装）开始安装","attributes":{},"skip":false,"key":"1.2.7.23"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.24","level":"1.2.7","list_caption":"Figure: 单机版(离线安装）安装完成","alt":"单机版(离线安装）安装完成","nro":26,"url":"../assets/single_offline_finish_install.png","index":24,"caption_template":"_CAPTION_","label":"单机版(离线安装）安装完成","attributes":{},"skip":false,"key":"1.2.7.24"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.25","level":"1.2.7","list_caption":"Figure: 生成集群LicenseKey","alt":"生成集群LicenseKey","nro":27,"url":"../assets/single_offline_export_license_key.png","index":25,"caption_template":"_CAPTION_","label":"生成集群LicenseKey","attributes":{},"skip":false,"key":"1.2.7.25"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.26","level":"1.2.7","list_caption":"Figure: 控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","alt":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","nro":28,"url":"../assets/single_offline_activate.png","index":26,"caption_template":"_CAPTION_","label":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","attributes":{},"skip":false,"key":"1.2.7.26"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.27","level":"1.2.7","list_caption":"Figure: 激活命令","alt":"激活命令","nro":29,"url":"../assets/single_offline_activate_success.png","index":27,"caption_template":"_CAPTION_","label":"激活命令","attributes":{},"skip":false,"key":"1.2.7.27"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.28","level":"1.2.7","list_caption":"Figure: 在集群中执行激活命令","alt":"在集群中执行激活命令","nro":30,"url":"../assets/single_offline_exec_activate.png","index":28,"caption_template":"_CAPTION_","label":"在集群中执行激活命令","attributes":{},"skip":false,"key":"1.2.7.28"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.29","level":"1.2.7","list_caption":"Figure: 集群权限步骤一","alt":"集群权限步骤一","nro":31,"url":"../assets/3-1-1.config_cluster_s1.png","index":29,"caption_template":"_CAPTION_","label":"集群权限步骤一","attributes":{},"skip":false,"key":"1.2.7.29"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.30","level":"1.2.7","list_caption":"Figure: 集群权限步骤二","alt":"集群权限步骤二","nro":32,"url":"../assets/3-1-2.config_cluster_s2.png","index":30,"caption_template":"_CAPTION_","label":"集群权限步骤二","attributes":{},"skip":false,"key":"1.2.7.30"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.31","level":"1.2.7","list_caption":"Figure: 集群权限步骤三","alt":"集群权限步骤三","nro":33,"url":"../assets/3-1-3.config_cluster_s3.png","index":31,"caption_template":"_CAPTION_","label":"集群权限步骤三","attributes":{},"skip":false,"key":"1.2.7.31"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.32","level":"1.2.7","list_caption":"Figure: 集群权限步骤四","alt":"集群权限步骤四","nro":34,"url":"../assets/3-1-4.config_cluster_s4.png","index":32,"caption_template":"_CAPTION_","label":"集群权限步骤四","attributes":{},"skip":false,"key":"1.2.7.32"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.33","level":"1.2.7","list_caption":"Figure: 集群权限步骤五","alt":"集群权限步骤五","nro":35,"url":"../assets/3-1-5.config_cluster_s5.png","index":33,"caption_template":"_CAPTION_","label":"集群权限步骤五","attributes":{},"skip":false,"key":"1.2.7.33"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.34","level":"1.2.7","list_caption":"Figure: 挂载离线安装包，并添加maxim.ctl到可执行路径","alt":"挂载离线安装包，并添加maxim.ctl到可执行路径","nro":36,"url":"../assets/offline_mount_and_add_exec.png","index":34,"caption_template":"_CAPTION_","label":"挂载离线安装包，并添加maxim.ctl到可执行路径","attributes":{},"skip":false,"key":"1.2.7.34"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.35","level":"1.2.7","list_caption":"Figure: 生成离线配置文件","alt":"生成离线配置文件","nro":37,"url":"../assets/generate_offline_install_configration.png","index":35,"caption_template":"_CAPTION_","label":"生成离线配置文件","attributes":{},"skip":false,"key":"1.2.7.35"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.36","level":"1.2.7","list_caption":"Figure: 集群版(离线安装）开始安装","alt":"集群版(离线安装）开始安装","nro":38,"url":"../assets/multi_offline_start_install.png","index":36,"caption_template":"_CAPTION_","label":"集群版(离线安装）开始安装","attributes":{},"skip":false,"key":"1.2.7.36"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.37","level":"1.2.7","list_caption":"Figure: 集群版(离线安装）安装完成","alt":"集群版(离线安装）安装完成","nro":39,"url":"../assets/multi_offline_finish_install.png","index":37,"caption_template":"_CAPTION_","label":"集群版(离线安装）安装完成","attributes":{},"skip":false,"key":"1.2.7.37"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.38","level":"1.2.7","list_caption":"Figure: 生成集群LicenseKey","alt":"生成集群LicenseKey","nro":40,"url":"../assets/single_offline_export_license_key.png","index":38,"caption_template":"_CAPTION_","label":"生成集群LicenseKey","attributes":{},"skip":false,"key":"1.2.7.38"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.39","level":"1.2.7","list_caption":"Figure: 控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","alt":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","nro":41,"url":"../assets/single_offline_activate.png","index":39,"caption_template":"_CAPTION_","label":"控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击\"激活集群\"","attributes":{},"skip":false,"key":"1.2.7.39"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.40","level":"1.2.7","list_caption":"Figure: 激活命令","alt":"激活命令","nro":42,"url":"../assets/single_offline_activate_success.png","index":40,"caption_template":"_CAPTION_","label":"激活命令","attributes":{},"skip":false,"key":"1.2.7.40"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.41","level":"1.2.7","list_caption":"Figure: 在集群中执行激活命令","alt":"在集群中执行激活命令","nro":43,"url":"../assets/single_offline_exec_activate.png","index":41,"caption_template":"_CAPTION_","label":"在集群中执行激活命令","attributes":{},"skip":false,"key":"1.2.7.41"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.42","level":"1.2.7","list_caption":"Figure: 安装进度点击“私有云”，通过节点信息的进度可以查看安装进度","alt":"安装进度点击“私有云”，通过节点信息的进度可以查看安装进度","nro":44,"url":"../assets/4-1.install_progress.png","index":42,"caption_template":"_CAPTION_","label":"安装进度点击“私有云”，通过节点信息的进度可以查看安装进度","attributes":{},"skip":false,"key":"1.2.7.42"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.43","level":"1.2.7","list_caption":"Figure: 如果所有检查项的状态都为正常，则表示服务已经正常","alt":"如果所有检查项的状态都为正常，则表示服务已经正常","nro":45,"url":"../assets/4-2.service_status.png","index":43,"caption_template":"_CAPTION_","label":"如果所有检查项的状态都为正常，则表示服务已经正常","attributes":{},"skip":false,"key":"1.2.7.43"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.1","level":"1.4.1.2","list_caption":"Figure: Photo by guille pozzi on Unsplash","alt":"Photo by guille pozzi on Unsplash","nro":46,"url":"../../assets/articles/autogen-fbf9287e68d8dc44ac7e075c891de0083d47120135cb2a3efbfb60ca0561b69b.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by guille pozzi on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.1"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.2","level":"1.4.1.2","list_caption":"Figure: Cape Town, Photo by Douglas Bagg on Unsplash","alt":"Cape Town, Photo by Douglas Bagg on Unsplash","nro":47,"url":"../../assets/articles/autogen-5aa2e869e4a47a1f9c9c829cccae95081be1583a8f9dfcab6c7d530fcf2bb731.webp","index":2,"caption_template":"_CAPTION_","label":"Cape Town, Photo by Douglas Bagg on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.2"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.3","level":"1.4.1.2","list_caption":"Figure: Photo by imgix on Unsplash","alt":"Photo by imgix on Unsplash","nro":48,"url":"../../assets/articles/autogen-8deb904309c595b2448cb2f3b926ce92fb4559a81b6bcba404d7892d854afbe9.webp","index":3,"caption_template":"_CAPTION_","label":"Photo by imgix on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.3"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.4","level":"1.4.1.2","list_caption":"Figure: Photo by Drew Beamer on Unsplash","alt":"Photo by Drew Beamer on Unsplash","nro":49,"url":"../../assets/articles/autogen-152027303d568271895c190d96ad3a8dd2563c1148d9a3de6ae292ff6b2ba154.webp","index":4,"caption_template":"_CAPTION_","label":"Photo by Drew Beamer on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.4"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.5","level":"1.4.1.2","list_caption":"Figure: Photo by Frank Park on Unsplash","alt":"Photo by Frank Park on Unsplash","nro":50,"url":"../../assets/articles/autogen-37d1ed97a050b08599422d44b4c3287f90cadf1a680b370c64580c620bdfd99a.webp","index":5,"caption_template":"_CAPTION_","label":"Photo by Frank Park on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.5"},{"backlink":"articles/Industry-development/the-next-decade-of-cloud-services.html#fig1.4.1.2.6","level":"1.4.1.2","list_caption":"Figure: Photo by Stefan Gessert on Unsplash","alt":"Photo by Stefan Gessert on Unsplash","nro":51,"url":"../../assets/articles/autogen-350a98b8a2653828a338c8eb221879f6ede228c0cafd3f5a7dd1932ddaba1b46.webp","index":6,"caption_template":"_CAPTION_","label":"Photo by Stefan Gessert on Unsplash","attributes":{},"skip":false,"key":"1.4.1.2.6"},{"backlink":"articles/product-and-technologies/lanying-linkchat-turning-content-marketing-into-interactive-marketing.html#fig1.4.2.1.1","level":"1.4.2.1","list_caption":"Figure: 扫码添加小蓝会聊天","alt":"扫码添加小蓝会聊天","nro":52,"url":"../../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png","index":1,"caption_template":"_CAPTION_","label":"扫码添加小蓝会聊天","attributes":{},"skip":false,"key":"1.4.2.1.1"},{"backlink":"articles/product-and-technologies/lanying-linkchat-turning-content-marketing-into-interactive-marketing.html#fig1.4.2.1.2","level":"1.4.2.1","list_caption":"Figure: 扫码关注蓝莺IM","alt":"扫码关注蓝莺IM","nro":53,"url":"../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg","index":2,"caption_template":"_CAPTION_","label":"扫码关注蓝莺IM","attributes":{},"skip":false,"key":"1.4.2.1.2"},{"backlink":"articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html#fig1.4.2.2.1","level":"1.4.2.2","list_caption":"Figure: 扫码添加小蓝会聊天","alt":"扫码添加小蓝会聊天","nro":54,"url":"../../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png","index":1,"caption_template":"_CAPTION_","label":"扫码添加小蓝会聊天","attributes":{},"skip":false,"key":"1.4.2.2.1"},{"backlink":"articles/product-and-technologies/how-to-implement-an-intelligent-customer-service-by-chatgpt.html#fig1.4.2.3.1","level":"1.4.2.3","list_caption":"Figure: 扫码添加小蓝会聊天","alt":"扫码添加小蓝会聊天","nro":55,"url":"../../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png","index":1,"caption_template":"_CAPTION_","label":"扫码添加小蓝会聊天","attributes":{},"skip":false,"key":"1.4.2.3.1"},{"backlink":"articles/product-and-technologies/ninety-percent-of-privately-deployed-softwares-have-no-push-notifications.html#fig1.4.2.7.1","level":"1.4.2.7","list_caption":"Figure: Photo by Jeremy Bezanger on Unsplash","alt":"Photo by Jeremy Bezanger on Unsplash","nro":56,"url":"../../assets/articles/autogen-96595b292da717c037b637e792e08a34f303f16c4507e05258a7baa5a71eec03.jpeg","index":1,"caption_template":"_CAPTION_","label":"Photo by Jeremy Bezanger on Unsplash","attributes":{},"skip":false,"key":"1.4.2.7.1"},{"backlink":"articles/product-and-technologies/from-cloud-marketplace-to-compact-disk.html#fig1.4.2.8.1","level":"1.4.2.8","list_caption":"Figure: Photo by Chris Yates on Unsplash","alt":"Photo by Chris Yates on Unsplash","nro":57,"url":"../../assets/articles/autogen-15a3d16a05a169df3774aa584f7ca52804cffac69d928aa3d66f746a9719a659.jpeg","index":1,"caption_template":"_CAPTION_","label":"Photo by Chris Yates on Unsplash","attributes":{},"skip":false,"key":"1.4.2.8.1"},{"backlink":"articles/product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html#fig1.4.2.12.1","level":"1.4.2.12","list_caption":"Figure: Photo by alevision.co on Unsplash","alt":"Photo by alevision.co on Unsplash","nro":58,"url":"../../assets/articles/autogen-41b6aa066fabc2b23ca9539a6270866d5152dfa57043ebabf7e5b915dfdcab63.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by alevision.co on Unsplash","attributes":{},"skip":false,"key":"1.4.2.12.1"},{"backlink":"articles/product-and-technologies/saas-pricing-three-proprietary-cloud-without-neighbors.html#fig1.4.2.12.2","level":"1.4.2.12","list_caption":"Figure: Photo by Alexander Andrews on Unsplash","alt":"Photo by Alexander Andrews on Unsplash","nro":59,"url":"../../assets/articles/autogen-ceca10f5cc250c96cbc3246fb95012a96d2d240969c75437ce5c21ac1c2b3c7d.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by Alexander Andrews on Unsplash","attributes":{},"skip":false,"key":"1.4.2.12.2"},{"backlink":"articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html#fig1.4.2.13.1","level":"1.4.2.13","list_caption":"Figure: Photo by Matt Seymour on Unsplash","alt":"Photo by Matt Seymour on Unsplash","nro":60,"url":"../../assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Matt Seymour on Unsplash","attributes":{},"skip":false,"key":"1.4.2.13.1"},{"backlink":"articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html#fig1.4.2.13.2","level":"1.4.2.13","list_caption":"Figure: Photo by Zunnoon Ahmed on Unsplash","alt":"Photo by Zunnoon Ahmed on Unsplash","nro":61,"url":"../../assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by Zunnoon Ahmed on Unsplash","attributes":{},"skip":false,"key":"1.4.2.13.2"},{"backlink":"articles/product-and-technologies/saas-pricing-two-monthly-private-cloud.html#fig1.4.2.13.3","level":"1.4.2.13","list_caption":"Figure: Photo by alevision.co on Unsplash","alt":"Photo by alevision.co on Unsplash","nro":62,"url":"../../assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp","index":3,"caption_template":"_CAPTION_","label":"Photo by alevision.co on Unsplash","attributes":{},"skip":false,"key":"1.4.2.13.3"},{"backlink":"articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html#fig1.4.2.14.1","level":"1.4.2.14","list_caption":"Figure: Photo by Thom Milkovic on Unsplash","alt":"Photo by Thom Milkovic on Unsplash","nro":63,"url":"../../assets/articles/autogen-10e2661331f22b91be0e9dbff19bc5b8617d86de82bcbbd8a33494f39a74df08.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Thom Milkovic on Unsplash","attributes":{},"skip":false,"key":"1.4.2.14.1"},{"backlink":"articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html#fig1.4.2.14.2","level":"1.4.2.14","list_caption":"Figure: Photo by Clay Banks on Unsplash","alt":"Photo by Clay Banks on Unsplash","nro":64,"url":"../../assets/articles/autogen-1441678e056040c76061afed6a968dc1ffc359f59cd2e3edb67e933320b342e6.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by Clay Banks on Unsplash","attributes":{},"skip":false,"key":"1.4.2.14.2"},{"backlink":"articles/product-and-technologies/saas-pricing-one-im-cloud-service-of-199-per-month.html#fig1.4.2.14.3","level":"1.4.2.14","list_caption":"Figure: Photo by Hello I‘m Nik on Unsplash","alt":"Photo by Hello I‘m Nik on Unsplash","nro":65,"url":"../../assets/articles/autogen-d89389332dd40323a5fdbc08ca9f890f63728279755802e8ce82b61cf299d2f4.webp","index":3,"caption_template":"_CAPTION_","label":"Photo by Hello I‘m Nik on Unsplash","attributes":{},"skip":false,"key":"1.4.2.14.3"},{"backlink":"articles/product-and-technologies/generating-java-code-with-swig.html#fig1.4.2.16.1","level":"1.4.2.16","list_caption":"Figure: Photo by Marco Djallo on @unsplash","alt":"Photo by Marco Djallo on @unsplash","nro":66,"url":"../../assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Marco Djallo on @unsplash","attributes":{},"skip":false,"key":"1.4.2.16.1"},{"backlink":"articles/product-and-technologies/generating-java-code-with-swig.html#fig1.4.2.16.2","level":"1.4.2.16","list_caption":"Figure: Photo by @JamieDotSt on @unsplash","alt":"Photo by @JamieDotSt on @unsplash","nro":67,"url":"../../assets/articles/autogen-5a1ed68575ebd20a7a616e396eecc9b6b59e4704496429c5570987f8c0b1e86a.webp","index":2,"caption_template":"_CAPTION_","label":"Photo by @JamieDotSt on @unsplash","attributes":{},"skip":false,"key":"1.4.2.16.2"},{"backlink":"articles/product-and-technologies/install-an-instant-messaging-im-private-cloud-in-ten-minutes.html#fig1.4.2.18.1","level":"1.4.2.18","list_caption":"Figure: Photo by Ben Kolde on Unsplash","alt":"Photo by Ben Kolde on Unsplash","nro":68,"url":"../../assets/articles/autogen-3327f0040a74492f5f4424d29ce2e9b8325971b165772ba135f1168b265a3c9e.webp","index":1,"caption_template":"_CAPTION_","label":"Photo by Ben Kolde on Unsplash","attributes":{},"skip":false,"key":"1.4.2.18.1"},{"backlink":"articles/activity-report/digital-twins-and-smart-manufacturing-in-automotive-factories.html#fig1.4.3.2.1","level":"1.4.3.2","list_caption":"Figure: TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日","alt":"TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日","nro":69,"url":"../../assets/articles/autogen-19be5dff5823d13a5138d8c421b4b71624a220f1e39fcd5e6518e33cda51a5df.jpeg","index":1,"caption_template":"_CAPTION_","label":"TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日","attributes":{},"skip":false,"key":"1.4.3.2.1"},{"backlink":"articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html#fig1.4.3.4.1","level":"1.4.3.4","list_caption":"Figure: 《绵云》","alt":"《绵云》","nro":70,"url":"../../assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp","index":1,"caption_template":"_CAPTION_","label":"《绵云》","attributes":{},"skip":false,"key":"1.4.3.4.1"},{"backlink":"articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html#fig1.4.3.4.2","level":"1.4.3.4","list_caption":"Figure: 《冬华》","alt":"《冬华》","nro":71,"url":"../../assets/articles/autogen-3bc4f7829ce30949063a0bdd76a1865a312048343d0a715e8aac7687de5e5e30.webp","index":2,"caption_template":"_CAPTION_","label":"《冬华》","attributes":{},"skip":false,"key":"1.4.3.4.2"},{"backlink":"articles/activity-report/tonight-let-us-talk-about-dongshan-kaii.html#fig1.4.3.4.3","level":"1.4.3.4","list_caption":"Figure: 《春晓》","alt":"《春晓》","nro":72,"url":"../../assets/articles/autogen-35e67579182b2814c5a19e7b7804705a2a733e9404858dfbf66585c39f126848.webp","index":3,"caption_template":"_CAPTION_","label":"《春晓》","attributes":{},"skip":false,"key":"1.4.3.4.3"}]},"title":"蓝莺 IM - 专业SDK，私有云按月付费","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"API文档及文章分享"},"file":{"path":"reference/floo/classfloo_1_1_b_m_x_s_d_k_config.md","mtime":"2022-09-21T03:43:07.511Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"0000-00-00T00:00:00.000Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+
