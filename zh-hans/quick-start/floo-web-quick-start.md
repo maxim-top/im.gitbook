@@ -46,7 +46,7 @@ const im = new window.flooIM(config);
 
 这种方式主要为支持浏览器中使用 script 标签引用，但会存在初始化并发问题，所以要用 try-catch-retry，请参见[lanying-im-web源码](https://github.com/maxim-top/lanying-im-web/blob/master/src/ui/index.vue#L85)。
 
-1. module 方式，import flooim 后，使用 flooim()
+2. module 方式，import flooim 后，使用 flooim()
 
 ```
 import flooim from 'floo-2.0.0';
@@ -171,6 +171,10 @@ im.on({
 
 单聊是最基本的聊天界面，提供文字、表情、图片等多种输入内容。
 
+### 音视频单聊
+
+单聊是最基本的聊天界面，在单聊界面可以发起1v1音视频聊天实现即时视频通话或者语音通话功能。
+
 ### 群聊
 
 群组的聊天，是多人一起参与的聊天。
@@ -193,7 +197,7 @@ im.groupManage
   });
 ```
 
-1. 加入群组
+2. 加入群组
 
 调用 groupManage 的 asyncApply 方法来申请加入一个群组
 
@@ -205,7 +209,7 @@ im.groupManage
   });
 ```
 
-1. 退出群组
+3. 退出群组
 
 调用 groupManage 的 asyncLeave 方法来退出群组
 
@@ -217,7 +221,7 @@ im.groupManage
   });
 ```
 
-1. 解散群组
+4. 解散群组
 
 调用 groupManage 的 asyncDestroy 方法来申请加入一个群组
 
@@ -229,7 +233,7 @@ im.groupManage
   });
 ```
 
-1. 获取群成员列表
+5. 获取群成员列表
 
 调用 groupManage 的 getGroupMembers 方法来获取所有成员列表
 
@@ -238,7 +242,8 @@ const members = im.groupManage.getGroupMembers(state.sid);
 console.log(members);
 ```
 
-1. 获取群组列表 调用 groupManage 的 asyncGetJoinedGroups 方法来获取所有用户加入的群组
+6. 获取群组列表 
+调用 groupManage 的 asyncGetJoinedGroups 方法来获取所有用户加入的群组
 
 ```
 im.groupManage.asyncGetJoinedGroups().then(res => {
@@ -246,7 +251,8 @@ im.groupManage.asyncGetJoinedGroups().then(res => {
 });
 ```
 
-1. 获取群组信息 调用 groupManage 的 asyncGetGroupInfo 方法来获取群组的详细信息
+7. 获取群组信息 
+调用 groupManage 的 asyncGetGroupInfo 方法来获取群组的详细信息
 
 ```
 groupManage.asyncGetGroupInfo(group_id).then(res => {
@@ -256,7 +262,7 @@ groupManage.asyncGetGroupInfo(group_id).then(res => {
 
 ## 消息发送
 
-登录成功之后才能进行聊天操作。发消息时，单聊和群聊是分开发消息的。 由于操作方便，目前只支持文本、图片与文件的发送。
+登录成功之后才能进行聊天操作。发消息时，单聊和群聊是分开发消息的。由于操作方便，单聊界面可以发送文本、图片、文件、位置及1v1音视频通话消息。群聊界面目前只支持文本、图片、文件、位置消息的发送。
 
 ### 构建消息实体
 
@@ -308,6 +314,35 @@ const message = {
   content: "",
   attachment: fileInfo,
   priority, //设置消息的扩散优先级
+});
+```
+
+### 位置消息
+```
+const message = {
+  type: 'location',
+  uid,
+  git, // uid, gid 分别为发送的用户或群
+  content: '',
+  attachment: {
+    lat,    //纬度数据
+    lon,    //经度数据
+    addr,   //地址名称
+  }
+});
+```
+
+### 音视频消息
+```
+const message = {
+  type: 'rtc',
+  uid,
+  git,          // uid, gid 分别为发送的用户或群
+  content: '',  // 消息文本内容
+  config: {
+    action,     //消息操作类型 （接通、拒接、挂断等操作类型）
+    callId,     //通话id
+  }
 });
 ```
 
@@ -433,4 +468,32 @@ if(groupArr.lenght) {
   console.dir(groupArr[0]);
   // group_id/user_id, name/username, content, avatar
 }
+```
+
+
+### 发起音视频单聊通话
+```
+主动发起音视频通话端
+im.rtcManage.initRTCEngine(message);
+//or 被动接受加入音视频通话端
+im.rtcManage.joinRoom(message);
+```
+
+### 发送音视频单聊通话消息
+```
+im.rtcManage.sendRTCMessage(message);
+```
+
+### 接受音视频单聊消息
+```
+im.on({
+  onRosterRTCMessage: function(message) {
+    console.log(message);
+  }
+});
+im.on({
+  onGroupRTCMessage: function(message) {
+    console.log(message);
+  }
+});
 ```
