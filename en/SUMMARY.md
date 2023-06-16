@@ -190,6 +190,7 @@
     * [rosterManage](reference/floo-web/rosterManage.md)
     * [groupManage](reference/floo-web/groupManage.md)
     * [sysManage](reference/floo-web/sysManage.md)
+    * [rtcManage](reference/floo-web/rtcManage.md)
     * [types](reference/floo-web/types.md)
   * [Server API](reference/server-api/README.md)
     * [User Operation](reference/server-api/user.md)
