@@ -911,6 +911,109 @@ Assemble image path
         const image = im.sysManage.getImage({ avatar, type='roster', thumbnail=true });
       
 ```
+
+## rtcManager
+Initiate a rtc call
+```
+        im.rtcManage.initRTCEngine({
+          server,
+          id,
+          name,
+          receiver,
+          caller,
+          callId,
+          secret,
+          pin,
+          hasVideo,
+          hasAudio,
+          remoteAudio,
+          getThrough,
+          hangupCall
+        });
+```
+Destroy rtc environment
+```
+        im.rtcManage.destroy();
+```
+Send RTC message
+```
+        im.rtcManage.sendRTCMessage({
+          uid,
+          content,
+          config,
+          ext
+        });
+```
+Join RTC room
+```
+        im.rtcManage.joinRoom({
+          server,
+          id,
+          roomId,
+          caller,
+          pin,
+          hasVideo,
+          hasAudio,
+          remoteAudio,
+          getThrough,
+          hangupCall
+        });
+```
+Leave RTC room
+```
+        im.rtcManage.leaveRoom();
+```
+Publish video audio streams
+```
+        im.rtcManage.publish({
+          type,
+          hasVideo,
+          hasAudio,
+          width,
+          height
+        });
+```
+Unpublish video audio streams
+```
+        im.rtcManage.unPublish();
+```
+Subscribe video audio streams
+```
+        im.rtcManage.subscribe(sources);
+```
+Unsubscribe video audio streams
+```
+        im.rtcManage.unSubscribe(id);
+```
+Switch local audio mute status
+```
+        im.rtcManage.muteLocalAudio(mute);
+```
+Switch local video mute status
+```
+        im.rtcManage.muteLocalVideo(mute);
+```
+Switch remote audio mute status
+```
+        im.rtcManage.muteRemoteAudio(stream, mute)
+```
+Switch remote video mute status
+```
+        im.rtcManage.muteRemoteVideo(stream, mute)
+```
+Get Janus Object
+```
+        im.rtcManage.getJanusObject()
+```
+Get publisher object
+```
+        im.rtcManage.getPublishHandler()
+```
+Get subscriber object
+```
+        im.rtcManage.getSubscribeHandler()
+```
+
 ## Event notification
 
 1.  Floo notification
@@ -1075,4 +1178,9 @@ Event content: (meta) Content of group notification
 ```
 Event name: onGroupUnbaned
 Event content: (meta) Content of group notification
+```
+28. Single RTC chat received
+```
+Event name: onRosterRTCMessage
+Event content: (meta) Message content of friend notification
 ```

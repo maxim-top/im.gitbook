@@ -911,6 +911,109 @@ token登录
         const image = im.sysManage.getImage({ avatar, type='roster', thumbnail=true });
       
 ```
+
+## rtcManager
+
+发起音视频呼叫
+```
+        im.rtcManage.initRTCEngine({
+          server,
+          id,
+          name,
+          receiver,
+          caller,
+          callId,
+          secret,
+          pin,
+          hasVideo,
+          hasAudio,
+          remoteAudio,
+          getThrough,
+          hangupCall
+        });
+```
+销毁音视频环境
+```
+        im.rtcManage.destroy();
+```
+发送RTC消息
+```
+        im.rtcManage.sendRTCMessage({
+          uid,
+          content,
+          config,
+          ext
+        });
+```
+加入音视频房间
+```
+        im.rtcManage.joinRoom({
+          server,
+          id,
+          roomId,
+          caller,
+          pin,
+          hasVideo,
+          hasAudio,
+          remoteAudio,
+          getThrough,
+          hangupCall
+        });
+```
+离开音视频房间
+```
+        im.rtcManage.leaveRoom();
+```
+发布音视频流
+```
+        im.rtcManage.publish({
+          type,
+          hasVideo,
+          hasAudio,
+          width,
+          height
+        });
+```
+取消发布音视频流
+```
+        im.rtcManage.unPublish();
+```
+订阅音视频流
+```
+        im.rtcManage.subscribe(sources);
+```
+取消订阅音视频流
+```
+        im.rtcManage.unSubscribe(id);
+```
+切换本地音频流禁言状态
+```
+        im.rtcManage.muteLocalAudio(mute);
+```
+切换本地视频流禁言状态
+```
+        im.rtcManage.muteLocalVideo(mute);
+```
+切换远程音频流禁言状态
+```
+        im.rtcManage.muteRemoteAudio(stream, mute)
+```
+切换远程视频流禁言状态
+```
+        im.rtcManage.muteRemoteVideo(stream, mute)
+```
+获取Janus对象
+```
+        im.rtcManage.getJanusObject()
+```
+获取发布者对象
+```
+        im.rtcManage.getPublishHandler()
+```
+获取订阅者对象
+```
+        im.rtcManage.getSubscribeHandler()
+```
 ## 事件通知
 
 1.  Floo通知
@@ -1075,4 +1178,9 @@ token登录
 ```
 事件名称: onGroupUnbaned
 事件内容: (meta) 群通知的消息内容
+```
+28. 收到单聊RTC消息
+```
+事件名称: onRosterRTCMessage
+事件内容: (meta) 好友通知的消息内容
 ```

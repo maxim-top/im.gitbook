@@ -46,7 +46,7 @@ const im = new window.flooIM(config);
 
 This approach mainly supports script tag references in browsers, but there are initialization concurrency issues, so try-catch-retry is used, see [lanying-im-web source](https://github.com/maxim-top/lanying-im-web/blob/master/src/ui/index.vue#L85)。
 
-1. module mode，import flooim first，then use flooim()
+2. module mode，import flooim first，then use flooim()
 
 ```
 import flooim from 'floo-2.0.0';
@@ -171,6 +171,10 @@ im.on({
 
 Single chat is the most basic chat interface, which provides a variety of input contents, ex. text, emoji, image and so on.
 
+### Single RTC chat
+
+Single RTC chat is the most basic chat interface, which provides a variety of 1v1 audio chat and 1v1 video chat.
+
 ### Group chat
 
 Group chat, where many members participate together.
@@ -193,7 +197,7 @@ im.groupManage
   });
 ```
 
-1. Join group
+2. Join group
 
 Call groupManage’s asyncApply method to apply to join a group
 
@@ -205,7 +209,7 @@ im.groupManage
   });
 ```
 
-1. Quit group
+3. Quit group
 
 Call groupManage’s asyncLeave method to quit a group
 
@@ -217,7 +221,7 @@ im.groupManage
   });
 ```
 
-1. Dissolve group
+4. Dissolve group
 
 Call groupManage’s asyncDestroy method to dissolve a group
 
@@ -229,7 +233,7 @@ im.groupManage
   });
 ```
 
-1. Get group member list
+5. Get group member list
 
 Call groupManage’s getGroupMembers method to get a list of all members
 
@@ -238,7 +242,7 @@ const members = im.groupManage.getGroupMembers(state.sid);
 console.log(members);
 ```
 
-1. Get group list Call groupManage’s asyncGetJoinedGroups method to get groups that all users joined
+6. Get group list Call groupManage’s asyncGetJoinedGroups method to get groups that all users joined
 
 ```
 im.groupManage.asyncGetJoinedGroups().then(res => {
@@ -246,7 +250,7 @@ im.groupManage.asyncGetJoinedGroups().then(res => {
 });
 ```
 
-1. Get group information Call groupManage’s asyncGetGroupInfo method to get group details
+7. Get group information Call groupManage’s asyncGetGroupInfo method to get group details
 
 ```
 groupManage.asyncGetGroupInfo(group_id).then(res => {
@@ -256,7 +260,7 @@ groupManage.asyncGetGroupInfo(group_id).then(res => {
 
 ## Message sending
 
-You can't chat until login successfully. When sending messages, single chat and group chat are divided seperately. For easier operation, it only supports sending text, images and files at present.
+You can't chat until login successfully. When sending messages, single chat and group chat are divided seperately. For easier operation, it only supports sending text, images, files, location, 1v1 rtc video call and 1v1 rtc audio call at present. group chat only supports text, images, files, location at present.
 
 ### Build message body
 
@@ -308,6 +312,35 @@ const message = {
   content: "",
   attachment: fileInfo,
   priority, //Set priority of message dissemination
+});
+```
+
+### Location message
+```
+const message = {
+  type: 'location',
+  uid,
+  git, // uid, gid User or A group in which sent to, respectively
+  content: '',
+  attachment: {
+    lat,    //latitude
+    lon,    //longitude
+    addr,   //address name
+  }
+});
+```
+
+### RTC message
+```
+const message = {
+  type: 'rtc',
+  uid,
+  git,          // uid, gid User or A group in which sent to, respectively
+  content: '',  // 消息文本内容
+  config: {
+    action,     //operation type （pickup、reject、hangup and so on）
+    callId,     //call id
+  }
 });
 ```
 
@@ -433,4 +466,31 @@ if(groupArr.lenght) {
   console.dir(groupArr[0]);
   // group_id/user_id, name/username, content, avatar
 }
+```
+
+### Initiate single RTC call
+```
+Initiate single rtc call
+im.rtcManage.initRTCEngine(message);
+//or join single rtc call
+im.rtcManage.joinRoom(message);
+```
+
+### Send RTC call message
+```
+im.rtcManage.sendRTCMessage(message);
+```
+
+### Receive RTC call message
+```
+im.on({
+  onRosterRTCMessage: function(message) {
+    console.log(message);
+  }
+});
+im.on({
+  onGroupRTCMessage: function(message) {
+    console.log(message);
+  }
+});
 ```
