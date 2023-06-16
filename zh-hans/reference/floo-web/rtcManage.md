@@ -4,24 +4,22 @@
 
 
 * [rtcManage](#module_rtcmanage)
-    * _static_
-        * [.initRTCEngine(params)](#module_rtcmanage__initrtcengine) ⇒ <code>null</code>
-        * [.destroy()](#module_rtcmanage__destroy) ⇒ <code>null</code>
-        * [.sendRTCMessage(msg)](#module_rtcmanage__sendrtcmessage) ⇒ <code>number</code>
-        * [.joinRoom(params)](#module_rtcmanage__joinroom) ⇒ <code>null</code>
-        * [.leaveRoom()](#module_rtcmanage__leaveroom) ⇒ <code>null</code>
-        * [.publish(type, hasVideo, hasAudio)](#module_rtcmanage__publish) ⇒ <code>null</code>
-        * [.unPublish()](#module_rtcmanage__unpublish) ⇒ <code>null</code>
-        * [.subscribe(sources)](#module_rtcmanage__subscribe) ⇒ <code>null</code>
-        * [.muteLocalAudio(mute)](#module_rtcmanage__mutelocalaudio) ⇒ <code>null</code>
-        * [.muteLocalVideo(mute)](#module_rtcmanage__mutelocalvideo) ⇒ <code>null</code>
-        * [.muteRemoteAudio(stream, mute)](#module_rtcmanage__muteremoteaudio) ⇒ <code>null</code>
-        * [.muteRemoteVideo(stream, mute)](#module_rtcmanage__muteremotevideo) ⇒ <code>null</code>
-        * [.getJanusObject()](#module_rtcmanage__getjanusobject) ⇒ <code>object</code>
-        * [.getPublishHandler()](#module_rtcmanage__getpublishhandler) ⇒ <code>object</code>
-        * [.getSubscribeHandler()](#module_rtcmanage__getsubscribehandler) ⇒ <code>object</code>
-    * _inner_
-        * [~unSubscribe(id)](#module_rtcmanage__unsubscribe) ⇒ <code>null</code>
+    * [.initRTCEngine(params)](#module_rtcmanage__initrtcengine) ⇒ <code>null</code>
+    * [.destroy()](#module_rtcmanage__destroy) ⇒ <code>null</code>
+    * [.sendRTCMessage(msg)](#module_rtcmanage__sendrtcmessage) ⇒ <code>number</code>
+    * [.joinRoom(params)](#module_rtcmanage__joinroom) ⇒ <code>null</code>
+    * [.leaveRoom()](#module_rtcmanage__leaveroom) ⇒ <code>null</code>
+    * [.publish(type, hasVideo, hasAudio)](#module_rtcmanage__publish) ⇒ <code>null</code>
+    * [.unPublish()](#module_rtcmanage__unpublish) ⇒ <code>null</code>
+    * [.subscribe(sources)](#module_rtcmanage__subscribe) ⇒ <code>null</code>
+    * [.unSubscribe(id)](#module_rtcmanage__unsubscribe) ⇒ <code>null</code>
+    * [.muteLocalAudio(mute)](#module_rtcmanage__mutelocalaudio) ⇒ <code>null</code>
+    * [.muteLocalVideo(mute)](#module_rtcmanage__mutelocalvideo) ⇒ <code>null</code>
+    * [.muteRemoteAudio(stream, mute)](#module_rtcmanage__muteremoteaudio) ⇒ <code>null</code>
+    * [.muteRemoteVideo(stream, mute)](#module_rtcmanage__muteremotevideo) ⇒ <code>null</code>
+    * [.getJanusObject()](#module_rtcmanage__getjanusobject) ⇒ <code>object</code>
+    * [.getPublishHandler()](#module_rtcmanage__getpublishhandler) ⇒ <code>object</code>
+    * [.getSubscribeHandler()](#module_rtcmanage__getsubscribehandler) ⇒ <code>object</code>
 
 ### rtcManage.initRTCEngine(params) ⇒ <code>null</code> {#module_rtcmanage__initrtcengine}
 发起端发起音视频呼叫
@@ -149,6 +147,19 @@
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="subscribe" %}{% endlanying_code_snippet %}
 ```
+### rtcManage.unSubscribe(id) ⇒ <code>null</code> {#module_rtcmanage__unsubscribe}
+取消订阅流操作
+
+**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| id | <code>number</code> | 取消订阅的流id |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="unSubscribe" %}{% endlanying_code_snippet %}
+```
 ### rtcManage.muteLocalAudio(mute) ⇒ <code>null</code> {#module_rtcmanage__mutelocalaudio}
 禁止本地发布音频流操作
 
@@ -241,17 +252,4 @@
 **Example**  
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="getSubscribeHandler" %}{% endlanying_code_snippet %}
-```
-### rtcManage~unSubscribe(id) ⇒ <code>null</code> {#module_rtcmanage__unsubscribe}
-取消订阅流操作
-
-**Kind**: inner method of [<code>rtcManage</code>](#module_rtcmanage)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>number</code> | 取消订阅的流id |
-
-**Example**  
-```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="unSubscribe" %}{% endlanying_code_snippet %}
 ```
