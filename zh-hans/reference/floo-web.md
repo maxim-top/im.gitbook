@@ -12,7 +12,8 @@
 
 ## 前期准备
 
-下载对应 SDK 文件，桌面 Web 版地址为：[floo-2.0.0.js](https://package.lanyingim.com/floo-2.0.0.js)，并在代码中引用。
+1.下载对应 SDK 文件，桌面 Web 版地址为：[floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js)，并在代码中引用。
+2.RTC功能需要在工程的package.json文件的dependencies中增加webrtc-adapter和jquery以来。然后使用yarn或者npm安装依赖包。
 
 ## 初始化
 
@@ -31,7 +32,7 @@
 
 1.  Script 方式，你可以直接 import 后，使用 window.flooIM()
 ```
-    import "floo-2.0.0.js";
+    import "floo-3.0.0.js";
     
     const im = new window.flooIM(config);
 ```
@@ -39,7 +40,7 @@
 
 2.  module 方式，import flooim 后，使用 flooim()
 ```
-    import flooim from 'floo-2.0.0';
+    import flooim from 'floo-3.0.0';
     
     const im = flooim(config);
 ```

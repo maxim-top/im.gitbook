@@ -15,7 +15,8 @@ The following documenting takes the Web version as an example, and all versions 
 ## Previous preparation
 
 1. Login our official website console, get your appid and replace the following YOU\_APP\_IDs with it.
-2. Download SDK [floo-2.0.0.js](https://package.lanyingim.com/floo-2.0.0.js)
+2. Download SDK [floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js)
+3. For RTC develop, a dependency library, such as webrtc-adapter, must be introduced in the local development environment. Refer to the dependencies file package.json of the Lanying IM Web version. Then use yarn or npm to install the dependency package.
 
 ## Quick integration
 
@@ -39,7 +40,7 @@ Two modes are currently supported:
 1. Script: You can import it directly and use window.flooIM()
 
 ```
-import "floo-2.0.0.js";
+import "floo-3.0.0.js";
 
 const im = new window.flooIM(config);
 ```
@@ -49,7 +50,7 @@ This approach mainly supports script tag references in browsers, but there are i
 2. module mode，import flooim first，then use flooim()
 
 ```
-import flooim from 'floo-2.0.0';
+import flooim from 'floo-3.0.0';
 
 const im = flooim(config);
 ```

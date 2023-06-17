@@ -36,7 +36,7 @@ appid: "YOUR_APP_ID",
 ws: false, // The uniapp version needs to be set to true, the web version needs to be set to false
 autoLogin: true
 };
-import flooim from 'floo-2.0.0';
+import flooim from 'floo-3.0.0';
 const im = flooim(config);
 {% lanying_code_snippet repo="lanying-im-web",class="",function="flooim" %}{% endlanying_code_snippet %}
 ```
