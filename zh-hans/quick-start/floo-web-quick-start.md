@@ -15,7 +15,8 @@
 ## 前期准备
 
 1. 登录官网控制台，获取你的appid，并替换下文中 YOUR\_APP\_ID。
-2. 下载SDK [floo-2.0.0.js](https://package.lanyingim.com/floo-2.0.0.js)
+2. 下载SDK [floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js)
+3. 音视频功能需本地开发环境中引入音视频功能运行依赖库如webrtc-adapter。参考蓝莺IM Web版package.json文件dependencies设置。然后使用npm或者yarn安装依赖包。
 
 ## 快速集成
 
@@ -39,7 +40,7 @@ const config = {
 1. Script 方式，你可以直接 import 后，使用 window.flooIM()
 
 ```
-import "floo-2.0.0.js";
+import "floo-3.0.0.js";
 
 const im = new window.flooIM(config);
 ```
@@ -49,7 +50,7 @@ const im = new window.flooIM(config);
 2. module 方式，import flooim 后，使用 flooim()
 
 ```
-import flooim from 'floo-2.0.0';
+import flooim from 'floo-3.0.0';
 
 const im = flooim(config);
 ```

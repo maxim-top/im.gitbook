@@ -12,7 +12,8 @@ The following documenting takes the Web version as an example, and all versions 
 
 ## Previous preparation
 
-Download the corresponding SDK file, address of desktop Web version is :[floo-2.0.0.js](https://package.lanyingim.com/floo-2.0.0.js), and refer to it in code.
+1.Download the corresponding SDK file, address of desktop Web version is :[floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js), and refer to it in code.
+2.The RTC functionality needs to add webrtc-adapter and jquery to the dependencies of the project's package.json file. Then use yarn or npm to install the dependency package.
 
 ## Initialization
 
@@ -31,7 +32,7 @@ Two modes are currently supported:
 
 1.  Script: You can import it directly and use window.flooIM()
 ```
-    import "floo-2.0.0.js";
+    import "floo-3.0.0.js";
     
     const im = new window.flooIM(config);
 ```
@@ -39,7 +40,7 @@ This approach mainly supports script tag references in browsers, but there are i
 
 2.  module mode,import flooim first,then use flooim()
 ```
-    import flooim from 'floo-2.0.0';
+    import flooim from 'floo-3.0.0';
     
     const im = flooim(config);
 ```
