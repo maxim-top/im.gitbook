@@ -1,7 +1,5 @@
 ---
 title: top::maxim::rtc::RTCManager
-summary: Description : RTC Created by Mango on 2018/12/2. 
-
 ---
 
 # top::maxim::rtc::RTCManager
