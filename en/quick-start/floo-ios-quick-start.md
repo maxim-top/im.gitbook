@@ -592,3 +592,289 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
 
       }];
     ```
+## RTC AV Call
+The RTC call function needs to integrate floo-ios and floo-rtc-ios on the client side.Floo-ios provides a signaling channel for AV calls, and floo-rtc-ios implements the business logic in RTC calls. Therefore, before implementing AV calls, it is necessary to integrate floo-ios, and implement the features of login and messaging.
+
+Floo-rtc-android supports one-to-one AV calls. You can integrate floo-rtc-ios by CocoaPods automatically, or download floo-rtc-ios.framework, and add it to the project manually.
+
+### Plan A：By CocoaPods
+
+Tips：If CocoaPods is not installed, please refer to [CocoaPods](https://cocoapods.org)
+
+1.  Add a floo-ios pod into the Podfile:
+
+    ```
+    pod 'floo-rtc-ios'
+    ```
+2.  Install it by shell script:
+
+    ```
+    pod install
+    ```
+
+    Tips：If the latest version of the SDK cannot be installed, run the following command to update the local CocoaPods repository.
+
+    ```
+    pod repo update
+    ```
+
+### Plan B：By manual
+
+Download [floo-rtc-ios.framework](https://package.lanyingim.com/floo-rtc-ios.zip) , put the unzipped framework into your project。
+
+### Add a dependency
+
+Add a GoogleWebRTC pod into the Podfile
+
+```
+  pod 'GoogleWebRTC', '~> 1.1'
+```
+
+### Create the user interface
+
+```
+//Create the remote video view
+#if defined(RTC_SUPPORTS_METAL)
+            _remoteVideoView = [[RTCMTLVideoView alloc] initWithFrame:CGRectZero];
+#else
+            RTCEAGLVideoView *remoteView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectZero];
+            _remoteVideoView = remoteView;
+#endif            
+            [self addSubview:_remoteVideoView];
+//Create the local video view
+            _localVideoView = [[UIView alloc] initWithFrame:CGRectZero];
+            [self addSubview:_localVideoView];
+```
+
+### Business logic of an AV call
+1. Import the RTCEngineManager
+
+```
+    #import <floo-rtc-ios/RTCEngineManager.h>
+```
+
+2. Add a RTC engine delegate
+
+Add BMXRTCEngineProtocol to interface：
+```
+@interface CallViewController () < BMXRTCEngineProtocol >
+```
+
+Add a BMXRTCEngineProtocol delegate：
+```
+    [[RTCEngineManager engineWithType:kMaxEngine] addDelegate:self];
+```
+
+3. Join a room(Make a call)
+
+```
+    //Set the video resolution
+    BMXVideoConfig *videoConfig = [[BMXVideoConfig alloc] init];
+    [videoConfig setWidth:720];
+    [videoConfig setHeight:1280];
+    [[RTCEngineManager engineWithType:kMaxEngine] setVideoProfile:videoConfig];
+    BMXRoomAuth *auth = [[BMXRoomAuth alloc] init];
+    [auth setMUserId:userId];
+    [auth setMToken:pin]; //The room password
+    // The caller does not need to set the roomId, it will be returned when
+    // the room is successfully created; the callee needs to set the same 
+    // roomId as the caller
+    [auth setMRoomId:roomId];
+    [[RTCEngineManager engineWithType:kMaxEngine] joinRoomWithAuth:auth];
+```
+
+4. Join room result
+
+```
+- (void)onJoinRoomWithInfo:(NSString*)info roomId:(long long)roomId error:(BMXErrorCode)error{
+    _roomId = roomId;
+    if (error == BMXErrorCode_NoError) {
+        //Publish the local stream
+        [[RTCEngineManager engineWithType:kMaxEngine] publishWithType:BMXVideoMediaType_Camera hasVideo:_hasVideo hasAudio:YES];
+        if (_isCaller) {
+            [self sendCallMessage];
+        }
+    }
+}
+```
+
+5. Received the remote video stream
+
+```
+- (void)onSubscribeWithStream:(BMXStream*)stream info:(NSString*)info error:(BMXErrorCode)error{
+    if (error != BMXErrorCode_NoError) {
+        return;
+    }
+    BOOL hasVideo = [stream getMEnableVideo];
+    if (hasVideo) {
+        BMXVideoCanvas *canvas = [[BMXVideoCanvas alloc] init];
+        [canvas setMUserId:[stream getMUserId]];
+        //Set the remote video view
+        [canvas setMView:(void*)_videoCallView.remoteVideoView];
+        //Render the remote video view
+        [[RTCEngineManager engineWithType:kMaxEngine] startRemoteViewWithCanvas:canvas];
+    }
+}
+```
+
+6. Hangup the call, release the resources
+
+```
+- (void)hangupByMe:(BOOL)byMe{
+    if (byMe) {
+        [self sendHangupMessage];
+    }
+    [[RTCEngineManager engineWithType:kMaxEngine] leaveRoom];
+    [[RTCEngineManager engineWithType:kMaxEngine] removeDelegate:self];
+}
+```
+
+### Implement AV call signaling with RTC service
+
+1. Add a delegate
+
+Add BMXRTCServiceProtocol to interface ：
+```
+@interface CallViewController () < BMXRTCEngineProtocol, BMXRTCServiceProtocol >
+```
+
+Add a BMXRTCServiceProtocol delegate：
+```
+    [[RTCEngineManager engineWithType:kMaxEngine] addDelegate:self];
+    [[[BMXClient sharedClient] rtcService] addDelegate:self];
+```
+
+2. Send a RTC call message
+
+```
+- (void)sendCallMessage{
+    BMXMessageConfig *config = [BMXMessageConfig createMessageConfigWithMentionAll: NO];
+    [config setRTCCallInfo:_hasVideo?BMXMessageConfig_RTCCallType_VideoCall:BMXMessageConfig_RTCCallType_AudioCall roomId:_roomId initiator:_myId roomType:BMXMessageConfig_RTCRoomType_Broadcast pin:_pin];
+    _callId = config.getRTCCallId;
+
+    BMXMessage *msg = [BMXMessage createRTCMessageWithFrom:_myId to:_peerId type:BMXMessage_MessageType_Single conversationId:_peerId content:@"new call"];
+    msg.config = config;
+    [msg setExtension:@"{\"rtc\":\"call\"}"];
+    [[[BMXClient sharedClient] rtcService] sendRTCMessageWithMsg:msg completion:^(BMXError *aError) {
+    }];
+}
+```
+
+3. Send a RTC pickup message
+
+```
+- (void)sendPickupMessage{
+    BMXMessageConfig *config = [BMXMessageConfig createMessageConfigWithMentionAll: NO];
+    [config setRTCPickupInfo:_callId];
+    BMXMessage *msg = [BMXMessage createRTCMessageWithFrom:_myId to:_peerId type:BMXMessage_MessageType_Single conversationId:_peerId content:@""];
+    msg.config = config;
+    [[[BMXClient sharedClient] rtcService] sendRTCMessageWithMsg:msg completion:^(BMXError *aError) {
+    }];
+    //Send a message read ACK to confirm the message that the caller made the call
+    [self ackMessageWithMessageId:_messageId];
+}
+
+- (void)ackMessageWithMessageId:(long long)messageId{
+    BMXMessage *msg = [[[BMXClient sharedClient] chatService] getMessage:messageId];
+    if (msg) {
+        [[[BMXClient sharedClient] chatService] ackMessageWithMsg:msg];
+    }
+}
+
+```
+
+4. Send a RTC hangup message
+
+```
+- (void)sendHangupMessage{
+    BMXMessageConfig *config = [BMXMessageConfig createMessageConfigWithMentionAll: NO];
+    if (_callId) {
+        [config setRTCHangupInfo:_callId];
+        _callId = nil;
+    }
+    NSTimeInterval duration = 0.0;
+    NSString *content = @"canceled"; //Caller canceled
+    if (!_isCaller) {
+        content = @"rejected"; //Callee rejected
+    }else{
+        if (_ringTimes == 0) { //Callee not responding
+            content = @"timeout";
+        }
+    }
+    if (_pickupTimestamp > 1.0) {
+        duration = [self getTimeStamp] - _pickupTimestamp;
+    }
+    if (duration > 1.0) {
+        content = [NSString stringWithFormat:@"%.0f", duration];
+    }
+    BMXMessage *msg = [BMXMessage createRTCMessageWithFrom:_myId to:_peerId type:BMXMessage_MessageType_Single conversationId:_peerId content:content];
+    msg.config = config;
+    [[[BMXClient sharedClient] rtcService] sendRTCMessageWithMsg:msg completion:^(BMXError *aError) {
+        NSNotification *noti = [NSNotification notificationWithName:@"call" object:self userInfo:@{@"event":@"hangup"}];
+        [[NSNotificationCenter defaultCenter]postNotification:noti];
+    }];
+}
+
+Handle hangup messages in the conversation page：
+- (void)receiveNoti:(NSNotification*)noti
+{
+    NSString *event = noti.userInfo[@"event"];
+    if ([event isEqualToString:@"hangup"]) {
+        [[[BMXClient sharedClient] chatService] retrieveHistoryMessagesWithConversation:self.conversation refMsgId:0 size:1 completion:^(BMXMessageList *messageList, BMXError *error) {
+            // Display the history messages
+            //...
+       }];
+    }
+}
+
+```
+
+5. Hangup a call
+
+```
+- (void)hangupByMe:(BOOL)byMe{
+    if (byMe) {
+        [self sendHangupMessage];
+    }
+    [[RTCEngineManager engineWithType:kMaxEngine] leaveRoom];
+    [[RTCEngineManager engineWithType:kMaxEngine] removeDelegate:self];
+    [[[BMXClient sharedClient] rtcService] removeDelegate:self];
+}
+```
+
+6. The callee received a call message
+
+```
+#pragma mark - BMXRTCServiceProtocol
+- (void)onRTCCallMessageReceiveWithMsg:(BMXMessage*)message {
+    long long roomId = message.config.getRTCRoomId;
+    long long myId = [self.account.usedId longLongValue];
+    long long peerId = message.config.getRTCInitiator;
+    if (myId == peerId){
+        return;
+    }
+    NSString *pin = message.config.getRTCPin;
+    NSString *callId = message.config.getRTCCallId;
+    BOOL hasVideo = message.config.getRTCCallType == 1;
+    //Open the call page
+    //...
+}
+```
+
+7. Received a hangup message
+
+```
+- (void)onRTCHangupMessageReceiveWithMsg:(BMXMessage*)msg {
+    //Leave the room and ACK the message as read
+}
+```
+
+8. Received a pickup message
+```
+- (void)onRTCPickupMessageReceiveWithMsg:(BMXMessage*)msg{
+    //If the message is sent by my other terminal
+    if ([msg.config.getRTCCallId isEqualToString: _callId] && msg.fromId == _myId) {
+        //Close the call page and ACK the message as read
+    }
+}
+```
