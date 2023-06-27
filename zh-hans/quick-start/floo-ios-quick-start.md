@@ -721,7 +721,7 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
 }
 ```
 
-5. 双方都加入房间后，收到对方视频流
+5. 收到对方视频流
 
 ```
 - (void)onSubscribeWithStream:(BMXStream*)stream info:(NSString*)info error:(BMXErrorCode)error{
