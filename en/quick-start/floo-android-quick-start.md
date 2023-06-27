@@ -844,3 +844,413 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
     msg.setDeliveryQos(BMXMessage.DeliveryQos.AtMostOnce);
     msg.setExtension(extension);
 ```
+
+## RTC AV Call
+The RTC call function needs to integrate floo-android and floo-rtc-android on the client side.Floo-android provides a signaling channel for AV calls, and floo-rtc-android implements the business logic in RTC calls. Therefore, before implementing AV calls, it is necessary to integrate floo-android, and implement the features of login and messaging.
+
+Floo-rtc-android supports one-to-one AV calls. Download link：https://github.com/maxim-top/floo-rtc-android/releases。
+
+* Download the aar file to the libs directory in your project.
+* Add a dependency to the dependencies block in the build.gradle, refer to[lanying-im-android](https://github.com/maxim-top/lanying-im-android/blob/master/app/build.gradle#L94). In the latest version of gradle, you only need to declare the dependency on the libs directory, and no longer need to declare the dependency on a specific file in it separately.
+
+
+### Create the user interface
+1. Import dependencies of video view
+```
+import top.maxim.rtc.view.BMXRtcRenderView;
+import top.maxim.rtc.view.RTCRenderView;
+```
+
+2. Create two containers of the video views (in this example, the large container is full screen, and the small container is on the upper right)
+```
+    <FrameLayout
+        android:id="@+id/video_view_container_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_black" />
+
+    <FrameLayout
+        android:id="@+id/video_view_container_small"
+        android:layout_width="120dp"
+        android:layout_height="212dp"
+        android:background="@color/color_black"
+        android:layout_gravity="right"
+        android:visibility="gone" />
+
+```
+
+3. Add the local video view to the small container
+```
+        ViewGroup smallViewGroup = mVideoContainer.findViewById(R.id.video_view_container_small);
+        //The remote view is null before the call is established，the local video view displays in full screen.
+        if (mRemoteView == null){
+            ViewGroup.LayoutParams layoutParams = smallViewGroup.getLayoutParams();
+            layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+            layoutParams.height = ViewGroup.LayoutParams.MATCH_PARENT;
+            smallViewGroup.setLayoutParams(layoutParams);
+        }
+        smallViewGroup.setVisibility(View.VISIBLE);
+        mLocalView = new RTCRenderView(this);
+        mLocalView.init();
+        mLocalView.setScalingType(BMXRtcRenderView.ScalingType.SCALE_ASPECT_FILL);
+        mLocalView.getSurfaceView().setZOrderMediaOverlay(true);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        layoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
+        smallViewGroup.addView(mLocalView, layoutParams);
+```
+4. Add the remote video view to the large container
+```
+        //Restore the full screen local view to a small size
+        if (mLocalView != null){
+            ViewGroup smallViewGroup = mVideoContainer.findViewById(R.id.video_view_container_small);
+            ViewGroup.LayoutParams layoutParams = smallViewGroup.getLayoutParams();
+            layoutParams.width = getPixelsFromDp(120);
+            layoutParams.height = getPixelsFromDp(212);
+            smallViewGroup.setLayoutParams(layoutParams);
+            mLocalView.setScalingType(BMXRtcRenderView.ScalingType.SCALE_ASPECT_FILL);
+        }
+
+        ViewGroup largeViewGroup = mVideoContainer.findViewById(R.id.video_view_container_large);
+        largeViewGroup.setVisibility(View.VISIBLE);
+        mRemoteView = new RTCRenderView(this);
+        mRemoteView.init();
+        mRemoteView.setScalingType(BMXRtcRenderView.ScalingType.SCALE_ASPECT_FILL);
+
+        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        layoutParams.gravity = Gravity.CENTER;
+        largeViewGroup.addView(mRemoteView, layoutParams);
+
+```
+
+### Business logic of an AV call
+1. Import RTCManager
+
+```
+import top.maxim.rtc.RTCManager;
+```
+
+2. Add a RTC engine listener
+
+```
+mEngine = RTCManager.getInstance().getRTCEngine();
+mEngine.addRTCEngineListener(mListener = new BMXRTCEngineListener() {
+
+    @Override
+    public void onJoinRoom(String info, long roomId, BMXErrorCode error) {
+        super.onJoinRoom(info, roomId, error);
+        mRoomId = roomId;
+        if (BaseManager.bmxFinish(error)) {
+            mEngine.publish(BMXVideoMediaType.Camera, mHasVideo, true);
+            Log.e(TAG, "Join the room successfully and start publishing local streams, roomId= " + roomId + "msg = " + info);
+        } else {
+            Log.e(TAG, "Failed to join the room, roomId= " + roomId + "msg = " + info);
+        }
+    }
+
+    @Override
+    public void onLeaveRoom(String info, long roomId, BMXErrorCode error, String reason) {
+        super.onLeaveRoom(info, roomId, error, reason);
+        if (BaseManager.bmxFinish(error)) {
+            Log.e(TAG, "Leave the room successfully, roomId= " + roomId + "msg = " + reason);
+        }else{
+            Log.e(TAG, "Failed to leave the room, roomId= " + roomId + "msg = " + reason);
+        }
+    }
+
+    @Override
+    public void onMemberJoined(long roomId, long usedId) {
+        super.onMemberJoined(roomId, usedId);
+        Log.e(TAG, "Member joined, uid= " + usedId);
+    }
+
+    @Override
+    public void onMemberExited(long roomId, long usedId, String reason) {
+        super.onMemberExited(roomId, usedId, reason);
+        Log.e(TAG, "Member leave uid= " + usedId);
+        //Close the call page
+        onRemoteLeave();
+    }
+
+    @Override
+    public void onLocalPublish(BMXStream stream, String info, BMXErrorCode error) {
+        super.onLocalPublish(stream, info, error);
+        if (BaseManager.bmxFinish(error)) {
+            //Open local video view and send a RTC call message
+            onUserJoin(stream);
+            Log.e(TAG, "Publish local stream successfully and start to preview, msg = " + info);
+        }else{
+            Log.e(TAG, "Failed to publish local stream, msg = " + info);
+        }
+    }
+
+    @Override
+    public void onLocalUnPublish(BMXStream stream, String info, BMXErrorCode error) {
+        super.onLocalUnPublish(stream, info, error);
+        if (BaseManager.bmxFinish(error)) {
+            Log.e(TAG, "Unpublish local stream successfully, msg = " + info);
+        }else{
+            Log.e(TAG, "Failed to unpublish local stream, msg = " + info);
+        }
+    }
+
+    @Override
+    public void onRemotePublish(BMXStream stream, String info, BMXErrorCode error) {
+        super.onRemotePublish(stream, info, error);
+        if (BaseManager.bmxFinish(error)) {
+            mEngine.subscribe(stream);
+            Log.e(TAG, "The remote stream published successfully and start to subscribe it");
+        }else{
+            Log.e(TAG, "The remote stream published failure, msg = " + info);
+        }
+    }
+
+    @Override
+    public void onRemoteUnPublish(BMXStream stream, String info, BMXErrorCode error) {
+        super.onRemoteUnPublish(stream, info, error);
+        if (BaseManager.bmxFinish(error)) {
+            Log.e(TAG, "The remote stream unpublished");
+            BMXVideoCanvas canvas = new BMXVideoCanvas();
+            canvas.setMStream(stream);
+            mEngine.stopRemoteView(canvas);
+            mEngine.unSubscribe(stream);
+            //Close the call page
+            onRemoteLeave();
+        }else{
+            Log.e(TAG, "The remote stream unpublished failure, msg = " + info);
+        }
+    }
+
+    @Override
+    public void onSubscribe(BMXStream stream, String info, BMXErrorCode error) {
+        super.onSubscribe(stream, info, error);
+        if (BaseManager.bmxFinish(error)) {
+            onRemoteJoin(stream);
+            mPickupTimestamp = getTimeStamp();
+            Log.e(TAG, "Subscribe the remote stream successfully, msg = " + info);
+        } else {
+            Log.e(TAG, "Failed to subscribe the remote stream, msg = " + info);
+        }
+    }
+
+    @Override
+    public void onUnSubscribe(BMXStream stream, String info, BMXErrorCode error) {
+        super.onUnSubscribe(stream, info, error);
+        if (BaseManager.bmxFinish(error)) {
+            Log.e(TAG, "Unsubscribe the remote stream successfully, msg = " + info);
+        } else {
+            Log.e(TAG, "Failed to unsubscribe the remote stream, msg = " + info);
+        }
+    }
+});
+```
+
+3. Join a room(Make a call)
+
+```
+    //Set the video resolution
+    BMXVideoConfig config = new BMXVideoConfig();
+    config.setProfile(EngineConfig.VIDEO_PROFILE);
+    mEngine.setVideoProfile(config);
+
+    BMXRoomAuth auth = new BMXRoomAuth();
+    auth.setMUserId(mUserId);
+    // The caller does not need to set the roomId, it will be returned when
+    // the room is successfully created; the callee needs to set the same 
+    // roomId as the caller
+    auth.setMRoomId(mRoomId);
+    auth.setMToken(mPin);//The room password
+    mEngine.joinRoom(auth);
+```
+
+4. Hangup a call
+
+```
+    public void onCallHangup(View view){
+        //Send a RTC hangup message
+        sendRTCHangupMessage();
+        leaveRoom();
+        finish();
+    }
+```
+
+5. Close the call page
+
+```
+    private void onRemoteLeave() {
+        removeRemoteView();
+        mHandler.removeAll();
+        finish();
+    }
+```
+
+6. Open the local video view, and send a RTC call message
+
+```
+    private void onUserJoin(BMXStream info){
+        if(info == null){
+            return;
+        }
+        if (mHasVideo) {
+            runOnUiThread(() -> {
+                addLocalView();
+                BMXVideoCanvas canvas = new BMXVideoCanvas();
+                canvas.setMView(mLocalView.getObtainView());
+                canvas.setMStream(info);
+                mEngine.startPreview(canvas);
+            });
+        } else {
+
+        }
+        if (mIsInitiator) {
+            //send a RTC call message
+            sendRTCCallMessage();
+        }
+    }
+```
+
+7. Open the remote video view
+
+```
+    private void onRemoteJoin(BMXStream info) {
+        if(info == null){
+            return;
+        }
+        runOnUiThread(() -> {
+            if (mHasVideo) {
+                addRemoteView();
+                BMXVideoCanvas canvas = new BMXVideoCanvas();
+                canvas.setMView(mRemoteView.getObtainView());
+                canvas.setMUserId(info.getMUserId());
+                canvas.setMStream(info);
+                mEngine.startRemoteView(canvas);
+            }
+        });
+    }
+```
+
+8. Release the resources
+
+```
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mEngine != null) {
+            mEngine.removeRTCEngineListener(mListener);
+            mListener = null;
+        }
+        RTCManager.getInstance().removeRTCServiceListener(mRTCListener);
+        mRTCListener = null;
+    }
+```
+
+### Implement AV call signaling with RTC service
+
+1. Add a listener
+
+private BMXRTCServiceListener mRTCListener = new BMXRTCServiceListener(){
+
+    public void onRTCCallMessageReceive(BMXMessage msg) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    // Delay handling to determine whether a hangup message for the corresponding call will be received later,
+                    // so as to avoid popping up the ended call
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                String callId = msg.config().getRTCCallId();
+                if (mHungupCalls.contains(callId)){
+                    mHungupCalls.remove(callId);
+                    ackMessage(msg);
+                    return;
+                }
+                long roomId = msg.config().getRTCRoomId();
+                long chatId = msg.config().getRTCInitiator();
+                long myId = SharePreferenceUtils.getInstance().getUserId();
+                if (myId == chatId){
+                    return;
+                }
+                //If already in a call, send a busy message to the new caller
+                if (RTCManager.getInstance().getRTCEngine().isOnCall){
+                    replyBusy(callId, myId, chatId);
+                    return;
+                }
+                String pin = msg.config().getRTCPin();
+                if(mActivityRef != null && mActivityRef.get() != null){
+                    Context context = mActivityRef.get();
+                    if (msg.type() == BMXMessage.MessageType.Single) {
+                        //Open the call page(incoming call ringing)
+                        SingleVideoCallActivity.openVideoCall(context, chatId, roomId, callId,
+                                false, msg.config().getRTCCallType(), pin, msg.msgId());
+                    }
+                }
+            }
+        }, "onRTCCallMessageReceive").start();
+    }
+
+    public void onRTCPickupMessageReceive(BMXMessage msg) {
+        if (msg.config().getRTCCallId().equals(mCallId) && msg.fromId() == mUserId){
+            leaveRoom();
+            ackMessage(msg);
+        }
+    }
+
+    public void onRTCHangupMessageReceive(BMXMessage msg) {
+        long otherId = mEngine.otherId;
+        if (msg.config().getRTCCallId().equals(mCallId) &&
+                (msg.fromId()==otherId
+                || msg.content().equals("busy")
+                || msg.content().equals("rejected")
+                || msg.content().equals("canceled")
+                || msg.content().equals("timeout")
+                || !mEngine.isOnCall)){
+            leaveRoom();
+            ackMessage(msg);
+        }
+    }
+
+};
+RTCManager.getInstance().addRTCServiceListener(mRTCListener);
+
+
+2. Send a RTC call message
+
+```
+public String sendRTCCallMessage(BMXMessageConfig.RTCCallType type, long roomId, long from, long to,
+                                    String pin) {
+    BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+    con.setRTCCallInfo(type, roomId, from, BMXMessageConfig.RTCRoomType.Broadcast, pin);
+    con.setIOSConfig("{\"mutable_content\":true,\"loc-key\":\"call_in\"}");
+    BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, "");
+    msg.setConfig(con);
+    msg.setExtension("{\"rtc\":\"call\"}");
+    handlerMessage(msg);
+    return con.getRTCCallId();
+}
+```
+
+3. Send a RTC pickup message
+
+```
+public void sendRTCPickupMessage(long from, long to, String callId) {
+    BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+    con.setRTCPickupInfo(callId);
+    BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, "");
+    msg.setConfig(con);
+    handlerMessage(msg);
+}
+```
+
+4. Send a RTC hangup message
+
+```
+public void sendRTCHangupMessage(long from, long to, String callId, String content, String iosConfig) {
+    BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+    con.setRTCHangupInfo(callId);
+    BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, content);
+    msg.setConfig(con);
+    handlerMessage(msg);
+}
+```
