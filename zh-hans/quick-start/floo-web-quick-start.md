@@ -349,7 +349,7 @@ const message = {
 
 ### 消息操作
 
-消息实体构建完成后，通过 BMXClient的单例，ChatService类，调用 -sendMessage: 方法，将构建好的消息实体传入，即可实现消息发送
+消息实体构建完成后，通过im.sysManage的发送消息方法发送，单聊用 sendRosterMeesage() 群聊用 sendGroupMessage()，即可实现消息发送。
 
 #### 发送
 
