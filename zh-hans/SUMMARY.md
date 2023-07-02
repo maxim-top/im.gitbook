@@ -202,6 +202,7 @@
     * [推送接口](reference/server-api/push.md)
 * [博客文章](articles/README.md)
   * [行业发展](articles/Industry-development/README.md)
+    * [不要总想着自己训练大模型，你的业务可能并不需要](articles/Industry-development/do-not-train-your-own-llm-your-business-might-not-need-it.md)
     * [过去的十五年，我们怎样做 IM？](articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.md)
     * [云服务的下一个十年](articles/Industry-development/the-next-decade-of-cloud-services.md)
   * [产品技术](articles/product-and-technologies/README.md)
