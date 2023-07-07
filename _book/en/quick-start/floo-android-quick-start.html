@@ -3536,8 +3536,367 @@ BMXMessage msg = BMXMessage.createMessage(from, to, type, to, voiceAttachment);
     }
     msg.setDeliveryQos(BMXMessage.DeliveryQos.AtMostOnce);
     msg.setExtension(extension);
-</code></pre><footer class="page-footer"><span class="copyright">&#xA9; 2019-2023 MaximTop | <a href="https://lanyingim.com" style="text-decoration:none!important;" target="_blank">Homepage</a> </span><span class="footer-modification">Last modified time:
-2022-09-27 11:40:53
+</code></pre><h2 id="rtc-av-call">RTC AV Call</h2>
+<p>The RTC call function needs to integrate floo-android and floo-rtc-android on the client side.Floo-android provides a signaling channel for AV calls, and floo-rtc-android implements the business logic in RTC calls. Therefore, before implementing AV calls, it is necessary to integrate floo-android, and implement the features of login and messaging.</p>
+<p>Floo-rtc-android supports one-to-one AV calls. Download link&#xFF1A;<a href="https://github.com/maxim-top/floo-rtc-android/releases&#x3002;" target="_blank">https://github.com/maxim-top/floo-rtc-android/releases&#x3002;</a></p>
+<ul>
+<li>Download the aar file to the libs directory in your project.</li>
+<li>Add a dependency to the dependencies block in the build.gradle, refer to<a href="https://github.com/maxim-top/lanying-im-android/blob/master/app/build.gradle#L94" target="_blank">lanying-im-android</a>. In the latest version of gradle, you only need to declare the dependency on the libs directory, and no longer need to declare the dependency on a specific file in it separately.</li>
+</ul>
+<h3 id="create-the-user-interface">Create the user interface</h3>
+<ol>
+<li><p>Import dependencies of video view</p>
+<pre class="language-"><code>import top.maxim.rtc.view.BMXRtcRenderView;
+import top.maxim.rtc.view.RTCRenderView;
+</code></pre></li>
+<li><p>Create two containers of the video views (in this example, the large container is full screen, and the small container is on the upper right)
+```</p>
+ <framelayout android:id="@+id/video_view_container_large" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/color_black">
+
+ <framelayout android:id="@+id/video_view_container_small" android:layout_width="120dp" android:layout_height="212dp" android:background="@color/color_black" android:layout_gravity="right" android:visibility="gone">
+
+</framelayout></framelayout></li>
+</ol>
+<pre class="language-"><code>
+3. Add the local video view to the small container
+</code></pre><pre class="language-"><code>    ViewGroup smallViewGroup = mVideoContainer.findViewById(R.id.video_view_container_small);
+    //The remote view is null before the call is established&#xFF0C;the local video view displays in full screen.
+    if (mRemoteView == null){
+        ViewGroup.LayoutParams layoutParams = smallViewGroup.getLayoutParams();
+        layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
+        layoutParams.height = ViewGroup.LayoutParams.MATCH_PARENT;
+        smallViewGroup.setLayoutParams(layoutParams);
+    }
+    smallViewGroup.setVisibility(View.VISIBLE);
+    mLocalView = new RTCRenderView(this);
+    mLocalView.init();
+    mLocalView.setScalingType(BMXRtcRenderView.ScalingType.SCALE_ASPECT_FILL);
+    mLocalView.getSurfaceView().setZOrderMediaOverlay(true);
+    RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+    layoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
+    smallViewGroup.addView(mLocalView, layoutParams);
+</code></pre><pre class="language-"><code>4. Add the remote video view to the large container
+</code></pre><pre class="language-"><code>    //Restore the full screen local view to a small size
+    if (mLocalView != null){
+        ViewGroup smallViewGroup = mVideoContainer.findViewById(R.id.video_view_container_small);
+        ViewGroup.LayoutParams layoutParams = smallViewGroup.getLayoutParams();
+        layoutParams.width = getPixelsFromDp(120);
+        layoutParams.height = getPixelsFromDp(212);
+        smallViewGroup.setLayoutParams(layoutParams);
+        mLocalView.setScalingType(BMXRtcRenderView.ScalingType.SCALE_ASPECT_FILL);
+    }
+
+    ViewGroup largeViewGroup = mVideoContainer.findViewById(R.id.video_view_container_large);
+    largeViewGroup.setVisibility(View.VISIBLE);
+    mRemoteView = new RTCRenderView(this);
+    mRemoteView.init();
+    mRemoteView.setScalingType(BMXRtcRenderView.ScalingType.SCALE_ASPECT_FILL);
+
+    FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+    layoutParams.gravity = Gravity.CENTER;
+    largeViewGroup.addView(mRemoteView, layoutParams);
+</code></pre><pre class="language-"><code>
+### Business logic of an AV call
+1. Import RTCManager
+</code></pre><p>import top.maxim.rtc.RTCManager;</p>
+<pre class="language-"><code>
+2. Add a RTC engine listener
+</code></pre><p>mEngine = RTCManager.getInstance().getRTCEngine();
+mEngine.addRTCEngineListener(mListener = new BMXRTCEngineListener() {</p>
+<pre class="language-"><code>@Override
+public void onJoinRoom(String info, long roomId, BMXErrorCode error) {
+    super.onJoinRoom(info, roomId, error);
+    mRoomId = roomId;
+    if (BaseManager.bmxFinish(error)) {
+        mEngine.publish(BMXVideoMediaType.Camera, mHasVideo, true);
+        Log.e(TAG, &quot;Join the room successfully and start publishing local streams, roomId= &quot; + roomId + &quot;msg = &quot; + info);
+    } else {
+        Log.e(TAG, &quot;Failed to join the room, roomId= &quot; + roomId + &quot;msg = &quot; + info);
+    }
+}
+
+@Override
+public void onLeaveRoom(String info, long roomId, BMXErrorCode error, String reason) {
+    super.onLeaveRoom(info, roomId, error, reason);
+    if (BaseManager.bmxFinish(error)) {
+        Log.e(TAG, &quot;Leave the room successfully, roomId= &quot; + roomId + &quot;msg = &quot; + reason);
+    }else{
+        Log.e(TAG, &quot;Failed to leave the room, roomId= &quot; + roomId + &quot;msg = &quot; + reason);
+    }
+}
+
+@Override
+public void onMemberJoined(long roomId, long usedId) {
+    super.onMemberJoined(roomId, usedId);
+    Log.e(TAG, &quot;Member joined, uid= &quot; + usedId);
+}
+
+@Override
+public void onMemberExited(long roomId, long usedId, String reason) {
+    super.onMemberExited(roomId, usedId, reason);
+    Log.e(TAG, &quot;Member leave uid= &quot; + usedId);
+    //Close the call page
+    onRemoteLeave();
+}
+
+@Override
+public void onLocalPublish(BMXStream stream, String info, BMXErrorCode error) {
+    super.onLocalPublish(stream, info, error);
+    if (BaseManager.bmxFinish(error)) {
+        //Open local video view and send a RTC call message
+        onUserJoin(stream);
+        Log.e(TAG, &quot;Publish local stream successfully and start to preview, msg = &quot; + info);
+    }else{
+        Log.e(TAG, &quot;Failed to publish local stream, msg = &quot; + info);
+    }
+}
+
+@Override
+public void onLocalUnPublish(BMXStream stream, String info, BMXErrorCode error) {
+    super.onLocalUnPublish(stream, info, error);
+    if (BaseManager.bmxFinish(error)) {
+        Log.e(TAG, &quot;Unpublish local stream successfully, msg = &quot; + info);
+    }else{
+        Log.e(TAG, &quot;Failed to unpublish local stream, msg = &quot; + info);
+    }
+}
+
+@Override
+public void onRemotePublish(BMXStream stream, String info, BMXErrorCode error) {
+    super.onRemotePublish(stream, info, error);
+    if (BaseManager.bmxFinish(error)) {
+        mEngine.subscribe(stream);
+        Log.e(TAG, &quot;The remote stream published successfully and start to subscribe it&quot;);
+    }else{
+        Log.e(TAG, &quot;The remote stream published failure, msg = &quot; + info);
+    }
+}
+
+@Override
+public void onRemoteUnPublish(BMXStream stream, String info, BMXErrorCode error) {
+    super.onRemoteUnPublish(stream, info, error);
+    if (BaseManager.bmxFinish(error)) {
+        Log.e(TAG, &quot;The remote stream unpublished&quot;);
+        BMXVideoCanvas canvas = new BMXVideoCanvas();
+        canvas.setMStream(stream);
+        mEngine.stopRemoteView(canvas);
+        mEngine.unSubscribe(stream);
+        //Close the call page
+        onRemoteLeave();
+    }else{
+        Log.e(TAG, &quot;The remote stream unpublished failure, msg = &quot; + info);
+    }
+}
+
+@Override
+public void onSubscribe(BMXStream stream, String info, BMXErrorCode error) {
+    super.onSubscribe(stream, info, error);
+    if (BaseManager.bmxFinish(error)) {
+        onRemoteJoin(stream);
+        mPickupTimestamp = getTimeStamp();
+        Log.e(TAG, &quot;Subscribe the remote stream successfully, msg = &quot; + info);
+    } else {
+        Log.e(TAG, &quot;Failed to subscribe the remote stream, msg = &quot; + info);
+    }
+}
+
+@Override
+public void onUnSubscribe(BMXStream stream, String info, BMXErrorCode error) {
+    super.onUnSubscribe(stream, info, error);
+    if (BaseManager.bmxFinish(error)) {
+        Log.e(TAG, &quot;Unsubscribe the remote stream successfully, msg = &quot; + info);
+    } else {
+        Log.e(TAG, &quot;Failed to unsubscribe the remote stream, msg = &quot; + info);
+    }
+}
+</code></pre><p>});</p>
+<pre class="language-"><code>
+3. Join a room(Make a call)
+</code></pre><pre class="language-"><code>//Set the video resolution
+BMXVideoConfig config = new BMXVideoConfig();
+config.setProfile(EngineConfig.VIDEO_PROFILE);
+mEngine.setVideoProfile(config);
+
+BMXRoomAuth auth = new BMXRoomAuth();
+auth.setMUserId(mUserId);
+// The caller does not need to set the roomId, it will be returned when
+// the room is successfully created; the callee needs to set the same 
+// roomId as the caller
+auth.setMRoomId(mRoomId);
+auth.setMToken(mPin);//The room password
+mEngine.joinRoom(auth);
+</code></pre><pre class="language-"><code>
+4. Hangup a call
+</code></pre><pre class="language-"><code>public void onCallHangup(View view){
+    //Send a RTC hangup message
+    sendRTCHangupMessage();
+    leaveRoom();
+    finish();
+}
+</code></pre><pre class="language-"><code>
+5. Close the call page
+</code></pre><pre class="language-"><code>private void onRemoteLeave() {
+    removeRemoteView();
+    mHandler.removeAll();
+    finish();
+}
+</code></pre><pre class="language-"><code>
+6. Open the local video view, and send a RTC call message
+</code></pre><pre class="language-"><code>private void onUserJoin(BMXStream info){
+    if(info == null){
+        return;
+    }
+    if (mHasVideo) {
+        runOnUiThread(() -&gt; {
+            addLocalView();
+            BMXVideoCanvas canvas = new BMXVideoCanvas();
+            canvas.setMView(mLocalView.getObtainView());
+            canvas.setMStream(info);
+            mEngine.startPreview(canvas);
+        });
+    } else {
+
+    }
+    if (mIsInitiator) {
+        //send a RTC call message
+        sendRTCCallMessage();
+    }
+}
+</code></pre><pre class="language-"><code>
+7. Open the remote video view
+</code></pre><pre class="language-"><code>private void onRemoteJoin(BMXStream info) {
+    if(info == null){
+        return;
+    }
+    runOnUiThread(() -&gt; {
+        if (mHasVideo) {
+            addRemoteView();
+            BMXVideoCanvas canvas = new BMXVideoCanvas();
+            canvas.setMView(mRemoteView.getObtainView());
+            canvas.setMUserId(info.getMUserId());
+            canvas.setMStream(info);
+            mEngine.startRemoteView(canvas);
+        }
+    });
+}
+</code></pre><pre class="language-"><code>
+8. Release the resources
+</code></pre><pre class="language-"><code>@Override
+protected void onDestroy() {
+    super.onDestroy();
+    if (mEngine != null) {
+        mEngine.removeRTCEngineListener(mListener);
+        mListener = null;
+    }
+    RTCManager.getInstance().removeRTCServiceListener(mRTCListener);
+    mRTCListener = null;
+}
+</code></pre><pre class="language-"><code>
+### Implement AV call signaling with RTC service
+
+1. Add a listener
+
+private BMXRTCServiceListener mRTCListener = new BMXRTCServiceListener(){
+
+    public void onRTCCallMessageReceive(BMXMessage msg) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    // Delay handling to determine whether a hangup message for the corresponding call will be received later,
+                    // so as to avoid popping up the ended call
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                String callId = msg.config().getRTCCallId();
+                if (mHungupCalls.contains(callId)){
+                    mHungupCalls.remove(callId);
+                    ackMessage(msg);
+                    return;
+                }
+                long roomId = msg.config().getRTCRoomId();
+                long chatId = msg.config().getRTCInitiator();
+                long myId = SharePreferenceUtils.getInstance().getUserId();
+                if (myId == chatId){
+                    return;
+                }
+                //If already in a call, send a busy message to the new caller
+                if (RTCManager.getInstance().getRTCEngine().isOnCall){
+                    replyBusy(callId, myId, chatId);
+                    return;
+                }
+                String pin = msg.config().getRTCPin();
+                if(mActivityRef != null &amp;&amp; mActivityRef.get() != null){
+                    Context context = mActivityRef.get();
+                    if (msg.type() == BMXMessage.MessageType.Single) {
+                        //Open the call page(incoming call ringing)
+                        SingleVideoCallActivity.openVideoCall(context, chatId, roomId, callId,
+                                false, msg.config().getRTCCallType(), pin, msg.msgId());
+                    }
+                }
+            }
+        }, &quot;onRTCCallMessageReceive&quot;).start();
+    }
+
+    public void onRTCPickupMessageReceive(BMXMessage msg) {
+        if (msg.config().getRTCCallId().equals(mCallId) &amp;&amp; msg.fromId() == mUserId){
+            leaveRoom();
+            ackMessage(msg);
+        }
+    }
+
+    public void onRTCHangupMessageReceive(BMXMessage msg) {
+        long otherId = mEngine.otherId;
+        if (msg.config().getRTCCallId().equals(mCallId) &amp;&amp;
+                (msg.fromId()==otherId
+                || msg.content().equals(&quot;busy&quot;)
+                || msg.content().equals(&quot;rejected&quot;)
+                || msg.content().equals(&quot;canceled&quot;)
+                || msg.content().equals(&quot;timeout&quot;)
+                || !mEngine.isOnCall)){
+            leaveRoom();
+            ackMessage(msg);
+        }
+    }
+
+};
+RTCManager.getInstance().addRTCServiceListener(mRTCListener);
+
+
+2. Send a RTC call message
+</code></pre><p>public String sendRTCCallMessage(BMXMessageConfig.RTCCallType type, long roomId, long from, long to,
+                                    String pin) {
+    BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+    con.setRTCCallInfo(type, roomId, from, BMXMessageConfig.RTCRoomType.Broadcast, pin);
+    con.setIOSConfig(&quot;{\&quot;mutable_content\&quot;:true,\&quot;loc-key\&quot;:\&quot;call_in\&quot;}&quot;);
+    BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, &quot;&quot;);
+    msg.setConfig(con);
+    msg.setExtension(&quot;{\&quot;rtc\&quot;:\&quot;call\&quot;}&quot;);
+    handlerMessage(msg);
+    return con.getRTCCallId();
+}</p>
+<pre class="language-"><code>
+3. Send a RTC pickup message
+</code></pre><p>public void sendRTCPickupMessage(long from, long to, String callId) {
+    BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+    con.setRTCPickupInfo(callId);
+    BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, &quot;&quot;);
+    msg.setConfig(con);
+    handlerMessage(msg);
+}</p>
+<pre class="language-"><code>
+4. Send a RTC hangup message
+</code></pre><p>public void sendRTCHangupMessage(long from, long to, String callId, String content, String iosConfig) {
+    BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+    con.setRTCHangupInfo(callId);
+    BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, content);
+    msg.setConfig(con);
+    handlerMessage(msg);
+}
+```</p>
+<footer class="page-footer"><span class="copyright">&#xA9; 2019-2023 MaximTop | <a href="https://lanyingim.com" style="text-decoration:none!important;" target="_blank">Homepage</a> </span><span class="footer-modification">Last modified time:
+2023-07-07 21:41:15
 </span></footer>
                                 
                                 </section>
@@ -3581,7 +3940,7 @@ BMXMessage msg = BMXMessage.createMessage(from, to, type, to, voiceAttachment);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Android SDK Quick Start","level":"1.2.2","depth":2,"next":{"title":"C++ SDK Quick Start","level":"1.2.3","depth":2,"path":"quick-start/floo-quick-start.md","ref":"quick-start/floo-quick-start.md","articles":[]},"previous":{"title":"IOS SDK Quick Start","level":"1.2.1","depth":2,"path":"quick-start/floo-ios-quick-start.md","ref":"quick-start/floo-ios-quick-start.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link@^2.0.2","fontsettings@^2.0.0","-sharing","sharing-plus@^0.0.2","-highlight","prism@^2.1.0","prism-themes@^0.0.2","-lunr","-search","lanying-code-snippet@^1.1.8","search-plus@^0.0.11","advanced-emoji@^0.2.1","expandable-chapters-small@^0.1.7","tbfed-pagefooter@^0.0.1","versions-select@^0.1.1","terminal@^0.3.2","code@^0.1.0","splitter@^0.0.8","favicon@^0.0.2","image-captions@^3.1.0","auto-scroll-table@^0.0.5","logo@^0.0.2","intopic-toc@^1.1.1","meta@^0.1.12","intopic-toc@^1.1.1","meta@^0.1.12"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2019-2023 MaximTop | <a href='https://lanyingim.com' style='text-decoration:none!important;'>Homepage</a>","modify_label":"Last modified time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"language-picker":{"grid-columns":3},"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"Contents","maxDepth":3,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","visible":true},"meta":{"content":"","data":[{"name":"keywords","content":"Lanying IM, Maximtop, IM SDK, Instant Messaging, IM Cloud, IM Cloud Service, Mobile IM, Open Source IM, Enterprise IM, Chat Software, Mobile Customer Service, Online Customer Service, IM Business Scenario, APP Social, Developer Service, Live Chatroom, Live Audio/Video, Audio/Video, Live Platform, Maximtop Anti-spam, Content Security"}],"name":""},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"lanying-code-snippet":{"showLink":true,"reindent":true,"maxLine":20,"maxSnippetCount":8,"repositories":[{"name":"lanying-im-web","url":"https://github.com/maxim-top/lanying-im-web.git","branch":"master","cacheDir":"../cache/lanying-im-web"},{"name":"lanying-im-android","url":"https://github.com/maxim-top/lanying-im-android.git","branch":"master","cacheDir":"../cache/lanying-im-android"},{"name":"lanying-im-embedded","url":"https://github.com/maxim-top/lanying-im-embedded.git","branch":"master","cacheDir":"../cache/lanying-im-embedded"},{"name":"lanying-im-ios-","url":"https://github.com/maxim-top/lanying-im-ios.git","branch":"master","cacheDir":"../cache/lanying-im-ios"}]},"logo":{"logo":"/assets/lanying-logo-color-en.png","logoStyle":"width: 200px;align: left;","url":"https://www.lanyingim.com"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"github-tables":{"myConfigKey":"it's the default value"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"canonical-link":{"baseURL":"https://docs.lanyingim.com"},"favicon":{"shortcut":"/assets/favicon.ico","bookmark":"/assets/favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"maxim-top/im.gitbook","types":["star"],"size":"small"},"expandable-chapters-small":{},"versions":{"type":"languages","options":[{"value":"/","text":"简体中文"},{"value":"/en/","text":"English"}]},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone","douban","line","whatsapp"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":true,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit On GitHub","base":"https://github.com/maxim-top/im.gitbook/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"jinhai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Lanying IM cloud open platform architecture","alt":"Lanying IM cloud open platform architecture","nro":1,"url":"assets/1.png","index":1,"caption_template":"_CAPTION_","label":"Lanying IM cloud open platform architecture","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"index.html#fig1.1.2","level":"1.1","list_caption":"Figure: Lanying IM SDK technology stack","alt":"Lanying IM SDK technology stack","nro":2,"url":"assets/2.png","index":2,"caption_template":"_CAPTION_","label":"Lanying IM SDK technology stack","attributes":{},"skip":false,"key":"1.1.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.1","level":"1.2.7","list_caption":"Figure: Create application","alt":"Create application","nro":3,"url":"../assets/1-1.create_app.png","index":1,"caption_template":"_CAPTION_","label":"Create application","attributes":{},"skip":false,"key":"1.2.7.1"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.2","level":"1.2.7","list_caption":"Figure: Application information","alt":"Application information","nro":4,"url":"../assets/1-2.app_info.png","index":2,"caption_template":"_CAPTION_","label":"Application information","attributes":{},"skip":false,"key":"1.2.7.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.3","level":"1.2.7","list_caption":"Figure: Enable Private Cloud Services","alt":"Enable Private Cloud Services","nro":5,"url":"../assets/1-3.select_private_plan.png","index":3,"caption_template":"_CAPTION_","label":"Enable Private Cloud Services","attributes":{},"skip":false,"key":"1.2.7.3"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.4","level":"1.2.7","list_caption":"Figure: Private Cloud Deployment","alt":"Private Cloud Deployment","nro":6,"url":"../assets/1-4.deploy.png","index":4,"caption_template":"_CAPTION_","label":"Private Cloud Deployment","attributes":{},"skip":false,"key":"1.2.7.4"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.5","level":"1.2.7","list_caption":"Figure: Get Private Cloud installation token","alt":"Get Private Cloud installation token","nro":7,"url":"../assets/1-5.get_install_token.png","index":5,"caption_template":"_CAPTION_","label":"Get Private Cloud installation token","attributes":{},"skip":false,"key":"1.2.7.5"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.6","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 1","alt":"Single server version installation: Step 1","nro":8,"url":"../assets/2-1.install_single_s1.png","index":6,"caption_template":"_CAPTION_","label":"Single server version installation: Step 1","attributes":{},"skip":false,"key":"1.2.7.6"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.7","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 2","alt":"Single server version installation: Step 2","nro":9,"url":"../assets/2-2.install_single_s2.png","index":7,"caption_template":"_CAPTION_","label":"Single server version installation: Step 2","attributes":{},"skip":false,"key":"1.2.7.7"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.8","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 3","alt":"Single server version installation: Step 3","nro":10,"url":"../assets/2-3.install_single_s3.png","index":8,"caption_template":"_CAPTION_","label":"Single server version installation: Step 3","attributes":{},"skip":false,"key":"1.2.7.8"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.9","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 4","alt":"Single server version installation: Step 4","nro":11,"url":"../assets/2-4.install_single_s4.png","index":9,"caption_template":"_CAPTION_","label":"Single server version installation: Step 4","attributes":{},"skip":false,"key":"1.2.7.9"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.10","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 5","alt":"Single server version installation: Step 5","nro":12,"url":"../assets/2-5.install_single_s5.png","index":10,"caption_template":"_CAPTION_","label":"Single server version installation: Step 5","attributes":{},"skip":false,"key":"1.2.7.10"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.11","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 1","alt":"Cluster permission configuration: Step 1","nro":13,"url":"../assets/3-1-1.config_cluster_s1.png","index":11,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 1","attributes":{},"skip":false,"key":"1.2.7.11"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.12","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 2","alt":"Cluster permission configuration: Step 2","nro":14,"url":"../assets/3-1-2.config_cluster_s2.png","index":12,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 2","attributes":{},"skip":false,"key":"1.2.7.12"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.13","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 3","alt":"Cluster permission configuration: Step 3","nro":15,"url":"../assets/3-1-3.config_cluster_s3.png","index":13,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 3","attributes":{},"skip":false,"key":"1.2.7.13"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.14","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 4","alt":"Cluster permission configuration: Step 4","nro":16,"url":"../assets/3-1-4.config_cluster_s4.png","index":14,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 4","attributes":{},"skip":false,"key":"1.2.7.14"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.15","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 5","alt":"Cluster permission configuration: Step 5","nro":17,"url":"../assets/3-1-5.config_cluster_s5.png","index":15,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 5","attributes":{},"skip":false,"key":"1.2.7.15"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.16","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 1","alt":"Cluster version installation: Step 1","nro":18,"url":"../assets/3-2-1.install_cluster_s1.png","index":16,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 1","attributes":{},"skip":false,"key":"1.2.7.16"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.17","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 2","alt":"Cluster version installation: Step 2","nro":19,"url":"../assets/3-2-2.install_cluster_s2.png","index":17,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 2","attributes":{},"skip":false,"key":"1.2.7.17"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.18","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 3","alt":"Cluster version installation: Step 3","nro":20,"url":"../assets/3-2-3.install_cluster_s3.png","index":18,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 3","attributes":{},"skip":false,"key":"1.2.7.18"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.19","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 4","alt":"Cluster version installation: Step 4","nro":21,"url":"../assets/3-2-4.install_cluster_s4.png","index":19,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 4","attributes":{},"skip":false,"key":"1.2.7.19"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.20","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 5","alt":"Cluster version installation: Step 5","nro":22,"url":"../assets/3-2-5.install_cluster_s5.png","index":20,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 5","attributes":{},"skip":false,"key":"1.2.7.20"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.21","level":"1.2.7","list_caption":"Figure: Mount the offline installation package and add maxim.ctl to the executable path","alt":"Mount the offline installation package and add maxim.ctl to the executable path","nro":23,"url":"../assets/offline_mount_and_add_exec.png","index":21,"caption_template":"_CAPTION_","label":"Mount the offline installation package and add maxim.ctl to the executable path","attributes":{},"skip":false,"key":"1.2.7.21"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.22","level":"1.2.7","list_caption":"Figure: generate offline configuration file","alt":"generate offline configuration file","nro":24,"url":"../assets/generate_offline_install_configration.png","index":22,"caption_template":"_CAPTION_","label":"generate offline configuration file","attributes":{},"skip":false,"key":"1.2.7.22"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.23","level":"1.2.7","list_caption":"Figure: Single version (offline installation) start installation","alt":"Single version (offline installation) start installation","nro":25,"url":"../assets/single_offline_start_install.png","index":23,"caption_template":"_CAPTION_","label":"Single version (offline installation) start installation","attributes":{},"skip":false,"key":"1.2.7.23"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.24","level":"1.2.7","list_caption":"Figure: Single version (offline installation) installation completed","alt":"Single version (offline installation) installation completed","nro":26,"url":"../assets/single_offline_finish_install.png","index":24,"caption_template":"_CAPTION_","label":"Single version (offline installation) installation completed","attributes":{},"skip":false,"key":"1.2.7.24"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.25","level":"1.2.7","list_caption":"Figure: Generate Cluster LicenseKey","alt":"Generate Cluster LicenseKey","nro":27,"url":"../assets/single_offline_export_license_key.png","index":25,"caption_template":"_CAPTION_","label":"Generate Cluster LicenseKey","attributes":{},"skip":false,"key":"1.2.7.25"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.26","level":"1.2.7","list_caption":"Figure: Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","alt":"Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","nro":28,"url":"../assets/single_offline_activate.png","index":26,"caption_template":"_CAPTION_","label":"Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","attributes":{},"skip":false,"key":"1.2.7.26"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.27","level":"1.2.7","list_caption":"Figure: Activate command","alt":"Activate command","nro":29,"url":"../assets/single_offline_activate_success.png","index":27,"caption_template":"_CAPTION_","label":"Activate command","attributes":{},"skip":false,"key":"1.2.7.27"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.28","level":"1.2.7","list_caption":"Figure: Execute activation command in cluster","alt":"Execute activation command in cluster","nro":30,"url":"../assets/single_offline_exec_activate.png","index":28,"caption_template":"_CAPTION_","label":"Execute activation command in cluster","attributes":{},"skip":false,"key":"1.2.7.28"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.29","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 1","alt":"Cluster permission configuration: Step 1","nro":31,"url":"../assets/3-1-1.config_cluster_s1.png","index":29,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 1","attributes":{},"skip":false,"key":"1.2.7.29"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.30","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 2","alt":"Cluster permission configuration: Step 2","nro":32,"url":"../assets/3-1-2.config_cluster_s2.png","index":30,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 2","attributes":{},"skip":false,"key":"1.2.7.30"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.31","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 3","alt":"Cluster permission configuration: Step 3","nro":33,"url":"../assets/3-1-3.config_cluster_s3.png","index":31,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 3","attributes":{},"skip":false,"key":"1.2.7.31"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.32","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 4","alt":"Cluster permission configuration: Step 4","nro":34,"url":"../assets/3-1-4.config_cluster_s4.png","index":32,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 4","attributes":{},"skip":false,"key":"1.2.7.32"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.33","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 5","alt":"Cluster permission configuration: Step 5","nro":35,"url":"../assets/3-1-5.config_cluster_s5.png","index":33,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 5","attributes":{},"skip":false,"key":"1.2.7.33"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.34","level":"1.2.7","list_caption":"Figure: Mount the offline installation package and add maxim.ctl to the executable path","alt":"Mount the offline installation package and add maxim.ctl to the executable path","nro":36,"url":"../assets/offline_mount_and_add_exec.png","index":34,"caption_template":"_CAPTION_","label":"Mount the offline installation package and add maxim.ctl to the executable path","attributes":{},"skip":false,"key":"1.2.7.34"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.35","level":"1.2.7","list_caption":"Figure: generate offline configuration file","alt":"generate offline configuration file","nro":37,"url":"../assets/generate_offline_install_configration.png","index":35,"caption_template":"_CAPTION_","label":"generate offline configuration file","attributes":{},"skip":false,"key":"1.2.7.35"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.36","level":"1.2.7","list_caption":"Figure: Cluster version (offline installation) start installation","alt":"Cluster version (offline installation) start installation","nro":38,"url":"../assets/multi_offline_start_install.png","index":36,"caption_template":"_CAPTION_","label":"Cluster version (offline installation) start installation","attributes":{},"skip":false,"key":"1.2.7.36"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.37","level":"1.2.7","list_caption":"Figure: Cluster version (offline installation) installation completed","alt":"Cluster version (offline installation) installation completed","nro":39,"url":"../assets/multi_offline_finish_install.png","index":37,"caption_template":"_CAPTION_","label":"Cluster version (offline installation) installation completed","attributes":{},"skip":false,"key":"1.2.7.37"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.38","level":"1.2.7","list_caption":"Figure: Generate Cluster LicenseKey","alt":"Generate Cluster LicenseKey","nro":40,"url":"../assets/single_offline_export_license_key.png","index":38,"caption_template":"_CAPTION_","label":"Generate Cluster LicenseKey","attributes":{},"skip":false,"key":"1.2.7.38"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.39","level":"1.2.7","list_caption":"Figure: Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","alt":"Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","nro":41,"url":"../assets/single_offline_activate.png","index":39,"caption_template":"_CAPTION_","label":"Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","attributes":{},"skip":false,"key":"1.2.7.39"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.40","level":"1.2.7","list_caption":"Figure: Activate command","alt":"Activate command","nro":42,"url":"../assets/single_offline_activate_success.png","index":40,"caption_template":"_CAPTION_","label":"Activate command","attributes":{},"skip":false,"key":"1.2.7.40"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.41","level":"1.2.7","list_caption":"Figure: Execute activation command in cluster","alt":"Execute activation command in cluster","nro":43,"url":"../assets/single_offline_exec_activate.png","index":41,"caption_template":"_CAPTION_","label":"Execute activation command in cluster","attributes":{},"skip":false,"key":"1.2.7.41"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.42","level":"1.2.7","list_caption":"Figure: Click “Private Cloud” to view the installation progress through the progress of node information","alt":"Click “Private Cloud” to view the installation progress through the progress of node information","nro":44,"url":"../assets/4-1.install_progress.png","index":42,"caption_template":"_CAPTION_","label":"Click “Private Cloud” to view the installation progress through the progress of node information","attributes":{},"skip":false,"key":"1.2.7.42"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.43","level":"1.2.7","list_caption":"Figure: If all checks are normal, means the service is normal","alt":"If all checks are normal, means the service is normal","nro":45,"url":"../assets/4-2.service_status.png","index":43,"caption_template":"_CAPTION_","label":"If all checks are normal, means the service is normal","attributes":{},"skip":false,"key":"1.2.7.43"}]},"title":"LANYING.IM - Professional SDK, Monthly Charged Private Cloud","language":"en","output.name":"site","gitbook":"3.2.3","description":"API文档及文章分享"},"file":{"path":"quick-start/floo-android-quick-start.md","mtime":"2022-09-27T03:40:53.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"0000-00-00T00:00:00.000Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Android SDK Quick Start","level":"1.2.2","depth":2,"next":{"title":"C++ SDK Quick Start","level":"1.2.3","depth":2,"path":"quick-start/floo-quick-start.md","ref":"quick-start/floo-quick-start.md","articles":[]},"previous":{"title":"IOS SDK Quick Start","level":"1.2.1","depth":2,"path":"quick-start/floo-ios-quick-start.md","ref":"quick-start/floo-ios-quick-start.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0","edit-link@^2.0.2","fontsettings@^2.0.0","-sharing","sharing-plus@^0.0.2","-highlight","prism@^2.1.0","prism-themes@^0.0.2","-lunr","-search","lanying-code-snippet@^1.1.8","search-plus@^0.0.11","advanced-emoji@^0.2.1","expandable-chapters-small@^0.1.7","tbfed-pagefooter@^0.0.1","versions-select@^0.1.1","terminal@^0.3.2","code@^0.1.0","splitter@^0.0.8","favicon@^0.0.2","image-captions@^3.1.0","auto-scroll-table@^0.0.5","logo@^0.0.2","intopic-toc@^1.1.1","meta@^0.1.12","intopic-toc@^1.1.1","meta@^0.1.12"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"© 2019-2023 MaximTop | <a href='https://lanyingim.com' style='text-decoration:none!important;'>Homepage</a>","modify_label":"Last modified time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"language-picker":{"grid-columns":3},"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"Contents","maxDepth":3,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","visible":true},"meta":{"content":"","data":[{"name":"keywords","content":"Lanying IM, Maximtop, IM SDK, Instant Messaging, IM Cloud, IM Cloud Service, Mobile IM, Open Source IM, Enterprise IM, Chat Software, Mobile Customer Service, Online Customer Service, IM Business Scenario, APP Social, Developer Service, Live Chatroom, Live Audio/Video, Audio/Video, Live Platform, Maximtop Anti-spam, Content Security"}],"name":""},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"lanying-code-snippet":{"showLink":true,"reindent":true,"maxLine":20,"maxSnippetCount":8,"repositories":[{"name":"lanying-im-web","url":"https://github.com/maxim-top/lanying-im-web.git","branch":"master","cacheDir":"../cache/lanying-im-web"},{"name":"lanying-im-android","url":"https://github.com/maxim-top/lanying-im-android.git","branch":"master","cacheDir":"../cache/lanying-im-android"},{"name":"lanying-im-embedded","url":"https://github.com/maxim-top/lanying-im-embedded.git","branch":"master","cacheDir":"../cache/lanying-im-embedded"},{"name":"lanying-im-ios","url":"https://github.com/maxim-top/lanying-im-ios.git","branch":"master","cacheDir":"../cache/lanying-im-ios"}]},"logo":{"logo":"/assets/lanying-logo-color-en.png","logoStyle":"width: 200px;align: left;","url":"https://www.lanyingim.com"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"github-tables":{"myConfigKey":"it's the default value"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"canonical-link":{"baseURL":"https://docs.lanyingim.com"},"favicon":{"shortcut":"/assets/favicon.ico","bookmark":"/assets/favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"maxim-top/im.gitbook","types":["star"],"size":"small"},"expandable-chapters-small":{},"versions":{"type":"languages","options":[{"value":"/","text":"简体中文"},{"value":"/en/","text":"English"}]},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone","douban","line","whatsapp"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":true,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"Edit On GitHub","base":"https://github.com/maxim-top/im.gitbook/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"jinhai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Lanying IM cloud open platform architecture","alt":"Lanying IM cloud open platform architecture","nro":1,"url":"assets/1.png","index":1,"caption_template":"_CAPTION_","label":"Lanying IM cloud open platform architecture","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"index.html#fig1.1.2","level":"1.1","list_caption":"Figure: Lanying IM SDK technology stack","alt":"Lanying IM SDK technology stack","nro":2,"url":"assets/2.png","index":2,"caption_template":"_CAPTION_","label":"Lanying IM SDK technology stack","attributes":{},"skip":false,"key":"1.1.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.1","level":"1.2.7","list_caption":"Figure: Create application","alt":"Create application","nro":3,"url":"../assets/1-1.create_app.png","index":1,"caption_template":"_CAPTION_","label":"Create application","attributes":{},"skip":false,"key":"1.2.7.1"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.2","level":"1.2.7","list_caption":"Figure: Application information","alt":"Application information","nro":4,"url":"../assets/1-2.app_info.png","index":2,"caption_template":"_CAPTION_","label":"Application information","attributes":{},"skip":false,"key":"1.2.7.2"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.3","level":"1.2.7","list_caption":"Figure: Enable Private Cloud Services","alt":"Enable Private Cloud Services","nro":5,"url":"../assets/1-3.select_private_plan.png","index":3,"caption_template":"_CAPTION_","label":"Enable Private Cloud Services","attributes":{},"skip":false,"key":"1.2.7.3"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.4","level":"1.2.7","list_caption":"Figure: Private Cloud Deployment","alt":"Private Cloud Deployment","nro":6,"url":"../assets/1-4.deploy.png","index":4,"caption_template":"_CAPTION_","label":"Private Cloud Deployment","attributes":{},"skip":false,"key":"1.2.7.4"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.5","level":"1.2.7","list_caption":"Figure: Get Private Cloud installation token","alt":"Get Private Cloud installation token","nro":7,"url":"../assets/1-5.get_install_token.png","index":5,"caption_template":"_CAPTION_","label":"Get Private Cloud installation token","attributes":{},"skip":false,"key":"1.2.7.5"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.6","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 1","alt":"Single server version installation: Step 1","nro":8,"url":"../assets/2-1.install_single_s1.png","index":6,"caption_template":"_CAPTION_","label":"Single server version installation: Step 1","attributes":{},"skip":false,"key":"1.2.7.6"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.7","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 2","alt":"Single server version installation: Step 2","nro":9,"url":"../assets/2-2.install_single_s2.png","index":7,"caption_template":"_CAPTION_","label":"Single server version installation: Step 2","attributes":{},"skip":false,"key":"1.2.7.7"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.8","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 3","alt":"Single server version installation: Step 3","nro":10,"url":"../assets/2-3.install_single_s3.png","index":8,"caption_template":"_CAPTION_","label":"Single server version installation: Step 3","attributes":{},"skip":false,"key":"1.2.7.8"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.9","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 4","alt":"Single server version installation: Step 4","nro":11,"url":"../assets/2-4.install_single_s4.png","index":9,"caption_template":"_CAPTION_","label":"Single server version installation: Step 4","attributes":{},"skip":false,"key":"1.2.7.9"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.10","level":"1.2.7","list_caption":"Figure: Single server version installation: Step 5","alt":"Single server version installation: Step 5","nro":12,"url":"../assets/2-5.install_single_s5.png","index":10,"caption_template":"_CAPTION_","label":"Single server version installation: Step 5","attributes":{},"skip":false,"key":"1.2.7.10"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.11","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 1","alt":"Cluster permission configuration: Step 1","nro":13,"url":"../assets/3-1-1.config_cluster_s1.png","index":11,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 1","attributes":{},"skip":false,"key":"1.2.7.11"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.12","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 2","alt":"Cluster permission configuration: Step 2","nro":14,"url":"../assets/3-1-2.config_cluster_s2.png","index":12,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 2","attributes":{},"skip":false,"key":"1.2.7.12"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.13","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 3","alt":"Cluster permission configuration: Step 3","nro":15,"url":"../assets/3-1-3.config_cluster_s3.png","index":13,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 3","attributes":{},"skip":false,"key":"1.2.7.13"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.14","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 4","alt":"Cluster permission configuration: Step 4","nro":16,"url":"../assets/3-1-4.config_cluster_s4.png","index":14,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 4","attributes":{},"skip":false,"key":"1.2.7.14"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.15","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 5","alt":"Cluster permission configuration: Step 5","nro":17,"url":"../assets/3-1-5.config_cluster_s5.png","index":15,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 5","attributes":{},"skip":false,"key":"1.2.7.15"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.16","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 1","alt":"Cluster version installation: Step 1","nro":18,"url":"../assets/3-2-1.install_cluster_s1.png","index":16,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 1","attributes":{},"skip":false,"key":"1.2.7.16"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.17","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 2","alt":"Cluster version installation: Step 2","nro":19,"url":"../assets/3-2-2.install_cluster_s2.png","index":17,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 2","attributes":{},"skip":false,"key":"1.2.7.17"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.18","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 3","alt":"Cluster version installation: Step 3","nro":20,"url":"../assets/3-2-3.install_cluster_s3.png","index":18,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 3","attributes":{},"skip":false,"key":"1.2.7.18"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.19","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 4","alt":"Cluster version installation: Step 4","nro":21,"url":"../assets/3-2-4.install_cluster_s4.png","index":19,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 4","attributes":{},"skip":false,"key":"1.2.7.19"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.20","level":"1.2.7","list_caption":"Figure: Cluster version installation: Step 5","alt":"Cluster version installation: Step 5","nro":22,"url":"../assets/3-2-5.install_cluster_s5.png","index":20,"caption_template":"_CAPTION_","label":"Cluster version installation: Step 5","attributes":{},"skip":false,"key":"1.2.7.20"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.21","level":"1.2.7","list_caption":"Figure: Mount the offline installation package and add maxim.ctl to the executable path","alt":"Mount the offline installation package and add maxim.ctl to the executable path","nro":23,"url":"../assets/offline_mount_and_add_exec.png","index":21,"caption_template":"_CAPTION_","label":"Mount the offline installation package and add maxim.ctl to the executable path","attributes":{},"skip":false,"key":"1.2.7.21"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.22","level":"1.2.7","list_caption":"Figure: generate offline configuration file","alt":"generate offline configuration file","nro":24,"url":"../assets/generate_offline_install_configration.png","index":22,"caption_template":"_CAPTION_","label":"generate offline configuration file","attributes":{},"skip":false,"key":"1.2.7.22"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.23","level":"1.2.7","list_caption":"Figure: Single version (offline installation) start installation","alt":"Single version (offline installation) start installation","nro":25,"url":"../assets/single_offline_start_install.png","index":23,"caption_template":"_CAPTION_","label":"Single version (offline installation) start installation","attributes":{},"skip":false,"key":"1.2.7.23"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.24","level":"1.2.7","list_caption":"Figure: Single version (offline installation) installation completed","alt":"Single version (offline installation) installation completed","nro":26,"url":"../assets/single_offline_finish_install.png","index":24,"caption_template":"_CAPTION_","label":"Single version (offline installation) installation completed","attributes":{},"skip":false,"key":"1.2.7.24"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.25","level":"1.2.7","list_caption":"Figure: Generate Cluster LicenseKey","alt":"Generate Cluster LicenseKey","nro":27,"url":"../assets/single_offline_export_license_key.png","index":25,"caption_template":"_CAPTION_","label":"Generate Cluster LicenseKey","attributes":{},"skip":false,"key":"1.2.7.25"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.26","level":"1.2.7","list_caption":"Figure: Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","alt":"Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","nro":28,"url":"../assets/single_offline_activate.png","index":26,"caption_template":"_CAPTION_","label":"Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","attributes":{},"skip":false,"key":"1.2.7.26"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.27","level":"1.2.7","list_caption":"Figure: Activate command","alt":"Activate command","nro":29,"url":"../assets/single_offline_activate_success.png","index":27,"caption_template":"_CAPTION_","label":"Activate command","attributes":{},"skip":false,"key":"1.2.7.27"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.28","level":"1.2.7","list_caption":"Figure: Execute activation command in cluster","alt":"Execute activation command in cluster","nro":30,"url":"../assets/single_offline_exec_activate.png","index":28,"caption_template":"_CAPTION_","label":"Execute activation command in cluster","attributes":{},"skip":false,"key":"1.2.7.28"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.29","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 1","alt":"Cluster permission configuration: Step 1","nro":31,"url":"../assets/3-1-1.config_cluster_s1.png","index":29,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 1","attributes":{},"skip":false,"key":"1.2.7.29"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.30","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 2","alt":"Cluster permission configuration: Step 2","nro":32,"url":"../assets/3-1-2.config_cluster_s2.png","index":30,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 2","attributes":{},"skip":false,"key":"1.2.7.30"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.31","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 3","alt":"Cluster permission configuration: Step 3","nro":33,"url":"../assets/3-1-3.config_cluster_s3.png","index":31,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 3","attributes":{},"skip":false,"key":"1.2.7.31"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.32","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 4","alt":"Cluster permission configuration: Step 4","nro":34,"url":"../assets/3-1-4.config_cluster_s4.png","index":32,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 4","attributes":{},"skip":false,"key":"1.2.7.32"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.33","level":"1.2.7","list_caption":"Figure: Cluster permission configuration: Step 5","alt":"Cluster permission configuration: Step 5","nro":35,"url":"../assets/3-1-5.config_cluster_s5.png","index":33,"caption_template":"_CAPTION_","label":"Cluster permission configuration: Step 5","attributes":{},"skip":false,"key":"1.2.7.33"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.34","level":"1.2.7","list_caption":"Figure: Mount the offline installation package and add maxim.ctl to the executable path","alt":"Mount the offline installation package and add maxim.ctl to the executable path","nro":36,"url":"../assets/offline_mount_and_add_exec.png","index":34,"caption_template":"_CAPTION_","label":"Mount the offline installation package and add maxim.ctl to the executable path","attributes":{},"skip":false,"key":"1.2.7.34"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.35","level":"1.2.7","list_caption":"Figure: generate offline configuration file","alt":"generate offline configuration file","nro":37,"url":"../assets/generate_offline_install_configration.png","index":35,"caption_template":"_CAPTION_","label":"generate offline configuration file","attributes":{},"skip":false,"key":"1.2.7.35"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.36","level":"1.2.7","list_caption":"Figure: Cluster version (offline installation) start installation","alt":"Cluster version (offline installation) start installation","nro":38,"url":"../assets/multi_offline_start_install.png","index":36,"caption_template":"_CAPTION_","label":"Cluster version (offline installation) start installation","attributes":{},"skip":false,"key":"1.2.7.36"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.37","level":"1.2.7","list_caption":"Figure: Cluster version (offline installation) installation completed","alt":"Cluster version (offline installation) installation completed","nro":39,"url":"../assets/multi_offline_finish_install.png","index":37,"caption_template":"_CAPTION_","label":"Cluster version (offline installation) installation completed","attributes":{},"skip":false,"key":"1.2.7.37"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.38","level":"1.2.7","list_caption":"Figure: Generate Cluster LicenseKey","alt":"Generate Cluster LicenseKey","nro":40,"url":"../assets/single_offline_export_license_key.png","index":38,"caption_template":"_CAPTION_","label":"Generate Cluster LicenseKey","attributes":{},"skip":false,"key":"1.2.7.38"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.39","level":"1.2.7","list_caption":"Figure: Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","alt":"Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","nro":41,"url":"../assets/single_offline_activate.png","index":39,"caption_template":"_CAPTION_","label":"Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click \"Activate the cluster\"","attributes":{},"skip":false,"key":"1.2.7.39"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.40","level":"1.2.7","list_caption":"Figure: Activate command","alt":"Activate command","nro":42,"url":"../assets/single_offline_activate_success.png","index":40,"caption_template":"_CAPTION_","label":"Activate command","attributes":{},"skip":false,"key":"1.2.7.40"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.41","level":"1.2.7","list_caption":"Figure: Execute activation command in cluster","alt":"Execute activation command in cluster","nro":43,"url":"../assets/single_offline_exec_activate.png","index":41,"caption_template":"_CAPTION_","label":"Execute activation command in cluster","attributes":{},"skip":false,"key":"1.2.7.41"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.42","level":"1.2.7","list_caption":"Figure: Click “Private Cloud” to view the installation progress through the progress of node information","alt":"Click “Private Cloud” to view the installation progress through the progress of node information","nro":44,"url":"../assets/4-1.install_progress.png","index":42,"caption_template":"_CAPTION_","label":"Click “Private Cloud” to view the installation progress through the progress of node information","attributes":{},"skip":false,"key":"1.2.7.42"},{"backlink":"quick-start/how-to-deploy-private-cloud.html#fig1.2.7.43","level":"1.2.7","list_caption":"Figure: If all checks are normal, means the service is normal","alt":"If all checks are normal, means the service is normal","nro":45,"url":"../assets/4-2.service_status.png","index":43,"caption_template":"_CAPTION_","label":"If all checks are normal, means the service is normal","attributes":{},"skip":false,"key":"1.2.7.43"}]},"title":"LANYING.IM - Professional SDK, Monthly Charged Private Cloud","language":"en","output.name":"site","gitbook":"3.2.3","description":"API文档及文章分享"},"file":{"path":"quick-start/floo-android-quick-start.md","mtime":"2023-07-07T13:41:15.829Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"0000-00-00T00:00:00.000Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

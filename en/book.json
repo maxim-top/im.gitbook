@@ -164,7 +164,7 @@
                     "cacheDir": "../cache/lanying-im-embedded"
                 },
                 {
-                    "name":"lanying-im-ios-",
+                    "name":"lanying-im-ios",
                     "url":"https://github.com/maxim-top/lanying-im-ios.git",
                     "branch":"master",
                     "cacheDir": "../cache/lanying-im-ios"
