@@ -624,7 +624,7 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
 
 提示：如果未安装cocoapods，请参照 [CocoaPods安装](https://cocoapods.org)
 
-1.  在 Podfile 文件中加入 floo-ios :
+1.  在 Podfile 文件中加入 floo-rtc-ios :
 
     ```
     pod 'floo-rtc-ios'
