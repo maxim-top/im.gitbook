@@ -206,6 +206,7 @@
     * [过去的十五年，我们怎样做 IM？](articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.md)
     * [云服务的下一个十年](articles/Industry-development/the-next-decade-of-cloud-services.md)
   * [产品技术](articles/product-and-technologies/README.md)
+    * [是时候让大模型学习企业知识了](articles/product-and-technologies/It-is-time-to-make-LLM-learn-enterprise-knowledge.md)
     * [蓝莺LinkChat：把内容营销变成互动营销](articles/product-and-technologies/lanying-linkchat-turning-content-marketing-into-interactive-marketing.md)
     * [ChatGPT做智能客服的十条服务准则](articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.md)
     * [ChatGPT能用来做智能客服吗？](articles/product-and-technologies/how-to-implement-an-intelligent-customer-service-by-chatgpt.md)
