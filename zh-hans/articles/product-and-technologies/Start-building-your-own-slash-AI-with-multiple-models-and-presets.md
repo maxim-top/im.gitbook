@@ -74,9 +74,7 @@ ChatBot支持多预设，意味着你在同AI对话时，可以通过`/+空格`�
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
-
-打造新一代智能聊天APP，使用蓝莺IM SDK！
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 参考资料
 
