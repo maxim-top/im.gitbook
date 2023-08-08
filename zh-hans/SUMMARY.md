@@ -236,3 +236,5 @@
     * [把握技术变革的机遇：看云服务浪潮如何演进 | TVP十日谈预告](articles/activity-report/grasping-the-opportunity-of-technological-change-seeing-the-evolution-of-the-cloud-service-wave-tvp.md)
     * [美信拓扑CEO一乐：从「玩物丧志」到「好高骛远」，我在坚持什么？](articles/activity-report/from-playing-with-things-and-losing-my-mind-to-being-too-ambitious-what-am-i-insisting-on.md)
     * [【科创人独家】美信拓扑创始人一乐：如何登山不是最重要的问题，山峰才是](articles/activity-report/how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.md)
+* [FAQ](faq/README.md)
+  * [什么是App ID](faq/what-is-app-id.md)
