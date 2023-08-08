@@ -1,4 +1,6 @@
-# ChatGPT做智能客服的十条服务准则
+# chatgpt-intelligent-customer-service-ten-service-guidelines
+
+## ChatGPT做智能客服的十条服务准则
 
 有ChatGPT的 蓝莺IM _2023-03-10 20:35_
 
@@ -24,16 +26,16 @@
 
 也就是说，**要给ChatGPT限定范围**，让它做到有知而不言。
 
-![](../../assets/articles/autogen-2188e094c4af767a525773e778fbd828a0dfc5929b9a674747ac61e75070fc97.jpeg)
+![](../../../\_book/assets/articles/autogen-2188e094c4af767a525773e778fbd828a0dfc5929b9a674747ac61e75070fc97.jpeg)
 
-## 蓝莺服务准则
+### 蓝莺服务准则
 
 很多信息，即使是对的，通过客服之口说出去也并不合适，不仅有欺骗客户的嫌疑，还会给别有用心之人可乘之机。这已经不是准确性问题，而是诚信问题了，很有可能给公司商誉造成不可修复的破坏。
 
 也因此我们推出了**蓝莺服务准则**，即小蓝AI在使用ChatGPT做智能客服的服务准则，由于一共十条，因此我们也简称其为**蓝莺十条**，并将其设在小蓝AI的Prompt里：
 
 > 你是一个客服助手，所以将会回答用户提问的关于蓝莺IM产品或服务的问题。你的行为必须符合以下蓝莺服务准则：
-> 
+>
 > 1. 在本准则中，蓝莺IM是产品服务，美信拓扑是团队或公司，多数情况下，也可以用蓝莺IM的相关信息来回答美信拓扑的问题，同样等同的还包括但不限于你们、他们、团队等代词；
 > 2. 你只会回答跟蓝莺IM或美信拓扑有关的问题；
 > 3. 除了蓝莺IM，不回答任何关于公司或组织的问题，包括但不限于组织架构、团队情况、成员职位与履历等问题，不透露蓝莺IM或美信拓扑与其他任何实体的关系；
@@ -57,13 +59,13 @@
 
 改完这条规则，我开始理解为什么有些合同条目会反复来回说明一件显而易见的事情了。
 
-2\. 对回答的解释 
+2\. 对回答的解释
 
 体现在服务准则第九条里的补充「你的回答包括对回答的解释和引申应该始终满足蓝莺服务准则的要求」。
 
 这条补充来自于一种问法，并不是直接问你们董事长是谁，而是先问一下公司介绍，然后继续问「能详细介绍一下团队情况吗」，这个问题会被ChatGPT理解成对上一条回答的解释，所以跳出了服务准则的限制。
 
-## 这就是全部了吗？
+### 这就是全部了吗？
 
 并不是。
 
@@ -85,7 +87,7 @@
 
 > 小蓝AI仅为演示客服场景，当前以提供闲聊和研讨为主，其回答不能保证真实，也并不能代表「蓝莺IM」公司或团队任何成员的观点。请宽容待之，也欢迎提供建议，谢谢！
 
-## Prompt开源
+### Prompt开源
 
 如前所述，[小蓝AI的完整Prompt \[1\]](https://github.com/maxim-top/lanying-connector/blob/2b6cf22fb5991b2023321a95371a9579eca42533/configs/openai-xiaolan.json)已经在Github开源。
 
@@ -93,24 +95,22 @@
 
 更加欢迎一起来完善蓝莺服务准则，一起来玩这场AI对抗。如果要补充准则，提交PR的时候请注明测试对话场景。先给你点赞哦！❤️
 
-## 后记
+### 后记
 
 如果你关注这场AI对抗，关注如何使用ChatGPT做智能客服或者AI助手，欢迎小蓝会聊天加入我们的群，一起交流 Prompt，一起玩ChatGPT：
 
-> ![扫码添加小蓝会聊天](../../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
+> <img src="../../../_book/assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png" alt="扫码添加小蓝会聊天" data-size="original">
 
-# 关于
+## 关于
 
-> [蓝莺IM \[2\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+> [蓝莺IM \[2\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](../../../\_book/assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
-## 构建新一代智能聊天App，使用蓝莺IM专业SDK！
+### 构建新一代智能聊天App，使用蓝莺IM专业SDK！
 
-点击[查看原文\[3\]](chatgpt-intelligent-customer-service-ten-service-guidelines.md)，了解更多关于即时通讯和AI Chatbot的事儿~
+点击[查看原文\[3\]](chatgpt-intelligent-customer-service-ten-service-guidelines.md)，了解更多关于即时通讯和AI Chatbot的事儿\~
 
-## 参考资料
+### 参考资料
 
 1. [小蓝AI的完整Prompt](https://github.com/maxim-top/lanying-connector/blob/2b6cf22fb5991b2023321a95371a9579eca42533/configs/openai-xiaolan.json)
-
 2. [蓝莺IM](https://www.lanyingim.com)
-
 3. [ChatGPT做智能客服的十条服务准则](chatgpt-intelligent-customer-service-ten-service-guidelines.md)

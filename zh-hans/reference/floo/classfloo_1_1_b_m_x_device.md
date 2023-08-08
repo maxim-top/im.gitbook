@@ -1,15 +1,11 @@
 ---
 title: floo::BMXDevice
-summary: 设备信息 
-
+summary: 设备信息
 ---
 
 # floo::BMXDevice
 
-
-
-设备信息 
-
+设备信息
 
 `#include <bmx_device.h>`
 
@@ -17,92 +13,102 @@ Inherits from BMXBaseObject
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| virtual | **[~BMXDevice](classfloo_1_1_b_m_x_device.md#function-~bmxdevice)**()<br>析构函数  |
-| virtual int | **[deviceSN](classfloo_1_1_b_m_x_device.md#function-devicesn)**() =0<br>设备序列号  |
-| virtual int64_t | **[userId](classfloo_1_1_b_m_x_device.md#function-userid)**() =0<br>用户id  |
-| virtual int | **[platform](classfloo_1_1_b_m_x_device.md#function-platform)**() =0<br>软件平台  |
-| virtual std::string | **[userAgent](classfloo_1_1_b_m_x_device.md#function-useragent)**() =0<br>用户代理信息  |
-| virtual void | **[setUserAgent](classfloo_1_1_b_m_x_device.md#function-setuseragent)**(const std::string & userAgent) =0<br>设置用户代理信息  |
-| virtual bool | **[isCurrentDevice](classfloo_1_1_b_m_x_device.md#function-iscurrentdevice)**() =0<br>是否是当前设备  |
+|                     | Name                                                                                                                                                      |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtual             | <p><a href="classfloo_1_1_b_m_x_device.md#function-~bmxdevice"><strong>~BMXDevice</strong></a>()<br>析构函数</p>                                              |
+| virtual int         | <p><a href="classfloo_1_1_b_m_x_device.md#function-devicesn"><strong>deviceSN</strong></a>() =0<br>设备序列号</p>                                              |
+| virtual int64\_t    | <p><a href="classfloo_1_1_b_m_x_device.md#function-userid"><strong>userId</strong></a>() =0<br>用户id</p>                                                   |
+| virtual int         | <p><a href="classfloo_1_1_b_m_x_device.md#function-platform"><strong>platform</strong></a>() =0<br>软件平台</p>                                               |
+| virtual std::string | <p><a href="classfloo_1_1_b_m_x_device.md#function-useragent"><strong>userAgent</strong></a>() =0<br>用户代理信息</p>                                           |
+| virtual void        | <p><a href="classfloo_1_1_b_m_x_device.md#function-setuseragent"><strong>setUserAgent</strong></a>(const std::string &#x26; userAgent) =0<br>设置用户代理信息</p> |
+| virtual bool        | <p><a href="classfloo_1_1_b_m_x_device.md#function-iscurrentdevice"><strong>isCurrentDevice</strong></a>() =0<br>是否是当前设备</p>                              |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXDevice](classfloo_1_1_b_m_x_device.md#function-bmxdevice)**() |
+|   | Name                                                                      |
+| - | ------------------------------------------------------------------------- |
+|   | [**BMXDevice**](classfloo\_1\_1\_b\_m\_x\_device.md#function-bmxdevice)() |
 
 ## Public Functions Documentation
 
-### function ~BMXDevice
+### function \~BMXDevice
 
 ```cpp
 inline virtual ~BMXDevice()
 ```
 
-析构函数 
+析构函数
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="~BMXDevice" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
+
 ### function deviceSN
 
 ```cpp
 virtual int deviceSN() =0
 ```
 
-设备序列号 
+设备序列号
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="deviceSN" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
+
 ### function userId
 
 ```cpp
 virtual int64_t userId() =0
 ```
 
-用户id 
+用户id
 
-**Return**: int64_t 
+**Return**: int64\_t
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="userId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
+
 ### function platform
 
 ```cpp
 virtual int platform() =0
 ```
 
-软件平台 
+软件平台
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="platform" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
+
 ### function userAgent
 
 ```cpp
 virtual std::string userAgent() =0
 ```
 
-用户代理信息 
+用户代理信息
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="userAgent" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
+
 ### function setUserAgent
 
 ```cpp
@@ -111,44 +117,48 @@ virtual void setUserAgent(
 ) =0
 ```
 
-设置用户代理信息 
+设置用户代理信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **userAgent** 用户代理信息 
-
+* **userAgent** 用户代理信息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="setUserAgent" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
+
 ### function isCurrentDevice
 
 ```cpp
 virtual bool isCurrentDevice() =0
 ```
 
-是否是当前设备 
+是否是当前设备
 
-**Return**: bool 
+**Return**: bool
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="isCurrentDevice" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
+
 ### function BMXDevice
 
 ```cpp
 inline BMXDevice()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXDevice",function="BMXDevice" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXDevice'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:20:40 +0800

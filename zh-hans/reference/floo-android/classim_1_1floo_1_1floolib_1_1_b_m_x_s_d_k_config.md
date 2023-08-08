@@ -1,81 +1,78 @@
 ---
 title: im::floo::floolib::BMXSDKConfig
-summary: SDK设置管理 
-
+summary: SDK设置管理
 ---
 
 # im::floo::floolib::BMXSDKConfig
 
-
-
-SDK设置管理 
+SDK设置管理
 
 ## Public Classes
 
-|                | Name           |
-| -------------- | -------------- |
-| class | **[HostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md)**  |
+|       | Name                                                                                                    |
+| ----- | ------------------------------------------------------------------------------------------------------- |
+| class | [**HostConfig**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config\_1\_1\_host\_config.md) |
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-delete)**() |
-| | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, boolean deliveryAck)<br>构造函数  |
-| | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName) |
-| | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, String appId, String appSecret, boolean deliveryAck) |
-| | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, String appId, String appSecret) |
-| String | **[getDataDir](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getdatadir)**() |
-| String | **[getCacheDir](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getcachedir)**() |
-| [BMXClientType] | **[getClientType](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getclienttype)**() |
-| String | **[getVsn](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getvsn)**() |
-| String | **[getSDKVersion](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getsdkversion)**() |
-| String | **[getPushCertName](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getpushcertname)**() |
-| void | **[setPushCertName](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setpushcertname)**(String arg0) |
-| String | **[getUserAgent](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getuseragent)**() |
-| boolean | **[carryUsernameInMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-carryusernameinmessage)**() |
-| void | **[setCarryUsernameInMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setcarryusernameinmessage)**(boolean arg0) |
-| boolean | **[enableDeliveryAck](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-enabledeliveryack)**() |
-| void | **[setEnableDeliveryAck](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setenabledeliveryack)**(boolean arg0) |
-| BMXLogLevel | **[getLogLevel](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getloglevel)**() |
-| void | **[setLogLevel](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setloglevel)**(BMXLogLevel arg0) |
-| boolean | **[getConsoleOutput](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getconsoleoutput)**() |
-| void | **[setConsoleOutput](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setconsoleoutput)**(boolean arg0) |
-| void | **[setHostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-sethostconfig)**(BMXSDKConfig.HostConfig config) |
-| BMXSDKConfig.HostConfig | **[getHostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-gethostconfig)**() |
-| boolean | **[getLoadAllServerConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getloadallserverconversations)**() |
-| void | **[setLoadAllServerConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setloadallserverconversations)**(boolean enable) |
-| void | **[setLoadAllServerConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setloadallserverconversations)**() |
-| String | **[getDeviceUuid](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getdeviceuuid)**() |
-| void | **[setDeviceUuid](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setdeviceuuid)**(String uuid) |
-| String | **[getDBCryptoKey](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getdbcryptokey)**() |
-| void | **[setDBCryptoKey](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setdbcryptokey)**(String cryptoKey) |
-| boolean | **[getVerifyCertificate](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getverifycertificate)**() |
-| void | **[setVerifyCertificate](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setverifycertificate)**(boolean verify) |
-| void | **[setVerifyCertificate](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setverifycertificate)**() |
-| boolean | **[getEnableDNS](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getenabledns)**() |
-| void | **[setEnableDNS](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setenabledns)**(boolean enable) |
-| void | **[setEnableDNS](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setenabledns)**() |
-| String | **[getUserDNSAddress](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getuserdnsaddress)**() |
-| void | **[setUserDNSAddress](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setuserdnsaddress)**(String dns) |
-| String | **[getAppID](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getappid)**() |
-| void | **[setAppID](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setappid)**(String appID) |
-| String | **[getAppSecret](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getappsecret)**() |
-| void | **[setAppSecret](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setappsecret)**(String appSecret) |
-| [BMXPushProviderType] | **[getPushProviderType](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getpushprovidertype)**() |
-| void | **[setPushProviderType](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setpushprovidertype)**([BMXPushProviderType] type) |
-| [BMXPushEnvironmentType] | **[getPushEnvironmentType](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getpushenvironmenttype)**() |
-| void | **[setEnvironmentType](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setenvironmenttype)**([BMXPushEnvironmentType] type) |
-| long | **[getDebugLogReceiverId](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getdebuglogreceiverid)**() |
-| void | **[setDebugLogReceiverId](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-setdebuglogreceiverid)**(long uid) |
+|                           | Name                                                                                                                                                                                                                                                      |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void         | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-delete)()                                                                                                                                                         |
+|                           | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig"><strong>BMXSDKConfig</strong></a>([BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, boolean deliveryAck)<br>构造函数</p>        |
+|                           | [**BMXSDKConfig**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-bmxsdkconfig)(\[BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName)                                                      |
+|                           | [**BMXSDKConfig**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-bmxsdkconfig)(\[BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, String appId, String appSecret, boolean deliveryAck) |
+|                           | [**BMXSDKConfig**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-bmxsdkconfig)(\[BMXClientType] type, String vsn, String dataDir, String cacheDir, String pushCertName, String appId, String appSecret)                      |
+| String                    | [**getDataDir**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getdatadir)()                                                                                                                                                 |
+| String                    | [**getCacheDir**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getcachedir)()                                                                                                                                               |
+| \[BMXClientType]          | [**getClientType**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getclienttype)()                                                                                                                                           |
+| String                    | [**getVsn**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getvsn)()                                                                                                                                                         |
+| String                    | [**getSDKVersion**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getsdkversion)()                                                                                                                                           |
+| String                    | [**getPushCertName**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getpushcertname)()                                                                                                                                       |
+| void                      | [**setPushCertName**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setpushcertname)(String arg0)                                                                                                                            |
+| String                    | [**getUserAgent**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getuseragent)()                                                                                                                                             |
+| boolean                   | [**carryUsernameInMessage**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-carryusernameinmessage)()                                                                                                                         |
+| void                      | [**setCarryUsernameInMessage**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setcarryusernameinmessage)(boolean arg0)                                                                                                       |
+| boolean                   | [**enableDeliveryAck**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-enabledeliveryack)()                                                                                                                                   |
+| void                      | [**setEnableDeliveryAck**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setenabledeliveryack)(boolean arg0)                                                                                                                 |
+| BMXLogLevel               | [**getLogLevel**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getloglevel)()                                                                                                                                               |
+| void                      | [**setLogLevel**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setloglevel)(BMXLogLevel arg0)                                                                                                                               |
+| boolean                   | [**getConsoleOutput**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getconsoleoutput)()                                                                                                                                     |
+| void                      | [**setConsoleOutput**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setconsoleoutput)(boolean arg0)                                                                                                                         |
+| void                      | [**setHostConfig**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-sethostconfig)(BMXSDKConfig.HostConfig config)                                                                                                             |
+| BMXSDKConfig.HostConfig   | [**getHostConfig**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-gethostconfig)()                                                                                                                                           |
+| boolean                   | [**getLoadAllServerConversations**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getloadallserverconversations)()                                                                                                           |
+| void                      | [**setLoadAllServerConversations**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setloadallserverconversations)(boolean enable)                                                                                             |
+| void                      | [**setLoadAllServerConversations**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setloadallserverconversations)()                                                                                                           |
+| String                    | [**getDeviceUuid**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getdeviceuuid)()                                                                                                                                           |
+| void                      | [**setDeviceUuid**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setdeviceuuid)(String uuid)                                                                                                                                |
+| String                    | [**getDBCryptoKey**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getdbcryptokey)()                                                                                                                                         |
+| void                      | [**setDBCryptoKey**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setdbcryptokey)(String cryptoKey)                                                                                                                         |
+| boolean                   | [**getVerifyCertificate**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getverifycertificate)()                                                                                                                             |
+| void                      | [**setVerifyCertificate**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setverifycertificate)(boolean verify)                                                                                                               |
+| void                      | [**setVerifyCertificate**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setverifycertificate)()                                                                                                                             |
+| boolean                   | [**getEnableDNS**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getenabledns)()                                                                                                                                             |
+| void                      | [**setEnableDNS**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setenabledns)(boolean enable)                                                                                                                               |
+| void                      | [**setEnableDNS**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setenabledns)()                                                                                                                                             |
+| String                    | [**getUserDNSAddress**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getuserdnsaddress)()                                                                                                                                   |
+| void                      | [**setUserDNSAddress**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setuserdnsaddress)(String dns)                                                                                                                         |
+| String                    | [**getAppID**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getappid)()                                                                                                                                                     |
+| void                      | [**setAppID**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setappid)(String appID)                                                                                                                                         |
+| String                    | [**getAppSecret**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getappsecret)()                                                                                                                                             |
+| void                      | [**setAppSecret**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setappsecret)(String appSecret)                                                                                                                             |
+| \[BMXPushProviderType]    | [**getPushProviderType**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getpushprovidertype)()                                                                                                                               |
+| void                      | [**setPushProviderType**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setpushprovidertype)(\[BMXPushProviderType] type)                                                                                                    |
+| \[BMXPushEnvironmentType] | [**getPushEnvironmentType**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getpushenvironmenttype)()                                                                                                                         |
+| void                      | [**setEnvironmentType**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setenvironmenttype)(\[BMXPushEnvironmentType] type)                                                                                                   |
+| long                      | [**getDebugLogReceiverId**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getdebuglogreceiverid)()                                                                                                                           |
+| void                      | [**setDebugLogReceiverId**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-setdebuglogreceiverid)(long uid)                                                                                                                   |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-bmxsdkconfig)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-finalize)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md#function-getcptr)**([BMXSDKConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config.md) obj) |
+|      | Name                                                                                                                                                                                     |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [**BMXSDKConfig**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-bmxsdkconfig)(long cPtr, boolean cMemoryOwn)                                               |
+| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-finalize)()                                                                                    |
+| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md#function-getcptr)([BMXSDKConfig](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_s\_d\_k\_config.md) obj) |
 
 ## Public Functions Documentation
 
@@ -85,11 +82,12 @@ SDK设置管理
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="delete" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function BMXSDKConfig
 
 ```java
@@ -103,22 +101,23 @@ inline BMXSDKConfig(
 )
 ```
 
-构造函数 
+构造函数
 
-**Parameters**: 
+**Parameters**:
 
-  * **type** 客户端类型 
-  * **vsn** 客户端OS版本 
-  * **dataDir** 聊天数据存储路径 
-  * **cacheDir** 缓存数据存储路径 
-  * **pushCertName** Push证书名字 
-  * **deliveryAck** 是否发送消息送达回执 
-
+* **type** 客户端类型
+* **vsn** 客户端OS版本
+* **dataDir** 聊天数据存储路径
+* **cacheDir** 缓存数据存储路径
+* **pushCertName** Push证书名字
+* **deliveryAck** 是否发送消息送达回执
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function BMXSDKConfig
 
 ```java
@@ -131,11 +130,12 @@ inline BMXSDKConfig(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function BMXSDKConfig
 
 ```java
@@ -151,11 +151,12 @@ inline BMXSDKConfig(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function BMXSDKConfig
 
 ```java
@@ -170,77 +171,84 @@ inline BMXSDKConfig(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getDataDir
 
 ```java
 inline String getDataDir()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDataDir" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getCacheDir
 
 ```java
 inline String getCacheDir()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getCacheDir" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getClientType
 
 ```java
 inline BMXClientType getClientType()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getClientType" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getVsn
 
 ```java
 inline String getVsn()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getVsn" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getSDKVersion
 
 ```java
 inline String getSDKVersion()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getSDKVersion" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getPushCertName
 
 ```java
 inline String getPushCertName()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getPushCertName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setPushCertName
 
 ```java
@@ -249,33 +257,36 @@ inline void setPushCertName(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setPushCertName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getUserAgent
 
 ```java
 inline String getUserAgent()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getUserAgent" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function carryUsernameInMessage
 
 ```java
 inline boolean carryUsernameInMessage()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="carryUsernameInMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setCarryUsernameInMessage
 
 ```java
@@ -284,22 +295,24 @@ inline void setCarryUsernameInMessage(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setCarryUsernameInMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function enableDeliveryAck
 
 ```java
 inline boolean enableDeliveryAck()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="enableDeliveryAck" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setEnableDeliveryAck
 
 ```java
@@ -308,22 +321,24 @@ inline void setEnableDeliveryAck(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnableDeliveryAck" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getLogLevel
 
 ```java
 inline BMXLogLevel getLogLevel()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getLogLevel" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setLogLevel
 
 ```java
@@ -332,22 +347,24 @@ inline void setLogLevel(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setLogLevel" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getConsoleOutput
 
 ```java
 inline boolean getConsoleOutput()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getConsoleOutput" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setConsoleOutput
 
 ```java
@@ -356,11 +373,12 @@ inline void setConsoleOutput(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setConsoleOutput" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setHostConfig
 
 ```java
@@ -369,33 +387,36 @@ inline void setHostConfig(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setHostConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getHostConfig
 
 ```java
 inline BMXSDKConfig.HostConfig getHostConfig()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getHostConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getLoadAllServerConversations
 
 ```java
 inline boolean getLoadAllServerConversations()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getLoadAllServerConversations" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setLoadAllServerConversations
 
 ```java
@@ -404,33 +425,36 @@ inline void setLoadAllServerConversations(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setLoadAllServerConversations
 
 ```java
 inline void setLoadAllServerConversations()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getDeviceUuid
 
 ```java
 inline String getDeviceUuid()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDeviceUuid" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setDeviceUuid
 
 ```java
@@ -439,22 +463,24 @@ inline void setDeviceUuid(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setDeviceUuid" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getDBCryptoKey
 
 ```java
 inline String getDBCryptoKey()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDBCryptoKey" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setDBCryptoKey
 
 ```java
@@ -463,22 +489,24 @@ inline void setDBCryptoKey(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setDBCryptoKey" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getVerifyCertificate
 
 ```java
 inline boolean getVerifyCertificate()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getVerifyCertificate" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setVerifyCertificate
 
 ```java
@@ -487,33 +515,36 @@ inline void setVerifyCertificate(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setVerifyCertificate
 
 ```java
 inline void setVerifyCertificate()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getEnableDNS
 
 ```java
 inline boolean getEnableDNS()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getEnableDNS" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setEnableDNS
 
 ```java
@@ -522,33 +553,36 @@ inline void setEnableDNS(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setEnableDNS
 
 ```java
 inline void setEnableDNS()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getUserDNSAddress
 
 ```java
 inline String getUserDNSAddress()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getUserDNSAddress" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setUserDNSAddress
 
 ```java
@@ -557,22 +591,24 @@ inline void setUserDNSAddress(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setUserDNSAddress" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getAppID
 
 ```java
 inline String getAppID()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getAppID" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setAppID
 
 ```java
@@ -581,22 +617,24 @@ inline void setAppID(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setAppID" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getAppSecret
 
 ```java
 inline String getAppSecret()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getAppSecret" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setAppSecret
 
 ```java
@@ -605,22 +643,24 @@ inline void setAppSecret(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setAppSecret" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getPushProviderType
 
 ```java
 inline BMXPushProviderType getPushProviderType()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getPushProviderType" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setPushProviderType
 
 ```java
@@ -629,22 +669,24 @@ inline void setPushProviderType(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setPushProviderType" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getPushEnvironmentType
 
 ```java
 inline BMXPushEnvironmentType getPushEnvironmentType()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getPushEnvironmentType" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setEnvironmentType
 
 ```java
@@ -653,22 +695,24 @@ inline void setEnvironmentType(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setEnvironmentType" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getDebugLogReceiverId
 
 ```java
 inline long getDebugLogReceiverId()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getDebugLogReceiverId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function setDebugLogReceiverId
 
 ```java
@@ -677,13 +721,14 @@ inline void setDebugLogReceiverId(
 )
 ```
 
-
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="setDebugLogReceiverId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function BMXSDKConfig
 
 ```java
@@ -693,22 +738,24 @@ inline BMXSDKConfig(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="BMXSDKConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="finalize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
+
 ### function getCPtr
 
 ```java
@@ -717,11 +764,12 @@ static inline long getCPtr(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXSDKConfig",function="getCPtr" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXSDKConfig'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

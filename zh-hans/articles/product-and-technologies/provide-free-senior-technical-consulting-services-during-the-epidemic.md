@@ -30,7 +30,7 @@
 
 其他行业客户如有需求，也欢迎咨询说明，我们很愿意提供帮助。
 
-这期[回形针的新冠肺炎视频](http://mp.weixin.qq.com/s?__biz=MzA3NDM1MjUwNg==&mid=2247486489&idx=1&sn=1f92334aa7993266565533ca809bbc77&chksm=9f005e0ca877d71a3fe7a42f500345f9e79a06ba0707776cf1c01c85ff307bc839d78f55acf0&scene=21#wechat_redirect)里有段话说的很好，真正的勇气，是认清现实，也依然能继续做好自己的事情。
+这期[回形针的新冠肺炎视频](http://mp.weixin.qq.com/s?\_\_biz=MzA3NDM1MjUwNg==\&mid=2247486489\&idx=1\&sn=1f92334aa7993266565533ca809bbc77\&chksm=9f005e0ca877d71a3fe7a42f500345f9e79a06ba0707776cf1c01c85ff307bc839d78f55acf0\&scene=21#wechat\_redirect)里有段话说的很好，真正的勇气，是认清现实，也依然能继续做好自己的事情。
 
 我们害怕肺炎，因为我们珍惜生命。但我们不会被吓倒，因为我们有勇气。
 
@@ -44,13 +44,13 @@
 
 2020年02月03日
 
-***
+
 
 关注「美信拓扑」，一键启用多云架构的即时通讯云服务
 
 ![](../../assets/articles/autogen-d6fd9dd440b83a813e637e31f30dd8434bac85e90417c2cd347ff36a3cac71bd.webp)
 
-***
+
 
 扫描使用「美信拓扑IM」小程序版，在线咨询
 

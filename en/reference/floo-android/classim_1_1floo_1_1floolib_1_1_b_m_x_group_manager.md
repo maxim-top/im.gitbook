@@ -1,74 +1,71 @@
 ---
 title: im::floo::floolib::BMXGroupManager
-summary: Group Manager 
-
+summary: Group Manager
 ---
 
 # im::floo::floolib::BMXGroupManager
 
-
-
-Group Manager 
+Group Manager
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXGroupManager](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-bmxgroupmanager)**([BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) service) |
-| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final boolean forceRefresh, final BMXDataCallBack< BMXGroupList > callBack)<br>Get group list, pull from server if forceRefreshed is set  |
-| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final ListOfLongLong groupIdList, final boolean forceRefresh, final BMXDataCallBack< BMXGroupList > callBack)<br>Get the list of group information for the incoming group id, pull from server if forceRefreshed is set  |
-| void | **[getGroupList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist)**(final long groupId, final boolean forceUpdate, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>Get group information, pull from server if forceRefreshed is set  |
-| void | **[getInvitationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinvitationlist)**(final String cursor, final int pageSize, final BMXDataCallBack< GroupInvitaionPage > callBack)<br>Get group invitation list in pages  |
-| void | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getapplicationlist)**(final BMXGroupList list, final String cursor, final int pageSize, final BMXDataCallBack< GroupApplicationPage > callBack)<br>Get a list of group applications in pages  |
-| void | **[create](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-create)**(final BMXGroupService.CreateGroupOptions options, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>Create group  |
-| void | **[destroy](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-destroy)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>Destroy group  |
-| void | **[join](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-join)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String message, final BMXCallBack callBack)<br>Join a group, which may require admin approval depending on group settings  |
-| void | **[leave](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-leave)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>Quit group  |
-| void | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinfo)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>Get group details, pull the latest information from server  |
-| void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000  |
-| void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000  |
-| void | **[addMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String message, final BMXCallBack callBack)<br>Add group member  |
-| void | **[removeMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removemembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String reason, final BMXCallBack callBack)<br>Remove group member  |
-| void | **[addAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String message, final BMXCallBack callBack)<br>Add Admin  |
-| void | **[removeAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removeadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String reason, final BMXCallBack callBack)<br>Remove admin  |
-| void | **[getAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get Admins list, pull from server if forceRefreshed is set  |
-| void | **[blockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-blockmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>Add to blacklist  |
-| void | **[unblockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unblockmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>Unblacklist  |
-| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>Get blacklist  |
-| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get blacklist  |
-| void | **[banMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-banmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final long duration, final String reason, final BMXCallBack callBack)<br>Ban  |
-| void | **[banGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-bangroup)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long duration, final BMXCallBack callBack)<br>Ban all members  |
-| void | **[unbanMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbanmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXCallBack callBack)<br>Unban  |
-| void | **[unbanGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbangroup)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXCallBack callBack)<br>Unban all members  |
-| void | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupBannedMemberResultPage > callBack)<br>Get a list of banned members  |
-| void | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< BMXGroupBannedMemberList > callBack)<br>Get a list of banned members  |
-| void | **[muteMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-mutemessage)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.MsgMuteMode mode, final BMXCallBack callBack)<br>Set whether to block group messages  |
-| void | **[acceptApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptapplication)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long applicantId, final BMXCallBack callBack)<br>Accept application of membership  |
-| void | **[declineApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineapplication)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long applicantId, final String reason, final BMXCallBack callBack)<br>Reject application of membership  |
-| void | **[acceptInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptinvitation)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long inviter, final BMXCallBack callBack)<br>Accept to join group  |
-| void | **[declineInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineinvitation)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long inviter, final BMXCallBack callBack)<br>Reject invitation to join group  |
-| void | **[transferOwner](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-transferowner)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long newOwnerId, final BMXCallBack callBack)<br>Transfer of group Owner  |
-| void | **[uploadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-uploadsharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String filePath, final String displayName, final String extensionName, final FileProgressListener listener, final BMXCallBack callBack)<br>Add shared file in group  |
-| void | **[removeSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removesharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final BMXCallBack callBack)<br>Remove shared file in group  |
-| void | **[downloadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadsharedfile)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final FileProgressListener listener, final BMXCallBack callBack)<br>Download share file in group  |
-| void | **[getSharedFilesList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getsharedfileslist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupSharedFileList > callBack)<br>Get a list of share files in group  |
-| void | **[changeSharedFileName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-changesharedfilename)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.SharedFile sharedFile, final String name, final BMXCallBack callBack)<br>Modify shared file name in group  |
-| void | **[getLatestAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getlatestannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroup.Announcement > callBack)<br>Get the latest group announcement  |
-| void | **[getAnnouncementList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getannouncementlist)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupAnnouncementList > callBack)<br>Get group announcements list  |
-| void | **[editAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-editannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String title, final String content, final BMXCallBack callBack)<br>Write group announcement  |
-| void | **[deleteAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-deleteannouncement)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final long announcementId, final BMXCallBack callBack)<br>Delete group announcement  |
-| void | **[setName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setname)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String name, final BMXCallBack callBack)<br>Set group name  |
-| void | **[setDescription](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setdescription)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String description, final BMXCallBack callBack)<br>Set group description  |
-| void | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setextension)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String extension, final BMXCallBack callBack)<br>Set group extension information  |
-| void | **[setMyNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmynickname)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String nickname, final BMXCallBack callBack)<br>Set nickname in group  |
-| void | **[setMsgPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmsgpushmode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.MsgPushMode mode, final BMXCallBack callBack)<br>Set group message notification mode  |
-| void | **[setJoinAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setjoinauthmode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.JoinAuthMode mode, final BMXCallBack callBack)<br>Set approval mode for joining group  |
-| void | **[setInviteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setinvitemode)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXGroup.InviteMode mode, final BMXCallBack callBack)<br>Set invitation mode  |
-| void | **[setAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setavatar)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>Set group avatar  |
-| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadavatar)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final FileProgressListener listener, final BMXCallBack callBack)<br>Download group avatar  |
-| void | **[addGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addgrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>Add group change listener  |
-| void | **[removeGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removegrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>Remove group change listener  |
-| void | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setenablereadack)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean enable, final BMXCallBack callBack)<br>Set whether group message read acknowledgement is enabled  |
+|      | Name                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [**BMXGroupManager**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_manager.md#function-bmxgroupmanager)([BMXGroupService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service.md) service)                                                                                                                                                                                         |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist"><strong>getGroupList</strong></a>(final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroupList > callBack)<br>Get group list, pull from server if forceRefreshed is set</p>                                                                                                                          |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist"><strong>getGroupList</strong></a>(final ListOfLongLong groupIdList, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroupList > callBack)<br>Get the list of group information for the incoming group id, pull from server if forceRefreshed is set</p>                                           |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getgrouplist"><strong>getGroupList</strong></a>(final long groupId, final boolean forceUpdate, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> > callBack)<br>Get group information, pull from server if forceRefreshed is set</p>                                        |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinvitationlist"><strong>getInvitationList</strong></a>(final String cursor, final int pageSize, final BMXDataCallBack&#x3C; GroupInvitaionPage > callBack)<br>Get group invitation list in pages</p>                                                                                                                    |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getapplicationlist"><strong>getApplicationList</strong></a>(final BMXGroupList list, final String cursor, final int pageSize, final BMXDataCallBack&#x3C; GroupApplicationPage > callBack)<br>Get a list of group applications in pages</p>                                                                                |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-create"><strong>create</strong></a>(final BMXGroupService.CreateGroupOptions options, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> > callBack)<br>Create group</p>                                                                                                     |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-destroy"><strong>destroy</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXCallBack callBack)<br>Destroy group</p>                                                                                                                                                   |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-join"><strong>join</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String message, final BMXCallBack callBack)<br>Join a group, which may require admin approval depending on group settings</p>                                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-leave"><strong>leave</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXCallBack callBack)<br>Quit group</p>                                                                                                                                                          |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinfo"><strong>getInfo</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> > callBack)<br>Get group details, pull the latest information from server</p>                     |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers"><strong>getMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String cursor, final int pageSize, final BMXDataCallBack&#x3C; BMXGroupMemberResultPage > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000</p> |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers"><strong>getMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroupMemberList > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000</p>                    |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addmembers"><strong>addMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong members, final String message, final BMXCallBack callBack)<br>Add group member</p>                                                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removemembers"><strong>removeMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong members, final String reason, final BMXCallBack callBack)<br>Remove group member</p>                                                                              |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addadmins"><strong>addAdmins</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong admins, final String message, final BMXCallBack callBack)<br>Add Admin</p>                                                                                                |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removeadmins"><strong>removeAdmins</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong admins, final String reason, final BMXCallBack callBack)<br>Remove admin</p>                                                                                        |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getadmins"><strong>getAdmins</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroupMemberList > callBack)<br>Get Admins list, pull from server if forceRefreshed is set</p>                                       |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-blockmembers"><strong>blockMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong members, final BMXCallBack callBack)<br>Add to blacklist</p>                                                                                                        |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unblockmembers"><strong>unblockMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong members, final BMXCallBack callBack)<br>Unblacklist</p>                                                                                                         |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist"><strong>getBlockList</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String cursor, final int pageSize, final BMXDataCallBack&#x3C; BMXGroupMemberResultPage > callBack)<br>Get blacklist</p>                                                           |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getblocklist"><strong>getBlockList</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroupMemberList > callBack)<br>Get blacklist</p>                                                                              |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-banmembers"><strong>banMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong members, final long duration, final String reason, final BMXCallBack callBack)<br>Ban</p>                                                                               |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-bangroup"><strong>banGroup</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final long duration, final BMXCallBack callBack)<br>Ban all members</p>                                                                                                                          |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbanmembers"><strong>unbanMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final ListOfLongLong members, final BMXCallBack callBack)<br>Unban</p>                                                                                                                   |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-unbangroup"><strong>unbanGroup</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXCallBack callBack)<br>Unban all members</p>                                                                                                                                         |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers"><strong>getBannedMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String cursor, final int pageSize, final BMXDataCallBack&#x3C; BMXGroupBannedMemberResultPage > callBack)<br>Get a list of banned members</p>                              |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getbannedmembers"><strong>getBannedMembers</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXDataCallBack&#x3C; BMXGroupBannedMemberList > callBack)<br>Get a list of banned members</p>                                                                             |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-mutemessage"><strong>muteMessage</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXGroup.MsgMuteMode mode, final BMXCallBack callBack)<br>Set whether to block group messages</p>                                                                                    |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptapplication"><strong>acceptApplication</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final long applicantId, final BMXCallBack callBack)<br>Accept application of membership</p>                                                                                    |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineapplication"><strong>declineApplication</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final long applicantId, final String reason, final BMXCallBack callBack)<br>Reject application of membership</p>                                                             |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-acceptinvitation"><strong>acceptInvitation</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final long inviter, final BMXCallBack callBack)<br>Accept to join group</p>                                                                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-declineinvitation"><strong>declineInvitation</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final long inviter, final BMXCallBack callBack)<br>Reject invitation to join group</p>                                                                                         |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-transferowner"><strong>transferOwner</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final long newOwnerId, final BMXCallBack callBack)<br>Transfer of group Owner</p>                                                                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-uploadsharedfile"><strong>uploadSharedFile</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String filePath, final String displayName, final String extensionName, final FileProgressListener listener, final BMXCallBack callBack)<br>Add shared file in group</p>    |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removesharedfile"><strong>removeSharedFile</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXGroup.SharedFile sharedFile, final BMXCallBack callBack)<br>Remove shared file in group</p>                                                                             |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadsharedfile"><strong>downloadSharedFile</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXGroup.SharedFile sharedFile, final FileProgressListener listener, final BMXCallBack callBack)<br>Download share file in group</p>                                   |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getsharedfileslist"><strong>getSharedFilesList</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroupSharedFileList > callBack)<br>Get a list of share files in group</p>                                         |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-changesharedfilename"><strong>changeSharedFileName</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXGroup.SharedFile sharedFile, final String name, final BMXCallBack callBack)<br>Modify shared file name in group</p>                                             |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getlatestannouncement"><strong>getLatestAnnouncement</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroup.Announcement > callBack)<br>Get the latest group announcement</p>                                     |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getannouncementlist"><strong>getAnnouncementList</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXGroupAnnouncementList > callBack)<br>Get group announcements list</p>                                           |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-editannouncement"><strong>editAnnouncement</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String title, final String content, final BMXCallBack callBack)<br>Write group announcement</p>                                                                            |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-deleteannouncement"><strong>deleteAnnouncement</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final long announcementId, final BMXCallBack callBack)<br>Delete group announcement</p>                                                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setname"><strong>setName</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String name, final BMXCallBack callBack)<br>Set group name</p>                                                                                                                               |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setdescription"><strong>setDescription</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String description, final BMXCallBack callBack)<br>Set group description</p>                                                                                                   |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setextension"><strong>setExtension</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String extension, final BMXCallBack callBack)<br>Set group extension information</p>                                                                                               |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmynickname"><strong>setMyNickname</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String nickname, final BMXCallBack callBack)<br>Set nickname in group</p>                                                                                                        |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setmsgpushmode"><strong>setMsgPushMode</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXGroup.MsgPushMode mode, final BMXCallBack callBack)<br>Set group message notification mode</p>                                                                              |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setjoinauthmode"><strong>setJoinAuthMode</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXGroup.JoinAuthMode mode, final BMXCallBack callBack)<br>Set approval mode for joining group</p>                                                                           |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setinvitemode"><strong>setInviteMode</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final BMXGroup.InviteMode mode, final BMXCallBack callBack)<br>Set invitation mode</p>                                                                                                 |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setavatar"><strong>setAvatar</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>Set group avatar</p>                                                                              |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final FileProgressListener listener, final BMXCallBack callBack)<br>Download group avatar</p>                                                                                        |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addgrouplistener"><strong>addGroupListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md">BMXGroupServiceListener</a> listener)<br>Add group change listener</p>                                                                                                                    |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removegrouplistener"><strong>removeGroupListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md">BMXGroupServiceListener</a> listener)<br>Remove group change listener</p>                                                                                                           |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-setenablereadack"><strong>setEnableReadAck</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, final boolean enable, final BMXCallBack callBack)<br>Set whether group message read acknowledgement is enabled</p>                                                               |
 
 ## Public Functions Documentation
 
@@ -80,11 +77,12 @@ inline BMXGroupManager(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="BMXGroupManager" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getGroupList
 
 ```java
@@ -94,18 +92,19 @@ inline void getGroupList(
 )
 ```
 
-Get group list, pull from server if forceRefreshed is set 
+Get group list, pull from server if forceRefreshed is set
 
-**Parameters**: 
+**Parameters**:
 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], group id list 
-
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], group id list
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getGroupList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getGroupList
 
 ```java
@@ -116,19 +115,20 @@ inline void getGroupList(
 )
 ```
 
-Get the list of group information for the incoming group id, pull from server if forceRefreshed is set 
+Get the list of group information for the incoming group id, pull from server if forceRefreshed is set
 
-**Parameters**: 
+**Parameters**:
 
-  * **groupIdList** List of group ids 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], group details list 
-
+* **groupIdList** List of group ids
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], group details list
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getGroupList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getGroupList
 
 ```java
@@ -139,19 +139,20 @@ inline void getGroupList(
 )
 ```
 
-Get group information, pull from server if forceRefreshed is set 
+Get group information, pull from server if forceRefreshed is set
 
-**Parameters**: 
+**Parameters**:
 
-  * **groupId** Group id to search 
-  * **forceUpdate** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], group details returned by search 
-
+* **groupId** Group id to search
+* **forceUpdate** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], group details returned by search
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getGroupList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getInvitationList
 
 ```java
@@ -162,19 +163,20 @@ inline void getInvitationList(
 )
 ```
 
-Get group invitation list in pages 
+Get group invitation list in pages
 
-**Parameters**: 
+**Parameters**:
 
-  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
-  * **pageSize** Page size 
-  * **callBack** [BMXErrorCode], paged list of group invitation 
-
+* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
+* **pageSize** Page size
+* **callBack** \[BMXErrorCode], paged list of group invitation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getInvitationList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getApplicationList
 
 ```java
@@ -186,20 +188,21 @@ inline void getApplicationList(
 )
 ```
 
-Get a list of group applications in pages 
+Get a list of group applications in pages
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of group ids for which group application list information needs to be obtained 
-  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
-  * **pageSize** Page size 
-  * **callBack** [BMXErrorCode], paged list of group application 
-
+* **list** List of group ids for which group application list information needs to be obtained
+* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
+* **pageSize** Page size
+* **callBack** \[BMXErrorCode], paged list of group application
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getApplicationList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function create
 
 ```java
@@ -209,18 +212,19 @@ inline void create(
 )
 ```
 
-Create group 
+Create group
 
-**Parameters**: 
+**Parameters**:
 
-  * **options** Parameters passed in when creating a group 
-  * **callBack** [BMXErrorCode], created group 
-
+* **options** Parameters passed in when creating a group
+* **callBack** \[BMXErrorCode], created group
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="create" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function destroy
 
 ```java
@@ -230,17 +234,18 @@ inline void destroy(
 )
 ```
 
-Destroy group 
+Destroy group
 
-**Parameters**: 
+**Parameters**:
 
-  * **callBack** BMXErrorCode,Group to destroy 
-
+* **callBack** BMXErrorCode,Group to destroy
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="destroy" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function join
 
 ```java
@@ -251,19 +256,20 @@ inline void join(
 )
 ```
 
-Join a group, which may require admin approval depending on group settings 
+Join a group, which may require admin approval depending on group settings
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to join 
-  * **message** Information for group membership application 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to join
+* **message** Information for group membership application
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="join" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function leave
 
 ```java
@@ -273,18 +279,19 @@ inline void leave(
 )
 ```
 
-Quit group 
+Quit group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to quit 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to quit
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="leave" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getInfo
 
 ```java
@@ -294,17 +301,18 @@ inline void getInfo(
 )
 ```
 
-Get group details, pull the latest information from server 
+Get group details, pull the latest information from server
 
-**Parameters**: 
+**Parameters**:
 
-  * **callBack** [BMXErrorCode], the group to get its latest information 
-
+* **callBack** \[BMXErrorCode], the group to get its latest information
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getInfo" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getMembers
 
 ```java
@@ -316,20 +324,21 @@ inline void getMembers(
 )
 ```
 
-Get group member list, pull from server if forceRefresh is set, up to 1,000 
+Get group member list, pull from server if forceRefresh is set, up to 1,000
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
-  * **pageSize** Page size 
-  * **callBack** [BMXErrorCode], group member list 
-
+* **group** Group to operate on
+* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
+* **pageSize** Page size
+* **callBack** \[BMXErrorCode], group member list
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getMembers
 
 ```java
@@ -340,19 +349,20 @@ inline void getMembers(
 )
 ```
 
-Get group member list, pull from server if forceRefresh is set, up to 1,000 
+Get group member list, pull from server if forceRefresh is set, up to 1,000
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], group member list 
-
+* **group** Group to operate on
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], group member list
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function addMembers
 
 ```java
@@ -364,20 +374,21 @@ inline void addMembers(
 )
 ```
 
-Add group member 
+Add group member
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **members** List of member ids to join group 
-  * **message** Reason for membership application 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **members** List of member ids to join group
+* **message** Reason for membership application
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="addMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function removeMembers
 
 ```java
@@ -389,20 +400,21 @@ inline void removeMembers(
 )
 ```
 
-Remove group member 
+Remove group member
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **members** List of group member ids to delete 
-  * **reason** Reason for deletion 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **members** List of group member ids to delete
+* **reason** Reason for deletion
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function addAdmins
 
 ```java
@@ -414,20 +426,21 @@ inline void addAdmins(
 )
 ```
 
-Add Admin 
+Add Admin
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **admins** List of member ids to be added as Admins 
-  * **message** Reason for adding as Admin 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **admins** List of member ids to be added as Admins
+* **message** Reason for adding as Admin
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="addAdmins" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function removeAdmins
 
 ```java
@@ -439,20 +452,21 @@ inline void removeAdmins(
 )
 ```
 
-Remove admin 
+Remove admin
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **admins** List of member ids to degrade from Admins 
-  * **reason** Reason to degrade from Admin 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **admins** List of member ids to degrade from Admins
+* **reason** Reason to degrade from Admin
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeAdmins" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getAdmins
 
 ```java
@@ -463,19 +477,20 @@ inline void getAdmins(
 )
 ```
 
-Get Admins list, pull from server if forceRefreshed is set 
+Get Admins list, pull from server if forceRefreshed is set
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], list of group Admins 
-
+* **group** Group to operate on
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], list of group Admins
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getAdmins" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function blockMembers
 
 ```java
@@ -486,19 +501,20 @@ inline void blockMembers(
 )
 ```
 
-Add to blacklist 
+Add to blacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **members** List of member ids to be blacklisted 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **members** List of member ids to be blacklisted
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="blockMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function unblockMembers
 
 ```java
@@ -509,19 +525,20 @@ inline void unblockMembers(
 )
 ```
 
-Unblacklist 
+Unblacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **members** List of unblacklisted user ids 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **members** List of unblacklisted user ids
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="unblockMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getBlockList
 
 ```java
@@ -533,20 +550,21 @@ inline void getBlockList(
 )
 ```
 
-Get blacklist 
+Get blacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
-  * **pageSize** Page size 
-  * **callBack** [BMXErrorCode], list of group blacklists 
-
+* **group** Group to operate on
+* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
+* **pageSize** Page size
+* **callBack** \[BMXErrorCode], list of group blacklists
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBlockList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getBlockList
 
 ```java
@@ -557,19 +575,20 @@ inline void getBlockList(
 )
 ```
 
-Get blacklist 
+Get blacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], list of group blacklists 
-
+* **group** Group to operate on
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], list of group blacklists
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBlockList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function banMembers
 
 ```java
@@ -582,21 +601,22 @@ inline void banMembers(
 )
 ```
 
-Ban 
+Ban
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **members** List of banned member ids 
-  * **duration** Duration of banned 
-  * **reason** Reason for banned 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **members** List of banned member ids
+* **duration** Duration of banned
+* **reason** Reason for banned
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="banMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function banGroup
 
 ```java
@@ -607,19 +627,20 @@ inline void banGroup(
 )
 ```
 
-Ban all members 
+Ban all members
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **duration** Duration of banned 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **duration** Duration of banned
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="banGroup" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function unbanMembers
 
 ```java
@@ -630,19 +651,20 @@ inline void unbanMembers(
 )
 ```
 
-Unban 
+Unban
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **members** List of unbanned group member ids 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **members** List of unbanned group member ids
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="unbanMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function unbanGroup
 
 ```java
@@ -652,18 +674,19 @@ inline void unbanGroup(
 )
 ```
 
-Unban all members 
+Unban all members
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="unbanGroup" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getBannedMembers
 
 ```java
@@ -675,20 +698,21 @@ inline void getBannedMembers(
 )
 ```
 
-Get a list of banned members 
+Get a list of banned members
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
-  * **pageSize** Page size 
-  * **callBack** [BMXErrorCode], list of group bans 
-
+* **group** Group to operate on
+* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
+* **pageSize** Page size
+* **callBack** \[BMXErrorCode], list of group bans
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBannedMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getBannedMembers
 
 ```java
@@ -698,18 +722,19 @@ inline void getBannedMembers(
 )
 ```
 
-Get a list of banned members 
+Get a list of banned members
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **callBack** [BMXErrorCode], list of group bans 
-
+* **group** Group to operate on
+* **callBack** \[BMXErrorCode], list of group bans
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getBannedMembers" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function muteMessage
 
 ```java
@@ -720,19 +745,20 @@ inline void muteMessage(
 )
 ```
 
-Set whether to block group messages 
+Set whether to block group messages
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **mode** Group blocking mode 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **mode** Group blocking mode
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="muteMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function acceptApplication
 
 ```java
@@ -743,19 +769,20 @@ inline void acceptApplication(
 )
 ```
 
-Accept application of membership 
+Accept application of membership
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **applicantId** User id that request to join group 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **applicantId** User id that request to join group
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="acceptApplication" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function declineApplication
 
 ```java
@@ -767,20 +794,21 @@ inline void declineApplication(
 )
 ```
 
-Reject application of membership 
+Reject application of membership
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **applicantId** User id that request to join group 
-  * **reason** Reason for rejection 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **applicantId** User id that request to join group
+* **reason** Reason for rejection
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="declineApplication" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function acceptInvitation
 
 ```java
@@ -791,19 +819,20 @@ inline void acceptInvitation(
 )
 ```
 
-Accept to join group 
+Accept to join group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **inviter** Inviter id 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **inviter** Inviter id
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="acceptInvitation" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function declineInvitation
 
 ```java
@@ -814,19 +843,20 @@ inline void declineInvitation(
 )
 ```
 
-Reject invitation to join group 
+Reject invitation to join group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **inviter** Inviter id 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **inviter** Inviter id
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="declineInvitation" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function transferOwner
 
 ```java
@@ -837,19 +867,20 @@ inline void transferOwner(
 )
 ```
 
-Transfer of group Owner 
+Transfer of group Owner
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **newOwnerId** User id that transferred as new group Owner 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **newOwnerId** User id that transferred as new group Owner
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="transferOwner" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function uploadSharedFile
 
 ```java
@@ -863,22 +894,23 @@ inline void uploadSharedFile(
 )
 ```
 
-Add shared file in group 
+Add shared file in group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **filePath** Local path of file 
-  * **displayName** File display name 
-  * **extensionName** File extension name 
-  * **listener** Upload callback function 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **filePath** Local path of file
+* **displayName** File display name
+* **extensionName** File extension name
+* **listener** Upload callback function
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="uploadSharedFile" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function removeSharedFile
 
 ```java
@@ -889,19 +921,20 @@ inline void removeSharedFile(
 )
 ```
 
-Remove shared file in group 
+Remove shared file in group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **sharedFile** Deleted group shared file 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **sharedFile** Deleted group shared file
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeSharedFile" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function downloadSharedFile
 
 ```java
@@ -913,20 +946,21 @@ inline void downloadSharedFile(
 )
 ```
 
-Download share file in group 
+Download share file in group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **sharedFile** Downloaded group shared files 
-  * **listener** Download callback function 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **sharedFile** Downloaded group shared files
+* **listener** Download callback function
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="downloadSharedFile" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getSharedFilesList
 
 ```java
@@ -937,19 +971,20 @@ inline void getSharedFilesList(
 )
 ```
 
-Get a list of share files in group 
+Get a list of share files in group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], list of group shared files 
-
+* **group** Group to operate on
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], list of group shared files
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getSharedFilesList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function changeSharedFileName
 
 ```java
@@ -961,20 +996,21 @@ inline void changeSharedFileName(
 )
 ```
 
-Modify shared file name in group 
+Modify shared file name in group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **sharedFile** Group shared file to change 
-  * **name** Modified group shared file name 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **sharedFile** Group shared file to change
+* **name** Modified group shared file name
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="changeSharedFileName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getLatestAnnouncement
 
 ```java
@@ -985,19 +1021,20 @@ inline void getLatestAnnouncement(
 )
 ```
 
-Get the latest group announcement 
+Get the latest group announcement
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], latest group announcement 
-
+* **group** Group to operate on
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], latest group announcement
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getLatestAnnouncement" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function getAnnouncementList
 
 ```java
@@ -1008,19 +1045,20 @@ inline void getAnnouncementList(
 )
 ```
 
-Get group announcements list 
+Get group announcements list
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
-  * **callBack** [BMXErrorCode], list of group announcements 
-
+* **group** Group to operate on
+* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+* **callBack** \[BMXErrorCode], list of group announcements
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getAnnouncementList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function editAnnouncement
 
 ```java
@@ -1032,20 +1070,21 @@ inline void editAnnouncement(
 )
 ```
 
-Write group announcement 
+Write group announcement
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **title** Tittle of group announcement 
-  * **content** Content of group announcement 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **title** Tittle of group announcement
+* **content** Content of group announcement
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="editAnnouncement" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function deleteAnnouncement
 
 ```java
@@ -1056,19 +1095,20 @@ inline void deleteAnnouncement(
 )
 ```
 
-Delete group announcement 
+Delete group announcement
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **announcementId** Deleted group announcement id 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **announcementId** Deleted group announcement id
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="deleteAnnouncement" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setName
 
 ```java
@@ -1079,19 +1119,20 @@ inline void setName(
 )
 ```
 
-Set group name 
+Set group name
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **name** Group name 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **name** Group name
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setDescription
 
 ```java
@@ -1102,19 +1143,20 @@ inline void setDescription(
 )
 ```
 
-Set group description 
+Set group description
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **description** Group description 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **description** Group description
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setDescription" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setExtension
 
 ```java
@@ -1125,19 +1167,20 @@ inline void setExtension(
 )
 ```
 
-Set group extension information 
+Set group extension information
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **extension** Group extension information 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **extension** Group extension information
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setExtension" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setMyNickname
 
 ```java
@@ -1148,19 +1191,20 @@ inline void setMyNickname(
 )
 ```
 
-Set nickname in group 
+Set nickname in group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **nickname** My nickname in group 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **nickname** My nickname in group
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setMyNickname" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setMsgPushMode
 
 ```java
@@ -1171,19 +1215,20 @@ inline void setMsgPushMode(
 )
 ```
 
-Set group message notification mode 
+Set group message notification mode
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **mode** Group message notification mode 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **mode** Group message notification mode
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setMsgPushMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setJoinAuthMode
 
 ```java
@@ -1194,19 +1239,20 @@ inline void setJoinAuthMode(
 )
 ```
 
-Set approval mode for joining group 
+Set approval mode for joining group
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **mode** Join approval mode 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **mode** Join approval mode
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setJoinAuthMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setInviteMode
 
 ```java
@@ -1217,19 +1263,20 @@ inline void setInviteMode(
 )
 ```
 
-Set invitation mode 
+Set invitation mode
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **mode** Group invitation mode 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **mode** Group invitation mode
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setInviteMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setAvatar
 
 ```java
@@ -1241,20 +1288,21 @@ inline void setAvatar(
 )
 ```
 
-Set group avatar 
+Set group avatar
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **avatarPath** Local path of group avatar file 
-  * **listener** Upload callback function 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **avatarPath** Local path of group avatar file
+* **listener** Upload callback function
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setAvatar" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function downloadAvatar
 
 ```java
@@ -1265,19 +1313,20 @@ inline void downloadAvatar(
 )
 ```
 
-Download group avatar 
+Download group avatar
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **listener** Download callback function 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **listener** Download callback function
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="downloadAvatar" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function addGroupListener
 
 ```java
@@ -1286,17 +1335,18 @@ inline void addGroupListener(
 )
 ```
 
-Add group change listener 
+Add group change listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Group change listener 
-
+* **listener** Group change listener
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="addGroupListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function removeGroupListener
 
 ```java
@@ -1305,17 +1355,18 @@ inline void removeGroupListener(
 )
 ```
 
-Remove group change listener 
+Remove group change listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Group change listener 
-
+* **listener** Group change listener
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="removeGroupListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
+
 ### function setEnableReadAck
 
 ```java
@@ -1326,19 +1377,20 @@ inline void setEnableReadAck(
 )
 ```
 
-Set whether group message read acknowledgement is enabled 
+Set whether group message read acknowledgement is enabled
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** Group to operate on 
-  * **enable** Enable or not 
-  * **callBack** [BMXErrorCode]
-
+* **group** Group to operate on
+* **enable** Enable or not
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="setEnableReadAck" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupManager'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

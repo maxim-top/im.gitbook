@@ -1,55 +1,50 @@
 ---
 title: floo::BMXLocationAttachment
-summary: 位置消息附件 
-
+summary: 位置消息附件
 ---
 
 # floo::BMXLocationAttachment
 
-
-
-位置消息附件 
-
+位置消息附件
 
 `#include <bmx_location_attachment.h>`
 
-Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md), BMXBaseObject
+Inherits from [floo::BMXMessageAttachment](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md), BMXBaseObject
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment)**(double latitude, double longitude, const std::string & address)<br>构造函数  |
-| virtual | **[~BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-~bmxlocationattachment)**()<br>析构函数  |
-| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_location_attachment.md#function-type)**() const<br>返回位置附件类型  |
-| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_location_attachment.md#function-clone)**() const<br>克隆函数  |
-| double | **[latitude](classfloo_1_1_b_m_x_location_attachment.md#function-latitude)**() const<br>纬度  |
-| double | **[longitude](classfloo_1_1_b_m_x_location_attachment.md#function-longitude)**() const<br>经度  |
-| const std::string & | **[address](classfloo_1_1_b_m_x_location_attachment.md#function-address)**() const<br>地址  |
+|                                                                            | Name                                                                                                                                                                                                               |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                            | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment"><strong>BMXLocationAttachment</strong></a>(double latitude, double longitude, const std::string &#x26; address)<br>构造函数</p> |
+| virtual                                                                    | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-~bmxlocationattachment"><strong>~BMXLocationAttachment</strong></a>()<br>析构函数</p>                                                                  |
+| virtual [Type](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#enum-type) | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-type"><strong>type</strong></a>() const<br>返回位置附件类型</p>                                                                                            |
+| virtual BMXMessageAttachmentPtr                                            | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-clone"><strong>clone</strong></a>() const<br>克隆函数</p>                                                                                              |
+| double                                                                     | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-latitude"><strong>latitude</strong></a>() const<br>纬度</p>                                                                                          |
+| double                                                                     | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-longitude"><strong>longitude</strong></a>() const<br>经度</p>                                                                                        |
+| const std::string &                                                        | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-address"><strong>address</strong></a>() const<br>地址</p>                                                                                            |
 
 ## Friends
 
-|                | Name           |
-| -------------- | -------------- |
-| class | **[Encoder< BMXLocationAttachment >](classfloo_1_1_b_m_x_location_attachment.md#friend-encoder<-bmxlocationattachment->)**  |
-| class | **[Decoder< BMXLocationAttachment >](classfloo_1_1_b_m_x_location_attachment.md#friend-decoder<-bmxlocationattachment->)**  |
+|       | Name                                                                                                                              |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------- |
+| class | [**Encoder< BMXLocationAttachment >**](classfloo\_1\_1\_b\_m\_x\_location\_attachment.md#friend-encoder<-bmxlocationattachment->) |
+| class | [**Decoder< BMXLocationAttachment >**](classfloo\_1\_1\_b\_m\_x\_location\_attachment.md#friend-decoder<-bmxlocationattachment->) |
 
 ## Additional inherited members
 
-**Public Types inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
+**Public Types inherited from** [**floo::BMXMessageAttachment**](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>附件类型  |
-| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>附件下载状态  |
+|            | Name                                                                                                                                                                              |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-type"><strong>Type</strong></a> { Image, Voice, Video, File, Location, Command, Forward}<br>附件类型</p>                   |
+| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus"><strong>DownloadStatus</strong></a> { Downloaing, Successed, Failed, NotStart, Canceled}<br>附件下载状态</p> |
 
-**Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
+**Public Functions inherited from** [**floo::BMXMessageAttachment**](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>构造函数  |
-| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>析构函数  |
-
+|         | Name                                                                                                                                           |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+|         | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment"><strong>BMXMessageAttachment</strong></a>()<br>构造函数</p>   |
+| virtual | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment"><strong>~BMXMessageAttachment</strong></a>()<br>析构函数</p> |
 
 ## Public Functions Documentation
 
@@ -63,102 +58,111 @@ BMXLocationAttachment(
 )
 ```
 
-构造函数 
+构造函数
 
-**Parameters**: 
+**Parameters**:
 
-  * **latitude** 纬度 
-  * **longitude** 经度 
-  * **address** 地址名称 
-
+* **latitude** 纬度
+* **longitude** 经度
+* **address** 地址名称
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="BMXLocationAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
 ```
-### function ~BMXLocationAttachment
+
+### function \~BMXLocationAttachment
 
 ```cpp
 inline virtual ~BMXLocationAttachment()
 ```
 
-析构函数 
+析构函数
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="~BMXLocationAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
 ```
+
 ### function type
 
 ```cpp
 inline virtual Type type() const
 ```
 
-返回位置附件类型 
+返回位置附件类型
 
-**Return**: Type 
+**Return**: Type
 
-**Reimplements**: [floo::BMXMessageAttachment::type](classfloo_1_1_b_m_x_message_attachment.md#function-type)
-
+**Reimplements**: [floo::BMXMessageAttachment::type](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#function-type)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="type" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
 ```
+
 ### function clone
 
 ```cpp
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-克隆函数 
+克隆函数
 
-**Return**: BMXMessageAttachmentPtr 
+**Return**: BMXMessageAttachmentPtr
 
-**Reimplements**: [floo::BMXMessageAttachment::clone](classfloo_1_1_b_m_x_message_attachment.md#function-clone)
-
+**Reimplements**: [floo::BMXMessageAttachment::clone](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#function-clone)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="clone" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
 ```
+
 ### function latitude
 
 ```cpp
 double latitude() const
 ```
 
-纬度 
+纬度
 
-**Return**: double 
+**Return**: double
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="latitude" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
 ```
+
 ### function longitude
 
 ```cpp
 double longitude() const
 ```
 
-经度 
+经度
 
-**Return**: double 
+**Return**: double
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="longitude" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
 ```
+
 ### function address
 
 ```cpp
 const std::string & address() const
 ```
 
-地址 
+地址
 
-**Return**: std::string 
+**Return**: std::string
 
 ## Friends
 
@@ -170,7 +174,6 @@ friend class Encoder< BMXLocationAttachment >(
 );
 ```
 
-
 ### friend Decoder< BMXLocationAttachment >
 
 ```cpp
@@ -179,11 +182,12 @@ friend class Decoder< BMXLocationAttachment >(
 );
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="address" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:20:40 +0800

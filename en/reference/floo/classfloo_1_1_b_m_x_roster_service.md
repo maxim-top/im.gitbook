@@ -1,76 +1,70 @@
 ---
 title: floo::BMXRosterService
-summary: Friend Service 
-
+summary: Friend Service
 ---
 
 # floo::BMXRosterService
 
-
-
-Friend Service 
-
+Friend Service
 
 `#include <bmx_roster_service.h>`
 
 ## Public Types
 
-|                | Name           |
-| -------------- | -------------- |
-| enum class| **[ApplicationStatus](classfloo_1_1_b_m_x_roster_service.md#enum-applicationstatus)** { Pending, Accepted, Declined}<br>Request state  |
-| typedef std::shared_ptr< [Application] > | **[ApplicationPtr](classfloo_1_1_b_m_x_roster_service.md#typedef-applicationptr)**  |
-| typedef std::vector< ApplicationPtr > | **[ApplicationList](classfloo_1_1_b_m_x_roster_service.md#typedef-applicationlist)**  |
-| typedef [BMXResultPage](classfloo_1_1_b_m_x_result_page.md)< ApplicationPtr > | **[BMXRosterApplicationResultPage](classfloo_1_1_b_m_x_roster_service.md#typedef-bmxrosterapplicationresultpage)**  |
-| typedef std::shared_ptr< [BMXRosterApplicationResultPage](classfloo_1_1_b_m_x_result_page.md) > | **[BMXRosterApplicationResultPagePtr](classfloo_1_1_b_m_x_roster_service.md#typedef-bmxrosterapplicationresultpageptr)**  |
-| typedef std::function< void(int percent)> | **[Callback](classfloo_1_1_b_m_x_roster_service.md#typedef-callback)**  |
+|                                                                                                         | Name                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enum class                                                                                              | <p><a href="classfloo_1_1_b_m_x_roster_service.md#enum-applicationstatus"><strong>ApplicationStatus</strong></a> { Pending, Accepted, Declined}<br>Request state</p> |
+| typedef std::shared\_ptr< \[Application] >                                                              | [**ApplicationPtr**](classfloo\_1\_1\_b\_m\_x\_roster\_service.md#typedef-applicationptr)                                                                            |
+| typedef std::vector< ApplicationPtr >                                                                   | [**ApplicationList**](classfloo\_1\_1\_b\_m\_x\_roster\_service.md#typedef-applicationlist)                                                                          |
+| typedef [BMXResultPage](classfloo\_1\_1\_b\_m\_x\_result\_page.md)< ApplicationPtr >                    | [**BMXRosterApplicationResultPage**](classfloo\_1\_1\_b\_m\_x\_roster\_service.md#typedef-bmxrosterapplicationresultpage)                                            |
+| typedef std::shared\_ptr< [BMXRosterApplicationResultPage](classfloo\_1\_1\_b\_m\_x\_result\_page.md) > | [**BMXRosterApplicationResultPagePtr**](classfloo\_1\_1\_b\_m\_x\_roster\_service.md#typedef-bmxrosterapplicationresultpageptr)                                      |
+| typedef std::function< void(int percent)>                                                               | [**Callback**](classfloo\_1\_1\_b\_m\_x\_roster\_service.md#typedef-callback)                                                                                        |
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| virtual | **[~BMXRosterService](classfloo_1_1_b_m_x_roster_service.md#function-~bmxrosterservice)**() |
-| virtual BMXErrorCode | **[get](classfloo_1_1_b_m_x_roster_service.md#function-get)**(std::vector< int64_t > & list, bool forceRefresh) =0<br>Get friend list, force pull from server-side if forceRefresh == true  |
-| virtual BMXErrorCode | **[fetchRosterById](classfloo_1_1_b_m_x_roster_service.md#function-fetchrosterbyid)**(int64_t rosterId, bool forceRefresh, BMXRosterItemPtr & item) =0<br>Search for user by contact id  |
-| virtual BMXErrorCode | **[search](classfloo_1_1_b_m_x_roster_service.md#function-search)**(int64_t rosterId, bool forceRefresh, BMXRosterItemPtr & item) =0<br>Deprecated.  |
-| virtual BMXErrorCode | **[fetchRosterByName](classfloo_1_1_b_m_x_roster_service.md#function-fetchrosterbyname)**(const std::string & name, bool forceRefresh, BMXRosterItemPtr & item) =0<br>Search for user by username  |
-| virtual BMXErrorCode | **[search](classfloo_1_1_b_m_x_roster_service.md#function-search)**(const std::string & name, bool forceRefresh, BMXRosterItemPtr & item) =0<br>Deprecated.  |
-| virtual BMXErrorCode | **[fetchRostersByIdList](classfloo_1_1_b_m_x_roster_service.md#function-fetchrostersbyidlist)**(const std::vector< int64_t > & rosterIdList, BMXRosterList & list, bool forceRefresh) =0<br>Search for user in batch by contact id list  |
-| virtual BMXErrorCode | **[search](classfloo_1_1_b_m_x_roster_service.md#function-search)**(const std::vector< int64_t > & rosterIdList, BMXRosterList & list, bool forceRefresh) =0<br>Deprecated.  |
-| virtual BMXErrorCode | **[setItemLocalExtension](classfloo_1_1_b_m_x_roster_service.md#function-setitemlocalextension)**(BMXRosterItemPtr item, const JSON & extension) =0<br>Update friend's local extension information  |
-| virtual BMXErrorCode | **[setItemExtension](classfloo_1_1_b_m_x_roster_service.md#function-setitemextension)**(BMXRosterItemPtr item, const JSON & extension) =0<br>Update friend server extension information  |
-| virtual BMXErrorCode | **[setItemAlias](classfloo_1_1_b_m_x_roster_service.md#function-setitemalias)**(BMXRosterItemPtr item, const JSON & alias) =0<br>Update friend's alias  |
-| virtual BMXErrorCode | **[setItemMuteNotification](classfloo_1_1_b_m_x_roster_service.md#function-setitemmutenotification)**(BMXRosterItemPtr item, bool status) =0<br>Set whether to reject user message  |
-| virtual BMXErrorCode | **[getApplicationList](classfloo_1_1_b_m_x_roster_service.md#function-getapplicationlist)**(BMXRosterApplicationResultPagePtr & result, const std::string & cursor, int pageSize =10) =0<br>Get list of adding friend requests  |
-| virtual BMXErrorCode | **[apply](classfloo_1_1_b_m_x_roster_service.md#function-apply)**(int64_t rosterId, const std::string & message, const std::string & authAnswer ="") =0<br>Request to add friend  |
-| virtual BMXErrorCode | **[remove](classfloo_1_1_b_m_x_roster_service.md#function-remove)**(int64_t rosterId) =0<br>Delete friend  |
-| virtual BMXErrorCode | **[accept](classfloo_1_1_b_m_x_roster_service.md#function-accept)**(int64_t rosterId) =0<br>Accept adding friend request  |
-| virtual BMXErrorCode | **[decline](classfloo_1_1_b_m_x_roster_service.md#function-decline)**(int64_t rosterId, const std::string & reason) =0<br>Reject adding friend request  |
-| virtual BMXErrorCode | **[block](classfloo_1_1_b_m_x_roster_service.md#function-block)**(int64_t rosterId) =0<br>Add to blacklist  |
-| virtual BMXErrorCode | **[unblock](classfloo_1_1_b_m_x_roster_service.md#function-unblock)**(int64_t rosterId) =0<br>Remove from blacklist  |
-| virtual BMXErrorCode | **[getBlockList](classfloo_1_1_b_m_x_roster_service.md#function-getblocklist)**(std::vector< int64_t > & list, bool forceRefresh) =0<br>Get blacklist, force pull from server-side if forceRefresh == true  |
-| virtual BMXErrorCode | **[downloadAvatar](classfloo_1_1_b_m_x_roster_service.md#function-downloadavatar)**(BMXRosterItemPtr item, bool thumbnail, Callback callback) =0<br>Download avatar  |
-| virtual void | **[addRosterListener](classfloo_1_1_b_m_x_roster_service.md#function-addrosterlistener)**([BMXRosterServiceListener](classfloo_1_1_b_m_x_roster_service_listener.md) * listener) =0<br>Add friend change listener  |
-| virtual void | **[removeRosterListener](classfloo_1_1_b_m_x_roster_service.md#function-removerosterlistener)**([BMXRosterServiceListener](classfloo_1_1_b_m_x_roster_service_listener.md) * listener) =0<br>Remove friend change listener  |
+|                      | Name                                                                                                                                                                                                                                                                                  |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtual              | [**\~BMXRosterService**](classfloo\_1\_1\_b\_m\_x\_roster\_service.md#function-\~bmxrosterservice)()                                                                                                                                                                                  |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-get"><strong>get</strong></a>(std::vector&#x3C; int64_t > &#x26; list, bool forceRefresh) =0<br>Get friend list, force pull from server-side if forceRefresh == true</p>                                                   |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-fetchrosterbyid"><strong>fetchRosterById</strong></a>(int64_t rosterId, bool forceRefresh, BMXRosterItemPtr &#x26; item) =0<br>Search for user by contact id</p>                                                           |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-search"><strong>search</strong></a>(int64_t rosterId, bool forceRefresh, BMXRosterItemPtr &#x26; item) =0<br>Deprecated.</p>                                                                                               |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-fetchrosterbyname"><strong>fetchRosterByName</strong></a>(const std::string &#x26; name, bool forceRefresh, BMXRosterItemPtr &#x26; item) =0<br>Search for user by username</p>                                            |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-search"><strong>search</strong></a>(const std::string &#x26; name, bool forceRefresh, BMXRosterItemPtr &#x26; item) =0<br>Deprecated.</p>                                                                                  |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-fetchrostersbyidlist"><strong>fetchRostersByIdList</strong></a>(const std::vector&#x3C; int64_t > &#x26; rosterIdList, BMXRosterList &#x26; list, bool forceRefresh) =0<br>Search for user in batch by contact id list</p> |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-search"><strong>search</strong></a>(const std::vector&#x3C; int64_t > &#x26; rosterIdList, BMXRosterList &#x26; list, bool forceRefresh) =0<br>Deprecated.</p>                                                             |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-setitemlocalextension"><strong>setItemLocalExtension</strong></a>(BMXRosterItemPtr item, const JSON &#x26; extension) =0<br>Update friend's local extension information</p>                                                |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-setitemextension"><strong>setItemExtension</strong></a>(BMXRosterItemPtr item, const JSON &#x26; extension) =0<br>Update friend server extension information</p>                                                           |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-setitemalias"><strong>setItemAlias</strong></a>(BMXRosterItemPtr item, const JSON &#x26; alias) =0<br>Update friend's alias</p>                                                                                            |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-setitemmutenotification"><strong>setItemMuteNotification</strong></a>(BMXRosterItemPtr item, bool status) =0<br>Set whether to reject user message</p>                                                                     |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-getapplicationlist"><strong>getApplicationList</strong></a>(BMXRosterApplicationResultPagePtr &#x26; result, const std::string &#x26; cursor, int pageSize =10) =0<br>Get list of adding friend requests</p>               |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-apply"><strong>apply</strong></a>(int64_t rosterId, const std::string &#x26; message, const std::string &#x26; authAnswer ="") =0<br>Request to add friend</p>                                                             |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-remove"><strong>remove</strong></a>(int64_t rosterId) =0<br>Delete friend</p>                                                                                                                                              |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-accept"><strong>accept</strong></a>(int64_t rosterId) =0<br>Accept adding friend request</p>                                                                                                                               |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-decline"><strong>decline</strong></a>(int64_t rosterId, const std::string &#x26; reason) =0<br>Reject adding friend request</p>                                                                                            |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-block"><strong>block</strong></a>(int64_t rosterId) =0<br>Add to blacklist</p>                                                                                                                                             |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-unblock"><strong>unblock</strong></a>(int64_t rosterId) =0<br>Remove from blacklist</p>                                                                                                                                    |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-getblocklist"><strong>getBlockList</strong></a>(std::vector&#x3C; int64_t > &#x26; list, bool forceRefresh) =0<br>Get blacklist, force pull from server-side if forceRefresh == true</p>                                   |
+| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(BMXRosterItemPtr item, bool thumbnail, Callback callback) =0<br>Download avatar</p>                                                                                    |
+| virtual void         | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-addrosterlistener"><strong>addRosterListener</strong></a>(<a href="classfloo_1_1_b_m_x_roster_service_listener.md">BMXRosterServiceListener</a> * listener) =0<br>Add friend change listener</p>                           |
+| virtual void         | <p><a href="classfloo_1_1_b_m_x_roster_service.md#function-removerosterlistener"><strong>removeRosterListener</strong></a>(<a href="classfloo_1_1_b_m_x_roster_service_listener.md">BMXRosterServiceListener</a> * listener) =0<br>Remove friend change listener</p>                  |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXRosterService](classfloo_1_1_b_m_x_roster_service.md#function-bmxrosterservice)**() |
+|   | Name                                                                                             |
+| - | ------------------------------------------------------------------------------------------------ |
+|   | [**BMXRosterService**](classfloo\_1\_1\_b\_m\_x\_roster\_service.md#function-bmxrosterservice)() |
 
 ## Public Types Documentation
 
 ### enum ApplicationStatus
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Pending | | Request pending   |
-| Accepted | | Request accepted   |
-| Declined | | Request rejected   |
+| Enumerator | Value | Description      |
+| ---------- | ----- | ---------------- |
+| Pending    |       | Request pending  |
+| Accepted   |       | Request accepted |
+| Declined   |       | Request rejected |
 
-
-
-Request state 
+Request state
 
 ### typedef ApplicationPtr
 
@@ -78,13 +72,11 @@ Request state
 typedef std::shared_ptr<Application> floo::BMXRosterService::ApplicationPtr;
 ```
 
-
 ### typedef ApplicationList
 
 ```cpp
 typedef std::vector<ApplicationPtr> floo::BMXRosterService::ApplicationList;
 ```
-
 
 ### typedef BMXRosterApplicationResultPage
 
@@ -92,13 +84,11 @@ typedef std::vector<ApplicationPtr> floo::BMXRosterService::ApplicationList;
 typedef BMXResultPage<ApplicationPtr> floo::BMXRosterService::BMXRosterApplicationResultPage;
 ```
 
-
 ### typedef BMXRosterApplicationResultPagePtr
 
 ```cpp
 typedef std::shared_ptr<BMXRosterApplicationResultPage> floo::BMXRosterService::BMXRosterApplicationResultPagePtr;
 ```
-
 
 ### typedef Callback
 
@@ -106,20 +96,20 @@ typedef std::shared_ptr<BMXRosterApplicationResultPage> floo::BMXRosterService::
 typedef std::function<void(int percent)> floo::BMXRosterService::Callback;
 ```
 
-
 ## Public Functions Documentation
 
-### function ~BMXRosterService
+### function \~BMXRosterService
 
 ```cpp
 inline virtual ~BMXRosterService()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="~BMXRosterService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function get
 
 ```cpp
@@ -129,20 +119,21 @@ virtual BMXErrorCode get(
 ) =0
 ```
 
-Get friend list, force pull from server-side if forceRefresh == true 
+Get friend list, force pull from server-side if forceRefresh == true
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of friend ids, pass in an empty list function and fetch the returned friend id list here 
-  * **forceRefresh** Whether to read data from server, true to force read from server, false to automatically read from server if the local read list is empty 
+* **list** List of friend ids, pass in an empty list function and fetch the returned friend id list here
+* **forceRefresh** Whether to read data from server, true to force read from server, false to automatically read from server if the local read list is empty
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="get" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function fetchRosterById
 
 ```cpp
@@ -153,21 +144,22 @@ virtual BMXErrorCode fetchRosterById(
 ) =0
 ```
 
-Search for user by contact id 
+Search for user by contact id
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** Friend id to search 
-  * **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty. 
-  * **item** User information returned by query, passed in a pointing-to-empty shared_ptr objective function and assigned automatically after executed. 
+* **rosterId** Friend id to search
+* **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty.
+* **item** User information returned by query, passed in a pointing-to-empty shared\_ptr objective function and assigned automatically after executed.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="fetchRosterById" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function search
 
 ```cpp
@@ -178,26 +170,26 @@ virtual BMXErrorCode search(
 ) =0
 ```
 
-Deprecated. 
+Deprecated.
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** Friend id to search 
-  * **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty. 
-  * **item** User information returned by query, passed in a pointing-to-empty shared_ptr objective function and assigned automatically after executed. 
+* **rosterId** Friend id to search
+* **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty.
+* **item** User information returned by query, passed in a pointing-to-empty shared\_ptr objective function and assigned automatically after executed.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 use fetchRosterById instead.
 
-Search for users 
-
+Search for users
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function fetchRosterByName
 
 ```cpp
@@ -208,21 +200,22 @@ virtual BMXErrorCode fetchRosterByName(
 ) =0
 ```
 
-Search for user by username 
+Search for user by username
 
-**Parameters**: 
+**Parameters**:
 
-  * **name** Username to search 
-  * **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty. 
-  * **item** User information returned by query, passed in a pointing-to-empty shared_ptr objective function and assigned automatically after executed. 
+* **name** Username to search
+* **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty.
+* **item** User information returned by query, passed in a pointing-to-empty shared\_ptr objective function and assigned automatically after executed.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="fetchRosterByName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function search
 
 ```cpp
@@ -233,26 +226,26 @@ virtual BMXErrorCode search(
 ) =0
 ```
 
-Deprecated. 
+Deprecated.
 
-**Parameters**: 
+**Parameters**:
 
-  * **name** Username to search 
-  * **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty. 
-  * **item** User information returned by query, passed in a pointing-to-empty shared_ptr objective function and assigned automatically after executed. 
+* **name** Username to search
+* **forceRefresh** True to force fetch from server, false to automatically fetch from server when query result is empty.
+* **item** User information returned by query, passed in a pointing-to-empty shared\_ptr objective function and assigned automatically after executed.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 use fetchRosterByName instead.
 
-Search for users 
-
+Search for users
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function fetchRostersByIdList
 
 ```cpp
@@ -263,21 +256,22 @@ virtual BMXErrorCode fetchRostersByIdList(
 ) =0
 ```
 
-Search for user in batch by contact id list 
+Search for user in batch by contact id list
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterIdList** List of user ids to search 
-  * **list** Returned friend information list, pass in an empty list function and fetch the returned result here 
-  * **forceRefresh** Whether to force fetch from server, true to force fetch from server 
+* **rosterIdList** List of user ids to search
+* **list** Returned friend information list, pass in an empty list function and fetch the returned result here
+* **forceRefresh** Whether to force fetch from server, true to force fetch from server
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="fetchRostersByIdList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function search
 
 ```cpp
@@ -288,26 +282,26 @@ virtual BMXErrorCode search(
 ) =0
 ```
 
-Deprecated. 
+Deprecated.
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterIdList** List of user ids to search 
-  * **list** Returned friend information list, pass in an empty list function and fetch the returned result here 
-  * **forceRefresh** Whether to force fetch from server, true to force fetch from server 
+* **rosterIdList** List of user ids to search
+* **list** Returned friend information list, pass in an empty list function and fetch the returned result here
+* **forceRefresh** Whether to force fetch from server, true to force fetch from server
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 use fetchRostersByIdList instead.
 
-Batch search for users 
-
+Batch search for users
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="search" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function setItemLocalExtension
 
 ```cpp
@@ -317,20 +311,21 @@ virtual BMXErrorCode setItemLocalExtension(
 ) =0
 ```
 
-Update friend's local extension information 
+Update friend's local extension information
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** User information 
-  * **extension** Local extension information 
+* **item** User information
+* **extension** Local extension information
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemLocalExtension" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function setItemExtension
 
 ```cpp
@@ -340,20 +335,21 @@ virtual BMXErrorCode setItemExtension(
 ) =0
 ```
 
-Update friend server extension information 
+Update friend server extension information
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** User information 
-  * **extension** Server extension information 
+* **item** User information
+* **extension** Server extension information
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemExtension" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function setItemAlias
 
 ```cpp
@@ -363,20 +359,21 @@ virtual BMXErrorCode setItemAlias(
 ) =0
 ```
 
-Update friend's alias 
+Update friend's alias
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** User information 
-  * **alias** Friend alias 
+* **item** User information
+* **alias** Friend alias
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemAlias" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function setItemMuteNotification
 
 ```cpp
@@ -386,20 +383,21 @@ virtual BMXErrorCode setItemMuteNotification(
 ) =0
 ```
 
-Set whether to reject user message 
+Set whether to reject user message
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** User information 
-  * **status** Whether to reject user message, true to reject, false to accept 
+* **item** User information
+* **status** Whether to reject user message, true to reject, false to accept
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="setItemMuteNotification" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function getApplicationList
 
 ```cpp
@@ -410,21 +408,22 @@ virtual BMXErrorCode getApplicationList(
 ) =0
 ```
 
-Get list of adding friend requests 
+Get list of adding friend requests
 
-**Parameters**: 
+**Parameters**:
 
-  * **result** Returned friend application list information, pass in a pointing-to-empty shared_ptr objective function which will be automatically assigned after executed. 
-  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
-  * **pageSize** Page size 
+* **result** Returned friend application list information, pass in a pointing-to-empty shared\_ptr objective function which will be automatically assigned after executed.
+* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
+* **pageSize** Page size
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="getApplicationList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function apply
 
 ```cpp
@@ -435,20 +434,21 @@ virtual BMXErrorCode apply(
 ) =0
 ```
 
-Request to add friend 
+Request to add friend
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** User id requested to be added 
-  * **message** Friend application information 
+* **rosterId** User id requested to be added
+* **message** Friend application information
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="apply" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function remove
 
 ```cpp
@@ -457,19 +457,20 @@ virtual BMXErrorCode remove(
 ) =0
 ```
 
-Delete friend 
+Delete friend
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** Delete friend id 
+* **rosterId** Delete friend id
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="remove" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function accept
 
 ```cpp
@@ -478,19 +479,20 @@ virtual BMXErrorCode accept(
 ) =0
 ```
 
-Accept adding friend request 
+Accept adding friend request
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** User id to be added as a friend 
+* **rosterId** User id to be added as a friend
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="accept" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function decline
 
 ```cpp
@@ -500,20 +502,21 @@ virtual BMXErrorCode decline(
 ) =0
 ```
 
-Reject adding friend request 
+Reject adding friend request
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** User id to be added as a friend 
-  * **reason** Reason for rejection 
+* **rosterId** User id to be added as a friend
+* **reason** Reason for rejection
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="decline" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function block
 
 ```cpp
@@ -522,19 +525,20 @@ virtual BMXErrorCode block(
 ) =0
 ```
 
-Add to blacklist 
+Add to blacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** Blacklisted user id 
+* **rosterId** Blacklisted user id
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="block" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function unblock
 
 ```cpp
@@ -543,19 +547,20 @@ virtual BMXErrorCode unblock(
 ) =0
 ```
 
-Remove from blacklist 
+Remove from blacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** Unblacklisted user id 
+* **rosterId** Unblacklisted user id
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="unblock" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function getBlockList
 
 ```cpp
@@ -565,20 +570,21 @@ virtual BMXErrorCode getBlockList(
 ) =0
 ```
 
-Get blacklist, force pull from server-side if forceRefresh == true 
+Get blacklist, force pull from server-side if forceRefresh == true
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of friend ids, pass in an empty list function and fetch the returned blacklist id list here. 
-  * **forceRefresh** Whether to read data from server, true to force read from server, false to automatically read from server if the local read list is empty 
+* **list** List of friend ids, pass in an empty list function and fetch the returned blacklist id list here.
+* **forceRefresh** Whether to read data from server, true to force read from server, false to automatically read from server if the local read list is empty
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="getBlockList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function downloadAvatar
 
 ```cpp
@@ -589,21 +595,22 @@ virtual BMXErrorCode downloadAvatar(
 ) =0
 ```
 
-Download avatar 
+Download avatar
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** User information 
-  * **thumbnail** Whether to download thumbnail, true for thumbnail, false for original 
-  * **callback** Download callback function 
+* **item** User information
+* **thumbnail** Whether to download thumbnail, true for thumbnail, false for original
+* **callback** Download callback function
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function addRosterListener
 
 ```cpp
@@ -612,17 +619,18 @@ virtual void addRosterListener(
 ) =0
 ```
 
-Add friend change listener 
+Add friend change listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Friend change listener 
-
+* **listener** Friend change listener
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="addRosterListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function removeRosterListener
 
 ```cpp
@@ -631,30 +639,32 @@ virtual void removeRosterListener(
 ) =0
 ```
 
-Remove friend change listener 
+Remove friend change listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Friend change listener 
-
+* **listener** Friend change listener
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="removeRosterListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
+
 ### function BMXRosterService
 
 ```cpp
 inline BMXRosterService()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXRosterService",function="BMXRosterService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXRosterService'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:20:40 +0800

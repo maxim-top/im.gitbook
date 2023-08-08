@@ -1,61 +1,56 @@
 ---
 title: floo::BMXClient
-summary: Client 
-
+summary: Client
 ---
 
 # floo::BMXClient
 
-
-
-Client 
-
+Client
 
 `#include <bmx_client.h>`
 
-Inherits from [floo::BMXNetworkListener](classfloo_1_1_b_m_x_network_listener.md)
+Inherits from [floo::BMXNetworkListener](classfloo\_1\_1\_b\_m\_x\_network\_listener.md)
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| BMXClientPtr | **[create](classfloo_1_1_b_m_x_client.md#function-create)**(BMXSDKConfigPtr config)<br>Create BMXClient  |
-| virtual | **[~BMXClient](classfloo_1_1_b_m_x_client.md#function-~bmxclient)**()<br>Destructor  |
-| virtual BMXSDKConfigPtr | **[getSDKConfig](classfloo_1_1_b_m_x_client.md#function-getsdkconfig)**() =0<br>Get SDK settings  |
-| virtual [BMXUserService](classfloo_1_1_b_m_x_user_service.md) & | **[getUserService](classfloo_1_1_b_m_x_client.md#function-getuserservice)**() =0<br>Get user Service  |
-| virtual [BMXChatService](classfloo_1_1_b_m_x_chat_service.md) & | **[getChatService](classfloo_1_1_b_m_x_client.md#function-getchatservice)**() =0<br>Get chat Service  |
-| virtual [BMXGroupService](classfloo_1_1_b_m_x_group_service.md) & | **[getGroupService](classfloo_1_1_b_m_x_client.md#function-getgroupservice)**() =0<br>Get group Service  |
-| virtual [BMXRosterService](classfloo_1_1_b_m_x_roster_service.md) & | **[getRosterService](classfloo_1_1_b_m_x_client.md#function-getrosterservice)**() =0<br>Get roster Service  |
-| virtual [BMXPushService](classfloo_1_1_b_m_x_push_service.md) & | **[getPushService](classfloo_1_1_b_m_x_client.md#function-getpushservice)**() =0<br>Get push Service  |
-| virtual BMXErrorCode | **[signUpNewUser](classfloo_1_1_b_m_x_client.md#function-signupnewuser)**(const std::string & username, const std::string & password, BMXUserProfilePtr & bmxUserProfilePtr) =0<br>To register a new user, username and password are required  |
-| virtual BMXErrorCode | **[signInByName](classfloo_1_1_b_m_x_client.md#function-signinbyname)**(const std::string & name, const std::string & password) =0<br>Login by username  |
-| virtual BMXErrorCode | **[signInById](classfloo_1_1_b_m_x_client.md#function-signinbyid)**(int64_t , const std::string & password) =0<br>Login by user ID  |
-| virtual BMXErrorCode | **[fastSignInByName](classfloo_1_1_b_m_x_client.md#function-fastsigninbyname)**(const std::string & name, const std::string & password) =0<br>Quick login by username (requires a successful previous login, faster login)  |
-| virtual BMXErrorCode | **[fastSignInById](classfloo_1_1_b_m_x_client.md#function-fastsigninbyid)**(int64_t uid, const std::string & password) =0<br>Quick login by user ID (requires a successful previous login, faster login)  |
-| virtual BMXErrorCode | **[signOut](classfloo_1_1_b_m_x_client.md#function-signout)**(int64_t uid =0, bool ignoreUnbindDevice =false) =0<br>Log out  |
-| virtual BMXConnectStatus | **[connectStatus](classfloo_1_1_b_m_x_client.md#function-connectstatus)**() =0<br>Get the current connection state with server  |
-| virtual BMXSignInStatus | **[signInStatus](classfloo_1_1_b_m_x_client.md#function-signinstatus)**() =0<br>Get the current login state  |
-| virtual void | **[reconnect](classfloo_1_1_b_m_x_client.md#function-reconnect)**() =0<br>Force reconnection  |
-| virtual void | **[onNetworkChanged](classfloo_1_1_b_m_x_client.md#function-onnetworkchanged)**(BMXNetworkType type, bool reconnect) =0<br>Process network changes in messaging  |
-| virtual void | **[disconnect](classfloo_1_1_b_m_x_client.md#function-disconnect)**() =0<br>Disconnect  |
-| virtual BMXErrorCode | **[changeAppId](classfloo_1_1_b_m_x_client.md#function-changeappid)**(const std::string & appId, const std::string & appSecret ="") =0<br>Change the appId of SDK, which also update the appId in BMXConfig.  |
-| virtual BMXErrorCode | **[initializeServerConfig](classfloo_1_1_b_m_x_client.md#function-initializeserverconfig)**(bool isLocal) =0<br>Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.  |
-| virtual void | **[sendMessage](classfloo_1_1_b_m_x_client.md#function-sendmessage)**(BMXMessagePtr msg) =0<br>When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself.  |
+|                                                                            | Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BMXClientPtr                                                               | <p><a href="classfloo_1_1_b_m_x_client.md#function-create"><strong>create</strong></a>(BMXSDKConfigPtr config)<br>Create BMXClient</p>                                                                                                                                                                                                                                                                                                                                                          |
+| virtual                                                                    | <p><a href="classfloo_1_1_b_m_x_client.md#function-~bmxclient"><strong>~BMXClient</strong></a>()<br>Destructor</p>                                                                                                                                                                                                                                                                                                                                                                              |
+| virtual BMXSDKConfigPtr                                                    | <p><a href="classfloo_1_1_b_m_x_client.md#function-getsdkconfig"><strong>getSDKConfig</strong></a>() =0<br>Get SDK settings</p>                                                                                                                                                                                                                                                                                                                                                                 |
+| virtual [BMXUserService](classfloo\_1\_1\_b\_m\_x\_user\_service.md) &     | <p><a href="classfloo_1_1_b_m_x_client.md#function-getuserservice"><strong>getUserService</strong></a>() =0<br>Get user Service</p>                                                                                                                                                                                                                                                                                                                                                             |
+| virtual [BMXChatService](classfloo\_1\_1\_b\_m\_x\_chat\_service.md) &     | <p><a href="classfloo_1_1_b_m_x_client.md#function-getchatservice"><strong>getChatService</strong></a>() =0<br>Get chat Service</p>                                                                                                                                                                                                                                                                                                                                                             |
+| virtual [BMXGroupService](classfloo\_1\_1\_b\_m\_x\_group\_service.md) &   | <p><a href="classfloo_1_1_b_m_x_client.md#function-getgroupservice"><strong>getGroupService</strong></a>() =0<br>Get group Service</p>                                                                                                                                                                                                                                                                                                                                                          |
+| virtual [BMXRosterService](classfloo\_1\_1\_b\_m\_x\_roster\_service.md) & | <p><a href="classfloo_1_1_b_m_x_client.md#function-getrosterservice"><strong>getRosterService</strong></a>() =0<br>Get roster Service</p>                                                                                                                                                                                                                                                                                                                                                       |
+| virtual [BMXPushService](classfloo\_1\_1\_b\_m\_x\_push\_service.md) &     | <p><a href="classfloo_1_1_b_m_x_client.md#function-getpushservice"><strong>getPushService</strong></a>() =0<br>Get push Service</p>                                                                                                                                                                                                                                                                                                                                                             |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-signupnewuser"><strong>signUpNewUser</strong></a>(const std::string &#x26; username, const std::string &#x26; password, BMXUserProfilePtr &#x26; bmxUserProfilePtr) =0<br>To register a new user, username and password are required</p>                                                                                                                                                                                                     |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-signinbyname"><strong>signInByName</strong></a>(const std::string &#x26; name, const std::string &#x26; password) =0<br>Login by username</p>                                                                                                                                                                                                                                                                                                |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-signinbyid"><strong>signInById</strong></a>(int64_t , const std::string &#x26; password) =0<br>Login by user ID</p>                                                                                                                                                                                                                                                                                                                          |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-fastsigninbyname"><strong>fastSignInByName</strong></a>(const std::string &#x26; name, const std::string &#x26; password) =0<br>Quick login by username (requires a successful previous login, faster login)</p>                                                                                                                                                                                                                             |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-fastsigninbyid"><strong>fastSignInById</strong></a>(int64_t uid, const std::string &#x26; password) =0<br>Quick login by user ID (requires a successful previous login, faster login)</p>                                                                                                                                                                                                                                                    |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-signout"><strong>signOut</strong></a>(int64_t uid =0, bool ignoreUnbindDevice =false) =0<br>Log out</p>                                                                                                                                                                                                                                                                                                                                      |
+| virtual BMXConnectStatus                                                   | <p><a href="classfloo_1_1_b_m_x_client.md#function-connectstatus"><strong>connectStatus</strong></a>() =0<br>Get the current connection state with server</p>                                                                                                                                                                                                                                                                                                                                   |
+| virtual BMXSignInStatus                                                    | <p><a href="classfloo_1_1_b_m_x_client.md#function-signinstatus"><strong>signInStatus</strong></a>() =0<br>Get the current login state</p>                                                                                                                                                                                                                                                                                                                                                      |
+| virtual void                                                               | <p><a href="classfloo_1_1_b_m_x_client.md#function-reconnect"><strong>reconnect</strong></a>() =0<br>Force reconnection</p>                                                                                                                                                                                                                                                                                                                                                                     |
+| virtual void                                                               | <p><a href="classfloo_1_1_b_m_x_client.md#function-onnetworkchanged"><strong>onNetworkChanged</strong></a>(BMXNetworkType type, bool reconnect) =0<br>Process network changes in messaging</p>                                                                                                                                                                                                                                                                                                  |
+| virtual void                                                               | <p><a href="classfloo_1_1_b_m_x_client.md#function-disconnect"><strong>disconnect</strong></a>() =0<br>Disconnect</p>                                                                                                                                                                                                                                                                                                                                                                           |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-changeappid"><strong>changeAppId</strong></a>(const std::string &#x26; appId, const std::string &#x26; appSecret ="") =0<br>Change the appId of SDK, which also update the appId in BMXConfig.</p>                                                                                                                                                                                                                                           |
+| virtual BMXErrorCode                                                       | <p><a href="classfloo_1_1_b_m_x_client.md#function-initializeserverconfig"><strong>initializeServerConfig</strong></a>(bool isLocal) =0<br>Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.</p>                                                                                                                                                         |
+| virtual void                                                               | <p><a href="classfloo_1_1_b_m_x_client.md#function-sendmessage"><strong>sendMessage</strong></a>(BMXMessagePtr msg) =0<br>When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself.</p> |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXClient](classfloo_1_1_b_m_x_client.md#function-bmxclient)**() |
+|   | Name                                                                      |
+| - | ------------------------------------------------------------------------- |
+|   | [**BMXClient**](classfloo\_1\_1\_b\_m\_x\_client.md#function-bmxclient)() |
 
 ## Additional inherited members
 
-**Public Functions inherited from [floo::BMXNetworkListener](classfloo_1_1_b_m_x_network_listener.md)**
+**Public Functions inherited from** [**floo::BMXNetworkListener**](classfloo\_1\_1\_b\_m\_x\_network\_listener.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| virtual | **[~BMXNetworkListener](classfloo_1_1_b_m_x_network_listener.md#function-~bmxnetworklistener)**() |
-
+|         | Name                                                                                                       |
+| ------- | ---------------------------------------------------------------------------------------------------------- |
+| virtual | [**\~BMXNetworkListener**](classfloo\_1\_1\_b\_m\_x\_network\_listener.md#function-\~bmxnetworklistener)() |
 
 ## Public Functions Documentation
 
@@ -67,115 +62,130 @@ static BMXClientPtr create(
 )
 ```
 
-Create BMXClient 
+Create BMXClient
 
-**Parameters**: 
+**Parameters**:
 
-  * **config** BMXSDKConfig SDK configuration object created by local client-side already 
+* **config** BMXSDKConfig SDK configuration object created by local client-side already
 
-
-**Return**: BMXClientPtr 
+**Return**: BMXClientPtr
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="create" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
-### function ~BMXClient
+
+### function \~BMXClient
 
 ```cpp
 inline virtual ~BMXClient()
 ```
 
-Destructor 
+Destructor
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="~BMXClient" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function getSDKConfig
 
 ```cpp
 virtual BMXSDKConfigPtr getSDKConfig() =0
 ```
 
-Get SDK settings 
+Get SDK settings
 
-**Return**: BMXSDKConfigPtr 
+**Return**: BMXSDKConfigPtr
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getSDKConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function getUserService
 
 ```cpp
 virtual BMXUserService & getUserService() =0
 ```
 
-Get user Service 
+Get user Service
 
-**Return**: [BMXUserService](classfloo_1_1_b_m_x_user_service.md)
+**Return**: [BMXUserService](classfloo\_1\_1\_b\_m\_x\_user\_service.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getUserService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function getChatService
 
 ```cpp
 virtual BMXChatService & getChatService() =0
 ```
 
-Get chat Service 
+Get chat Service
 
-**Return**: [BMXChatService](classfloo_1_1_b_m_x_chat_service.md)
+**Return**: [BMXChatService](classfloo\_1\_1\_b\_m\_x\_chat\_service.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getChatService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function getGroupService
 
 ```cpp
 virtual BMXGroupService & getGroupService() =0
 ```
 
-Get group Service 
+Get group Service
 
-**Return**: [BMXGroupService](classfloo_1_1_b_m_x_group_service.md)
+**Return**: [BMXGroupService](classfloo\_1\_1\_b\_m\_x\_group\_service.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getGroupService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function getRosterService
 
 ```cpp
 virtual BMXRosterService & getRosterService() =0
 ```
 
-Get roster Service 
+Get roster Service
 
-**Return**: [BMXRosterService](classfloo_1_1_b_m_x_roster_service.md)
+**Return**: [BMXRosterService](classfloo\_1\_1\_b\_m\_x\_roster\_service.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getRosterService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function getPushService
 
 ```cpp
 virtual BMXPushService & getPushService() =0
 ```
 
-Get push Service 
+Get push Service
 
-**Return**: [BMXPushService](classfloo_1_1_b_m_x_push_service.md)
+**Return**: [BMXPushService](classfloo\_1\_1\_b\_m\_x\_push\_service.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="getPushService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function signUpNewUser
 
 ```cpp
@@ -186,21 +196,22 @@ virtual BMXErrorCode signUpNewUser(
 ) =0
 ```
 
-To register a new user, username and password are required 
+To register a new user, username and password are required
 
-**Parameters**: 
+**Parameters**:
 
-  * **username** Username 
-  * **password** User password 
-  * **bmxUserProfilePtr** After successful registration, get the profile of the newly registered user from this function, and initially passed in a pointing-to-empty shared_ptr object. 
+* **username** Username
+* **password** User password
+* **bmxUserProfilePtr** After successful registration, get the profile of the newly registered user from this function, and initially passed in a pointing-to-empty shared\_ptr object.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signUpNewUser" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function signInByName
 
 ```cpp
@@ -210,20 +221,21 @@ virtual BMXErrorCode signInByName(
 ) =0
 ```
 
-Login by username 
+Login by username
 
-**Parameters**: 
+**Parameters**:
 
-  * **name** Username 
-  * **password** User password 
+* **name** Username
+* **password** User password
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signInByName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function signInById
 
 ```cpp
@@ -233,20 +245,21 @@ virtual BMXErrorCode signInById(
 ) =0
 ```
 
-Login by user ID 
+Login by user ID
 
-**Parameters**: 
+**Parameters**:
 
-  * **int64_t** User id 
-  * **password** User password 
+* **int64\_t** User id
+* **password** User password
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signInById" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function fastSignInByName
 
 ```cpp
@@ -256,20 +269,21 @@ virtual BMXErrorCode fastSignInByName(
 ) =0
 ```
 
-Quick login by username (requires a successful previous login, faster login) 
+Quick login by username (requires a successful previous login, faster login)
 
-**Parameters**: 
+**Parameters**:
 
-  * **name** Username 
-  * **password** User password (for sdk to automatically update user token when internal token expires) 
+* **name** Username
+* **password** User password (for sdk to automatically update user token when internal token expires)
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="fastSignInByName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function fastSignInById
 
 ```cpp
@@ -279,20 +293,21 @@ virtual BMXErrorCode fastSignInById(
 ) =0
 ```
 
-Quick login by user ID (requires a successful previous login, faster login) 
+Quick login by user ID (requires a successful previous login, faster login)
 
-**Parameters**: 
+**Parameters**:
 
-  * **uid** User id 
-  * **password** User password (for sdk to automatically update user token when internal token expires) 
+* **uid** User id
+* **password** User password (for sdk to automatically update user token when internal token expires)
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="fastSignInById" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function signOut
 
 ```cpp
@@ -302,60 +317,67 @@ virtual BMXErrorCode signOut(
 ) =0
 ```
 
-Log out 
+Log out
 
-**Parameters**: 
+**Parameters**:
 
-  * **uid** UID of logged out user (default 0 to logout the current user) 
-  * **ignoreUnbindDevice** Whether the unbind device operation is ignored when the user logout. Set to true when server's unbinding device operation is ignored and forced to logout directly when some servers are inaccessible. 
+* **uid** UID of logged out user (default 0 to logout the current user)
+* **ignoreUnbindDevice** Whether the unbind device operation is ignored when the user logout. Set to true when server's unbinding device operation is ignored and forced to logout directly when some servers are inaccessible.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signOut" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function connectStatus
 
 ```cpp
 virtual BMXConnectStatus connectStatus() =0
 ```
 
-Get the current connection state with server 
+Get the current connection state with server
 
-**Return**: BMXConnectStatus 
+**Return**: BMXConnectStatus
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="connectStatus" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function signInStatus
 
 ```cpp
 virtual BMXSignInStatus signInStatus() =0
 ```
 
-Get the current login state 
+Get the current login state
 
-**Return**: BMXSignInStatus 
+**Return**: BMXSignInStatus
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="signInStatus" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function reconnect
 
 ```cpp
 virtual void reconnect() =0
 ```
 
-Force reconnection 
+Force reconnection
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="reconnect" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function onNetworkChanged
 
 ```cpp
@@ -365,33 +387,35 @@ virtual void onNetworkChanged(
 ) =0
 ```
 
-Process network changes in messaging 
+Process network changes in messaging
 
-**Parameters**: 
+**Parameters**:
 
-  * **type** Changed network type 
-  * **reconnect** Network needs to reconnect or not 
+* **type** Changed network type
+* **reconnect** Network needs to reconnect or not
 
-
-**Reimplements**: [floo::BMXNetworkListener::onNetworkChanged](classfloo_1_1_b_m_x_network_listener.md#function-onnetworkchanged)
-
+**Reimplements**: [floo::BMXNetworkListener::onNetworkChanged](classfloo\_1\_1\_b\_m\_x\_network\_listener.md#function-onnetworkchanged)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="onNetworkChanged" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function disconnect
 
 ```cpp
 virtual void disconnect() =0
 ```
 
-Disconnect 
+Disconnect
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="disconnect" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function changeAppId
 
 ```cpp
@@ -401,19 +425,20 @@ virtual BMXErrorCode changeAppId(
 ) =0
 ```
 
-Change the appId of SDK, which also update the appId in BMXConfig. 
+Change the appId of SDK, which also update the appId in BMXConfig.
 
-**Parameters**: 
+**Parameters**:
 
-  * **appId** Newly changed appId 
+* **appId** Newly changed appId
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="changeAppId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function initializeServerConfig
 
 ```cpp
@@ -422,19 +447,20 @@ virtual BMXErrorCode initializeServerConfig(
 ) =0
 ```
 
-Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in. 
+Get the server network configuration of app, which can be called after initializing SDK and before logging in, so as to get the server configuration in advance and speed up logging in.
 
-**Parameters**: 
+**Parameters**:
 
-  * **isLocal** True to use locally cached DNS configuration, false to get the latest configuration from server. 
+* **isLocal** True to use locally cached DNS configuration, false to get the latest configuration from server.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="initializeServerConfig" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function sendMessage
 
 ```cpp
@@ -443,30 +469,32 @@ virtual void sendMessage(
 ) =0
 ```
 
-When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself. 
+When send a message, the change of message status will be notified by listener. In the case of sending a group message in a specified group with group read acknowledgement enabled, the interface will automatically obtain the group member list id and fill it in the message config, without the need for the client to fill the group member list by itself.
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** Message to be sent 
-
+* **msg** Message to be sent
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="sendMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
+
 ### function BMXClient
 
 ```cpp
 BMXClient()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXClient",function="BMXClient" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXClient'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:20:40 +0800

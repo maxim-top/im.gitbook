@@ -1,51 +1,48 @@
 ---
 title: im::floo::floolib::BMXGroup::SharedFile
-summary: Group shared file 
-
+summary: Group shared file
 ---
 
 # im::floo::floolib::BMXGroup::SharedFile
 
-
-
-Group shared file 
+Group shared file
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-delete)**() |
-| | **[SharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-sharedfile)**() |
-| void | **[setMFileId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmfileid)**(long value) |
-| long | **[getMFileId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmfileid)**() |
-| void | **[setMGroupId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmgroupid)**(long value) |
-| long | **[getMGroupId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmgroupid)**() |
-| void | **[setMUploader](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmuploader)**(long value) |
-| long | **[getMUploader](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmuploader)**() |
-| void | **[setMSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmsize)**(int value) |
-| int | **[getMSize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmsize)**() |
-| void | **[setMCreateTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmcreatetime)**(long value) |
-| long | **[getMCreateTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmcreatetime)**() |
-| void | **[setMUpdateTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmupdatetime)**(long value) |
-| long | **[getMUpdateTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmupdatetime)**() |
-| void | **[setMRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmratelurl)**(String value) |
-| String | **[getMRatelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmratelurl)**() |
-| void | **[setMUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmurl)**(String value) |
-| String | **[getMUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmurl)**() |
-| void | **[setMPath](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmpath)**(String value) |
-| String | **[getMPath](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmpath)**() |
-| void | **[setMDisplayName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmdisplayname)**(String value) |
-| String | **[getMDisplayName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmdisplayname)**() |
-| void | **[setMType](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-setmtype)**(String value) |
-| String | **[getMType](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getmtype)**() |
+|                   | Name                                                                                                                                      |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-delete)()                               |
+|                   | [**SharedFile**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-sharedfile)()                       |
+| void              | [**setMFileId**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmfileid)(long value)             |
+| long              | [**getMFileId**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmfileid)()                       |
+| void              | [**setMGroupId**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmgroupid)(long value)           |
+| long              | [**getMGroupId**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmgroupid)()                     |
+| void              | [**setMUploader**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmuploader)(long value)         |
+| long              | [**getMUploader**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmuploader)()                   |
+| void              | [**setMSize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmsize)(int value)                  |
+| int               | [**getMSize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmsize)()                           |
+| void              | [**setMCreateTime**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmcreatetime)(long value)     |
+| long              | [**getMCreateTime**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmcreatetime)()               |
+| void              | [**setMUpdateTime**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmupdatetime)(long value)     |
+| long              | [**getMUpdateTime**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmupdatetime)()               |
+| void              | [**setMRatelUrl**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmratelurl)(String value)       |
+| String            | [**getMRatelUrl**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmratelurl)()                   |
+| void              | [**setMUrl**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmurl)(String value)                 |
+| String            | [**getMUrl**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmurl)()                             |
+| void              | [**setMPath**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmpath)(String value)               |
+| String            | [**getMPath**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmpath)()                           |
+| void              | [**setMDisplayName**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmdisplayname)(String value) |
+| String            | [**getMDisplayName**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmdisplayname)()             |
+| void              | [**setMType**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-setmtype)(String value)               |
+| String            | [**getMType**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getmtype)()                           |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[SharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-sharedfile)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-finalize)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_shared_file.md#function-getcptr)**(SharedFile obj) |
+|      | Name                                                                                                                                             |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      | [**SharedFile**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-sharedfile)(long cPtr, boolean cMemoryOwn) |
+| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-finalize)()                                  |
+| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_shared\_file.md#function-getcptr)(SharedFile obj)                      |
 
 ## Public Functions Documentation
 
@@ -55,22 +52,24 @@ Group shared file
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="delete" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function SharedFile
 
 ```java
 inline SharedFile()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="SharedFile" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMFileId
 
 ```java
@@ -79,22 +78,24 @@ inline void setMFileId(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMFileId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMFileId
 
 ```java
 inline long getMFileId()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMFileId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMGroupId
 
 ```java
@@ -103,22 +104,24 @@ inline void setMGroupId(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMGroupId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMGroupId
 
 ```java
 inline long getMGroupId()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMGroupId" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMUploader
 
 ```java
@@ -127,22 +130,24 @@ inline void setMUploader(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMUploader" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMUploader
 
 ```java
 inline long getMUploader()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMUploader" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMSize
 
 ```java
@@ -151,22 +156,24 @@ inline void setMSize(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMSize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMSize
 
 ```java
 inline int getMSize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMSize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMCreateTime
 
 ```java
@@ -175,22 +182,24 @@ inline void setMCreateTime(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMCreateTime" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMCreateTime
 
 ```java
 inline long getMCreateTime()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMCreateTime" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMUpdateTime
 
 ```java
@@ -199,22 +208,24 @@ inline void setMUpdateTime(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMUpdateTime" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMUpdateTime
 
 ```java
 inline long getMUpdateTime()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMUpdateTime" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMRatelUrl
 
 ```java
@@ -223,22 +234,24 @@ inline void setMRatelUrl(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMRatelUrl" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMRatelUrl
 
 ```java
 inline String getMRatelUrl()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMRatelUrl" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMUrl
 
 ```java
@@ -247,22 +260,24 @@ inline void setMUrl(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMUrl" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMUrl
 
 ```java
 inline String getMUrl()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMUrl" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMPath
 
 ```java
@@ -271,22 +286,24 @@ inline void setMPath(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMPath" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMPath
 
 ```java
 inline String getMPath()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMPath" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMDisplayName
 
 ```java
@@ -295,22 +312,24 @@ inline void setMDisplayName(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMDisplayName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMDisplayName
 
 ```java
 inline String getMDisplayName()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMDisplayName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function setMType
 
 ```java
@@ -319,24 +338,26 @@ inline void setMType(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="setMType" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getMType
 
 ```java
 inline String getMType()
 ```
 
-
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getMType" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function SharedFile
 
 ```java
@@ -346,22 +367,24 @@ inline SharedFile(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="SharedFile" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="finalize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
+
 ### function getCPtr
 
 ```java
@@ -370,11 +393,12 @@ static inline long getCPtr(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="SharedFile",function="getCPtr" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='SharedFile'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

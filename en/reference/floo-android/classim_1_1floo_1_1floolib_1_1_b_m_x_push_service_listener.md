@@ -1,47 +1,42 @@
 ---
 title: im::floo::floolib::BMXPushServiceListener
-
 ---
 
 # im::floo::floolib::BMXPushServiceListener
 
-
-
-
-
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-delete)**() |
-| void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-swigreleaseownership)**() |
-| void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-swigtakeownership)**() |
-| void | **[onPushStart](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstart)**(String bmxToken)<br>Notification of push initialization complete.  |
-| void | **[onPushStop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstop)**()<br>Notification of push feature stop.  |
-| void | **[onCertRetrieved](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncertretrieved)**(String cert)<br>Get push certificate after push initialization.  |
-| void | **[onSetTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onsettags)**(String operationId)<br>Set callback of user push success.  |
-| void | **[onGetTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ongettags)**(String operationId)<br>Get callback of user push success.  |
-| void | **[onDeleteTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ondeletetags)**(String operationId)<br>Delete callback of user push success.  |
-| void | **[onClearTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncleartags)**(String operationId)<br>Clear callback of user push success.  |
-| void | **[onReceivePush](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onreceivepush)**(BMXMessageList list)<br>New push notification received.  |
-| void | **[onStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>Send notification of push uplink message status change.  |
-| | **[BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-bmxpushservicelistener)**() |
-| void | **[registerPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-registerpushservice)**([BMXPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md) service) |
+|                   | Name                                                                                                                                                                                                                                                                                                        |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-delete)()                                                                                                                                                                                                   |
+| void              | [**swigReleaseOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-swigreleaseownership)()                                                                                                                                                                       |
+| void              | [**swigTakeOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-swigtakeownership)()                                                                                                                                                                             |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstart"><strong>onPushStart</strong></a>(String bmxToken)<br>Notification of push initialization complete.</p>                                                                                                      |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onpushstop"><strong>onPushStop</strong></a>()<br>Notification of push feature stop.</p>                                                                                                                                  |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncertretrieved"><strong>onCertRetrieved</strong></a>(String cert)<br>Get push certificate after push initialization.</p>                                                                                                |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onsettags"><strong>onSetTags</strong></a>(String operationId)<br>Set callback of user push success.</p>                                                                                                                  |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ongettags"><strong>onGetTags</strong></a>(String operationId)<br>Get callback of user push success.</p>                                                                                                                  |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-ondeletetags"><strong>onDeleteTags</strong></a>(String operationId)<br>Delete callback of user push success.</p>                                                                                                         |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-oncleartags"><strong>onClearTags</strong></a>(String operationId)<br>Clear callback of user push success.</p>                                                                                                            |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onreceivepush"><strong>onReceivePush</strong></a>(BMXMessageList list)<br>New push notification received.</p>                                                                                                            |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-onstatuschanged"><strong>onStatusChanged</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, [BMXErrorCode] error)<br>Send notification of push uplink message status change.</p> |
+|                   | [**BMXPushServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-bmxpushservicelistener)()                                                                                                                                                                   |
+| void              | [**registerPushService**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-registerpushservice)([BMXPushService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service.md) service)                                                                                |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-bmxpushservicelistener)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-finalize)**() |
-| void | **[swigDirectorDisconnect](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-swigdirectordisconnect)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#function-getcptr)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) obj) |
+|      | Name                                                                                                                                                                                                               |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      | [**BMXPushServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-bmxpushservicelistener)(long cPtr, boolean cMemoryOwn)                                             |
+| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-finalize)()                                                                                                      |
+| void | [**swigDirectorDisconnect**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-swigdirectordisconnect)()                                                                          |
+| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#function-getcptr)([BMXPushServiceListener](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md) obj) |
 
 ## Protected Attributes
 
-|                | Name           |
-| -------------- | -------------- |
-| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md#variable-swigcmemown)**  |
+|                   | Name                                                                                                              |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| transient boolean | [**swigCMemOwn**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service\_listener.md#variable-swigcmemown) |
 
 ## Public Functions Documentation
 
@@ -51,33 +46,36 @@ title: im::floo::floolib::BMXPushServiceListener
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="delete" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function swigReleaseOwnership
 
 ```java
 inline void swigReleaseOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function swigTakeOwnership
 
 ```java
 inline void swigTakeOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onPushStart
 
 ```java
@@ -86,29 +84,32 @@ inline void onPushStart(
 )
 ```
 
-Notification of push initialization complete. 
+Notification of push initialization complete.
 
-**Parameters**: 
+**Parameters**:
 
-  * **bmxToken** bmxToken used in current push 
-
+* **bmxToken** bmxToken used in current push
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onPushStart" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onPushStop
 
 ```java
 inline void onPushStop()
 ```
 
-Notification of push feature stop. 
+Notification of push feature stop.
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onPushStop" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onCertRetrieved
 
 ```java
@@ -117,17 +118,18 @@ inline void onCertRetrieved(
 )
 ```
 
-Get push certificate after push initialization. 
+Get push certificate after push initialization.
 
-**Parameters**: 
+**Parameters**:
 
-  * **cert** Push certificate obtained from server 
-
+* **cert** Push certificate obtained from server
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onCertRetrieved" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onSetTags
 
 ```java
@@ -136,17 +138,18 @@ inline void onSetTags(
 )
 ```
 
-Set callback of user push success. 
+Set callback of user push success.
 
-**Parameters**: 
+**Parameters**:
 
-  * **operationId** Operation id 
-
+* **operationId** Operation id
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onSetTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onGetTags
 
 ```java
@@ -155,17 +158,18 @@ inline void onGetTags(
 )
 ```
 
-Get callback of user push success. 
+Get callback of user push success.
 
-**Parameters**: 
+**Parameters**:
 
-  * **operationId** Operation id 
-
+* **operationId** Operation id
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onGetTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onDeleteTags
 
 ```java
@@ -174,17 +178,18 @@ inline void onDeleteTags(
 )
 ```
 
-Delete callback of user push success. 
+Delete callback of user push success.
 
-**Parameters**: 
+**Parameters**:
 
-  * **operationId** Operation id 
-
+* **operationId** Operation id
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onDeleteTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onClearTags
 
 ```java
@@ -193,17 +198,18 @@ inline void onClearTags(
 )
 ```
 
-Clear callback of user push success. 
+Clear callback of user push success.
 
-**Parameters**: 
+**Parameters**:
 
-  * **operationId** Operation id 
-
+* **operationId** Operation id
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onClearTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onReceivePush
 
 ```java
@@ -212,17 +218,18 @@ inline void onReceivePush(
 )
 ```
 
-New push notification received. 
+New push notification received.
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** Push notification list 
-
+* **list** Push notification list
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onReceivePush" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function onStatusChanged
 
 ```java
@@ -232,29 +239,31 @@ inline void onStatusChanged(
 )
 ```
 
-Send notification of push uplink message status change. 
+Send notification of push uplink message status change.
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** Uplink message with state change 
-  * **error** State error code 
-
+* **msg** Uplink message with state change
+* **error** State error code
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function BMXPushServiceListener
 
 ```java
 inline BMXPushServiceListener()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="BMXPushServiceListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function registerPushService
 
 ```java
@@ -263,13 +272,14 @@ inline void registerPushService(
 )
 ```
 
-
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="registerPushService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function BMXPushServiceListener
 
 ```java
@@ -279,33 +289,36 @@ inline BMXPushServiceListener(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="BMXPushServiceListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function swigDirectorDisconnect
 
 ```java
 inline void swigDirectorDisconnect()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
+
 ### function getCPtr
 
 ```java
@@ -313,7 +326,6 @@ static inline long getCPtr(
     BMXPushServiceListener obj
 )
 ```
-
 
 ## Protected Attributes Documentation
 
@@ -323,11 +335,12 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushServiceListener'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

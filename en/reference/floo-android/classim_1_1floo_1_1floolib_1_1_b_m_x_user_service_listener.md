@@ -1,45 +1,42 @@
 ---
 title: im::floo::floolib::BMXUserServiceListener
-summary: User state listener 
-
+summary: User state listener
 ---
 
 # im::floo::floolib::BMXUserServiceListener
 
-
-
-User state listener 
+User state listener
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-delete)**() |
-| void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-swigreleaseownership)**() |
-| void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-swigtakeownership)**() |
-| void | **[onConnectStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged)**([BMXConnectStatus] status)<br>Channel state changed  |
-| void | **[onUserSignIn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignin)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile)<br>User login  |
-| void | **[onUserSignOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignout)**([BMXErrorCode] error, long userId)<br>User logout  |
-| void | **[onInfoUpdated](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-oninfoupdated)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile)<br>Synchronize user information updates (when user information changes in other devices)  |
-| void | **[onOtherDeviceSingIn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin)**(int deviceSN)<br>User login on another device  |
-| void | **[onOtherDeviceSingOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout)**(int deviceSN)<br>User logout on another device  |
-| | **[BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-bmxuserservicelistener)**() |
-| void | **[registerUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-registeruserservice)**([BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md) service) |
+|                   | Name                                                                                                                                                                                                                                                                                                                         |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-delete)()                                                                                                                                                                                                                    |
+| void              | [**swigReleaseOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-swigreleaseownership)()                                                                                                                                                                                        |
+| void              | [**swigTakeOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-swigtakeownership)()                                                                                                                                                                                              |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged"><strong>onConnectStatusChanged</strong></a>([BMXConnectStatus] status)<br>Channel state changed</p>                                                                                                               |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignin"><strong>onUserSignIn</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md">BMXUserProfile</a> profile)<br>User login</p>                                                                              |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onusersignout"><strong>onUserSignOut</strong></a>([BMXErrorCode] error, long userId)<br>User logout</p>                                                                                                                                   |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-oninfoupdated"><strong>onInfoUpdated</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md">BMXUserProfile</a> profile)<br>Synchronize user information updates (when user information changes in other devices)</p> |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin"><strong>onOtherDeviceSingIn</strong></a>(int deviceSN)<br>User login on another device</p>                                                                                                                           |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout"><strong>onOtherDeviceSingOut</strong></a>(int deviceSN)<br>User logout on another device</p>                                                                                                                        |
+|                   | [**BMXUserServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-bmxuserservicelistener)()                                                                                                                                                                                    |
+| void              | [**registerUserService**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-registeruserservice)([BMXUserService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service.md) service)                                                                                                 |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-bmxuserservicelistener)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-finalize)**() |
-| void | **[swigDirectorDisconnect](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-swigdirectordisconnect)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#function-getcptr)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) obj) |
+|      | Name                                                                                                                                                                                                               |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      | [**BMXUserServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-bmxuserservicelistener)(long cPtr, boolean cMemoryOwn)                                             |
+| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-finalize)()                                                                                                      |
+| void | [**swigDirectorDisconnect**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-swigdirectordisconnect)()                                                                          |
+| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#function-getcptr)([BMXUserServiceListener](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md) obj) |
 
 ## Protected Attributes
 
-|                | Name           |
-| -------------- | -------------- |
-| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md#variable-swigcmemown)**  |
+|                   | Name                                                                                                              |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| transient boolean | [**swigCMemOwn**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service\_listener.md#variable-swigcmemown) |
 
 ## Public Functions Documentation
 
@@ -49,33 +46,36 @@ User state listener
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="delete" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function swigReleaseOwnership
 
 ```java
 inline void swigReleaseOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function swigTakeOwnership
 
 ```java
 inline void swigTakeOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function onConnectStatusChanged
 
 ```java
@@ -84,17 +84,18 @@ inline void onConnectStatusChanged(
 )
 ```
 
-Channel state changed 
+Channel state changed
 
-**Parameters**: 
+**Parameters**:
 
-  * **status** Connection state 
-
+* **status** Connection state
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onConnectStatusChanged" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function onUserSignIn
 
 ```java
@@ -103,17 +104,18 @@ inline void onUserSignIn(
 )
 ```
 
-User login 
+User login
 
-**Parameters**: 
+**Parameters**:
 
-  * **profile** User profile 
-
+* **profile** User profile
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onUserSignIn" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function onUserSignOut
 
 ```java
@@ -123,17 +125,18 @@ inline void onUserSignOut(
 )
 ```
 
-User logout 
+User logout
 
-**Parameters**: 
+**Parameters**:
 
-  * **error** State error code 
-
+* **error** State error code
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onUserSignOut" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function onInfoUpdated
 
 ```java
@@ -142,17 +145,18 @@ inline void onInfoUpdated(
 )
 ```
 
-Synchronize user information updates (when user information changes in other devices) 
+Synchronize user information updates (when user information changes in other devices)
 
-**Parameters**: 
+**Parameters**:
 
-  * **profile** User profile 
-
+* **profile** User profile
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onInfoUpdated" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function onOtherDeviceSingIn
 
 ```java
@@ -161,17 +165,18 @@ inline void onOtherDeviceSingIn(
 )
 ```
 
-User login on another device 
+User login on another device
 
-**Parameters**: 
+**Parameters**:
 
-  * **deviceSN** Device serial number 
-
+* **deviceSN** Device serial number
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onOtherDeviceSingIn" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function onOtherDeviceSingOut
 
 ```java
@@ -180,28 +185,30 @@ inline void onOtherDeviceSingOut(
 )
 ```
 
-User logout on another device 
+User logout on another device
 
-**Parameters**: 
+**Parameters**:
 
-  * **deviceSN** Device serial number 
-
+* **deviceSN** Device serial number
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="onOtherDeviceSingOut" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function BMXUserServiceListener
 
 ```java
 inline BMXUserServiceListener()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="BMXUserServiceListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function registerUserService
 
 ```java
@@ -210,13 +217,14 @@ inline void registerUserService(
 )
 ```
 
-
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="registerUserService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function BMXUserServiceListener
 
 ```java
@@ -226,33 +234,36 @@ inline BMXUserServiceListener(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="BMXUserServiceListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function swigDirectorDisconnect
 
 ```java
 inline void swigDirectorDisconnect()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
+
 ### function getCPtr
 
 ```java
@@ -260,7 +271,6 @@ static inline long getCPtr(
     BMXUserServiceListener obj
 )
 ```
-
 
 ## Protected Attributes Documentation
 
@@ -270,11 +280,12 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserServiceListener'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

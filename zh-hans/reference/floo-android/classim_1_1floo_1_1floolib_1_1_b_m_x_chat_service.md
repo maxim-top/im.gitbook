@@ -1,74 +1,71 @@
 ---
 title: im::floo::floolib::BMXChatService
-summary: 聊天Service 
-
+summary: 聊天Service
 ---
 
 # im::floo::floolib::BMXChatService
 
-
-
-聊天Service 
+聊天Service
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-delete)**() |
-| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-sendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送消息，消息状态变化会通过listener通知  |
-| void | **[resendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-resendmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>重新发送消息，消息状态变化会通过listener通知  |
-| void | **[recallMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-recallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>撤回消息，消息状态变化会通过listener通知  |
-| [BMXErrorCode] | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessageList list, [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) to, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) newMsg)<br>合并转发消息  |
-| void | **[forwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>简单转发消息，用户应当通过BMXMessage::createForwardMessage()先创建转发消息  |
-| void | **[ackMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送已读回执  |
-| void | **[ackMessageDelivered](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送送达回执  |
-| void | **[ackPlayMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackplaymessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>发送已播放回执  |
-| void | **[readCancel](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readcancel)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>标记此消息为未读，该消息同步到当前用户的所有设备  |
-| void | **[readAllMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readallmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>标记此消息及之前全部消息为已读，该消息同步到当前用户的所有设备  |
-| void | **[removeMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removemessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, boolean synchronize)<br>删除此消息，该消息同步到当前用户的其它设备  |
-| void | **[removeMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removemessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg) |
-| void | **[downloadThumbnail](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadthumbnail)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, BMXChatService.ThumbnailStrategy strategy)<br>下载缩略图，下载状态变化和进度通过listener通知 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。  |
-| void | **[downloadThumbnail](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadthumbnail)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg) |
-| void | **[downloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>下载附件，下载状态变化和进度通过listener通知  |
-| void | **[downloadAttachmentByUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl)**(long msgId, String url, String path)<br>下载附件，下载状态变化和进度通过listener通知  |
-| void | **[cancelUploadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceluploadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>取消上传附件  |
-| void | **[cancelDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceldownloadattachment)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>取消上传附件  |
-| int | **[transferingNum](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum)**()<br>上传或下载中的文件数  |
-| [BMXErrorCode] | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-insertmessages)**(BMXMessageList list)<br>插入消息  |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage)**(long msgId)<br>读取一条消息  |
-| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br>删除会话  |
-| void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId) |
-| [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>打开一个会话  |
-| [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type) |
-| String | **[attachmentDir](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdir)**()<br>获取附件保存路径  |
-| String | **[attachmentDirForConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(long conversationId)<br>获取会话的附件保存路径  |
-| BMXConversationList | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversations)**()<br>获取所有会话  |
-| int | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**()<br>获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内）  |
-| [BMXErrorCode] | **[retrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, long refMsgId, long size, BMXMessageList result)<br>拉取历史消息  |
-| [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>搜索消息  |
-| [BMXErrorCode] | **[searchMessagesByKeyWords](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(String keywords, long refTime, long size, BMXMessageListList result) |
-| [BMXErrorCode] | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessages)**(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>搜索消息  |
-| [BMXErrorCode] | **[searchMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessages)**(String keywords, long refTime, long size, BMXMessageListList result) |
-| [BMXErrorCode] | **[getGroupAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息已读用户id列表  |
-| [BMXErrorCode] | **[getGroupAckMessageUnreadUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageunreaduseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息未读用户id列表  |
-| [BMXErrorCode] | **[getGroupPlayAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupplayackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息已播放用户id列表  |
-| [BMXErrorCode] | **[getGroupUnPlayAckMessageUserIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupunplayackmessageuseridlist)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息未播放用户id列表  |
-| void | **[addChatListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-addchatlistener)**([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) listener)<br>添加聊天监听者  |
-| void | **[removeChatListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removechatlistener)**([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) listener)<br>移除聊天监听者  |
+|                                                                                   | Name                                                                                                                                                                                                                                                                                                                                      |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void                                                                 | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-delete)()                                                                                                                                                                                                                                           |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-sendmessage"><strong>sendMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>发送消息，消息状态变化会通过listener通知</p>                                                                                                     |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-resendmessage"><strong>resendMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>重新发送消息，消息状态变化会通过listener通知</p>                                                                                               |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-recallmessage"><strong>recallMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>撤回消息，消息状态变化会通过listener通知</p>                                                                                                 |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage"><strong>forwardMessage</strong></a>(BMXMessageList list, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md">BMXConversation</a> to, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> newMsg)<br>合并转发消息</p>  |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-forwardmessage"><strong>forwardMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>简单转发消息，用户应当通过BMXMessage::createForwardMessage()先创建转发消息</p>                                                                 |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessage"><strong>ackMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>发送已读回执</p>                                                                                                                         |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackmessagedelivered"><strong>ackMessageDelivered</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>发送送达回执</p>                                                                                                       |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-ackplaymessage"><strong>ackPlayMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>发送已播放回执</p>                                                                                                                |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readcancel"><strong>readCancel</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>标记此消息为未读，该消息同步到当前用户的所有设备</p>                                                                                                       |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-readallmessage"><strong>readAllMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>标记此消息及之前全部消息为已读，该消息同步到当前用户的所有设备</p>                                                                                        |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removemessage"><strong>removeMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, boolean synchronize)<br>删除此消息，该消息同步到当前用户的其它设备</p>                                                                               |
+| void                                                                              | [**removeMessage**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-removemessage)([BMXMessage](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message.md) msg)                                                                                                                                                  |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadthumbnail"><strong>downloadThumbnail</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, BMXChatService.ThumbnailStrategy strategy)<br>下载缩略图，下载状态变化和进度通过listener通知 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。</p> |
+| void                                                                              | [**downloadThumbnail**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-downloadthumbnail)([BMXMessage](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message.md) msg)                                                                                                                                          |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachment"><strong>downloadAttachment</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>下载附件，下载状态变化和进度通过listener通知</p>                                                                                     |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl"><strong>downloadAttachmentByUrl</strong></a>(long msgId, String url, String path)<br>下载附件，下载状态变化和进度通过listener通知</p>                                                                                                                    |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceluploadattachment"><strong>cancelUploadAttachment</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>取消上传附件</p>                                                                                                 |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-canceldownloadattachment"><strong>cancelDownloadAttachment</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>取消上传附件</p>                                                                                             |
+| int                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-transferingnum"><strong>transferingNum</strong></a>()<br>上传或下载中的文件数</p>                                                                                                                                                                                         |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-insertmessages"><strong>insertMessages</strong></a>(BMXMessageList list)<br>插入消息</p>                                                                                                                                                                            |
+| [BMXMessage](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message.md)           | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage"><strong>getMessage</strong></a>(long msgId)<br>读取一条消息</p>                                                                                                                                                                                           |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation"><strong>deleteConversation</strong></a>(long conversationId, boolean synchronize)<br>删除会话</p>                                                                                                                                               |
+| void                                                                              | [**deleteConversation**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-deleteconversation)(long conversationId)                                                                                                                                                                                                |
+| [BMXConversation](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_conversation.md) | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation"><strong>openConversation</strong></a>(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>打开一个会话</p>                                                                                                                 |
+| [BMXConversation](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_conversation.md) | [**openConversation**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-openconversation)(long conversationId, BMXConversation.Type type)                                                                                                                                                                         |
+| String                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdir"><strong>attachmentDir</strong></a>()<br>获取附件保存路径</p>                                                                                                                                                                                             |
+| String                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation"><strong>attachmentDirForConversation</strong></a>(long conversationId)<br>获取会话的附件保存路径</p>                                                                                                                                         |
+| BMXConversationList                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversations"><strong>getAllConversations</strong></a>()<br>获取所有会话</p>                                                                                                                                                                                   |
+| int                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount"><strong>getAllConversationsUnreadCount</strong></a>()<br>获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内）</p>                                                                                                                                 |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-retrievehistorymessages"><strong>retrieveHistoryMessages</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md">BMXConversation</a> conversation, long refMsgId, long size, BMXMessageList result)<br>拉取历史消息</p>                           |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords"><strong>searchMessagesByKeyWords</strong></a>(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>搜索消息</p>                                                                        |
+| \[BMXErrorCode]                                                                   | [**searchMessagesByKeyWords**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-searchmessagesbykeywords)(String keywords, long refTime, long size, BMXMessageListList result)                                                                                                                                    |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-searchmessages"><strong>searchMessages</strong></a>(String keywords, long refTime, long size, BMXMessageListList result, BMXConversation.Direction arg4)<br>搜索消息</p>                                                                                            |
+| \[BMXErrorCode]                                                                   | [**searchMessages**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-searchmessages)(String keywords, long refTime, long size, BMXMessageListList result)                                                                                                                                                        |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageuseridlist"><strong>getGroupAckMessageUserIdList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息已读用户id列表</p>                                        |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupackmessageunreaduseridlist"><strong>getGroupAckMessageUnreadUserIdList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息未读用户id列表</p>                            |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupplayackmessageuseridlist"><strong>getGroupPlayAckMessageUserIdList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息已播放用户id列表</p>                               |
+| \[BMXErrorCode]                                                                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getgroupunplayackmessageuseridlist"><strong>getGroupUnPlayAckMessageUserIdList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, ListOfLongLong groupMemberIdList)<br>获取发送的群组消息未播放用户id列表</p>                           |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-addchatlistener"><strong>addChatListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md">BMXChatServiceListener</a> listener)<br>添加聊天监听者</p>                                                                               |
+| void                                                                              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-removechatlistener"><strong>removeChatListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md">BMXChatServiceListener</a> listener)<br>移除聊天监听者</p>                                                                         |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-bmxchatservice)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-finalize)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getcptr)**([BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md) obj) |
+|      | Name                                                                                                                                                                                   |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [**BMXChatService**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-bmxchatservice)(long cPtr, boolean cMemoryOwn)                                           |
+| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-finalize)()                                                                                    |
+| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#function-getcptr)([BMXChatService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md) obj) |
 
 ## Protected Attributes
 
-|                | Name           |
-| -------------- | -------------- |
-| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#variable-swigcmemown)**  |
+|                   | Name                                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------- |
+| transient boolean | [**swigCMemOwn**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_chat\_service.md#variable-swigcmemown) |
 
 ## Public Functions Documentation
 
@@ -78,11 +75,12 @@ summary: 聊天Service
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="delete" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function sendMessage
 
 ```java
@@ -91,17 +89,18 @@ inline void sendMessage(
 )
 ```
 
-发送消息，消息状态变化会通过listener通知 
+发送消息，消息状态变化会通过listener通知
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 发送的消息 
-
+* **msg** 发送的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="sendMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function resendMessage
 
 ```java
@@ -110,17 +109,18 @@ inline void resendMessage(
 )
 ```
 
-重新发送消息，消息状态变化会通过listener通知 
+重新发送消息，消息状态变化会通过listener通知
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 重新发送的消息 
-
+* **msg** 重新发送的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="resendMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function recallMessage
 
 ```java
@@ -129,17 +129,18 @@ inline void recallMessage(
 )
 ```
 
-撤回消息，消息状态变化会通过listener通知 
+撤回消息，消息状态变化会通过listener通知
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 撤回的消息 
-
+* **msg** 撤回的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="recallMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function forwardMessage
 
 ```java
@@ -150,21 +151,22 @@ inline BMXErrorCode forwardMessage(
 )
 ```
 
-合并转发消息 
+合并转发消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** 转发的消息列表 
-  * **to** 消息被转发到的会话 
-  * **newMsg** 转发的消息列表合并后生成的新的单条转发消息 
+* **list** 转发的消息列表
+* **to** 消息被转发到的会话
+* **newMsg** 转发的消息列表合并后生成的新的单条转发消息
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="forwardMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function forwardMessage
 
 ```java
@@ -173,17 +175,18 @@ inline void forwardMessage(
 )
 ```
 
-简单转发消息，用户应当通过BMXMessage::createForwardMessage()先创建转发消息 
+简单转发消息，用户应当通过BMXMessage::createForwardMessage()先创建转发消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 转发的消息 
-
+* **msg** 转发的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="forwardMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function ackMessage
 
 ```java
@@ -192,17 +195,18 @@ inline void ackMessage(
 )
 ```
 
-发送已读回执 
+发送已读回执
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要发送已读回执的消息 
-
+* **msg** 需要发送已读回执的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="ackMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function ackMessageDelivered
 
 ```java
@@ -211,17 +215,18 @@ inline void ackMessageDelivered(
 )
 ```
 
-发送送达回执 
+发送送达回执
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要发送送达回执的消息 
-
+* **msg** 需要发送送达回执的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="ackMessageDelivered" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function ackPlayMessage
 
 ```java
@@ -230,17 +235,18 @@ inline void ackPlayMessage(
 )
 ```
 
-发送已播放回执 
+发送已播放回执
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要发送已读回播放的消息 
-
+* **msg** 需要发送已读回播放的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="ackPlayMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function readCancel
 
 ```java
@@ -249,17 +255,18 @@ inline void readCancel(
 )
 ```
 
-标记此消息为未读，该消息同步到当前用户的所有设备 
+标记此消息为未读，该消息同步到当前用户的所有设备
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要发送消息已读取消的消息 
-
+* **msg** 需要发送消息已读取消的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="readCancel" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function readAllMessage
 
 ```java
@@ -268,17 +275,18 @@ inline void readAllMessage(
 )
 ```
 
-标记此消息及之前全部消息为已读，该消息同步到当前用户的所有设备 
+标记此消息及之前全部消息为已读，该消息同步到当前用户的所有设备
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要标记为此消息以前全部消息为已读的消息 
-
+* **msg** 需要标记为此消息以前全部消息为已读的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="readAllMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function removeMessage
 
 ```java
@@ -288,18 +296,19 @@ inline void removeMessage(
 )
 ```
 
-删除此消息，该消息同步到当前用户的其它设备 
+删除此消息，该消息同步到当前用户的其它设备
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要删除的消息 
-  * **synchronize** 是否同步到其它设备，不同步的情况下只会删除本地存储的该条消息 
-
+* **msg** 需要删除的消息
+* **synchronize** 是否同步到其它设备，不同步的情况下只会删除本地存储的该条消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="removeMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function removeMessage
 
 ```java
@@ -308,11 +317,12 @@ inline void removeMessage(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="removeMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function downloadThumbnail
 
 ```java
@@ -322,18 +332,19 @@ inline void downloadThumbnail(
 )
 ```
 
-下载缩略图，下载状态变化和进度通过listener通知 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。 
+下载缩略图，下载状态变化和进度通过listener通知 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要下载缩略图的消息 
-  * **strategy** 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。 
-
+* **msg** 需要下载缩略图的消息
+* **strategy** 缩略图生成策略，1 - 第三方服务器生成， 2 - 本地服务器生成，默认值是 1。
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="downloadThumbnail" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function downloadThumbnail
 
 ```java
@@ -342,11 +353,12 @@ inline void downloadThumbnail(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="downloadThumbnail" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function downloadAttachment
 
 ```java
@@ -355,17 +367,18 @@ inline void downloadAttachment(
 )
 ```
 
-下载附件，下载状态变化和进度通过listener通知 
+下载附件，下载状态变化和进度通过listener通知
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要下载附件的消息 
-
+* **msg** 需要下载附件的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="downloadAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function downloadAttachmentByUrl
 
 ```java
@@ -376,19 +389,20 @@ inline void downloadAttachmentByUrl(
 )
 ```
 
-下载附件，下载状态变化和进度通过listener通知 
+下载附件，下载状态变化和进度通过listener通知
 
-**Parameters**: 
+**Parameters**:
 
-  * **msgId** 需要下载附件的消息 
-  * **url** 文件远程地址 
-  * **path** 文件本地路径 
-
+* **msgId** 需要下载附件的消息
+* **url** 文件远程地址
+* **path** 文件本地路径
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="downloadAttachmentByUrl" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function cancelUploadAttachment
 
 ```java
@@ -397,17 +411,18 @@ inline void cancelUploadAttachment(
 )
 ```
 
-取消上传附件 
+取消上传附件
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要取消上传附件的消息 
-
+* **msg** 需要取消上传附件的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="cancelUploadAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function cancelDownloadAttachment
 
 ```java
@@ -416,31 +431,34 @@ inline void cancelDownloadAttachment(
 )
 ```
 
-取消上传附件 
+取消上传附件
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要取消上传附件的消息 
-
+* **msg** 需要取消上传附件的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="cancelDownloadAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function transferingNum
 
 ```java
 inline int transferingNum()
 ```
 
-上传或下载中的文件数 
+上传或下载中的文件数
 
-**Return**: 文件数 
+**Return**: 文件数
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="transferingNum" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function insertMessages
 
 ```java
@@ -449,19 +467,20 @@ inline BMXErrorCode insertMessages(
 )
 ```
 
-插入消息 
+插入消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** 插入消息列表 
+* **list** 插入消息列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="insertMessages" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getMessage
 
 ```java
@@ -470,19 +489,20 @@ inline BMXMessage getMessage(
 )
 ```
 
-读取一条消息 
+读取一条消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **msgId** 需要获取消息的消息id 
+* **msgId** 需要获取消息的消息id
 
-
-**Return**: [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)
+**Return**: [BMXMessage](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function deleteConversation
 
 ```java
@@ -492,18 +512,19 @@ inline void deleteConversation(
 )
 ```
 
-删除会话 
+删除会话
 
-**Parameters**: 
+**Parameters**:
 
-  * **conversationId** 需要删除会话的会话id 
-  * **synchronize** 是否同步删除其它设备该会话，默认为false，仅删除本设备会话 
-
+* **conversationId** 需要删除会话的会话id
+* **synchronize** 是否同步删除其它设备该会话，默认为false，仅删除本设备会话
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="deleteConversation" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function deleteConversation
 
 ```java
@@ -512,11 +533,12 @@ inline void deleteConversation(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="deleteConversation" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function openConversation
 
 ```java
@@ -527,21 +549,22 @@ inline BMXConversation openConversation(
 )
 ```
 
-打开一个会话 
+打开一个会话
 
-**Parameters**: 
+**Parameters**:
 
-  * **conversationId** 需要打开的会话的会话id 
-  * **type** 会话的类型，单聊还是群聊。 
-  * **createIfNotExist** 会话不存在的情况下是否要创建本地会话，默认为创建 
+* **conversationId** 需要打开的会话的会话id
+* **type** 会话的类型，单聊还是群聊。
+* **createIfNotExist** 会话不存在的情况下是否要创建本地会话，默认为创建
 
-
-**Return**: [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md)
+**Return**: [BMXConversation](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_conversation.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="openConversation" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function openConversation
 
 ```java
@@ -551,25 +574,28 @@ inline BMXConversation openConversation(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="openConversation" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function attachmentDir
 
 ```java
 inline String attachmentDir()
 ```
 
-获取附件保存路径 
+获取附件保存路径
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="attachmentDir" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function attachmentDirForConversation
 
 ```java
@@ -578,47 +604,52 @@ inline String attachmentDirForConversation(
 )
 ```
 
-获取会话的附件保存路径 
+获取会话的附件保存路径
 
-**Parameters**: 
+**Parameters**:
 
-  * **conversationId** 需要获取会话附件路径的会话id 
+* **conversationId** 需要获取会话附件路径的会话id
 
-
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="attachmentDirForConversation" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getAllConversations
 
 ```java
 inline BMXConversationList getAllConversations()
 ```
 
-获取所有会话 
+获取所有会话
 
-**Return**: BMXConversationList 
+**Return**: BMXConversationList
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getAllConversations" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getAllConversationsUnreadCount
 
 ```java
 inline int getAllConversationsUnreadCount()
 ```
 
-获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内） 
+获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内）
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getAllConversationsUnreadCount" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function retrieveHistoryMessages
 
 ```java
@@ -630,22 +661,23 @@ inline BMXErrorCode retrieveHistoryMessages(
 )
 ```
 
-拉取历史消息 
+拉取历史消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **conversation** 需要拉取历史消息的会话 
-  * **refMsgId** 拉取会话消息的起始消息Id 
-  * **size** 拉取的最大消息条数 
-  * **result** 拉取操作获取的消息列表，外部初始化传入空列表。 
+* **conversation** 需要拉取历史消息的会话
+* **refMsgId** 拉取会话消息的起始消息Id
+* **size** 拉取的最大消息条数
+* **result** 拉取操作获取的消息列表，外部初始化传入空列表。
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="retrieveHistoryMessages" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function searchMessagesByKeyWords
 
 ```java
@@ -658,23 +690,24 @@ inline BMXErrorCode searchMessagesByKeyWords(
 )
 ```
 
-搜索消息 
+搜索消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **keywords** 搜索的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 搜索的最大消息条数 
-  * **result** 搜索到的消息结果列表，外部初始化传入空列表。 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+* **keywords** 搜索的关键字
+* **refTime** 搜索消息的起始时间
+* **size** 搜索的最大消息条数
+* **result** 搜索到的消息结果列表，外部初始化传入空列表。
+* **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function searchMessagesByKeyWords
 
 ```java
@@ -686,11 +719,12 @@ inline BMXErrorCode searchMessagesByKeyWords(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function searchMessages
 
 ```java
@@ -703,23 +737,24 @@ inline BMXErrorCode searchMessages(
 )
 ```
 
-搜索消息 
+搜索消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **keywords** 搜索的关键字 
-  * **refTime** 搜索消息的起始时间 
-  * **size** 搜索的最大消息条数 
-  * **result** 搜索到的消息结果列表，外部初始化传入空列表。 
-  * **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
+* **keywords** 搜索的关键字
+* **refTime** 搜索消息的起始时间
+* **size** 搜索的最大消息条数
+* **result** 搜索到的消息结果列表，外部初始化传入空列表。
+* **arg4** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="searchMessages" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function searchMessages
 
 ```java
@@ -731,11 +766,12 @@ inline BMXErrorCode searchMessages(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="searchMessages" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getGroupAckMessageUserIdList
 
 ```java
@@ -745,20 +781,21 @@ inline BMXErrorCode getGroupAckMessageUserIdList(
 )
 ```
 
-获取发送的群组消息已读用户id列表 
+获取发送的群组消息已读用户id列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要获取已读用户id列表的消息 
-  * **groupMemberIdList** 对该条消息已读的用户id列表，初始传入为空列表 
+* **msg** 需要获取已读用户id列表的消息
+* **groupMemberIdList** 对该条消息已读的用户id列表，初始传入为空列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getGroupAckMessageUserIdList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getGroupAckMessageUnreadUserIdList
 
 ```java
@@ -768,20 +805,21 @@ inline BMXErrorCode getGroupAckMessageUnreadUserIdList(
 )
 ```
 
-获取发送的群组消息未读用户id列表 
+获取发送的群组消息未读用户id列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要获取未读用户id列表的消息 
-  * **groupMemberIdList** 对该条消息未读的用户id列表，初始传入为空列表 
+* **msg** 需要获取未读用户id列表的消息
+* **groupMemberIdList** 对该条消息未读的用户id列表，初始传入为空列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getGroupAckMessageUnreadUserIdList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getGroupPlayAckMessageUserIdList
 
 ```java
@@ -791,20 +829,21 @@ inline BMXErrorCode getGroupPlayAckMessageUserIdList(
 )
 ```
 
-获取发送的群组消息已播放用户id列表 
+获取发送的群组消息已播放用户id列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要获取已播放用户id列表的消息 
-  * **groupMemberIdList** 对该条消息已播放的用户id列表，初始传入为空列表 
+* **msg** 需要获取已播放用户id列表的消息
+* **groupMemberIdList** 对该条消息已播放的用户id列表，初始传入为空列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getGroupPlayAckMessageUserIdList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getGroupUnPlayAckMessageUserIdList
 
 ```java
@@ -814,20 +853,21 @@ inline BMXErrorCode getGroupUnPlayAckMessageUserIdList(
 )
 ```
 
-获取发送的群组消息未播放用户id列表 
+获取发送的群组消息未播放用户id列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** 需要获取未播放用户id列表的消息 
-  * **groupMemberIdList** 对该条消息未播放的用户id列表，初始传入为空列表 
+* **msg** 需要获取未播放用户id列表的消息
+* **groupMemberIdList** 对该条消息未播放的用户id列表，初始传入为空列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getGroupUnPlayAckMessageUserIdList" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function addChatListener
 
 ```java
@@ -836,17 +876,18 @@ inline void addChatListener(
 )
 ```
 
-添加聊天监听者 
+添加聊天监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 聊天监听者 
-
+* **listener** 聊天监听者
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="addChatListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function removeChatListener
 
 ```java
@@ -855,19 +896,20 @@ inline void removeChatListener(
 )
 ```
 
-移除聊天监听者 
+移除聊天监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 聊天监听者 
-
+* **listener** 聊天监听者
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="removeChatListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function BMXChatService
 
 ```java
@@ -877,22 +919,24 @@ inline BMXChatService(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="BMXChatService" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="finalize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
+
 ### function getCPtr
 
 ```java
@@ -900,7 +944,6 @@ static inline long getCPtr(
     BMXChatService obj
 )
 ```
-
 
 ## Protected Attributes Documentation
 
@@ -910,11 +953,12 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getCPtr" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatService'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

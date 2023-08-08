@@ -1,53 +1,50 @@
 ---
 title: im::floo::floolib::BMXPushManager
-summary: Push manager 
-
+summary: Push manager
 ---
 
 # im::floo::floolib::BMXPushManager
 
-
-
-Push manager 
+Push manager
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXPushManager](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-bmxpushmanager)**([BMXPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md) service) |
-| void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final String alias, final String bmxToken, final BMXCallBack callBack)<br>Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.  |
-| void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final String alias, final BMXCallBack callBack) |
-| void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final BMXCallBack callBack) |
-| void | **[stop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-stop)**(final BMXCallBack callBack)<br>Shut push feature interface.  |
-| void | **[resume](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-resume)**(final BMXCallBack callBack)<br>Resume push function.  |
-| void | **[unbindAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-unbindalias)**(final String alias, final BMXCallBack callBack)<br>Unbind user alias.  |
-| String | **[getToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettoken)**()<br>Get user token to use after login.  |
-| String | **[getCert](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getcert)**()<br>Get push certificate returned by server after login.  |
-| BMXPushService.PushSdkStatus | **[status](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-status)**()<br>Push the current state of sdk.  |
-| void | **[bindDeviceToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-binddevicetoken)**(final String token, final BMXCallBack callBack)<br>Push binding device token.  |
-| void | **[bindVoipToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-bindvoiptoken)**(final String token, final BMXCallBack callBack)<br>Bind voiptoken of push device  |
-| void | **[getPushProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getpushprofile)**(final boolean forceRefresh, final BMXDataCallBack< [BMXPushUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.md) > callBack)<br>Get push user details, force pull from server-side if forceRefresh == true  |
-| void | **[setTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-settags)**(final TagList tags, final String operationId, final BMXCallBack callBack)<br>Set tags of push user.  |
-| void | **[getTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettags)**(final TagList tags, final String operationId, final BMXCallBack callBack)<br>Get tags of the push user.  |
-| void | **[deleteTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-deletetags)**(final TagList tags, final String operationId, final BMXCallBack callBack)<br>Delete tags of the push user.  |
-| void | **[clearTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-cleartags)**(final String operationId, final BMXCallBack callBack)<br>Clear tags of the push user.  |
-| void | **[setBadge](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setbadge)**(final int count, final BMXCallBack callBack)<br>Set unread badge for push user.  |
-| void | **[setPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushmode)**(final boolean enable, final BMXCallBack callBack)<br>Set push enabled state. Default enabled.  |
-| void | **[setPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushmode)**(final BMXCallBack callBack) |
-| void | **[setPushTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushtime)**(final int startHour, final int endHour, final BMXCallBack callBack)<br>Set allowed push time.  |
-| void | **[setSilenceTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setsilencetime)**(final int startHour, final int endHour, final BMXCallBack callBack)<br>Set the start and end time of silent push.  |
-| void | **[setRunBackgroundMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setrunbackgroundmode)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to run push in background, default false.  |
-| void | **[setRunBackgroundMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setrunbackgroundmode)**(final BMXCallBack callBack) |
-| void | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)**(final boolean enable, final boolean isAllow, final BMXCallBack callBack)<br>Set whether to run push geo-fencing feature.  |
-| void | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)**(final boolean enable, final BMXCallBack callBack) |
-| void | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)**(final BMXCallBack callBack) |
-| void | **[clearNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearnotification)**(final long notificationId)<br>Clear notifications for the specified id.  |
-| void | **[clearAllNotifications](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearallnotifications)**() |
-| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-sendmessage)**(final String content)<br>Send a push uplink message and notify the listener of a change in message status  |
-| void | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)**(final long refMsgId, final long size, final BMXMessageList result, final BMXPushService.PushDirection arg3, final BMXCallBack callBack)<br>Load push message stored in local database. Start with latest message if not specified  |
-| void | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)**(final long refMsgId, final long size, final BMXMessageList result, final BMXCallBack callBack) |
-| void | **[addPushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-addpushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>Add push listener  |
-| void | **[removePushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-removepushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>Remove push listener  |
+|                              | Name                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                              | [**BMXPushManager**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-bmxpushmanager)([BMXPushService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_service.md) service)                                                                                                                                                                                                                                                      |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start"><strong>start</strong></a>(final String alias, final String bmxToken, final BMXCallBack callBack)<br>Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.</p> |
+| void                         | [**start**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-start)(final String alias, final BMXCallBack callBack)                                                                                                                                                                                                                                                                                                                   |
+| void                         | [**start**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-start)(final BMXCallBack callBack)                                                                                                                                                                                                                                                                                                                                       |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-stop"><strong>stop</strong></a>(final BMXCallBack callBack)<br>Shut push feature interface.</p>                                                                                                                                                                                                                                                                                     |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-resume"><strong>resume</strong></a>(final BMXCallBack callBack)<br>Resume push function.</p>                                                                                                                                                                                                                                                                                        |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-unbindalias"><strong>unbindAlias</strong></a>(final String alias, final BMXCallBack callBack)<br>Unbind user alias.</p>                                                                                                                                                                                                                                                             |
+| String                       | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettoken"><strong>getToken</strong></a>()<br>Get user token to use after login.</p>                                                                                                                                                                                                                                                                                                 |
+| String                       | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getcert"><strong>getCert</strong></a>()<br>Get push certificate returned by server after login.</p>                                                                                                                                                                                                                                                                                 |
+| BMXPushService.PushSdkStatus | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-status"><strong>status</strong></a>()<br>Push the current state of sdk.</p>                                                                                                                                                                                                                                                                                                         |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-binddevicetoken"><strong>bindDeviceToken</strong></a>(final String token, final BMXCallBack callBack)<br>Push binding device token.</p>                                                                                                                                                                                                                                             |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-bindvoiptoken"><strong>bindVoipToken</strong></a>(final String token, final BMXCallBack callBack)<br>Bind voiptoken of push device</p>                                                                                                                                                                                                                                              |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getpushprofile"><strong>getPushProfile</strong></a>(final boolean forceRefresh, final BMXDataCallBack&#x3C; <a href="../../../zh-hans/reference/floo-android/classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.md">BMXPushUserProfile</a> > callBack)<br>Get push user details, force pull from server-side if forceRefresh == true</p>                                        |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-settags"><strong>setTags</strong></a>(final TagList tags, final String operationId, final BMXCallBack callBack)<br>Set tags of push user.</p>                                                                                                                                                                                                                                       |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettags"><strong>getTags</strong></a>(final TagList tags, final String operationId, final BMXCallBack callBack)<br>Get tags of the push user.</p>                                                                                                                                                                                                                                   |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-deletetags"><strong>deleteTags</strong></a>(final TagList tags, final String operationId, final BMXCallBack callBack)<br>Delete tags of the push user.</p>                                                                                                                                                                                                                          |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-cleartags"><strong>clearTags</strong></a>(final String operationId, final BMXCallBack callBack)<br>Clear tags of the push user.</p>                                                                                                                                                                                                                                                 |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setbadge"><strong>setBadge</strong></a>(final int count, final BMXCallBack callBack)<br>Set unread badge for push user.</p>                                                                                                                                                                                                                                                         |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushmode"><strong>setPushMode</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set push enabled state. Default enabled.</p>                                                                                                                                                                                                                                     |
+| void                         | [**setPushMode**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-setpushmode)(final BMXCallBack callBack)                                                                                                                                                                                                                                                                                                                           |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushtime"><strong>setPushTime</strong></a>(final int startHour, final int endHour, final BMXCallBack callBack)<br>Set allowed push time.</p>                                                                                                                                                                                                                                     |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setsilencetime"><strong>setSilenceTime</strong></a>(final int startHour, final int endHour, final BMXCallBack callBack)<br>Set the start and end time of silent push.</p>                                                                                                                                                                                                           |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setrunbackgroundmode"><strong>setRunBackgroundMode</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set whether to run push in background, default false.</p>                                                                                                                                                                                                      |
+| void                         | [**setRunBackgroundMode**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-setrunbackgroundmode)(final BMXCallBack callBack)                                                                                                                                                                                                                                                                                                         |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode"><strong>setGeoFenceMode</strong></a>(final boolean enable, final boolean isAllow, final BMXCallBack callBack)<br>Set whether to run push geo-fencing feature.</p>                                                                                                                                                                                                  |
+| void                         | [**setGeoFenceMode**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-setgeofencemode)(final boolean enable, final BMXCallBack callBack)                                                                                                                                                                                                                                                                                             |
+| void                         | [**setGeoFenceMode**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-setgeofencemode)(final BMXCallBack callBack)                                                                                                                                                                                                                                                                                                                   |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearnotification"><strong>clearNotification</strong></a>(final long notificationId)<br>Clear notifications for the specified id.</p>                                                                                                                                                                                                                                               |
+| void                         | [**clearAllNotifications**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-clearallnotifications)()                                                                                                                                                                                                                                                                                                                                 |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-sendmessage"><strong>sendMessage</strong></a>(final String content)<br>Send a push uplink message and notify the listener of a change in message status</p>                                                                                                                                                                                                                         |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages"><strong>loadLocalPushMessages</strong></a>(final long refMsgId, final long size, final BMXMessageList result, final BMXPushService.PushDirection arg3, final BMXCallBack callBack)<br>Load push message stored in local database. Start with latest message if not specified</p>                                                                             |
+| void                         | [**loadLocalPushMessages**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_push\_manager.md#function-loadlocalpushmessages)(final long refMsgId, final long size, final BMXMessageList result, final BMXCallBack callBack)                                                                                                                                                                                                                                    |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-addpushlistener"><strong>addPushListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md">BMXPushServiceListener</a> listener)<br>Add push listener</p>                                                                                                                                                                                         |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-removepushlistener"><strong>removePushListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md">BMXPushServiceListener</a> listener)<br>Remove push listener</p>                                                                                                                                                                                |
 
 ## Public Functions Documentation
 
@@ -59,11 +56,12 @@ inline BMXPushManager(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="BMXPushManager" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function start
 
 ```java
@@ -74,19 +72,20 @@ inline void start(
 )
 ```
 
-Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id. 
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
-**Parameters**: 
+**Parameters**:
 
-  * **alias** Current user alias used for push initialization 
-  * **bmxToken** User token to use that passed in by App when push initialization, and no passing in is OK without users. 
-  * **callBack** [BMXErrorCode]
-
+* **alias** Current user alias used for push initialization
+* **bmxToken** User token to use that passed in by App when push initialization, and no passing in is OK without users.
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function start
 
 ```java
@@ -96,11 +95,12 @@ inline void start(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function start
 
 ```java
@@ -109,11 +109,12 @@ inline void start(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function stop
 
 ```java
@@ -122,17 +123,18 @@ inline void stop(
 )
 ```
 
-Shut push feature interface. 
+Shut push feature interface.
 
-**Parameters**: 
+**Parameters**:
 
-  * **callBack** [BMXErrorCode]
-
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="stop" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function resume
 
 ```java
@@ -141,17 +143,18 @@ inline void resume(
 )
 ```
 
-Resume push function. 
+Resume push function.
 
-**Parameters**: 
+**Parameters**:
 
-  * **callBack** [BMXErrorCode]
-
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="resume" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function unbindAlias
 
 ```java
@@ -161,56 +164,63 @@ inline void unbindAlias(
 )
 ```
 
-Unbind user alias. 
+Unbind user alias.
 
-**Parameters**: 
+**Parameters**:
 
-  * **alias** The user alias that needs to be unbound. 
-  * **callBack** [BMXErrorCode]
-
+* **alias** The user alias that needs to be unbound.
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="unbindAlias" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function getToken
 
 ```java
 inline String getToken()
 ```
 
-Get user token to use after login. 
+Get user token to use after login.
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getToken" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function getCert
 
 ```java
 inline String getCert()
 ```
 
-Get push certificate returned by server after login. 
+Get push certificate returned by server after login.
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getCert" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function status
 
 ```java
 inline BMXPushService.PushSdkStatus status()
 ```
 
-Push the current state of sdk. 
+Push the current state of sdk.
 
-**Return**: PushSdkStatus 
+**Return**: PushSdkStatus
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="status" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function bindDeviceToken
 
 ```java
@@ -220,18 +230,19 @@ inline void bindDeviceToken(
 )
 ```
 
-Push binding device token. 
+Push binding device token.
 
-**Parameters**: 
+**Parameters**:
 
-  * **token** Device push token 
-  * **callBack** [BMXErrorCode]
-
+* **token** Device push token
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="bindDeviceToken" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function bindVoipToken
 
 ```java
@@ -241,18 +252,19 @@ inline void bindVoipToken(
 )
 ```
 
-Bind voiptoken of push device 
+Bind voiptoken of push device
 
-**Parameters**: 
+**Parameters**:
 
-  * **token** Device voip push token 
-  * **callBack** [BMXErrorCode]
-
+* **token** Device voip push token
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="bindVoipToken" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function getPushProfile
 
 ```java
@@ -262,18 +274,19 @@ inline void getPushProfile(
 )
 ```
 
-Get push user details, force pull from server-side if forceRefresh == true 
+Get push user details, force pull from server-side if forceRefresh == true
 
-**Parameters**: 
+**Parameters**:
 
-  * **forceRefresh** Whether to force pull from server, automatically if local fetch failed 
-  * **callBack** Profile of push user, initially passing in to a pointing-to-empty shared_ptr object, from which to retrieve the user profile after function returns 
-
+* **forceRefresh** Whether to force pull from server, automatically if local fetch failed
+* **callBack** Profile of push user, initially passing in to a pointing-to-empty shared\_ptr object, from which to retrieve the user profile after function returns
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getPushProfile" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setTags
 
 ```java
@@ -284,19 +297,20 @@ inline void setTags(
 )
 ```
 
-Set tags of push user. 
+Set tags of push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** User tag 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
-  * **callBack** [BMXErrorCode]
-
+* **tags** User tag
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function getTags
 
 ```java
@@ -307,19 +321,20 @@ inline void getTags(
 )
 ```
 
-Get tags of the push user. 
+Get tags of the push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** User tag 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
-  * **callBack** [BMXErrorCode]
-
+* **tags** User tag
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function deleteTags
 
 ```java
@@ -330,19 +345,20 @@ inline void deleteTags(
 )
 ```
 
-Delete tags of the push user. 
+Delete tags of the push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** User tag to delete 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
-  * **callBack** [BMXErrorCode]
-
+* **tags** User tag to delete
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="deleteTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function clearTags
 
 ```java
@@ -352,18 +368,19 @@ inline void clearTags(
 )
 ```
 
-Clear tags of the push user. 
+Clear tags of the push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
-  * **callBack** [BMXErrorCode]
-
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="clearTags" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setBadge
 
 ```java
@@ -373,18 +390,19 @@ inline void setBadge(
 )
 ```
 
-Set unread badge for push user. 
+Set unread badge for push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **count** Unread badge count of user 
-  * **callBack** [BMXErrorCode]
-
+* **count** Unread badge count of user
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setBadge" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setPushMode
 
 ```java
@@ -394,18 +412,19 @@ inline void setPushMode(
 )
 ```
 
-Set push enabled state. Default enabled. 
+Set push enabled state. Default enabled.
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** Enabled state of push 
-  * **callBack** [BMXErrorCode]
-
+* **enable** Enabled state of push
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setPushMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setPushMode
 
 ```java
@@ -414,11 +433,12 @@ inline void setPushMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setPushMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setPushTime
 
 ```java
@@ -429,19 +449,20 @@ inline void setPushTime(
 )
 ```
 
-Set allowed push time. 
+Set allowed push time.
 
-**Parameters**: 
+**Parameters**:
 
-  * **startHour** Start time for allowed silent push (hour) 
-  * **endHour** End time for allowed silent push (hour) 
-  * **callBack** [BMXErrorCode]
-
+* **startHour** Start time for allowed silent push (hour)
+* **endHour** End time for allowed silent push (hour)
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setPushTime" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setSilenceTime
 
 ```java
@@ -452,19 +473,20 @@ inline void setSilenceTime(
 )
 ```
 
-Set the start and end time of silent push. 
+Set the start and end time of silent push.
 
-**Parameters**: 
+**Parameters**:
 
-  * **startHour** Start time for silent push (hour) 
-  * **endHour** End time for silent push (hour) 
-  * **callBack** [BMXErrorCode]
-
+* **startHour** Start time for silent push (hour)
+* **endHour** End time for silent push (hour)
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setSilenceTime" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setRunBackgroundMode
 
 ```java
@@ -474,18 +496,19 @@ inline void setRunBackgroundMode(
 )
 ```
 
-Set whether to run push in background, default false. 
+Set whether to run push in background, default false.
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** Running state of push background 
-  * **callBack** [BMXErrorCode]
-
+* **enable** Running state of push background
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setRunBackgroundMode
 
 ```java
@@ -494,11 +517,12 @@ inline void setRunBackgroundMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setGeoFenceMode
 
 ```java
@@ -509,19 +533,20 @@ inline void setGeoFenceMode(
 )
 ```
 
-Set whether to run push geo-fencing feature. 
+Set whether to run push geo-fencing feature.
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** Whether the geo-fencing function is running. 
-  * **isAllow** Whether the user actively pops up a user location request. 
-  * **callBack** [BMXErrorCode]
-
+* **enable** Whether the geo-fencing function is running.
+* **isAllow** Whether the user actively pops up a user location request.
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setGeoFenceMode
 
 ```java
@@ -531,11 +556,12 @@ inline void setGeoFenceMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function setGeoFenceMode
 
 ```java
@@ -544,11 +570,12 @@ inline void setGeoFenceMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function clearNotification
 
 ```java
@@ -557,28 +584,30 @@ inline void clearNotification(
 )
 ```
 
-Clear notifications for the specified id. 
+Clear notifications for the specified id.
 
-**Parameters**: 
+**Parameters**:
 
-  * **notificationId** Notification id 
-
+* **notificationId** Notification id
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="clearNotification" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function clearAllNotifications
 
 ```java
 inline void clearAllNotifications()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function sendMessage
 
 ```java
@@ -587,17 +616,18 @@ inline void sendMessage(
 )
 ```
 
-Send a push uplink message and notify the listener of a change in message status 
+Send a push uplink message and notify the listener of a change in message status
 
-**Parameters**: 
+**Parameters**:
 
-  * **content** Sent uplink push content 
-
+* **content** Sent uplink push content
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="sendMessage" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function loadLocalPushMessages
 
 ```java
@@ -610,20 +640,21 @@ inline void loadLocalPushMessages(
 )
 ```
 
-Load push message stored in local database. Start with latest message if not specified 
+Load push message stored in local database. Start with latest message if not specified
 
-**Parameters**: 
+**Parameters**:
 
-  * **refMsgId** Start id for loading pushes 
-  * **size** Maximum number of searched messages 
-  * **result** List of loaded local pushes returned by database 
-  * **arg3** Direction of loading pushes, default to load earlier messages 
-
+* **refMsgId** Start id for loading pushes
+* **size** Maximum number of searched messages
+* **result** List of loaded local pushes returned by database
+* **arg3** Direction of loading pushes, default to load earlier messages
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function loadLocalPushMessages
 
 ```java
@@ -635,11 +666,12 @@ inline void loadLocalPushMessages(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function addPushListener
 
 ```java
@@ -648,17 +680,18 @@ inline void addPushListener(
 )
 ```
 
-Add push listener 
+Add push listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Push listener 
-
+* **listener** Push listener
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="addPushListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
+
 ### function removePushListener
 
 ```java
@@ -667,17 +700,18 @@ inline void removePushListener(
 )
 ```
 
-Remove push listener 
+Remove push listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Push listener 
-
+* **listener** Push listener
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="removePushListener" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

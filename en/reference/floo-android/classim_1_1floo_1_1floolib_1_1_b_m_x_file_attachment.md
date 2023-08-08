@@ -1,53 +1,49 @@
 ---
 title: im::floo::floolib::BMXFileAttachment
-summary: Message file attachment 
-
+summary: Message file attachment
 ---
 
 # im::floo::floolib::BMXFileAttachment
 
+Message file attachment
 
+Inherits from [im.floo.floolib.BMXMessageAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md), BMXBaseObject
 
-Message file attachment 
-
-Inherits from [im.floo.floolib.BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md), BMXBaseObject
-
-Inherited by [im.floo.floolib.BMXImageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md), [im.floo.floolib.BMXVideoAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md), [im.floo.floolib.BMXVoiceAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md)
+Inherited by [im.floo.floolib.BMXImageAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_image\_attachment.md), [im.floo.floolib.BMXVideoAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_video\_attachment.md), [im.floo.floolib.BMXVoiceAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_voice\_attachment.md)
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-delete)**() |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path, String displayName)<br>Constructor to build the message attachment of sent file  |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String path) |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(String ratelUrl, String displayName, long fileLength)<br>Constructor to build the message attachment of received file  |
-| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-type)**()<br>Type of returned file  |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-clone)**()<br>Cloning function  |
-| String | **[path](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path)**()<br>Local path  |
-| String | **[displayName](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname)**()<br>Display name  |
-| String | **[ratelUrl](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-ratelurl)**() |
-| String | **[url](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url)**()<br>Remote URL  |
-| long | **[fileLength](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength)**()<br>File length  |
-| BMXMessageAttachment.DownloadStatus | **[downloadStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus)**()<br>Attachment download state  |
-| [BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md) | **[dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-dynamic-cast)**([BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) attachment) |
+|                                                                                               | Name                                                                                                                                                                                                                                                             |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void                                                                             | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md#function-delete)()                                                                                                                                                               |
+|                                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment"><strong>BMXFileAttachment</strong></a>(String path, String displayName)<br>Constructor to build the message attachment of sent file</p>                          |
+|                                                                                               | [**BMXFileAttachment**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md#function-bmxfileattachment)(String path)                                                                                                                              |
+|                                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment"><strong>BMXFileAttachment</strong></a>(String ratelUrl, String displayName, long fileLength)<br>Constructor to build the message attachment of received file</p> |
+| BMXMessageAttachment.Type                                                                     | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-type"><strong>type</strong></a>()<br>Type of returned file</p>                                                                                                                      |
+| [BMXMessageAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md) | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-clone"><strong>clone</strong></a>()<br>Cloning function</p>                                                                                                                         |
+| String                                                                                        | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-path"><strong>path</strong></a>()<br>Local path</p>                                                                                                                                 |
+| String                                                                                        | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-displayname"><strong>displayName</strong></a>()<br>Display name</p>                                                                                                                 |
+| String                                                                                        | [**ratelUrl**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md#function-ratelurl)()                                                                                                                                                           |
+| String                                                                                        | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-url"><strong>url</strong></a>()<br>Remote URL</p>                                                                                                                                   |
+| long                                                                                          | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-filelength"><strong>fileLength</strong></a>()<br>File length</p>                                                                                                                    |
+| BMXMessageAttachment.DownloadStatus                                                           | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-downloadstatus"><strong>downloadStatus</strong></a>()<br>Attachment download state</p>                                                                                              |
+| [BMXFileAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md)       | [**dynamic\_cast**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md#function-dynamic-cast)([BMXMessageAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md) attachment)                                          |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-finalize)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-getcptr)**([BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md) obj) |
+|      | Name                                                                                                                                                                                            |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [**BMXFileAttachment**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md#function-bmxfileattachment)(long cPtr, boolean cMemoryOwn)                                           |
+| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md#function-finalize)()                                                                                          |
+| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md#function-getcptr)([BMXFileAttachment](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_file\_attachment.md) obj) |
 
 ## Additional inherited members
 
-**Protected Functions inherited from [im.floo.floolib.BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md)**
+**Protected Functions inherited from** [**im.floo.floolib.BMXMessageAttachment**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**(long cPtr, boolean cMemoryOwn) |
-
+|   | Name                                                                                                                                                           |
+| - | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   | [**BMXMessageAttachment**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md#function-bmxmessageattachment)(long cPtr, boolean cMemoryOwn) |
 
 ## Public Functions Documentation
 
@@ -57,17 +53,16 @@ Inherited by [im.floo.floolib.BMXImageAttachment](classim_1_1floo_1_1floolib_1_1
 inline synchronized void delete()
 ```
 
+**Reimplements**: [im::floo::floolib::BMXMessageAttachment::delete](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md#function-delete)
 
-**Reimplements**: [im::floo::floolib::BMXMessageAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-delete)
-
-
-**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-delete), [im::floo::floolib::BMXVideoAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-delete), [im::floo::floolib::BMXVoiceAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-delete)
-
+**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::delete](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_image\_attachment.md#function-delete), [im::floo::floolib::BMXVideoAttachment::delete](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_video\_attachment.md#function-delete), [im::floo::floolib::BMXVoiceAttachment::delete](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_voice\_attachment.md#function-delete)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="delete" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function BMXFileAttachment
 
 ```java
@@ -77,18 +72,19 @@ inline BMXFileAttachment(
 )
 ```
 
-Constructor to build the message attachment of sent file 
+Constructor to build the message attachment of sent file
 
-**Parameters**: 
+**Parameters**:
 
-  * **path** Local path of file 
-  * **displayName** Display name of file 
-
+* **path** Local path of file
+* **displayName** Display name of file
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function BMXFileAttachment
 
 ```java
@@ -97,11 +93,12 @@ inline BMXFileAttachment(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function BMXFileAttachment
 
 ```java
@@ -112,141 +109,153 @@ inline BMXFileAttachment(
 )
 ```
 
-Constructor to build the message attachment of received file 
+Constructor to build the message attachment of received file
 
-**Parameters**: 
+**Parameters**:
 
-  * **ratelUrl** ratel server address 
-  * **displayName** Display name of file 
-  * **fileLength** File size 
-
+* **ratelUrl** ratel server address
+* **displayName** Display name of file
+* **fileLength** File size
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function type
 
 ```java
 inline BMXMessageAttachment.Type type()
 ```
 
-Type of returned file 
+Type of returned file
 
-**Return**: Type 
+**Return**: Type
 
-**Reimplements**: [im::floo::floolib::BMXMessageAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-type)
+**Reimplements**: [im::floo::floolib::BMXMessageAttachment::type](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md#function-type)
 
-
-**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-type), [im::floo::floolib::BMXVideoAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-type), [im::floo::floolib::BMXVoiceAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-type)
-
+**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::type](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_image\_attachment.md#function-type), [im::floo::floolib::BMXVideoAttachment::type](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_video\_attachment.md#function-type), [im::floo::floolib::BMXVoiceAttachment::type](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_voice\_attachment.md#function-type)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="type" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function clone
 
 ```java
 inline BMXMessageAttachment clone()
 ```
 
-Cloning function 
+Cloning function
 
-**Return**: BMXMessageAttachmentPtr 
+**Return**: BMXMessageAttachmentPtr
 
-**Reimplements**: [im::floo::floolib::BMXMessageAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-clone)
+**Reimplements**: [im::floo::floolib::BMXMessageAttachment::clone](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md#function-clone)
 
-
-**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-clone), [im::floo::floolib::BMXVideoAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-clone), [im::floo::floolib::BMXVoiceAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-clone)
-
+**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::clone](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_image\_attachment.md#function-clone), [im::floo::floolib::BMXVideoAttachment::clone](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_video\_attachment.md#function-clone), [im::floo::floolib::BMXVoiceAttachment::clone](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_voice\_attachment.md#function-clone)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="clone" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function path
 
 ```java
 inline String path()
 ```
 
-Local path 
+Local path
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="path" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function displayName
 
 ```java
 inline String displayName()
 ```
 
-Display name 
+Display name
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="displayName" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function ratelUrl
 
 ```java
 inline String ratelUrl()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="ratelUrl" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function url
 
 ```java
 inline String url()
 ```
 
-Remote URL 
+Remote URL
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="url" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function fileLength
 
 ```java
 inline long fileLength()
 ```
 
-File length 
+File length
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="fileLength" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function downloadStatus
 
 ```java
 inline BMXMessageAttachment.DownloadStatus downloadStatus()
 ```
 
-Attachment download state 
+Attachment download state
 
-**Return**: DownloadStatus 
+**Return**: DownloadStatus
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="downloadStatus" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
-### function dynamic_cast
+
+### function dynamic\_cast
 
 ```java
 static inline BMXFileAttachment dynamic_cast(
@@ -254,16 +263,16 @@ static inline BMXFileAttachment dynamic_cast(
 )
 ```
 
-
-**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-dynamic-cast), [im::floo::floolib::BMXVideoAttachment::dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-dynamic-cast), [im::floo::floolib::BMXVoiceAttachment::dynamic_cast](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-dynamic-cast)
-
+**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::dynamic\_cast](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_image\_attachment.md#function-dynamic-cast), [im::floo::floolib::BMXVideoAttachment::dynamic\_cast](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_video\_attachment.md#function-dynamic-cast), [im::floo::floolib::BMXVoiceAttachment::dynamic\_cast](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_voice\_attachment.md#function-dynamic-cast)
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="dynamic_cast" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function BMXFileAttachment
 
 ```java
@@ -273,28 +282,28 @@ inline BMXFileAttachment(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="BMXFileAttachment" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+**Reimplements**: [im::floo::floolib::BMXMessageAttachment::finalize](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_message\_attachment.md#function-finalize)
 
-**Reimplements**: [im::floo::floolib::BMXMessageAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-finalize)
-
-
-**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-finalize), [im::floo::floolib::BMXVideoAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-finalize), [im::floo::floolib::BMXVoiceAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-finalize)
-
+**Reimplemented by**: [im::floo::floolib::BMXImageAttachment::finalize](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_image\_attachment.md#function-finalize), [im::floo::floolib::BMXVideoAttachment::finalize](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_video\_attachment.md#function-finalize), [im::floo::floolib::BMXVoiceAttachment::finalize](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_voice\_attachment.md#function-finalize)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="finalize" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
+
 ### function getCPtr
 
 ```java
@@ -303,11 +312,12 @@ static inline long getCPtr(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXFileAttachment",function="getCPtr" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXFileAttachment'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:18:31 +0800

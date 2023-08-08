@@ -1,25 +1,20 @@
 ---
 title: floo::BMXError
-
 ---
 
 # floo::BMXError
 
-
-
-
-
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXError](classfloo_1_1_b_m_x_error.md#function-bmxerror)**(BMXErrorCode errorCode) |
-| virtual | **[~BMXError](classfloo_1_1_b_m_x_error.md#function-~bmxerror)**() |
-| [BMXError](classfloo_1_1_b_m_x_error.md) & | **[operator=](classfloo_1_1_b_m_x_error.md#function-operator=)**(BMXErrorCode errorCode) |
-| bool | **[operator==](classfloo_1_1_b_m_x_error.md#function-operator==)**(BMXErrorCode errorCode) |
-| bool | **[operator==](classfloo_1_1_b_m_x_error.md#function-operator==)**(const [BMXError](classfloo_1_1_b_m_x_error.md) & error) |
-| BMXErrorCode | **[errorCode](classfloo_1_1_b_m_x_error.md#function-errorcode)**() |
-| std::string | **[description](classfloo_1_1_b_m_x_error.md#function-description)**() |
+|                                                  | Name                                                                                                                                   |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                  | [**BMXError**](classfloo\_1\_1\_b\_m\_x\_error.md#function-bmxerror)(BMXErrorCode errorCode)                                           |
+| virtual                                          | [**\~BMXError**](classfloo\_1\_1\_b\_m\_x\_error.md#function-\~bmxerror)()                                                             |
+| [BMXError](classfloo\_1\_1\_b\_m\_x\_error.md) & | [**operator=**](classfloo\_1\_1\_b\_m\_x\_error.md#function-operator=)(BMXErrorCode errorCode)                                         |
+| bool                                             | [**operator==**](classfloo\_1\_1\_b\_m\_x\_error.md#function-operator==)(BMXErrorCode errorCode)                                       |
+| bool                                             | [**operator==**](classfloo\_1\_1\_b\_m\_x\_error.md#function-operator==)(const [BMXError](classfloo\_1\_1\_b\_m\_x\_error.md) & error) |
+| BMXErrorCode                                     | [**errorCode**](classfloo\_1\_1\_b\_m\_x\_error.md#function-errorcode)()                                                               |
+| std::string                                      | [**description**](classfloo\_1\_1\_b\_m\_x\_error.md#function-description)()                                                           |
 
 ## Public Functions Documentation
 
@@ -31,22 +26,24 @@ BMXError(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXError",function="BMXError" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXError'></div>
 ```
-### function ~BMXError
+
+### function \~BMXError
 
 ```cpp
 virtual ~BMXError()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXError",function="~BMXError" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXError'></div>
 ```
+
 ### function operator=
 
 ```cpp
@@ -55,11 +52,12 @@ BMXError & operator=(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXError",function="operator=" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXError'></div>
 ```
+
 ### function operator==
 
 ```cpp
@@ -68,11 +66,12 @@ bool operator==(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXError",function="operator==" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXError'></div>
 ```
+
 ### function operator==
 
 ```cpp
@@ -81,33 +80,36 @@ bool operator==(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXError",function="operator==" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXError'></div>
 ```
+
 ### function errorCode
 
 ```cpp
 BMXErrorCode errorCode()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXError",function="errorCode" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXError'></div>
 ```
+
 ### function description
 
 ```cpp
 std::string description()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXError",function="description" %}{% endlanying_code_snippet %}
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXError'></div>
 ```
--------------------------------
+
+
 
 Updated on 2022-01-26 at 17:20:40 +0800
