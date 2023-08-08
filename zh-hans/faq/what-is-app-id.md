@@ -4,9 +4,9 @@ AppID是蓝莺IM为每个应用App提供的唯一标识，企业或开发者可�
 
 ### 1. 登录[蓝莺IM控制台](https://console.lanyingim.com/)选择应用
 
-| ![应用列表](../assets/console-apps.png) |
+| ![应用列表](../assets/console-apps.jpg) |
 |-|
 ### 2. 在应用详情页复制AppID
 
-|![应用详情](../assets/console-app-details.png)|
+|![应用详情](../assets/console-app-details.jpg)|
 |-|
