@@ -1,62 +1,65 @@
 ---
 title: im::floo::floolib::BMXGroupServiceListener
-summary: 群组变化监听者
+summary: 群组变化监听者 
+
 ---
 
 # im::floo::floolib::BMXGroupServiceListener
 
-群组变化监听者
+
+
+群组变化监听者 
 
 ## Public Functions
 
-|                   | Name                                                                                                                                                                                                                                                                                 |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| synchronized void | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-delete)()                                                                                                                                                                           |
-| void              | [**swigReleaseOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-swigreleaseownership)()                                                                                                                                               |
-| void              | [**swigTakeOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-swigtakeownership)()                                                                                                                                                     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupcreate"><strong>onGroupCreate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>多设备同步创建群组</p>                                                   |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate"><strong>onGroupListUpdate</strong></a>(BMXGroupList list)<br>群列表更新了</p>                                                                                                       |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupjoined"><strong>onGroupJoined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>加入了某群</p>                                                       |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupleft"><strong>onGroupLeft</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String reason)<br>退出了某群</p>                                            |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitated"><strong>onInvitated</strong></a>(long groupId, long inviter, String message)<br>收到入群邀请</p>                                                                                          |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted"><strong>onInvitationAccepted</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long inviteeId)<br>入群邀请被接受</p>                       |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined"><strong>onInvitationDeclined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long inviteeId, String reason)<br>入群申请被拒绝</p>        |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplied"><strong>onApplied</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long applicantId, String message)<br>收到入群申请</p>                            |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted"><strong>onApplicationAccepted</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long approver)<br>入群申请被接受</p>                      |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined"><strong>onApplicationDeclined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long approver, String reason)<br>入群申请被拒绝</p>       |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersbanned"><strong>onMembersBanned</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, long duration)<br>群成员被禁言</p>           |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned"><strong>onMembersUnbanned</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>群成员被解除禁言</p>                    |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberjoined"><strong>onMemberJoined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long memberId, long inviter)<br>加入新成员</p>                        |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberleft"><strong>onMemberLeft</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long memberId, String reason)<br>群成员退出</p>                           |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsadded"><strong>onAdminsAdded</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>添加了新管理员</p>                             |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsremoved"><strong>onAdminsRemoved</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, String reason)<br>移除了管理员</p>           |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onownerassigned"><strong>onOwnerAssigned</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>成为群主</p>                                                    |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate"><strong>onGroupInfoUpdate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.UpdateInfoType type)<br>群组信息变更</p>                |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname"><strong>onMemberChangeNickName</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long memberId, String nickName)<br>群成员更改群内昵称</p> |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate"><strong>onAnnouncementUpdate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.Announcement announcement)<br>收到群公告</p>     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded"><strong>onSharedFileUploaded</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>收到共享文件</p>        |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted"><strong>onSharedFileDeleted</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>删除了共享文件</p>         |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated"><strong>onSharedFileUpdated</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>共享文件更新文件名</p>       |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistadded"><strong>onBlockListAdded</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>添加黑名单</p>                         |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved"><strong>onBlockListRemoved</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>删除黑名单</p>                     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate"><strong>onGroupListUpdate</strong></a>()<br>客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息</p>                                                                            |
-|                   | [**BMXGroupServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-bmxgroupservicelistener)()                                                                                                                                         |
-| void              | [**registerGroupService**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-registergroupservice)([BMXGroupService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service.md) service)                                                    |
+|                | Name           |
+| -------------- | -------------- |
+| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-delete)**() |
+| void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigreleaseownership)**() |
+| void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigtakeownership)**() |
+| void | **[onGroupCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>多设备同步创建群组  |
+| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**(BMXGroupList list)<br>群列表更新了  |
+| void | **[onGroupJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>加入了某群  |
+| void | **[onGroupLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String reason)<br>退出了某群  |
+| void | **[onInvitated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitated)**(long groupId, long inviter, String message)<br>收到入群邀请  |
+| void | **[onInvitationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId)<br>入群邀请被接受  |
+| void | **[onInvitationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId, String reason)<br>入群申请被拒绝  |
+| void | **[onApplied](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplied)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId, String message)<br>收到入群申请  |
+| void | **[onApplicationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver)<br>入群申请被接受  |
+| void | **[onApplicationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver, String reason)<br>入群申请被拒绝  |
+| void | **[onMembersBanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration)<br>群成员被禁言  |
+| void | **[onMembersUnbanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>群成员被解除禁言  |
+| void | **[onMemberJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, long inviter)<br>加入新成员  |
+| void | **[onMemberLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String reason)<br>群成员退出  |
+| void | **[onAdminsAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>添加了新管理员  |
+| void | **[onAdminsRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, String reason)<br>移除了管理员  |
+| void | **[onOwnerAssigned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onownerassigned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>成为群主  |
+| void | **[onGroupInfoUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.UpdateInfoType type)<br>群组信息变更  |
+| void | **[onMemberChangeNickName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String nickName)<br>群成员更改群内昵称  |
+| void | **[onAnnouncementUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.Announcement announcement)<br>收到群公告  |
+| void | **[onSharedFileUploaded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>收到共享文件  |
+| void | **[onSharedFileDeleted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>删除了共享文件  |
+| void | **[onSharedFileUpdated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>共享文件更新文件名  |
+| void | **[onBlockListAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>添加黑名单  |
+| void | **[onBlockListRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>删除黑名单  |
+| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**()<br>客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息  |
+| | **[BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**() |
+| void | **[registerGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-registergroupservice)**([BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) service) |
 
 ## Protected Functions
 
-|      | Name                                                                                                                                                                                                                  |
-| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      | [**BMXGroupServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-bmxgroupservicelistener)(long cPtr, boolean cMemoryOwn)                                             |
-| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-finalize)()                                                                                                        |
-| void | [**swigDirectorDisconnect**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-swigdirectordisconnect)()                                                                            |
-| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-getcptr)([BMXGroupServiceListener](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md) obj) |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**(long cPtr, boolean cMemoryOwn) |
+| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-finalize)**() |
+| void | **[swigDirectorDisconnect](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigdirectordisconnect)**() |
+| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-getcptr)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) obj) |
 
 ## Protected Attributes
 
-|                   | Name                                                                                                               |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| transient boolean | [**swigCMemOwn**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#variable-swigcmemown) |
+|                | Name           |
+| -------------- | -------------- |
+| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#variable-swigcmemown)**  |
 
 ## Public Functions Documentation
 
@@ -66,36 +69,33 @@ summary: 群组变化监听者
 inline synchronized void delete()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="delete" %}{% endlanying_code_snippet %}
 ```
-
 ### function swigReleaseOwnership
 
 ```java
 inline void swigReleaseOwnership()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
 ```
-
 ### function swigTakeOwnership
 
 ```java
 inline void swigTakeOwnership()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupCreate
 
 ```java
@@ -104,18 +104,17 @@ inline void onGroupCreate(
 )
 ```
 
-多设备同步创建群组
+多设备同步创建群组 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 新创建的群组
+  * **group** 新创建的群组 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupCreate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupListUpdate
 
 ```java
@@ -124,18 +123,17 @@ inline void onGroupListUpdate(
 )
 ```
 
-群列表更新了
+群列表更新了 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 更新的群组列表
+  * **list** 更新的群组列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupJoined
 
 ```java
@@ -144,18 +142,17 @@ inline void onGroupJoined(
 )
 ```
 
-加入了某群
+加入了某群 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 加入的群组
+  * **group** 加入的群组 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupJoined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupLeft
 
 ```java
@@ -165,19 +162,18 @@ inline void onGroupLeft(
 )
 ```
 
-退出了某群
+退出了某群 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 退出的群组
-* **reason** 退出原因
+  * **group** 退出的群组 
+  * **reason** 退出原因 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupLeft" %}{% endlanying_code_snippet %}
 ```
-
 ### function onInvitated
 
 ```java
@@ -188,20 +184,19 @@ inline void onInvitated(
 )
 ```
 
-收到入群邀请
+收到入群邀请 
 
-**Parameters**:
+**Parameters**: 
 
-* **groupId** 邀请进入的群组id
-* **inviter** 邀请者id
-* **message** 邀请原因
+  * **groupId** 邀请进入的群组id 
+  * **inviter** 邀请者id 
+  * **message** 邀请原因 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onInvitated" %}{% endlanying_code_snippet %}
 ```
-
 ### function onInvitationAccepted
 
 ```java
@@ -211,19 +206,18 @@ inline void onInvitationAccepted(
 )
 ```
 
-入群邀请被接受
+入群邀请被接受 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 邀请被同意的群组
-* **inviteeId** 被邀请者id
+  * **group** 邀请被同意的群组 
+  * **inviteeId** 被邀请者id 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onInvitationAccepted" %}{% endlanying_code_snippet %}
 ```
-
 ### function onInvitationDeclined
 
 ```java
@@ -234,20 +228,19 @@ inline void onInvitationDeclined(
 )
 ```
 
-入群申请被拒绝
+入群申请被拒绝 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 邀请被拒绝的群组
-* **inviteeId** 被邀请者id
-* **reason** 拒绝原因
+  * **group** 邀请被拒绝的群组 
+  * **inviteeId** 被邀请者id 
+  * **reason** 拒绝原因 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onInvitationDeclined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onApplied
 
 ```java
@@ -258,20 +251,19 @@ inline void onApplied(
 )
 ```
 
-收到入群申请
+收到入群申请 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 收到入群申请的群组
-* **applicantId** 申请者id
-* **message** 申请原因
+  * **group** 收到入群申请的群组 
+  * **applicantId** 申请者id 
+  * **message** 申请原因 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
 ```
-
 ### function onApplicationAccepted
 
 ```java
@@ -281,19 +273,18 @@ inline void onApplicationAccepted(
 )
 ```
 
-入群申请被接受
+入群申请被接受 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 入群申请被接受的群组
-* **approver** 申请的批准者
+  * **group** 入群申请被接受的群组 
+  * **approver** 申请的批准者 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
 ```
-
 ### function onApplicationDeclined
 
 ```java
@@ -304,20 +295,19 @@ inline void onApplicationDeclined(
 )
 ```
 
-入群申请被拒绝
+入群申请被拒绝 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 入群申请被拒绝的群组
-* **approver** 申请的批准者
-* **reason** 拒绝的原因
+  * **group** 入群申请被拒绝的群组 
+  * **approver** 申请的批准者 
+  * **reason** 拒绝的原因 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMembersBanned
 
 ```java
@@ -328,20 +318,19 @@ inline void onMembersBanned(
 )
 ```
 
-群成员被禁言
+群成员被禁言 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 群成员被禁言的群组
-* **members** 被禁言的群成员id列表
-* **duration** 禁言时长
+  * **group** 群成员被禁言的群组 
+  * **members** 被禁言的群成员id列表 
+  * **duration** 禁言时长 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMembersBanned" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMembersUnbanned
 
 ```java
@@ -351,19 +340,18 @@ inline void onMembersUnbanned(
 )
 ```
 
-群成员被解除禁言
+群成员被解除禁言 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 群成员被解除禁言的群组
-* **members** 被解除禁言的群成员id列表
+  * **group** 群成员被解除禁言的群组 
+  * **members** 被解除禁言的群成员id列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMembersUnbanned" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMemberJoined
 
 ```java
@@ -374,20 +362,19 @@ inline void onMemberJoined(
 )
 ```
 
-加入新成员
+加入新成员 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 有成员加入的群组
-* **memberId** 加入成员的id
-* **inviter** 邀请者id
+  * **group** 有成员加入的群组 
+  * **memberId** 加入成员的id 
+  * **inviter** 邀请者id 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMemberJoined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMemberLeft
 
 ```java
@@ -398,20 +385,19 @@ inline void onMemberLeft(
 )
 ```
 
-群成员退出
+群成员退出 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 有成员退出的群组
-* **memberId** 退出的群成员id
-* **reason** 退出的原因
+  * **group** 有成员退出的群组 
+  * **memberId** 退出的群成员id 
+  * **reason** 退出的原因 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMemberLeft" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAdminsAdded
 
 ```java
@@ -421,19 +407,18 @@ inline void onAdminsAdded(
 )
 ```
 
-添加了新管理员
+添加了新管理员 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 发生添加新管理员的群组
-* **members** 被提升为管理员的成员列表
+  * **group** 发生添加新管理员的群组 
+  * **members** 被提升为管理员的成员列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onAdminsAdded" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAdminsRemoved
 
 ```java
@@ -444,20 +429,19 @@ inline void onAdminsRemoved(
 )
 ```
 
-移除了管理员
+移除了管理员 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 发生移除管理员的群组
-* **members** 被移除了管理员的成员列表
-* **reason** 被移除的原因
+  * **group** 发生移除管理员的群组 
+  * **members** 被移除了管理员的成员列表 
+  * **reason** 被移除的原因 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onAdminsRemoved" %}{% endlanying_code_snippet %}
 ```
-
 ### function onOwnerAssigned
 
 ```java
@@ -466,18 +450,17 @@ inline void onOwnerAssigned(
 )
 ```
 
-成为群主
+成为群主 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 被转让为群主的群组
+  * **group** 被转让为群主的群组 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onOwnerAssigned" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupInfoUpdate
 
 ```java
@@ -487,19 +470,18 @@ inline void onGroupInfoUpdate(
 )
 ```
 
-群组信息变更
+群组信息变更 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 群信息发生变更的群组
-* **type** 发生变更的群信息类型
+  * **group** 群信息发生变更的群组 
+  * **type** 发生变更的群信息类型 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupInfoUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMemberChangeNickName
 
 ```java
@@ -510,20 +492,19 @@ inline void onMemberChangeNickName(
 )
 ```
 
-群成员更改群内昵称
+群成员更改群内昵称 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 发生群成员变更群昵称的群组
-* **memberId** 变更群昵称的群成员id
-* **nickName** 变更后的群昵称
+  * **group** 发生群成员变更群昵称的群组 
+  * **memberId** 变更群昵称的群成员id 
+  * **nickName** 变更后的群昵称 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMemberChangeNickName" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAnnouncementUpdate
 
 ```java
@@ -533,19 +514,18 @@ inline void onAnnouncementUpdate(
 )
 ```
 
-收到群公告
+收到群公告 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 发生群公告更新的群组
-* **announcement** 变更后的最新的群更高
+  * **group** 发生群公告更新的群组 
+  * **announcement** 变更后的最新的群更高 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onAnnouncementUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onSharedFileUploaded
 
 ```java
@@ -555,19 +535,18 @@ inline void onSharedFileUploaded(
 )
 ```
 
-收到共享文件
+收到共享文件 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 发生群共享文件上传的群组
-* **sharedFile** 新上传的群共享文件
+  * **group** 发生群共享文件上传的群组 
+  * **sharedFile** 新上传的群共享文件 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onSharedFileUploaded" %}{% endlanying_code_snippet %}
 ```
-
 ### function onSharedFileDeleted
 
 ```java
@@ -577,19 +556,18 @@ inline void onSharedFileDeleted(
 )
 ```
 
-删除了共享文件
+删除了共享文件 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 发生群共享文件删除的群组
-* **sharedFile** 被删除的群共享文件
+  * **group** 发生群共享文件删除的群组 
+  * **sharedFile** 被删除的群共享文件 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onSharedFileDeleted" %}{% endlanying_code_snippet %}
 ```
-
 ### function onSharedFileUpdated
 
 ```java
@@ -599,19 +577,18 @@ inline void onSharedFileUpdated(
 )
 ```
 
-共享文件更新文件名
+共享文件更新文件名 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 发生群共享文件更新的群组
-* **sharedFile** 更新的群共享文件
+  * **group** 发生群共享文件更新的群组 
+  * **sharedFile** 更新的群共享文件 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onSharedFileUpdated" %}{% endlanying_code_snippet %}
 ```
-
 ### function onBlockListAdded
 
 ```java
@@ -621,19 +598,18 @@ inline void onBlockListAdded(
 )
 ```
 
-添加黑名单
+添加黑名单 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 添加黑名单的群组
-* **members** 添加的黑名单成员列表
+  * **group** 添加黑名单的群组 
+  * **members** 添加的黑名单成员列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
 ```
-
 ### function onBlockListRemoved
 
 ```java
@@ -643,45 +619,41 @@ inline void onBlockListRemoved(
 )
 ```
 
-删除黑名单
+删除黑名单 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** 删除黑名单的群组
-* **members** 删除的黑名单成员列表
+  * **group** 删除黑名单的群组 
+  * **members** 删除的黑名单成员列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupListUpdate
 
 ```java
 inline void onGroupListUpdate()
 ```
 
-客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息
+客户端从服务器拉取到新群组时触发，用于用户群组列表更新，从SDK调用本地获取群组即可取得全部成员信息 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXGroupServiceListener
 
 ```java
 inline BMXGroupServiceListener()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="BMXGroupServiceListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function registerGroupService
 
 ```java
@@ -690,14 +662,13 @@ inline void registerGroupService(
 )
 ```
 
+
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="registerGroupService" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXGroupServiceListener
 
 ```java
@@ -707,36 +678,33 @@ inline BMXGroupServiceListener(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="BMXGroupServiceListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="finalize" %}{% endlanying_code_snippet %}
 ```
-
 ### function swigDirectorDisconnect
 
 ```java
 inline void swigDirectorDisconnect()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
 ```
-
 ### function getCPtr
 
 ```java
@@ -744,6 +712,7 @@ static inline long getCPtr(
     BMXGroupServiceListener obj
 )
 ```
+
 
 ## Protected Attributes Documentation
 
@@ -753,12 +722,11 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

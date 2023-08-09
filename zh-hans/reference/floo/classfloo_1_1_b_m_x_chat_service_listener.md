@@ -1,47 +1,51 @@
 ---
 title: floo::BMXChatServiceListener
-summary: 聊天监听者
+summary: 聊天监听者 
+
 ---
 
 # floo::BMXChatServiceListener
 
-聊天监听者
+
+
+聊天监听者 
+
 
 `#include <bmx_chat_service_listener.h>`
 
 ## Public Functions
 
-|              | Name                                                                                                                                                                                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|              | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener"><strong>BMXChatServiceListener</strong></a>()<br>构造函数</p>                                                                                                                      |
-| virtual      | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-~bmxchatservicelistener"><strong>~BMXChatServiceListener</strong></a>()<br>析构函数</p>                                                                                                                    |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged"><strong>onStatusChanged</strong></a>(BMXMessagePtr msg, BMXErrorCode error)<br>消息发送状态发生变化</p>                                                                                         |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentuploadprogresschanged"><strong>onAttachmentUploadProgressChanged</strong></a>(BMXMessagePtr msg, int percent)<br>附件上传进度发送变化</p>                                                            |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onrecallstatuschanged"><strong>onRecallStatusChanged</strong></a>(BMXMessagePtr msg, BMXErrorCode error)<br>消息撤回状态发送变化</p>                                                                             |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceive"><strong>onReceive</strong></a>(const BMXMessageList &#x26; list)<br>收到消息</p>                                                                                                                |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivecommandmessages"><strong>onReceiveCommandMessages</strong></a>(const BMXMessageList &#x26; list)<br>收到命令消息</p>                                                                                |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages"><strong>onReceiveSystemMessages</strong></a>(const BMXMessageList &#x26; list)<br>收到系统通知消息</p>                                                                                |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks"><strong>onReceiveReadAcks</strong></a>(const BMXMessageList &#x26; list)<br>收到消息已读回执</p>                                                                                            |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks"><strong>onReceiveDeliverAcks</strong></a>(const BMXMessageList &#x26; list)<br>收到消息已送达回执</p>                                                                                     |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages"><strong>onReceiveRecallMessages</strong></a>(const BMXMessageList &#x26; list)<br>收到撤回消息</p>                                                                                  |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadcancels"><strong>onReceiveReadCancels</strong></a>(const BMXMessageList &#x26; list)<br>收到消息已读取消（多设备其他设备同步消息已读状态变为未读）</p>                                                                 |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadallmessages"><strong>onReceiveReadAllMessages</strong></a>(const BMXMessageList &#x26; list)<br>收到消息全部已读（多设备同步某消息之前消息全部设置为已读）</p>                                                         |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages"><strong>onReceiveDeleteMessages</strong></a>(const BMXMessageList &#x26; list)<br>收到删除消息 （多设备同步删除消息）</p>                                                                      |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks"><strong>onReceivePlayAcks</strong></a>(const BMXMessageList &#x26; list)<br>收到音频/视频消息已播放回执</p>                                                                                      |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged"><strong>onAttachmentStatusChanged</strong></a>(BMXMessagePtr msg, BMXErrorCode error, int percent)<br>附件下载状态发生变化</p>                                                        |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged"><strong>onAttachmentDownloadByUrlStatusChanged</strong></a>(int64_t msgId, BMXErrorCode error, int percent)<br>附件下载状态发生变化</p>                                  |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages"><strong>onRetrieveHistoryMessages</strong></a>(BMXConversationPtr conversation)<br>拉取历史消息</p>                                                                               |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation"><strong>onLoadAllConversation</strong></a>()<br>已经加载完未读会话列表</p>                                                                                                                 |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate"><strong>onConversationCreate</strong></a>(BMXConversationPtr conversation, BMXMessagePtr msg)<br>本地创建新会话</p>                                                                     |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete"><strong>onConversationDelete</strong></a>(int64_t conversationId, BMXErrorCode error)<br>删除会话</p>                                                                                |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged"><strong>onTotalUnreadCountChanged</strong></a>(int unreadCount)<br>更新总未读数</p>                                                                                               |
-| void         | <p><a href="classfloo_1_1_b_m_x_chat_service_listener.md#function-registerchatservice"><strong>registerChatService</strong></a>(<a href="classfloo_1_1_b_m_x_chat_service.md">BMXChatService</a> * service)<br>注册BMXChatServiceListener绑定到的BMXChatService（SDK内部自动注册）</p> |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXChatServiceListener](classfloo_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)**()<br>构造函数  |
+| virtual | **[~BMXChatServiceListener](classfloo_1_1_b_m_x_chat_service_listener.md#function-~bmxchatservicelistener)**()<br>析构函数  |
+| virtual void | **[onStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>消息发送状态发生变化  |
+| virtual void | **[onAttachmentUploadProgressChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentuploadprogresschanged)**(BMXMessagePtr msg, int percent)<br>附件上传进度发送变化  |
+| virtual void | **[onRecallStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onrecallstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error)<br>消息撤回状态发送变化  |
+| virtual void | **[onReceive](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceive)**(const BMXMessageList & list)<br>收到消息  |
+| virtual void | **[onReceiveCommandMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivecommandmessages)**(const BMXMessageList & list)<br>收到命令消息  |
+| virtual void | **[onReceiveSystemMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages)**(const BMXMessageList & list)<br>收到系统通知消息  |
+| virtual void | **[onReceiveReadAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks)**(const BMXMessageList & list)<br>收到消息已读回执  |
+| virtual void | **[onReceiveDeliverAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks)**(const BMXMessageList & list)<br>收到消息已送达回执  |
+| virtual void | **[onReceiveRecallMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages)**(const BMXMessageList & list)<br>收到撤回消息  |
+| virtual void | **[onReceiveReadCancels](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadcancels)**(const BMXMessageList & list)<br>收到消息已读取消（多设备其他设备同步消息已读状态变为未读）  |
+| virtual void | **[onReceiveReadAllMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivereadallmessages)**(const BMXMessageList & list)<br>收到消息全部已读（多设备同步某消息之前消息全部设置为已读）  |
+| virtual void | **[onReceiveDeleteMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages)**(const BMXMessageList & list)<br>收到删除消息 （多设备同步删除消息）  |
+| virtual void | **[onReceivePlayAcks](classfloo_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks)**(const BMXMessageList & list)<br>收到音频/视频消息已播放回执  |
+| virtual void | **[onAttachmentStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged)**(BMXMessagePtr msg, BMXErrorCode error, int percent)<br>附件下载状态发生变化  |
+| virtual void | **[onAttachmentDownloadByUrlStatusChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged)**(int64_t msgId, BMXErrorCode error, int percent)<br>附件下载状态发生变化  |
+| virtual void | **[onRetrieveHistoryMessages](classfloo_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages)**(BMXConversationPtr conversation)<br>拉取历史消息  |
+| virtual void | **[onLoadAllConversation](classfloo_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>已经加载完未读会话列表  |
+| virtual void | **[onConversationCreate](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**(BMXConversationPtr conversation, BMXMessagePtr msg)<br>本地创建新会话  |
+| virtual void | **[onConversationDelete](classfloo_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(int64_t conversationId, BMXErrorCode error)<br>删除会话  |
+| virtual void | **[onTotalUnreadCountChanged](classfloo_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>更新总未读数  |
+| void | **[registerChatService](classfloo_1_1_b_m_x_chat_service_listener.md#function-registerchatservice)**([BMXChatService](classfloo_1_1_b_m_x_chat_service.md) * service)<br>注册BMXChatServiceListener绑定到的BMXChatService（SDK内部自动注册）  |
 
 ## Protected Attributes
 
-|                                                                 | Name                                                                                   |
-| --------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [BMXChatService](classfloo\_1\_1\_b\_m\_x\_chat\_service.md) \* | [**mService**](classfloo\_1\_1\_b\_m\_x\_chat\_service\_listener.md#variable-mservice) |
+|                | Name           |
+| -------------- | -------------- |
+| [BMXChatService](classfloo_1_1_b_m_x_chat_service.md) * | **[mService](classfloo_1_1_b_m_x_chat_service_listener.md#variable-mservice)**  |
 
 ## Public Functions Documentation
 
@@ -51,28 +55,24 @@ summary: 聊天监听者
 inline BMXChatServiceListener()
 ```
 
-构造函数
+构造函数 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="BMXChatServiceListener" %}{% endlanying_code_snippet %}
 ```
-
-### function \~BMXChatServiceListener
+### function ~BMXChatServiceListener
 
 ```cpp
 inline virtual ~BMXChatServiceListener()
 ```
 
-析构函数
+析构函数 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="~BMXChatServiceListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function onStatusChanged
 
 ```cpp
@@ -82,19 +82,18 @@ inline virtual void onStatusChanged(
 )
 ```
 
-消息发送状态发生变化
+消息发送状态发生变化 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 发生状态变化的消息
-* **error** 状态错误码
+  * **msg** 发生状态变化的消息 
+  * **error** 状态错误码 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAttachmentUploadProgressChanged
 
 ```cpp
@@ -104,19 +103,18 @@ inline virtual void onAttachmentUploadProgressChanged(
 )
 ```
 
-附件上传进度发送变化
+附件上传进度发送变化 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 上传附件的消息
-* **percent** 附件上传的进度
+  * **msg** 上传附件的消息 
+  * **percent** 附件上传的进度 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentUploadProgressChanged" %}{% endlanying_code_snippet %}
 ```
-
 ### function onRecallStatusChanged
 
 ```cpp
@@ -126,19 +124,18 @@ inline virtual void onRecallStatusChanged(
 )
 ```
 
-消息撤回状态发送变化
+消息撤回状态发送变化 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 撤回状态发生变化的消息
-* **error** 状态错误码
+  * **msg** 撤回状态发生变化的消息 
+  * **error** 状态错误码 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onRecallStatusChanged" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceive
 
 ```cpp
@@ -147,18 +144,17 @@ inline virtual void onReceive(
 )
 ```
 
-收到消息
+收到消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的消息列表
+  * **list** 接收到的消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceive" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveCommandMessages
 
 ```cpp
@@ -167,18 +163,17 @@ inline virtual void onReceiveCommandMessages(
 )
 ```
 
-收到命令消息
+收到命令消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的消息列表
+  * **list** 接收到的消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveCommandMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveSystemMessages
 
 ```cpp
@@ -187,18 +182,17 @@ inline virtual void onReceiveSystemMessages(
 )
 ```
 
-收到系统通知消息
+收到系统通知消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的系统消息列表
+  * **list** 接收到的系统消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveSystemMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveReadAcks
 
 ```cpp
@@ -207,18 +201,17 @@ inline virtual void onReceiveReadAcks(
 )
 ```
 
-收到消息已读回执
+收到消息已读回执 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的已读回执消息列表
+  * **list** 接收到的已读回执消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadAcks" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveDeliverAcks
 
 ```cpp
@@ -227,18 +220,17 @@ inline virtual void onReceiveDeliverAcks(
 )
 ```
 
-收到消息已送达回执
+收到消息已送达回执 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的已送达回执消息列表
+  * **list** 接收到的已送达回执消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveDeliverAcks" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveRecallMessages
 
 ```cpp
@@ -247,18 +239,17 @@ inline virtual void onReceiveRecallMessages(
 )
 ```
 
-收到撤回消息
+收到撤回消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的撤回消息列表
+  * **list** 接收到的撤回消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveRecallMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveReadCancels
 
 ```cpp
@@ -267,18 +258,17 @@ inline virtual void onReceiveReadCancels(
 )
 ```
 
-收到消息已读取消（多设备其他设备同步消息已读状态变为未读）
+收到消息已读取消（多设备其他设备同步消息已读状态变为未读） 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的消息已读取消消息列表
+  * **list** 接收到的消息已读取消消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadCancels" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveReadAllMessages
 
 ```cpp
@@ -287,18 +277,17 @@ inline virtual void onReceiveReadAllMessages(
 )
 ```
 
-收到消息全部已读（多设备同步某消息之前消息全部设置为已读）
+收到消息全部已读（多设备同步某消息之前消息全部设置为已读） 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的消息全部已读消息列表
+  * **list** 接收到的消息全部已读消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveReadAllMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceiveDeleteMessages
 
 ```cpp
@@ -307,18 +296,17 @@ inline virtual void onReceiveDeleteMessages(
 )
 ```
 
-收到删除消息 （多设备同步删除消息）
+收到删除消息 （多设备同步删除消息） 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的删除消息列表
+  * **list** 接收到的删除消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceiveDeleteMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function onReceivePlayAcks
 
 ```cpp
@@ -327,18 +315,17 @@ inline virtual void onReceivePlayAcks(
 )
 ```
 
-收到音频/视频消息已播放回执
+收到音频/视频消息已播放回执 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** 接收到的音频/视频消息已播放回执消息列表
+  * **list** 接收到的音频/视频消息已播放回执消息列表 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onReceivePlayAcks" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAttachmentStatusChanged
 
 ```cpp
@@ -349,20 +336,19 @@ inline virtual void onAttachmentStatusChanged(
 )
 ```
 
-附件下载状态发生变化
+附件下载状态发生变化 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 发生下载状态变化的消息
-* **error** 状态错误码
-* **percent** 附件下载的进度
+  * **msg** 发生下载状态变化的消息 
+  * **error** 状态错误码 
+  * **percent** 附件下载的进度 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentStatusChanged" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAttachmentDownloadByUrlStatusChanged
 
 ```cpp
@@ -373,20 +359,19 @@ inline virtual void onAttachmentDownloadByUrlStatusChanged(
 )
 ```
 
-附件下载状态发生变化
+附件下载状态发生变化 
 
-**Parameters**:
+**Parameters**: 
 
-* **msgId** 发生下载状态变化的消息Id
-* **error** 状态错误码
-* **percent** 附件下载的进度
+  * **msgId** 发生下载状态变化的消息Id 
+  * **error** 状态错误码 
+  * **percent** 附件下载的进度 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onAttachmentDownloadByUrlStatusChanged" %}{% endlanying_code_snippet %}
 ```
-
 ### function onRetrieveHistoryMessages
 
 ```cpp
@@ -395,32 +380,29 @@ inline virtual void onRetrieveHistoryMessages(
 )
 ```
 
-拉取历史消息
+拉取历史消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **conversation** 发生了拉取指历史消息的会话
+  * **conversation** 发生了拉取指历史消息的会话 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onRetrieveHistoryMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function onLoadAllConversation
 
 ```cpp
 inline virtual void onLoadAllConversation()
 ```
 
-已经加载完未读会话列表
+已经加载完未读会话列表 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onLoadAllConversation" %}{% endlanying_code_snippet %}
 ```
-
 ### function onConversationCreate
 
 ```cpp
@@ -430,19 +412,18 @@ inline virtual void onConversationCreate(
 )
 ```
 
-本地创建新会话
+本地创建新会话 
 
-**Parameters**:
+**Parameters**: 
 
-* **conversation** 新创建的本地会话
-* **msg** 会话的最新消息，存在返回不存在返回为空
+  * **conversation** 新创建的本地会话 
+  * **msg** 会话的最新消息，存在返回不存在返回为空 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onConversationCreate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onConversationDelete
 
 ```cpp
@@ -452,19 +433,18 @@ inline virtual void onConversationDelete(
 )
 ```
 
-删除会话
+删除会话 
 
-**Parameters**:
+**Parameters**: 
 
-* **conversationId** 删除的本地会话id
-* **error** 状态错误码
+  * **conversationId** 删除的本地会话id 
+  * **error** 状态错误码 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onConversationDelete" %}{% endlanying_code_snippet %}
 ```
-
 ### function onTotalUnreadCountChanged
 
 ```cpp
@@ -473,18 +453,17 @@ inline virtual void onTotalUnreadCountChanged(
 )
 ```
 
-更新总未读数
+更新总未读数 
 
-**Parameters**:
+**Parameters**: 
 
-* **unreadCount** 本地全部会话未读总数
+  * **unreadCount** 本地全部会话未读总数 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="onTotalUnreadCountChanged" %}{% endlanying_code_snippet %}
 ```
-
 ### function registerChatService
 
 ```cpp
@@ -493,11 +472,12 @@ inline void registerChatService(
 )
 ```
 
-注册BMXChatServiceListener绑定到的BMXChatService（SDK内部自动注册）
+注册BMXChatServiceListener绑定到的BMXChatService（SDK内部自动注册） 
 
-**Parameters**:
+**Parameters**: 
 
-* **service** [BMXChatService](classfloo\_1\_1\_b\_m\_x\_chat\_service.md)
+  * **service** [BMXChatService](classfloo_1_1_b_m_x_chat_service.md)
+
 
 ## Protected Attributes Documentation
 
@@ -507,12 +487,11 @@ inline void registerChatService(
 BMXChatService * mService;
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatServiceListener",function="registerChatService" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

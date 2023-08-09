@@ -1,6 +1,6 @@
 # IOS 客户端快速开发
 
-本页面供快速集成使用，了解更多请访问[详细文档](../../en/reference/floo-ios.md)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-ios.md)
 
 ## 前期准备
 
@@ -248,7 +248,7 @@
 
 ### 单聊
 
-单聊是最基本的聊天界面，提供文字、表情、语音片段、图片等多种输入内容，解决 App 内用户的沟通瓶颈。单聊的 BMXConversationType 是 BMXConversationSingle，toId 是单聊对象的 userId。示例代码见后文“消息操作”一节：[消息操作](floo-ios-quick-start.md#消息操作)
+单聊是最基本的聊天界面，提供文字、表情、语音片段、图片等多种输入内容，解决 App 内用户的沟通瓶颈。单聊的 BMXConversationType 是 BMXConversationSingle，toId 是单聊对象的 userId。示例代码见后文“消息操作”一节：[消息操作](#%E6%B6%88%E6%81%AF%E6%93%8D%E4%BD%9C)
 
 ### 群聊
 
@@ -555,6 +555,7 @@
             }
         }];
     ```
+
 *   附件消息下载状态变化
 
     ```
@@ -591,7 +592,7 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
     ```
 *   多端阅读消息数同步
 
-    BMXConversation 实体提供消息未读数量和会话中所有消息数量
+    BMXConversation 实体提供消息未读数量和会话中所有消息数量 
 
     ```
       /** 
@@ -615,7 +616,6 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
     ```
 
 ## RTC 音视频通话
-
 蓝莺 IM 系统的RTC通话功能，需要客户端集成floo-ios和floo-rtc-ios两个SDK。floo-ios为音视频通话提供了信令通道，floo-rtc-ios实现了RTC通话相关的业务逻辑。所以，实现音视频通话的前提是已经集成了floo-ios，并实现了登录和收发消息功能。
 
 蓝莺 IM RTC SDK 目前实现了一对一的视频和语音通话功能。集成方式有两种：可以通过 CocoaPods 自动集成我们的 floo-rtc-ios，也可以通过手动下载 floo-rtc-ios.framework, 手动添加到项目中。
@@ -670,7 +670,6 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
 ```
 
 ### 音视频通话业务逻辑
-
 1. 导入RTCEngineManager
 
 ```
@@ -680,13 +679,11 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
 2. 添加事件监听
 
 在类接口声明中添加协议：BMXRTCEngineProtocol：
-
 ```
 @interface CallViewController () < BMXRTCEngineProtocol >
 ```
 
 添加BMXRTCEngineProtocol事件监听：
-
 ```
     [[RTCEngineManager engineWithType:kMaxEngine] addDelegate:self];
 ```
@@ -763,13 +760,11 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
 1. 添加事件监听
 
 在类接口声明中添加协议：BMXRTCServiceProtocol：
-
 ```
 @interface CallViewController () < BMXRTCEngineProtocol, BMXRTCServiceProtocol >
 ```
 
 添加BMXChatServiceProtocol和BMXRTCServiceProtocol事件监听：
-
 ```
     [[RTCEngineManager engineWithType:kMaxEngine] addDelegate:self];
     [[[BMXClient sharedClient] rtcService] addDelegate:self];
@@ -912,7 +907,6 @@ BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为�
 ```
 
 8. 处理接收到的接听消息
-
 ```
 - (void)onRTCPickupMessageReceiveWithMsg:(BMXMessage*)msg{
     //如果消息是我的其它终端发送的

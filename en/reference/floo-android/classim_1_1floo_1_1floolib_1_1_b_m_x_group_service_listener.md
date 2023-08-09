@@ -1,62 +1,65 @@
 ---
 title: im::floo::floolib::BMXGroupServiceListener
-summary: Group change listener
+summary: Group change listener 
+
 ---
 
 # im::floo::floolib::BMXGroupServiceListener
 
-Group change listener
+
+
+Group change listener 
 
 ## Public Functions
 
-|                   | Name                                                                                                                                                                                                                                                                                                         |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| synchronized void | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-delete)()                                                                                                                                                                                                   |
-| void              | [**swigReleaseOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-swigreleaseownership)()                                                                                                                                                                       |
-| void              | [**swigTakeOwnership**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-swigtakeownership)()                                                                                                                                                                             |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupcreate"><strong>onGroupCreate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>Create a group</p>                                                                      |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate"><strong>onGroupListUpdate</strong></a>(BMXGroupList list)<br>Group list updated</p>                                                                                                                   |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupjoined"><strong>onGroupJoined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>Join a group</p>                                                                        |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupleft"><strong>onGroupLeft</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String reason)<br>Quit a group</p>                                                             |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitated"><strong>onInvitated</strong></a>(long groupId, long inviter, String message)<br>Group invitation received</p>                                                                                               |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted"><strong>onInvitationAccepted</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long inviteeId)<br>Group invitation accepted</p>                             |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined"><strong>onInvitationDeclined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long inviteeId, String reason)<br>Join group rejected</p>                    |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplied"><strong>onApplied</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long applicantId, String message)<br>Group membership application received</p>                     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted"><strong>onApplicationAccepted</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long approver)<br>Join group accepted</p>                                  |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined"><strong>onApplicationDeclined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long approver, String reason)<br>Join group rejected</p>                   |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersbanned"><strong>onMembersBanned</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, long duration)<br>Member banned</p>                            |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned"><strong>onMembersUnbanned</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>Member unbanned</p>                                     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberjoined"><strong>onMemberJoined</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long memberId, long inviter)<br>New member added</p>                                     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberleft"><strong>onMemberLeft</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long memberId, String reason)<br>Member quit</p>                                             |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsadded"><strong>onAdminsAdded</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>New Admin added</p>                                             |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsremoved"><strong>onAdminsRemoved</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, String reason)<br>Admin removed</p>                            |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onownerassigned"><strong>onOwnerAssigned</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>Become group Owner</p>                                                              |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate"><strong>onGroupInfoUpdate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.UpdateInfoType type)<br>Group information changes</p>                     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname"><strong>onMemberChangeNickName</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long memberId, String nickName)<br>Member nickname changed</p>           |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate"><strong>onAnnouncementUpdate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.Announcement announcement)<br>Group announcement updated</p>        |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded"><strong>onSharedFileUploaded</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>Shared file received</p>                  |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted"><strong>onSharedFileDeleted</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>Shared file deleted</p>                     |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated"><strong>onSharedFileUpdated</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>Name of shared file updated</p>             |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistadded"><strong>onBlockListAdded</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>Add to blacklist</p>                                      |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved"><strong>onBlockListRemoved</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>Delete blacklist</p>                                  |
-| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate"><strong>onGroupListUpdate</strong></a>()<br>Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information</p> |
-|                   | [**BMXGroupServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-bmxgroupservicelistener)()                                                                                                                                                                 |
-| void              | [**registerGroupService**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-registergroupservice)([BMXGroupService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service.md) service)                                                                            |
+|                | Name           |
+| -------------- | -------------- |
+| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-delete)**() |
+| void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigreleaseownership)**() |
+| void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigtakeownership)**() |
+| void | **[onGroupCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupcreate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Create a group  |
+| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**(BMXGroupList list)<br>Group list updated  |
+| void | **[onGroupJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Join a group  |
+| void | **[onGroupLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String reason)<br>Quit a group  |
+| void | **[onInvitated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitated)**(long groupId, long inviter, String message)<br>Group invitation received  |
+| void | **[onInvitationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId)<br>Group invitation accepted  |
+| void | **[onInvitationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-oninvitationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviteeId, String reason)<br>Join group rejected  |
+| void | **[onApplied](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplied)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId, String message)<br>Group membership application received  |
+| void | **[onApplicationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationaccepted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver)<br>Join group accepted  |
+| void | **[onApplicationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onapplicationdeclined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long approver, String reason)<br>Join group rejected  |
+| void | **[onMembersBanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration)<br>Member banned  |
+| void | **[onMembersUnbanned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmembersunbanned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>Member unbanned  |
+| void | **[onMemberJoined](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberjoined)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, long inviter)<br>New member added  |
+| void | **[onMemberLeft](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberleft)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String reason)<br>Member quit  |
+| void | **[onAdminsAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>New Admin added  |
+| void | **[onAdminsRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onadminsremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, String reason)<br>Admin removed  |
+| void | **[onOwnerAssigned](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onownerassigned)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Become group Owner  |
+| void | **[onGroupInfoUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongroupinfoupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.UpdateInfoType type)<br>Group information changes  |
+| void | **[onMemberChangeNickName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onmemberchangenickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long memberId, String nickName)<br>Member nickname changed  |
+| void | **[onAnnouncementUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onannouncementupdate)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.Announcement announcement)<br>Group announcement updated  |
+| void | **[onSharedFileUploaded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileuploaded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>Shared file received  |
+| void | **[onSharedFileDeleted](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfiledeleted)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>Shared file deleted  |
+| void | **[onSharedFileUpdated](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onsharedfileupdated)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>Name of shared file updated  |
+| void | **[onBlockListAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistadded)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>Add to blacklist  |
+| void | **[onBlockListRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-onblocklistremoved)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>Delete blacklist  |
+| void | **[onGroupListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-ongrouplistupdate)**()<br>Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information  |
+| | **[BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**() |
+| void | **[registerGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-registergroupservice)**([BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) service) |
 
 ## Protected Functions
 
-|      | Name                                                                                                                                                                                                                  |
-| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      | [**BMXGroupServiceListener**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-bmxgroupservicelistener)(long cPtr, boolean cMemoryOwn)                                             |
-| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-finalize)()                                                                                                        |
-| void | [**swigDirectorDisconnect**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-swigdirectordisconnect)()                                                                            |
-| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#function-getcptr)([BMXGroupServiceListener](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md) obj) |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-bmxgroupservicelistener)**(long cPtr, boolean cMemoryOwn) |
+| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-finalize)**() |
+| void | **[swigDirectorDisconnect](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-swigdirectordisconnect)**() |
+| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#function-getcptr)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) obj) |
 
 ## Protected Attributes
 
-|                   | Name                                                                                                               |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| transient boolean | [**swigCMemOwn**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_service\_listener.md#variable-swigcmemown) |
+|                | Name           |
+| -------------- | -------------- |
+| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md#variable-swigcmemown)**  |
 
 ## Public Functions Documentation
 
@@ -66,36 +69,33 @@ Group change listener
 inline synchronized void delete()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="delete" %}{% endlanying_code_snippet %}
 ```
-
 ### function swigReleaseOwnership
 
 ```java
 inline void swigReleaseOwnership()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
 ```
-
 ### function swigTakeOwnership
 
 ```java
 inline void swigTakeOwnership()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupCreate
 
 ```java
@@ -104,18 +104,17 @@ inline void onGroupCreate(
 )
 ```
 
-Create a group
+Create a group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Newly created group
+  * **group** Newly created group 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupCreate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupListUpdate
 
 ```java
@@ -124,18 +123,17 @@ inline void onGroupListUpdate(
 )
 ```
 
-Group list updated
+Group list updated 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** Updated group list
+  * **list** Updated group list 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupJoined
 
 ```java
@@ -144,18 +142,17 @@ inline void onGroupJoined(
 )
 ```
 
-Join a group
+Join a group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to join
+  * **group** Group to join 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupJoined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupLeft
 
 ```java
@@ -165,19 +162,18 @@ inline void onGroupLeft(
 )
 ```
 
-Quit a group
+Quit a group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to quit
-* **reason** Quit reason
+  * **group** Group to quit 
+  * **reason** Quit reason 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupLeft" %}{% endlanying_code_snippet %}
 ```
-
 ### function onInvitated
 
 ```java
@@ -188,20 +184,19 @@ inline void onInvitated(
 )
 ```
 
-Group invitation received
+Group invitation received 
 
-**Parameters**:
+**Parameters**: 
 
-* **groupId** Group id invited to
-* **inviter** Inviter id
-* **message** Invitation reason
+  * **groupId** Group id invited to 
+  * **inviter** Inviter id 
+  * **message** Invitation reason 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onInvitated" %}{% endlanying_code_snippet %}
 ```
-
 ### function onInvitationAccepted
 
 ```java
@@ -211,19 +206,18 @@ inline void onInvitationAccepted(
 )
 ```
 
-Group invitation accepted
+Group invitation accepted 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which invitation approved
-* **inviteeId** Invitee id
+  * **group** A group in which invitation approved 
+  * **inviteeId** Invitee id 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onInvitationAccepted" %}{% endlanying_code_snippet %}
 ```
-
 ### function onInvitationDeclined
 
 ```java
@@ -234,20 +228,19 @@ inline void onInvitationDeclined(
 )
 ```
 
-Join group rejected
+Join group rejected 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which invitation rejected
-* **inviteeId** Invitee id
-* **reason** Rejection reason
+  * **group** A group in which invitation rejected 
+  * **inviteeId** Invitee id 
+  * **reason** Rejection reason 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onInvitationDeclined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onApplied
 
 ```java
@@ -258,20 +251,19 @@ inline void onApplied(
 )
 ```
 
-Group membership application received
+Group membership application received 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which received membership application
-* **applicantId** Applicant id
-* **message** Application reason
+  * **group** A group in which received membership application 
+  * **applicantId** Applicant id 
+  * **message** Application reason 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
 ```
-
 ### function onApplicationAccepted
 
 ```java
@@ -281,19 +273,18 @@ inline void onApplicationAccepted(
 )
 ```
 
-Join group accepted
+Join group accepted 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group where membership application was accepted
-* **approver** Approver of the application
+  * **group** Group where membership application was accepted 
+  * **approver** Approver of the application 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
 ```
-
 ### function onApplicationDeclined
 
 ```java
@@ -304,20 +295,19 @@ inline void onApplicationDeclined(
 )
 ```
 
-Join group rejected
+Join group rejected 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group where membership application was rejected
-* **approver** Approver of the application
-* **reason** Reason for rejection
+  * **group** Group where membership application was rejected 
+  * **approver** Approver of the application 
+  * **reason** Reason for rejection 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMembersBanned
 
 ```java
@@ -328,20 +318,19 @@ inline void onMembersBanned(
 )
 ```
 
-Member banned
+Member banned 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group with member banned
-* **members** List of banned member ids
-* **duration** Duration of banned
+  * **group** Group with member banned 
+  * **members** List of banned member ids 
+  * **duration** Duration of banned 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMembersBanned" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMembersUnbanned
 
 ```java
@@ -351,19 +340,18 @@ inline void onMembersUnbanned(
 )
 ```
 
-Member unbanned
+Member unbanned 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group with member unbanned
-* **members** List of unbanned group member ids
+  * **group** Group with member unbanned 
+  * **members** List of unbanned group member ids 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMembersUnbanned" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMemberJoined
 
 ```java
@@ -374,20 +362,19 @@ inline void onMemberJoined(
 )
 ```
 
-New member added
+New member added 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group with new member added
-* **memberId** ID of added member
-* **inviter** Inviter id
+  * **group** Group with new member added 
+  * **memberId** ID of added member 
+  * **inviter** Inviter id 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMemberJoined" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMemberLeft
 
 ```java
@@ -398,20 +385,19 @@ inline void onMemberLeft(
 )
 ```
 
-Member quit
+Member quit 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group with member quitting
-* **memberId** ID of quitted member
-* **reason** Reason for quitting
+  * **group** Group with member quitting 
+  * **memberId** ID of quitted member 
+  * **reason** Reason for quitting 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMemberLeft" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAdminsAdded
 
 ```java
@@ -421,19 +407,18 @@ inline void onAdminsAdded(
 )
 ```
 
-New Admin added
+New Admin added 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group where addition of new Admin occurred
-* **members** List of members promoted to Admins
+  * **group** Group where addition of new Admin occurred 
+  * **members** List of members promoted to Admins 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onAdminsAdded" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAdminsRemoved
 
 ```java
@@ -444,20 +429,19 @@ inline void onAdminsRemoved(
 )
 ```
 
-Admin removed
+Admin removed 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group where Admin removal occurred
-* **members** List of members degraded from Admins
-* **reason** Reason for removal
+  * **group** Group where Admin removal occurred 
+  * **members** List of members degraded from Admins 
+  * **reason** Reason for removal 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onAdminsRemoved" %}{% endlanying_code_snippet %}
 ```
-
 ### function onOwnerAssigned
 
 ```java
@@ -466,18 +450,17 @@ inline void onOwnerAssigned(
 )
 ```
 
-Become group Owner
+Become group Owner 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which group Owner transferred
+  * **group** A group in which group Owner transferred 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onOwnerAssigned" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupInfoUpdate
 
 ```java
@@ -487,19 +470,18 @@ inline void onGroupInfoUpdate(
 )
 ```
 
-Group information changes
+Group information changes 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group with group information changed
-* **type** Type of group information that changed
+  * **group** Group with group information changed 
+  * **type** Type of group information that changed 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupInfoUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onMemberChangeNickName
 
 ```java
@@ -510,20 +492,19 @@ inline void onMemberChangeNickName(
 )
 ```
 
-Member nickname changed
+Member nickname changed 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which member nickname changed
-* **memberId** Group member id that changed group nickname
-* **nickName** Changed group nickname
+  * **group** A group in which member nickname changed 
+  * **memberId** Group member id that changed group nickname 
+  * **nickName** Changed group nickname 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onMemberChangeNickName" %}{% endlanying_code_snippet %}
 ```
-
 ### function onAnnouncementUpdate
 
 ```java
@@ -533,19 +514,18 @@ inline void onAnnouncementUpdate(
 )
 ```
 
-Group announcement updated
+Group announcement updated 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group where announcement update occurred
-* **announcement** Latest group announcement after changed
+  * **group** Group where announcement update occurred 
+  * **announcement** Latest group announcement after changed 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onAnnouncementUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function onSharedFileUploaded
 
 ```java
@@ -555,19 +535,18 @@ inline void onSharedFileUploaded(
 )
 ```
 
-Shared file received
+Shared file received 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which shared file uploading occurred
-* **sharedFile** Newly uploaded group shared file
+  * **group** A group in which shared file uploading occurred 
+  * **sharedFile** Newly uploaded group shared file 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onSharedFileUploaded" %}{% endlanying_code_snippet %}
 ```
-
 ### function onSharedFileDeleted
 
 ```java
@@ -577,19 +556,18 @@ inline void onSharedFileDeleted(
 )
 ```
 
-Shared file deleted
+Shared file deleted 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which shared file deleted
-* **sharedFile** Deleted group shared file
+  * **group** A group in which shared file deleted 
+  * **sharedFile** Deleted group shared file 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onSharedFileDeleted" %}{% endlanying_code_snippet %}
 ```
-
 ### function onSharedFileUpdated
 
 ```java
@@ -599,19 +577,18 @@ inline void onSharedFileUpdated(
 )
 ```
 
-Name of shared file updated
+Name of shared file updated 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** A group in which share file updated
-* **sharedFile** Updated group shared file
+  * **group** A group in which share file updated 
+  * **sharedFile** Updated group shared file 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onSharedFileUpdated" %}{% endlanying_code_snippet %}
 ```
-
 ### function onBlockListAdded
 
 ```java
@@ -621,19 +598,18 @@ inline void onBlockListAdded(
 )
 ```
 
-Add to blacklist
+Add to blacklist 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group with blacklist added
-* **members** List of blacklisted members
+  * **group** Group with blacklist added 
+  * **members** List of blacklisted members 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
 ```
-
 ### function onBlockListRemoved
 
 ```java
@@ -643,45 +619,41 @@ inline void onBlockListRemoved(
 )
 ```
 
-Delete blacklist
+Delete blacklist 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group with blacklist removed
-* **members** List of unblacklisted members
+  * **group** Group with blacklist removed 
+  * **members** List of unblacklisted members 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
 ```
-
 ### function onGroupListUpdate
 
 ```java
 inline void onGroupListUpdate()
 ```
 
-Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information
+Triggered when client pulls a new group from server, used to update user group list, and call local fetching group via SDK for all member information 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="onGroupListUpdate" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXGroupServiceListener
 
 ```java
 inline BMXGroupServiceListener()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="BMXGroupServiceListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function registerGroupService
 
 ```java
@@ -690,14 +662,13 @@ inline void registerGroupService(
 )
 ```
 
+
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="registerGroupService" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXGroupServiceListener
 
 ```java
@@ -707,36 +678,33 @@ inline BMXGroupServiceListener(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="BMXGroupServiceListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="finalize" %}{% endlanying_code_snippet %}
 ```
-
 ### function swigDirectorDisconnect
 
 ```java
 inline void swigDirectorDisconnect()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
 ```
-
 ### function getCPtr
 
 ```java
@@ -744,6 +712,7 @@ static inline long getCPtr(
     BMXGroupServiceListener obj
 )
 ```
+
 
 ## Protected Attributes Documentation
 
@@ -753,12 +722,11 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

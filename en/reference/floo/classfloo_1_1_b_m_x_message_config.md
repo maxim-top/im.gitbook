@@ -1,11 +1,15 @@
 ---
 title: floo::BMXMessageConfig
-summary: Message configuration
+summary: Message configuration 
+
 ---
 
 # floo::BMXMessageConfig
 
-Message configuration
+
+
+Message configuration 
+
 
 `#include <bmx_message_config.h>`
 
@@ -13,80 +17,81 @@ Inherits from BMXBaseObject
 
 ## Public Types
 
-|            | Name                                                                                                                                                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| enum class | <p><a href="classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype"><strong>BadgeCountType</strong></a> { Change, Set}<br>Operation type of the currently read Badge number</p> |
+|                | Name           |
+| -------------- | -------------- |
+| enum class| **[BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype)** { Change, Set}<br>Operation type of the currently read Badge number  |
 
 ## Public Functions
 
-|                                                                                    | Name                                                                                                                                                                                                                                                |
-| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| virtual                                                                            | [**\~BMXMessageConfig**](classfloo\_1\_1\_b\_m\_x\_message\_config.md#function-\~bmxmessageconfig)()                                                                                                                                                |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setmentionall"><strong>setMentionAll</strong></a>(bool mentionAll)<br>Set whether to @ all members</p>                                                                                   |
-| bool                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getmentionall"><strong>getMentionAll</strong></a>()<br>Get whether to @ all members</p>                                                                                                  |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setmentionlist"><strong>setMentionList</strong></a>(const std::vector&#x3C; int64_t > &#x26; mentionList)<br>Set the list of notified member ids</p>                                     |
-| std::vector< int64\_t >                                                            | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getmentionlist"><strong>getMentionList</strong></a>()<br>Get @ member list</p>                                                                                                           |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setmentionedmessage"><strong>setMentionedMessage</strong></a>(const std::string &#x26; mentionedMessage)<br>Set @ message</p>                                                            |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getmentionedmessage"><strong>getMentionedMessage</strong></a>()<br>Get @ message</p>                                                                                                     |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushmessage"><strong>setPushMessage</strong></a>(const std::string &#x26; pushMessage)<br>Set push message</p>                                                                        |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushmessage"><strong>getPushMessage</strong></a>()<br>Get push message</p>                                                                                                            |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setsendernickname"><strong>setSenderNickname</strong></a>(const std::string &#x26; senderNickname)<br>Set nickname of sender</p>                                                         |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getsendernickname"><strong>getSenderNickname</strong></a>()<br>Get nickname of sender</p>                                                                                                |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setgroupmemberlist"><strong>setGroupMemberList</strong></a>(const std::vector&#x3C; int64_t > &#x26; groupMemberList)<br>Set the list of member ids that require read group messages</p> |
-| std::vector< int64\_t >                                                            | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getgroupmemberlist"><strong>getGroupMemberList</strong></a>()<br>Get the list of group member ids that require read group messages</p>                                                   |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-addgroupmember"><strong>addGroupMember</strong></a>(int64_t id)<br>Member of group member id list with read messages added</p>                                                           |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-removegroupmember"><strong>removeGroupMember</strong></a>(int64_t id)<br>Empty the list of member ids that require read group messages</p>                                               |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-cleargroupmemberlist"><strong>clearGroupMemberList</strong></a>()<br>List of member ids with read group messages emptied</p>                                                             |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setiosconfig"><strong>setIOSConfig</strong></a>(const std::string &#x26; iosConfig)<br>Set IOS system configuration information</p>                                                      |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getiosconfig"><strong>getIOSConfig</strong></a>()<br>Get IOS system configuration information</p>                                                                                        |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setandroidconfig"><strong>setAndroidConfig</strong></a>(const std::string &#x26; androidConfig)<br>Set Android system configuration information</p>                                      |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getandroidconfig"><strong>getAndroidConfig</strong></a>()<br>Get Android system configuration information</p>                                                                            |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushshowbegintime"><strong>setPushShowBeginTime</strong></a>(int beginTime)<br>Set start time for push display</p>                                                                    |
-| int                                                                                | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushshowbegintime"><strong>getPushShowBeginTime</strong></a>()<br>Get start time for push display</p>                                                                                 |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushshowendtime"><strong>setPushShowEndTime</strong></a>(int endTime)<br>Set end time for push display</p>                                                                            |
-| int                                                                                | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushshowendtime"><strong>getPushShowEndTime</strong></a>()<br>Get end time for push display</p>                                                                                       |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushtitle"><strong>setPushTitle</strong></a>(const std::string &#x26; pushTitle)<br>Set push header</p>                                                                               |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushtitle"><strong>getPushTitle</strong></a>()<br>Get push header</p>                                                                                                                 |
-| bool                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-issilence"><strong>isSilence</strong></a>()<br>Get whether the current push is a silent message</p>                                                                                      |
-| [BadgeCountType](classfloo\_1\_1\_b\_m\_x\_message\_config.md#enum-badgecounttype) | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getbadgecounttype"><strong>getBadgeCountType</strong></a>()<br>Get the badge count of the current push</p>                                                                               |
-| int                                                                                | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getbadgecount"><strong>getBadgeCount</strong></a>(int count)<br>Get the badge count of the current push</p>                                                                              |
-| void                                                                               | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setusername"><strong>setUsername</strong></a>(const std::string &#x26; username)<br>Set username</p>                                                                                     |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getusername"><strong>getUsername</strong></a>()<br>Get username</p>                                                                                                                      |
-| std::string                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-serialize"><strong>serialize</strong></a>() const<br>Serialization operation</p>                                                                                                         |
-| BMXMessageConfigPtr                                                                | [**createMessageConfig**](classfloo\_1\_1\_b\_m\_x\_message\_config.md#function-createmessageconfig)(bool mentionAll)                                                                                                                               |
+|                | Name           |
+| -------------- | -------------- |
+| virtual | **[~BMXMessageConfig](classfloo_1_1_b_m_x_message_config.md#function-~bmxmessageconfig)**() |
+| void | **[setMentionAll](classfloo_1_1_b_m_x_message_config.md#function-setmentionall)**(bool mentionAll)<br>Set whether to @ all members  |
+| bool | **[getMentionAll](classfloo_1_1_b_m_x_message_config.md#function-getmentionall)**()<br>Get whether to @ all members  |
+| void | **[setMentionList](classfloo_1_1_b_m_x_message_config.md#function-setmentionlist)**(const std::vector< int64_t > & mentionList)<br>Set the list of notified member ids  |
+| std::vector< int64_t > | **[getMentionList](classfloo_1_1_b_m_x_message_config.md#function-getmentionlist)**()<br>Get @ member list  |
+| void | **[setMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-setmentionedmessage)**(const std::string & mentionedMessage)<br>Set @ message  |
+| std::string | **[getMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-getmentionedmessage)**()<br>Get @ message  |
+| void | **[setPushMessage](classfloo_1_1_b_m_x_message_config.md#function-setpushmessage)**(const std::string & pushMessage)<br>Set push message  |
+| std::string | **[getPushMessage](classfloo_1_1_b_m_x_message_config.md#function-getpushmessage)**()<br>Get push message  |
+| void | **[setSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-setsendernickname)**(const std::string & senderNickname)<br>Set nickname of sender  |
+| std::string | **[getSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-getsendernickname)**()<br>Get nickname of sender  |
+| void | **[setGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-setgroupmemberlist)**(const std::vector< int64_t > & groupMemberList)<br>Set the list of member ids that require read group messages  |
+| std::vector< int64_t > | **[getGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-getgroupmemberlist)**()<br>Get the list of group member ids that require read group messages  |
+| void | **[addGroupMember](classfloo_1_1_b_m_x_message_config.md#function-addgroupmember)**(int64_t id)<br>Member of group member id list with read messages added  |
+| void | **[removeGroupMember](classfloo_1_1_b_m_x_message_config.md#function-removegroupmember)**(int64_t id)<br>Empty the list of member ids that require read group messages  |
+| void | **[clearGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-cleargroupmemberlist)**()<br>List of member ids with read group messages emptied  |
+| void | **[setIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-setiosconfig)**(const std::string & iosConfig)<br>Set IOS system configuration information  |
+| std::string | **[getIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-getiosconfig)**()<br>Get IOS system configuration information  |
+| void | **[setAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-setandroidconfig)**(const std::string & androidConfig)<br>Set Android system configuration information  |
+| std::string | **[getAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-getandroidconfig)**()<br>Get Android system configuration information  |
+| void | **[setPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowbegintime)**(int beginTime)<br>Set start time for push display  |
+| int | **[getPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowbegintime)**()<br>Get start time for push display  |
+| void | **[setPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowendtime)**(int endTime)<br>Set end time for push display  |
+| int | **[getPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowendtime)**()<br>Get end time for push display  |
+| void | **[setPushTitle](classfloo_1_1_b_m_x_message_config.md#function-setpushtitle)**(const std::string & pushTitle)<br>Set push header  |
+| std::string | **[getPushTitle](classfloo_1_1_b_m_x_message_config.md#function-getpushtitle)**()<br>Get push header  |
+| bool | **[isSilence](classfloo_1_1_b_m_x_message_config.md#function-issilence)**()<br>Get whether the current push is a silent message  |
+| [BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype) | **[getBadgeCountType](classfloo_1_1_b_m_x_message_config.md#function-getbadgecounttype)**()<br>Get the badge count of the current push  |
+| int | **[getBadgeCount](classfloo_1_1_b_m_x_message_config.md#function-getbadgecount)**(int count)<br>Get the badge count of the current push  |
+| void | **[setUsername](classfloo_1_1_b_m_x_message_config.md#function-setusername)**(const std::string & username)<br>Set username  |
+| std::string | **[getUsername](classfloo_1_1_b_m_x_message_config.md#function-getusername)**()<br>Get username  |
+| std::string | **[serialize](classfloo_1_1_b_m_x_message_config.md#function-serialize)**() const<br>Serialization operation  |
+| BMXMessageConfigPtr | **[createMessageConfig](classfloo_1_1_b_m_x_message_config.md#function-createmessageconfig)**(bool mentionAll) |
 
 ## Friends
 
-|                     | Name                                                                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| std::string         | [**encodeBMXMessageConfig**](classfloo\_1\_1\_b\_m\_x\_message\_config.md#friend-encodebmxmessageconfig)(BMXMessageConfigPtr )       |
-| BMXMessageConfigPtr | [**decodeBMXMessageConfig**](classfloo\_1\_1\_b\_m\_x\_message\_config.md#friend-decodebmxmessageconfig)(const std::string & config) |
+|                | Name           |
+| -------------- | -------------- |
+| std::string | **[encodeBMXMessageConfig](classfloo_1_1_b_m_x_message_config.md#friend-encodebmxmessageconfig)**(BMXMessageConfigPtr )  |
+| BMXMessageConfigPtr | **[decodeBMXMessageConfig](classfloo_1_1_b_m_x_message_config.md#friend-decodebmxmessageconfig)**(const std::string & config)  |
 
 ## Public Types Documentation
 
 ### enum BadgeCountType
 
-| Enumerator | Value | Description                                                                                                                             |
-| ---------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Change     |       | The type of operation to read the Badge count is increment or decrement. Positive number is increment and negative number is decrement. |
-| Set        |       | Set the Badge count to the current count                                                                                                |
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Change | | The type of operation to read the Badge count is increment or decrement. Positive number is increment and negative number is decrement.   |
+| Set | | Set the Badge count to the current count   |
 
-Operation type of the currently read Badge number
+
+
+Operation type of the currently read Badge number 
 
 ## Public Functions Documentation
 
-### function \~BMXMessageConfig
+### function ~BMXMessageConfig
 
 ```cpp
 inline virtual ~BMXMessageConfig()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="~BMXMessageConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMentionAll
 
 ```cpp
@@ -95,34 +100,31 @@ void setMentionAll(
 )
 ```
 
-Set whether to @ all members
+Set whether to @ all members 
 
-**Parameters**:
+**Parameters**: 
 
-* **mentionAll**
+  * **mentionAll** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionAll" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMentionAll
 
 ```cpp
 bool getMentionAll()
 ```
 
-Get whether to @ all members
+Get whether to @ all members 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionAll" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMentionList
 
 ```cpp
@@ -131,34 +133,31 @@ void setMentionList(
 )
 ```
 
-Set the list of notified member ids
+Set the list of notified member ids 
 
-**Parameters**:
+**Parameters**: 
 
-* **mentionList**
+  * **mentionList** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMentionList
 
 ```cpp
 std::vector< int64_t > getMentionList()
 ```
 
-Get @ member list
+Get @ member list 
 
-**Return**: std::vector\<int64\_t>
+**Return**: std::vector<int64_t> 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionList" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMentionedMessage
 
 ```cpp
@@ -167,34 +166,31 @@ void setMentionedMessage(
 )
 ```
 
-Set @ message
+Set @ message 
 
-**Parameters**:
+**Parameters**: 
 
-* **mentionedMessage**
+  * **mentionedMessage** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionedMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMentionedMessage
 
 ```cpp
 std::string getMentionedMessage()
 ```
 
-Get @ message
+Get @ message 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionedMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushMessage
 
 ```cpp
@@ -203,34 +199,31 @@ void setPushMessage(
 )
 ```
 
-Set push message
+Set push message 
 
-**Parameters**:
+**Parameters**: 
 
-* **pushMessage**
+  * **pushMessage** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function getPushMessage
 
 ```cpp
 std::string getPushMessage()
 ```
 
-Get push message
+Get push message 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function setSenderNickname
 
 ```cpp
@@ -239,34 +232,31 @@ void setSenderNickname(
 )
 ```
 
-Set nickname of sender
+Set nickname of sender 
 
-**Parameters**:
+**Parameters**: 
 
-* **senderNickname**
+  * **senderNickname** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setSenderNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function getSenderNickname
 
 ```cpp
 std::string getSenderNickname()
 ```
 
-Get nickname of sender
+Get nickname of sender 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getSenderNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function setGroupMemberList
 
 ```cpp
@@ -275,34 +265,31 @@ void setGroupMemberList(
 )
 ```
 
-Set the list of member ids that require read group messages
+Set the list of member ids that require read group messages 
 
-**Parameters**:
+**Parameters**: 
 
-* **groupMemberList**
+  * **groupMemberList** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setGroupMemberList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getGroupMemberList
 
 ```cpp
 std::vector< int64_t > getGroupMemberList()
 ```
 
-Get the list of group member ids that require read group messages
+Get the list of group member ids that require read group messages 
 
-**Return**: std::vector\<int64\_t>
+**Return**: std::vector<int64_t> 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getGroupMemberList" %}{% endlanying_code_snippet %}
 ```
-
 ### function addGroupMember
 
 ```cpp
@@ -311,14 +298,12 @@ void addGroupMember(
 )
 ```
 
-Member of group member id list with read messages added
+Member of group member id list with read messages added 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="addGroupMember" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeGroupMember
 
 ```cpp
@@ -327,30 +312,26 @@ void removeGroupMember(
 )
 ```
 
-Empty the list of member ids that require read group messages
+Empty the list of member ids that require read group messages 
 
-**Return**: std::vector\<int64\_t>
+**Return**: std::vector<int64_t> 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="removeGroupMember" %}{% endlanying_code_snippet %}
 ```
-
 ### function clearGroupMemberList
 
 ```cpp
 void clearGroupMemberList()
 ```
 
-List of member ids with read group messages emptied
+List of member ids with read group messages emptied 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="clearGroupMemberList" %}{% endlanying_code_snippet %}
 ```
-
 ### function setIOSConfig
 
 ```cpp
@@ -359,34 +340,31 @@ void setIOSConfig(
 )
 ```
 
-Set IOS system configuration information
+Set IOS system configuration information 
 
-**Parameters**:
+**Parameters**: 
 
-* **iosConfig**
+  * **iosConfig** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setIOSConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function getIOSConfig
 
 ```cpp
 std::string getIOSConfig()
 ```
 
-Get IOS system configuration information
+Get IOS system configuration information 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getIOSConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAndroidConfig
 
 ```cpp
@@ -395,34 +373,31 @@ void setAndroidConfig(
 )
 ```
 
-Set Android system configuration information
+Set Android system configuration information 
 
-**Parameters**:
+**Parameters**: 
 
-* **androidConfig**
+  * **androidConfig** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setAndroidConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function getAndroidConfig
 
 ```cpp
 std::string getAndroidConfig()
 ```
 
-Get Android system configuration information
+Get Android system configuration information 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getAndroidConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushShowBeginTime
 
 ```cpp
@@ -431,34 +406,31 @@ void setPushShowBeginTime(
 )
 ```
 
-Set start time for push display
+Set start time for push display 
 
-**Parameters**:
+**Parameters**: 
 
-* **beginTime**
+  * **beginTime** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushShowBeginTime" %}{% endlanying_code_snippet %}
 ```
-
 ### function getPushShowBeginTime
 
 ```cpp
 int getPushShowBeginTime()
 ```
 
-Get start time for push display
+Get start time for push display 
 
-**Return**: int
+**Return**: int 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushShowBeginTime" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushShowEndTime
 
 ```cpp
@@ -467,34 +439,31 @@ void setPushShowEndTime(
 )
 ```
 
-Set end time for push display
+Set end time for push display 
 
-**Parameters**:
+**Parameters**: 
 
-* **endTime**
+  * **endTime** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushShowEndTime" %}{% endlanying_code_snippet %}
 ```
-
 ### function getPushShowEndTime
 
 ```cpp
 int getPushShowEndTime()
 ```
 
-Get end time for push display
+Get end time for push display 
 
-**Return**: int
+**Return**: int 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushShowEndTime" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushTitle
 
 ```cpp
@@ -503,66 +472,59 @@ void setPushTitle(
 )
 ```
 
-Set push header
+Set push header 
 
-**Parameters**:
+**Parameters**: 
 
-* **pushTitle**
+  * **pushTitle** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushTitle" %}{% endlanying_code_snippet %}
 ```
-
 ### function getPushTitle
 
 ```cpp
 std::string getPushTitle()
 ```
 
-Get push header
+Get push header 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushTitle" %}{% endlanying_code_snippet %}
 ```
-
 ### function isSilence
 
 ```cpp
 bool isSilence()
 ```
 
-Get whether the current push is a silent message
+Get whether the current push is a silent message 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="isSilence" %}{% endlanying_code_snippet %}
 ```
-
 ### function getBadgeCountType
 
 ```cpp
 BadgeCountType getBadgeCountType()
 ```
 
-Get the badge count of the current push
+Get the badge count of the current push 
 
-**Return**: BadgeCountType
+**Return**: BadgeCountType 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getBadgeCountType" %}{% endlanying_code_snippet %}
 ```
-
 ### function getBadgeCount
 
 ```cpp
@@ -571,16 +533,14 @@ int getBadgeCount(
 )
 ```
 
-Get the badge count of the current push
+Get the badge count of the current push 
 
-**Return**: int
+**Return**: int 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getBadgeCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function setUsername
 
 ```cpp
@@ -589,50 +549,45 @@ void setUsername(
 )
 ```
 
-Set username
+Set username 
 
-**Parameters**:
+**Parameters**: 
 
-* **username**
+  * **username** 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setUsername" %}{% endlanying_code_snippet %}
 ```
-
 ### function getUsername
 
 ```cpp
 std::string getUsername()
 ```
 
-Get username
+Get username 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getUsername" %}{% endlanying_code_snippet %}
 ```
-
 ### function serialize
 
 ```cpp
 std::string serialize() const
 ```
 
-Serialization operation
+Serialization operation 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="serialize" %}{% endlanying_code_snippet %}
 ```
-
 ### function createMessageConfig
 
 ```cpp
@@ -640,6 +595,7 @@ static BMXMessageConfigPtr createMessageConfig(
     bool mentionAll
 )
 ```
+
 
 ## Friends
 
@@ -651,6 +607,7 @@ friend std::string encodeBMXMessageConfig(
 );
 ```
 
+
 ### friend decodeBMXMessageConfig
 
 ```cpp
@@ -659,12 +616,11 @@ friend BMXMessageConfigPtr decodeBMXMessageConfig(
 );
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="createMessageConfig" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

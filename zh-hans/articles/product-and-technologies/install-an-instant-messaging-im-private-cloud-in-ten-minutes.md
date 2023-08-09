@@ -20,17 +20,18 @@
 
 ![](../../assets/articles/autogen-f38ceb53130c10ffd148096ad0f9f317f3232418ee3d5936f13a516411f81d52.webp)
 
+
 ## 第二步 开通私有云服务
 
 1. 应用创建成功后，进入应用详情页面。
 
 ![](../../assets/articles/autogen-cded3629a354630e8068517297cb57e3ba8145e71cc70f8605aa1a0a0b4301e6.webp)
 
-1. 点击更改计划，选择私有云，点击“继续”。
+2. 点击更改计划，选择私有云，点击“继续”。
 
 ![](../../assets/articles/autogen-641c7e6796b1be818d6b1c1073ca5732d4b5658c550279b3fc3429b8b28183a2.webp)
 
-1. 点击私有云图标，进入私有云详情页面，下载安装包 maxim.ctl
+3. 点击私有云图标，进入私有云详情页面，下载安装包 maxim.ctl
 
 ```
 wget https://package.maximtop.com/linux/amd64/maxim.ctl
@@ -38,9 +39,10 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl
 
 ![](../../assets/articles/autogen-7005096df70f2318f868bc5e73e625906131bc631237fff954b6607fc05e9d22.webp)
 
-1. 获取安装token。可以复制到粘贴板，也可以下载到本地文件备用，安装脚本里我们用 maxim.token.XXXXXX.txt 演示。
+4. 获取安装token。可以复制到粘贴板，也可以下载到本地文件备用，安装脚本里我们用 maxim.token.XXXXXX.txt 演示。
 
 ![](../../assets/articles/autogen-48be1ea8facfd2d43290255724f900a36428d5a59763ff63fda6f185e7f30e20.webp)
+
 
 ## 第三步 安装私有云
 
@@ -69,7 +71,7 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.
 
 ![](../../assets/articles/autogen-e571529ce968949d53f0d21998ccdf45b50de845aad0c5eda31361f393137c56.webp)
 
-1. 运行安装
+2. 运行安装
 
 根据网络情况选择是否添加 -net 参数，以便安装程序在完成后正确设置DNS。
 
@@ -147,7 +149,7 @@ sudo echo "sudo echo "`cat ~/.ssh/id_rsa.pub`" >> ~/.ssh/authorized_keys"
 
 ![](../../assets/articles/autogen-eb8169381dfe95c908f3dd0b6b5a33fe026996cb52aa2fc388874b1e6d71ef73.webp)
 
-1. ssh登录到第一台主机172.16.0.78上 执行如下命令下载安装脚本，并增加可执行权限
+2. ssh登录到第一台主机172.16.0.78上 执行如下命令下载安装脚本，并增加可执行权限
 
 ```
 wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.ctl
@@ -157,7 +159,7 @@ wget https://package.maximtop.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim.
 
 ![](../../assets/articles/autogen-28f1be69f9d1a8d5d23a5c24ec0cf99b2055b14fda99eecbde19ba6c33248111.webp)
 
-1. 运行安装
+3. 运行安装
 
 根据网络情况选择是否添加 -net 参数，以便安装程序在完成后正确设置DNS。
 
@@ -198,12 +200,14 @@ sudo ./maxim.ctl install --nodelist 172.16.0.78 172.16.0.79 172.16.0.80 --net in
 ## 其他
 
 1. 服务安装完会需要联系服务器自检，如果确定本地环境不可进行外部访问，安装时需要添加参数 --net internal 提示安装程序选择内网IP注册。
+
 2. 如果机器有防火墙，需要保证端口443和80允许访问。
+
 3. 如何查看私有云安装进度，以及数据迁移状态？
 
 ![](../../assets/articles/autogen-5c7880eface5ec800aa3bf50e1493a4a0f39c124ce42c96e2085769a61395d0b.webp)
 
-1. 安装完成后，打开美信拓扑控制台进入系统状态页面。
+4. 安装完成后，打开美信拓扑控制台进入系统状态页面。
 
 ![](../../assets/articles/autogen-8930e00c6e548fa9a8ad0b08f16906d502f707ae2823b4dad9b7241574edc036.webp)
 

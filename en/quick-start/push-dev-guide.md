@@ -1,6 +1,6 @@
 # Push Development Guide
 
-This page is for quick integration, visit [detailed documentation](../../zh-hans/reference/floo-android.md)
+This page is for quick integration, visit [detailed documentation](../reference/floo-android.md)
 
 ### Push SDK integration description
 

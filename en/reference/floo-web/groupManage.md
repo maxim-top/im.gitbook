@@ -1,1080 +1,912 @@
 # groupManage
-
-## groupManage <a href="#module_groupmanage" id="module_groupmanage"></a>
-
+## groupManage {#module_groupmanage}
 Group management
 
-* [groupManage](groupManage.md#module\_groupmanage)
-  * [.asyncGetGroupInfo(group\_id, froce)](groupManage.md#module\_groupmanage\_\_asyncgetgroupinfo) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings)
-  * [.asyncGetJoinedGroups(froce)](groupManage.md#module\_groupmanage\_\_asyncgetjoinedgroups) ⇒ `Promise.<Array.<number>>`
-  * [.openGroup(group\_id)](groupManage.md#module\_groupmanage\_\_opengroup)
-  * [.getAllGroupDetail()](groupManage.md#module\_groupmanage\_\_getallgroupdetail) ⇒ `Object.<number, module:types~GroupInfoAndSettings>`
-  * [.asyncGetGroupMembers(group\_id)](groupManage.md#module\_groupmanage\_\_asyncgetgroupmembers) ⇒ `Promise.<Array.<number>>`
-  * [.getGroupMembers(group\_id)](groupManage.md#module\_groupmanage\_\_getgroupmembers) ⇒ [`Array.<GroupMember>`](types.md#module\_types\_\_groupmember)
-  * [.asyncGetGroupListDetail(gids)](groupManage.md#module\_groupmanage\_\_asyncgetgrouplistdetail) ⇒ `Promise.<Array.<module:types~BriefGroupInfoAndSettings>>`
-  * [.getGruopMessage(gid)](groupManage.md#module\_groupmanage\_\_getgruopmessage) ⇒ [`Array.<Meta>`](types.md#module\_types\_\_meta)
-  * [.asyncGetInfo(params)](groupManage.md#module\_groupmanage\_\_asyncgetinfo) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings)
-  * [.asyncGetMemberList(param)](groupManage.md#module\_groupmanage\_\_asyncgetmemberlist) ⇒ `Promise.<Array.<module:types~GroupMember>>`
-  * [.readGroupMessage(group\_id, mid)](groupManage.md#module\_groupmanage\_\_readgroupmessage)
-  * [.recallMessage(uid, mid)](groupManage.md#module\_groupmanage\_\_recallmessage)
-  * [.getUnreadCount(gid)](groupManage.md#module\_groupmanage\_\_getunreadcount) ⇒ `number`
-  * [.asyncGetAdminList(params)](groupManage.md#module\_groupmanage\_\_asyncgetadminlist) ⇒ `Promise.<Array.<module:types~GroupMember>>`
-  * [.asyncAdminAdd(params)](groupManage.md#module\_groupmanage\_\_asyncadminadd) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncAdminRemove(params)](groupManage.md#module\_groupmanage\_\_asyncadminremove) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncGetAnouncementById(params)](groupManage.md#module\_groupmanage\_\_asyncgetanouncementbyid) ⇒ [`Promise.<GroupAnnouncement>`](types.md#module\_types\_\_groupannouncement)
-  * [.asyncAnouncementDelete(params)](groupManage.md#module\_groupmanage\_\_asyncanouncementdelete) ⇒ `Promise.<boolean>`
-  * [.asyncAnnouncementEdit(params)](groupManage.md#module\_groupmanage\_\_asyncannouncementedit) ⇒ [`Promise.<GroupAnnouncement>`](types.md#module\_types\_\_groupannouncement)
-  * [.asyncGetAnnouncementList(params)](groupManage.md#module\_groupmanage\_\_asyncgetannouncementlist) ⇒ `Promise.<Array.<module:types~GroupAnnouncement>>`
-  * [.asyncCreate(params)](groupManage.md#module\_groupmanage\_\_asynccreate) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings)
-  * [.asyncDestroy(params)](groupManage.md#module\_groupmanage\_\_asyncdestroy) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateAvatar(params)](groupManage.md#module\_groupmanage\_\_asyncupdateavatar) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateDescription(params)](groupManage.md#module\_groupmanage\_\_asyncupdatedescription) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateExt(params)](groupManage.md#module\_groupmanage\_\_asyncupdateext) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateName(params)](groupManage.md#module\_groupmanage\_\_asyncupdatename) ⇒ `Promise.<boolean>`
-  * [.asyncGroupMsgMutemode(params)](groupManage.md#module\_groupmanage\_\_asyncgroupmsgmutemode) ⇒ `Promise.<boolean>`
-  * [.asyncGroupBannedList(params)](groupManage.md#module\_groupmanage\_\_asyncgroupbannedlist) ⇒ `Promise.<Array.<module:types~GroupMemberBanned>>`
-  * [.asyncGroupBab(params)](groupManage.md#module\_groupmanage\_\_asyncgroupbab) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncGroupUnban(params)](groupManage.md#module\_groupmanage\_\_asyncgroupunban) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncGetSettings(group\_id)](groupManage.md#module\_groupmanage\_\_asyncgetsettings) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings)
-  * [.asyncUpdateAllowMemberInvitation(params)](groupManage.md#module\_groupmanage\_\_asyncupdateallowmemberinvitation) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateAllowMemberModify(params)](groupManage.md#module\_groupmanage\_\_asyncupdateallowmembermodify) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateEnableReadack(params)](groupManage.md#module\_groupmanage\_\_asyncupdateenablereadack) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateHistoryVisible(params)](groupManage.md#module\_groupmanage\_\_asyncupdatehistoryvisible) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateRequireadminapproval(params)](groupManage.md#module\_groupmanage\_\_asyncupdaterequireadminapproval) ⇒ `Promise.<boolean>`
-  * [.asyncBanAll(params)](groupManage.md#module\_groupmanage\_\_asyncbanall) ⇒ [`Promise.<GroupBanAllResponse>`](types.md#module\_types\_\_groupbanallresponse)
-  * [.asyncUnBanAll(params)](groupManage.md#module\_groupmanage\_\_asyncunbanall) ⇒ `Promise.<boolean>`
-  * [.asyncOwnerTransfer(params)](groupManage.md#module\_groupmanage\_\_asyncownertransfer) ⇒ [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse)
-  * [.asyncGetUserJoined(params)](groupManage.md#module\_groupmanage\_\_asyncgetuserjoined) ⇒ `Promise.<Array.<number>>`
-  * [.asyncApply(params)](groupManage.md#module\_groupmanage\_\_asyncapply) ⇒ [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse)
-  * [.asyncApplyHandle(params)](groupManage.md#module\_groupmanage\_\_asyncapplyhandle) ⇒ [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse)
-  * [.asyncGroupBockedlist(params)](groupManage.md#module\_groupmanage\_\_asyncgroupbockedlist) ⇒ `Promise.<Array.<module:types~GroupBlockedListItem>>`
-  * [.asyncGroupBlock(params)](groupManage.md#module\_groupmanage\_\_asyncgroupblock) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncGroupUnblock(params)](groupManage.md#module\_groupmanage\_\_asyncgroupunblock) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncKick(params)](groupManage.md#module\_groupmanage\_\_asynckick) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncGetInvitationList()](groupManage.md#module\_groupmanage\_\_asyncgetinvitationlist) ⇒ `Promise.<Array.<module:types~GroupInvitation>>`
-  * [.asyncInvite(params)](groupManage.md#module\_groupmanage\_\_asyncinvite) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>`
-  * [.asyncInviteHandle(params)](groupManage.md#module\_groupmanage\_\_asyncinvitehandle) ⇒ `Promise.<boolean>`
-  * [.asyncGetMemberDisplayName(params)](groupManage.md#module\_groupmanage\_\_asyncgetmemberdisplayname) ⇒ `Promise.<Array.<module:types~GroupMember>>`
-  * [.asyncLeave(params)](groupManage.md#module\_groupmanage\_\_asyncleave) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateDisplayName(params)](groupManage.md#module\_groupmanage\_\_asyncupdatedisplayname) ⇒ `Promise.<boolean>`
-  * [.asncGetApplicationList(params)](groupManage.md#module\_groupmanage\_\_asncgetapplicationlist) ⇒ `Promise.<Array.<module:types~GroupApplication>>`
-  * [.asyncGetFileList(params)](groupManage.md#module\_groupmanage\_\_asyncgetfilelist) ⇒ `Promise.<Array.<module:types~GroupSharedFile>>`
-  * [.asyncFileDelete(params)](groupManage.md#module\_groupmanage\_\_asyncfiledelete) ⇒ `Promise.<Array.<module:types~GroupSharedFileResponse>>`
-  * [.asyncFileUpload(params)](groupManage.md#module\_groupmanage\_\_asyncfileupload) ⇒ `Promise.<Array.<module:types~GroupSharedFile>>`
 
-### groupManage.asyncGetGroupInfo(group\_id, froce) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) <a href="#module_groupmanage__asyncgetgroupinfo" id="module_groupmanage__asyncgetgroupinfo"></a>
+* [groupManage](#module_groupmanage)
+    * [.asyncGetGroupInfo(group_id, froce)](#module_groupmanage__asyncgetgroupinfo) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings)
+    * [.asyncGetJoinedGroups(froce)](#module_groupmanage__asyncgetjoinedgroups) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
+    * [.openGroup(group_id)](#module_groupmanage__opengroup)
+    * [.getAllGroupDetail()](#module_groupmanage__getallgroupdetail) ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code>
+    * [.asyncGetGroupMembers(group_id)](#module_groupmanage__asyncgetgroupmembers) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
+    * [.getGroupMembers(group_id)](#module_groupmanage__getgroupmembers) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember)
+    * [.asyncGetGroupListDetail(gids)](#module_groupmanage__asyncgetgrouplistdetail) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code>
+    * [.getGruopMessage(gid)](#module_groupmanage__getgruopmessage) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta)
+    * [.asyncGetInfo(params)](#module_groupmanage__asyncgetinfo) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings)
+    * [.asyncGetMemberList(param)](#module_groupmanage__asyncgetmemberlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code>
+    * [.readGroupMessage(group_id, mid)](#module_groupmanage__readgroupmessage)
+    * [.recallMessage(uid, mid)](#module_groupmanage__recallmessage)
+    * [.getUnreadCount(gid)](#module_groupmanage__getunreadcount) ⇒ <code>number</code>
+    * [.asyncGetAdminList(params)](#module_groupmanage__asyncgetadminlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code>
+    * [.asyncAdminAdd(params)](#module_groupmanage__asyncadminadd) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncAdminRemove(params)](#module_groupmanage__asyncadminremove) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncGetAnouncementById(params)](#module_groupmanage__asyncgetanouncementbyid) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement)
+    * [.asyncAnouncementDelete(params)](#module_groupmanage__asyncanouncementdelete) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncAnnouncementEdit(params)](#module_groupmanage__asyncannouncementedit) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement)
+    * [.asyncGetAnnouncementList(params)](#module_groupmanage__asyncgetannouncementlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code>
+    * [.asyncCreate(params)](#module_groupmanage__asynccreate) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings)
+    * [.asyncDestroy(params)](#module_groupmanage__asyncdestroy) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateAvatar(params)](#module_groupmanage__asyncupdateavatar) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateDescription(params)](#module_groupmanage__asyncupdatedescription) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateExt(params)](#module_groupmanage__asyncupdateext) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateName(params)](#module_groupmanage__asyncupdatename) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncGroupMsgMutemode(params)](#module_groupmanage__asyncgroupmsgmutemode) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncGroupBannedList(params)](#module_groupmanage__asyncgroupbannedlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code>
+    * [.asyncGroupBab(params)](#module_groupmanage__asyncgroupbab) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncGroupUnban(params)](#module_groupmanage__asyncgroupunban) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncGetSettings(group_id)](#module_groupmanage__asyncgetsettings) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings)
+    * [.asyncUpdateAllowMemberInvitation(params)](#module_groupmanage__asyncupdateallowmemberinvitation) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateAllowMemberModify(params)](#module_groupmanage__asyncupdateallowmembermodify) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateEnableReadack(params)](#module_groupmanage__asyncupdateenablereadack) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateHistoryVisible(params)](#module_groupmanage__asyncupdatehistoryvisible) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateRequireadminapproval(params)](#module_groupmanage__asyncupdaterequireadminapproval) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncBanAll(params)](#module_groupmanage__asyncbanall) ⇒ [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types__groupbanallresponse)
+    * [.asyncUnBanAll(params)](#module_groupmanage__asyncunbanall) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncOwnerTransfer(params)](#module_groupmanage__asyncownertransfer) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse)
+    * [.asyncGetUserJoined(params)](#module_groupmanage__asyncgetuserjoined) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code>
+    * [.asyncApply(params)](#module_groupmanage__asyncapply) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse)
+    * [.asyncApplyHandle(params)](#module_groupmanage__asyncapplyhandle) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse)
+    * [.asyncGroupBockedlist(params)](#module_groupmanage__asyncgroupbockedlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code>
+    * [.asyncGroupBlock(params)](#module_groupmanage__asyncgroupblock) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncGroupUnblock(params)](#module_groupmanage__asyncgroupunblock) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncKick(params)](#module_groupmanage__asynckick) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncGetInvitationList()](#module_groupmanage__asyncgetinvitationlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code>
+    * [.asyncInvite(params)](#module_groupmanage__asyncinvite) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
+    * [.asyncInviteHandle(params)](#module_groupmanage__asyncinvitehandle) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncGetMemberDisplayName(params)](#module_groupmanage__asyncgetmemberdisplayname) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code>
+    * [.asyncLeave(params)](#module_groupmanage__asyncleave) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateDisplayName(params)](#module_groupmanage__asyncupdatedisplayname) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asncGetApplicationList(params)](#module_groupmanage__asncgetapplicationlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code>
+    * [.asyncGetFileList(params)](#module_groupmanage__asyncgetfilelist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code>
+    * [.asyncFileDelete(params)](#module_groupmanage__asyncfiledelete) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code>
+    * [.asyncFileUpload(params)](#module_groupmanage__asyncfileupload) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code>
 
+### groupManage.asyncGetGroupInfo(group_id, froce) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asyncgetgroupinfo}
 Get group information
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) - Group info
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) - Group info  
 
-| Param     | Type      | Description                                                                                           |
-| --------- | --------- | ----------------------------------------------------------------------------------------------------- |
-| group\_id | `number`  | GroupID                                                                                               |
-| froce     | `boolean` | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
+| Param | Type | Description |
+| --- | --- | --- |
+| group_id | <code>number</code> | GroupID |
+| froce | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupInfo" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetJoinedGroups(froce) ⇒ `Promise.<Array.<number>>` <a href="#module_groupmanage__asyncgetjoinedgroups" id="module_groupmanage__asyncgetjoinedgroups"></a>
-
+### groupManage.asyncGetJoinedGroups(froce) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetjoinedgroups}
 Get the group to join
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<number>>` - Group ID list
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - Group ID list  
 
-| Param | Type      | Description                                                                                           |
-| ----- | --------- | ----------------------------------------------------------------------------------------------------- |
-| froce | `boolean` | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
+| Param | Type | Description |
+| --- | --- | --- |
+| froce | <code>boolean</code> | Whether to force pull from server: true - pull from server, false - prefer to pull from local storage |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetJoinedGroups" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.openGroup(group\_id) <a href="#module_groupmanage__opengroup" id="module_groupmanage__opengroup"></a>
-
+### groupManage.openGroup(group_id) {#module_groupmanage__opengroup}
 Open group, this method will prepare some necessary information for the group chat screen.
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 
-| Param     | Type     | Description |
-| --------- | -------- | ----------- |
-| group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="openGroup" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.getAllGroupDetail() ⇒ `Object.<number, module:types~GroupInfoAndSettings>` <a href="#module_groupmanage__getallgroupdetail" id="module_groupmanage__getallgroupdetail"></a>
-
+### groupManage.getAllGroupDetail() ⇒ <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> {#module_groupmanage__getallgroupdetail}
 Get all cached group details
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Object.<number, module:types~GroupInfoAndSettings>` - Group details\
-**Example**
-
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Object.&lt;number, module:types~GroupInfoAndSettings&gt;</code> - Group details  
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getAllGroupDetail" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetGroupMembers(group\_id) ⇒ `Promise.<Array.<number>>` <a href="#module_groupmanage__asyncgetgroupmembers" id="module_groupmanage__asyncgetgroupmembers"></a>
-
+### groupManage.asyncGetGroupMembers(group_id) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetgroupmembers}
 Get group member ids (asynchronous)
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<number>>` - List of group member ids
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - List of group member ids  
 
-| Param     | Type     | Description |
-| --------- | -------- | ----------- |
-| group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupMembers" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.getGroupMembers(group\_id) ⇒ [`Array.<GroupMember>`](types.md#module\_types\_\_groupmember) <a href="#module_groupmanage__getgroupmembers" id="module_groupmanage__getgroupmembers"></a>
-
+### groupManage.getGroupMembers(group_id) ⇒ [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember) {#module_groupmanage__getgroupmembers}
 Get group members (synchronous)
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Array.<GroupMember>`](types.md#module\_types\_\_groupmember) - List of group members
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Array.&lt;GroupMember&gt;</code>](types.md#module_types__groupmember) - List of group members  
 
-| Param     | Type     | Description |
-| --------- | -------- | ----------- |
-| group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getGroupMembers" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetGroupListDetail(gids) ⇒ `Promise.<Array.<module:types~BriefGroupInfoAndSettings>>` <a href="#module_groupmanage__asyncgetgrouplistdetail" id="module_groupmanage__asyncgetgrouplistdetail"></a>
-
+### groupManage.asyncGetGroupListDetail(gids) ⇒ <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code> {#module_groupmanage__asyncgetgrouplistdetail}
 Get group details by id
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~BriefGroupInfoAndSettings>>` - List of group details
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~BriefGroupInfoAndSettings&gt;&gt;</code> - List of group details  
 
-| Param | Type             | Description   |
-| ----- | ---------------- | ------------- |
-| gids  | `Array.<number>` | Group ID list |
+| Param | Type | Description |
+| --- | --- | --- |
+| gids | <code>Array.&lt;number&gt;</code> | Group ID list |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetGroupListDetail" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.getGruopMessage(gid) ⇒ [`Array.<Meta>`](types.md#module\_types\_\_meta) <a href="#module_groupmanage__getgruopmessage" id="module_groupmanage__getgruopmessage"></a>
-
+### groupManage.getGruopMessage(gid) ⇒ [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta) {#module_groupmanage__getgruopmessage}
 Get group information
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Array.<Meta>`](types.md#module\_types\_\_meta) - List of group messages
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Array.&lt;Meta&gt;</code>](types.md#module_types__meta) - List of group messages  
 
-| Param | Type     | Description |
-| ----- | -------- | ----------- |
-| gid   | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| gid | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getGruopMessage" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetInfo(params) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) <a href="#module_groupmanage__asyncgetinfo" id="module_groupmanage__asyncgetinfo"></a>
-
+### groupManage.asyncGetInfo(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asyncgetinfo}
 Get group details
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) - Group details
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) - Group details  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetInfo" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetMemberList(param) ⇒ `Promise.<Array.<module:types~GroupMember>>` <a href="#module_groupmanage__asyncgetmemberlist" id="module_groupmanage__asyncgetmemberlist"></a>
-
+### groupManage.asyncGetMemberList(param) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetmemberlist}
 Get group member list
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupMember>>` - List of group members
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - List of group members  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| param            | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| param | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetMemberList" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.readGroupMessage(group\_id, mid) <a href="#module_groupmanage__readgroupmessage" id="module_groupmanage__readgroupmessage"></a>
-
+### groupManage.readGroupMessage(group_id, mid) {#module_groupmanage__readgroupmessage}
 Set group message to read
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 
-| Param     | Type     | Description |
-| --------- | -------- | ----------- |
-| group\_id | `number` | GroupID     |
-| mid       | `number` | MessageID   |
+| Param | Type | Description |
+| --- | --- | --- |
+| group_id | <code>number</code> | GroupID |
+| mid | <code>number</code> | MessageID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="readGroupMessage" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.recallMessage(uid, mid) <a href="#module_groupmanage__recallmessage" id="module_groupmanage__recallmessage"></a>
-
+### groupManage.recallMessage(uid, mid) {#module_groupmanage__recallmessage}
 Revoke message
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
 
-| Param | Type     | Description |
-| ----- | -------- | ----------- |
-| uid   | `number` | GroupID     |
-| mid   | `number` | MessageID   |
+| Param | Type | Description |
+| --- | --- | --- |
+| uid | <code>number</code> | GroupID |
+| mid | <code>number</code> | MessageID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="recallMessage" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.getUnreadCount(gid) ⇒ `number` <a href="#module_groupmanage__getunreadcount" id="module_groupmanage__getunreadcount"></a>
-
+### groupManage.getUnreadCount(gid) ⇒ <code>number</code> {#module_groupmanage__getunreadcount}
 Get number of unread group messages
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `number` - Unread message-number
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>number</code> - Unread message-number  
 
-| Param | Type     | Description |
-| ----- | -------- | ----------- |
-| gid   | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| gid | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="getUnreadCount" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetAdminList(params) ⇒ `Promise.<Array.<module:types~GroupMember>>` <a href="#module_groupmanage__asyncgetadminlist" id="module_groupmanage__asyncgetadminlist"></a>
-
+### groupManage.asyncGetAdminList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetadminlist}
 Get the list of group Admins
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupMember>>` - List of group admins
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - List of group admins  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAdminList" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncAdminAdd(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asyncadminadd" id="module_groupmanage__asyncadminadd"></a>
-
+### groupManage.asyncAdminAdd(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncadminadd}
 Add group Admin
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAdminAdd" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncAdminRemove(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asyncadminremove" id="module_groupmanage__asyncadminremove"></a>
-
+### groupManage.asyncAdminRemove(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncadminremove}
 Remove group Admin
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAdminRemove" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetAnouncementById(params) ⇒ [`Promise.<GroupAnnouncement>`](types.md#module\_types\_\_groupannouncement) <a href="#module_groupmanage__asyncgetanouncementbyid" id="module_groupmanage__asyncgetanouncementbyid"></a>
-
+### groupManage.asyncGetAnouncementById(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) {#module_groupmanage__asyncgetanouncementbyid}
 Get group announcement details
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupAnnouncement>`](types.md#module\_types\_\_groupannouncement) - Group announcement details
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) - Group announcement details  
 
-| Param                   | Type             | Description     |
-| ----------------------- | ---------------- | --------------- |
-| params                  | `object`         | Parameter       |
-| params.group\_id        | `number`         | GroupID         |
-| params.announcement\_id | `Array.<number>` | Announcement ID |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.announcement_id | <code>Array.&lt;number&gt;</code> | Announcement ID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAnouncementById" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncAnouncementDelete(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncanouncementdelete" id="module_groupmanage__asyncanouncementdelete"></a>
-
+### groupManage.asyncAnouncementDelete(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncanouncementdelete}
 Delete group announcement
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param                   | Type             | Description     |
-| ----------------------- | ---------------- | --------------- |
-| params                  | `object`         | Parameter       |
-| params.group\_id        | `number`         | GroupID         |
-| params.announcement\_id | `Array.<number>` | Announcement ID |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.announcement_id | <code>Array.&lt;number&gt;</code> | Announcement ID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAnouncementDelete" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncAnnouncementEdit(params) ⇒ [`Promise.<GroupAnnouncement>`](types.md#module\_types\_\_groupannouncement) <a href="#module_groupmanage__asyncannouncementedit" id="module_groupmanage__asyncannouncementedit"></a>
-
+### groupManage.asyncAnnouncementEdit(params) ⇒ [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) {#module_groupmanage__asyncannouncementedit}
 Edit group announcement
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupAnnouncement>`](types.md#module\_types\_\_groupannouncement) - Group announcement details
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupAnnouncement&gt;</code>](types.md#module_types__groupannouncement) - Group announcement details  
 
-| Param            | Type     | Description          |
-| ---------------- | -------- | -------------------- |
-| params           | `object` | Parameter            |
-| params.group\_id | `number` | GroupID              |
-| params.title     | `string` | Announcement tittle  |
-| params.content   | `string` | Announcement content |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.title | <code>string</code> | Announcement tittle |
+| params.content | <code>string</code> | Announcement content |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncAnnouncementEdit" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetAnnouncementList(params) ⇒ `Promise.<Array.<module:types~GroupAnnouncement>>` <a href="#module_groupmanage__asyncgetannouncementlist" id="module_groupmanage__asyncgetannouncementlist"></a>
-
+### groupManage.asyncGetAnnouncementList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code> {#module_groupmanage__asyncgetannouncementlist}
 Group announcement list
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupAnnouncement>>` - List of group announcement details
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupAnnouncement&gt;&gt;</code> - List of group announcement details  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetAnnouncementList" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncCreate(params) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) <a href="#module_groupmanage__asynccreate" id="module_groupmanage__asynccreate"></a>
-
+### groupManage.asyncCreate(params) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asynccreate}
 Create group
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) - Group details
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) - Group details  
 
-| Param  | Type                                                             | Description        |
-| ------ | ---------------------------------------------------------------- | ------------------ |
-| params | [`GroupInfoRequest`](types.md#module\_types\_\_groupinforequest) | Request parameters |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | [<code>GroupInfoRequest</code>](types.md#module_types__groupinforequest) | Request parameters |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncCreate" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncDestroy(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncdestroy" id="module_groupmanage__asyncdestroy"></a>
-
+### groupManage.asyncDestroy(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncdestroy}
 Dissolve group
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncDestroy" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateAvatar(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdateavatar" id="module_groupmanage__asyncupdateavatar"></a>
-
+### groupManage.asyncUpdateAvatar(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateavatar}
 Update group avatar
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description   |
-| ---------------- | -------- | ------------- |
-| params           | `object` | Parameter     |
-| params.group\_id | `number` | GroupID       |
-| params.value     | `string` | AvatarAddress |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | AvatarAddress |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAvatar" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateDescription(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdatedescription" id="module_groupmanage__asyncupdatedescription"></a>
-
+### groupManage.asyncUpdateDescription(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatedescription}
 Update group description
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description       |
-| ---------------- | -------- | ----------------- |
-| params           | `object` | Parameter         |
-| params.group\_id | `number` | GroupID           |
-| params.value     | `string` | Group description |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | Group description |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateDescription" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateExt(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdateext" id="module_groupmanage__asyncupdateext"></a>
-
+### groupManage.asyncUpdateExt(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateext}
 Update group extension information
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description           |
-| ---------------- | -------- | --------------------- |
-| params           | `object` | Parameter             |
-| params.group\_id | `number` | GroupID               |
-| params.value     | `string` | Extension information |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | Extension information |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateExt" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateName(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdatename" id="module_groupmanage__asyncupdatename"></a>
-
+### groupManage.asyncUpdateName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatename}
 Update group name
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
-| params.value     | `string` | Group name  |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | Group name |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateName" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGroupMsgMutemode(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncgroupmsgmutemode" id="module_groupmanage__asyncgroupmsgmutemode"></a>
-
+### groupManage.asyncGroupMsgMutemode(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncgroupmsgmutemode}
 Set do-not-disturb conditions for group message
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param                  | Type     | Description                                                                                                                            |
-| ---------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| params                 | `object` | Parameter                                                                                                                              |
-| params.group\_id       | `number` | GroupID                                                                                                                                |
-| params.msg\_mute\_mode | `number` | Group message blocking mode: 0 - no blocking, 1 - blocking local message notifications, 2 - blocking all, means not receiving messages |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.msg_mute_mode | <code>number</code> | Group message blocking mode: 0 - no blocking, 1 - blocking local message notifications, 2 - blocking all, means not receiving messages |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupMsgMutemode" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGroupBannedList(params) ⇒ `Promise.<Array.<module:types~GroupMemberBanned>>` <a href="#module_groupmanage__asyncgroupbannedlist" id="module_groupmanage__asyncgroupbannedlist"></a>
-
+### groupManage.asyncGroupBannedList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code> {#module_groupmanage__asyncgroupbannedlist}
 Get group ban list
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupMemberBanned>>` - List of banned members
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMemberBanned&gt;&gt;</code> - List of banned members  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBannedList" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGroupBab(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asyncgroupbab" id="module_groupmanage__asyncgroupbab"></a>
-
+### groupManage.asyncGroupBab(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupbab}
 Ban group member
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of request results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of request results  
 
-| Param  | Type                                                                             | Description        |
-| ------ | -------------------------------------------------------------------------------- | ------------------ |
-| params | [`GroupBannedMemberRequest`](types.md#module\_types\_\_groupbannedmemberrequest) | Request parameters |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | [<code>GroupBannedMemberRequest</code>](types.md#module_types__groupbannedmemberrequest) | Request parameters |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBab" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGroupUnban(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asyncgroupunban" id="module_groupmanage__asyncgroupunban"></a>
-
+### groupManage.asyncGroupUnban(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupunban}
 Unban group memberBan
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of request results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of request results  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupUnban" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetSettings(group\_id) ⇒ [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) <a href="#module_groupmanage__asyncgetsettings" id="module_groupmanage__asyncgetsettings"></a>
-
+### groupManage.asyncGetSettings(group_id) ⇒ [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) {#module_groupmanage__asyncgetsettings}
 Get group settings
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupInfoAndSettings>`](types.md#module\_types\_\_groupinfoandsettings) - Group settings
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupInfoAndSettings&gt;</code>](types.md#module_types__groupinfoandsettings) - Group settings  
 
-| Param     | Type     | Description |
-| --------- | -------- | ----------- |
-| group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetSettings" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateAllowMemberInvitation(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdateallowmemberinvitation" id="module_groupmanage__asyncupdateallowmemberinvitation"></a>
-
+### groupManage.asyncUpdateAllowMemberInvitation(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateallowmemberinvitation}
 Set whether group members can invite new member
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type      | Description                                                                                        |
-| ---------------- | --------- | -------------------------------------------------------------------------------------------------- |
-| params           | `object`  | Parameter                                                                                          |
-| params.group\_id | `number`  | GroupID                                                                                            |
-| params.value     | `boolean` | Group member invite settings: false - do not allow invitations, true - allow invitations (default) |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Group member invite settings: false - do not allow invitations, true - allow invitations (default) |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAllowMemberInvitation" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateAllowMemberModify(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdateallowmembermodify" id="module_groupmanage__asyncupdateallowmembermodify"></a>
-
+### groupManage.asyncUpdateAllowMemberModify(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateallowmembermodify}
 Set whether group members can modify group information
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type      | Description                                                                                                                                   |
-| ---------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| params           | `object`  | Parameter                                                                                                                                     |
-| params.group\_id | `number`  | GroupID                                                                                                                                       |
-| params.value     | `boolean` | Group members modify group info settings: false - group members can't modify group info (default), true - group members can modify group info |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Group members modify group info settings: false - group members can't modify group info (default), true - group members can modify group info |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateAllowMemberModify" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateEnableReadack(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdateenablereadack" id="module_groupmanage__asyncupdateenablereadack"></a>
-
+### groupManage.asyncUpdateEnableReadack(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdateenablereadack}
 Set whether to enable read mode in group
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type      | Description                                                                    |
-| ---------------- | --------- | ------------------------------------------------------------------------------ |
-| params           | `object`  | Parameter                                                                      |
-| params.group\_id | `number`  | GroupID                                                                        |
-| params.value     | `boolean` | Enable or disable group message read feature: false - disabled, true - enabled |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Enable or disable group message read feature: false - disabled, true - enabled |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateEnableReadack" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateHistoryVisible(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdatehistoryvisible" id="module_groupmanage__asyncupdatehistoryvisible"></a>
-
+### groupManage.asyncUpdateHistoryVisible(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatehistoryvisible}
 Set whether group history is visible
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type      | Description                                                                   |
-| ---------------- | --------- | ----------------------------------------------------------------------------- |
-| params           | `object`  | Parameter                                                                     |
-| params.group\_id | `number`  | GroupID                                                                       |
-| params.value     | `boolean` | Set whether the group history is visible: false - not visible, true - visible |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>boolean</code> | Set whether the group history is visible: false - not visible, true - visible |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateHistoryVisible" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateRequireadminapproval(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdaterequireadminapproval" id="module_groupmanage__asyncupdaterequireadminapproval"></a>
-
+### groupManage.asyncUpdateRequireadminapproval(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdaterequireadminapproval}
 Set whether need to apply for group joining
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param                  | Type      | Description                                                                                                     |
-| ---------------------- | --------- | --------------------------------------------------------------------------------------------------------------- |
-| params                 | `object`  | Parameter                                                                                                       |
-| params.group\_id       | `number`  | GroupID                                                                                                         |
-| params.apply\_approval | `boolean` | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.apply_approval | <code>boolean</code> | Group membership application settings, 0: Agree all requests 1: Need to confirm by Admin 2: Reject all requests |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateRequireadminapproval" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncBanAll(params) ⇒ [`Promise.<GroupBanAllResponse>`](types.md#module\_types\_\_groupbanallresponse) <a href="#module_groupmanage__asyncbanall" id="module_groupmanage__asyncbanall"></a>
-
+### groupManage.asyncBanAll(params) ⇒ [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types__groupbanallresponse) {#module_groupmanage__asyncbanall}
 Ban all members, only Admins can send messages
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupBanAllResponse>`](types.md#module\_types\_\_groupbanallresponse) - Results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupBanAllResponse&gt;</code>](types.md#module_types__groupbanallresponse) - Results  
 
-| Param            | Type     | Description                         |
-| ---------------- | -------- | ----------------------------------- |
-| params           | `object` | Parameter                           |
-| params.duration  | `number` | Duration of banned in minutes,int64 |
-| params.group\_id | `number` | Group id,int64                      |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.duration | <code>number</code> | Duration of banned in minutes,int64 |
+| params.group_id | <code>number</code> | Group id,int64 |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncBanAll" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUnBanAll(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncunbanall" id="module_groupmanage__asyncunbanall"></a>
-
+### groupManage.asyncUnBanAll(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncunbanall}
 Unban all members
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description    |
-| ---------------- | -------- | -------------- |
-| params           | `object` | Parameter      |
-| params.group\_id | `number` | Group id,int64 |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | Group id,int64 |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUnBanAll" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncOwnerTransfer(params) ⇒ [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse) <a href="#module_groupmanage__asyncownertransfer" id="module_groupmanage__asyncownertransfer"></a>
-
+### groupManage.asyncOwnerTransfer(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncownertransfer}
 Change group Owner
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse) - Results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) - Results  
 
-| Param             | Type     | Description                    |
-| ----------------- | -------- | ------------------------------ |
-| params            | `object` | Parameter                      |
-| params.group\_id  | `number` | GroupID                        |
-| params.new\_owner | `number` | User ID of the new group owner |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.new_owner | <code>number</code> | User ID of the new group owner |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncOwnerTransfer" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetUserJoined(params) ⇒ `Promise.<Array.<number>>` <a href="#module_groupmanage__asyncgetuserjoined" id="module_groupmanage__asyncgetuserjoined"></a>
-
+### groupManage.asyncGetUserJoined(params) ⇒ <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> {#module_groupmanage__asyncgetuserjoined}
 Get the list of groups for the user
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<number>>` - List of group IDs
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;number&gt;&gt;</code> - List of group IDs  
 
-| Param  | Type     | Description             |
-| ------ | -------- | ----------------------- |
-| params | `object` | Parameter, Empty object |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter, Empty object |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetUserJoined" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncApply(params) ⇒ [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse) <a href="#module_groupmanage__asyncapply" id="module_groupmanage__asyncapply"></a>
-
+### groupManage.asyncApply(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncapply}
 Apply to join group
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse) - Results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) - Results  
 
-| Param            | Type     | Description                       |
-| ---------------- | -------- | --------------------------------- |
-| params           | `object` | Parameter                         |
-| params.group\_id | `number` | GroupID                           |
-| params.reason    | `string` | Reason for membership application |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.reason | <code>string</code> | Reason for membership application |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncApply" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncApplyHandle(params) ⇒ [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse) <a href="#module_groupmanage__asyncapplyhandle" id="module_groupmanage__asyncapplyhandle"></a>
-
+### groupManage.asyncApplyHandle(params) ⇒ [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) {#module_groupmanage__asyncapplyhandle}
 Process user's group joining application
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: [`Promise.<GroupUserRelationResponse>`](types.md#module\_types\_\_groupuserrelationresponse) - Results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: [<code>Promise.&lt;GroupUserRelationResponse&gt;</code>](types.md#module_types__groupuserrelationresponse) - Results  
 
-| Param            | Type      | Description                                       |
-| ---------------- | --------- | ------------------------------------------------- |
-| params           | `object`  | Parameter                                         |
-| params.group\_id | `number`  | GroupID                                           |
-| params.user\_id  | `number`  | User ID                                           |
-| params.approval  | `boolean` | Approval result: true for agree, false for reject |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_id | <code>number</code> | User ID |
+| params.approval | <code>boolean</code> | Approval result: true for agree, false for reject |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncApplyHandle" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGroupBockedlist(params) ⇒ `Promise.<Array.<module:types~GroupBlockedListItem>>` <a href="#module_groupmanage__asyncgroupbockedlist" id="module_groupmanage__asyncgroupbockedlist"></a>
-
+### groupManage.asyncGroupBockedlist(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code> {#module_groupmanage__asyncgroupbockedlist}
 Get group blacklist
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupBlockedListItem>>` - GroupList of blacklists
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupBlockedListItem&gt;&gt;</code> - GroupList of blacklists  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBockedlist" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGroupBlock(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asyncgroupblock" id="module_groupmanage__asyncgroupblock"></a>
-
+### groupManage.asyncGroupBlock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupblock}
 Add member to blacklist
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupBlock" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGroupUnblock(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asyncgroupunblock" id="module_groupmanage__asyncgroupunblock"></a>
-
+### groupManage.asyncGroupUnblock(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncgroupunblock}
 Remove member from blacklist
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGroupUnblock" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncKick(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asynckick" id="module_groupmanage__asynckick"></a>
-
+### groupManage.asyncKick(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asynckick}
 Kick out group member
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncKick" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetInvitationList() ⇒ `Promise.<Array.<module:types~GroupInvitation>>` <a href="#module_groupmanage__asyncgetinvitationlist" id="module_groupmanage__asyncgetinvitationlist"></a>
-
+### groupManage.asyncGetInvitationList() ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> {#module_groupmanage__asyncgetinvitationlist}
 Get group invitation list
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupInvitation>>` - List of group invitations\
-**Example**
-
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupInvitation&gt;&gt;</code> - List of group invitations  
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetInvitationList" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncInvite(params) ⇒ `Promise.<Array.<module:types~GroupUserRelationResponse>>` <a href="#module_groupmanage__asyncinvite" id="module_groupmanage__asyncinvite"></a>
-
+### groupManage.asyncInvite(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> {#module_groupmanage__asyncinvite}
 Invite member to group
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupUserRelationResponse>>` - List of results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code> - List of results  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncInvite" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncInviteHandle(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncinvitehandle" id="module_groupmanage__asyncinvitehandle"></a>
-
+### groupManage.asyncInviteHandle(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncinvitehandle}
 Process group invitations
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type      | Description                                       |
-| ---------------- | --------- | ------------------------------------------------- |
-| params           | `object`  | Parameter                                         |
-| params.group\_id | `number`  | GroupID                                           |
-| params.user\_id  | `number`  | User ID                                           |
-| params.approval  | `boolean` | Approval result: true for agree, false for reject |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_id | <code>number</code> | User ID |
+| params.approval | <code>boolean</code> | Approval result: true for agree, false for reject |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncInviteHandle" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetMemberDisplayName(params) ⇒ `Promise.<Array.<module:types~GroupMember>>` <a href="#module_groupmanage__asyncgetmemberdisplayname" id="module_groupmanage__asyncgetmemberdisplayname"></a>
-
+### groupManage.asyncGetMemberDisplayName(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> {#module_groupmanage__asyncgetmemberdisplayname}
 Batch retrieval of group member profiles
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupMember>>` - List of group members
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code> - List of group members  
 
-| Param             | Type             | Description           |
-| ----------------- | ---------------- | --------------------- |
-| params            | `object`         | Parameter             |
-| params.group\_id  | `number`         | GroupID               |
-| params.user\_list | `Array.<number>` | List of group members |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.user_list | <code>Array.&lt;number&gt;</code> | List of group members |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetMemberDisplayName" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncLeave(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncleave" id="module_groupmanage__asyncleave"></a>
-
+### groupManage.asyncLeave(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncleave}
 Quit group
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncLeave" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncUpdateDisplayName(params) ⇒ `Promise.<boolean>` <a href="#module_groupmanage__asyncupdatedisplayname" id="module_groupmanage__asyncupdatedisplayname"></a>
-
+### groupManage.asyncUpdateDisplayName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_groupmanage__asyncupdatedisplayname}
 Modify group profile
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param            | Type     | Description      |
-| ---------------- | -------- | ---------------- |
-| params           | `object` | Parameter        |
-| params.group\_id | `number` | GroupID          |
-| params.value     | `string` | New user profile |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.value | <code>string</code> | New user profile |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncUpdateDisplayName" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asncGetApplicationList(params) ⇒ `Promise.<Array.<module:types~GroupApplication>>` <a href="#module_groupmanage__asncgetapplicationlist" id="module_groupmanage__asncgetapplicationlist"></a>
-
+### groupManage.asncGetApplicationList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code> {#module_groupmanage__asncgetapplicationlist}
 Get the list of group membership requests
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupApplication>>` - List of group applications
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupApplication&gt;&gt;</code> - List of group applications  
 
-| Param              | Type             | Description    |
-| ------------------ | ---------------- | -------------- |
-| params             | `object`         | Parameter      |
-| params.group\_list | `Array.<number>` | List of groups |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_list | <code>Array.&lt;number&gt;</code> | List of groups |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asncGetApplicationList" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncGetFileList(params) ⇒ `Promise.<Array.<module:types~GroupSharedFile>>` <a href="#module_groupmanage__asyncgetfilelist" id="module_groupmanage__asyncgetfilelist"></a>
-
+### groupManage.asyncGetFileList(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage__asyncgetfilelist}
 Get the list of group files
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupSharedFile>>` - List of group files
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> - List of group files  
 
-| Param            | Type     | Description |
-| ---------------- | -------- | ----------- |
-| params           | `object` | Parameter   |
-| params.group\_id | `number` | GroupID     |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncGetFileList" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncFileDelete(params) ⇒ `Promise.<Array.<module:types~GroupSharedFileResponse>>` <a href="#module_groupmanage__asyncfiledelete" id="module_groupmanage__asyncfiledelete"></a>
-
+### groupManage.asyncFileDelete(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code> {#module_groupmanage__asyncfiledelete}
 Delete group file
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupSharedFileResponse>>` - List of results
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFileResponse&gt;&gt;</code> - List of results  
 
-| Param             | Type             | Description      |
-| ----------------- | ---------------- | ---------------- |
-| params            | `object`         | Parameter        |
-| params.group\_id  | `number`         | GroupID          |
-| params.file\_list | `Array.<number>` | List of file IDs |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | GroupID |
+| params.file_list | <code>Array.&lt;number&gt;</code> | List of file IDs |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncFileDelete" %}{% endlanying_code_snippet %}
 ```
-
-### groupManage.asyncFileUpload(params) ⇒ `Promise.<Array.<module:types~GroupSharedFile>>` <a href="#module_groupmanage__asyncfileupload" id="module_groupmanage__asyncfileupload"></a>
-
+### groupManage.asyncFileUpload(params) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> {#module_groupmanage__asyncfileupload}
 Upload group file
 
-**Kind**: static method of [`groupManage`](groupManage.md#module\_groupmanage)\
-**Returns**: `Promise.<Array.<module:types~GroupSharedFile>>` - List of group files
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+**Returns**: <code>Promise.&lt;Array.&lt;module:types~GroupSharedFile&gt;&gt;</code> - List of group files  
 
-| Param            | Type     | Description     |
-| ---------------- | -------- | --------------- |
-| params           | `object` | Parameter       |
-| params.group\_id | `number` | Group id,int64  |
-| params.name      | `string` | File name       |
-| params.size      | `number` | File size,int64 |
-| params.type      | `string` | File type       |
-| params.url       | `string` | File url        |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.group_id | <code>number</code> | Group id,int64 |
+| params.name | <code>string</code> | File name |
+| params.size | <code>number</code> | File size,int64 |
+| params.type | <code>string</code> | File type |
+| params.url | <code>string</code> | File url |
 
-**Example**
-
+**Example**  
 ```js
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='groupManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="asyncFileUpload" %}{% endlanying_code_snippet %}
 ```

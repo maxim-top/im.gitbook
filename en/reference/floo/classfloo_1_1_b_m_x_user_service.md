@@ -1,52 +1,56 @@
 ---
 title: floo::BMXUserService
-summary: User Service
+summary: User Service 
+
 ---
 
 # floo::BMXUserService
 
-User Service
+
+
+User Service 
+
 
 `#include <bmx_user_service.h>`
 
 ## Public Types
 
-|                                           | Name                                                                        |
-| ----------------------------------------- | --------------------------------------------------------------------------- |
-| typedef std::function< void(int percent)> | [**Callback**](classfloo\_1\_1\_b\_m\_x\_user\_service.md#typedef-callback) |
+|                | Name           |
+| -------------- | -------------- |
+| typedef std::function< void(int percent)> | **[Callback](classfloo_1_1_b_m_x_user_service.md#typedef-callback)**  |
 
 ## Public Functions
 
-|                      | Name                                                                                                                                                                                                                                                                                          |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| virtual              | [**\~BMXUserService**](classfloo\_1\_1\_b\_m\_x\_user\_service.md#function-\~bmxuserservice)()                                                                                                                                                                                                |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-binddevice"><strong>bindDevice</strong></a>(const std::string &#x26; token) =0<br>Binding device push token</p>                                                                                                                      |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-getdevicelist"><strong>getDeviceList</strong></a>(BMXDeviceList &#x26; deviceList) =0<br>Get device list</p>                                                                                                                         |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-deletedevice"><strong>deleteDevice</strong></a>(int32_t device_sn) =0<br>Delete device</p>                                                                                                                                           |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-getprofile"><strong>getProfile</strong></a>(BMXUserProfilePtr &#x26; profile, bool forceRefresh) =0<br>Get user details, force pull from server if forceRefresh == true</p>                                                          |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setnickname"><strong>setNickname</strong></a>(const std::string &#x26; nickname) =0<br>Set nickname</p>                                                                                                                              |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-uploadavatar"><strong>uploadAvatar</strong></a>(const std::string &#x26; avatarPath, Callback callback) =0<br>Upload avatar</p>                                                                                                      |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(BMXUserProfilePtr profile, bool thumbnail, Callback callback) =0<br>Download avatar, default to download thumbnail</p>                                                           |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setpublicinfo"><strong>setPublicInfo</strong></a>(const std::string &#x26; publicInfo) =0<br>Set public extension information</p>                                                                                                    |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setprivateinfo"><strong>setPrivateInfo</strong></a>(const std::string &#x26; privateInfo) =0<br>Set private extension information</p>                                                                                                |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setaddfriendauthmode"><strong>setAddFriendAuthMode</strong></a>(<a href="classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode">BMXUserProfile::AddFriendAuthMode</a> mode) =0<br>Set method to validate when adding friend</p> |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setauthquestion"><strong>setAuthQuestion</strong></a>(const [BMXUserProfile::AuthQuestion] &#x26; authQuestion) =0<br>Set friend authentication questions</p>                                                                        |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setenablepush"><strong>setEnablePush</strong></a>(bool enable) =0<br>Set whether push is allowed</p>                                                                                                                                 |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setenablepushdetaile"><strong>setEnablePushDetaile</strong></a>(bool enable) =0<br>Set whether to push details</p>                                                                                                                   |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setpushnickname"><strong>setPushNickname</strong></a>(const std::string &#x26; nickname) =0<br>Set push nickname</p>                                                                                                                 |
-| virtual BMXErrorCode | [**setPushAlias**](classfloo\_1\_1\_b\_m\_x\_user\_service.md#function-setpushalias)(const std::string & alias, const std::string & bmxPushToken) =0                                                                                                                                          |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setnotificationsound"><strong>setNotificationSound</strong></a>(bool enable) =0<br>Set whether a new message is audibly alerted</p>                                                                                                  |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setnotificationvibrate"><strong>setNotificationVibrate</strong></a>(bool enable) =0<br>Set whether a new message is alerted in vibration</p>                                                                                         |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setautodownloadattachment"><strong>setAutoDownloadAttachment</strong></a>(bool enable) =0<br>Set whether to automatically download thumbnail and voice attachment</p>                                                                |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite"><strong>setAutoAcceptGroupInvite</strong></a>(bool enable) =0<br>Set whether to automatically accept group invitations</p>                                                                                 |
-| virtual void         | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-adduserlistener"><strong>addUserListener</strong></a>(<a href="classfloo_1_1_b_m_x_user_service_listener.md">BMXUserServiceListener</a> * listener) =0<br>Add user state listener</p>                                                |
-| virtual void         | <p><a href="classfloo_1_1_b_m_x_user_service.md#function-removeuserlistener"><strong>removeUserListener</strong></a>(<a href="classfloo_1_1_b_m_x_user_service_listener.md">BMXUserServiceListener</a> * listener) =0<br>Remove user state listener</p>                                       |
+|                | Name           |
+| -------------- | -------------- |
+| virtual | **[~BMXUserService](classfloo_1_1_b_m_x_user_service.md#function-~bmxuserservice)**() |
+| virtual BMXErrorCode | **[bindDevice](classfloo_1_1_b_m_x_user_service.md#function-binddevice)**(const std::string & token) =0<br>Binding device push token  |
+| virtual BMXErrorCode | **[getDeviceList](classfloo_1_1_b_m_x_user_service.md#function-getdevicelist)**(BMXDeviceList & deviceList) =0<br>Get device list  |
+| virtual BMXErrorCode | **[deleteDevice](classfloo_1_1_b_m_x_user_service.md#function-deletedevice)**(int32_t device_sn) =0<br>Delete device  |
+| virtual BMXErrorCode | **[getProfile](classfloo_1_1_b_m_x_user_service.md#function-getprofile)**(BMXUserProfilePtr & profile, bool forceRefresh) =0<br>Get user details, force pull from server if forceRefresh == true  |
+| virtual BMXErrorCode | **[setNickname](classfloo_1_1_b_m_x_user_service.md#function-setnickname)**(const std::string & nickname) =0<br>Set nickname  |
+| virtual BMXErrorCode | **[uploadAvatar](classfloo_1_1_b_m_x_user_service.md#function-uploadavatar)**(const std::string & avatarPath, Callback callback) =0<br>Upload avatar  |
+| virtual BMXErrorCode | **[downloadAvatar](classfloo_1_1_b_m_x_user_service.md#function-downloadavatar)**(BMXUserProfilePtr profile, bool thumbnail, Callback callback) =0<br>Download avatar, default to download thumbnail  |
+| virtual BMXErrorCode | **[setPublicInfo](classfloo_1_1_b_m_x_user_service.md#function-setpublicinfo)**(const std::string & publicInfo) =0<br>Set public extension information  |
+| virtual BMXErrorCode | **[setPrivateInfo](classfloo_1_1_b_m_x_user_service.md#function-setprivateinfo)**(const std::string & privateInfo) =0<br>Set private extension information  |
+| virtual BMXErrorCode | **[setAddFriendAuthMode](classfloo_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**([BMXUserProfile::AddFriendAuthMode](classfloo_1_1_b_m_x_user_profile.md#enum-addfriendauthmode) mode) =0<br>Set method to validate when adding friend  |
+| virtual BMXErrorCode | **[setAuthQuestion](classfloo_1_1_b_m_x_user_service.md#function-setauthquestion)**(const [BMXUserProfile::AuthQuestion] & authQuestion) =0<br>Set friend authentication questions  |
+| virtual BMXErrorCode | **[setEnablePush](classfloo_1_1_b_m_x_user_service.md#function-setenablepush)**(bool enable) =0<br>Set whether push is allowed  |
+| virtual BMXErrorCode | **[setEnablePushDetaile](classfloo_1_1_b_m_x_user_service.md#function-setenablepushdetaile)**(bool enable) =0<br>Set whether to push details  |
+| virtual BMXErrorCode | **[setPushNickname](classfloo_1_1_b_m_x_user_service.md#function-setpushnickname)**(const std::string & nickname) =0<br>Set push nickname  |
+| virtual BMXErrorCode | **[setPushAlias](classfloo_1_1_b_m_x_user_service.md#function-setpushalias)**(const std::string & alias, const std::string & bmxPushToken) =0 |
+| virtual BMXErrorCode | **[setNotificationSound](classfloo_1_1_b_m_x_user_service.md#function-setnotificationsound)**(bool enable) =0<br>Set whether a new message is audibly alerted  |
+| virtual BMXErrorCode | **[setNotificationVibrate](classfloo_1_1_b_m_x_user_service.md#function-setnotificationvibrate)**(bool enable) =0<br>Set whether a new message is alerted in vibration  |
+| virtual BMXErrorCode | **[setAutoDownloadAttachment](classfloo_1_1_b_m_x_user_service.md#function-setautodownloadattachment)**(bool enable) =0<br>Set whether to automatically download thumbnail and voice attachment  |
+| virtual BMXErrorCode | **[setAutoAcceptGroupInvite](classfloo_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite)**(bool enable) =0<br>Set whether to automatically accept group invitations  |
+| virtual void | **[addUserListener](classfloo_1_1_b_m_x_user_service.md#function-adduserlistener)**([BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md) * listener) =0<br>Add user state listener  |
+| virtual void | **[removeUserListener](classfloo_1_1_b_m_x_user_service.md#function-removeuserlistener)**([BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md) * listener) =0<br>Remove user state listener  |
 
 ## Protected Functions
 
-|   | Name                                                                                       |
-| - | ------------------------------------------------------------------------------------------ |
-|   | [**BMXUserService**](classfloo\_1\_1\_b\_m\_x\_user\_service.md#function-bmxuserservice)() |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXUserService](classfloo_1_1_b_m_x_user_service.md#function-bmxuserservice)**() |
 
 ## Public Types Documentation
 
@@ -56,20 +60,20 @@ User Service
 typedef std::function<void(int percent)> floo::BMXUserService::Callback;
 ```
 
+
 ## Public Functions Documentation
 
-### function \~BMXUserService
+### function ~BMXUserService
 
 ```cpp
 inline virtual ~BMXUserService()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="~BMXUserService" %}{% endlanying_code_snippet %}
 ```
-
 ### function bindDevice
 
 ```cpp
@@ -78,20 +82,19 @@ virtual BMXErrorCode bindDevice(
 ) =0
 ```
 
-Binding device push token
+Binding device push token 
 
-**Parameters**:
+**Parameters**: 
 
-* **token** Device token
+  * **token** Device token 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="bindDevice" %}{% endlanying_code_snippet %}
 ```
-
 ### function getDeviceList
 
 ```cpp
@@ -100,20 +103,19 @@ virtual BMXErrorCode getDeviceList(
 ) =0
 ```
 
-Get device list
+Get device list 
 
-**Parameters**:
+**Parameters**: 
 
-* **deviceList** Device list, pass in an empty list function and fetch the returned device list here
+  * **deviceList** Device list, pass in an empty list function and fetch the returned device list here 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="getDeviceList" %}{% endlanying_code_snippet %}
 ```
-
 ### function deleteDevice
 
 ```cpp
@@ -122,20 +124,19 @@ virtual BMXErrorCode deleteDevice(
 ) =0
 ```
 
-Delete device
+Delete device 
 
-**Parameters**:
+**Parameters**: 
 
-* **device\_sn** Device serial number
+  * **device_sn** Device serial number 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="deleteDevice" %}{% endlanying_code_snippet %}
 ```
-
 ### function getProfile
 
 ```cpp
@@ -145,21 +146,20 @@ virtual BMXErrorCode getProfile(
 ) =0
 ```
 
-Get user details, force pull from server if forceRefresh == true
+Get user details, force pull from server if forceRefresh == true 
 
-**Parameters**:
+**Parameters**: 
 
-* **profile** User profile, initially passed in a pointing-to-empty shared\_ptr object, and fetch user profile here after the function returned.
-* **forceRefresh** Whether to force pull from server, automatically if local fetch failed
+  * **profile** User profile, initially passed in a pointing-to-empty shared_ptr object, and fetch user profile here after the function returned. 
+  * **forceRefresh** Whether to force pull from server, automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="getProfile" %}{% endlanying_code_snippet %}
 ```
-
 ### function setNickname
 
 ```cpp
@@ -168,20 +168,19 @@ virtual BMXErrorCode setNickname(
 ) =0
 ```
 
-Set nickname
+Set nickname 
 
-**Parameters**:
+**Parameters**: 
 
-* **nickname** User nickname
+  * **nickname** User nickname 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function uploadAvatar
 
 ```cpp
@@ -191,21 +190,20 @@ virtual BMXErrorCode uploadAvatar(
 ) =0
 ```
 
-Upload avatar
+Upload avatar 
 
-**Parameters**:
+**Parameters**: 
 
-* **avatarPath** Local address to upload avatar
-* **callback** Upload callback function
+  * **avatarPath** Local address to upload avatar 
+  * **callback** Upload callback function 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="uploadAvatar" %}{% endlanying_code_snippet %}
 ```
-
 ### function downloadAvatar
 
 ```cpp
@@ -216,22 +214,21 @@ virtual BMXErrorCode downloadAvatar(
 ) =0
 ```
 
-Download avatar, default to download thumbnail
+Download avatar, default to download thumbnail 
 
-**Parameters**:
+**Parameters**: 
 
-* **profile** User profile
-* **thumbnail** Whether to download thumbnail, true for thumbnail, false for original
-* **callback** Download callback function
+  * **profile** User profile 
+  * **thumbnail** Whether to download thumbnail, true for thumbnail, false for original 
+  * **callback** Download callback function 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="downloadAvatar" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPublicInfo
 
 ```cpp
@@ -240,20 +237,19 @@ virtual BMXErrorCode setPublicInfo(
 ) =0
 ```
 
-Set public extension information
+Set public extension information 
 
-**Parameters**:
+**Parameters**: 
 
-* **publicInfo** Public extension information
+  * **publicInfo** Public extension information 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPublicInfo" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPrivateInfo
 
 ```cpp
@@ -262,20 +258,19 @@ virtual BMXErrorCode setPrivateInfo(
 ) =0
 ```
 
-Set private extension information
+Set private extension information 
 
-**Parameters**:
+**Parameters**: 
 
-* **privateInfo** Private extension information
+  * **privateInfo** Private extension information 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPrivateInfo" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAddFriendAuthMode
 
 ```cpp
@@ -284,20 +279,19 @@ virtual BMXErrorCode setAddFriendAuthMode(
 ) =0
 ```
 
-Set method to validate when adding friend
+Set method to validate when adding friend 
 
-**Parameters**:
+**Parameters**: 
 
-* **mode** Add friend authentication
+  * **mode** Add friend authentication 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAddFriendAuthMode" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAuthQuestion
 
 ```cpp
@@ -306,20 +300,19 @@ virtual BMXErrorCode setAuthQuestion(
 ) =0
 ```
 
-Set friend authentication questions
+Set friend authentication questions 
 
-**Parameters**:
+**Parameters**: 
 
-* **authQuestion** Add friend authentication question
+  * **authQuestion** Add friend authentication question 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAuthQuestion" %}{% endlanying_code_snippet %}
 ```
-
 ### function setEnablePush
 
 ```cpp
@@ -328,20 +321,19 @@ virtual BMXErrorCode setEnablePush(
 ) =0
 ```
 
-Set whether push is allowed
+Set whether push is allowed 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to allow push, true to push, false not to
+  * **enable** Whether to allow push, true to push, false not to 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setEnablePush" %}{% endlanying_code_snippet %}
 ```
-
 ### function setEnablePushDetaile
 
 ```cpp
@@ -350,20 +342,19 @@ virtual BMXErrorCode setEnablePushDetaile(
 ) =0
 ```
 
-Set whether to push details
+Set whether to push details 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to push details, true to push, false not to
+  * **enable** Whether to push details, true to push, false not to 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setEnablePushDetaile" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushNickname
 
 ```cpp
@@ -372,20 +363,19 @@ virtual BMXErrorCode setPushNickname(
 ) =0
 ```
 
-Set push nickname
+Set push nickname 
 
-**Parameters**:
+**Parameters**: 
 
-* **nickname** Push nickname
+  * **nickname** Push nickname 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPushNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushAlias
 
 ```cpp
@@ -395,18 +385,18 @@ virtual BMXErrorCode setPushAlias(
 ) =0
 ```
 
-**Parameters**:
 
-* **nickname** Push nickname
+**Parameters**: 
 
-**Return**: BMXErrorCode
+  * **nickname** Push nickname 
+
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setPushAlias" %}{% endlanying_code_snippet %}
 ```
-
 ### function setNotificationSound
 
 ```cpp
@@ -415,20 +405,19 @@ virtual BMXErrorCode setNotificationSound(
 ) =0
 ```
 
-Set whether a new message is audibly alerted
+Set whether a new message is audibly alerted 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to sound alert when new message received, true to alert, false not to
+  * **enable** Whether to sound alert when new message received, true to alert, false not to 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setNotificationSound" %}{% endlanying_code_snippet %}
 ```
-
 ### function setNotificationVibrate
 
 ```cpp
@@ -437,20 +426,19 @@ virtual BMXErrorCode setNotificationVibrate(
 ) =0
 ```
 
-Set whether a new message is alerted in vibration
+Set whether a new message is alerted in vibration 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to vibrate alert when new message received, true to alert, false not to
+  * **enable** Whether to vibrate alert when new message received, true to alert, false not to 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setNotificationVibrate" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAutoDownloadAttachment
 
 ```cpp
@@ -459,20 +447,19 @@ virtual BMXErrorCode setAutoDownloadAttachment(
 ) =0
 ```
 
-Set whether to automatically download thumbnail and voice attachment
+Set whether to automatically download thumbnail and voice attachment 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to automatically download thumbnail and voice attachment, true to download, false not to
+  * **enable** Whether to automatically download thumbnail and voice attachment, true to download, false not to 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAutoDownloadAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAutoAcceptGroupInvite
 
 ```cpp
@@ -481,20 +468,19 @@ virtual BMXErrorCode setAutoAcceptGroupInvite(
 ) =0
 ```
 
-Set whether to automatically accept group invitations
+Set whether to automatically accept group invitations 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to automatically agree to group invitation, true to agree, false not to
+  * **enable** Whether to automatically agree to group invitation, true to agree, false not to 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="setAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
 ```
-
 ### function addUserListener
 
 ```cpp
@@ -503,18 +489,17 @@ virtual void addUserListener(
 ) =0
 ```
 
-Add user state listener
+Add user state listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** User state listener
+  * **listener** User state listener 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="addUserListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeUserListener
 
 ```cpp
@@ -523,32 +508,30 @@ virtual void removeUserListener(
 ) =0
 ```
 
-Remove user state listener
+Remove user state listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** User state listener
+  * **listener** User state listener 
+
 
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="removeUserListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXUserService
 
 ```cpp
 inline BMXUserService()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserService",function="BMXUserService" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

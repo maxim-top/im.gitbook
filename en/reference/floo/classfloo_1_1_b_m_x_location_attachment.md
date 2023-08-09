@@ -1,50 +1,55 @@
 ---
 title: floo::BMXLocationAttachment
-summary: Location message attachment
+summary: Location message attachment 
+
 ---
 
 # floo::BMXLocationAttachment
 
-Location message attachment
+
+
+Location message attachment 
+
 
 `#include <bmx_location_attachment.h>`
 
-Inherits from [floo::BMXMessageAttachment](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md), BMXBaseObject
+Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md), BMXBaseObject
 
 ## Public Functions
 
-|                                                                            | Name                                                                                                                                                                                                                      |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                                            | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment"><strong>BMXLocationAttachment</strong></a>(double latitude, double longitude, const std::string &#x26; address)<br>Constructor</p> |
-| virtual                                                                    | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-~bmxlocationattachment"><strong>~BMXLocationAttachment</strong></a>()<br>Destructor</p>                                                                   |
-| virtual [Type](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#enum-type) | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-type"><strong>type</strong></a>() const<br>Return the type of location attachment</p>                                                                     |
-| virtual BMXMessageAttachmentPtr                                            | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-clone"><strong>clone</strong></a>() const<br>Cloning function</p>                                                                                         |
-| double                                                                     | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-latitude"><strong>latitude</strong></a>() const<br>Latitude</p>                                                                                           |
-| double                                                                     | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-longitude"><strong>longitude</strong></a>() const<br>Longitude</p>                                                                                        |
-| const std::string &                                                        | <p><a href="classfloo_1_1_b_m_x_location_attachment.md#function-address"><strong>address</strong></a>() const<br>Address</p>                                                                                              |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-bmxlocationattachment)**(double latitude, double longitude, const std::string & address)<br>Constructor  |
+| virtual | **[~BMXLocationAttachment](classfloo_1_1_b_m_x_location_attachment.md#function-~bmxlocationattachment)**()<br>Destructor  |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_location_attachment.md#function-type)**() const<br>Return the type of location attachment  |
+| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_location_attachment.md#function-clone)**() const<br>Cloning function  |
+| double | **[latitude](classfloo_1_1_b_m_x_location_attachment.md#function-latitude)**() const<br>Latitude  |
+| double | **[longitude](classfloo_1_1_b_m_x_location_attachment.md#function-longitude)**() const<br>Longitude  |
+| const std::string & | **[address](classfloo_1_1_b_m_x_location_attachment.md#function-address)**() const<br>Address  |
 
 ## Friends
 
-|       | Name                                                                                                                              |
-| ----- | --------------------------------------------------------------------------------------------------------------------------------- |
-| class | [**Encoder< BMXLocationAttachment >**](classfloo\_1\_1\_b\_m\_x\_location\_attachment.md#friend-encoder<-bmxlocationattachment->) |
-| class | [**Decoder< BMXLocationAttachment >**](classfloo\_1\_1\_b\_m\_x\_location\_attachment.md#friend-decoder<-bmxlocationattachment->) |
+|                | Name           |
+| -------------- | -------------- |
+| class | **[Encoder< BMXLocationAttachment >](classfloo_1_1_b_m_x_location_attachment.md#friend-encoder<-bmxlocationattachment->)**  |
+| class | **[Decoder< BMXLocationAttachment >](classfloo_1_1_b_m_x_location_attachment.md#friend-decoder<-bmxlocationattachment->)**  |
 
 ## Additional inherited members
 
-**Public Types inherited from** [**floo::BMXMessageAttachment**](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md)
+**Public Types inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
-|            | Name                                                                                                                                                                                                 |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-type"><strong>Type</strong></a> { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type</p>                           |
-| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus"><strong>DownloadStatus</strong></a> { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state</p> |
+|                | Name           |
+| -------------- | -------------- |
+| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
+| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
 
-**Public Functions inherited from** [**floo::BMXMessageAttachment**](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md)
+**Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
-|         | Name                                                                                                                                                 |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-|         | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment"><strong>BMXMessageAttachment</strong></a>()<br>Constructor</p>  |
-| virtual | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment"><strong>~BMXMessageAttachment</strong></a>()<br>Destructor</p> |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
+| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
+
 
 ## Public Functions Documentation
 
@@ -58,111 +63,102 @@ BMXLocationAttachment(
 )
 ```
 
-Constructor
+Constructor 
 
-**Parameters**:
+**Parameters**: 
 
-* **latitude** Latitude
-* **longitude** Longitude
-* **address** Address name
+  * **latitude** Latitude 
+  * **longitude** Longitude 
+  * **address** Address name 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="BMXLocationAttachment" %}{% endlanying_code_snippet %}
 ```
-
-### function \~BMXLocationAttachment
+### function ~BMXLocationAttachment
 
 ```cpp
 inline virtual ~BMXLocationAttachment()
 ```
 
-Destructor
+Destructor 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="~BMXLocationAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function type
 
 ```cpp
 inline virtual Type type() const
 ```
 
-Return the type of location attachment
+Return the type of location attachment 
 
-**Return**: Type
+**Return**: Type 
 
-**Reimplements**: [floo::BMXMessageAttachment::type](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#function-type)
+**Reimplements**: [floo::BMXMessageAttachment::type](classfloo_1_1_b_m_x_message_attachment.md#function-type)
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="type" %}{% endlanying_code_snippet %}
 ```
-
 ### function clone
 
 ```cpp
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-Cloning function
+Cloning function 
 
-**Return**: BMXMessageAttachmentPtr
+**Return**: BMXMessageAttachmentPtr 
 
-**Reimplements**: [floo::BMXMessageAttachment::clone](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#function-clone)
+**Reimplements**: [floo::BMXMessageAttachment::clone](classfloo_1_1_b_m_x_message_attachment.md#function-clone)
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
-
 ### function latitude
 
 ```cpp
 double latitude() const
 ```
 
-Latitude
+Latitude 
 
-**Return**: double
+**Return**: double 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="latitude" %}{% endlanying_code_snippet %}
 ```
-
 ### function longitude
 
 ```cpp
 double longitude() const
 ```
 
-Longitude
+Longitude 
 
-**Return**: double
+**Return**: double 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="longitude" %}{% endlanying_code_snippet %}
 ```
-
 ### function address
 
 ```cpp
 const std::string & address() const
 ```
 
-Address
+Address 
 
-**Return**: std::string
+**Return**: std::string 
 
 ## Friends
 
@@ -174,6 +170,7 @@ friend class Encoder< BMXLocationAttachment >(
 );
 ```
 
+
 ### friend Decoder< BMXLocationAttachment >
 
 ```cpp
@@ -182,12 +179,11 @@ friend class Decoder< BMXLocationAttachment >(
 );
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXLocationAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXLocationAttachment",function="address" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

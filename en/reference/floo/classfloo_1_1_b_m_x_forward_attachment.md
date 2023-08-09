@@ -1,46 +1,51 @@
 ---
 title: floo::BMXForwardAttachment
-summary: Forwarded attachment in message
+summary: Forwarded attachment in message 
+
 ---
 
 # floo::BMXForwardAttachment
 
-Forwarded attachment in message
+
+
+Forwarded attachment in message 
+
 
 `#include <bmx_forward_attachment.h>`
 
-Inherits from [floo::BMXMessageAttachment](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md), BMXBaseObject
+Inherits from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md), BMXBaseObject
 
 ## Public Classes
 
-|       | Name                                                                                                                                        |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| class | <p><a href="classfloo_1_1_b_m_x_forward_attachment_1_1_message.md"><strong>Message</strong></a><br>Custom message to forward attachment</p> |
+|                | Name           |
+| -------------- | -------------- |
+| class | **[Message](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md)** <br>Custom message to forward attachment  |
 
 ## Public Functions
 
-|                                                                            | Name                                                                                                                                                 |
-| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                                            | <p><a href="classfloo_1_1_b_m_x_forward_attachment.md#function-bmxforwardattachment"><strong>BMXForwardAttachment</strong></a>()<br>Constructor</p>  |
-| virtual                                                                    | <p><a href="classfloo_1_1_b_m_x_forward_attachment.md#function-~bmxforwardattachment"><strong>~BMXForwardAttachment</strong></a>()<br>Destructor</p> |
-| virtual [Type](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#enum-type) | <p><a href="classfloo_1_1_b_m_x_forward_attachment.md#function-type"><strong>type</strong></a>() const<br>Attachment type</p>                        |
-| virtual BMXMessageAttachmentPtr                                            | <p><a href="classfloo_1_1_b_m_x_forward_attachment.md#function-clone"><strong>clone</strong></a>() const<br>Cloning function</p>                     |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXForwardAttachment](classfloo_1_1_b_m_x_forward_attachment.md#function-bmxforwardattachment)**()<br>Constructor  |
+| virtual | **[~BMXForwardAttachment](classfloo_1_1_b_m_x_forward_attachment.md#function-~bmxforwardattachment)**()<br>Destructor  |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_forward_attachment.md#function-type)**() const<br>Attachment type  |
+| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_forward_attachment.md#function-clone)**() const<br>Cloning function  |
 
 ## Additional inherited members
 
-**Public Types inherited from** [**floo::BMXMessageAttachment**](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md)
+**Public Types inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
-|            | Name                                                                                                                                                                                                 |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-type"><strong>Type</strong></a> { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type</p>                           |
-| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus"><strong>DownloadStatus</strong></a> { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state</p> |
+|                | Name           |
+| -------------- | -------------- |
+| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
+| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
 
-**Public Functions inherited from** [**floo::BMXMessageAttachment**](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md)
+**Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
 
-|         | Name                                                                                                                                                 |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-|         | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment"><strong>BMXMessageAttachment</strong></a>()<br>Constructor</p>  |
-| virtual | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment"><strong>~BMXMessageAttachment</strong></a>()<br>Destructor</p> |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
+| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
+
 
 ## Public Functions Documentation
 
@@ -50,64 +55,58 @@ Inherits from [floo::BMXMessageAttachment](classfloo\_1\_1\_b\_m\_x\_message\_at
 inline BMXForwardAttachment()
 ```
 
-Constructor
+Constructor 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXForwardAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="BMXForwardAttachment" %}{% endlanying_code_snippet %}
 ```
-
-### function \~BMXForwardAttachment
+### function ~BMXForwardAttachment
 
 ```cpp
 inline virtual ~BMXForwardAttachment()
 ```
 
-Destructor
+Destructor 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXForwardAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="~BMXForwardAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function type
 
 ```cpp
 inline virtual Type type() const
 ```
 
-Attachment type
+Attachment type 
 
-**Return**: Type
+**Return**: Type 
 
-**Reimplements**: [floo::BMXMessageAttachment::type](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#function-type)
+**Reimplements**: [floo::BMXMessageAttachment::type](classfloo_1_1_b_m_x_message_attachment.md#function-type)
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXForwardAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="type" %}{% endlanying_code_snippet %}
 ```
-
 ### function clone
 
 ```cpp
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-Cloning function
+Cloning function 
 
-**Return**: BMXMessageAttachmentPtr
+**Return**: BMXMessageAttachmentPtr 
 
-**Reimplements**: [floo::BMXMessageAttachment::clone](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#function-clone)
+**Reimplements**: [floo::BMXMessageAttachment::clone](classfloo_1_1_b_m_x_message_attachment.md#function-clone)
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXForwardAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXForwardAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

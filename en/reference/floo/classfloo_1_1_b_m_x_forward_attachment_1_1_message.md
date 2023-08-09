@@ -1,33 +1,37 @@
 ---
 title: floo::BMXForwardAttachment::Message
-summary: Custom message to forward attachment
+summary: Custom message to forward attachment 
+
 ---
 
 # floo::BMXForwardAttachment::Message
 
-Custom message to forward attachment
+
+
+Custom message to forward attachment 
+
 
 `#include <bmx_forward_attachment.h>`
 
 ## Public Functions
 
-|         | Name                                                                                                                                                                        |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|         | [**Message**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#function-message)(std::shared\_ptr< [BMXMessage](classfloo\_1\_1\_b\_m\_x\_message.md) > msg) |
-| virtual | [**\~Message**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#function-\~message)()                                                                       |
+|                | Name           |
+| -------------- | -------------- |
+| | **[Message](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#function-message)**(std::shared_ptr< [BMXMessage](classfloo_1_1_b_m_x_message.md) > msg) |
+| virtual | **[~Message](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#function-~message)**() |
 
 ## Public Attributes
 
-|                                                                    | Name                                                                                                            |
-| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| int64\_t                                                           | [**msgId**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-msgid)                     |
-| int64\_t                                                           | [**fromId**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-fromid)                   |
-| int64\_t                                                           | [**clientTimestamp**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-clienttimestamp) |
-| int64\_t                                                           | [**serverTimestamp**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-servertimestamp) |
-| std::string                                                        | [**content**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-content)                 |
-| [Type](classfloo\_1\_1\_b\_m\_x\_message\_attachment.md#enum-type) | [**contentType**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-contenttype)         |
-| BMXMessageAttachmentPtr                                            | [**attachment**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-attachment)           |
-| JSON                                                               | [**extension**](classfloo\_1\_1\_b\_m\_x\_forward\_attachment\_1\_1\_message.md#variable-extension)             |
+|                | Name           |
+| -------------- | -------------- |
+| int64_t | **[msgId](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-msgid)**  |
+| int64_t | **[fromId](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-fromid)**  |
+| int64_t | **[clientTimestamp](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-clienttimestamp)**  |
+| int64_t | **[serverTimestamp](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-servertimestamp)**  |
+| std::string | **[content](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-content)**  |
+| [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[contentType](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-contenttype)**  |
+| BMXMessageAttachmentPtr | **[attachment](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-attachment)**  |
+| JSON | **[extension](classfloo_1_1_b_m_x_forward_attachment_1_1_message.md#variable-extension)**  |
 
 ## Public Functions Documentation
 
@@ -39,17 +43,17 @@ Message(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='Message'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="Message",function="Message" %}{% endlanying_code_snippet %}
 ```
-
-### function \~Message
+### function ~Message
 
 ```cpp
 inline virtual ~Message()
 ```
+
 
 ## Public Attributes Documentation
 
@@ -59,11 +63,13 @@ inline virtual ~Message()
 int64_t msgId;
 ```
 
+
 ### variable fromId
 
 ```cpp
 int64_t fromId;
 ```
+
 
 ### variable clientTimestamp
 
@@ -71,11 +77,13 @@ int64_t fromId;
 int64_t clientTimestamp;
 ```
 
+
 ### variable serverTimestamp
 
 ```cpp
 int64_t serverTimestamp;
 ```
+
 
 ### variable content
 
@@ -83,11 +91,13 @@ int64_t serverTimestamp;
 std::string content;
 ```
 
+
 ### variable contentType
 
 ```cpp
 Type contentType;
 ```
+
 
 ### variable attachment
 
@@ -95,18 +105,18 @@ Type contentType;
 BMXMessageAttachmentPtr attachment;
 ```
 
+
 ### variable extension
 
 ```cpp
 JSON extension;
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='Message'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="Message",function="~Message" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

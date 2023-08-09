@@ -1,6 +1,6 @@
 # IOS SDK Quick Start
 
-This page is for quick integration, visit [detailed documentation](../../zh-hans/reference/floo-ios.md)
+This page is for quick integration, visit [detailed documentation](../reference/floo-ios.md)
 
 ## Previous preparation
 
@@ -209,7 +209,7 @@ devicetoken.When disconnected from Lanying IM server, remote push is stopped by 
 
 ### Single chat
 
-Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object. See demo code in \[Message operation]\(#Message operation)
+Single chat is the most basic chat interface, which provides a variety of input contents such as text, emoji, voice clip, image, etc., and solves the communication bottleneck of users in App. BMXConversationType of single chat is BMXConversationSingle, and toId is userId of single chat object. See demo code in [Message operation](#Message operation)
 
 ### Group chat
 
@@ -592,9 +592,7 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
 
       }];
     ```
-
 ## RTC AV Call
-
 The RTC call function needs to integrate floo-ios and floo-rtc-ios on the client side.Floo-ios provides a signaling channel for AV calls, and floo-rtc-ios implements the business logic in RTC calls. Therefore, before implementing AV calls, it is necessary to integrate floo-ios, and implement the features of login and messaging.
 
 Floo-rtc-android supports one-to-one AV calls. You can integrate floo-rtc-ios by CocoaPods automatically, or download floo-rtc-ios.framework, and add it to the project manually.
@@ -649,7 +647,6 @@ Add a GoogleWebRTC pod into the Podfile
 ```
 
 ### Business logic of an AV call
-
 1. Import the RTCEngineManager
 
 ```
@@ -659,13 +656,11 @@ Add a GoogleWebRTC pod into the Podfile
 2. Add a RTC engine delegate
 
 Add BMXRTCEngineProtocol to interface：
-
 ```
 @interface CallViewController () < BMXRTCEngineProtocol >
 ```
 
 Add a BMXRTCEngineProtocol delegate：
-
 ```
     [[RTCEngineManager engineWithType:kMaxEngine] addDelegate:self];
 ```
@@ -739,13 +734,11 @@ Add a BMXRTCEngineProtocol delegate：
 1. Add a delegate
 
 Add BMXRTCServiceProtocol to interface ：
-
 ```
 @interface CallViewController () < BMXRTCEngineProtocol, BMXRTCServiceProtocol >
 ```
 
 Add a BMXRTCServiceProtocol delegate：
-
 ```
     [[RTCEngineManager engineWithType:kMaxEngine] addDelegate:self];
     [[[BMXClient sharedClient] rtcService] addDelegate:self];
@@ -877,7 +870,6 @@ Handle hangup messages in the conversation page：
 ```
 
 8. Received a pickup message
-
 ```
 - (void)onRTCPickupMessageReceiveWithMsg:(BMXMessage*)msg{
     //If the message is sent by my other terminal

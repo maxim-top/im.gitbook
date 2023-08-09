@@ -1,96 +1,100 @@
 ---
 title: floo::BMXGroupService
-summary: Group Service
+summary: Group Service 
+
 ---
 
 # floo::BMXGroupService
 
-Group Service
+
+
+Group Service 
+
 
 `#include <bmx_group_service.h>`
 
 ## Public Types
 
-|                                                   | Name                                                                                                   |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| typedef std::function< void(int percent)>         | [**Callback**](classfloo\_1\_1\_b\_m\_x\_group\_service.md#typedef-callback)                           |
-| typedef std::shared\_ptr< \[CreateGroupOptions] > | [**CreateGroupOptionsPtr**](classfloo\_1\_1\_b\_m\_x\_group\_service.md#typedef-creategroupoptionsptr) |
+|                | Name           |
+| -------------- | -------------- |
+| typedef std::function< void(int percent)> | **[Callback](classfloo_1_1_b_m_x_group_service.md#typedef-callback)**  |
+| typedef std::shared_ptr< [CreateGroupOptions] > | **[CreateGroupOptionsPtr](classfloo_1_1_b_m_x_group_service.md#typedef-creategroupoptionsptr)**  |
 
 ## Public Functions
 
-|                      | Name                                                                                                                                                                                                                                                                                                                                                 |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| virtual              | [**\~BMXGroupService**](classfloo\_1\_1\_b\_m\_x\_group\_service.md#function-\~bmxgroupservice)()                                                                                                                                                                                                                                                    |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-get"><strong>get</strong></a>(BMXGroupList &#x26; list, bool forceRefresh) =0<br>Get group list, pull from server if forceRefreshed is set</p>                                                                                                                                             |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(BMXGroupList &#x26; list, bool forceRefresh) =0<br>Deprecated.</p>                                                                                                                                                                                     |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-fetchgroupsbyidlist"><strong>fetchGroupsByIdList</strong></a>(const std::vector&#x3C; int64_t > &#x26; groupIdList, BMXGroupList &#x26; list, bool forceRefresh) =0<br>Get a list of group information from the ID list passed in to group, or pull from server if forceRefresh is set</p> |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(const std::vector&#x3C; int64_t > &#x26; groupIdList, BMXGroupList &#x26; list, bool forceRefresh) =0<br>Deprecated.</p>                                                                                                                               |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-fetchgroupbyid"><strong>fetchGroupById</strong></a>(int64_t groupId, BMXGroupPtr &#x26; group, bool forceRefresh) =0<br>Get group information by group id, or pull from server if forceRefresh is set</p>                                                                                  |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(int64_t groupId, BMXGroupPtr &#x26; group, bool forceRefresh) =0<br>Deprecated.</p>                                                                                                                                                                    |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-fetchlocalgroupsbyname"><strong>fetchLocalGroupsByName</strong></a>(BMXGroupList &#x26; list, const std::string &#x26; name) =0<br>Query local group information by group name and retrieve the group from local database by group name query</p>                                          |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(BMXGroupList &#x26; list, const std::string &#x26; name) =0<br>Deprecated.</p>                                                                                                                                                                         |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-create"><strong>create</strong></a>(const [CreateGroupOptions] &#x26; options, BMXGroupPtr &#x26; group) =0<br>Create group</p>                                                                                                                                                            |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-destroy"><strong>destroy</strong></a>(BMXGroupPtr group) =0<br>Destroy group</p>                                                                                                                                                                                                           |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-join"><strong>join</strong></a>(BMXGroupPtr group, const std::string &#x26; message) =0<br>Join a group, which may require admin approval depending on group settings</p>                                                                                                                  |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-leave"><strong>leave</strong></a>(BMXGroupPtr group) =0<br>Quit group</p>                                                                                                                                                                                                                  |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getinfo"><strong>getInfo</strong></a>(BMXGroupPtr group) =0<br>Get group details, pull the latest information from server</p>                                                                                                                                                              |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getmembersnickname"><strong>getMembersNickname</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; members, BMXGroup::MemberList &#x26; list) =0<br>Get group member details</p>                                                                                      |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getinvitationlist"><strong>getInvitationList</strong></a>(BMXGroupInvitationPagePtr &#x26; result, const std::string &#x26; cursor ="", int pageSize =10) =0<br>Get group invitation list in pages</p>                                                                                     |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getapplicationlist"><strong>getApplicationList</strong></a>(BMXGroupList list, BMXGroupApplicationPagePtr &#x26; result, const std::string &#x26; cursor ="", int pageSize =10) =0<br>Get a list of group applications in pages</p>                                                        |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getmembers"><strong>getMembers</strong></a>(BMXGroupPtr group, BMXGroupMemberResultPagePtr &#x26; result, const std::string &#x26; cursor ="", int pageSize =200) =0<br>Get list of group members in pages, pull from server if forceRefresh is set, up to 500 per page.</p>               |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getmembers"><strong>getMembers</strong></a>(BMXGroupPtr group, BMXGroup::MemberList &#x26; list, bool forceRefresh) =0<br>Get group member list, pull from server if forceRefresh is set, up to 1,000</p>                                                                                  |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-addmembers"><strong>addMembers</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; members, const std::string &#x26; message) =0<br>Add group member</p>                                                                                                              |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-removemembers"><strong>removeMembers</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; members, const std::string &#x26; reason) =0<br>Remove group member</p>                                                                                                      |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-addadmins"><strong>addAdmins</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; admins, const std::string &#x26; message) =0<br>Add Admin</p>                                                                                                                        |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-removeadmins"><strong>removeAdmins</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; admins, const std::string &#x26; reason) =0<br>Remove admin</p>                                                                                                                |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getadmins"><strong>getAdmins</strong></a>(BMXGroupPtr group, BMXGroup::MemberList &#x26; list, bool forceRefresh) =0<br>Get Admins list, pull from server if forceRefreshed is set</p>                                                                                                     |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-blockmembers"><strong>blockMembers</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; members) =0<br>Add to blacklist</p>                                                                                                                                            |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-unblockmembers"><strong>unblockMembers</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; members) =0<br>Unblacklist</p>                                                                                                                                             |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getblocklist"><strong>getBlockList</strong></a>(BMXGroupPtr group, BMXGroupMemberResultPagePtr &#x26; result, const std::string &#x26; cursor ="", int pageSize =200) =0<br>Paged to get blacklist</p>                                                                                     |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getblocklist"><strong>getBlockList</strong></a>(BMXGroupPtr group, BMXGroup::MemberList &#x26; list, bool forceRefresh) =0<br>Get blacklist</p>                                                                                                                                            |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-banmembers"><strong>banMembers</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; members, int64_t duration, const std::string &#x26; reason ="") =0<br>Ban</p>                                                                                                      |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-bangroup"><strong>banGroup</strong></a>(BMXGroupPtr group, int64_t duration) =0<br>Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration)</p>                                       |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-unbanmembers"><strong>unbanMembers</strong></a>(BMXGroupPtr group, const std::vector&#x3C; int64_t > &#x26; members) =0<br>Unban</p>                                                                                                                                                       |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-unbangroup"><strong>unbanGroup</strong></a>(BMXGroupPtr group) =0<br>Unban all members</p>                                                                                                                                                                                                 |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getbannedmembers"><strong>getBannedMembers</strong></a>(BMXGroupPtr group, BMXGroupBannedMemberResultPagePtr &#x26; result, const std::string &#x26; cursor ="", int pageSize =200) =0<br>Paged to get ban list</p>                                                                        |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getbannedmembers"><strong>getBannedMembers</strong></a>(BMXGroupPtr group, BMXGroup::BannedMemberList &#x26; list) =0<br>Get a list of banned members</p>                                                                                                                                  |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-mutemessage"><strong>muteMessage</strong></a>(BMXGroupPtr group, <a href="classfloo_1_1_b_m_x_group.md#enum-msgmutemode">BMXGroup::MsgMuteMode</a> mode) =0<br>Set whether to block group messages</p>                                                                                     |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-acceptapplication"><strong>acceptApplication</strong></a>(BMXGroupPtr group, int64_t applicantId) =0<br>Accept application of membership</p>                                                                                                                                               |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-declineapplication"><strong>declineApplication</strong></a>(BMXGroupPtr group, int64_t applicantId, const std::string &#x26; reason ="") =0<br>Reject application of membership</p>                                                                                                        |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-acceptinvitation"><strong>acceptInvitation</strong></a>(BMXGroupPtr group, int64_t inviter) =0<br>Accept to join group</p>                                                                                                                                                                 |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-declineinvitation"><strong>declineInvitation</strong></a>(BMXGroupPtr group, int64_t inviter, const std::string &#x26; reason ="") =0<br>Reject invitation to join group</p>                                                                                                               |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-transferowner"><strong>transferOwner</strong></a>(BMXGroupPtr group, int64_t newOwnerId) =0<br>Transfer of group Owner</p>                                                                                                                                                                 |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-uploadsharedfile"><strong>uploadSharedFile</strong></a>(BMXGroupPtr group, const std::string &#x26; filePath, const std::string &#x26; displayName, const std::string &#x26; extensionName, Callback ) =0<br>Add shared file in group</p>                                                  |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-canceluploadsharedfile"><strong>cancelUploadSharedFile</strong></a>(BMXGroupPtr group, const std::string &#x26; filePath) =0<br>Cancel uploading group shared files</p>                                                                                                                    |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-removesharedfile"><strong>removeSharedFile</strong></a>(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile) =0<br>Remove shared file in group</p>                                                                                                                                       |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-downloadsharedfile"><strong>downloadSharedFile</strong></a>(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile, Callback ) =0<br>Download share file in group</p>                                                                                                                       |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-canceldownloadsharedfile"><strong>cancelDownloadSharedFile</strong></a>(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile) =0<br>Cancel downloading group shared files</p>                                                                                                             |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getsharedfileslist"><strong>getSharedFilesList</strong></a>(BMXGroupPtr group, BMXGroup::SharedFileList &#x26; list, bool forceRefresh) =0<br>Get a list of share files in group</p>                                                                                                       |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-changesharedfilename"><strong>changeSharedFileName</strong></a>(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile, const std::string &#x26; name) =0<br>Modify shared file name in group</p>                                                                                           |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getlatestannouncement"><strong>getLatestAnnouncement</strong></a>(BMXGroupPtr group, BMXGroup::AnnouncementPtr &#x26; announcement, bool forceRefresh) =0<br>Get the latest group announcement</p>                                                                                         |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-getannouncementlist"><strong>getAnnouncementList</strong></a>(BMXGroupPtr group, BMXGroup::AnnouncementList &#x26; list, bool forceRefresh) =0<br>Get group announcements list</p>                                                                                                         |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-editannouncement"><strong>editAnnouncement</strong></a>(BMXGroupPtr group, const std::string &#x26; title, const std::string &#x26; content) =0<br>Write group announcement</p>                                                                                                            |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-deleteannouncement"><strong>deleteAnnouncement</strong></a>(BMXGroupPtr group, int64_t announcementId) =0<br>Delete group announcement</p>                                                                                                                                                 |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setname"><strong>setName</strong></a>(BMXGroupPtr group, const std::string &#x26; name) =0<br>Set group name</p>                                                                                                                                                                           |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setdescription"><strong>setDescription</strong></a>(BMXGroupPtr group, const std::string &#x26; description) =0<br>Set group description</p>                                                                                                                                               |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setextension"><strong>setExtension</strong></a>(BMXGroupPtr group, const std::string &#x26; extension) =0<br>Set group extension information</p>                                                                                                                                           |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setmynickname"><strong>setMyNickname</strong></a>(BMXGroupPtr group, const std::string &#x26; nickname) =0<br>Set nickname in group</p>                                                                                                                                                    |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setmsgpushmode"><strong>setMsgPushMode</strong></a>(BMXGroupPtr group, <a href="classfloo_1_1_b_m_x_group.md#enum-msgpushmode">BMXGroup::MsgPushMode</a> mode) =0<br>Set group message notification mode</p>                                                                               |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setjoinauthmode"><strong>setJoinAuthMode</strong></a>(BMXGroupPtr group, <a href="classfloo_1_1_b_m_x_group.md#enum-joinauthmode">BMXGroup::JoinAuthMode</a> mode) =0<br>Set approval mode for joining group</p>                                                                           |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setinvitemode"><strong>setInviteMode</strong></a>(BMXGroupPtr group, <a href="classfloo_1_1_b_m_x_group.md#enum-invitemode">BMXGroup::InviteMode</a> mode) =0<br>Set invitation mode</p>                                                                                                   |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setallowmembermodify"><strong>setAllowMemberModify</strong></a>(BMXGroupPtr group, bool enable) =0<br>Set whether group members are allowed to set group information</p>                                                                                                                   |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setenablereadack"><strong>setEnableReadAck</strong></a>(BMXGroupPtr group, bool enable) =0<br>Set whether group message read acknowledgement is enabled</p>                                                                                                                                |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-sethistoryvisible"><strong>setHistoryVisible</strong></a>(BMXGroupPtr group, bool enable) =0<br>Set whether group members are allowed to enable visible message history</p>                                                                                                                |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-setavatar"><strong>setAvatar</strong></a>(BMXGroupPtr group, const std::string &#x26; avatarPath, Callback ) =0<br>Set group avatar</p>                                                                                                                                                    |
-| virtual BMXErrorCode | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(BMXGroupPtr group, bool thumbnail, Callback callback) =0<br>Download group avatar</p>                                                                                                                                                  |
-| virtual void         | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-addgrouplistener"><strong>addGroupListener</strong></a>(<a href="classfloo_1_1_b_m_x_group_service_listener.md">BMXGroupServiceListener</a> * listener) =0<br>Add group change listener</p>                                                                                                |
-| virtual void         | <p><a href="classfloo_1_1_b_m_x_group_service.md#function-removegrouplistener"><strong>removeGroupListener</strong></a>(<a href="classfloo_1_1_b_m_x_group_service_listener.md">BMXGroupServiceListener</a> * listener) =0<br>Remove group change listener</p>                                                                                       |
+|                | Name           |
+| -------------- | -------------- |
+| virtual | **[~BMXGroupService](classfloo_1_1_b_m_x_group_service.md#function-~bmxgroupservice)**() |
+| virtual BMXErrorCode | **[get](classfloo_1_1_b_m_x_group_service.md#function-get)**(BMXGroupList & list, bool forceRefresh) =0<br>Get group list, pull from server if forceRefreshed is set  |
+| virtual BMXErrorCode | **[search](classfloo_1_1_b_m_x_group_service.md#function-search)**(BMXGroupList & list, bool forceRefresh) =0<br>Deprecated.  |
+| virtual BMXErrorCode | **[fetchGroupsByIdList](classfloo_1_1_b_m_x_group_service.md#function-fetchgroupsbyidlist)**(const std::vector< int64_t > & groupIdList, BMXGroupList & list, bool forceRefresh) =0<br>Get a list of group information from the ID list passed in to group, or pull from server if forceRefresh is set  |
+| virtual BMXErrorCode | **[search](classfloo_1_1_b_m_x_group_service.md#function-search)**(const std::vector< int64_t > & groupIdList, BMXGroupList & list, bool forceRefresh) =0<br>Deprecated.  |
+| virtual BMXErrorCode | **[fetchGroupById](classfloo_1_1_b_m_x_group_service.md#function-fetchgroupbyid)**(int64_t groupId, BMXGroupPtr & group, bool forceRefresh) =0<br>Get group information by group id, or pull from server if forceRefresh is set  |
+| virtual BMXErrorCode | **[search](classfloo_1_1_b_m_x_group_service.md#function-search)**(int64_t groupId, BMXGroupPtr & group, bool forceRefresh) =0<br>Deprecated.  |
+| virtual BMXErrorCode | **[fetchLocalGroupsByName](classfloo_1_1_b_m_x_group_service.md#function-fetchlocalgroupsbyname)**(BMXGroupList & list, const std::string & name) =0<br>Query local group information by group name and retrieve the group from local database by group name query  |
+| virtual BMXErrorCode | **[search](classfloo_1_1_b_m_x_group_service.md#function-search)**(BMXGroupList & list, const std::string & name) =0<br>Deprecated.  |
+| virtual BMXErrorCode | **[create](classfloo_1_1_b_m_x_group_service.md#function-create)**(const [CreateGroupOptions] & options, BMXGroupPtr & group) =0<br>Create group  |
+| virtual BMXErrorCode | **[destroy](classfloo_1_1_b_m_x_group_service.md#function-destroy)**(BMXGroupPtr group) =0<br>Destroy group  |
+| virtual BMXErrorCode | **[join](classfloo_1_1_b_m_x_group_service.md#function-join)**(BMXGroupPtr group, const std::string & message) =0<br>Join a group, which may require admin approval depending on group settings  |
+| virtual BMXErrorCode | **[leave](classfloo_1_1_b_m_x_group_service.md#function-leave)**(BMXGroupPtr group) =0<br>Quit group  |
+| virtual BMXErrorCode | **[getInfo](classfloo_1_1_b_m_x_group_service.md#function-getinfo)**(BMXGroupPtr group) =0<br>Get group details, pull the latest information from server  |
+| virtual BMXErrorCode | **[getMembersNickname](classfloo_1_1_b_m_x_group_service.md#function-getmembersnickname)**(BMXGroupPtr group, const std::vector< int64_t > & members, BMXGroup::MemberList & list) =0<br>Get group member details  |
+| virtual BMXErrorCode | **[getInvitationList](classfloo_1_1_b_m_x_group_service.md#function-getinvitationlist)**(BMXGroupInvitationPagePtr & result, const std::string & cursor ="", int pageSize =10) =0<br>Get group invitation list in pages  |
+| virtual BMXErrorCode | **[getApplicationList](classfloo_1_1_b_m_x_group_service.md#function-getapplicationlist)**(BMXGroupList list, BMXGroupApplicationPagePtr & result, const std::string & cursor ="", int pageSize =10) =0<br>Get a list of group applications in pages  |
+| virtual BMXErrorCode | **[getMembers](classfloo_1_1_b_m_x_group_service.md#function-getmembers)**(BMXGroupPtr group, BMXGroupMemberResultPagePtr & result, const std::string & cursor ="", int pageSize =200) =0<br>Get list of group members in pages, pull from server if forceRefresh is set, up to 500 per page.  |
+| virtual BMXErrorCode | **[getMembers](classfloo_1_1_b_m_x_group_service.md#function-getmembers)**(BMXGroupPtr group, BMXGroup::MemberList & list, bool forceRefresh) =0<br>Get group member list, pull from server if forceRefresh is set, up to 1,000  |
+| virtual BMXErrorCode | **[addMembers](classfloo_1_1_b_m_x_group_service.md#function-addmembers)**(BMXGroupPtr group, const std::vector< int64_t > & members, const std::string & message) =0<br>Add group member  |
+| virtual BMXErrorCode | **[removeMembers](classfloo_1_1_b_m_x_group_service.md#function-removemembers)**(BMXGroupPtr group, const std::vector< int64_t > & members, const std::string & reason) =0<br>Remove group member  |
+| virtual BMXErrorCode | **[addAdmins](classfloo_1_1_b_m_x_group_service.md#function-addadmins)**(BMXGroupPtr group, const std::vector< int64_t > & admins, const std::string & message) =0<br>Add Admin  |
+| virtual BMXErrorCode | **[removeAdmins](classfloo_1_1_b_m_x_group_service.md#function-removeadmins)**(BMXGroupPtr group, const std::vector< int64_t > & admins, const std::string & reason) =0<br>Remove admin  |
+| virtual BMXErrorCode | **[getAdmins](classfloo_1_1_b_m_x_group_service.md#function-getadmins)**(BMXGroupPtr group, BMXGroup::MemberList & list, bool forceRefresh) =0<br>Get Admins list, pull from server if forceRefreshed is set  |
+| virtual BMXErrorCode | **[blockMembers](classfloo_1_1_b_m_x_group_service.md#function-blockmembers)**(BMXGroupPtr group, const std::vector< int64_t > & members) =0<br>Add to blacklist  |
+| virtual BMXErrorCode | **[unblockMembers](classfloo_1_1_b_m_x_group_service.md#function-unblockmembers)**(BMXGroupPtr group, const std::vector< int64_t > & members) =0<br>Unblacklist  |
+| virtual BMXErrorCode | **[getBlockList](classfloo_1_1_b_m_x_group_service.md#function-getblocklist)**(BMXGroupPtr group, BMXGroupMemberResultPagePtr & result, const std::string & cursor ="", int pageSize =200) =0<br>Paged to get blacklist  |
+| virtual BMXErrorCode | **[getBlockList](classfloo_1_1_b_m_x_group_service.md#function-getblocklist)**(BMXGroupPtr group, BMXGroup::MemberList & list, bool forceRefresh) =0<br>Get blacklist  |
+| virtual BMXErrorCode | **[banMembers](classfloo_1_1_b_m_x_group_service.md#function-banmembers)**(BMXGroupPtr group, const std::vector< int64_t > & members, int64_t duration, const std::string & reason ="") =0<br>Ban  |
+| virtual BMXErrorCode | **[banGroup](classfloo_1_1_b_m_x_group_service.md#function-bangroup)**(BMXGroupPtr group, int64_t duration) =0<br>Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration)  |
+| virtual BMXErrorCode | **[unbanMembers](classfloo_1_1_b_m_x_group_service.md#function-unbanmembers)**(BMXGroupPtr group, const std::vector< int64_t > & members) =0<br>Unban  |
+| virtual BMXErrorCode | **[unbanGroup](classfloo_1_1_b_m_x_group_service.md#function-unbangroup)**(BMXGroupPtr group) =0<br>Unban all members  |
+| virtual BMXErrorCode | **[getBannedMembers](classfloo_1_1_b_m_x_group_service.md#function-getbannedmembers)**(BMXGroupPtr group, BMXGroupBannedMemberResultPagePtr & result, const std::string & cursor ="", int pageSize =200) =0<br>Paged to get ban list  |
+| virtual BMXErrorCode | **[getBannedMembers](classfloo_1_1_b_m_x_group_service.md#function-getbannedmembers)**(BMXGroupPtr group, BMXGroup::BannedMemberList & list) =0<br>Get a list of banned members  |
+| virtual BMXErrorCode | **[muteMessage](classfloo_1_1_b_m_x_group_service.md#function-mutemessage)**(BMXGroupPtr group, [BMXGroup::MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode) mode) =0<br>Set whether to block group messages  |
+| virtual BMXErrorCode | **[acceptApplication](classfloo_1_1_b_m_x_group_service.md#function-acceptapplication)**(BMXGroupPtr group, int64_t applicantId) =0<br>Accept application of membership  |
+| virtual BMXErrorCode | **[declineApplication](classfloo_1_1_b_m_x_group_service.md#function-declineapplication)**(BMXGroupPtr group, int64_t applicantId, const std::string & reason ="") =0<br>Reject application of membership  |
+| virtual BMXErrorCode | **[acceptInvitation](classfloo_1_1_b_m_x_group_service.md#function-acceptinvitation)**(BMXGroupPtr group, int64_t inviter) =0<br>Accept to join group  |
+| virtual BMXErrorCode | **[declineInvitation](classfloo_1_1_b_m_x_group_service.md#function-declineinvitation)**(BMXGroupPtr group, int64_t inviter, const std::string & reason ="") =0<br>Reject invitation to join group  |
+| virtual BMXErrorCode | **[transferOwner](classfloo_1_1_b_m_x_group_service.md#function-transferowner)**(BMXGroupPtr group, int64_t newOwnerId) =0<br>Transfer of group Owner  |
+| virtual BMXErrorCode | **[uploadSharedFile](classfloo_1_1_b_m_x_group_service.md#function-uploadsharedfile)**(BMXGroupPtr group, const std::string & filePath, const std::string & displayName, const std::string & extensionName, Callback ) =0<br>Add shared file in group  |
+| virtual BMXErrorCode | **[cancelUploadSharedFile](classfloo_1_1_b_m_x_group_service.md#function-canceluploadsharedfile)**(BMXGroupPtr group, const std::string & filePath) =0<br>Cancel uploading group shared files  |
+| virtual BMXErrorCode | **[removeSharedFile](classfloo_1_1_b_m_x_group_service.md#function-removesharedfile)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile) =0<br>Remove shared file in group  |
+| virtual BMXErrorCode | **[downloadSharedFile](classfloo_1_1_b_m_x_group_service.md#function-downloadsharedfile)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile, Callback ) =0<br>Download share file in group  |
+| virtual BMXErrorCode | **[cancelDownloadSharedFile](classfloo_1_1_b_m_x_group_service.md#function-canceldownloadsharedfile)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile) =0<br>Cancel downloading group shared files  |
+| virtual BMXErrorCode | **[getSharedFilesList](classfloo_1_1_b_m_x_group_service.md#function-getsharedfileslist)**(BMXGroupPtr group, BMXGroup::SharedFileList & list, bool forceRefresh) =0<br>Get a list of share files in group  |
+| virtual BMXErrorCode | **[changeSharedFileName](classfloo_1_1_b_m_x_group_service.md#function-changesharedfilename)**(BMXGroupPtr group, BMXGroup::SharedFilePtr sharedFile, const std::string & name) =0<br>Modify shared file name in group  |
+| virtual BMXErrorCode | **[getLatestAnnouncement](classfloo_1_1_b_m_x_group_service.md#function-getlatestannouncement)**(BMXGroupPtr group, BMXGroup::AnnouncementPtr & announcement, bool forceRefresh) =0<br>Get the latest group announcement  |
+| virtual BMXErrorCode | **[getAnnouncementList](classfloo_1_1_b_m_x_group_service.md#function-getannouncementlist)**(BMXGroupPtr group, BMXGroup::AnnouncementList & list, bool forceRefresh) =0<br>Get group announcements list  |
+| virtual BMXErrorCode | **[editAnnouncement](classfloo_1_1_b_m_x_group_service.md#function-editannouncement)**(BMXGroupPtr group, const std::string & title, const std::string & content) =0<br>Write group announcement  |
+| virtual BMXErrorCode | **[deleteAnnouncement](classfloo_1_1_b_m_x_group_service.md#function-deleteannouncement)**(BMXGroupPtr group, int64_t announcementId) =0<br>Delete group announcement  |
+| virtual BMXErrorCode | **[setName](classfloo_1_1_b_m_x_group_service.md#function-setname)**(BMXGroupPtr group, const std::string & name) =0<br>Set group name  |
+| virtual BMXErrorCode | **[setDescription](classfloo_1_1_b_m_x_group_service.md#function-setdescription)**(BMXGroupPtr group, const std::string & description) =0<br>Set group description  |
+| virtual BMXErrorCode | **[setExtension](classfloo_1_1_b_m_x_group_service.md#function-setextension)**(BMXGroupPtr group, const std::string & extension) =0<br>Set group extension information  |
+| virtual BMXErrorCode | **[setMyNickname](classfloo_1_1_b_m_x_group_service.md#function-setmynickname)**(BMXGroupPtr group, const std::string & nickname) =0<br>Set nickname in group  |
+| virtual BMXErrorCode | **[setMsgPushMode](classfloo_1_1_b_m_x_group_service.md#function-setmsgpushmode)**(BMXGroupPtr group, [BMXGroup::MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode) mode) =0<br>Set group message notification mode  |
+| virtual BMXErrorCode | **[setJoinAuthMode](classfloo_1_1_b_m_x_group_service.md#function-setjoinauthmode)**(BMXGroupPtr group, [BMXGroup::JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode) mode) =0<br>Set approval mode for joining group  |
+| virtual BMXErrorCode | **[setInviteMode](classfloo_1_1_b_m_x_group_service.md#function-setinvitemode)**(BMXGroupPtr group, [BMXGroup::InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode) mode) =0<br>Set invitation mode  |
+| virtual BMXErrorCode | **[setAllowMemberModify](classfloo_1_1_b_m_x_group_service.md#function-setallowmembermodify)**(BMXGroupPtr group, bool enable) =0<br>Set whether group members are allowed to set group information  |
+| virtual BMXErrorCode | **[setEnableReadAck](classfloo_1_1_b_m_x_group_service.md#function-setenablereadack)**(BMXGroupPtr group, bool enable) =0<br>Set whether group message read acknowledgement is enabled  |
+| virtual BMXErrorCode | **[setHistoryVisible](classfloo_1_1_b_m_x_group_service.md#function-sethistoryvisible)**(BMXGroupPtr group, bool enable) =0<br>Set whether group members are allowed to enable visible message history  |
+| virtual BMXErrorCode | **[setAvatar](classfloo_1_1_b_m_x_group_service.md#function-setavatar)**(BMXGroupPtr group, const std::string & avatarPath, Callback ) =0<br>Set group avatar  |
+| virtual BMXErrorCode | **[downloadAvatar](classfloo_1_1_b_m_x_group_service.md#function-downloadavatar)**(BMXGroupPtr group, bool thumbnail, Callback callback) =0<br>Download group avatar  |
+| virtual void | **[addGroupListener](classfloo_1_1_b_m_x_group_service.md#function-addgrouplistener)**([BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md) * listener) =0<br>Add group change listener  |
+| virtual void | **[removeGroupListener](classfloo_1_1_b_m_x_group_service.md#function-removegrouplistener)**([BMXGroupServiceListener](classfloo_1_1_b_m_x_group_service_listener.md) * listener) =0<br>Remove group change listener  |
 
 ## Protected Functions
 
-|   | Name                                                                                          |
-| - | --------------------------------------------------------------------------------------------- |
-|   | [**BMXGroupService**](classfloo\_1\_1\_b\_m\_x\_group\_service.md#function-bmxgroupservice)() |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXGroupService](classfloo_1_1_b_m_x_group_service.md#function-bmxgroupservice)**() |
 
 ## Public Types Documentation
 
@@ -100,26 +104,27 @@ Group Service
 typedef std::function<void(int percent)> floo::BMXGroupService::Callback;
 ```
 
+
 ### typedef CreateGroupOptionsPtr
 
 ```cpp
 typedef std::shared_ptr<CreateGroupOptions> floo::BMXGroupService::CreateGroupOptionsPtr;
 ```
 
+
 ## Public Functions Documentation
 
-### function \~BMXGroupService
+### function ~BMXGroupService
 
 ```cpp
 inline virtual ~BMXGroupService()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="~BMXGroupService" %}{% endlanying_code_snippet %}
 ```
-
 ### function get
 
 ```cpp
@@ -129,21 +134,20 @@ virtual BMXErrorCode get(
 ) =0
 ```
 
-Get group list, pull from server if forceRefreshed is set
+Get group list, pull from server if forceRefreshed is set 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** List of group ids, pass in an empty list function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **list** List of group ids, pass in an empty list function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="get" %}{% endlanying_code_snippet %}
 ```
-
 ### function search
 
 ```cpp
@@ -153,25 +157,25 @@ virtual BMXErrorCode search(
 ) =0
 ```
 
-Deprecated.
+Deprecated. 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** List of group ids, pass in an empty list function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **list** List of group ids, pass in an empty list function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 use get instead.
 
-Get group list, pull from server if forceRefreshed is set
+Get group list, pull from server if forceRefreshed is set 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
 ```
-
 ### function fetchGroupsByIdList
 
 ```cpp
@@ -182,22 +186,21 @@ virtual BMXErrorCode fetchGroupsByIdList(
 ) =0
 ```
 
-Get a list of group information from the ID list passed in to group, or pull from server if forceRefresh is set
+Get a list of group information from the ID list passed in to group, or pull from server if forceRefresh is set 
 
-**Parameters**:
+**Parameters**: 
 
-* **groupIdList** List of group ids
-* **list** List of group details, pass in an empty list function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **groupIdList** List of group ids 
+  * **list** List of group details, pass in an empty list function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="fetchGroupsByIdList" %}{% endlanying_code_snippet %}
 ```
-
 ### function search
 
 ```cpp
@@ -208,26 +211,26 @@ virtual BMXErrorCode search(
 ) =0
 ```
 
-Deprecated.
+Deprecated. 
 
-**Parameters**:
+**Parameters**: 
 
-* **groupIdList** List of group ids
-* **list** List of group details, pass in an empty list function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **groupIdList** List of group ids 
+  * **list** List of group details, pass in an empty list function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 use fetchGroupsByIdList instead.
 
-Get the list of group information for the incoming group id, pull from server if forceRefreshed is set
+Get the list of group information for the incoming group id, pull from server if forceRefreshed is set 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
 ```
-
 ### function fetchGroupById
 
 ```cpp
@@ -238,22 +241,21 @@ virtual BMXErrorCode fetchGroupById(
 ) =0
 ```
 
-Get group information by group id, or pull from server if forceRefresh is set
+Get group information by group id, or pull from server if forceRefresh is set 
 
-**Parameters**:
+**Parameters**: 
 
-* **groupId** Group id to search
-* **group** Group information returned by search, pass in a pointing-to-empty shared\_ptr objective function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **groupId** Group id to search 
+  * **group** Group information returned by search, pass in a pointing-to-empty shared_ptr objective function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="fetchGroupById" %}{% endlanying_code_snippet %}
 ```
-
 ### function search
 
 ```cpp
@@ -264,26 +266,26 @@ virtual BMXErrorCode search(
 ) =0
 ```
 
-Deprecated.
+Deprecated. 
 
-**Parameters**:
+**Parameters**: 
 
-* **groupId** Group id to search
-* **group** Group information returned by search, pass in a pointing-to-empty shared\_ptr objective function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **groupId** Group id to search 
+  * **group** Group information returned by search, pass in a pointing-to-empty shared_ptr objective function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 use fetchGroupById instead.
 
-Get group information, pull from server if forceRefreshed is set
+Get group information, pull from server if forceRefreshed is set 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
 ```
-
 ### function fetchLocalGroupsByName
 
 ```cpp
@@ -293,21 +295,20 @@ virtual BMXErrorCode fetchLocalGroupsByName(
 ) =0
 ```
 
-Query local group information by group name and retrieve the group from local database by group name query
+Query local group information by group name and retrieve the group from local database by group name query 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** Group list information returned by search result
-* **name** Keyword of group name for query
+  * **list** Group list information returned by search result 
+  * **name** Keyword of group name for query 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="fetchLocalGroupsByName" %}{% endlanying_code_snippet %}
 ```
-
 ### function search
 
 ```cpp
@@ -317,25 +318,25 @@ virtual BMXErrorCode search(
 ) =0
 ```
 
-Deprecated.
+Deprecated. 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** Group list information returned by search result
-* **name** Keyword of group name for query
+  * **list** Group list information returned by search result 
+  * **name** Keyword of group name for query 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 use fetchLocalGroupsByName instead.
 
-Query local group information by group name and retrieve the group from local database by group name query
+Query local group information by group name and retrieve the group from local database by group name query 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
 ```
-
 ### function create
 
 ```cpp
@@ -345,21 +346,20 @@ virtual BMXErrorCode create(
 ) =0
 ```
 
-Create group
+Create group 
 
-**Parameters**:
+**Parameters**: 
 
-* **options** Parameters passed in when creating a group
-* **group** Returned result of creation, pass in a pointing-to-empty objective function shared\_ptr and fetch the returned result here
+  * **options** Parameters passed in when creating a group 
+  * **group** Returned result of creation, pass in a pointing-to-empty objective function shared_ptr and fetch the returned result here 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="create" %}{% endlanying_code_snippet %}
 ```
-
 ### function destroy
 
 ```cpp
@@ -368,20 +368,19 @@ virtual BMXErrorCode destroy(
 ) =0
 ```
 
-Destroy group
+Destroy group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to destroy
+  * **group** Group to destroy 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="destroy" %}{% endlanying_code_snippet %}
 ```
-
 ### function join
 
 ```cpp
@@ -391,21 +390,20 @@ virtual BMXErrorCode join(
 ) =0
 ```
 
-Join a group, which may require admin approval depending on group settings
+Join a group, which may require admin approval depending on group settings 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to join
-* **message** Information for group membership application
+  * **group** Group to join 
+  * **message** Information for group membership application 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="join" %}{% endlanying_code_snippet %}
 ```
-
 ### function leave
 
 ```cpp
@@ -414,20 +412,19 @@ virtual BMXErrorCode leave(
 ) =0
 ```
 
-Quit group
+Quit group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to quit
+  * **group** Group to quit 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="leave" %}{% endlanying_code_snippet %}
 ```
-
 ### function getInfo
 
 ```cpp
@@ -436,20 +433,19 @@ virtual BMXErrorCode getInfo(
 ) =0
 ```
 
-Get group details, pull the latest information from server
+Get group details, pull the latest information from server 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group for which the latest information needs to be obtained
+  * **group** Group for which the latest information needs to be obtained 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getInfo" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMembersNickname
 
 ```cpp
@@ -460,22 +456,21 @@ virtual BMXErrorCode getMembersNickname(
 ) =0
 ```
 
-Get group member details
+Get group member details 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **members** Group member id to get group member details
-* **list** Returned group member details, pass in an empty list function and fetch the returned list of group member details here
+  * **group** Group to operate on 
+  * **members** Group member id to get group member details 
+  * **list** Returned group member details, pass in an empty list function and fetch the returned list of group member details here 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembersNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function getInvitationList
 
 ```cpp
@@ -486,22 +481,21 @@ virtual BMXErrorCode getInvitationList(
 ) =0
 ```
 
-Get group invitation list in pages
+Get group invitation list in pages 
 
-**Parameters**:
+**Parameters**: 
 
-* **result** Paged list of group invitations, pass in a pointing-to-empty shared\_ptr objective function and fetch the returned result here
-* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
-* **pageSize** Page size
+  * **result** Paged list of group invitations, pass in a pointing-to-empty shared_ptr objective function and fetch the returned result here 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getInvitationList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getApplicationList
 
 ```cpp
@@ -513,23 +507,22 @@ virtual BMXErrorCode getApplicationList(
 ) =0
 ```
 
-Get a list of group applications in pages
+Get a list of group applications in pages 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** List of group ids for which group application list information needs to be obtained
-* **result** Paged list of group applications, pass in a pointing-to-emtpy shared\_ptr objective function and fetch the returned result here
-* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
-* **pageSize** Page size
+  * **list** List of group ids for which group application list information needs to be obtained 
+  * **result** Paged list of group applications, pass in a pointing-to-emtpy shared_ptr objective function and fetch the returned result here 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getApplicationList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMembers
 
 ```cpp
@@ -541,23 +534,22 @@ virtual BMXErrorCode getMembers(
 ) =0
 ```
 
-Get list of group members in pages, pull from server if forceRefresh is set, up to 500 per page.
+Get list of group members in pages, pull from server if forceRefresh is set, up to 500 per page. 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **result** Paged list of group members, pass in a pointing-to-empty shared\_ptr objective function and fetch the returned result here
-* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
-* **pageSize** Page size
+  * **group** Group to operate on 
+  * **result** Paged list of group members, pass in a pointing-to-empty shared_ptr objective function and fetch the returned result here 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMembers
 
 ```cpp
@@ -568,22 +560,21 @@ virtual BMXErrorCode getMembers(
 ) =0
 ```
 
-Get group member list, pull from server if forceRefresh is set, up to 1,000
+Get group member list, pull from server if forceRefresh is set, up to 1,000 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **list** List of group members, pass in an empty list function and fetch the returned list of group details
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **group** Group to operate on 
+  * **list** List of group members, pass in an empty list function and fetch the returned list of group details 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function addMembers
 
 ```cpp
@@ -594,22 +585,21 @@ virtual BMXErrorCode addMembers(
 ) =0
 ```
 
-Add group member
+Add group member 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **members** List of member ids to join group
-* **message** Reason for membership application
+  * **group** Group to operate on 
+  * **members** List of member ids to join group 
+  * **message** Reason for membership application 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="addMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeMembers
 
 ```cpp
@@ -620,22 +610,21 @@ virtual BMXErrorCode removeMembers(
 ) =0
 ```
 
-Remove group member
+Remove group member 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **members** List of group member ids to delete
-* **reason** Reason for deletion
+  * **group** Group to operate on 
+  * **members** List of group member ids to delete 
+  * **reason** Reason for deletion 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function addAdmins
 
 ```cpp
@@ -646,22 +635,21 @@ virtual BMXErrorCode addAdmins(
 ) =0
 ```
 
-Add Admin
+Add Admin 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **admins** List of member ids to be added as Admins
-* **message** Reason for adding as Admin
+  * **group** Group to operate on 
+  * **admins** List of member ids to be added as Admins 
+  * **message** Reason for adding as Admin 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="addAdmins" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeAdmins
 
 ```cpp
@@ -672,22 +660,21 @@ virtual BMXErrorCode removeAdmins(
 ) =0
 ```
 
-Remove admin
+Remove admin 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **admins** List of member ids to degrade from Admins
-* **reason** Reason to degrade from Admin
+  * **group** Group to operate on 
+  * **admins** List of member ids to degrade from Admins 
+  * **reason** Reason to degrade from Admin 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeAdmins" %}{% endlanying_code_snippet %}
 ```
-
 ### function getAdmins
 
 ```cpp
@@ -698,22 +685,21 @@ virtual BMXErrorCode getAdmins(
 ) =0
 ```
 
-Get Admins list, pull from server if forceRefreshed is set
+Get Admins list, pull from server if forceRefreshed is set 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **list** List of group Admins, pass in an empty list function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **group** Group to operate on 
+  * **list** List of group Admins, pass in an empty list function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getAdmins" %}{% endlanying_code_snippet %}
 ```
-
 ### function blockMembers
 
 ```cpp
@@ -723,21 +709,20 @@ virtual BMXErrorCode blockMembers(
 ) =0
 ```
 
-Add to blacklist
+Add to blacklist 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **members** List of member ids to be blacklisted
+  * **group** Group to operate on 
+  * **members** List of member ids to be blacklisted 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="blockMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function unblockMembers
 
 ```cpp
@@ -747,21 +732,20 @@ virtual BMXErrorCode unblockMembers(
 ) =0
 ```
 
-Unblacklist
+Unblacklist 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **members** List of unblacklisted user ids
+  * **group** Group to operate on 
+  * **members** List of unblacklisted user ids 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="unblockMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function getBlockList
 
 ```cpp
@@ -773,23 +757,22 @@ virtual BMXErrorCode getBlockList(
 ) =0
 ```
 
-Paged to get blacklist
+Paged to get blacklist 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **result** Paged list of blacklists, pass in a pointing-to-empty shared\_ptr objective function and fetch the returned result here
-* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
-* **pageSize** Page size
+  * **group** Group to operate on 
+  * **result** Paged list of blacklists, pass in a pointing-to-empty shared_ptr objective function and fetch the returned result here 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getBlockList
 
 ```cpp
@@ -800,22 +783,21 @@ virtual BMXErrorCode getBlockList(
 ) =0
 ```
 
-Get blacklist
+Get blacklist 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **list** List of group blacklists, pass in an empty list function and fetch the returned list of group details here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **group** Group to operate on 
+  * **list** List of group blacklists, pass in an empty list function and fetch the returned list of group details here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
 ```
-
 ### function banMembers
 
 ```cpp
@@ -827,23 +809,22 @@ virtual BMXErrorCode banMembers(
 ) =0
 ```
 
-Ban
+Ban 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **members** List of banned member ids
-* **duration** Duration of banned
-* **reason** Reason for banned
+  * **group** Group to operate on 
+  * **members** List of banned member ids 
+  * **duration** Duration of banned 
+  * **reason** Reason for banned 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="banMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function banGroup
 
 ```cpp
@@ -853,21 +834,20 @@ virtual BMXErrorCode banGroup(
 ) =0
 ```
 
-Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration)
+Ban all members, the expiration time is calculated from the current server time plus banning duration (only Admins and group Owner can speak in the duration) 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **duration** Banning duration (minute)
+  * **group** Group to operate on 
+  * **duration** Banning duration (minute) 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="banGroup" %}{% endlanying_code_snippet %}
 ```
-
 ### function unbanMembers
 
 ```cpp
@@ -877,21 +857,20 @@ virtual BMXErrorCode unbanMembers(
 ) =0
 ```
 
-Unban
+Unban 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **members** List of unbanned group member ids
+  * **group** Group to operate on 
+  * **members** List of unbanned group member ids 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="unbanMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function unbanGroup
 
 ```cpp
@@ -900,20 +879,19 @@ virtual BMXErrorCode unbanGroup(
 ) =0
 ```
 
-Unban all members
+Unban all members 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
+  * **group** Group to operate on 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="unbanGroup" %}{% endlanying_code_snippet %}
 ```
-
 ### function getBannedMembers
 
 ```cpp
@@ -925,23 +903,22 @@ virtual BMXErrorCode getBannedMembers(
 ) =0
 ```
 
-Paged to get ban list
+Paged to get ban list 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **result** Paged ban list, pass in a pointing-to-empty shared\_ptr objective function and fetch the returned result here
-* **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation
-* **pageSize** Page size
+  * **group** Group to operate on 
+  * **result** Paged ban list, pass in a pointing-to-empty shared_ptr objective function and fetch the returned result here 
+  * **cursor** Paged starting cursor, passed in as empty-valued first, followed by the cursor in the result returned by last operation 
+  * **pageSize** Page size 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function getBannedMembers
 
 ```cpp
@@ -951,21 +928,20 @@ virtual BMXErrorCode getBannedMembers(
 ) =0
 ```
 
-Get a list of banned members
+Get a list of banned members 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **list** Group ban list, pass in an empty list function and fetch the returned list of group details here
+  * **group** Group to operate on 
+  * **list** Group ban list, pass in an empty list function and fetch the returned list of group details here 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
 ```
-
 ### function muteMessage
 
 ```cpp
@@ -975,21 +951,20 @@ virtual BMXErrorCode muteMessage(
 ) =0
 ```
 
-Set whether to block group messages
+Set whether to block group messages 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **mode** Group blocking mode
+  * **group** Group to operate on 
+  * **mode** Group blocking mode 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="muteMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function acceptApplication
 
 ```cpp
@@ -999,21 +974,20 @@ virtual BMXErrorCode acceptApplication(
 ) =0
 ```
 
-Accept application of membership
+Accept application of membership 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **applicantId** User id that request to join group
+  * **group** Group to operate on 
+  * **applicantId** User id that request to join group 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="acceptApplication" %}{% endlanying_code_snippet %}
 ```
-
 ### function declineApplication
 
 ```cpp
@@ -1024,22 +998,21 @@ virtual BMXErrorCode declineApplication(
 ) =0
 ```
 
-Reject application of membership
+Reject application of membership 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **applicantId** User id that request to join group
-* **reason** Reason for rejection
+  * **group** Group to operate on 
+  * **applicantId** User id that request to join group 
+  * **reason** Reason for rejection 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="declineApplication" %}{% endlanying_code_snippet %}
 ```
-
 ### function acceptInvitation
 
 ```cpp
@@ -1049,21 +1022,20 @@ virtual BMXErrorCode acceptInvitation(
 ) =0
 ```
 
-Accept to join group
+Accept to join group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **inviter** Inviter id
+  * **group** Group to operate on 
+  * **inviter** Inviter id 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="acceptInvitation" %}{% endlanying_code_snippet %}
 ```
-
 ### function declineInvitation
 
 ```cpp
@@ -1074,22 +1046,21 @@ virtual BMXErrorCode declineInvitation(
 ) =0
 ```
 
-Reject invitation to join group
+Reject invitation to join group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **inviter** Inviter id
-* **reason** Reason for rejection
+  * **group** Group to operate on 
+  * **inviter** Inviter id 
+  * **reason** Reason for rejection 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="declineInvitation" %}{% endlanying_code_snippet %}
 ```
-
 ### function transferOwner
 
 ```cpp
@@ -1099,21 +1070,20 @@ virtual BMXErrorCode transferOwner(
 ) =0
 ```
 
-Transfer of group Owner
+Transfer of group Owner 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **newOwnerId** User id that transferred as new group Owner
+  * **group** Group to operate on 
+  * **newOwnerId** User id that transferred as new group Owner 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="transferOwner" %}{% endlanying_code_snippet %}
 ```
-
 ### function uploadSharedFile
 
 ```cpp
@@ -1126,24 +1096,23 @@ virtual BMXErrorCode uploadSharedFile(
 ) =0
 ```
 
-Add shared file in group
+Add shared file in group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **filePath** Local path of file
-* **displayName** File display name
-* **extensionName** File extension name
-* **Callback** Upload callback function
+  * **group** Group to operate on 
+  * **filePath** Local path of file 
+  * **displayName** File display name 
+  * **extensionName** File extension name 
+  * **Callback** Upload callback function 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="uploadSharedFile" %}{% endlanying_code_snippet %}
 ```
-
 ### function cancelUploadSharedFile
 
 ```cpp
@@ -1153,21 +1122,20 @@ virtual BMXErrorCode cancelUploadSharedFile(
 ) =0
 ```
 
-Cancel uploading group shared files
+Cancel uploading group shared files 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **filePath** Local path of file
+  * **group** Group to operate on 
+  * **filePath** Local path of file 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="cancelUploadSharedFile" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeSharedFile
 
 ```cpp
@@ -1177,21 +1145,20 @@ virtual BMXErrorCode removeSharedFile(
 ) =0
 ```
 
-Remove shared file in group
+Remove shared file in group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **sharedFile** Deleted group shared file
+  * **group** Group to operate on 
+  * **sharedFile** Deleted group shared file 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeSharedFile" %}{% endlanying_code_snippet %}
 ```
-
 ### function downloadSharedFile
 
 ```cpp
@@ -1202,22 +1169,21 @@ virtual BMXErrorCode downloadSharedFile(
 ) =0
 ```
 
-Download share file in group
+Download share file in group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **sharedFile** Downloaded group shared files
-* **Callback** Download callback function
+  * **group** Group to operate on 
+  * **sharedFile** Downloaded group shared files 
+  * **Callback** Download callback function 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="downloadSharedFile" %}{% endlanying_code_snippet %}
 ```
-
 ### function cancelDownloadSharedFile
 
 ```cpp
@@ -1227,21 +1193,20 @@ virtual BMXErrorCode cancelDownloadSharedFile(
 ) =0
 ```
 
-Cancel downloading group shared files
+Cancel downloading group shared files 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **sharedFile** Downloaded group shared files
+  * **group** Group to operate on 
+  * **sharedFile** Downloaded group shared files 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="cancelDownloadSharedFile" %}{% endlanying_code_snippet %}
 ```
-
 ### function getSharedFilesList
 
 ```cpp
@@ -1252,22 +1217,21 @@ virtual BMXErrorCode getSharedFilesList(
 ) =0
 ```
 
-Get a list of share files in group
+Get a list of share files in group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **list** List of group shared files, pass in an empty list function and fetch the returned list of group details here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **group** Group to operate on 
+  * **list** List of group shared files, pass in an empty list function and fetch the returned list of group details here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getSharedFilesList" %}{% endlanying_code_snippet %}
 ```
-
 ### function changeSharedFileName
 
 ```cpp
@@ -1278,22 +1242,21 @@ virtual BMXErrorCode changeSharedFileName(
 ) =0
 ```
 
-Modify shared file name in group
+Modify shared file name in group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **sharedFile** Group shared file to change
-* **name** Modified group shared file name
+  * **group** Group to operate on 
+  * **sharedFile** Group shared file to change 
+  * **name** Modified group shared file name 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="changeSharedFileName" %}{% endlanying_code_snippet %}
 ```
-
 ### function getLatestAnnouncement
 
 ```cpp
@@ -1304,22 +1267,21 @@ virtual BMXErrorCode getLatestAnnouncement(
 ) =0
 ```
 
-Get the latest group announcement
+Get the latest group announcement 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **announcement** Latest group announcement, pass in a pointing-to-empty shared\_ptr objective function and fetch the latest group announcement here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **group** Group to operate on 
+  * **announcement** Latest group announcement, pass in a pointing-to-empty shared_ptr objective function and fetch the latest group announcement here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getLatestAnnouncement" %}{% endlanying_code_snippet %}
 ```
-
 ### function getAnnouncementList
 
 ```cpp
@@ -1330,22 +1292,21 @@ virtual BMXErrorCode getAnnouncementList(
 ) =0
 ```
 
-Get group announcements list
+Get group announcements list 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **list** List of group announcements, pass in an empty list function and fetch the returned result here
-* **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed
+  * **group** Group to operate on 
+  * **list** List of group announcements, pass in an empty list function and fetch the returned result here 
+  * **forceRefresh** True to force fetch from server, sdk will fetch from server automatically if local fetch failed 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getAnnouncementList" %}{% endlanying_code_snippet %}
 ```
-
 ### function editAnnouncement
 
 ```cpp
@@ -1356,22 +1317,21 @@ virtual BMXErrorCode editAnnouncement(
 ) =0
 ```
 
-Write group announcement
+Write group announcement 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **title** Tittle of group announcement
-* **content** Content of group announcement
+  * **group** Group to operate on 
+  * **title** Tittle of group announcement 
+  * **content** Content of group announcement 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="editAnnouncement" %}{% endlanying_code_snippet %}
 ```
-
 ### function deleteAnnouncement
 
 ```cpp
@@ -1381,21 +1341,20 @@ virtual BMXErrorCode deleteAnnouncement(
 ) =0
 ```
 
-Delete group announcement
+Delete group announcement 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **announcementId** Deleted group announcement id
+  * **group** Group to operate on 
+  * **announcementId** Deleted group announcement id 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="deleteAnnouncement" %}{% endlanying_code_snippet %}
 ```
-
 ### function setName
 
 ```cpp
@@ -1405,21 +1364,20 @@ virtual BMXErrorCode setName(
 ) =0
 ```
 
-Set group name
+Set group name 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **name** Group name
+  * **group** Group to operate on 
+  * **name** Group name 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setName" %}{% endlanying_code_snippet %}
 ```
-
 ### function setDescription
 
 ```cpp
@@ -1429,21 +1387,20 @@ virtual BMXErrorCode setDescription(
 ) =0
 ```
 
-Set group description
+Set group description 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **description** Group description
+  * **group** Group to operate on 
+  * **description** Group description 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setDescription" %}{% endlanying_code_snippet %}
 ```
-
 ### function setExtension
 
 ```cpp
@@ -1453,21 +1410,20 @@ virtual BMXErrorCode setExtension(
 ) =0
 ```
 
-Set group extension information
+Set group extension information 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **extension** Group extension information
+  * **group** Group to operate on 
+  * **extension** Group extension information 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setExtension" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMyNickname
 
 ```cpp
@@ -1477,21 +1433,20 @@ virtual BMXErrorCode setMyNickname(
 ) =0
 ```
 
-Set nickname in group
+Set nickname in group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **nickname** My nickname in group
+  * **group** Group to operate on 
+  * **nickname** My nickname in group 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setMyNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMsgPushMode
 
 ```cpp
@@ -1501,21 +1456,20 @@ virtual BMXErrorCode setMsgPushMode(
 ) =0
 ```
 
-Set group message notification mode
+Set group message notification mode 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **mode** Group message notification mode
+  * **group** Group to operate on 
+  * **mode** Group message notification mode 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setMsgPushMode" %}{% endlanying_code_snippet %}
 ```
-
 ### function setJoinAuthMode
 
 ```cpp
@@ -1525,21 +1479,20 @@ virtual BMXErrorCode setJoinAuthMode(
 ) =0
 ```
 
-Set approval mode for joining group
+Set approval mode for joining group 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **mode** Join approval mode
+  * **group** Group to operate on 
+  * **mode** Join approval mode 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setJoinAuthMode" %}{% endlanying_code_snippet %}
 ```
-
 ### function setInviteMode
 
 ```cpp
@@ -1549,21 +1502,20 @@ virtual BMXErrorCode setInviteMode(
 ) =0
 ```
 
-Set invitation mode
+Set invitation mode 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **mode** Group invitation mode
+  * **group** Group to operate on 
+  * **mode** Group invitation mode 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setInviteMode" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAllowMemberModify
 
 ```cpp
@@ -1573,21 +1525,20 @@ virtual BMXErrorCode setAllowMemberModify(
 ) =0
 ```
 
-Set whether group members are allowed to set group information
+Set whether group members are allowed to set group information 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **enable** Whether allowed to operate
+  * **group** Group to operate on 
+  * **enable** Whether allowed to operate 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setAllowMemberModify" %}{% endlanying_code_snippet %}
 ```
-
 ### function setEnableReadAck
 
 ```cpp
@@ -1597,21 +1548,20 @@ virtual BMXErrorCode setEnableReadAck(
 ) =0
 ```
 
-Set whether group message read acknowledgement is enabled
+Set whether group message read acknowledgement is enabled 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **enable** Enable or not
+  * **group** Group to operate on 
+  * **enable** Enable or not 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setEnableReadAck" %}{% endlanying_code_snippet %}
 ```
-
 ### function setHistoryVisible
 
 ```cpp
@@ -1621,21 +1571,20 @@ virtual BMXErrorCode setHistoryVisible(
 ) =0
 ```
 
-Set whether group members are allowed to enable visible message history
+Set whether group members are allowed to enable visible message history 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **enable** Enable or not
+  * **group** Group to operate on 
+  * **enable** Enable or not 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setHistoryVisible" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAvatar
 
 ```cpp
@@ -1646,22 +1595,21 @@ virtual BMXErrorCode setAvatar(
 ) =0
 ```
 
-Set group avatar
+Set group avatar 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **avatarPath** Local path of group avatar file
-* **Callback** Upload callback function
+  * **group** Group to operate on 
+  * **avatarPath** Local path of group avatar file 
+  * **Callback** Upload callback function 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="setAvatar" %}{% endlanying_code_snippet %}
 ```
-
 ### function downloadAvatar
 
 ```cpp
@@ -1672,22 +1620,21 @@ virtual BMXErrorCode downloadAvatar(
 ) =0
 ```
 
-Download group avatar
+Download group avatar 
 
-**Parameters**:
+**Parameters**: 
 
-* **group** Group to operate on
-* **thumbnail** True to download thumbnail, false to download original image
-* **callback** Download callback function
+  * **group** Group to operate on 
+  * **thumbnail** True to download thumbnail, false to download original image 
+  * **callback** Download callback function 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="downloadAvatar" %}{% endlanying_code_snippet %}
 ```
-
 ### function addGroupListener
 
 ```cpp
@@ -1696,18 +1643,17 @@ virtual void addGroupListener(
 ) =0
 ```
 
-Add group change listener
+Add group change listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** Group change listener
+  * **listener** Group change listener 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="addGroupListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeGroupListener
 
 ```cpp
@@ -1716,32 +1662,30 @@ virtual void removeGroupListener(
 ) =0
 ```
 
-Remove group change listener
+Remove group change listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** Group change listener
+  * **listener** Group change listener 
+
 
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="removeGroupListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXGroupService
 
 ```cpp
 inline BMXGroupService()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroupService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="BMXGroupService" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

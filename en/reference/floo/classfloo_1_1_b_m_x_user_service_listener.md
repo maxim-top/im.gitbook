@@ -1,33 +1,37 @@
 ---
 title: floo::BMXUserServiceListener
-summary: User state listener
+summary: User state listener 
+
 ---
 
 # floo::BMXUserServiceListener
 
-User state listener
+
+
+User state listener 
+
 
 `#include <bmx_user_service_listener.h>`
 
 ## Public Functions
 
-|              | Name                                                                                                                                                                                                                                                                                                                |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|              | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-bmxuserservicelistener"><strong>BMXUserServiceListener</strong></a>()<br>Constructor</p>                                                                                                                                                          |
-| virtual      | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-~bmxuserservicelistener"><strong>~BMXUserServiceListener</strong></a>()<br>Destructor</p>                                                                                                                                                         |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged"><strong>onConnectStatusChanged</strong></a>(BMXConnectStatus status)<br>Channel state changed</p>                                                                                                                         |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignin"><strong>onUserSignIn</strong></a>(BMXUserProfilePtr profile)<br>User login</p>                                                                                                                                                      |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignout"><strong>onUserSignOut</strong></a>(BMXErrorCode error, int64_t userId)<br>User logout</p>                                                                                                                                          |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-oninfoupdated"><strong>onInfoUpdated</strong></a>(BMXUserProfilePtr profile)<br>Synchronize user information updates (when user information changes in other devices)</p>                                                                         |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin"><strong>onOtherDeviceSingIn</strong></a>(int deviceSN)<br>User login on another device</p>                                                                                                                                   |
-| virtual void | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout"><strong>onOtherDeviceSingOut</strong></a>(int deviceSN)<br>User logout on another device</p>                                                                                                                                |
-| void         | <p><a href="classfloo_1_1_b_m_x_user_service_listener.md#function-registeruserservice"><strong>registerUserService</strong></a>(<a href="classfloo_1_1_b_m_x_user_service.md">BMXUserService</a> * service)<br>Register BMXUserService to which BMXUserServiceListener is bound (automatic registration in SDK)</p> |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md#function-bmxuserservicelistener)**()<br>Constructor  |
+| virtual | **[~BMXUserServiceListener](classfloo_1_1_b_m_x_user_service_listener.md#function-~bmxuserservicelistener)**()<br>Destructor  |
+| virtual void | **[onConnectStatusChanged](classfloo_1_1_b_m_x_user_service_listener.md#function-onconnectstatuschanged)**(BMXConnectStatus status)<br>Channel state changed  |
+| virtual void | **[onUserSignIn](classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignin)**(BMXUserProfilePtr profile)<br>User login  |
+| virtual void | **[onUserSignOut](classfloo_1_1_b_m_x_user_service_listener.md#function-onusersignout)**(BMXErrorCode error, int64_t userId)<br>User logout  |
+| virtual void | **[onInfoUpdated](classfloo_1_1_b_m_x_user_service_listener.md#function-oninfoupdated)**(BMXUserProfilePtr profile)<br>Synchronize user information updates (when user information changes in other devices)  |
+| virtual void | **[onOtherDeviceSingIn](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingin)**(int deviceSN)<br>User login on another device  |
+| virtual void | **[onOtherDeviceSingOut](classfloo_1_1_b_m_x_user_service_listener.md#function-onotherdevicesingout)**(int deviceSN)<br>User logout on another device  |
+| void | **[registerUserService](classfloo_1_1_b_m_x_user_service_listener.md#function-registeruserservice)**([BMXUserService](classfloo_1_1_b_m_x_user_service.md) * service)<br>Register BMXUserService to which BMXUserServiceListener is bound (automatic registration in SDK)  |
 
 ## Protected Attributes
 
-|                                                                 | Name                                                                                   |
-| --------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [BMXUserService](classfloo\_1\_1\_b\_m\_x\_user\_service.md) \* | [**mService**](classfloo\_1\_1\_b\_m\_x\_user\_service\_listener.md#variable-mservice) |
+|                | Name           |
+| -------------- | -------------- |
+| [BMXUserService](classfloo_1_1_b_m_x_user_service.md) * | **[mService](classfloo_1_1_b_m_x_user_service_listener.md#variable-mservice)**  |
 
 ## Public Functions Documentation
 
@@ -37,28 +41,24 @@ User state listener
 inline BMXUserServiceListener()
 ```
 
-Constructor
+Constructor 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="BMXUserServiceListener" %}{% endlanying_code_snippet %}
 ```
-
-### function \~BMXUserServiceListener
+### function ~BMXUserServiceListener
 
 ```cpp
 inline virtual ~BMXUserServiceListener()
 ```
 
-Destructor
+Destructor 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="~BMXUserServiceListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function onConnectStatusChanged
 
 ```cpp
@@ -67,18 +67,17 @@ inline virtual void onConnectStatusChanged(
 )
 ```
 
-Channel state changed
+Channel state changed 
 
-**Parameters**:
+**Parameters**: 
 
-* **status** Connection state
+  * **status** Connection state 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onConnectStatusChanged" %}{% endlanying_code_snippet %}
 ```
-
 ### function onUserSignIn
 
 ```cpp
@@ -87,18 +86,17 @@ inline virtual void onUserSignIn(
 )
 ```
 
-User login
+User login 
 
-**Parameters**:
+**Parameters**: 
 
-* **profile** User profile
+  * **profile** User profile 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onUserSignIn" %}{% endlanying_code_snippet %}
 ```
-
 ### function onUserSignOut
 
 ```cpp
@@ -108,18 +106,17 @@ inline virtual void onUserSignOut(
 )
 ```
 
-User logout
+User logout 
 
-**Parameters**:
+**Parameters**: 
 
-* **error** State error code
+  * **error** State error code 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onUserSignOut" %}{% endlanying_code_snippet %}
 ```
-
 ### function onInfoUpdated
 
 ```cpp
@@ -128,18 +125,17 @@ inline virtual void onInfoUpdated(
 )
 ```
 
-Synchronize user information updates (when user information changes in other devices)
+Synchronize user information updates (when user information changes in other devices) 
 
-**Parameters**:
+**Parameters**: 
 
-* **profile** User profile
+  * **profile** User profile 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onInfoUpdated" %}{% endlanying_code_snippet %}
 ```
-
 ### function onOtherDeviceSingIn
 
 ```cpp
@@ -148,18 +144,17 @@ inline virtual void onOtherDeviceSingIn(
 )
 ```
 
-User login on another device
+User login on another device 
 
-**Parameters**:
+**Parameters**: 
 
-* **deviceSN** Device serial number
+  * **deviceSN** Device serial number 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onOtherDeviceSingIn" %}{% endlanying_code_snippet %}
 ```
-
 ### function onOtherDeviceSingOut
 
 ```cpp
@@ -168,18 +163,17 @@ inline virtual void onOtherDeviceSingOut(
 )
 ```
 
-User logout on another device
+User logout on another device 
 
-**Parameters**:
+**Parameters**: 
 
-* **deviceSN** Device serial number
+  * **deviceSN** Device serial number 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="onOtherDeviceSingOut" %}{% endlanying_code_snippet %}
 ```
-
 ### function registerUserService
 
 ```cpp
@@ -188,11 +182,12 @@ inline void registerUserService(
 )
 ```
 
-Register BMXUserService to which BMXUserServiceListener is bound (automatic registration in SDK)
+Register BMXUserService to which BMXUserServiceListener is bound (automatic registration in SDK) 
 
-**Parameters**:
+**Parameters**: 
 
-* **service** [BMXUserService](classfloo\_1\_1\_b\_m\_x\_user\_service.md)
+  * **service** [BMXUserService](classfloo_1_1_b_m_x_user_service.md)
+
 
 ## Protected Attributes Documentation
 
@@ -202,12 +197,11 @@ Register BMXUserService to which BMXUserServiceListener is bound (automatic regi
 BMXUserService * mService;
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXUserServiceListener'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXUserServiceListener",function="registerUserService" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

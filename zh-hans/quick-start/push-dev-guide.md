@@ -1,6 +1,6 @@
 # 推送开发指南（PUSH）
 
-本页面供快速集成使用，了解更多请访问[详细文档](../../en/reference/floo-android.md)
+本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-android.md)
 
 ### 推送 SDK 集成说明
 

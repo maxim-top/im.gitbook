@@ -1,2 +1,0 @@
-# gitbook-plugin-advanced-emoji
-

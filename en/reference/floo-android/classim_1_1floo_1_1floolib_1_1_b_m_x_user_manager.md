@@ -1,48 +1,51 @@
 ---
 title: im::floo::floolib::BMXUserManager
-summary: User manager
+summary: User manager 
+
 ---
 
 # im::floo::floolib::BMXUserManager
 
-User manager
+
+
+User manager 
 
 ## Public Functions
 
-|                     | Name                                                                                                                                                                                                                                                                                                                   |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                     | [**BMXUserManager**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_manager.md#function-bmxusermanager)([BMXUserService](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_service.md) service, [BMXClient](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_client.md) bmxClient)                              |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signupnewuser"><strong>signUpNewUser</strong></a>(final String username, final String password, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md">BMXUserProfile</a> > callBack)<br>Register</p>    |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyname"><strong>signInByName</strong></a>(final String name, final String password, final BMXCallBack callBack)<br>Username login</p>                                                                                                  |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyid"><strong>signInById</strong></a>(final long id, final String password, final BMXCallBack callBack)<br>id login</p>                                                                                                                |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyname"><strong>autoSignInByName</strong></a>(final String name, final String password, final BMXCallBack callBack)<br>Auto login, by username</p>                                                                                 |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyid"><strong>autoSignInById</strong></a>(final long uid, final String password, final BMXCallBack callBack)<br>Auto login, by id</p>                                                                                              |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout"><strong>signOut</strong></a>(final BMXCallBack callBack)<br>Log out</p>                                                                                                                                                             |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout"><strong>signOut</strong></a>(final long userId, final BMXCallBack callBack)<br>Log out</p>                                                                                                                                          |
-| \[BMXConnectStatus] | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-connectstatus"><strong>connectStatus</strong></a>()<br>Get the current connection state with server</p>                                                                                                                                      |
-| \[BMXSignInStatus]  | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinstatus"><strong>signInStatus</strong></a>()<br>Get the current login state</p>                                                                                                                                                         |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-binddevice"><strong>bindDevice</strong></a>(final String token, final BMXCallBack callBack)<br>Binding device push token</p>                                                                                                                 |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getdevicelist"><strong>getDeviceList</strong></a>(final BMXDataCallBack&#x3C; BMXDeviceList > callBack)<br>Get list of logged-in devices</p>                                                                                                 |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-deletedevice"><strong>deleteDevice</strong></a>(final int device_sn, final BMXCallBack callBack)<br>Delete device</p>                                                                                                                        |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getprofile"><strong>getProfile</strong></a>(final boolean forceRefresh, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md">BMXUserProfile</a> > callBack)<br>Get user details</p>                    |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnickname"><strong>setNickname</strong></a>(final String nickname, final BMXCallBack callBack)<br>Set nickname</p>                                                                                                                         |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-uploadavatar"><strong>uploadAvatar</strong></a>(final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>Upload avatar</p>                                                                               |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md">BMXUserProfile</a> profile, final FileProgressListener listener, final BMXCallBack callBack)<br>Download avatar</p> |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpublicinfo"><strong>setPublicInfo</strong></a>(final String publicInfo, final BMXCallBack callBack)<br>Set public extension information</p>                                                                                               |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setprivateinfo"><strong>setPrivateInfo</strong></a>(final String privateInfo, final BMXCallBack callBack)<br>Set private extension information</p>                                                                                           |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setaddfriendauthmode"><strong>setAddFriendAuthMode</strong></a>(final BMXUserProfile.AddFriendAuthMode mode, final BMXCallBack callBack)<br>Set method to validate when adding friend</p>                                                    |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setauthquestion"><strong>setAuthQuestion</strong></a>(final BMXUserProfile.AuthQuestion authQuestion, final BMXCallBack callBack)<br>Set friend authentication questions</p>                                                                 |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepush"><strong>setEnablePush</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set whether push is allowed</p>                                                                                                       |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepushdetaile"><strong>setEnablePushDetaile</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set whether to push details</p>                                                                                         |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushnickname"><strong>setPushNickname</strong></a>(final String nickname, final BMXCallBack callBack)<br>Set push nickname</p>                                                                                                            |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushalias"><strong>setPushAlias</strong></a>(final String alias, final String bmxPushToken, final BMXCallBack callBack)<br>Set push alias</p>                                                                                             |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationsound"><strong>setNotificationSound</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set whether a new message is audibly alerted</p>                                                                        |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationvibrate"><strong>setNotificationVibrate</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set whether a new message is alerted in vibration</p>                                                               |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautodownloadattachment"><strong>setAutoDownloadAttachment</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set whether to automatically download thumbnail and voice attachment</p>                                      |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautoacceptgroupinvite"><strong>setAutoAcceptGroupInvite</strong></a>(final boolean enable, final BMXCallBack callBack)<br>Set whether to automatically accept group invitations</p>                                                       |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-adduserlistener"><strong>addUserListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md">BMXUserServiceListener</a> listener)<br>Add user state listener</p>                                            |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-removeuserlistener"><strong>removeUserListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md">BMXUserServiceListener</a> listener)<br>Remove user state listener</p>                                   |
-| void                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-changeappid"><strong>changeAppId</strong></a>(final String appId, final BMXCallBack callBack)<br>Switch appId</p>                                                                                                                            |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXUserManager](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-bmxusermanager)**([BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md) service, [BMXClient](classim_1_1floo_1_1floolib_1_1_b_m_x_client.md) bmxClient) |
+| void | **[signUpNewUser](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signupnewuser)**(final String username, final String password, final BMXDataCallBack< [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) > callBack)<br>Register  |
+| void | **[signInByName](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyname)**(final String name, final String password, final BMXCallBack callBack)<br>Username login  |
+| void | **[signInById](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinbyid)**(final long id, final String password, final BMXCallBack callBack)<br>id login  |
+| void | **[autoSignInByName](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyname)**(final String name, final String password, final BMXCallBack callBack)<br>Auto login, by username  |
+| void | **[autoSignInById](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-autosigninbyid)**(final long uid, final String password, final BMXCallBack callBack)<br>Auto login, by id  |
+| void | **[signOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout)**(final BMXCallBack callBack)<br>Log out  |
+| void | **[signOut](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signout)**(final long userId, final BMXCallBack callBack)<br>Log out  |
+| [BMXConnectStatus] | **[connectStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-connectstatus)**()<br>Get the current connection state with server  |
+| [BMXSignInStatus] | **[signInStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-signinstatus)**()<br>Get the current login state  |
+| void | **[bindDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-binddevice)**(final String token, final BMXCallBack callBack)<br>Binding device push token  |
+| void | **[getDeviceList](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getdevicelist)**(final BMXDataCallBack< BMXDeviceList > callBack)<br>Get list of logged-in devices  |
+| void | **[deleteDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-deletedevice)**(final int device_sn, final BMXCallBack callBack)<br>Delete device  |
+| void | **[getProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-getprofile)**(final boolean forceRefresh, final BMXDataCallBack< [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) > callBack)<br>Get user details  |
+| void | **[setNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnickname)**(final String nickname, final BMXCallBack callBack)<br>Set nickname  |
+| void | **[uploadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-uploadavatar)**(final String avatarPath, final FileProgressListener listener, final BMXCallBack callBack)<br>Upload avatar  |
+| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-downloadavatar)**(final [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, final FileProgressListener listener, final BMXCallBack callBack)<br>Download avatar  |
+| void | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpublicinfo)**(final String publicInfo, final BMXCallBack callBack)<br>Set public extension information  |
+| void | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setprivateinfo)**(final String privateInfo, final BMXCallBack callBack)<br>Set private extension information  |
+| void | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setaddfriendauthmode)**(final BMXUserProfile.AddFriendAuthMode mode, final BMXCallBack callBack)<br>Set method to validate when adding friend  |
+| void | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setauthquestion)**(final BMXUserProfile.AuthQuestion authQuestion, final BMXCallBack callBack)<br>Set friend authentication questions  |
+| void | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepush)**(final boolean enable, final BMXCallBack callBack)<br>Set whether push is allowed  |
+| void | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setenablepushdetaile)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to push details  |
+| void | **[setPushNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushnickname)**(final String nickname, final BMXCallBack callBack)<br>Set push nickname  |
+| void | **[setPushAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setpushalias)**(final String alias, final String bmxPushToken, final BMXCallBack callBack)<br>Set push alias  |
+| void | **[setNotificationSound](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationsound)**(final boolean enable, final BMXCallBack callBack)<br>Set whether a new message is audibly alerted  |
+| void | **[setNotificationVibrate](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setnotificationvibrate)**(final boolean enable, final BMXCallBack callBack)<br>Set whether a new message is alerted in vibration  |
+| void | **[setAutoDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautodownloadattachment)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to automatically download thumbnail and voice attachment  |
+| void | **[setAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-setautoacceptgroupinvite)**(final boolean enable, final BMXCallBack callBack)<br>Set whether to automatically accept group invitations  |
+| void | **[addUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-adduserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>Add user state listener  |
+| void | **[removeUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-removeuserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>Remove user state listener  |
+| void | **[changeAppId](classim_1_1floo_1_1floolib_1_1_b_m_x_user_manager.md#function-changeappid)**(final String appId, final BMXCallBack callBack)<br>Switch appId  |
 
 ## Public Functions Documentation
 
@@ -55,12 +58,11 @@ inline BMXUserManager(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="BMXUserManager" %}{% endlanying_code_snippet %}
 ```
-
 ### function signUpNewUser
 
 ```java
@@ -71,20 +73,19 @@ inline void signUpNewUser(
 )
 ```
 
-Register
+Register 
 
-**Parameters**:
+**Parameters**: 
 
-* **password** Password
-* **username** Username
-* **callBack** [BMXUserProfile](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_user\_profile.md)
+  * **password** Password 
+  * **username** Username 
+  * **callBack** [BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md)
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signUpNewUser" %}{% endlanying_code_snippet %}
 ```
-
 ### function signInByName
 
 ```java
@@ -95,20 +96,19 @@ inline void signInByName(
 )
 ```
 
-Username login
+Username login 
 
-**Parameters**:
+**Parameters**: 
 
-* **name**
-* **password**
-* **callBack** \[BMXErrorCode]
+  * **name** 
+  * **password** 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signInByName" %}{% endlanying_code_snippet %}
 ```
-
 ### function signInById
 
 ```java
@@ -119,20 +119,19 @@ inline void signInById(
 )
 ```
 
-id login
+id login 
 
-**Parameters**:
+**Parameters**: 
 
-* **id**
-* **password**
-* **callBack** \[BMXErrorCode]
+  * **id** 
+  * **password** 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signInById" %}{% endlanying_code_snippet %}
 ```
-
 ### function autoSignInByName
 
 ```java
@@ -143,20 +142,19 @@ inline void autoSignInByName(
 )
 ```
 
-Auto login, by username
+Auto login, by username 
 
-**Parameters**:
+**Parameters**: 
 
-* **name**
-* **password**
-* **callBack** \[BMXErrorCode]
+  * **name** 
+  * **password** 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="autoSignInByName" %}{% endlanying_code_snippet %}
 ```
-
 ### function autoSignInById
 
 ```java
@@ -167,20 +165,19 @@ inline void autoSignInById(
 )
 ```
 
-Auto login, by id
+Auto login, by id 
 
-**Parameters**:
+**Parameters**: 
 
-* **uid**
-* **password**
-* **callBack** \[BMXErrorCode]
+  * **uid** 
+  * **password** 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="autoSignInById" %}{% endlanying_code_snippet %}
 ```
-
 ### function signOut
 
 ```java
@@ -189,18 +186,17 @@ inline void signOut(
 )
 ```
 
-Log out
+Log out 
 
-**Parameters**:
+**Parameters**: 
 
-* **callBack** \[BMXErrorCode]
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signOut" %}{% endlanying_code_snippet %}
 ```
-
 ### function signOut
 
 ```java
@@ -210,46 +206,41 @@ inline void signOut(
 )
 ```
 
-Log out
+Log out 
 
-**Parameters**:
+**Parameters**: 
 
-* **callBack** \[BMXErrorCode]
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signOut" %}{% endlanying_code_snippet %}
 ```
-
 ### function connectStatus
 
 ```java
 inline BMXConnectStatus connectStatus()
 ```
 
-Get the current connection state with server
+Get the current connection state with server 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="connectStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function signInStatus
 
 ```java
 inline BMXSignInStatus signInStatus()
 ```
 
-Get the current login state
+Get the current login state 
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="signInStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function bindDevice
 
 ```java
@@ -259,19 +250,18 @@ inline void bindDevice(
 )
 ```
 
-Binding device push token
+Binding device push token 
 
-**Parameters**:
+**Parameters**: 
 
-* **token** device token
-* **callBack** \[BMXErrorCode]
+  * **token** device token 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="bindDevice" %}{% endlanying_code_snippet %}
 ```
-
 ### function getDeviceList
 
 ```java
@@ -280,18 +270,17 @@ inline void getDeviceList(
 )
 ```
 
-Get list of logged-in devices
+Get list of logged-in devices 
 
-**Parameters**:
+**Parameters**: 
 
-* **callBack** \[BMXErrorCode] list of logged-in devices
+  * **callBack** [BMXErrorCode] list of logged-in devices 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="getDeviceList" %}{% endlanying_code_snippet %}
 ```
-
 ### function deleteDevice
 
 ```java
@@ -301,18 +290,17 @@ inline void deleteDevice(
 )
 ```
 
-Delete device
+Delete device 
 
-**Parameters**:
+**Parameters**: 
 
-* **callBack** \[BMXErrorCode]
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="deleteDevice" %}{% endlanying_code_snippet %}
 ```
-
 ### function getProfile
 
 ```java
@@ -322,19 +310,18 @@ inline void getProfile(
 )
 ```
 
-Get user details
+Get user details 
 
-**Parameters**:
+**Parameters**: 
 
-* **forceRefresh** Force pull latest results from server
-* **callBack** \[BMXErrorCode], user details
+  * **forceRefresh** Force pull latest results from server 
+  * **callBack** [BMXErrorCode], user details 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="getProfile" %}{% endlanying_code_snippet %}
 ```
-
 ### function setNickname
 
 ```java
@@ -344,19 +331,18 @@ inline void setNickname(
 )
 ```
 
-Set nickname
+Set nickname 
 
-**Parameters**:
+**Parameters**: 
 
-* **nickname** Nickname
-* **callBack** \[BMXErrorCode]
+  * **nickname** Nickname 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function uploadAvatar
 
 ```java
@@ -367,20 +353,19 @@ inline void uploadAvatar(
 )
 ```
 
-Upload avatar
+Upload avatar 
 
-**Parameters**:
+**Parameters**: 
 
-* **avatarPath** Local file path of avatar
-* **listener** Uploading progress listener
-* **callBack** \[BMXErrorCode]
+  * **avatarPath** Local file path of avatar 
+  * **listener** Uploading progress listener 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="uploadAvatar" %}{% endlanying_code_snippet %}
 ```
-
 ### function downloadAvatar
 
 ```java
@@ -391,20 +376,19 @@ inline void downloadAvatar(
 )
 ```
 
-Download avatar
+Download avatar 
 
-**Parameters**:
+**Parameters**: 
 
-* **profile** User details
-* **listener** Downloading progress listener
-* **callBack** \[BMXErrorCode]
+  * **profile** User details 
+  * **listener** Downloading progress listener 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="downloadAvatar" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPublicInfo
 
 ```java
@@ -414,19 +398,18 @@ inline void setPublicInfo(
 )
 ```
 
-Set public extension information
+Set public extension information 
 
-**Parameters**:
+**Parameters**: 
 
-* **publicInfo** User public information
-* **callBack** \[BMXErrorCode]
+  * **publicInfo** User public information 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPublicInfo" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPrivateInfo
 
 ```java
@@ -436,19 +419,18 @@ inline void setPrivateInfo(
 )
 ```
 
-Set private extension information
+Set private extension information 
 
-**Parameters**:
+**Parameters**: 
 
-* **privateInfo** User private information (self-visibe only)
-* **callBack** \[BMXErrorCode]
+  * **privateInfo** User private information (self-visibe only) 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPrivateInfo" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAddFriendAuthMode
 
 ```java
@@ -458,19 +440,18 @@ inline void setAddFriendAuthMode(
 )
 ```
 
-Set method to validate when adding friend
+Set method to validate when adding friend 
 
-**Parameters**:
+**Parameters**: 
 
-* **mode** How to validate when adding friend
-* **callBack** \[BMXErrorCode]
+  * **mode** How to validate when adding friend 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAddFriendAuthMode" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAuthQuestion
 
 ```java
@@ -480,19 +461,18 @@ inline void setAuthQuestion(
 )
 ```
 
-Set friend authentication questions
+Set friend authentication questions 
 
-**Parameters**:
+**Parameters**: 
 
-* **authQuestion** Verification question
-* **callBack** \[BMXErrorCode]
+  * **authQuestion** Verification question 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAuthQuestion" %}{% endlanying_code_snippet %}
 ```
-
 ### function setEnablePush
 
 ```java
@@ -502,19 +482,18 @@ inline void setEnablePush(
 )
 ```
 
-Set whether push is allowed
+Set whether push is allowed 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to allow push, true to push, false not to
-* **callBack** \[BMXErrorCode]
+  * **enable** Whether to allow push, true to push, false not to 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setEnablePush" %}{% endlanying_code_snippet %}
 ```
-
 ### function setEnablePushDetaile
 
 ```java
@@ -524,19 +503,18 @@ inline void setEnablePushDetaile(
 )
 ```
 
-Set whether to push details
+Set whether to push details 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to push details, true to push, false not to
-* **callBack** \[BMXErrorCode]
+  * **enable** Whether to push details, true to push, false not to 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setEnablePushDetaile" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushNickname
 
 ```java
@@ -546,19 +524,18 @@ inline void setPushNickname(
 )
 ```
 
-Set push nickname
+Set push nickname 
 
-**Parameters**:
+**Parameters**: 
 
-* **nickname** Push nickname
-* **callBack** \[BMXErrorCode]
+  * **nickname** Push nickname 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPushNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushAlias
 
 ```java
@@ -569,20 +546,19 @@ inline void setPushAlias(
 )
 ```
 
-Set push alias
+Set push alias 
 
-**Parameters**:
+**Parameters**: 
 
-* **alias** Alias
-* **bmxPushToken** Push token
-* **callBack** \[BMXErrorCode]
+  * **alias** Alias 
+  * **bmxPushToken** Push token 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setPushAlias" %}{% endlanying_code_snippet %}
 ```
-
 ### function setNotificationSound
 
 ```java
@@ -592,19 +568,18 @@ inline void setNotificationSound(
 )
 ```
 
-Set whether a new message is audibly alerted
+Set whether a new message is audibly alerted 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to sound alert when new message received, true to alert, false not to
-* **callBack** \[BMXErrorCode]
+  * **enable** Whether to sound alert when new message received, true to alert, false not to 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setNotificationSound" %}{% endlanying_code_snippet %}
 ```
-
 ### function setNotificationVibrate
 
 ```java
@@ -614,19 +589,18 @@ inline void setNotificationVibrate(
 )
 ```
 
-Set whether a new message is alerted in vibration
+Set whether a new message is alerted in vibration 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to vibrate alert when new message received, true to alert, false not to
-* **callBack** \[BMXErrorCode]
+  * **enable** Whether to vibrate alert when new message received, true to alert, false not to 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setNotificationVibrate" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAutoDownloadAttachment
 
 ```java
@@ -636,19 +610,18 @@ inline void setAutoDownloadAttachment(
 )
 ```
 
-Set whether to automatically download thumbnail and voice attachment
+Set whether to automatically download thumbnail and voice attachment 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to automatically download thumbnail and voice attachment, true to download, false not to
-* **callBack** \[BMXErrorCode]
+  * **enable** Whether to automatically download thumbnail and voice attachment, true to download, false not to 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAutoDownloadAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAutoAcceptGroupInvite
 
 ```java
@@ -658,19 +631,18 @@ inline void setAutoAcceptGroupInvite(
 )
 ```
 
-Set whether to automatically accept group invitations
+Set whether to automatically accept group invitations 
 
-**Parameters**:
+**Parameters**: 
 
-* **enable** Whether to automatically agree to group invitation, true to agree, false not to
-* **callBack** \[BMXErrorCode]
+  * **enable** Whether to automatically agree to group invitation, true to agree, false not to 
+  * **callBack** [BMXErrorCode]
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="setAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
 ```
-
 ### function addUserListener
 
 ```java
@@ -679,18 +651,17 @@ inline void addUserListener(
 )
 ```
 
-Add user state listener
+Add user state listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** User state listener
+  * **listener** User state listener 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="addUserListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeUserListener
 
 ```java
@@ -699,18 +670,17 @@ inline void removeUserListener(
 )
 ```
 
-Remove user state listener
+Remove user state listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** User state listener
+  * **listener** User state listener 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="removeUserListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function changeAppId
 
 ```java
@@ -720,18 +690,17 @@ inline void changeAppId(
 )
 ```
 
-Switch appId
+Switch appId 
 
-**Parameters**:
+**Parameters**: 
 
-* **appId** appId
+  * **appId** appId 
+
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserManager'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXUserManager",function="changeAppId" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

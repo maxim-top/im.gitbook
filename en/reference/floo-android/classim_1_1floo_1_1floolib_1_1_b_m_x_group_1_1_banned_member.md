@@ -1,40 +1,43 @@
 ---
 title: im::floo::floolib::BMXGroup::BannedMember
-summary: Banned group members
+summary: Banned group members 
+
 ---
 
 # im::floo::floolib::BMXGroup::BannedMember
 
-Banned group members
+
+
+Banned group members 
 
 ## Public Functions
 
-|                   | Name                                                                                                                                            |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| synchronized void | [**delete**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-delete)()                                   |
-|                   | [**BannedMember**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-bannedmember)()                       |
-| void              | [**setMUid**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-setmuid)(long value)                       |
-| long              | [**getMUid**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-getmuid)()                                 |
-| void              | [**setMGroupNickname**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-setmgroupnickname)(String value) |
-| String            | [**getMGroupNickname**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-getmgroupnickname)()             |
-| void              | [**setMCreateTime**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-setmcreatetime)(long value)         |
-| long              | [**getMCreateTime**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-getmcreatetime)()                   |
-| void              | [**setMExpired**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-setmexpired)(long value)               |
-| long              | [**getMExpired**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-getmexpired)()                         |
+|                | Name           |
+| -------------- | -------------- |
+| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-delete)**() |
+| | **[BannedMember](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-bannedmember)**() |
+| void | **[setMUid](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-setmuid)**(long value) |
+| long | **[getMUid](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-getmuid)**() |
+| void | **[setMGroupNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-setmgroupnickname)**(String value) |
+| String | **[getMGroupNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-getmgroupnickname)**() |
+| void | **[setMCreateTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-setmcreatetime)**(long value) |
+| long | **[getMCreateTime](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-getmcreatetime)**() |
+| void | **[setMExpired](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-setmexpired)**(long value) |
+| long | **[getMExpired](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-getmexpired)**() |
 
 ## Protected Functions
 
-|      | Name                                                                                                                                                   |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|      | [**BannedMember**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-bannedmember)(long cPtr, boolean cMemoryOwn) |
-| void | [**finalize**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-finalize)()                                      |
-| long | [**getCPtr**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#function-getcptr)(BannedMember obj)                        |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BannedMember](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-bannedmember)**(long cPtr, boolean cMemoryOwn) |
+| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-finalize)**() |
+| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#function-getcptr)**(BannedMember obj) |
 
 ## Protected Attributes
 
-|                   | Name                                                                                                                  |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------- |
-| transient boolean | [**swigCMemOwn**](classim\_1\_1floo\_1\_1floolib\_1\_1\_b\_m\_x\_group\_1\_1\_banned\_member.md#variable-swigcmemown) |
+|                | Name           |
+| -------------- | -------------- |
+| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_banned_member.md#variable-swigcmemown)**  |
 
 ## Public Functions Documentation
 
@@ -44,24 +47,22 @@ Banned group members
 inline synchronized void delete()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="delete" %}{% endlanying_code_snippet %}
 ```
-
 ### function BannedMember
 
 ```java
 inline BannedMember()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="BannedMember" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMUid
 
 ```java
@@ -70,24 +71,22 @@ inline void setMUid(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMUid" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMUid
 
 ```java
 inline long getMUid()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMUid" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMGroupNickname
 
 ```java
@@ -96,24 +95,22 @@ inline void setMGroupNickname(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMGroupNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMGroupNickname
 
 ```java
 inline String getMGroupNickname()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMGroupNickname" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMCreateTime
 
 ```java
@@ -122,24 +119,22 @@ inline void setMCreateTime(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMCreateTime" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMCreateTime
 
 ```java
 inline long getMCreateTime()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMCreateTime" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMExpired
 
 ```java
@@ -148,26 +143,24 @@ inline void setMExpired(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="setMExpired" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMExpired
 
 ```java
 inline long getMExpired()
 ```
 
+
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getMExpired" %}{% endlanying_code_snippet %}
 ```
-
 ### function BannedMember
 
 ```java
@@ -177,24 +170,22 @@ inline BannedMember(
 )
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="BannedMember" %}{% endlanying_code_snippet %}
 ```
-
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="finalize" %}{% endlanying_code_snippet %}
 ```
-
 ### function getCPtr
 
 ```java
@@ -202,6 +193,7 @@ static inline long getCPtr(
     BannedMember obj
 )
 ```
+
 
 ## Protected Attributes Documentation
 
@@ -211,12 +203,11 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
+
 **Example**:
-
 ```
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BannedMember'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BannedMember",function="getCPtr" %}{% endlanying_code_snippet %}
 ```
-
-
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800
