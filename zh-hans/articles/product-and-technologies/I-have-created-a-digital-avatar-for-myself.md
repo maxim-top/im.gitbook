@@ -116,7 +116,7 @@
 
 ![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
-### 参考资料
+## 参考资料
 
 1. [AI一乐](https://lanying.link/xdtz8p)
 2. [蓝莺IM控制台](https://console.lanyingim.com/)
