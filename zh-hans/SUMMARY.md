@@ -234,6 +234,7 @@
     * [十分钟安装一套即时通讯 IM 私有云](articles/product-and-technologies/install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)
     * [疫情期间免费提供高级技术顾问服务](articles/product-and-technologies/provide-free-senior-technical-consulting-services-during-the-epidemic.md)
   * [活动报导](articles/activity-report/README.md)
+    * [一场AI AGENT黑客马拉松能玩出什么](articles/activity-report/What-can-be-achieved-in-an-AI-AGENT-hackathon.md)
     * [参加Agent黑客马拉松，手工定制GPT](articles/activity-report/Join-the-Agent-Hackathon-customize-GPT-manually.md)
     * [数字化转型遇上炫酷机车 | TGO北京活动](articles/activity-report/digital-transformation-meets-cool-locomotives-tgo-beijing-event.md)
     * [汽车工厂里的数字孪生与智能制造](articles/activity-report/digital-twins-and-smart-manufacturing-in-automotive-factories.md)
