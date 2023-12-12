@@ -206,6 +206,7 @@
     * [过去的十五年，我们怎样做 IM？](articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.md)
     * [云服务的下一个十年](articles/Industry-development/the-next-decade-of-cloud-services.md)
   * [产品技术](articles/product-and-technologies/README.md)
+    * [ChatGPT的下一步，AltGPTs](articles/product-and-technologies/The-Next-Steps-for-ChatGPT-AltGPTs.md)
     * [让有API的业务用上AI](articles/product-and-technologies/Enable-AI-integration-for-businesses-with-APIs.md)
     * [AI驱动的应用：插件、应用市场和AI Agents](articles/product-and-technologies/AI-Powered-Applications-Plugins-App-Store-and-AI-Agents.md)
     * [我为自己打造了一个数字分身](articles/product-and-technologies/I-have-created-a-digital-avatar-for-myself.md)
