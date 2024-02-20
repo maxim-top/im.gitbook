@@ -200,6 +200,7 @@
     * [消息操作](reference/server-api/message.md)
     * [文件操作](reference/server-api/file.md)
     * [推送接口](reference/server-api/push.md)
+    * [AI接口](reference/server-api/ai.md)
 * [博客文章](articles/README.md)
   * [行业发展](articles/Industry-development/README.md)
     * [不要总想着自己训练大模型，你的业务可能并不需要](articles/Industry-development/do-not-train-your-own-llm-your-business-might-not-need-it.md)
