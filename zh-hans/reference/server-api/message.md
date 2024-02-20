@@ -125,9 +125,11 @@
 | attachment | string | true |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
 | config | string | false |  | SDK使用的扩展字段 |
 | content | string | true |  | 消息内容 |
-| content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7; |
+| content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;<br>    READ_ACK  = 9;<br>    RECALL    = 10;<br>    APPEND    = 11;<br>    REPLACE   = 12; |
 | ext | string | false |  | 扩展字段 |
 | from_user_id | int64 | false |  | 发送者的用户ID |
+| online_only | boolean | false |  | 是否只发给在线用户(默认为false)： true - 只发给在线用户； false - 发给在线和离线用户 |
+| related_mid | int64 | false |  | 消息操作相关的消息ID： 如何消息类型为READ_ACK/RECALL时需要设置此字段，表示已读或撤回的消息ID |
 | targets | array[int64] | true |  | 接收用户ID或群ID |
 | transaction_id | int64 | false |  | 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重 |
 | type | int32 | true |  | 目标类型，1 - 普通用户，2 - 群组 |
@@ -140,6 +142,7 @@
 | code | int32 | 返回码，200是成功 |
 | data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
+| msg_ids | array[int64] | 消息ID列表：当前只有消息接收者数量为1时才会返回消息ID |
 #### 接口描述
 > 
 
@@ -194,9 +197,11 @@
 | attachment | string | true |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
 | config | string | false |  | SDK使用的扩展字段 |
 | content | string | true |  | 消息内容 |
-| content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7; |
+| content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;<br>    READ_ACK  = 9;<br>    RECALL    = 10;<br>    APPEND    = 11;<br>    REPLACE   = 12; |
 | ext | string | false |  | 扩展字段 |
 | from_user_id | int64 | false |  | 发送者的用户ID |
+| online_only | boolean | false |  | 是否只发给在线用户(默认为false)： true - 只发给在线用户； false - 发给在线和离线用户 |
+| related_mid | int64 | false |  | 消息操作相关的消息ID： 如何消息类型为READ_ACK/RECALL时需要设置此字段，表示已读或撤回的消息ID |
 | targets | array[int64] | true |  | 接收用户ID或群ID |
 | transaction_id | int64 | false |  | 请求ID，用于消息去重， 如果短时间内收到2个相同transaction_id的请求，第二次请求不会被执行。 如果不设置就不会被去重 |
 | type | int32 | true |  | 目标类型，1 - 普通用户，2 - 群组 |
@@ -209,6 +214,7 @@
 | code | int32 | 返回码，200是成功 |
 | data | boolean | 结果数据 |
 | message | string | 错误信息，如果成功，该项为null |
+| msg_ids | array[int64] | 消息ID列表：当前只有消息接收者数量为1时才会返回消息ID |
 #### 接口描述
 > 
 
