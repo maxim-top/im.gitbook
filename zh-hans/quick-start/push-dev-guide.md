@@ -1,5 +1,7 @@
 # 推送开发指南（PUSH）
 
+注：如果您是IM开发者，请直接参照IM开发文档中的Push推送部分(floo-android-quick-start.md)。
+
 本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-android.md)
 
 ### 推送 SDK 集成说明
@@ -37,7 +39,9 @@ BMXClient
 
 下文以安卓 SDK 为例介绍推送 API。
 
-### Android Studio中导入SDK
+### 快速集成
+
+**第一步 导入SDK**
 
 SDK导入可以选择aar格式或者jar+so格式
 
@@ -51,7 +55,8 @@ SDK导入可以选择aar格式或者jar+so格式
 * 下载jar包和so库到项目的libs目录
 * 在build.gradle文件中增加：implementation fileTree(dir: 'libs', include: \['\*.jar'])
 
-### 权限配置
+**第二步 项目配置**
+> 权限配置
 
 在AndroidManifest.xml 里增加加以下权限：
 
@@ -75,11 +80,7 @@ SDK导入可以选择aar格式或者jar+so格式
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 ```
 
-### 快速集成
-
-#### BMXClient初始化
-
-* 在app入口类中导入so库文件：
+> 在app入口类中导入so库文件：
 
 ```
     static {
@@ -87,7 +88,7 @@ SDK导入可以选择aar格式或者jar+so格式
     }
 ```
 
-* 初始化BMXClient
+**第三步 初始化BMXClient**
 
 ```
     public static void initClient(int index) {
@@ -115,8 +116,6 @@ SDK导入可以选择aar格式或者jar+so格式
         conf.setEnvironmentType(BMXPushEnvironmentType.Production);
         //根据设备机型设置pushProviderType
         conf.setPushProviderType(getProviderType(context));
-        BMXSDKConfig.HostConfig hostConfig = new BMXSDKConfig.HostConfig("sync.maxim.top", 443, "https://api.maxim.top");
-        conf.setHostConfig(hostConfig);
         //获取BMXClient实例
         BMXClient bmxClient = BMXClient.create(conf);
     }
@@ -143,7 +142,7 @@ SDK导入可以选择aar格式或者jar+so格式
     }
 ```
 
-#### 高级调用形式
+### 高级调用形式
 
 * BMXPushManager: 通过bmxClient.getPushManager()获取到推送的manager对象。
 
