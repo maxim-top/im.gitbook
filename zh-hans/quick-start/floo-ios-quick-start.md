@@ -569,6 +569,8 @@
 
 ## 功能进阶
 
+#### 自定义消息
+
 BMXMessage实体中，提供可扩展属性(extension 和 config) extension 为开发使用的扩展字段，例如编辑状态。 config 为SDK自用的扩展字段，例如mention功能，push功能
 
 *   群组@功能
