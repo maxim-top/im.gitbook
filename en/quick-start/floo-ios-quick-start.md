@@ -542,6 +542,8 @@ p - (void)setEnablePushDetail:(BOOL)enablePushDetail completion:(void(^)(BMXErro
 
 ## Advanced features
 
+#### Custom messages
+
 BMXMessageObject entity provides extensible attributes (extensionJson and configJson), extensionJson is an extension field for development use, such as edit status; configJson is an extension field for SDK's own use, such as mention and push functions.
 
 *   Group @ function
