@@ -1,6 +1,6 @@
 # 推送开发指南（PUSH）
 
-注：如果您是IM开发者，请直接参照IM开发文档中的Push推送部分(floo-android-quick-start.md)。
+注：如果您是IM开发者，请直接参照[IM开发文档](floo-android-quick-start.md)中的Push推送部分。
 
 本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-android.md)
 
