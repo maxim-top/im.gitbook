@@ -551,51 +551,6 @@ H/A: 在BMXCallBack回调中根据BMXErrorCode判断。
 
 登录成功之后才能进行聊天操作。发消息时，单聊和群聊调用的是统一接口，区别只是要设置下 BMXConversationType
 
-#### Push推送
-
-**第一步 推送证书配置**
-登录蓝莺IM管理后台，进入“推送”页面。添加主流手机厂商的推送证书。
-![添加推送证书](../assets/push_1.png)
-
-**第二步 推送SDK集成**
-按照各推送SDK厂商的要求，在安卓客户端代码中申请权限，集成SDK，并在应用启动时注册推送服务。
-
-**第三步 上传device token**
-安卓端客户端通过各推送厂商SDK获取device token并上传到蓝莺IM服务器(代码如下)，当接收者不在线的时候，蓝莺IM服务器会自动通过远程推送将消息发过去。
-
-> L/S: 通过返回值获取到BMXErrorCode判断是否成功。
-
-```
-    //参数说明: pushToken(推送token)
-    bmxClient.getUserService().bindDevice(pushToken);
-```
-
-> H/A: 在BMXCallBack回调中获取到BMXErrorCode判断是否成功。
-
-```
-   bmxClient.getUserManager().bindDevice(pushToken, new BMXCallBack(){
-          @Override
-          public void onResult(BMXErrorCode bmxErrorCode) {
-            //返回BMXErroeCode实例
-          }
-   	});
-```
-
-> 缺省的推送titile是消息发送者昵称，推送内容是消息正文。如果需要自定义推送title和推送内容，可以在消息的config字段中设置，setPushMessageLocKey设置多语言环境的文本资源的键名，setPushMessageLocArgs设置多语言环境文本资源中变量参数的值，代码示例如下：
-
-```
-        BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
-        con.setRTCHangupInfo(callId, peerDrop);
-        con.setPushMessageLocKey(pushMessageLocKey);
-        if (pushMessageLocArgs.length() > 0){
-            con.setPushMessageLocArgs(pushMessageLocArgs);
-        }
-        BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, content);
-        msg.setConfig(con);
-        handlerMessage(msg);
-```
-
-
 #### 消息内容格式
 
 **文本消息**
@@ -857,6 +812,50 @@ BMXMessageObject实体中，提供可扩展属性(extensionJson 和 configJson) 
     }
     msg.setDeliveryQos(BMXMessage.DeliveryQos.AtMostOnce);
     msg.setExtension(extension);
+```
+
+## Push推送
+
+**第一步 推送证书配置**
+登录蓝莺IM管理后台，进入“推送”页面。添加主流手机厂商的推送证书。
+![添加推送证书](../assets/push_1.png)
+
+**第二步 推送SDK集成**
+按照各推送SDK厂商的要求，在安卓客户端代码中申请权限，集成SDK，并在应用启动时注册推送服务。
+
+**第三步 上传device token**
+安卓端客户端通过各推送厂商SDK获取device token并上传到蓝莺IM服务器(代码如下)，当接收者不在线的时候，蓝莺IM服务器会自动通过远程推送将消息发过去。
+
+> L/S: 通过返回值获取到BMXErrorCode判断是否成功。
+
+```
+    //参数说明: pushToken(推送token)
+    bmxClient.getUserService().bindDevice(pushToken);
+```
+
+> H/A: 在BMXCallBack回调中获取到BMXErrorCode判断是否成功。
+
+```
+   bmxClient.getUserManager().bindDevice(pushToken, new BMXCallBack(){
+          @Override
+          public void onResult(BMXErrorCode bmxErrorCode) {
+            //返回BMXErroeCode实例
+          }
+   	});
+```
+
+> 缺省的推送titile是消息发送者昵称，推送内容是消息正文。如果需要自定义推送title和推送内容，可以在消息的config字段中设置，setPushMessageLocKey设置多语言环境的文本资源的键名，setPushMessageLocArgs设置多语言环境文本资源中变量参数的值，代码示例如下：
+
+```
+        BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+        con.setRTCHangupInfo(callId, peerDrop);
+        con.setPushMessageLocKey(pushMessageLocKey);
+        if (pushMessageLocArgs.length() > 0){
+            con.setPushMessageLocArgs(pushMessageLocArgs);
+        }
+        BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, content);
+        msg.setConfig(con);
+        handlerMessage(msg);
 ```
 
 ## RTC 音视频通话

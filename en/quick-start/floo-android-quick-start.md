@@ -557,50 +557,6 @@ Group chat refers to the chat function of internal broadcast mode within the use
 
 You can't chat until you login successfully. When sending messages, single chat and group chat call the same unified interface, but the only difference is to set BMXConversationType.
 
-#### Push
-
-**Step 1 Push certificates configuration**
-Sign in your Lanying IM console and navigate the "Push" page. Add push certificates of the major push vendors. 
-![Add Push certificate](../assets/push_1.png)
-
-**Step 2 Intergrate the push SDKs**
-Integrate the SDKs of each push vendors, set permissions in the Android client code and register the push service at the app is started.
-
-**Step 3 upload device token**
-Get the device token through the SDK of each push vendor in Android client and upload it to the Lanying IM server (please refer to the following code). When the receiver is not online, the Lanying IM server will automatically send the message through push service.
-
-> L/S: Success is judged by the value of returned BMXErrorCode.
-
-```
-    //Parameter description: pushToken
-    bmxClient.getUserService().bindDevice(pushToken);
-```
-
-> H/A: Get BMXErrorCode in BMXCallBack to determine success.
-
-```
-   bmxClient.getUserManager().bindDevice(pushToken, new BMXCallBack(){
-          @Override
-          public void onResult(BMXErrorCode bmxErrorCode) {
-            //Return BMXErroeCode instance
-          }
-   	});
-```
-
-> The default push titile is the message sender's nickname, and the push content is the message body. If you need to customize the push title and push content, you can set it in the config field of the message. setPushMessageLocKey sets the key name of the text resource in the multilingual environment, and setPushMessageLocArgs sets the value of variable parameters in the text resource in the multilingual environment. The code example is as follows:
-
-```
-        BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
-        con.setRTCHangupInfo(callId, peerDrop);
-        con.setPushMessageLocKey(pushMessageLocKey);
-        if (pushMessageLocArgs.length() > 0){
-            con.setPushMessageLocArgs(pushMessageLocArgs);
-        }
-        BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, content);
-        msg.setConfig(con);
-        handlerMessage(msg);
-```
-
 #### Message format
 
 **Text message**
@@ -863,6 +819,50 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
     }
     msg.setDeliveryQos(BMXMessage.DeliveryQos.AtMostOnce);
     msg.setExtension(extension);
+```
+
+## Push
+
+**Step 1 Push certificates configuration**
+Sign in your Lanying IM console and navigate the "Push" page. Add push certificates of the major push vendors. 
+![Add Push certificate](../assets/push_1.png)
+
+**Step 2 Intergrate the push SDKs**
+Integrate the SDKs of each push vendors, set permissions in the Android client code and register the push service at the app is started.
+
+**Step 3 upload device token**
+Get the device token through the SDK of each push vendor in Android client and upload it to the Lanying IM server (please refer to the following code). When the receiver is not online, the Lanying IM server will automatically send the message through push service.
+
+> L/S: Success is judged by the value of returned BMXErrorCode.
+
+```
+    //Parameter description: pushToken
+    bmxClient.getUserService().bindDevice(pushToken);
+```
+
+> H/A: Get BMXErrorCode in BMXCallBack to determine success.
+
+```
+   bmxClient.getUserManager().bindDevice(pushToken, new BMXCallBack(){
+          @Override
+          public void onResult(BMXErrorCode bmxErrorCode) {
+            //Return BMXErroeCode instance
+          }
+   	});
+```
+
+> The default push titile is the message sender's nickname, and the push content is the message body. If you need to customize the push title and push content, you can set it in the config field of the message. setPushMessageLocKey sets the key name of the text resource in the multilingual environment, and setPushMessageLocArgs sets the value of variable parameters in the text resource in the multilingual environment. The code example is as follows:
+
+```
+        BMXMessageConfig con = BMXMessageConfig.createMessageConfig(false);
+        con.setRTCHangupInfo(callId, peerDrop);
+        con.setPushMessageLocKey(pushMessageLocKey);
+        if (pushMessageLocArgs.length() > 0){
+            con.setPushMessageLocArgs(pushMessageLocArgs);
+        }
+        BMXMessage msg = BMXMessage.createRTCMessage(from, to, BMXMessage.MessageType.Single, to, content);
+        msg.setConfig(con);
+        handlerMessage(msg);
 ```
 
 ## RTC AV Call
