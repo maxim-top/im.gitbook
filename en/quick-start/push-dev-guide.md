@@ -1,4 +1,6 @@
 # Push Development Guide
+Note: If you are an IM developer, please refer to the Push section of the IM development documentation
+(floo-android-quick-start.md)。
 
 This page is for quick integration, visit [detailed documentation](../reference/floo-android.md)
 
@@ -37,7 +39,7 @@ Other functional classes are:
 
 Android SDK is used as an example for push API below.
 
-### Import SDK into Android Studio
+**Step 1 Import SDK into Android Studio**
 
 Aar or jar + so formats are selectable in SDK import
 
@@ -51,9 +53,9 @@ Aar or jar + so formats are selectable in SDK import
 * Download jar package and so library to /lib in project
 * Add implementation fileTree(dir: ‘libs’, include: \[’\*.jar’]) to build.gradle file
 
-### Permission configuration
+**Step 2 Permission configuration**
 
-Add permissions as follows in AndroidManifest.xml:
+> Add permissions as follows in AndroidManifest.xml:
 
 ```
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -74,18 +76,15 @@ Add permissions as follows in AndroidManifest.xml:
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 ```
-
-### Quick integration
-
-#### BMXClient initialization
-
-* Import so library file into app entry class:
+> Import so library file into app entry class:
 
 ```
     static {
         System.loadLibrary("floo");
     }
 ```
+
+**Step 3 BMXClient initialization**
 
 * Initialize BMXClient
 
@@ -143,7 +142,7 @@ Add permissions as follows in AndroidManifest.xml:
     }
 ```
 
-#### Advanced invokation form
+### Advanced invokation form
 
 * BMXPushManager: Get the manager object to push via bmxClient.getPushManager().
 
