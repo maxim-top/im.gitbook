@@ -1,6 +1,5 @@
 # Push Development Guide
-Note: If you are an IM developer, please refer to the Push section of the IM development documentation
-(floo-android-quick-start.md)。
+Note: If you are an IM developer, please refer to the Push section of the [IM development documentation](floo-android-quick-start.md).
 
 This page is for quick integration, visit [detailed documentation](../reference/floo-android.md)
 
