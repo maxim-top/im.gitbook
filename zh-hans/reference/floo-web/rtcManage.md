@@ -31,20 +31,20 @@
 | params | <code>object</code> | 初始化参数 |
 | params.server | <code>string</code> | RTC服务器地址 |
 | params.id | <code>number</code> | 音视频用户id |
-| params.name | <code>string</code> | 音视频用户名称 |
-| params.receiver | <code>number</code> | 音视频用户对方id |
 | params.caller | <code>boolean</code> | 是否为呼叫发起者 |
-| params.secret | <code>string</code> | 创建的房间操作密码 |
-| params.pin | <code>string</code> | 创建的房间加入pin码 |
+| params.receiver | <code>number</code> | 音视频用户对方id |
+| params.pin | <code>string</code> | 房间加入pin码（caller为true时发起者需要创建新的pin码） |
 | params.hasVideo | <code>boolean</code> | 是否存在视频流 |
 | params.hasAudio | <code>boolean</code> | 是否存在音频流 |
+| params.attachStream | <code>function</code> | 音视频通话信息流处理函数 |
+| params.getThrough | <code>function</code> | 音视频通话是否接通 |
+| params.hangupCall | <code>function</code> | 音视频通话是否挂断 |
+| params.getHangUpStatus | <code>function</code> | 获取挂断状态函数 以下是caller为 true 的必须参数（被呼叫者必须参数） |
+| params.roomId | <code>number</code> | 被呼叫者邀请加入的 room id 以下是caller为 true 的必须参数（呼叫者必须参数） |
+| params.secret | <code>string</code> | 创建的房间操作密码 |
+| params.callId | <code>string</code> | 创建音视频呼叫时音视频 callid 以下时视频会话必须的参数（视频宽度和高度设置函数） |
 | params.width | <code>number</code> | 视频流画面宽度 |
 | params.height | <code>number</code> | 视频流画面高度 |
-| params.localVideo | <code>string</code> | 本地video标签id |
-| params.remoteVideo | <code>string</code> | 远程video标签id |
-| params.remoteAudio | <code>string</code> | 远程audio标签id |
-| params.getThrough | <code>boolean</code> | 音视频通话是否接通 |
-| params.hangupCall | <code>boolean</code> | 音视频通话是否挂断 |
 
 **Example**  
 ```js

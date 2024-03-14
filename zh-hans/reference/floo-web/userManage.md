@@ -12,6 +12,7 @@
     * [.asyncRegister(opt)](#module_usermanage__asyncregister) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
     * [.asyncUpdateAvatar(params)](#module_usermanage__asyncupdateavatar) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncUpdateNickName(params)](#module_usermanage__asyncupdatenickname) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUserChangePassword(params)](#module_usermanage__asyncuserchangepassword) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncGetProfile()](#module_usermanage__asyncgetprofile) ⇒ [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types__userprofile)
     * [.asyncUpdateProfile(params)](#module_usermanage__asyncupdateprofile) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncGetSettings()](#module_usermanage__asyncgetsettings) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
@@ -138,6 +139,22 @@
 **Example**  
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncUpdateNickName" %}{% endlanying_code_snippet %}
+```
+### userManage.asyncUserChangePassword(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncuserchangepassword}
+更新用户密码
+
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | 参数 |
+| params.old_password | <code>string</code> | 旧密码 |
+| params.new_password | <code>string</code> | 新密码 |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncUserChangePassword" %}{% endlanying_code_snippet %}
 ```
 ### userManage.asyncGetProfile() ⇒ [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types__userprofile) {#module_usermanage__asyncgetprofile}
 获取用户profile

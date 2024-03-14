@@ -16,6 +16,8 @@
     * [.asyncGetMemberList(param)](#module_groupmanage__asyncgetmemberlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code>
     * [.readGroupMessage(group_id, mid)](#module_groupmanage__readgroupmessage)
     * [.recallMessage(uid, mid)](#module_groupmanage__recallmessage)
+    * [.appendMessageContent(uid, mid, content)](#module_groupmanage__appendmessagecontent)
+    * [.replaceMessage(uid, mid, content, config, ext)](#module_groupmanage__replacemessage)
     * [.getUnreadCount(gid)](#module_groupmanage__getunreadcount) ⇒ <code>number</code>
     * [.asyncGetAdminList(params)](#module_groupmanage__asyncgetadminlist) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupMember&gt;&gt;</code>
     * [.asyncAdminAdd(params)](#module_groupmanage__asyncadminadd) ⇒ <code>Promise.&lt;Array.&lt;module:types~GroupUserRelationResponse&gt;&gt;</code>
@@ -225,6 +227,38 @@
 **Example**  
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="recallMessage" %}{% endlanying_code_snippet %}
+```
+### groupManage.appendMessageContent(uid, mid, content) {#module_groupmanage__appendmessagecontent}
+追加消息内容
+
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| uid | <code>number</code> | 会话ID |
+| mid | <code>number</code> | 消息ID |
+| content | <code>string</code> | 消息追加内容 |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="appendMessageContent" %}{% endlanying_code_snippet %}
+```
+### groupManage.replaceMessage(uid, mid, content, config, ext) {#module_groupmanage__replacemessage}
+更新消息内容
+
+**Kind**: static method of [<code>groupManage</code>](#module_groupmanage)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| uid | <code>number</code> |  | 会话ID |
+| mid | <code>number</code> |  | 消息ID |
+| content | <code>string</code> |  | 消息更新内容 |
+| config | <code>string</code> &#124; <code>object</code> | <code>null</code> | 消息更新配置 |
+| ext | <code>string</code> &#124; <code>object</code> | <code>null</code> | 消息更新扩展信息 |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="groupManage",function="replaceMessage" %}{% endlanying_code_snippet %}
 ```
 ### groupManage.getUnreadCount(gid) ⇒ <code>number</code> {#module_groupmanage__getunreadcount}
 获取群未读消息数

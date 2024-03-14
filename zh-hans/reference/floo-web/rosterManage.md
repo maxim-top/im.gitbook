@@ -15,6 +15,8 @@
     * [.recallMessage(uid, mid)](#module_rostermanage__recallmessage)
     * [.unreadMessage(uid, mid)](#module_rostermanage__unreadmessage)
     * [.deleteMessage(uid, mid)](#module_rostermanage__deletemessage)
+    * [.appendMessageContent(uid, mid, content)](#module_rostermanage__appendmessagecontent)
+    * [.replaceMessage(uid, mid, content, config, ext)](#module_rostermanage__replacemessage)
     * [.getRosterInfo(rid)](#module_rostermanage__getrosterinfo) ⇒ [<code>RosterItem</code>](types.md#module_types__rosteritem)
     * [.getUnreadCount(uid)](#module_rostermanage__getunreadcount) ⇒ <code>number</code>
     * [.asyncGetApplyList(params)](#module_rostermanage__asyncgetapplylist) ⇒ <code>Promise.&lt;Array.&lt;module:types~RosterApplication&gt;&gt;</code>
@@ -25,6 +27,7 @@
     * [.asyncAccept(params)](#module_rostermanage__asyncaccept) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncDecline(params)](#module_rostermanage__asyncdecline) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncUpdateRosterExt(params)](#module_rostermanage__asyncupdaterosterext) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateRosterAlias(params)](#module_rostermanage__asyncupdaterosteralias) ⇒ <code>Promise.&lt;boolean&gt;</code>
     * [.asyncSearchRosterByName(params)](#module_rostermanage__asyncsearchrosterbyname) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem)
     * [.asyncSearchRosterById(params)](#module_rostermanage__asyncsearchrosterbyid) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem)
 
@@ -179,6 +182,38 @@
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="rosterManage",function="deleteMessage" %}{% endlanying_code_snippet %}
 ```
+### rosterManage.appendMessageContent(uid, mid, content) {#module_rostermanage__appendmessagecontent}
+追加消息内容
+
+**Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| uid | <code>number</code> | 会话ID |
+| mid | <code>number</code> | 消息ID |
+| content | <code>string</code> | 消息追加内容 |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="rosterManage",function="appendMessageContent" %}{% endlanying_code_snippet %}
+```
+### rosterManage.replaceMessage(uid, mid, content, config, ext) {#module_rostermanage__replacemessage}
+更新消息内容
+
+**Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| uid | <code>number</code> |  | 会话ID |
+| mid | <code>number</code> |  | 消息ID |
+| content | <code>string</code> |  | 消息更新内容 |
+| config | <code>string</code> &#124; <code>object</code> | <code>null</code> | 消息更新配置 |
+| ext | <code>string</code> &#124; <code>object</code> | <code>null</code> | 消息更新扩展信息 |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="rosterManage",function="replaceMessage" %}{% endlanying_code_snippet %}
+```
 ### rosterManage.getRosterInfo(rid) ⇒ [<code>RosterItem</code>](types.md#module_types__rosteritem) {#module_rostermanage__getrosterinfo}
 获取好友信息
 
@@ -323,12 +358,28 @@
 | params | <code>object</code> | 参数 |
 | params.user_id | <code>number</code> | 用户ID |
 | params.ext | <code>string</code> | 扩展字段 |
-| params.alias | <code>string</code> | 备注名称 |
 | params.mute_notification | <code>boolean</code> | 是否接收消息提醒 |
 
 **Example**  
 ```js
 {% lanying_code_snippet repo="lanying-im-web",class="rosterManage",function="asyncUpdateRosterExt" %}{% endlanying_code_snippet %}
+```
+### rosterManage.asyncUpdateRosterAlias(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_rostermanage__asyncupdaterosteralias}
+修改好友扩展别名字段
+
+**Kind**: static method of [<code>rosterManage</code>](#module_rostermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - 是否成功  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | 参数 |
+| params.user_id | <code>number</code> | 用户ID |
+| params.alias | <code>string</code> | 备注名称 |
+| params.mute_notification | <code>boolean</code> | 是否接收消息提醒 |
+
+**Example**  
+```js
+{% lanying_code_snippet repo="lanying-im-web",class="rosterManage",function="asyncUpdateRosterAlias" %}{% endlanying_code_snippet %}
 ```
 ### rosterManage.asyncSearchRosterByName(params) ⇒ [<code>Promise.&lt;RosterItem&gt;</code>](types.md#module_types__rosteritem) {#module_rostermanage__asyncsearchrosterbyname}
 按名称搜索用户

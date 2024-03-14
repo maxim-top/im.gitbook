@@ -27,10 +27,16 @@
     * ["onGroupCreated" (meta)](#event_ongroupcreated)
     * ["onGroupDestoryed" (meta)](#event_ongroupdestoryed)
     * ["onGroupJoined" (meta)](#event_ongroupjoined)
+    * ["onGroupLeaved" (meta)](#event_ongroupleaved)
+    * ["onGroupKicked" (meta)](#event_ongroupkicked)
     * ["onGroupApplyAccepted" (meta)](#event_ongroupapplyaccepted)
     * ["onGroupApplyDeclined" (meta)](#event_ongroupapplydeclined)
     * ["onGroupBaned" (meta)](#event_ongroupbaned)
     * ["onGroupUnbaned" (meta)](#event_ongroupunbaned)
+    * ["onRosterMessageContentAppend" (meta)](#event_onrostermessagecontentappend)
+    * ["onGroupMessageContentAppend" (meta)](#event_ongroupmessagecontentappend)
+    * ["onRosterMessageReplace" (meta)](#event_onrostermessagereplace)
+    * ["onGroupMessageReplace" (meta)](#event_ongroupmessagereplace)
     * [~RosterItem](#module_types__rosteritem) : <code>object</code>
     * [~UserSettings](#module_types__usersettings) : <code>object</code>
     * [~UserProfile](#module_types__userprofile) : <code>object</code>
@@ -332,6 +338,24 @@ Floo错误
 | --- | --- | --- |
 | meta | [<code>Meta</code>](#module_types__meta) | 群通知的消息内容 |
 
+### "onGroupLeaved" (meta) {#event_ongroupleaved}
+成员退群通知
+
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | 群通知的消息内容 |
+
+### "onGroupKicked" (meta) {#event_ongroupkicked}
+成员被踢出群通知
+
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | 群通知的消息内容 |
+
 ### "onGroupApplyAccepted" (meta) {#event_ongroupapplyaccepted}
 群申请被通过
 
@@ -367,6 +391,36 @@ Floo错误
 | Param | Type | Description |
 | --- | --- | --- |
 | meta | [<code>Meta</code>](#module_types__meta) | 群通知的消息内容 |
+
+### "onRosterMessageContentAppend" (meta) {#event_onrostermessagecontentappend}
+收到单聊消息内容追加
+
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | 好友消息内容追加的消息 |
+
+### "onGroupMessageContentAppend" (meta) {#event_ongroupmessagecontentappend}
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | 群组消息内容替换的消息 |
+
+### "onRosterMessageReplace" (meta) {#event_onrostermessagereplace}
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | 好友消息内容替换的消息 |
+
+### "onGroupMessageReplace" (meta) {#event_ongroupmessagereplace}
+**Kind**: event emitted by [<code>types</code>](#module_types)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| meta | [<code>Meta</code>](#module_types__meta) | 群组消息内容替换的消息 |
 
 ### types~RosterItem : <code>object</code> {#module_types__rosteritem}
 好友信息
@@ -778,4 +832,4 @@ Floo错误
 
 | Param | Type | Description |
 | --- | --- | --- |
-| res | [<code>flooNotice</code>](#event_floonotice) &#124; [<code>flooError</code>](#event_flooerror) &#124; [<code>loginFail</code>](#event_loginfail) &#124; [<code>loginSuccess</code>](#event_loginsuccess) &#124; [<code>onGroupListUpdate</code>](#event_ongrouplistupdate) &#124; [<code>onGroupMemberChanged</code>](#event_ongroupmemberchanged) &#124; [<code>onGroupMessage</code>](#event_ongroupmessage) &#124; [<code>onInputStatusMessage</code>](#event_oninputstatusmessage) &#124; [<code>onMentionMessage</code>](#event_onmentionmessage) &#124; [<code>onMessageCanceled</code>](#event_onmessagecanceled) &#124; [<code>onMessageDeleted</code>](#event_onmessagedeleted) &#124; [<code>onMessageRecalled</code>](#event_onmessagerecalled) &#124; [<code>onMessageStatusChanged</code>](#event_onmessagestatuschanged) &#124; [<code>onReceiveHistoryMsg</code>](#event_onreceivehistorymsg) &#124; [<code>onRosterInfoUpdate</code>](#event_onrosterinfoupdate) &#124; [<code>onRosterListUpdate</code>](#event_onrosterlistupdate) &#124; [<code>onRosterMessage</code>](#event_onrostermessage) &#124; [<code>onRosterRTCMessage</code>](#event_onrosterrtcmessage) &#124; [<code>onSendingMessageStatusChanged</code>](#event_onsendingmessagestatuschanged) &#124; [<code>onUnreadChange</code>](#event_onunreadchange) &#124; [<code>recentlistUpdate</code>](#event_recentlistupdate) &#124; [<code>onGroupCreated</code>](#event_ongroupcreated) &#124; [<code>onGroupDestoryed</code>](#event_ongroupdestoryed) &#124; [<code>onGroupJoined</code>](#event_ongroupjoined) &#124; [<code>onGroupApplyAccepted</code>](#event_ongroupapplyaccepted) &#124; [<code>onGroupApplyDeclined</code>](#event_ongroupapplydeclined) &#124; [<code>onGroupBaned</code>](#event_ongroupbaned) &#124; [<code>onGroupUnbaned</code>](#event_ongroupunbaned) | 事件结果 |
+| res | [<code>flooNotice</code>](#event_floonotice) &#124; [<code>flooError</code>](#event_flooerror) &#124; [<code>loginFail</code>](#event_loginfail) &#124; [<code>loginSuccess</code>](#event_loginsuccess) &#124; [<code>onGroupListUpdate</code>](#event_ongrouplistupdate) &#124; [<code>onGroupMemberChanged</code>](#event_ongroupmemberchanged) &#124; [<code>onGroupMessage</code>](#event_ongroupmessage) &#124; [<code>onInputStatusMessage</code>](#event_oninputstatusmessage) &#124; [<code>onMentionMessage</code>](#event_onmentionmessage) &#124; [<code>onMessageCanceled</code>](#event_onmessagecanceled) &#124; [<code>onMessageDeleted</code>](#event_onmessagedeleted) &#124; [<code>onMessageRecalled</code>](#event_onmessagerecalled) &#124; [<code>onMessageStatusChanged</code>](#event_onmessagestatuschanged) &#124; [<code>onReceiveHistoryMsg</code>](#event_onreceivehistorymsg) &#124; [<code>onRosterInfoUpdate</code>](#event_onrosterinfoupdate) &#124; [<code>onRosterListUpdate</code>](#event_onrosterlistupdate) &#124; [<code>onRosterMessage</code>](#event_onrostermessage) &#124; [<code>onRosterRTCMessage</code>](#event_onrosterrtcmessage) &#124; [<code>onSendingMessageStatusChanged</code>](#event_onsendingmessagestatuschanged) &#124; [<code>onUnreadChange</code>](#event_onunreadchange) &#124; [<code>recentlistUpdate</code>](#event_recentlistupdate) &#124; [<code>onGroupCreated</code>](#event_ongroupcreated) &#124; [<code>onGroupDestoryed</code>](#event_ongroupdestoryed) &#124; [<code>onGroupJoined</code>](#event_ongroupjoined) &#124; [<code>onGroupApplyAccepted</code>](#event_ongroupapplyaccepted) &#124; [<code>onGroupApplyDeclined</code>](#event_ongroupapplydeclined) &#124; [<code>onGroupBaned</code>](#event_ongroupbaned) &#124; [<code>onGroupUnbaned</code>](#event_ongroupunbaned) &#124; [<code>onRosterMessageContentAppend</code>](#event_onrostermessagecontentappend) &#124; [<code>onGroupMessageContentAppend</code>](#event_ongroupmessagecontentappend) &#124; [<code>onRosterMessageReplace</code>](#event_onrostermessagereplace) &#124; [<code>onGroupMessageReplace</code>](#event_ongroupmessagereplace) | 事件结果 |
