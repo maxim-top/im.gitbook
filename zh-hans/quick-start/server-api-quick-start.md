@@ -33,7 +33,7 @@ curl -X {METHOD} '{api_endpoint}/{URI}' \
 
 ### API分类
 
-蓝莺IM API主要分为用户API、好友API、群组API、消息API、推送API。
+蓝莺IM API主要分为用户API、好友API、群组API、消息API、推送API， AI API。
 
 * 用户API
 
@@ -505,6 +505,67 @@ curl -X {METHOD} '{api_endpoint}/{URI}' \
     }
     ```
 
+## AI API
+### 使用API上传知识库
+
+可以以消息形式上传文档,主要是用以下接口：
+1. 发消息： https://docs.lanyingim.com/reference/server-api/message.html#put__message_send
+2. 获取上传文件的上传地址和下载地址： https://docs.lanyingim.com/reference/server-api/file.html#get__file_upload_chat
+
+#### 上传网页文件(URL的格式，只支持HTML）：
+```
+curl --request POST \
+  --url https://s-1-3-s-api.maximtop.cn/message/send \
+  --header 'access-token: {管理员Token}' \
+  --header 'app_id: {APPID}' \
+  --header 'content-type: application/json' \
+  --data '{
+    "from_user_id": {知识库管理员的用户ID},
+    "content":"{网页URL地址，需要以https://开头}",
+    "content_type":0, //文本消息
+    "ext":"{\"ai\":{\"metadata\":{}}}", //文档的metadata
+    "targets":[{ChatbotID}],
+    "type":1 //发送给用户
+}'
+```
+
+#### 上传其它格式文件：
+1. 获取文件上传和下载地址
+```
+curl --request GET \
+  --url https://s-1-3-s-api.maximtop.cn/file/upload/chat?file_type=100&to_type=1&to_id={ChatbotID} \
+  --header 'access-token: {管理员Token}' \
+  --header 'app_id: {APPID}' \
+  --header 'user_id: {知识库管理员的用户ID}' \
+  --header 'content-type: application/json'
+可以得到：
+⇥ download_url  string  下载地址
+⇥ oss_body_param    object  上传时需要设置的OSS参数
+⇥ upload_method string  上传方式: POST/PUT
+⇥ upload_url    string  上传地址
+```
+2. 上传文件
+```
+curl -- request {upload_method} \
+--url {upload_url}
+--data-raw '{需要以multipart/form-data的格式把oss_body_param和文件提交上来}'
+```
+3. 发送文件消息
+```
+curl --request POST \
+  --url https://s-1-3-s-api.maximtop.cn/message/send \
+  --header 'access-token: {管理员Token}' \
+  --header 'app_id: {APPID}' \
+  --header 'content-type: application/json' \
+  --data '{
+    "from_user_id": {知识库管理员的用户ID},
+    "content_type":4, //文件消息、
+    "attachment": "{\"dName\":\"{文件名}\",\"url\":\"{download_url}\"}", //需要替换文件名和download_url
+    "ext":"{\"ai\":{\"metadata\":{}}}", //文档的metadata
+    "targets":[{ChatbotID}],
+    "type":1 //发送给用户
+}'
+```
 ## 附录
 
 ### 错误码说明
