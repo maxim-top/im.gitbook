@@ -73,7 +73,7 @@ im.userManage.asyncRegister(this.user).then(() => {
 
 ```
 im.login({
-  user,
+  name, // 用户名
   password,
 });
 ```
