@@ -96,6 +96,10 @@ jobs:
         tag: ${{ env.NEW_TAG }}
         commit: ${{ env.COMMIT_HASH }}
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
 
     - name: Upload to OSS
       uses: Menci/upload-to-oss@beta-v1
