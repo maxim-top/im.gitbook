@@ -20,7 +20,7 @@
         "prism-themes@^0.0.2",
         "-lunr",
         "-search",
-        "lanying-code-snippet@^1.1.9",
+        "lanying-code-snippet@^1.1.12",
         "search-plus@^0.0.11",
         "advanced-emoji@^0.2.1",
         "expandable-chapters-small@^0.1.7",

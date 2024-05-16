@@ -1,0 +1,93 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - run: git tag --list
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '10'
+    
+    - name: Setup Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Install Joern
+      run: |
+        wget https://github.com/joernio/joern/releases/latest/download/joern-install.sh
+        chmod +x ./joern-install.sh
+        sudo ./joern-install.sh --version=v1.1.1108
+        which joern
+        joern --help
+
+    - name: Install gitbook
+      run: |
+        npm install gitbook-cli -g
+        gitbook init
+
+    - name: Install GitBook Deps
+      run: |
+        cd ${{ github.workspace }}
+        gitbook install
+
+    - name: Build GitBook
+      run: |
+        cd ${{ github.workspace }}
+        mkdir -p ../cache
+        gitbook build # --log=debug --debug
+
+    - name: Format output
+      run: |
+        cd ${{ github.workspace }}
+        make refine
+
+    - name: create book.tar.gz
+      run: tar czf book.tar.gz _book
+
+    - name: Determine last tag
+      id: last_tag_commit
+      run: |
+        set -x
+        # 获取最后一个标签
+        LAST_TAG=$(git describe --tags --abbrev=0 || echo '1.0.0')
+        
+        # 获取最后一个提交的哈希
+        COMMIT_HASH=$(git rev-parse HEAD)
+        COMMIT_HASH_SHORT=$(git rev-parse --short HEAD)
+
+        # 解析主版本号
+        MAJOR_VERSION=$(echo $LAST_TAG | cut -d. -f1)
+        
+        # 解析次版本号
+        MINOR_VERSION=$(echo $LAST_TAG | cut -d. -f2)
+        
+        # 解析修订号
+        PATCH_VERSION=$(echo $LAST_TAG | cut -d. -f3)
+        
+        # 增加修订号
+        NEW_PATCH_VERSION=$((PATCH_VERSION + 1))
+        
+        # 创建新标签
+        NEW_TAG="${MAJOR_VERSION}.${MINOR_VERSION}.${NEW_PATCH_VERSION}.${COMMIT_HASH_SHORT}"
+        echo "NEW_TAG=${NEW_TAG}" >> $GITHUB_ENV
+        echo "COMMIT_HASH=${COMMIT_HASH}" >> $GITHUB_ENV
+
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "book.tar.gz"
+        tag: ${{ env.NEW_TAG }}
+        commit: ${{ env.COMMIT_HASH }}
+  
