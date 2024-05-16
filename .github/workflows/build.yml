@@ -95,4 +95,37 @@ jobs:
         artifacts: "book.tar.gz"
         tag: ${{ env.NEW_TAG }}
         commit: ${{ env.COMMIT_HASH }}
-  
+
+
+    - name: Upload to OSS
+      uses: Menci/upload-to-oss@beta-v1
+      with:
+        # Use Access Key
+        access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        bucket: ${{ secrets.ALIYUN_OSS_BUCKET }}
+        endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+
+        # Upload the built website files in "dist" directory to remote "my-website/" prefix
+        local-path: _book
+        remote-path: /
+
+        # Upload ALL other files before uploading HTML files
+        delay-html-file-upload: true
+
+        # Prevent deleting missing remote files compared to local (defaults to `false`)
+        no-delete-remote-files: true
+
+        # Retry 5 times on failure of each OSS operation
+        retry: 5
+
+        # Use increment or not
+        increment: true
+
+    - name: CDN Refresh
+      uses: visionwx/ali-cdn-refresh@v0.1.1
+      with:
+          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          type: Directory
+          path: ${{ secrets.ALIYUN_CDN_PATH }}
