@@ -126,10 +126,26 @@ jobs:
         # Use increment or not
         increment: true
 
-    - name: CDN Refresh
+    - name: CDN Refresh docs.lanyingim.com
       uses: visionwx/ali-cdn-refresh@v0.1.1
       with:
           accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
           type: Directory
           path: ${{ secrets.ALIYUN_CDN_PATH }}
+
+    - name: CDN Refresh www.chatai101.com
+      uses: visionwx/ali-cdn-refresh@v0.1.1
+      with:
+          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          type: Directory
+          path: "https://www.chatai101.com/"
+
+    - name: CDN Refresh chatai101.com
+      uses: visionwx/ali-cdn-refresh@v0.1.1
+      with:
+          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          type: Directory
+          path: "https://chatai101.com/"
