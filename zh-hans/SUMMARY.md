@@ -207,6 +207,8 @@
     * [过去的十五年，我们怎样做 IM？](articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.md)
     * [云服务的下一个十年](articles/Industry-development/the-next-decade-of-cloud-services.md)
   * [产品技术](articles/product-and-technologies/README.md)
+    * [使用大模型LLM实现销售AI](articles/product-and-technologies/Implement-Sales-AI-with-Large-Language-Model.md)
+    * [小蓝AI：请打开语音交流](articles/product-and-technologies/Lanying-AI-Please-Enable-Voice-Communication.md)
     * [快速构建你的智能应用@GPT Mention](articles/product-and-technologies/Build-Your-AI-Application-Quickly-GPT-Mention.md)
     * [进入智能应用的新时代](articles/product-and-technologies/Entering-the-New-Era-of-AI-Applications.md)
     * [除了Chat2SQL，如何使用AI访问数据库](articles/product-and-technologies/How-to-Access-Databases-with-AI-Besides-Chat2SQL.md)
