@@ -1,0 +1,75 @@
+name: Deploy sub site to CDN
+
+on:
+  workflow_dispatch:
+    inputs:
+      book_url:
+        description: 'book url'
+        required: true
+      oss_path:
+        description: 'oss path'
+        required: true
+      cdn_url:
+        description: 'cdn url'
+        required: true
+      callback_url:
+        description: 'callback url'
+        required: true
+
+jobs:
+  deploy_sub_site:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download book
+      run: |
+        wget ${{ github.event.inputs.book_url }}
+        tar xzvf book.tar.gz
+    
+    - name: Upload to OSS
+      uses: Menci/upload-to-oss@beta-v1
+      with:
+        # Use Access Key
+        access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        bucket: grow-ai-sites
+        endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+
+        # Upload the built website files in "dist" directory to remote "my-website/" prefix
+        local-path: _book
+        remote-path: ${{ github.event.inputs.oss_path }}
+
+        # Upload ALL other files before uploading HTML files
+        delay-html-file-upload: true
+
+        # Prevent deleting missing remote files compared to local (defaults to `false`)
+        no-delete-remote-files: true
+
+        # Retry 5 times on failure of each OSS operation
+        retry: 5
+
+        # Use increment or not
+        increment: true
+
+    - name: CDN Refresh
+      uses: visionwx/ali-cdn-refresh@v0.1.1
+      with:
+          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          type: Directory
+          path: ${{ github.event.inputs.cdn_url }}
+
+    # 发送成功回调
+    - name: Send success callback
+      if: success()
+      run: |
+        curl -X POST ${{ github.event.inputs.callback_url }} \
+        -H "Content-Type: application/json" \
+        -d '{"status": "ok"}'
+
+    # 发送失败回调
+    - name: Send failure callback
+      if: failure()
+      run: |
+        curl -X POST ${{ github.event.inputs.callback_url }} \
+        -H "Content-Type: application/json" \
+        -d '{"status": "error"}'
