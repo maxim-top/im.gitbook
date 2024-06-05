@@ -1,5 +1,5 @@
 {
-    "title": "LANYING.IM - Professional SDK, Monthly Charged Private Cloud",
+    "title": "LANYING.IM - Creating the next generation of AI applications using the Lanying ChatAI SDK",
     "description": "API文档及文章分享",
     "author": "jinhai",
     "output.name": "site",
@@ -38,7 +38,8 @@
 
         "logo@^0.0.2",
         "intopic-toc@^1.1.1",
-        "meta@^0.1.12"
+        "meta@^0.1.12",
+        "lanying-grow-ai@^1.0.2"
     ],
 
     "pluginsConfig": {
@@ -178,6 +179,9 @@
                     "content": "Lanying IM, Maximtop, IM SDK, Instant Messaging, IM Cloud, IM Cloud Service, Mobile IM, Open Source IM, Enterprise IM, Chat Software, Mobile Customer Service, Online Customer Service, IM Business Scenario, APP Social, Developer Service, Live Chatroom, Live Audio/Video, Audio/Video, Live Platform, Maximtop Anti-spam, Content Security"
                 }
             ]
+        },
+        "lanying-grow-ai": {
+            "lanying_link": "https://lanying.link/3qur4g"
         }
     }
 }

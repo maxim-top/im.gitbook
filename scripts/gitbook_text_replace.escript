@@ -7,8 +7,8 @@ main(_Args) ->
             {<<"all right reserved&#xFF0C;powered by Gitbook">>, <<>>},{<<"lanying-code-snippet@^1.1.9">>,<<"lanying-code-snippet@^1.1.8">>},
             {"^_book/en/", <<"assets/lanying-logo-color.png">>, <<"assets/lanying-logo-color-en.png">>},
             {"_book/zh-hans/faq/what-is-app-id.html", <<"<script src=\"../../gitbook/gitbook-plugin-github-buttons/plugin.js\"></script>">>, <<"">>},
-            {regex, "^_book/en/", <<"<title>.*</title>">>,<<"<title>LANYING.IM - Professional SDK, Monthly Charged Private Cloud</title>">>},
-            {regex, "^_book/zh-hans/", <<"<title>.*</title>">>,unicode:characters_to_binary("<title>蓝莺 IM - 专业SDK，私有云按月付费</title>")},
+            {regex, "^_book/en/", <<"<title>.*</title>">>,<<"<title>LANYING.IM - Creating the next generation of AI applications using the Lanying ChatAI SDK</title>">>},
+            {regex, "^_book/zh-hans/", <<"<title>.*</title>">>,unicode:characters_to_binary("<title>蓝莺 IM - 打造新一代智能应用，使用蓝莺ChatAI SDK</title>")},
             {regex, "^_book/", <<"(<img src=[^>]*)@([0-9]+)p">>, <<"\\1\" style=\"width:\\2%">>},
             {regex, "^_book/", <<"\"gitbook\":{\"version\":\"3.2.3\",\"time\":\"[^\"}]*\"}">>, <<"\"gitbook\":{\"version\":\"3.2.3\",\"time\":\"0000-00-00T00:00:00.000Z\"}">>}],
     lists:foreach(

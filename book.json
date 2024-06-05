@@ -1,5 +1,5 @@
 {
-    "title": "蓝莺 IM - 专业SDK，私有云按月付费",
+    "title": "蓝莺 IM - 打造新一代智能应用，使用蓝莺ChatAI SDK",
     "description": "API文档及文章分享",
     "author": "jinhai",
     "output.name": "site",
@@ -37,7 +37,8 @@
 
         "logo@^0.0.2",
         "intopic-toc@^1.1.1",
-        "meta@^0.1.12"
+        "meta@^0.1.12",
+        "lanying-grow-ai@^1.0.2"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -182,6 +183,9 @@
                     "content": "蓝莺IM, 美信拓扑, IM SDK, 即时通讯, 即时通讯云, IM云服务, 移动IM, 开源IM, 企业IM, 聊天软件, 移动客服, 在线客服, IM业务场景, APP社交, 开发者服务, 直播聊天室, 实时音视频, 音视频, 直播平台, 美信反垃圾, 内容安全"
                 }
             ]
+        },
+        "lanying-grow-ai": {
+            "lanying_link": "https://lanying.link/3qur4g"
         }
     }
 }
