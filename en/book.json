@@ -39,7 +39,7 @@
         "logo@^0.0.2",
         "intopic-toc@^1.1.1",
         "meta@^0.1.12",
-        "lanying-grow-ai@^1.0.2"
+        "lanying-grow-ai@^1.0.4"
     ],
 
     "pluginsConfig": {
