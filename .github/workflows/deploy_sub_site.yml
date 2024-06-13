@@ -12,6 +12,9 @@ on:
       cdn_url:
         description: 'cdn url'
         required: true
+      check_url:
+        description: 'check url'
+        required: true
       callback_url:
         description: 'callback url'
         required: true
@@ -25,6 +28,20 @@ jobs:
         wget ${{ github.event.inputs.book_url }}
         tar xzvf book.tar.gz
     
+    - name: Check deploy
+      run: |
+        ReleaseSize=`du -sb _book/ |awk '{print $1}'`
+        response=$(curl -X POST ${{ github.event.inputs.check_url }} \
+        -H "Content-Type: application/json" \
+        -d "{\"release_size\": $ReleaseSize}")
+        echo "Response: $response"
+        if echo "$response" | grep -q "success"; then
+          echo "Check deploy success"
+        else
+          echo "Check deploy failed"
+          exit 1
+        fi
+
     - name: Upload to OSS
       uses: Menci/upload-to-oss@beta-v1
       with:
