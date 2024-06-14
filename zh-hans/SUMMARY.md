@@ -253,3 +253,8 @@
     * [【科创人独家】美信拓扑创始人一乐：如何登山不是最重要的问题，山峰才是](articles/activity-report/how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.md)
 * [FAQ](faq/README.md)
   * [什么是App ID](faq/what-is-app-id.md)
+* [../wiki](../wiki/README.md)
+  * [20240615](../wiki/20240615/README.md)
+    * [模型 Fine-tune](../wiki/20240615/41_20240615_1_3_1718388751.md)
+    * [私有部署](../wiki/20240615/41_20240615_1_2_1718388727.md)
+    * [大模型](../wiki/20240615/41_20240615_1_1_1718388710.md)
