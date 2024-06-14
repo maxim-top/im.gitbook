@@ -253,3 +253,6 @@
     * [【科创人独家】美信拓扑创始人一乐：如何登山不是最重要的问题，山峰才是](articles/activity-report/how-to-climb-mountains-is-not-the-most-important-issue-but-the-mountain-peaks.md)
 * [FAQ](faq/README.md)
   * [什么是App ID](faq/what-is-app-id.md)
+* [../news](../news/README.md)
+  * [20240615](../news/20240615/README.md)
+    * [为什么企业不应该自行训练大模型？](../news/20240615/39_20240614_1_1_1718299636.md)
