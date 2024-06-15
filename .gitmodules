@@ -1,0 +1,3 @@
+[submodule "zh-hans/enterprise-im-book"]
+	path = zh-hans/enterprise-im-book
+	url = git@github.com:ericliang/enterprise-im-book.git
