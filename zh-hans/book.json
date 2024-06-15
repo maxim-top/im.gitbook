@@ -35,14 +35,12 @@
         "favicon@^0.0.2",
         "image-captions@^3.1.0",
         "auto-scroll-table@^0.0.5",
-
         "logo@^0.0.2",
         "intopic-toc@^1.1.1",
         "meta@^0.1.12",
         "3-ba@^0.9.0",
         "lanying-grow-ai@^1.0.4"
     ],
-
     "pluginsConfig": {
         "theme-default": {
             "showLevel": false
@@ -86,9 +84,8 @@
             "fade": false,
             "style": "flat"
         },
-
         "versions": {
-            "type":"languages",
+            "type": "languages",
             "options": [
                 {
                     "value": "/",
@@ -101,34 +98,44 @@
             ]
         },
         "sharing": {
-           "douban": true,
-           "facebook": false,
-           "google": false,
-           "hatenaBookmark": false,
-           "instapaper": false,
-           "line": false,
-           "linkedin": false,
-           "messenger": false,
-           "pocket": false,
-           "qq": true,
-           "qzone": false,
-           "stumbleupon": false,
-           "twitter": false,
-           "viber": false,
-           "vk": false,
-           "weibo": true,
-           "whatsapp": false,
-           "all": [
-               "facebook", "google", "twitter",
-               "weibo", "instapaper", "linkedin",
-               "pocket", "stumbleupon", "qq", "qzone","douban","line","whatsapp"
-           ]
-       },
-       "logo":{
-	        "logo": "/assets/lanying-logo-color.png",
+            "douban": true,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook",
+                "google",
+                "twitter",
+                "weibo",
+                "instapaper",
+                "linkedin",
+                "pocket",
+                "stumbleupon",
+                "qq",
+                "qzone",
+                "douban",
+                "line",
+                "whatsapp"
+            ]
+        },
+        "logo": {
+            "logo": "/assets/lanying-logo-color.png",
             "logoStyle": "width: 200px;align: left;",
-            "url": "https://www.lanyingim.com"
-	    },
+            "url": "/"
+        },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
             "mode": "nested",
@@ -151,27 +158,27 @@
             "maxSnippetCount": 8,
             "repositories": [
                 {
-                    "name":"lanying-im-web",
-                    "url":"https://github.com/maxim-top/lanying-im-web.git",
-                    "branch":"master",
+                    "name": "lanying-im-web",
+                    "url": "https://github.com/maxim-top/lanying-im-web.git",
+                    "branch": "master",
                     "cacheDir": "../cache/lanying-im-web"
                 },
                 {
-                    "name":"lanying-im-android",
-                    "url":"https://github.com/maxim-top/lanying-im-android.git",
-                    "branch":"master",
+                    "name": "lanying-im-android",
+                    "url": "https://github.com/maxim-top/lanying-im-android.git",
+                    "branch": "master",
                     "cacheDir": "../cache/lanying-im-android"
                 },
                 {
-                    "name":"lanying-im-embedded",
-                    "url":"https://github.com/maxim-top/lanying-im-embedded.git",
-                    "branch":"master",
+                    "name": "lanying-im-embedded",
+                    "url": "https://github.com/maxim-top/lanying-im-embedded.git",
+                    "branch": "master",
                     "cacheDir": "../cache/lanying-im-embedded"
                 },
                 {
-                    "name":"lanying-im-ios",
-                    "url":"https://github.com/maxim-top/lanying-im-ios.git",
-                    "branch":"master",
+                    "name": "lanying-im-ios",
+                    "url": "https://github.com/maxim-top/lanying-im-ios.git",
+                    "branch": "master",
                     "cacheDir": "../cache/lanying-im-ios"
                 }
             ]
@@ -190,7 +197,12 @@
         "lanying-grow-ai": {
             "lanying_link": "https://lanying.link/3qur4g",
             "footer_note": "本文为知识分享和技术探讨之用，涉及到公司或产品（包括但不限于蓝莺IM）介绍内容仅为参考，具体产品和功能特性以官网开通为准。",
-            "footer_note_path_list": ["readmore/","news/","quest/","wiki/"]
+            "footer_note_path_list": [
+                "readmore/",
+                "news/",
+                "quest/",
+                "wiki/"
+            ]
         }
     }
 }
