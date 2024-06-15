@@ -1,7 +1,7 @@
 # Table of contents
 
 * [即时通讯开发指南（IM）](README.md)
-* [快速开发](quick-start/README.md)
+* [开发](quick-start/README.md)
   * [IOS 客户端快速开发](quick-start/floo-ios-quick-start.md)
   * [安卓客户端快速开发](quick-start/floo-android-quick-start.md)
   * [Linux/C++ 客户端快速开发](quick-start/floo-quick-start.md)
@@ -9,7 +9,7 @@
   * [服务端开发指南（API）](quick-start/server-api-quick-start.md)
   * [推送开发指南（PUSH）](quick-start/push-dev-guide.md)
   * [私有云部署文档](quick-start/how-to-deploy-private-cloud.md)
-* [详细文档](reference/README.md)
+* [参考](reference/README.md)
   * [IOS SDK API (floo-ios)](reference/floo-ios.md)
     * [Classes](reference/floo-ios/classes.md)
       * [BMXChatService](reference/floo-ios/Classes/BMXChatService.md)
@@ -201,7 +201,7 @@
     * [文件操作](reference/server-api/file.md)
     * [推送接口](reference/server-api/push.md)
     * [AI接口](reference/server-api/ai.md)
-* [博客文章](articles/README.md)
+* [博客](articles/README.md)
   * [行业发展](articles/Industry-development/README.md)
     * [不要总想着自己训练大模型，你的业务可能并不需要](articles/Industry-development/do-not-train-your-own-llm-your-business-might-not-need-it.md)
     * [过去的十五年，我们怎样做 IM？](articles/Industry-development/how-we-build-an-instant-messging-system-in-the-past-fifteen-years.md)
