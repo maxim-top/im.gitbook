@@ -149,3 +149,9 @@ jobs:
           accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
           type: Directory
           path: "https://chatai101.com/"
+
+    - name: Call grow ai to deploy
+      run: |
+        curl -X POST 'https://connector.lanyingim.com/grow_ai/release_finish' \
+        -H "Content-Type: application/json" \
+        -d '{"status": "ok", "repository": "${{ github.repository }}", "release": "${{ env.NEW_TAG }}"}'
