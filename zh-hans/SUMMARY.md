@@ -254,6 +254,8 @@
 * [FAQ](faq/README.md)
   * [什么是App ID](faq/what-is-app-id.md)
 
+## 电子书
+
 * [企业级即时通讯系统：设计与实现](enterprise-im-book/README.md)
   * [1 前言](enterprise-im-book/v4/20240612/38_20240612_11_6_1718204770.md)
   * [2 企业级即时通讯概述](enterprise-im-book/v4/20240613/38_20240613_1_1_1718208000.md)
@@ -308,6 +310,8 @@
     * [8.1 即时通讯选型演化](enterprise-im-book/v4/20240612/38_20240612_11_3_1718204554.md)
     * [8.2 数字化转型趋势](enterprise-im-book/v4/20240612/38_20240612_11_4_1718204616.md)
     * [8.3 统一的标准和互通协议](enterprise-im-book/v4/20240612/38_20240612_11_5_1718204701.md)
+
+## 延伸阅读
   * [v1](enterprise-im-book/v1/README.md)
     * [20240606](enterprise-im-book/v1/20240606/README.md)
       * [8.1 即时通讯选型演化](enterprise-im-book/v1/20240606/31_20240606_7_1_1717624800.md)
@@ -397,6 +401,8 @@
       * [2.2 企业级即时通讯的关注点](enterprise-im-book/v4/20240612/38_20240612_4_1_1718182800.md)
       * [2.1 产品特性](enterprise-im-book/v4/20240612/38_20240612_3_1_1718179200.md)
       * [蓝莺ChatAI：企业级即时通讯IM SDK](enterprise-im-book/v4/20240612/38_20240612_1_1_1718166574.md)
+
+## 行业资讯
   
 * [百科](wiki/README.md)
   * [20240615](wiki/20240615/README.md)
