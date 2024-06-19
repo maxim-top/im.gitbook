@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="一键开通即时通讯公有云，一键安装即时通讯私有云，一键部署即时通讯专有云，快速集成，简单专业 " />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="Keywords"
+          content="蓝莺IM, 美信拓扑, IM SDK, 即时通讯, 即时通讯云, IM云服务, 移动IM, 开源IM, 企业IM, 聊天软件, 移动客服, 在线客服, IM业务场景, APP社交, 开发者服务, 直播聊天室, 实时音视频, 音视频, 直播平台, 美信反垃圾, 内容安全 " />
+    <meta name="Keywords" content="多云架构, 私有云, 一键部署, 一键安装, 即时通讯私有云, 方便定制, 开通私有云 " />
+    <meta name="Keywords" content="全球通连, 海外, 跨集群部署, 全球数据中心, 业务定制, 即时通讯公有云, 方便定制, 开通专有云 " />
+    <meta name="Keywords" content="消息云端存储, 多设备同步, 消息漫游, 云存储, 开放平台, 应用客户端 " />
+    <link rel="icon" href="https://www.lanyingim.com/img/favicon.ico">
+    <link rel="stylesheet" href="https://www.lanyingim.com/css/common.css">
+    <link rel="stylesheet" href="https://www.lanyingim.com/css/index.css">
+    <link rel="stylesheet" href="https://www.lanyingim.com/css/snav.css">
+    <link rel="stylesheet" href="https://www.lanyingim.com/css/doc.css">
+
+    <script src="https://www.lanyingim.com/js/jquery.js"></script>
+    <script>$(function () {
+  // 设置 tabs + click 
+  var ww = document.documentElement.clientWidth;
+  $('.tabContent').width(ww * 6 + 'px');
+  $('.tabContent .frm').width(ww + 'px');
+
+
+  $('.tabs span').click(function () {
+    $('.tabs span').removeClass('sel');
+    $(this).addClass('sel');
+    const idx = $(this).attr('i');
+    // $('.stabc').scrollLeft(idx * ww);
+    $('.stabc').animate({ 'scrollLeft': idx * ww + 'px' })
+  });
+
+  const mqarr1 = [
+    '一键开通 即时通讯 公有云 ',
+    '蓝莺IM已开源代码 163277 行 ',
+    '一键安装 即时通讯 私有云 ',
+    '一键部署 即时通讯 专有云 ',
+    '唯一上架阿里云云市场的 即时通讯 私有云 ',
+    '新一代 云原生 IM '
+  ];
+  const mqarr2 = [
+    '快速集成，全球通连，每天仅需25元 ',
+    '蓝莺IM开源（LIMOS）2021.08.12 ',
+    '自主可控，方便定制，10分钟安装，按月付费 🔥 ',
+    '专业服务，运维无忧，随心切换底层云服务 ',
+    '直接购买阿里云云主机，选择蓝莺IM镜像 ',
+    '一键启用多云架构的即时通讯云服务 '
+  ];
+
+  let sa = 0;
+  const timerFun = () => {
+    sa++;
+    sa = sa % 5;
+    $('#sa1').animate({
+      opacity: 0,
+    }, 'fast', function () {
+      $(this).html(mqarr1[sa]);
+      $(this).animate({ opacity: 1 });
+    })
+
+    $('#sa2').animate({
+      opacity: 0,
+    }, 'fast', function () {
+      $(this).html(mqarr2[sa]);
+      $(this).animate({ opacity: 1 });
+    })
+  }
+
+  !window.sintv && (window.sintv = setInterval(timerFun, 5000));
+
+  var hiddenProperty = 'hidden' in document ? 'hidden' :
+    'webkitHidden' in document ? 'webkitHidden' :
+      'mozHidden' in document ? 'mozHidden' :
+        null;
+
+  function onVisibilityChanged (event) {
+    if (!document[hiddenProperty]) {
+      /** will show */
+      !window.sintv && (window.sintv = setInterval(timerFun, 5000));
+    } else {
+      /**** will hide */
+      clearInterval(window.sintv);
+      window.sintv = 0;
+    }
+  }
+  document.addEventListener("visibilitychange", onVisibilityChanged, false);
+
+
+  // tab
+  function visibleTabContent(dom, activeId) {
+    dom.parent().find('.tab-content').addClass('hidden').removeClass('block')
+    dom.parent().find('[infoid=' + activeId + ']').removeClass('hidden').addClass('block')
+  }
+
+  function initTabLine() {
+    $('.tab-line').each(function(index, el) {
+      var activeId = $(el).attr('active');
+      $(el).parent().find('.tab-item').removeClass('tab-active');
+  
+      var activeDom = $(el).parent().find('[tabid=' + activeId + ']');
+      activeDom.addClass('tab-active');
+      var left = activeDom[0].getBoundingClientRect().left;
+      var parentLeft = activeDom.parent()[0].getBoundingClientRect().left;
+  
+      $(el).css('transform', 'translateX('+ (left - parentLeft) +'px)');
+      setTimeout(() => {
+        $(el).width(activeDom.width() + 'px')
+      });
+    
+      visibleTabContent($(el).parent(), activeId)
+    })
+  }
+
+  initTabLine()
+  $('.tab').find('.tab-item').click(function(event) {
+    var tabId = $(this).attr('tabid');
+    $(this).parent().find('.tab-item').removeClass('tab-active');
+    $(this).addClass('tab-active')
+    var tabLine = $(this).parent().find('.tab-line')
+    tabLine.attr('active', tabId)
+
+    var left = this.getBoundingClientRect().left;
+    var parentLeft = $(this).parent()[0].getBoundingClientRect().left; 
+
+    tabLine.css('transform', 'translateX('+ (left - parentLeft) +'px)');
+    tabLine.width($(this).width() + 'px')
+    
+    visibleTabContent($(this).parent(), tabId)
+  })
+
+  $('.part-two-tab').find('.tab-item').click(function(event) {
+    var tabId = $(this).attr('tabid');
+
+    $('.part-two-img-wrap').find('div').removeClass('block').addClass('hidden')
+    $('.part-two-img-wrap').find('[imgid='+ tabId +']').addClass('block').removeClass('hidden')
+  })
+  var menuTimer = {}
+  // menu
+  $('.lanying-menu').find('.lanying-submenu-title').click(function() {
+    var support = $(this).attr('support') || 'mobile' // mobile & pc & all
+    if (($(document).width() <= 750 && support === 'mobile') || ($(document).width() >= 750 && support === 'pc') || support === 'all') {
+      if (!menuTimer[this]) {
+        menuTimer[this] = {
+          open: null,
+          close: null
+        }
+      }
+      clearTimeout(menuTimer[this].open)
+      clearTimeout(menuTimer[this].close)
+      var isActive = $(this).hasClass('active')
+      // var box = $(this).parent().find('.lanying-submenu-box')
+      var box = $(this).siblings()
+      if (isActive) {
+        box.css('height', box.height() + 'px')
+        menuTimer[this].close = setTimeout(() => {
+          box.css('height', '0px')
+          $(this).removeClass('active')
+        })
+        
+      } else {
+        var children = box.children()
+        var height = 0
+        children.each(function(index, el) {
+          height += $(el).height()
+        })
+        box.css('height', height + 'px')
+        $(this).addClass('active')
+        menuTimer[this].open = setTimeout(() => {
+          box.css('height', 'auto')
+        },150)
+      }
+    }
+  })
+
+  // drop-down
+  $('.drop-down').mouseover(function() {
+    var box = $(this).find('.drop-down-box')
+    var height = 0
+    box.children().each(function(index, el) {
+      console.log('height', $(el).height())
+      height += $(el).height()
+    })
+    
+    box.css({'height': height + 'px', 'opacity': 1})
+  }).mouseleave(function() {
+    var box = $(this).find('.drop-down-box')
+    box.css({'height': 0, 'opacity': 0})
+  })
+
+  // 动态设置根节点font-size rem变化
+  function setHtmlSize(){
+    var ratio = 16 / 1440
+    var wd = $(window).width()
+    if (wd <= 1440) {
+      var fontSize = ratio * $(window).width()
+      $(document.documentElement).css('font-size', fontSize + 'px')
+    } else {
+      $(document.documentElement).css('font-size', '16px')
+    }
+  }
+  setHtmlSize()
+  $(window).resize(function(e) {
+    setHtmlSize()
+    initTabLine()
+  })
+})
+
+
+</script>
+    <title>蓝莺 IM - 专业SDK，私有云按月付费 </title>
+</head>
+
+
+<body>
+  <nav class="nav fixed top-0 left-0 right-0 text-white transition duration-500 z-20">
+  <div class="md:max-w-360 m-auto">
+    <p class="text-right text-xs font-medium mb-2.5 hidden md:block">
+      联系商务： 
+      <a href="tel:4006660162">400-666-0162</a>
+    </p>
+    
+    <div class="nav-link flex justify-between items-center font-normal">
+      <ul class="nav-link-ul items-center relative hidden md:flex">
+        <li class="mr-10">
+          <a href="https://www.lanyingim.com/" class="zh-logo">
+            <img class="md:h-8 nav-logo" src="https://www.lanyingim.com/img/whitelogo-zh.png" />
+            <img class="md:h-8 nav-sticky-logo" src="https://www.lanyingim.com/img/whitelogo-zh-sticky.png" />
+          </a>
+        </li>
+        <li class="px-6 menu nav-link-li">
+          <span class="menu-item cursor-pointer" sid="pro"><a href="https://www.lanyingim.com/product/">产品 </a></span>
+        </li>
+        <li class="px-6 nav-link-li"><span class="menu-item cursor-pointer" sid="pri"><a href="https://www.lanyingim.com/plans/">定价 </a></span>
+        </li>
+        <li class="px-6 menu nav-link-li">
+          <span class="menu-item cursor-pointer" sid="dev"><a href="https://www.lanyingim.com/developer/">开发者中心 </a></span>
+        </li>
+        <li class="px-6 nav-link-li">
+          <span class="menu-item cursor-pointer" sid="dow"><a href="https://www.lanyingim.com/downloads/">下载 </a></span>
+        </li>
+        <li class="px-6 relative cursor-pointer nav-link-li">
+          <span sid="dow menu-item"><a target="_blank" href="https://github.com/maxim-top/maxim-bistro/blob/master/LIMOS.md">
+            开源 
+          </a></span>
+          <img class="absolute top-0 right-1 w-0.75 h-0.75 github-icon-white" src="https://www.lanyingim.com/img/open/github-black.png" />
+          <img class="absolute top-0 right-1 w-0.75 h-0.75 github-icon-blue" src="https://www.lanyingim.com/img/open/github-color.png" />
+        </li>
+        <li class="menu-drop shadow absolute top-10 left-0 hidden bg-white text-black transition duration-500 px-12.5 md:pt-6.5 md:pb-6.5 rounded-0.75 text-sm leading-8">
+          <ul mid="pro" class="menu-drop-content flex hidden">
+            <li class="pr-7 menu-drop-content-li">
+              <p class="text-lg leading-6 mb-3.5 text-drop-title"><a href="https://www.lanyingim.com/product/">即时通讯（IM） </a></p>
+              <p class=""><a href="https://www.lanyingim.com/product/">富文本消息 </a></p>
+              <p class=""><a href="https://www.lanyingim.com/product/#scloud">消息云存储 </a></p>
+              <p class=""><a href="https://www.lanyingim.com/product/#open">开放平台 </a></p>
+            </li>
+            <li class="pl-10 pr-14 menu-drop-content-li">
+              <p class="text-lg leading-6 mb-3.5 text-drop-title"><a href="https://www.lanyingim.com/product/">增值扩展 </a></p>
+              <p class=""><a class="relative" href="https://docs.lanyingim.com/quick-start/push-dev-guide.html">蓝莺推送 <img class="absolute top-0.5 left-full w-6.5 transform translate-x-2" src="https://www.lanyingim.com/img/gif/new.png" /></a></p>
+              <p class=""><a href="https://www.lanyingim.com/oversea/">全球通连 </a></p>
+            </li>
+            <li class="px-8.5 menu-drop-content-li">
+              <p class="text-lg leading-6 mb-3.5 text-drop-title"><a href="https://www.lanyingim.com/deploy/?d=pub">部署模式 </a></p>
+              <p class=""><a href="https://www.lanyingim.com/deploy/?d=pub">公有云 </a></p>
+              <p class=""><a class="relative" href="https://www.lanyingim.com/deploy/?d=pri">私有云 <img class="absolute top-0.5 left-full w-6.5 transform translate-x-2" src="https://www.lanyingim.com/img/gif/hot.png" /></a></p>
+              <p class=""><a href="https://www.lanyingim.com/deploy/?d=pro">专有云 </a></p>
+            </li>
+          </ul>
+
+          <ul mid="dev" class="menu-drop-content hidden">
+            <li class="">
+              <p class=""><a href="https://www.lanyingim.com/developer/">开发者中心 </a></p>
+              <p class=""><a href="https://docs.lanyingim.com">文档中心 </a></p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="block md:hidden">
+        <a href="/">
+          <img class="h-v48 nav-m-logo" src="https://www.lanyingim.com/img/whitelogo-zh.png" />
+          <img class="h-v48 nav-sticky-m-logo" src="https://www.lanyingim.com/img/whitelogo-zh-sticky.png" />
+        </a>
+      </div>
+
+      <p class="flex items-center">
+        <a class="inline-block text-v24 md:text-base rounded-0.75 px-v30 md:px-7.5 h-v60 md:h-10 leading-v60 md:leading-10 whitespace-nowrap hover:bg-white-10 hover:text-white border border-solid rounded-v10 md:rounded-1 md:border-0" target="_blank" href="https://console.lanyingim.com/#/?lang=zh">
+          登录 
+        </a>
+        <a class="text-v24 md:text-base bg-gradient-01 hover:bg-back-1 rounded-0.75 px-v30 md:px-7.5 h-v60 md:h-10 leading-v60 md:leading-10 ml-4.5 text-white hidden md:inline-block whitespace-nowrap" target="_blank" href="https://console.lanyingim.com/#/login/register?lang=zh">
+          免费注册 
+        </a>
+        <span class="relative block md:hidden menu-line-box flex flex-col justify-between ml-v40">
+          <span></span>
+          <span></span>
+        </span>
+      </p>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-m-menu hidden md:hidden fixed inset-0 bg-menu-back z-10 pt-v120">
+  <div class="header-menu lanying-menu">
+    <div class="header-submenu lanying-submenu">
+      <p class="header-submenu-title hover:bg-black lanying-submenu-title text-header-title">产品 </p>
+      <div class="header-submenu-box lanying-submenu-box">
+        <div class="header-submenu lanying-submenu">
+          <p class="header-submenu-title lanying-submenu-title text-header-title">即时通讯（IM） </p>
+          <ul class="header-submenu-box lanying-submenu-box child-menu">
+            <li class="header-submenu-item"><a href="https://www.lanyingim.com/product/">富文本消息 </a></li>
+            <li class="header-submenu-item"><a href="https://www.lanyingim.com/product/#scloud">消息云存储 </a></li>
+            <li class="header-submenu-item"><a href="https://www.lanyingim.com/product/#open">开放平台 </a></li>
+          </ul>
+        </div>
+        
+        <div class="header-submenu lanying-submenu">
+          <p class="header-submenu-title lanying-submenu-title text-header-title">增值扩展 </p>
+          <ul class="header-submenu-box lanying-submenu-box child-menu">
+            <li class="header-submenu-item"><a class="relative flex items-center" href="https://docs.lanyingim.com/quick-start/push-dev-guide.html">蓝莺推送 <img class="w-v60 ml-v12" src="https://www.lanyingim.com/img/gif/new.png" /></a></li>
+            <li class="header-submenu-item"><a href="https://www.lanyingim.com/oversea/">全球通连 </a></li>
+          </ul>
+        </div>
+
+        <div class="header-submenu lanying-submenu">
+          <p class="header-submenu-title lanying-submenu-title text-header-title">部署模式 </p>
+          <ul class="header-submenu-box lanying-submenu-box child-menu">
+            <li class="header-submenu-item"><a href="https://www.lanyingim.com/deploy/?d=pub">公有云 </a></li>
+            <li class="header-submenu-item"><a class="relative flex items-center" href="https://www.lanyingim.com/deploy/?d=pri">私有云 <img class="w-v60 ml-v12" src="https://www.lanyingim.com/img/gif/hot.png" /></a></li>
+            <li class="header-submenu-item"><a href="https://www.lanyingim.com/deploy/?d=pro">专有云 </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-submenu lanying-submenu">
+      <p class="header-submenu-title hover:bg-black lanying-submenu-title text-header-title no-arrow"><a href="https://www.lanyingim.com/plans/">定价 </a></p>
+    </div>
+
+    <div class="header-submenu lanying-submenu">
+      <p class="header-submenu-title hover:bg-black lanying-submenu-title text-header-title">开发者中心 </p>
+      <ul class="header-submenu-box lanying-submenu-box">
+        <li class="header-submenu-item"><a href="https://www.lanyingim.com/developer/">开发者中心 </a></li>
+        <li class="header-submenu-item"><a href="https://docs.lanyingim.com">文档中心 </a></li>
+      </ul>
+    </div>
+
+    <div class="header-submenu lanying-submenu">
+      <p class="header-submenu-title hover:bg-black lanying-submenu-title text-header-title no-arrow">
+        <a href="https://www.lanyingim.com/downloads/">下载 </a>
+      </p>
+    </div>
+
+    <div class="header-submenu lanying-submenu">
+      <p class="header-submenu-title hover:bg-black lanying-submenu-title text-header-title no-arrow"><a target="_blank" href="https://github.com/maxim-top/maxim-bistro/blob/master/LIMOS.md">开源 </a></p>
+    </div>
+
+  </div>
+
+  <div class="text-v26 text-white text-center leading-v90 rounded-v10 border border-white mx-v40" style="margin-top: 7px;">
+    联系商务： 
+    <a href="tel:4006660162">400-666-0162</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+function debounce(func, delay, immediate) {
+  var timer = null;
+  return function () {
+    var context = this
+    clearTimeout(timer);
+    if (immediate) {
+      var callNow = !timer;
+      timer = setTimeout(function() { timer = null }, delay);
+      if (callNow) { func.apply(context, arguments); }
+    } else {
+      timer = setTimeout(function() { func.apply(context, arguments); }, delay)
+    }
+  }
+}
+
+function ableScroll () {
+  $(document.documentElement).removeClass('overflow-hidden').removeClass('h-screen')
+}
+
+function disableScroll() {
+  $(document.documentElement).addClass('overflow-hidden').addClass('h-screen')
+}
+
+$(document).scroll(function () {
+  var st = $(this).scrollTop();
+  if (st > 0) {
+    $('.nav').addClass('nav-sticky')
+  } else {
+    $('.nav').removeClass('nav-sticky')
+  }
+});
+
+$(function () {
+  var hrefMap = {
+    pro: ['product', 'deploy', 'oversea'],
+    pri: ['plans'],
+    dev: ['plans'],
+    dow: ['download']
+  }
+
+  var href = window.location.href
+  // 下拉显示标识
+  var isNavMenuHover = false;
+  var drop = $('.nav .nav-link-ul .menu-drop');
+  var fobiddenClose = debounce(function () {
+    if (!isNavMenuHover) { drop.addClass('hidden'); }
+  }, 300)
+
+  function getHrefId () {
+    var keys = Object.keys(hrefMap)
+    var id = ''
+    keys.forEach(function(key){
+      hrefMap[key].forEach(function(hrefKey) {
+        if (href.indexOf(hrefKey) > -1) {
+          id = key
+        }
+      })
+    })
+    return id
+  }
+
+  function keepNavActive() {
+    $('.nav .nav-link-li').removeClass('nav-active')
+
+    if (href.indexOf('product') > 0 || href.indexOf('deploy') > 0 || href.indexOf('oversea') > 0) {
+      $('[sid=pro]').parent().addClass('nav-active');
+    }
+    if (href.indexOf('plans') > 0) {
+      $('[sid=pri]').parent().addClass('nav-active');
+    }
+    if (href.indexOf('developer') > 0) {
+      $('[sid=dev]').parent().addClass('nav-active');
+    }
+    if (href.indexOf('download') > 0) {
+      $('[sid=dow]').parent().addClass('nav-active');
+    }
+  }
+
+  $('.nav .nav-link .nav-link-li').mouseenter(function () {
+    var isMenu = $(this).hasClass('menu');
+    isNavMenuHover = isMenu;
+
+    $(this).addClass('nav-active-hover');
+    if (isMenu) {
+      var sid = $(this).find('.menu-item').attr('sid');
+      drop.find('.menu-drop-content').addClass('hidden');
+      drop.find('[mid=' + sid + ']').removeClass('hidden');
+
+      var left = $(this).offset().left;
+      var parentLeft = $(this).parent().offset().left;
+      drop.css('transform', 'translateX(' + (left - parentLeft + 12) + 'px)');
+      if (drop.hasClass('hidden')) { drop.removeClass('hidden');};
+    }
+  }).mouseleave(function () {
+    $(this).removeClass('nav-active-hover');
+    fobiddenClose()
+    keepNavActive()
+    isNavMenuHover = false;
+  });
+  drop.mouseenter(function() {
+    isNavMenuHover = true
+    var mid = $(this).find('.menu-drop-content:not(.hidden)').attr('mid')
+    $('.menu-item[sid='+ mid +']').parent().addClass('nav-active')
+  }).mouseleave(function() {
+    fobiddenClose();
+    isNavMenuHover = false;
+    keepNavActive()
+  })
+
+  keepNavActive()
+
+  $('.menu-line-box').click(function() {
+    var qidian = $('#qidian_wpa_3009121905_2115')
+    var isSticky =  $('.nav').hasClass('nav-sticky')
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open')
+      $(this).addClass('close')
+      ableScroll()
+      if ($(document).scrollTop() > 0) {
+        $('.nav').addClass('nav-sticky')
+      }
+
+      qidian.css('display', 'block')
+    } else {
+      $(this).removeClass('close')
+      $(this).addClass('open')
+      disableScroll()
+      $('.nav').removeClass('nav-sticky')
+      qidian.css('display', 'none')
+    }
+    $('.nav-m-menu').toggleClass('hidden')
+  })
+})
+</script>
+  <div class="deploy-back h-screen md:h-160 flex flex-col items-center justify-center text-white px-v40 md:px-0">
+
+    <h1 class="mb-v16 md:mb-2 md:font-light text-v54 md:text-9.5 text-center md:pt-6.5">您请求的页面不存在或已无效。 </h1>
+    <a  class="text-v26 md:text-lg leading-v36 md:leading-6 text-center" href="/"> <span id="second"></span> 秒钟后回到首页，点击立即跳转</a>
+  </div>
+
+<script type="text/javascript">
+  var secs=10;
+  for(var i=secs;i>=0;i--){
+     window.setTimeout("doUpdate("+ i + ")",(secs-i)*1000);
+  }
+  function doUpdate(num){
+     document.getElementById("second").innerHTML=num;
+     if(num==0) window.location='/';
+  }
+</script>
+
+  <link rel="stylesheet" href="https://www.lanyingim.com/css/footer.css">
+<footer class="bg-footer text-footer md:pl-23.5 md:pr-19.5">
+  <div class="md:max-w-360 m-auto">
+    <div class="md:flex justify-between md:py-21 md:pr-5.5 mb-v50 md:mb-0">
+      <div class="md:flex footer-menu lanying-menu">
+        <div class="footer-submenu lanying-submenu relative">
+          <p class="footer-submenu-title relative lanying-submenu-title text-v26 md:text-lg text-footer-title md:mb-5.5">商务 </p>
+          <ul class="footer-submenu-box lanying-submenu-box">
+            <li class="footer-submenu-item text-v26 md:text-sm md:mb-3.5"><a href="https://www.lanyingim.com/about/">公司简介 </a></li>
+            <li class="footer-submenu-item text-v26 md:text-sm md:mb-3.5"><a href="https://www.lanyingim.com/contact/">企业级合作 </a></li>
+            <li class="footer-submenu-item text-v26 md:text-sm"><a href="tel:4006660162">400-666-0162</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-submenu lanying-submenu md:ml-30">
+          <p class="footer-submenu-title relative lanying-submenu-title text-v26 md:text-lg text-footer-title md:mb-5.5">即时通讯云 </p>
+          <ul class="footer-submenu-box lanying-submenu-box">
+            <li class="footer-submenu-item text-v26 md:text-sm md:mb-3.5"><a href="https://www.lanyingim.com/product/">产品功能 </a></li>
+            <li class="footer-submenu-item text-v26 md:text-sm md:mb-3.5"><a href="https://www.lanyingim.com/plans/">定价 </a></li>
+            <li class="footer-submenu-item text-v26 md:text-sm"><a href="https://www.lanyingim.com/developer/">开发者中心 </a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-submenu lanying-submenu md:ml-30">
+          <p class="footer-submenu-title relative lanying-submenu-title text-v26 md:text-lg text-footer-title md:mb-5.5">支持 </p>
+          <ul class="footer-submenu-box lanying-submenu-box">
+            <li class="footer-submenu-item text-v26 md:text-sm md:mb-3.5"><a href="https://github.com/maxim-top/maxims-bistro/issues" target="_blank">支持 </a></li>
+            <li class="footer-submenu-item text-v26 md:text-sm"><a href="https://console.lanyingim.com/">运行状态查询 </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col-reverse md:flex-row items-center pt-v80 md:pt-0">
+        <div class="flex md:flex-col mt-v24 md:mt-0 footer-apps">
+          <a href="https://weibo.com/maximtop/" target="_blank">
+            <img class="w-v60 md:w-10" src="https://www.lanyingim.com/img/social/logo.weibo.png" />
+          </a>
+          <a class="ml-v50 md:ml-0 md:mt-3" href="https://mp.weixin.qq.com/s/PHbjk11w_5fwutW7MALWHg" target="_blank">
+            <img class="w-v60 md:w-10" src="https://www.lanyingim.com/img/social/logo.wechat.png" />
+          </a>
+          <a class="ml-v50 md:ml-0 md:mt-3" href="https://www.zhihu.com/org/mei-xin-tuo-bu" target="_blank">
+            <img class="w-v60 md:w-10" src="https://www.lanyingim.com/img/social/logo.zhihu.png" />
+          </a>
+        </div>
+        <img class="w-v280 md:w-35.5 md:ml-9" src="https://www.lanyingim.com/img/wechat/public.png" alt="" />
+      </div>
+    </div>
+    <div class="hidden md:block h-px bg-footer-line"></div>
+    <div class="text-footer-bottom text-v24 md:text-sm py-v30 md:pt-3 md:pb-4 text-center md:text-left">
+      <span>© 2019-2022 美信拓扑 </span>
+      <span class="s">|</span>
+      <a href="https://beian.miit.gov.cn" target="_blank">京ICP备19033149号 </a>
+      <span class="s">|</span>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502039228" target="_blank">京公网安备 11010502039228号 </a>
+      <span class="s">|</span>
+      <!-- <a href="#">ICP证书 </a>
+      <span class="s">|</span> -->
+      <a href="https://www.lanyingim.com/privacy/">隐私政策 </a>
+      <span class="s">|</span>
+      <a href="https://www.lanyingim.com/terms/">使用条款 </a>
+    </div>
+  </div>
+</footer>
+<script>
+  let params = (new URL(document.location)).searchParams;
+  let bdvid = params.get('bd_vid');
+  if (bdvid) {
+    qs = 'bd_vid='+bdvid;
+    $('a').each(function() {
+        var href = $(this).attr('href');
+
+        if (href) {
+            if (href.match(/\#/)){
+              href = href.replace('#', (href.match(/\?.*\#/) ? '&' : '?') + qs+'#');
+            } else {
+              href += (href.match(/\?/) ? '&' : '?') + qs;
+            }
+            $(this).attr('href', href);
+        }
+    });
+  }
+</script>
+
+</body>
+
+</html>
