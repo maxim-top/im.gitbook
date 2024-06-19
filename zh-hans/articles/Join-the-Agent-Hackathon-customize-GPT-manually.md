@@ -14,7 +14,7 @@ TGO鲲鹏会 蓝莺IM _2023-11-10 20:15_ _发表于北京_
 
   
 
-![](../../assets/articles/autogen-52820489b60c1d2eb3899a261622ee6f936f66d57e158af09847c1fddc9510a.jpeg)
+![](../assets/articles/autogen-52820489b60c1d2eb3899a261622ee6f936f66d57e158af09847c1fddc9510a.jpeg)
 **↑↑↑**
 **扫码报名** **Agent Hackathon** 
 ## 活动主题
@@ -56,14 +56,14 @@ Agent Hackthon 主题不限，例如一个开源库的文档查询和代码自�
 
 ## Agent Hackathon 顾问团成员
 
-![](../../assets/articles/autogen-526bdffff0e47d8da86b6debc1dd2cf37825ee2cfcff90d47c7551ceb20f0e2c.png)
+![](../assets/articles/autogen-526bdffff0e47d8da86b6debc1dd2cf37825ee2cfcff90d47c7551ceb20f0e2c.png)
 
 梁宇鹏
 Agent Hackathon 出品人
 蓝莺 IM 创始人兼 CEO
 TGO 鲲鹏会(北京)董事
 
-![](../../assets/articles/autogen-77815f9c122297f4798f95ecf38f16f5dfd1dd0474f44870196469347898b04.png)
+![](../assets/articles/autogen-77815f9c122297f4798f95ecf38f16f5dfd1dd0474f44870196469347898b04.png)
 
 艾芙（徐雁斐）
 AI 应用咨询专家
@@ -74,7 +74,7 @@ Agent Hackathon 是一场科技与智慧的盛宴，每一位参与者都将是�
 
 现在，就是你展现才华、实现梦想的时刻。携手 Agent Hackathon，一起开启属于你的 AI 传奇，共创智能未来。报名入口现已开启，我们在 GTLC 华中站翘首以待，期待你的加入！
 
-![](../../assets/articles/autogen-34f78c35613fe1d0651b978741264fbb033eefacf85f9250fe41e9edb9699ce0.png)
+![](../assets/articles/autogen-34f78c35613fe1d0651b978741264fbb033eefacf85f9250fe41e9edb9699ce0.png)
 
 **↑↑↑**
 **扫码报名** **Agent Hackathon**
@@ -88,7 +88,7 @@ GTLC 全球技术领导力大会，是由 TGO 鲲鹏会主办的顶级技术领�
 ***GTLC 大会华中站扫码报名*** 
 **↓↓↓**
 
-![](../../assets/articles/autogen-bb80ce4495f968ccd4eafca33af410a390b5f09a94f0513dd0712f9cdf3bd462.jpeg)
+![](../assets/articles/autogen-bb80ce4495f968ccd4eafca33af410a390b5f09a94f0513dd0712f9cdf3bd462.jpeg)
 
 [](http://mp.weixin.qq.com/s?__biz=MzA4NTU2MTg3MQ==&mid=2655224955&idx=2&sn=86aa5e16a3719aebabb2e717ee7e7f0a&chksm=8461231bb316aa0d959db0673aad45e6fa87d3b77e5b8b559b2f2fe88a9f1c98c5632734bac4&scene=21#wechat_redirect)
 
@@ -106,4 +106,4 @@ TGO 鲲鹏会采用了“学员共建”的组织形式，希望通过“共建�
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)

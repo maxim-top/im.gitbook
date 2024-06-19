@@ -14,7 +14,7 @@
 
 编辑 | 小蓝会聊天
 
-![](../../assets/articles/autogen-f76e48cd9591e13554f7ee7a488b311f06e397dcf8f8587af14ce34686ec9693.jpeg)
+![](../assets/articles/autogen-f76e48cd9591e13554f7ee7a488b311f06e397dcf8f8587af14ce34686ec9693.jpeg)
 
 “源码之前，了无秘密。”  
 
@@ -60,7 +60,7 @@ LCS 搜索代码时使用的是 joern，一个可以分析代码和二进制的
    function="asyncRegister" %}{% endlanying_code_snippet %}
 ```
 ，可以生成下面的代码块：
-![](../../assets/articles/autogen-13ee65a46ac7ad686e7afb0c16fade0513efd26a387a8feadaf5aaba998d414c.png)
+![](../assets/articles/autogen-13ee65a46ac7ad686e7afb0c16fade0513efd26a387a8feadaf5aaba998d414c.png)
 
 基本步骤只需四步：
 
@@ -189,4 +189,4 @@ chmod u+x joern-install.sh && ./joern-install.sh
 
 此计划将会邀请社区技术专家一起，共同分享关于即时通讯（IM）技术相关内容，欢迎持续关注，也欢迎自荐或推荐。
 
-![](../../assets/articles/autogen-cc84b94b1144d2b03fb6b83cad49f5f8f8bdcf42914d2ce8525459134b3c3c5e.png)
+![](../assets/articles/autogen-cc84b94b1144d2b03fb6b83cad49f5f8f8bdcf42914d2ce8525459134b3c3c5e.png)

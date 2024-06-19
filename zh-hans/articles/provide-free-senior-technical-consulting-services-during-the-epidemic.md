@@ -48,10 +48,10 @@
 
 关注「美信拓扑」，一键启用多云架构的即时通讯云服务
 
-![](../../assets/articles/autogen-d6fd9dd440b83a813e637e31f30dd8434bac85e90417c2cd347ff36a3cac71bd.webp)
+![](../assets/articles/autogen-d6fd9dd440b83a813e637e31f30dd8434bac85e90417c2cd347ff36a3cac71bd.webp)
 
 ***
 
 扫描使用「美信拓扑IM」小程序版，在线咨询
 
-![](../../assets/articles/autogen-bfc4fb724a629f5d6a9649dd7cacc660374775d71667356cfdcd7a4f6afa022b.webp)
+![](../assets/articles/autogen-bfc4fb724a629f5d6a9649dd7cacc660374775d71667356cfdcd7a4f6afa022b.webp)

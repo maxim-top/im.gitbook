@@ -30,7 +30,7 @@
 
 ## 第三方推送服务的发展
 
-![](../../assets/articles/autogen-c554c2ee4a4829f6fa1745a0d118919ba9c803bf424ffe82c67e94df546f34b9.jpeg)
+![](../assets/articles/autogen-c554c2ee4a4829f6fa1745a0d118919ba9c803bf424ffe82c67e94df546f34b9.jpeg)
 
 推送服务是随着移动互联网发展出现的，最早应该算苹果的 APNs（Apple Push Notification service），通过操作系统内置一个通道下发通知，取代了原来需要走运营商通道下发的短信。从开发者角度看，在提升用户体验的同时还节省了运营成本（短信费用），更重要的是，这极大提高了 APP 用户的活跃度和留存率。
 
@@ -126,7 +126,7 @@
 
 ## **后记**
 
-![Photo by Jeremy Bezanger on Unsplash](../../assets/articles/autogen-96595b292da717c037b637e792e08a34f303f16c4507e05258a7baa5a71eec03.jpeg)
+![Photo by Jeremy Bezanger on Unsplash](../assets/articles/autogen-96595b292da717c037b637e792e08a34f303f16c4507e05258a7baa5a71eec03.jpeg)
 
 猜一猜，推送服务之后，下一个被云原生改造的服务是什么呢？我们评论里聊。  
 
@@ -140,4 +140,4 @@
 
 我们正在以蓝莺IM开源项目为基础，打造一个专业的即时通讯技术社区，这便是我们的「蓝朋友计划」。此计划将会邀请社区技术专家一起，共同分享关于即时通讯（IM）技术相关内容，欢迎持续关注，也欢迎自荐或推荐。
 
-![](../../assets/articles/autogen-9512d8de44b5186eabe0443c3b0e203dbd522f8195773e298a0a5483a024f9c2.png)
+![](../assets/articles/autogen-9512d8de44b5186eabe0443c3b0e203dbd522f8195773e298a0a5483a024f9c2.png)

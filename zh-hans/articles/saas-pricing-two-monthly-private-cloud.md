@@ -28,11 +28,11 @@
 
 ## IM 行业价格对比：私有云
 
-![](../../assets/articles/autogen-deae1cc87845ab06a1e9ded97a18e25f372a1c5dd375734a1172f3d55994705c.webp)
+![](../assets/articles/autogen-deae1cc87845ab06a1e9ded97a18e25f372a1c5dd375734a1172f3d55994705c.webp)
 
 上图是 0 到 1 万用户区间价格对比，全部用户（ 0 到百万用户区间）见下图：
 
-![](../../assets/articles/autogen-e1d7657585ffe8fc5bcaa403343a9dfa06748cdfba9d6fec71b191ab89b77170.webp)
+![](../assets/articles/autogen-e1d7657585ffe8fc5bcaa403343a9dfa06748cdfba9d6fec71b191ab89b77170.webp)
 
 需要注意的是，以上两图中行业价格均已按月折算，但在实际情况下，传统私有部署通常会按照项目方式运作，从项目开始、上线到验收进行分阶段款项支付，并不支持按月付费。
 
@@ -50,7 +50,7 @@
 
 ## 私有云是什么？
 
-![Photo by Matt Seymour on Unsplash](../../assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
+![Photo by Matt Seymour on Unsplash](../assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
 
 “免费版、专业版、旗舰版、商业版、
 
@@ -78,7 +78,7 @@
 
 ## 为什么需要私有云？
 
-![Photo by Zunnoon Ahmed on Unsplash](../../assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)
+![Photo by Zunnoon Ahmed on Unsplash](../assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)
 
 我们处在一个云服务快速扩张的时期，Gartner 在前几天（2021.6.28）发布了最新报告[3]，2020年 IaaS 市场的增速依然高达40.8%，更别提 PaaS 和 SaaS 了。整个市场的客户支出预计在 2021 年也会保持 23% 的增速[4]。
 
@@ -120,7 +120,7 @@
 
 ## 私有云的成本以及定价
 
-![Photo by alevision.co on Unsplash](../../assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)
+![Photo by alevision.co on Unsplash](../assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)
 
 从服务提供者的角度来看，传统私有部署项目的成本主要有三部分：
 
@@ -146,7 +146,7 @@
 
 我们在私有云定价时也充分考虑了客户的总体支出。当前**定价的总体原则是，提供与行业公有云相当的价格，同时让客户的私有云 TCO 大幅降低**。
 
-![](../../assets/articles/autogen-ed44bdd754b8bc332d3cd9fa79c79a0adb4730f067d515a80bd7cd0baf61403b.webp)
+![](../assets/articles/autogen-ed44bdd754b8bc332d3cd9fa79c79a0adb4730f067d515a80bd7cd0baf61403b.webp)
 
 如图所示，我们美信拓扑的私有云定价已经基本与行业公有云价格基本相当，TCO 也远远低于传统私有部署。
 
@@ -174,4 +174,4 @@
 
 继续关注「美信拓扑」，了解一键启用多云架构的即时通讯。
 
-![](../../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

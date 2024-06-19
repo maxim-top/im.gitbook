@@ -13,7 +13,7 @@
 
 今天我们介绍的，就是使用大模型AI服务的语音文本转换接口来构建智能应用。
 
-![一张由小蓝AI生成的关于小蓝AI会讲话的图](../../assets/articles/autogen-a23a52567fe9c3d8827b4dce3283c9ea4efa90bdfccfe1a0f530b164c20b3933.webp)
+![一张由小蓝AI生成的关于小蓝AI会讲话的图](../assets/articles/autogen-a23a52567fe9c3d8827b4dce3283c9ea4efa90bdfccfe1a0f530b164c20b3933.webp)
 
 也如前文所述，我们在实现某个功能的时候，除了功能本身外，还会考虑企业开发者实现的难度以及替换的灵活性，所以这次依然也做了几件事：
 
@@ -32,7 +32,7 @@
 
 在实际应用中，一个是处理用户输入，一个是输出给用户。所以，我们设计也将其分为了两部分，也就是你在**配置Chatbot**里可以看到的两部分，识别用户语音和生成AI语音：
 
-![配置Chatbot](../../assets/articles/autogen-c23723614aac68ebfd8e842cb4e297f8ade99dff74c6234c3eeda8bd7a972eac.webp)
+![配置Chatbot](../assets/articles/autogen-c23723614aac68ebfd8e842cb4e297f8ade99dff74c6234c3eeda8bd7a972eac.webp)
 
 ## 2\. 插件实现
 
@@ -40,7 +40,7 @@
 
 将语音生成做成插件后，你就可以通过**配置插件**里修改语音清晰度以及音色选择，这里还是以OpenAI为例：
 
-![配置插件：语音生成](../../assets/articles/autogen-eea08db88e772ddbdf041dce21567c30ade1b5a84ca7632d3e46691cbec9cc6b.webp)
+![配置插件：语音生成](../assets/articles/autogen-eea08db88e772ddbdf041dce21567c30ade1b5a84ca7632d3e46691cbec9cc6b.webp)
 
 因为是普通插件设计，也就意味着可以随时通过修改插件配置，直接替换使用其他的大模型AI服务，而不需要业务层任何改动。
 
@@ -48,9 +48,9 @@
 
 作为一个智能应用框架，还有一部分工作是方便应用落地，自然的也加入了对接系统的支持。也就是说，你在微信公众号中的AI客服，和使用AI支持的微信号，都可以默认启用者两个功能了。
 
-![蓝莺IM微信公众号聊天](../../assets/articles/autogen-af15300f66534329f933fca633ff7c24022aff6e44eef2258de7c5094688d8cf.webp)
+![蓝莺IM微信公众号聊天](../assets/articles/autogen-af15300f66534329f933fca633ff7c24022aff6e44eef2258de7c5094688d8cf.webp)
 
-![AGIA实战营群内聊天](../../assets/articles/autogen-871e14d5f64c4e474b7beac327298fee6f71e88e4f9b13de4f58b65ef40c3607.webp)
+![AGIA实战营群内聊天](../assets/articles/autogen-871e14d5f64c4e474b7beac327298fee6f71e88e4f9b13de4f58b65ef40c3607.webp)
 
 ## 后记
 
@@ -64,7 +64,7 @@
 
 如果你希望与我们一起探索智能应用的无限可能，欢迎添加「小蓝会聊天」微信进群：
 
-![扫码添加小蓝会聊天](../../assets/articles/autogen-678480e75c7fcdbf6ec3492f1b2f9386e73af14e551ee9fa2baa98b93db02dcb.webp)
+![扫码添加小蓝会聊天](../assets/articles/autogen-678480e75c7fcdbf6ec3492f1b2f9386e73af14e551ee9fa2baa98b93db02dcb.webp)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -78,5 +78,5 @@
 
 我们会持续分享关于智能聊天ChatAI、大模型技术进展、AI Agent设计等方面的内容，也会分享典型AI应用案例，扫码关注不失联：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-1fdbd901f4a0c5b667df0e25fda7b53203aa868bb4da0962845b112f26e2d5b5.webp)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-1fdbd901f4a0c5b667df0e25fda7b53203aa868bb4da0962845b112f26e2d5b5.webp)
 

@@ -4,7 +4,7 @@
 
 今天开始，给你的文章增加一个AI助手吧。  
 
-![](../../assets/articles/autogen-6835cc5d12d1f0890b116322cfbf6575c3c07b6068a6560d2ffeff94f69e43dd.jpeg)
+![](../assets/articles/autogen-6835cc5d12d1f0890b116322cfbf6575c3c07b6068a6560d2ffeff94f69e43dd.jpeg)
 
 想想下面的场景。
 
@@ -35,7 +35,7 @@
 
 如果对蓝莺LinkChat的产品或更新感兴趣，可以添加小蓝会聊天的微信，第一时间试用体验最新功能：
 
-> ![扫码添加小蓝会聊天](../../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
+> ![扫码添加小蓝会聊天](../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
 
 ## 关于蓝莺IM 
 
@@ -49,7 +49,7 @@
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-> > ![扫码关注蓝莺IM](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+> > ![扫码关注蓝莺IM](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 打造新一代智能聊天APP，使用蓝莺IM SDK！
 

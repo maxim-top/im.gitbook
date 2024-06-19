@@ -12,7 +12,7 @@ _我长大要开飞机，我想当宇航员，我要有所大大的房子，哈�
 
 是的，我们都有过梦想，实现了的理想在过去叫梦想，但很多人的梦想其实只是美好的想象。
 
-![](../../assets/articles/autogen-fd0ac5963fbedf88734e06af98daee56e0460a8fc0c3a583813c6ca5e459160.jpeg)
+![](../assets/articles/autogen-fd0ac5963fbedf88734e06af98daee56e0460a8fc0c3a583813c6ca5e459160.jpeg)
 
 前两天，于游前几天发了[一篇文章](https://mp.weixin.qq.com/s?__biz=MzkwOTQ0Njg4OA==&mid=2247484205&idx=1&sn=c939e7b9aa6963c9e3fa3fc5dd9c4d1f&scene=21#wechat_redirect)，引用了清华东老师的分享：
 
@@ -36,7 +36,7 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 大模型带来的强 AI 风已经刮过[各种人类考试 \[1\]](https://openai.com/research/gpt-4)。
 
-![GPT-4 Exam Results](../../assets/articles/autogen-2b52259ac6498017ef96b3532b05412e95f1d394fc9ab2c6feb323a8bc38ee47.jpeg)
+![GPT-4 Exam Results](../assets/articles/autogen-2b52259ac6498017ef96b3532b05412e95f1d394fc9ab2c6feb323a8bc38ee47.jpeg)
 
 慢慢的，已经没人怀疑它是否能够通过图灵测试了。这也意味着，大模型 AI 通过 Chat 对话方式提供的服务，在很多场景下已经媲美甚至超越人类了。
 
@@ -46,7 +46,7 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 中文大模型方面，可以参照 SuperCLUE 发布的[评测基准 6 月榜单](https://mp.weixin.qq.com/s?__biz=MzA5NzAxNTA0MQ==&mid=2247490190&idx=1&sn=e07a391920420ee9e0e93e3dd219a9b2&scene=21#wechat_redirect)，模型差距可见一斑。
 
-![中文大模型评测基准6月榜单](../../assets/articles/autogen-20de4061e31bcca3dec077dc61e8f26753695c707a8f55f523c85426898cceca.png)
+![中文大模型评测基准6月榜单](../assets/articles/autogen-20de4061e31bcca3dec077dc61e8f26753695c707a8f55f523c85426898cceca.png)
 
 需要提醒的是，看起来在评测基准上差距只有几分，实际上可能是行与不行的区别。
 
@@ -54,7 +54,7 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 关于[大模型能力涌现的研究\[2\]](https://arxiv.org/abs/2206.07682)，很早就提出，大模型的能力是在规模参数大到一定程度才会涌现。虽然机制尚不完全明确，但研究表明，像我们之前提到[智能客服\[3\]](https://docs.lanyingim.com/articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html)使用的 Instruction Following 能力，在规模参数约为 68B（训练算力在 10^23 FLOPs 左右）才开始涌现。
 
-![大模型能力涌现的规模](../../assets/articles/autogen-9a0ac06f7cc65a348576cc97e380aff21d09ebe42532472c51e6251cccdc4d0d.png)
+![大模型能力涌现的规模](../assets/articles/autogen-9a0ac06f7cc65a348576cc97e380aff21d09ebe42532472c51e6251cccdc4d0d.png)
 
 如何训练大模型在更小规模上达到能力涌现，是当前研究的重点，我们虽然可以期待未来有新的突破，但这需要时间。
 
@@ -208,7 +208,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 ### 为企业打造懂业务的 AI 老专家
 
-![](../../assets/articles/autogen-a21fe046a9fec64cff74f57df307478f85ab3cfdc228f192b1e478c45c4a08c1.jpeg)
+![](../assets/articles/autogen-a21fe046a9fec64cff74f57df307478f85ab3cfdc228f192b1e478c45c4a08c1.jpeg)
 
 在互联网黑话里，有一句广为流传，就是 GIFY，Google is your friend。提醒的是，有事先问谷歌，再问你的朋友和同事。
 
@@ -282,7 +282,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 这样就用到了我们企业知识库的联邦架构：
 
-![企业知识库联邦架构](../../assets/articles/autogen-ad49358db9acc2f7fe58bad021cd1e5e2e75d1d0bace747104a58c30d343726d.png)
+![企业知识库联邦架构](../assets/articles/autogen-ad49358db9acc2f7fe58bad021cd1e5e2e75d1d0bace747104a58c30d343726d.png)
 
 原理如图所示，企业知识库在获得知识片段的时候，可以增加一个联邦查询请求，去其他知识库服务中获取知识，然后在合并起来提供给大模型服务。
 
@@ -312,7 +312,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 如果你对企业知识库感兴趣，或者你觉得还有新的需求，也欢迎进群讨论。
 
-![扫码添加小蓝会聊天](../../assets/articles/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
+![扫码添加小蓝会聊天](../assets/articles/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
 
 本文内容已进入小蓝文章知识库，欢迎使用蓝莺 Link 提问：
 
@@ -326,7 +326,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 参考资料
 

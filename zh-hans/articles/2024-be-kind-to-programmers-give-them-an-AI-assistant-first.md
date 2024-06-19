@@ -16,7 +16,7 @@
 
 当程序员们遇到问题时不再使用搜索引擎查找文章或问答社区，而是更多通过对话询问AI的时候，当[产品经理也开始编程](https://mp.weixin.qq.com/s?__biz=MjM5ODQwMjA4MA==&mid=2649294202&idx=1&sn=d3d47e35cc21292e24ac4ec7bf80be18&scene=21#wechat_redirect)，我们知道，**一个新的开发时代到来了**。
 
-![](../../assets/articles/autogen-bee6161648efd23887599ea5f54cf3ee086f731b23a409b826e36e0e6bc98d02.jpeg)
+![](../assets/articles/autogen-bee6161648efd23887599ea5f54cf3ee086f731b23a409b826e36e0e6bc98d02.jpeg)
 
 所以，作为一个在意团队成长的技术领导者，2024年首先应该做的，就是为团队成员提供这样的机会，让每个人用上ChatGPT。
 
@@ -48,7 +48,7 @@
 
 我们也就得到了一个全新的小蓝AI：
 
-![小蓝AI设计](../../assets/articles/autogen-75f4d09598b3cfe9459fd8fd1c0890f5a795a8b373811d3ced17100f5e6fa348.png)
+![小蓝AI设计](../assets/articles/autogen-75f4d09598b3cfe9459fd8fd1c0890f5a795a8b373811d3ced17100f5e6fa348.png)
 
 如图所示，它可以做三件事：产品介绍、商务咨询、开发辅助。
 
@@ -56,13 +56,13 @@
 
 所以，现在你可以跟AI询问API的用法：
 
-![小蓝AI转接问题给指定开发助手](../../assets/articles/autogen-4941f65d1572077c82aed619ce97b89c5756fbb6684af141dbc27b8b263cbd45.png)
+![小蓝AI转接问题给指定开发助手](../assets/articles/autogen-4941f65d1572077c82aed619ce97b89c5756fbb6684af141dbc27b8b263cbd45.png)
 
-![AI回答：发送消息接口如何调用](../../assets/articles/autogen-5f3e9f1817f1bd56e1f79b91a5472e08ba6a7a8fb323ba26878c98eec216d827.png)
+![AI回答：发送消息接口如何调用](../assets/articles/autogen-5f3e9f1817f1bd56e1f79b91a5472e08ba6a7a8fb323ba26878c98eec216d827.png)
 
 它也会在适当的时候提醒人工介入：
 
-![AI提醒人工介入](../../assets/articles/autogen-b9d9412be6c389d018ccaeaba31705ad73801574dab9704d2be8169643a47feb.png)
+![AI提醒人工介入](../assets/articles/autogen-b9d9412be6c389d018ccaeaba31705ad73801574dab9704d2be8169643a47feb.png)
 
 想要体验？点击[**查看原文**](https://lanying.link/3qur4g)，跟小蓝AI聊聊天吧~~
 
@@ -78,7 +78,7 @@
 
 为此，我们不得不将提示词中的「回答不上来可转人工」去掉，改成只有用户明确要求才将问题转给人工。
 
-![智能插件：转人工](../../assets/articles/autogen-32600b842321e796fc8657450c7874b64a3db50cd25956f49918a7ce41479dd8.png)
+![智能插件：转人工](../assets/articles/autogen-32600b842321e796fc8657450c7874b64a3db50cd25956f49918a7ce41479dd8.png)
 
 虽然是一个提示词设计问题，但当你发现这种摸鱼行为的时候，还是会有一种奇妙的感觉，哈哈。
 
@@ -88,7 +88,7 @@
 
 如果你有自己的观点或者想参与讨论，也欢迎添加「小蓝会聊天」微信进群：
 
-![扫码添加小蓝会聊天](../../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
+![扫码添加小蓝会聊天](../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
 
 **让我们一起拥抱AI，期待美好的智能未来。**
 
@@ -104,4 +104,4 @@
 
 我们会持续分享关于智能聊天ChatAI、大模型技术进展、AI Agent设计等方面的内容，也会分享典型AI应用案例，扫码关注再不失联：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)

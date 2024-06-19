@@ -30,7 +30,7 @@
 
 但现在，如果你需要语音通话、视频对讲，你会需要看看蓝莺RTC，看看云原生RTC带来了什么不一样的东西。
 
-![](../../assets/articles/autogen-4afe0b8ab0a01148a041ea3f15f8b74852ce219399256ff29319bc15bbc5376e.jpeg)
+![](../assets/articles/autogen-4afe0b8ab0a01148a041ea3f15f8b74852ce219399256ff29319bc15bbc5376e.jpeg)
 
 ## 像软件一样使用的云原生RTC
 
@@ -70,7 +70,7 @@
 
 ## 融合RTC，更强大的网络
 
-![](../../assets/articles/autogen-7aa514aabb0d8f6172e325d7f0e616e288009817b2fa16d6168a500f098e5c2d.jpeg)
+![](../assets/articles/autogen-7aa514aabb0d8f6172e325d7f0e616e288009817b2fa16d6168a500f098e5c2d.jpeg)
 
 与IM聊天服务不同，音视频服务是缺乏用户关系壁垒的，这让它有很高的可替换性。今天使用了一家的服务，明天一次升级就可以换成另一家，都不需要导数据什么的。
 
@@ -102,7 +102,7 @@ PS：如果你也对这个想法感兴趣，欢迎对其他RTC服务进行封装
 
 这一改造也会沿着IM、PUSH、RTC的方向进行，如果你对未来智能聊天/智能通讯感兴趣，欢迎关注我们，更欢迎进群交流：
 
-![扫码添加小蓝会聊天](../../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
+![扫码添加小蓝会聊天](../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -116,7 +116,7 @@ PS：如果你也对这个想法感兴趣，欢迎对其他RTC服务进行封装
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ### 参考资料
 

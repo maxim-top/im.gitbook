@@ -14,7 +14,7 @@
 
 截至发稿，美信拓扑是第一个也是唯一上线亚马逊云市场（中国）的即时通讯云服务厂商，也仍然是唯一上线阿里云云市场的即时通讯云服务。
 
-![](../../assets/articles/autogen-2337b77babe379f5fb6f8c3740f2e1e6ee7f07c4781b16a468ceff8eeac5edb4.webp)
+![](../assets/articles/autogen-2337b77babe379f5fb6f8c3740f2e1e6ee7f07c4781b16a468ceff8eeac5edb4.webp)
 
 ## 新一代云原生 IM
 
@@ -68,31 +68,31 @@
 
 第一步：选择服务区域和机器配置。
 
-![](../../assets/articles/autogen-dc114d506201fa50e59fc8227bd8036754f96a2e8a6c1dee1f8b2dc678f84461.webp)
+![](../assets/articles/autogen-dc114d506201fa50e59fc8227bd8036754f96a2e8a6c1dee1f8b2dc678f84461.webp)
 
 第二步：接受条款并订阅。
 
-![](../../assets/articles/autogen-d919f8e2c4baa2c1e97084ba19ca988327748b512c7dddf6ac95283f6e89574f.webp)
+![](../assets/articles/autogen-d919f8e2c4baa2c1e97084ba19ca988327748b512c7dddf6ac95283f6e89574f.webp)
 
 第三步：选择版本和区域。
 
-![](../../assets/articles/autogen-18c6ec912ee25d7cf443c11ca26c9a8ff3ae3bfc28ecb4c42d11d36ad771f75b.webp)
+![](../assets/articles/autogen-18c6ec912ee25d7cf443c11ca26c9a8ff3ae3bfc28ecb4c42d11d36ad771f75b.webp)
 
 第四步：选择机器配置。
 
-![](../../assets/articles/autogen-e69886d4bcaff79a30f98044f857472e5c8aad136358631a96b5108b1c561cc.webp)
+![](../assets/articles/autogen-e69886d4bcaff79a30f98044f857472e5c8aad136358631a96b5108b1c561cc.webp)
 
 第五步：创建网络和安全组。
 
-![](../../assets/articles/autogen-e2144838997ee4ab0aaa43964aedefa194459838118acaf58cfb72d7fe44cea0.webp)
+![](../assets/articles/autogen-e2144838997ee4ab0aaa43964aedefa194459838118acaf58cfb72d7fe44cea0.webp)
 
 第六步：基于供应商设置新建安全组。
 
-![](../../assets/articles/autogen-97942a55f2d84f65f5764483f6888076ad3cc974d953c472e02598fa9e08327d.webp)
+![](../assets/articles/autogen-97942a55f2d84f65f5764483f6888076ad3cc974d953c472e02598fa9e08327d.webp)
 
 第七步：设置密钥并启动机器。
 
-![](../../assets/articles/autogen-9221aa8540abb47694dc4da64040f808688d5ebd11bcefdba5b93394c6696d33.webp)
+![](../assets/articles/autogen-9221aa8540abb47694dc4da64040f808688d5ebd11bcefdba5b93394c6696d33.webp)
 
 最后一步：
 
@@ -114,7 +114,7 @@ cat /etc/maxim/market
 2. [树莓派中的 IM 私有云支持多少并发？](how-much-concurrency-is-supported-by-im-private-cloud-in-raspberry-pi.md)
 3. [阿里云云市场：美信拓扑 IM 私有](https://market.aliyun.com/products/56014009/cmjj00041852.html)
 4. [美信拓扑官方控制台](https://console.maximtop.com)
-5. [美信拓扑 IM 私有部署指南](../../quick-start/how-to-deploy-private-cloud.md)
+5. [美信拓扑 IM 私有部署指南](../quick-start/how-to-deploy-private-cloud.md)
 6. [美信拓扑 IM 客户端与SDK下载](https://www.maximtop.com/downloads/)
 7. [美信拓扑开源 Github 地址](https://github.com/maxim-top)
 8. [Maxim.Top IM Server - Private Cloud](https://awsmarketplace.amazonaws.cn/marketplace/pp/prodview-rxkhawftzpws2)
@@ -127,4 +127,4 @@ cat /etc/maxim/market
 
 继续关注「美信拓扑」，了解新一代云原生 IM、即时通讯技术与开源。
 
-![](../../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

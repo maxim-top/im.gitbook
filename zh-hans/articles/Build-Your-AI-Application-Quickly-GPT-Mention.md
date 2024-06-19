@@ -30,7 +30,7 @@ GPT Mention发布的时候，我在群里说我们的GPT Mention马上上线。�
 
 这也意味着，下一代智能应用APP里对AI的使用，会出现在Chat的各种场景里。这是产品设计者必须考虑的，也是开发者需要提前准备的。
 
-![](../../assets/articles/autogen-d463dac212100c9a3b710a272741e26b9830515521ecc9fd487e7dac7d27bd24.jpeg)
+![](../assets/articles/autogen-d463dac212100c9a3b710a272741e26b9830515521ecc9fd487e7dac7d27bd24.jpeg)
 
 今年企业对待AI的态度有一个明显的变化。很多企业已经从思考应该做什么样的AI应用，改为试着用AI做一些事情，看看会为业务带来什么样的变化。
 
@@ -62,7 +62,7 @@ GPT Mention发布的时候，我在群里说我们的GPT Mention马上上线。�
 
 准确地说，你不仅需要一个可以嵌入的聊天SDK，**更需要一个智能时代的聊天SDK**。因为为了将AI Agent功能使用起来，在Chatbot/Agent的外表下，我们还做了更多：
 
-![蓝莺 ChatAI Framework](../../assets/articles/autogen-672faa1d7898923941077e8024739903f572af79414c3f6d70a008fb5b43bd94.png)
+![蓝莺 ChatAI Framework](../assets/articles/autogen-672faa1d7898923941077e8024739903f572af79414c3f6d70a008fb5b43bd94.png)
 
 如图所示，如果把内容全部展开，这篇文章会变得很长。因此这里只是概要说明，其他的作为系列文章，随着产品发布继续与各位探讨。
 
@@ -135,7 +135,7 @@ AutoGPT就最早遇到了这个，因此它们对AI之间问答进行了最大�
 
 进一步，我们**增加了新设置来调整群聊中AI对上下文的选取**。
 
-![设置Chatbot的群聊@回复策略](../../assets/articles/autogen-2a2618a99306b4eb493ca15adbe172c057314f08f993b39f7f9dc878e1aea092.png)
+![设置Chatbot的群聊@回复策略](../assets/articles/autogen-2a2618a99306b4eb493ca15adbe172c057314f08f993b39f7f9dc878e1aea092.png)
 
 **一个是参考所有用户聊天内容**。也就是说，AI在回复内容时将会知道之前群内其他人在这个期间讲的话，也就可以仅通过@提醒即可让其参与群内话题讨论。
 
@@ -179,7 +179,7 @@ AutoGPT就最早遇到了这个，因此它们对AI之间问答进行了最大�
 
 欢迎添加「小蓝会聊天」微信进群，一起探索智能时代的新应用：
 
-![扫码添加小蓝会聊天](../../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
+![扫码添加小蓝会聊天](../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -193,4 +193,4 @@ AutoGPT就最早遇到了这个，因此它们对AI之间问答进行了最大�
 
 我们会持续分享关于智能聊天ChatAI、大模型技术进展、AI Agent设计等方面的内容，也会分享典型AI应用案例，扫码关注不失联：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)

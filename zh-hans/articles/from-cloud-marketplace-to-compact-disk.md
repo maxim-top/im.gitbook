@@ -32,7 +32,7 @@
 
 你没有看错，以后可以通过一张光盘，直接安装蓝莺IM私有云了。
 
-![Photo by Chris Yates on Unsplash](../../assets/articles/autogen-15a3d16a05a169df3774aa584f7ca52804cffac69d928aa3d66f746a9719a659.jpeg)
+![Photo by Chris Yates on Unsplash](../assets/articles/autogen-15a3d16a05a169df3774aa584f7ca52804cffac69d928aa3d66f746a9719a659.jpeg)
 
 光盘版有什么用？可能很多朋友会有疑问，毕竟现在光盘光驱都要退出历史舞台了。
 
@@ -54,7 +54,7 @@
 
 这一步的重点是对集群进行适当的配置，我们利用了官网的控制台，所有的配置项设置后，可以通过配置文件导出，可以给安装程序使用。
 
-![](../../assets/articles/autogen-ba0ab2750aed93e93c6f06d35d9877d6360a75a4307daa7da9440c6847627d76.png)
+![](../assets/articles/autogen-ba0ab2750aed93e93c6f06d35d9877d6360a75a4307daa7da9440c6847627d76.png)
 
 **第二步：安装后激活服务**
 
@@ -80,4 +80,4 @@ License 管理要保证开通合适的规格，并执行有效期管控到期关
 
 我们正在以蓝莺IM开源项目为基础，打造一个专业的即时通讯技术社区，这便是我们的「蓝朋友计划」。此计划将会邀请社区技术专家一起，共同分享关于即时通讯（IM）技术相关内容，欢迎持续关注，也欢迎自荐或推荐。
 
-![](../../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)
+![](../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)

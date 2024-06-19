@@ -9,7 +9,7 @@
 
 自此，蓝莺IM开启了在国产信创产业的兼容适配，在国产操作系统中运行的稳定性、安全性得到充分验证，**蓝莺IM私有云企业版正式发布！**
 
-![](../../assets/articles/autogen-e67a602d29a73692840b50afc7dffc19f1068b8c0d72535ed9f6f9e0540e1e04.jpeg)
+![](../assets/articles/autogen-e67a602d29a73692840b50afc7dffc19f1068b8c0d72535ed9f6f9e0540e1e04.jpeg)
 
 ## 蓝莺IM私有云企业版
 
@@ -45,4 +45,4 @@
 
 另外，微博关注 @蓝莺IM，参与文章转发，有机会获得「蓝莺IM礼盒」哦~
 
-![](../../assets/articles/autogen-840dbf1bf6525f5b1093790bdfbf06afd25bbc92519d932deb2795271c1105c3.png)
+![](../assets/articles/autogen-840dbf1bf6525f5b1093790bdfbf06afd25bbc92519d932deb2795271c1105c3.png)

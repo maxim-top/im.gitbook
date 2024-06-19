@@ -16,7 +16,7 @@ ChatGPT发布四个月，我们看到了许多好玩的例子，也看到了提�
 
 而用ChatGPT，找有Chat的场景，比创造使用Chat的新场景更简单。
 
-![](../../assets/articles/autogen-5ee950e21468fc38e5d94ffbb75cd3e0c3edd0a0ad77ed48fc0c30d2c0a6876.jpeg)
+![](../assets/articles/autogen-5ee950e21468fc38e5d94ffbb75cd3e0c3edd0a0ad77ed48fc0c30d2c0a6876.jpeg)
 
 在ChatGPT之前，其实对话式AI一直在被广泛使用在客服场景，只不过一般都称Conversational AI。 就在ChatGPT发布前两个月，Salesforce首席科学家Silvio Savarese还发表了一篇很有意思的文章[《说到即可做到：对话式AI时代》 \[1\]](https://blog.salesforceairesearch.com/age-of-conversational-ai/)，只不过他应该也想不到，这个对话式AI引擎技术会在如此快的时间，变成如此简单易获取的工具。
 
@@ -145,7 +145,7 @@ ChatGPT发布当月，我们在控制台第三方服务增加OpenAI Chatbot配�
 
 当我们问它一个「蓝莺IM SDK怎么集成」的问题，它的回答是这样：
 
-![](../../assets/articles/autogen-bdc5c684101376a347f6d7084e7d5f41579257c23c4316b0eda3df8bea3b04d5.jpeg@40p)
+![](../assets/articles/autogen-bdc5c684101376a347f6d7084e7d5f41579257c23c4316b0eda3df8bea3b04d5.jpeg@40p)
 
 如何集成蓝莺IM SDK？
 
@@ -173,7 +173,7 @@ ChatGPT发布当月，我们在控制台第三方服务增加OpenAI Chatbot配�
 
 但也正因为这个，那些八竿子打不到的事情，也会被强行关联上。在小蓝AI刚上线的时候，由于我们使用的是GPT-3模型，因为没有胡锡进的信息，所以当有用户问到胡锡进时，它的回答是这样的：
 
-![](../../assets/articles/autogen-e78b584e89704700f8019ba1cb3094383258c6d7105d593464cc16efedbb3655.png@40p)
+![](../assets/articles/autogen-e78b584e89704700f8019ba1cb3094383258c6d7105d593464cc16efedbb3655.png@40p)
 
 真实情况是，你问任何一个人，如果它不认识，它就会往公司上关联，给他安排各种头衔和履历。
 
@@ -227,7 +227,7 @@ AI是把双刃剑，随着其能力的提升，这把剑变得越来越锋利，
 
 这个服务可以只自己根据产品规则定义的，针对注册来源、活跃程度等不同的限制，也可以是专门的内容安全审核服务，比如阿里云盾等。
 
-![](../../assets/articles/autogen-ea62691aad1247c719bd7a8985c2f7de43e2e210a3275d5d32d20c35794c6354.png)
+![](../assets/articles/autogen-ea62691aad1247c719bd7a8985c2f7de43e2e210a3275d5d32d20c35794c6354.png)
 
 审核策略有两种选择，可以直接停止发送，或者将关键词替换成符号，可以根据需要随时配置。
 
@@ -247,11 +247,11 @@ AI是把双刃剑，随着其能力的提升，这把剑变得越来越锋利，
 
 如果你也是这样的人，欢迎添加小蓝会聊天加入我们的群，一起交流 Prompt，一起玩ChatGPT：
 
-> ![扫码添加小蓝会聊天](../../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
+> ![扫码添加小蓝会聊天](../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
 
 ## 关于
 
-> [蓝莺IM \[9\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+> [蓝莺IM \[9\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 构建新一代智能聊天App，使用蓝莺IM专业SDK！
 

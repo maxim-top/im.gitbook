@@ -22,7 +22,7 @@
 
 所以今天我们不谈产品，来谈一个技术问题，我们怎样实现一个即时通讯系统（IM）。
 
-![](../../assets/articles/autogen-30adb140b95291410f8a471a21f4680739d48018bea2f19dc7fb2100aee87475.jpeg)
+![](../assets/articles/autogen-30adb140b95291410f8a471a21f4680739d48018bea2f19dc7fb2100aee87475.jpeg)
 
 过去的十五年里，即时通讯（IM）技术大致经历了三个阶段。
 
@@ -62,7 +62,7 @@
 
 事实并非如此，因为云的时代也到了。
 
-![](../../assets/articles/autogen-f940dd81d37386d7b6087e3d9a2a9611cc921e0e682f15d754d5bdda95e15e1d.jpeg)
+![](../assets/articles/autogen-f940dd81d37386d7b6087e3d9a2a9611cc921e0e682f15d754d5bdda95e15e1d.jpeg)
 
 大量移动 App 的爆发，带来了标准化模块化 SDK 的需求，因此为开发者服务的云服务应运而生。2014 年开始，市场上开始出现即时通讯云服务，为企业和开发者提供 IM SDK 和 API 服务，我们是其中之一。
 
@@ -146,4 +146,4 @@
 
 另外，微博关注 @蓝莺IM，参与文章转发，有机会获得「蓝莺IM礼盒」哦~
 
-![](../../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)
+![](../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)

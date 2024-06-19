@@ -24,7 +24,7 @@
 
 也就是说，**要给ChatGPT限定范围**，让它做到有知而不言。
 
-![](../../assets/articles/autogen-2188e094c4af767a525773e778fbd828a0dfc5929b9a674747ac61e75070fc97.jpeg)
+![](../assets/articles/autogen-2188e094c4af767a525773e778fbd828a0dfc5929b9a674747ac61e75070fc97.jpeg)
 
 ## 蓝莺服务准则
 
@@ -97,11 +97,11 @@
 
 如果你关注这场AI对抗，关注如何使用ChatGPT做智能客服或者AI助手，欢迎小蓝会聊天加入我们的群，一起交流 Prompt，一起玩ChatGPT：
 
-> ![扫码添加小蓝会聊天](../../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
+> ![扫码添加小蓝会聊天](../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
 
 # 关于
 
-> [蓝莺IM \[2\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+> [蓝莺IM \[2\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 构建新一代智能聊天App，使用蓝莺IM专业SDK！
 

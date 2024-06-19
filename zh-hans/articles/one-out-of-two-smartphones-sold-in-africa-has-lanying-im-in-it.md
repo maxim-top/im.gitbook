@@ -9,7 +9,7 @@
 
 经过半年的筹备，设计、代码和文档的修改和APP改版，和意料外的商标、公众号认证等细节，「蓝莺IM」终于上线了。🎉🎉🎉  
 
-![图片](../../assets/articles/autogen-f4f5640ae9dc742f5da3d920a35fe98c4ed7b49a4c94f087f02e90509c0c2965.jpeg)  
+![图片](../assets/articles/autogen-f4f5640ae9dc742f5da3d920a35fe98c4ed7b49a4c94f087f02e90509c0c2965.jpeg)  
 
 从今天开始，「美信拓扑IM」正式升级为「蓝莺IM」，官网启用新域名 [www.lanyingim.com](https://www.lanyingim.com) ，原域名 [www.maximtop.com](https://www.maximtop.com) 作为备用保留。
 
@@ -91,4 +91,4 @@
 >
 > 另外，微博关注 @蓝莺IM，参与文章转发，有机会获得「蓝莺IM礼盒」哦~
 
-![](../../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)
+![](../assets/articles/autogen-6d3012e2defcf316c233ab9fd9fb140ff77bf0d68f22c62f7835181b56c09719.png)

@@ -16,7 +16,7 @@
 
 不过这也正常，因为大模型相关的产品和想法都仍处在相互催化的爆发阶段，已经到了让人眼花缭乱的地步。即使是每天都在打磨大产品的我们，也会经常发现新的好玩的想法。
 
-![](../../assets/articles/autogen-c6b3bf3f51f3d321f04cfdd524c8209057d88cab0b233f8bab49956324903011.jpeg)
+![](../assets/articles/autogen-c6b3bf3f51f3d321f04cfdd524c8209057d88cab0b233f8bab49956324903011.jpeg)
 
 这些想法有部分来自实现过程的思考，但有更多是来自朋友的启发、客户的需求，今天又是一个例子。
 
@@ -30,11 +30,11 @@
 
 因此，我们将这个服务进行了封装，就是你现在看到的「微信公众号客服」功能，是可以在后台「AI服务」版块直接开通的：
 
-![开通微信公众号客服](../../assets/articles/autogen-65bc38955d1a10208a8e134f2f31623b9c84983351dfc87920dff4314f7dbffa.jpeg)
+![开通微信公众号客服](../assets/articles/autogen-65bc38955d1a10208a8e134f2f31623b9c84983351dfc87920dff4314f7dbffa.jpeg)
 
 开通后，就可以像下面这样，有一个在微信公众号里的大模型AI客服了：
 
-![微信公众号AI客服](../../assets/articles/autogen-952c5c2f7e9e33a6bdd8cd4f59339c41ae64d53ccd8ac13b3510b338c40607cd.png)
+![微信公众号AI客服](../assets/articles/autogen-952c5c2f7e9e33a6bdd8cd4f59339c41ae64d53ccd8ac13b3510b338c40607cd.png)
 
 你可以看到的文章引用，就是我们前面讲[企业知识库里的知识溯源\[1\]](https://docs.lanyingim.com/articles/product-and-technologies/It-is-time-to-make-LLM-learn-enterprise-knowledge.html)功能。
 
@@ -69,7 +69,7 @@
 
 对大模型AI未来有自己期待的功能，或者有想要的产品或功能，欢迎进群一起交流。
 
-![扫码添加小蓝会聊天](../../assets/articles/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
+![扫码添加小蓝会聊天](../assets/articles/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -82,7 +82,7 @@
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 参考资料
 
