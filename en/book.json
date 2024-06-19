@@ -40,7 +40,7 @@
         "intopic-toc@^1.1.1",
         "meta@^0.1.12",
         "3-ba@^0.9.0",
-        "ga@^1.0.1",
+        "ga4@^1.0.1",
         "lanying-grow-ai@^1.0.5"
     ],
 
@@ -185,8 +185,8 @@
         "3-ba": {
             "token": "21ea229c06c9f14fe8d731724a98bfb1"
         },
-        "ga": {
-            "token": "G-HJZXZWNVFW"
+        "ga4": {
+            "tag": "G-HJZXZWNVFW"
         },
         "lanying-grow-ai": {
             "lanying_link": "https://lanying.link/3qur4g",
