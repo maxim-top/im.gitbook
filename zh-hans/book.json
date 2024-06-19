@@ -1,5 +1,5 @@
 {
-    "title": "蓝莺 IM - 打造新一代智能应用，使用蓝莺ChatAI SDK",
+    "title": "打造新一代智能应用，使用蓝莺ChatAI SDK",
     "description": "API文档及文章分享",
     "author": "jinhai",
     "output.name": "site",
@@ -135,7 +135,7 @@
         "logo": {
             "logo": "/assets/lanying-logo-color.png",
             "logoStyle": "width: 200px;align: left;",
-            "url": "/"
+            "url": "https://www.lanyingim.com/"
         },
         "intopic-toc": {
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
