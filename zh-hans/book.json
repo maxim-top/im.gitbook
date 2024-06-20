@@ -64,7 +64,7 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "© 2019-2024 美信拓扑 | <a href='https://lanyingim.com' style='text-decoration:none!important;'>官网</a>",
+            "copyright": "© 2019-2024 美信拓扑 | <a href='https://www.lanyingim.com' style='text-decoration:none!important;'>官网</a> | <a href='/sitemap.xml' style='text-decoration:none!important;' target='_blank'>网站地图</a>",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
