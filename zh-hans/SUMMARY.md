@@ -257,6 +257,17 @@
 ## 行业资讯
   
 * [百科](wiki/README.md)
+  * [最新](wiki/latest/README.md)
+    * [蓝莺企业知识库](wiki/lanying-enterprise-knowledge-base-41-20240622-1-1-1719053679.md)
+    * [小蓝AI](wiki/lanying-ai-41-20240622-1-2-1719053709.md)
+    * [AI Chatbot](wiki/ai-chatbot-41-20240622-1-3-1719053745.md)
+    * [提示词](wiki/tips-for-writing-41-20240622-1-4-1719053776.md)
+    * [Embedding嵌入](wiki/embedding-techniques-and-applications-41-20240622-1-5-1719053811.md)
+    * [AI对话](wiki/ai-conversation-41-20240622-1-6-1719053841.md)
+    * [AI预设提示词](wiki/ai-preset-prompts-41-20240622-1-7-1719053871.md)
+    * [知识库重建](wiki/knowledge-base-reconstruction-41-20240622-1-8-1719053908.md)
+    * [文档向量化](wiki/document-vectorization-guide-41-20240622-1-9-1719053939.md)
+    * [AI回复](wiki/ai-response-41-20240622-1-10-1719053984.md)
   * [20240621](wiki/20240621/README.md)
     * [AI插件](wiki/20240621/41_20240621_1_1_1718959862.md)
     * [AI Agents](wiki/20240621/41_20240621_1_2_1718959885.md)
