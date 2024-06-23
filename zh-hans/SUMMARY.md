@@ -258,6 +258,10 @@
   
 * [百科](wiki/README.md)
   * [最新](wiki/latest/README.md)
+    * [即时通讯 IM](wiki/instant-messaging-im-41-20240623-1-1-1719151200.md)
+    * [消息下发](wiki/message-delivery-41-20240623-1-2-1719151238.md)
+    * [厂商推送通道](wiki/vendor-push-channel-41-20240623-1-3-1719151272.md)
+    * [PushService](wiki/push-service-41-20240623-1-4-1719151430.md)
     * [本地化部署](wiki/local-deployment-guide-41-20240622-2-1-1719057600.md)
     * [管理员命令行操作](wiki/admin-command-line-operations-41-20240622-2-2-1719057643.md)
     * [调试模式](wiki/debug-mode-41-20240622-2-3-1719057702.md)
@@ -274,6 +278,7 @@
     * [提示词](wiki/tips-for-writing-41-20240622-1-4-1719053776.md)
     * [Embedding嵌入](wiki/embedding-techniques-and-applications-41-20240622-1-5-1719053811.md)
     * [AI对话](wiki/ai-conversation-41-20240622-1-6-1719053841.md)
+  * [20240622](wiki/20240622/README.md)
     * [AI预设提示词](wiki/ai-preset-prompts-41-20240622-1-7-1719053871.md)
     * [知识库重建](wiki/knowledge-base-reconstruction-41-20240622-1-8-1719053908.md)
     * [文档向量化](wiki/document-vectorization-guide-41-20240622-1-9-1719053939.md)
