@@ -26,7 +26,6 @@
         "lanying-code-snippet@^1.1.12",
         "search-plus@^0.0.11",
         "advanced-emoji@^0.2.1",
-        "expandable-chapters-small@^0.1.7",
         "tbfed-pagefooter@^0.0.1",
         "versions-select@^0.1.1",
         "terminal@^0.3.2",
@@ -40,7 +39,9 @@
         "meta@^0.1.12",
         "3-ba@^0.9.0",
         "ga4@^1.0.1",
-        "lanying-grow-ai@^1.0.5"
+        "lanying-grow-ai@^1.0.5",
+        "lanying-grow-ai-theme@^1.0.0",
+        "lanying-grow-ai-expandable-chapters@^0.1.8"
     ],
     "pluginsConfig": {
         "theme-default": {
