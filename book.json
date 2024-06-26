@@ -30,7 +30,6 @@
         "splitter@^0.0.8",
         "favicon@^0.0.2",
         "github-tables@^0.0.2",
-        "image-captions@^3.1.0",
         "canonical-link@^2.0.3",
         "auto-scroll-table@^0.0.5",
 
@@ -41,7 +40,8 @@
         "ga4@^1.0.1",
         "lanying-grow-ai@^1.0.5",
         "lanying-grow-ai-theme@^1.0.8",
-        "lanying-grow-ai-expandable-chapters@^0.1.8"
+        "lanying-grow-ai-expandable-chapters@^0.1.8",
+        "lanying-grow-ai-image-captions@^3.1.1"
     ],
     "pluginsConfig": {
         "theme-default": {
