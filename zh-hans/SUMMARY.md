@@ -1143,7 +1143,7 @@
     * [云原生设计主要解决了什么问题？](quest/key-issues-solved-by-cloud-native-design-40-20240624-6-21-1719219761.md)
     * [蓝莺IM多云设计的可行性如何证明？](quest/lanying-im-multi-cloud-feasibility-40-20240624-6-22-1719219797.md)
     * [蓝莺IM私有云客户的最大需求是什么？](quest/lanying-im-private-cloud-customer-needs-40-20240624-6-23-1719219828.md)
-    * [```markdown](quest/lanying-im-private-cloud-customize-40-20240624-6-24-1719219860.md)
+    * [蓝莺IM如何满足私有云客户的定制需求？](quest/lanying-im-private-cloud-customize-40-20240624-6-24-1719219860.md)
     * [蓝莺IM未来的多云生态建设有哪些目标？](quest/lanying-im-future-multicloud-ecosystem-40-20240624-6-25-1719219902.md)
     * [蓝莺IM私有云的成本控制如何做到行业价格的百分之一？](quest/lanying-im-cost-control-40-20240624-6-26-1719219930.md)
     * [为何云原生是未来的必然选择？](quest/why-cloud-native-is-future-40-20240624-6-27-1719219954.md)
