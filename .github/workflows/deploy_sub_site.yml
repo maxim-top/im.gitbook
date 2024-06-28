@@ -68,7 +68,7 @@ jobs:
         increment: true
 
     - name: CDN Refresh
-      uses: visionwx/ali-cdn-refresh@v0.1.1
+      uses: maxim-top/ali-cdn-refresh@1.0.0
       with:
           accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
