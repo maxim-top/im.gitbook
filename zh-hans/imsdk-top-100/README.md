@@ -1,1 +1,1 @@
-# zh-hans/imsdk-top-100
+# imsdk-top-100
