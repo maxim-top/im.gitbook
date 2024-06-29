@@ -2101,7 +2101,7 @@
     * [8.1 即时通讯选型演化](enterprise-im-book/38_20240612_11_3_1718204554.md)
     * [8.2 数字化转型趋势](enterprise-im-book/38_20240612_11_4_1718204616.md)
     * [8.3 统一的标准和互通协议](enterprise-im-book/38_20240612_11_5_1718204701.md)
-* [imsdk-top-100](imsdk-top-100/README.md)
+* [关于即时通讯IM SDK的100个问题](imsdk-top-100/README.md)
   * [最新](imsdk-top-100/latest/README.md)
     * [IM SDK的API文档及示例](imsdk-top-100/im-sdk-api-docs-examples-53-20240629-2-1-1719651600.md)
     * [IM SDK在电商平台中的应用](imsdk-top-100/im-sdk-ecommerce-platform-53-20240629-2-2-1719651631.md)
