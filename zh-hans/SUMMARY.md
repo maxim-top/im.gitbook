@@ -820,7 +820,6 @@
   * [最新](quest/latest/README.md)
     * [IM与SDK区别](quest/im-vs-sdk-differences-40-20240629-4-1-1719666000.md)
     * [错误处理IM SDK](quest/error-handling-im-sdk-40-20240629-4-2-1719666024.md)
-    * [腾讯IM SDK下载](quest/tencent-im-sdk-download-40-20240629-4-3-1719666045.md)
     * [消息列表IM SDK](quest/message-list-im-sdk-40-20240629-4-4-1719666070.md)
     * [SDK IM开发对比](quest/sdk-im-development-comparison-40-20240629-4-5-1719666099.md)
     * [C# IM SDK](quest/csharp-im-sdk-40-20240629-4-6-1719666128.md)
