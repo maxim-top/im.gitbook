@@ -1,5 +1,5 @@
 {
-    "title": "蓝莺Chat AI SDK",
+    "title": "构建你的智能应用，使用蓝莺Chat AI SDK",
     "description": "API文档及文章分享",
     "author": "jinhai",
     "output.name": "site",
@@ -189,7 +189,7 @@
             "data": [
                 {
                     "name": "keywords",
-                    "content": "Chat SDK,IM SDK,聊天SDK,即时通讯SDK,IM开源,IM PaaS,即时通讯云服务,PUSH SDK,第三方推送,RTC SDK,实时音视频SDK,Chat AI SDK,企业级AI SDK,AI Agent,AI智能体"
+                    "content": "IM SDK,即时通讯SDK,APP内聊天功能,IM开源,IM云服务,PUSH SDK,第三方推送,RTC SDK,实时音视频,Chat AI SDK,企业级AI,AI Agent,AI智能体"
                 }
             ]
         },
