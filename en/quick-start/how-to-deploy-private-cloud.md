@@ -1,3 +1,7 @@
+---
+description: Private Cloud Deployment documentation to enable Private Cloud Services with single server, cluster, and Alibaba Cloud versions. Instructions for redis, redis-cache, and mysql setup.
+keywords: Private Cloud, Deployment, IM SDK, APP内聊天功能
+---
 # Private Cloud Deployment documentation
 
 ## Profile

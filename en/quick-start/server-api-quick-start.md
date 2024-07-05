@@ -1,3 +1,7 @@
+---
+description: Server API Development Guide including getting started, API profile, user, friend, group, and message APIs, as well as error code description in appendix.
+keywords: API Development, Server API, IM开源, PUSH SDK
+---
 # Server API Development Guide
 
 This page is for quick integration, visit [detailed documentation](../reference/server-api/README.md), or visit the [Swagger page](https://docs.lanyingim.com/en/reference/server-api/swagger/) directly.

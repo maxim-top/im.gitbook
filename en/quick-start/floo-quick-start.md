@@ -1,3 +1,7 @@
+---
+description: C++ SDK Quick Start with architecture overview, integration steps, user friend system, basic and advanced messaging features.
+keywords: C++ SDK, Quick Start, 第三方推送, AI Agent
+---
 # C++ SDK Quick Start
 
 This page is for quick integration, visit [detailed documentation](../reference/floo.md)

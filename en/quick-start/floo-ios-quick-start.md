@@ -1,3 +1,7 @@
+---
+description: IOS SDK Quick Start guide for auto or manual integration, covering initialization, user registration, login, conversation list, user friend, basic and advanced features like RTC AV Call.
+keywords: IOS SDK, Quick Start, IM云服务, Chat AI SDK
+---
 # IOS SDK Quick Start
 
 This page is for quick integration, visit [detailed documentation](../reference/floo-ios.md)

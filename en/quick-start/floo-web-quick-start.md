@@ -1,3 +1,7 @@
+---
+description: Web SDK Quick Start guide for initialization, user registration, login, message formats, user friend operations, and basic to advanced messaging capabilities including RTC messages.
+keywords: Web SDK, Quick Start, RTC SDK, AI智能体
+---
 # Web SDK Quick Start
 
 This page is for quick integration, visit [detailed documentation](../reference/floo-web.md)

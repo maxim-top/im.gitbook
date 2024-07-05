@@ -1,3 +1,7 @@
+---
+description: Android SDK Quick Start for integration, SDK architecture, user system, basic and advanced messaging features like push and RTC AV Call.
+keywords: Android SDK, Quick Start, 即时通讯SDK, Real-time messaging
+---
 # Android SDK Quick Start
 
 This page is for quick integration, visit [detailed documentation](../reference/floo-android.md)
