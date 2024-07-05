@@ -1,3 +1,7 @@
+---
+description: 树莓派上的IM私有云利用Docker和K8s实现，硬件准备，软件环境，IM私有云部署，蓝莺IM的优势与应用场景。
+keywords: 树莓派IM, 私有云, IM开源, 大模型AI
+---
 # 树莓派上的IM私有云：如何利用Docker和K8s实现
 
 ## 简介

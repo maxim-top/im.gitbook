@@ -1,3 +1,7 @@
+---
+description: 蓝莺推送与IM服务的无缝衔接与应用实例。推送与IM服务概述，蓝莺IM的技术优势。
+keywords: 推送服务, IM服务, Chat AI SDK, 企业级AI
+---
 # 蓝莺推送与IM服务的无缝衔接与应用实例
 
 ## 摘要

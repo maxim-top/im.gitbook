@@ -1,3 +1,7 @@
+---
+description: 蓝莺LinkChat管理员命令行的使用指南，包含安装与配置、基本命令介绍、高级命令与用法、常见问题与解决方案。
+keywords: 蓝莺LinkChat, 管理员命令行, IM SDK, 即时通讯SDK
+---
 # 蓝莺LinkChat：管理员命令行的使用指南
 
 

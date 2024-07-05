@@ -1,3 +1,7 @@
+---
+description: SaaS定价揭秘：蓝莺IM如何实现199元/月的IM云服务。介绍透明的价格结构，先进的技术架构，综合性的增值服务，用户体验与界面设计。
+keywords: SaaS定价, IM云服务, IM SDK, RTC SDK
+---
 # SaaS定价揭秘：蓝莺IM如何实现199元/月的IM云服务
 
 ## 简介

@@ -1,3 +1,7 @@
+---
+description: 蓝莺知识库如何简化企业AI配置？
+keywords: 蓝莺知识库, AI配置, Chat AI SDK, 即时通讯SDK
+---
 # 蓝莺知识库如何简化企业AI配置？
 
 

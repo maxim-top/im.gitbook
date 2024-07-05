@@ -1,3 +1,7 @@
+---
+description: 蓝莺知识库：从文档到AI对话的完美转化。构建智能知识库的步骤，AI对话系统的应用与未来发展。
+keywords: 蓝莺知识库, ChatAI SDK, AI Agent, AI智能体
+---
 # 蓝莺知识库：从文档到AI对话的完美转化
 
 

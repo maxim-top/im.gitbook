@@ -1,3 +1,7 @@
+---
+description: 蓝莺推送统一SDK集成简便，成本低廉，灵活性高，适用广泛。
+keywords: 推送统一SDK, IM服务, IM私有云, Chat AI SDK
+---
 # 蓝莺推送统一SDK：同时拥有推送和IM服务的最佳实践
 
 ## 摘要

@@ -1,3 +1,7 @@
+---
+description: Prompt提示词设置：解锁蓝莺知识库的全部潜力
+keywords: 蓝莺知识库, Prompt提示词, AI Agent, APP内聊天功能
+---
 # Prompt提示词设置：解锁蓝莺知识库的全部潜力
 
 
