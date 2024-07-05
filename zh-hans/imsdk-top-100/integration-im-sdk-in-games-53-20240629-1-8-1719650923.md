@@ -1,3 +1,7 @@
+---
+description: 探讨游戏中IM SDK的集成方案，包括选择SDK、功能开发、数据安全等方面。
+keywords: IM SDK, 游戏集成, APP内聊天功能, AI Agent
+---
 # 游戏中的IM SDK集成方案
 
 ## 摘要

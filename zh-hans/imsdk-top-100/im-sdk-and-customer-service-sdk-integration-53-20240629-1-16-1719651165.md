@@ -1,3 +1,7 @@
+---
+description: IM SDK与客服SDK的整合协同工作、提高用户体验、简化开发过程和增强数据分析能力，推荐阅读提示词。
+keywords: IM SDK, 客服SDK, IM开源, AI Agent
+---
 # IM SDK与客服SDK的整合
 
 ## 摘要

@@ -1,3 +1,7 @@
+---
+description: GrowAI Gitbook使用介绍
+keywords: GrowAI, Gitbook, AI智能体, Chat AI SDK
+---
 # GrowAI Gitbook
 
 GrowAI Gitbook，是为蓝莺GrowAI创建的Gitbook模板，在基础的Gitbook工程中增加了蓝莺GrowAI支持。🚀🚀🚀

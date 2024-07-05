@@ -1,3 +1,7 @@
+---
+description: 比较海外和国内IM SDK，包括产品差异、市场定位、技术架构、功能对比等内容。
+keywords: IM SDK, 对比, IM开源, RTC SDK
+---
 # 海外和国内IM SDK的对比
 
 ## 摘要

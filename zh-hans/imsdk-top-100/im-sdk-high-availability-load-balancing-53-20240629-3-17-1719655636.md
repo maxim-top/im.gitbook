@@ -1,3 +1,7 @@
+---
+description: 介绍IM SDK的高可用性设计及负载均衡，包括架构设计、负载均衡策略、故障恢复方法和网络优化技术。
+keywords: IM SDK, 高可用性设计, IM开源, PUSH SDK
+---
 # IM SDK的高可用性设计及负载均衡
 
 ## 摘要

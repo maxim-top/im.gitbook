@@ -1,3 +1,7 @@
+---
+description: 开源IM SDK的优缺点分析，开源IM SDK的优点、开源IM SDK的缺点、选择蓝莺IM的理由。
+keywords: 开源分析, IM SDK, Chat AI SDK,企业级AI
+---
 # 开源IM SDK的优缺点分析
 
 ## 摘要

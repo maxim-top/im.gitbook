@@ -1,3 +1,7 @@
+---
+description: IM SDK的国际化和本地化支持概述，国际化和本地化的基本概念和技术实现，蓝莺IM的国际化和本地化支持，常见挑战与解决方案，未来展望，FAQs。
+keywords: IM SDK, 国际化, AI智能体, IM SDK
+---
 # IM SDK的国际化和本地化支持
 
 ## 概述

@@ -1,3 +1,7 @@
+---
+description: 介绍IM SDK的语音和视频功能集成，包括语音通话、视频通话、安全性和质量保证，以及案例分析和结论。
+keywords: IM SDK, 语音视频功能, IM云服务, Chat AI SDK
+---
 # IM SDK的语音及视频功能集成
 
 ## 摘要

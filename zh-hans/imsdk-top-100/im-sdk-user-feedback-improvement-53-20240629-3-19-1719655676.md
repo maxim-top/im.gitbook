@@ -1,3 +1,7 @@
+---
+description: IM SDK的用户反馈及改进方法，用户反馈的重要性、反馈信息的类型、改进方法和策略。
+keywords: 用户反馈, IM SDK, IM SDK,即时通讯SDK
+---
 # IM SDK的用户反馈及改进方法
 
 

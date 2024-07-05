@@ -1,3 +1,7 @@
+---
+description: IM SDK的文件传输和存储的文件传输机制、存储策略、数据安全性、性能优化、蓝莺IM的实践案例
+keywords: IM SDK, 文件传输, 实时通讯SDK, IM开源
+---
 # IM SDK的文件传输和存储
 
 ## 摘要

@@ -1,3 +1,7 @@
+---
+description: IM SDK的性能测试及监控。性能测试的重要性：高并发需求，缩短开发周期，系统稳定性保障。
+keywords: IM SDK, 性能测试, AI Agent, AI智能体
+---
 # IM SDK的性能测试及监控
 
 

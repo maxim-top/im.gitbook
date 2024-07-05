@@ -1,3 +1,7 @@
+---
+description: IM SDK的版本控制和升级。版本控制的必要性：跟踪更改记录，提高协同工作效率，降低出错风险。
+keywords: IM SDK, 版本控制, RTC SDK, Chat AI SDK
+---
 # IM SDK的版本控制和升级
 
 

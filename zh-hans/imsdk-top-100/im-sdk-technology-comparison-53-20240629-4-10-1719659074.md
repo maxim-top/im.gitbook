@@ -1,3 +1,7 @@
+---
+description: IM SDK的技术选型及对比分析，功能需求、可扩展性、性能表现、安全性、成本效益。
+keywords: 技术选型, IM SDK, Chat AI SDK,实时音视频
+---
 # IM SDK的技术选型及对比分析
 
 ## 摘要

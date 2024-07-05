@@ -1,3 +1,7 @@
+---
+description: 介绍IM SDK的多语言支持及国际化，包括多语言翻译、时区管理、文化差异适配等方面。
+keywords: IM SDK, 多语言支持, Chat AI SDK, 企业级AI
+---
 # IM SDK的多语言支持及国际化
 
 ## 摘要

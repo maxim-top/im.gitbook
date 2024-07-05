@@ -1,3 +1,7 @@
+---
+description: IM SDK的用户认证与管理的用户注册与登录机制、身份验证方法、权限管理分配、数据安全隐私保护、用户体验优化反馈机制
+keywords: IM SDK, 用户认证, AI Agent, AI智能体
+---
 # IM SDK的用户认证与管理
 
 ## 摘要

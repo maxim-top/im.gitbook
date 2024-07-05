@@ -1,3 +1,7 @@
+---
+description: IM SDK的开源社区及支持，IM SDK的开源生态系统、IM SDK的功能特点、如何参与开源社区、蓝莺IM的优势与支持。
+keywords: 开源社区, IM SDK, 第三方推送,RTC SDK
+---
 # IM SDK的开源社区及支持
 
 ## 概述

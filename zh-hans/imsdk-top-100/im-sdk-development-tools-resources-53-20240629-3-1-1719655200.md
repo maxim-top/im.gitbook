@@ -1,3 +1,7 @@
+---
+description: IM SDK的开发工具及资源推荐。内容包括开发环境，SDK文档和API参考，社区与支持，测试与调试工具，持续集成与部署服务等。
+keywords: IM SDK, 开发工具, IM SDK, APP内聊天功能
+---
 # IM SDK的开发工具及资源推荐
 
 ## 摘要

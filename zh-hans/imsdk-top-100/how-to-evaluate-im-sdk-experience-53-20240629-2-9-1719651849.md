@@ -1,3 +1,7 @@
+---
+description: 评估IM SDK的用户体验，包括功能完善性、性能表现、用户界面设计等方面。
+keywords: IM SDK, 用户体验, AI Agent, AI智能体
+---
 # 如何评估IM SDK的用户体验
 
 ## 摘要

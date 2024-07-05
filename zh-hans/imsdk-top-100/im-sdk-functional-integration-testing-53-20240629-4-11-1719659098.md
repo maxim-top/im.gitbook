@@ -1,3 +1,7 @@
+---
+description: 介绍IM SDK的功能测试、集成测试、自动化测试、性能测试、测试报告与结果分析，以及蓝莺IM的测试实战经验。
+keywords: IM SDK, 功能测试, 实时音视频, Chat AI SDK
+---
 # IM SDK的功能测试及集成测试
 
 ## 摘要

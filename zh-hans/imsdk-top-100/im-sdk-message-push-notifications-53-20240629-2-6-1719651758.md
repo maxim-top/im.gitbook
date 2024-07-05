@@ -1,3 +1,7 @@
+---
+description: IM SDK的消息推送和通知功能，即时消息传递、多种通知类型、高可定制性、安全与隐私保护。
+keywords: 消息推送, IM SDK, APP内聊天功能,PUSH SDK
+---
 # IM SDK的消息推送和通知功能
 
 ## 摘要

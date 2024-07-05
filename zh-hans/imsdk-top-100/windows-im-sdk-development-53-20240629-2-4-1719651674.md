@@ -1,3 +1,7 @@
+---
+description: Windows平台的IM SDK开发的环境准备、SDK选择与安装、基础功能实现、高级功能集成、性能优化与测试、案例分析
+keywords: IM SDK, Windows平台, 第三方推送, 实时音视频
+---
 # Windows平台的IM SDK开发
 
 ## 摘要

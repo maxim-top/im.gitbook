@@ -1,3 +1,7 @@
+---
+description: IM SDK的跨平台开发及兼容性测试。内容包括跨平台开发挑战，蓝莺IM的解决实践，API兼容性解决方案，硬件差异应对策略等。
+keywords: IM SDK, 跨平台开发, 在线课程, PUSH SDK
+---
 # IM SDK的跨平台开发及兼容性测试
 
 ## 摘要
