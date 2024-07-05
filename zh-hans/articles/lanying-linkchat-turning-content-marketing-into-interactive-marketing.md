@@ -1,3 +1,7 @@
+---
+description: 蓝莺LinkChat：把内容营销变成互动营销, 蓝莺IM SDK的使用
+keywords: 蓝莺LinkChat, 蓝莺IM SDK, APP内聊天功能, IM开源
+---
 # 蓝莺LinkChat：把内容营销变成互动营销
 
 原创 有Link的小蓝 蓝莺IM _2023-05-09 22:20_ _发表于北京_

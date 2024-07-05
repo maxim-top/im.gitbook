@@ -1,3 +1,7 @@
+---
+description: 关于快速构建智能应用以及GPT Mention的文章
+keywords: 构建智能应用, GPT Mention, Chat AI SDK, AI智能体
+---
 # 快速构建你的智能应用@GPT Mention
 
 原创 一乐 蓝莺IM _2024-03-07 23:30_ _北京_

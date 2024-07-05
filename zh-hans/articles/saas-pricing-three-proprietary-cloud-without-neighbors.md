@@ -1,3 +1,7 @@
+---
+description: 关于SaaS定价的专有云和IM价格的文章
+keywords: SaaS定价, IM价格, PUSH SDK, 第三方推送
+---
 # SaaS定价三：没有邻居的专有云
 
 原创 一乐 美信拓扑 _2021-07-19 16:23_

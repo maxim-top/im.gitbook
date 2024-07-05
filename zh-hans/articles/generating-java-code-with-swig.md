@@ -1,3 +1,7 @@
+---
+description: 关于用SWIG生成Java代码的IM SDK的文章
+keywords: IM SDK, SWIG, IM开源, 同步 vs 异步
+---
 # 用 SWIG 生成 Java 代码（IM SDK）
 
 原创 一乐 美信拓扑 _2020-05-26 18:23_

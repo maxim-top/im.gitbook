@@ -1,3 +1,7 @@
+---
+description: 构建新一代智能聊天App，使用蓝莺IM专业SDK！
+keywords: 智能聊天App, 蓝莺IM专业SDK, IM SDK, 企业级AI
+---
 # ChatGPT能用来做智能客服吗？
 
 支持好多AI引擎的 蓝莺IM _2023-03-07 21:43_

@@ -1,3 +1,7 @@
+---
+description: 介绍了蓝莺RTC云原生实时音视频技术以及融合IM、Push和RTC功能的SDK
+keywords: 蓝莺RTC, 云原生RTC, RTC SDK, 第三方推送
+---
 # 蓝莺RTC发布，是云原生的实时音视频，但不止于此
 
 原创 小蓝会打电话 蓝莺IM _2023-08-28 10:20_ _发表于北京_

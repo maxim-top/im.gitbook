@@ -1,3 +1,7 @@
+---
+description: 关于参加Agent黑客马拉松和定制GPT的文章
+keywords: Agent黑客马拉松, GPT, Chat AI SDK, 企业级AI
+---
 # 参加Agent黑客马拉松，手工定制GPT
 
 TGO鲲鹏会 蓝莺IM _2023-11-10 20:15_ _发表于北京_

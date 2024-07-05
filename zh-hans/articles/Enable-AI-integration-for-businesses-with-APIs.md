@@ -1,3 +1,7 @@
+---
+description: 介绍如何让有API的业务应用上AI以及数字员工与员工关系的讨论，同时提及蓝莺IM相关内容
+keywords: API业务, AI插件, AI Agent, AI开发
+---
 # 让有API的业务用上AI
 
 原创 一乐 蓝莺IM _2023-11-12 17:06_ _发表于北京_

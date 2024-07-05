@@ -1,3 +1,7 @@
+---
+description: 介绍了如何使用大模型LLM实现销售AI以及智能插件驱动API服务的架构方案
+keywords: 销售AI, 大模型LLM, Chat AI SDK, AI智能体
+---
 # 使用大模型LLM实现销售AI
 
 原创 一乐 蓝莺IM _2024-04-29 18:53_ _北京_

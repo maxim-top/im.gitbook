@@ -1,3 +1,7 @@
+---
+description: 讨论了ChatGPT的下一步发展以及GPTs在企业级应用中的重要性
+keywords: ChatGPT, GPTs, AI智能体, IM云服务
+---
 # ChatGPT的下一步，AltGPTs
 
 原创 一乐 蓝莺IM _2023-12-12 10:11_ _发表于北京_

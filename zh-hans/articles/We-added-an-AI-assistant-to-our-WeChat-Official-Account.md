@@ -1,3 +1,7 @@
+---
+description: 介绍微信公众号AI助手的开通方法以及蓝莺IM相关内容
+keywords: 微信公众号, AI助手, AI智能体, Chat AI SDK
+---
 # 我们给微信公众号加上了AI助手
 
 有AI的小蓝 蓝莺IM _2023-07-25 03:57_

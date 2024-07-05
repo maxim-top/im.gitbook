@@ -1,3 +1,7 @@
+---
+description: AI驱动的应用：插件、应用市场和AI Agents
+keywords: AI应用, 插件应用市场, AI Agent, Chat AI SDK
+---
 # AI驱动的应用：插件、应用市场和AI Agents
 
 原创 一乐 蓝莺IM _2023-10-11 19:39_ _发表于北京_

@@ -1,3 +1,7 @@
+---
+description: AI AGENT黑客马拉松
+keywords: AI AGENT, 黑客马拉松, AI智能体, 即时通讯SDK
+---
 # 一场AI AGENT黑客马拉松能玩出什么
 
 TGO鲲鹏会 蓝莺IM _2023-11-30 10:10_ _发表于北京_

@@ -1,3 +1,7 @@
+---
+description: 在APP中添加ChatGPT的零代码方式设置以及蓝莺IM的连接器编码定制Chatbot
+keywords: ChatGPT, 零代码, Chat AI SDK, AI Agent
+---
 # 如何在APP中增加ChatGPT？
 
 原创 会聊天的小蓝AI 蓝莺IM _2022-12-21 11:10_ _发表于北京_

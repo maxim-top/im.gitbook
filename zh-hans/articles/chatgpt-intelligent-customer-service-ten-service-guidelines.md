@@ -1,3 +1,7 @@
+---
+description: 总结了ChatGPT做智能客服的十条服务准则和使用蓝莺IM专业SDK构建新一代智能聊天App的内容
+keywords: ChatGPT, 智能客服, AI Agent, AI智能体
+---
 # ChatGPT做智能客服的十条服务准则
 
 有ChatGPT的 蓝莺IM _2023-03-10 20:35_

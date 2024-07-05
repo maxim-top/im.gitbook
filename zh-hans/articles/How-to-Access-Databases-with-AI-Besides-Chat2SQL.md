@@ -1,3 +1,7 @@
+---
+description: 除了Chat2SQL，如何使用AI访问数据库
+keywords: AI, 数据库访问, IM SDK, 第三方推送
+---
 # 除了Chat2SQL，如何使用AI访问数据库
 
 原创 小蓝懂AI 蓝莺IM _2024-02-04 17:35_ _发表于上海_
