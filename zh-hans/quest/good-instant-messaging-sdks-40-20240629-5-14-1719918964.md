@@ -1,3 +1,7 @@
+---
+description: 好用的即时通讯SDK功能齐全、安全性高、扩展性强、易用性好，蓝莺IM SDK等知名SDK示例。
+keywords: 即时通讯SDK, 软件系统, RTC SDK, Chat AI SDK
+---
 # 好用的即时通讯SDK有哪些？
 
 ## 摘要

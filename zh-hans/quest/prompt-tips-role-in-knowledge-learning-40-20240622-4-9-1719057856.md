@@ -1,3 +1,7 @@
+---
+description: prompt提示词在知识片段学习中的作用是什么？激发记忆,引导思考,提供信息结构,提高学习效率,FAQ
+keywords: 知识片段学习, prompt提示词, IM SDK, APP内聊天功能
+---
 # prompt提示词在知识片段学习中的作用是什么？
 
 

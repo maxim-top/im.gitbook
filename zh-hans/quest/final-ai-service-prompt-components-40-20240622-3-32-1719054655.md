@@ -1,3 +1,7 @@
+---
+description: 最终调用AI服务的Prompt提示词及主要部分， 输入参数、输出要求和案例分析。
+keywords: AI服务,技术文档, AI Agent,企业级AI
+---
 # 最终调用AI服务的Prompt提示词包含哪些部分？
 
 

@@ -1,3 +1,7 @@
+---
+description: 如何启用树莓派的cgroup功能？背景介绍树莓派及其应用什么是cgroup？更新系统软件包更新系统软件包的重要性执行更新命令启用cgroup内核支持修改boot配置文件重启系统配置cgroup挂载点创建挂载点目录挂载cgroup子系统验证挂载结果验证cgroup是否生效检查cgroup模块创建测试组运行测试进程检查限制是否生效常见问题及解决方法cgroup挂载失败资源限制未生效系统性能下降结论推荐阅读提示词
+keywords: 树莓派, cgroup, IM SDK, 即时通讯SDK
+---
 # 如何启用树莓派的cgroup功能？
 
 

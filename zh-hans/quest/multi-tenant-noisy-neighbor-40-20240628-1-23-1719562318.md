@@ -1,3 +1,7 @@
+---
+description: 多个租户共享资源易出现Noisy Neighbor问题，具体表现和解决方法，以及实践案例和发展方向。
+keywords: 租户资源共享, Noisy Neighbor, AI智能体, RTC SDK
+---
 # 为什么说多个租户共享资源容易出现Noisy Neighbor问题？
 
 ## 引言

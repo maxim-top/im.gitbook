@@ -1,3 +1,7 @@
+---
+description: Embedding嵌入的定义、作用和应用技术，包括嵌入方法、嵌入技术在不同领域的应用，挑战与发展
+keywords: Embedding, 嵌入, IM SDK, Chat AI SDK
+---
 # 什么是Embedding嵌入的原理？
 
 

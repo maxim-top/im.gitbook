@@ -1,3 +1,7 @@
+---
+description: 介绍如何通过Python Requests、Selenium和Node.js进行网页抓取，总结各种方法的使用场景。
+keywords: URL获取, Python Requests, IM云服务, PUSH SDK
+---
 # 如何直接从URL获取网站页面内容？
 
 

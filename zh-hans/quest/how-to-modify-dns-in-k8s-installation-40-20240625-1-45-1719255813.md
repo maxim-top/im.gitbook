@@ -1,3 +1,7 @@
+---
+description: 修改k8s安装时的DNS服务器配置以确保集群稳定和安全，可能遇到的问题及解决方案
+keywords: k8s, 修改DNS, IM SDK, APP内聊天功能
+---
 # 如何在国内安装k8s时修改DNS服务器？
 
 ## 摘要

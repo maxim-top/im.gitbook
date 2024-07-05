@@ -1,3 +1,7 @@
+---
+description: 云服务中的HOL blocking问题和解决方案，影响网络性能、资源利用率和数据一致性，以及视频流媒体服务和云数据库中的实际案例分析。
+keywords: HOL blocking, 云服务, IM SDK, APP内聊天功能
+---
 # 在云服务中，HOL blocking是什么问题？
 
 ## 引言

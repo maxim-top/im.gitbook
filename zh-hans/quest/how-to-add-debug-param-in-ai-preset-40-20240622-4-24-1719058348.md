@@ -1,3 +1,7 @@
+---
+description: 如何在AI预设中添加debug参数，包括理解调试参数、调整配置、验证效果和蓝莺IM中的调试功能。
+keywords: AI预设, debug参数, IM开源, PUSH SDK
+---
 # 如何在AI预设中添加debug参数？
 
 

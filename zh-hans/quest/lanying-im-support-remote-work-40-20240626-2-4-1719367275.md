@@ -1,3 +1,7 @@
+---
+description: 蓝莺IM服务支持远程办公
+keywords: 蓝莺IM, 远程办公, IM SDK, 即时通讯SDK
+---
 # 蓝莺IM的服务如何支持远程办公？
 
 ## 摘要

@@ -1,3 +1,7 @@
+---
+description: 蓝莺IM私有云安装程序 maxim.ctl 作用：安装步骤自定义配置状态监控维护应用案例。
+keywords: 蓝莺IM, 私有云安装程序, IM SDK, PUSH SDK
+---
 # 蓝莺IM私有云安装程序 maxim.ctl 的作用是什么？
 
 ## 引言

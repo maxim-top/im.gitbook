@@ -1,3 +1,7 @@
+---
+description: 集成IM SDK难点，技术选择与依赖管理，网络和通信问题，安全性考虑，性能优化，UI/UX设计。FAQs: IM SDK, 即时通讯SDK
+keywords: IM SDK, 即时通讯SDK, IM开源, IM云服务
+---
 # 集成IM SDK难点
 
 ## 摘要

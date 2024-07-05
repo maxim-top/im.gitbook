@@ -1,3 +1,7 @@
+---
+description: IM语音SDK的核心功能包括实时通话、语音消息、降噪和回声消除，应用场景包括社交网络、在线教育和企业协作。选择IM语音SDK时需考虑兼容性、安全性、性能和可靠性。蓝莺IM语音SDK的优势在于灵活定价方案、全球化服务。
+keywords: IM语音SDK, 核心功能, Chat AI SDK, AI Agent
+---
 # IM语音SDK推荐
 
 ## 概述

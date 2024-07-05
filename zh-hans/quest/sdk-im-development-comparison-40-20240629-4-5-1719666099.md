@@ -1,3 +1,7 @@
+---
+description: 比较了各种SDK IM开发的功能特性、安全性、集成难易度、性能以及支持及文档，并给出了结论和推荐阅读提示词。
+keywords: SDK, IM开发, RTC SDK, PUSH SDK
+---
 # SDK IM开发对比
 
 ## 摘要

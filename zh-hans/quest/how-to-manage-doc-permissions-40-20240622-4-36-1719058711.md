@@ -1,3 +1,7 @@
+---
+description: 控制台管理知识库文档权限的方法，包括用户分级、角色定义和权限设置等内容。
+keywords: 知识库, 文档权限, IM云服务, AI智能体
+---
 # 如何在控制台管理知识库文档的权限？ {#how-to-manage-doc-permissions}
 
 

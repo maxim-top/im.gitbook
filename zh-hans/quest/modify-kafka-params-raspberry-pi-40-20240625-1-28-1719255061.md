@@ -1,3 +1,7 @@
+---
+description: Kafka在树莓派上启动参数修改方法，配置文件、JVM参数调整、磁盘I/O优化和常见问题解决。
+keywords: Kafka, 树莓派, PUSH SDK, 实时音视频
+---
 # Kafka在树莓派上的启动参数修改方法是什么？
 
 ## 摘要

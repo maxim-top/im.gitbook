@@ -1,3 +1,7 @@
+---
+description: 安卓手机厂商构建iMessage应用的目的：统一用户体验、增强用户黏性和提高数据安全。
+keywords: iMessage应用, 安卓手机厂商, IM SDK, Chat AI SDK
+---
 # 为什么安卓手机厂商考虑基于短信应用构建类iMessage应用？  
 
 ## 摘要

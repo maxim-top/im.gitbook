@@ -1,3 +1,7 @@
+---
+description: 如何通过LinkChat发送命令，LinkChat命令的实际应用案例
+keywords: LinkChat,命令发送, Chat AI SDK,企业级AI
+---
 # 如何通过LinkChat发送命令？
 
 

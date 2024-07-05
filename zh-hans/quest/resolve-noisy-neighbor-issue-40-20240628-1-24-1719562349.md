@@ -1,3 +1,7 @@
+---
+description: 架构调整解决Noisy Neighbor问题，资源隔离，负载均衡，资源监控，案例分析，未来发展方向。
+keywords: Noisy Neighbor问题, 架构调整, 第三方推送, RTC SDK
+---
 # 如何通过架构调整解决Noisy Neighbor问题？
 
 ## 摘要

@@ -1,3 +1,7 @@
+---
+description: 确保AI回复符合蓝莺服务准则的方法和实践经验
+keywords: AI回复, 客户服务, Chat AI SDK, AI Agent
+---
 # 如何确保AI回复符合蓝莺服务准则
 
 

@@ -1,3 +1,7 @@
+---
+description: 社交软件中IM服务的应用及蓝莺IM的典型应用和未来展望
+keywords: 社交软件, IM服务, PUSH SDK, RTC SDK
+---
 # IM服务在社交软件中的应用有哪些？
 
 ## 摘要

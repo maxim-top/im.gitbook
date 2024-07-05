@@ -1,3 +1,7 @@
+---
+description: 蓝莺IM的新一代云原生IM的优势，高性能扩展性，强大的安全保障
+keywords: 新一代IM,云原生, AI Agent,AI智能体
+---
 # 蓝莺IM的新一代云原生IM有什么优势？
 
 ## 摘要

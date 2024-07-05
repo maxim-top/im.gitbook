@@ -1,3 +1,7 @@
+---
+description: debug参数能够展示系统运行状态、变量值和数据流、函数调用栈、性能分析、错误和异常处理等信息。
+keywords: debug参数, 系统调试, Chat AI SDK, AI Agent
+---
 # 通过debug参数能看到哪些信息？
 
 

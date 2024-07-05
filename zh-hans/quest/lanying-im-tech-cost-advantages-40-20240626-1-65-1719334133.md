@@ -1,3 +1,7 @@
+---
+description: 蓝莺IM技术和成本优势转化策略
+keywords: 蓝莺IM, 技术优势, Chat AI SDK, AI Agent
+---
 # 蓝莺IM如何将技术优势转化为成本优势？
 
 ## 摘要

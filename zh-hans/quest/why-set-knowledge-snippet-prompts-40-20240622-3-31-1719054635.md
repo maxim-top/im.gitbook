@@ -1,3 +1,7 @@
+---
+description: 知识片段提示词的设置原因
+keywords: 知识片段, 用户体验, Chat AI SDK, AI智能体
+---
 # 为什么需要设置使用知识片段提示词？
 
 

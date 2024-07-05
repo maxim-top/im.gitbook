@@ -1,3 +1,7 @@
+---
+description: AI学习片段知识的prompt设置指南，明确目标、简洁具体、使用上下文、提供示例，优化学习体验。
+keywords: AI学习, prompt设置, IM SDK, IM云服务
+---
 # 如何设置prompt提示词方便AI学习片段知识？
 
 

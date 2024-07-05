@@ -1,3 +1,7 @@
+---
+description: 文档和文件格式介绍, 推荐阅读提示词。
+keywords: 企业知识库, 文档格式, PUSH SDK, RTC SDK
+---
 # 企业知识库支持哪些文档格式？
 
 

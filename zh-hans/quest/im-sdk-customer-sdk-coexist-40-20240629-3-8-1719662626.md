@@ -1,3 +1,7 @@
+---
+description: IM SDK与客服SDK共存提升用户体验、节省开发成本、增强数据整合能力。实施策略、最佳实践案例。FAQs。IM SDK和客服SDK可以通过集成实现哪些具体功能？选择合适IM SDK和客服SDK的标准是什么？企业如何确保IM SDK和客服SDK的集成效果？
+keywords: IM SDK, 客服SDK, 即时通讯SDK, 第三方推送
+---
 # IM SDK与客服SDK共存
 
 ## 摘要
