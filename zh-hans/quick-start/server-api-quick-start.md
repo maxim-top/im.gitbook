@@ -1,3 +1,7 @@
+---
+description: 服务端开发指南（API）入门 术语介绍 API概述 API分类 用户API 注册用户 好友API 添加好友 获取好友列表 群组API 创建群 邀请用户加群 获取群成员列表 解散群 发送消息API 管理员发送单聊文本消息 推送API 管理员发送推送通知 AI API 使用API上传知识库 附录 错误码说明
+keywords: 服务端, API, 即时通讯SDK, IM SDK
+---
 # 服务端开发指南（API）
 
 本页面供快速集成使用，了解更多请访问[详细文档](../reference/server-api/README.md)，或者直接访问 [Swagger页面](https://docs.lanyingim.com/reference/server-api/swagger/)。

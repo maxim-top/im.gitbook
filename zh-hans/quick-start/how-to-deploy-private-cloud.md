@@ -1,3 +1,7 @@
+---
+description: 私有云部署文档概述 创建应用 开通私有云服务 安装私有云 单机版 集群版 阿里云版 redis-server为redis的服务地址， redis-password为redis的密码 redis-cache-server为redis的服务地址， redis-cache-password为redis的密码 mysql-server为rds的服务地址， mysql-username为rds的用户名, mysql-password为rds的密码 kafka-server为kafka的服务地址，kafka-user为kafka的用户名， kafka-password为kafka的密码 file-storage-access-key-id为阿里云子账号ID file-storage-access-key-secret为阿里云子账号密码 file-storage-access-endpoint为阿里云接入点地址 file-storage-bucket-chat-file为阿里云OSS的bucket名字 file-storage-bucket-user-profile为阿里云OSS的bucket名字
+keywords: 私有云, 阿里云版, IM SDK, APP内聊天功能
+---
 # 私有云部署文档
 
 ## 概述

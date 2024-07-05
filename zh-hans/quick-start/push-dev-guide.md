@@ -1,3 +1,7 @@
+---
+description: 推送开发指南（PUSH） 推送 SDK 集成说明 SDK 架构 快速集成 高级调用形式 高级接口 设置监听 厂商推送集成
+keywords: 推送开发, PUSH, AI智能体, AI开源
+---
 # 推送开发指南（PUSH）
 
 注：如果您是IM开发者，请直接参照[IM开发文档](floo-android-quick-start.md)中的Push推送部分。

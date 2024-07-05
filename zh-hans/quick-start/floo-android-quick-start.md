@@ -1,3 +1,7 @@
+---
+description: 安卓客户端快速开发 Android SDK 集成说明 SDK 架构 导入SDK 权限配置 APP混淆 
+keywords: 安卓客户端, Android SDK, RTC SDK, 实时音视频
+---
 # 安卓客户端快速开发
 
 本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-android.md)
