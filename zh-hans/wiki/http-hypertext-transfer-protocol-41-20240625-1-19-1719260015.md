@@ -1,3 +1,7 @@
+---
+description: HTTP的基本概念、方法类型和状态码，以及安全版HTTP、实际应用场景与未来发展方向的探讨。
+keywords: HTTP, 基本概念, IM云服务, RTC SDK
+---
 # HTTP
 
 ## 摘要

@@ -1,3 +1,7 @@
+---
+description: Embedding嵌入的定义、基本原理、实际应用、技术实现和工业应用案例，展示未来发展趋势，讨论Embedding在工业界的广泛应用。
+keywords: Embedding嵌入, 基本原理, AI智能体, AI Agent
+---
 # Embedding嵌入
 
 

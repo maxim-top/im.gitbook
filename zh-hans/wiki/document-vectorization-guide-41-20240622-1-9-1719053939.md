@@ -1,3 +1,7 @@
+---
+description: 文档向量化工作原理和优缺点，Word2Vec, GloVe, FastText应用和优缺点。
+keywords: 文档向量化, Word2Vec, Chat AI SDK, AI Agent
+---
 # 文档向量化
 
 

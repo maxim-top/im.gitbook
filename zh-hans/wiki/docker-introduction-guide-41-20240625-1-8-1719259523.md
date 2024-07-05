@@ -1,3 +1,7 @@
+---
+description: Docker容器的概念、优势、核心组件、使用场景、实战指南和生态系统，与虚拟机对比和FAQs解答
+keywords: Docker, Docker优势, 即时通讯SDK, 虚拟现实与增强现实
+---
 # Docker
 
 ## **摘要**
