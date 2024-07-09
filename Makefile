@@ -6,4 +6,3 @@ refine:
 	mv _book/sitemap.xml _book/zh-hans/
 	rm -rf _book/scripts
 	mv _book/zh-hans/* _book/
-	cp _book/assets/favicon.ico _book/gitbook/images/favicon.ico

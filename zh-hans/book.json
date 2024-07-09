@@ -39,7 +39,7 @@
         "3-ba@^0.9.0",
         "ga4@^1.0.1",
         "lanying-grow-ai@^1.0.5",
-        "lanying-grow-ai-theme@^1.0.8",
+        "lanying-grow-ai-theme@^1.0.9",
         "lanying-grow-ai-expandable-chapters@^0.1.8",
         "lanying-grow-ai-image-captions@^3.1.1"
     ],
@@ -79,7 +79,8 @@
         },
         "favicon": {
             "shortcut": "/assets/favicon.ico",
-            "bookmark": "/assets/favicon.ico"
+            "bookmark": "/assets/favicon.ico",
+            "appleTouch": "/assets/apple-touch-icon.png"
         },
         "terminal": {
             "copyButtons": true,
