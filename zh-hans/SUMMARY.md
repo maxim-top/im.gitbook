@@ -277,7 +277,6 @@
     * [如何用AI Agent打造智能办公环境](news/how-to-create-smart-office-with-ai-agent-39-20240710-3-2-1720602042.md)
     * [AI Agent在汽车制造中的应用实例](news/ai-agent-in-auto-manufacturing-39-20240710-3-3-1720602098.md)
     * [AI Agent开发中的常见问题与解决方案](news/ai-agent-development-issues-solutions-39-20240710-3-4-1720602124.md)
-    * [ChatGLM搭建AI Agent的详细步骤](news/chatglm-ai-agent-steps-39-20240710-3-5-1720602176.md)
   * [20240710](news/20240710/README.md)
     * [AI Agent的生态系统及其发展趋势](news/ai-agent-ecosystem-trends-39-20240710-3-6-1720602227.md)
     * [AI Agent在健康医疗中的前沿应用](news/ai-agent-healthcare-applications-39-20240710-3-7-1720602275.md)
