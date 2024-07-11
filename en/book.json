@@ -39,7 +39,7 @@
         "lanying-grow-ai-meta@^0.1.16",
         "3-ba@^0.9.0",
         "ga4@^1.0.1",
-        "lanying-grow-ai@^1.0.5",
+        "lanying-grow-ai@^1.0.6",
         "lanying-grow-ai-theme@^1.0.9",
         "lanying-grow-ai-expandable-chapters@^0.1.8",
         "lanying-grow-ai-image-captions@^3.1.1"
@@ -191,6 +191,9 @@
             "tag": "G-HJZXZWNVFW"
         },
         "lanying-grow-ai": {
+            "friendship_links_prefix": "**友情链接：**",
+            "friendship_links": "[极客时间](https://time.geekbang.org/?utm_source=lanyingim&utm_medium=lanyingim&utm_campaign=lanyingim&utm_content=lanyingim&utm_term=lanyingim) | [InfoQ](https://www.infoq.cn/?utm_source=lanyingim&utm_medium=lanyingim&utm_campaign=lanyingim&utm_content=lanyingim&utm_term=lanyingim)",
+            "friendship_links_position": "homepage",
             "lanying_link": "https://lanying.link/3qur4g",
             "sitemap_hostname": "https://docs.lanyingim.com/",
             "sitemap_default_language": "zh-hans"
