@@ -191,9 +191,6 @@
             "tag": "G-HJZXZWNVFW"
         },
         "lanying-grow-ai": {
-            "friendship_links_prefix": "**友情链接：**",
-            "friendship_links": "[极客时间](https://time.geekbang.org/?utm_source=lanyingim&utm_medium=lanyingim&utm_campaign=lanyingim&utm_content=lanyingim&utm_term=lanyingim) | [InfoQ](https://www.infoq.cn/?utm_source=lanyingim&utm_medium=lanyingim&utm_campaign=lanyingim&utm_content=lanyingim&utm_term=lanyingim)",
-            "friendship_links_position": "homepage",
             "lanying_link": "https://lanying.link/3qur4g",
             "sitemap_hostname": "https://docs.lanyingim.com/",
             "sitemap_default_language": "zh-hans"
