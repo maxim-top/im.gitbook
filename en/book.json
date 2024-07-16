@@ -32,6 +32,7 @@
         "code@^0.1.0",
         "splitter@^0.0.8",
         "favicon@^0.0.2",
+        "canonical-link@^2.0.3",
         "auto-scroll-table@^0.0.5",
 
         "logo@^0.0.2",
@@ -140,6 +141,9 @@
             "isScrollspyActive": true,
             "visible": true,
             "label": "Contents"
+        },
+        "canonical-link": {
+            "baseURL": "https://docs.lanyingim.com/en"
         },
         "image-captions": {
             "caption": "_CAPTION_"
