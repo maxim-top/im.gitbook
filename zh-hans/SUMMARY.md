@@ -1249,7 +1249,6 @@
     * [百度文心一言在实际应用中的表现如何？](quest/baidu-wenxin-performance-40-20240720-1-2-1721419225.md)
     * [如何评估一个大模型是否适合自己的业务需求？](quest/how-to-evaluate-large-models-for-business-needs-40-20240720-1-3-1721419255.md)
     * [深度学习在大模型中的具体应用有哪些？](quest/deep-learning-applications-in-large-models-40-20240720-1-4-1721419279.md)
-    * [豆包服务的“lite”和“pro”版本适用于哪些场景？](quest/doubao-service-lite-pro-versions-40-20240720-1-5-1721419306.md)
     * [大模型的自然语言处理能力如何提升用户体验？](quest/large-model-nlp-user-experience-40-20240720-1-6-1721419323.md)
     * [选择大模型服务会对企业成本产生怎样影响？](quest/impact-of-large-model-services-on-enterprise-costs-40-20240720-1-7-1721419354.md)
     * [阿里的通义千问在理解复杂语境方面的能力如何？](quest/tongyi-qianwen-complex-context-understanding-40-20240720-1-8-1721419373.md)
