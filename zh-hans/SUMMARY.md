@@ -2841,6 +2841,7 @@
     * [高效计算的优势是什么？](quest/40_20240615_1_94_1718390024.md)
 * [百科](wiki/README.md)
   * [最新](wiki/latest/README.md)
+    * [多模态输入输出](wiki/multimodal-input-output-41-20240721-2-1-1721502000.md)
     * [Apple Intelligence](wiki/apple-intelligence-41-20240721-1-1-1721498400.md)
     * [生成式AI](wiki/generative-ai-41-20240720-6-1-1721494822.md)
     * [GPT-3.5-turbo](wiki/gpt-3-5-turbo-41-20240720-2-1-1721419200.md)
