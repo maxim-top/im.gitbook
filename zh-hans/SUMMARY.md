@@ -2785,6 +2785,7 @@
     * [高效计算的优势是什么？](quest/40_20240615_1_94_1718390024.md)
 * [百科](wiki/README.md)
   * [最新](wiki/latest/README.md)
+    * [生成式AI](wiki/generative-ai-41-20240720-6-1-1721494822.md)
     * [GPT-3.5-turbo](wiki/gpt-3-5-turbo-41-20240720-2-1-1721419200.md)
     * [GPT-4o-mini](wiki/gpt-4o-mini-41-20240720-1-1-1721418562.md)
     * [嵌入Embedding](wiki/embedding-technology-nlp-41-20240713-3-1-1720868400.md)
