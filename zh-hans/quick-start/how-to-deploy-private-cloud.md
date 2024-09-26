@@ -46,7 +46,7 @@ $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 
 * 操作系统：
 
-> Linux 推荐 Ubuntu 18.04 或 CentOS 7/8
+> Linux 推荐 Ubuntu 18.04
 
 > 树莓派 推荐 Ubuntu 18.04 rasp3 
 
@@ -111,10 +111,11 @@ sudo ./maxim.ctl install --net internal --token INSTALL_TOKEN
 提示：等待安装完成，耗时15分钟左右，即可安装完成。
 
 ### 集群版
-
 1.配置集群访问权限
 
 配置第一台主机对其余主机的ssh权限，以三台主机 172.16.0.78 、172.16.0.79 、172.16.0.80 为例。
+
+注意： 需要修改每台主机的hostname 分别为 node-1 node-2 node-3 ，也可使用其他类似的前缀。
 
 ssh登录master节点（172.16.0.78）
 
