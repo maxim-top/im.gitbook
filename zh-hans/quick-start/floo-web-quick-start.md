@@ -19,7 +19,7 @@ keywords: Web 前端, 消息发送, PUSH SDK, 第三方推送
 ## 前期准备
 
 1. 登录官网控制台，获取你的appid，并替换下文中 YOUR\_APP\_ID。
-2. 下载SDK [floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js)
+2. 下载SDK [floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js), 最新版SDK,请从此下载: [Web版 SDK](https://github.com/maxim-top/floo-web/releases),  [Uni-app版 SDK](https://github.com/maxim-top/floo-uniapp/releases)
 3. 音视频功能需本地开发环境中引入音视频功能运行依赖库如webrtc-adapter。参考蓝莺IM Web版package.json文件dependencies设置。然后使用npm或者yarn安装依赖包。
 
 ## 快速集成
