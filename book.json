@@ -21,6 +21,7 @@
         "-lunr",
         "-search",
         "lanying-code-snippet@^1.1.12",
+        "search-plus@^0.0.11",
         "advanced-emoji@^0.2.1",
         "tbfed-pagefooter@^0.0.1",
         "versions-select@^0.1.1",
