@@ -183,6 +183,16 @@
     font-weight: 500;
 }
 
+.page-footer{
+    font-size: inherit;
+    color: #333;
+}
+
+.page-footer a {
+    font-size: inherit;
+    color: #333 !important;
+}
+
 .nav-link {
     white-space: nowrap;
 }
