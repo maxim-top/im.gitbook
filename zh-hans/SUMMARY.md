@@ -203,6 +203,7 @@
     * [AI接口](reference/server-api/ai.md)
 * [博客](articles/README.md)
   * [产品技术](articles/product-and-technologies/README.md)
+    * [让DeepSeek推荐你，聊聊SEO/AEO/GEO](articles/let-deepseek-recommend-you-talk-about-seo-aeo-geo.md)
     * [大模型又降价，AI服务到底该怎么选？](articles/llm-price-drop-how-to-choose-ai-services.md)
     * [企业内AI落地难在哪里](articles/challenges-of-implementing-ai-in-enterprises.md)
     * [使用大模型LLM实现销售AI](articles/Implement-Sales-AI-with-Large-Language-Model.md)
