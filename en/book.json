@@ -13,7 +13,6 @@
         "readme": "README.md"
     },
     "plugins": [
-        "github-buttons@2.1.0",
         "edit-link@^2.0.2",
         "fontsettings@^2.0.0",
         "-sharing",
@@ -53,13 +52,6 @@
             "css": [
                 "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
             ]
-        },
-        "github-buttons": {
-            "repo": "maxim-top/im.gitbook",
-            "types": [
-                "star"
-            ],
-            "size": "small"
         },
         "include-codeblock": {
             "template": "ace",
