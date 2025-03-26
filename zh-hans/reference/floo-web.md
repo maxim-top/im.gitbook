@@ -1187,7 +1187,7 @@ token登录
 ```
 ## 常见问题
 
-1. 无法导入 flooim，提示
+1\. 无法导入 flooim，提示
 
 ```
 export 'flooim' was not found in '../im/floo-3.0.0'
@@ -1201,7 +1201,7 @@ module.exports = {
 };
 ```
 
-2. 找不到 long 模块，提示
+2\. 找不到 long 模块，提示
 
 ```
 module "third/long" is not defined
@@ -1213,7 +1213,7 @@ module "third/long" is not defined
 npm i -f
 ```
 
-3. vue3适配问题
+3\. vue3适配问题
 
 ```
 The requested module '/src/im/floo-3.0.0.js' does not provide an export named 'default'
