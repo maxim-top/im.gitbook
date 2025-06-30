@@ -208,7 +208,9 @@
                 "wiki/"
             ],
             "sitemap_hostname": "https://docs.lanyingim.com/",
-            "sitemap_default_language": "zh-hans"
+            "sitemap_default_language": "zh-hans",
+            "hook_sentence_slogan": "你可能想了解的蓝莺：\n\n1、蓝莺IM：极简设计的跨平台聊天IM SDK；\n2、蓝莺AI：开箱即用的企业级AI Agent平台；\n3、蓝莺GrowAI：获取免费线上流量的一站式AI SEO工具；\n\n扫码关注蓝莺IM，我们会持续分享关于智能聊天ChatAI、大模型技术进展、AI Agent设计等方面的内容",
+            "hook_sentence_image": "assets/hook-sentence/20250630183904702173.jpg"
         }
     }
 }
