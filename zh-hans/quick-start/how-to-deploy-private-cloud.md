@@ -46,7 +46,7 @@ $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 
 * 操作系统：
 
-> Linux 推荐 Ubuntu 18.04
+> Linux 推荐 Ubuntu 18.04 或 Ubuntu 20.04
 
 > 树莓派 推荐 Ubuntu 18.04 rasp3 
 
