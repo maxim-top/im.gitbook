@@ -1,0 +1,69 @@
+name: Quick Deploy release to doc site
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'release tag'
+        required: true
+
+jobs:
+  deploy_sub_site:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download book
+      run: |
+        wget https://github.com/${{ github.repository }}/releases/download/${{ github.event.inputs.release_tag }}/book.tar.gz
+        tar xzvf book.tar.gz
+
+    - name: Upload to OSS
+      uses: maxim-top/upload-to-oss@1.0.0
+      with:
+        # Use Access Key
+        access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        bucket: ${{ secrets.ALIYUN_OSS_BUCKET }}
+        endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+
+        # Upload the built website files in "dist" directory to remote "my-website/" prefix
+        local-path: _book
+        remote-path: /
+
+        # Upload ALL other files before uploading HTML files
+        delay-html-file-upload: true
+
+        # Prevent deleting missing remote files compared to local (defaults to `false`)
+        no-delete-remote-files: true
+
+        # Retry 5 times on failure of each OSS operation
+        retry: 5
+
+        concurrency: 50
+
+        # Use increment or not
+        increment: true
+
+
+    - name: CDN Refresh docs.lanyingim.com
+      uses: maxim-top/ali-cdn-refresh@1.0.0
+      with:
+          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          type: Directory
+          path: ${{ secrets.ALIYUN_CDN_PATH }}
+
+    - name: CDN Refresh www.chatai101.com
+      uses: maxim-top/ali-cdn-refresh@1.0.0
+      with:
+          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          type: Directory
+          path: "https://www.chatai101.com/"
+
+    - name: CDN Refresh chatai101.com
+      uses: maxim-top/ali-cdn-refresh@1.0.0
+      with:
+          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          type: Directory
+          path: "https://chatai101.com/"
