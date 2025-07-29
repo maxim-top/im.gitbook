@@ -8,7 +8,7 @@ on:
         required: true
 
 jobs:
-  deploy_sub_site:
+  quick_deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Download book
@@ -17,7 +17,7 @@ jobs:
         tar xzvf book.tar.gz
 
     - name: Upload to OSS
-      uses: maxim-top/upload-to-oss@1.0.0
+      uses: maxim-top/upload-to-oss@1.0.1
       with:
         # Use Access Key
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
