@@ -107,7 +107,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '18'
 
     - name: Upload to OSS
       uses: maxim-top/upload-to-oss@1.0.0

@@ -43,7 +43,7 @@ jobs:
         fi
 
     - name: Upload to OSS
-      uses: Menci/upload-to-oss@beta-v1
+      uses: maxim-top/upload-to-oss@1.0.0
       with:
         # Use Access Key
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
@@ -63,6 +63,8 @@ jobs:
 
         # Retry 5 times on failure of each OSS operation
         retry: 5
+
+        concurrency: 5
 
         # Use increment or not
         increment: true
