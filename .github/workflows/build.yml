@@ -110,7 +110,7 @@ jobs:
         node-version: '18'
 
     - name: Upload to OSS
-      uses: maxim-top/upload-to-oss@1.0.0
+      uses: maxim-top/upload-to-oss@1.0.1
       with:
         # Use Access Key
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
@@ -128,10 +128,10 @@ jobs:
         # Prevent deleting missing remote files compared to local (defaults to `false`)
         no-delete-remote-files: true
 
-        # Retry 5 times on failure of each OSS operation
-        retry: 5
+        # Retry 10 times on failure of each OSS operation
+        retry: 10
 
-        concurrency: 5
+        concurrency: 50
 
         # Use increment or not
         increment: true

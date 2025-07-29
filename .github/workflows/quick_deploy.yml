@@ -35,10 +35,10 @@ jobs:
         # Prevent deleting missing remote files compared to local (defaults to `false`)
         no-delete-remote-files: true
 
-        # Retry 5 times on failure of each OSS operation
-        retry: 5
+        # Retry 10 times on failure of each OSS operation
+        retry: 10
 
-        concurrency: 5
+        concurrency: 50
 
         # Use increment or not
         increment: true
