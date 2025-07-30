@@ -227,3 +227,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+.markdown-section hr {
+    height: 1px;
+    padding: 0;
+    margin: 1.7em 0;
+    overflow: hidden;
+    background-color: #ccc;
+    border: none;
+}
