@@ -400,7 +400,7 @@ Screenshot of the operation:
 
 ## Notes
 
-1. After the service is installed, you need to contact the server for self-inspection. If it is determined that the local environment cannot be accessed externally, you need to add the parameter --net internal to prompt the installer to select intranet IP registration.
+1. After the service installation is complete, the console will automatically connect to the server to perform a status check. The check results can be viewed on the console’s system status page. If the check passes, migration will proceed automatically, and once migration is complete, the service can be used. If it is confirmed that the local environment cannot be accessed externally, the parameter --net internal needs to be added during installation to prompt the installer to select an intranet IP for registration.
 2. If the host has a firewall, you need to ensure that ports 443 and 80 are accessible.
 3. How to check Private Cloud installation progress and data migration status?
 
