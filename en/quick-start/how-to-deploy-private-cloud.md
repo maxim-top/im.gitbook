@@ -46,7 +46,7 @@ Installation prerequisites
 
 * OS：
 
-> Linux: Ubuntu 18.04 or Ubuntu 20.04
+> Linux: Ubuntu 24.04
 
 > Raspberry Pie: Ubuntu 18.04 rasp3 recommended
 
