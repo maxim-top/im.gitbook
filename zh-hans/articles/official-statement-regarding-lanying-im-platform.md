@@ -12,7 +12,7 @@
 
 **唯一代表官方的客服APPID为：welovemaxim**，其他所有APPID均属于注册客户企业，由其独立运营并承担责任。
 
-![图片](../assets/articles/autogen-7ded1e5880509d07f765640cabae80cb331f92a976e2c79654e4a20b4ade1acf.webp)
+![](../assets/articles/autogen-7ded1e5880509d07f765640cabae80cb331f92a976e2c79654e4a20b4ade1acf.webp)
 
   
 
@@ -60,7 +60,7 @@
 > * 向我们举报，可将证据发送至：📧 jubao@maximtop.com，我们将在核实后对该企业账户采取冻结、下架等措施，并配合执法机关调查。
 >     
 
-**![图片](../assets/articles/autogen-55eec79ea4a1d18e25916dbaa8b583a622f72710a0f5961e67b1ea9e761db5f6.webp)**
+**![](../assets/articles/autogen-55eec79ea4a1d18e25916dbaa8b583a622f72710a0f5961e67b1ea9e761db5f6.webp)**
 
 **五、我们的态度与行动**
 
