@@ -203,6 +203,7 @@
     * [AI接口](reference/server-api/ai.md)
 * [博客](articles/README.md)
   * [产品技术](articles/product-and-technologies/README.md)
+    * [关于“蓝莺IM”平台的官方声明](articles/official-statement-regarding-lanying-im-platform.md)
     * [生成式AI时代的内容营销，再聊SEO/AEO](articles/generative-ai-era-content-marketing-revisiting-seo-aeo.md)
     * [让DeepSeek推荐你，聊聊SEO/AEO/GEO](articles/let-deepseek-recommend-you-talk-about-seo-aeo-geo.md)
     * [大模型又降价，AI服务到底该怎么选？](articles/llm-price-drop-how-to-choose-ai-services.md)
