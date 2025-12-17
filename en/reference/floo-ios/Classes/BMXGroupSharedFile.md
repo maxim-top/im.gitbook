@@ -1,7 +1,7 @@
 # BMXGroupSharedFile Class Reference
 
-  **Inherits from** NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,241 +9,311 @@
 
 ## Properties
 
-<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
-<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/getMCreateTime" title="getMCreateTime"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMCreateTime
 
 `- (long long)getMCreateTime`
 
-<a name="//api/name/getMDisplayName" title="getMDisplayName"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMCreateTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMDisplayName
 
 `- (NSString *)getMDisplayName`
 
-<a name="//api/name/getMFileId" title="getMFileId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMDisplayName" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMFileId
 
 `- (long long)getMFileId`
 
-<a name="//api/name/getMGroupId" title="getMGroupId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMFileId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMGroupId
 
 `- (long long)getMGroupId`
 
-<a name="//api/name/getMPath" title="getMPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMGroupId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMPath
 
 `- (NSString *)getMPath`
 
-<a name="//api/name/getMRatelUrl" title="getMRatelUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMRatelUrl
 
 `- (NSString *)getMRatelUrl`
 
-<a name="//api/name/getMSize" title="getMSize"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMRatelUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMSize
 
 `- (int)getMSize`
 
-<a name="//api/name/getMType" title="getMType"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMSize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMType
 
 `- (NSString *)getMType`
 
-<a name="//api/name/getMUpdateTime" title="getMUpdateTime"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMUpdateTime
 
 `- (long long)getMUpdateTime`
 
-<a name="//api/name/getMUploader" title="getMUploader"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMUpdateTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMUploader
 
 `- (long long)getMUploader`
 
-<a name="//api/name/getMUrl" title="getMUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMUploader" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### getMUrl
 
 `- (NSString *)getMUrl`
 
-<a name="//api/name/init" title="init"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="getMUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### init
 
 `- (id)init`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="init" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
-<a name="//api/name/setMCreateTime:" title="setMCreateTime:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMCreateTime:
 
 `- (void)setMCreateTime:(long long)*value*`
 
-<a name="//api/name/setMDisplayName:" title="setMDisplayName:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMCreateTime:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMDisplayName:
 
 `- (void)setMDisplayName:(NSString *)*value*`
 
-<a name="//api/name/setMFileId:" title="setMFileId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMDisplayName:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMFileId:
 
 `- (void)setMFileId:(long long)*value*`
 
-<a name="//api/name/setMGroupId:" title="setMGroupId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMFileId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMGroupId:
 
 `- (void)setMGroupId:(long long)*value*`
 
-<a name="//api/name/setMPath:" title="setMPath:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMGroupId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMPath:
 
 `- (void)setMPath:(NSString *)*value*`
 
-<a name="//api/name/setMRatelUrl:" title="setMRatelUrl:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMPath:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMRatelUrl:
 
 `- (void)setMRatelUrl:(NSString *)*value*`
 
-<a name="//api/name/setMSize:" title="setMSize:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMRatelUrl:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMSize:
 
 `- (void)setMSize:(int)*value*`
 
-<a name="//api/name/setMType:" title="setMType:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMSize:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMType:
 
 `- (void)setMType:(NSString *)*value*`
 
-<a name="//api/name/setMUpdateTime:" title="setMUpdateTime:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMType:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMUpdateTime:
 
 `- (void)setMUpdateTime:(long long)*value*`
 
-<a name="//api/name/setMUploader:" title="setMUploader:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMUpdateTime:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMUploader:
 
 `- (void)setMUploader:(long long)*value*`
 
-<a name="//api/name/setMUrl:" title="setMUrl:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMUploader:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
+
 ```
+
 ### setMUrl:
 
 `- (void)setMUrl:(NSString *)*value*`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupSharedFile",function="setMUrl:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupSharedFile'></div>
 ```

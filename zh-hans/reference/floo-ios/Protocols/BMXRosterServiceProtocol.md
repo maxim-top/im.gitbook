@@ -1,7 +1,7 @@
 # BMXRosterServiceProtocol Protocol Reference
 
-  **Conforms to** NSObject  
-  **Declared in** floo_proxy.h  
+**Conforms to** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,7 +9,6 @@
 
 ## Instance Methods
 
-<a name="//api/name/friendAddedSponsorId:recipientId:" title="friendAddedSponsorId:recipientId:"></a>
 ### friendAddedSponsorId:recipientId:
 
 添加好友
@@ -18,20 +17,24 @@
 
 #### Parameters
 
-*sponsorId*  
-   发起方  
+_sponsorId_\
+发起方
 
-*recipientId*  
-   接受方  
+_recipientId_\
+接受方
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendAddedtoBlockListSponsorId:recipientId:" title="friendAddedtoBlockListSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendAddedSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendAddedtoBlockListSponsorId:recipientId:
 
 添加黑名单
@@ -40,20 +43,24 @@
 
 #### Parameters
 
-*sponsorId*  
-   发起方  
+_sponsorId_\
+发起方
 
-*recipientId*  
-   接受方  
+_recipientId_\
+接受方
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendDidApplicationAcceptedFromSponsorId:recipientId:" title="friendDidApplicationAcceptedFromSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendAddedtoBlockListSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendDidApplicationAcceptedFromSponsorId:recipientId:
 
 加好友申请被通过了 用户B同意用户A的加好友请求后，用户A会收到这个回调
@@ -62,20 +69,24 @@
 
 #### Parameters
 
-*sponsorId*  
-   发起方  
+_sponsorId_\
+发起方
 
-*recipientId*  
-   接受方  
+_recipientId_\
+接受方
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendDidApplicationDeclinedFromSponsorId:recipientId:reson:" title="friendDidApplicationDeclinedFromSponsorId:recipientId:reson:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidApplicationAcceptedFromSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendDidApplicationDeclinedFromSponsorId:recipientId:reson:
 
 加好友申请被拒绝了 用户B拒绝用户A的加好友请求后，用户A会收到这个回调
@@ -84,23 +95,27 @@
 
 #### Parameters
 
-*sponsorId*  
-   发起方  
+_sponsorId_\
+发起方
 
-*recipientId*  
-   接受方  
+_recipientId_\
+接受方
 
-*reason*  
-   拒绝理由  
+_reason_\
+拒绝理由
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendDidRecivedAppliedSponsorId:recipientId:message:" title="friendDidRecivedAppliedSponsorId:recipientId:message:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidApplicationDeclinedFromSponsorId:recipientId:reson:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendDidRecivedAppliedSponsorId:recipientId:message:
 
 收到加好友申请 用户B申请加A为好友后，用户A会收到这个回调
@@ -109,23 +124,27 @@
 
 #### Parameters
 
-*sponsorId*  
-   发起方  
+_sponsorId_\
+发起方
 
-*recipientId*  
-   接受方  
+_recipientId_\
+接受方
 
-*message*  
-   好友邀请信息  
+_message_\
+好友邀请信息
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendRemovedFromBlockListSponsorId:recipientId:" title="friendRemovedFromBlockListSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidRecivedAppliedSponsorId:recipientId:message:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendRemovedFromBlockListSponsorId:recipientId:
 
 删除黑名单
@@ -134,20 +153,24 @@
 
 #### Parameters
 
-*sponsorId*  
-   发起方  
+_sponsorId_\
+发起方
 
-*recipientId*  
-   接受方  
+_recipientId_\
+接受方
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendRemovedSponsorId:recipientId:" title="friendRemovedSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendRemovedFromBlockListSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendRemovedSponsorId:recipientId:
 
 删除好友 用户B删除与用户A的好友关系后，用户A会收到这个回调
@@ -156,20 +179,24 @@
 
 #### Parameters
 
-*sponsorId*  
-   发起方  
+_sponsorId_\
+发起方
 
-*recipientId*  
-   接受方  
+_recipientId_\
+接受方
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/rosterInfoDidUpdate:" title="rosterInfoDidUpdate:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendRemovedSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### rosterInfoDidUpdate:
 
 用户信息更新
@@ -177,12 +204,16 @@
 `- (void)rosterInfoDidUpdate:(BMXRosterItem *)*roster*`
 
 #### Discussion
+
 用户信息更新
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="rosterInfoDidUpdate:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
 ```

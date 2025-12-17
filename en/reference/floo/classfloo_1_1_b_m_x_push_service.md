@@ -1,92 +1,86 @@
 ---
 title: floo::BMXPushService
-
 ---
 
 # floo::BMXPushService
 
-
-
-
-
 ## Public Types
 
-|                | Name           |
-| -------------- | -------------- |
-| enum class| **[PushSdkStatus](classfloo_1_1_b_m_x_push_service.md#enum-pushsdkstatus)** { Starting = 1, Started, Stoped, Offline}<br>push sdk state  |
-| enum class| **[PushDirection](classfloo_1_1_b_m_x_push_service.md#enum-pushdirection)** { Up, Down}<br>Search direction of local push message  |
+|            | Name                                                                                                                                                                   |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enum class | <p><a href="classfloo_1_1_b_m_x_push_service.md#enum-pushsdkstatus"><strong>PushSdkStatus</strong></a> { Starting = 1, Started, Stoped, Offline}<br>push sdk state</p> |
+| enum class | <p><a href="classfloo_1_1_b_m_x_push_service.md#enum-pushdirection"><strong>PushDirection</strong></a> { Up, Down}<br>Search direction of local push message</p>       |
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| virtual | **[~BMXPushService](classfloo_1_1_b_m_x_push_service.md#function-~bmxpushservice)**() |
-| virtual BMXErrorCode | **[start](classfloo_1_1_b_m_x_push_service.md#function-start)**(const std::string & alias ="", const std::string & bmxToken ="") =0<br>Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.  |
-| virtual BMXErrorCode | **[stop](classfloo_1_1_b_m_x_push_service.md#function-stop)**() =0<br>Shut push feature interface.  |
-| virtual BMXErrorCode | **[resume](classfloo_1_1_b_m_x_push_service.md#function-resume)**() =0<br>Resume push function.  |
-| virtual BMXErrorCode | **[unbindAlias](classfloo_1_1_b_m_x_push_service.md#function-unbindalias)**(const std::string & alias) =0<br>Unbind user alias.  |
-| virtual const std::string & | **[getToken](classfloo_1_1_b_m_x_push_service.md#function-gettoken)**() =0<br>Get user token to use after login.  |
-| virtual const std::string & | **[getCert](classfloo_1_1_b_m_x_push_service.md#function-getcert)**() =0<br>Get push certificate returned by server after login.  |
-| virtual [PushSdkStatus](classfloo_1_1_b_m_x_push_service.md#enum-pushsdkstatus) | **[status](classfloo_1_1_b_m_x_push_service.md#function-status)**() =0<br>Push the current state of sdk.  |
-| virtual BMXErrorCode | **[bindDeviceToken](classfloo_1_1_b_m_x_push_service.md#function-binddevicetoken)**(const std::string & token) =0<br>Push binding device token.  |
-| virtual BMXErrorCode | **[bindVoipToken](classfloo_1_1_b_m_x_push_service.md#function-bindvoiptoken)**(const std::string & token) =0<br>Bind voiptoken of push device  |
-| virtual BMXErrorCode | **[getPushProfile](classfloo_1_1_b_m_x_push_service.md#function-getpushprofile)**(BMXPushUserProfilePtr & pushProfile, bool forceRefresh) =0<br>Get push user details, force pull from server-side if forceRefresh == true  |
-| virtual BMXErrorCode | **[setTags](classfloo_1_1_b_m_x_push_service.md#function-settags)**(const std::vector< std::string > & tags, const std::string & operationId) =0<br>Set tags of push user.  |
-| virtual BMXErrorCode | **[getTags](classfloo_1_1_b_m_x_push_service.md#function-gettags)**(std::vector< std::string > & tags, const std::string & operationId) =0<br>Get tags of the push user.  |
-| virtual BMXErrorCode | **[deleteTags](classfloo_1_1_b_m_x_push_service.md#function-deletetags)**(const std::vector< std::string > & tags, const std::string & operationId) =0<br>Delete tags of the push user.  |
-| virtual BMXErrorCode | **[clearTags](classfloo_1_1_b_m_x_push_service.md#function-cleartags)**(const std::string & operationId) =0<br>Clear tags of the push user.  |
-| virtual BMXErrorCode | **[setBadge](classfloo_1_1_b_m_x_push_service.md#function-setbadge)**(int count) =0<br>Set unread badge for push user.  |
-| virtual BMXErrorCode | **[setPushMode](classfloo_1_1_b_m_x_push_service.md#function-setpushmode)**(bool enable =true) =0<br>Set push enabled state. Default enabled.  |
-| virtual BMXErrorCode | **[setPushTime](classfloo_1_1_b_m_x_push_service.md#function-setpushtime)**(int startHour, int endHour) =0<br>Set allowed push time.  |
-| virtual BMXErrorCode | **[setSilenceTime](classfloo_1_1_b_m_x_push_service.md#function-setsilencetime)**(int startHour, int endHour) =0<br>Set the start and end time of silent push.  |
-| virtual BMXErrorCode | **[setRunBackgroundMode](classfloo_1_1_b_m_x_push_service.md#function-setrunbackgroundmode)**(bool enable =false) =0<br>Set whether to run push in background, default false.  |
-| virtual BMXErrorCode | **[setGeoFenceMode](classfloo_1_1_b_m_x_push_service.md#function-setgeofencemode)**(bool enable =false, bool isAllow =false) =0<br>Set whether to run push geo-fencing feature.  |
-| virtual void | **[clearNotification](classfloo_1_1_b_m_x_push_service.md#function-clearnotification)**(int64_t notificationId) =0<br>Clear notifications for the specified id.  |
-| virtual void | **[clearAllNotifications](classfloo_1_1_b_m_x_push_service.md#function-clearallnotifications)**() =0<br>Empty the drop-down notification bar for all notifications.  |
-| virtual void | **[sendMessage](classfloo_1_1_b_m_x_push_service.md#function-sendmessage)**(const std::string & content) =0<br>Send a push uplink message and notify the listener of a change in message status  |
-| virtual BMXErrorCode | **[loadLocalPushMessages](classfloo_1_1_b_m_x_push_service.md#function-loadlocalpushmessages)**(int64_t refMsgId, size_t size, BMXMessageList & result, [PushDirection](classfloo_1_1_b_m_x_push_service.md#enum-pushdirection)  =[PushDirection::Up](classfloo_1_1_b_m_x_push_service.md#enumvalue-up)) =0<br>Load push message stored in local database. Start with latest message if not specified  |
-| virtual void | **[addPushListener](classfloo_1_1_b_m_x_push_service.md#function-addpushlistener)**([BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md) * listener) =0<br>Add push listener  |
-| virtual void | **[removePushListener](classfloo_1_1_b_m_x_push_service.md#function-removepushlistener)**([BMXPushServiceListener](classfloo_1_1_b_m_x_push_service_listener.md) * listener) =0<br>Remove push listener  |
+|                                                                                 | Name                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtual                                                                         | [**\~BMXPushService**](classfloo_1_1_b_m_x_push_service.md#function-~bmxpushservice)()                                                                                                                                                                                                                                                                                                                                                                         |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-start"><strong>start</strong></a>(const std::string &#x26; alias ="", const std::string &#x26; bmxToken ="") =0<br>Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.</p>            |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-stop"><strong>stop</strong></a>() =0<br>Shut push feature interface.</p>                                                                                                                                                                                                                                                                                                                              |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-resume"><strong>resume</strong></a>() =0<br>Resume push function.</p>                                                                                                                                                                                                                                                                                                                                 |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-unbindalias"><strong>unbindAlias</strong></a>(const std::string &#x26; alias) =0<br>Unbind user alias.</p>                                                                                                                                                                                                                                                                                            |
+| virtual const std::string &                                                     | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-gettoken"><strong>getToken</strong></a>() =0<br>Get user token to use after login.</p>                                                                                                                                                                                                                                                                                                                |
+| virtual const std::string &                                                     | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-getcert"><strong>getCert</strong></a>() =0<br>Get push certificate returned by server after login.</p>                                                                                                                                                                                                                                                                                                |
+| virtual [PushSdkStatus](classfloo_1_1_b_m_x_push_service.md#enum-pushsdkstatus) | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-status"><strong>status</strong></a>() =0<br>Push the current state of sdk.</p>                                                                                                                                                                                                                                                                                                                        |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-binddevicetoken"><strong>bindDeviceToken</strong></a>(const std::string &#x26; token) =0<br>Push binding device token.</p>                                                                                                                                                                                                                                                                            |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-bindvoiptoken"><strong>bindVoipToken</strong></a>(const std::string &#x26; token) =0<br>Bind voiptoken of push device</p>                                                                                                                                                                                                                                                                             |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-getpushprofile"><strong>getPushProfile</strong></a>(BMXPushUserProfilePtr &#x26; pushProfile, bool forceRefresh) =0<br>Get push user details, force pull from server-side if forceRefresh == true</p>                                                                                                                                                                                                 |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-settags"><strong>setTags</strong></a>(const std::vector&#x3C; std::string > &#x26; tags, const std::string &#x26; operationId) =0<br>Set tags of push user.</p>                                                                                                                                                                                                                                       |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-gettags"><strong>getTags</strong></a>(std::vector&#x3C; std::string > &#x26; tags, const std::string &#x26; operationId) =0<br>Get tags of the push user.</p>                                                                                                                                                                                                                                         |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-deletetags"><strong>deleteTags</strong></a>(const std::vector&#x3C; std::string > &#x26; tags, const std::string &#x26; operationId) =0<br>Delete tags of the push user.</p>                                                                                                                                                                                                                          |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-cleartags"><strong>clearTags</strong></a>(const std::string &#x26; operationId) =0<br>Clear tags of the push user.</p>                                                                                                                                                                                                                                                                                |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-setbadge"><strong>setBadge</strong></a>(int count) =0<br>Set unread badge for push user.</p>                                                                                                                                                                                                                                                                                                          |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-setpushmode"><strong>setPushMode</strong></a>(bool enable =true) =0<br>Set push enabled state. Default enabled.</p>                                                                                                                                                                                                                                                                                   |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-setpushtime"><strong>setPushTime</strong></a>(int startHour, int endHour) =0<br>Set allowed push time.</p>                                                                                                                                                                                                                                                                                            |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-setsilencetime"><strong>setSilenceTime</strong></a>(int startHour, int endHour) =0<br>Set the start and end time of silent push.</p>                                                                                                                                                                                                                                                                  |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-setrunbackgroundmode"><strong>setRunBackgroundMode</strong></a>(bool enable =false) =0<br>Set whether to run push in background, default false.</p>                                                                                                                                                                                                                                                   |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-setgeofencemode"><strong>setGeoFenceMode</strong></a>(bool enable =false, bool isAllow =false) =0<br>Set whether to run push geo-fencing feature.</p>                                                                                                                                                                                                                                                 |
+| virtual void                                                                    | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-clearnotification"><strong>clearNotification</strong></a>(int64_t notificationId) =0<br>Clear notifications for the specified id.</p>                                                                                                                                                                                                                                                                 |
+| virtual void                                                                    | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-clearallnotifications"><strong>clearAllNotifications</strong></a>() =0<br>Empty the drop-down notification bar for all notifications.</p>                                                                                                                                                                                                                                                             |
+| virtual void                                                                    | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-sendmessage"><strong>sendMessage</strong></a>(const std::string &#x26; content) =0<br>Send a push uplink message and notify the listener of a change in message status</p>                                                                                                                                                                                                                            |
+| virtual BMXErrorCode                                                            | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-loadlocalpushmessages"><strong>loadLocalPushMessages</strong></a>(int64_t refMsgId, size_t size, BMXMessageList &#x26; result, <a href="classfloo_1_1_b_m_x_push_service.md#enum-pushdirection">PushDirection</a> =<a href="classfloo_1_1_b_m_x_push_service.md#enumvalue-up">PushDirection::Up</a>) =0<br>Load push message stored in local database. Start with latest message if not specified</p> |
+| virtual void                                                                    | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-addpushlistener"><strong>addPushListener</strong></a>(<a href="classfloo_1_1_b_m_x_push_service_listener.md">BMXPushServiceListener</a> * listener) =0<br>Add push listener</p>                                                                                                                                                                                                                       |
+| virtual void                                                                    | <p><a href="classfloo_1_1_b_m_x_push_service.md#function-removepushlistener"><strong>removePushListener</strong></a>(<a href="classfloo_1_1_b_m_x_push_service_listener.md">BMXPushServiceListener</a> * listener) =0<br>Remove push listener</p>                                                                                                                                                                                                              |
 
 ## Public Types Documentation
 
 ### enum PushSdkStatus
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Starting | 1| Starting   |
-| Started | | Started, online   |
-| Stoped | | Stop   |
-| Offline | | Offline   |
+| Enumerator | Value | Description     |
+| ---------- | ----- | --------------- |
+| Starting   | 1     | Starting        |
+| Started    |       | Started, online |
+| Stoped     |       | Stop            |
+| Offline    |       | Offline         |
 
-
-
-push sdk state 
+push sdk state
 
 ### enum PushDirection
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Up | | Fetch older message   |
-| Down | | Fetch newer message   |
+| Enumerator | Value | Description         |
+| ---------- | ----- | ------------------- |
+| Up         |       | Fetch older message |
+| Down       |       | Fetch newer message |
 
-
-
-Search direction of local push message 
+Search direction of local push message
 
 ## Public Functions Documentation
 
-### function ~BMXPushService
+### function \~BMXPushService
 
 ```cpp
 inline virtual ~BMXPushService()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="~BMXPushService" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function start
 
 ```cpp
@@ -96,48 +90,59 @@ virtual BMXErrorCode start(
 ) =0
 ```
 
-Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id. 
+Initialize push sdk. Use this interface to initialize the push sdk in the case of using push only. When using IM features at the same time, call login function directly in BMXClient. The config object initializes by passing in the platform type and device id.
 
-**Parameters**: 
+**Parameters**:
 
-  * **alias** Current user alias used for push initialization 
-  * **bmxToken** User token to use that passed in by App when push initialization, and no passing in is OK without users. 
+* **alias** Current user alias used for push initialization
+* **bmxToken** User token to use that passed in by App when push initialization, and no passing in is OK without users.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="start" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function stop
 
 ```cpp
 virtual BMXErrorCode stop() =0
 ```
 
-Shut push feature interface. 
+Shut push feature interface.
 
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="stop" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function resume
 
 ```cpp
 virtual BMXErrorCode resume() =0
 ```
 
-Resume push function. 
+Resume push function.
 
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="resume" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function unbindAlias
 
 ```cpp
@@ -146,61 +151,76 @@ virtual BMXErrorCode unbindAlias(
 ) =0
 ```
 
-Unbind user alias. 
+Unbind user alias.
 
-**Parameters**: 
+**Parameters**:
 
-  * **alias** The user alias that needs to be unbound. 
+* **alias** The user alias that needs to be unbound.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="unbindAlias" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function getToken
 
 ```cpp
 virtual const std::string & getToken() =0
 ```
 
-Get user token to use after login. 
+Get user token to use after login.
 
-**Return**: std::stirng 
+**Return**: std::stirng
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getToken" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function getCert
 
 ```cpp
 virtual const std::string & getCert() =0
 ```
 
-Get push certificate returned by server after login. 
+Get push certificate returned by server after login.
 
-**Return**: std::stirng 
+**Return**: std::stirng
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getCert" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function status
 
 ```cpp
 virtual PushSdkStatus status() =0
 ```
 
-Push the current state of sdk. 
+Push the current state of sdk.
 
-**Return**: PushSdkStatus 
+**Return**: PushSdkStatus
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="status" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function bindDeviceToken
 
 ```cpp
@@ -209,19 +229,22 @@ virtual BMXErrorCode bindDeviceToken(
 ) =0
 ```
 
-Push binding device token. 
+Push binding device token.
 
-**Parameters**: 
+**Parameters**:
 
-  * **token** Device push token 
+* **token** Device push token
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="bindDeviceToken" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function bindVoipToken
 
 ```cpp
@@ -230,19 +253,22 @@ virtual BMXErrorCode bindVoipToken(
 ) =0
 ```
 
-Bind voiptoken of push device 
+Bind voiptoken of push device
 
-**Parameters**: 
+**Parameters**:
 
-  * **token** Device voip push token 
+* **token** Device voip push token
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="bindVoipToken" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function getPushProfile
 
 ```cpp
@@ -252,20 +278,23 @@ virtual BMXErrorCode getPushProfile(
 ) =0
 ```
 
-Get push user details, force pull from server-side if forceRefresh == true 
+Get push user details, force pull from server-side if forceRefresh == true
 
-**Parameters**: 
+**Parameters**:
 
-  * **profile** Push user profile information, initially passing in a pointing-to-empty shared_ptr object, fetch the user profile information here after function returned. 
-  * **forceRefresh** Whether to force pull from server, automatically if local fetch failed 
+* **profile** Push user profile information, initially passing in a pointing-to-empty shared\_ptr object, fetch the user profile information here after function returned.
+* **forceRefresh** Whether to force pull from server, automatically if local fetch failed
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getPushProfile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function setTags
 
 ```cpp
@@ -275,20 +304,23 @@ virtual BMXErrorCode setTags(
 ) =0
 ```
 
-Set tags of push user. 
+Set tags of push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** User tag 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
+* **tags** User tag
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function getTags
 
 ```cpp
@@ -298,20 +330,23 @@ virtual BMXErrorCode getTags(
 ) =0
 ```
 
-Get tags of the push user. 
+Get tags of the push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** User tag 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
+* **tags** User tag
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="getTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function deleteTags
 
 ```cpp
@@ -321,20 +356,23 @@ virtual BMXErrorCode deleteTags(
 ) =0
 ```
 
-Delete tags of the push user. 
+Delete tags of the push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** User tag to delete 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
+* **tags** User tag to delete
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="deleteTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function clearTags
 
 ```cpp
@@ -343,19 +381,22 @@ virtual BMXErrorCode clearTags(
 ) =0
 ```
 
-Clear tags of the push user. 
+Clear tags of the push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **operationId** Operation id. Corresponding notification reminder in callback notification. 
+* **operationId** Operation id. Corresponding notification reminder in callback notification.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function setBadge
 
 ```cpp
@@ -364,19 +405,22 @@ virtual BMXErrorCode setBadge(
 ) =0
 ```
 
-Set unread badge for push user. 
+Set unread badge for push user.
 
-**Parameters**: 
+**Parameters**:
 
-  * **count** Unread badge count of user 
+* **count** Unread badge count of user
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setBadge" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function setPushMode
 
 ```cpp
@@ -385,19 +429,22 @@ virtual BMXErrorCode setPushMode(
 ) =0
 ```
 
-Set push enabled state. Default enabled. 
+Set push enabled state. Default enabled.
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** Enabled state of push 
+* **enable** Enabled state of push
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setPushMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function setPushTime
 
 ```cpp
@@ -407,20 +454,23 @@ virtual BMXErrorCode setPushTime(
 ) =0
 ```
 
-Set allowed push time. 
+Set allowed push time.
 
-**Parameters**: 
+**Parameters**:
 
-  * **startHour** Start time for allowed silent push (hour) 
-  * **endHour** End time for allowed silent push (hour) 
+* **startHour** Start time for allowed silent push (hour)
+* **endHour** End time for allowed silent push (hour)
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setPushTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function setSilenceTime
 
 ```cpp
@@ -430,20 +480,23 @@ virtual BMXErrorCode setSilenceTime(
 ) =0
 ```
 
-Set the start and end time of silent push. 
+Set the start and end time of silent push.
 
-**Parameters**: 
+**Parameters**:
 
-  * **startHour** Start time for silent push (hour) 
-  * **endHour** End time for silent push (hour) 
+* **startHour** Start time for silent push (hour)
+* **endHour** End time for silent push (hour)
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setSilenceTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function setRunBackgroundMode
 
 ```cpp
@@ -452,19 +505,22 @@ virtual BMXErrorCode setRunBackgroundMode(
 ) =0
 ```
 
-Set whether to run push in background, default false. 
+Set whether to run push in background, default false.
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** Running state of push background 
+* **enable** Running state of push background
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function setGeoFenceMode
 
 ```cpp
@@ -474,20 +530,23 @@ virtual BMXErrorCode setGeoFenceMode(
 ) =0
 ```
 
-Set whether to run push geo-fencing feature. 
+Set whether to run push geo-fencing feature.
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** Whether the geo-fencing function is running. 
-  * **isAllow** Whether the user actively pops up a user location request. 
+* **enable** Whether the geo-fencing function is running.
+* **isAllow** Whether the user actively pops up a user location request.
 
-
-**Return**: BMXErrorCode 
+**Return**: BMXErrorCode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function clearNotification
 
 ```cpp
@@ -496,29 +555,36 @@ virtual void clearNotification(
 ) =0
 ```
 
-Clear notifications for the specified id. 
+Clear notifications for the specified id.
 
-**Parameters**: 
+**Parameters**:
 
-  * **notificationId** Notification id 
-
+* **notificationId** Notification id
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearNotification" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function clearAllNotifications
 
 ```cpp
 virtual void clearAllNotifications() =0
 ```
 
-Empty the drop-down notification bar for all notifications. 
+Empty the drop-down notification bar for all notifications.
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function sendMessage
 
 ```cpp
@@ -527,17 +593,20 @@ virtual void sendMessage(
 ) =0
 ```
 
-Send a push uplink message and notify the listener of a change in message status 
+Send a push uplink message and notify the listener of a change in message status
 
-**Parameters**: 
+**Parameters**:
 
-  * **content** Sent uplink push content 
-
+* **content** Sent uplink push content
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="sendMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function loadLocalPushMessages
 
 ```cpp
@@ -549,20 +618,23 @@ virtual BMXErrorCode loadLocalPushMessages(
 ) =0
 ```
 
-Load push message stored in local database. Start with latest message if not specified 
+Load push message stored in local database. Start with latest message if not specified
 
-**Parameters**: 
+**Parameters**:
 
-  * **refMsgId** Start id for loading pushes 
-  * **size** Maximum number of searched messages 
-  * **result** List of loaded local pushes returned by database 
-  * **Direction** Direction of loading pushes, default to load earlier messages 
-
+* **refMsgId** Start id for loading pushes
+* **size** Maximum number of searched messages
+* **result** List of loaded local pushes returned by database
+* **Direction** Direction of loading pushes, default to load earlier messages
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function addPushListener
 
 ```cpp
@@ -571,17 +643,20 @@ virtual void addPushListener(
 ) =0
 ```
 
-Add push listener 
+Add push listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Push listener 
-
+* **listener** Push listener
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="addPushListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
+
 ```
+
 ### function removePushListener
 
 ```cpp
@@ -590,17 +665,19 @@ virtual void removePushListener(
 ) =0
 ```
 
-Remove push listener 
+Remove push listener
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** Push listener 
-
+* **listener** Push listener
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushService",function="removePushListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushService'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:20:40 +0800

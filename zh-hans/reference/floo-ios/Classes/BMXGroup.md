@@ -1,8 +1,8 @@
 # BMXGroup Class Reference
 
-  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -10,7 +10,6 @@ NSObject
 
 ## Instance Methods
 
-<a name="//api/name/adminsCount" title="adminsCount"></a>
 ### adminsCount
 
 群管理员数量
@@ -18,16 +17,21 @@ NSObject
 `- (int)adminsCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarPath" title="avatarPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="adminsCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### avatarPath
 
 群头像下载后的本地路径
@@ -35,16 +39,21 @@ int
 `- (NSString *)avatarPath`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarRatelUrl" title="avatarRatelUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### avatarRatelUrl
 
 群头像Ratel服务器Url
@@ -52,16 +61,21 @@ NSString
 `- (NSString *)avatarRatelUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### avatarThumbnailPath
 
 群头像缩略图下载后的本地路径
@@ -69,16 +83,21 @@ NSString
 `- (NSString *)avatarThumbnailPath`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarThumbnailUrl" title="avatarThumbnailUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### avatarThumbnailUrl
 
 群头像缩略图服务器Url
@@ -86,16 +105,21 @@ NSString
 `- (NSString *)avatarThumbnailUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarUrl" title="avatarUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### avatarUrl
 
 群头像服务器Url
@@ -103,16 +127,21 @@ NSString
 `- (NSString *)avatarUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/banExpireTime" title="banExpireTime"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="avatarUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### banExpireTime
 
 群组全员禁言到期时间
@@ -120,16 +149,21 @@ NSString
 `- (long long)banExpireTime`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/bannedListSize" title="bannedListSize"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="banExpireTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### bannedListSize
 
 禁言数量
@@ -137,16 +171,21 @@ long long
 `- (int)bannedListSize`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/blockListSize" title="blockListSize"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="bannedListSize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### blockListSize
 
 黑名单数量
@@ -154,16 +193,21 @@ int
 `- (int)blockListSize`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/capacity" title="capacity"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="blockListSize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### capacity
 
 最大人数
@@ -171,16 +215,21 @@ int
 `- (int)capacity`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createTime" title="createTime"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="capacity" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### createTime
 
 群创建时间
@@ -188,25 +237,33 @@ int
 `- (long long)createTime`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="createTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/description" title="description"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### description
 
 群描述
@@ -214,16 +271,21 @@ long long
 `- (NSString *)description`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/enableReadAck" title="enableReadAck"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="description" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### enableReadAck
 
 是否开启群消息已读功能
@@ -231,16 +293,21 @@ NSString
 `- (BOOL)enableReadAck`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/extension" title="extension"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="enableReadAck" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### extension
 
 群扩展信息
@@ -248,16 +315,21 @@ BOOL
 `- (NSString *)extension`
 
 #### Return Value
+
 JSON(std::string)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupId" title="groupId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="extension" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### groupId
 
 群Id
@@ -265,16 +337,21 @@ JSON(std::string)
 `- (long long)groupId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupStatus" title="groupStatus"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="groupId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### groupStatus
 
 当前群组的状态。（Normal 正常， Destroyed 以销毁）
@@ -282,16 +359,21 @@ long long
 `- (BMXGroup_GroupStatus)groupStatus`
 
 #### Return Value
-<a href="../Constants/BMXGroup_GroupStatus.md">BMXGroup_GroupStatus</a>
+
+[BMXGroup\_GroupStatus](../Constants/BMXGroup_GroupStatus.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupType" title="groupType"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="groupStatus" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### groupType
 
 当前群组的群组类型（Private 私有群组，Public 公开群组，Chatroom 聊天室）
@@ -299,16 +381,21 @@ long long
 `- (BMXGroup_GroupType)groupType`
 
 #### Return Value
-<a href="../Constants/BMXGroup_GroupType.md">BMXGroup_GroupType</a>
+
+[BMXGroup\_GroupType](../Constants/BMXGroup_GroupType.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/historyVisible" title="historyVisible"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="groupType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### historyVisible
 
 是否可以加载显示历史聊天记录
@@ -316,16 +403,21 @@ long long
 `- (BOOL)historyVisible`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/inviteMode" title="inviteMode"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="historyVisible" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### inviteMode
 
 入群邀请模式
@@ -333,16 +425,21 @@ BOOL
 `- (BMXGroup_InviteMode)inviteMode`
 
 #### Return Value
-<a href="../Constants/BMXGroup_InviteMode.md">BMXGroup_InviteMode</a>
+
+[BMXGroup\_InviteMode](../Constants/BMXGroup_InviteMode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isMember" title="isMember"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="inviteMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### isMember
 
 当前用户是否是群成员
@@ -350,19 +447,25 @@ BOOL
 `- (BOOL)isMember`
 
 #### Return Value
+
 BOOL
 
 #### Discussion
-Deprecated use <a href="#//api/name/roleType">roleType</a> instead.
+
+Deprecated use [roleType](BMXGroup.md#//api/name/roleType) instead.
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/joinAuthMode" title="joinAuthMode"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="isMember" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### joinAuthMode
 
 入群审批模式
@@ -370,16 +473,21 @@ Deprecated use <a href="#//api/name/roleType">roleType</a> instead.
 `- (BMXGroup_JoinAuthMode)joinAuthMode`
 
 #### Return Value
-<a href="../Constants/BMXGroup_JoinAuthMode.md">BMXGroup_JoinAuthMode</a>
+
+[BMXGroup\_JoinAuthMode](../Constants/BMXGroup_JoinAuthMode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/latestAnnouncementId" title="latestAnnouncementId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="joinAuthMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### latestAnnouncementId
 
 最新群公告id
@@ -387,16 +495,21 @@ Deprecated use <a href="#//api/name/roleType">roleType</a> instead.
 `- (long long)latestAnnouncementId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/membersCount" title="membersCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="latestAnnouncementId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### membersCount
 
 群成员数量，包含Owner，admins 和members
@@ -404,16 +517,21 @@ long long
 `- (int)membersCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/modifyMode" title="modifyMode"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="membersCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### modifyMode
 
 群信息修改模式
@@ -421,16 +539,21 @@ int
 `- (BMXGroup_ModifyMode)modifyMode`
 
 #### Return Value
-<a href="../Constants/BMXGroup_ModifyMode.md">BMXGroup_ModifyMode</a>
+
+[BMXGroup\_ModifyMode](../Constants/BMXGroup_ModifyMode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/msgMuteMode" title="msgMuteMode"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="modifyMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### msgMuteMode
 
 群消息屏蔽模式
@@ -438,16 +561,21 @@ int
 `- (BMXGroup_MsgMuteMode)msgMuteMode`
 
 #### Return Value
-<a href="../Constants/BMXGroup_MsgMuteMode.md">BMXGroup_MsgMuteMode</a>
+
+[BMXGroup\_MsgMuteMode](../Constants/BMXGroup_MsgMuteMode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/msgPushMode" title="msgPushMode"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="msgMuteMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### msgPushMode
 
 群消息通知类型
@@ -455,16 +583,21 @@ int
 `- (BMXGroup_MsgPushMode)msgPushMode`
 
 #### Return Value
+
 MsgPushMode
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/myNickname" title="myNickname"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="msgPushMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### myNickname
 
 在群里的昵称
@@ -472,16 +605,21 @@ MsgPushMode
 `- (NSString *)myNickname`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/name" title="name"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="myNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### name
 
 群名称
@@ -489,16 +627,21 @@ NSString
 `- (NSString *)name`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/ownerId" title="ownerId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="name" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### ownerId
 
 群Owner
@@ -506,16 +649,21 @@ NSString
 `- (long long)ownerId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/roleType" title="roleType"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="ownerId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### roleType
 
 成员在群组内的角色类型
@@ -523,16 +671,21 @@ long long
 `- (BMXGroup_MemberRoleType)roleType`
 
 #### Return Value
-<a href="../Constants/BMXGroup_MemberRoleType.md">BMXGroup_MemberRoleType</a>
+
+[BMXGroup\_MemberRoleType](../Constants/BMXGroup_MemberRoleType.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/sharedFilesCount" title="sharedFilesCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="roleType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
+
 ```
+
 ### sharedFilesCount
 
 群共享文件数量
@@ -540,12 +693,16 @@ long long
 `- (int)sharedFilesCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroup",function="sharedFilesCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroup'></div>
 ```

@@ -1,7 +1,7 @@
 # BMXStream Class Reference
 
-  **Inherits from** NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,187 +9,239 @@
 
 ## Properties
 
-<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
-<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/getMEnableAudio" title="getMEnableAudio"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMEnableAudio
 
 `- (BOOL)getMEnableAudio`
 
-<a name="//api/name/getMEnableData" title="getMEnableData"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMEnableAudio" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMEnableData
 
 `- (BOOL)getMEnableData`
 
-<a name="//api/name/getMEnableVideo" title="getMEnableVideo"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMEnableData" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMEnableVideo
 
 `- (BOOL)getMEnableVideo`
 
-<a name="//api/name/getMMediaType" title="getMMediaType"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMEnableVideo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMMediaType
 
 `- (BMXVideoMediaType)getMMediaType`
 
-<a name="//api/name/getMMuteAudio" title="getMMuteAudio"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMMediaType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMMuteAudio
 
 `- (BOOL)getMMuteAudio`
 
-<a name="//api/name/getMMuteVideo" title="getMMuteVideo"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMMuteAudio" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMMuteVideo
 
 `- (BOOL)getMMuteVideo`
 
-<a name="//api/name/getMStreamId" title="getMStreamId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMMuteVideo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMStreamId
 
 `- (NSString *)getMStreamId`
 
-<a name="//api/name/getMUserId" title="getMUserId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMStreamId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### getMUserId
 
 `- (long long)getMUserId`
 
-<a name="//api/name/init" title="init"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="getMUserId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### init
 
 `- (id)init`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="init" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
-<a name="//api/name/setMEnableAudio:" title="setMEnableAudio:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMEnableAudio:
 
 `- (void)setMEnableAudio:(BOOL)*value*`
 
-<a name="//api/name/setMEnableData:" title="setMEnableData:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMEnableAudio:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMEnableData:
 
 `- (void)setMEnableData:(BOOL)*value*`
 
-<a name="//api/name/setMEnableVideo:" title="setMEnableVideo:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMEnableData:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMEnableVideo:
 
 `- (void)setMEnableVideo:(BOOL)*value*`
 
-<a name="//api/name/setMMediaType:" title="setMMediaType:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMEnableVideo:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMMediaType:
 
 `- (void)setMMediaType:(BMXVideoMediaType)*value*`
 
-<a name="//api/name/setMMuteAudio:" title="setMMuteAudio:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMMediaType:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMMuteAudio:
 
 `- (void)setMMuteAudio:(BOOL)*value*`
 
-<a name="//api/name/setMMuteVideo:" title="setMMuteVideo:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMMuteAudio:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMMuteVideo:
 
 `- (void)setMMuteVideo:(BOOL)*value*`
 
-<a name="//api/name/setMStreamId:" title="setMStreamId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMMuteVideo:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMStreamId:
 
 `- (void)setMStreamId:(NSString *)*value*`
 
-<a name="//api/name/setMUserId:" title="setMUserId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMStreamId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
+
 ```
+
 ### setMUserId:
 
 `- (void)setMUserId:(long long)*value*`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXStream",function="setMUserId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXStream'></div>
 ```

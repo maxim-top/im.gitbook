@@ -1,53 +1,50 @@
 ---
 title: im::floo::floolib::BMXPushManager
-summary: 推送管理器 
-
+summary: 推送管理器
 ---
 
 # im::floo::floolib::BMXPushManager
 
-
-
-推送管理器 
+推送管理器
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXPushManager](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-bmxpushmanager)**([BMXPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md) service) |
-| void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final String alias, final String bmxToken, final BMXCallBack callBack)<br>初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。  |
-| void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final String alias, final BMXCallBack callBack) |
-| void | **[start](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)**(final BMXCallBack callBack) |
-| void | **[stop](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-stop)**(final BMXCallBack callBack)<br>停止推送功能接口。  |
-| void | **[resume](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-resume)**(final BMXCallBack callBack)<br>恢复推送功能接口。  |
-| void | **[unbindAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-unbindalias)**(final String alias, final BMXCallBack callBack)<br>解除用户别名绑定。  |
-| String | **[getToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettoken)**()<br>获取登陆后使用的用户token。  |
-| String | **[getCert](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getcert)**()<br>获取登陆后服务器返回的推送证书。  |
-| BMXPushService.PushSdkStatus | **[status](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-status)**()<br>推送sdk当前的状态。  |
-| void | **[bindDeviceToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-binddevicetoken)**(final String token, final BMXCallBack callBack)<br>推送绑定设备token。  |
-| void | **[bindVoipToken](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-bindvoiptoken)**(final String token, final BMXCallBack callBack)<br>绑定推送设备的voiptoken。  |
-| void | **[getPushProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getpushprofile)**(final boolean forceRefresh, final BMXDataCallBack< [BMXPushUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.md) > callBack)<br>获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取  |
-| void | **[setTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-settags)**(final TagList tags, final String operationId, final BMXCallBack callBack)<br>设置推送用户的标签。  |
-| void | **[getTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettags)**(final TagList tags, final String operationId, final BMXCallBack callBack)<br>获取推送用户的标签。  |
-| void | **[deleteTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-deletetags)**(final TagList tags, final String operationId, final BMXCallBack callBack)<br>删除推送用户的标签。  |
-| void | **[clearTags](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-cleartags)**(final String operationId, final BMXCallBack callBack)<br>清空推送用户的标签。  |
-| void | **[setBadge](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setbadge)**(final int count, final BMXCallBack callBack)<br>设置推送用户的未读角标。  |
-| void | **[setPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushmode)**(final boolean enable, final BMXCallBack callBack)<br>设置推送启用状态。默认为使用推送。  |
-| void | **[setPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushmode)**(final BMXCallBack callBack) |
-| void | **[setPushTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushtime)**(final int startHour, final int endHour, final BMXCallBack callBack)<br>设置允许推送时间。  |
-| void | **[setSilenceTime](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setsilencetime)**(final int startHour, final int endHour, final BMXCallBack callBack)<br>设置推送静默的起始结束时间。  |
-| void | **[setRunBackgroundMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setrunbackgroundmode)**(final boolean enable, final BMXCallBack callBack)<br>设置推送是否可以后台运行。默认是false。  |
-| void | **[setRunBackgroundMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setrunbackgroundmode)**(final BMXCallBack callBack) |
-| void | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)**(final boolean enable, final boolean isAllow, final BMXCallBack callBack)<br>设置推送的地理围栏功能是否运行。  |
-| void | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)**(final boolean enable, final BMXCallBack callBack) |
-| void | **[setGeoFenceMode](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)**(final BMXCallBack callBack) |
-| void | **[clearNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearnotification)**(final long notificationId)<br>清除指定id的通知。  |
-| void | **[clearAllNotifications](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearallnotifications)**() |
-| void | **[sendMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-sendmessage)**(final String content)<br>发送推送上行消息，消息状态变化会通过listener通知  |
-| void | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)**(final long refMsgId, final long size, final BMXMessageList result, final BMXPushService.PushDirection arg3, final BMXCallBack callBack)<br>加载数据库本地存储的推送消息。如果不指定则从最新消息开始  |
-| void | **[loadLocalPushMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)**(final long refMsgId, final long size, final BMXMessageList result, final BMXCallBack callBack) |
-| void | **[addPushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-addpushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>添加推送监听者  |
-| void | **[removePushListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-removepushlistener)**([BMXPushServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md) listener)<br>移除推送监听者  |
+|                              | Name                                                                                                                                                                                                                                                                                                                                          |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                              | [**BMXPushManager**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-bmxpushmanager)([BMXPushService](classim_1_1floo_1_1floolib_1_1_b_m_x_push_service.md) service)                                                                                                                                                            |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start"><strong>start</strong></a>(final String alias, final String bmxToken, final BMXCallBack callBack)<br>初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。</p>                                                      |
+| void                         | [**start**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)(final String alias, final BMXCallBack callBack)                                                                                                                                                                                                              |
+| void                         | [**start**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-start)(final BMXCallBack callBack)                                                                                                                                                                                                                                  |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-stop"><strong>stop</strong></a>(final BMXCallBack callBack)<br>停止推送功能接口。</p>                                                                                                                                                                                        |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-resume"><strong>resume</strong></a>(final BMXCallBack callBack)<br>恢复推送功能接口。</p>                                                                                                                                                                                    |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-unbindalias"><strong>unbindAlias</strong></a>(final String alias, final BMXCallBack callBack)<br>解除用户别名绑定。</p>                                                                                                                                                      |
+| String                       | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettoken"><strong>getToken</strong></a>()<br>获取登陆后使用的用户token。</p>                                                                                                                                                                                                   |
+| String                       | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getcert"><strong>getCert</strong></a>()<br>获取登陆后服务器返回的推送证书。</p>                                                                                                                                                                                                     |
+| BMXPushService.PushSdkStatus | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-status"><strong>status</strong></a>()<br>推送sdk当前的状态。</p>                                                                                                                                                                                                            |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-binddevicetoken"><strong>bindDeviceToken</strong></a>(final String token, final BMXCallBack callBack)<br>推送绑定设备token。</p>                                                                                                                                           |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-bindvoiptoken"><strong>bindVoipToken</strong></a>(final String token, final BMXCallBack callBack)<br>绑定推送设备的voiptoken。</p>                                                                                                                                          |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-getpushprofile"><strong>getPushProfile</strong></a>(final boolean forceRefresh, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_user_profile.md">BMXPushUserProfile</a> > callBack)<br>获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取</p> |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-settags"><strong>setTags</strong></a>(final TagList tags, final String operationId, final BMXCallBack callBack)<br>设置推送用户的标签。</p>                                                                                                                                   |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-gettags"><strong>getTags</strong></a>(final TagList tags, final String operationId, final BMXCallBack callBack)<br>获取推送用户的标签。</p>                                                                                                                                   |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-deletetags"><strong>deleteTags</strong></a>(final TagList tags, final String operationId, final BMXCallBack callBack)<br>删除推送用户的标签。</p>                                                                                                                             |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-cleartags"><strong>clearTags</strong></a>(final String operationId, final BMXCallBack callBack)<br>清空推送用户的标签。</p>                                                                                                                                                   |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setbadge"><strong>setBadge</strong></a>(final int count, final BMXCallBack callBack)<br>设置推送用户的未读角标。</p>                                                                                                                                                            |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushmode"><strong>setPushMode</strong></a>(final boolean enable, final BMXCallBack callBack)<br>设置推送启用状态。默认为使用推送。</p>                                                                                                                                            |
+| void                         | [**setPushMode**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushmode)(final BMXCallBack callBack)                                                                                                                                                                                                                      |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setpushtime"><strong>setPushTime</strong></a>(final int startHour, final int endHour, final BMXCallBack callBack)<br>设置允许推送时间。</p>                                                                                                                                  |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setsilencetime"><strong>setSilenceTime</strong></a>(final int startHour, final int endHour, final BMXCallBack callBack)<br>设置推送静默的起始结束时间。</p>                                                                                                                       |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setrunbackgroundmode"><strong>setRunBackgroundMode</strong></a>(final boolean enable, final BMXCallBack callBack)<br>设置推送是否可以后台运行。默认是false。</p>                                                                                                                     |
+| void                         | [**setRunBackgroundMode**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setrunbackgroundmode)(final BMXCallBack callBack)                                                                                                                                                                                                    |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode"><strong>setGeoFenceMode</strong></a>(final boolean enable, final boolean isAllow, final BMXCallBack callBack)<br>设置推送的地理围栏功能是否运行。</p>                                                                                                              |
+| void                         | [**setGeoFenceMode**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)(final boolean enable, final BMXCallBack callBack)                                                                                                                                                                                        |
+| void                         | [**setGeoFenceMode**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-setgeofencemode)(final BMXCallBack callBack)                                                                                                                                                                                                              |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearnotification"><strong>clearNotification</strong></a>(final long notificationId)<br>清除指定id的通知。</p>                                                                                                                                                              |
+| void                         | [**clearAllNotifications**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-clearallnotifications)()                                                                                                                                                                                                                            |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-sendmessage"><strong>sendMessage</strong></a>(final String content)<br>发送推送上行消息，消息状态变化会通过listener通知</p>                                                                                                                                                             |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages"><strong>loadLocalPushMessages</strong></a>(final long refMsgId, final long size, final BMXMessageList result, final BMXPushService.PushDirection arg3, final BMXCallBack callBack)<br>加载数据库本地存储的推送消息。如果不指定则从最新消息开始</p>                       |
+| void                         | [**loadLocalPushMessages**](classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-loadlocalpushmessages)(final long refMsgId, final long size, final BMXMessageList result, final BMXCallBack callBack)                                                                                                                               |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-addpushlistener"><strong>addPushListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md">BMXPushServiceListener</a> listener)<br>添加推送监听者</p>                                                                                   |
+| void                         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_manager.md#function-removepushlistener"><strong>removePushListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_push_service_listener.md">BMXPushServiceListener</a> listener)<br>移除推送监听者</p>                                                                             |
 
 ## Public Functions Documentation
 
@@ -59,11 +56,14 @@ inline BMXPushManager(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="BMXPushManager" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function start
 
 ```java
@@ -74,19 +74,22 @@ inline void start(
 )
 ```
 
-初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。 
+初始化推送sdk。在仅使用推送的情况下使用该接口初始化推送sdk。在同时使用IM功能的时候直接在BMXClient调用登陆功能即可。config对象初始化的时候需要传入平台类型和设备id。
 
-**Parameters**: 
+**Parameters**:
 
-  * **alias** 推送初始化使用的当前用户别名 
-  * **bmxToken** 推送初始化的时候App传入的使用的用户的token，无用户的状态下不传入即可。 
-  * **callBack** [BMXErrorCode]
-
+* **alias** 推送初始化使用的当前用户别名
+* **bmxToken** 推送初始化的时候App传入的使用的用户的token，无用户的状态下不传入即可。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function start
 
 ```java
@@ -96,11 +99,14 @@ inline void start(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function start
 
 ```java
@@ -109,11 +115,14 @@ inline void start(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="start" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function stop
 
 ```java
@@ -122,17 +131,20 @@ inline void stop(
 )
 ```
 
-停止推送功能接口。 
+停止推送功能接口。
 
-**Parameters**: 
+**Parameters**:
 
-  * **callBack** [BMXErrorCode]
-
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="stop" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function resume
 
 ```java
@@ -141,17 +153,20 @@ inline void resume(
 )
 ```
 
-恢复推送功能接口。 
+恢复推送功能接口。
 
-**Parameters**: 
+**Parameters**:
 
-  * **callBack** [BMXErrorCode]
-
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="resume" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function unbindAlias
 
 ```java
@@ -161,56 +176,71 @@ inline void unbindAlias(
 )
 ```
 
-解除用户别名绑定。 
+解除用户别名绑定。
 
-**Parameters**: 
+**Parameters**:
 
-  * **alias** 需要解除绑定的用户别名。 
-  * **callBack** [BMXErrorCode]
-
+* **alias** 需要解除绑定的用户别名。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="unbindAlias" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function getToken
 
 ```java
 inline String getToken()
 ```
 
-获取登陆后使用的用户token。 
+获取登陆后使用的用户token。
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getToken" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function getCert
 
 ```java
 inline String getCert()
 ```
 
-获取登陆后服务器返回的推送证书。 
+获取登陆后服务器返回的推送证书。
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getCert" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function status
 
 ```java
 inline BMXPushService.PushSdkStatus status()
 ```
 
-推送sdk当前的状态。 
+推送sdk当前的状态。
 
-**Return**: PushSdkStatus 
+**Return**: PushSdkStatus
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="status" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function bindDeviceToken
 
 ```java
@@ -220,18 +250,21 @@ inline void bindDeviceToken(
 )
 ```
 
-推送绑定设备token。 
+推送绑定设备token。
 
-**Parameters**: 
+**Parameters**:
 
-  * **token** 设备的推送token 
-  * **callBack** [BMXErrorCode]
-
+* **token** 设备的推送token
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="bindDeviceToken" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function bindVoipToken
 
 ```java
@@ -241,18 +274,21 @@ inline void bindVoipToken(
 )
 ```
 
-绑定推送设备的voiptoken。 
+绑定推送设备的voiptoken。
 
-**Parameters**: 
+**Parameters**:
 
-  * **token** 设备的voip推送token 
-  * **callBack** [BMXErrorCode]
-
+* **token** 设备的voip推送token
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="bindVoipToken" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function getPushProfile
 
 ```java
@@ -262,18 +298,21 @@ inline void getPushProfile(
 )
 ```
 
-获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取 
+获取推送用户详情，如果forceRefresh == true，则强制从服务端拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **forceRefresh** 是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取 
-  * **callBack** 推送用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息 
-
+* **forceRefresh** 是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取
+* **callBack** 推送用户profile信息，初始传入指向为空的shared\_ptr对象，函数返回后从此处获取用户profile信息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getPushProfile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setTags
 
 ```java
@@ -284,19 +323,22 @@ inline void setTags(
 )
 ```
 
-设置推送用户的标签。 
+设置推送用户的标签。
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** 用户标签 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
-  * **callBack** [BMXErrorCode]
-
+* **tags** 用户标签
+* **operationId** 操作id。在回调通知中对应通知提醒。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function getTags
 
 ```java
@@ -307,19 +349,22 @@ inline void getTags(
 )
 ```
 
-获取推送用户的标签。 
+获取推送用户的标签。
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** 用户标签 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
-  * **callBack** [BMXErrorCode]
-
+* **tags** 用户标签
+* **operationId** 操作id。在回调通知中对应通知提醒。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="getTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function deleteTags
 
 ```java
@@ -330,19 +375,22 @@ inline void deleteTags(
 )
 ```
 
-删除推送用户的标签。 
+删除推送用户的标签。
 
-**Parameters**: 
+**Parameters**:
 
-  * **tags** 要删除用户标签 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
-  * **callBack** [BMXErrorCode]
-
+* **tags** 要删除用户标签
+* **operationId** 操作id。在回调通知中对应通知提醒。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="deleteTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function clearTags
 
 ```java
@@ -352,18 +400,21 @@ inline void clearTags(
 )
 ```
 
-清空推送用户的标签。 
+清空推送用户的标签。
 
-**Parameters**: 
+**Parameters**:
 
-  * **operationId** 操作id。在回调通知中对应通知提醒。 
-  * **callBack** [BMXErrorCode]
-
+* **operationId** 操作id。在回调通知中对应通知提醒。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="clearTags" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setBadge
 
 ```java
@@ -373,18 +424,21 @@ inline void setBadge(
 )
 ```
 
-设置推送用户的未读角标。 
+设置推送用户的未读角标。
 
-**Parameters**: 
+**Parameters**:
 
-  * **count** 用户未读角标数 
-  * **callBack** [BMXErrorCode]
-
+* **count** 用户未读角标数
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setBadge" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setPushMode
 
 ```java
@@ -394,18 +448,21 @@ inline void setPushMode(
 )
 ```
 
-设置推送启用状态。默认为使用推送。 
+设置推送启用状态。默认为使用推送。
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 推送的启用状态 
-  * **callBack** [BMXErrorCode]
-
+* **enable** 推送的启用状态
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setPushMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setPushMode
 
 ```java
@@ -414,11 +471,14 @@ inline void setPushMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setPushMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setPushTime
 
 ```java
@@ -429,19 +489,22 @@ inline void setPushTime(
 )
 ```
 
-设置允许推送时间。 
+设置允许推送时间。
 
-**Parameters**: 
+**Parameters**:
 
-  * **startHour** 静默允许推送的起始时间小时 
-  * **endHour** 静默允许推送的结束时间小时 
-  * **callBack** [BMXErrorCode]
-
+* **startHour** 静默允许推送的起始时间小时
+* **endHour** 静默允许推送的结束时间小时
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setPushTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setSilenceTime
 
 ```java
@@ -452,19 +515,22 @@ inline void setSilenceTime(
 )
 ```
 
-设置推送静默的起始结束时间。 
+设置推送静默的起始结束时间。
 
-**Parameters**: 
+**Parameters**:
 
-  * **startHour** 静默推送的起始时间小时 
-  * **endHour** 静默推送的结束时间小时 
-  * **callBack** [BMXErrorCode]
-
+* **startHour** 静默推送的起始时间小时
+* **endHour** 静默推送的结束时间小时
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setSilenceTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setRunBackgroundMode
 
 ```java
@@ -474,18 +540,21 @@ inline void setRunBackgroundMode(
 )
 ```
 
-设置推送是否可以后台运行。默认是false。 
+设置推送是否可以后台运行。默认是false。
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 推送后台运行状态。 
-  * **callBack** [BMXErrorCode]
-
+* **enable** 推送后台运行状态。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setRunBackgroundMode
 
 ```java
@@ -494,11 +563,14 @@ inline void setRunBackgroundMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setRunBackgroundMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setGeoFenceMode
 
 ```java
@@ -509,19 +581,22 @@ inline void setGeoFenceMode(
 )
 ```
 
-设置推送的地理围栏功能是否运行。 
+设置推送的地理围栏功能是否运行。
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 地理围栏功能是否运行。 
-  * **isAllow** 用户是否主动弹出用户定位请求。 
-  * **callBack** [BMXErrorCode]
-
+* **enable** 地理围栏功能是否运行。
+* **isAllow** 用户是否主动弹出用户定位请求。
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setGeoFenceMode
 
 ```java
@@ -531,11 +606,14 @@ inline void setGeoFenceMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function setGeoFenceMode
 
 ```java
@@ -544,11 +622,14 @@ inline void setGeoFenceMode(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="setGeoFenceMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function clearNotification
 
 ```java
@@ -557,28 +638,34 @@ inline void clearNotification(
 )
 ```
 
-清除指定id的通知。 
+清除指定id的通知。
 
-**Parameters**: 
+**Parameters**:
 
-  * **notificationId** 通知id 
-
+* **notificationId** 通知id
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="clearNotification" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function clearAllNotifications
 
 ```java
 inline void clearAllNotifications()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="clearAllNotifications" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function sendMessage
 
 ```java
@@ -587,17 +674,20 @@ inline void sendMessage(
 )
 ```
 
-发送推送上行消息，消息状态变化会通过listener通知 
+发送推送上行消息，消息状态变化会通过listener通知
 
-**Parameters**: 
+**Parameters**:
 
-  * **content** 发送的上行推送消息内容 
-
+* **content** 发送的上行推送消息内容
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="sendMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function loadLocalPushMessages
 
 ```java
@@ -610,20 +700,23 @@ inline void loadLocalPushMessages(
 )
 ```
 
-加载数据库本地存储的推送消息。如果不指定则从最新消息开始 
+加载数据库本地存储的推送消息。如果不指定则从最新消息开始
 
-**Parameters**: 
+**Parameters**:
 
-  * **refMsgId** 加载推送消息的起始id 
-  * **size** 最大加载消息条数 
-  * **result** 数据库返回的加载本地推送消息列表 
-  * **arg3** 加载推送消息的方向，默认是加载更早的消息 
-
+* **refMsgId** 加载推送消息的起始id
+* **size** 最大加载消息条数
+* **result** 数据库返回的加载本地推送消息列表
+* **arg3** 加载推送消息的方向，默认是加载更早的消息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function loadLocalPushMessages
 
 ```java
@@ -635,11 +728,14 @@ inline void loadLocalPushMessages(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="loadLocalPushMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function addPushListener
 
 ```java
@@ -648,17 +744,20 @@ inline void addPushListener(
 )
 ```
 
-添加推送监听者 
+添加推送监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 推送监听者 
-
+* **listener** 推送监听者
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="addPushListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
+
 ```
+
 ### function removePushListener
 
 ```java
@@ -667,17 +766,19 @@ inline void removePushListener(
 )
 ```
 
-移除推送监听者 
+移除推送监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 推送监听者 
-
+* **listener** 推送监听者
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXPushManager",function="removePushListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXPushManager'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:18:31 +0800

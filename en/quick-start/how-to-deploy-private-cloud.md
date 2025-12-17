@@ -1,7 +1,11 @@
 ---
-description: Private Cloud Deployment documentation to enable Private Cloud Services with single server, cluster, and Alibaba Cloud versions. Instructions for redis, redis-cache, and mysql setup.
 keywords: Private Cloud, Deployment, IM SDK, APP内聊天功能
+description: >-
+  Private Cloud Deployment documentation to enable Private Cloud Services with
+  single server, cluster, and Alibaba Cloud versions. Instructions for redis,
+  redis-cache, and mysql setup.
 ---
+
 # Private Cloud Deployment documentation
 
 ## Profile
@@ -16,17 +20,17 @@ Lanying IM Private Deployment provides two deployment modes: Single server versi
 
 [Login Console](https://console.lanyingim.com) Click to create application. Your application will use Free Edition package by default, or can be upgraded to Business Edition.
 
-![Create application](../assets/1-1.create_app.png)
+![Create application](<../../.gitbook/assets/1-1.create_app (3).png>)
 
 ## Enable Private Cloud Services
 
 1. After application created, go to Application Details page.
 
-![Application information](../assets/1-2.app_info.png)
+![Application information](<../../.gitbook/assets/1-2.app_info (2).png>)
 
 1. Click to change plan, select Private Cloud and then “Continue”.
 
-![Enable Private Cloud Services](../assets/1-3.select_private_plan.png)
+![Enable Private Cloud Services](<../../.gitbook/assets/1-3.select_private_plan (2).png>)
 
 1. Click the Private Cloud icon, go to the Private Cloud Details page, download installation package maxim.ctl
 
@@ -34,11 +38,11 @@ Lanying IM Private Deployment provides two deployment modes: Single server versi
 $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 ```
 
-![Private Cloud Deployment](../assets/1-4.deploy.png)
+![Private Cloud Deployment](<../../.gitbook/assets/1-4.deploy (3).png>)
 
 1. Get the installation token, which can be copied to clipboard or downloaded as a local file for later use. In the installation script, we use maxim.token.XXXXXXX.txt to demonstrate.
 
-![Get Private Cloud installation token](../assets/1-5.get_install_token.png)
+![Get Private Cloud installation token](<../../.gitbook/assets/1-5.get_install_token (2).png>)
 
 ## Setup Private Cloud
 
@@ -57,7 +61,6 @@ Installation prerequisites
 > Quad-core CPU, 8 G RAM, 100 G hard disk
 
 * 3 or more servers required if you choose to install Cluster version
-
 * The installation methods are divided into online installation and offline installation. Offline installation does not require access to the internet. It is suitable for installation on servers without internet, but the license needs to be activated once a month. Now only Ubuntu 18.04 is supported.
 
 ### Single server version
@@ -70,7 +73,7 @@ wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim
 
 Screenshot of execution result:
 
-![Single server version installation: Step 1](../assets/2-1.install_single_s1.png)
+![Single server version installation: Step 1](<../../.gitbook/assets/2-1.install_single_s1 (2).png>)
 
 2.Run installation
 
@@ -84,11 +87,11 @@ Note: “Enter maxim install token” hint, means please enter your copied insta
 
 Screenshot of execution started:
 
-![Single server version installation: Step 2](../assets/2-2.install_single_s2.png)
+![Single server version installation: Step 2](<../../.gitbook/assets/2-2.install_single_s2 (2).png>)
 
 Screenshot of installation completed
 
-![Single server version installation: Step 3](../assets/2-3.install_single_s3.png)
+![Single server version installation: Step 3](<../../.gitbook/assets/2-3.install_single_s3 (1).png>)
 
 * The local environment is not accessible externally, and the parameter --net internal needs to be added during installation to prompt the installer to select intranet IP registration.
 
@@ -102,11 +105,11 @@ Hint: The installation script hints “Enter maxim install token”, means pleas
 
 Screenshot of execution started:
 
-![Single server version installation: Step 4](../assets/2-4.install_single_s4.png)
+![Single server version installation: Step 4](<../../.gitbook/assets/2-4.install_single_s4 (2).png>)
 
 Screenshot of installation completed
 
-![Single server version installation: Step 5](../assets/2-5.install_single_s5.png)
+![Single server version installation: Step 5](<../../.gitbook/assets/2-5.install_single_s5 (1).png>)
 
 Hint: Wait for the installation to complete, which takes about 15 minutes.
 
@@ -126,7 +129,7 @@ sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''
 
 Screenshot of execution result:
 
-![Cluster permission configuration: Step 1](../assets/3-1-1.config_cluster_s1.png)
+![Cluster permission configuration: Step 1](<../../.gitbook/assets/3-1-1.config_cluster_s1 (2).png>)
 
 Execute the output of the following commands on hosts 172.16.0.78, 172.16.0.79, 172.16.0.80, respectively
 
@@ -136,19 +139,19 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 
 Screenshot of command output:
 
-![Cluster permission configuration: Step 2](../assets/3-1-2.config_cluster_s2.png)
+![Cluster permission configuration: Step 2](<../../.gitbook/assets/3-1-2.config_cluster_s2 (2).png>)
 
 Execution result of the command output at 172.16.0.78:
 
-![Cluster permission configuration: Step 3](../assets/3-1-3.config_cluster_s3.png)
+![Cluster permission configuration: Step 3](<../../.gitbook/assets/3-1-3.config_cluster_s3 (2).png>)
 
 Execution result of the command output at 172.16.0.79:
 
-![Cluster permission configuration: Step 4](../assets/3-1-4.config_cluster_s4.png)
+![Cluster permission configuration: Step 4](<../../.gitbook/assets/3-1-4.config_cluster_s4 (2).png>)
 
 Execution result of the command output at 172.16.0.80:
 
-![Cluster permission configuration: Step 5](../assets/3-1-5.config_cluster_s5.png)
+![Cluster permission configuration: Step 5](<../../.gitbook/assets/3-1-5.config_cluster_s5 (2).png>)
 
 2.ssh login on to the first host 172.16.0.78, execute the following command to download installation script and elevate executable permission:
 
@@ -158,7 +161,7 @@ wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim
 
 Screenshot of execution result:
 
-![Cluster version installation: Step 1](../assets/3-2-1.install_cluster_s1.png)
+![Cluster version installation: Step 1](<../../.gitbook/assets/3-2-1.install_cluster_s1 (2).png>)
 
 * Ensure the sever has a public network IP, execute the following command to start.
 
@@ -170,11 +173,11 @@ Hint: The installation script hints “Enter maxim install token”, means pleas
 
 Screenshot of execution started:
 
-![Cluster version installation: Step 2](../assets/3-2-2.install_cluster_s2.png)
+![Cluster version installation: Step 2](<../../.gitbook/assets/3-2-2.install_cluster_s2 (2).png>)
 
 Screenshot of installation completed
 
-![Cluster version installation: Step 3](../assets/3-2-3.install_cluster_s3.png)
+![Cluster version installation: Step 3](<../../.gitbook/assets/3-2-3.install_cluster_s3 (2).png>)
 
 * The local environment is not accessible externally, and the parameter --net internal needs to be added during installation to prompt the installer to select intranet IP registration.
 
@@ -188,11 +191,11 @@ Hint: The installation script hints “Enter maxim install token”, means pleas
 
 Screenshot of execution started:
 
-![Cluster version installation: Step 4](../assets/3-2-4.install_cluster_s4.png)
+![Cluster version installation: Step 4](<../../.gitbook/assets/3-2-4.install_cluster_s4 (2).png>)
 
 Screenshot of installation completed
 
-![Cluster version installation: Step 5](../assets/3-2-5.install_cluster_s5.png)
+![Cluster version installation: Step 5](../../.gitbook/assets/3-2-5.install_cluster_s5.png)
 
 Hint: Wait for the installation to complete, which takes about 20 minutes.
 
@@ -250,9 +253,10 @@ sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-k
 ```
 mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanying/maxim.ctl /usr/bin/
 ```
+
 Screenshot of execution result:
 
-![Mount the offline installation package and add maxim.ctl to the executable path](../assets/offline_mount_and_add_exec.png)
+![Mount the offline installation package and add maxim.ctl to the executable path](<../../.gitbook/assets/offline_mount_and_add_exec (2).png>)
 
 3.Generate offline configuration file
 
@@ -260,7 +264,7 @@ Screenshot of execution result:
 
 Screenshot of the operation:
 
-![generate offline configuration file](../assets/generate_offline_install_configration.png)
+![generate offline configuration file](<../../.gitbook/assets/generate_offline_install_configration (2).png>)
 
 4.Run installation
 
@@ -270,34 +274,35 @@ sudo maxim.ctl install --config-file maxim.*.conf
 
 Screenshot of execution started:
 
-![Single version (offline installation) start installation](../assets/single_offline_start_install.png)
+![Single version (offline installation) start installation](<../../.gitbook/assets/single_offline_start_install (2).png>)
 
 Screenshot of installation completed
 
-![Single version (offline installation) installation completed](../assets/single_offline_finish_install.png)
+![Single version (offline installation) installation completed](<../../.gitbook/assets/single_offline_finish_install (1).png>)
 
 Hint: Wait for the installation to complete, which takes about 15 minutes.
 
 5.Generate Cluster LicenseKey
+
 ```
 sudo maxim.ctl export license-key
 ```
+
 Screenshot of the execution result:
 
-![Generate Cluster LicenseKey](../assets/single_offline_export_license_key.png)
+![Generate Cluster LicenseKey](<../../.gitbook/assets/single_offline_export_license_key (2).png>)
 
 6.Activate the cluster
 
-On the Private Cloud page of the Console, click Activate Cluster, in the pop-up dialog box, select the cluster capacity
-, enter the LicenseKey, click "Activate Cluster", and then execute the obtained activation command in the cluster
+On the Private Cloud page of the Console, click Activate Cluster, in the pop-up dialog box, select the cluster capacity , enter the LicenseKey, click "Activate Cluster", and then execute the obtained activation command in the cluster
 
 Screenshot of the operation:
 
-![Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click "Activate the cluster"](../assets/single_offline_activate.png)
+![Click to activate the cluster on the Private Cloud page of the Console, select the cluster capacity, enter the LicenseKey, and click "Activate the cluster"](<../../.gitbook/assets/single_offline_activate (2).png>)
 
-![Activate command](../assets/single_offline_activate_success.png)
+![Activate command](<../../.gitbook/assets/single_offline_activate_success (3).png>)
 
-![Execute activation command in cluster](../assets/single_offline_exec_activate.png)
+![Execute activation command in cluster](<../../.gitbook/assets/single_offline_exec_activate (2).png>)
 
 7.After the activation is completed, perform steps 5 and 6 to update the license of the cluster every month, otherwise the cluster will prevent users from logging in because the license expires. If the configuration or administrator token is modified in the console, steps 5 and 6 also need to be performed to update the cluster.
 
@@ -317,7 +322,7 @@ sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''
 
 Screenshot of execution result:
 
-![Cluster permission configuration: Step 1](../assets/3-1-1.config_cluster_s1.png)
+![Cluster permission configuration: Step 1](<../../.gitbook/assets/3-1-1.config_cluster_s1 (2).png>)
 
 Execute the output of the following commands on hosts 172.16.0.78, 172.16.0.79, 172.16.0.80, respectively
 
@@ -327,19 +332,19 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 
 Screenshot of command output:
 
-![Cluster permission configuration: Step 2](../assets/3-1-2.config_cluster_s2.png)
+![Cluster permission configuration: Step 2](<../../.gitbook/assets/3-1-2.config_cluster_s2 (2).png>)
 
 Execution result of the command output at 172.16.0.78:
 
-![Cluster permission configuration: Step 3](../assets/3-1-3.config_cluster_s3.png)
+![Cluster permission configuration: Step 3](<../../.gitbook/assets/3-1-3.config_cluster_s3 (2).png>)
 
 Execution result of the command output at 172.16.0.79:
 
-![Cluster permission configuration: Step 4](../assets/3-1-4.config_cluster_s4.png)
+![Cluster permission configuration: Step 4](<../../.gitbook/assets/3-1-4.config_cluster_s4 (2).png>)
 
 Execution result of the command output at 172.16.0.80:
 
-![Cluster permission configuration: Step 5](../assets/3-1-5.config_cluster_s5.png)
+![Cluster permission configuration: Step 5](<../../.gitbook/assets/3-1-5.config_cluster_s5 (2).png>)
 
 2.Download [Offline Installation Package](https://package.lanyingim.com/lanying-im/lanying-im-server.iso), and upload it to the server for deployment.
 
@@ -348,9 +353,10 @@ Execution result of the command output at 172.16.0.80:
 ```
 mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanying/maxim.ctl /usr/bin/
 ```
+
 Screenshot of execution result:
 
-![Mount the offline installation package and add maxim.ctl to the executable path](../assets/offline_mount_and_add_exec.png)
+![Mount the offline installation package and add maxim.ctl to the executable path](<../../.gitbook/assets/offline_mount_and_add_exec (2).png>)
 
 4.Generate offline configuration file
 
@@ -358,7 +364,7 @@ Screenshot of execution result:
 
 Screenshot of the operation:
 
-![generate offline configuration file](../assets/generate_offline_install_configration.png)
+![generate offline configuration file](<../../.gitbook/assets/generate_offline_install_configration (2).png>)
 
 5.Run the installation
 
@@ -368,21 +374,23 @@ sudo maxim.ctl install --config-file maxim.*.conf --nodelist 172.16.0.78 172.16.
 
 Screenshot of execution started:
 
-![Cluster version (offline installation) start installation](../assets/multi_offline_start_install.png)
+![Cluster version (offline installation) start installation](<../../.gitbook/assets/multi_offline_start_install (2).png>)
 
 Screenshot of installation completed
 
-![Cluster version (offline installation) installation completed](../assets/multi_offline_finish_install.png)
+![Cluster version (offline installation) installation completed](<../../.gitbook/assets/multi_offline_finish_install (1).png>)
 
 Tip: Wait for the installation to complete, it will take about 20 minutes to complete the installation.
 
 6.Generate Cluster LicenseKeys
+
 ```
 sudo maxim.ctl export license-key
 ```
+
 Screenshot of the command:
 
-![Generate Cluster LicenseKey](../assets/single_offline_export_license_key.png)
+![Generate Cluster LicenseKey](<../../.gitbook/assets/single_offline_export_license_key (2).png>)
 
 7.Activate the cluster
 
@@ -390,11 +398,11 @@ On the Private Cloud page of the console, click Activate Cluster, in the pop-up 
 
 Screenshot of the operation:
 
-![Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click "Activate the cluster"](../assets/single_offline_activate.png)
+![Click to activate the cluster on the private cloud page of the console, select the cluster capacity, enter the LicenseKey, and click "Activate the cluster"](<../../.gitbook/assets/single_offline_activate (2).png>)
 
-![Activate command](../assets/single_offline_activate_success.png)
+![Activate command](<../../.gitbook/assets/single_offline_activate_success (3).png>)
 
-![Execute activation command in cluster](../assets/single_offline_exec_activate.png)
+![Execute activation command in cluster](<../../.gitbook/assets/single_offline_exec_activate (2).png>)
 
 8.After the activation is completed, perform steps 6 and 7 to update the license of the cluster every month, otherwise the cluster will prevent users from logging in because the license expires. If the configuration or administrator token is modified in the console, steps 6 and 7 also need to be performed to update the cluster.
 
@@ -404,8 +412,8 @@ Screenshot of the operation:
 2. If the host has a firewall, you need to ensure that ports 443 and 80 are accessible.
 3. How to check Private Cloud installation progress and data migration status?
 
-![Click “Private Cloud” to view the installation progress through the progress of node information](../assets/4-1.install_progress.png)
+![Click “Private Cloud” to view the installation progress through the progress of node information](<../../.gitbook/assets/4-1.install_progress (3).png>)
 
 1. After installation completed, open Lanying IM Console to enter System Status page.
 
-![If all checks are normal, means the service is normal](../assets/4-2.service_status.png)
+![If all checks are normal, means the service is normal](<../../.gitbook/assets/4-2.service_status (2).png>)

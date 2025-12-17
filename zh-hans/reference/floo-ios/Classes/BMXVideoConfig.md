@@ -1,7 +1,7 @@
 # BMXVideoConfig Class Reference
 
-  **Inherits from** NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,115 +9,143 @@
 
 ## Properties
 
-<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
-<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/getFrameRate" title="getFrameRate"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### getFrameRate
 
 `- (int)getFrameRate`
 
-<a name="//api/name/getHeight" title="getHeight"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getFrameRate" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### getHeight
 
 `- (int)getHeight`
 
-<a name="//api/name/getProfile" title="getProfile"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getHeight" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### getProfile
 
 `- (BMXVideoProfile)getProfile`
 
-<a name="//api/name/getWidth" title="getWidth"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getProfile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### getWidth
 
 `- (int)getWidth`
 
-<a name="//api/name/init" title="init"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="getWidth" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### init
 
 `- (id)init`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="init" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
-<a name="//api/name/setFrameRate:" title="setFrameRate:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### setFrameRate:
 
 `- (void)setFrameRate:(int)*value*`
 
-<a name="//api/name/setHeight:" title="setHeight:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setFrameRate:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### setHeight:
 
 `- (void)setHeight:(int)*value*`
 
-<a name="//api/name/setProfile:" title="setProfile:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setHeight:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### setProfile:
 
 `- (void)setProfile:(BMXVideoProfile)*value*`
 
-<a name="//api/name/setWidth:" title="setWidth:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setProfile:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
+
 ```
+
 ### setWidth:
 
 `- (void)setWidth:(int)*value*`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoConfig",function="setWidth:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoConfig'></div>
 ```

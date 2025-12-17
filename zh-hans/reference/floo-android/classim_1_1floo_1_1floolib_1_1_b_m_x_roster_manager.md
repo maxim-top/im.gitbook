@@ -1,38 +1,35 @@
 ---
 title: im::floo::floolib::BMXRosterManager
-summary: 好友管理器 
-
+summary: 好友管理器
 ---
 
 # im::floo::floolib::BMXRosterManager
 
-
-
-好友管理器 
+好友管理器
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXRosterManager](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-bmxrostermanager)**([BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) service) |
-| void | **[get](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-get)**(final boolean forceRefresh, final BMXDataCallBack< ListOfLongLong > callBack)<br>获取好友列表，如果forceRefresh == true，则强制从服务端拉取  |
-| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final long rosterId, final boolean forceRefresh, final BMXDataCallBack< [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) > callBack)<br>搜索用户  |
-| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final String name, final boolean forceRefresh, final BMXDataCallBack< [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) > callBack)<br>搜索用户  |
-| void | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search)**(final ListOfLongLong rosterIdList, final boolean forceRefresh, final BMXDataCallBack< BMXRosterItemList > callBack)<br>批量搜索用户  |
-| void | **[setItemExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemextension)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final String extension, final BMXCallBack callBack)<br>更新好友本地扩展信息  |
-| void | **[setItemAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemalias)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final String alias, final BMXCallBack callBack)<br>更新好友别名  |
-| void | **[setItemMuteNotification](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemmutenotification)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final boolean status, final BMXCallBack callBack)<br>设置是否拒收用户消息  |
-| void | **[apply](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-apply)**(final long rosterId, final String message, final BMXCallBack callBack)<br>申请添加好友  |
-| void | **[remove](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-remove)**(final long rosterId, final BMXCallBack callBack)<br>删除好友  |
-| void | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getapplicationlist)**(final String cursor, final int pageSize, final BMXDataCallBack< ApplicationPage > callBack)<br>获取申请添加好友列表  |
-| void | **[accept](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-accept)**(final long rosterId, final BMXCallBack callBack)<br>接受加好友申请  |
-| void | **[decline](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-decline)**(final long rosterId, final String reason, final BMXCallBack callBack)<br>拒绝加好友申请  |
-| void | **[block](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-block)**(final long rosterId, final BMXCallBack callBack)<br>加入黑名单  |
-| void | **[unblock](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-unblock)**(final long rosterId, final BMXCallBack callBack)<br>从黑名单移除  |
-| void | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getblocklist)**(final boolean forceRefresh, final BMXDataCallBack< ListOfLongLong > callBack)<br>获取黑名单，如果forceRefresh == true，则强制从服务端拉取  |
-| void | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-downloadavatar)**(final [BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item, final FileProgressListener listener, final BMXCallBack callBack)<br>下载头像  |
-| void | **[addRosterListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-addrosterlistener)**([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) listener)<br>添加好友变化监听者  |
-| void | **[removeRosterListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-removerosterlistener)**([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) listener)<br>移除好友变化监听者  |
+|      | Name                                                                                                                                                                                                                                                                                                              |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [**BMXRosterManager**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-bmxrostermanager)([BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) service)                                                                                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-get"><strong>get</strong></a>(final boolean forceRefresh, final BMXDataCallBack&#x3C; ListOfLongLong > callBack)<br>获取好友列表，如果forceRefresh == true，则强制从服务端拉取</p>                                                                       |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search"><strong>search</strong></a>(final long rosterId, final boolean forceRefresh, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md">BMXRosterItem</a> > callBack)<br>搜索用户</p>              |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search"><strong>search</strong></a>(final String name, final boolean forceRefresh, final BMXDataCallBack&#x3C; <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md">BMXRosterItem</a> > callBack)<br>搜索用户</p>                |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-search"><strong>search</strong></a>(final ListOfLongLong rosterIdList, final boolean forceRefresh, final BMXDataCallBack&#x3C; BMXRosterItemList > callBack)<br>批量搜索用户</p>                                                            |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemextension"><strong>setItemExtension</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md">BMXRosterItem</a> item, final String extension, final BMXCallBack callBack)<br>更新好友本地扩展信息</p>             |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemalias"><strong>setItemAlias</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md">BMXRosterItem</a> item, final String alias, final BMXCallBack callBack)<br>更新好友别名</p>                             |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-setitemmutenotification"><strong>setItemMuteNotification</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md">BMXRosterItem</a> item, final boolean status, final BMXCallBack callBack)<br>设置是否拒收用户消息</p> |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-apply"><strong>apply</strong></a>(final long rosterId, final String message, final BMXCallBack callBack)<br>申请添加好友</p>                                                                                                                |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-remove"><strong>remove</strong></a>(final long rosterId, final BMXCallBack callBack)<br>删除好友</p>                                                                                                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getapplicationlist"><strong>getApplicationList</strong></a>(final String cursor, final int pageSize, final BMXDataCallBack&#x3C; ApplicationPage > callBack)<br>获取申请添加好友列表</p>                                                        |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-accept"><strong>accept</strong></a>(final long rosterId, final BMXCallBack callBack)<br>接受加好友申请</p>                                                                                                                                   |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-decline"><strong>decline</strong></a>(final long rosterId, final String reason, final BMXCallBack callBack)<br>拒绝加好友申请</p>                                                                                                            |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-block"><strong>block</strong></a>(final long rosterId, final BMXCallBack callBack)<br>加入黑名单</p>                                                                                                                                       |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-unblock"><strong>unblock</strong></a>(final long rosterId, final BMXCallBack callBack)<br>从黑名单移除</p>                                                                                                                                  |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-getblocklist"><strong>getBlockList</strong></a>(final boolean forceRefresh, final BMXDataCallBack&#x3C; ListOfLongLong > callBack)<br>获取黑名单，如果forceRefresh == true，则强制从服务端拉取</p>                                                      |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(final <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md">BMXRosterItem</a> item, final FileProgressListener listener, final BMXCallBack callBack)<br>下载头像</p>          |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-addrosterlistener"><strong>addRosterListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md">BMXRosterServiceListener</a> listener)<br>添加好友变化监听者</p>                                           |
+| void | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_manager.md#function-removerosterlistener"><strong>removeRosterListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md">BMXRosterServiceListener</a> listener)<br>移除好友变化监听者</p>                                     |
 
 ## Public Functions Documentation
 
@@ -44,11 +41,14 @@ inline BMXRosterManager(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="BMXRosterManager" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function get
 
 ```java
@@ -58,18 +58,21 @@ inline void get(
 )
 ```
 
-获取好友列表，如果forceRefresh == true，则强制从服务端拉取 
+获取好友列表，如果forceRefresh == true，则强制从服务端拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **forceRefresh** 是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取 
-  * **callBack** [BMXErrorCode] 好友id列表 
-
+* **forceRefresh** 是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取
+* **callBack** \[BMXErrorCode] 好友id列表
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="get" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function search
 
 ```java
@@ -80,19 +83,22 @@ inline void search(
 )
 ```
 
-搜索用户 
+搜索用户
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** 搜索的好友id 
-  * **forceRefresh** 为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。 
-  * **callBack** [BMXErrorCode] 查询返回的用户的信息 
-
+* **rosterId** 搜索的好友id
+* **forceRefresh** 为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+* **callBack** \[BMXErrorCode] 查询返回的用户的信息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function search
 
 ```java
@@ -103,19 +109,22 @@ inline void search(
 )
 ```
 
-搜索用户 
+搜索用户
 
-**Parameters**: 
+**Parameters**:
 
-  * **name** 搜索的用户名 
-  * **forceRefresh** 为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。 
-  * **callBack** [BMXErrorCode] 查询返回的用户的信息 
-
+* **name** 搜索的用户名
+* **forceRefresh** 为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+* **callBack** \[BMXErrorCode] 查询返回的用户的信息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function search
 
 ```java
@@ -126,19 +135,22 @@ inline void search(
 )
 ```
 
-批量搜索用户 
+批量搜索用户
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterIdList** 需要搜索的用户id列表 
-  * **forceRefresh** 是否强制从服务器获取，为true则强制从服务器获取 
-  * **callBack** [BMXErrorCode] 返回的好友信息列表 
-
+* **rosterIdList** 需要搜索的用户id列表
+* **forceRefresh** 是否强制从服务器获取，为true则强制从服务器获取
+* **callBack** \[BMXErrorCode] 返回的好友信息列表
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="search" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function setItemExtension
 
 ```java
@@ -149,19 +161,22 @@ inline void setItemExtension(
 )
 ```
 
-更新好友本地扩展信息 
+更新好友本地扩展信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** 用户信息 
-  * **extension** 本地扩展信息 
-  * **callBack** [BMXErrorCode]
-
+* **item** 用户信息
+* **extension** 本地扩展信息
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemExtension" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function setItemAlias
 
 ```java
@@ -172,19 +187,22 @@ inline void setItemAlias(
 )
 ```
 
-更新好友别名 
+更新好友别名
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** 用户信息 
-  * **alias** 好友别名 
-  * **callBack** [BMXErrorCode]
-
+* **item** 用户信息
+* **alias** 好友别名
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemAlias" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function setItemMuteNotification
 
 ```java
@@ -195,19 +213,22 @@ inline void setItemMuteNotification(
 )
 ```
 
-设置是否拒收用户消息 
+设置是否拒收用户消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** 用户信息 
-  * **status** 是否拒收用户消息，true拒收，false不拒收 
-  * **callBack** [BMXErrorCode]
-
+* **item** 用户信息
+* **status** 是否拒收用户消息，true拒收，false不拒收
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="setItemMuteNotification" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function apply
 
 ```java
@@ -218,19 +239,22 @@ inline void apply(
 )
 ```
 
-申请添加好友 
+申请添加好友
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** 申请添加的用户id 
-  * **message** 好友申请信息 
-  * **callBack** [BMXErrorCode]
-
+* **rosterId** 申请添加的用户id
+* **message** 好友申请信息
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="apply" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function remove
 
 ```java
@@ -240,18 +264,21 @@ inline void remove(
 )
 ```
 
-删除好友 
+删除好友
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** 删除的好友id 
-  * **callBack** [BMXErrorCode]
-
+* **rosterId** 删除的好友id
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="remove" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function getApplicationList
 
 ```java
@@ -262,19 +289,22 @@ inline void getApplicationList(
 )
 ```
 
-获取申请添加好友列表 
+获取申请添加好友列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
-  * **callBack** [BMXErrorCode] 返回的申请好友列表信息 
-
+* **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+* **pageSize** 分页大小
+* **callBack** \[BMXErrorCode] 返回的申请好友列表信息
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="getApplicationList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function accept
 
 ```java
@@ -284,18 +314,21 @@ inline void accept(
 )
 ```
 
-接受加好友申请 
+接受加好友申请
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** 申请加为好友的用户id 
-  * **callBack** [BMXErrorCode]
-
+* **rosterId** 申请加为好友的用户id
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="accept" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function decline
 
 ```java
@@ -306,19 +339,22 @@ inline void decline(
 )
 ```
 
-拒绝加好友申请 
+拒绝加好友申请
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** 申请加为好友的用户id 
-  * **reason** 拒绝的原因 
-  * **callBack** [BMXErrorCode]
-
+* **rosterId** 申请加为好友的用户id
+* **reason** 拒绝的原因
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="decline" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function block
 
 ```java
@@ -328,18 +364,21 @@ inline void block(
 )
 ```
 
-加入黑名单 
+加入黑名单
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** 加入黑名单的用户id 
-  * **callBack** [BMXErrorCode]
-
+* **rosterId** 加入黑名单的用户id
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="block" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function unblock
 
 ```java
@@ -349,18 +388,21 @@ inline void unblock(
 )
 ```
 
-从黑名单移除 
+从黑名单移除
 
-**Parameters**: 
+**Parameters**:
 
-  * **rosterId** 从黑名单移除的用户id 
-  * **callBack** [BMXErrorCode]
-
+* **rosterId** 从黑名单移除的用户id
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="unblock" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function getBlockList
 
 ```java
@@ -370,18 +412,21 @@ inline void getBlockList(
 )
 ```
 
-获取黑名单，如果forceRefresh == true，则强制从服务端拉取 
+获取黑名单，如果forceRefresh == true，则强制从服务端拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **forceRefresh** 是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取 
-  * **callBack** [BMXErrorCode] 好友id列表 
-
+* **forceRefresh** 是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取
+* **callBack** \[BMXErrorCode] 好友id列表
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="getBlockList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function downloadAvatar
 
 ```java
@@ -392,19 +437,22 @@ inline void downloadAvatar(
 )
 ```
 
-下载头像 
+下载头像
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** 用户信息 
-  * **listener** 下载回调函数 
-  * **callBack** [BMXErrorCode]
-
+* **item** 用户信息
+* **listener** 下载回调函数
+* **callBack** \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="downloadAvatar" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function addRosterListener
 
 ```java
@@ -413,17 +461,20 @@ inline void addRosterListener(
 )
 ```
 
-添加好友变化监听者 
+添加好友变化监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 好友变化监听者 
-
+* **listener** 好友变化监听者
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="addRosterListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
+
 ```
+
 ### function removeRosterListener
 
 ```java
@@ -432,17 +483,19 @@ inline void removeRosterListener(
 )
 ```
 
-移除好友变化监听者 
+移除好友变化监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 好友变化监听者 
-
+* **listener** 好友变化监听者
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterManager",function="removeRosterListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterManager'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:18:31 +0800

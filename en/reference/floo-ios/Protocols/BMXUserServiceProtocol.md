@@ -1,7 +1,7 @@
 # BMXUserServiceProtocol Protocol Reference
 
-  **Conforms to** NSObject  
-  **Declared in** floo_proxy.h  
+**Conforms to** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,7 +9,6 @@
 
 ## Instance Methods
 
-<a name="//api/name/connectStatusDidChanged:" title="connectStatusDidChanged:"></a>
 ### connectStatusDidChanged:
 
 Connection status changed
@@ -18,16 +17,20 @@ Connection status changed
 
 #### Parameters
 
-*status*  
+_status_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/userInfoDidUpdated:" title="userInfoDidUpdated:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="connectStatusDidChanged:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserServiceProtocol'></div>
+
 ```
+
 ### userInfoDidUpdated:
 
 User information updated
@@ -37,13 +40,17 @@ User information updated
 #### Discussion
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/userOtherDeviceDidSignIn:" title="userOtherDeviceDidSignIn:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userInfoDidUpdated:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserServiceProtocol'></div>
+
 ```
+
 ### userOtherDeviceDidSignIn:
 
 User signed in the other device
@@ -53,13 +60,17 @@ User signed in the other device
 #### Discussion
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/userOtherDeviceDidSignOut:" title="userOtherDeviceDidSignOut:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userOtherDeviceDidSignIn:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserServiceProtocol'></div>
+
 ```
+
 ### userOtherDeviceDidSignOut:
 
 User signed out the other device
@@ -69,13 +80,17 @@ User signed out the other device
 #### Discussion
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/userSignIn:" title="userSignIn:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userOtherDeviceDidSignOut:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserServiceProtocol'></div>
+
 ```
+
 ### userSignIn:
 
 User signed in
@@ -84,16 +99,20 @@ User signed in
 
 #### Parameters
 
-*userProflie*  
+_userProflie_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/userSignOut:userId:" title="userSignOut:userId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userSignIn:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserServiceProtocol'></div>
+
 ```
+
 ### userSignOut:userId:
 
 User signed out
@@ -102,12 +121,15 @@ User signed out
 
 #### Parameters
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserServiceProtocol",function="userSignOut:userId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserServiceProtocol'></div>
 ```

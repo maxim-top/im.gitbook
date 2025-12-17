@@ -1,59 +1,56 @@
 ---
 title: im::floo::floolib::BMXChatServiceListener
-summary: Chat listener 
-
+summary: Chat listener
 ---
 
 # im::floo::floolib::BMXChatServiceListener
 
-
-
-Chat listener 
+Chat listener
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-delete)**() |
-| void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigreleaseownership)**() |
-| void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigtakeownership)**() |
-| void | **[onStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>Message state changed  |
-| void | **[onAttachmentUploadProgressChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentuploadprogresschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, int percent)<br>Attachment upload state changed  |
-| void | **[onRecallStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onrecallstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error)<br>Message recall state changed  |
-| void | **[onReceive](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceive)**(BMXMessageList list)<br>Messages received  |
-| void | **[onReceiveCommandMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivecommandmessages)**(BMXMessageList list)<br>Command received  |
-| void | **[onReceiveSystemMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages)**(BMXMessageList list)<br>System notification messages received  |
-| void | **[onReceiveReadAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks)**(BMXMessageList list)<br>Read acknowledgement of messages received  |
-| void | **[onReceiveDeliverAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks)**(BMXMessageList list)<br>Acknowledgement of message delivered received  |
-| void | **[onReceiveRecallMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages)**(BMXMessageList list)<br>Canceled messages received  |
-| void | **[onReceiveReadCancels](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadcancels)**(BMXMessageList list)<br>Message re-unread received (cross-device synchronization for changing message status into unread)  |
-| void | **[onReceiveReadAllMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadallmessages)**(BMXMessageList list)<br>All received messages are read (all messages are set to read before cross-device synchronization)  |
-| void | **[onReceiveDeleteMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages)**(BMXMessageList list)<br> Message deletions received (delete messages cross devices synchronously)  |
-| void | **[onReceivePlayAcks](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks)**(BMXMessageList list)<br>Acknowledgement of message played received  |
-| void | **[onAttachmentStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, [BMXErrorCode] error, int percent)<br>Attachment download state changed  |
-| void | **[onAttachmentDownloadByUrlStatusChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged)**(long msgId, [BMXErrorCode] error, int percent)<br>Attachment download state changed  |
-| void | **[onRetrieveHistoryMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation)<br>Pull message history  |
-| void | **[onLoadAllConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation)**()<br>List of unread conversations has been loaded  |
-| void | **[onConversationCreate](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate)**([BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) conversation, [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg)<br>Create a new conversation locally  |
-| void | **[onConversationDelete](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete)**(long conversationId, [BMXErrorCode] error)<br> Delete a conversation  |
-| void | **[onTotalUnreadCountChanged](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged)**(int unreadCount)<br>Update total number of unread messages  |
-| | **[BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)**() |
-| void | **[registerChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-registerchatservice)**([BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md) service) |
+|                   | Name                                                                                                                                                                                                                                                                                                                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-delete)()                                                                                                                                                                                                                                                                              |
+| void              | [**swigReleaseOwnership**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigreleaseownership)()                                                                                                                                                                                                                                                  |
+| void              | [**swigTakeOwnership**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigtakeownership)()                                                                                                                                                                                                                                                        |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onstatuschanged"><strong>onStatusChanged</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, [BMXErrorCode] error)<br>Message state changed</p>                                                                                                  |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentuploadprogresschanged"><strong>onAttachmentUploadProgressChanged</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, int percent)<br>Attachment upload state changed</p>                                                             |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onrecallstatuschanged"><strong>onRecallStatusChanged</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, [BMXErrorCode] error)<br>Message recall state changed</p>                                                                               |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceive"><strong>onReceive</strong></a>(BMXMessageList list)<br>Messages received</p>                                                                                                                                                                                                 |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivecommandmessages"><strong>onReceiveCommandMessages</strong></a>(BMXMessageList list)<br>Command received</p>                                                                                                                                                                    |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivesystemmessages"><strong>onReceiveSystemMessages</strong></a>(BMXMessageList list)<br>System notification messages received</p>                                                                                                                                                 |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadacks"><strong>onReceiveReadAcks</strong></a>(BMXMessageList list)<br>Read acknowledgement of messages received</p>                                                                                                                                                         |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeliveracks"><strong>onReceiveDeliverAcks</strong></a>(BMXMessageList list)<br>Acknowledgement of message delivered received</p>                                                                                                                                               |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiverecallmessages"><strong>onReceiveRecallMessages</strong></a>(BMXMessageList list)<br>Canceled messages received</p>                                                                                                                                                            |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadcancels"><strong>onReceiveReadCancels</strong></a>(BMXMessageList list)<br>Message re-unread received (cross-device synchronization for changing message status into unread)</p>                                                                                           |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivereadallmessages"><strong>onReceiveReadAllMessages</strong></a>(BMXMessageList list)<br>All received messages are read (all messages are set to read before cross-device synchronization)</p>                                                                                   |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceivedeletemessages"><strong>onReceiveDeleteMessages</strong></a>(BMXMessageList list)<br>Message deletions received (delete messages cross devices synchronously)</p>                                                                                                              |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onreceiveplayacks"><strong>onReceivePlayAcks</strong></a>(BMXMessageList list)<br>Acknowledgement of message played received</p>                                                                                                                                                        |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentstatuschanged"><strong>onAttachmentStatusChanged</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, [BMXErrorCode] error, int percent)<br>Attachment download state changed</p>                                                     |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onattachmentdownloadbyurlstatuschanged"><strong>onAttachmentDownloadByUrlStatusChanged</strong></a>(long msgId, [BMXErrorCode] error, int percent)<br>Attachment download state changed</p>                                                                                             |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onretrievehistorymessages"><strong>onRetrieveHistoryMessages</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md">BMXConversation</a> conversation)<br>Pull message history</p>                                                                                  |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onloadallconversation"><strong>onLoadAllConversation</strong></a>()<br>List of unread conversations has been loaded</p>                                                                                                                                                                 |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationcreate"><strong>onConversationCreate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md">BMXConversation</a> conversation, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg)<br>Create a new conversation locally</p> |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-onconversationdelete"><strong>onConversationDelete</strong></a>(long conversationId, [BMXErrorCode] error)<br>Delete a conversation</p>                                                                                                                                                 |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-ontotalunreadcountchanged"><strong>onTotalUnreadCountChanged</strong></a>(int unreadCount)<br>Update total number of unread messages</p>                                                                                                                                                |
+|                   | [**BMXChatServiceListener**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)()                                                                                                                                                                                                                                              |
+| void              | [**registerChatService**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-registerchatservice)([BMXChatService](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md) service)                                                                                                                                                                      |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-finalize)**() |
-| void | **[swigDirectorDisconnect](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigdirectordisconnect)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-getcptr)**([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) obj) |
+|      | Name                                                                                                                                                                                       |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      | [**BMXChatServiceListener**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-bmxchatservicelistener)(long cPtr, boolean cMemoryOwn)                                 |
+| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-finalize)()                                                                                          |
+| void | [**swigDirectorDisconnect**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-swigdirectordisconnect)()                                                              |
+| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#function-getcptr)([BMXChatServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md) obj) |
 
 ## Protected Attributes
 
-|                | Name           |
-| -------------- | -------------- |
-| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#variable-swigcmemown)**  |
+|                   | Name                                                                                                  |
+| ----------------- | ----------------------------------------------------------------------------------------------------- |
+| transient boolean | [**swigCMemOwn**](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service_listener.md#variable-swigcmemown) |
 
 ## Public Functions Documentation
 
@@ -63,33 +60,42 @@ Chat listener
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="delete" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function swigReleaseOwnership
 
 ```java
 inline void swigReleaseOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function swigTakeOwnership
 
 ```java
 inline void swigTakeOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onStatusChanged
 
 ```java
@@ -99,18 +105,21 @@ inline void onStatusChanged(
 )
 ```
 
-Message state changed 
+Message state changed
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** Message with state changed 
-  * **error** State error code 
-
+* **msg** Message with state changed
+* **error** State error code
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onStatusChanged" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onAttachmentUploadProgressChanged
 
 ```java
@@ -120,18 +129,21 @@ inline void onAttachmentUploadProgressChanged(
 )
 ```
 
-Attachment upload state changed 
+Attachment upload state changed
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** Message for uploading attachment 
-  * **percent** Progress of attachment uploading 
-
+* **msg** Message for uploading attachment
+* **percent** Progress of attachment uploading
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onAttachmentUploadProgressChanged" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onRecallStatusChanged
 
 ```java
@@ -141,18 +153,21 @@ inline void onRecallStatusChanged(
 )
 ```
 
-Message recall state changed 
+Message recall state changed
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** Message with state change canceled 
-  * **error** State error code 
-
+* **msg** Message with state change canceled
+* **error** State error code
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onRecallStatusChanged" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceive
 
 ```java
@@ -161,17 +176,20 @@ inline void onReceive(
 )
 ```
 
-Messages received 
+Messages received
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received messages 
-
+* **list** List of received messages
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceive" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveCommandMessages
 
 ```java
@@ -180,17 +198,20 @@ inline void onReceiveCommandMessages(
 )
 ```
 
-Command received 
+Command received
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received messages 
-
+* **list** List of received messages
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveCommandMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveSystemMessages
 
 ```java
@@ -199,17 +220,20 @@ inline void onReceiveSystemMessages(
 )
 ```
 
-System notification messages received 
+System notification messages received
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received system messages 
-
+* **list** List of received system messages
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveSystemMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveReadAcks
 
 ```java
@@ -218,17 +242,20 @@ inline void onReceiveReadAcks(
 )
 ```
 
-Read acknowledgement of messages received 
+Read acknowledgement of messages received
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received messages with read acknowledgement 
-
+* **list** List of received messages with read acknowledgement
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveReadAcks" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveDeliverAcks
 
 ```java
@@ -237,17 +264,20 @@ inline void onReceiveDeliverAcks(
 )
 ```
 
-Acknowledgement of message delivered received 
+Acknowledgement of message delivered received
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received messages with delivered acknowledgement 
-
+* **list** List of received messages with delivered acknowledgement
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveDeliverAcks" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveRecallMessages
 
 ```java
@@ -256,17 +286,20 @@ inline void onReceiveRecallMessages(
 )
 ```
 
-Canceled messages received 
+Canceled messages received
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of canceled messages received 
-
+* **list** List of canceled messages received
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveRecallMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveReadCancels
 
 ```java
@@ -275,17 +308,20 @@ inline void onReceiveReadCancels(
 )
 ```
 
-Message re-unread received (cross-device synchronization for changing message status into unread) 
+Message re-unread received (cross-device synchronization for changing message status into unread)
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received messages with re-unread acknowledgement 
-
+* **list** List of received messages with re-unread acknowledgement
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveReadCancels" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveReadAllMessages
 
 ```java
@@ -294,17 +330,20 @@ inline void onReceiveReadAllMessages(
 )
 ```
 
-All received messages are read (all messages are set to read before cross-device synchronization) 
+All received messages are read (all messages are set to read before cross-device synchronization)
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received messages with all-read acknowledgement 
-
+* **list** List of received messages with all-read acknowledgement
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveReadAllMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceiveDeleteMessages
 
 ```java
@@ -313,17 +352,20 @@ inline void onReceiveDeleteMessages(
 )
 ```
 
- Message deletions received (delete messages cross devices synchronously) 
+Message deletions received (delete messages cross devices synchronously)
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of deleted messages received 
-
+* **list** List of deleted messages received
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceiveDeleteMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onReceivePlayAcks
 
 ```java
@@ -332,17 +374,20 @@ inline void onReceivePlayAcks(
 )
 ```
 
-Acknowledgement of message played received 
+Acknowledgement of message played received
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** List of received messages with read acknowledgement 
-
+* **list** List of received messages with read acknowledgement
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onReceivePlayAcks" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onAttachmentStatusChanged
 
 ```java
@@ -353,19 +398,22 @@ inline void onAttachmentStatusChanged(
 )
 ```
 
-Attachment download state changed 
+Attachment download state changed
 
-**Parameters**: 
+**Parameters**:
 
-  * **msg** Message with downloading state changed 
-  * **error** State error code 
-  * **percent** Progress of attachment downloading 
-
+* **msg** Message with downloading state changed
+* **error** State error code
+* **percent** Progress of attachment downloading
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onAttachmentStatusChanged" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onAttachmentDownloadByUrlStatusChanged
 
 ```java
@@ -376,19 +424,22 @@ inline void onAttachmentDownloadByUrlStatusChanged(
 )
 ```
 
-Attachment download state changed 
+Attachment download state changed
 
-**Parameters**: 
+**Parameters**:
 
-  * **msgId** Message ID with download state changed 
-  * **error** State error code 
-  * **percent** Progress of attachment downloading 
-
+* **msgId** Message ID with download state changed
+* **error** State error code
+* **percent** Progress of attachment downloading
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onAttachmentDownloadByUrlStatusChanged" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onRetrieveHistoryMessages
 
 ```java
@@ -397,29 +448,36 @@ inline void onRetrieveHistoryMessages(
 )
 ```
 
-Pull message history 
+Pull message history
 
-**Parameters**: 
+**Parameters**:
 
-  * **conversation** Conversation for which a specific message history was pulled 
-
+* **conversation** Conversation for which a specific message history was pulled
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onRetrieveHistoryMessages" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onLoadAllConversation
 
 ```java
 inline void onLoadAllConversation()
 ```
 
-List of unread conversations has been loaded 
+List of unread conversations has been loaded
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onLoadAllConversation" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onConversationCreate
 
 ```java
@@ -429,18 +487,21 @@ inline void onConversationCreate(
 )
 ```
 
-Create a new conversation locally 
+Create a new conversation locally
 
-**Parameters**: 
+**Parameters**:
 
-  * **conversation** Newly created local conversation 
-  * **msg** Latest message for conversation, return for existing, empty for no existing 
-
+* **conversation** Newly created local conversation
+* **msg** Latest message for conversation, return for existing, empty for no existing
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onConversationCreate" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onConversationDelete
 
 ```java
@@ -450,18 +511,21 @@ inline void onConversationDelete(
 )
 ```
 
- Delete a conversation 
+Delete a conversation
 
-**Parameters**: 
+**Parameters**:
 
-  * **conversationId** Deleted local conversation id 
-  * **error** State error code 
-
+* **conversationId** Deleted local conversation id
+* **error** State error code
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onConversationDelete" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function onTotalUnreadCountChanged
 
 ```java
@@ -470,28 +534,34 @@ inline void onTotalUnreadCountChanged(
 )
 ```
 
-Update total number of unread messages 
+Update total number of unread messages
 
-**Parameters**: 
+**Parameters**:
 
-  * **unreadCount** Total number of local unread conversations 
-
+* **unreadCount** Total number of local unread conversations
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="onTotalUnreadCountChanged" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function BMXChatServiceListener
 
 ```java
 inline BMXChatServiceListener()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="BMXChatServiceListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function registerChatService
 
 ```java
@@ -500,13 +570,16 @@ inline void registerChatService(
 )
 ```
 
-
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="registerChatService" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function BMXChatServiceListener
 
 ```java
@@ -516,33 +589,42 @@ inline BMXChatServiceListener(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="BMXChatServiceListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function swigDirectorDisconnect
 
 ```java
 inline void swigDirectorDisconnect()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
+
 ```
+
 ### function getCPtr
 
 ```java
@@ -550,7 +632,6 @@ static inline long getCPtr(
     BMXChatServiceListener obj
 )
 ```
-
 
 ## Protected Attributes Documentation
 
@@ -560,11 +641,13 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXChatServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXChatServiceListener'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:18:31 +0800

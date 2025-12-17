@@ -1,7 +1,7 @@
 # BMXRTCEngineProtocol Protocol Reference
 
-  **Conforms to** NSObject  
-  **Declared in** floo_proxy.h  
+**Conforms to** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,7 +9,6 @@
 
 ## Instance Methods
 
-<a name="//api/name/onErrorWithInfo:error:" title="onErrorWithInfo:error:"></a>
 ### onErrorWithInfo:error:
 
 Received an error
@@ -18,18 +17,22 @@ Received an error
 
 #### Parameters
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onJoinRoomWithInfo:roomId:error:" title="onJoinRoomWithInfo:roomId:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onErrorWithInfo:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onJoinRoomWithInfo:roomId:error:
 
 Joined a room
@@ -38,20 +41,24 @@ Joined a room
 
 #### Parameters
 
-*info*  
+_info_
 
-*roomId*  
+_roomId_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onKickoffWithInfo:error:" title="onKickoffWithInfo:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onJoinRoomWithInfo:roomId:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onKickoffWithInfo:error:
 
 Kicked off
@@ -60,18 +67,22 @@ Kicked off
 
 #### Parameters
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onLeaveRoomWithInfo:roomId:error:reason:" title="onLeaveRoomWithInfo:roomId:error:reason:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onKickoffWithInfo:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onLeaveRoomWithInfo:roomId:error:reason:
 
 Left a room
@@ -80,22 +91,26 @@ Left a room
 
 #### Parameters
 
-*info*  
+_info_
 
-*roomId*  
+_roomId_
 
-*error*  
+_error_
 
-*reason*  
+_reason_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onLocalAudioLevelWithVolume:" title="onLocalAudioLevelWithVolume:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onLeaveRoomWithInfo:roomId:error:reason:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onLocalAudioLevelWithVolume:
 
 Local audio volume changed
@@ -104,16 +119,20 @@ Local audio volume changed
 
 #### Parameters
 
-*volume*  
+_volume_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onLocalPublishWithStream:info:error:" title="onLocalPublishWithStream:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onLocalAudioLevelWithVolume:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onLocalPublishWithStream:info:error:
 
 Local stream published
@@ -122,20 +141,24 @@ Local stream published
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onLocalStreamMuteRspWithStream:trackType:mute:info:error:" title="onLocalStreamMuteRspWithStream:trackType:mute:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onLocalPublishWithStream:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onLocalStreamMuteRspWithStream:trackType:mute:info:error:
 
 Local stream muted or unmuted
@@ -144,25 +167,29 @@ Local stream muted or unmuted
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*trackType*  
-    Audio or video
+_trackType_\
+Audio or video
 
-*mute*  
+_mute_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onLocalUnPublishWithStream:info:error:" title="onLocalUnPublishWithStream:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onLocalStreamMuteRspWithStream:trackType:mute:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onLocalUnPublishWithStream:info:error:
 
 Local stream unpublished
@@ -171,20 +198,24 @@ Local stream unpublished
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onMemberExitedWithRoomId:usedId:reason:" title="onMemberExitedWithRoomId:usedId:reason:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onLocalUnPublishWithStream:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onMemberExitedWithRoomId:usedId:reason:
 
 Other member left
@@ -193,20 +224,24 @@ Other member left
 
 #### Parameters
 
-*roomId*  
+_roomId_
 
-*reason*  
+_reason_
 
-*userId*  
+_userId_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onMemberJoinedWithRoomId:usedId:" title="onMemberJoinedWithRoomId:usedId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onMemberExitedWithRoomId:usedId:reason:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onMemberJoinedWithRoomId:usedId:
 
 Other member joined
@@ -215,18 +250,22 @@ Other member joined
 
 #### Parameters
 
-*roomId*  
+_roomId_
 
-*usedId*  
+_usedId_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onNetworkQualityWithStream:info:error:" title="onNetworkQualityWithStream:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onMemberJoinedWithRoomId:usedId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onNetworkQualityWithStream:info:error:
 
 Stream network quality changed
@@ -235,20 +274,24 @@ Stream network quality changed
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onReJoinRoomWithInfo:roomId:error:" title="onReJoinRoomWithInfo:roomId:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onNetworkQualityWithStream:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onReJoinRoomWithInfo:roomId:error:
 
 Rejoined a room
@@ -257,20 +300,24 @@ Rejoined a room
 
 #### Parameters
 
-*info*  
+_info_
 
-*roomId*  
+_roomId_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onRejoiningWithRoomId:error:" title="onRejoiningWithRoomId:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onReJoinRoomWithInfo:roomId:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onRejoiningWithRoomId:error:
 
 Rejoining a room
@@ -279,20 +326,24 @@ Rejoining a room
 
 #### Parameters
 
-*roomId*  
+_roomId_
 
-*error*  
+_error_
 
 #### Discussion
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onRemoteAudioLevelWithUserId:volume:" title="onRemoteAudioLevelWithUserId:volume:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onRejoiningWithRoomId:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onRemoteAudioLevelWithUserId:volume:
 
 Remote audio volume changed
@@ -301,18 +352,22 @@ Remote audio volume changed
 
 #### Parameters
 
-*userId*  
+_userId_
 
-*volume*  
+_volume_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onRemotePublishWithStream:info:error:" title="onRemotePublishWithStream:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onRemoteAudioLevelWithUserId:volume:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onRemotePublishWithStream:info:error:
 
 Remote stream published
@@ -321,20 +376,24 @@ Remote stream published
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onRemoteRTCStatsWithStreamStats:info:error:" title="onRemoteRTCStatsWithStreamStats:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onRemotePublishWithStream:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onRemoteRTCStatsWithStreamStats:info:error:
 
 Remote RTC statistics data received
@@ -343,20 +402,24 @@ Remote RTC statistics data received
 
 #### Parameters
 
-*streamStats*  
+_streamStats_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onRemoteStreamMuteRspWithStream:trackType:mute:info:error:" title="onRemoteStreamMuteRspWithStream:trackType:mute:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onRemoteRTCStatsWithStreamStats:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onRemoteStreamMuteRspWithStream:trackType:mute:info:error:
 
 Remote stream muted or unmuted
@@ -365,25 +428,29 @@ Remote stream muted or unmuted
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*trackType*  
-    Audio or video
+_trackType_\
+Audio or video
 
-*mute*  
+_mute_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onRemoteTrackNotifyWithStream:trackType:info:error:" title="onRemoteTrackNotifyWithStream:trackType:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onRemoteStreamMuteRspWithStream:trackType:mute:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onRemoteTrackNotifyWithStream:trackType:info:error:
 
 Remote stream track updated
@@ -392,22 +459,26 @@ Remote stream track updated
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*trackType*  
+_trackType_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onRemoteUnPublishWithStream:info:error:" title="onRemoteUnPublishWithStream:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onRemoteTrackNotifyWithStream:trackType:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onRemoteUnPublishWithStream:info:error:
 
 Remote stream unpublished
@@ -416,20 +487,24 @@ Remote stream unpublished
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onSendRTCStatsWithStreamStats:info:error:" title="onSendRTCStatsWithStreamStats:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onRemoteUnPublishWithStream:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onSendRTCStatsWithStreamStats:info:error:
 
 RTC stream statistics data sent
@@ -438,20 +513,24 @@ RTC stream statistics data sent
 
 #### Parameters
 
-*streamStats*  
+_streamStats_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onSubscribeWithStream:info:error:" title="onSubscribeWithStream:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onSendRTCStatsWithStreamStats:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onSubscribeWithStream:info:error:
 
 Stream subscribed
@@ -460,20 +539,24 @@ Stream subscribed
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onUnSubscribeWithStream:info:error:" title="onUnSubscribeWithStream:info:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onSubscribeWithStream:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onUnSubscribeWithStream:info:error:
 
 Stream unsubscribed
@@ -482,20 +565,24 @@ Stream unsubscribed
 
 #### Parameters
 
-*stream*  
+_stream_
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/onWarningWithInfo:error:" title="onWarningWithInfo:error:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onUnSubscribeWithStream:info:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
+
 ```
+
 ### onWarningWithInfo:error:
 
 Warning info received
@@ -504,14 +591,17 @@ Warning info received
 
 #### Parameters
 
-*info*  
+_info_
 
-*error*  
+_error_
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngineProtocol",function="onWarningWithInfo:error:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngineProtocol'></div>
 ```

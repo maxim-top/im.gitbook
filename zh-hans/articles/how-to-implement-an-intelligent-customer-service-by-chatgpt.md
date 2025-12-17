@@ -1,7 +1,8 @@
 ---
-description: 构建新一代智能聊天App，使用蓝莺IM专业SDK！
 keywords: 智能聊天App, 蓝莺IM专业SDK, IM SDK, 企业级AI
+description: 构建新一代智能聊天App，使用蓝莺IM专业SDK！
 ---
+
 # ChatGPT能用来做智能客服吗？
 
 支持好多AI引擎的 蓝莺IM _2023-03-07 21:43_
@@ -20,7 +21,7 @@ ChatGPT发布四个月，我们看到了许多好玩的例子，也看到了提�
 
 而用ChatGPT，找有Chat的场景，比创造使用Chat的新场景更简单。
 
-![](../assets/articles/autogen-5ee950e21468fc38e5d94ffbb75cd3e0c3edd0a0ad77ed48fc0c30d2c0a6876.jpeg)
+![](<../../.gitbook/assets/autogen-5ee950e21468fc38e5d94ffbb75cd3e0c3edd0a0ad77ed48fc0c30d2c0a6876 (1).jpeg>)
 
 在ChatGPT之前，其实对话式AI一直在被广泛使用在客服场景，只不过一般都称Conversational AI。 就在ChatGPT发布前两个月，Salesforce首席科学家Silvio Savarese还发表了一篇很有意思的文章[《说到即可做到：对话式AI时代》 \[1\]](https://blog.salesforceairesearch.com/age-of-conversational-ai/)，只不过他应该也想不到，这个对话式AI引擎技术会在如此快的时间，变成如此简单易获取的工具。
 
@@ -40,7 +41,7 @@ ChatGPT之前，使用AI技术你不只是需要一套软件，用来运行AI算
 
 ChatGPT这么好用，智能客服自然首当其冲。
 
-前两天有一篇文章问[《ChatGPT再出王炸，客服都要下岗了？》](https://mp.weixin.qq.com/s?__biz=Mzg3MDMxMDUzNQ==&mid=2247631900&idx=1&sn=1b19058f5800b86c09494cde62e1bbfe&scene=21#wechat_redirect)，可以看到这个本来很卷的行业有多郁闷。尤其是文中提到的落地难点说得清楚，但道理也只说了一半。
+前两天有一篇文章问[《ChatGPT再出王炸，客服都要下岗了？》](https://mp.weixin.qq.com/s?__biz=Mzg3MDMxMDUzNQ==\&mid=2247631900\&idx=1\&sn=1b19058f5800b86c09494cde62e1bbfe\&scene=21#wechat_redirect)，可以看到这个本来很卷的行业有多郁闷。尤其是文中提到的落地难点说得清楚，但道理也只说了一半。
 
 在ChatGPT上通过Fine-tune训练自己的模型，成本固然不低，但是大多数人并不需要。多数场景下，我们只需要基础的模型加上Prompt微调即可，这个就只有API的费用。对于智能客服这种有明确投入产出计算的业务，完全可以接受。
 
@@ -61,13 +62,16 @@ ChatGPT发布当月，我们在控制台第三方服务增加OpenAI Chatbot配�
 这一步就是让AI了解业务，并能有基础的话术。根据我们的业务，主要有
 
 1. 一个欢迎语：
+
 ```
   {  
    "role": "assistant",  
    "content": "你好，我是小蓝Bot，也是蓝莺IM的AI助手。这里主要是AI的闲聊，如果你想咨询IM SDK或蓝莺云服务，可直接登陆官网在线咨询或者拨打电话 400-666-0162 。"  
   },
 ```
+
 2. 几个关于业务和术语的说明： 蓝莺IM、云原生IM、官网、咨询电话、收费方式。
+
 ```
   {  
    "role": "user",  
@@ -161,7 +165,7 @@ ChatGPT发布当月，我们在控制台第三方服务增加OpenAI Chatbot配�
 
 ### 胡锡进问题
 
-刚才我们说到胡编乱造的问题，其实已经被很多人发现，就是ChatGPT经常会一本正经的胡说八道。但是不要误会，我说的不是胡锡进胡说八道，而是一个AI领域的学术问题：[人工智能幻觉 \[5\]](https://zh.wikipedia.org/wiki/%E5%B9%BB%E8%A7%89\_%28%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%29)。
+刚才我们说到胡编乱造的问题，其实已经被很多人发现，就是ChatGPT经常会一本正经的胡说八道。但是不要误会，我说的不是胡锡进胡说八道，而是一个AI领域的学术问题：[人工智能幻觉 \[5\]](https://zh.wikipedia.org/wiki/%E5%B9%BB%E8%A7%89_\(%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD\))。
 
 根据维基百科的说明：
 
@@ -182,6 +186,7 @@ ChatGPT发布当月，我们在控制台第三方服务增加OpenAI Chatbot配�
 真实情况是，你问任何一个人，如果它不认识，它就会往公司上关联，给他安排各种头衔和履历。
 
 因此我们增加了以下设置，明确创始人信息并排除了其他关联：
+
 ```
  {  
    "role": "user",  
@@ -231,7 +236,7 @@ AI是把双刃剑，随着其能力的提升，这把剑变得越来越锋利，
 
 这个服务可以只自己根据产品规则定义的，针对注册来源、活跃程度等不同的限制，也可以是专门的内容安全审核服务，比如阿里云盾等。
 
-![](../assets/articles/autogen-ea62691aad1247c719bd7a8985c2f7de43e2e210a3275d5d32d20c35794c6354.png)
+![](<../../.gitbook/assets/autogen-ea62691aad1247c719bd7a8985c2f7de43e2e210a3275d5d32d20c35794c6354 (1).png>)
 
 审核策略有两种选择，可以直接停止发送，或者将关键词替换成符号，可以根据需要随时配置。
 
@@ -251,31 +256,22 @@ AI是把双刃剑，随着其能力的提升，这把剑变得越来越锋利，
 
 如果你也是这样的人，欢迎添加小蓝会聊天加入我们的群，一起交流 Prompt，一起玩ChatGPT：
 
-> ![扫码添加小蓝会聊天](../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
+> <img src="../../.gitbook/assets/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446 (1).png" alt="扫码添加小蓝会聊天" data-size="original">
 
 ## 关于
 
-> [蓝莺IM \[9\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+> [蓝莺IM \[9\]](https://www.lanyingim.com)是由美信拓扑团队研发的新一代即时通讯云服务，SDK设计简单，文档完善集成方便，服务采用云原生技术和多云架构，私有云可免费自助安装，并支持按月付费。![](<../../.gitbook/assets/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06 (1).jpeg>)
 
 ## 构建新一代智能聊天App，使用蓝莺IM专业SDK！
-
 
 ## 参考资料
 
 1. [《说到即可做到：对话式AI时代》](https://blog.salesforceairesearch.com/age-of-conversational-ai/)
-
 2. [Few-shot Learning](https://nlpcloud.com/effectively-using-gpt-j-gpt-neo-gpt-3-alternatives-few-shot-learning.html)
-
 3. [《如何写有效的GPT-3 Prompt》](https://zapier.com/blog/gpt-3-prompt/)
-
 4. [Customer Service Prompt](https://promptbase.com/prompt/customer-service-scenarios)
-
-5. [人工智能幻觉](https://zh.wikipedia.org/wiki/%E5%B9%BB%E8%A7%89\_%28%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%29)
-
+5. [人工智能幻觉](https://zh.wikipedia.org/wiki/%E5%B9%BB%E8%A7%89_\(%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD\))
 6. [人类反馈强化学习（RLHF）](https://huggingface.co/blog/rlhf)
-
 7. [对话式AI的政治倾向研究](https://arxiv.org/abs/2301.01768)
-
 8. [小蓝AI的完整Prompt](https://github.com/maxim-top/lanying-connector/blob/2b6cf22fb5991b2023321a95371a9579eca42533/configs/openai-xiaolan.json)
-
 9. [蓝莺IM](https://www.lanyingim.com)

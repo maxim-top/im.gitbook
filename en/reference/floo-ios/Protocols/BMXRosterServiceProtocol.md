@@ -1,7 +1,7 @@
 # BMXRosterServiceProtocol Protocol Reference
 
-  **Conforms to** NSObject  
-  **Declared in** floo_proxy.h  
+**Conforms to** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,7 +9,6 @@
 
 ## Instance Methods
 
-<a name="//api/name/friendAddedSponsorId:recipientId:" title="friendAddedSponsorId:recipientId:"></a>
 ### friendAddedSponsorId:recipientId:
 
 Friend added
@@ -18,18 +17,22 @@ Friend added
 
 #### Parameters
 
-*sponsorId*  
+_sponsorId_
 
-*recipientId*  
+_recipientId_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendAddedtoBlockListSponsorId:recipientId:" title="friendAddedtoBlockListSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendAddedSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendAddedtoBlockListSponsorId:recipientId:
 
 Blocked a user
@@ -38,18 +41,22 @@ Blocked a user
 
 #### Parameters
 
-*sponsorId*  
+_sponsorId_
 
-*recipientId*  
+_recipientId_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendDidApplicationAcceptedFromSponsorId:recipientId:" title="friendDidApplicationAcceptedFromSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendAddedtoBlockListSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendDidApplicationAcceptedFromSponsorId:recipientId:
 
 Friend request accepted
@@ -58,18 +65,22 @@ Friend request accepted
 
 #### Parameters
 
-*sponsorId*  
+_sponsorId_
 
-*recipientId*  
+_recipientId_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendDidApplicationDeclinedFromSponsorId:recipientId:reson:" title="friendDidApplicationDeclinedFromSponsorId:recipientId:reson:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidApplicationAcceptedFromSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendDidApplicationDeclinedFromSponsorId:recipientId:reson:
 
 Friend request declined
@@ -78,20 +89,24 @@ Friend request declined
 
 #### Parameters
 
-*sponsorId*  
+_sponsorId_
 
-*recipientId*  
+_recipientId_
 
-*reason*  
+_reason_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendDidRecivedAppliedSponsorId:recipientId:message:" title="friendDidRecivedAppliedSponsorId:recipientId:message:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidApplicationDeclinedFromSponsorId:recipientId:reson:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendDidRecivedAppliedSponsorId:recipientId:message:
 
 Received a friend request
@@ -100,20 +115,24 @@ Received a friend request
 
 #### Parameters
 
-*sponsorId*  
+_sponsorId_
 
-*recipientId*  
+_recipientId_
 
-*message*  
+_message_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendRemovedFromBlockListSponsorId:recipientId:" title="friendRemovedFromBlockListSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendDidRecivedAppliedSponsorId:recipientId:message:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendRemovedFromBlockListSponsorId:recipientId:
 
 Unblocked a user
@@ -122,18 +141,22 @@ Unblocked a user
 
 #### Parameters
 
-*sponsorId*  
+_sponsorId_
 
-*recipientId*  
+_recipientId_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/friendRemovedSponsorId:recipientId:" title="friendRemovedSponsorId:recipientId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendRemovedFromBlockListSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### friendRemovedSponsorId:recipientId:
 
 A friend removed
@@ -142,18 +165,22 @@ A friend removed
 
 #### Parameters
 
-*sponsorId*  
+_sponsorId_
 
-*recipientId*  
+_recipientId_
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/rosterInfoDidUpdate:" title="rosterInfoDidUpdate:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="friendRemovedSponsorId:recipientId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
+
 ```
+
 ### rosterInfoDidUpdate:
 
 Roster item information updated
@@ -163,9 +190,12 @@ Roster item information updated
 #### Discussion
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterServiceProtocol",function="rosterInfoDidUpdate:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterServiceProtocol'></div>
 ```

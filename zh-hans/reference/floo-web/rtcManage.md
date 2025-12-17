@@ -1,255 +1,334 @@
 # rtcManage
-## rtcManage {#module_rtcmanage}
+
+## rtcManage <a href="#module_rtcmanage" id="module_rtcmanage"></a>
+
 音视频管理
 
+* [rtcManage](rtcManage.md#module_rtcmanage)
+  * [.initRTCEngine(params)](rtcManage.md#module_rtcmanage__initrtcengine) ⇒ `null`
+  * [.destroy()](rtcManage.md#module_rtcmanage__destroy) ⇒ `null`
+  * [.sendRTCMessage(msg)](rtcManage.md#module_rtcmanage__sendrtcmessage) ⇒ `number`
+  * [.joinRoom(params)](rtcManage.md#module_rtcmanage__joinroom) ⇒ `null`
+  * [.leaveRoom()](rtcManage.md#module_rtcmanage__leaveroom) ⇒ `null`
+  * [.publish(type, hasVideo, hasAudio)](rtcManage.md#module_rtcmanage__publish) ⇒ `null`
+  * [.unPublish()](rtcManage.md#module_rtcmanage__unpublish) ⇒ `null`
+  * [.subscribe(sources)](rtcManage.md#module_rtcmanage__subscribe) ⇒ `null`
+  * [.unSubscribe(id)](rtcManage.md#module_rtcmanage__unsubscribe) ⇒ `null`
+  * [.muteLocalAudio(mute)](rtcManage.md#module_rtcmanage__mutelocalaudio) ⇒ `null`
+  * [.muteLocalVideo(mute)](rtcManage.md#module_rtcmanage__mutelocalvideo) ⇒ `null`
+  * [.muteRemoteAudio(stream, mute)](rtcManage.md#module_rtcmanage__muteremoteaudio) ⇒ `null`
+  * [.muteRemoteVideo(stream, mute)](rtcManage.md#module_rtcmanage__muteremotevideo) ⇒ `null`
+  * [.getJanusObject()](rtcManage.md#module_rtcmanage__getjanusobject) ⇒ `object`
+  * [.getPublishHandler()](rtcManage.md#module_rtcmanage__getpublishhandler) ⇒ `object`
+  * [.getSubscribeHandler()](rtcManage.md#module_rtcmanage__getsubscribehandler) ⇒ `object`
 
-* [rtcManage](#module_rtcmanage)
-    * [.initRTCEngine(params)](#module_rtcmanage__initrtcengine) ⇒ <code>null</code>
-    * [.destroy()](#module_rtcmanage__destroy) ⇒ <code>null</code>
-    * [.sendRTCMessage(msg)](#module_rtcmanage__sendrtcmessage) ⇒ <code>number</code>
-    * [.joinRoom(params)](#module_rtcmanage__joinroom) ⇒ <code>null</code>
-    * [.leaveRoom()](#module_rtcmanage__leaveroom) ⇒ <code>null</code>
-    * [.publish(type, hasVideo, hasAudio)](#module_rtcmanage__publish) ⇒ <code>null</code>
-    * [.unPublish()](#module_rtcmanage__unpublish) ⇒ <code>null</code>
-    * [.subscribe(sources)](#module_rtcmanage__subscribe) ⇒ <code>null</code>
-    * [.unSubscribe(id)](#module_rtcmanage__unsubscribe) ⇒ <code>null</code>
-    * [.muteLocalAudio(mute)](#module_rtcmanage__mutelocalaudio) ⇒ <code>null</code>
-    * [.muteLocalVideo(mute)](#module_rtcmanage__mutelocalvideo) ⇒ <code>null</code>
-    * [.muteRemoteAudio(stream, mute)](#module_rtcmanage__muteremoteaudio) ⇒ <code>null</code>
-    * [.muteRemoteVideo(stream, mute)](#module_rtcmanage__muteremotevideo) ⇒ <code>null</code>
-    * [.getJanusObject()](#module_rtcmanage__getjanusobject) ⇒ <code>object</code>
-    * [.getPublishHandler()](#module_rtcmanage__getpublishhandler) ⇒ <code>object</code>
-    * [.getSubscribeHandler()](#module_rtcmanage__getsubscribehandler) ⇒ <code>object</code>
+### rtcManage.initRTCEngine(params) ⇒ `null` <a href="#module_rtcmanage__initrtcengine" id="module_rtcmanage__initrtcengine"></a>
 
-### rtcManage.initRTCEngine(params) ⇒ <code>null</code> {#module_rtcmanage__initrtcengine}
 发起端发起音视频呼叫
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| params | <code>object</code> | 初始化参数 |
-| params.server | <code>string</code> | RTC服务器地址 |
-| params.id | <code>number</code> | 音视频用户id |
-| params.caller | <code>boolean</code> | 是否为呼叫发起者 |
-| params.receiver | <code>number</code> | 音视频用户对方id |
-| params.pin | <code>string</code> | 房间加入pin码（caller为true时发起者需要创建新的pin码） |
-| params.hasVideo | <code>boolean</code> | 是否存在视频流 |
-| params.hasAudio | <code>boolean</code> | 是否存在音频流 |
-| params.attachStream | <code>function</code> | 音视频通话信息流处理函数 |
-| params.getThrough | <code>function</code> | 音视频通话是否接通 |
-| params.hangupCall | <code>function</code> | 音视频通话是否挂断 |
-| params.getHangUpStatus | <code>function</code> | 获取挂断状态函数 以下是caller为 true 的必须参数（被呼叫者必须参数） |
-| params.roomId | <code>number</code> | 被呼叫者邀请加入的 room id 以下是caller为 true 的必须参数（呼叫者必须参数） |
-| params.secret | <code>string</code> | 创建的房间操作密码 |
-| params.callId | <code>string</code> | 创建音视频呼叫时音视频 callid 以下时视频会话必须的参数（视频宽度和高度设置函数） |
-| params.width | <code>number</code> | 视频流画面宽度 |
-| params.height | <code>number</code> | 视频流画面高度 |
+| Param                  | Type       | Description                                      |
+| ---------------------- | ---------- | ------------------------------------------------ |
+| params                 | `object`   | 初始化参数                                            |
+| params.server          | `string`   | RTC服务器地址                                         |
+| params.id              | `number`   | 音视频用户id                                          |
+| params.caller          | `boolean`  | 是否为呼叫发起者                                         |
+| params.receiver        | `number`   | 音视频用户对方id                                        |
+| params.pin             | `string`   | 房间加入pin码（caller为true时发起者需要创建新的pin码）              |
+| params.hasVideo        | `boolean`  | 是否存在视频流                                          |
+| params.hasAudio        | `boolean`  | 是否存在音频流                                          |
+| params.attachStream    | `function` | 音视频通话信息流处理函数                                     |
+| params.getThrough      | `function` | 音视频通话是否接通                                        |
+| params.hangupCall      | `function` | 音视频通话是否挂断                                        |
+| params.getHangUpStatus | `function` | 获取挂断状态函数 以下是caller为 true 的必须参数（被呼叫者必须参数）         |
+| params.roomId          | `number`   | 被呼叫者邀请加入的 room id 以下是caller为 true 的必须参数（呼叫者必须参数） |
+| params.secret          | `string`   | 创建的房间操作密码                                        |
+| params.callId          | `string`   | 创建音视频呼叫时音视频 callid 以下时视频会话必须的参数（视频宽度和高度设置函数）     |
+| params.width           | `number`   | 视频流画面宽度                                          |
+| params.height          | `number`   | 视频流画面高度                                          |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="initRTCEngine" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.destroy() ⇒ <code>null</code> {#module_rtcmanage__destroy}
+
+### rtcManage.destroy() ⇒ `null` <a href="#module_rtcmanage__destroy" id="module_rtcmanage__destroy"></a>
+
 销毁操作（在关闭音视频界面时使用）
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Type |
-| --- |
-| <code>null</code> | 
+| Type   |
+| ------ |
+| `null` |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="destroy" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.sendRTCMessage(msg) ⇒ <code>number</code> {#module_rtcmanage__sendrtcmessage}
+
+### rtcManage.sendRTCMessage(msg) ⇒ `number` <a href="#module_rtcmanage__sendrtcmessage" id="module_rtcmanage__sendrtcmessage"></a>
+
 发送音视频消息
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
-**Returns**: <code>number</code> - 客户端生成的消息ID  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)\
+**Returns**: `number` - 客户端生成的消息ID
 
-| Param | Type | Description |
-| --- | --- | --- |
-| msg | <code>object</code> | 消息体 |
-| msg.uid | <code>string</code> | 接收者ID |
-| msg.content | <code>string</code> | 消息内容 |
-| msg.config | <code>string</code> &#124; <code>object</code> | 扩展字段 |
+| Param       | Type                 | Description |
+| ----------- | -------------------- | ----------- |
+| msg         | `object`             | 消息体         |
+| msg.uid     | `string`             | 接收者ID       |
+| msg.content | `string`             | 消息内容        |
+| msg.config  | `string` \| `object` | 扩展字段        |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="sendRTCMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.joinRoom(params) ⇒ <code>null</code> {#module_rtcmanage__joinroom}
+
+### rtcManage.joinRoom(params) ⇒ `null` <a href="#module_rtcmanage__joinroom" id="module_rtcmanage__joinroom"></a>
+
 加入房间操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| params | <code>object</code> | 初始化参数 |
+| Param  | Type     | Description |
+| ------ | -------- | ----------- |
+| params | `object` | 初始化参数       |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="joinRoom" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.leaveRoom() ⇒ <code>null</code> {#module_rtcmanage__leaveroom}
+
+### rtcManage.leaveRoom() ⇒ `null` <a href="#module_rtcmanage__leaveroom" id="module_rtcmanage__leaveroom"></a>
+
 离开加入房间操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Type |
-| --- |
-| <code>null</code> | 
+| Type   |
+| ------ |
+| `null` |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="leaveRoom" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.publish(type, hasVideo, hasAudio) ⇒ <code>null</code> {#module_rtcmanage__publish}
+
+### rtcManage.publish(type, hasVideo, hasAudio) ⇒ `null` <a href="#module_rtcmanage__publish" id="module_rtcmanage__publish"></a>
+
 发布本地流操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| type | <code>enum</code> | 禁止标记 |
-| hasVideo | <code>boolean</code> | 是否发布视频 |
-| hasAudio | <code>boolean</code> | 是否发布音频 |
+| Param    | Type      | Description |
+| -------- | --------- | ----------- |
+| type     | `enum`    | 禁止标记        |
+| hasVideo | `boolean` | 是否发布视频      |
+| hasAudio | `boolean` | 是否发布音频      |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="publish" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.unPublish() ⇒ <code>null</code> {#module_rtcmanage__unpublish}
+
+### rtcManage.unPublish() ⇒ `null` <a href="#module_rtcmanage__unpublish" id="module_rtcmanage__unpublish"></a>
+
 取消发布流操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Type |
-| --- |
-| <code>null</code> | 
+| Type   |
+| ------ |
+| `null` |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="publish" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.subscribe(sources) ⇒ <code>null</code> {#module_rtcmanage__subscribe}
+
+### rtcManage.subscribe(sources) ⇒ `null` <a href="#module_rtcmanage__subscribe" id="module_rtcmanage__subscribe"></a>
+
 订阅流信息操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type |
-| --- | --- |
-| sources | <code>Array</code> | 
+| Param   | Type    |
+| ------- | ------- |
+| sources | `Array` |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="subscribe" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.unSubscribe(id) ⇒ <code>null</code> {#module_rtcmanage__unsubscribe}
+
+### rtcManage.unSubscribe(id) ⇒ `null` <a href="#module_rtcmanage__unsubscribe" id="module_rtcmanage__unsubscribe"></a>
+
 取消订阅流操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>number</code> | 取消订阅的流id |
+| Param | Type     | Description |
+| ----- | -------- | ----------- |
+| id    | `number` | 取消订阅的流id    |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="unSubscribe" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.muteLocalAudio(mute) ⇒ <code>null</code> {#module_rtcmanage__mutelocalaudio}
+
+### rtcManage.muteLocalAudio(mute) ⇒ `null` <a href="#module_rtcmanage__mutelocalaudio" id="module_rtcmanage__mutelocalaudio"></a>
+
 禁止本地发布音频流操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| mute | <code>boolean</code> | 禁止标记 |
+| Param | Type      | Description |
+| ----- | --------- | ----------- |
+| mute  | `boolean` | 禁止标记        |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="muteLocalAudio" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.muteLocalVideo(mute) ⇒ <code>null</code> {#module_rtcmanage__mutelocalvideo}
+
+### rtcManage.muteLocalVideo(mute) ⇒ `null` <a href="#module_rtcmanage__mutelocalvideo" id="module_rtcmanage__mutelocalvideo"></a>
+
 禁止本地发布视频流操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| mute | <code>boolean</code> | 禁止标记 |
+| Param | Type      | Description |
+| ----- | --------- | ----------- |
+| mute  | `boolean` | 禁止标记        |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="muteLocalVideo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.muteRemoteAudio(stream, mute) ⇒ <code>null</code> {#module_rtcmanage__muteremoteaudio}
+
+### rtcManage.muteRemoteAudio(stream, mute) ⇒ `null` <a href="#module_rtcmanage__muteremoteaudio" id="module_rtcmanage__muteremoteaudio"></a>
+
 禁止远程订阅音频流操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| stream | <code>object</code> | 订阅流对象 |
-| mute | <code>boolean</code> | 禁止标记 |
+| Param  | Type      | Description |
+| ------ | --------- | ----------- |
+| stream | `object`  | 订阅流对象       |
+| mute   | `boolean` | 禁止标记        |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="muteRemoteAudio" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.muteRemoteVideo(stream, mute) ⇒ <code>null</code> {#module_rtcmanage__muteremotevideo}
+
+### rtcManage.muteRemoteVideo(stream, mute) ⇒ `null` <a href="#module_rtcmanage__muteremotevideo" id="module_rtcmanage__muteremotevideo"></a>
+
 禁止远程订阅视频流操作
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| stream | <code>object</code> | 订阅流对象 |
-| mute | <code>boolean</code> | 禁止标记 |
+| Param  | Type      | Description |
+| ------ | --------- | ----------- |
+| stream | `object`  | 订阅流对象       |
+| mute   | `boolean` | 禁止标记        |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="muteRemoteVideo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.getJanusObject() ⇒ <code>object</code> {#module_rtcmanage__getjanusobject}
+
+### rtcManage.getJanusObject() ⇒ `object` <a href="#module_rtcmanage__getjanusobject" id="module_rtcmanage__getjanusobject"></a>
+
 获取Janus对象句柄
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Type |
-| --- |
-| <code>null</code> | 
+| Type   |
+| ------ |
+| `null` |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="getJanusObject" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.getPublishHandler() ⇒ <code>object</code> {#module_rtcmanage__getpublishhandler}
+
+### rtcManage.getPublishHandler() ⇒ `object` <a href="#module_rtcmanage__getpublishhandler" id="module_rtcmanage__getpublishhandler"></a>
+
 获取发布操作对象句柄
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Type |
-| --- |
-| <code>null</code> | 
+| Type   |
+| ------ |
+| `null` |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="getPublishHandler" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
+
 ```
-### rtcManage.getSubscribeHandler() ⇒ <code>object</code> {#module_rtcmanage__getsubscribehandler}
+
+### rtcManage.getSubscribeHandler() ⇒ `object` <a href="#module_rtcmanage__getsubscribehandler" id="module_rtcmanage__getsubscribehandler"></a>
+
 获取订阅操作对象句柄
 
-**Kind**: static method of [<code>rtcManage</code>](#module_rtcmanage)  
+**Kind**: static method of [`rtcManage`](rtcManage.md#module_rtcmanage)
 
-| Type |
-| --- |
-| <code>null</code> | 
+| Type   |
+| ------ |
+| `null` |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="rtcManage",function="getSubscribeHandler" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='rtcManage'></div>
 ```

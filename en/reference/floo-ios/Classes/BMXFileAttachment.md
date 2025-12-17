@@ -1,9 +1,9 @@
 # BMXFileAttachment Class Reference
 
-  **Inherits from** <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
-<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXMessageAttachment](BMXMessageAttachment.md) :\
+[BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -11,7 +11,6 @@ NSObject
 
 ## Class Methods
 
-<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
 ### dynamicCastWithAttachment:
 
 Type casting
@@ -20,41 +19,51 @@ Type casting
 
 #### Parameters
 
-*attachment*  
-   The attachment
+_attachment_\
+The attachment
 
 #### Return Value
+
 BMXFileAttachment
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/clone" title="clone"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### clone
 
 `- (BMXMessageAttachment *)clone`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="clone" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/displayName" title="displayName"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### displayName
 
 Attachment name displayed in UI pages.
@@ -62,16 +71,21 @@ Attachment name displayed in UI pages.
 `- (NSString *)displayName`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/downloadStatus" title="downloadStatus"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="displayName" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### downloadStatus
 
 Download status
@@ -79,16 +93,21 @@ Download status
 `- (BMXMessageAttachment_DownloadStatus)downloadStatus`
 
 #### Return Value
-<a href="../Constants/BMXMessageAttachment_DownloadStatus.md">BMXMessageAttachment_DownloadStatus</a>
+
+[BMXMessageAttachment\_DownloadStatus](../Constants/BMXMessageAttachment_DownloadStatus.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fileLength" title="fileLength"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="downloadStatus" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### fileLength
 
 File length
@@ -96,34 +115,45 @@ File length
 `- (long long)fileLength`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/initWithData:displayName:conversationId:" title="initWithData:displayName:conversationId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="fileLength" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### initWithData:displayName:conversationId:
 
 `- (id)initWithData:(NSData *)*aData* displayName:(NSString *)*displayName* conversationId:(long long)*conversationId*`
 
-<a name="//api/name/initWithPath:" title="initWithPath:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="initWithData:displayName:conversationId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### initWithPath:
 
 `- (id)initWithPath:(NSString *)*path*`
 
-<a name="//api/name/initWithPath:displayName:" title="initWithPath:displayName:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="initWithPath:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### initWithPath:displayName:
 
 Constructor
@@ -132,20 +162,24 @@ Constructor
 
 #### Parameters
 
-*path*  
-   Local file path
+_path_\
+Local file path
 
-*displayName*  
-   Attachment name displayed in UI pages
+_displayName_\
+Attachment name displayed in UI pages
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/initWithRatelUrl:displayName:fileLength:" title="initWithRatelUrl:displayName:fileLength:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="initWithPath:displayName:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### initWithRatelUrl:displayName:fileLength:
 
 Constructor
@@ -154,23 +188,27 @@ Constructor
 
 #### Parameters
 
-*ratelUrl*  
-   The file URL on REST server
+_ratelUrl_\
+The file URL on REST server
 
-*displayName*  
-   Attachment name displayed in UI pages 
+_displayName_\
+Attachment name displayed in UI pages
 
-*fileLength*  
-   File length  
+_fileLength_\
+File length
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/path" title="path"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="initWithRatelUrl:displayName:fileLength:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### path
 
 Local file path
@@ -178,16 +216,21 @@ Local file path
 `- (NSString *)path`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/ratelUrl" title="ratelUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="path" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### ratelUrl
 
 The file URL on REST server
@@ -195,16 +238,21 @@ The file URL on REST server
 `- (NSString *)ratelUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/type" title="type"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="ratelUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### type
 
 Attachment type
@@ -212,16 +260,21 @@ Attachment type
 `- (BMXMessageAttachment_Type)type`
 
 #### Return Value
-<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
+
+[BMXMessageAttachment\_Type](../Constants/BMXMessageAttachment_Type.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/url" title="url"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="type" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
+
 ```
+
 ### url
 
 Http url
@@ -229,12 +282,16 @@ Http url
 `- (NSString *)url`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXFileAttachment",function="url" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXFileAttachment'></div>
 ```

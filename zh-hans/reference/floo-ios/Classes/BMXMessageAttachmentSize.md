@@ -1,7 +1,7 @@
 # BMXMessageAttachmentSize Class Reference
 
-  **Inherits from** NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,97 +9,119 @@
 
 ## Properties
 
-<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
-<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/getMHeight" title="getMHeight"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### getMHeight
 
 `- (double)getMHeight`
 
-<a name="//api/name/getMWidth" title="getMWidth"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="getMHeight" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### getMWidth
 
 `- (double)getMWidth`
 
-<a name="//api/name/init" title="init"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="getMWidth" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### init
 
 `- (id)init`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="init" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
-<a name="//api/name/initWithWidth:" title="initWithWidth:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### initWithWidth:
 
 `- (id)initWithWidth:(double)*width*`
 
-<a name="//api/name/initWithWidth:height:" title="initWithWidth:height:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="initWithWidth:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### initWithWidth:height:
 
 `- (id)initWithWidth:(double)*width* height:(double)*height*`
 
-<a name="//api/name/setMHeight:" title="setMHeight:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="initWithWidth:height:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### setMHeight:
 
 `- (void)setMHeight:(double)*value*`
 
-<a name="//api/name/setMWidth:" title="setMWidth:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="setMHeight:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
+
 ```
+
 ### setMWidth:
 
 `- (void)setMWidth:(double)*value*`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachmentSize",function="setMWidth:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachmentSize'></div>
 ```

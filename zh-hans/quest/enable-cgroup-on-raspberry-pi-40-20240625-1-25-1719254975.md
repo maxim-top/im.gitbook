@@ -1,9 +1,10 @@
 ---
-description: 如何启用树莓派的cgroup功能？背景介绍树莓派及其应用什么是cgroup？更新系统软件包更新系统软件包的重要性执行更新命令启用cgroup内核支持修改boot配置文件重启系统配置cgroup挂载点创建挂载点目录挂载cgroup子系统验证挂载结果验证cgroup是否生效检查cgroup模块创建测试组运行测试进程检查限制是否生效常见问题及解决方法cgroup挂载失败资源限制未生效系统性能下降结论推荐阅读提示词
 keywords: 树莓派, cgroup, IM SDK, 即时通讯SDK
+description: >-
+  如何启用树莓派的cgroup功能？背景介绍树莓派及其应用什么是cgroup？更新系统软件包更新系统软件包的重要性执行更新命令启用cgroup内核支持修改boot配置文件重启系统配置cgroup挂载点创建挂载点目录挂载cgroup子系统验证挂载结果验证cgroup是否生效检查cgroup模块创建测试组运行测试进程检查限制是否生效常见问题及解决方法cgroup挂载失败资源限制未生效系统性能下降结论推荐
 ---
-# 如何启用树莓派的cgroup功能？
 
+# 如何启用树莓派的cgroup功能？
 
 ## 摘要
 
@@ -42,20 +43,18 @@ sudo apt-get upgrade
 
 要启用cgroup功能，需要修改树莓派的boot配置文件。具体步骤如下：
 
-1. 打开boot配置文件：
+1.  打开boot配置文件：
 
     ```bash
     sudo nano /boot/cmdline.txt
     ```
-
-2. 在文件中增加以下内容：
+2.  在文件中增加以下内容：
 
     ```bash
     cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
     ```
 
     确保这一行配置是在同一行内，并与其他配置通过空格分隔。
-
 3. 保存并关闭文件。
 
 ### 重启系统
@@ -160,7 +159,7 @@ echo $$ > /sys/fs/cgroup/memory/mygroup/cgroup.procs
 
 启用树莓派上的cgroup功能不仅能提高系统资源管理的精细度，还能提升整体系统的稳定性。通过以上步骤，用户可以轻松在树莓派上启用并配置cgroup，从而更好地优化资源使用。
 
----
+***
 
 ### 推荐阅读提示词
 

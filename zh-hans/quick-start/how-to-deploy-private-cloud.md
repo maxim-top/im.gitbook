@@ -1,7 +1,11 @@
 ---
-description: 私有云部署文档概述 创建应用 开通私有云服务 安装私有云 单机版 集群版 阿里云版 redis-server为redis的服务地址， redis-password为redis的密码 redis-cache-server为redis的服务地址， redis-cache-password为redis的密码 mysql-server为rds的服务地址， mysql-username为rds的用户名, mysql-password为rds的密码 kafka-server为kafka的服务地址，kafka-user为kafka的用户名， kafka-password为kafka的密码 file-storage-access-key-id为阿里云子账号ID file-storage-access-key-secret为阿里云子账号密码 file-storage-access-endpoint为阿里云接入点地址 file-storage-bucket-chat-file为阿里云OSS的bucket名字 file-storage-bucket-user-profile为阿里云OSS的bucket名字
 keywords: 私有云, 阿里云版, IM SDK, APP内聊天功能
+description: >-
+  私有云部署文档概述 创建应用 开通私有云服务 安装私有云 单机版 集群版 阿里云版 redis-server为redis的服务地址，
+  redis-password为redis的密码 redis-cache-server为redis的服务地址，
+  redis-cache-password为redis的密码 mysql-server为rds的服务地址， mysql-username为rds的用户名, m
 ---
+
 # 私有云部署文档
 
 ## 概述
@@ -16,17 +20,17 @@ keywords: 私有云, 阿里云版, IM SDK, APP内聊天功能
 
 [登录控制台](https://console.lanyingim.com) 点击创建应用。应用创建默认为免费版套餐，也可以升级为商业版。
 
-![创建应用](../assets/1-1.create_app.png)
+![创建应用](<../../.gitbook/assets/1-1.create_app (2).png>)
 
 ## 开通私有云服务
 
 1.应用创建成功后，进入应用详情页面。
 
-![应用信息](../assets/1-2.app_info.png)
+![应用信息](<../../.gitbook/assets/1-2.app_info (3).png>)
 
 2.点击更改计划，选择私有云，点击“继续”。
 
-![开通私有云服务](../assets/1-3.select_private_plan.png)
+![开通私有云服务](<../../.gitbook/assets/1-3.select_private_plan (3).png>)
 
 3.点击私有云图标，进入私有云详情页面，下载安装包 maxim.ctl
 
@@ -34,11 +38,11 @@ keywords: 私有云, 阿里云版, IM SDK, APP内聊天功能
 $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 ```
 
-![私有云部署](../assets/1-4.deploy.png)
+![私有云部署](<../../.gitbook/assets/1-4.deploy (2).png>)
 
 4.获取安装token。可以复制到粘贴板，也可以下载到本地文件备用，安装脚本里我们用 maxim.token.XXXXXX.txt 演示。
 
-![获取私有云安装token](../assets/1-5.get_install_token.png)
+![获取私有云安装token](<../../.gitbook/assets/1-5.get_install_token (3).png>)
 
 ## 安装私有云
 
@@ -48,7 +52,7 @@ $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 
 > Linux 推荐 Ubuntu 24.04
 
-> 树莓派 推荐 Ubuntu 18.04 rasp3 
+> 树莓派 推荐 Ubuntu 18.04 rasp3
 
 > MacOS 推荐 Catalina 10.15
 
@@ -57,9 +61,7 @@ $ wget https://package.lanyingim.com/linux/amd64/maxim.ctl
 > CPU 4核 内存 8G 硬盘100G
 
 * 如果选择安装集群版， 需要3台或更多服务器
-
 * 安装方式分为在线安装和离线安装。离线安装不需要访问外网，适合没有外网的服务器来安装，但需要每个月激活一次license， 现在只支持Ubuntu 18.04
-
 * 端口：
 
 ```
@@ -83,7 +85,7 @@ wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim
 
 执行结果截图：
 
-![单机版安装步骤一](../assets/2-1.install_single_s1.png)
+![单机版安装步骤一](<../../.gitbook/assets/2-1.install_single_s1 (1).png>)
 
 2.运行安装
 
@@ -97,11 +99,11 @@ sudo ./maxim.ctl install --token INSTALL_TOKEN
 
 开始执行的截图：
 
-![单机版安装步骤二](../assets/2-2.install_single_s2.png)
+![单机版安装步骤二](<../../.gitbook/assets/2-2.install_single_s2 (1).png>)
 
 安装完成的截图：
 
-![单机版安装步骤三](../assets/2-3.install_single_s3.png)
+![单机版安装步骤三](../../.gitbook/assets/2-3.install_single_s3.png)
 
 * 本地环境不可进行外部访问，安装时需要添加参数 --net internal 提示安装程序选择内网IP注册。
 
@@ -115,15 +117,16 @@ sudo ./maxim.ctl install --net internal --token INSTALL_TOKEN
 
 开始执行的截图：
 
-![单机版安装步骤四](../assets/2-4.install_single_s4.png)
+![单机版安装步骤四](<../../.gitbook/assets/2-4.install_single_s4 (1).png>)
 
 安装完成的截图：
 
-![单机版安装步骤五](../assets/2-5.install_single_s5.png)
+![单机版安装步骤五](<../../.gitbook/assets/2-5.install_single_s5 (2).png>)
 
 提示：等待安装完成，耗时15分钟左右，即可安装完成。
 
 ### 集群版
+
 1.配置集群访问权限
 
 配置第一台主机对其余主机的ssh权限，以三台主机 172.16.0.78 、172.16.0.79 、172.16.0.80 为例。
@@ -140,7 +143,7 @@ sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''
 
 执行结果截图：
 
-![集群权限步骤一](../assets/3-1-1.config_cluster_s1.png)
+![集群权限步骤一](<../../.gitbook/assets/3-1-1.config_cluster_s1 (1).png>)
 
 执行如下命令, 将命令的输出分别在主机172.16.0.78 ，172.16.0.79 ，172.16.0.80上执行
 
@@ -150,19 +153,19 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 
 命令输出结果截图：
 
-![集群权限步骤二](../assets/3-1-2.config_cluster_s2.png)
+![集群权限步骤二](<../../.gitbook/assets/3-1-2.config_cluster_s2 (1).png>)
 
 命令输出在172.16.0.78的执行结果：
 
-![集群权限步骤三](../assets/3-1-3.config_cluster_s3.png)
+![集群权限步骤三](<../../.gitbook/assets/3-1-3.config_cluster_s3 (1).png>)
 
 命令输出在172.16.0.79的执行结果：
 
-![集群权限步骤四](../assets/3-1-4.config_cluster_s4.png)
+![集群权限步骤四](<../../.gitbook/assets/3-1-4.config_cluster_s4 (1).png>)
 
 命令输出在172.16.0.80的执行结果：
 
-![集群权限步骤五](../assets/3-1-5.config_cluster_s5.png)
+![集群权限步骤五](<../../.gitbook/assets/3-1-5.config_cluster_s5 (1).png>)
 
 2.ssh登录到第一台主机172.16.0.78上 执行如下命令下载安装脚本，并增加可执行权限
 
@@ -172,7 +175,7 @@ wget https://package.lanyingim.com/linux/amd64/maxim.ctl && sudo chmod u+x maxim
 
 执行结果截图：
 
-![集群版安装步骤一](../assets/3-2-1.install_cluster_s1.png)
+![集群版安装步骤一](<../../.gitbook/assets/3-2-1.install_cluster_s1 (1).png>)
 
 * 服务器已有公网IP，执行如下命令开始安装。
 
@@ -184,11 +187,11 @@ sudo ./maxim.ctl install --nodelist 172.16.0.78 172.16.0.79 172.16.0.80 --token 
 
 开始执行的截图：
 
-![集群版安装步骤二](../assets/3-2-2.install_cluster_s2.png)
+![集群版安装步骤二](<../../.gitbook/assets/3-2-2.install_cluster_s2 (1).png>)
 
 安装完成的截图：
 
-![集群版安装步骤三](../assets/3-2-3.install_cluster_s3.png)
+![集群版安装步骤三](<../../.gitbook/assets/3-2-3.install_cluster_s3 (1).png>)
 
 * 本地环境不可进行外部访问，安装时需要添加参数 --net internal 提示安装程序选择内网IP注册。
 
@@ -202,11 +205,11 @@ sudo ./maxim.ctl install --nodelist 172.16.0.78 172.16.0.79 172.16.0.80 --net in
 
 开始执行的截图：
 
-![集群版安装步骤四](../assets/3-2-4.install_cluster_s4.png)
+![集群版安装步骤四](<../../.gitbook/assets/3-2-4.install_cluster_s4 (1).png>)
 
 安装完成的截图：
 
-![集群版安装步骤五](../assets/3-2-5.install_cluster_s5.png)
+![集群版安装步骤五](<../../.gitbook/assets/3-2-5.install_cluster_s5 (1).png>)
 
 提示：等待安装完成，耗时20分钟左右，即可安装完成。
 
@@ -264,9 +267,10 @@ sudo ./maxim.ctl set_config --config file-storage-type=oss file-storage-access-k
 ```
 mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanying/maxim.ctl /usr/bin/
 ```
+
 运行截图为：
 
-![挂载离线安装包，并添加maxim.ctl到可执行路径](../assets/offline_mount_and_add_exec.png)
+![挂载离线安装包，并添加maxim.ctl到可执行路径](<../../.gitbook/assets/offline_mount_and_add_exec (1).png>)
 
 3.生成离线配置文件
 
@@ -274,7 +278,7 @@ mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanyin
 
 操作截图为：
 
-![生成离线配置文件](../assets/generate_offline_install_configration.png)
+![生成离线配置文件](<../../.gitbook/assets/generate_offline_install_configration (3).png>)
 
 4.运行安装
 
@@ -284,21 +288,23 @@ sudo maxim.ctl install --config-file maxim.*.conf
 
 开始执行的截图：
 
-![单机版(离线安装）开始安装](../assets/single_offline_start_install.png)
+![单机版(离线安装）开始安装](<../../.gitbook/assets/single_offline_start_install (1).png>)
 
 安装完成的截图：
 
-![单机版(离线安装）安装完成](../assets/single_offline_finish_install.png)
+![单机版(离线安装）安装完成](<../../.gitbook/assets/single_offline_finish_install (2).png>)
 
 提示：等待安装完成，耗时15分钟左右，即可安装完成。
 
 5.生成集群LicenseKey
+
 ```
 sudo maxim.ctl export license-key
 ```
+
 命令截图为：
 
-![生成集群LicenseKey](../assets/single_offline_export_license_key.png)
+![生成集群LicenseKey](<../../.gitbook/assets/single_offline_export_license_key (1).png>)
 
 6.激活集群
 
@@ -306,11 +312,11 @@ sudo maxim.ctl export license-key
 
 操作截图为：
 
-![控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击"激活集群"](../assets/single_offline_activate.png)
+![控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击"激活集群"](<../../.gitbook/assets/single_offline_activate (3).png>)
 
-![激活命令](../assets/single_offline_activate_success.png)
+![激活命令](<../../.gitbook/assets/single_offline_activate_success (2).png>)
 
-![在集群中执行激活命令](../assets/single_offline_exec_activate.png)
+![在集群中执行激活命令](<../../.gitbook/assets/single_offline_exec_activate (1).png>)
 
 7.激活完成后每个月都要执行步骤5和步骤6来更新集群的License,否则集群会因为License过期而阻止用户登录。如果在控制台修改了配置或管理员Token, 也需要执行步骤5和步骤6来更新到集群。
 
@@ -330,7 +336,7 @@ sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''
 
 执行结果截图：
 
-![集群权限步骤一](../assets/3-1-1.config_cluster_s1.png)
+![集群权限步骤一](<../../.gitbook/assets/3-1-1.config_cluster_s1 (1).png>)
 
 执行如下命令, 将命令的输出分别在主机172.16.0.78 ，172.16.0.79 ，172.16.0.80上执行
 
@@ -340,19 +346,19 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 
 命令输出结果截图：
 
-![集群权限步骤二](../assets/3-1-2.config_cluster_s2.png)
+![集群权限步骤二](<../../.gitbook/assets/3-1-2.config_cluster_s2 (1).png>)
 
 命令输出在172.16.0.78的执行结果：
 
-![集群权限步骤三](../assets/3-1-3.config_cluster_s3.png)
+![集群权限步骤三](<../../.gitbook/assets/3-1-3.config_cluster_s3 (1).png>)
 
 命令输出在172.16.0.79的执行结果：
 
-![集群权限步骤四](../assets/3-1-4.config_cluster_s4.png)
+![集群权限步骤四](<../../.gitbook/assets/3-1-4.config_cluster_s4 (1).png>)
 
 命令输出在172.16.0.80的执行结果：
 
-![集群权限步骤五](../assets/3-1-5.config_cluster_s5.png)
+![集群权限步骤五](<../../.gitbook/assets/3-1-5.config_cluster_s5 (1).png>)
 
 2.下载[离线安装包](https://package.lanyingim.com/lanying-im/lanying-im-server.iso), 并上传到用来私有部署的服务器上。
 
@@ -361,9 +367,10 @@ sudo echo "sudo echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 ```
 mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanying/maxim.ctl /usr/bin/
 ```
+
 运行截图为：
 
-![挂载离线安装包，并添加maxim.ctl到可执行路径](../assets/offline_mount_and_add_exec.png)
+![挂载离线安装包，并添加maxim.ctl到可执行路径](<../../.gitbook/assets/offline_mount_and_add_exec (1).png>)
 
 4.生成离线配置文件
 
@@ -371,7 +378,7 @@ mkdir -p /lanying && mount -o loop lanying-im-server*.iso /lanying && cp /lanyin
 
 操作截图为：
 
-![生成离线配置文件](../assets/generate_offline_install_configration.png)
+![生成离线配置文件](<../../.gitbook/assets/generate_offline_install_configration (3).png>)
 
 5.运行安装
 
@@ -381,21 +388,23 @@ sudo maxim.ctl install --config-file maxim.*.conf --nodelist 172.16.0.78 172.16.
 
 开始执行的截图：
 
-![集群版(离线安装）开始安装](../assets/multi_offline_start_install.png)
+![集群版(离线安装）开始安装](<../../.gitbook/assets/multi_offline_start_install (1).png>)
 
 安装完成的截图：
 
-![集群版(离线安装）安装完成](../assets/multi_offline_finish_install.png)
+![集群版(离线安装）安装完成](../../.gitbook/assets/multi_offline_finish_install.png)
 
 提示：等待安装完成，耗时20分钟左右，即可安装完成。
 
 6.生成集群LicenseKeys
+
 ```
 sudo maxim.ctl export license-key
 ```
+
 命令截图为：
 
-![生成集群LicenseKey](../assets/single_offline_export_license_key.png)
+![生成集群LicenseKey](<../../.gitbook/assets/single_offline_export_license_key (1).png>)
 
 7.激活集群
 
@@ -403,11 +412,11 @@ sudo maxim.ctl export license-key
 
 操作截图为：
 
-![控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击"激活集群"](../assets/single_offline_activate.png)
+![控制台私有云页面点击激活集群，选择集群规格，输入LicenseKey, 点击"激活集群"](<../../.gitbook/assets/single_offline_activate (3).png>)
 
-![激活命令](../assets/single_offline_activate_success.png)
+![激活命令](<../../.gitbook/assets/single_offline_activate_success (2).png>)
 
-![在集群中执行激活命令](../assets/single_offline_exec_activate.png)
+![在集群中执行激活命令](<../../.gitbook/assets/single_offline_exec_activate (1).png>)
 
 8.激活完成后每个月都要执行步骤6和步骤7来更新集群的License,否则集群会因为License过期而阻止用户登录。如果在控制台修改了配置或管理员Token, 也需要执行步骤6和步骤7来更新到集群。
 
@@ -417,8 +426,8 @@ sudo maxim.ctl export license-key
 2. 如果机器有防火墙，需要保证端口443和80允许访问。
 3. 如何查看私有云安装进度，以及数据迁移状态？
 
-![安装进度点击“私有云”，通过节点信息的进度可以查看安装进度](../assets/4-1.install_progress.png)
+![安装进度点击“私有云”，通过节点信息的进度可以查看安装进度](<../../.gitbook/assets/4-1.install_progress (1).png>)
 
 1. 安装完成后，打开蓝莺IM控制台进入系统状态页面。
 
-![如果所有检查项的状态都为正常，则表示服务已经正常](../assets/4-2.service_status.png)
+![如果所有检查项的状态都为正常，则表示服务已经正常](<../../.gitbook/assets/4-2.service_status (3).png>)

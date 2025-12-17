@@ -1,7 +1,7 @@
 # BMXGroupService Class Reference
 
-  **Inherits from** NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -9,20 +9,16 @@
 
 ## Properties
 
-<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
-<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/acceptApplicationWithGroup:applicantId:" title="acceptApplicationWithGroup:applicantId:"></a>
 ### acceptApplicationWithGroup:applicantId:
 
 Accept the group application
@@ -31,23 +27,28 @@ Accept the group application
 
 #### Parameters
 
-*group*  
-   The group  
+_group_\
+The group
 
-*applicantId*  
-   User ID applying to join the group
+_applicantId_\
+User ID applying to join the group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/acceptApplicationWithGroup:applicantId:completion:" title="acceptApplicationWithGroup:applicantId:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="acceptApplicationWithGroup:applicantId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### acceptApplicationWithGroup:applicantId:completion:
 
 Accept the group application
@@ -56,23 +57,28 @@ Accept the group application
 
 #### Parameters
 
-*group*  
-   The group 
+_group_\
+The group
 
-*applicantId*  
-   User ID applying to join the group
+_applicantId_\
+User ID applying to join the group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/acceptInvitationWithGroup:inviter:" title="acceptInvitationWithGroup:inviter:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="acceptApplicationWithGroup:applicantId:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### acceptInvitationWithGroup:inviter:
 
 Accept the group invitation
@@ -81,23 +87,28 @@ Accept the group invitation
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*inviter*  
-   User ID of the inviter
+_inviter_\
+User ID of the inviter
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/acceptInvitationWithGroup:inviter:completion:" title="acceptInvitationWithGroup:inviter:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="acceptInvitationWithGroup:inviter:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### acceptInvitationWithGroup:inviter:completion:
 
 Accept the group invitation
@@ -106,23 +117,28 @@ Accept the group invitation
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*inviter*  
-   User ID of the inviter
+_inviter_\
+User ID of the inviter
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/addAdminsWithGroup:admins:message:" title="addAdminsWithGroup:admins:message:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="acceptInvitationWithGroup:inviter:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### addAdminsWithGroup:admins:message:
 
 Add admins
@@ -131,26 +147,31 @@ Add admins
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*admins*  
-   Admin ID list
+_admins_\
+Admin ID list
 
-*message*  
-   Message to added users
+_message_\
+Message to added users
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/addAdminsWithGroup:admins:message:completion:" title="addAdminsWithGroup:admins:message:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="addAdminsWithGroup:admins:message:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### addAdminsWithGroup:admins:message:completion:
 
 Add admins
@@ -159,26 +180,31 @@ Add admins
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*admins*  
-   Admin ID list
+_admins_\
+Admin ID list
 
-*message*  
-   Message to added users
+_message_\
+Message to added users
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/addDelegate:" title="addDelegate:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="addAdminsWithGroup:admins:message:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### addDelegate:
 
 Add a group events listener
@@ -187,26 +213,33 @@ Add a group events listener
 
 #### Parameters
 
-*listener*  
-   The group events listener
+_listener_\
+The group events listener
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="addDelegate:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXGroupServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
-<a name="//api/name/addGroupListener:" title="addGroupListener:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### addGroupListener:
 
 Add a group events listener
@@ -215,17 +248,21 @@ Add a group events listener
 
 #### Parameters
 
-*listener*  
-   The group events listener
+_listener_\
+The group events listener
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/addMembersWithGroup:members:message:" title="addMembersWithGroup:members:message:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="addGroupListener:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### addMembersWithGroup:members:message:
 
 Add group members
@@ -234,26 +271,31 @@ Add group members
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*members*  
-   ID list of the added users
+_members_\
+ID list of the added users
 
-*message*  
-   Message to added users 
+_message_\
+Message to added users
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/addMembersWithGroup:members:message:completion:" title="addMembersWithGroup:members:message:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="addMembersWithGroup:members:message:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### addMembersWithGroup:members:message:completion:
 
 Add group members
@@ -262,26 +304,31 @@ Add group members
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*members*  
-   ID list of the added users
+_members_\
+ID list of the added users
 
-*message*  
-   Message to added users 
+_message_\
+Message to added users
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/banGroupWithGroup:duration:" title="banGroupWithGroup:duration:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="addMembersWithGroup:members:message:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### banGroupWithGroup:duration:
 
 Ban all group members
@@ -290,23 +337,28 @@ Ban all group members
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*duration*  
-   Ban duration (min)
+_duration_\
+Ban duration (min)
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/banGroupWithGroup:duration:completion:" title="banGroupWithGroup:duration:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="banGroupWithGroup:duration:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### banGroupWithGroup:duration:completion:
 
 Ban all group members
@@ -315,32 +367,40 @@ Ban all group members
 
 #### Parameters
 
-*group*  
-   The group  
+_group_\
+The group
 
-*duration*  
-   Ban duration (min)  
+_duration_\
+Ban duration (min)
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/banMembersWithGroup:members:duration:" title="banMembersWithGroup:members:duration:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="banGroupWithGroup:duration:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### banMembersWithGroup:members:duration:
 
 `- (BMXErrorCode)banMembersWithGroup:(BMXGroup *)*group* members:(ListOfLongLong *)*members* duration:(long long)*duration*`
 
-<a name="//api/name/banMembersWithGroup:members:duration:reason:" title="banMembersWithGroup:members:duration:reason:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="banMembersWithGroup:members:duration:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### banMembersWithGroup:members:duration:reason:
 
 Ban group members
@@ -349,29 +409,34 @@ Ban group members
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*members*  
-   ID list of the banned users
+_members_\
+ID list of the banned users
 
-*duration*  
-   Ban duration (min)
+_duration_\
+Ban duration (min)
 
-*reason*  
-   Ban reason
+_reason_\
+Ban reason
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/banMembersWithGroup:members:duration:reason:completion:" title="banMembersWithGroup:members:duration:reason:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="banMembersWithGroup:members:duration:reason:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### banMembersWithGroup:members:duration:reason:completion:
 
 Ban group members
@@ -380,29 +445,34 @@ Ban group members
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*members*  
-   ID list of the banned users
+_members_\
+ID list of the banned users
 
-*duration*  
-   Ban duration (min)
+_duration_\
+Ban duration (min)
 
-*reason*  
-   Ban reason  
+_reason_\
+Ban reason
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/blockMembersWithGroup:members:" title="blockMembersWithGroup:members:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="banMembersWithGroup:members:duration:reason:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### blockMembersWithGroup:members:
 
 Block group members
@@ -411,23 +481,28 @@ Block group members
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*members*  
-   ID list of the blocked users
+_members_\
+ID list of the blocked users
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/blockMembersWithGroup:members:completion:" title="blockMembersWithGroup:members:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="blockMembersWithGroup:members:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### blockMembersWithGroup:members:completion:
 
 Block group members
@@ -436,23 +511,28 @@ Block group members
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*members*  
-   ID list of the blocked users
+_members_\
+ID list of the blocked users
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/cancelDownloadSharedFileWithGroup:sharedFile:" title="cancelDownloadSharedFileWithGroup:sharedFile:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="blockMembersWithGroup:members:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### cancelDownloadSharedFileWithGroup:sharedFile:
 
 Cancel downloading the group shared file
@@ -461,23 +541,28 @@ Cancel downloading the group shared file
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*sharedFile*  
-   The group shared file to be downloaded
+_sharedFile_\
+The group shared file to be downloaded
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/cancelDownloadSharedFileWithGroup:sharedFile:completion:" title="cancelDownloadSharedFileWithGroup:sharedFile:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="cancelDownloadSharedFileWithGroup:sharedFile:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### cancelDownloadSharedFileWithGroup:sharedFile:completion:
 
 Cancel downloading the group shared file
@@ -486,23 +571,28 @@ Cancel downloading the group shared file
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*sharedFile*  
-   The group shared file to be downloaded
+_sharedFile_\
+The group shared file to be downloaded
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/cancelUploadSharedFileWithGroup:filePath:" title="cancelUploadSharedFileWithGroup:filePath:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="cancelDownloadSharedFileWithGroup:sharedFile:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### cancelUploadSharedFileWithGroup:filePath:
 
 Cancel uploading the group shared file
@@ -511,23 +601,28 @@ Cancel uploading the group shared file
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*filePath*  
-   Local file path
+_filePath_\
+Local file path
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/cancelUploadSharedFileWithGroup:filePath:completion:" title="cancelUploadSharedFileWithGroup:filePath:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="cancelUploadSharedFileWithGroup:filePath:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### cancelUploadSharedFileWithGroup:filePath:completion:
 
 Cancel uploading the group shared file
@@ -536,23 +631,28 @@ Cancel uploading the group shared file
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*filePath*  
-   Local file path
+_filePath_\
+Local file path
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/changeSharedFileNameWithGroup:sharedFile:name:" title="changeSharedFileNameWithGroup:sharedFile:name:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="cancelUploadSharedFileWithGroup:filePath:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### changeSharedFileNameWithGroup:sharedFile:name:
 
 Change the group shared file name
@@ -561,26 +661,31 @@ Change the group shared file name
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*sharedFile*  
-   进行更改的群共享文件  
+_sharedFile_\
+进行更改的群共享文件
 
-*name*  
-   修改的群共享文件名称  
+_name_\
+修改的群共享文件名称
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/changeSharedFileNameWithGroup:sharedFile:name:completion:" title="changeSharedFileNameWithGroup:sharedFile:name:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="changeSharedFileNameWithGroup:sharedFile:name:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### changeSharedFileNameWithGroup:sharedFile:name:completion:
 
 Change the group shared file name
@@ -589,26 +694,31 @@ Change the group shared file name
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*sharedFile*  
-   The shared file
+_sharedFile_\
+The shared file
 
-*name*  
-   New name of the shared file
+_name_\
+New name of the shared file
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createWithOptions:completion:" title="createWithOptions:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="changeSharedFileNameWithGroup:sharedFile:name:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### createWithOptions:completion:
 
 Create a group
@@ -617,23 +727,28 @@ Create a group
 
 #### Parameters
 
-*options*  
-   Options of group creation 
+_options_\
+Options of group creation
 
-*group*  
-   Group as result  
+_group_\
+Group as result
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createWithOptions:group:" title="createWithOptions:group:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="createWithOptions:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### createWithOptions:group:
 
 Create a group
@@ -642,41 +757,52 @@ Create a group
 
 #### Parameters
 
-*options*  
-   Options of group creation 
+_options_\
+Options of group creation
 
-*group*  
-   Group as result
+_group_\
+Group as result
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="createWithOptions:group:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/declineApplicationWithGroup:applicantId:" title="declineApplicationWithGroup:applicantId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### declineApplicationWithGroup:applicantId:
 
 `- (BMXErrorCode)declineApplicationWithGroup:(BMXGroup *)*group* applicantId:(long long)*applicantId*`
 
-<a name="//api/name/declineApplicationWithGroup:applicantId:reason:" title="declineApplicationWithGroup:applicantId:reason:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="declineApplicationWithGroup:applicantId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### declineApplicationWithGroup:applicantId:reason:
 
 Decline group application
@@ -685,26 +811,31 @@ Decline group application
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*applicantId*  
-   User ID of group application
+_applicantId_\
+User ID of group application
 
-*reason*  
-   Decline reason  
+_reason_\
+Decline reason
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/declineApplicationWithGroup:applicantId:reason:completion:" title="declineApplicationWithGroup:applicantId:reason:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="declineApplicationWithGroup:applicantId:reason:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### declineApplicationWithGroup:applicantId:reason:completion:
 
 Decline group application
@@ -713,35 +844,43 @@ Decline group application
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*applicantId*  
-   User ID of group application
+_applicantId_\
+User ID of group application
 
-*reason*  
-   Decline reason
+_reason_\
+Decline reason
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/declineInvitationWithGroup:inviter:" title="declineInvitationWithGroup:inviter:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="declineApplicationWithGroup:applicantId:reason:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### declineInvitationWithGroup:inviter:
 
 `- (BMXErrorCode)declineInvitationWithGroup:(BMXGroup *)*group* inviter:(long long)*inviter*`
 
-<a name="//api/name/declineInvitationWithGroup:inviter:reason:" title="declineInvitationWithGroup:inviter:reason:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="declineInvitationWithGroup:inviter:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### declineInvitationWithGroup:inviter:reason:
 
 Decline group invitation
@@ -750,26 +889,31 @@ Decline group invitation
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*inviter*  
-   The inviter user ID
+_inviter_\
+The inviter user ID
 
-*reason*  
-   Decline reason
+_reason_\
+Decline reason
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/declineInvitationWithGroup:inviter:reason:completion:" title="declineInvitationWithGroup:inviter:reason:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="declineInvitationWithGroup:inviter:reason:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### declineInvitationWithGroup:inviter:reason:completion:
 
 Decline group invitation
@@ -778,26 +922,31 @@ Decline group invitation
 
 #### Parameters
 
-*group*  
-   The group  
+_group_\
+The group
 
-*inviter*  
-   The inviter user ID
+_inviter_\
+The inviter user ID
 
-*reason*  
-   Decline reason
+_reason_\
+Decline reason
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/deleteAnnouncementWithGroup:announcementId:" title="deleteAnnouncementWithGroup:announcementId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="declineInvitationWithGroup:inviter:reason:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### deleteAnnouncementWithGroup:announcementId:
 
 Delete a group announcement
@@ -806,23 +955,28 @@ Delete a group announcement
 
 #### Parameters
 
-*group*  
-   The group  
+_group_\
+The group
 
-*announcementId*  
-   Group announcement ID
+_announcementId_\
+Group announcement ID
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/deleteAnnouncementWithGroup:announcementId:completion:" title="deleteAnnouncementWithGroup:announcementId:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="deleteAnnouncementWithGroup:announcementId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### deleteAnnouncementWithGroup:announcementId:completion:
 
 Delete a group announcement
@@ -831,23 +985,28 @@ Delete a group announcement
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*announcementId*  
-   Group announcement ID
+_announcementId_\
+Group announcement ID
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/destroyWithGroup:" title="destroyWithGroup:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="deleteAnnouncementWithGroup:announcementId:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### destroyWithGroup:
 
 Destroy a group
@@ -856,20 +1015,25 @@ Destroy a group
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/destroyWithGroup:completion:" title="destroyWithGroup:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="destroyWithGroup:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### destroyWithGroup:completion:
 
 Destroy a group
@@ -878,20 +1042,25 @@ Destroy a group
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/downloadAvatarWithGroup:thumbnail:callback:" title="downloadAvatarWithGroup:thumbnail:callback:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="destroyWithGroup:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### downloadAvatarWithGroup:thumbnail:callback:
 
 Downlad the group avatar
@@ -900,25 +1069,30 @@ Downlad the group avatar
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*thumbnail*  
-   Is the file to be downloaded a thumbnail
+_thumbnail_\
+Is the file to be downloaded a thumbnail
 
-*callback*  
+_callback_
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/downloadAvatarWithGroup:thumbnail:callback:completion:" title="downloadAvatarWithGroup:thumbnail:callback:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="downloadAvatarWithGroup:thumbnail:callback:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### downloadAvatarWithGroup:thumbnail:callback:completion:
 
 Downlad the group avatar
@@ -927,25 +1101,30 @@ Downlad the group avatar
 
 #### Parameters
 
-*group*  
-   The group  
+_group_\
+The group
 
-*thumbnail*  
-   Is the file to be downloaded a thumbnail
+_thumbnail_\
+Is the file to be downloaded a thumbnail
 
-*callback*  
+_callback_
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/downloadSharedFileWithGroup:sharedFile:arg3:" title="downloadSharedFileWithGroup:sharedFile:arg3:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="downloadAvatarWithGroup:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### downloadSharedFileWithGroup:sharedFile:arg3:
 
 Download a group shared file
@@ -954,23 +1133,28 @@ Download a group shared file
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*sharedFile*  
-   The shared file 
+_sharedFile_\
+The shared file
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/downloadSharedFileWithGroup:sharedFile:arg3:completion:" title="downloadSharedFileWithGroup:sharedFile:arg3:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="downloadSharedFileWithGroup:sharedFile:arg3:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='3' data-2='3' data-3='3' data-4='3' data-5='3' data-6='3' data-7='3' data-8='3' data-9='3' data-10='3' data-11='3' data-12='3' data-13='3' data-14='3' data-15='3' data-16='3' data-17='3' data-18='3' data-19='3' data-20='3' data-21='3' data-22='3' data-23='3' data-24='3' data-25='3' data-26='3' data-27='3' data-28='3' data-29='3' data-30='3' data-31='3' data-32='3' data-33='3' data-34='3' data-35='3' data-36='3' data-37='3' data-38='3' data-39='3' data-40='3' data-41='3' data-42='3' data-43='3' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### downloadSharedFileWithGroup:sharedFile:arg3:completion:
 
 Download a group shared file
@@ -979,23 +1163,28 @@ Download a group shared file
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*sharedFile*  
-   The shared file 
+_sharedFile_\
+The shared file
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/editAnnouncementWithGroup:title:content:" title="editAnnouncementWithGroup:title:content:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="downloadSharedFileWithGroup:sharedFile:arg3:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='3' data-2='3' data-3='3' data-4='3' data-5='3' data-6='3' data-7='3' data-8='3' data-9='3' data-10='3' data-11='3' data-12='3' data-13='3' data-14='3' data-15='3' data-16='3' data-17='3' data-18='3' data-19='3' data-20='3' data-21='3' data-22='3' data-23='3' data-24='3' data-25='3' data-26='3' data-27='3' data-28='3' data-29='3' data-30='3' data-31='3' data-32='3' data-33='3' data-34='3' data-35='3' data-36='3' data-37='3' data-38='3' data-39='3' data-40='3' data-41='3' data-42='3' data-43='3' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### editAnnouncementWithGroup:title:content:
 
 Add a new group anncoucement
@@ -1004,26 +1193,31 @@ Add a new group anncoucement
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*title*  
-   The title of group annoucement
+_title_\
+The title of group annoucement
 
-*content*  
-   The content of group annoucement
+_content_\
+The content of group annoucement
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/editAnnouncementWithGroup:title:content:completion:" title="editAnnouncementWithGroup:title:content:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="editAnnouncementWithGroup:title:content:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### editAnnouncementWithGroup:title:content:completion:
 
 Add a new group anncoucement
@@ -1032,26 +1226,31 @@ Add a new group anncoucement
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*title*  
-   The title of group annoucement
+_title_\
+The title of group annoucement
 
-*content*  
-    The content of group annoucement
+_content_\
+The content of group annoucement
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fetchGroupByIdWithGroupId:forceRefresh:completion:" title="fetchGroupByIdWithGroupId:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="editAnnouncementWithGroup:title:content:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### fetchGroupByIdWithGroupId:forceRefresh:completion:
 
 Get group by ID
@@ -1060,23 +1259,28 @@ Get group by ID
 
 #### Parameters
 
-*groupId*  
-   The group ID
+_groupId_\
+The group ID
 
-*forceRefresh*  
-   from server  
+_forceRefresh_\
+from server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fetchGroupByIdWithGroupId:group:forceRefresh:" title="fetchGroupByIdWithGroupId:group:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="fetchGroupByIdWithGroupId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### fetchGroupByIdWithGroupId:group:forceRefresh:
 
 Get group by ID
@@ -1085,23 +1289,28 @@ Get group by ID
 
 #### Parameters
 
-*groupId*  
-   The group ID
+_groupId_\
+The group ID
 
-*forceRefresh*  
-   from server  
+_forceRefresh_\
+from server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fetchGroupsByIdListWithGroupIdList:forceRefresh:completion:" title="fetchGroupsByIdListWithGroupIdList:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="fetchGroupByIdWithGroupId:group:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### fetchGroupsByIdListWithGroupIdList:forceRefresh:completion:
 
 Get groups by ID list
@@ -1110,23 +1319,28 @@ Get groups by ID list
 
 #### Parameters
 
-*groupIdList*  
-   Group ID list  
+_groupIdList_\
+Group ID list
 
-*forceRefresh*  
-   From server 
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fetchGroupsByIdListWithGroupIdList:list:forceRefresh:" title="fetchGroupsByIdListWithGroupIdList:list:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="fetchGroupsByIdListWithGroupIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### fetchGroupsByIdListWithGroupIdList:list:forceRefresh:
 
 Get groups by ID list
@@ -1135,24 +1349,28 @@ Get groups by ID list
 
 #### Parameters
 
-*groupIdList*  
-   Group ID list
- 
+_groupIdList_\
+Group ID list
 
-*forceRefresh*  
-   From server  
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fetchLocalGroupsByName:completion:" title="fetchLocalGroupsByName:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="fetchGroupsByIdListWithGroupIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### fetchLocalGroupsByName:completion:
 
 Get groups by name from local db
@@ -1161,20 +1379,25 @@ Get groups by name from local db
 
 #### Parameters
 
-*name*  
-   Group name
+_name_\
+Group name
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fetchLocalGroupsByNameWithList:name:" title="fetchLocalGroupsByNameWithList:name:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="fetchLocalGroupsByName:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### fetchLocalGroupsByNameWithList:name:
 
 Get groups by name from local db
@@ -1183,20 +1406,25 @@ Get groups by name from local db
 
 #### Parameters
 
-*name*  
-   Group name  
+_name_\
+Group name
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/get:completion:" title="get:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="fetchLocalGroupsByNameWithList:name:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### get:completion:
 
 Get my group list
@@ -1205,20 +1433,25 @@ Get my group list
 
 #### Parameters
 
-*forceRefresh*  
-   From server  
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/get:forceRefresh:" title="get:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="get:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### get:forceRefresh:
 
 Get my group list
@@ -1227,20 +1460,25 @@ Get my group list
 
 #### Parameters
 
-*forceRefresh*  
-   From server  
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getAdmins:forceRefresh:completion:" title="getAdmins:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="get:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getAdmins:forceRefresh:completion:
 
 Get admins of a group
@@ -1249,23 +1487,28 @@ Get admins of a group
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*forceRefresh*  
-   From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getAdmins:list:forceRefresh:" title="getAdmins:list:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getAdmins:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getAdmins:list:forceRefresh:
 
 Get admins of a group
@@ -1274,23 +1517,28 @@ Get admins of a group
 
 #### Parameters
 
-*group*  
-   The group
+_group_\
+The group
 
-*forceRefresh*  
-   From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getAnnouncementList:forceRefresh:completion:" title="getAnnouncementList:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getAdmins:list:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getAnnouncementList:forceRefresh:completion:
 
 Get announcement list
@@ -1299,23 +1547,28 @@ Get announcement list
 
 #### Parameters
 
-*group*  
-   The group  
+_group_\
+The group
 
-*forceRefresh*  
-   From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getAnnouncementList:list:forceRefresh:" title="getAnnouncementList:list:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getAnnouncementList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getAnnouncementList:list:forceRefresh:
 
 Get announcement list
@@ -1324,23 +1577,28 @@ Get announcement list
 
 #### Parameters
 
-*group*  
-   The group  
+_group_\
+The group
 
-*forceRefresh*  
-   From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getApplicationList:cursor:pageSize:completion:" title="getApplicationList:cursor:pageSize:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getAnnouncementList:list:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getApplicationList:cursor:pageSize:completion:
 
 Get group application list in pages
@@ -1349,44 +1607,55 @@ Get group application list in pages
 
 #### Parameters
 
-*list*  
-   Group list  
+_list_\
+Group list
 
-*cursor*  
-   Start cursor  
+_cursor_\
+Start cursor
 
-*pageSize*  
-   Page size
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getApplicationList:result:" title="getApplicationList:result:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getApplicationList:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getApplicationList:result:
 
 `- (BMXErrorCode)getApplicationList:(BMXGroupList *)*list* result:(BMXGroupApplicationPage *)*result*`
 
-<a name="//api/name/getApplicationList:result:cursor:" title="getApplicationList:result:cursor:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getApplicationList:result:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getApplicationList:result:cursor:
 
 `- (BMXErrorCode)getApplicationList:(BMXGroupList *)*list* result:(BMXGroupApplicationPage *)*result* cursor:(NSString *)*cursor*`
 
-<a name="//api/name/getApplicationList:result:cursor:pageSize:" title="getApplicationList:result:cursor:pageSize:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getApplicationList:result:cursor:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getApplicationList:result:cursor:pageSize:
 
 Get group application list in pages
@@ -1395,26 +1664,31 @@ Get group application list in pages
 
 #### Parameters
 
-*list*  
-   Group list
+_list_\
+Group list
 
-*cursor*  
-   Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-   Page size  
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBannedMembers:completion:" title="getBannedMembers:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getApplicationList:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBannedMembers:completion:
 
 Get group members banned
@@ -1423,20 +1697,25 @@ Get group members banned
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBannedMembers:cursor:pageSize:completion:" title="getBannedMembers:cursor:pageSize:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBannedMembers:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBannedMembers:cursor:pageSize:completion:
 
 Get group members banned in pages
@@ -1445,26 +1724,31 @@ Get group members banned in pages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*cursor*  
-   Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-   Page size  
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBannedMembers:list:" title="getBannedMembers:list:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBannedMembers:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBannedMembers:list:
 
 Get group members banned
@@ -1473,38 +1757,49 @@ Get group members banned
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBannedMembers:result:" title="getBannedMembers:result:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBannedMembers:list:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBannedMembers:result:
 
 `- (BMXErrorCode)getBannedMembers:(BMXGroup *)*group* result:(BMXGroupBannedMemberResultPage *)*result*`
 
-<a name="//api/name/getBannedMembers:result:cursor:" title="getBannedMembers:result:cursor:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBannedMembers:result:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBannedMembers:result:cursor:
 
 `- (BMXErrorCode)getBannedMembers:(BMXGroup *)*group* result:(BMXGroupBannedMemberResultPage *)*result* cursor:(NSString *)*cursor*`
 
-<a name="//api/name/getBannedMembers:result:cursor:pageSize:" title="getBannedMembers:result:cursor:pageSize:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBannedMembers:result:cursor:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBannedMembers:result:cursor:pageSize:
 
 Get group members banned in pages
@@ -1513,26 +1808,31 @@ Get group members banned in pages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*cursor*  
-   Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-   Page size  
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBlockList:cursor:pageSize:completion:" title="getBlockList:cursor:pageSize:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBannedMembers:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBlockList:cursor:pageSize:completion:
 
 Get group members blocked in pages
@@ -1541,94 +1841,115 @@ Get group members blocked in pages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*cursor*  
-   Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-   Page size  
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBlockList:forceRefresh:completion:" title="getBlockList:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBlockList:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBlockList:forceRefresh:completion:
 
-Get group members blocked 
+Get group members blocked
 
 `- (void)getBlockList:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( BMXGroupMemberList *res , BMXError *aError ))*resBlock*`
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*forceRefresh*  
-    From server
-    
+_forceRefresh_\
+From server
+
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBlockList:list:forceRefresh:" title="getBlockList:list:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBlockList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBlockList:list:forceRefresh:
 
-Get group members blocked 
+Get group members blocked
 
 `- (BMXErrorCode)getBlockList:(BMXGroup *)*group* list:(BMXGroupMemberList *)*list* forceRefresh:(BOOL)*forceRefresh*`
 
 #### Parameters
 
-*group*  
-    The group
-    
-*forceRefresh*  
-    From server
+_group_\
+The group
+
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getBlockList:result:" title="getBlockList:result:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBlockList:list:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBlockList:result:
 
 `- (BMXErrorCode)getBlockList:(BMXGroup *)*group* result:(BMXGroupMemberResultPage *)*result*`
 
-<a name="//api/name/getBlockList:result:cursor:" title="getBlockList:result:cursor:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBlockList:result:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBlockList:result:cursor:
 
 `- (BMXErrorCode)getBlockList:(BMXGroup *)*group* result:(BMXGroupMemberResultPage *)*result* cursor:(NSString *)*cursor*`
 
-<a name="//api/name/getBlockList:result:cursor:pageSize:" title="getBlockList:result:cursor:pageSize:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBlockList:result:cursor:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getBlockList:result:cursor:pageSize:
 
 Get group members blocked in pages
@@ -1637,26 +1958,31 @@ Get group members blocked in pages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*cursor*  
-   Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-   Page size  
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getInfo:" title="getInfo:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getBlockList:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getInfo:
 
 Get group detail information from server
@@ -1665,20 +1991,25 @@ Get group detail information from server
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getInfo:completion:" title="getInfo:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getInfo:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getInfo:completion:
 
 Get group detail information from server
@@ -1687,38 +2018,49 @@ Get group detail information from server
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getInvitationList:" title="getInvitationList:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getInfo:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getInvitationList:
 
 `- (BMXErrorCode)getInvitationList:(BMXGroupInvitationPage *)*result*`
 
-<a name="//api/name/getInvitationList:cursor:" title="getInvitationList:cursor:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getInvitationList:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getInvitationList:cursor:
 
 `- (BMXErrorCode)getInvitationList:(BMXGroupInvitationPage *)*result* cursor:(NSString *)*cursor*`
 
-<a name="//api/name/getInvitationList:cursor:pageSize:" title="getInvitationList:cursor:pageSize:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getInvitationList:cursor:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getInvitationList:cursor:pageSize:
 
 Get group invitation list in pages
@@ -1727,23 +2069,28 @@ Get group invitation list in pages
 
 #### Parameters
 
-*cursor*  
-    Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-    Page size
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getInvitationList:pageSize:completion:" title="getInvitationList:pageSize:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getInvitationList:cursor:pageSize:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getInvitationList:pageSize:completion:
 
 Get group invitation list in pages
@@ -1752,23 +2099,28 @@ Get group invitation list in pages
 
 #### Parameters
 
-*cursor*  
-    Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-    Page size
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getLatestAnnouncement:announcement:forceRefresh:" title="getLatestAnnouncement:announcement:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getInvitationList:pageSize:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getLatestAnnouncement:announcement:forceRefresh:
 
 Get the latest announcement
@@ -1777,23 +2129,28 @@ Get the latest announcement
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*forceRefresh*  
-    From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getLatestAnnouncement:announcement:forceRefresh:completion:" title="getLatestAnnouncement:announcement:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getLatestAnnouncement:announcement:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getLatestAnnouncement:announcement:forceRefresh:completion:
 
 Get the latest announcement
@@ -1802,23 +2159,28 @@ Get the latest announcement
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*forceRefresh*  
-    From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getMembers:cursor:pageSize:completion:" title="getMembers:cursor:pageSize:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getLatestAnnouncement:announcement:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembers:cursor:pageSize:completion:
 
 Get group members in pages
@@ -1827,26 +2189,31 @@ Get group members in pages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*cursor*  
-    Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-    Page size
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getMembers:forceRefresh:completion:" title="getMembers:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembers:forceRefresh:completion:
 
 Get group members
@@ -1855,23 +2222,28 @@ Get group members
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*forceRefresh*  
-    From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getMembers:list:forceRefresh:" title="getMembers:list:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembers:list:forceRefresh:
 
 Get group members
@@ -1880,41 +2252,52 @@ Get group members
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*forceRefresh*  
-    From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getMembers:result:" title="getMembers:result:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:list:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembers:result:
 
 `- (BMXErrorCode)getMembers:(BMXGroup *)*group* result:(BMXGroupMemberResultPage *)*result*`
 
-<a name="//api/name/getMembers:result:cursor:" title="getMembers:result:cursor:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:result:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembers:result:cursor:
 
 `- (BMXErrorCode)getMembers:(BMXGroup *)*group* result:(BMXGroupMemberResultPage *)*result* cursor:(NSString *)*cursor*`
 
-<a name="//api/name/getMembers:result:cursor:pageSize:" title="getMembers:result:cursor:pageSize:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:result:cursor:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembers:result:cursor:pageSize:
 
 Get group members in pages
@@ -1923,26 +2306,31 @@ Get group members in pages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*cursor*  
-    Starting cursor
+_cursor_\
+Starting cursor
 
-*pageSize*  
-    Page size
+_pageSize_\
+Page size
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getMembersNickname:members:completion:" title="getMembersNickname:members:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembersNickname:members:completion:
 
 Get group member details by member ID list
@@ -1951,23 +2339,28 @@ Get group member details by member ID list
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getMembersNickname:members:list:" title="getMembersNickname:members:list:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembersNickname:members:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getMembersNickname:members:list:
 
 Get group member details by member ID list
@@ -1976,23 +2369,28 @@ Get group member details by member ID list
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getSharedFilesList:forceRefresh:completion:" title="getSharedFilesList:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembersNickname:members:list:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getSharedFilesList:forceRefresh:completion:
 
 Get shared file list of group
@@ -2001,23 +2399,28 @@ Get shared file list of group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*forceRefresh*  
-    From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/getSharedFilesList:list:forceRefresh:" title="getSharedFilesList:list:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getSharedFilesList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### getSharedFilesList:list:forceRefresh:
 
 Get shared file list of group
@@ -2026,32 +2429,40 @@ Get shared file list of group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*forceRefresh*  
-    From server
+_forceRefresh_\
+From server
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getSharedFilesList:list:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
-<a name="//api/name/joinWithGroup:message:" title="joinWithGroup:message:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### joinWithGroup:message:
 
 Apply to join a group
@@ -2060,23 +2471,28 @@ Apply to join a group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*message*  
-    Message sent to admins 
+_message_\
+Message sent to admins
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/joinWithGroup:message:completion:" title="joinWithGroup:message:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="joinWithGroup:message:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### joinWithGroup:message:completion:
 
 Apply to join a group
@@ -2085,23 +2501,28 @@ Apply to join a group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*message*  
-    Message sent to admins 
+_message_\
+Message sent to admins
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/leaveWithGroup:" title="leaveWithGroup:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="joinWithGroup:message:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### leaveWithGroup:
 
 Leave a group
@@ -2110,20 +2531,25 @@ Leave a group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/leaveWithGroup:completion:" title="leaveWithGroup:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="leaveWithGroup:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### leaveWithGroup:completion:
 
 Leave a group
@@ -2132,20 +2558,25 @@ Leave a group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/muteMessageWithGroup:mode:" title="muteMessageWithGroup:mode:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="leaveWithGroup:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### muteMessageWithGroup:mode:
 
 Mute message notifications from the group
@@ -2154,23 +2585,28 @@ Mute message notifications from the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Mute mode
+_mode_\
+Mute mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/muteMessageWithGroup:mode:completion:" title="muteMessageWithGroup:mode:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="muteMessageWithGroup:mode:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### muteMessageWithGroup:mode:completion:
 
 Mute message notifications from the group
@@ -2179,23 +2615,28 @@ Mute message notifications from the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Mute mode
+_mode_\
+Mute mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeAdminsWithGroup:admins:reason:" title="removeAdminsWithGroup:admins:reason:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="muteMessageWithGroup:mode:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeAdminsWithGroup:admins:reason:
 
 Remove admins from group
@@ -2204,26 +2645,31 @@ Remove admins from group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*admins*  
-    Admin ID list
+_admins_\
+Admin ID list
 
-*reason*  
-    Reason for removal
+_reason_\
+Reason for removal
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeAdminsWithGroup:admins:reason:completion:" title="removeAdminsWithGroup:admins:reason:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeAdminsWithGroup:admins:reason:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeAdminsWithGroup:admins:reason:completion:
 
 Remove admins from group
@@ -2232,26 +2678,31 @@ Remove admins from group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*admins*  
-    Admin ID list
+_admins_\
+Admin ID list
 
-*reason*  
-    Reason for removal
+_reason_\
+Reason for removal
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeAdminsWithGroup:admins:reason:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeDelegate:
 
 Remove group service listener
@@ -2260,17 +2711,21 @@ Remove group service listener
 
 #### Parameters
 
-*listener*  
-    The listener
+_listener_\
+The listener
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeGroupListener:" title="removeGroupListener:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeDelegate:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeGroupListener:
 
 Remove group service listener
@@ -2279,17 +2734,21 @@ Remove group service listener
 
 #### Parameters
 
-*listener*  
-    The listener
+_listener_\
+The listener
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeMembersWithGroup:members:reason:" title="removeMembersWithGroup:members:reason:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeGroupListener:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeMembersWithGroup:members:reason:
 
 Remove members from group
@@ -2298,26 +2757,31 @@ Remove members from group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
-*reason*  
-    Reason for removal
+_reason_\
+Reason for removal
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeMembersWithGroup:members:reason:completion:" title="removeMembersWithGroup:members:reason:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeMembersWithGroup:members:reason:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeMembersWithGroup:members:reason:completion:
 
 Remove members from group
@@ -2326,26 +2790,31 @@ Remove members from group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
-*reason*  
-    Reason for removal
+_reason_\
+Reason for removal
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeSharedFileWithGroup:sharedFile:" title="removeSharedFileWithGroup:sharedFile:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeMembersWithGroup:members:reason:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeSharedFileWithGroup:sharedFile:
 
 Remove the shared files from the group
@@ -2354,23 +2823,28 @@ Remove the shared files from the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*sharedFile*  
-    The shared file
+_sharedFile_\
+The shared file
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/removeSharedFileWithGroup:sharedFile:completion:" title="removeSharedFileWithGroup:sharedFile:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeSharedFileWithGroup:sharedFile:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### removeSharedFileWithGroup:sharedFile:completion:
 
 Remove the shared files from the group
@@ -2379,68 +2853,88 @@ Remove the shared files from the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*sharedFile*  
-    The shared file
+_sharedFile_\
+The shared file
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/searchWithGroupId:forceRefresh:completion:" title="searchWithGroupId:forceRefresh:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeSharedFileWithGroup:sharedFile:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### searchWithGroupId:forceRefresh:completion:
 
 `- (void)searchWithGroupId:(long long)*groupId* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( BMXGroup *res , BMXError *aError ))*resBlock*`
 
-<a name="//api/name/searchWithGroupId:group:forceRefresh:" title="searchWithGroupId:group:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchWithGroupId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### searchWithGroupId:group:forceRefresh:
 
 `- (BMXErrorCode)searchWithGroupId:(long long)*groupId* group:(BMXGroup *)*group* forceRefresh:(BOOL)*forceRefresh*`
 
-<a name="//api/name/searchWithGroupIdList:list:forceRefresh:" title="searchWithGroupIdList:list:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchWithGroupId:group:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### searchWithGroupIdList:list:forceRefresh:
 
 `- (BMXErrorCode)searchWithGroupIdList:(ListOfLongLong *)*groupIdList* list:(BMXGroupList *)*list* forceRefresh:(BOOL)*forceRefresh*`
 
-<a name="//api/name/searchWithList:forceRefresh:" title="searchWithList:forceRefresh:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchWithGroupIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### searchWithList:forceRefresh:
 
 `- (BMXErrorCode)searchWithList:(BMXGroupList *)*list* forceRefresh:(BOOL)*forceRefresh*`
 
-<a name="//api/name/searchWithList:name:" title="searchWithList:name:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchWithList:forceRefresh:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### searchWithList:name:
 
 `- (BMXErrorCode)searchWithList:(BMXGroupList *)*list* name:(NSString *)*name*`
 
-<a name="//api/name/setAllowMemberModify:enable:" title="setAllowMemberModify:enable:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchWithList:name:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setAllowMemberModify:enable:
 
 Set whether to allow group members to set group information
@@ -2449,20 +2943,25 @@ Set whether to allow group members to set group information
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setAllowMemberModify:enable:completion:" title="setAllowMemberModify:enable:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setAllowMemberModify:enable:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setAllowMemberModify:enable:completion:
 
 Set whether to allow group members to set group information
@@ -2471,20 +2970,25 @@ Set whether to allow group members to set group information
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setAvatar:avatarPath:arg3:" title="setAvatar:avatarPath:arg3:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setAllowMemberModify:enable:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setAvatar:avatarPath:arg3:
 
 Set group avatar
@@ -2493,23 +2997,28 @@ Set group avatar
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*avatarPath*  
-    The local file path of avatar
+_avatarPath_\
+The local file path of avatar
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setAvatar:avatarPath:arg3:completion:" title="setAvatar:avatarPath:arg3:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setAvatar:avatarPath:arg3:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='3' data-2='3' data-3='3' data-4='3' data-5='3' data-6='3' data-7='3' data-8='3' data-9='3' data-10='3' data-11='3' data-12='3' data-13='3' data-14='3' data-15='3' data-16='3' data-17='3' data-18='3' data-19='3' data-20='3' data-21='3' data-22='3' data-23='3' data-24='3' data-25='3' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setAvatar:avatarPath:arg3:completion:
 
 Set group avatar
@@ -2518,23 +3027,28 @@ Set group avatar
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*avatarPath*  
-    The local file path of avatar
+_avatarPath_\
+The local file path of avatar
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setDescription:description:" title="setDescription:description:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setAvatar:avatarPath:arg3:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='3' data-2='3' data-3='3' data-4='3' data-5='3' data-6='3' data-7='3' data-8='3' data-9='3' data-10='3' data-11='3' data-12='3' data-13='3' data-14='3' data-15='3' data-16='3' data-17='3' data-18='3' data-19='3' data-20='3' data-21='3' data-22='3' data-23='3' data-24='3' data-25='3' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setDescription:description:
 
 Set group description
@@ -2543,20 +3057,25 @@ Set group description
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setDescription:description:completion:" title="setDescription:description:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setDescription:description:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setDescription:description:completion:
 
 Set group description
@@ -2565,20 +3084,25 @@ Set group description
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setEnableReadAck:enable:" title="setEnableReadAck:enable:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setDescription:description:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setEnableReadAck:enable:
 
 Set whether to enable the read ACK function of the group
@@ -2587,20 +3111,25 @@ Set whether to enable the read ACK function of the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setEnableReadAck:enable:completion:" title="setEnableReadAck:enable:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setEnableReadAck:enable:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setEnableReadAck:enable:completion:
 
 Set whether to enable the read ACK function of the group
@@ -2609,20 +3138,25 @@ Set whether to enable the read ACK function of the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setExtension:extension:" title="setExtension:extension:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setEnableReadAck:enable:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setExtension:extension:
 
 Set group extension information
@@ -2631,23 +3165,28 @@ Set group extension information
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*extension*  
-    Extension information of the group
+_extension_\
+Extension information of the group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setExtension:extension:completion:" title="setExtension:extension:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setExtension:extension:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setExtension:extension:completion:
 
 Set group extension information
@@ -2656,23 +3195,28 @@ Set group extension information
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*extension*  
-    Extension information of the group
+_extension_\
+Extension information of the group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setHistoryVisible:enable:" title="setHistoryVisible:enable:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setExtension:extension:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setHistoryVisible:enable:
 
 Set whether group members can see group history messages
@@ -2681,20 +3225,25 @@ Set whether group members can see group history messages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setHistoryVisible:enable:completion:" title="setHistoryVisible:enable:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setHistoryVisible:enable:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setHistoryVisible:enable:completion:
 
 Set whether group members can see group history messages
@@ -2703,20 +3252,25 @@ Set whether group members can see group history messages
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setInviteMode:mode:" title="setInviteMode:mode:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setHistoryVisible:enable:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setInviteMode:mode:
 
 Set invitation mode
@@ -2725,23 +3279,28 @@ Set invitation mode
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Invitation mode
+_mode_\
+Invitation mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setInviteMode:mode:completion:" title="setInviteMode:mode:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setInviteMode:mode:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setInviteMode:mode:completion:
 
 Set invitation mode
@@ -2750,23 +3309,28 @@ Set invitation mode
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Invitation mode
+_mode_\
+Invitation mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setJoinAuthMode:mode:" title="setJoinAuthMode:mode:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setInviteMode:mode:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setJoinAuthMode:mode:
 
 Set authorization mode
@@ -2775,23 +3339,28 @@ Set authorization mode
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Authorization mode
+_mode_\
+Authorization mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setJoinAuthMode:mode:completion:" title="setJoinAuthMode:mode:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setJoinAuthMode:mode:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setJoinAuthMode:mode:completion:
 
 Set invitation mode
@@ -2800,23 +3369,28 @@ Set invitation mode
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Authorization mode
+_mode_\
+Authorization mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setMsgPushMode:mode:" title="setMsgPushMode:mode:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setJoinAuthMode:mode:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setMsgPushMode:mode:
 
 Set message notification mode
@@ -2825,23 +3399,28 @@ Set message notification mode
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Notification mode
+_mode_\
+Notification mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setMsgPushMode:mode:completion:" title="setMsgPushMode:mode:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setMsgPushMode:mode:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setMsgPushMode:mode:completion:
 
 Set message notification mode
@@ -2850,23 +3429,28 @@ Set message notification mode
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*mode*  
-    Notification mode
+_mode_\
+Notification mode
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setMyNickname:nickname:" title="setMyNickname:nickname:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setMsgPushMode:mode:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setMyNickname:nickname:
 
 Set my nickname in the group
@@ -2875,23 +3459,28 @@ Set my nickname in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*nickname*  
-    My nickname
+_nickname_\
+My nickname
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setMyNickname:nickname:completion:" title="setMyNickname:nickname:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setMyNickname:nickname:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setMyNickname:nickname:completion:
 
 Set my nickname in the group
@@ -2900,23 +3489,28 @@ Set my nickname in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*nickname*  
-    My nickname
+_nickname_\
+My nickname
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setName:name:" title="setName:name:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setMyNickname:nickname:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setName:name:
 
 Set group name
@@ -2925,23 +3519,28 @@ Set group name
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*name*  
-    Group name
+_name_\
+Group name
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setName:name:completion:" title="setName:name:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setName:name:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### setName:name:completion:
 
 Set group name
@@ -2950,23 +3549,28 @@ Set group name
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*name*  
-    Group name
+_name_\
+Group name
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/transferOwnerWithGroup:newOwnerId:" title="transferOwnerWithGroup:newOwnerId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="setName:name:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### transferOwnerWithGroup:newOwnerId:
 
 Transfer the owership of the group
@@ -2975,23 +3579,28 @@ Transfer the owership of the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*newOwnerId*  
-    New owner User ID  
+_newOwnerId_\
+New owner User ID
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/transferOwnerWithGroup:newOwnerId:completion:" title="transferOwnerWithGroup:newOwnerId:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="transferOwnerWithGroup:newOwnerId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### transferOwnerWithGroup:newOwnerId:completion:
 
 Transfer the owership of the group
@@ -3000,23 +3609,28 @@ Transfer the owership of the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*newOwnerId*  
-    New owner User ID  
+_newOwnerId_\
+New owner User ID
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/unbanGroupWithGroup:" title="unbanGroupWithGroup:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="transferOwnerWithGroup:newOwnerId:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### unbanGroupWithGroup:
 
 Unban all members in the group
@@ -3025,20 +3639,25 @@ Unban all members in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/unbanGroupWithGroup:completion:" title="unbanGroupWithGroup:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="unbanGroupWithGroup:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### unbanGroupWithGroup:completion:
 
 Unban all members in the group
@@ -3047,20 +3666,25 @@ Unban all members in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/unbanMembersWithGroup:members:" title="unbanMembersWithGroup:members:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="unbanGroupWithGroup:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### unbanMembersWithGroup:members:
 
 Unban members in the group
@@ -3069,23 +3693,28 @@ Unban members in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/unbanMembersWithGroup:members:completion:" title="unbanMembersWithGroup:members:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="unbanMembersWithGroup:members:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### unbanMembersWithGroup:members:completion:
 
 Unban members in the group
@@ -3094,23 +3723,28 @@ Unban members in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/unblockMembersWithGroup:members:" title="unblockMembersWithGroup:members:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="unbanMembersWithGroup:members:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### unblockMembersWithGroup:members:
 
 Unblock members in the group
@@ -3119,23 +3753,28 @@ Unblock members in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/unblockMembersWithGroup:members:completion:" title="unblockMembersWithGroup:members:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="unblockMembersWithGroup:members:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### unblockMembersWithGroup:members:completion:
 
 Unblock members in the group
@@ -3144,23 +3783,28 @@ Unblock members in the group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*members*  
-    Group members ID list
+_members_\
+Group members ID list
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:" title="uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="unblockMembersWithGroup:members:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:
 
 Upload shared file to group
@@ -3169,29 +3813,34 @@ Upload shared file to group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*filePath*  
-    Local path of the shared file
+_filePath_\
+Local path of the shared file
 
-*displayName*  
-    Display name
+_displayName_\
+Display name
 
-*extensionName*  
-    Extension name of the shared file
+_extensionName_\
+Extension name of the shared file
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:completion:" title="uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:completion:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='5' data-2='5' data-3='5' data-4='5' data-5='5' data-6='5' data-7='5' data-8='5' data-9='5' data-10='5' data-11='5' data-12='5' data-13='5' data-14='5' data-15='5' data-16='5' data-17='5' data-18='5' data-19='5' data-20='5' data-21='5' data-22='5' data-23='5' data-24='5' data-25='5' data-26='5' data-27='5' data-28='5' data-29='5' data-30='5' data-31='5' data-32='5' data-33='5' data-34='5' data-35='5' data-36='5' data-37='5' data-38='5' data-39='5' data-40='5' data-41='5' data-42='5' data-43='5' data-44='5' data-45='5' data-46='5' data-47='5' data-48='5' data-49='5' data-50='5' data-51='5' data-52='5' data-53='5' data-54='5' data-55='5' data-56='5' data-57='5' data-58='5' data-59='5' data-60='5' data-61='5' data-62='5' data-63='5' data-64='5' data-65='5' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
+
 ```
+
 ### uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:completion:
 
 Upload shared file to group
@@ -3200,25 +3849,29 @@ Upload shared file to group
 
 #### Parameters
 
-*group*  
-    The group
+_group_\
+The group
 
-*filePath*  
-    Local path of the shared file
+_filePath_\
+Local path of the shared file
 
-*displayName*  
-    Display name
+_displayName_\
+Display name
 
-*extensionName*  
-    Extension name of the shared file
+_extensionName_\
+Extension name of the shared file
 
 #### Return Value
-<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+[BMXErrorCode](../Constants/BMXErrorCode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="uploadSharedFileWithGroup:filePath:displayName:extensionName:arg5:completion:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='5' data-2='5' data-3='5' data-4='5' data-5='5' data-6='5' data-7='5' data-8='5' data-9='5' data-10='5' data-11='5' data-12='5' data-13='5' data-14='5' data-15='5' data-16='5' data-17='5' data-18='5' data-19='5' data-20='5' data-21='5' data-22='5' data-23='5' data-24='5' data-25='5' data-26='5' data-27='5' data-28='5' data-29='5' data-30='5' data-31='5' data-32='5' data-33='5' data-34='5' data-35='5' data-36='5' data-37='5' data-38='5' data-39='5' data-40='5' data-41='5' data-42='5' data-43='5' data-44='5' data-45='5' data-46='5' data-47='5' data-48='5' data-49='5' data-50='5' data-51='5' data-52='5' data-53='5' data-54='5' data-55='5' data-56='5' data-57='5' data-58='5' data-59='5' data-60='5' data-61='5' data-62='5' data-63='5' data-64='5' data-65='5' data-repo='lanying-im-ios' data-class='BMXGroupService'></div>
 ```

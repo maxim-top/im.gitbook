@@ -1,15 +1,11 @@
 ---
 title: floo::BMXGroup
-summary: Group 
-
+summary: Group
 ---
 
 # floo::BMXGroup
 
-
-
-Group 
-
+Group
 
 `#include <bmx_group.h>`
 
@@ -17,218 +13,194 @@ Inherits from BMXBaseObject
 
 ## Public Types
 
-|                | Name           |
-| -------------- | -------------- |
-| enum class| **[InvitationStatus](classfloo_1_1_b_m_x_group.md#enum-invitationstatus)** { Pending, Accepted, Declined}<br>Group invitation state  |
-| enum class| **[ApplicationStatus](classfloo_1_1_b_m_x_group.md#enum-applicationstatus)** { Pending, Accepted, Declined}<br>Group application state  |
-| enum class| **[MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode)** { All, None, AdminOrAt, Admin, At}<br>Message notification type  |
-| enum class| **[ModifyMode](classfloo_1_1_b_m_x_group.md#enum-modifymode)** { AdminOnly, Open}<br>Group information modification mode  |
-| enum class| **[JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode)** { Open, NeedApproval, RejectAll}<br>Group joining authentication mode  |
-| enum class| **[InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode)** { AdminOnly, Open}<br>Group invitation mode  |
-| enum class| **[UpdateInfoType](classfloo_1_1_b_m_x_group.md#enum-updateinfotype)** { UnKnown, Name, Description, Avatar, Owner, Ext, NickName, ModifyMode, JoinAuthMode, InviteMode, MsgPushMode, MsgMuteMode, ReadAckMode, HistoryVisibleMode, BanExpireTime}<br>Group information update type  |
-| enum class| **[GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus)** { Normal, Destroyed}<br>Grouping state  |
-| enum class| **[MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode)** { None, MuteNotification, MuteChat}<br>Group message blocking mode  |
-| enum class| **[MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype)** { GroupMember, GroupAdmin, GroupOwner, NotGroupMember} |
-| enum class| **[GroupType](classfloo_1_1_b_m_x_group.md#enum-grouptype)** { Private, Public, Chatroom} |
-| typedef std::shared_ptr< [Member] > | **[MemberPtr](classfloo_1_1_b_m_x_group.md#typedef-memberptr)**  |
-| typedef std::vector< MemberPtr > | **[MemberList](classfloo_1_1_b_m_x_group.md#typedef-memberlist)**  |
-| typedef std::shared_ptr< [BannedMember] > | **[BannedMemberPtr](classfloo_1_1_b_m_x_group.md#typedef-bannedmemberptr)**  |
-| typedef std::vector< BannedMemberPtr > | **[BannedMemberList](classfloo_1_1_b_m_x_group.md#typedef-bannedmemberlist)**  |
-| typedef std::shared_ptr< [SharedFile] > | **[SharedFilePtr](classfloo_1_1_b_m_x_group.md#typedef-sharedfileptr)**  |
-| typedef std::vector< SharedFilePtr > | **[SharedFileList](classfloo_1_1_b_m_x_group.md#typedef-sharedfilelist)**  |
-| typedef std::shared_ptr< [Announcement] > | **[AnnouncementPtr](classfloo_1_1_b_m_x_group.md#typedef-announcementptr)**  |
-| typedef std::vector< AnnouncementPtr > | **[AnnouncementList](classfloo_1_1_b_m_x_group.md#typedef-announcementlist)**  |
-| typedef std::shared_ptr< [Invitation] > | **[InvitationPtr](classfloo_1_1_b_m_x_group.md#typedef-invitationptr)**  |
-| typedef std::vector< InvitationPtr > | **[InvitationList](classfloo_1_1_b_m_x_group.md#typedef-invitationlist)**  |
-| typedef std::shared_ptr< [Application] > | **[ApplicationPtr](classfloo_1_1_b_m_x_group.md#typedef-applicationptr)**  |
-| typedef std::vector< ApplicationPtr > | **[ApplicationList](classfloo_1_1_b_m_x_group.md#typedef-applicationlist)**  |
+|                                             | Name                                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-invitationstatus"><strong>InvitationStatus</strong></a> { Pending, Accepted, Declined}<br>Group invitation state</p>                                                                                                                                                 |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-applicationstatus"><strong>ApplicationStatus</strong></a> { Pending, Accepted, Declined}<br>Group application state</p>                                                                                                                                              |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-msgpushmode"><strong>MsgPushMode</strong></a> { All, None, AdminOrAt, Admin, At}<br>Message notification type</p>                                                                                                                                                    |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-modifymode"><strong>ModifyMode</strong></a> { AdminOnly, Open}<br>Group information modification mode</p>                                                                                                                                                            |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-joinauthmode"><strong>JoinAuthMode</strong></a> { Open, NeedApproval, RejectAll}<br>Group joining authentication mode</p>                                                                                                                                            |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-invitemode"><strong>InviteMode</strong></a> { AdminOnly, Open}<br>Group invitation mode</p>                                                                                                                                                                          |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-updateinfotype"><strong>UpdateInfoType</strong></a> { UnKnown, Name, Description, Avatar, Owner, Ext, NickName, ModifyMode, JoinAuthMode, InviteMode, MsgPushMode, MsgMuteMode, ReadAckMode, HistoryVisibleMode, BanExpireTime}<br>Group information update type</p> |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-groupstatus"><strong>GroupStatus</strong></a> { Normal, Destroyed}<br>Grouping state</p>                                                                                                                                                                             |
+| enum class                                  | <p><a href="classfloo_1_1_b_m_x_group.md#enum-msgmutemode"><strong>MsgMuteMode</strong></a> { None, MuteNotification, MuteChat}<br>Group message blocking mode</p>                                                                                                                                                 |
+| enum class                                  | [**MemberRoleType**](classfloo_1_1_b_m_x_group.md#enum-memberroletype) { GroupMember, GroupAdmin, GroupOwner, NotGroupMember}                                                                                                                                                                                      |
+| enum class                                  | [**GroupType**](classfloo_1_1_b_m_x_group.md#enum-grouptype) { Private, Public, Chatroom}                                                                                                                                                                                                                          |
+| typedef std::shared\_ptr< \[Member] >       | [**MemberPtr**](classfloo_1_1_b_m_x_group.md#typedef-memberptr)                                                                                                                                                                                                                                                    |
+| typedef std::vector< MemberPtr >            | [**MemberList**](classfloo_1_1_b_m_x_group.md#typedef-memberlist)                                                                                                                                                                                                                                                  |
+| typedef std::shared\_ptr< \[BannedMember] > | [**BannedMemberPtr**](classfloo_1_1_b_m_x_group.md#typedef-bannedmemberptr)                                                                                                                                                                                                                                        |
+| typedef std::vector< BannedMemberPtr >      | [**BannedMemberList**](classfloo_1_1_b_m_x_group.md#typedef-bannedmemberlist)                                                                                                                                                                                                                                      |
+| typedef std::shared\_ptr< \[SharedFile] >   | [**SharedFilePtr**](classfloo_1_1_b_m_x_group.md#typedef-sharedfileptr)                                                                                                                                                                                                                                            |
+| typedef std::vector< SharedFilePtr >        | [**SharedFileList**](classfloo_1_1_b_m_x_group.md#typedef-sharedfilelist)                                                                                                                                                                                                                                          |
+| typedef std::shared\_ptr< \[Announcement] > | [**AnnouncementPtr**](classfloo_1_1_b_m_x_group.md#typedef-announcementptr)                                                                                                                                                                                                                                        |
+| typedef std::vector< AnnouncementPtr >      | [**AnnouncementList**](classfloo_1_1_b_m_x_group.md#typedef-announcementlist)                                                                                                                                                                                                                                      |
+| typedef std::shared\_ptr< \[Invitation] >   | [**InvitationPtr**](classfloo_1_1_b_m_x_group.md#typedef-invitationptr)                                                                                                                                                                                                                                            |
+| typedef std::vector< InvitationPtr >        | [**InvitationList**](classfloo_1_1_b_m_x_group.md#typedef-invitationlist)                                                                                                                                                                                                                                          |
+| typedef std::shared\_ptr< \[Application] >  | [**ApplicationPtr**](classfloo_1_1_b_m_x_group.md#typedef-applicationptr)                                                                                                                                                                                                                                          |
+| typedef std::vector< ApplicationPtr >       | [**ApplicationList**](classfloo_1_1_b_m_x_group.md#typedef-applicationlist)                                                                                                                                                                                                                                        |
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| virtual | **[~BMXGroup](classfloo_1_1_b_m_x_group.md#function-~bmxgroup)**()<br>Destructor  |
-| virtual int64_t | **[groupId](classfloo_1_1_b_m_x_group.md#function-groupid)**() =0<br>Group Id  |
-| virtual [GroupType](classfloo_1_1_b_m_x_group.md#enum-grouptype) | **[groupType](classfloo_1_1_b_m_x_group.md#function-grouptype)**() =0<br>Type of the current group (Private, Public, Chatroom)  |
-| virtual const std::string & | **[myNickname](classfloo_1_1_b_m_x_group.md#function-mynickname)**() =0<br>Group member nickname of mine  |
-| virtual const std::string & | **[name](classfloo_1_1_b_m_x_group.md#function-name)**() =0<br>Group name  |
-| virtual const std::string & | **[description](classfloo_1_1_b_m_x_group.md#function-description)**() =0<br>Group description  |
-| virtual std::string | **[avatarRatelUrl](classfloo_1_1_b_m_x_group.md#function-avatarratelurl)**() =0<br>Url for group avatar Ratel server  |
-| virtual std::string | **[avatarUrl](classfloo_1_1_b_m_x_group.md#function-avatarurl)**() =0<br>Url for group avatar server  |
-| virtual std::string | **[avatarPath](classfloo_1_1_b_m_x_group.md#function-avatarpath)**() =0<br>Local path of downloaded group avatar  |
-| virtual std::string | **[avatarThumbnailUrl](classfloo_1_1_b_m_x_group.md#function-avatarthumbnailurl)**() =0<br>Url for group avatar thumbnail server  |
-| virtual std::string | **[avatarThumbnailPath](classfloo_1_1_b_m_x_group.md#function-avatarthumbnailpath)**() =0<br>Local path of downloaded group avatar thumbnail  |
-| virtual int64_t | **[createTime](classfloo_1_1_b_m_x_group.md#function-createtime)**() =0<br>Group creation time  |
-| virtual const JSON & | **[extension](classfloo_1_1_b_m_x_group.md#function-extension)**() =0<br>Group extension information  |
-| virtual int64_t | **[ownerId](classfloo_1_1_b_m_x_group.md#function-ownerid)**() =0<br>Group Owner  |
-| virtual int | **[capacity](classfloo_1_1_b_m_x_group.md#function-capacity)**() =0<br>Maximum number of group members  |
-| virtual int | **[membersCount](classfloo_1_1_b_m_x_group.md#function-memberscount)**() =0<br>Number of group members, including Owner, Admins and Members  |
-| virtual int | **[adminsCount](classfloo_1_1_b_m_x_group.md#function-adminscount)**() =0<br>Number of group admins  |
-| virtual int | **[blockListSize](classfloo_1_1_b_m_x_group.md#function-blocklistsize)**() =0<br>Blacklisted user-number  |
-| virtual int | **[bannedListSize](classfloo_1_1_b_m_x_group.md#function-bannedlistsize)**() =0<br>Banned user-number  |
-| virtual int | **[sharedFilesCount](classfloo_1_1_b_m_x_group.md#function-sharedfilescount)**() =0<br>Shared file-number in group  |
-| virtual int64_t | **[latestAnnouncementId](classfloo_1_1_b_m_x_group.md#function-latestannouncementid)**() =0<br>Latest group announcement id  |
-| virtual [MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode) | **[msgPushMode](classfloo_1_1_b_m_x_group.md#function-msgpushmode)**() =0<br>Group message notification type  |
-| virtual [ModifyMode](classfloo_1_1_b_m_x_group.md#enum-modifymode) | **[modifyMode](classfloo_1_1_b_m_x_group.md#function-modifymode)**() =0<br>Group information modification mode  |
-| virtual [JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode) | **[joinAuthMode](classfloo_1_1_b_m_x_group.md#function-joinauthmode)**() =0<br>Join approval mode  |
-| virtual [InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode) | **[inviteMode](classfloo_1_1_b_m_x_group.md#function-invitemode)**() =0<br>Group invitation mode  |
-| virtual [MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode) | **[msgMuteMode](classfloo_1_1_b_m_x_group.md#function-msgmutemode)**() =0<br>Group message blocking mode  |
-| virtual [GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus) | **[groupStatus](classfloo_1_1_b_m_x_group.md#function-groupstatus)**() =0<br>state of the current group. (Normal, Destroyed)  |
-| virtual bool | **[isMember](classfloo_1_1_b_m_x_group.md#function-ismember)**() =0<br>Deprecated use roleType instead.  |
-| virtual bool | **[enableReadAck](classfloo_1_1_b_m_x_group.md#function-enablereadack)**() =0<br>Whether group message read acknowledgement feature enabled  |
-| virtual bool | **[historyVisible](classfloo_1_1_b_m_x_group.md#function-historyvisible)**() =0<br>Whether to load and display the chat history  |
-| virtual [MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype) | **[roleType](classfloo_1_1_b_m_x_group.md#function-roletype)**() =0<br>Type of a member role in group  |
-| virtual int64_t | **[banExpireTime](classfloo_1_1_b_m_x_group.md#function-banexpiretime)**() =0<br>Expiration time of banning all group members  |
+|                                                                            | Name                                                                                                                                                                        |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtual                                                                    | <p><a href="classfloo_1_1_b_m_x_group.md#function-~bmxgroup"><strong>~BMXGroup</strong></a>()<br>Destructor</p>                                                             |
+| virtual int64\_t                                                           | <p><a href="classfloo_1_1_b_m_x_group.md#function-groupid"><strong>groupId</strong></a>() =0<br>Group Id</p>                                                                |
+| virtual [GroupType](classfloo_1_1_b_m_x_group.md#enum-grouptype)           | <p><a href="classfloo_1_1_b_m_x_group.md#function-grouptype"><strong>groupType</strong></a>() =0<br>Type of the current group (Private, Public, Chatroom)</p>               |
+| virtual const std::string &                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-mynickname"><strong>myNickname</strong></a>() =0<br>Group member nickname of mine</p>                                     |
+| virtual const std::string &                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-name"><strong>name</strong></a>() =0<br>Group name</p>                                                                    |
+| virtual const std::string &                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-description"><strong>description</strong></a>() =0<br>Group description</p>                                               |
+| virtual std::string                                                        | <p><a href="classfloo_1_1_b_m_x_group.md#function-avatarratelurl"><strong>avatarRatelUrl</strong></a>() =0<br>Url for group avatar Ratel server</p>                         |
+| virtual std::string                                                        | <p><a href="classfloo_1_1_b_m_x_group.md#function-avatarurl"><strong>avatarUrl</strong></a>() =0<br>Url for group avatar server</p>                                         |
+| virtual std::string                                                        | <p><a href="classfloo_1_1_b_m_x_group.md#function-avatarpath"><strong>avatarPath</strong></a>() =0<br>Local path of downloaded group avatar</p>                             |
+| virtual std::string                                                        | <p><a href="classfloo_1_1_b_m_x_group.md#function-avatarthumbnailurl"><strong>avatarThumbnailUrl</strong></a>() =0<br>Url for group avatar thumbnail server</p>             |
+| virtual std::string                                                        | <p><a href="classfloo_1_1_b_m_x_group.md#function-avatarthumbnailpath"><strong>avatarThumbnailPath</strong></a>() =0<br>Local path of downloaded group avatar thumbnail</p> |
+| virtual int64\_t                                                           | <p><a href="classfloo_1_1_b_m_x_group.md#function-createtime"><strong>createTime</strong></a>() =0<br>Group creation time</p>                                               |
+| virtual const JSON &                                                       | <p><a href="classfloo_1_1_b_m_x_group.md#function-extension"><strong>extension</strong></a>() =0<br>Group extension information</p>                                         |
+| virtual int64\_t                                                           | <p><a href="classfloo_1_1_b_m_x_group.md#function-ownerid"><strong>ownerId</strong></a>() =0<br>Group Owner</p>                                                             |
+| virtual int                                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-capacity"><strong>capacity</strong></a>() =0<br>Maximum number of group members</p>                                       |
+| virtual int                                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-memberscount"><strong>membersCount</strong></a>() =0<br>Number of group members, including Owner, Admins and Members</p>  |
+| virtual int                                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-adminscount"><strong>adminsCount</strong></a>() =0<br>Number of group admins</p>                                          |
+| virtual int                                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-blocklistsize"><strong>blockListSize</strong></a>() =0<br>Blacklisted user-number</p>                                     |
+| virtual int                                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-bannedlistsize"><strong>bannedListSize</strong></a>() =0<br>Banned user-number</p>                                        |
+| virtual int                                                                | <p><a href="classfloo_1_1_b_m_x_group.md#function-sharedfilescount"><strong>sharedFilesCount</strong></a>() =0<br>Shared file-number in group</p>                           |
+| virtual int64\_t                                                           | <p><a href="classfloo_1_1_b_m_x_group.md#function-latestannouncementid"><strong>latestAnnouncementId</strong></a>() =0<br>Latest group announcement id</p>                  |
+| virtual [MsgPushMode](classfloo_1_1_b_m_x_group.md#enum-msgpushmode)       | <p><a href="classfloo_1_1_b_m_x_group.md#function-msgpushmode"><strong>msgPushMode</strong></a>() =0<br>Group message notification type</p>                                 |
+| virtual [ModifyMode](classfloo_1_1_b_m_x_group.md#enum-modifymode)         | <p><a href="classfloo_1_1_b_m_x_group.md#function-modifymode"><strong>modifyMode</strong></a>() =0<br>Group information modification mode</p>                               |
+| virtual [JoinAuthMode](classfloo_1_1_b_m_x_group.md#enum-joinauthmode)     | <p><a href="classfloo_1_1_b_m_x_group.md#function-joinauthmode"><strong>joinAuthMode</strong></a>() =0<br>Join approval mode</p>                                            |
+| virtual [InviteMode](classfloo_1_1_b_m_x_group.md#enum-invitemode)         | <p><a href="classfloo_1_1_b_m_x_group.md#function-invitemode"><strong>inviteMode</strong></a>() =0<br>Group invitation mode</p>                                             |
+| virtual [MsgMuteMode](classfloo_1_1_b_m_x_group.md#enum-msgmutemode)       | <p><a href="classfloo_1_1_b_m_x_group.md#function-msgmutemode"><strong>msgMuteMode</strong></a>() =0<br>Group message blocking mode</p>                                     |
+| virtual [GroupStatus](classfloo_1_1_b_m_x_group.md#enum-groupstatus)       | <p><a href="classfloo_1_1_b_m_x_group.md#function-groupstatus"><strong>groupStatus</strong></a>() =0<br>state of the current group. (Normal, Destroyed)</p>                 |
+| virtual bool                                                               | <p><a href="classfloo_1_1_b_m_x_group.md#function-ismember"><strong>isMember</strong></a>() =0<br>Deprecated use roleType instead.</p>                                      |
+| virtual bool                                                               | <p><a href="classfloo_1_1_b_m_x_group.md#function-enablereadack"><strong>enableReadAck</strong></a>() =0<br>Whether group message read acknowledgement feature enabled</p>  |
+| virtual bool                                                               | <p><a href="classfloo_1_1_b_m_x_group.md#function-historyvisible"><strong>historyVisible</strong></a>() =0<br>Whether to load and display the chat history</p>              |
+| virtual [MemberRoleType](classfloo_1_1_b_m_x_group.md#enum-memberroletype) | <p><a href="classfloo_1_1_b_m_x_group.md#function-roletype"><strong>roleType</strong></a>() =0<br>Type of a member role in group</p>                                        |
+| virtual int64\_t                                                           | <p><a href="classfloo_1_1_b_m_x_group.md#function-banexpiretime"><strong>banExpireTime</strong></a>() =0<br>Expiration time of banning all group members</p>                |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXGroup](classfloo_1_1_b_m_x_group.md#function-bmxgroup)**() |
+|   | Name                                                             |
+| - | ---------------------------------------------------------------- |
+|   | [**BMXGroup**](classfloo_1_1_b_m_x_group.md#function-bmxgroup)() |
 
 ## Public Types Documentation
 
 ### enum InvitationStatus
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Pending | | Request pending   |
-| Accepted | | Request accepted   |
-| Declined | | Request rejected   |
+| Enumerator | Value | Description      |
+| ---------- | ----- | ---------------- |
+| Pending    |       | Request pending  |
+| Accepted   |       | Request accepted |
+| Declined   |       | Request rejected |
 
-
-
-Group invitation state 
+Group invitation state
 
 ### enum ApplicationStatus
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Pending | | Request pending   |
-| Accepted | | Request accepted   |
-| Declined | | Request rejected   |
+| Enumerator | Value | Description      |
+| ---------- | ----- | ---------------- |
+| Pending    |       | Request pending  |
+| Accepted   |       | Request accepted |
+| Declined   |       | Request rejected |
 
-
-
-Group application state 
+Group application state
 
 ### enum MsgPushMode
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| All | | Alert all group messages   |
-| None | | Do not alert any group message   |
-| AdminOrAt | | Alert Admins only, except @ messages   |
-| Admin | | Alert Admins only   |
-| At | | Alert @ messages only   |
+| Enumerator | Value | Description                          |
+| ---------- | ----- | ------------------------------------ |
+| All        |       | Alert all group messages             |
+| None       |       | Do not alert any group message       |
+| AdminOrAt  |       | Alert Admins only, except @ messages |
+| Admin      |       | Alert Admins only                    |
+| At         |       | Alert @ messages only                |
 
-
-
-Message notification type 
+Message notification type
 
 ### enum ModifyMode
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| AdminOnly | | Admin only   |
-| Open | | Any group member can modify   |
+| Enumerator | Value | Description                 |
+| ---------- | ----- | --------------------------- |
+| AdminOnly  |       | Admin only                  |
+| Open       |       | Any group member can modify |
 
-
-
-Group information modification mode 
+Group information modification mode
 
 ### enum JoinAuthMode
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Open | | No authentication required   |
-| NeedApproval | | Admin approval required   |
-| RejectAll | | All requests rejected   |
+| Enumerator   | Value | Description                |
+| ------------ | ----- | -------------------------- |
+| Open         |       | No authentication required |
+| NeedApproval |       | Admin approval required    |
+| RejectAll    |       | All requests rejected      |
 
-
-
-Group joining authentication mode 
+Group joining authentication mode
 
 ### enum InviteMode
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| AdminOnly | | Only Admins can invite new group member   |
-| Open | | Anyone can invite new group member   |
+| Enumerator | Value | Description                             |
+| ---------- | ----- | --------------------------------------- |
+| AdminOnly  |       | Only Admins can invite new group member |
+| Open       |       | Anyone can invite new group member      |
 
-
-
-Group invitation mode 
+Group invitation mode
 
 ### enum UpdateInfoType
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| UnKnown | | Default initialization value   |
-| Name | | Modify group name   |
-| Description | | Modify group description   |
-| Avatar | | Modify group avatar   |
-| Owner | | Modify group Owner   |
-| Ext | | Modify group extension   |
-| NickName | | Modify group member nickname   |
-| ModifyMode | | Modify group information mode   |
-| JoinAuthMode | | Modify group authentication mode   |
-| InviteMode | | Modify group invitation mode   |
-| MsgPushMode | | Modify group pushed message type   |
-| MsgMuteMode | | Modify whether to alert message   |
-| ReadAckMode | | Whether group message read acknowledgement feature enabled   |
-| HistoryVisibleMode | | Whether group chat history is visible to new members   |
-| BanExpireTime | | Expiration time of banning all group members   |
+| Enumerator         | Value | Description                                                |
+| ------------------ | ----- | ---------------------------------------------------------- |
+| UnKnown            |       | Default initialization value                               |
+| Name               |       | Modify group name                                          |
+| Description        |       | Modify group description                                   |
+| Avatar             |       | Modify group avatar                                        |
+| Owner              |       | Modify group Owner                                         |
+| Ext                |       | Modify group extension                                     |
+| NickName           |       | Modify group member nickname                               |
+| ModifyMode         |       | Modify group information mode                              |
+| JoinAuthMode       |       | Modify group authentication mode                           |
+| InviteMode         |       | Modify group invitation mode                               |
+| MsgPushMode        |       | Modify group pushed message type                           |
+| MsgMuteMode        |       | Modify whether to alert message                            |
+| ReadAckMode        |       | Whether group message read acknowledgement feature enabled |
+| HistoryVisibleMode |       | Whether group chat history is visible to new members       |
+| BanExpireTime      |       | Expiration time of banning all group members               |
 
-
-
-Group information update type 
+Group information update type
 
 ### enum GroupStatus
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Normal | | Group state is normal   |
-| Destroyed | | Group destroyed   |
+| Enumerator | Value | Description           |
+| ---------- | ----- | --------------------- |
+| Normal     |       | Group state is normal |
+| Destroyed  |       | Group destroyed       |
 
-
-
-Grouping state 
+Grouping state
 
 ### enum MsgMuteMode
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| None | | No blocking   |
-| MuteNotification | | Block local message notification   |
-| MuteChat | | Block message, no message received   |
+| Enumerator       | Value | Description                        |
+| ---------------- | ----- | ---------------------------------- |
+| None             |       | No blocking                        |
+| MuteNotification |       | Block local message notification   |
+| MuteChat         |       | Block message, no message received |
 
-
-
-Group message blocking mode 
+Group message blocking mode
 
 ### enum MemberRoleType
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| GroupMember | | Group members   |
-| GroupAdmin | | Group Admin   |
-| GroupOwner | | Group Owner   |
-| NotGroupMember | | Non-group member   |
-
-
-
+| Enumerator     | Value | Description      |
+| -------------- | ----- | ---------------- |
+| GroupMember    |       | Group members    |
+| GroupAdmin     |       | Group Admin      |
+| GroupOwner     |       | Group Owner      |
+| NotGroupMember |       | Non-group member |
 
 ### enum GroupType
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Private | | Private group   |
-| Public | | Public group (other sub-type groups are not released yet)   |
-| Chatroom | | Chatroom   |
-
-
-
+| Enumerator | Value | Description                                               |
+| ---------- | ----- | --------------------------------------------------------- |
+| Private    |       | Private group                                             |
+| Public     |       | Public group (other sub-type groups are not released yet) |
+| Chatroom   |       | Chatroom                                                  |
 
 ### typedef MemberPtr
 
@@ -236,13 +208,11 @@ Group message blocking mode
 typedef std::shared_ptr<Member> floo::BMXGroup::MemberPtr;
 ```
 
-
 ### typedef MemberList
 
 ```cpp
 typedef std::vector<MemberPtr> floo::BMXGroup::MemberList;
 ```
-
 
 ### typedef BannedMemberPtr
 
@@ -250,13 +220,11 @@ typedef std::vector<MemberPtr> floo::BMXGroup::MemberList;
 typedef std::shared_ptr<BannedMember> floo::BMXGroup::BannedMemberPtr;
 ```
 
-
 ### typedef BannedMemberList
 
 ```cpp
 typedef std::vector<BannedMemberPtr> floo::BMXGroup::BannedMemberList;
 ```
-
 
 ### typedef SharedFilePtr
 
@@ -264,13 +232,11 @@ typedef std::vector<BannedMemberPtr> floo::BMXGroup::BannedMemberList;
 typedef std::shared_ptr<SharedFile> floo::BMXGroup::SharedFilePtr;
 ```
 
-
 ### typedef SharedFileList
 
 ```cpp
 typedef std::vector<SharedFilePtr> floo::BMXGroup::SharedFileList;
 ```
-
 
 ### typedef AnnouncementPtr
 
@@ -278,13 +244,11 @@ typedef std::vector<SharedFilePtr> floo::BMXGroup::SharedFileList;
 typedef std::shared_ptr<Announcement> floo::BMXGroup::AnnouncementPtr;
 ```
 
-
 ### typedef AnnouncementList
 
 ```cpp
 typedef std::vector<AnnouncementPtr> floo::BMXGroup::AnnouncementList;
 ```
-
 
 ### typedef InvitationPtr
 
@@ -292,13 +256,11 @@ typedef std::vector<AnnouncementPtr> floo::BMXGroup::AnnouncementList;
 typedef std::shared_ptr<Invitation> floo::BMXGroup::InvitationPtr;
 ```
 
-
 ### typedef InvitationList
 
 ```cpp
 typedef std::vector<InvitationPtr> floo::BMXGroup::InvitationList;
 ```
-
 
 ### typedef ApplicationPtr
 
@@ -306,478 +268,605 @@ typedef std::vector<InvitationPtr> floo::BMXGroup::InvitationList;
 typedef std::shared_ptr<Application> floo::BMXGroup::ApplicationPtr;
 ```
 
-
 ### typedef ApplicationList
 
 ```cpp
 typedef std::vector<ApplicationPtr> floo::BMXGroup::ApplicationList;
 ```
 
-
 ## Public Functions Documentation
 
-### function ~BMXGroup
+### function \~BMXGroup
 
 ```cpp
 inline virtual ~BMXGroup()
 ```
 
-Destructor 
+Destructor
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="~BMXGroup" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function groupId
 
 ```cpp
 virtual int64_t groupId() =0
 ```
 
-Group Id 
+Group Id
 
-**Return**: int64_t 
+**Return**: int64\_t
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function groupType
 
 ```cpp
 virtual GroupType groupType() =0
 ```
 
-Type of the current group (Private, Public, Chatroom) 
+Type of the current group (Private, Public, Chatroom)
 
-**Return**: GroupType 
+**Return**: GroupType
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function myNickname
 
 ```cpp
 virtual const std::string & myNickname() =0
 ```
 
-Group member nickname of mine 
+Group member nickname of mine
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="myNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function name
 
 ```cpp
 virtual const std::string & name() =0
 ```
 
-Group name 
+Group name
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="name" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function description
 
 ```cpp
 virtual const std::string & description() =0
 ```
 
-Group description 
+Group description
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="description" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function avatarRatelUrl
 
 ```cpp
 virtual std::string avatarRatelUrl() =0
 ```
 
-Url for group avatar Ratel server 
+Url for group avatar Ratel server
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function avatarUrl
 
 ```cpp
 virtual std::string avatarUrl() =0
 ```
 
-Url for group avatar server 
+Url for group avatar server
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function avatarPath
 
 ```cpp
 virtual std::string avatarPath() =0
 ```
 
-Local path of downloaded group avatar 
+Local path of downloaded group avatar
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function avatarThumbnailUrl
 
 ```cpp
 virtual std::string avatarThumbnailUrl() =0
 ```
 
-Url for group avatar thumbnail server 
+Url for group avatar thumbnail server
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function avatarThumbnailPath
 
 ```cpp
 virtual std::string avatarThumbnailPath() =0
 ```
 
-Local path of downloaded group avatar thumbnail 
+Local path of downloaded group avatar thumbnail
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function createTime
 
 ```cpp
 virtual int64_t createTime() =0
 ```
 
-Group creation time 
+Group creation time
 
-**Return**: int64_t 
+**Return**: int64\_t
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="createTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function extension
 
 ```cpp
 virtual const JSON & extension() =0
 ```
 
-Group extension information 
+Group extension information
 
-**Return**: JSON(std::string) 
+**Return**: JSON(std::string)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="extension" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function ownerId
 
 ```cpp
 virtual int64_t ownerId() =0
 ```
 
-Group Owner 
+Group Owner
 
-**Return**: int64_t 
+**Return**: int64\_t
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="ownerId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function capacity
 
 ```cpp
 virtual int capacity() =0
 ```
 
-Maximum number of group members 
+Maximum number of group members
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="capacity" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function membersCount
 
 ```cpp
 virtual int membersCount() =0
 ```
 
-Number of group members, including Owner, Admins and Members 
+Number of group members, including Owner, Admins and Members
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="membersCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function adminsCount
 
 ```cpp
 virtual int adminsCount() =0
 ```
 
-Number of group admins 
+Number of group admins
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="adminsCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function blockListSize
 
 ```cpp
 virtual int blockListSize() =0
 ```
 
-Blacklisted user-number 
+Blacklisted user-number
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="blockListSize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function bannedListSize
 
 ```cpp
 virtual int bannedListSize() =0
 ```
 
-Banned user-number 
+Banned user-number
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="bannedListSize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function sharedFilesCount
 
 ```cpp
 virtual int sharedFilesCount() =0
 ```
 
-Shared file-number in group 
+Shared file-number in group
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="sharedFilesCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function latestAnnouncementId
 
 ```cpp
 virtual int64_t latestAnnouncementId() =0
 ```
 
-Latest group announcement id 
+Latest group announcement id
 
-**Return**: int64_t 
+**Return**: int64\_t
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="latestAnnouncementId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function msgPushMode
 
 ```cpp
 virtual MsgPushMode msgPushMode() =0
 ```
 
-Group message notification type 
+Group message notification type
 
-**Return**: MsgPushMode 
+**Return**: MsgPushMode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="msgPushMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function modifyMode
 
 ```cpp
 virtual ModifyMode modifyMode() =0
 ```
 
-Group information modification mode 
+Group information modification mode
 
-**Return**: ModifyMode 
+**Return**: ModifyMode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="modifyMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function joinAuthMode
 
 ```cpp
 virtual JoinAuthMode joinAuthMode() =0
 ```
 
-Join approval mode 
+Join approval mode
 
-**Return**: JoinAuthMode 
+**Return**: JoinAuthMode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="joinAuthMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function inviteMode
 
 ```cpp
 virtual InviteMode inviteMode() =0
 ```
 
-Group invitation mode 
+Group invitation mode
 
-**Return**: InviteMode 
+**Return**: InviteMode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="inviteMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function msgMuteMode
 
 ```cpp
 virtual MsgMuteMode msgMuteMode() =0
 ```
 
-Group message blocking mode 
+Group message blocking mode
 
-**Return**: MsgMuteMode 
+**Return**: MsgMuteMode
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="msgMuteMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function groupStatus
 
 ```cpp
 virtual GroupStatus groupStatus() =0
 ```
 
-state of the current group. (Normal, Destroyed) 
+state of the current group. (Normal, Destroyed)
 
-**Return**: GroupStatus 
+**Return**: GroupStatus
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="groupStatus" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function isMember
 
 ```cpp
 virtual bool isMember() =0
 ```
 
-Deprecated use roleType instead. 
+Deprecated use roleType instead.
 
-**Return**: bool 
+**Return**: bool
 
-Whether the current user is a group member 
-
+Whether the current user is a group member
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="isMember" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function enableReadAck
 
 ```cpp
 virtual bool enableReadAck() =0
 ```
 
-Whether group message read acknowledgement feature enabled 
+Whether group message read acknowledgement feature enabled
 
-**Return**: bool 
+**Return**: bool
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="enableReadAck" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function historyVisible
 
 ```cpp
 virtual bool historyVisible() =0
 ```
 
-Whether to load and display the chat history 
+Whether to load and display the chat history
 
-**Return**: bool 
+**Return**: bool
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="historyVisible" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function roleType
 
 ```cpp
 virtual MemberRoleType roleType() =0
 ```
 
-Type of a member role in group 
+Type of a member role in group
 
-**Return**: MemberRoleType 
+**Return**: MemberRoleType
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="roleType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function banExpireTime
 
 ```cpp
 virtual int64_t banExpireTime() =0
 ```
 
-Expiration time of banning all group members 
+Expiration time of banning all group members
 
-**Return**: int64_t 
+**Return**: int64\_t
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="banExpireTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
+
 ```
+
 ### function BMXGroup
 
 ```cpp
 inline BMXGroup()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroup",function="BMXGroup" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXGroup'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:20:40 +0800

@@ -1,34 +1,33 @@
 ---
-description: 关于树莓派中的IM私有云并发性能的文章
 keywords: IM私有云, 树莓派, IM SDK, APP内聊天功能
+description: 关于树莓派中的IM私有云并发性能的文章
 ---
+
 # 树莓派中的 IM 私有云支持多少并发？
 
 原创 一乐 美信拓扑 _2020-04-07 11:20_
 
 > 美信拓扑技术分享系列 0x01。关注「美信拓扑」微信公众号，第一时间阅读本系列后续文章，了解美信拓扑IM的协议、架构和源码。
 >
-> **4000人同时在线，这是美信拓扑 IM 私有云的数据。**是的，只需要一个400块的树莓派4B。注意，这不是长连数据，是登陆且发消息的场景，详细性能数据见文后压测报告。
+> \*\*4000人同时在线，这是美信拓扑 IM 私有云的数据。\*\*是的，只需要一个400块的树莓派4B。注意，这不是长连数据，是登陆且发消息的场景，详细性能数据见文后压测报告。
 >
 > 本文将会介绍美信拓扑IM私有云的架构，以及将其运行在树莓派上所做的技术改造，供私密通讯业务的开发人员参考，尤其适合在办公、家庭、工厂等受限网络运行的业务。
 
-对技术人员来讲，树莓派是一个非常好玩的开发板，装了Linux系统更是如虎添翼，树莓派4发布后，知乎上有个帖子[1]，也说了不少开脑洞的想法。
+对技术人员来讲，树莓派是一个非常好玩的开发板，装了Linux系统更是如虎添翼，树莓派4发布后，知乎上有个帖子\[1]，也说了不少开脑洞的想法。
 
-今天给大家介绍已经可以在树莓派中安装运行的美信拓扑 IM 私有云。除了安装程序 maxim.ctl [2]版本不同外，其他操作跟普通主机完全相同，试玩的同学可参照安装指南[十分钟安装一套即时通讯 IM 私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)[3]。
+今天给大家介绍已经可以在树莓派中安装运行的美信拓扑 IM 私有云。除了安装程序 maxim.ctl \[2]版本不同外，其他操作跟普通主机完全相同，试玩的同学可参照安装指南[十分钟安装一套即时通讯 IM 私有云](install-an-instant-messaging-im-private-cloud-in-ten-minutes.md)\[3]。
 
 今天主要分享「十分钟安装」和「树莓派适配」后面的技术实现。考虑到有些同学对树莓派还不太了解，我们首先介绍用到的这款树莓派。
 
 ## 树莓派 4B
 
-![](../assets/articles/autogen-dd0ff677dda4f887f4fd260f56f48de41348100154df7a28d3067bba999b4124.webp)
+![](../../.gitbook/assets/autogen-dd0ff677dda4f887f4fd260f56f48de41348100154df7a28d3067bba999b4124.webp)
 
-2019年6月24日，树莓派发布了第四代产品 Raspberry Pi 4。新一代开发板经过了从里到外的全面革新，得益于制程和架构的提升，4 代性能预计可比上代树莓派 3B+提升 2-4 倍。树莓派基金会（Raspberry Pi Foundation）称，这款设备可以提供「与入门级 x86 PC 系统相媲美的桌面性能」[4]。
+2019年6月24日，树莓派发布了第四代产品 Raspberry Pi 4。新一代开发板经过了从里到外的全面革新，得益于制程和架构的提升，4 代性能预计可比上代树莓派 3B+提升 2-4 倍。树莓派基金会（Raspberry Pi Foundation）称，这款设备可以提供「与入门级 x86 PC 系统相媲美的桌面性能」\[4]。
 
 **是的，熟悉的配方，更香浓的味道！**
 
-1.5GHz 四核 64-bit ARM Cortex-A72 CPU；
-4GB LPDDR4 SDRAM；
-全吞吐量千兆以太网；
+1.5GHz 四核 64-bit ARM Cortex-A72 CPU； 4GB LPDDR4 SDRAM； 全吞吐量千兆以太网；
 
 作为一个即时通讯服务，我们需要的不少，但是这些已经足够。所以我们在第一时间就入手，并开始了树莓派的适配。
 
@@ -42,7 +41,7 @@ keywords: IM私有云, 树莓派, IM SDK, APP内聊天功能
 
 办公室、工厂、车间等等所有使用安全网络的地方，也都可以。
 
-**所有这一切，只需要一个 400 块钱的树莓派4B（4G版）和一个美信拓扑 IM 私有云。**让我们一起看看这个 IM 私有云的架构。
+\*\*所有这一切，只需要一个 400 块钱的树莓派4B（4G版）和一个美信拓扑 IM 私有云。\*\*让我们一起看看这个 IM 私有云的架构。
 
 ## 美信拓扑 IM 集群架构
 
@@ -50,7 +49,7 @@ keywords: IM私有云, 树莓派, IM SDK, APP内聊天功能
 
 这也就是说，十分钟安装的私有云不仅是只需要一台普通主机那么简单，重要的是，它跟亿级用户千万并发的公有云，是相同的架构，详情见下图：
 
-![](../assets/articles/autogen-985d54bec8e86d298e1a70267b4d96477444ff4751e73261aa57c697f2a7e247.webp)
+![](../../.gitbook/assets/autogen-985d54bec8e86d298e1a70267b4d96477444ff4751e73261aa57c697f2a7e247.webp)
 
 美信拓扑IM集群共有15个服务（公有云每个服务都会有多个节点），他们是为高伸缩性设计的，完全分层分离的三类服务。
 
@@ -72,19 +71,17 @@ keywords: IM私有云, 树莓派, IM SDK, APP内聊天功能
 
 ## 十分钟安装的私有云
 
-![](../assets/articles/autogen-c1a7cc589e1158d03c1eadae28b0504301e5e6788f0bd7c179469a321560137e.webp)
+![](../../.gitbook/assets/autogen-c1a7cc589e1158d03c1eadae28b0504301e5e6788f0bd7c179469a321560137e.webp)
 
 把美信拓扑IM云装进一台主机，我们主要做了三件事：
 
 1. 把 IM 云服务进行云原生改造，容器化之后进入 Kubernetes；
-
 2. 把镜像注册到 Docker-Registry，自己建的用 Harbor 即可；
-
 3. 创建安装程序，处理程序的初始化工作，建 Kubernetes 集群并进行镜像拉取和服务启动；
 
 如前所述，整个云服务设计服务众多，整体包尺寸会达到 3-4G，这样的数据包如果在自建的下载中心下载，大概需要 1-2 个小时，更别提网速和带宽消耗了，这个事情做过下载站的朋友应该更了解。
 
-好在阿里云现在做了镜像托管服务 ACR [5]，不仅提供公开的下载，速度非常的快。感兴趣的可以了解下，暂时这个服务是免费的。如果没猜错的话，服务应该已经用到了 Dragonfly [6] 的 P2P 下载技术，实测基本可以跑满下载带宽。
+好在阿里云现在做了镜像托管服务 ACR \[5]，不仅提供公开的下载，速度非常的快。感兴趣的可以了解下，暂时这个服务是免费的。如果没猜错的话，服务应该已经用到了 Dragonfly \[6] 的 P2P 下载技术，实测基本可以跑满下载带宽。
 
 再加上把服务分级之后做的基础镜像合并，整个下载时间就被控制在了十分钟以内，安装的大部分时间消耗解决了，剩下的程序启动时间就少多啦。
 
@@ -140,7 +137,7 @@ docker buildx build -t test/hello --platform=linux/arm64 . --push
 
 按照服务端开发正常惯例，服务完成当然进行性能的确认，压力测试必不可少。
 
-测试还是要请老朋友 Tsung [7] 。Tsung 是一个 Erlang 写的非常非常非常好用的性能测试框架，可以测XMPP、HTTP、LDAP等很多协议，链接是我们维护的仓库分支，这里一并推荐给大家。
+测试还是要请老朋友 Tsung \[7] 。Tsung 是一个 Erlang 写的非常非常非常好用的性能测试框架，可以测XMPP、HTTP、LDAP等很多协议，链接是我们维护的仓库分支，这里一并推荐给大家。
 
 当然对于我们自定义协议的即时通讯系统来讲，肯定写了自己协议相关的插件，暂时就保密啦。
 
@@ -148,19 +145,19 @@ docker buildx build -t test/hello --platform=linux/arm64 . --push
 
 1. 连接和请求速率：
 
-![](../assets/articles/autogen-996b8c16b9ab158c88a4d97792dc0731ae2a9550ffcadc2566267a338f2c73aa.webp)
+![](../../.gitbook/assets/autogen-996b8c16b9ab158c88a4d97792dc0731ae2a9550ffcadc2566267a338f2c73aa.webp)
 
 2. 登录和聊天速率：
 
-![](../assets/articles/autogen-f34827d6993535fffcc37e2e7764a8986973b0649b4b97d109b3ab1f290d88d3.webp)
+![](../../.gitbook/assets/autogen-f34827d6993535fffcc37e2e7764a8986973b0649b4b97d109b3ab1f290d88d3.webp)
 
 3. 网络流量情况：
 
-![](../assets/articles/autogen-e8595c8f2d482def2a8e3a158f8053d7f22bd1cfd5afc023bc0709de76766faf.webp)
+![](../../.gitbook/assets/autogen-e8595c8f2d482def2a8e3a158f8053d7f22bd1cfd5afc023bc0709de76766faf.webp)
 
 总体连接情况呢？看下图。
 
-![](../assets/articles/autogen-8e182b13d8390058cf7d0a8002f656cdd7696ad395cedf5f79e286d87401e945.webp)
+![](../../.gitbook/assets/autogen-8e182b13d8390058cf7d0a8002f656cdd7696ad395cedf5f79e286d87401e945.webp)
 
 这条曲线，相信做过服务端的同学都会泪流满面。连接曲线和统计曲线重合在一起，意味着所有请求都被即时地处理了。
 
@@ -170,7 +167,7 @@ docker buildx build -t test/hello --platform=linux/arm64 . --push
 
 整个压测期间，平均登陆时间为 72.59ms，最长登陆时间 180ms，最短 47.80ms。
 
-![](../assets/articles/autogen-a0142a8a56f31d1766c89dbc8add7ae24e17c143f8332fc8e859c62ca2c30f8b.webp)
+![](../../.gitbook/assets/autogen-a0142a8a56f31d1766c89dbc8add7ae24e17c143f8332fc8e859c62ca2c30f8b.webp)
 
 你猜对了吗？
 
@@ -182,7 +179,7 @@ docker buildx build -t test/hello --platform=linux/arm64 . --push
 
 这是美信拓扑技术分享系列的第一篇 0x01。如果你喜欢，欢迎关注公众号「美信拓扑」，后面会有关于「美信拓扑IM」相关的协议、架构、源码方面的文章继续分享。
 
-![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
 
 **做个手艺人吧！一起玩树莓派**
 

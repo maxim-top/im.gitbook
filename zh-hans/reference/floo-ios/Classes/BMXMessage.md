@@ -1,8 +1,8 @@
 # BMXMessage Class Reference
 
-  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -10,7 +10,6 @@ NSObject
 
 ## Class Methods
 
-<a name="//api/name/createCommandMessageWithFrom:to:type:conversationId:content:" title="createCommandMessageWithFrom:to:type:conversationId:content:"></a>
 ### createCommandMessageWithFrom:to:type:conversationId:content:
 
 创建发送命令消息(命令消息通过content字段或者extension字段存放命令信息)
@@ -19,29 +18,33 @@ NSObject
 
 #### Parameters
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*content*  
-   消息内容  
+_content_\
+消息内容
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createCommandMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
 创建收到的命令消息(命令消息通过content字段或者extension字段存放命令信息)
@@ -50,35 +53,39 @@ NSObject
 
 #### Parameters
 
-*msgId*  
-   消息id  
+_msgId_\
+消息id
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*content*  
-   消息内容  
+_content_\
+消息内容
 
-*serverTimestamp*  
-   服务器时间戳  
+_serverTimestamp_\
+服务器时间戳
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createForwardMessageWithMsg:from:to:type:conversationId:" title="createForwardMessageWithMsg:from:to:type:conversationId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createForwardMessageWithMsg:from:to:type:conversationId:
 
 创建转发消息
@@ -87,29 +94,33 @@ NSObject
 
 #### Parameters
 
-*msg*  
-   要转发的消息  
+_msg_\
+要转发的消息
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithFrom:to:type:conversationId:attachment:" title="createMessageWithFrom:to:type:conversationId:attachment:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createForwardMessageWithMsg:from:to:type:conversationId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithFrom:to:type:conversationId:attachment:
 
 创建发送附件消息
@@ -118,29 +129,33 @@ NSObject
 
 #### Parameters
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*attachment*  
-   附件  
+_attachment_\
+附件
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithFrom:to:type:conversationId:content:" title="createMessageWithFrom:to:type:conversationId:content:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithFrom:to:type:conversationId:attachment:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithFrom:to:type:conversationId:content:
 
 创建发送文本消息
@@ -149,29 +164,33 @@ NSObject
 
 #### Parameters
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*content*  
-   消息内容  
+_content_\
+消息内容
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:" title="createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:
 
 创建收到的消息
@@ -180,35 +199,39 @@ NSObject
 
 #### Parameters
 
-*msgId*  
-   消息id  
+_msgId_\
+消息id
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*attachment*  
-   附件  
+_attachment_\
+附件
 
-*serverTimestamp*  
-   服务器时间戳  
+_serverTimestamp_\
+服务器时间戳
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
 创建收到的消息
@@ -217,35 +240,39 @@ NSObject
 
 #### Parameters
 
-*msgId*  
-   消息id  
+_msgId_\
+消息id
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*content*  
-   消息内容  
+_content_\
+消息内容
 
-*serverTimestamp*  
-   服务器时间戳  
+_serverTimestamp_\
+服务器时间戳
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createRTCMessageWithFrom:to:type:conversationId:content:" title="createRTCMessageWithFrom:to:type:conversationId:content:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createRTCMessageWithFrom:to:type:conversationId:content:
 
 创建发送RTC消息
@@ -254,29 +281,33 @@ NSObject
 
 #### Parameters
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*content*  
-   消息内容  
+_content_\
+消息内容
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createRTCMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
 创建收到的RTC消息
@@ -285,38 +316,41 @@ NSObject
 
 #### Parameters
 
-*msgId*  
-   消息id  
+_msgId_\
+消息id
 
-*from*  
-   消息发送者  
+_from_\
+消息发送者
 
-*to*  
-   消息接收者  
+_to_\
+消息接收者
 
-*type*  
-   消息类型  
+_type_\
+消息类型
 
-*conversationId*  
-   会话id  
+_conversationId_\
+会话id
 
-*content*  
-   消息内容  
+_content_\
+消息内容
 
-*serverTimestamp*  
-   服务器时间戳  
+_serverTimestamp_\
+服务器时间戳
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/attachment" title="attachment"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### attachment
 
 消息附件，BMXMessage拥有附件的所有权，负责释放
@@ -324,16 +358,21 @@ NSObject
 `- (BMXMessageAttachment *)attachment`
 
 #### Return Value
-<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
+
+[BMXMessageAttachment](BMXMessageAttachment.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/clientMsgId" title="clientMsgId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="attachment" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### clientMsgId
 
 消息客户端ID,仅在消息发送端存在
@@ -341,16 +380,21 @@ NSObject
 `- (long long)clientMsgId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/clientTimestamp" title="clientTimestamp"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="clientMsgId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### clientTimestamp
 
 本地时间戳（消息创建或者收到时的本地时间）
@@ -358,16 +402,21 @@ long long
 `- (long long)clientTimestamp`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/config" title="config"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="clientTimestamp" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### config
 
 消息的配置信息
@@ -375,16 +424,21 @@ long long
 `- (BMXMessageConfig *)config`
 
 #### Return Value
-<a href="../Classes/BMXMessageConfig.md">BMXMessageConfig</a>
+
+[BMXMessageConfig](BMXMessageConfig.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/content" title="content"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="config" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### content
 
 消息文本内容
@@ -392,16 +446,21 @@ long long
 `- (NSString *)content`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/contentType" title="contentType"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="content" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### contentType
 
 消息内容类型，如果带附件就表示附件类型，不带附件就是文本类型
@@ -409,16 +468,21 @@ NSString
 `- (BMXMessage_ContentType)contentType`
 
 #### Return Value
+
 ContentType
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/conversationId" title="conversationId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="contentType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### conversationId
 
 消息所属会话ID
@@ -426,25 +490,33 @@ ContentType
 `- (long long)conversationId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="conversationId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/deliveryQos" title="deliveryQos"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### deliveryQos
 
 消息投递QOS
@@ -452,16 +524,21 @@ long long
 `- (BMXMessage_DeliveryQos)deliveryQos`
 
 #### Return Value
-<a href="../Constants/BMXMessage_DeliveryQos.md">BMXMessage_DeliveryQos</a>
+
+[BMXMessage\_DeliveryQos](../Constants/BMXMessage_DeliveryQos.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/deliveryStatus" title="deliveryStatus"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="deliveryQos" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### deliveryStatus
 
 消息投递状态
@@ -469,16 +546,21 @@ long long
 `- (BMXMessage_DeliveryStatus)deliveryStatus`
 
 #### Return Value
-<a href="../Constants/BMXMessage_DeliveryStatus.md">BMXMessage_DeliveryStatus</a>
+
+[BMXMessage\_DeliveryStatus](../Constants/BMXMessage_DeliveryStatus.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/extension" title="extension"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="deliveryStatus" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### extension
 
 消息扩展信息
@@ -486,16 +568,21 @@ long long
 `- (NSString *)extension`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fromId" title="fromId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="extension" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### fromId
 
 消息发送方ID
@@ -503,16 +590,21 @@ NSString
 `- (long long)fromId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupAckCount" title="groupAckCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="fromId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupAckCount
 
 群消息已读AckCount数目
@@ -520,16 +612,21 @@ long long
 `- (int)groupAckCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupAckReadAll" title="groupAckReadAll"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupAckReadAll
 
 群消息是否全部已读
@@ -537,16 +634,21 @@ int
 `- (BOOL)groupAckReadAll`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupAckUnreadCount" title="groupAckUnreadCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckReadAll" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupAckUnreadCount
 
 群消息未读AckCount数目
@@ -554,16 +656,21 @@ BOOL
 `- (int)groupAckUnreadCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupPlayAckCount" title="groupPlayAckCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupPlayAckCount
 
 群消息已播放AckCount数目（仅用于音频/视频附件消息）
@@ -571,16 +678,21 @@ int
 `- (int)groupPlayAckCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupPlayAckReadAll" title="groupPlayAckReadAll"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupPlayAckReadAll
 
 群消息是否全部已播放
@@ -588,16 +700,21 @@ int
 `- (BOOL)groupPlayAckReadAll`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupPlayAckUnreadCount" title="groupPlayAckUnreadCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupPlayAckUnreadCount
 
 群消息未播放AckCount数目（仅用于音频/视频附件消息）
@@ -605,16 +722,21 @@ BOOL
 `- (int)groupPlayAckUnreadCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isDeliveryAcked" title="isDeliveryAcked"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isDeliveryAcked
 
 对于发送方表示消息是否已投递到对方，对于接收方表示是否发送了消息已到达回执
@@ -622,16 +744,21 @@ int
 `- (BOOL)isDeliveryAcked`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isPlayAcked" title="isPlayAcked"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isPlayAcked
 
 对于发送方表示是否收到了已播放回执，对于接收方表示是否发送了已播放回执
@@ -639,16 +766,21 @@ BOOL
 `- (BOOL)isPlayAcked`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isPlayed" title="isPlayed"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPlayAcked" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isPlayed
 
 语音或者视频消息是否播放过，仅对收到的音视频消息有效
@@ -656,16 +788,21 @@ BOOL
 `- (BOOL)isPlayed`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isPushMessage" title="isPushMessage"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPlayed" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isPushMessage
 
 消息是否是推送消息
@@ -673,16 +810,21 @@ BOOL
 `- (BOOL)isPushMessage`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isRead" title="isRead"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPushMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isRead
 
 消息是否已读标志
@@ -690,16 +832,21 @@ BOOL
 `- (BOOL)isRead`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isReadAcked" title="isReadAcked"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isRead" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isReadAcked
 
 对于发送方表示是否收到了已读回执，对于接收方表示是否发送了已读回执
@@ -707,16 +854,21 @@ BOOL
 `- (BOOL)isReadAcked`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isReceiveMsg" title="isReceiveMsg"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isReadAcked" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isReceiveMsg
 
 是否接收的消息
@@ -724,16 +876,21 @@ BOOL
 `- (BOOL)isReceiveMsg`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/msgId" title="msgId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isReceiveMsg" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### msgId
 
 消息唯一ID
@@ -741,16 +898,21 @@ BOOL
 `- (long long)msgId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/priority" title="priority"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="msgId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### priority
 
 消息的扩散优先级
@@ -758,16 +920,21 @@ long long
 `- (int)priority`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/senderName" title="senderName"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="priority" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### senderName
 
 消息发送者的显示名称
@@ -775,16 +942,21 @@ int
 `- (NSString *)senderName`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/serverTimestamp" title="serverTimestamp"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="senderName" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### serverTimestamp
 
 消息时间戳（服务端收到时的时间）
@@ -792,16 +964,21 @@ NSString
 `- (long long)serverTimestamp`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setClientTimestamp:" title="setClientTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="serverTimestamp" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setClientTimestamp:
 
 设置消息本地时间戳
@@ -809,13 +986,17 @@ long long
 `- (void)setClientTimestamp:(long long)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setConfig:" title="setConfig:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setClientTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setConfig:
 
 设置消息配置信息
@@ -823,13 +1004,17 @@ long long
 `- (void)setConfig:(BMXMessageConfig *)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setContent:" title="setContent:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setConfig:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setContent:
 
 消息文本内容
@@ -838,17 +1023,21 @@ long long
 
 #### Parameters
 
-*content*  
-   消息文本内容  
+_content_\
+消息文本内容
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setDeliveryQos:" title="setDeliveryQos:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setContent:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setDeliveryQos:
 
 设置消息投递QOS
@@ -857,17 +1046,21 @@ long long
 
 #### Parameters
 
-*qos*  
-   消息投递QOS  
+_qos_\
+消息投递QOS
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setDeliveryStatus:" title="setDeliveryStatus:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setDeliveryQos:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setDeliveryStatus:
 
 设置消息投递状态
@@ -875,13 +1068,17 @@ long long
 `- (void)setDeliveryStatus:(BMXMessage_DeliveryStatus)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setExtension:" title="setExtension:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setDeliveryStatus:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setExtension:
 
 设置消息扩展信息
@@ -889,13 +1086,17 @@ long long
 `- (void)setExtension:(NSString *)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setGroupAckCount:" title="setGroupAckCount:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setExtension:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setGroupAckCount:
 
 设置消息已读groupAckCount数目(SDK 内部调用接口，上层不应该调用)
@@ -904,17 +1105,21 @@ long long
 
 #### Parameters
 
-*count*  
-   设置群消息已读数目  
+_count_\
+设置群消息已读数目
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setGroupAckUnreadCount:" title="setGroupAckUnreadCount:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupAckCount:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setGroupAckUnreadCount:
 
 设置消息未读groupAckCount数目(SDK 内部调用接口，上层不应该调用)
@@ -923,17 +1128,21 @@ long long
 
 #### Parameters
 
-*count*  
-   设置群消息未读数目  
+_count_\
+设置群消息未读数目
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setGroupPlayAckCount:" title="setGroupPlayAckCount:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupAckUnreadCount:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setGroupPlayAckCount:
 
 设置消息已播放groupAckCount数目(SDK 内部调用接口，上层不应该调用)（仅用于音频/视频附件消息）
@@ -942,17 +1151,21 @@ long long
 
 #### Parameters
 
-*count*  
-   设置群消息已读数目  
+_count_\
+设置群消息已读数目
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setGroupPlayAckUnreadCount:" title="setGroupPlayAckUnreadCount:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupPlayAckCount:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setGroupPlayAckUnreadCount:
 
 设置消息未播放groupAckCount数目(SDK 内部调用接口，上层不应该调用)（仅用于音频/视频附件消息）
@@ -961,17 +1174,21 @@ long long
 
 #### Parameters
 
-*count*  
-   设置群消息未播放数目  
+_count_\
+设置群消息未播放数目
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsDeliveryAcked:" title="setIsDeliveryAcked:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setGroupPlayAckUnreadCount:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsDeliveryAcked:
 
 设置投递回执
@@ -979,13 +1196,17 @@ long long
 `- (void)setIsDeliveryAcked:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsPlayAcked:" title="setIsPlayAcked:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsDeliveryAcked:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsPlayAcked:
 
 设置已播放回执
@@ -993,13 +1214,17 @@ long long
 `- (void)setIsPlayAcked:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsPlayed:" title="setIsPlayed:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsPlayAcked:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsPlayed:
 
 设置语音或者视频消息是否播放过，仅对收到的音视频消息有效
@@ -1007,13 +1232,17 @@ long long
 `- (void)setIsPlayed:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsRead:" title="setIsRead:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsPlayed:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsRead:
 
 消息是否已读标志
@@ -1021,13 +1250,17 @@ long long
 `- (void)setIsRead:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsReadAcked:" title="setIsReadAcked:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsRead:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsReadAcked:
 
 设置已读回执
@@ -1035,13 +1268,17 @@ long long
 `- (void)setIsReadAcked:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsReceiveMsg:" title="setIsReceiveMsg:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsReadAcked:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsReceiveMsg:
 
 设置是否接收的消息
@@ -1049,13 +1286,17 @@ long long
 `- (void)setIsReceiveMsg:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setPriority:" title="setPriority:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsReceiveMsg:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setPriority:
 
 取值范围0-10。普通人在聊天室发送的消息级别默认为5，可以丢弃。管理员默认为0不会丢弃。其它值可以根据业务自行设置。
@@ -1064,17 +1305,21 @@ long long
 
 #### Parameters
 
-*priority*  
-   优先级  
+_priority_\
+优先级
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setPushMessageMode:" title="setPushMessageMode:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setPriority:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setPushMessageMode:
 
 设置消息是否为推送消息。
@@ -1082,13 +1327,17 @@ long long
 `- (void)setPushMessageMode:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setSenderName:" title="setSenderName:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setPushMessageMode:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setSenderName:
 
 设置消息的发送者显示名称
@@ -1097,17 +1346,21 @@ long long
 
 #### Parameters
 
-*senderName*  
-   消息文本内容  
+_senderName_\
+消息文本内容
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setServerTimestamp:" title="setServerTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setSenderName:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setServerTimestamp:
 
 设置时间戳（服务端收到时的时间）
@@ -1115,13 +1368,17 @@ long long
 `- (void)setServerTimestamp:(long long)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/toId" title="toId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setServerTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### toId
 
 消息接收方ID
@@ -1129,16 +1386,21 @@ long long
 `- (long long)toId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/type" title="type"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="toId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### type
 
 消息类型
@@ -1146,12 +1408,16 @@ long long
 `- (BMXMessage_MessageType)type`
 
 #### Return Value
-<a href="../Constants/BMXMessage_MessageType.md">BMXMessage_MessageType</a>
+
+[BMXMessage\_MessageType](../Constants/BMXMessage_MessageType.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="type" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
 ```

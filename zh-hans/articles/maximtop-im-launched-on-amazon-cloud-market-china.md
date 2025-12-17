@@ -1,7 +1,8 @@
 ---
-description: 关于美信拓扑IM登陆亚马逊云市场的文章
 keywords: 美信拓扑 IM, 亚马逊云市场, IM开源, 云市场兼容
+description: 关于美信拓扑IM登陆亚马逊云市场的文章
 ---
+
 # 美信拓扑 IM 登陆亚马逊云市场（中国区）
 
 原创 艾姆姐 美信拓扑 _2021-11-08 22:55_
@@ -18,7 +19,7 @@ keywords: 美信拓扑 IM, 亚马逊云市场, IM开源, 云市场兼容
 
 截至发稿，美信拓扑是第一个也是唯一上线亚马逊云市场（中国）的即时通讯云服务厂商，也仍然是唯一上线阿里云云市场的即时通讯云服务。
 
-![](../assets/articles/autogen-2337b77babe379f5fb6f8c3740f2e1e6ee7f07c4781b16a468ceff8eeac5edb4.webp)
+![](../../.gitbook/assets/autogen-2337b77babe379f5fb6f8c3740f2e1e6ee7f07c4781b16a468ceff8eeac5edb4.webp)
 
 ## 新一代云原生 IM
 
@@ -72,31 +73,31 @@ keywords: 美信拓扑 IM, 亚马逊云市场, IM开源, 云市场兼容
 
 第一步：选择服务区域和机器配置。
 
-![](../assets/articles/autogen-dc114d506201fa50e59fc8227bd8036754f96a2e8a6c1dee1f8b2dc678f84461.webp)
+![](../../.gitbook/assets/autogen-dc114d506201fa50e59fc8227bd8036754f96a2e8a6c1dee1f8b2dc678f84461.webp)
 
 第二步：接受条款并订阅。
 
-![](../assets/articles/autogen-d919f8e2c4baa2c1e97084ba19ca988327748b512c7dddf6ac95283f6e89574f.webp)
+![](../../.gitbook/assets/autogen-d919f8e2c4baa2c1e97084ba19ca988327748b512c7dddf6ac95283f6e89574f.webp)
 
 第三步：选择版本和区域。
 
-![](../assets/articles/autogen-18c6ec912ee25d7cf443c11ca26c9a8ff3ae3bfc28ecb4c42d11d36ad771f75b.webp)
+![](../../.gitbook/assets/autogen-18c6ec912ee25d7cf443c11ca26c9a8ff3ae3bfc28ecb4c42d11d36ad771f75b.webp)
 
 第四步：选择机器配置。
 
-![](../assets/articles/autogen-e69886d4bcaff79a30f98044f857472e5c8aad136358631a96b5108b1c561cc.webp)
+![](../../.gitbook/assets/autogen-e69886d4bcaff79a30f98044f857472e5c8aad136358631a96b5108b1c561cc.webp)
 
 第五步：创建网络和安全组。
 
-![](../assets/articles/autogen-e2144838997ee4ab0aaa43964aedefa194459838118acaf58cfb72d7fe44cea0.webp)
+![](../../.gitbook/assets/autogen-e2144838997ee4ab0aaa43964aedefa194459838118acaf58cfb72d7fe44cea0.webp)
 
 第六步：基于供应商设置新建安全组。
 
-![](../assets/articles/autogen-97942a55f2d84f65f5764483f6888076ad3cc974d953c472e02598fa9e08327d.webp)
+![](../../.gitbook/assets/autogen-97942a55f2d84f65f5764483f6888076ad3cc974d953c472e02598fa9e08327d.webp)
 
 第七步：设置密钥并启动机器。
 
-![](../assets/articles/autogen-9221aa8540abb47694dc4da64040f808688d5ebd11bcefdba5b93394c6696d33.webp)
+![](../../.gitbook/assets/autogen-9221aa8540abb47694dc4da64040f808688d5ebd11bcefdba5b93394c6696d33.webp)
 
 最后一步：
 
@@ -131,4 +132,4 @@ cat /etc/maxim/market
 
 继续关注「美信拓扑」，了解新一代云原生 IM、即时通讯技术与开源。
 
-![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

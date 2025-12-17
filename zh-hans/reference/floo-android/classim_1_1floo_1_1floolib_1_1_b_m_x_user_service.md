@@ -1,55 +1,52 @@
 ---
 title: im::floo::floolib::BMXUserService
-summary: 用户Service 
-
+summary: 用户Service
 ---
 
 # im::floo::floolib::BMXUserService
 
-
-
-用户Service 
+用户Service
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-delete)**() |
-| [BMXErrorCode] | **[bindDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-binddevice)**(String token)<br>绑定设备推送token  |
-| [BMXErrorCode] | **[getDeviceList](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getdevicelist)**(BMXDeviceList deviceList)<br>获取设备列表  |
-| [BMXErrorCode] | **[getProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getprofile)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, boolean forceRefresh)<br>获取用户详情，如果forceRefresh == true，则强制从服务端拉取  |
-| [BMXErrorCode] | **[deleteDevice](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-deletedevice)**(int device_sn)<br>删除设备  |
-| [BMXErrorCode] | **[setNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnickname)**(String nickname)<br>设置昵称  |
-| [BMXErrorCode] | **[uploadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-uploadavatar)**(String avatarPath, FileProgressListener callback)<br>上传头像  |
-| [BMXErrorCode] | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-downloadavatar)**([BMXUserProfile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md) profile, boolean thumbnail, FileProgressListener callback)<br>下载头像，默认下载缩略图  |
-| [BMXErrorCode] | **[setPublicInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpublicinfo)**(String publicInfo)<br>设置公开扩展信息  |
-| [BMXErrorCode] | **[setPrivateInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setprivateinfo)**(String privateInfo)<br>设置私有扩展信息  |
-| [BMXErrorCode] | **[setAddFriendAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setaddfriendauthmode)**(BMXUserProfile.AddFriendAuthMode mode)<br>设置加好友验证方式  |
-| [BMXErrorCode] | **[setAuthQuestion](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setauthquestion)**(BMXUserProfile.AuthQuestion authQuestion)<br>设置加好友验证问题  |
-| [BMXErrorCode] | **[setEnablePush](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepush)**(boolean enable)<br>设置是否允许推送  |
-| [BMXErrorCode] | **[setEnablePushDetaile](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepushdetaile)**(boolean enable)<br>设置是否推送详情  |
-| [BMXErrorCode] | **[setPushNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushnickname)**(String nickname)<br>设置推送昵称  |
-| [BMXErrorCode] | **[setPushAlias](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushalias)**(String alias, String bmxPushToken)<br>设置推送别名  |
-| [BMXErrorCode] | **[setNotificationSound](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationsound)**(boolean enable)<br>设置收到新消息是否声音提醒  |
-| [BMXErrorCode] | **[setNotificationVibrate](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationvibrate)**(boolean enable)<br>设置收到新消息是否震动  |
-| [BMXErrorCode] | **[setAutoDownloadAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautodownloadattachment)**(boolean enable)<br>设置是否自动缩略图和语音附件  |
-| [BMXErrorCode] | **[setAutoAcceptGroupInvite](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite)**(boolean enable)<br>设置是否自动同意入群邀请  |
-| void | **[addUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-adduserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>添加用户状态监听者  |
-| void | **[removeUserListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-removeuserlistener)**([BMXUserServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md) listener)<br>移除用户状态监听者  |
+|                   | Name                                                                                                                                                                                                                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-delete)()                                                                                                                                                                                                           |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-binddevice"><strong>bindDevice</strong></a>(String token)<br>绑定设备推送token</p>                                                                                                                                         |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getdevicelist"><strong>getDeviceList</strong></a>(BMXDeviceList deviceList)<br>获取设备列表</p>                                                                                                                            |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getprofile"><strong>getProfile</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md">BMXUserProfile</a> profile, boolean forceRefresh)<br>获取用户详情，如果forceRefresh == true，则强制从服务端拉取</p>          |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-deletedevice"><strong>deleteDevice</strong></a>(int device_sn)<br>删除设备</p>                                                                                                                                           |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnickname"><strong>setNickname</strong></a>(String nickname)<br>设置昵称</p>                                                                                                                                           |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-uploadavatar"><strong>uploadAvatar</strong></a>(String avatarPath, FileProgressListener callback)<br>上传头像</p>                                                                                                        |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_profile.md">BMXUserProfile</a> profile, boolean thumbnail, FileProgressListener callback)<br>下载头像，默认下载缩略图</p> |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpublicinfo"><strong>setPublicInfo</strong></a>(String publicInfo)<br>设置公开扩展信息</p>                                                                                                                                 |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setprivateinfo"><strong>setPrivateInfo</strong></a>(String privateInfo)<br>设置私有扩展信息</p>                                                                                                                              |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setaddfriendauthmode"><strong>setAddFriendAuthMode</strong></a>(BMXUserProfile.AddFriendAuthMode mode)<br>设置加好友验证方式</p>                                                                                              |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setauthquestion"><strong>setAuthQuestion</strong></a>(BMXUserProfile.AuthQuestion authQuestion)<br>设置加好友验证问题</p>                                                                                                     |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepush"><strong>setEnablePush</strong></a>(boolean enable)<br>设置是否允许推送</p>                                                                                                                                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setenablepushdetaile"><strong>setEnablePushDetaile</strong></a>(boolean enable)<br>设置是否推送详情</p>                                                                                                                      |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushnickname"><strong>setPushNickname</strong></a>(String nickname)<br>设置推送昵称</p>                                                                                                                                 |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setpushalias"><strong>setPushAlias</strong></a>(String alias, String bmxPushToken)<br>设置推送别名</p>                                                                                                                     |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationsound"><strong>setNotificationSound</strong></a>(boolean enable)<br>设置收到新消息是否声音提醒</p>                                                                                                                 |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setnotificationvibrate"><strong>setNotificationVibrate</strong></a>(boolean enable)<br>设置收到新消息是否震动</p>                                                                                                               |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautodownloadattachment"><strong>setAutoDownloadAttachment</strong></a>(boolean enable)<br>设置是否自动缩略图和语音附件</p>                                                                                                      |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-setautoacceptgroupinvite"><strong>setAutoAcceptGroupInvite</strong></a>(boolean enable)<br>设置是否自动同意入群邀请</p>                                                                                                          |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-adduserlistener"><strong>addUserListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md">BMXUserServiceListener</a> listener)<br>添加用户状态监听者</p>                                  |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-removeuserlistener"><strong>removeUserListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_user_service_listener.md">BMXUserServiceListener</a> listener)<br>移除用户状态监听者</p>                            |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-bmxuserservice)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-finalize)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getcptr)**([BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md) obj) |
+|      | Name                                                                                                                                                             |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [**BMXUserService**](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-bmxuserservice)(long cPtr, boolean cMemoryOwn)                                |
+| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-finalize)()                                                                         |
+| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#function-getcptr)([BMXUserService](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md) obj) |
 
 ## Protected Attributes
 
-|                | Name           |
-| -------------- | -------------- |
-| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#variable-swigcmemown)**  |
+|                   | Name                                                                                         |
+| ----------------- | -------------------------------------------------------------------------------------------- |
+| transient boolean | [**swigCMemOwn**](classim_1_1floo_1_1floolib_1_1_b_m_x_user_service.md#variable-swigcmemown) |
 
 ## Public Functions Documentation
 
@@ -59,11 +56,14 @@ summary: 用户Service
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="delete" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function bindDevice
 
 ```java
@@ -72,19 +72,22 @@ inline BMXErrorCode bindDevice(
 )
 ```
 
-绑定设备推送token 
+绑定设备推送token
 
-**Parameters**: 
+**Parameters**:
 
-  * **token** 设备token 
+* **token** 设备token
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="bindDevice" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function getDeviceList
 
 ```java
@@ -93,19 +96,22 @@ inline BMXErrorCode getDeviceList(
 )
 ```
 
-获取设备列表 
+获取设备列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **deviceList** 设备列表，传入空列表函数返回后从此处获取返回的设备列表 
+* **deviceList** 设备列表，传入空列表函数返回后从此处获取返回的设备列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="getDeviceList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function getProfile
 
 ```java
@@ -115,20 +121,23 @@ inline BMXErrorCode getProfile(
 )
 ```
 
-获取用户详情，如果forceRefresh == true，则强制从服务端拉取 
+获取用户详情，如果forceRefresh == true，则强制从服务端拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **profile** 用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。 
-  * **forceRefresh** 是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取 
+* **profile** 用户profile信息，初始传入指向为空的shared\_ptr对象，函数返回后从此处获取用户profile信息。
+* **forceRefresh** 是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="getProfile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function deleteDevice
 
 ```java
@@ -137,19 +146,22 @@ inline BMXErrorCode deleteDevice(
 )
 ```
 
-删除设备 
+删除设备
 
-**Parameters**: 
+**Parameters**:
 
-  * **device_sn** 设备序列号 
+* **device\_sn** 设备序列号
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="deleteDevice" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setNickname
 
 ```java
@@ -158,19 +170,22 @@ inline BMXErrorCode setNickname(
 )
 ```
 
-设置昵称 
+设置昵称
 
-**Parameters**: 
+**Parameters**:
 
-  * **nickname** 用户昵称 
+* **nickname** 用户昵称
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function uploadAvatar
 
 ```java
@@ -180,20 +195,23 @@ inline BMXErrorCode uploadAvatar(
 )
 ```
 
-上传头像 
+上传头像
 
-**Parameters**: 
+**Parameters**:
 
-  * **avatarPath** 上传头像的本地地址 
-  * **callback** 上传回调函数 
+* **avatarPath** 上传头像的本地地址
+* **callback** 上传回调函数
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="uploadAvatar" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function downloadAvatar
 
 ```java
@@ -204,21 +222,24 @@ inline BMXErrorCode downloadAvatar(
 )
 ```
 
-下载头像，默认下载缩略图 
+下载头像，默认下载缩略图
 
-**Parameters**: 
+**Parameters**:
 
-  * **profile** 用户profile 
-  * **thumbnail** 是否下载缩略图，true下载缩略图，false下载原图 
-  * **callback** 下载回调函数 
+* **profile** 用户profile
+* **thumbnail** 是否下载缩略图，true下载缩略图，false下载原图
+* **callback** 下载回调函数
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setPublicInfo
 
 ```java
@@ -227,19 +248,22 @@ inline BMXErrorCode setPublicInfo(
 )
 ```
 
-设置公开扩展信息 
+设置公开扩展信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **publicInfo** 公开扩展信息 
+* **publicInfo** 公开扩展信息
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setPublicInfo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setPrivateInfo
 
 ```java
@@ -248,19 +272,22 @@ inline BMXErrorCode setPrivateInfo(
 )
 ```
 
-设置私有扩展信息 
+设置私有扩展信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **privateInfo** 私有扩展信息 
+* **privateInfo** 私有扩展信息
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setPrivateInfo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setAddFriendAuthMode
 
 ```java
@@ -269,19 +296,22 @@ inline BMXErrorCode setAddFriendAuthMode(
 )
 ```
 
-设置加好友验证方式 
+设置加好友验证方式
 
-**Parameters**: 
+**Parameters**:
 
-  * **mode** 加好友验证方式 
+* **mode** 加好友验证方式
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setAddFriendAuthMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setAuthQuestion
 
 ```java
@@ -290,19 +320,22 @@ inline BMXErrorCode setAuthQuestion(
 )
 ```
 
-设置加好友验证问题 
+设置加好友验证问题
 
-**Parameters**: 
+**Parameters**:
 
-  * **authQuestion** 加好友验证问题 
+* **authQuestion** 加好友验证问题
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setAuthQuestion" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setEnablePush
 
 ```java
@@ -311,19 +344,22 @@ inline BMXErrorCode setEnablePush(
 )
 ```
 
-设置是否允许推送 
+设置是否允许推送
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 是否允许推送，true推送，false不推送 
+* **enable** 是否允许推送，true推送，false不推送
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setEnablePush" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setEnablePushDetaile
 
 ```java
@@ -332,19 +368,22 @@ inline BMXErrorCode setEnablePushDetaile(
 )
 ```
 
-设置是否推送详情 
+设置是否推送详情
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 是否推送详情，true推送，false不推送 
+* **enable** 是否推送详情，true推送，false不推送
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setEnablePushDetaile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setPushNickname
 
 ```java
@@ -353,19 +392,22 @@ inline BMXErrorCode setPushNickname(
 )
 ```
 
-设置推送昵称 
+设置推送昵称
 
-**Parameters**: 
+**Parameters**:
 
-  * **nickname** 推送昵称 
+* **nickname** 推送昵称
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setPushNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setPushAlias
 
 ```java
@@ -375,20 +417,23 @@ inline BMXErrorCode setPushAlias(
 )
 ```
 
-设置推送别名 
+设置推送别名
 
-**Parameters**: 
+**Parameters**:
 
-  * **alias** 别名 
-  * **bmxPushToken** 推送token 
+* **alias** 别名
+* **bmxPushToken** 推送token
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setPushAlias" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setNotificationSound
 
 ```java
@@ -397,19 +442,22 @@ inline BMXErrorCode setNotificationSound(
 )
 ```
 
-设置收到新消息是否声音提醒 
+设置收到新消息是否声音提醒
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 收到新消息是否声音提醒，true提醒，false不提醒 
+* **enable** 收到新消息是否声音提醒，true提醒，false不提醒
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setNotificationSound" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setNotificationVibrate
 
 ```java
@@ -418,19 +466,22 @@ inline BMXErrorCode setNotificationVibrate(
 )
 ```
 
-设置收到新消息是否震动 
+设置收到新消息是否震动
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 收到新消息是否震动，true震动，false不震动 
+* **enable** 收到新消息是否震动，true震动，false不震动
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setNotificationVibrate" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setAutoDownloadAttachment
 
 ```java
@@ -439,19 +490,22 @@ inline BMXErrorCode setAutoDownloadAttachment(
 )
 ```
 
-设置是否自动缩略图和语音附件 
+设置是否自动缩略图和语音附件
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 是否自动缩略图和语音附件，true自动下载，false不会自动下载 
+* **enable** 是否自动缩略图和语音附件，true自动下载，false不会自动下载
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setAutoDownloadAttachment" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function setAutoAcceptGroupInvite
 
 ```java
@@ -460,19 +514,22 @@ inline BMXErrorCode setAutoAcceptGroupInvite(
 )
 ```
 
-设置是否自动同意入群邀请 
+设置是否自动同意入群邀请
 
-**Parameters**: 
+**Parameters**:
 
-  * **enable** 是否自动同意入群邀请，true同意，false不同意 
+* **enable** 是否自动同意入群邀请，true同意，false不同意
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="setAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function addUserListener
 
 ```java
@@ -481,17 +538,20 @@ inline void addUserListener(
 )
 ```
 
-添加用户状态监听者 
+添加用户状态监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 用户状态监听者 
-
+* **listener** 用户状态监听者
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="addUserListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function removeUserListener
 
 ```java
@@ -500,19 +560,22 @@ inline void removeUserListener(
 )
 ```
 
-移除用户状态监听者 
+移除用户状态监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 用户状态监听者 
-
+* **listener** 用户状态监听者
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="removeUserListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function BMXUserService
 
 ```java
@@ -522,22 +585,28 @@ inline BMXUserService(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="BMXUserService" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="finalize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
+
 ```
+
 ### function getCPtr
 
 ```java
@@ -545,7 +614,6 @@ static inline long getCPtr(
     BMXUserService obj
 )
 ```
-
 
 ## Protected Attributes Documentation
 
@@ -555,11 +623,13 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXUserService",function="getCPtr" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXUserService'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:18:31 +0800

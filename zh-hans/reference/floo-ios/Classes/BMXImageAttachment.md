@@ -1,10 +1,10 @@
 # BMXImageAttachment Class Reference
 
-  **Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
-<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
-<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXFileAttachment](BMXFileAttachment.md) :\
+[BMXMessageAttachment](BMXMessageAttachment.md) :\
+[BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -12,7 +12,6 @@ NSObject
 
 ## Class Methods
 
-<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
 ### dynamicCastWithAttachment:
 
 消息附件强制转换为图像附件
@@ -21,23 +20,27 @@ NSObject
 
 #### Parameters
 
-*attachment*  
-   附件  
+_attachment_\
+附件
 
 #### Return Value
+
 BMXImageAttachment
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/clone" title="clone"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### clone
 
 克隆函数
@@ -45,43 +48,57 @@ BMXImageAttachment
 `- (BMXMessageAttachment *)clone`
 
 #### Return Value
-<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
+
+[BMXMessageAttachment](BMXMessageAttachment.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="clone" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/initWithData:thumbnailData:imageSize:displayName:conversationId:" title="initWithData:thumbnailData:imageSize:displayName:conversationId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### initWithData:thumbnailData:imageSize:displayName:conversationId:
 
 `- (id)initWithData:(NSData *)*aData* thumbnailData:(NSData *)*thumbnailData* imageSize:(BMXMessageAttachmentSize *)*size* displayName:(NSString *)*displayName* conversationId:(long long)*conversationId*`
 
-<a name="//api/name/initWithPath:size:" title="initWithPath:size:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="initWithData:thumbnailData:imageSize:displayName:conversationId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### initWithPath:size:
 
 `- (id)initWithPath:(NSString *)*path* size:(BMXMessageAttachmentSize *)*size*`
 
-<a name="//api/name/initWithPath:size:displayName:" title="initWithPath:size:displayName:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="initWithPath:size:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### initWithPath:size:displayName:
 
 构造函数，构建发送图片消息附件
@@ -90,23 +107,27 @@ BMXImageAttachment
 
 #### Parameters
 
-*path*  
-   本地路径  
+_path_\
+本地路径
 
-*size*  
-   图片的大小，宽度和高度  
+_size_\
+图片的大小，宽度和高度
 
-*displayName*  
-   展示名  
+_displayName_\
+展示名
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/initWithRatelUrl:size:displayName:fileLength:" title="initWithRatelUrl:size:displayName:fileLength:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="initWithPath:size:displayName:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### initWithRatelUrl:size:displayName:fileLength:
 
 构造函数，构建接收图片消息附件
@@ -115,26 +136,30 @@ BMXImageAttachment
 
 #### Parameters
 
-*size*  
-   图片的大小，宽度和高度  
+_size_\
+图片的大小，宽度和高度
 
-*displayName*  
-   展示名  
+_displayName_\
+展示名
 
-*fileLength*  
-   文件大小  
+_fileLength_\
+文件大小
 
-*url*  
-   图片ratel服务器地址  
+_url_\
+图片ratel服务器地址
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setThumbnail:" title="setThumbnail:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="initWithRatelUrl:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### setThumbnail:
 
 设置发送图片消息缩略图
@@ -143,17 +168,21 @@ BMXImageAttachment
 
 #### Parameters
 
-*path*  
-   本地路径  
+_path_\
+本地路径
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/size" title="size"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="setThumbnail:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### size
 
 图片大小
@@ -161,16 +190,21 @@ BMXImageAttachment
 `- (BMXMessageAttachmentSize *)size`
 
 #### Return Value
-<a href="../Classes/BMXMessageAttachmentSize.md">BMXMessageAttachmentSize</a>
+
+[BMXMessageAttachmentSize](BMXMessageAttachmentSize.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/thumbnailDownloadStatus" title="thumbnailDownloadStatus"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="size" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### thumbnailDownloadStatus
 
 缩略图下载状态
@@ -178,16 +212,21 @@ BMXImageAttachment
 `- (BMXMessageAttachment_DownloadStatus)thumbnailDownloadStatus`
 
 #### Return Value
-<a href="../Constants/BMXMessageAttachment_DownloadStatus.md">BMXMessageAttachment_DownloadStatus</a>
+
+[BMXMessageAttachment\_DownloadStatus](../Constants/BMXMessageAttachment_DownloadStatus.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/thumbnailPath" title="thumbnailPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### thumbnailPath
 
 缩略图本地路径
@@ -195,16 +234,21 @@ BMXImageAttachment
 `- (NSString *)thumbnailPath`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/thumbnailUrl" title="thumbnailUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="thumbnailPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### thumbnailUrl
 
 远程使用缩略图URL
@@ -212,16 +256,21 @@ NSString
 `- (NSString *)thumbnailUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/type" title="type"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="thumbnailUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### type
 
 返回图片附件类型
@@ -229,12 +278,16 @@ NSString
 `- (BMXMessageAttachment_Type)type`
 
 #### Return Value
-<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
+
+[BMXMessageAttachment\_Type](../Constants/BMXMessageAttachment_Type.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXImageAttachment",function="type" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXImageAttachment'></div>
 ```

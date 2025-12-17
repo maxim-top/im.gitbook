@@ -1,7 +1,8 @@
 ---
-description: 回顾了101摩托车队的创始成员以及美信拓扑创新企业研习营的内容
 keywords: 101摩托车队, 美信拓扑, RTC SDK, 第三方推送
+description: 回顾了101摩托车队的创始成员以及美信拓扑创新企业研习营的内容
 ---
+
 # 骑最酷的车，做最酷的技术
 
 原创 艾姆姐 美信拓扑 _2021-04-22 21:54_
@@ -12,7 +13,7 @@ keywords: 101摩托车队, 美信拓扑, RTC SDK, 第三方推送
 >
 > 来一起探讨面向未来的数字化转型。
 
-![](../assets/articles/autogen-e0b856024955be527f4451b91a9daab6b92610037695845e20749d8a8e31e4a2.webp)
+![](../../.gitbook/assets/autogen-e0b856024955be527f4451b91a9daab6b92610037695845e20749d8a8e31e4a2.webp)
 
 企业数字化转型的号角早已吹响，技术人身处数字经济时代的前沿，对企业未来的探索是当下的使命，科技创新显然是重中之重。多云治理、数据安全、通讯等成为企业创新改革的重要衡量。
 
@@ -37,7 +38,7 @@ keywords: 101摩托车队, 美信拓扑, RTC SDK, 第三方推送
 
 感兴趣的同学请联系仙琳参与，**美信拓扑**作为数字化转型创新企业赞助此次活动。
 
-![](../assets/articles/autogen-3dc27588c4e55a8f7e93a0ca794b2723247a6d973ece1b07513ca27a19547892.webp)
+![](../../.gitbook/assets/autogen-3dc27588c4e55a8f7e93a0ca794b2723247a6d973ece1b07513ca27a19547892.webp)
 
 ## TGO 鲲鹏会
 
@@ -82,4 +83,4 @@ TGO 鲲鹏会官网：[https://tgo.infoq.cn/](https://tgo.infoq.cn)
 
 继续关注「美信拓扑」，了解按月付费十分钟安装的即时通讯私有云。
 
-![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

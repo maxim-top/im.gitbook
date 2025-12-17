@@ -1,8 +1,8 @@
 # BMXUserProfile Class Reference
 
-  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -10,7 +10,6 @@ NSObject
 
 ## Instance Methods
 
-<a name="//api/name/addFriendAuthMode" title="addFriendAuthMode"></a>
 ### addFriendAuthMode
 
 Friend authorization mode
@@ -18,16 +17,21 @@ Friend authorization mode
 `- (BMXUserProfile_AddFriendAuthMode)addFriendAuthMode`
 
 #### Return Value
-<a href="../Constants/BMXUserProfile_AddFriendAuthMode.md">BMXUserProfile_AddFriendAuthMode</a>
+
+[BMXUserProfile\_AddFriendAuthMode](../Constants/BMXUserProfile_AddFriendAuthMode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/authQuestion" title="authQuestion"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### authQuestion
 
 Authorization question
@@ -35,16 +39,21 @@ Authorization question
 `- (BMXUserProfileAuthQuestion *)authQuestion`
 
 #### Return Value
+
 AuthQuestion
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarPath" title="avatarPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="authQuestion" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### avatarPath
 
 Local path of my avatar
@@ -52,16 +61,21 @@ Local path of my avatar
 `- (NSString *)avatarPath`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarRatelUrl" title="avatarRatelUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### avatarRatelUrl
 
 The avatar file URL on REST server
@@ -69,16 +83,21 @@ The avatar file URL on REST server
 `- (NSString *)avatarRatelUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### avatarThumbnailPath
 
 The avatar thumbnail file URL on HTTP server
@@ -86,16 +105,21 @@ The avatar thumbnail file URL on HTTP server
 `- (NSString *)avatarThumbnailPath`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarUrl" title="avatarUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### avatarUrl
 
 The avatar file URL on HTTP server
@@ -103,16 +127,21 @@ The avatar file URL on HTTP server
 `- (NSString *)avatarUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/category" title="category"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="avatarUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### category
 
 User grade(Normal|Advanced)
@@ -120,25 +149,33 @@ User grade(Normal|Advanced)
 `- (BMXUserProfile_UserCategory)category`
 
 #### Return Value
-<a href="../Constants/BMXUserProfile_UserCategory.md">BMXUserProfile_UserCategory</a>
+
+[BMXUserProfile\_UserCategory](../Constants/BMXUserProfile_UserCategory.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="category" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/email" title="email"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### email
 
 Email
@@ -146,16 +183,21 @@ Email
 `- (NSString *)email`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isAutoAcceptGroupInvite" title="isAutoAcceptGroupInvite"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="email" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### isAutoAcceptGroupInvite
 
 Whether to accept group invitation automatically
@@ -163,16 +205,21 @@ Whether to accept group invitation automatically
 `- (BOOL)isAutoAcceptGroupInvite`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/messageSetting" title="messageSetting"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="isAutoAcceptGroupInvite" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### messageSetting
 
 Message settings
@@ -180,16 +227,21 @@ Message settings
 `- (BMXUserProfileMessageSetting *)messageSetting`
 
 #### Return Value
-<a href="../Classes/BMXUserProfileMessageSetting.md">BMXUserProfileMessageSetting</a>
+
+[BMXUserProfileMessageSetting](BMXUserProfileMessageSetting.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/mobilePhone" title="mobilePhone"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="messageSetting" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### mobilePhone
 
 User phone number
@@ -197,16 +249,21 @@ User phone number
 `- (NSString *)mobilePhone`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/nickname" title="nickname"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="mobilePhone" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### nickname
 
 User nickname
@@ -214,16 +271,21 @@ User nickname
 `- (NSString *)nickname`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/privateInfo" title="privateInfo"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="nickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### privateInfo
 
 Extension information for user(Not visible to friends)
@@ -231,16 +293,21 @@ Extension information for user(Not visible to friends)
 `- (NSString *)privateInfo`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/publicInfo" title="publicInfo"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="privateInfo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### publicInfo
 
 Extension information for user(Visible to friends)
@@ -248,42 +315,56 @@ Extension information for user(Visible to friends)
 `- (NSString *)publicInfo`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/userId" title="userId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="publicInfo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### userId
 
 `- (long long)userId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/username" title="username"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="userId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
+
 ```
+
 ### username
 
 `- (NSString *)username`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserProfile",function="username" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserProfile'></div>
 ```

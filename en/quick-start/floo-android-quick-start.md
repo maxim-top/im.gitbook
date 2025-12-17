@@ -1,7 +1,10 @@
 ---
-description: Android SDK Quick Start for integration, SDK architecture, user system, basic and advanced messaging features like push and RTC AV Call.
 keywords: Android SDK, Quick Start, 即时通讯SDK, Real-time messaging
+description: >-
+  Android SDK Quick Start for integration, SDK architecture, user system, basic
+  and advanced messaging features like push and RTC AV Call.
 ---
+
 # Android SDK Quick Start
 
 This page is for quick integration, visit [detailed documentation](../reference/floo-android.md)
@@ -827,15 +830,11 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
 
 ## Push
 
-**Step 1 Push certificates configuration**
-Sign in your Lanying IM console and navigate the "Push" page. Add push certificates of the major push vendors. 
-![Add Push certificate](../assets/push_1.png)
+**Step 1 Push certificates configuration** Sign in your Lanying IM console and navigate the "Push" page. Add push certificates of the major push vendors. ![Add Push certificate](<../../.gitbook/assets/push_1 (1).png>)
 
-**Step 2 Intergrate the push SDKs**
-Integrate the SDKs of each push vendors, set permissions in the Android client code and register the push service at the app is started.
+**Step 2 Intergrate the push SDKs** Integrate the SDKs of each push vendors, set permissions in the Android client code and register the push service at the app is started.
 
-**Step 3 upload device token**
-Get the device token through the SDK of each push vendor in Android client and upload it to the Lanying IM server (please refer to the following code). When the receiver is not online, the Lanying IM server will automatically send the message through push service.
+**Step 3 upload device token** Get the device token through the SDK of each push vendor in Android client and upload it to the Lanying IM server (please refer to the following code). When the receiver is not online, the Lanying IM server will automatically send the message through push service.
 
 > L/S: Success is judged by the value of returned BMXErrorCode.
 
@@ -870,6 +869,7 @@ Get the device token through the SDK of each push vendor in Android client and u
 ```
 
 ## RTC AV Call
+
 The RTC call function needs to integrate floo-android and floo-rtc-android on the client side.Floo-android provides a signaling channel for AV calls, and floo-rtc-android implements the business logic in RTC calls. Therefore, before implementing AV calls, it is necessary to integrate floo-android, and implement the features of login and messaging.
 
 Floo-rtc-android supports one-to-one AV calls. Download link：https://github.com/maxim-top/floo-rtc-android/releases。
@@ -877,15 +877,17 @@ Floo-rtc-android supports one-to-one AV calls. Download link：https://github.co
 * Download the aar file to the libs directory in your project.
 * Add a dependency to the dependencies block in the build.gradle, refer to[lanying-im-android](https://github.com/maxim-top/lanying-im-android/blob/master/app/build.gradle#L94). In the latest version of gradle, you only need to declare the dependency on the libs directory, and no longer need to declare the dependency on a specific file in it separately.
 
-
 ### Create the user interface
+
 1. Import dependencies of video view
+
 ```
 import top.maxim.rtc.view.BMXRtcRenderView;
 import top.maxim.rtc.view.RTCRenderView;
 ```
 
 2. Create two containers of the video views (in this example, the large container is full screen, and the small container is on the upper right)
+
 ```
     <FrameLayout
         android:id="@+id/video_view_container_large"
@@ -904,6 +906,7 @@ import top.maxim.rtc.view.RTCRenderView;
 ```
 
 3. Add the local video view to the small container
+
 ```
         ViewGroup smallViewGroup = mVideoContainer.findViewById(R.id.video_view_container_small);
         //The remote view is null before the call is established，the local video view displays in full screen.
@@ -922,7 +925,9 @@ import top.maxim.rtc.view.RTCRenderView;
         layoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
         smallViewGroup.addView(mLocalView, layoutParams);
 ```
+
 4. Add the remote video view to the large container
+
 ```
         //Restore the full screen local view to a small size
         if (mLocalView != null){
@@ -947,6 +952,7 @@ import top.maxim.rtc.view.RTCRenderView;
 ```
 
 ### Business logic of an AV call
+
 1. Import RTCManager
 
 ```
@@ -1173,71 +1179,71 @@ mEngine.addRTCEngineListener(mListener = new BMXRTCEngineListener() {
 
 private BMXRTCServiceListener mRTCListener = new BMXRTCServiceListener(){
 
-    public void onRTCCallMessageReceive(BMXMessage msg) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    // Delay handling to determine whether a hangup message for the corresponding call will be received later,
-                    // so as to avoid popping up the ended call
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-                String callId = msg.config().getRTCCallId();
-                if (mHungupCalls.contains(callId)){
-                    mHungupCalls.remove(callId);
-                    ackMessage(msg);
-                    return;
-                }
-                long roomId = msg.config().getRTCRoomId();
-                long chatId = msg.config().getRTCInitiator();
-                long myId = SharePreferenceUtils.getInstance().getUserId();
-                if (myId == chatId){
-                    return;
-                }
-                //If already in a call, send a busy message to the new caller
-                if (RTCManager.getInstance().getRTCEngine().isOnCall){
-                    replyBusy(callId, myId, chatId);
-                    return;
-                }
-                String pin = msg.config().getRTCPin();
-                if(mActivityRef != null && mActivityRef.get() != null){
-                    Context context = mActivityRef.get();
-                    if (msg.type() == BMXMessage.MessageType.Single) {
-                        //Open the call page(incoming call ringing)
-                        SingleVideoCallActivity.openVideoCall(context, chatId, roomId, callId,
-                                false, msg.config().getRTCCallType(), pin, msg.msgId());
-                    }
+```
+public void onRTCCallMessageReceive(BMXMessage msg) {
+    new Thread(new Runnable() {
+        @Override
+        public void run() {
+            try {
+                // Delay handling to determine whether a hangup message for the corresponding call will be received later,
+                // so as to avoid popping up the ended call
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            String callId = msg.config().getRTCCallId();
+            if (mHungupCalls.contains(callId)){
+                mHungupCalls.remove(callId);
+                ackMessage(msg);
+                return;
+            }
+            long roomId = msg.config().getRTCRoomId();
+            long chatId = msg.config().getRTCInitiator();
+            long myId = SharePreferenceUtils.getInstance().getUserId();
+            if (myId == chatId){
+                return;
+            }
+            //If already in a call, send a busy message to the new caller
+            if (RTCManager.getInstance().getRTCEngine().isOnCall){
+                replyBusy(callId, myId, chatId);
+                return;
+            }
+            String pin = msg.config().getRTCPin();
+            if(mActivityRef != null && mActivityRef.get() != null){
+                Context context = mActivityRef.get();
+                if (msg.type() == BMXMessage.MessageType.Single) {
+                    //Open the call page(incoming call ringing)
+                    SingleVideoCallActivity.openVideoCall(context, chatId, roomId, callId,
+                            false, msg.config().getRTCCallType(), pin, msg.msgId());
                 }
             }
-        }, "onRTCCallMessageReceive").start();
-    }
-
-    public void onRTCPickupMessageReceive(BMXMessage msg) {
-        if (msg.config().getRTCCallId().equals(mCallId) && msg.fromId() == mUserId){
-            leaveRoom();
-            ackMessage(msg);
         }
+    }, "onRTCCallMessageReceive").start();
+}
+
+public void onRTCPickupMessageReceive(BMXMessage msg) {
+    if (msg.config().getRTCCallId().equals(mCallId) && msg.fromId() == mUserId){
+        leaveRoom();
+        ackMessage(msg);
     }
+}
 
-    public void onRTCHangupMessageReceive(BMXMessage msg) {
-        long otherId = mEngine.otherId;
-        if (msg.config().getRTCCallId().equals(mCallId) &&
-                (msg.fromId()==otherId
-                || msg.content().equals("busy")
-                || msg.content().equals("rejected")
-                || msg.content().equals("canceled")
-                || msg.content().equals("timeout")
-                || !mEngine.isOnCall)){
-            leaveRoom();
-            ackMessage(msg);
-        }
+public void onRTCHangupMessageReceive(BMXMessage msg) {
+    long otherId = mEngine.otherId;
+    if (msg.config().getRTCCallId().equals(mCallId) &&
+            (msg.fromId()==otherId
+            || msg.content().equals("busy")
+            || msg.content().equals("rejected")
+            || msg.content().equals("canceled")
+            || msg.content().equals("timeout")
+            || !mEngine.isOnCall)){
+        leaveRoom();
+        ackMessage(msg);
     }
+}
+```
 
-};
-RTCManager.getInstance().addRTCServiceListener(mRTCListener);
-
+}; RTCManager.getInstance().addRTCServiceListener(mRTCListener);
 
 2. Send a RTC call message
 

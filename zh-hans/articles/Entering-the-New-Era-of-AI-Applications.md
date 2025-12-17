@@ -1,18 +1,19 @@
 ---
-description: 进入智能应用的新时代，关于蓝莺IM
 keywords: 智能应用, 蓝莺IM, IM SDK, IM云服务
+description: 进入智能应用的新时代，关于蓝莺IM
 ---
+
 # 进入智能应用的新时代
 
 原创 一乐 蓝莺IM _2024-02-26 18:03_ _北京_
 
 > 应图灵出版社邀请，这是为《大模型应用开发极简入门》所写的推荐序。
-> 
+>
 > 对于新手入门ChatGPT/LLM，我想说的都在里面。
-> 
+>
 > ～福利也在里面，不要错过～😄
 
-![](../assets/articles/autogen-4b6e72138188bee666a2fd3f8ca45d18233159bce2a58b0b1373c6beb9e58b74.jpeg)
+![](../../.gitbook/assets/autogen-4b6e72138188bee666a2fd3f8ca45d18233159bce2a58b0b1373c6beb9e58b74.jpeg)
 
 ChatGPT 绝对是 2023 年最值得了解的技术，如果你还没有玩过，是时候动手了。
 
@@ -44,7 +45,7 @@ ChatGPT 的成功，不仅让我们看到了机器可以学会使用自然语言
 
 本书已在京东上架，**所有读（gou）完（mai）此书的学习者，均可凭购买凭证，抵扣相应蓝莺AI服务费用**。限额100名，先到先得，详情联系客服「小蓝会聊天」。
 
-![](../assets/articles/autogen-2cf46d9c3329f5891ba9eb52c5c30278113222267aa5b92a2663f7ce94f8cedf.jpeg)
+![](../../.gitbook/assets/autogen-2cf46d9c3329f5891ba9eb52c5c30278113222267aa5b92a2663f7ce94f8cedf.jpeg)
 
 ## 后记
 
@@ -52,7 +53,7 @@ ChatGPT 的成功，不仅让我们看到了机器可以学会使用自然语言
 
 如果你想关注我们关于AI的最新尝试或者参与讨论，也欢迎添加「小蓝会聊天」微信进群，让我们一起探索智能时代的新应用：
 
-![扫码添加小蓝会聊天](../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
+![扫码添加小蓝会聊天](../../.gitbook/assets/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -66,4 +67,4 @@ ChatGPT 的成功，不仅让我们看到了机器可以学会使用自然语言
 
 我们会持续分享关于智能聊天ChatAI、大模型技术进展、AI Agent设计等方面的内容，也会分享典型AI应用案例，扫码关注不失联：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../.gitbook/assets/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)

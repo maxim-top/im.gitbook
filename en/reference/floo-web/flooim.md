@@ -1,34 +1,37 @@
 # flooim
-## flooim {#module_flooim}
 
-* [flooim](#module_flooim)
-    * [.flooim(config)](#module_flooim__flooim) ⇒ <code>object</code>
-    * [.login(opt)](#module_flooim__login)
-    * [.qrlogin(opt)](#module_flooim__qrlogin)
-    * [.tokenLogin(user_id, token)](#module_flooim__tokenlogin)
-    * [.idLogin(opt)](#module_flooim__idlogin)
-    * [.isLogin()](#module_flooim__islogin) ⇒ <code>boolean</code>
-    * [.on(options, ext)](#module_flooim__on)
-    * [.off(options, ext)](#module_flooim__off)
-    * [.logout()](#module_flooim__logout)
-    * [.setLogLevel(logLevel)](#module_flooim__setloglevel)
+## flooim <a href="#module_flooim" id="module_flooim"></a>
 
-### flooim.flooim(config) ⇒ <code>object</code> {#module_flooim__flooim}
+* [flooim](flooim.md#module_flooim)
+  * [.flooim(config)](flooim.md#module_flooim__flooim) ⇒ `object`
+  * [.login(opt)](flooim.md#module_flooim__login)
+  * [.qrlogin(opt)](flooim.md#module_flooim__qrlogin)
+  * [.tokenLogin(user\_id, token)](flooim.md#module_flooim__tokenlogin)
+  * [.idLogin(opt)](flooim.md#module_flooim__idlogin)
+  * [.isLogin()](flooim.md#module_flooim__islogin) ⇒ `boolean`
+  * [.on(options, ext)](flooim.md#module_flooim__on)
+  * [.off(options, ext)](flooim.md#module_flooim__off)
+  * [.logout()](flooim.md#module_flooim__logout)
+  * [.setLogLevel(logLevel)](flooim.md#module_flooim__setloglevel)
+
+### flooim.flooim(config) ⇒ `object` <a href="#module_flooim__flooim" id="module_flooim__flooim"></a>
+
 InitializationSDK
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
-**Returns**: <code>object</code> - flooim object  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)\
+**Returns**: `object` - flooim object
 
-| Param | Type | Description |
-| --- | --- | --- |
-| config | <code>object</code> | SDK initialization settings |
-| config.appid | <code>string</code> | APPID |
-| config.ws | <code>boolean</code> | Whether the connection address is prefixed with ws/wss: ture - the connection address is prefixed with ws or wss; false - the connection address is prefixed with http/https |
-| config.autoLogin | <code>boolean</code> | Whether to login automatically |
-| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS server address, can be empty, default https://dns.lanyingim.com/v2/app_dns |
-| config.logLevel | <code>string</code> | The log level of the SDK, the default is debug, and the value can be debug, info, warn, error or off, where off means no log is printed. |
+| Param            | Type                    | Description                                                                                                                                                                  |
+| ---------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| config           | `object`                | SDK initialization settings                                                                                                                                                  |
+| config.appid     | `string`                | APPID                                                                                                                                                                        |
+| config.ws        | `boolean`               | Whether the connection address is prefixed with ws/wss: ture - the connection address is prefixed with ws or wss; false - the connection address is prefixed with http/https |
+| config.autoLogin | `boolean`               | Whether to login automatically                                                                                                                                               |
+| config.dnsServer | `string` \| `undefined` | DNS server address, can be empty, default https://dns.lanyingim.com/v2/app\_dns                                                                                              |
+| config.logLevel  | `string`                | The log level of the SDK, the default is debug, and the value can be debug, info, warn, error or off, where off means no log is printed.                                     |
 
-**Example**  
+**Example**
+
 ```js
 const config = {
 // dnsServer: "https://dns.lanyingim.com/v2/app_dns",
@@ -38,87 +41,117 @@ autoLogin: true
 };
 import flooim from 'floo-3.0.0';
 const im = flooim(config);
-{% lanying_code_snippet repo="lanying-im-web",class="",function="flooim" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class=''></div>
+
 ```
-### flooim.login(opt) {#module_flooim__login}
+
+### flooim.login(opt) <a href="#module_flooim__login" id="module_flooim__login"></a>
+
 Login
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| opt | <code>object</code> |  |
-| opt.name | <code>string</code> | Username |
-| opt.password | <code>string</code> | Password |
+| Param        | Type     | Description |
+| ------------ | -------- | ----------- |
+| opt          | `object` |             |
+| opt.name     | `string` | Username    |
+| opt.password | `string` | Password    |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="login" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.qrlogin(opt) {#module_flooim__qrlogin}
+
+### flooim.qrlogin(opt) <a href="#module_flooim__qrlogin" id="module_flooim__qrlogin"></a>
+
 QR code login
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| opt | <code>object</code> |  |
-| opt.user_id | <code>number</code> | User ID |
-| opt.password | <code>string</code> | Password |
+| Param        | Type     | Description |
+| ------------ | -------- | ----------- |
+| opt          | `object` |             |
+| opt.user\_id | `number` | User ID     |
+| opt.password | `string` | Password    |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="qrlogin" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.tokenLogin(user_id, token) {#module_flooim__tokenlogin}
+
+### flooim.tokenLogin(user\_id, token) <a href="#module_flooim__tokenlogin" id="module_flooim__tokenlogin"></a>
+
 token login
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| user_id | <code>number</code> | User ID |
-| token | <code>string</code> | Token |
+| Param    | Type     | Description |
+| -------- | -------- | ----------- |
+| user\_id | `number` | User ID     |
+| token    | `string` | Token       |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="tokenLogin" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.idLogin(opt) {#module_flooim__idlogin}
+
+### flooim.idLogin(opt) <a href="#module_flooim__idlogin" id="module_flooim__idlogin"></a>
+
 Login with user ID and password
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| opt | <code>object</code> |  |
-| opt.user_id | <code>number</code> | User ID |
-| opt.password | <code>string</code> | Password |
+| Param        | Type     | Description |
+| ------------ | -------- | ----------- |
+| opt          | `object` |             |
+| opt.user\_id | `number` | User ID     |
+| opt.password | `string` | Password    |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="idLogin" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.isLogin() ⇒ <code>boolean</code> {#module_flooim__islogin}
+
+### flooim.isLogin() ⇒ `boolean` <a href="#module_flooim__islogin" id="module_flooim__islogin"></a>
+
 Logged in or not
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
-**Returns**: <code>boolean</code> - Logged in or not  
-**Example**  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)\
+**Returns**: `boolean` - Logged in or not\
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="isLogin" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.on(options, ext) {#module_flooim__on}
+
+### flooim.on(options, ext) <a href="#module_flooim__on" id="module_flooim__on"></a>
+
 Event listening
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
-| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | Event callback, only required if options is set as event name |
+| Param   | Type                                                                                                                                                 | Description                                                   |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| options | [`Event`](types.md#module_types__event) \| Object.<[`Event`](types.md#module_types__event), [`EventCallback`](types.md#module_types__eventcallback)> | Can be event name, and also event name plus event callback    |
+| ext     | [`EventCallback`](types.md#module_types__eventcallback) \| `undefined`                                                                               | Event callback, only required if options is set as event name |
 
-**Example**  
+**Example**
+
 ```js
 const im = flooim(config);
 im.on('event', (ret) => {
@@ -131,19 +164,24 @@ im.on({
    },
    ...
  })
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="on" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.off(options, ext) {#module_flooim__off}
+
+### flooim.off(options, ext) <a href="#module_flooim__off" id="module_flooim__off"></a>
+
 Unlisten
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | Can be event name, and also event name plus event callback |
-| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | Event callback, only required if options is set as event name |
+| Param   | Type                                                                                                                                                 | Description                                                   |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| options | [`Event`](types.md#module_types__event) \| Object.<[`Event`](types.md#module_types__event), [`EventCallback`](types.md#module_types__eventcallback)> | Can be event name, and also event name plus event callback    |
+| ext     | [`EventCallback`](types.md#module_types__eventcallback) \| `undefined`                                                                               | Event callback, only required if options is set as event name |
 
-**Example**  
+**Example**
+
 ```js
 const im = flooim(config);
  im.off('events', (ret) => {
@@ -156,26 +194,37 @@ const im = flooim(config);
    },
  ...
  })
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="off" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.logout() {#module_flooim__logout}
+
+### flooim.logout() <a href="#module_flooim__logout" id="module_flooim__logout"></a>
+
 Log out
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
-**Example**  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)\
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="logout" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+
 ```
-### flooim.setLogLevel(logLevel) {#module_flooim__setloglevel}
+
+### flooim.setLogLevel(logLevel) <a href="#module_flooim__setloglevel" id="module_flooim__setloglevel"></a>
+
 set log level
 
-**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Kind**: static method of [`flooim`](flooim.md#module_flooim)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| logLevel | <code>string</code> | The log level of the SDK, the default is debug, and the value can be debug, info, warn, error or off, where off means no log is printed. |
+| Param    | Type     | Description                                                                                                                              |
+| -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| logLevel | `string` | The log level of the SDK, the default is debug, and the value can be debug, info, warn, error or off, where off means no log is printed. |
 
-**Example**  
+**Example**
+
 ```js
-{% lanying_code_snippet repo="lanying-im-web",class="im",function="setLogLevel" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
 ```

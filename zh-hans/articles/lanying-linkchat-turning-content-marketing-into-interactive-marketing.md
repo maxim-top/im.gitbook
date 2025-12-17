@@ -1,14 +1,15 @@
 ---
-description: 蓝莺LinkChat：把内容营销变成互动营销, 蓝莺IM SDK的使用
 keywords: 蓝莺LinkChat, 蓝莺IM SDK, APP内聊天功能, IM开源
+description: 蓝莺LinkChat：把内容营销变成互动营销, 蓝莺IM SDK的使用
 ---
+
 # 蓝莺LinkChat：把内容营销变成互动营销
 
 原创 有Link的小蓝 蓝莺IM _2023-05-09 22:20_ _发表于北京_
 
-今天开始，给你的文章增加一个AI助手吧。  
+今天开始，给你的文章增加一个AI助手吧。
 
-![](../assets/articles/autogen-6835cc5d12d1f0890b116322cfbf6575c3c07b6068a6560d2ffeff94f69e43dd.jpeg)
+![](../../.gitbook/assets/autogen-6835cc5d12d1f0890b116322cfbf6575c3c07b6068a6560d2ffeff94f69e43dd.jpeg)
 
 想想下面的场景。
 
@@ -16,7 +17,7 @@ keywords: 蓝莺LinkChat, 蓝莺IM SDK, APP内聊天功能, IM开源
 2. 你的团队刚发布一款新产品，有客户对介绍的功能很感兴趣，但也有一些疑问，他想咨询你，却没有找到合适的联系方式。他们没有联系你，你也失去了他们的联系。
 3. 你曾经写的一篇文章，因为经过某大V转发，忽然阅读量大涨，但是因为经过多个平台转发，原来放在文章后的联系方式早已不在。这些流量都因你而来，你却跟这些流量毫无关系。
 
-**直到你有一个这样的链接 [lanying.link/imdbc4\[1\]](https://lanying.link/imdbc4)，把它放在你的文章里、网站上，嵌入到你想分享的任何地方，点开短链就可以在线聊天。**
+**直到你有一个这样的链接** [**lanying.link/imdbc4\[1\]**](https://lanying.link/imdbc4)**，把它放在你的文章里、网站上，嵌入到你想分享的任何地方，点开短链就可以在线聊天。**
 
 你的读者学到了知识，你的客户了解了产品，你的内容营销变成了互动营销，所有的努力终于迎来了该有的流量。
 
@@ -39,13 +40,13 @@ keywords: 蓝莺LinkChat, 蓝莺IM SDK, APP内聊天功能, IM开源
 
 如果对蓝莺LinkChat的产品或更新感兴趣，可以添加小蓝会聊天的微信，第一时间试用体验最新功能：
 
-> ![扫码添加小蓝会聊天](../assets/articles/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446.png)
+> <img src="../../.gitbook/assets/autogen-393347b95ab29c4177fccf6f3d188fd803e00fdd20ce9b3772c046ef9a3e9446 (1).png" alt="扫码添加小蓝会聊天" data-size="original">
 
-## 关于蓝莺IM 
+## 关于蓝莺IM
 
 **蓝莺IM是新一代智能聊天云服务（Next-Gen Chat AI Cloud）**。
 
-企业可以通过集成蓝莺IMSDK，同时拥有Chat和AI两大功能，当前AI引擎已支持ChatGPT，百度文心一言、阿里通义千问等均在接入中。  
+企业可以通过集成蓝莺IMSDK，同时拥有Chat和AI两大功能，当前AI引擎已支持ChatGPT，百度文心一言、阿里通义千问等均在接入中。
 
 在这个强AI爆发的时代，大模型有平台的机会，应用也有应用的机会。任何一款现成的应用，都需要考虑在强AI的背景下重新思考自己的业务场景。
 
@@ -53,16 +54,14 @@ keywords: 蓝莺LinkChat, 蓝莺IM SDK, APP内聊天功能, IM开源
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-> > ![扫码关注蓝莺IM](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+> > <img src="../../.gitbook/assets/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06 (1).jpeg" alt="扫码关注蓝莺IM" data-size="original">
 
 ## 打造新一代智能聊天APP，使用蓝莺IM SDK！
 
-点击[阅读更多\[3\]](https://docs.lanyingim.com/articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html)，了解更多 ChatAI 能做的事儿~
+点击[阅读更多\[3\]](https://docs.lanyingim.com/articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html)，了解更多 ChatAI 能做的事儿\~
 
 ### 参考资料
 
 1. [小蓝AI](https://lanying.link/imdbc4)
-
 2. [ChatGPT能做智能客服吗](https://docs.lanyingim.com/articles/product-and-technologies/how-to-implement-an-intelligent-customer-service-by-chatgpt.html)
-
 3. [ChatGPT做智能客服的十条服务准则](https://docs.lanyingim.com/articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html)

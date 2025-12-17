@@ -1,14 +1,16 @@
 ---
-description: 小蓝AI：请打开语音交流
 keywords: 小蓝AI, 语音交流, IM SDK, 第三方推送
+description: 小蓝AI：请打开语音交流
 ---
+
 # 小蓝AI：请打开语音交流
+
 原创 一乐 蓝莺IM _2024-04-16 21:16_ _北京_
 
 > 小蓝AI会讲话了，来听听她的声音吧👩
-> 
+>
 > 构建智能应用，多模态是重要特性，阅读本文了解如何使用以及组装你自己的AI。
-> 
+>
 > 当然，画画的能力也一样。你也可以来试试DALL·E的超强绘图能力，也可以替换成你自己的画图服务。
 
 在[上一篇文章](https://docs.lanyingim.com/articles/product-and-technologies/Build-Your-AI-Application-Quickly-GPT-Mention.html)里，我们谈到智能应用的一个重要特性是多模态，因为媒介的改变对通讯类APP的影响是巨大的，这一点，想一下语音对讲对微信的重要性就很容易理解。
@@ -17,44 +19,41 @@ keywords: 小蓝AI, 语音交流, IM SDK, 第三方推送
 
 今天我们介绍的，就是使用大模型AI服务的语音文本转换接口来构建智能应用。
 
-![一张由小蓝AI生成的关于小蓝AI会讲话的图](../assets/articles/autogen-a23a52567fe9c3d8827b4dce3283c9ea4efa90bdfccfe1a0f530b164c20b3933.webp)
+![一张由小蓝AI生成的关于小蓝AI会讲话的图](../../.gitbook/assets/autogen-a23a52567fe9c3d8827b4dce3283c9ea4efa90bdfccfe1a0f530b164c20b3933.webp)
 
 也如前文所述，我们在实现某个功能的时候，除了功能本身外，还会考虑企业开发者实现的难度以及替换的灵活性，所以这次依然也做了几件事：
 
-> 1.  对接大模型AI的语音文本转换接口ASR/TTS；
->     
-> 2.  将这个功能以插件形式实现，保证功能可以在任何组件内使用；
->     
-> 3.  全平台支持，将多模态支持扩展到微信公众号以及微信中；
->     
+> 1. 对接大模型AI的语音文本转换接口ASR/TTS；
+> 2. 将这个功能以插件形式实现，保证功能可以在任何组件内使用；
+> 3. 全平台支持，将多模态支持扩展到微信公众号以及微信中；
 
 下面我们分别介绍这些工作，同时为了参照理解，会附上相关服务的截图，感兴趣的同学可以在平台上直接试用。
 
-## 1\. 语音文本转换
+## 1. 语音文本转换
 
 语音文本转换其实包含了两个场景，一个是语音转文本，即语音识别（Automatic Speech Recognition，ASR），另一个是语音生成，即文本转语音（Text to Speech，TTS）。
 
 在实际应用中，一个是处理用户输入，一个是输出给用户。所以，我们设计也将其分为了两部分，也就是你在**配置Chatbot**里可以看到的两部分，识别用户语音和生成AI语音：
 
-![配置Chatbot](../assets/articles/autogen-c23723614aac68ebfd8e842cb4e297f8ade99dff74c6234c3eeda8bd7a972eac.webp)
+![配置Chatbot](../../.gitbook/assets/autogen-c23723614aac68ebfd8e842cb4e297f8ade99dff74c6234c3eeda8bd7a972eac.webp)
 
-## 2\. 插件实现
+## 2. 插件实现
 
 前面的图也可以看到，我们将语音文本放在了插件里，你可以通过开通插件来启用功能。当然也不要怕，我们已经将其做成公共插件，可以在智能插件服务里随时导入并定制。
 
 将语音生成做成插件后，你就可以通过**配置插件**里修改语音清晰度以及音色选择，这里还是以OpenAI为例：
 
-![配置插件：语音生成](../assets/articles/autogen-eea08db88e772ddbdf041dce21567c30ade1b5a84ca7632d3e46691cbec9cc6b.webp)
+![配置插件：语音生成](../../.gitbook/assets/autogen-eea08db88e772ddbdf041dce21567c30ade1b5a84ca7632d3e46691cbec9cc6b.webp)
 
 因为是普通插件设计，也就意味着可以随时通过修改插件配置，直接替换使用其他的大模型AI服务，而不需要业务层任何改动。
 
-## 3\. 全平台支持（微信/公众号）
+## 3. 全平台支持（微信/公众号）
 
 作为一个智能应用框架，还有一部分工作是方便应用落地，自然的也加入了对接系统的支持。也就是说，你在微信公众号中的AI客服，和使用AI支持的微信号，都可以默认启用者两个功能了。
 
-![蓝莺IM微信公众号聊天](../assets/articles/autogen-af15300f66534329f933fca633ff7c24022aff6e44eef2258de7c5094688d8cf.webp)
+![蓝莺IM微信公众号聊天](../../.gitbook/assets/autogen-af15300f66534329f933fca633ff7c24022aff6e44eef2258de7c5094688d8cf.webp)
 
-![AGIA实战营群内聊天](../assets/articles/autogen-871e14d5f64c4e474b7beac327298fee6f71e88e4f9b13de4f58b65ef40c3607.webp)
+![AGIA实战营群内聊天](../../.gitbook/assets/autogen-871e14d5f64c4e474b7beac327298fee6f71e88e4f9b13de4f58b65ef40c3607.webp)
 
 ## 后记
 
@@ -68,7 +67,7 @@ keywords: 小蓝AI, 语音交流, IM SDK, 第三方推送
 
 如果你希望与我们一起探索智能应用的无限可能，欢迎添加「小蓝会聊天」微信进群：
 
-![扫码添加小蓝会聊天](../assets/articles/autogen-678480e75c7fcdbf6ec3492f1b2f9386e73af14e551ee9fa2baa98b93db02dcb.webp)
+![扫码添加小蓝会聊天](../../.gitbook/assets/autogen-678480e75c7fcdbf6ec3492f1b2f9386e73af14e551ee9fa2baa98b93db02dcb.webp)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -82,5 +81,4 @@ keywords: 小蓝AI, 语音交流, IM SDK, 第三方推送
 
 我们会持续分享关于智能聊天ChatAI、大模型技术进展、AI Agent设计等方面的内容，也会分享典型AI应用案例，扫码关注不失联：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-1fdbd901f4a0c5b667df0e25fda7b53203aa868bb4da0962845b112f26e2d5b5.webp)
-
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../.gitbook/assets/autogen-1fdbd901f4a0c5b667df0e25fda7b53203aa868bb4da0962845b112f26e2d5b5.webp)

@@ -1,8 +1,8 @@
 # BMXRosterItem Class Reference
 
-  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -10,7 +10,6 @@ NSObject
 
 ## Instance Methods
 
-<a name="//api/name/addFriendAuthMode" title="addFriendAuthMode"></a>
 ### addFriendAuthMode
 
 Friend authorization mode
@@ -18,16 +17,21 @@ Friend authorization mode
 `- (BMXRosterItem_AddFriendAuthMode)addFriendAuthMode`
 
 #### Return Value
-<a href="../Constants/BMXRosterItem_AddFriendAuthMode.md">BMXRosterItem_AddFriendAuthMode</a>
+
+[BMXRosterItem\_AddFriendAuthMode](../Constants/BMXRosterItem_AddFriendAuthMode.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/alias" title="alias"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="addFriendAuthMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### alias
 
 Alias for friend
@@ -35,16 +39,21 @@ Alias for friend
 `- (NSString *)alias`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/authQuestion" title="authQuestion"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="alias" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### authQuestion
 
 Authorization question
@@ -52,16 +61,21 @@ Authorization question
 `- (NSString *)authQuestion`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarPath" title="avatarPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="authQuestion" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### avatarPath
 
 Local path of friends avatar
@@ -69,16 +83,21 @@ Local path of friends avatar
 `- (NSString *)avatarPath`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarRatelUrl" title="avatarRatelUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="avatarPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### avatarRatelUrl
 
 The friend's avatar URL on REST server
@@ -86,16 +105,21 @@ The friend's avatar URL on REST server
 `- (NSString *)avatarRatelUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarThumbnailPath" title="avatarThumbnailPath"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="avatarRatelUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### avatarThumbnailPath
 
 Local path of friends avatar thumbnail
@@ -103,16 +127,21 @@ Local path of friends avatar thumbnail
 `- (NSString *)avatarThumbnailPath`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarThumbnailUrl" title="avatarThumbnailUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="avatarThumbnailPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### avatarThumbnailUrl
 
 The friend's avatar thumbnail URL on HTTP server
@@ -120,16 +149,21 @@ The friend's avatar thumbnail URL on HTTP server
 `- (NSString *)avatarThumbnailUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/avatarUrl" title="avatarUrl"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="avatarThumbnailUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### avatarUrl
 
 The friend's avatar URL on HTTP server
@@ -137,25 +171,33 @@ The friend's avatar URL on HTTP server
 `- (NSString *)avatarUrl`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="avatarUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/ext" title="ext"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### ext
 
 Extension information of the friend(on server)
@@ -163,16 +205,21 @@ Extension information of the friend(on server)
 `- (NSString *)ext`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isMuteNotification" title="isMuteNotification"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="ext" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### isMuteNotification
 
 Whether to mute the user's push message notification
@@ -180,16 +227,21 @@ Whether to mute the user's push message notification
 `- (BOOL)isMuteNotification`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/localExt" title="localExt"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="isMuteNotification" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### localExt
 
 Extension information of the friend (local db only)
@@ -197,31 +249,41 @@ Extension information of the friend (local db only)
 `- (NSString *)localExt`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/nickname" title="nickname"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="localExt" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### nickname
 
 `- (NSString *)nickname`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/publicInfo" title="publicInfo"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="nickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### publicInfo
 
 Extension information visible to friends
@@ -229,16 +291,21 @@ Extension information visible to friends
 `- (NSString *)publicInfo`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/relation" title="relation"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="publicInfo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### relation
 
 My relationship to the friend
@@ -246,16 +313,21 @@ My relationship to the friend
 `- (BMXRosterItem_RosterRelation)relation`
 
 #### Return Value
-<a href="../Constants/BMXRosterItem_RosterRelation.md">BMXRosterItem_RosterRelation</a>
+
+[BMXRosterItem\_RosterRelation](../Constants/BMXRosterItem_RosterRelation.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/rosterId" title="rosterId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="relation" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### rosterId
 
 Friend ID
@@ -263,16 +335,21 @@ Friend ID
 `- (long long)rosterId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/username" title="username"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="rosterId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
+
 ```
+
 ### username
 
 Friend's username
@@ -280,12 +357,16 @@ Friend's username
 `- (NSString *)username`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterItem",function="username" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterItem'></div>
 ```

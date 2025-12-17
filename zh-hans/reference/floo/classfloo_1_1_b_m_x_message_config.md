@@ -1,15 +1,11 @@
 ---
 title: floo::BMXMessageConfig
-summary: 消息配置 
-
+summary: 消息配置
 ---
 
 # floo::BMXMessageConfig
 
-
-
-消息配置 
-
+消息配置
 
 `#include <bmx_message_config.h>`
 
@@ -17,81 +13,82 @@ Inherits from BMXBaseObject
 
 ## Public Types
 
-|                | Name           |
-| -------------- | -------------- |
-| enum class| **[BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype)** { Change, Set}<br>当前读取的Badge数字的操作类型  |
+|            | Name                                                                                                                                               |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enum class | <p><a href="classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype"><strong>BadgeCountType</strong></a> { Change, Set}<br>当前读取的Badge数字的操作类型</p> |
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| virtual | **[~BMXMessageConfig](classfloo_1_1_b_m_x_message_config.md#function-~bmxmessageconfig)**() |
-| void | **[setMentionAll](classfloo_1_1_b_m_x_message_config.md#function-setmentionall)**(bool mentionAll)<br>设置是否@全员  |
-| bool | **[getMentionAll](classfloo_1_1_b_m_x_message_config.md#function-getmentionall)**()<br>获取是否@全员  |
-| void | **[setMentionList](classfloo_1_1_b_m_x_message_config.md#function-setmentionlist)**(const std::vector< int64_t > & mentionList)<br>设置通知成员id列表  |
-| std::vector< int64_t > | **[getMentionList](classfloo_1_1_b_m_x_message_config.md#function-getmentionlist)**()<br>获取@成员列表  |
-| void | **[setMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-setmentionedmessage)**(const std::string & mentionedMessage)<br>设置@消息  |
-| std::string | **[getMentionedMessage](classfloo_1_1_b_m_x_message_config.md#function-getmentionedmessage)**()<br>获取@消息  |
-| void | **[setPushMessage](classfloo_1_1_b_m_x_message_config.md#function-setpushmessage)**(const std::string & pushMessage)<br>设置推送消息  |
-| std::string | **[getPushMessage](classfloo_1_1_b_m_x_message_config.md#function-getpushmessage)**()<br>获取推送消息  |
-| void | **[setSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-setsendernickname)**(const std::string & senderNickname)<br>设置发送者昵称  |
-| std::string | **[getSenderNickname](classfloo_1_1_b_m_x_message_config.md#function-getsendernickname)**()<br>获取发送者昵称  |
-| void | **[setGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-setgroupmemberlist)**(const std::vector< int64_t > & groupMemberList)<br>设置需要群已读消息的群成员id列表  |
-| std::vector< int64_t > | **[getGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-getgroupmemberlist)**()<br>获取需要群已读消息的群成员id列表  |
-| void | **[addGroupMember](classfloo_1_1_b_m_x_message_config.md#function-addgroupmember)**(int64_t id)<br>添加群已读消息的群成员id列表成员  |
-| void | **[removeGroupMember](classfloo_1_1_b_m_x_message_config.md#function-removegroupmember)**(int64_t id)<br>清除需要群已读消息的群成员id列表成员  |
-| void | **[clearGroupMemberList](classfloo_1_1_b_m_x_message_config.md#function-cleargroupmemberlist)**()<br>清空群已读消息的群成员id列表  |
-| void | **[setIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-setiosconfig)**(const std::string & iosConfig)<br>设置IOS系统配置信息  |
-| std::string | **[getIOSConfig](classfloo_1_1_b_m_x_message_config.md#function-getiosconfig)**()<br>获取IOS系统配置信息  |
-| void | **[setAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-setandroidconfig)**(const std::string & androidConfig)<br>设置Android系统配置信息  |
-| std::string | **[getAndroidConfig](classfloo_1_1_b_m_x_message_config.md#function-getandroidconfig)**()<br>获取Android系统配置信息  |
-| void | **[setPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowbegintime)**(int beginTime)<br>设置推送显示开始时间  |
-| int | **[getPushShowBeginTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowbegintime)**()<br>获取推送显示开始时间  |
-| void | **[setPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-setpushshowendtime)**(int endTime)<br>设置推送显示结束时间  |
-| int | **[getPushShowEndTime](classfloo_1_1_b_m_x_message_config.md#function-getpushshowendtime)**()<br>获取推送显示结束时间  |
-| void | **[setPushTitle](classfloo_1_1_b_m_x_message_config.md#function-setpushtitle)**(const std::string & pushTitle)<br>设置推送标题  |
-| std::string | **[getPushTitle](classfloo_1_1_b_m_x_message_config.md#function-getpushtitle)**()<br>获取推送标题  |
-| bool | **[isSilence](classfloo_1_1_b_m_x_message_config.md#function-issilence)**()<br>获取当前的推送消息是否是静默消息  |
-| [BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype) | **[getBadgeCountType](classfloo_1_1_b_m_x_message_config.md#function-getbadgecounttype)**()<br>获取当前的推送消息中badge计数  |
-| int | **[getBadgeCount](classfloo_1_1_b_m_x_message_config.md#function-getbadgecount)**(int count)<br>获取当前的推送消息中badge计数  |
-| void | **[setUsername](classfloo_1_1_b_m_x_message_config.md#function-setusername)**(const std::string & username)<br>设置用户名  |
-| std::string | **[getUsername](classfloo_1_1_b_m_x_message_config.md#function-getusername)**()<br>获得用户名  |
-| std::string | **[serialize](classfloo_1_1_b_m_x_message_config.md#function-serialize)**() const<br>序列化操作  |
-| BMXMessageConfigPtr | **[createMessageConfig](classfloo_1_1_b_m_x_message_config.md#function-createmessageconfig)**(bool mentionAll) |
+|                                                                             | Name                                                                                                                                                                                                      |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| virtual                                                                     | [**\~BMXMessageConfig**](classfloo_1_1_b_m_x_message_config.md#function-~bmxmessageconfig)()                                                                                                              |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setmentionall"><strong>setMentionAll</strong></a>(bool mentionAll)<br>设置是否@全员</p>                                                              |
+| bool                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getmentionall"><strong>getMentionAll</strong></a>()<br>获取是否@全员</p>                                                                             |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setmentionlist"><strong>setMentionList</strong></a>(const std::vector&#x3C; int64_t > &#x26; mentionList)<br>设置通知成员id列表</p>                    |
+| std::vector< int64\_t >                                                     | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getmentionlist"><strong>getMentionList</strong></a>()<br>获取@成员列表</p>                                                                           |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setmentionedmessage"><strong>setMentionedMessage</strong></a>(const std::string &#x26; mentionedMessage)<br>设置@消息</p>                          |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getmentionedmessage"><strong>getMentionedMessage</strong></a>()<br>获取@消息</p>                                                                   |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushmessage"><strong>setPushMessage</strong></a>(const std::string &#x26; pushMessage)<br>设置推送消息</p>                                        |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushmessage"><strong>getPushMessage</strong></a>()<br>获取推送消息</p>                                                                            |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setsendernickname"><strong>setSenderNickname</strong></a>(const std::string &#x26; senderNickname)<br>设置发送者昵称</p>                              |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getsendernickname"><strong>getSenderNickname</strong></a>()<br>获取发送者昵称</p>                                                                     |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setgroupmemberlist"><strong>setGroupMemberList</strong></a>(const std::vector&#x3C; int64_t > &#x26; groupMemberList)<br>设置需要群已读消息的群成员id列表</p> |
+| std::vector< int64\_t >                                                     | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getgroupmemberlist"><strong>getGroupMemberList</strong></a>()<br>获取需要群已读消息的群成员id列表</p>                                                         |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-addgroupmember"><strong>addGroupMember</strong></a>(int64_t id)<br>添加群已读消息的群成员id列表成员</p>                                                       |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-removegroupmember"><strong>removeGroupMember</strong></a>(int64_t id)<br>清除需要群已读消息的群成员id列表成员</p>                                               |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-cleargroupmemberlist"><strong>clearGroupMemberList</strong></a>()<br>清空群已读消息的群成员id列表</p>                                                       |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setiosconfig"><strong>setIOSConfig</strong></a>(const std::string &#x26; iosConfig)<br>设置IOS系统配置信息</p>                                         |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getiosconfig"><strong>getIOSConfig</strong></a>()<br>获取IOS系统配置信息</p>                                                                           |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setandroidconfig"><strong>setAndroidConfig</strong></a>(const std::string &#x26; androidConfig)<br>设置Android系统配置信息</p>                         |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getandroidconfig"><strong>getAndroidConfig</strong></a>()<br>获取Android系统配置信息</p>                                                               |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushshowbegintime"><strong>setPushShowBeginTime</strong></a>(int beginTime)<br>设置推送显示开始时间</p>                                               |
+| int                                                                         | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushshowbegintime"><strong>getPushShowBeginTime</strong></a>()<br>获取推送显示开始时间</p>                                                            |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushshowendtime"><strong>setPushShowEndTime</strong></a>(int endTime)<br>设置推送显示结束时间</p>                                                     |
+| int                                                                         | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushshowendtime"><strong>getPushShowEndTime</strong></a>()<br>获取推送显示结束时间</p>                                                                |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setpushtitle"><strong>setPushTitle</strong></a>(const std::string &#x26; pushTitle)<br>设置推送标题</p>                                              |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getpushtitle"><strong>getPushTitle</strong></a>()<br>获取推送标题</p>                                                                                |
+| bool                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-issilence"><strong>isSilence</strong></a>()<br>获取当前的推送消息是否是静默消息</p>                                                                            |
+| [BadgeCountType](classfloo_1_1_b_m_x_message_config.md#enum-badgecounttype) | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getbadgecounttype"><strong>getBadgeCountType</strong></a>()<br>获取当前的推送消息中badge计数</p>                                                           |
+| int                                                                         | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getbadgecount"><strong>getBadgeCount</strong></a>(int count)<br>获取当前的推送消息中badge计数</p>                                                          |
+| void                                                                        | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-setusername"><strong>setUsername</strong></a>(const std::string &#x26; username)<br>设置用户名</p>                                                  |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-getusername"><strong>getUsername</strong></a>()<br>获得用户名</p>                                                                                   |
+| std::string                                                                 | <p><a href="classfloo_1_1_b_m_x_message_config.md#function-serialize"><strong>serialize</strong></a>() const<br>序列化操作</p>                                                                                 |
+| BMXMessageConfigPtr                                                         | [**createMessageConfig**](classfloo_1_1_b_m_x_message_config.md#function-createmessageconfig)(bool mentionAll)                                                                                            |
 
 ## Friends
 
-|                | Name           |
-| -------------- | -------------- |
-| std::string | **[encodeBMXMessageConfig](classfloo_1_1_b_m_x_message_config.md#friend-encodebmxmessageconfig)**(BMXMessageConfigPtr )  |
-| BMXMessageConfigPtr | **[decodeBMXMessageConfig](classfloo_1_1_b_m_x_message_config.md#friend-decodebmxmessageconfig)**(const std::string & config)  |
+|                     | Name                                                                                                                          |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| std::string         | [**encodeBMXMessageConfig**](classfloo_1_1_b_m_x_message_config.md#friend-encodebmxmessageconfig)(BMXMessageConfigPtr )       |
+| BMXMessageConfigPtr | [**decodeBMXMessageConfig**](classfloo_1_1_b_m_x_message_config.md#friend-decodebmxmessageconfig)(const std::string & config) |
 
 ## Public Types Documentation
 
 ### enum BadgeCountType
 
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Change | | 读取Badge计数的操作类型为增加或减少。正数为增加负数为减少   |
-| Set | | 设置Badge的计数为当前的计数值   |
+| Enumerator | Value | Description                     |
+| ---------- | ----- | ------------------------------- |
+| Change     |       | 读取Badge计数的操作类型为增加或减少。正数为增加负数为减少 |
+| Set        |       | 设置Badge的计数为当前的计数值               |
 
-
-
-当前读取的Badge数字的操作类型 
+当前读取的Badge数字的操作类型
 
 ## Public Functions Documentation
 
-### function ~BMXMessageConfig
+### function \~BMXMessageConfig
 
 ```cpp
 inline virtual ~BMXMessageConfig()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="~BMXMessageConfig" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setMentionAll
 
 ```cpp
@@ -100,31 +97,38 @@ void setMentionAll(
 )
 ```
 
-设置是否@全员 
+设置是否@全员
 
-**Parameters**: 
+**Parameters**:
 
-  * **mentionAll** 
-
+* **mentionAll**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionAll" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getMentionAll
 
 ```cpp
 bool getMentionAll()
 ```
 
-获取是否@全员 
+获取是否@全员
 
-**Return**: bool 
+**Return**: bool
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionAll" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setMentionList
 
 ```cpp
@@ -133,31 +137,38 @@ void setMentionList(
 )
 ```
 
-设置通知成员id列表 
+设置通知成员id列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **mentionList** 
-
+* **mentionList**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getMentionList
 
 ```cpp
 std::vector< int64_t > getMentionList()
 ```
 
-获取@成员列表 
+获取@成员列表
 
-**Return**: std::vector<int64_t> 
+**Return**: std::vector\<int64\_t>
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setMentionedMessage
 
 ```cpp
@@ -166,31 +177,38 @@ void setMentionedMessage(
 )
 ```
 
-设置@消息 
+设置@消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **mentionedMessage** 
-
+* **mentionedMessage**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setMentionedMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getMentionedMessage
 
 ```cpp
 std::string getMentionedMessage()
 ```
 
-获取@消息 
+获取@消息
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getMentionedMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setPushMessage
 
 ```cpp
@@ -199,31 +217,38 @@ void setPushMessage(
 )
 ```
 
-设置推送消息 
+设置推送消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **pushMessage** 
-
+* **pushMessage**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getPushMessage
 
 ```cpp
 std::string getPushMessage()
 ```
 
-获取推送消息 
+获取推送消息
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setSenderNickname
 
 ```cpp
@@ -232,31 +257,38 @@ void setSenderNickname(
 )
 ```
 
-设置发送者昵称 
+设置发送者昵称
 
-**Parameters**: 
+**Parameters**:
 
-  * **senderNickname** 
-
+* **senderNickname**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setSenderNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getSenderNickname
 
 ```cpp
 std::string getSenderNickname()
 ```
 
-获取发送者昵称 
+获取发送者昵称
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getSenderNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setGroupMemberList
 
 ```cpp
@@ -265,31 +297,38 @@ void setGroupMemberList(
 )
 ```
 
-设置需要群已读消息的群成员id列表 
+设置需要群已读消息的群成员id列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **groupMemberList** 
-
+* **groupMemberList**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setGroupMemberList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getGroupMemberList
 
 ```cpp
 std::vector< int64_t > getGroupMemberList()
 ```
 
-获取需要群已读消息的群成员id列表 
+获取需要群已读消息的群成员id列表
 
-**Return**: std::vector<int64_t> 
+**Return**: std::vector\<int64\_t>
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getGroupMemberList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function addGroupMember
 
 ```cpp
@@ -298,12 +337,16 @@ void addGroupMember(
 )
 ```
 
-添加群已读消息的群成员id列表成员 
+添加群已读消息的群成员id列表成员
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="addGroupMember" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function removeGroupMember
 
 ```cpp
@@ -312,26 +355,34 @@ void removeGroupMember(
 )
 ```
 
-清除需要群已读消息的群成员id列表成员 
+清除需要群已读消息的群成员id列表成员
 
-**Return**: std::vector<int64_t> 
+**Return**: std::vector\<int64\_t>
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="removeGroupMember" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function clearGroupMemberList
 
 ```cpp
 void clearGroupMemberList()
 ```
 
-清空群已读消息的群成员id列表 
+清空群已读消息的群成员id列表
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="clearGroupMemberList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setIOSConfig
 
 ```cpp
@@ -340,31 +391,38 @@ void setIOSConfig(
 )
 ```
 
-设置IOS系统配置信息 
+设置IOS系统配置信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **iosConfig** 
-
+* **iosConfig**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setIOSConfig" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getIOSConfig
 
 ```cpp
 std::string getIOSConfig()
 ```
 
-获取IOS系统配置信息 
+获取IOS系统配置信息
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getIOSConfig" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setAndroidConfig
 
 ```cpp
@@ -373,31 +431,38 @@ void setAndroidConfig(
 )
 ```
 
-设置Android系统配置信息 
+设置Android系统配置信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **androidConfig** 
-
+* **androidConfig**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setAndroidConfig" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getAndroidConfig
 
 ```cpp
 std::string getAndroidConfig()
 ```
 
-获取Android系统配置信息 
+获取Android系统配置信息
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getAndroidConfig" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setPushShowBeginTime
 
 ```cpp
@@ -406,31 +471,38 @@ void setPushShowBeginTime(
 )
 ```
 
-设置推送显示开始时间 
+设置推送显示开始时间
 
-**Parameters**: 
+**Parameters**:
 
-  * **beginTime** 
-
+* **beginTime**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushShowBeginTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getPushShowBeginTime
 
 ```cpp
 int getPushShowBeginTime()
 ```
 
-获取推送显示开始时间 
+获取推送显示开始时间
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushShowBeginTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setPushShowEndTime
 
 ```cpp
@@ -439,31 +511,38 @@ void setPushShowEndTime(
 )
 ```
 
-设置推送显示结束时间 
+设置推送显示结束时间
 
-**Parameters**: 
+**Parameters**:
 
-  * **endTime** 
-
+* **endTime**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushShowEndTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getPushShowEndTime
 
 ```cpp
 int getPushShowEndTime()
 ```
 
-获取推送显示结束时间 
+获取推送显示结束时间
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushShowEndTime" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setPushTitle
 
 ```cpp
@@ -472,59 +551,74 @@ void setPushTitle(
 )
 ```
 
-设置推送标题 
+设置推送标题
 
-**Parameters**: 
+**Parameters**:
 
-  * **pushTitle** 
-
+* **pushTitle**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setPushTitle" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getPushTitle
 
 ```cpp
 std::string getPushTitle()
 ```
 
-获取推送标题 
+获取推送标题
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getPushTitle" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function isSilence
 
 ```cpp
 bool isSilence()
 ```
 
-获取当前的推送消息是否是静默消息 
+获取当前的推送消息是否是静默消息
 
-**Return**: bool 
+**Return**: bool
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="isSilence" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getBadgeCountType
 
 ```cpp
 BadgeCountType getBadgeCountType()
 ```
 
-获取当前的推送消息中badge计数 
+获取当前的推送消息中badge计数
 
-**Return**: BadgeCountType 
+**Return**: BadgeCountType
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getBadgeCountType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getBadgeCount
 
 ```cpp
@@ -533,14 +627,18 @@ int getBadgeCount(
 )
 ```
 
-获取当前的推送消息中badge计数 
+获取当前的推送消息中badge计数
 
-**Return**: int 
+**Return**: int
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getBadgeCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function setUsername
 
 ```cpp
@@ -549,45 +647,56 @@ void setUsername(
 )
 ```
 
-设置用户名 
+设置用户名
 
-**Parameters**: 
+**Parameters**:
 
-  * **username** 
-
+* **username**
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="setUsername" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function getUsername
 
 ```cpp
 std::string getUsername()
 ```
 
-获得用户名 
+获得用户名
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="getUsername" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function serialize
 
 ```cpp
 std::string serialize() const
 ```
 
-序列化操作 
+序列化操作
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="serialize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
+
 ```
+
 ### function createMessageConfig
 
 ```cpp
@@ -595,7 +704,6 @@ static BMXMessageConfigPtr createMessageConfig(
     bool mentionAll
 )
 ```
-
 
 ## Friends
 
@@ -607,7 +715,6 @@ friend std::string encodeBMXMessageConfig(
 );
 ```
 
-
 ### friend decodeBMXMessageConfig
 
 ```cpp
@@ -616,11 +723,13 @@ friend BMXMessageConfigPtr decodeBMXMessageConfig(
 );
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXMessageConfig",function="createMessageConfig" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXMessageConfig'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:20:40 +0800

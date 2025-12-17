@@ -1,8 +1,8 @@
 # BMXMessage Class Reference
 
-  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -10,7 +10,6 @@ NSObject
 
 ## Class Methods
 
-<a name="//api/name/createCommandMessageWithFrom:to:type:conversationId:content:" title="createCommandMessageWithFrom:to:type:conversationId:content:"></a>
 ### createCommandMessageWithFrom:to:type:conversationId:content:
 
 Create a COMMAND message to send
@@ -19,29 +18,33 @@ Create a COMMAND message to send
 
 #### Parameters
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*content*  
-    Message content
+_content_\
+Message content
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createCommandMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
 Create a COMMAND message received
@@ -50,35 +53,39 @@ Create a COMMAND message received
 
 #### Parameters
 
-*msgId*  
-    Message ID
+_msgId_\
+Message ID
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*content*  
-    Message content
+_content_\
+Message content
 
-*serverTimestamp*  
-    Message timestamp on server
+_serverTimestamp_\
+Message timestamp on server
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createForwardMessageWithMsg:from:to:type:conversationId:" title="createForwardMessageWithMsg:from:to:type:conversationId:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createCommandMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createForwardMessageWithMsg:from:to:type:conversationId:
 
 Create a message to forward
@@ -87,29 +94,33 @@ Create a message to forward
 
 #### Parameters
 
-*msg*  
-    Message to be forward
+_msg_\
+Message to be forward
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithFrom:to:type:conversationId:attachment:" title="createMessageWithFrom:to:type:conversationId:attachment:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createForwardMessageWithMsg:from:to:type:conversationId:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithFrom:to:type:conversationId:attachment:
 
 Create a message with an attachment
@@ -118,29 +129,33 @@ Create a message with an attachment
 
 #### Parameters
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*attachment*  
-    The attachment
+_attachment_\
+The attachment
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithFrom:to:type:conversationId:content:" title="createMessageWithFrom:to:type:conversationId:content:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithFrom:to:type:conversationId:attachment:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithFrom:to:type:conversationId:content:
 
 Create a text message
@@ -149,29 +164,33 @@ Create a text message
 
 #### Parameters
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*content*  
-    Message content
+_content_\
+Message content
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:" title="createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:
 
 Create a received message
@@ -180,35 +199,39 @@ Create a received message
 
 #### Parameters
 
-*msgId*  
-    Message ID
+_msgId_\
+Message ID
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*attachment*  
-    The attachment
+_attachment_\
+The attachment
 
-*serverTimestamp*  
-    Message timestamp on server
+_serverTimestamp_\
+Message timestamp on server
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithMsgId:from:to:type:conversationId:attachment:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
 Create a received message
@@ -217,35 +240,39 @@ Create a received message
 
 #### Parameters
 
-*msgId*  
-    Message ID
+_msgId_\
+Message ID
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*content*  
-    Messsage content
+_content_\
+Messsage content
 
-*serverTimestamp*  
-    Message timestamp on server
+_serverTimestamp_\
+Message timestamp on server
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createRTCMessageWithFrom:to:type:conversationId:content:" title="createRTCMessageWithFrom:to:type:conversationId:content:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createRTCMessageWithFrom:to:type:conversationId:content:
 
 Create an RTC Messsage
@@ -254,29 +281,33 @@ Create an RTC Messsage
 
 #### Parameters
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*content*  
-    Messsage content
+_content_\
+Messsage content
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" title="createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createRTCMessageWithFrom:to:type:conversationId:content:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:
 
 Create an RTC message received
@@ -285,38 +316,41 @@ Create an RTC message received
 
 #### Parameters
 
-*msgId*  
-    Message ID
+_msgId_\
+Message ID
 
-*from*  
-    Message sender 
+_from_\
+Message sender
 
-*to*  
-    Message receiver
+_to_\
+Message receiver
 
-*type*  
-    Message type
+_type_\
+Message type
 
-*conversationId*  
-    Conversation ID
+_conversationId_\
+Conversation ID
 
-*content*  
-    Messsage content
+_content_\
+Messsage content
 
-*serverTimestamp*  
-    Message timestamp on server
+_serverTimestamp_\
+Message timestamp on server
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/attachment" title="attachment"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="createRTCMessageWithMsgId:from:to:type:conversationId:content:serverTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### attachment
 
 Message attachment
@@ -324,16 +358,21 @@ Message attachment
 `- (BMXMessageAttachment *)attachment`
 
 #### Return Value
-<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
+
+[BMXMessageAttachment](BMXMessageAttachment.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/clientMsgId" title="clientMsgId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="attachment" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### clientMsgId
 
 Client ID of Messsage
@@ -341,16 +380,21 @@ Client ID of Messsage
 `- (long long)clientMsgId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/clientTimestamp" title="clientTimestamp"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="clientMsgId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### clientTimestamp
 
 Local timestamp
@@ -358,16 +402,21 @@ Local timestamp
 `- (long long)clientTimestamp`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/config" title="config"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="clientTimestamp" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### config
 
 Message config
@@ -375,16 +424,21 @@ Message config
 `- (BMXMessageConfig *)config`
 
 #### Return Value
-<a href="../Classes/BMXMessageConfig.md">BMXMessageConfig</a>
+
+[BMXMessageConfig](BMXMessageConfig.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/content" title="content"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="config" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### content
 
 Text content of the message
@@ -392,16 +446,21 @@ Text content of the message
 `- (NSString *)content`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/contentType" title="contentType"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="content" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### contentType
 
 Message content type
@@ -409,16 +468,21 @@ Message content type
 `- (BMXMessage_ContentType)contentType`
 
 #### Return Value
+
 ContentType
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/conversationId" title="conversationId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="contentType" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### conversationId
 
 Conversation ID
@@ -426,25 +490,33 @@ Conversation ID
 `- (long long)conversationId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="conversationId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/deliveryQos" title="deliveryQos"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### deliveryQos
 
 Delivery QOS of message
@@ -452,16 +524,21 @@ Delivery QOS of message
 `- (BMXMessage_DeliveryQos)deliveryQos`
 
 #### Return Value
-<a href="../Constants/BMXMessage_DeliveryQos.md">BMXMessage_DeliveryQos</a>
+
+[BMXMessage\_DeliveryQos](../Constants/BMXMessage_DeliveryQos.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/deliveryStatus" title="deliveryStatus"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="deliveryQos" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### deliveryStatus
 
 Message delivery status
@@ -469,16 +546,21 @@ Message delivery status
 `- (BMXMessage_DeliveryStatus)deliveryStatus`
 
 #### Return Value
-<a href="../Constants/BMXMessage_DeliveryStatus.md">BMXMessage_DeliveryStatus</a>
+
+[BMXMessage\_DeliveryStatus](../Constants/BMXMessage_DeliveryStatus.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/extension" title="extension"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="deliveryStatus" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### extension
 
 Extension information of message
@@ -486,16 +568,21 @@ Extension information of message
 `- (NSString *)extension`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/fromId" title="fromId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="extension" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### fromId
 
 Sender ID
@@ -503,16 +590,21 @@ Sender ID
 `- (long long)fromId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupAckCount" title="groupAckCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="fromId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupAckCount
 
 The number of users who have read the group message
@@ -520,16 +612,21 @@ The number of users who have read the group message
 `- (int)groupAckCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupAckReadAll" title="groupAckReadAll"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupAckReadAll
 
 Whether the group message has been read by everyone
@@ -537,16 +634,21 @@ Whether the group message has been read by everyone
 `- (BOOL)groupAckReadAll`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupAckUnreadCount" title="groupAckUnreadCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckReadAll" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupAckUnreadCount
 
 The number of users who have NOT read the group message
@@ -554,16 +656,21 @@ The number of users who have NOT read the group message
 `- (int)groupAckUnreadCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupPlayAckCount" title="groupPlayAckCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupPlayAckCount
 
 The number of users who have played the group message
@@ -571,16 +678,21 @@ The number of users who have played the group message
 `- (int)groupPlayAckCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupPlayAckReadAll" title="groupPlayAckReadAll"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupPlayAckReadAll
 
 Whether the group message has been played by everyone
@@ -588,16 +700,21 @@ Whether the group message has been played by everyone
 `- (BOOL)groupPlayAckReadAll`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/groupPlayAckUnreadCount" title="groupPlayAckUnreadCount"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### groupPlayAckUnreadCount
 
 The number of users who have NOT played the group message
@@ -605,16 +722,21 @@ The number of users who have NOT played the group message
 `- (int)groupPlayAckUnreadCount`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isDeliveryAcked" title="isDeliveryAcked"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isDeliveryAcked
 
 For the sender, it indicates whether the message has been delivered to the receiver, and for the receiver, it indicates whether the read ACK has been sent.
@@ -622,16 +744,21 @@ For the sender, it indicates whether the message has been delivered to the recei
 `- (BOOL)isDeliveryAcked`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isPlayAcked" title="isPlayAcked"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isPlayAcked
 
 For the sender, it indicates whether the message has been played by the receiver, and for the receiver, it indicates whether the play ACK has been sent.
@@ -639,16 +766,21 @@ For the sender, it indicates whether the message has been played by the receiver
 `- (BOOL)isPlayAcked`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isPlayed" title="isPlayed"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPlayAcked" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isPlayed
 
 Whether the message has been played
@@ -656,16 +788,21 @@ Whether the message has been played
 `- (BOOL)isPlayed`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isPushMessage" title="isPushMessage"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPlayed" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isPushMessage
 
 Is it a push message
@@ -673,16 +810,21 @@ Is it a push message
 `- (BOOL)isPushMessage`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isRead" title="isRead"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isPushMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isRead
 
 Whether the message has been read
@@ -690,16 +832,21 @@ Whether the message has been read
 `- (BOOL)isRead`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isReadAcked" title="isReadAcked"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isRead" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isReadAcked
 
 For the sender, it indicates whether the message has been read by the receiver, and for the receiver, it indicates whether the read ACK has been sent.
@@ -707,16 +854,21 @@ For the sender, it indicates whether the message has been read by the receiver, 
 `- (BOOL)isReadAcked`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/isReceiveMsg" title="isReceiveMsg"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isReadAcked" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### isReceiveMsg
 
 Is it a received message
@@ -724,16 +876,21 @@ Is it a received message
 `- (BOOL)isReceiveMsg`
 
 #### Return Value
+
 BOOL
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/msgId" title="msgId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="isReceiveMsg" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### msgId
 
 Message ID
@@ -741,16 +898,21 @@ Message ID
 `- (long long)msgId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/priority" title="priority"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="msgId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### priority
 
 Message Diffusion Priority
@@ -758,16 +920,21 @@ Message Diffusion Priority
 `- (int)priority`
 
 #### Return Value
+
 int
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/senderName" title="senderName"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="priority" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### senderName
 
 Sender name
@@ -775,46 +942,65 @@ Sender name
 `- (NSString *)senderName`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/serverTimestamp" title="serverTimestamp"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="senderName" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### serverTimestamp
 
-    Message timestamp on server
+```
+Message timestamp on server
+```
 
 `- (long long)serverTimestamp`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setClientTimestamp:" title="setClientTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="serverTimestamp" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setClientTimestamp:
 
-    Set local timestamp of the message
+```
+Set local timestamp of the message
+```
+
 `- (void)setClientTimestamp:(long long)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setConfig:" title="setConfig:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setClientTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setConfig:
 
 Set message config
@@ -822,13 +1008,17 @@ Set message config
 `- (void)setConfig:(BMXMessageConfig *)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setContent:" title="setContent:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setConfig:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setContent:
 
 Set message content
@@ -837,17 +1027,21 @@ Set message content
 
 #### Parameters
 
-*content*  
-    Text content
+_content_\
+Text content
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setDeliveryQos:" title="setDeliveryQos:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setContent:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setDeliveryQos:
 
 Set delivery QOS
@@ -856,17 +1050,21 @@ Set delivery QOS
 
 #### Parameters
 
-*qos*  
-    Delivery QOS  
+_qos_\
+Delivery QOS
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setDeliveryStatus:" title="setDeliveryStatus:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setDeliveryQos:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setDeliveryStatus:
 
 Set delivery status
@@ -874,13 +1072,17 @@ Set delivery status
 `- (void)setDeliveryStatus:(BMXMessage_DeliveryStatus)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setExtension:" title="setExtension:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setDeliveryStatus:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setExtension:
 
 Set extension information
@@ -888,14 +1090,17 @@ Set extension information
 `- (void)setExtension:(NSString *)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setGroupAckCount:" title="setGroupAckCount:"></a>
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setExtension:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsDeliveryAcked:
 
 Set delivery ACK sent or received
@@ -903,13 +1108,17 @@ Set delivery ACK sent or received
 `- (void)setIsDeliveryAcked:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsPlayAcked:" title="setIsPlayAcked:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsDeliveryAcked:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsPlayAcked:
 
 Set play ACK sent or received
@@ -917,13 +1126,17 @@ Set play ACK sent or received
 `- (void)setIsPlayAcked:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsPlayed:" title="setIsPlayed:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsPlayAcked:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsPlayed:
 
 Set play ACK sent or received
@@ -931,13 +1144,17 @@ Set play ACK sent or received
 `- (void)setIsPlayed:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsRead:" title="setIsRead:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsPlayed:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsRead:
 
 Set the message has been read
@@ -945,13 +1162,17 @@ Set the message has been read
 `- (void)setIsRead:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsReadAcked:" title="setIsReadAcked:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsRead:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsReadAcked:
 
 Set read ACK sent or received
@@ -959,13 +1180,17 @@ Set read ACK sent or received
 `- (void)setIsReadAcked:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setIsReceiveMsg:" title="setIsReceiveMsg:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsReadAcked:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setIsReceiveMsg:
 
 Set it as a received message
@@ -973,32 +1198,40 @@ Set it as a received message
 `- (void)setIsReceiveMsg:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setPriority:" title="setPriority:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setIsReceiveMsg:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setPriority:
 
-[0-10]. The priority of messages sent by members in the chat room is 5 by default, and messages can be discarded. For administrators, the priority defaults to 0, and messages are not dropped. Other values can be set as required
+\[0-10]. The priority of messages sent by members in the chat room is 5 by default, and messages can be discarded. For administrators, the priority defaults to 0, and messages are not dropped. Other values can be set as required
 
 `- (void)setPriority:(int)*priority*`
 
 #### Parameters
 
-*priority*  
-    Priority value
+_priority_\
+Priority value
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setPushMessageMode:" title="setPushMessageMode:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setPriority:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setPushMessageMode:
 
 Set it as a push message
@@ -1006,13 +1239,17 @@ Set it as a push message
 `- (void)setPushMessageMode:(BOOL)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setSenderName:" title="setSenderName:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setPushMessageMode:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setSenderName:
 
 Set sender name
@@ -1021,17 +1258,21 @@ Set sender name
 
 #### Parameters
 
-*senderName*  
-    Sender name
+_senderName_\
+Sender name
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/setServerTimestamp:" title="setServerTimestamp:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setSenderName:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### setServerTimestamp:
 
 Set the server-side timestamp of the message
@@ -1039,13 +1280,17 @@ Set the server-side timestamp of the message
 `- (void)setServerTimestamp:(long long)*arg1*`
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/toId" title="toId"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="setServerTimestamp:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### toId
 
 Receiver ID
@@ -1053,16 +1298,21 @@ Receiver ID
 `- (long long)toId`
 
 #### Return Value
+
 long long
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/type" title="type"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="toId" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
+
 ```
+
 ### type
 
 Message type
@@ -1070,12 +1320,16 @@ Message type
 `- (BMXMessage_MessageType)type`
 
 #### Return Value
-<a href="../Constants/BMXMessage_MessageType.md">BMXMessage_MessageType</a>
+
+[BMXMessage\_MessageType](../Constants/BMXMessage_MessageType.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessage",function="type" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessage'></div>
 ```

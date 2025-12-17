@@ -1,18 +1,19 @@
 ---
-description: 讨论了ChatGPT的下一步发展以及GPTs在企业级应用中的重要性
 keywords: ChatGPT, GPTs, AI智能体, IM云服务
+description: 讨论了ChatGPT的下一步发展以及GPTs在企业级应用中的重要性
 ---
+
 # ChatGPT的下一步，AltGPTs
 
 原创 一乐 蓝莺IM _2023-12-12 10:11_ _发表于北京_
 
 > 蓝莺GPT商店发布，AI开发者们可以分享自己定制的Chatbot了！🎉🎉🎉
-> 
+>
 > 阅读本文，跟我们一起回顾生成式AI元年，看GPTs为何如此重要。
-> 
+>
 > 也看看为什么要做企业级GPT，然后聊聊这个新的GPT商店怎么玩 :D
 
-ChatGPT一周年，[以OpenAI的宫斗结束](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652412695&idx=3&sn=21103223bfa7b097758780a9bf8d4594&scene=21#wechat_redirect)，八卦与狗血，一度将DevDay的光芒遮蔽。
+ChatGPT一周年，[以OpenAI的宫斗结束](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==\&mid=2652412695\&idx=3\&sn=21103223bfa7b097758780a9bf8d4594\&scene=21#wechat_redirect)，八卦与狗血，一度将DevDay的光芒遮蔽。
 
 也让很多人忽略了这个可能是OpenAI生态建设的最重要措施，可分享的GPTs和GPT商店。
 
@@ -28,7 +29,7 @@ ChatGPT一周年，[以OpenAI的宫斗结束](https://mp.weixin.qq.com/s?__biz=M
 
 因此，我们发布这个**企业级的GPT商店，蓝莺AltGPTs**，让所有大模型服务都可以有一个GPT商店。
 
-![DALL·E 2023-12-12 04.00.52 - A high-resolution image of 1920x1280 for an AI robot marketplace named 'AltGPTs', with the 'G' in 'AltGPTs' capitalized. ](../assets/articles/autogen-49af4a3b6cad3ab41d234caed5bbf98fa41f68308e4f4da117e35c60585abb4a.jpeg)
+![DALL·E 2023-12-12 04.00.52 - A high-resolution image of 1920x1280 for an AI robot marketplace named 'AltGPTs', with the 'G' in 'AltGPTs' capitalized.](../../.gitbook/assets/autogen-49af4a3b6cad3ab41d234caed5bbf98fa41f68308e4f4da117e35c60585abb4a.jpeg)
 
 看名字你也知道，它也是对Altman的一次致敬。
 
@@ -72,7 +73,7 @@ ChatGPT一周年，[以OpenAI的宫斗结束](https://mp.weixin.qq.com/s?__biz=M
 
 他们欣喜的交流最近用ChatGPT完成的工作，做到的炫酷的事情，但是最后分享的，缺只能是一段冗长的提示词，需要感兴趣的朋友复制粘贴，在自己的OpenAI账号下艰难重现。
 
-让这种情况越来越难的，是AI Agent的热潮，由Lilian Weng的一篇关于[大模型驱动的自治智能体](https://mp.weixin.qq.com/s?__biz=Mzg2OTY0MDk0NQ==&mid=2247502724&idx=1&sn=3d3eea620abbb46f09dc3b7440ac36be&poc_token=HOhLd2WjFJ5od4HrU6BnWKuiko_OkCmD49iRUoju&scene=21#wechat_redirect)文章引爆。
+让这种情况越来越难的，是AI Agent的热潮，由Lilian Weng的一篇关于[大模型驱动的自治智能体](https://mp.weixin.qq.com/s?__biz=Mzg2OTY0MDk0NQ==\&mid=2247502724\&idx=1\&sn=3d3eea620abbb46f09dc3b7440ac36be\&poc_token=HOhLd2WjFJ5od4HrU6BnWKuiko_OkCmD49iRUoju\&scene=21#wechat_redirect)文章引爆。
 
 因为一个完整的AI Agent不是几句提示词所能够代替的，它需要更强的规划以实现完成业务，需要有更大的记忆来存储领域知识，还需要有驱动业务的工具。
 
@@ -138,25 +139,25 @@ GPTs确实可以通过Action来调用外部系统，但是这跟能够支持[千
 
 如前所述，你只需要在创建Chatbot之后，使用生成GPT胶囊即可创建自己的GPT应用。
 
-![生成GPT胶囊](../assets/articles/autogen-3b7216a66b5cd4ac9e8956f463f18b349c188d031dd9ced0c460840a745e4d6b.png)
+![生成GPT胶囊](../../.gitbook/assets/autogen-3b7216a66b5cd4ac9e8956f463f18b349c188d031dd9ced0c460840a745e4d6b.png)
 
 生成时需要填写的主要内容为GPT简介，以及一个GPT开发者的lanying.link地址，方便使用者联系作者，再加上密码和定价：
 
-![配置GPT胶囊](../assets/articles/autogen-57ce7b9e6e58e5601b4ffe0fbdbad668be7f79877020ae54cd5508c435a35d71.png)
+![配置GPT胶囊](../../.gitbook/assets/autogen-57ce7b9e6e58e5601b4ffe0fbdbad668be7f79877020ae54cd5508c435a35d71.png)
 
 之后，GPT开发者即可在创建Chatbot时导入GPT胶囊即可：
 
-![导入GPT胶囊](../assets/articles/autogen-21019880c52176c2726afe539368b0b8b8210e6b5d5d561e0a930f3246c5cac2.png)
+![导入GPT胶囊](../../.gitbook/assets/autogen-21019880c52176c2726afe539368b0b8b8210e6b5d5d561e0a930f3246c5cac2.png)
 
 至于如何创建Chatbot，可直接搜索本公众号视频号查看使用指南。
 
 ## 后记
 
-我们当然也知道，这一年，[多模态技术接连突破](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652386232&idx=2&sn=d3ca4bca6e4ca5d88db6f1486f6807cf&scene=21#wechat_redirect)，[开源大模型能力突飞猛进](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650898655&idx=4&sn=5ecf66dc8e862eb4dbd2d1b241327fdd&scene=21#wechat_redirect)，但我们关注大模型的能力进展，我们更加关注AI带来的新应用机会。
+我们当然也知道，这一年，[多模态技术接连突破](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==\&mid=2652386232\&idx=2\&sn=d3ca4bca6e4ca5d88db6f1486f6807cf\&scene=21#wechat_redirect)，[开源大模型能力突飞猛进](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==\&mid=2650898655\&idx=4\&sn=5ecf66dc8e862eb4dbd2d1b241327fdd\&scene=21#wechat_redirect)，但我们关注大模型的能力进展，我们更加关注AI带来的新应用机会。
 
 如果你有自己的观点或者想参与讨论，欢迎添加「小蓝会聊天」微信进群：
 
-![扫码添加小蓝会聊天](../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
+![扫码添加小蓝会聊天](../../.gitbook/assets/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -170,7 +171,7 @@ GPTs确实可以通过Action来调用外部系统，但是这跟能够支持[千
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../.gitbook/assets/autogen-20269538e00e0ddb6d6943e64f4e231fe573e37747283ab32bae58095aea24f5.jpeg)
 
 ## 参考资料
 

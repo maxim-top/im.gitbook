@@ -1,107 +1,104 @@
 ---
 title: im::floo::floolib::BMXGroupService
-summary: 群组Service 
-
+summary: 群组Service
 ---
 
 # im::floo::floolib::BMXGroupService
 
-
-
-群组Service 
+群组Service
 
 ## Public Classes
 
-|                | Name           |
-| -------------- | -------------- |
-| class | **[CreateGroupOptions](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_1_1_create_group_options.md)** <br>创建群组选项  |
+|       | Name                                                                                                                                              |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| class | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_1_1_create_group_options.md"><strong>CreateGroupOptions</strong></a><br>创建群组选项</p> |
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-delete)**() |
-| [BMXErrorCode] | **[get](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-get)**(BMXGroupList list, boolean forceRefresh)<br>获取群组列表，如果设置了forceRefresh则从服务器拉取  |
-| [BMXErrorCode] | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search)**(BMXGroupList list, boolean forceRefresh)<br>获取群组列表，如果设置了forceRefresh则从服务器拉取  |
-| [BMXErrorCode] | **[fetchGroupsByIdList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-fetchgroupsbyidlist)**(ListOfLongLong groupIdList, BMXGroupList list, boolean forceRefresh)<br>获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取  |
-| [BMXErrorCode] | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search)**(ListOfLongLong groupIdList, BMXGroupList list, boolean forceRefresh)<br>获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取  |
-| [BMXErrorCode] | **[fetchGroupById](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-fetchgroupbyid)**(long groupId, [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean forceRefresh)<br>获取群信息，如果设置了forceRefresh则从服务器拉取  |
-| [BMXErrorCode] | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search)**(long groupId, [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean forceUpdate)<br>获取群信息，如果设置了forceRefresh则从服务器拉取  |
-| [BMXErrorCode] | **[fetchLocalGroupsByName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-fetchlocalgroupsbyname)**(BMXGroupList list, String name)<br>通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组  |
-| [BMXErrorCode] | **[search](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search)**(BMXGroupList list, String name)<br>通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组  |
-| [BMXErrorCode] | **[create](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-create)**(BMXGroupService.CreateGroupOptions options, [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>创建群  |
-| [BMXErrorCode] | **[destroy](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-destroy)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>销毁群  |
-| [BMXErrorCode] | **[join](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-join)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String message)<br>加入一个群，根据群设置可能需要管理员批准  |
-| [BMXErrorCode] | **[leave](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-leave)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>退出群  |
-| [BMXErrorCode] | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinfo)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>获取群详情，从服务端拉取最新信息  |
-| [BMXErrorCode] | **[getMembersNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembersnickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, BMXGroupMemberList list)<br>获取群组成员详细信息  |
-| [BMXErrorCode] | **[getInvitationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinvitationlist)**(GroupInvitaionPage result, String cursor, int pageSize)<br>分页获取群组邀请列表  |
-| [BMXErrorCode] | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getapplicationlist)**(BMXGroupList list, GroupApplicationPage result, String cursor, int pageSize)<br>分页获取群组申请列表  |
-| [BMXErrorCode] | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>分页获取群成员列表，如果设置了forceRefresh则从服务器拉取，单页最大数量为500.  |
-| [BMXErrorCode] | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberList list, boolean forceRefresh)<br>获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人  |
-| [BMXErrorCode] | **[addMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-addmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, String message)<br>添加群成员  |
-| [BMXErrorCode] | **[removeMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removemembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, String reason)<br>删除群成员  |
-| [BMXErrorCode] | **[addAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-addadmins)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong admins, String message)<br>添加管理员  |
-| [BMXErrorCode] | **[removeAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removeadmins)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong admins, String reason)<br>删除管理员  |
-| [BMXErrorCode] | **[getAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getadmins)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberList list, boolean forceRefresh)<br>获取Admins列表，如果设置了forceRefresh则从服务器拉取  |
-| [BMXErrorCode] | **[blockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-blockmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>添加黑名单  |
-| [BMXErrorCode] | **[unblockMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unblockmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>从黑名单删除  |
-| [BMXErrorCode] | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getblocklist)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>分页获取黑名单  |
-| [BMXErrorCode] | **[getBlockList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getblocklist)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberList list, boolean forceRefresh)<br>获取黑名单  |
-| [BMXErrorCode] | **[banMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-banmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration, String reason)<br>禁言  |
-| [BMXErrorCode] | **[banMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-banmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration) |
-| [BMXErrorCode] | **[banGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-bangroup)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long duration)<br>全员禁言，当前服务器时间加上禁言时长后计算出全员禁言到期时间（只有管理和群主可以发言）  |
-| [BMXErrorCode] | **[unbanMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unbanmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members)<br>解除禁言  |
-| [BMXErrorCode] | **[unbanGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unbangroup)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>全员解除禁言  |
-| [BMXErrorCode] | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getbannedmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupBannedMemberResultPage result, String cursor, int pageSize)<br>分页获取禁言列表  |
-| [BMXErrorCode] | **[getBannedMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getbannedmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupBannedMemberList list)<br>获取禁言列表  |
-| [BMXErrorCode] | **[muteMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-mutemessage)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.MsgMuteMode mode)<br>设置是否屏蔽群消息  |
-| [BMXErrorCode] | **[acceptApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-acceptapplication)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId)<br>接受入群申请  |
-| [BMXErrorCode] | **[declineApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineapplication)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId, String reason)<br>拒绝入群申请  |
-| [BMXErrorCode] | **[declineApplication](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineapplication)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId) |
-| [BMXErrorCode] | **[acceptInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-acceptinvitation)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviter)<br>接受入群邀请  |
-| [BMXErrorCode] | **[declineInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineinvitation)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviter, String reason)<br>拒绝入群邀请  |
-| [BMXErrorCode] | **[declineInvitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineinvitation)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviter) |
-| [BMXErrorCode] | **[transferOwner](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-transferowner)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long newOwnerId)<br>转移群主  |
-| [BMXErrorCode] | **[uploadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-uploadsharedfile)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String filePath, String displayName, String extensionName, FileProgressListener arg4)<br>添加群共享文件  |
-| [BMXErrorCode] | **[cancelUploadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-canceluploadsharedfile)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String filePath)<br>取消上传群共享文件  |
-| [BMXErrorCode] | **[removeSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removesharedfile)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>移除群共享文件  |
-| [BMXErrorCode] | **[downloadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-downloadsharedfile)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile, FileProgressListener arg2)<br>下载群共享文件  |
-| [BMXErrorCode] | **[cancelDownloadSharedFile](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-canceldownloadsharedfile)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile)<br>取消下载群共享文件  |
-| [BMXErrorCode] | **[getSharedFilesList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getsharedfileslist)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupSharedFileList list, boolean forceRefresh)<br>获取群共享文件列表  |
-| [BMXErrorCode] | **[changeSharedFileName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-changesharedfilename)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.SharedFile sharedFile, String name)<br>修改群共享文件名称  |
-| [BMXErrorCode] | **[getLatestAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getlatestannouncement)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.Announcement announcement, boolean forceRefresh)<br>获取最新的群公告  |
-| [BMXErrorCode] | **[getAnnouncementList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getannouncementlist)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupAnnouncementList list, boolean forceRefresh)<br>获取群公告列表  |
-| [BMXErrorCode] | **[editAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-editannouncement)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String title, String content)<br>设置群公告  |
-| [BMXErrorCode] | **[deleteAnnouncement](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-deleteannouncement)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long announcementId)<br>删除群公告  |
-| [BMXErrorCode] | **[setName](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String name)<br>设置群名称  |
-| [BMXErrorCode] | **[setDescription](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setdescription)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String description)<br>设置群描述信息  |
-| [BMXErrorCode] | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setextension)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String extension)<br>设置群扩展信息  |
-| [BMXErrorCode] | **[setMyNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setmynickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String nickname)<br>设置在群里的昵称  |
-| [BMXErrorCode] | **[setMsgPushMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setmsgpushmode)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.MsgPushMode mode)<br>设置群消息通知模式  |
-| [BMXErrorCode] | **[setJoinAuthMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setjoinauthmode)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.JoinAuthMode mode)<br>设置入群审批模式  |
-| [BMXErrorCode] | **[setInviteMode](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setinvitemode)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroup.InviteMode mode)<br>设置邀请模式  |
-| [BMXErrorCode] | **[setAllowMemberModify](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setallowmembermodify)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean enable)<br>设置是否允许群成员设置群信息  |
-| [BMXErrorCode] | **[setEnableReadAck](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setenablereadack)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean enable)<br>设置是否开启群消息已读功能  |
-| [BMXErrorCode] | **[setHistoryVisible](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-sethistoryvisible)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean enable)<br>设置群成员是否开可见群历史聊天记录  |
-| [BMXErrorCode] | **[setAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setavatar)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String avatarPath, FileProgressListener arg2)<br>设置群头像  |
-| [BMXErrorCode] | **[downloadAvatar](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-downloadavatar)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, boolean thumbnail, FileProgressListener arg2)<br>下载群头像  |
-| void | **[addGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-addgrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>添加群组变化监听者  |
-| void | **[removeGroupListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removegrouplistener)**([BMXGroupServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md) listener)<br>移除群组变化监听者  |
+|                   | Name                                                                                                                                                                                                                                                                                                                   |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-delete)()                                                                                                                                                                                                                                  |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-get"><strong>get</strong></a>(BMXGroupList list, boolean forceRefresh)<br>获取群组列表，如果设置了forceRefresh则从服务器拉取</p>                                                                                                                               |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(BMXGroupList list, boolean forceRefresh)<br>获取群组列表，如果设置了forceRefresh则从服务器拉取</p>                                                                                                                         |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-fetchgroupsbyidlist"><strong>fetchGroupsByIdList</strong></a>(ListOfLongLong groupIdList, BMXGroupList list, boolean forceRefresh)<br>获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取</p>                                                          |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(ListOfLongLong groupIdList, BMXGroupList list, boolean forceRefresh)<br>获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取</p>                                                                                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-fetchgroupbyid"><strong>fetchGroupById</strong></a>(long groupId, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, boolean forceRefresh)<br>获取群信息，如果设置了forceRefresh则从服务器拉取</p>                                   |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(long groupId, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, boolean forceUpdate)<br>获取群信息，如果设置了forceRefresh则从服务器拉取</p>                                                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-fetchlocalgroupsbyname"><strong>fetchLocalGroupsByName</strong></a>(BMXGroupList list, String name)<br>通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组</p>                                                                                                  |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-search"><strong>search</strong></a>(BMXGroupList list, String name)<br>通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组</p>                                                                                                                                  |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-create"><strong>create</strong></a>(BMXGroupService.CreateGroupOptions options, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>创建群</p>                                                                      |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-destroy"><strong>destroy</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>销毁群</p>                                                                                                                |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-join"><strong>join</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String message)<br>加入一个群，根据群设置可能需要管理员批准</p>                                                                                     |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-leave"><strong>leave</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>退出群</p>                                                                                                                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinfo"><strong>getInfo</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>获取群详情，从服务端拉取最新信息</p>                                                                                                   |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembersnickname"><strong>getMembersNickname</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, BMXGroupMemberList list)<br>获取群组成员详细信息</p>                                  |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinvitationlist"><strong>getInvitationList</strong></a>(GroupInvitaionPage result, String cursor, int pageSize)<br>分页获取群组邀请列表</p>                                                                                                         |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getapplicationlist"><strong>getApplicationList</strong></a>(BMXGroupList list, GroupApplicationPage result, String cursor, int pageSize)<br>分页获取群组申请列表</p>                                                                                  |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembers"><strong>getMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>分页获取群成员列表，如果设置了forceRefresh则从服务器拉取，单页最大数量为500.</p> |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembers"><strong>getMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupMemberList list, boolean forceRefresh)<br>获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人</p>                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-addmembers"><strong>addMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, String message)<br>添加群成员</p>                                                                |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removemembers"><strong>removeMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, String reason)<br>删除群成员</p>                                                           |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-addadmins"><strong>addAdmins</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong admins, String message)<br>添加管理员</p>                                                                   |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removeadmins"><strong>removeAdmins</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong admins, String reason)<br>删除管理员</p>                                                              |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getadmins"><strong>getAdmins</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupMemberList list, boolean forceRefresh)<br>获取Admins列表，如果设置了forceRefresh则从服务器拉取</p>                             |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-blockmembers"><strong>blockMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>添加黑名单</p>                                                                            |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unblockmembers"><strong>unblockMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>从黑名单删除</p>                                                                       |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getblocklist"><strong>getBlockList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>分页获取黑名单</p>                                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getblocklist"><strong>getBlockList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupMemberList list, boolean forceRefresh)<br>获取黑名单</p>                                                     |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-banmembers"><strong>banMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members, long duration, String reason)<br>禁言</p>                                                     |
+| \[BMXErrorCode]   | [**banMembers**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-banmembers)([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, long duration)                                                                                                                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-bangroup"><strong>banGroup</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long duration)<br>全员禁言，当前服务器时间加上禁言时长后计算出全员禁言到期时间（只有管理和群主可以发言）</p>                                                       |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unbanmembers"><strong>unbanMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, ListOfLongLong members)<br>解除禁言</p>                                                                             |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-unbangroup"><strong>unbanGroup</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group)<br>全员解除禁言</p>                                                                                                       |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getbannedmembers"><strong>getBannedMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupBannedMemberResultPage result, String cursor, int pageSize)<br>分页获取禁言列表</p>                     |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getbannedmembers"><strong>getBannedMembers</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupBannedMemberList list)<br>获取禁言列表</p>                                                            |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-mutemessage"><strong>muteMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.MsgMuteMode mode)<br>设置是否屏蔽群消息</p>                                                                       |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-acceptapplication"><strong>acceptApplication</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long applicantId)<br>接受入群申请</p>                                                                       |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineapplication"><strong>declineApplication</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long applicantId, String reason)<br>拒绝入群申请</p>                                                      |
+| \[BMXErrorCode]   | [**declineApplication**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineapplication)([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long applicantId)                                                                                                                         |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-acceptinvitation"><strong>acceptInvitation</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long inviter)<br>接受入群邀请</p>                                                                             |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineinvitation"><strong>declineInvitation</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long inviter, String reason)<br>拒绝入群邀请</p>                                                            |
+| \[BMXErrorCode]   | [**declineInvitation**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-declineinvitation)([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, long inviter)                                                                                                                               |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-transferowner"><strong>transferOwner</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long newOwnerId)<br>转移群主</p>                                                                                  |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-uploadsharedfile"><strong>uploadSharedFile</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String filePath, String displayName, String extensionName, FileProgressListener arg4)<br>添加群共享文件</p>    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-canceluploadsharedfile"><strong>cancelUploadSharedFile</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String filePath)<br>取消上传群共享文件</p>                                                           |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removesharedfile"><strong>removeSharedFile</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>移除群共享文件</p>                                                          |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-downloadsharedfile"><strong>downloadSharedFile</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile, FileProgressListener arg2)<br>下载群共享文件</p>                           |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-canceldownloadsharedfile"><strong>cancelDownloadSharedFile</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile)<br>取消下载群共享文件</p>                                        |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getsharedfileslist"><strong>getSharedFilesList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupSharedFileList list, boolean forceRefresh)<br>获取群共享文件列表</p>                                 |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-changesharedfilename"><strong>changeSharedFileName</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.SharedFile sharedFile, String name)<br>修改群共享文件名称</p>                                   |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getlatestannouncement"><strong>getLatestAnnouncement</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.Announcement announcement, boolean forceRefresh)<br>获取最新的群公告</p>                     |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getannouncementlist"><strong>getAnnouncementList</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroupAnnouncementList list, boolean forceRefresh)<br>获取群公告列表</p>                               |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-editannouncement"><strong>editAnnouncement</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String title, String content)<br>设置群公告</p>                                                              |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-deleteannouncement"><strong>deleteAnnouncement</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, long announcementId)<br>删除群公告</p>                                                                   |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setname"><strong>setName</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String name)<br>设置群名称</p>                                                                                                 |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setdescription"><strong>setDescription</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String description)<br>设置群描述信息</p>                                                                          |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setextension"><strong>setExtension</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String extension)<br>设置群扩展信息</p>                                                                                |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setmynickname"><strong>setMyNickname</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String nickname)<br>设置在群里的昵称</p>                                                                              |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setmsgpushmode"><strong>setMsgPushMode</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.MsgPushMode mode)<br>设置群消息通知模式</p>                                                                 |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setjoinauthmode"><strong>setJoinAuthMode</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.JoinAuthMode mode)<br>设置入群审批模式</p>                                                               |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setinvitemode"><strong>setInviteMode</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, BMXGroup.InviteMode mode)<br>设置邀请模式</p>                                                                       |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setallowmembermodify"><strong>setAllowMemberModify</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, boolean enable)<br>设置是否允许群成员设置群信息</p>                                                           |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setenablereadack"><strong>setEnableReadAck</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, boolean enable)<br>设置是否开启群消息已读功能</p>                                                                    |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-sethistoryvisible"><strong>setHistoryVisible</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, boolean enable)<br>设置群成员是否开可见群历史聊天记录</p>                                                              |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-setavatar"><strong>setAvatar</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, String avatarPath, FileProgressListener arg2)<br>设置群头像</p>                                                            |
+| \[BMXErrorCode]   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-downloadavatar"><strong>downloadAvatar</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group.md">BMXGroup</a> group, boolean thumbnail, FileProgressListener arg2)<br>下载群头像</p>                                                  |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-addgrouplistener"><strong>addGroupListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md">BMXGroupServiceListener</a> listener)<br>添加群组变化监听者</p>                                                     |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-removegrouplistener"><strong>removeGroupListener</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_group_service_listener.md">BMXGroupServiceListener</a> listener)<br>移除群组变化监听者</p>                                               |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-bmxgroupservice)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-finalize)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getcptr)**([BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) obj) |
+|      | Name                                                                                                                                                                |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [**BMXGroupService**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-bmxgroupservice)(long cPtr, boolean cMemoryOwn)                                |
+| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-finalize)()                                                                           |
+| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getcptr)([BMXGroupService](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md) obj) |
 
 ## Protected Attributes
 
-|                | Name           |
-| -------------- | -------------- |
-| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#variable-swigcmemown)**  |
+|                   | Name                                                                                          |
+| ----------------- | --------------------------------------------------------------------------------------------- |
+| transient boolean | [**swigCMemOwn**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#variable-swigcmemown) |
 
 ## Public Functions Documentation
 
@@ -111,11 +108,14 @@ summary: 群组Service
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="delete" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function get
 
 ```java
@@ -125,20 +125,23 @@ inline BMXErrorCode get(
 )
 ```
 
-获取群组列表，如果设置了forceRefresh则从服务器拉取 
+获取群组列表，如果设置了forceRefresh则从服务器拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** 群组id列表，传入空列表函数返回后从此处获取返回的群组id列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **list** 群组id列表，传入空列表函数返回后从此处获取返回的群组id列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="get" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function search
 
 ```java
@@ -148,20 +151,23 @@ inline BMXErrorCode search(
 )
 ```
 
-获取群组列表，如果设置了forceRefresh则从服务器拉取 
+获取群组列表，如果设置了forceRefresh则从服务器拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** 群组id列表，传入空列表函数返回后从此处获取返回的群组id列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **list** 群组id列表，传入空列表函数返回后从此处获取返回的群组id列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function fetchGroupsByIdList
 
 ```java
@@ -172,21 +178,24 @@ inline BMXErrorCode fetchGroupsByIdList(
 )
 ```
 
-获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取 
+获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **groupIdList** 群组id列表 
-  * **list** 群组详细信息列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **groupIdList** 群组id列表
+* **list** 群组详细信息列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="fetchGroupsByIdList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function search
 
 ```java
@@ -197,21 +206,24 @@ inline BMXErrorCode search(
 )
 ```
 
-获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取 
+获取传入群组id的群组信息列表，如果设置了forceRefresh则从服务器拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **groupIdList** 群组id列表 
-  * **list** 群组详细信息列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **groupIdList** 群组id列表
+* **list** 群组详细信息列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function fetchGroupById
 
 ```java
@@ -222,21 +234,24 @@ inline BMXErrorCode fetchGroupById(
 )
 ```
 
-获取群信息，如果设置了forceRefresh则从服务器拉取 
+获取群信息，如果设置了forceRefresh则从服务器拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **groupId** 要搜索的群组id 
-  * **group** 搜索返回的群组信息，传入指向为空的shared_ptr对象函数执行后从此获取返回结果 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **groupId** 要搜索的群组id
+* **group** 搜索返回的群组信息，传入指向为空的shared\_ptr对象函数执行后从此获取返回结果
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="fetchGroupById" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function search
 
 ```java
@@ -247,21 +262,24 @@ inline BMXErrorCode search(
 )
 ```
 
-获取群信息，如果设置了forceRefresh则从服务器拉取 
+获取群信息，如果设置了forceRefresh则从服务器拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **groupId** 要搜索的群组id 
-  * **group** 搜索返回的群组信息，传入指向为空的shared_ptr对象函数执行后从此获取返回结果 
-  * **forceUpdate** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **groupId** 要搜索的群组id
+* **group** 搜索返回的群组信息，传入指向为空的shared\_ptr对象函数执行后从此获取返回结果
+* **forceUpdate** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function fetchLocalGroupsByName
 
 ```java
@@ -271,20 +289,23 @@ inline BMXErrorCode fetchLocalGroupsByName(
 )
 ```
 
-通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组 
+通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** 搜索结果返回的群列表信息 
-  * **name** 查询的群名称关键字 
+* **list** 搜索结果返回的群列表信息
+* **name** 查询的群名称关键字
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="fetchLocalGroupsByName" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function search
 
 ```java
@@ -294,20 +315,23 @@ inline BMXErrorCode search(
 )
 ```
 
-通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组 
+通过群名称查询本地群信息，从本地数据库中通过群名称查询获取群组
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** 搜索结果返回的群列表信息 
-  * **name** 查询的群名称关键字 
+* **list** 搜索结果返回的群列表信息
+* **name** 查询的群名称关键字
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="search" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function create
 
 ```java
@@ -317,20 +341,23 @@ inline BMXErrorCode create(
 )
 ```
 
-创建群 
+创建群
 
-**Parameters**: 
+**Parameters**:
 
-  * **options** 创建群组时传入的参数选项 
-  * **group** 创建好的群，传入指向为空的shared_ptr对象函数执行后从此获取返回结果 
+* **options** 创建群组时传入的参数选项
+* **group** 创建好的群，传入指向为空的shared\_ptr对象函数执行后从此获取返回结果
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="create" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function destroy
 
 ```java
@@ -339,19 +366,22 @@ inline BMXErrorCode destroy(
 )
 ```
 
-销毁群 
+销毁群
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 要销毁的群组 
+* **group** 要销毁的群组
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="destroy" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function join
 
 ```java
@@ -361,20 +391,23 @@ inline BMXErrorCode join(
 )
 ```
 
-加入一个群，根据群设置可能需要管理员批准 
+加入一个群，根据群设置可能需要管理员批准
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 要加入的群组 
-  * **message** 申请入群的信息 
+* **group** 要加入的群组
+* **message** 申请入群的信息
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="join" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function leave
 
 ```java
@@ -383,19 +416,22 @@ inline BMXErrorCode leave(
 )
 ```
 
-退出群 
+退出群
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 要退出的群组 
+* **group** 要退出的群组
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="leave" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getInfo
 
 ```java
@@ -404,19 +440,22 @@ inline BMXErrorCode getInfo(
 )
 ```
 
-获取群详情，从服务端拉取最新信息 
+获取群详情，从服务端拉取最新信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 要获取群组最新信息的群组 
+* **group** 要获取群组最新信息的群组
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getInfo" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getMembersNickname
 
 ```java
@@ -427,21 +466,24 @@ inline BMXErrorCode getMembersNickname(
 )
 ```
 
-获取群组成员详细信息 
+获取群组成员详细信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **members** 要获取群组成员信息详情的群成员id 
-  * **list** 返回的群成员详细，传入空列表在函数操作后从此处获取群成员详细信息列表 
+* **group** 进行操作的群组
+* **members** 要获取群组成员信息详情的群成员id
+* **list** 返回的群成员详细，传入空列表在函数操作后从此处获取群成员详细信息列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembersNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getInvitationList
 
 ```java
@@ -452,21 +494,24 @@ inline BMXErrorCode getInvitationList(
 )
 ```
 
-分页获取群组邀请列表 
+分页获取群组邀请列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **result** 分页获取的群组邀请列表，传入指向为空的shared_ptr对象函数执行后从此处获取结果 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
+* **result** 分页获取的群组邀请列表，传入指向为空的shared\_ptr对象函数执行后从此处获取结果
+* **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+* **pageSize** 分页大小
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getInvitationList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getApplicationList
 
 ```java
@@ -478,22 +523,25 @@ inline BMXErrorCode getApplicationList(
 )
 ```
 
-分页获取群组申请列表 
+分页获取群组申请列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **list** 需要获取群组申请列表信息的群组id列表 
-  * **result** 分页获取的群组申请列表，传入指向为空的shared_ptr对象函数执行后从此处获取结果 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
+* **list** 需要获取群组申请列表信息的群组id列表
+* **result** 分页获取的群组申请列表，传入指向为空的shared\_ptr对象函数执行后从此处获取结果
+* **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+* **pageSize** 分页大小
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getApplicationList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getMembers
 
 ```java
@@ -505,22 +553,25 @@ inline BMXErrorCode getMembers(
 )
 ```
 
-分页获取群成员列表，如果设置了forceRefresh则从服务器拉取，单页最大数量为500. 
+分页获取群成员列表，如果设置了forceRefresh则从服务器拉取，单页最大数量为500.
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **result** 分页获取的群成员列表，传入指向为空的shared_ptr对象函数执行后从此处获取结果 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
+* **group** 进行操作的群组
+* **result** 分页获取的群成员列表，传入指向为空的shared\_ptr对象函数执行后从此处获取结果
+* **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+* **pageSize** 分页大小
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getMembers
 
 ```java
@@ -531,21 +582,24 @@ inline BMXErrorCode getMembers(
 )
 ```
 
-获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人 
+获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **list** 群成员列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **group** 进行操作的群组
+* **list** 群成员列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function addMembers
 
 ```java
@@ -556,21 +610,24 @@ inline BMXErrorCode addMembers(
 )
 ```
 
-添加群成员 
+添加群成员
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **members** 要添加进群的成员id列表 
-  * **message** 添加成员原因信息 
+* **group** 进行操作的群组
+* **members** 要添加进群的成员id列表
+* **message** 添加成员原因信息
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="addMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function removeMembers
 
 ```java
@@ -581,21 +638,24 @@ inline BMXErrorCode removeMembers(
 )
 ```
 
-删除群成员 
+删除群成员
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **members** 要删除的群组成员id列表 
-  * **reason** 删除的原因 
+* **group** 进行操作的群组
+* **members** 要删除的群组成员id列表
+* **reason** 删除的原因
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function addAdmins
 
 ```java
@@ -606,21 +666,24 @@ inline BMXErrorCode addAdmins(
 )
 ```
 
-添加管理员 
+添加管理员
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **admins** 要添加为管理员的成员id列表 
-  * **message** 添加为管理员的原因 
+* **group** 进行操作的群组
+* **admins** 要添加为管理员的成员id列表
+* **message** 添加为管理员的原因
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="addAdmins" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function removeAdmins
 
 ```java
@@ -631,21 +694,24 @@ inline BMXErrorCode removeAdmins(
 )
 ```
 
-删除管理员 
+删除管理员
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **admins** 要从管理员移除的成员id列表 
-  * **reason** 要移除管理员的原因 
+* **group** 进行操作的群组
+* **admins** 要从管理员移除的成员id列表
+* **reason** 要移除管理员的原因
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeAdmins" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getAdmins
 
 ```java
@@ -656,21 +722,24 @@ inline BMXErrorCode getAdmins(
 )
 ```
 
-获取Admins列表，如果设置了forceRefresh则从服务器拉取 
+获取Admins列表，如果设置了forceRefresh则从服务器拉取
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **list** 群管理员列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **group** 进行操作的群组
+* **list** 群管理员列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getAdmins" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function blockMembers
 
 ```java
@@ -680,20 +749,23 @@ inline BMXErrorCode blockMembers(
 )
 ```
 
-添加黑名单 
+添加黑名单
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **members** 要加入黑名单的群成员id列表 
+* **group** 进行操作的群组
+* **members** 要加入黑名单的群成员id列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="blockMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function unblockMembers
 
 ```java
@@ -703,20 +775,23 @@ inline BMXErrorCode unblockMembers(
 )
 ```
 
-从黑名单删除 
+从黑名单删除
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **members** 从黑名单移除的用户id列表 
+* **group** 进行操作的群组
+* **members** 从黑名单移除的用户id列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="unblockMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getBlockList
 
 ```java
@@ -728,22 +803,25 @@ inline BMXErrorCode getBlockList(
 )
 ```
 
-分页获取黑名单 
+分页获取黑名单
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **result** 分页获取的黑名单列表，传入指向为空的shared_ptr对象函数执行后从此处获取结果 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
+* **group** 进行操作的群组
+* **result** 分页获取的黑名单列表，传入指向为空的shared\_ptr对象函数执行后从此处获取结果
+* **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+* **pageSize** 分页大小
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getBlockList
 
 ```java
@@ -754,21 +832,24 @@ inline BMXErrorCode getBlockList(
 )
 ```
 
-获取黑名单 
+获取黑名单
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **list** 群黑名单列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **group** 进行操作的群组
+* **list** 群黑名单列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBlockList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function banMembers
 
 ```java
@@ -780,22 +861,25 @@ inline BMXErrorCode banMembers(
 )
 ```
 
-禁言 
+禁言
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **members** 被禁言的群成员id列表 
-  * **duration** 禁言时长 
-  * **reason** 禁言原因 
+* **group** 进行操作的群组
+* **members** 被禁言的群成员id列表
+* **duration** 禁言时长
+* **reason** 禁言原因
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="banMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function banMembers
 
 ```java
@@ -806,11 +890,14 @@ inline BMXErrorCode banMembers(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="banMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function banGroup
 
 ```java
@@ -820,20 +907,23 @@ inline BMXErrorCode banGroup(
 )
 ```
 
-全员禁言，当前服务器时间加上禁言时长后计算出全员禁言到期时间（只有管理和群主可以发言） 
+全员禁言，当前服务器时间加上禁言时长后计算出全员禁言到期时间（只有管理和群主可以发言）
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **duration** 禁言时长(分钟) 
+* **group** 进行操作的群组
+* **duration** 禁言时长(分钟)
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="banGroup" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function unbanMembers
 
 ```java
@@ -843,20 +933,23 @@ inline BMXErrorCode unbanMembers(
 )
 ```
 
-解除禁言 
+解除禁言
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **members** 被解除禁言的群成员id列表 
+* **group** 进行操作的群组
+* **members** 被解除禁言的群成员id列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="unbanMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function unbanGroup
 
 ```java
@@ -865,19 +958,22 @@ inline BMXErrorCode unbanGroup(
 )
 ```
 
-全员解除禁言 
+全员解除禁言
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
+* **group** 进行操作的群组
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="unbanGroup" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getBannedMembers
 
 ```java
@@ -889,22 +985,25 @@ inline BMXErrorCode getBannedMembers(
 )
 ```
 
-分页获取禁言列表 
+分页获取禁言列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **result** 分页获取的禁言列表，传入指向为空的shared_ptr对象函数执行后从此处获取结果 
-  * **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor 
-  * **pageSize** 分页大小 
+* **group** 进行操作的群组
+* **result** 分页获取的禁言列表，传入指向为空的shared\_ptr对象函数执行后从此处获取结果
+* **cursor** 分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+* **pageSize** 分页大小
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getBannedMembers
 
 ```java
@@ -914,20 +1013,23 @@ inline BMXErrorCode getBannedMembers(
 )
 ```
 
-获取禁言列表 
+获取禁言列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **list** 群禁言列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
+* **group** 进行操作的群组
+* **list** 群禁言列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getBannedMembers" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function muteMessage
 
 ```java
@@ -937,20 +1039,23 @@ inline BMXErrorCode muteMessage(
 )
 ```
 
-设置是否屏蔽群消息 
+设置是否屏蔽群消息
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **mode** 群屏蔽的模式 
+* **group** 进行操作的群组
+* **mode** 群屏蔽的模式
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="muteMessage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function acceptApplication
 
 ```java
@@ -960,20 +1065,23 @@ inline BMXErrorCode acceptApplication(
 )
 ```
 
-接受入群申请 
+接受入群申请
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **applicantId** 申请进群的用户id 
+* **group** 进行操作的群组
+* **applicantId** 申请进群的用户id
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="acceptApplication" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function declineApplication
 
 ```java
@@ -984,21 +1092,24 @@ inline BMXErrorCode declineApplication(
 )
 ```
 
-拒绝入群申请 
+拒绝入群申请
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **applicantId** 申请进群的用户id 
-  * **reason** 拒绝的原因 
+* **group** 进行操作的群组
+* **applicantId** 申请进群的用户id
+* **reason** 拒绝的原因
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineApplication" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function declineApplication
 
 ```java
@@ -1008,11 +1119,14 @@ inline BMXErrorCode declineApplication(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineApplication" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function acceptInvitation
 
 ```java
@@ -1022,20 +1136,23 @@ inline BMXErrorCode acceptInvitation(
 )
 ```
 
-接受入群邀请 
+接受入群邀请
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **inviter** 邀请者id 
+* **group** 进行操作的群组
+* **inviter** 邀请者id
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="acceptInvitation" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function declineInvitation
 
 ```java
@@ -1046,21 +1163,24 @@ inline BMXErrorCode declineInvitation(
 )
 ```
 
-拒绝入群邀请 
+拒绝入群邀请
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **inviter** 邀请者id 
-  * **reason** 拒绝的原因 
+* **group** 进行操作的群组
+* **inviter** 邀请者id
+* **reason** 拒绝的原因
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineInvitation" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function declineInvitation
 
 ```java
@@ -1070,11 +1190,14 @@ inline BMXErrorCode declineInvitation(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="declineInvitation" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function transferOwner
 
 ```java
@@ -1084,20 +1207,23 @@ inline BMXErrorCode transferOwner(
 )
 ```
 
-转移群主 
+转移群主
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **newOwnerId** 转让为新群主的用户id 
+* **group** 进行操作的群组
+* **newOwnerId** 转让为新群主的用户id
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="transferOwner" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function uploadSharedFile
 
 ```java
@@ -1110,23 +1236,26 @@ inline BMXErrorCode uploadSharedFile(
 )
 ```
 
-添加群共享文件 
+添加群共享文件
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **filePath** 文件的本地路径 
-  * **displayName** 文件的展示名 
-  * **extensionName** 文件的扩展名 
-  * **arg4** 上传回调函数 
+* **group** 进行操作的群组
+* **filePath** 文件的本地路径
+* **displayName** 文件的展示名
+* **extensionName** 文件的扩展名
+* **arg4** 上传回调函数
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="uploadSharedFile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function cancelUploadSharedFile
 
 ```java
@@ -1136,20 +1265,23 @@ inline BMXErrorCode cancelUploadSharedFile(
 )
 ```
 
-取消上传群共享文件 
+取消上传群共享文件
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **filePath** 文件的本地路径 
+* **group** 进行操作的群组
+* **filePath** 文件的本地路径
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="cancelUploadSharedFile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function removeSharedFile
 
 ```java
@@ -1159,20 +1291,23 @@ inline BMXErrorCode removeSharedFile(
 )
 ```
 
-移除群共享文件 
+移除群共享文件
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **sharedFile** 删除的群共享文件 
+* **group** 进行操作的群组
+* **sharedFile** 删除的群共享文件
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeSharedFile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function downloadSharedFile
 
 ```java
@@ -1183,21 +1318,24 @@ inline BMXErrorCode downloadSharedFile(
 )
 ```
 
-下载群共享文件 
+下载群共享文件
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **sharedFile** 下载的群共享文件 
-  * **arg2** 下载回调函数 
+* **group** 进行操作的群组
+* **sharedFile** 下载的群共享文件
+* **arg2** 下载回调函数
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="downloadSharedFile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function cancelDownloadSharedFile
 
 ```java
@@ -1207,20 +1345,23 @@ inline BMXErrorCode cancelDownloadSharedFile(
 )
 ```
 
-取消下载群共享文件 
+取消下载群共享文件
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **sharedFile** 下载的群共享文件 
+* **group** 进行操作的群组
+* **sharedFile** 下载的群共享文件
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="cancelDownloadSharedFile" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getSharedFilesList
 
 ```java
@@ -1231,21 +1372,24 @@ inline BMXErrorCode getSharedFilesList(
 )
 ```
 
-获取群共享文件列表 
+获取群共享文件列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **list** 群共享文件列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **group** 进行操作的群组
+* **list** 群共享文件列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getSharedFilesList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function changeSharedFileName
 
 ```java
@@ -1256,21 +1400,24 @@ inline BMXErrorCode changeSharedFileName(
 )
 ```
 
-修改群共享文件名称 
+修改群共享文件名称
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **sharedFile** 进行更改的群共享文件 
-  * **name** 修改的群共享文件名称 
+* **group** 进行操作的群组
+* **sharedFile** 进行更改的群共享文件
+* **name** 修改的群共享文件名称
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="changeSharedFileName" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getLatestAnnouncement
 
 ```java
@@ -1281,21 +1428,24 @@ inline BMXErrorCode getLatestAnnouncement(
 )
 ```
 
-获取最新的群公告 
+获取最新的群公告
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **announcement** 最新的群组公告，传入指向为空的shared_ptr对象函数返回后从此处获取最新的群组公告 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **group** 进行操作的群组
+* **announcement** 最新的群组公告，传入指向为空的shared\_ptr对象函数返回后从此处获取最新的群组公告
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getLatestAnnouncement" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getAnnouncementList
 
 ```java
@@ -1306,21 +1456,24 @@ inline BMXErrorCode getAnnouncementList(
 )
 ```
 
-获取群公告列表 
+获取群公告列表
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **list** 群公告列表，传入空列表函数返回后从此处获取返回的群组详细信息列表 
-  * **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取 
+* **group** 进行操作的群组
+* **list** 群公告列表，传入空列表函数返回后从此处获取返回的群组详细信息列表
+* **forceRefresh** 设置为true强制从服务器获取，本地获取失败的情况sdk会自动从服务器获取
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getAnnouncementList" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function editAnnouncement
 
 ```java
@@ -1331,21 +1484,24 @@ inline BMXErrorCode editAnnouncement(
 )
 ```
 
-设置群公告 
+设置群公告
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **title** 群公告的标题 
-  * **content** 群公告的内容 
+* **group** 进行操作的群组
+* **title** 群公告的标题
+* **content** 群公告的内容
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="editAnnouncement" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function deleteAnnouncement
 
 ```java
@@ -1355,20 +1511,23 @@ inline BMXErrorCode deleteAnnouncement(
 )
 ```
 
-删除群公告 
+删除群公告
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **announcementId** 删除的群公告id 
+* **group** 进行操作的群组
+* **announcementId** 删除的群公告id
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="deleteAnnouncement" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setName
 
 ```java
@@ -1378,20 +1537,23 @@ inline BMXErrorCode setName(
 )
 ```
 
-设置群名称 
+设置群名称
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **name** 群组名称 
+* **group** 进行操作的群组
+* **name** 群组名称
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setName" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setDescription
 
 ```java
@@ -1401,20 +1563,23 @@ inline BMXErrorCode setDescription(
 )
 ```
 
-设置群描述信息 
+设置群描述信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **description** 群组描述 
+* **group** 进行操作的群组
+* **description** 群组描述
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setDescription" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setExtension
 
 ```java
@@ -1424,20 +1589,23 @@ inline BMXErrorCode setExtension(
 )
 ```
 
-设置群扩展信息 
+设置群扩展信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **extension** 群组的扩展信息 
+* **group** 进行操作的群组
+* **extension** 群组的扩展信息
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setExtension" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setMyNickname
 
 ```java
@@ -1447,20 +1615,23 @@ inline BMXErrorCode setMyNickname(
 )
 ```
 
-设置在群里的昵称 
+设置在群里的昵称
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **nickname** 用户在群组内的昵称 
+* **group** 进行操作的群组
+* **nickname** 用户在群组内的昵称
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setMyNickname" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setMsgPushMode
 
 ```java
@@ -1470,20 +1641,23 @@ inline BMXErrorCode setMsgPushMode(
 )
 ```
 
-设置群消息通知模式 
+设置群消息通知模式
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **mode** 群消息通知模式 
+* **group** 进行操作的群组
+* **mode** 群消息通知模式
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setMsgPushMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setJoinAuthMode
 
 ```java
@@ -1493,20 +1667,23 @@ inline BMXErrorCode setJoinAuthMode(
 )
 ```
 
-设置入群审批模式 
+设置入群审批模式
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **mode** 入群审批模式 
+* **group** 进行操作的群组
+* **mode** 入群审批模式
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setJoinAuthMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setInviteMode
 
 ```java
@@ -1516,20 +1693,23 @@ inline BMXErrorCode setInviteMode(
 )
 ```
 
-设置邀请模式 
+设置邀请模式
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **mode** 群组的邀请模式 
+* **group** 进行操作的群组
+* **mode** 群组的邀请模式
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setInviteMode" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setAllowMemberModify
 
 ```java
@@ -1539,20 +1719,23 @@ inline BMXErrorCode setAllowMemberModify(
 )
 ```
 
-设置是否允许群成员设置群信息 
+设置是否允许群成员设置群信息
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **enable** 是否允许操作 
+* **group** 进行操作的群组
+* **enable** 是否允许操作
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setAllowMemberModify" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setEnableReadAck
 
 ```java
@@ -1562,20 +1745,23 @@ inline BMXErrorCode setEnableReadAck(
 )
 ```
 
-设置是否开启群消息已读功能 
+设置是否开启群消息已读功能
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **enable** 是否开启 
+* **group** 进行操作的群组
+* **enable** 是否开启
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setEnableReadAck" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setHistoryVisible
 
 ```java
@@ -1585,20 +1771,23 @@ inline BMXErrorCode setHistoryVisible(
 )
 ```
 
-设置群成员是否开可见群历史聊天记录 
+设置群成员是否开可见群历史聊天记录
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **enable** 是否开启 
+* **group** 进行操作的群组
+* **enable** 是否开启
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setHistoryVisible" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function setAvatar
 
 ```java
@@ -1609,21 +1798,24 @@ inline BMXErrorCode setAvatar(
 )
 ```
 
-设置群头像 
+设置群头像
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **avatarPath** 群头像文件的本地路径 
-  * **arg2** 上传回调函数 
+* **group** 进行操作的群组
+* **avatarPath** 群头像文件的本地路径
+* **arg2** 上传回调函数
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="setAvatar" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function downloadAvatar
 
 ```java
@@ -1634,21 +1826,24 @@ inline BMXErrorCode downloadAvatar(
 )
 ```
 
-下载群头像 
+下载群头像
 
-**Parameters**: 
+**Parameters**:
 
-  * **group** 进行操作的群组 
-  * **thumbnail** 设置为true下载缩略图，false下载原图 
-  * **arg2** 下载回调函数 
+* **group** 进行操作的群组
+* **thumbnail** 设置为true下载缩略图，false下载原图
+* **arg2** 下载回调函数
 
-
-**Return**: [BMXErrorCode]
+**Return**: \[BMXErrorCode]
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="downloadAvatar" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function addGroupListener
 
 ```java
@@ -1657,17 +1852,20 @@ inline void addGroupListener(
 )
 ```
 
-添加群组变化监听者 
+添加群组变化监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 群组变化监听者 
-
+* **listener** 群组变化监听者
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="addGroupListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function removeGroupListener
 
 ```java
@@ -1676,19 +1874,22 @@ inline void removeGroupListener(
 )
 ```
 
-移除群组变化监听者 
+移除群组变化监听者
 
-**Parameters**: 
+**Parameters**:
 
-  * **listener** 群组变化监听者 
-
+* **listener** 群组变化监听者
 
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="removeGroupListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function BMXGroupService
 
 ```java
@@ -1698,22 +1899,28 @@ inline BMXGroupService(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="BMXGroupService" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="finalize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
+
 ```
+
 ### function getCPtr
 
 ```java
@@ -1721,7 +1928,6 @@ static inline long getCPtr(
     BMXGroupService obj
 )
 ```
-
 
 ## Protected Attributes Documentation
 
@@ -1731,11 +1937,13 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getCPtr" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXGroupService'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:18:31 +0800

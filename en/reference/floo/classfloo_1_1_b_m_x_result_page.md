@@ -1,15 +1,11 @@
 ---
 title: floo::BMXResultPage
-summary: Paged result 
-
+summary: Paged result
 ---
 
 # floo::BMXResultPage
 
-
-
-Paged result  [More...](#detailed-description)
-
+Paged result [More...](classfloo_1_1_b_m_x_result_page.md#detailed-description)
 
 `#include <bmx_result_page.h>`
 
@@ -17,19 +13,19 @@ Inherits from BMXBaseObject
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**()<br>Constructor  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const std::vector< T > & result, int64_t offset)<br>Constructor  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const std::vector< T > & result, std::string cursor)<br>Constructor  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**(const [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & from)<br>Constructor  |
-| | **[BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage)**([BMXResultPage](classfloo_1_1_b_m_x_result_page.md) && from)<br>Constructor  |
-| [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & | **[operator=](classfloo_1_1_b_m_x_result_page.md#function-operator=)**(const [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & from)<br>Assignment function  |
-| virtual | **[~BMXResultPage](classfloo_1_1_b_m_x_result_page.md#function-~bmxresultpage)**()<br>Destructor  |
-| size_t | **[count](classfloo_1_1_b_m_x_result_page.md#function-count)**() const<br>Size of vector object-array  |
-| int64_t | **[offset](classfloo_1_1_b_m_x_result_page.md#function-offset)**() const<br>Offset  |
-| const std::string & | **[cursor](classfloo_1_1_b_m_x_result_page.md#function-cursor)**() const<br>cursor offset  |
-| const std::vector< T > & | **[result](classfloo_1_1_b_m_x_result_page.md#function-result)**() const<br>vector object-array  |
+|                                                       | Name                                                                                                                                                                                                           |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                       | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage"><strong>BMXResultPage</strong></a>()<br>Constructor</p>                                                                                 |
+|                                                       | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage"><strong>BMXResultPage</strong></a>(const std::vector&#x3C; T > &#x26; result, int64_t offset)<br>Constructor</p>                        |
+|                                                       | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage"><strong>BMXResultPage</strong></a>(const std::vector&#x3C; T > &#x26; result, std::string cursor)<br>Constructor</p>                    |
+|                                                       | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage"><strong>BMXResultPage</strong></a>(const <a href="classfloo_1_1_b_m_x_result_page.md">BMXResultPage</a> &#x26; from)<br>Constructor</p> |
+|                                                       | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-bmxresultpage"><strong>BMXResultPage</strong></a>(<a href="classfloo_1_1_b_m_x_result_page.md">BMXResultPage</a> &#x26;&#x26; from)<br>Constructor</p> |
+| [BMXResultPage](classfloo_1_1_b_m_x_result_page.md) & | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-operator="><strong>operator=</strong></a>(const <a href="classfloo_1_1_b_m_x_result_page.md">BMXResultPage</a> &#x26; from)<br>Assignment function</p> |
+| virtual                                               | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-~bmxresultpage"><strong>~BMXResultPage</strong></a>()<br>Destructor</p>                                                                                |
+| size\_t                                               | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-count"><strong>count</strong></a>() const<br>Size of vector object-array</p>                                                                           |
+| int64\_t                                              | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-offset"><strong>offset</strong></a>() const<br>Offset</p>                                                                                              |
+| const std::string &                                   | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-cursor"><strong>cursor</strong></a>() const<br>cursor offset</p>                                                                                       |
+| const std::vector< T > &                              | <p><a href="classfloo_1_1_b_m_x_result_page.md#function-result"><strong>result</strong></a>() const<br>vector object-array</p>                                                                                 |
 
 ## Detailed Description
 
@@ -38,7 +34,8 @@ template <typename T >
 class floo::BMXResultPage;
 ```
 
-Paged result 
+Paged result
+
 ## Public Functions Documentation
 
 ### function BMXResultPage
@@ -47,12 +44,16 @@ Paged result
 inline BMXResultPage()
 ```
 
-Constructor 
+Constructor
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function BMXResultPage
 
 ```cpp
@@ -62,18 +63,21 @@ inline BMXResultPage(
 )
 ```
 
-Constructor 
+Constructor
 
-**Parameters**: 
+**Parameters**:
 
-  * **result** List data 
-  * **offset** Offset 
-
+* **result** List data
+* **offset** Offset
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function BMXResultPage
 
 ```cpp
@@ -83,18 +87,21 @@ inline BMXResultPage(
 )
 ```
 
-Constructor 
+Constructor
 
-**Parameters**: 
+**Parameters**:
 
-  * **result** List result 
-  * **cursor** cursor offset 
-
+* **result** List result
+* **cursor** cursor offset
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function BMXResultPage
 
 ```cpp
@@ -103,17 +110,20 @@ inline BMXResultPage(
 )
 ```
 
-Constructor 
+Constructor
 
-**Parameters**: 
+**Parameters**:
 
-  * **from** BMXResultPage object 
-
+* **from** BMXResultPage object
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function BMXResultPage
 
 ```cpp
@@ -122,17 +132,20 @@ inline BMXResultPage(
 )
 ```
 
-Constructor 
+Constructor
 
-**Parameters**: 
+**Parameters**:
 
-  * **from** BMXResultPage object 
-
+* **from** BMXResultPage object
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="BMXResultPage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function operator=
 
 ```cpp
@@ -141,87 +154,109 @@ inline BMXResultPage & operator=(
 )
 ```
 
-Assignment function 
+Assignment function
 
-**Parameters**: 
+**Parameters**:
 
-  * **from** BMXResultPage object 
-
+* **from** BMXResultPage object
 
 **Return**: [BMXResultPage](classfloo_1_1_b_m_x_result_page.md)
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="operator=" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
-### function ~BMXResultPage
+
+### function \~BMXResultPage
 
 ```cpp
 inline virtual ~BMXResultPage()
 ```
 
-Destructor 
+Destructor
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="~BMXResultPage" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function count
 
 ```cpp
 inline size_t count() const
 ```
 
-Size of vector object-array 
+Size of vector object-array
 
-**Return**: size_t 
+**Return**: size\_t
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="count" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function offset
 
 ```cpp
 inline int64_t offset() const
 ```
 
-Offset 
+Offset
 
-**Return**: int64_t 
+**Return**: int64\_t
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="offset" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function cursor
 
 ```cpp
 inline const std::string & cursor() const
 ```
 
-cursor offset 
+cursor offset
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="cursor" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
+
 ```
+
 ### function result
 
 ```cpp
 inline const std::vector< T > & result() const
 ```
 
-vector object-array 
+vector object-array
 
-**Return**: std::vector<T> 
+**Return**: std::vector
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXResultPage",function="result" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXResultPage'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:20:40 +0800

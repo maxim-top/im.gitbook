@@ -1,7 +1,8 @@
 ---
-description: 关于用SWIG生成Java代码的IM SDK的文章
 keywords: IM SDK, SWIG, IM开源, 同步 vs 异步
+description: 关于用SWIG生成Java代码的IM SDK的文章
 ---
+
 # 用 SWIG 生成 Java 代码（IM SDK）
 
 原创 一乐 美信拓扑 _2020-05-26 18:23_
@@ -19,15 +20,15 @@ keywords: IM SDK, SWIG, IM开源, 同步 vs 异步
 
 作者 | 一乐
 
-前几天在直播里介绍过的内部创新项目，代码正式开源了[1]，喜欢玩的同学可以去 Github 看看（star）啦。
+前几天在直播里介绍过的内部创新项目，代码正式开源了\[1]，喜欢玩的同学可以去 Github 看看（star）啦。
 
 为了更好的让大家理解项目，本文会介绍 SWIG 和本工程代码，同时也会介绍项目背景，也即美信拓扑跨平台 IM SDK 的设计与实践。
 
 ## SWIG 是什么
 
-![Photo by Marco Djallo on @unsplash](../assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp)
+![Photo by Marco Djallo on @unsplash](../../.gitbook/assets/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp)
 
-SWIG 全称是 Simplified Wrapper and Interface Generator [2]。这个名字相当直白，翻译过来就是简化的包装和接口生成器。官方介绍是一个联结 C/C++ 软件与其它各种高级编程语言的开发工具。其实主要做了一件事，就是把 C/C++ 写的软件库封装成其他高级编程语言可以调用的本地库。
+SWIG 全称是 Simplified Wrapper and Interface Generator \[2]。这个名字相当直白，翻译过来就是简化的包装和接口生成器。官方介绍是一个联结 C/C++ 软件与其它各种高级编程语言的开发工具。其实主要做了一件事，就是把 C/C++ 写的软件库封装成其他高级编程语言可以调用的本地库。
 
 现在它支持的高级编程语言不仅包括 Javascript，Perl，PHP，Python，Tcl 以及 Ruby 这样的脚本语言，也支持非脚本语言如 C#，D，Golang，Java（包括Android），Lua，OCaml，Octave，Scilab 以及 R 语言。
 
@@ -45,7 +46,7 @@ SWIG 全称是 Simplified Wrapper and Interface Generator [2]。这个名字相�
 
 如前所述，美信拓扑IM SDK（研发代号 Floo ）底层使用 C++ 实现，各平台（Android、iOS、Linux等）在此基础上再行封装， 完成本地库的开发，以达到多平台复用的目的，并保持跨平台协议实现的一致性。如下图所示：
 
-![](../assets/articles/autogen-50c4b239aa07b7781371f1dc7320b4bf03ad5434d38abeeb357c8eb919d6e659.webp)
+![](../../.gitbook/assets/autogen-50c4b239aa07b7781371f1dc7320b4bf03ad5434d38abeeb357c8eb919d6e659.webp)
 
 左边蓝色是本地库，包括Android、iOS、Linux等，右边黄色是 Web，包括浏览器、小程序、H5等。所有库的分层基本一致，从下往上依次是
 
@@ -57,7 +58,7 @@ SWIG 全称是 Simplified Wrapper and Interface Generator [2]。这个名字相�
 
 这样分层的好处在于协议之需要实现一次，即减少了工作量，又减少了潜在的Bug。在一个优秀的 IM 系统实现里，可靠高效的协议设计，与灵活柔性的客户端 SDK和高性能的服务端，是同等重要的。
 
-有朋友可能好奇 Floo 是什么意思？研发代号 Floo 来源于哈利波特里的飞路粉[3]，根据介绍它是
+有朋友可能好奇 Floo 是什么意思？研发代号 Floo 来源于哈利波特里的飞路粉\[3]，根据介绍它是
 
 > 一种亮晶晶的银色粉末，在男女巫师用飞路网旅行时使用。飞路网与绝大多数巫师家庭和魔法建筑相连接。
 >
@@ -65,17 +66,17 @@ SWIG 全称是 Simplified Wrapper and Interface Generator [2]。这个名字相�
 >
 > [https://harrypotter.fandom.com/zh/wiki/飞路粉](https://harrypotter.fandom.com/zh/wiki/%E9%A3%9E%E8%B7%AF%E7%B2%89)
 
-这也是我们服务端叫 Fireplace 的原因，如果你前几天跟我们一起玩过树莓派[4][5]，在安装后的服务里会发现它。
+这也是我们服务端叫 Fireplace 的原因，如果你前几天跟我们一起玩过树莓派\[4]\[5]，在安装后的服务里会发现它。
 
 ## 如何掌握 IM API
 
-![Photo by @JamieDotSt on @unsplash](../assets/articles/autogen-5a1ed68575ebd20a7a616e396eecc9b6b59e4704496429c5570987f8c0b1e86a.webp)
+![Photo by @JamieDotSt on @unsplash](../../.gitbook/assets/autogen-5a1ed68575ebd20a7a616e396eecc9b6b59e4704496429c5570987f8c0b1e86a.webp)
 
 在我们说起一个 IM SDK 的时候，经常有一种声音出现，他们说，IM嘛，不就一个聊天，能发消息就行呗。
 
 大多时候我只是笑笑，心情好的时候还会说你说的对。
 
-但如果是好朋友，还会告诉他们，一个典型的 IM SDK，会有 40 余类几百个方法[6]，因为要同时兼顾分层设计和灵活性，保证协议实现的质量，又要支持事件通知和自定义协议等确保业务逻辑的完整。
+但如果是好朋友，还会告诉他们，一个典型的 IM SDK，会有 40 余类几百个方法\[6]，因为要同时兼顾分层设计和灵活性，保证协议实现的质量，又要支持事件通知和自定义协议等确保业务逻辑的完整。
 
 我会告诉他们，在移动网络这种长延迟不稳定链路下，要保证消息的有序投递，又要保证软实时且可靠，XMPP 协议有太多的限制，你需要全新设计和优化的 IM 协议。这也是现在真正高质量 IM 的基础。
 
@@ -157,7 +158,7 @@ SWIG 全称是 Simplified Wrapper and Interface Generator [2]。这个名字相�
 
 包括客户端实例化类 BMXClient 、配置类 BMXSDKConfig、消息类 BMXMessage、会话类 BMXConversation、用户身份类 BMXUserProfile、群类 BMXGroup、设备类 BMXDevice等。
 
-我们这里不再赘述，如果需要参照可以阅读美信拓扑快速集成指南安卓版[6]，或者查看详细类库文档[7]，当然后者也是此次开源仓库自动生成的。
+我们这里不再赘述，如果需要参照可以阅读美信拓扑快速集成指南安卓版\[6]，或者查看详细类库文档\[7]，当然后者也是此次开源仓库自动生成的。
 
 最后，让我们看看代码吧。
 
@@ -171,7 +172,7 @@ TIPS：如果你已阅读到这里，可以给自己点个赞啦。
 /usr/local/bin/swig -debug-classes -debug-module 4 -debug-typemap -c++ -java -package im.floo.floolib -outdir src/main/java/im/floo/floolib/ -o src/main/cpp/floo_wrap.cxx -Ifloo/include -Ifloo/src swig/floo.i
 ```
 
-指定输出 Java 代码的包名是 im.floo.floolib，指定 floo 头文件的地址，剩下的就是 SWIG 定义文件了，他们都放在 ./swig/floo.i [7] 里，下面是 49-126 行：
+指定输出 Java 代码的包名是 im.floo.floolib，指定 floo 头文件的地址，剩下的就是 SWIG 定义文件了，他们都放在 ./swig/floo.i \[7] 里，下面是 49-126 行：
 
 ```
 %include "std_shared_ptr.i"
@@ -280,7 +281,7 @@ typedef floo::BMXConversation::Type BMXConversationType;
 
 今天的分享就到这里，欢迎试玩，也欢迎继续关注「美信拓扑」微信公众号，第一时间阅读本系列后续文章，了解美信拓扑IM的协议、架构和源码。
 
-![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
 
 **美信拓扑**是一家很酷的技术公司。美信拓扑 IM 是第一个多云架构的即时通讯云服务，具有超强的伸缩能力，可以支撑从亿级用户千万并发的公有云服务，到一台主机十分钟安装完成的私有云。目前各种组件正在陆续开源。
 

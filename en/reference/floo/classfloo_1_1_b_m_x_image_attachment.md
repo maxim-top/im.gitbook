@@ -1,15 +1,11 @@
 ---
 title: floo::BMXImageAttachment
-summary: Message picture attachment 
-
+summary: Message picture attachment
 ---
 
 # floo::BMXImageAttachment
 
-
-
-Message picture attachment 
-
+Message picture attachment
 
 `#include <bmx_image_attachment.h>`
 
@@ -17,74 +13,73 @@ Inherits from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md),
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXImageAttachment](classfloo_1_1_b_m_x_image_attachment.md#function-bmximageattachment)**(const std::string & path, const [Size] & size, const std::string & displayName ="")<br>Constructor, to build the message attachment of sent picture  |
-| | **[BMXImageAttachment](classfloo_1_1_b_m_x_image_attachment.md#function-bmximageattachment)**(const std::string & ratelUrl, const [Size] & size, const std::string & displayName, int64_t fileLength)<br>Constructor, to build the message attachment of received picture  |
-| virtual | **[~BMXImageAttachment](classfloo_1_1_b_m_x_image_attachment.md#function-~bmximageattachment)**()<br>Destructor  |
-| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type) | **[type](classfloo_1_1_b_m_x_image_attachment.md#function-type)**() const<br>Return the type of picture attachment  |
-| virtual BMXMessageAttachmentPtr | **[clone](classfloo_1_1_b_m_x_image_attachment.md#function-clone)**() const<br>Cloning function  |
-| const [Size] & | **[size](classfloo_1_1_b_m_x_image_attachment.md#function-size)**() const<br>Picture size  |
-| const std::string & | **[thumbnailUrl](classfloo_1_1_b_m_x_image_attachment.md#function-thumbnailurl)**() const<br>Thumbnail url for remote use  |
-| void | **[setThumbnail](classfloo_1_1_b_m_x_image_attachment.md#function-setthumbnail)**(const std::string & path)<br>Set a thumbnail for sent picture  |
-| const std::string & | **[thumbnailPath](classfloo_1_1_b_m_x_image_attachment.md#function-thumbnailpath)**() const<br>Local path of thumbnail  |
-| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[thumbnailDownloadStatus](classfloo_1_1_b_m_x_image_attachment.md#function-thumbnaildownloadstatus)**() const<br>Thumbnail downloading state  |
+|                                                                                 | Name                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                 | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-bmximageattachment"><strong>BMXImageAttachment</strong></a>(const std::string &#x26; path, const [Size] &#x26; size, const std::string &#x26; displayName ="")<br>Constructor, to build the message attachment of sent picture</p>                         |
+|                                                                                 | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-bmximageattachment"><strong>BMXImageAttachment</strong></a>(const std::string &#x26; ratelUrl, const [Size] &#x26; size, const std::string &#x26; displayName, int64_t fileLength)<br>Constructor, to build the message attachment of received picture</p> |
+| virtual                                                                         | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-~bmximageattachment"><strong>~BMXImageAttachment</strong></a>()<br>Destructor</p>                                                                                                                                                                          |
+| virtual [Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)             | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-type"><strong>type</strong></a>() const<br>Return the type of picture attachment</p>                                                                                                                                                                       |
+| virtual BMXMessageAttachmentPtr                                                 | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-clone"><strong>clone</strong></a>() const<br>Cloning function</p>                                                                                                                                                                                          |
+| const \[Size] &                                                                 | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-size"><strong>size</strong></a>() const<br>Picture size</p>                                                                                                                                                                                                |
+| const std::string &                                                             | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-thumbnailurl"><strong>thumbnailUrl</strong></a>() const<br>Thumbnail url for remote use</p>                                                                                                                                                                |
+| void                                                                            | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-setthumbnail"><strong>setThumbnail</strong></a>(const std::string &#x26; path)<br>Set a thumbnail for sent picture</p>                                                                                                                                     |
+| const std::string &                                                             | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-thumbnailpath"><strong>thumbnailPath</strong></a>() const<br>Local path of thumbnail</p>                                                                                                                                                                   |
+| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | <p><a href="classfloo_1_1_b_m_x_image_attachment.md#function-thumbnaildownloadstatus"><strong>thumbnailDownloadStatus</strong></a>() const<br>Thumbnail downloading state</p>                                                                                                                                           |
 
 ## Friends
 
-|                | Name           |
-| -------------- | -------------- |
-| class | **[Encoder< BMXImageAttachment >](classfloo_1_1_b_m_x_image_attachment.md#friend-encoder<-bmximageattachment->)**  |
-| class | **[Decoder< BMXImageAttachment >](classfloo_1_1_b_m_x_image_attachment.md#friend-decoder<-bmximageattachment->)**  |
+|       | Name                                                                                                              |
+| ----- | ----------------------------------------------------------------------------------------------------------------- |
+| class | [**Encoder< BMXImageAttachment >**](classfloo_1_1_b_m_x_image_attachment.md#friend-encoder<-bmximageattachment->) |
+| class | [**Decoder< BMXImageAttachment >**](classfloo_1_1_b_m_x_image_attachment.md#friend-decoder<-bmximageattachment->) |
 
 ## Additional inherited members
 
-**Public Functions inherited from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md)**
+**Public Functions inherited from** [**floo::BMXFileAttachment**](classfloo_1_1_b_m_x_file_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & path, const std::string & displayName ="")<br>Constructor to build the message attachment of sent file  |
-| | **[BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment)**(const std::string & ratelUrl, const std::string & displayName, int64_t fileLength)<br>Constructor to build the message attachment of received file  |
-| virtual | **[~BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md#function-~bmxfileattachment)**()<br>Destructor  |
-| const std::string & | **[path](classfloo_1_1_b_m_x_file_attachment.md#function-path)**() const<br>Local path  |
-| const std::string & | **[displayName](classfloo_1_1_b_m_x_file_attachment.md#function-displayname)**() const<br>Display name  |
-| const std::string & | **[ratelUrl](classfloo_1_1_b_m_x_file_attachment.md#function-ratelurl)**() const<br>URL for remote ratel  |
-| const std::string & | **[url](classfloo_1_1_b_m_x_file_attachment.md#function-url)**() const<br>URL for remote  |
-| int64_t | **[fileLength](classfloo_1_1_b_m_x_file_attachment.md#function-filelength)**() const<br>File length  |
-| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[downloadStatus](classfloo_1_1_b_m_x_file_attachment.md#function-downloadstatus)**() const<br>Attachment download state  |
+|                                                                                 | Name                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                 | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment"><strong>BMXFileAttachment</strong></a>(const std::string &#x26; path, const std::string &#x26; displayName ="")<br>Constructor to build the message attachment of sent file</p>                         |
+|                                                                                 | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-bmxfileattachment"><strong>BMXFileAttachment</strong></a>(const std::string &#x26; ratelUrl, const std::string &#x26; displayName, int64_t fileLength)<br>Constructor to build the message attachment of received file</p> |
+| virtual                                                                         | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-~bmxfileattachment"><strong>~BMXFileAttachment</strong></a>()<br>Destructor</p>                                                                                                                                            |
+| const std::string &                                                             | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-path"><strong>path</strong></a>() const<br>Local path</p>                                                                                                                                                                  |
+| const std::string &                                                             | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-displayname"><strong>displayName</strong></a>() const<br>Display name</p>                                                                                                                                                  |
+| const std::string &                                                             | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-ratelurl"><strong>ratelUrl</strong></a>() const<br>URL for remote ratel</p>                                                                                                                                                |
+| const std::string &                                                             | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-url"><strong>url</strong></a>() const<br>URL for remote</p>                                                                                                                                                                |
+| int64\_t                                                                        | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-filelength"><strong>fileLength</strong></a>() const<br>File length</p>                                                                                                                                                     |
+| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | <p><a href="classfloo_1_1_b_m_x_file_attachment.md#function-downloadstatus"><strong>downloadStatus</strong></a>() const<br>Attachment download state</p>                                                                                                                               |
 
-**Protected Attributes inherited from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md)**
+**Protected Attributes inherited from** [**floo::BMXFileAttachment**](classfloo_1_1_b_m_x_file_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| std::string | **[mPath](classfloo_1_1_b_m_x_file_attachment.md#variable-mpath)**  |
-| std::string | **[mDisplayName](classfloo_1_1_b_m_x_file_attachment.md#variable-mdisplayname)**  |
-| std::string | **[mRatelUrl](classfloo_1_1_b_m_x_file_attachment.md#variable-mratelurl)**  |
-| std::string | **[mUrl](classfloo_1_1_b_m_x_file_attachment.md#variable-murl)**  |
-| int64_t | **[mFileLength](classfloo_1_1_b_m_x_file_attachment.md#variable-mfilelength)**  |
-| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | **[mDownloadStatus](classfloo_1_1_b_m_x_file_attachment.md#variable-mdownloadstatus)**  |
+|                                                                                 | Name                                                                                   |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| std::string                                                                     | [**mPath**](classfloo_1_1_b_m_x_file_attachment.md#variable-mpath)                     |
+| std::string                                                                     | [**mDisplayName**](classfloo_1_1_b_m_x_file_attachment.md#variable-mdisplayname)       |
+| std::string                                                                     | [**mRatelUrl**](classfloo_1_1_b_m_x_file_attachment.md#variable-mratelurl)             |
+| std::string                                                                     | [**mUrl**](classfloo_1_1_b_m_x_file_attachment.md#variable-murl)                       |
+| int64\_t                                                                        | [**mFileLength**](classfloo_1_1_b_m_x_file_attachment.md#variable-mfilelength)         |
+| [DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus) | [**mDownloadStatus**](classfloo_1_1_b_m_x_file_attachment.md#variable-mdownloadstatus) |
 
-**Friends inherited from [floo::BMXFileAttachment](classfloo_1_1_b_m_x_file_attachment.md)**
+**Friends inherited from** [**floo::BMXFileAttachment**](classfloo_1_1_b_m_x_file_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| class | **[Encoder< BMXFileAttachment >](classfloo_1_1_b_m_x_file_attachment.md#friend-encoder<-bmxfileattachment->)**  |
-| class | **[Decoder< BMXFileAttachment >](classfloo_1_1_b_m_x_file_attachment.md#friend-decoder<-bmxfileattachment->)**  |
+|       | Name                                                                                                           |
+| ----- | -------------------------------------------------------------------------------------------------------------- |
+| class | [**Encoder< BMXFileAttachment >**](classfloo_1_1_b_m_x_file_attachment.md#friend-encoder<-bmxfileattachment->) |
+| class | [**Decoder< BMXFileAttachment >**](classfloo_1_1_b_m_x_file_attachment.md#friend-decoder<-bmxfileattachment->) |
 
-**Public Types inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
+**Public Types inherited from** [**floo::BMXMessageAttachment**](classfloo_1_1_b_m_x_message_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| enum class| **[Type](classfloo_1_1_b_m_x_message_attachment.md#enum-type)** { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type  |
-| enum class| **[DownloadStatus](classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus)** { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state  |
+|            | Name                                                                                                                                                                                                 |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-type"><strong>Type</strong></a> { Image, Voice, Video, File, Location, Command, Forward}<br>Attachment type</p>                           |
+| enum class | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#enum-downloadstatus"><strong>DownloadStatus</strong></a> { Downloaing, Successed, Failed, NotStart, Canceled}<br>Attachment download state</p> |
 
-**Public Functions inherited from [floo::BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md)**
+**Public Functions inherited from** [**floo::BMXMessageAttachment**](classfloo_1_1_b_m_x_message_attachment.md)
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**()<br>Constructor  |
-| virtual | **[~BMXMessageAttachment](classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment)**()<br>Destructor  |
-
+|         | Name                                                                                                                                                 |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+|         | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment"><strong>BMXMessageAttachment</strong></a>()<br>Constructor</p>  |
+| virtual | <p><a href="classfloo_1_1_b_m_x_message_attachment.md#function-~bmxmessageattachment"><strong>~BMXMessageAttachment</strong></a>()<br>Destructor</p> |
 
 ## Public Functions Documentation
 
@@ -98,19 +93,22 @@ BMXImageAttachment(
 )
 ```
 
-Constructor, to build the message attachment of sent picture 
+Constructor, to build the message attachment of sent picture
 
-**Parameters**: 
+**Parameters**:
 
-  * **path** Local path 
-  * **size** Size, width, and height of image 
-  * **displayName** Display name 
-
+* **path** Local path
+* **size** Size, width, and height of image
+* **displayName** Display name
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="BMXImageAttachment" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function BMXImageAttachment
 
 ```cpp
@@ -122,94 +120,115 @@ BMXImageAttachment(
 )
 ```
 
-Constructor, to build the message attachment of received picture 
+Constructor, to build the message attachment of received picture
 
-**Parameters**: 
+**Parameters**:
 
-  * **url** Address of image ratel server 
-  * **size** Size, width, and height of image 
-  * **displayName** Display name 
-  * **fileLength** File size 
-
+* **url** Address of image ratel server
+* **size** Size, width, and height of image
+* **displayName** Display name
+* **fileLength** File size
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="BMXImageAttachment" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
-### function ~BMXImageAttachment
+
+### function \~BMXImageAttachment
 
 ```cpp
 inline virtual ~BMXImageAttachment()
 ```
 
-Destructor 
+Destructor
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="~BMXImageAttachment" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function type
 
 ```cpp
 inline virtual Type type() const
 ```
 
-Return the type of picture attachment 
+Return the type of picture attachment
 
-**Return**: Type 
+**Return**: Type
 
 **Reimplements**: [floo::BMXFileAttachment::type](classfloo_1_1_b_m_x_file_attachment.md#function-type)
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="type" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function clone
 
 ```cpp
 virtual BMXMessageAttachmentPtr clone() const
 ```
 
-Cloning function 
+Cloning function
 
-**Return**: BMXMessageAttachmentPtr 
+**Return**: BMXMessageAttachmentPtr
 
 **Reimplements**: [floo::BMXFileAttachment::clone](classfloo_1_1_b_m_x_file_attachment.md#function-clone)
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="clone" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function size
 
 ```cpp
 const Size & size() const
 ```
 
-Picture size 
+Picture size
 
-**Return**: Size 
+**Return**: Size
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="size" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function thumbnailUrl
 
 ```cpp
 const std::string & thumbnailUrl() const
 ```
 
-Thumbnail url for remote use 
+Thumbnail url for remote use
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="thumbnailUrl" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function setThumbnail
 
 ```cpp
@@ -218,40 +237,47 @@ void setThumbnail(
 )
 ```
 
-Set a thumbnail for sent picture 
+Set a thumbnail for sent picture
 
-**Parameters**: 
+**Parameters**:
 
-  * **path** Local path 
-
+* **path** Local path
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="setThumbnail" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function thumbnailPath
 
 ```cpp
 const std::string & thumbnailPath() const
 ```
 
-Local path of thumbnail 
+Local path of thumbnail
 
-**Return**: std::string 
+**Return**: std::string
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="thumbnailPath" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
+
 ```
+
 ### function thumbnailDownloadStatus
 
 ```cpp
 DownloadStatus thumbnailDownloadStatus() const
 ```
 
-Thumbnail downloading state 
+Thumbnail downloading state
 
-**Return**: DownloadStatus 
+**Return**: DownloadStatus
 
 ## Friends
 
@@ -263,7 +289,6 @@ friend class Encoder< BMXImageAttachment >(
 );
 ```
 
-
 ### friend Decoder< BMXImageAttachment >
 
 ```cpp
@@ -272,11 +297,13 @@ friend class Decoder< BMXImageAttachment >(
 );
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-embedded",class="BMXImageAttachment",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXImageAttachment'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:20:40 +0800

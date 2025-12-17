@@ -1,9 +1,9 @@
 # BMXLocationAttachment Class Reference
 
-  **Inherits from** <a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
-<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
-NSObject  
-  **Declared in** floo_proxy.h  
+**Inherits from** [BMXMessageAttachment](BMXMessageAttachment.md) :\
+[BMXBaseObject](BMXBaseObject.md) :\
+NSObject\
+**Declared in** floo\_proxy.h
 
 ## Overview
 
@@ -11,7 +11,6 @@ NSObject
 
 ## Class Methods
 
-<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
 ### dynamicCastWithAttachment:
 
 消息附件强制转换为位置附件
@@ -20,23 +19,27 @@ NSObject
 
 #### Parameters
 
-*attachment*  
-   附件  
+_attachment_\
+附件
 
 #### Return Value
+
 BMXLocationAttachment
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
-<a name="//api/name/address" title="address"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
+
 ```
+
 ### address
 
 地址
@@ -44,16 +47,21 @@ BMXLocationAttachment
 `- (NSString *)address`
 
 #### Return Value
+
 NSString
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/clone" title="clone"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="address" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
+
 ```
+
 ### clone
 
 克隆函数
@@ -61,25 +69,33 @@ NSString
 `- (BMXMessageAttachment *)clone`
 
 #### Return Value
-<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
+
+[BMXMessageAttachment](BMXMessageAttachment.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="clone" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
+
 ```
+
 ### dealloc
 
 `- (void)dealloc`
 
-<a name="//api/name/initWithLatitude:longitude:address:" title="initWithLatitude:longitude:address:"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="dealloc" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
+
 ```
+
 ### initWithLatitude:longitude:address:
 
 构造函数
@@ -88,23 +104,27 @@ NSString
 
 #### Parameters
 
-*latitude*  
-   纬度  
+_latitude_\
+纬度
 
-*longitude*  
-   经度  
+_longitude_\
+经度
 
-*address*  
-   地址名称  
+_address_\
+地址名称
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/latitude" title="latitude"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="initWithLatitude:longitude:address:" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
+
 ```
+
 ### latitude
 
 纬度
@@ -112,16 +132,21 @@ NSString
 `- (double)latitude`
 
 #### Return Value
+
 double
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/longitude" title="longitude"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="latitude" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
+
 ```
+
 ### longitude
 
 经度
@@ -129,16 +154,21 @@ double
 `- (double)longitude`
 
 #### Return Value
+
 double
 
 #### Declared In
+
 * `floo_proxy.h`
 
-<a name="//api/name/type" title="type"></a>
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="longitude" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
+
 ```
+
 ### type
 
 返回位置附件类型
@@ -146,12 +176,16 @@ double
 `- (BMXMessageAttachment_Type)type`
 
 #### Return Value
-<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
+
+[BMXMessageAttachment\_Type](../Constants/BMXMessageAttachment_Type.md)
 
 #### Declared In
+
 * `floo_proxy.h`
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-ios",class="BMXLocationAttachment",function="type" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXLocationAttachment'></div>
 ```

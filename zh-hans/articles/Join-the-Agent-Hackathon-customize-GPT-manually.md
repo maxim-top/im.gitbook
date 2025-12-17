@@ -1,7 +1,8 @@
 ---
-description: 关于参加Agent黑客马拉松和定制GPT的文章
 keywords: Agent黑客马拉松, GPT, Chat AI SDK, 企业级AI
+description: 关于参加Agent黑客马拉松和定制GPT的文章
 ---
+
 # 参加Agent黑客马拉松，手工定制GPT
 
 TGO鲲鹏会 蓝莺IM _2023-11-10 20:15_ _发表于北京_
@@ -16,11 +17,8 @@ TGO鲲鹏会 蓝莺IM _2023-11-10 20:15_ _发表于北京_
 
 我们旨在通过这场 Hackathon，在为开发者们提供一个技术交流平台的同时，通过激烈的创新与实践竞技，探索 AI 在未来社会中的广泛应用。参与者将在此发掘潜能、展现技术、并与同行建立联系，共同推动人工智能领域向前发展。
 
-  
+![](../../.gitbook/assets/autogen-52820489b60c1d2eb3899a261622ee6f936f66d57e158af09847c1fddc9510a.jpeg) **↑↑↑** **扫码报名** **Agent Hackathon**
 
-![](../assets/articles/autogen-52820489b60c1d2eb3899a261622ee6f936f66d57e158af09847c1fddc9510a.jpeg)
-**↑↑↑**
-**扫码报名** **Agent Hackathon** 
 ## 活动主题
 
 Agent Hackthon 主题不限，例如一个开源库的文档查询和代码自动生成，极客时间上课程的问答助手，博弈论最新战况和足球队小饭桌活动查询，介绍你自己企业的宣传大使。当然如果能造福 TGO 鲲鹏会成员和广大技术人就最好不过， 因此我们先打造了个样例，也欢迎大家在此基础上迭代，一起共建。
@@ -60,28 +58,21 @@ Agent Hackthon 主题不限，例如一个开源库的文档查询和代码自�
 
 ## Agent Hackathon 顾问团成员
 
-![](../assets/articles/autogen-526bdffff0e47d8da86b6debc1dd2cf37825ee2cfcff90d47c7551ceb20f0e2c.png)
+![](../../.gitbook/assets/autogen-526bdffff0e47d8da86b6debc1dd2cf37825ee2cfcff90d47c7551ceb20f0e2c.png)
 
-梁宇鹏
-Agent Hackathon 出品人
-蓝莺 IM 创始人兼 CEO
-TGO 鲲鹏会(北京)董事
+梁宇鹏 Agent Hackathon 出品人 蓝莺 IM 创始人兼 CEO TGO 鲲鹏会(北京)董事
 
-![](../assets/articles/autogen-77815f9c122297f4798f95ecf38f16f5dfd1dd0474f44870196469347898b04.png)
+![](../../.gitbook/assets/autogen-77815f9c122297f4798f95ecf38f16f5dfd1dd0474f44870196469347898b04.png)
 
-艾芙（徐雁斐）
-AI 应用咨询专家
-南瓜博士公众号主笔
-TGO 鲲鹏会(上海)学员
+艾芙（徐雁斐） AI 应用咨询专家 南瓜博士公众号主笔 TGO 鲲鹏会(上海)学员
 
 Agent Hackathon 是一场科技与智慧的盛宴，每一位参与者都将是这场科技革命的重要实践者。我们不仅寻找编程的高手，更期待那些敢于挑战现状，能够用代码描绘未来的梦想家积极参与。
 
 现在，就是你展现才华、实现梦想的时刻。携手 Agent Hackathon，一起开启属于你的 AI 传奇，共创智能未来。报名入口现已开启，我们在 GTLC 华中站翘首以待，期待你的加入！
 
-![](../assets/articles/autogen-34f78c35613fe1d0651b978741264fbb033eefacf85f9250fe41e9edb9699ce0.png)
+![](../../.gitbook/assets/autogen-34f78c35613fe1d0651b978741264fbb033eefacf85f9250fe41e9edb9699ce0.png)
 
-**↑↑↑**
-**扫码报名** **Agent Hackathon**
+**↑↑↑** **扫码报名** **Agent Hackathon**
 
 GTLC 全球技术领导力大会，是由 TGO 鲲鹏会主办的顶级技术领导者大会，始于 2016 年，已经在北京、上海、深圳、杭州、南京、成都、硅谷、台北、新加坡等十余个 TGO 鲲鹏会学员城市举办。据不完全统计，超过半数的参会者为科技公司技术一号位。
 
@@ -89,12 +80,9 @@ GTLC 全球技术领导力大会，是由 TGO 鲲鹏会主办的顶级技术领�
 
 ## ·END·
 
-***GTLC 大会华中站扫码报名*** 
-**↓↓↓**
+_**GTLC 大会华中站扫码报名**_ **↓↓↓**
 
-![](../assets/articles/autogen-bb80ce4495f968ccd4eafca33af410a390b5f09a94f0513dd0712f9cdf3bd462.jpeg)
-
-[](http://mp.weixin.qq.com/s?__biz=MzA4NTU2MTg3MQ==&mid=2655224955&idx=2&sn=86aa5e16a3719aebabb2e717ee7e7f0a&chksm=8461231bb316aa0d959db0673aad45e6fa87d3b77e5b8b559b2f2fe88a9f1c98c5632734bac4&scene=21#wechat_redirect)
+![](../../.gitbook/assets/autogen-bb80ce4495f968ccd4eafca33af410a390b5f09a94f0513dd0712f9cdf3bd462.jpeg)
 
 ## 关于 TGO 鲲鹏会
 
@@ -110,4 +98,4 @@ TGO 鲲鹏会采用了“学员共建”的组织形式，希望通过“共建�
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](<../../.gitbook/assets/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06 (1).jpeg>)

@@ -1,48 +1,45 @@
 ---
 title: im::floo::floolib::BMXRosterServiceListener
-summary: Friend change listener 
-
+summary: Friend change listener
 ---
 
 # im::floo::floolib::BMXRosterServiceListener
 
-
-
-Friend change listener 
+Friend change listener
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-delete)**() |
-| void | **[swigReleaseOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigreleaseownership)**() |
-| void | **[swigTakeOwnership](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigtakeownership)**() |
-| void | **[onFriendAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendadded)**(long sponsorId, long recipientId)<br>Add friend  |
-| void | **[onFriendRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendremoved)**(long sponsorId, long recipientId)<br>Delete friend  |
-| void | **[onApplied](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplied)**(long sponsorId, long recipientId, String message)<br>Request of adding friend received  |
-| void | **[onApplicationAccepted](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationaccepted)**(long sponsorId, long recipientId)<br>Request of adding friend approved  |
-| void | **[onApplicationDeclined](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationdeclined)**(long sponsorId, long recipientId, String reason)<br>Request of adding friend rejected  |
-| void | **[onBlockListAdded](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistadded)**(long sponsorId, long recipientId)<br>Add to blacklist  |
-| void | **[onBlockListRemoved](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistremoved)**(long sponsorId, long recipientId)<br>Delete blacklist  |
-| void | **[onRosterInfoUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterinfoupdate)**([BMXRosterItem](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md) item)<br>Update user information  |
-| void | **[onRosterListUpdate](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterlistupdate)**()<br>Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information  |
-| | **[BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-bmxrosterservicelistener)**() |
-| void | **[registerRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-registerrosterservice)**([BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) service) |
+|                   | Name                                                                                                                                                                                                                                                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| synchronized void | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-delete)()                                                                                                                                                                                                                     |
+| void              | [**swigReleaseOwnership**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigreleaseownership)()                                                                                                                                                                                         |
+| void              | [**swigTakeOwnership**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigtakeownership)()                                                                                                                                                                                               |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendadded"><strong>onFriendAdded</strong></a>(long sponsorId, long recipientId)<br>Add friend</p>                                                                                                                          |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onfriendremoved"><strong>onFriendRemoved</strong></a>(long sponsorId, long recipientId)<br>Delete friend</p>                                                                                                                   |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplied"><strong>onApplied</strong></a>(long sponsorId, long recipientId, String message)<br>Request of adding friend received</p>                                                                                           |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationaccepted"><strong>onApplicationAccepted</strong></a>(long sponsorId, long recipientId)<br>Request of adding friend approved</p>                                                                                   |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onapplicationdeclined"><strong>onApplicationDeclined</strong></a>(long sponsorId, long recipientId, String reason)<br>Request of adding friend rejected</p>                                                                    |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistadded"><strong>onBlockListAdded</strong></a>(long sponsorId, long recipientId)<br>Add to blacklist</p>                                                                                                              |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onblocklistremoved"><strong>onBlockListRemoved</strong></a>(long sponsorId, long recipientId)<br>Delete blacklist</p>                                                                                                          |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterinfoupdate"><strong>onRosterInfoUpdate</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_item.md">BMXRosterItem</a> item)<br>Update user information</p>                                               |
+| void              | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-onrosterlistupdate"><strong>onRosterListUpdate</strong></a>()<br>Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information</p> |
+|                   | [**BMXRosterServiceListener**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-bmxrosterservicelistener)()                                                                                                                                                                                 |
+| void              | [**registerRosterService**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-registerrosterservice)([BMXRosterService](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service.md) service)                                                                                                     |
 
 ## Protected Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-bmxrosterservicelistener)**(long cPtr, boolean cMemoryOwn) |
-| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-finalize)**() |
-| void | **[swigDirectorDisconnect](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigdirectordisconnect)**() |
-| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-getcptr)**([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) obj) |
+|      | Name                                                                                                                                                                                             |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      | [**BMXRosterServiceListener**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-bmxrosterservicelistener)(long cPtr, boolean cMemoryOwn)                                 |
+| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-finalize)()                                                                                              |
+| void | [**swigDirectorDisconnect**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-swigdirectordisconnect)()                                                                  |
+| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#function-getcptr)([BMXRosterServiceListener](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md) obj) |
 
 ## Protected Attributes
 
-|                | Name           |
-| -------------- | -------------- |
-| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#variable-swigcmemown)**  |
+|                   | Name                                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------- |
+| transient boolean | [**swigCMemOwn**](classim_1_1floo_1_1floolib_1_1_b_m_x_roster_service_listener.md#variable-swigcmemown) |
 
 ## Public Functions Documentation
 
@@ -52,33 +49,42 @@ Friend change listener
 inline synchronized void delete()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="delete" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function swigReleaseOwnership
 
 ```java
 inline void swigReleaseOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="swigReleaseOwnership" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function swigTakeOwnership
 
 ```java
 inline void swigTakeOwnership()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="swigTakeOwnership" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onFriendAdded
 
 ```java
@@ -88,18 +94,21 @@ inline void onFriendAdded(
 )
 ```
 
-Add friend 
+Add friend
 
-**Parameters**: 
+**Parameters**:
 
-  * **sponsorId** Operation initiator 
-  * **recipientId** Operation recipient 
-
+* **sponsorId** Operation initiator
+* **recipientId** Operation recipient
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onFriendAdded" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onFriendRemoved
 
 ```java
@@ -109,18 +118,21 @@ inline void onFriendRemoved(
 )
 ```
 
-Delete friend 
+Delete friend
 
-**Parameters**: 
+**Parameters**:
 
-  * **sponsorId** Operation initiator 
-  * **recipientId** Operation recipient 
-
+* **sponsorId** Operation initiator
+* **recipientId** Operation recipient
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onFriendRemoved" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onApplied
 
 ```java
@@ -131,19 +143,22 @@ inline void onApplied(
 )
 ```
 
-Request of adding friend received 
+Request of adding friend received
 
-**Parameters**: 
+**Parameters**:
 
-  * **sponsorId** Operation initiator 
-  * **recipientId** Operation recipient 
-  * **message** Friend request message 
-
+* **sponsorId** Operation initiator
+* **recipientId** Operation recipient
+* **message** Friend request message
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onApplied" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onApplicationAccepted
 
 ```java
@@ -153,18 +168,21 @@ inline void onApplicationAccepted(
 )
 ```
 
-Request of adding friend approved 
+Request of adding friend approved
 
-**Parameters**: 
+**Parameters**:
 
-  * **sponsorId** Operation initiator 
-  * **recipientId** Operation recipient 
-
+* **sponsorId** Operation initiator
+* **recipientId** Operation recipient
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onApplicationAccepted" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onApplicationDeclined
 
 ```java
@@ -175,19 +193,22 @@ inline void onApplicationDeclined(
 )
 ```
 
-Request of adding friend rejected 
+Request of adding friend rejected
 
-**Parameters**: 
+**Parameters**:
 
-  * **sponsorId** Operation initiator 
-  * **recipientId** Operation recipient 
-  * **reason** Reason for application rejection 
-
+* **sponsorId** Operation initiator
+* **recipientId** Operation recipient
+* **reason** Reason for application rejection
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onApplicationDeclined" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onBlockListAdded
 
 ```java
@@ -197,18 +218,21 @@ inline void onBlockListAdded(
 )
 ```
 
-Add to blacklist 
+Add to blacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **sponsorId** Operation initiator 
-  * **recipientId** Operation recipient 
-
+* **sponsorId** Operation initiator
+* **recipientId** Operation recipient
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onBlockListAdded" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onBlockListRemoved
 
 ```java
@@ -218,18 +242,21 @@ inline void onBlockListRemoved(
 )
 ```
 
-Delete blacklist 
+Delete blacklist
 
-**Parameters**: 
+**Parameters**:
 
-  * **sponsorId** Operation initiator 
-  * **recipientId** Operation recipient 
-
+* **sponsorId** Operation initiator
+* **recipientId** Operation recipient
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onBlockListRemoved" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onRosterInfoUpdate
 
 ```java
@@ -238,40 +265,50 @@ inline void onRosterInfoUpdate(
 )
 ```
 
-Update user information 
+Update user information
 
-**Parameters**: 
+**Parameters**:
 
-  * **item** Updated friend information 
-
+* **item** Updated friend information
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onRosterInfoUpdate" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function onRosterListUpdate
 
 ```java
 inline void onRosterListUpdate()
 ```
 
-Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information 
+Triggered when client pulls new contact from server, used to update user contact list, and call local fetching contact via SDK for all member information
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="onRosterListUpdate" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function BMXRosterServiceListener
 
 ```java
 inline BMXRosterServiceListener()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function registerRosterService
 
 ```java
@@ -280,13 +317,16 @@ inline void registerRosterService(
 )
 ```
 
-
 ## Protected Functions Documentation
 
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="registerRosterService" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function BMXRosterServiceListener
 
 ```java
@@ -296,33 +336,42 @@ inline BMXRosterServiceListener(
 )
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="BMXRosterServiceListener" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="finalize" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function swigDirectorDisconnect
 
 ```java
 inline void swigDirectorDisconnect()
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="swigDirectorDisconnect" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
+
 ```
+
 ### function getCPtr
 
 ```java
@@ -330,7 +379,6 @@ static inline long getCPtr(
     BMXRosterServiceListener obj
 )
 ```
-
 
 ## Protected Attributes Documentation
 
@@ -340,11 +388,13 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
-
 **Example**:
+
 ```
-{% lanying_code_snippet repo="lanying-im-android",class="BMXRosterServiceListener",function="getCPtr" %}{% endlanying_code_snippet %}
+
+<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXRosterServiceListener'></div>
 ```
--------------------------------
+
+***
 
 Updated on 2022-01-26 at 17:18:31 +0800
