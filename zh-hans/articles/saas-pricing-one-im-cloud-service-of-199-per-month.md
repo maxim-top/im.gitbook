@@ -1,8 +1,7 @@
 ---
-keywords: IM云服务, SaaS定价, IM SDK, 云服务
 description: 探讨每月199元的IM云服务在SaaS定价中的定位以及价格对客户的影响
+keywords: IM云服务, SaaS定价, IM SDK, 云服务
 ---
-
 # SaaS定价一：每月￥199的 IM 云服务
 
 原创 一乐 美信拓扑 _2021-06-24 22:00_
@@ -33,11 +32,11 @@ description: 探讨每月199元的IM云服务在SaaS定价中的定位以及价�
 
 ## IM 行业价格对比：公有云
 
-![](../../.gitbook/assets/autogen-a9d226930cdbf7ed23d8248cc49d869e70ea711bf1e37dcf486409cb83c56de3.webp)
+![](../assets/articles/autogen-a9d226930cdbf7ed23d8248cc49d869e70ea711bf1e37dcf486409cb83c56de3.webp)
 
 上图是 0 到 10 万日活区间价格对比，全部日活（ 0 到千万日活用户区间）见下图：
 
-![](../../.gitbook/assets/autogen-31606d8d5792129f304425735df4ce4592adb9c0403c12a8106cb50a40fa3d41.webp)
+![](../assets/articles/autogen-31606d8d5792129f304425735df4ce4592adb9c0403c12a8106cb50a40fa3d41.webp)
 
 以上图中价格数据都是公开的，可到以下页面查看最新价格和优惠：
 
@@ -59,7 +58,7 @@ description: 探讨每月199元的IM云服务在SaaS定价中的定位以及价�
 
 ## 价格决定客户
 
-![Photo by Thom Milkovic on Unsplash](../../.gitbook/assets/autogen-10e2661331f22b91be0e9dbff19bc5b8617d86de82bcbbd8a33494f39a74df08.webp)
+![Photo by Thom Milkovic on Unsplash](../assets/articles/autogen-10e2661331f22b91be0e9dbff19bc5b8617d86de82bcbbd8a33494f39a74df08.webp)
 
 我曾经在《云服务的下一个十年》一文讲过，为什么云服务能够替代到传统 IDC 服务商：
 
@@ -118,7 +117,7 @@ description: 探讨每月199元的IM云服务在SaaS定价中的定位以及价�
 
 ## 不，不能免费
 
-![Photo by Clay Banks on Unsplash](../../.gitbook/assets/autogen-1441678e056040c76061afed6a968dc1ffc359f59cd2e3edb67e933320b342e6.webp)
+![Photo by Clay Banks on Unsplash](../assets/articles/autogen-1441678e056040c76061afed6a968dc1ffc359f59cd2e3edb67e933320b342e6.webp)
 
 > 她那时候还太年轻，不知道所有命运赠送的礼物，早已在暗中标好了价格。
 
@@ -145,7 +144,7 @@ IM 云服务是走过这条商业弯路的。但是受限于聊天数据的敏�
 
 ## 后记
 
-![Photo by Hello I‘m Nik on Unsplash](../../.gitbook/assets/autogen-d89389332dd40323a5fdbc08ca9f890f63728279755802e8ce82b61cf299d2f4.webp)
+![Photo by Hello I‘m Nik on Unsplash](../assets/articles/autogen-d89389332dd40323a5fdbc08ca9f890f63728279755802e8ce82b61cf299d2f4.webp)
 
 市场活动中，你永远不知道用户会有什么反应。
 
@@ -167,4 +166,4 @@ IM 云服务是走过这条商业弯路的。但是受限于聊天数据的敏�
 
 继续关注「美信拓扑」，了解一键启用多云架构的即时通讯。
 
-![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

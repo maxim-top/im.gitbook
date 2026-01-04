@@ -1,260 +1,191 @@
 # userManage
+## userManage {#module_usermanage}
 
-## userManage <a href="#module_usermanage" id="module_usermanage"></a>
+* [userManage](#module_usermanage)
+    * [.getToken()](#module_usermanage__gettoken) ⇒ <code>string</code>
+    * [.getUid()](#module_usermanage__getuid) ⇒ <code>number</code>
+    * [.getAppid()](#module_usermanage__getappid) ⇒ <code>string</code>
+    * [.getConversationList()](#module_usermanage__getconversationlist) ⇒ [<code>Array.&lt;ConversationItem&gt;</code>](types.md#module_types__conversationitem)
+    * [.getDeviceSN()](#module_usermanage__getdevicesn) ⇒ <code>number</code>
+    * [.asyncBindDeviceToken(param)](#module_usermanage__asyncbinddevicetoken) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUnbindDeviceToken(param)](#module_usermanage__asyncunbinddevicetoken) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncRegister(opt)](#module_usermanage__asyncregister) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
+    * [.asyncUpdateAvatar(params)](#module_usermanage__asyncupdateavatar) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncUpdateNickName(params)](#module_usermanage__asyncupdatenickname) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncGetProfile()](#module_usermanage__asyncgetprofile) ⇒ [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types__userprofile)
+    * [.asyncUpdateProfile(params)](#module_usermanage__asyncupdateprofile) ⇒ <code>Promise.&lt;boolean&gt;</code>
+    * [.asyncGetSettings()](#module_usermanage__asyncgetsettings) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings)
+    * [.asyncUpdateSettings(settings)](#module_usermanage__asyncupdatesettings) ⇒ <code>Promise.&lt;boolean&gt;</code>
 
-* [userManage](userManage.md#module_usermanage)
-  * [.getToken()](userManage.md#module_usermanage__gettoken) ⇒ `string`
-  * [.getUid()](userManage.md#module_usermanage__getuid) ⇒ `number`
-  * [.getAppid()](userManage.md#module_usermanage__getappid) ⇒ `string`
-  * [.getConversationList()](userManage.md#module_usermanage__getconversationlist) ⇒ [`Array.<ConversationItem>`](types.md#module_types__conversationitem)
-  * [.getDeviceSN()](userManage.md#module_usermanage__getdevicesn) ⇒ `number`
-  * [.asyncBindDeviceToken(param)](userManage.md#module_usermanage__asyncbinddevicetoken) ⇒ `Promise.<boolean>`
-  * [.asyncUnbindDeviceToken(param)](userManage.md#module_usermanage__asyncunbinddevicetoken) ⇒ `Promise.<boolean>`
-  * [.asyncRegister(opt)](userManage.md#module_usermanage__asyncregister) ⇒ [`Promise.<UserSettings>`](types.md#module_types__usersettings)
-  * [.asyncUpdateAvatar(params)](userManage.md#module_usermanage__asyncupdateavatar) ⇒ `Promise.<boolean>`
-  * [.asyncUpdateNickName(params)](userManage.md#module_usermanage__asyncupdatenickname) ⇒ `Promise.<boolean>`
-  * [.asyncGetProfile()](userManage.md#module_usermanage__asyncgetprofile) ⇒ [`Promise.<UserProfile>`](types.md#module_types__userprofile)
-  * [.asyncUpdateProfile(params)](userManage.md#module_usermanage__asyncupdateprofile) ⇒ `Promise.<boolean>`
-  * [.asyncGetSettings()](userManage.md#module_usermanage__asyncgetsettings) ⇒ [`Promise.<UserSettings>`](types.md#module_types__usersettings)
-  * [.asyncUpdateSettings(settings)](userManage.md#module_usermanage__asyncupdatesettings) ⇒ `Promise.<boolean>`
-
-### userManage.getToken() ⇒ `string` <a href="#module_usermanage__gettoken" id="module_usermanage__gettoken"></a>
-
+### userManage.getToken() ⇒ <code>string</code> {#module_usermanage__gettoken}
 Get token of logged-in user
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `string` - User's token\
-**Example**
-
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>string</code> - User's token  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="getToken" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.getUid() ⇒ `number` <a href="#module_usermanage__getuid" id="module_usermanage__getuid"></a>
-
+### userManage.getUid() ⇒ <code>number</code> {#module_usermanage__getuid}
 Get uid of logged-in user
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `number` - User ID\
-**Example**
-
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>number</code> - User ID  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="getUid" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.getAppid() ⇒ `string` <a href="#module_usermanage__getappid" id="module_usermanage__getappid"></a>
-
+### userManage.getAppid() ⇒ <code>string</code> {#module_usermanage__getappid}
 Get appid
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `string` - APP ID\
-**Example**
-
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>string</code> - APP ID  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="getAppid" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.getConversationList() ⇒ [`Array.<ConversationItem>`](types.md#module_types__conversationitem) <a href="#module_usermanage__getconversationlist" id="module_usermanage__getconversationlist"></a>
-
+### userManage.getConversationList() ⇒ [<code>Array.&lt;ConversationItem&gt;</code>](types.md#module_types__conversationitem) {#module_usermanage__getconversationlist}
 Get list of recent conversations
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Example**
-
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="getConversationList" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.getDeviceSN() ⇒ `number` <a href="#module_usermanage__getdevicesn" id="module_usermanage__getdevicesn"></a>
-
+### userManage.getDeviceSN() ⇒ <code>number</code> {#module_usermanage__getdevicesn}
 Get device serial number
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `number` - Device serial number\
-**Example**
-
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>number</code> - Device serial number  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="getDeviceSN" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncBindDeviceToken(param) ⇒ `Promise.<boolean>` <a href="#module_usermanage__asyncbinddevicetoken" id="module_usermanage__asyncbinddevicetoken"></a>
-
+### userManage.asyncBindDeviceToken(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncbinddevicetoken}
 Bind push device
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param                | Type     | Description                                                                                          |
-| -------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| param                | `object` | Bind request                                                                                         |
-| param.device\_sn     | `number` | Device serial number                                                                                 |
-| param.notifier\_name | `string` | The certificate name, that is, the name set when uploading the certificate in the LanyingIM Console. |
-| param.device\_token  | `string` | Push device token                                                                                    |
+| Param | Type | Description |
+| --- | --- | --- |
+| param | <code>object</code> | Bind request |
+| param.device_sn | <code>number</code> | Device serial number |
+| param.notifier_name | <code>string</code> | The certificate name, that is, the name set when uploading the certificate in the LanyingIM Console. |
+| param.device_token | <code>string</code> | Push device token |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncBindDeviceToken" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncUnbindDeviceToken(param) ⇒ `Promise.<boolean>` <a href="#module_usermanage__asyncunbinddevicetoken" id="module_usermanage__asyncunbinddevicetoken"></a>
-
+### userManage.asyncUnbindDeviceToken(param) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncunbinddevicetoken}
 Unbind push device
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param          | Type     | Description          |
-| -------------- | -------- | -------------------- |
-| param          | `object` | Unbind request       |
-| param.deviceSn | `number` | Device serial number |
+| Param | Type | Description |
+| --- | --- | --- |
+| param | <code>object</code> | Unbind request |
+| param.deviceSn | <code>number</code> | Device serial number |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncUnbindDeviceToken" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncRegister(opt) ⇒ [`Promise.<UserSettings>`](types.md#module_types__usersettings) <a href="#module_usermanage__asyncregister" id="module_usermanage__asyncregister"></a>
-
+### userManage.asyncRegister(opt) ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_usermanage__asyncregister}
 User registeration
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: [`Promise.<UserSettings>`](types.md#module_types__usersettings) - User settings
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) - User settings  
 
-| Param        | Type     | Description      |
-| ------------ | -------- | ---------------- |
-| opt          | `object` | User information |
-| opt.username | `string` | Username         |
-| opt.password | `string` | Password         |
+| Param | Type | Description |
+| --- | --- | --- |
+| opt | <code>object</code> | User information |
+| opt.username | <code>string</code> | Username |
+| opt.password | <code>string</code> | Password |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncRegister" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncUpdateAvatar(params) ⇒ `Promise.<boolean>` <a href="#module_usermanage__asyncupdateavatar" id="module_usermanage__asyncupdateavatar"></a>
-
+### userManage.asyncUpdateAvatar(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncupdateavatar}
 Update avatar
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param         | Type     | Description |
-| ------------- | -------- | ----------- |
-| params        | `object` | Parameter   |
-| params.avatar | `string` | Avatar url  |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.avatar | <code>string</code> | Avatar url |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncUpdateAvatar" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncUpdateNickName(params) ⇒ `Promise.<boolean>` <a href="#module_usermanage__asyncupdatenickname" id="module_usermanage__asyncupdatenickname"></a>
-
+### userManage.asyncUpdateNickName(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncupdatenickname}
 Update nickname
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param             | Type     | Description |
-| ----------------- | -------- | ----------- |
-| params            | `object` | Parameter   |
-| params.nick\_name | `string` | Nickname    |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> | Parameter |
+| params.nick_name | <code>string</code> | Nickname |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncUpdateNickName" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncGetProfile() ⇒ [`Promise.<UserProfile>`](types.md#module_types__userprofile) <a href="#module_usermanage__asyncgetprofile" id="module_usermanage__asyncgetprofile"></a>
-
+### userManage.asyncGetProfile() ⇒ [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types__userprofile) {#module_usermanage__asyncgetprofile}
 Get user profile
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: [`Promise.<UserProfile>`](types.md#module_types__userprofile) - User information\
-**Example**
-
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: [<code>Promise.&lt;UserProfile&gt;</code>](types.md#module_types__userprofile) - User information  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncGetProfile" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncUpdateProfile(params) ⇒ `Promise.<boolean>` <a href="#module_usermanage__asyncupdateprofile" id="module_usermanage__asyncupdateprofile"></a>
-
+### userManage.asyncUpdateProfile(params) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncupdateprofile}
 Update user profile
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param                | Type     | Description                                               |
-| -------------------- | -------- | --------------------------------------------------------- |
-| params               | `object` |                                                           |
-| params.description   | `string` | Description                                               |
-| params.nick\_name    | `string` | Nickname                                                  |
-| params.private\_info | `string` | Private information, visible only to yourself             |
-| params.public\_info  | `string` | Public information, visible to both friends and strangers |
+| Param | Type | Description |
+| --- | --- | --- |
+| params | <code>object</code> |  |
+| params.description | <code>string</code> | Description |
+| params.nick_name | <code>string</code> | Nickname |
+| params.private_info | <code>string</code> | Private information, visible only to yourself |
+| params.public_info | <code>string</code> | Public information, visible to both friends and strangers |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncUpdateProfile" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncGetSettings() ⇒ [`Promise.<UserSettings>`](types.md#module_types__usersettings) <a href="#module_usermanage__asyncgetsettings" id="module_usermanage__asyncgetsettings"></a>
-
+### userManage.asyncGetSettings() ⇒ [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) {#module_usermanage__asyncgetsettings}
 Get user settings
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: [`Promise.<UserSettings>`](types.md#module_types__usersettings) - User information\
-**Example**
-
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: [<code>Promise.&lt;UserSettings&gt;</code>](types.md#module_types__usersettings) - User information  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncGetSettings" %}{% endlanying_code_snippet %}
 ```
-
-### userManage.asyncUpdateSettings(settings) ⇒ `Promise.<boolean>` <a href="#module_usermanage__asyncupdatesettings" id="module_usermanage__asyncupdatesettings"></a>
-
+### userManage.asyncUpdateSettings(settings) ⇒ <code>Promise.&lt;boolean&gt;</code> {#module_usermanage__asyncupdatesettings}
 Modify user settings
 
-**Kind**: static method of [`userManage`](userManage.md#module_usermanage)\
-**Returns**: `Promise.<boolean>` - Success or not
+**Kind**: static method of [<code>userManage</code>](#module_usermanage)  
+**Returns**: <code>Promise.&lt;boolean&gt;</code> - Success or not  
 
-| Param    | Type                                                  | Description      |
-| -------- | ----------------------------------------------------- | ---------------- |
-| settings | [`UserSettings`](types.md#module_types__usersettings) | Updated settings |
+| Param | Type | Description |
+| --- | --- | --- |
+| settings | [<code>UserSettings</code>](types.md#module_types__usersettings) | Updated settings |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='userManage'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="userManage",function="asyncUpdateSettings" %}{% endlanying_code_snippet %}
 ```

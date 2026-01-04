@@ -1,8 +1,7 @@
 ---
+description: 安卓客户端快速开发 Android SDK 集成说明 SDK 架构 导入SDK 权限配置 APP混淆 
 keywords: 安卓客户端, Android SDK, RTC SDK, 实时音视频
-description: 安卓客户端快速开发 Android SDK 集成说明 SDK 架构 导入SDK 权限配置 APP混淆
 ---
-
 # 安卓客户端快速开发
 
 本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-android.md)
@@ -748,7 +747,6 @@ private BMXChatServiceListener mChatListener = new BMXChatServiceListener() {
 ### 功能进阶
 
 #### 自定义消息
-
 BMXMessageObject实体中，提供可扩展属性(extensionJson 和 configJson) extensionJson 为开发使用的扩展字段，例如编辑状态。 configJson 为SDK自用的扩展字段，例如mention功能，push功能
 
 *   群组@功能
@@ -822,11 +820,15 @@ BMXMessageObject实体中，提供可扩展属性(extensionJson 和 configJson) 
 
 ## Push推送
 
-**第一步 推送证书配置** 登录蓝莺IM管理后台，进入“推送”页面。添加主流手机厂商的推送证书。 ![添加推送证书](../../.gitbook/assets/push_1.png)
+**第一步 推送证书配置**
+登录蓝莺IM管理后台，进入“推送”页面。添加主流手机厂商的推送证书。
+![添加推送证书](../assets/push_1.png)
 
-**第二步 推送SDK集成** 按照各推送SDK厂商的要求，在安卓客户端代码中申请权限，集成SDK，并在应用启动时注册推送服务。
+**第二步 推送SDK集成**
+按照各推送SDK厂商的要求，在安卓客户端代码中申请权限，集成SDK，并在应用启动时注册推送服务。
 
-**第三步 上传device token** 安卓端客户端通过各推送厂商SDK获取device token并上传到蓝莺IM服务器(代码如下)，当接收者不在线的时候，蓝莺IM服务器会自动通过远程推送将消息发过去。
+**第三步 上传device token**
+安卓端客户端通过各推送厂商SDK获取device token并上传到蓝莺IM服务器(代码如下)，当接收者不在线的时候，蓝莺IM服务器会自动通过远程推送将消息发过去。
 
 > L/S: 通过返回值获取到BMXErrorCode判断是否成功。
 
@@ -861,7 +863,6 @@ BMXMessageObject实体中，提供可扩展属性(extensionJson 和 configJson) 
 ```
 
 ## RTC 音视频通话
-
 蓝莺 IM 系统的RTC通话功能，需要客户端集成floo-android和floo-rtc-android两个SDK。floo-android为音视频通话提供了信令通道，floo-rtc-android实现了RTC通话相关的业务逻辑。所以，实现音视频通话的前提是已经集成了floo-android，并实现了登录和收发消息功能。
 
 蓝莺 IM RTC SDK 目前实现了一对一的视频和语音通话功能。下载地址为：https://github.com/maxim-top/floo-rtc-android/releases。
@@ -869,17 +870,15 @@ BMXMessageObject实体中，提供可扩展属性(extensionJson 和 configJson) 
 * 下载aar文件到项目的libs目录
 * 在build.gradle文件dependencies块中增加依赖，参照[lanying-im-android源码](https://github.com/maxim-top/lanying-im-android/blob/master/app/build.gradle#L94)使用最新版。新版的gradle只要声明了对libs目录的依赖，无须再单独声明对其中aar文件的依赖。
 
+
 ### 创建用户界面
-
 1. 导入视频画面类依赖
-
 ```
 import top.maxim.rtc.view.BMXRtcRenderView;
 import top.maxim.rtc.view.RTCRenderView;
 ```
 
 2. 在通话界面创建两个画面的容器布局（本例中为大画面全屏，小画面居右上）
-
 ```
     <FrameLayout
         android:id="@+id/video_view_container_large"
@@ -898,7 +897,6 @@ import top.maxim.rtc.view.RTCRenderView;
 ```
 
 3. 添加本地画面到小画面容器布局
-
 ```
         ViewGroup smallViewGroup = mVideoContainer.findViewById(R.id.video_view_container_small);
         //呼叫过程中，对方画面为空，则将本地画面全屏
@@ -917,9 +915,7 @@ import top.maxim.rtc.view.RTCRenderView;
         layoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
         smallViewGroup.addView(mLocalView, layoutParams);
 ```
-
 4. 添加对方画面到大画面容器布局
-
 ```
         //将原本全屏的本地画面还原为小尺寸
         if (mLocalView != null){
@@ -944,7 +940,6 @@ import top.maxim.rtc.view.RTCRenderView;
 ```
 
 ### 音视频通话业务逻辑
-
 1. 导入RTCManager
 
 ```
@@ -1171,71 +1166,71 @@ mEngine.addRTCEngineListener(mListener = new BMXRTCEngineListener() {
 
 private BMXRTCServiceListener mRTCListener = new BMXRTCServiceListener(){
 
-```
-public void onRTCCallMessageReceive(BMXMessage msg) {
-    new Thread(new Runnable() {
-        @Override
-        public void run() {
-            try {
-                //暂停以处理稍后收到的对应通话的挂断消息（mHungupCalls），
-                // 这样可以避免弹出已结束的通话
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            String callId = msg.config().getRTCCallId();
-            if (mHungupCalls.contains(callId)){
-                mHungupCalls.remove(callId);
-                ackMessage(msg);
-                return;
-            }
-            long roomId = msg.config().getRTCRoomId();
-            long chatId = msg.config().getRTCInitiator();
-            long myId = SharePreferenceUtils.getInstance().getUserId();
-            if (myId == chatId){
-                return;
-            }
-            //如果已在通话中，则发送忙线消息给对方
-            if (RTCManager.getInstance().getRTCEngine().isOnCall){
-                replyBusy(callId, myId, chatId);
-                return;
-            }
-            String pin = msg.config().getRTCPin();
-            if(mActivityRef != null && mActivityRef.get() != null){
-                Context context = mActivityRef.get();
-                if (msg.type() == BMXMessage.MessageType.Single) {
-                    //打开通话界面（呼入中）
-                    SingleVideoCallActivity.openVideoCall(context, chatId, roomId, callId,
-                            false, msg.config().getRTCCallType(), pin, msg.msgId());
+    public void onRTCCallMessageReceive(BMXMessage msg) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    //暂停以处理稍后收到的对应通话的挂断消息（mHungupCalls），
+                    // 这样可以避免弹出已结束的通话
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                String callId = msg.config().getRTCCallId();
+                if (mHungupCalls.contains(callId)){
+                    mHungupCalls.remove(callId);
+                    ackMessage(msg);
+                    return;
+                }
+                long roomId = msg.config().getRTCRoomId();
+                long chatId = msg.config().getRTCInitiator();
+                long myId = SharePreferenceUtils.getInstance().getUserId();
+                if (myId == chatId){
+                    return;
+                }
+                //如果已在通话中，则发送忙线消息给对方
+                if (RTCManager.getInstance().getRTCEngine().isOnCall){
+                    replyBusy(callId, myId, chatId);
+                    return;
+                }
+                String pin = msg.config().getRTCPin();
+                if(mActivityRef != null && mActivityRef.get() != null){
+                    Context context = mActivityRef.get();
+                    if (msg.type() == BMXMessage.MessageType.Single) {
+                        //打开通话界面（呼入中）
+                        SingleVideoCallActivity.openVideoCall(context, chatId, roomId, callId,
+                                false, msg.config().getRTCCallType(), pin, msg.msgId());
+                    }
                 }
             }
+        }, "onRTCCallMessageReceive").start();
+    }
+
+    public void onRTCPickupMessageReceive(BMXMessage msg) {
+        if (msg.config().getRTCCallId().equals(mCallId) && msg.fromId() == mUserId){
+            leaveRoom();
+            ackMessage(msg);
         }
-    }, "onRTCCallMessageReceive").start();
-}
-
-public void onRTCPickupMessageReceive(BMXMessage msg) {
-    if (msg.config().getRTCCallId().equals(mCallId) && msg.fromId() == mUserId){
-        leaveRoom();
-        ackMessage(msg);
     }
-}
 
-public void onRTCHangupMessageReceive(BMXMessage msg) {
-    long otherId = mEngine.otherId;
-    if (msg.config().getRTCCallId().equals(mCallId) &&
-            (msg.fromId()==otherId
-            || msg.content().equals("busy")
-            || msg.content().equals("rejected")
-            || msg.content().equals("canceled")
-            || msg.content().equals("timeout")
-            || !mEngine.isOnCall)){
-        leaveRoom();
-        ackMessage(msg);
+    public void onRTCHangupMessageReceive(BMXMessage msg) {
+        long otherId = mEngine.otherId;
+        if (msg.config().getRTCCallId().equals(mCallId) &&
+                (msg.fromId()==otherId
+                || msg.content().equals("busy")
+                || msg.content().equals("rejected")
+                || msg.content().equals("canceled")
+                || msg.content().equals("timeout")
+                || !mEngine.isOnCall)){
+            leaveRoom();
+            ackMessage(msg);
+        }
     }
-}
-```
 
-}; RTCManager.getInstance().addRTCServiceListener(mRTCListener);
+};
+RTCManager.getInstance().addRTCServiceListener(mRTCListener);
+
 
 2. 发送呼叫消息
 

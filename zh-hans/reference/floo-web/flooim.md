@@ -1,37 +1,34 @@
 # flooim
+## flooim {#module_flooim}
 
-## flooim <a href="#module_flooim" id="module_flooim"></a>
+* [flooim](#module_flooim)
+    * [.flooim(config)](#module_flooim__flooim) ⇒ <code>object</code>
+    * [.login(opt)](#module_flooim__login)
+    * [.qrlogin(opt)](#module_flooim__qrlogin)
+    * [.tokenLogin(user_id, token)](#module_flooim__tokenlogin)
+    * [.idLogin(opt)](#module_flooim__idlogin)
+    * [.isLogin()](#module_flooim__islogin) ⇒ <code>boolean</code>
+    * [.on(options, ext)](#module_flooim__on)
+    * [.off(options, ext)](#module_flooim__off)
+    * [.logout()](#module_flooim__logout)
+    * [.setLogLevel(logLevel)](#module_flooim__setloglevel)
 
-* [flooim](flooim.md#module_flooim)
-  * [.flooim(config)](flooim.md#module_flooim__flooim) ⇒ `object`
-  * [.login(opt)](flooim.md#module_flooim__login)
-  * [.qrlogin(opt)](flooim.md#module_flooim__qrlogin)
-  * [.tokenLogin(user\_id, token)](flooim.md#module_flooim__tokenlogin)
-  * [.idLogin(opt)](flooim.md#module_flooim__idlogin)
-  * [.isLogin()](flooim.md#module_flooim__islogin) ⇒ `boolean`
-  * [.on(options, ext)](flooim.md#module_flooim__on)
-  * [.off(options, ext)](flooim.md#module_flooim__off)
-  * [.logout()](flooim.md#module_flooim__logout)
-  * [.setLogLevel(logLevel)](flooim.md#module_flooim__setloglevel)
-
-### flooim.flooim(config) ⇒ `object` <a href="#module_flooim__flooim" id="module_flooim__flooim"></a>
-
+### flooim.flooim(config) ⇒ <code>object</code> {#module_flooim__flooim}
 初始化SDK
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)\
-**Returns**: `object` - flooim对象
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Returns**: <code>object</code> - flooim对象  
 
-| Param            | Type                    | Description                                                       |
-| ---------------- | ----------------------- | ----------------------------------------------------------------- |
-| config           | `object`                | SDK初始化设置                                                          |
-| config.appid     | `string`                | APPID                                                             |
-| config.ws        | `boolean`               | 连接地址前缀是否为ws/wss: true - 连接地址前缀为ws或wss, false - 连接地址前缀为http/https  |
-| config.autoLogin | `boolean`               | 是否自动登录                                                            |
-| config.dnsServer | `string` \| `undefined` | DNS服务器地址， 可以不设置，默认为 https://dns.lanyingim.com/v2/app\_dns         |
-| config.logLevel  | `string`                | SDK的日志等级， 默认为debug, 取值为 debug、info、warn、error 或 off, 其中off为不打印日志。 |
+| Param | Type | Description |
+| --- | --- | --- |
+| config | <code>object</code> | SDK初始化设置 |
+| config.appid | <code>string</code> | APPID |
+| config.ws | <code>boolean</code> | 连接地址前缀是否为ws/wss: true - 连接地址前缀为ws或wss, false - 连接地址前缀为http/https |
+| config.autoLogin | <code>boolean</code> | 是否自动登录 |
+| config.dnsServer | <code>string</code> &#124; <code>undefined</code> | DNS服务器地址， 可以不设置，默认为 https://dns.lanyingim.com/v2/app_dns |
+| config.logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug、info、warn、error 或 off, 其中off为不打印日志。 |
 
-**Example**
-
+**Example**  
 ```js
 const config = {
 // dnsServer: "https://dns.lanyingim.com/v2/app_dns",
@@ -41,117 +38,87 @@ autoLogin: true
 };
 import flooim from 'floo-3.0.0';
 const im = flooim(config);
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class=''></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="",function="flooim" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.login(opt) <a href="#module_flooim__login" id="module_flooim__login"></a>
-
+### flooim.login(opt) {#module_flooim__login}
 登录
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
-| Param        | Type     | Description |
-| ------------ | -------- | ----------- |
-| opt          | `object` |             |
-| opt.name     | `string` | 用户名         |
-| opt.password | `string` | 密码          |
+| Param | Type | Description |
+| --- | --- | --- |
+| opt | <code>object</code> |  |
+| opt.name | <code>string</code> | 用户名 |
+| opt.password | <code>string</code> | 密码 |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="login" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.qrlogin(opt) <a href="#module_flooim__qrlogin" id="module_flooim__qrlogin"></a>
-
+### flooim.qrlogin(opt) {#module_flooim__qrlogin}
 二维码登录
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
-| Param        | Type     | Description |
-| ------------ | -------- | ----------- |
-| opt          | `object` |             |
-| opt.user\_id | `number` | 用户ID        |
-| opt.password | `string` | 密码          |
+| Param | Type | Description |
+| --- | --- | --- |
+| opt | <code>object</code> |  |
+| opt.user_id | <code>number</code> | 用户ID |
+| opt.password | <code>string</code> | 密码 |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="qrlogin" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.tokenLogin(user\_id, token) <a href="#module_flooim__tokenlogin" id="module_flooim__tokenlogin"></a>
-
+### flooim.tokenLogin(user_id, token) {#module_flooim__tokenlogin}
 token登录
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
-| Param    | Type     | Description |
-| -------- | -------- | ----------- |
-| user\_id | `number` | 用户ID        |
-| token    | `string` | Token       |
+| Param | Type | Description |
+| --- | --- | --- |
+| user_id | <code>number</code> | 用户ID |
+| token | <code>string</code> | Token |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="tokenLogin" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.idLogin(opt) <a href="#module_flooim__idlogin" id="module_flooim__idlogin"></a>
-
+### flooim.idLogin(opt) {#module_flooim__idlogin}
 使用用户ID和密码登录
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
-| Param        | Type     | Description |
-| ------------ | -------- | ----------- |
-| opt          | `object` |             |
-| opt.user\_id | `number` | 用户ID        |
-| opt.password | `string` | 密码          |
+| Param | Type | Description |
+| --- | --- | --- |
+| opt | <code>object</code> |  |
+| opt.user_id | <code>number</code> | 用户ID |
+| opt.password | <code>string</code> | 密码 |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="idLogin" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.isLogin() ⇒ `boolean` <a href="#module_flooim__islogin" id="module_flooim__islogin"></a>
-
+### flooim.isLogin() ⇒ <code>boolean</code> {#module_flooim__islogin}
 是否已登录
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)\
-**Returns**: `boolean` - 是否已登录\
-**Example**
-
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Returns**: <code>boolean</code> - 是否已登录  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="isLogin" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.on(options, ext) <a href="#module_flooim__on" id="module_flooim__on"></a>
-
+### flooim.on(options, ext) {#module_flooim__on}
 事件监听
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
-| Param   | Type                                                                                                                                                 | Description             |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| options | [`Event`](types.md#module_types__event) \| Object.<[`Event`](types.md#module_types__event), [`EventCallback`](types.md#module_types__eventcallback)> | 可以为事件名，也可以为事件名和事件回调     |
-| ext     | [`EventCallback`](types.md#module_types__eventcallback) \| `undefined`                                                                               | 事件回调，只有options为事件名时需要设置 |
+| Param | Type | Description |
+| --- | --- | --- |
+| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
 
-**Example**
-
+**Example**  
 ```js
 const im = flooim(config);
 im.on('event', (ret) => {
@@ -164,24 +131,19 @@ im.on({
    },
    ...
  })
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="on" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.off(options, ext) <a href="#module_flooim__off" id="module_flooim__off"></a>
-
+### flooim.off(options, ext) {#module_flooim__off}
 取消监听
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
-| Param   | Type                                                                                                                                                 | Description             |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| options | [`Event`](types.md#module_types__event) \| Object.<[`Event`](types.md#module_types__event), [`EventCallback`](types.md#module_types__eventcallback)> | 可以为事件名，也可以为事件名和事件回调     |
-| ext     | [`EventCallback`](types.md#module_types__eventcallback) \| `undefined`                                                                               | 事件回调，只有options为事件名时需要设置 |
+| Param | Type | Description |
+| --- | --- | --- |
+| options | [<code>Event</code>](types.md#module_types__event) &#124; Object.&lt;[<code>Event</code>](types.md#module_types__event), [<code>EventCallback</code>](types.md#module_types__eventcallback)&gt; | 可以为事件名，也可以为事件名和事件回调 |
+| ext | [<code>EventCallback</code>](types.md#module_types__eventcallback) &#124; <code>undefined</code> | 事件回调，只有options为事件名时需要设置 |
 
-**Example**
-
+**Example**  
 ```js
 const im = flooim(config);
  im.off('events', (ret) => {
@@ -194,37 +156,26 @@ const im = flooim(config);
    },
  ...
  })
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="off" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.logout() <a href="#module_flooim__logout" id="module_flooim__logout"></a>
-
+### flooim.logout() {#module_flooim__logout}
 退出账户
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)\
-**Example**
-
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
-
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="logout" %}{% endlanying_code_snippet %}
 ```
-
-### flooim.setLogLevel(logLevel) <a href="#module_flooim__setloglevel" id="module_flooim__setloglevel"></a>
-
+### flooim.setLogLevel(logLevel) {#module_flooim__setloglevel}
 设置日志等级
 
-**Kind**: static method of [`flooim`](flooim.md#module_flooim)
+**Kind**: static method of [<code>flooim</code>](#module_flooim)  
 
-| Param    | Type     | Description                                                       |
-| -------- | -------- | ----------------------------------------------------------------- |
-| logLevel | `string` | SDK的日志等级， 默认为debug, 取值为 debug、info、warn、error 或 off, 其中off为不打印日志。 |
+| Param | Type | Description |
+| --- | --- | --- |
+| logLevel | <code>string</code> | SDK的日志等级， 默认为debug, 取值为 debug、info、warn、error 或 off, 其中off为不打印日志。 |
 
-**Example**
-
+**Example**  
 ```js
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-web' data-class='im'></div>
+{% lanying_code_snippet repo="lanying-im-web",class="im",function="setLogLevel" %}{% endlanying_code_snippet %}
 ```

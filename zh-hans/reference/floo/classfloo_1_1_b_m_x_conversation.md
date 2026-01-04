@@ -1,11 +1,15 @@
 ---
 title: floo::BMXConversation
-summary: 会话
+summary: 会话 
+
 ---
 
 # floo::BMXConversation
 
-会话
+
+
+会话 
+
 
 `#include <bmx_conversation.h>`
 
@@ -13,45 +17,45 @@ Inherits from BMXBaseObject
 
 ## Public Types
 
-|            | Name                                                                                                                      |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------- |
-| enum class | <p><a href="classfloo_1_1_b_m_x_conversation.md#enum-type"><strong>Type</strong></a> { Single, Group, System}<br>会话类型</p> |
-| enum class | <p><a href="classfloo_1_1_b_m_x_conversation.md#enum-direction"><strong>Direction</strong></a> { Up, Down}<br>消息搜索方向</p>  |
+|                | Name           |
+| -------------- | -------------- |
+| enum class| **[Type](classfloo_1_1_b_m_x_conversation.md#enum-type)** { Single, Group, System}<br>会话类型  |
+| enum class| **[Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)** { Up, Down}<br>消息搜索方向  |
 
 ## Public Functions
 
-|                                                               | Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| virtual                                                       | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-~bmxconversation"><strong>~BMXConversation</strong></a>()<br>析构函数</p>                                                                                                                                                                                                                                                                                                                                              |
-| virtual int64\_t                                              | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-conversationid"><strong>conversationId</strong></a>() =0<br>会话Id</p>                                                                                                                                                                                                                                                                                                                                               |
-| virtual [Type](classfloo_1_1_b_m_x_conversation.md#enum-type) | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-type"><strong>type</strong></a>() =0<br>会话类型</p>                                                                                                                                                                                                                                                                                                                                                                   |
-| virtual BMXMessagePtr                                         | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-lastmsg"><strong>lastMsg</strong></a>() =0<br>最新消息</p>                                                                                                                                                                                                                                                                                                                                                             |
-| virtual int32\_t                                              | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-unreadnumber"><strong>unreadNumber</strong></a>() =0<br>未读消息数</p>                                                                                                                                                                                                                                                                                                                                                  |
-| virtual int32\_t                                              | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-messagecount"><strong>messageCount</strong></a>() =0<br>会话中所有消息的数量</p>                                                                                                                                                                                                                                                                                                                                             |
-| virtual bool                                                  | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-ismutenotification"><strong>isMuteNotification</strong></a>() =0<br>是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。</p>                                                                                                                                                                                                                                                                                                           |
-| virtual const JSON &                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-extension"><strong>extension</strong></a>() =0<br>扩展信息</p>                                                                                                                                                                                                                                                                                                                                                         |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-setextension"><strong>setExtension</strong></a>(const std::string &#x26; ext) =0<br>设置扩展信息</p>                                                                                                                                                                                                                                                                                                                     |
-| virtual const std::string &                                   | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-editmessage"><strong>editMessage</strong></a>() =0<br>编辑消息</p>                                                                                                                                                                                                                                                                                                                                                     |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-seteditmessage"><strong>setEditMessage</strong></a>(const std::string &#x26; editMessage) =0<br>设置编辑消息</p>                                                                                                                                                                                                                                                                                                         |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-setmessageplayedstatus"><strong>setMessagePlayedStatus</strong></a>(BMXMessagePtr msg, bool status) =0<br>设置消息播放状态（只对语音/视频消息有效）</p>                                                                                                                                                                                                                                                                                |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-setmessagereadstatus"><strong>setMessageReadStatus</strong></a>(BMXMessagePtr msg, bool status) =0<br>设置消息未读状态，更新未读消息数</p>                                                                                                                                                                                                                                                                                         |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-setallmessagesread"><strong>setAllMessagesRead</strong></a>() =0<br>把所有消息设置为已读，更新未读消息数</p>                                                                                                                                                                                                                                                                                                                         |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-updatemessageextension"><strong>updateMessageExtension</strong></a>(BMXMessagePtr msg) =0<br>更新一条数据库存储消息的扩展字段信息</p>                                                                                                                                                                                                                                                                                                |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-insertmessage"><strong>insertMessage</strong></a>(BMXMessagePtr msg) =0<br>插入一条消息</p>                                                                                                                                                                                                                                                                                                                              |
-| virtual BMXMessagePtr                                         | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-loadmessage"><strong>loadMessage</strong></a>(int64_t msgId) =0<br>读取一条消息</p>                                                                                                                                                                                                                                                                                                                                      |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-removeallmessages"><strong>removeAllMessages</strong></a>() =0<br>删除会话中的所有消息</p>                                                                                                                                                                                                                                                                                                                                   |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-loadmessages"><strong>loadMessages</strong></a>(int64_t refMsgId, size_t size, BMXMessageList &#x26; result, <a href="classfloo_1_1_b_m_x_conversation.md#enum-direction">Direction</a> =<a href="classfloo_1_1_b_m_x_conversation.md#enumvalue-up">Direction::Up</a>) =0<br>加载消息，如果不指定则从最新消息开始</p>                                                                                                                |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbykeywords"><strong>searchMessagesByKeyWords</strong></a>(const std::string &#x26; keywords, int64_t refTime, size_t size, BMXMessageList &#x26; result, <a href="classfloo_1_1_b_m_x_conversation.md#enum-direction">Direction</a> =<a href="classfloo_1_1_b_m_x_conversation.md#enumvalue-up">Direction::Up</a>) =0<br>搜索消息，如果不指定则从最新消息开始</p>                                                      |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-searchmessages"><strong>searchMessages</strong></a>(const std::string &#x26; keywords, int64_t refTime, size_t size, BMXMessageList &#x26; result, <a href="classfloo_1_1_b_m_x_conversation.md#enum-direction">Direction</a> =<a href="classfloo_1_1_b_m_x_conversation.md#enumvalue-up">Direction::Up</a>) =0<br>Deprecated.</p>                                                                                 |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbytype"><strong>searchMessagesByType</strong></a>(<a href="classfloo_1_1_b_m_x_message.md#enum-contenttype">BMXMessage::ContentType</a> type, int64_t refTime, size_t size, BMXMessageList &#x26; result, <a href="classfloo_1_1_b_m_x_conversation.md#enum-direction">Direction</a> =<a href="classfloo_1_1_b_m_x_conversation.md#enumvalue-up">Direction::Up</a>) =0<br>按照类型搜索消息，如果不指定则从最新消息开始</p> |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-searchmessages"><strong>searchMessages</strong></a>(<a href="classfloo_1_1_b_m_x_message.md#enum-contenttype">BMXMessage::ContentType</a> type, int64_t refTime, size_t size, BMXMessageList &#x26; result, <a href="classfloo_1_1_b_m_x_conversation.md#enum-direction">Direction</a> =<a href="classfloo_1_1_b_m_x_conversation.md#enumvalue-up">Direction::Up</a>) =0<br>Deprecated.</p>                        |
-| virtual BMXErrorCode                                          | <p><a href="classfloo_1_1_b_m_x_conversation.md#function-refreshconversation"><strong>refreshConversation</strong></a>() =0<br>读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。</p>                                                                                                                                                                                                                                                                                             |
+|                | Name           |
+| -------------- | -------------- |
+| virtual | **[~BMXConversation](classfloo_1_1_b_m_x_conversation.md#function-~bmxconversation)**()<br>析构函数  |
+| virtual int64_t | **[conversationId](classfloo_1_1_b_m_x_conversation.md#function-conversationid)**() =0<br>会话Id  |
+| virtual [Type](classfloo_1_1_b_m_x_conversation.md#enum-type) | **[type](classfloo_1_1_b_m_x_conversation.md#function-type)**() =0<br>会话类型  |
+| virtual BMXMessagePtr | **[lastMsg](classfloo_1_1_b_m_x_conversation.md#function-lastmsg)**() =0<br>最新消息  |
+| virtual int32_t | **[unreadNumber](classfloo_1_1_b_m_x_conversation.md#function-unreadnumber)**() =0<br>未读消息数  |
+| virtual int32_t | **[messageCount](classfloo_1_1_b_m_x_conversation.md#function-messagecount)**() =0<br>会话中所有消息的数量  |
+| virtual bool | **[isMuteNotification](classfloo_1_1_b_m_x_conversation.md#function-ismutenotification)**() =0<br>是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。  |
+| virtual const JSON & | **[extension](classfloo_1_1_b_m_x_conversation.md#function-extension)**() =0<br>扩展信息  |
+| virtual BMXErrorCode | **[setExtension](classfloo_1_1_b_m_x_conversation.md#function-setextension)**(const std::string & ext) =0<br>设置扩展信息  |
+| virtual const std::string & | **[editMessage](classfloo_1_1_b_m_x_conversation.md#function-editmessage)**() =0<br>编辑消息  |
+| virtual BMXErrorCode | **[setEditMessage](classfloo_1_1_b_m_x_conversation.md#function-seteditmessage)**(const std::string & editMessage) =0<br>设置编辑消息  |
+| virtual BMXErrorCode | **[setMessagePlayedStatus](classfloo_1_1_b_m_x_conversation.md#function-setmessageplayedstatus)**(BMXMessagePtr msg, bool status) =0<br>设置消息播放状态（只对语音/视频消息有效）  |
+| virtual BMXErrorCode | **[setMessageReadStatus](classfloo_1_1_b_m_x_conversation.md#function-setmessagereadstatus)**(BMXMessagePtr msg, bool status) =0<br>设置消息未读状态，更新未读消息数  |
+| virtual BMXErrorCode | **[setAllMessagesRead](classfloo_1_1_b_m_x_conversation.md#function-setallmessagesread)**() =0<br>把所有消息设置为已读，更新未读消息数  |
+| virtual BMXErrorCode | **[updateMessageExtension](classfloo_1_1_b_m_x_conversation.md#function-updatemessageextension)**(BMXMessagePtr msg) =0<br>更新一条数据库存储消息的扩展字段信息  |
+| virtual BMXErrorCode | **[insertMessage](classfloo_1_1_b_m_x_conversation.md#function-insertmessage)**(BMXMessagePtr msg) =0<br>插入一条消息  |
+| virtual BMXMessagePtr | **[loadMessage](classfloo_1_1_b_m_x_conversation.md#function-loadmessage)**(int64_t msgId) =0<br>读取一条消息  |
+| virtual BMXErrorCode | **[removeAllMessages](classfloo_1_1_b_m_x_conversation.md#function-removeallmessages)**() =0<br>删除会话中的所有消息  |
+| virtual BMXErrorCode | **[loadMessages](classfloo_1_1_b_m_x_conversation.md#function-loadmessages)**(int64_t refMsgId, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>加载消息，如果不指定则从最新消息开始  |
+| virtual BMXErrorCode | **[searchMessagesByKeyWords](classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbykeywords)**(const std::string & keywords, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>搜索消息，如果不指定则从最新消息开始  |
+| virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_conversation.md#function-searchmessages)**(const std::string & keywords, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
+| virtual BMXErrorCode | **[searchMessagesByType](classfloo_1_1_b_m_x_conversation.md#function-searchmessagesbytype)**([BMXMessage::ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) type, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>按照类型搜索消息，如果不指定则从最新消息开始  |
+| virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_conversation.md#function-searchmessages)**([BMXMessage::ContentType](classfloo_1_1_b_m_x_message.md#enum-contenttype) type, int64_t refTime, size_t size, BMXMessageList & result, [Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
+| virtual BMXErrorCode | **[refreshConversation](classfloo_1_1_b_m_x_conversation.md#function-refreshconversation)**() =0<br>读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。  |
 
 ## Protected Functions
 
-|   | Name                                                                                  |
-| - | ------------------------------------------------------------------------------------- |
-|   | [**BMXConversation**](classfloo_1_1_b_m_x_conversation.md#function-bmxconversation)() |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXConversation](classfloo_1_1_b_m_x_conversation.md#function-bmxconversation)**() |
 
 ## Public Types Documentation
 
@@ -59,165 +63,137 @@ Inherits from BMXBaseObject
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Single     |       | 单聊          |
-| Group      |       | 群聊          |
-| System     |       | 系统通知        |
+| Single | | 单聊   |
+| Group | | 群聊   |
+| System | | 系统通知   |
 
-会话类型
+
+
+会话类型 
 
 ### enum Direction
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Up         |       | 取更旧消息       |
-| Down       |       | 取更新消息       |
+| Up | | 取更旧消息   |
+| Down | | 取更新消息   |
 
-消息搜索方向
+
+
+消息搜索方向 
 
 ## Public Functions Documentation
 
-### function \~BMXConversation
+### function ~BMXConversation
 
 ```cpp
 inline virtual ~BMXConversation()
 ```
 
-析构函数
+析构函数 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="~BMXConversation" %}{% endlanying_code_snippet %}
 ```
-
 ### function conversationId
 
 ```cpp
 virtual int64_t conversationId() =0
 ```
 
-会话Id
+会话Id 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="conversationId" %}{% endlanying_code_snippet %}
 ```
-
 ### function type
 
 ```cpp
 virtual Type type() =0
 ```
 
-会话类型
+会话类型 
 
-**Return**: Type
+**Return**: Type 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="type" %}{% endlanying_code_snippet %}
 ```
-
 ### function lastMsg
 
 ```cpp
 virtual BMXMessagePtr lastMsg() =0
 ```
 
-最新消息
+最新消息 
 
-**Return**: BMXMessagePtr
+**Return**: BMXMessagePtr 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="lastMsg" %}{% endlanying_code_snippet %}
 ```
-
 ### function unreadNumber
 
 ```cpp
 virtual int32_t unreadNumber() =0
 ```
 
-未读消息数
+未读消息数 
 
-**Return**: int32\_t
+**Return**: int32_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="unreadNumber" %}{% endlanying_code_snippet %}
 ```
-
 ### function messageCount
 
 ```cpp
 virtual int32_t messageCount() =0
 ```
 
-会话中所有消息的数量
+会话中所有消息的数量 
 
-**Return**: int32\_t
+**Return**: int32_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="messageCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function isMuteNotification
 
 ```cpp
 virtual bool isMuteNotification() =0
 ```
 
-是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。
+是否提醒用户消息,不提醒的情况下会话总未读数不会统计该会话计数。 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="isMuteNotification" %}{% endlanying_code_snippet %}
 ```
-
 ### function extension
 
 ```cpp
 virtual const JSON & extension() =0
 ```
 
-扩展信息
+扩展信息 
 
-**Return**: JSON(std::string)
+**Return**: JSON(std::string) 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="extension" %}{% endlanying_code_snippet %}
 ```
-
 ### function setExtension
 
 ```cpp
@@ -226,40 +202,33 @@ virtual BMXErrorCode setExtension(
 ) =0
 ```
 
-设置扩展信息
+设置扩展信息 
 
-**Parameters**:
+**Parameters**: 
 
-* **ext** 会话扩展消息
+  * **ext** 会话扩展消息 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setExtension" %}{% endlanying_code_snippet %}
 ```
-
 ### function editMessage
 
 ```cpp
 virtual const std::string & editMessage() =0
 ```
 
-编辑消息
+编辑消息 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="editMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function setEditMessage
 
 ```cpp
@@ -268,22 +237,19 @@ virtual BMXErrorCode setEditMessage(
 ) =0
 ```
 
-设置编辑消息
+设置编辑消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **editMessage** 会话正在编辑的文本消息
+  * **editMessage** 会话正在编辑的文本消息 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setEditMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMessagePlayedStatus
 
 ```cpp
@@ -293,23 +259,20 @@ virtual BMXErrorCode setMessagePlayedStatus(
 ) =0
 ```
 
-设置消息播放状态（只对语音/视频消息有效）
+设置消息播放状态（只对语音/视频消息有效） 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 需要设置播放状态的消息
-* **status** 消息是否已经播放
+  * **msg** 需要设置播放状态的消息 
+  * **status** 消息是否已经播放 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setMessagePlayedStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMessageReadStatus
 
 ```cpp
@@ -319,41 +282,34 @@ virtual BMXErrorCode setMessageReadStatus(
 ) =0
 ```
 
-设置消息未读状态，更新未读消息数
+设置消息未读状态，更新未读消息数 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 需要设置消息已读状态的消息
-* **status** 消息是否设置已读
+  * **msg** 需要设置消息已读状态的消息 
+  * **status** 消息是否设置已读 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setMessageReadStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function setAllMessagesRead
 
 ```cpp
 virtual BMXErrorCode setAllMessagesRead() =0
 ```
 
-把所有消息设置为已读，更新未读消息数
+把所有消息设置为已读，更新未读消息数 
 
-**Return**: BMXErrorCode
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="setAllMessagesRead" %}{% endlanying_code_snippet %}
 ```
-
 ### function updateMessageExtension
 
 ```cpp
@@ -362,22 +318,19 @@ virtual BMXErrorCode updateMessageExtension(
 ) =0
 ```
 
-更新一条数据库存储消息的扩展字段信息
+更新一条数据库存储消息的扩展字段信息 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 需要更改扩展信息的消息此时msg部分已经更新扩展字椴信息
+  * **msg** 需要更改扩展信息的消息此时msg部分已经更新扩展字椴信息 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="updateMessageExtension" %}{% endlanying_code_snippet %}
 ```
-
 ### function insertMessage
 
 ```cpp
@@ -386,22 +339,19 @@ virtual BMXErrorCode insertMessage(
 ) =0
 ```
 
-插入一条消息
+插入一条消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** 插入的消息
+  * **msg** 插入的消息 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="insertMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function loadMessage
 
 ```cpp
@@ -410,40 +360,33 @@ virtual BMXMessagePtr loadMessage(
 ) =0
 ```
 
-读取一条消息
+读取一条消息 
 
-**Parameters**:
+**Parameters**: 
 
-* **msgId** 需要读取的消息的消息id
+  * **msgId** 需要读取的消息的消息id 
 
-**Return**: BMXMessagePtr
+
+**Return**: BMXMessagePtr 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="loadMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeAllMessages
 
 ```cpp
 virtual BMXErrorCode removeAllMessages() =0
 ```
 
-删除会话中的所有消息
+删除会话中的所有消息 
 
-**Return**: BMXErrorCode
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="removeAllMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function loadMessages
 
 ```cpp
@@ -455,25 +398,22 @@ virtual BMXErrorCode loadMessages(
 ) =0
 ```
 
-加载消息，如果不指定则从最新消息开始
+加载消息，如果不指定则从最新消息开始 
 
-**Parameters**:
+**Parameters**: 
 
-* **refMsgId** 加载消息的起始id
-* **size** 最大加载消息条数
-* **result** 数据库返回的加载消息列表
-* **Direction** 加载消息的方向，默认是加载更早的消息
+  * **refMsgId** 加载消息的起始id 
+  * **size** 最大加载消息条数 
+  * **result** 数据库返回的加载消息列表 
+  * **Direction** 加载消息的方向，默认是加载更早的消息 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="loadMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function searchMessagesByKeyWords
 
 ```cpp
@@ -486,26 +426,23 @@ virtual BMXErrorCode searchMessagesByKeyWords(
 ) =0
 ```
 
-搜索消息，如果不指定则从最新消息开始
+搜索消息，如果不指定则从最新消息开始 
 
-**Parameters**:
+**Parameters**: 
 
-* **keywords** 搜索消息的关键字
-* **refTime** 搜索消息的起始时间
-* **size** 最大加载消息条数
-* **result** 搜索到的消息结果列表
-* **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索
+  * **keywords** 搜索消息的关键字 
+  * **refTime** 搜索消息的起始时间 
+  * **size** 最大加载消息条数 
+  * **result** 搜索到的消息结果列表 
+  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
 ```
-
 ### function searchMessages
 
 ```cpp
@@ -518,30 +455,28 @@ virtual BMXErrorCode searchMessages(
 ) =0
 ```
 
-Deprecated.
+Deprecated. 
 
-**Parameters**:
+**Parameters**: 
 
-* **keywords** 搜索消息的关键字
-* **refTime** 搜索消息的起始时间
-* **size** 最大加载消息条数
-* **result** 搜索到的消息结果列表
-* **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索
+  * **keywords** 搜索消息的关键字 
+  * **refTime** 搜索消息的起始时间 
+  * **size** 最大加载消息条数 
+  * **result** 搜索到的消息结果列表 
+  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 use searchMessagesByKeyWords instead.
 
-搜索消息，如果不指定则从最新消息开始
+搜索消息，如果不指定则从最新消息开始 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function searchMessagesByType
 
 ```cpp
@@ -554,26 +489,23 @@ virtual BMXErrorCode searchMessagesByType(
 ) =0
 ```
 
-按照类型搜索消息，如果不指定则从最新消息开始
+按照类型搜索消息，如果不指定则从最新消息开始 
 
-**Parameters**:
+**Parameters**: 
 
-* **type** 搜索消息的类型
-* **refTime** 搜索消息的起始时间
-* **size** 最大加载消息条数
-* **result** 搜索到的消息结果列表
-* **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索
+  * **type** 搜索消息的类型 
+  * **refTime** 搜索消息的起始时间 
+  * **size** 最大加载消息条数 
+  * **result** 搜索到的消息结果列表 
+  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessagesByType" %}{% endlanying_code_snippet %}
 ```
-
 ### function searchMessages
 
 ```cpp
@@ -586,63 +518,55 @@ virtual BMXErrorCode searchMessages(
 ) =0
 ```
 
-Deprecated.
+Deprecated. 
 
-**Parameters**:
+**Parameters**: 
 
-* **type** 搜索消息的类型
-* **refTime** 搜索消息的起始时间
-* **size** 最大加载消息条数
-* **result** 搜索到的消息结果列表
-* **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索
+  * **type** 搜索消息的类型 
+  * **refTime** 搜索消息的起始时间 
+  * **size** 最大加载消息条数 
+  * **result** 搜索到的消息结果列表 
+  * **Direction** 消息搜索方向，默认（Direction::Up）是从更早的消息中搜索 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 use searchMessagesByType instead.
 
-按照类型搜索消息，如果不指定则从最新消息开始
+按照类型搜索消息，如果不指定则从最新消息开始 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="searchMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function refreshConversation
 
 ```cpp
 virtual BMXErrorCode refreshConversation() =0
 ```
 
-读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。
+读取数据库当前会话所有消息数量，强制更新conversation的消息总数和未读消息数。 
 
-**Return**: BMXErrorCode
+**Return**: BMXErrorCode 
 
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="refreshConversation" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXConversation
 
 ```cpp
 inline BMXConversation()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXConversation'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXConversation",function="BMXConversation" %}{% endlanying_code_snippet %}
 ```
-
-***
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

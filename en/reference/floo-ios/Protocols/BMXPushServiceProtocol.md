@@ -1,7 +1,7 @@
 # BMXPushServiceProtocol Protocol Reference
 
-**Conforms to** NSObject\
-**Declared in** floo\_proxy.h
+  **Conforms to** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,6 +9,7 @@
 
 ## Instance Methods
 
+<a name="//api/name/certRetrieved:" title="certRetrieved:"></a>
 ### certRetrieved:
 
 Certificate retrieved
@@ -17,22 +18,18 @@ Certificate retrieved
 
 #### Parameters
 
-_certification_
+*certification*  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/clearedTags:" title="clearedTags:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="certRetrieved:" %}{% endlanying_code_snippet %}
 ```
-
 ### clearedTags:
 
 Push tags cleared
@@ -41,22 +38,18 @@ Push tags cleared
 
 #### Parameters
 
-_operationId_
+*operationId*  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/deleteTagsDidFinished:" title="deleteTagsDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="clearedTags:" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteTagsDidFinished:
 
 Push tags deleted
@@ -65,22 +58,18 @@ Push tags deleted
 
 #### Parameters
 
-_operationId_
+*operationId*  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getTagsDidFinished:" title="getTagsDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="deleteTagsDidFinished:" %}{% endlanying_code_snippet %}
 ```
-
 ### getTagsDidFinished:
 
 Get push tags
@@ -89,22 +78,18 @@ Get push tags
 
 #### Parameters
 
-_operationId_
+*operationId*  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushMessageStatusChanged:error:" title="pushMessageStatusChanged:error:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="getTagsDidFinished:" %}{% endlanying_code_snippet %}
 ```
-
 ### pushMessageStatusChanged:error:
 
 Push message status changed
@@ -113,24 +98,20 @@ Push message status changed
 
 #### Parameters
 
-_message_
+*message*  
 
-_error_
+*error*  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushStartDidFinished:" title="pushStartDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushMessageStatusChanged:error:" %}{% endlanying_code_snippet %}
 ```
-
 ### pushStartDidFinished:
 
 Push service initialized
@@ -139,23 +120,19 @@ Push service initialized
 
 #### Parameters
 
-_bmxToken_\
-bmxToken
+*bmxToken*  
+   bmxToken  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushStartDidStopped" title="pushStartDidStopped"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidFinished:" %}{% endlanying_code_snippet %}
 ```
-
 ### pushStartDidStopped
 
 Push service stopped
@@ -165,17 +142,13 @@ Push service stopped
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedPush:" title="receivedPush:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidStopped" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedPush:
 
 Received push messages
@@ -184,22 +157,18 @@ Received push messages
 
 #### Parameters
 
-_messages_
+*messages*  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setTagsDidFinished:" title="setTagsDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="receivedPush:" %}{% endlanying_code_snippet %}
 ```
-
 ### setTagsDidFinished:
 
 Push tags has been set
@@ -208,17 +177,14 @@ Push tags has been set
 
 #### Parameters
 
-_operationId_
+*operationId*  
 
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="setTagsDidFinished:" %}{% endlanying_code_snippet %}
 ```

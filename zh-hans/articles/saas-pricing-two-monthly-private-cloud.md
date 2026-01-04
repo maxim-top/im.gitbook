@@ -1,8 +1,7 @@
 ---
-keywords: 私有云, SaaS定价, IM云服务, SaaS
 description: 介绍按月付费的私有云在SaaS定价中的应用场景以及私有云的成本和定价策略
+keywords: 私有云, SaaS定价, IM云服务, SaaS
 ---
-
 # SaaS定价二：按月付费的私有云
 
 原创 一乐 美信拓扑 _2021-07-02 10:34_
@@ -33,11 +32,11 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 ## IM 行业价格对比：私有云
 
-![](../../.gitbook/assets/autogen-deae1cc87845ab06a1e9ded97a18e25f372a1c5dd375734a1172f3d55994705c.webp)
+![](../assets/articles/autogen-deae1cc87845ab06a1e9ded97a18e25f372a1c5dd375734a1172f3d55994705c.webp)
 
 上图是 0 到 1 万用户区间价格对比，全部用户（ 0 到百万用户区间）见下图：
 
-![](../../.gitbook/assets/autogen-e1d7657585ffe8fc5bcaa403343a9dfa06748cdfba9d6fec71b191ab89b77170.webp)
+![](../assets/articles/autogen-e1d7657585ffe8fc5bcaa403343a9dfa06748cdfba9d6fec71b191ab89b77170.webp)
 
 需要注意的是，以上两图中行业价格均已按月折算，但在实际情况下，传统私有部署通常会按照项目方式运作，从项目开始、上线到验收进行分阶段款项支付，并不支持按月付费。
 
@@ -55,7 +54,7 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 ## 私有云是什么？
 
-![Photo by Matt Seymour on Unsplash](../../.gitbook/assets/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
+![Photo by Matt Seymour on Unsplash](../assets/articles/autogen-ccdb27fbec21fb80b2593c9f254620dd5c84512ad2e6b04c571629e766f98ed9.webp)
 
 “免费版、专业版、旗舰版、商业版、
 
@@ -69,7 +68,7 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 今天你看到的很多公司依然还是这种交付方式，但这种方式非常低效，而且陷入了跟众多传统技术服务公司竞争的局面，却没有任何优势。成本问题我们后面分析。
 
-直到2019年12月，作为云计算龙头的 AWS 正式发布 Outposts \[1]，才真正将私有云推到业界面前。当然我们知道在此之前很早时间 2017 年，微软就发布了自己的混合云框架 Azure Stack \[2]，但受限于云原生技术的发展，行业里对私有云和混合云的应用远远没有开始。
+直到2019年12月，作为云计算龙头的 AWS 正式发布 Outposts [1]，才真正将私有云推到业界面前。当然我们知道在此之前很早时间 2017 年，微软就发布了自己的混合云框架 Azure Stack [2]，但受限于云原生技术的发展，行业里对私有云和混合云的应用远远没有开始。
 
 是的，你也看到了，这两者都在重点宣传混合云在不同场景下的一致性管理体验。也就是说，私有云应该有跟公有云一致的体验。而这种体验，不仅是具体产品体验，还包括服务的管理和控制。
 
@@ -83,9 +82,9 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 ## 为什么需要私有云？
 
-![Photo by Zunnoon Ahmed on Unsplash](../../.gitbook/assets/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)
+![Photo by Zunnoon Ahmed on Unsplash](../assets/articles/autogen-370669523b6d127055a09fc0e211e43acf1968b558a4efad49668f946c6dee41.webp)
 
-我们处在一个云服务快速扩张的时期，Gartner 在前几天（2021.6.28）发布了最新报告\[3]，2020年 IaaS 市场的增速依然高达40.8%，更别提 PaaS 和 SaaS 了。整个市场的客户支出预计在 2021 年也会保持 23% 的增速\[4]。
+我们处在一个云服务快速扩张的时期，Gartner 在前几天（2021.6.28）发布了最新报告[3]，2020年 IaaS 市场的增速依然高达40.8%，更别提 PaaS 和 SaaS 了。整个市场的客户支出预计在 2021 年也会保持 23% 的增速[4]。
 
 因为这令人欣喜的增速，加上在 2019 年前主流云厂商都旗帜鲜明表态说私有云并非真正的云，因此有不少人乐观地认为，公有云会逐渐替代传统的 IT 设施，而私有云市场注定要被蚕食。然而越来越多的数据表明，即使排除中美市场的差别，私有云的需求依然明确而强烈。
 
@@ -93,7 +92,7 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 另一方面，私有云的真正实现，也能够在保证用户私有需求的情况下，给用户提供有公有云一致的体验，原有项目传统私有部署项目的升级替代效应明显。
 
-混合云技术和多云模式的完善，让公有云和私有云彻底告别了此消彼长的关系，而是一种新型的共同创造市场增量，共同升级 IT 市场的关系。这也是为什么越来越多的 IaaS 厂商也开始将混合云的支持提升到了战略水平，其中包括支持混合云或多云架构的上层云服务应用 \[3]\[5]。
+混合云技术和多云模式的完善，让公有云和私有云彻底告别了此消彼长的关系，而是一种新型的共同创造市场增量，共同升级 IT 市场的关系。这也是为什么越来越多的 IaaS 厂商也开始将混合云的支持提升到了战略水平，其中包括支持混合云或多云架构的上层云服务应用 [3][5]。
 
 根据过去的实践看来，应用层面对私有云的需求至少有以下几种：
 
@@ -125,7 +124,7 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 ## 私有云的成本以及定价
 
-![Photo by alevision.co on Unsplash](../../.gitbook/assets/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)
+![Photo by alevision.co on Unsplash](../assets/articles/autogen-cb8f1481412e0fd7387d3b5053fd12c3ddff1fd2d51b2e92cf4f042e12f4b29a.webp)
 
 从服务提供者的角度来看，传统私有部署项目的成本主要有三部分：
 
@@ -151,7 +150,7 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 我们在私有云定价时也充分考虑了客户的总体支出。当前**定价的总体原则是，提供与行业公有云相当的价格，同时让客户的私有云 TCO 大幅降低**。
 
-![](../../.gitbook/assets/autogen-ed44bdd754b8bc332d3cd9fa79c79a0adb4730f067d515a80bd7cd0baf61403b.webp)
+![](../assets/articles/autogen-ed44bdd754b8bc332d3cd9fa79c79a0adb4730f067d515a80bd7cd0baf61403b.webp)
 
 如图所示，我们美信拓扑的私有云定价已经基本与行业公有云价格基本相当，TCO 也远远低于传统私有部署。
 
@@ -179,4 +178,4 @@ description: 介绍按月付费的私有云在SaaS定价中的应用场景以及
 
 继续关注「美信拓扑」，了解一键启用多云架构的即时通讯。
 
-![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

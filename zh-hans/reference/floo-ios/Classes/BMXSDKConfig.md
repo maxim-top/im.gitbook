@@ -1,7 +1,7 @@
 # BMXSDKConfig Class Reference
 
-**Inherits from** NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,16 +9,20 @@
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/carryUsernameInMessage" title="carryUsernameInMessage"></a>
 ### carryUsernameInMessage
 
 发送消息的config中是否携带
@@ -26,33 +30,25 @@
 `- (BOOL)carryUsernameInMessage`
 
 #### Return Value
-
 BOOL
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="carryUsernameInMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/enableDeliveryAck" title="enableDeliveryAck"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### enableDeliveryAck
 
 是否发送消息送达回执
@@ -60,21 +56,16 @@ BOOL
 `- (BOOL)enableDeliveryAck`
 
 #### Return Value
-
 BOOL
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getAppID" title="getAppID"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="enableDeliveryAck" %}{% endlanying_code_snippet %}
 ```
-
 ### getAppID
 
 获取用户的appID。
@@ -82,21 +73,16 @@ BOOL
 `- (NSString *)getAppID`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getAppSecret" title="getAppSecret"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getAppID" %}{% endlanying_code_snippet %}
 ```
-
 ### getAppSecret
 
 获取用户的appSecret。
@@ -104,21 +90,16 @@ NSString
 `- (NSString *)getAppSecret`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getCacheDir" title="getCacheDir"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getAppSecret" %}{% endlanying_code_snippet %}
 ```
-
 ### getCacheDir
 
 获取缓存数据存储路径，比如用户头像
@@ -126,21 +107,16 @@ NSString
 `- (NSString *)getCacheDir`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getClientType" title="getClientType"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getCacheDir" %}{% endlanying_code_snippet %}
 ```
-
 ### getClientType
 
 客户端类型
@@ -148,21 +124,16 @@ NSString
 `- (BMXClientType)getClientType`
 
 #### Return Value
-
-[BMXClientType](../Constants/BMXClientType.md)
+<a href="../Constants/BMXClientType.md">BMXClientType</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getConsoleOutput" title="getConsoleOutput"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getClientType" %}{% endlanying_code_snippet %}
 ```
-
 ### getConsoleOutput
 
 Log是否输出到Console
@@ -170,21 +141,16 @@ Log是否输出到Console
 `- (BOOL)getConsoleOutput`
 
 #### Return Value
-
 BOOL
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDBCryptoKey" title="getDBCryptoKey"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getConsoleOutput" %}{% endlanying_code_snippet %}
 ```
-
 ### getDBCryptoKey
 
 获取设备的本地数据库加密密钥。
@@ -192,21 +158,16 @@ BOOL
 `- (NSString *)getDBCryptoKey`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDataDir" title="getDataDir"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDBCryptoKey" %}{% endlanying_code_snippet %}
 ```
-
 ### getDataDir
 
 获取聊天数据存储路径，包含消息、附件等
@@ -214,21 +175,16 @@ NSString
 `- (NSString *)getDataDir`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDebugLogReceiverId" title="getDebugLogReceiverId"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDataDir" %}{% endlanying_code_snippet %}
 ```
-
 ### getDebugLogReceiverId
 
 获取调试log接收着账号(仅用于SDK调试，接收客户端log日志使用)
@@ -236,21 +192,16 @@ NSString
 `- (long long)getDebugLogReceiverId`
 
 #### Return Value
-
 long long
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDeviceUuid" title="getDeviceUuid"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDebugLogReceiverId" %}{% endlanying_code_snippet %}
 ```
-
 ### getDeviceUuid
 
 获取设备的唯一识别码
@@ -258,21 +209,16 @@ long long
 `- (NSString *)getDeviceUuid`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getEnableDNS" title="getEnableDNS"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getDeviceUuid" %}{% endlanying_code_snippet %}
 ```
-
 ### getEnableDNS
 
 获取是否启用dns功能。
@@ -280,21 +226,16 @@ NSString
 `- (BOOL)getEnableDNS`
 
 #### Return Value
-
 BOOL
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getHostConfig" title="getHostConfig"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getEnableDNS" %}{% endlanying_code_snippet %}
 ```
-
 ### getHostConfig
 
 获取服务器配置
@@ -302,21 +243,16 @@ BOOL
 `- (BMXSDKConfigHostConfig *)getHostConfig`
 
 #### Return Value
-
-[BMXSDKConfigHostConfig](BMXSDKConfigHostConfig.md)
+<a href="../Classes/BMXSDKConfigHostConfig.md">BMXSDKConfigHostConfig</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getLoadAllServerConversations" title="getLoadAllServerConversations"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getHostConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### getLoadAllServerConversations
 
 是否根据服务器返回未读列表创建所有会话.
@@ -324,21 +260,16 @@ BOOL
 `- (BOOL)getLoadAllServerConversations`
 
 #### Return Value
-
 BOOL
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getLogLevel" title="getLogLevel"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getLoadAllServerConversations" %}{% endlanying_code_snippet %}
 ```
-
 ### getLogLevel
 
 Log输出等级
@@ -346,21 +277,16 @@ Log输出等级
 `- (BMXLogLevel)getLogLevel`
 
 #### Return Value
-
-[BMXLogLevel](../Constants/BMXLogLevel.md)
+<a href="../Constants/BMXLogLevel.md">BMXLogLevel</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getPushCertName" title="getPushCertName"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getLogLevel" %}{% endlanying_code_snippet %}
 ```
-
 ### getPushCertName
 
 获取Push证书名字
@@ -368,21 +294,16 @@ Log输出等级
 `- (NSString *)getPushCertName`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getPushEnvironmentType" title="getPushEnvironmentType"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getPushCertName" %}{% endlanying_code_snippet %}
 ```
-
 ### getPushEnvironmentType
 
 获取用户的推送环境类型。
@@ -390,21 +311,16 @@ NSString
 `- (BMXPushEnvironmentType)getPushEnvironmentType`
 
 #### Return Value
-
-[BMXPushEnvironmentType](../Constants/BMXPushEnvironmentType.md)
+<a href="../Constants/BMXPushEnvironmentType.md">BMXPushEnvironmentType</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getPushProviderType" title="getPushProviderType"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getPushEnvironmentType" %}{% endlanying_code_snippet %}
 ```
-
 ### getPushProviderType
 
 获取用户的推送提供商类型。
@@ -412,21 +328,16 @@ NSString
 `- (BMXPushProviderType)getPushProviderType`
 
 #### Return Value
-
-[BMXPushProviderType](../Constants/BMXPushProviderType.md)
+<a href="../Constants/BMXPushProviderType.md">BMXPushProviderType</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getSDKVersion" title="getSDKVersion"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getPushProviderType" %}{% endlanying_code_snippet %}
 ```
-
 ### getSDKVersion
 
 SDK版本
@@ -434,21 +345,16 @@ SDK版本
 `- (NSString *)getSDKVersion`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getUserAgent" title="getUserAgent"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getSDKVersion" %}{% endlanying_code_snippet %}
 ```
-
 ### getUserAgent
 
 获取用户代理信息
@@ -456,21 +362,16 @@ NSString
 `- (NSString *)getUserAgent`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getUserDNSAddress" title="getUserDNSAddress"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getUserAgent" %}{% endlanying_code_snippet %}
 ```
-
 ### getUserDNSAddress
 
 获取用户自定义dns服务器地址。
@@ -478,21 +379,16 @@ NSString
 `- (NSString *)getUserDNSAddress`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getVerifyCertificate" title="getVerifyCertificate"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getUserDNSAddress" %}{% endlanying_code_snippet %}
 ```
-
 ### getVerifyCertificate
 
 获取https请求是否验证服务器端证书。
@@ -500,21 +396,16 @@ NSString
 `- (BOOL)getVerifyCertificate`
 
 #### Return Value
-
 BOOL
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getVsn" title="getVsn"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getVerifyCertificate" %}{% endlanying_code_snippet %}
 ```
-
 ### getVsn
 
 客户端OS版本
@@ -522,57 +413,43 @@ BOOL
 `- (NSString *)getVsn`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="getVsn" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
+<a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:
 
 `- (id)initWithType:(BMXClientType)*type* vsn:(NSString *)*vsn* dataDir:(NSString *)*dataDir* cacheDir:(NSString *)*cacheDir* sDKVersion:(NSString *)*SDKVersion* pushCertName:(NSString *)*pushCertName* userAgent:(NSString *)*userAgent*`
 
+<a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:
 
 `- (id)initWithType:(BMXClientType)*type* vsn:(NSString *)*vsn* dataDir:(NSString *)*dataDir* cacheDir:(NSString *)*cacheDir* sDKVersion:(NSString *)*SDKVersion* pushCertName:(NSString *)*pushCertName* userAgent:(NSString *)*userAgent* appId:(NSString *)*appId* appSecret:(NSString *)*appSecret*`
 
+<a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:
 
 构造函数
@@ -581,48 +458,44 @@ NSString
 
 #### Parameters
 
-_type_\
-客户端类型
+*type*  
+   客户端类型  
 
-_vsn_\
-客户端OS版本
+*vsn*  
+   客户端OS版本  
 
-_dataDir_\
-聊天数据存储路径
+*dataDir*  
+   聊天数据存储路径  
 
-_cacheDir_\
-缓存数据存储路径
+*cacheDir*  
+   缓存数据存储路径  
 
-_SDKVersion_\
-SDK版本
+*SDKVersion*  
+   SDK版本  
 
-_pushCertName_\
-Push证书名字
+*pushCertName*  
+   Push证书名字  
 
-_userAgent_\
-用户代理信息
+*userAgent*  
+   用户代理信息  
 
-_appId_\
-用户的appId
+*appId*  
+   用户的appId  
 
-_appSecret_\
-用户的appSecret（对于使用推送的用户，必须同时设置appId和appSecret）
+*appSecret*  
+   用户的appSecret（对于使用推送的用户，必须同时设置appId和appSecret）  
 
-_deliveryAck_\
-是否发送消息送达回执
+*deliveryAck*  
+   是否发送消息送达回执  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:" title="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:appId:appSecret:deliveryAck:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:
 
 构造函数
@@ -631,42 +504,38 @@ _deliveryAck_\
 
 #### Parameters
 
-_type_\
-客户端类型
+*type*  
+   客户端类型  
 
-_vsn_\
-客户端OS版本
+*vsn*  
+   客户端OS版本  
 
-_dataDir_\
-聊天数据存储路径
+*dataDir*  
+   聊天数据存储路径  
 
-_cacheDir_\
-缓存数据存储路径
+*cacheDir*  
+   缓存数据存储路径  
 
-_SDKVersion_\
-SDK版本
+*SDKVersion*  
+   SDK版本  
 
-_pushCertName_\
-Push证书名字
+*pushCertName*  
+   Push证书名字  
 
-_userAgent_\
-用户代理信息
+*userAgent*  
+   用户代理信息  
 
-_deliveryAck_\
-是否发送消息送达回执
+*deliveryAck*  
+   是否发送消息送达回执  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAppID:" title="setAppID:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="initWithType:vsn:dataDir:cacheDir:sDKVersion:pushCertName:userAgent:deliveryAck:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAppID:
 
 设置用户的appID。
@@ -675,21 +544,17 @@ _deliveryAck_\
 
 #### Parameters
 
-_appID_\
-用户的appID
+*appID*  
+   用户的appID  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAppSecret:" title="setAppSecret:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setAppID:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAppSecret:
 
 设置用户的appSecret。
@@ -698,21 +563,17 @@ _appID_\
 
 #### Parameters
 
-_appID_\
-用户的appSecret
+*appID*  
+   用户的appSecret  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setCarryUsernameInMessage:" title="setCarryUsernameInMessage:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setAppSecret:" %}{% endlanying_code_snippet %}
 ```
-
 ### setCarryUsernameInMessage:
 
 设置发送消息的config中是否携带用户名
@@ -721,21 +582,17 @@ _appID_\
 
 #### Parameters
 
-_bool_\
-设置是否在送消息的config中携带用户名
+*bool*  
+   设置是否在送消息的config中携带用户名  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setConsoleOutput:" title="setConsoleOutput:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setCarryUsernameInMessage:" %}{% endlanying_code_snippet %}
 ```
-
 ### setConsoleOutput:
 
 设置Log是否输出到Console
@@ -744,21 +601,17 @@ _bool_\
 
 #### Parameters
 
-_bool_\
-设置Log是否输出到Console
+*bool*  
+   设置Log是否输出到Console  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setDBCryptoKey:" title="setDBCryptoKey:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setConsoleOutput:" %}{% endlanying_code_snippet %}
 ```
-
 ### setDBCryptoKey:
 
 设置本地数据库的加密密钥，在app卸载之前应该始终保持一直，app删除后再次安装时可以产生不同的密钥。用于本地数据库加密。
@@ -767,21 +620,17 @@ _bool_\
 
 #### Parameters
 
-_cryptoKey_\
-本地数据库的加密密钥。
+*cryptoKey*  
+   本地数据库的加密密钥。  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setDebugLogReceiverId:" title="setDebugLogReceiverId:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setDBCryptoKey:" %}{% endlanying_code_snippet %}
 ```
-
 ### setDebugLogReceiverId:
 
 设置调试log接收账号(仅用于SDK调试，接收客户端log日志使用)
@@ -790,21 +639,17 @@ _cryptoKey_\
 
 #### Parameters
 
-_uid_\
-调试log接收者id
+*uid*  
+   调试log接收者id  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setDeviceUuid:" title="setDeviceUuid:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setDebugLogReceiverId:" %}{% endlanying_code_snippet %}
 ```
-
 ### setDeviceUuid:
 
 设置设备的唯一识别码，在app卸载之前应该始终保持一致，app删除后再次安装时可以产生不同的设备识别码。
@@ -813,33 +658,26 @@ _uid_\
 
 #### Parameters
 
-_uuid_\
-设备的唯一识别码。
+*uuid*  
+   设备的唯一识别码。  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnableDNS" title="setEnableDNS"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setDeviceUuid:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnableDNS
 
 `- (void)setEnableDNS`
 
+<a name="//api/name/setEnableDNS:" title="setEnableDNS:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnableDNS" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnableDNS:
 
 设置是否启用dns功能，默认是开启的。
@@ -848,21 +686,17 @@ _uuid_\
 
 #### Parameters
 
-_enable_\
-是否启用dns功能
+*enable*  
+   是否启用dns功能  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnableDeliveryAck:" title="setEnableDeliveryAck:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnableDNS:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnableDeliveryAck:
 
 设置是否发送消息送达回执
@@ -871,21 +705,17 @@ _enable_\
 
 #### Parameters
 
-_bool_\
-是否发送消息送达回执
+*bool*  
+   是否发送消息送达回执  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnvironmentType:" title="setEnvironmentType:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnableDeliveryAck:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnvironmentType:
 
 设置用户的推送环境类型。
@@ -894,21 +724,17 @@ _bool_\
 
 #### Parameters
 
-_type_\
-用户的推送环境类型
+*type*  
+   用户的推送环境类型  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setHostConfig:" title="setHostConfig:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setEnvironmentType:" %}{% endlanying_code_snippet %}
 ```
-
 ### setHostConfig:
 
 设置服务器配置
@@ -917,33 +743,26 @@ _type_\
 
 #### Parameters
 
-_config_\
-服务器配置
+*config*  
+   服务器配置  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setLoadAllServerConversations" title="setLoadAllServerConversations"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setHostConfig:" %}{% endlanying_code_snippet %}
 ```
-
 ### setLoadAllServerConversations
 
 `- (void)setLoadAllServerConversations`
 
+<a name="//api/name/setLoadAllServerConversations:" title="setLoadAllServerConversations:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setLoadAllServerConversations" %}{% endlanying_code_snippet %}
 ```
-
 ### setLoadAllServerConversations:
 
 是否根据服务器返回未读列表创建所有会话，默认为false，只会创建有未读消息的会话。
@@ -952,21 +771,17 @@ _config_\
 
 #### Parameters
 
-_enable_\
-是否根据服务器返回未读列表创建所有会话
+*enable*  
+   是否根据服务器返回未读列表创建所有会话  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setLogLevel:" title="setLogLevel:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setLoadAllServerConversations:" %}{% endlanying_code_snippet %}
 ```
-
 ### setLogLevel:
 
 设置Log输出等级
@@ -975,21 +790,17 @@ _enable_\
 
 #### Parameters
 
-_BMXLogLevel_\
-Log输出等级
+*BMXLogLevel*  
+   Log输出等级  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushCertName:" title="setPushCertName:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setLogLevel:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushCertName:
 
 设置Push证书名字
@@ -997,21 +808,16 @@ Log输出等级
 `- (void)setPushCertName:(NSString *)*arg1*`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushProviderType:" title="setPushProviderType:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setPushCertName:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushProviderType:
 
 设置用户的推送提供商类型。
@@ -1020,21 +826,17 @@ NSString
 
 #### Parameters
 
-_type_\
-用户的推送提供商类型
+*type*  
+   用户的推送提供商类型  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setUserDNSAddress:" title="setUserDNSAddress:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setPushProviderType:" %}{% endlanying_code_snippet %}
 ```
-
 ### setUserDNSAddress:
 
 设置用户自定义dns服务器地址，在用户设置了dns服务器的情况下优先使用用户dns。
@@ -1043,33 +845,26 @@ _type_\
 
 #### Parameters
 
-_dns_\
-用户自定义dns服务器地址
+*dns*  
+   用户自定义dns服务器地址  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setVerifyCertificate" title="setVerifyCertificate"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setUserDNSAddress:" %}{% endlanying_code_snippet %}
 ```
-
 ### setVerifyCertificate
 
 `- (void)setVerifyCertificate`
 
+<a name="//api/name/setVerifyCertificate:" title="setVerifyCertificate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setVerifyCertificate" %}{% endlanying_code_snippet %}
 ```
-
 ### setVerifyCertificate:
 
 设置https请求是否验证服务器端证书。
@@ -1078,20 +873,16 @@ _dns_\
 
 #### Parameters
 
-_verify_\
-https请求是否验证服务器端证书
+*verify*  
+   https请求是否验证服务器端证书  
 
 #### Discussion
-
 设置https请求是否验证服务器端证书。
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXSDKConfig'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXSDKConfig",function="setVerifyCertificate:" %}{% endlanying_code_snippet %}
 ```

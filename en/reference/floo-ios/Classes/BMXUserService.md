@@ -1,7 +1,7 @@
 # BMXUserService Class Reference
 
-**Inherits from** NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,16 +9,20 @@
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
 Add a user service listener
@@ -27,32 +31,25 @@ Add a user service listener
 
 #### Parameters
 
-_listener_
+*listener*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXUserServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
+<a name="//api/name/bindDeviceWithToken:" title="bindDeviceWithToken:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
-
 ### bindDeviceWithToken:
 
 Bind device token
@@ -61,24 +58,19 @@ Bind device token
 
 #### Parameters
 
-_token_
+*token*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/bindDeviceWithToken:completion:" title="bindDeviceWithToken:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="bindDeviceWithToken:" %}{% endlanying_code_snippet %}
 ```
-
 ### bindDeviceWithToken:completion:
 
 Bind device token
@@ -87,36 +79,28 @@ Bind device token
 
 #### Parameters
 
-_token_
+*token*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="bindDeviceWithToken:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/deleteDeviceWithDeviceSn:" title="deleteDeviceWithDeviceSn:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteDeviceWithDeviceSn:
 
 Delete a device
@@ -125,25 +109,20 @@ Delete a device
 
 #### Parameters
 
-_device\_sn_\
-Device serial number
+*device_sn*  
+    Device serial number
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/deleteDeviceWithDeviceSn:completion:" title="deleteDeviceWithDeviceSn:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="deleteDeviceWithDeviceSn:" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteDeviceWithDeviceSn:completion:
 
 Delete a device
@@ -152,25 +131,20 @@ Delete a device
 
 #### Parameters
 
-_device\_sn_\
-Device serial number
+*device_sn*  
+    Device serial number
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/downloadAvatarWithProfile:thumbnail:callback:" title="downloadAvatarWithProfile:thumbnail:callback:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="deleteDeviceWithDeviceSn:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### downloadAvatarWithProfile:thumbnail:callback:
 
 Download my avatar
@@ -179,28 +153,23 @@ Download my avatar
 
 #### Parameters
 
-_profile_\
-My user profile
+*profile*  
+    My user profile
 
-_thumbnail_\
-Whether to download my avatar thumbnail
+*thumbnail*  
+    Whether to download my avatar thumbnail
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/downloadAvatarWithProfile:thumbnail:callback:completion:" title="downloadAvatarWithProfile:thumbnail:callback:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="downloadAvatarWithProfile:thumbnail:callback:" %}{% endlanying_code_snippet %}
 ```
-
 ### downloadAvatarWithProfile:thumbnail:callback:completion:
 
 Download my avatar
@@ -209,28 +178,23 @@ Download my avatar
 
 #### Parameters
 
-_profile_\
-My user profile
+*profile*  
+    My user profile
 
-_thumbnail_\
-Whether to download my avatar thumbnail
+*thumbnail*  
+    Whether to download my avatar thumbnail
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDeviceList:" title="getDeviceList:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="downloadAvatarWithProfile:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getDeviceList:
 
 Get my deivce list
@@ -239,24 +203,19 @@ Get my deivce list
 
 #### Parameters
 
-_deviceList_
+*deviceList*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDeviceListWithCompletion:" title="getDeviceListWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getDeviceList:" %}{% endlanying_code_snippet %}
 ```
-
 ### getDeviceListWithCompletion:
 
 Get my deivce list
@@ -265,24 +224,19 @@ Get my deivce list
 
 #### Parameters
 
-_deviceList_
+*deviceList*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getProfile:completion:" title="getProfile:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getDeviceListWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getProfile:completion:
 
 Get my user profile
@@ -291,27 +245,22 @@ Get my user profile
 
 #### Parameters
 
-_forceRefresh_\
-From server
+*forceRefresh*  
+    From server
 
-_profile_
+*profile*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getProfile:forceRefresh:" title="getProfile:forceRefresh:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getProfile:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getProfile:forceRefresh:
 
 Get my user profile
@@ -320,39 +269,31 @@ Get my user profile
 
 #### Parameters
 
-_profile_
+*profile*  
 
-_forceRefresh_\
-From server
+*forceRefresh*  
+    From server
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getProfile:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
+<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeDelegate:
 
 Remove a user service listener
@@ -361,20 +302,16 @@ Remove a user service listener
 
 #### Parameters
 
-_listener_
+*listener*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAddFriendAuthMode:" title="setAddFriendAuthMode:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAddFriendAuthMode:
 
 Set friend authorization mode
@@ -383,24 +320,19 @@ Set friend authorization mode
 
 #### Parameters
 
-_mode_
+*mode*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAddFriendAuthMode:completion:" title="setAddFriendAuthMode:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAddFriendAuthMode:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAddFriendAuthMode:completion:
 
 Set friend authorization mode
@@ -409,24 +341,19 @@ Set friend authorization mode
 
 #### Parameters
 
-_mode_
+*mode*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAuthQuestion:" title="setAuthQuestion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAddFriendAuthMode:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAuthQuestion:
 
 Set friend authorization question
@@ -435,24 +362,19 @@ Set friend authorization question
 
 #### Parameters
 
-_authQuestion_
+*authQuestion*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAuthQuestion:completion:" title="setAuthQuestion:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAuthQuestion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAuthQuestion:completion:
 
 Set friend authorization question
@@ -461,24 +383,19 @@ Set friend authorization question
 
 #### Parameters
 
-_authQuestion_
+*authQuestion*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoAcceptGroupInvite:" title="setAutoAcceptGroupInvite:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAuthQuestion:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoAcceptGroupInvite:
 
 Set whether to accept group invitation automatically
@@ -487,24 +404,19 @@ Set whether to accept group invitation automatically
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoAcceptGroupInvite:completion:" title="setAutoAcceptGroupInvite:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoAcceptGroupInvite:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoAcceptGroupInvite:completion:
 
 Set whether to accept group invitation automatically
@@ -513,24 +425,19 @@ Set whether to accept group invitation automatically
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoDownloadAttachment:" title="setAutoDownloadAttachment:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoAcceptGroupInvite:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoDownloadAttachment:
 
 Set whether download attachment automatically
@@ -539,24 +446,19 @@ Set whether download attachment automatically
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoDownloadAttachment:completion:" title="setAutoDownloadAttachment:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoDownloadAttachment:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoDownloadAttachment:completion:
 
 Set whether download attachment automatically
@@ -565,24 +467,19 @@ Set whether download attachment automatically
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePush:" title="setEnablePush:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoDownloadAttachment:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePush:
 
 Set whether to enable push function
@@ -591,24 +488,19 @@ Set whether to enable push function
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePush:completion:" title="setEnablePush:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePush:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePush:completion:
 
 Set whether to enable push function
@@ -617,24 +509,19 @@ Set whether to enable push function
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePushDetaile:" title="setEnablePushDetaile:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePush:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePushDetaile:
 
 Set whether to enable push message detail
@@ -643,24 +530,19 @@ Set whether to enable push message detail
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePushDetaile:completion:" title="setEnablePushDetaile:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePushDetaile:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePushDetaile:completion:
 
 Set whether to enable push message detail
@@ -669,24 +551,19 @@ Set whether to enable push message detail
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNickname:" title="setNickname:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePushDetaile:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNickname:
 
 Set my nickname
@@ -695,24 +572,19 @@ Set my nickname
 
 #### Parameters
 
-_nickname_
+*nickname*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNickname:completion:" title="setNickname:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNickname:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNickname:completion:
 
 Set my nickname
@@ -721,24 +593,19 @@ Set my nickname
 
 #### Parameters
 
-_nickname_
+*nickname*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationSound:" title="setNotificationSound:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNickname:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationSound:
 
 Set whether to enable sound notification
@@ -747,24 +614,19 @@ Set whether to enable sound notification
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationSound:completion:" title="setNotificationSound:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationSound:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationSound:completion:
 
 Set whether to enable sound notification
@@ -773,24 +635,19 @@ Set whether to enable sound notification
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationVibrate:" title="setNotificationVibrate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationSound:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationVibrate:
 
 Set whether to enable vibrate notification
@@ -799,24 +656,19 @@ Set whether to enable vibrate notification
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationVibrate:completion:" title="setNotificationVibrate:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationVibrate:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationVibrate:completion:
 
 Set whether to enable vibrate notification
@@ -825,24 +677,19 @@ Set whether to enable vibrate notification
 
 #### Parameters
 
-_enable_
+*enable*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPrivateInfo:" title="setPrivateInfo:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationVibrate:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPrivateInfo:
 
 Set private information(Invisible to friends)
@@ -851,24 +698,19 @@ Set private information(Invisible to friends)
 
 #### Parameters
 
-_privateInfo_
+*privateInfo*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPrivateInfo:completion:" title="setPrivateInfo:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPrivateInfo:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPrivateInfo:completion:
 
 Set private information(Invisible to friends)
@@ -877,24 +719,19 @@ Set private information(Invisible to friends)
 
 #### Parameters
 
-_privateInfo_
+*privateInfo*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPublicInfo:" title="setPublicInfo:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPrivateInfo:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPublicInfo:
 
 Set public information(Visible to friends)
@@ -903,24 +740,19 @@ Set public information(Visible to friends)
 
 #### Parameters
 
-_publicInfo_
+*publicInfo*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPublicInfo:completion:" title="setPublicInfo:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPublicInfo:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPublicInfo:completion:
 
 Set public information(Visible to friends)
@@ -929,24 +761,19 @@ Set public information(Visible to friends)
 
 #### Parameters
 
-_publicInfo_
+*publicInfo*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushAlias:bmxPushToken:" title="setPushAlias:bmxPushToken:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPublicInfo:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushAlias:bmxPushToken:
 
 @brief
@@ -955,29 +782,23 @@ _publicInfo_
 
 #### Parameters
 
-_nickname_\
-My nickname
+*nickname*  
+    My nickname
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Discussion
-
 @brief
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushAlias:bmxPushToken:completion:" title="setPushAlias:bmxPushToken:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushAlias:bmxPushToken:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushAlias:bmxPushToken:completion:
 
 @brief
@@ -986,32 +807,24 @@ My nickname
 
 #### Parameters
 
-_alias_
+*alias*  
 
-```
-User alias for push
-```
+    User alias for push
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Discussion
-
 @brief
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushNickname:" title="setPushNickname:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushAlias:bmxPushToken:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushNickname:
 
 Set nickname for push
@@ -1020,24 +833,19 @@ Set nickname for push
 
 #### Parameters
 
-_nickname_
+*nickname*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushNickname:completion:" title="setPushNickname:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushNickname:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushNickname:completion:
 
 Set nickname for push
@@ -1046,24 +854,19 @@ Set nickname for push
 
 #### Parameters
 
-_nickname_
+*nickname*  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/uploadAvatarWithAvatarPath:callback:" title="uploadAvatarWithAvatarPath:callback:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushNickname:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### uploadAvatarWithAvatarPath:callback:
 
 Upload my avatar
@@ -1072,25 +875,20 @@ Upload my avatar
 
 #### Parameters
 
-_avatarPath_\
-Local path of my avatar file
+*avatarPath*  
+    Local path of my avatar file
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/uploadAvatarWithAvatarPath:callback:completion:" title="uploadAvatarWithAvatarPath:callback:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="uploadAvatarWithAvatarPath:callback:" %}{% endlanying_code_snippet %}
 ```
-
 ### uploadAvatarWithAvatarPath:callback:completion:
 
 Upload my avatar
@@ -1099,20 +897,16 @@ Upload my avatar
 
 #### Parameters
 
-_avatarPath_\
-Local path of my avatar file
+*avatarPath*  
+    Local path of my avatar file
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="uploadAvatarWithAvatarPath:callback:completion:" %}{% endlanying_code_snippet %}
 ```

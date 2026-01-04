@@ -1,36 +1,41 @@
 ---
 title: im::floo::floolib::BMXSDKConfig::HostConfig
+
 ---
 
 # im::floo::floolib::BMXSDKConfig::HostConfig
 
+
+
+
+
 ## Public Functions
 
-|                   | Name                                                                                                                                                                                |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| synchronized void | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-delete)()                                                                                |
-|                   | [**HostConfig**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)()                                                                        |
-|                   | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig"><strong>HostConfig</strong></a>(String im, int port, String rest)<br>服务设置</p> |
-| void              | [**setImHost**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setimhost)(String value)                                                              |
-| String            | [**getImHost**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getimhost)()                                                                          |
-| void              | [**setImPort**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setimport)(int value)                                                                 |
-| int               | [**getImPort**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getimport)()                                                                          |
-| void              | [**setRestHost**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setresthost)(String value)                                                          |
-| String            | [**getRestHost**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getresthost)()                                                                      |
+|                | Name           |
+| -------------- | -------------- |
+| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-delete)**() |
+| | **[HostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)**() |
+| | **[HostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)**(String im, int port, String rest)<br>服务设置  |
+| void | **[setImHost](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setimhost)**(String value) |
+| String | **[getImHost](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getimhost)**() |
+| void | **[setImPort](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setimport)**(int value) |
+| int | **[getImPort](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getimport)**() |
+| void | **[setRestHost](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-setresthost)**(String value) |
+| String | **[getRestHost](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getresthost)**() |
 
 ## Protected Functions
 
-|      | Name                                                                                                                                      |
-| ---- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-|      | [**HostConfig**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)(long cPtr, boolean cMemoryOwn) |
-| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-finalize)()                                  |
-| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getcptr)(HostConfig obj)                      |
+|                | Name           |
+| -------------- | -------------- |
+| | **[HostConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-hostconfig)**(long cPtr, boolean cMemoryOwn) |
+| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-finalize)**() |
+| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#function-getcptr)**(HostConfig obj) |
 
 ## Protected Attributes
 
-|                   | Name                                                                                                         |
-| ----------------- | ------------------------------------------------------------------------------------------------------------ |
-| transient boolean | [**swigCMemOwn**](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#variable-swigcmemown) |
+|                | Name           |
+| -------------- | -------------- |
+| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_s_d_k_config_1_1_host_config.md#variable-swigcmemown)**  |
 
 ## Public Functions Documentation
 
@@ -40,28 +45,22 @@ title: im::floo::floolib::BMXSDKConfig::HostConfig
 inline synchronized void delete()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="delete" %}{% endlanying_code_snippet %}
 ```
-
 ### function HostConfig
 
 ```java
 inline HostConfig()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="HostConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function HostConfig
 
 ```java
@@ -72,22 +71,19 @@ inline HostConfig(
 )
 ```
 
-服务设置
+服务设置 
 
-**Parameters**:
+**Parameters**: 
 
-* **im** IM服务器地址
-* **port** IM服务器端口
-* **rest** ratel服务器地址
+  * **im** IM服务器地址 
+  * **port** IM服务器端口 
+  * **rest** ratel服务器地址 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="HostConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function setImHost
 
 ```java
@@ -96,28 +92,22 @@ inline void setImHost(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="setImHost" %}{% endlanying_code_snippet %}
 ```
-
 ### function getImHost
 
 ```java
 inline String getImHost()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getImHost" %}{% endlanying_code_snippet %}
 ```
-
 ### function setImPort
 
 ```java
@@ -126,28 +116,22 @@ inline void setImPort(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="setImPort" %}{% endlanying_code_snippet %}
 ```
-
 ### function getImPort
 
 ```java
 inline int getImPort()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getImPort" %}{% endlanying_code_snippet %}
 ```
-
 ### function setRestHost
 
 ```java
@@ -156,30 +140,24 @@ inline void setRestHost(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="setRestHost" %}{% endlanying_code_snippet %}
 ```
-
 ### function getRestHost
 
 ```java
 inline String getRestHost()
 ```
 
+
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getRestHost" %}{% endlanying_code_snippet %}
 ```
-
 ### function HostConfig
 
 ```java
@@ -189,28 +167,22 @@ inline HostConfig(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="HostConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="finalize" %}{% endlanying_code_snippet %}
 ```
-
 ### function getCPtr
 
 ```java
@@ -218,6 +190,7 @@ static inline long getCPtr(
     HostConfig obj
 )
 ```
+
 
 ## Protected Attributes Documentation
 
@@ -227,13 +200,11 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='HostConfig'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="HostConfig",function="getCPtr" %}{% endlanying_code_snippet %}
 ```
-
-***
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

@@ -1,42 +1,45 @@
 ---
 title: im::floo::floolib::BMXGroup::Invitation
-summary: Group invitations
+summary: Group invitations 
+
 ---
 
 # im::floo::floolib::BMXGroup::Invitation
 
-Group invitations
+
+
+Group invitations 
 
 ## Public Functions
 
-|                           | Name                                                                                                                                |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| synchronized void         | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-delete)()                                        |
-|                           | [**Invitation**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-invitation)()                                |
-| void                      | [**setMGroupId**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmgroupid)(long value)                    |
-| long                      | [**getMGroupId**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmgroupid)()                              |
-| void                      | [**setMInviterId**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setminviterid)(long value)                |
-| long                      | [**getMInviterId**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getminviterid)()                          |
-| void                      | [**setMReason**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmreason)(String value)                    |
-| String                    | [**getMReason**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmreason)()                                |
-| void                      | [**setMStatus**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmstatus)(BMXGroup.InvitationStatus value) |
-| BMXGroup.InvitationStatus | [**getMStatus**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmstatus)()                                |
-| void                      | [**setMExpired**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmexpired)(long value)                    |
-| long                      | [**getMExpired**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmexpired)()                              |
+|                | Name           |
+| -------------- | -------------- |
+| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-delete)**() |
+| | **[Invitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-invitation)**() |
+| void | **[setMGroupId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmgroupid)**(long value) |
+| long | **[getMGroupId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmgroupid)**() |
+| void | **[setMInviterId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setminviterid)**(long value) |
+| long | **[getMInviterId](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getminviterid)**() |
+| void | **[setMReason](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmreason)**(String value) |
+| String | **[getMReason](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmreason)**() |
+| void | **[setMStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmstatus)**(BMXGroup.InvitationStatus value) |
+| BMXGroup.InvitationStatus | **[getMStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmstatus)**() |
+| void | **[setMExpired](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-setmexpired)**(long value) |
+| long | **[getMExpired](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getmexpired)**() |
 
 ## Protected Functions
 
-|      | Name                                                                                                                              |
-| ---- | --------------------------------------------------------------------------------------------------------------------------------- |
-|      | [**Invitation**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-invitation)(long cPtr, boolean cMemoryOwn) |
-| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-finalize)()                                  |
-| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getcptr)(Invitation obj)                      |
+|                | Name           |
+| -------------- | -------------- |
+| | **[Invitation](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-invitation)**(long cPtr, boolean cMemoryOwn) |
+| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-finalize)**() |
+| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#function-getcptr)**(Invitation obj) |
 
 ## Protected Attributes
 
-|                   | Name                                                                                                 |
-| ----------------- | ---------------------------------------------------------------------------------------------------- |
-| transient boolean | [**swigCMemOwn**](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#variable-swigcmemown) |
+|                | Name           |
+| -------------- | -------------- |
+| transient boolean | **[swigCMemOwn](classim_1_1floo_1_1floolib_1_1_b_m_x_group_1_1_invitation.md#variable-swigcmemown)**  |
 
 ## Public Functions Documentation
 
@@ -46,28 +49,22 @@ Group invitations
 inline synchronized void delete()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="delete" %}{% endlanying_code_snippet %}
 ```
-
 ### function Invitation
 
 ```java
 inline Invitation()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="Invitation" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMGroupId
 
 ```java
@@ -76,28 +73,22 @@ inline void setMGroupId(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMGroupId" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMGroupId
 
 ```java
 inline long getMGroupId()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMGroupId" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMInviterId
 
 ```java
@@ -106,28 +97,22 @@ inline void setMInviterId(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMInviterId" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMInviterId
 
 ```java
 inline long getMInviterId()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMInviterId" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMReason
 
 ```java
@@ -136,28 +121,22 @@ inline void setMReason(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMReason" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMReason
 
 ```java
 inline String getMReason()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMReason" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMStatus
 
 ```java
@@ -166,28 +145,22 @@ inline void setMStatus(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMStatus
 
 ```java
 inline BMXGroup.InvitationStatus getMStatus()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function setMExpired
 
 ```java
@@ -196,30 +169,24 @@ inline void setMExpired(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="setMExpired" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMExpired
 
 ```java
 inline long getMExpired()
 ```
 
+
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getMExpired" %}{% endlanying_code_snippet %}
 ```
-
 ### function Invitation
 
 ```java
@@ -229,28 +196,22 @@ inline Invitation(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="Invitation" %}{% endlanying_code_snippet %}
 ```
-
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="finalize" %}{% endlanying_code_snippet %}
 ```
-
 ### function getCPtr
 
 ```java
@@ -258,6 +219,7 @@ static inline long getCPtr(
     Invitation obj
 )
 ```
+
 
 ## Protected Attributes Documentation
 
@@ -267,13 +229,11 @@ static inline long getCPtr(
 transient boolean swigCMemOwn;
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='Invitation'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="Invitation",function="getCPtr" %}{% endlanying_code_snippet %}
 ```
-
-***
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

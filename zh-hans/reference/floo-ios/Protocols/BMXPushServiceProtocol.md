@@ -1,7 +1,7 @@
 # BMXPushServiceProtocol Protocol Reference
 
-**Conforms to** NSObject\
-**Declared in** floo\_proxy.h
+  **Conforms to** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,6 +9,7 @@
 
 ## Instance Methods
 
+<a name="//api/name/certRetrieved:" title="certRetrieved:"></a>
 ### certRetrieved:
 
 Push初始化完成后获取推送证书。
@@ -17,25 +18,20 @@ Push初始化完成后获取推送证书。
 
 #### Parameters
 
-_certification_\
-推送证书
+*certification*  
+   推送证书  
 
 #### Discussion
-
 Push初始化完成后获取推送证书。
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/clearedTags:" title="clearedTags:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="certRetrieved:" %}{% endlanying_code_snippet %}
 ```
-
 ### clearedTags:
 
 清空用户推送成功回调。
@@ -44,25 +40,20 @@ Push初始化完成后获取推送证书。
 
 #### Parameters
 
-_operationId_\
-操作id
+*operationId*  
+   操作id  
 
 #### Discussion
-
 清空用户推送成功回调。
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/deleteTagsDidFinished:" title="deleteTagsDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="clearedTags:" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteTagsDidFinished:
 
 删除用户推送标签成功回调
@@ -71,25 +62,20 @@ _operationId_\
 
 #### Parameters
 
-_operationId_\
-操作id
+*operationId*  
+   操作id  
 
 #### Discussion
-
 删除用户推送标签成功回调
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getTagsDidFinished:" title="getTagsDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="deleteTagsDidFinished:" %}{% endlanying_code_snippet %}
 ```
-
 ### getTagsDidFinished:
 
 获取用户推送标签成功回调。
@@ -98,25 +84,20 @@ _operationId_\
 
 #### Parameters
 
-_operationId_\
-操作id
+*operationId*  
+   操作id  
 
 #### Discussion
-
 获取用户推送标签成功回调。
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushMessageStatusChanged:error:" title="pushMessageStatusChanged:error:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="getTagsDidFinished:" %}{% endlanying_code_snippet %}
 ```
-
 ### pushMessageStatusChanged:error:
 
 发送Push上行消息状态变化通知。
@@ -125,28 +106,23 @@ _operationId_\
 
 #### Parameters
 
-_message_\
-发生状态变化的上行消息
+*message*  
+   发生状态变化的上行消息  
 
-_error_\
-状态错误码
+*error*  
+   状态错误码  
 
 #### Discussion
-
 发送Push上行消息状态变化通知。
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushStartDidFinished:" title="pushStartDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushMessageStatusChanged:error:" %}{% endlanying_code_snippet %}
 ```
-
 ### pushStartDidFinished:
 
 Push初始化完成通知。
@@ -155,25 +131,20 @@ Push初始化完成通知。
 
 #### Parameters
 
-_bmxToken_\
-bmxToken
+*bmxToken*  
+   bmxToken  
 
 #### Discussion
-
 Push初始化完成通知。
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushStartDidStopped" title="pushStartDidStopped"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidFinished:" %}{% endlanying_code_snippet %}
 ```
-
 ### pushStartDidStopped
 
 Push功能停止通知。
@@ -181,21 +152,16 @@ Push功能停止通知。
 `- (void)pushStartDidStopped`
 
 #### Discussion
-
 Push功能停止通知。
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedPush:" title="receivedPush:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="pushStartDidStopped" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedPush:
 
 接收到新的Push通知
@@ -204,25 +170,20 @@ Push功能停止通知。
 
 #### Parameters
 
-_messages_\
-Push通知列表
+*messages*  
+   Push通知列表  
 
 #### Discussion
-
 接收到新的Push通知
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setTagsDidFinished:" title="setTagsDidFinished:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="receivedPush:" %}{% endlanying_code_snippet %}
 ```
-
 ### setTagsDidFinished:
 
 设置用户推送标签成功回调。
@@ -231,20 +192,16 @@ Push通知列表
 
 #### Parameters
 
-_operationId_\
-操作id
+*operationId*  
+   操作id  
 
 #### Discussion
-
 设置用户推送标签成功回调。
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushServiceProtocol'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushServiceProtocol",function="setTagsDidFinished:" %}{% endlanying_code_snippet %}
 ```

@@ -1,13 +1,12 @@
 ---
-keywords: 美信拓扑, IM SDK, 即时通讯SDK, MTOS
 description: 美信拓扑开源的IM SDK Web版开源计划以及美信拓扑的相关介绍
+keywords: 美信拓扑, IM SDK, 即时通讯SDK, MTOS
 ---
-
 # 【美信拓扑开源】IM SDK Web版开源
 
 原创 一乐 美信拓扑 _2021-08-13 19:15_
 
-> 这是一份来自美信拓扑的七夕礼物，节日快乐！O(∩\_∩)O哈哈\~
+> 这是一份来自美信拓扑的七夕礼物，节日快乐！O(∩_∩)O哈哈~
 >
 > **截止到 2021.08.13，美信拓扑开源代码已达 163277 行。**
 
@@ -25,7 +24,7 @@ description: 美信拓扑开源的IM SDK Web版开源计划以及美信拓扑的
 
 所以我们不只是会继续开源，还会将系统设计、协议等方面的材料公开出来，欢迎感兴趣的朋友持续关注。
 
-![](../../.gitbook/assets/autogen-86648f536f547fb95b7eebc3087e71653b7333ce945666222af6b2b9bdc1a111.webp)
+![](../assets/articles/autogen-86648f536f547fb95b7eebc3087e71653b7333ce945666222af6b2b9bdc1a111.webp)
 
 ## 美信拓扑开源计划（MTOS）
 
@@ -46,9 +45,9 @@ description: 美信拓扑开源的IM SDK Web版开源计划以及美信拓扑的
 
 当前美信拓扑开源代码累计 163277 行，计划完成进度 42%。完整计划如下：
 
-![](../../.gitbook/assets/autogen-5fd0ab991b1f0bd2f6079c07ad463678352e2ee272431522d524173dd0438bde.webp)
+![](../assets/articles/autogen-5fd0ab991b1f0bd2f6079c07ad463678352e2ee272431522d524173dd0438bde.webp)
 
-希望你能喜欢这份七夕礼物，节日快乐！O(∩\_∩)O哈哈\~
+希望你能喜欢这份七夕礼物，节日快乐！O(∩_∩)O哈哈~
 
 ### ✨为什么叫 Floo？✨
 
@@ -66,4 +65,4 @@ description: 美信拓扑开源的IM SDK Web版开源计划以及美信拓扑的
 
 记得 Fork & Star 哦✨✨✨✨✨✨✨✨✨
 
-![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

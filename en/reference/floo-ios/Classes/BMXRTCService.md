@@ -1,7 +1,7 @@
 # BMXRTCService Class Reference
 
-**Inherits from** NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,16 +9,20 @@
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
 Add a RTCService listener
@@ -27,32 +31,25 @@ Add a RTCService listener
 
 #### Parameters
 
-_listener_
+*listener*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXRTCServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
+<a name="//api/name/addRTCListener:" title="addRTCListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
-
 ### addRTCListener:
 
 Add a RTCService listener
@@ -61,32 +58,25 @@ Add a RTCService listener
 
 #### Parameters
 
-_listener_
+*listener*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addRTCListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/getBMXRTCSignalService" title="getBMXRTCSignalService"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### getBMXRTCSignalService
 
 Get the RTC signal service
@@ -94,17 +84,13 @@ Get the RTC signal service
 `- (BMXRTCSignalService *)getBMXRTCSignalService`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getRTCEngine" title="getRTCEngine"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="getBMXRTCSignalService" %}{% endlanying_code_snippet %}
 ```
-
 ### getRTCEngine
 
 Get RTC engine
@@ -112,33 +98,25 @@ Get RTC engine
 `- (BMXRTCEngine *)getRTCEngine`
 
 #### Return Value
-
-BMXRTCEngine\*
+BMXRTCEngine*
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="getRTCEngine" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
+<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeDelegate:
 
 Remove a RTCService listener
@@ -147,20 +125,16 @@ Remove a RTCService listener
 
 #### Parameters
 
-_listener_
+*listener*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeRTCListener:" title="removeRTCListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeRTCListener:
 
 Remove a RTCService listener
@@ -169,20 +143,16 @@ Remove a RTCService listener
 
 #### Parameters
 
-_listener_
+*listener*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/sendRTCMessageWithMsg:" title="sendRTCMessageWithMsg:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="removeRTCListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### sendRTCMessageWithMsg:
 
 Send a RTC message
@@ -191,20 +161,16 @@ Send a RTC message
 
 #### Parameters
 
-_msg_
+*msg*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/sendRTCMessageWithMsg:completion:" title="sendRTCMessageWithMsg:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="sendRTCMessageWithMsg:" %}{% endlanying_code_snippet %}
 ```
-
 ### sendRTCMessageWithMsg:completion:
 
 Send a RTC message
@@ -213,20 +179,16 @@ Send a RTC message
 
 #### Parameters
 
-_msg_
+*msg*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setupRTCEngine:" title="setupRTCEngine:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="sendRTCMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setupRTCEngine:
 
 Initialize the RTC engine
@@ -235,15 +197,12 @@ Initialize the RTC engine
 
 #### Parameters
 
-_engine_
+*engine*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="setupRTCEngine:" %}{% endlanying_code_snippet %}
 ```

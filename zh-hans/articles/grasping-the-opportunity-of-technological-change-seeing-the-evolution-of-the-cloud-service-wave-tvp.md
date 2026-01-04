@@ -1,19 +1,18 @@
 ---
-keywords: 云服务浪潮, TVP十日谈, 第三方推送, Chat AI SDK
 description: 把握技术变革的机遇：看云服务浪潮如何演进 | TVP十日谈预告
+keywords: 云服务浪潮, TVP十日谈, 第三方推送, Chat AI SDK
 ---
-
 # 把握技术变革的机遇：看云服务浪潮如何演进 | TVP十日谈预告
 
 TVP官方团队 美信拓扑 _2020-11-02 09:00_
 
-![](../../.gitbook/assets/autogen-aa0550ea9ec70d19a3327ba07517a228672c7c9e1d347e00fdad335d70ffcf84.webp)
+![](../assets/articles/autogen-aa0550ea9ec70d19a3327ba07517a228672c7c9e1d347e00fdad335d70ffcf84.webp)
 
 **硬核分享简介**
 
 **11.2丨《新一代PaaS服务的架构演化》**
 
-![](../../.gitbook/assets/autogen-b498272877e471dd7e55f6fe8db636314281d27dd7b22a88fd30f05f7b52b56a.webp)
+![](../assets/articles/autogen-b498272877e471dd7e55f6fe8db636314281d27dd7b22a88fd30f05f7b52b56a.webp)
 
 **硬核大咖**：一乐 美信拓扑 创始人兼CEO
 
@@ -22,23 +21,25 @@ TVP官方团队 美信拓扑 _2020-11-02 09:00_
 **硬核大纲：**
 
 1. 如何支撑一个快速增长的云服务
+
 2. 企业上云新阶段的挑战与应对
+
 3. 新一代云服务的金标准
 
 **报名方式**
 
 线上直播将在11月2日（周一）晚19:30-20:30进行，识别下图二维码或点击「阅读原文」即可进入直播间预约直播。
 
-![](../../.gitbook/assets/autogen-68cbff0bb76a05ab8933839e1a6efc760bbb4392a22d3123c8f292dfc5a07688.webp)
+![](../assets/articles/autogen-68cbff0bb76a05ab8933839e1a6efc760bbb4392a22d3123c8f292dfc5a07688.webp)
 
 **福利大放送**
 
-对于一乐老师的分享，你有哪些想说的话？**在留言区评论，预约直播，并配上文案“我已预约大咖直播，你还不上车吗\~”分享本推送到朋友圈**集满188个赞，可获得腾讯定制太空鹅盲盒（限量前三名），集满158个赞，可获得腾讯定制QQ公仔（限量前五名），名额有限，先到先得噢\~
+对于一乐老师的分享，你有哪些想说的话？**在留言区评论，预约直播，并配上文案“我已预约大咖直播，你还不上车吗~”分享本推送到朋友圈**集满188个赞，可获得腾讯定制太空鹅盲盒（限量前三名），集满158个赞，可获得腾讯定制QQ公仔（限量前五名），名额有限，先到先得噢~
 
-![](../../.gitbook/assets/autogen-11cd1b74ea7d6373990d4ee9d3acbb89667ff68dd14a77c3c2b028d026915354.webp)
+![](../assets/articles/autogen-11cd1b74ea7d6373990d4ee9d3acbb89667ff68dd14a77c3c2b028d026915354.webp)
 
-![](../../.gitbook/assets/autogen-7da8eb8548f9d7844ad4f92551730afe5d5c50250074e69e0fa0efff7f534e29.webp)
+![](../assets/articles/autogen-7da8eb8548f9d7844ad4f92551730afe5d5c50250074e69e0fa0efff7f534e29.webp)
 
-领取规则：11月4日下午6点前私聊云小助（微信号：yunjiadahui）发送留言截图、预约直播截图及朋友圈集赞截图，审核通过后即可兑换，名额有限，先到先得噢\~
+领取规则：11月4日下午6点前私聊云小助（微信号：yunjiadahui）发送留言截图、预约直播截图及朋友圈集赞截图，审核通过后即可兑换，名额有限，先到先得噢~
 
-![](../../.gitbook/assets/autogen-55a805e16de9cc40787c4d73e19ce96d89657793275266cf47bd390cc6fbbbdf.webp)
+![](../assets/articles/autogen-55a805e16de9cc40787c4d73e19ce96d89657793275266cf47bd390cc6fbbbdf.webp)

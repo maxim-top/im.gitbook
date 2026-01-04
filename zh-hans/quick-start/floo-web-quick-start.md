@@ -1,11 +1,7 @@
 ---
+description: Web 前端快速开发 选型先读 前期准备 快速集成 一、初始化 二、注册用户 三、登录链接服务器 四、获取会话列表 五、断开连接 用户好友 添加好友 删除好友 同意添加好友 拒绝添加好友 获取好友列表 基础功能 单聊 音视频单聊 群聊 消息发送 构建消息实体 文本消息 图片消息 文件消息 位置消息 音视频消息 消息操作 消息接收监听 接收到消息通知 消息发送后状态回调通知 功能进阶 群组@功能 消息正在输入状态 消息搜索 发起音视频单聊通话 发送音视频单聊通话消息 接受音视频单聊消息
 keywords: Web 前端, 消息发送, PUSH SDK, 第三方推送
-description: >-
-  Web 前端快速开发 选型先读 前期准备 快速集成 一、初始化 二、注册用户 三、登录链接服务器 四、获取会话列表 五、断开连接 用户好友 添加好友
-  删除好友 同意添加好友 拒绝添加好友 获取好友列表 基础功能 单聊 音视频单聊 群聊 消息发送 构建消息实体 文本消息 图片消息 文件消息 位置消息
-  音视频消息 消息操作 消息接收监听 接收到消息通知 消息发送后状态回调通知 功能进阶 群组@功能 消
 ---
-
 # Web 前端快速开发
 
 本页面供快速集成使用，了解更多请访问[详细文档](../reference/floo-web.md)
@@ -23,7 +19,7 @@ description: >-
 ## 前期准备
 
 1. 登录官网控制台，获取你的appid，并替换下文中 YOUR\_APP\_ID。
-2. 下载SDK [floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js), 最新版SDK,请从此下载: [Web版 SDK](https://github.com/maxim-top/floo-web/releases), [Uni-app版 SDK](https://github.com/maxim-top/floo-uniapp/releases)
+2. 下载SDK [floo-3.0.0.js](https://package.lanyingim.com/floo-3.0.0.js), 最新版SDK,请从此下载: [Web版 SDK](https://github.com/maxim-top/floo-web/releases),  [Uni-app版 SDK](https://github.com/maxim-top/floo-uniapp/releases)
 3. 音视频功能需本地开发环境中引入音视频功能运行依赖库如webrtc-adapter。参考蓝莺IM Web版package.json文件dependencies设置。然后使用npm或者yarn安装依赖包。
 
 ## 快速集成
@@ -251,8 +247,8 @@ const members = im.groupManage.getGroupMembers(state.sid);
 console.log(members);
 ```
 
-6. 获取群组列表\
-   调用 groupManage 的 asyncGetJoinedGroups 方法来获取所有用户加入的群组
+6. 获取群组列表 
+调用 groupManage 的 asyncGetJoinedGroups 方法来获取所有用户加入的群组
 
 ```
 im.groupManage.asyncGetJoinedGroups().then(res => {
@@ -260,8 +256,8 @@ im.groupManage.asyncGetJoinedGroups().then(res => {
 });
 ```
 
-7. 获取群组信息\
-   调用 groupManage 的 asyncGetGroupInfo 方法来获取群组的详细信息
+7. 获取群组信息 
+调用 groupManage 的 asyncGetGroupInfo 方法来获取群组的详细信息
 
 ```
 groupManage.asyncGetGroupInfo(group_id).then(res => {
@@ -327,7 +323,6 @@ const message = {
 ```
 
 ### 位置消息
-
 ```
 const message = {
   type: 'location',
@@ -343,7 +338,6 @@ const message = {
 ```
 
 ### 音视频消息
-
 ```
 const message = {
   type: 'rtc',
@@ -481,8 +475,8 @@ if(groupArr.lenght) {
 }
 ```
 
-### 发起音视频单聊通话
 
+### 发起音视频单聊通话
 ```
 主动发起音视频通话端
 im.rtcManage.initRTCEngine(message);
@@ -491,13 +485,11 @@ im.rtcManage.joinRoom(message);
 ```
 
 ### 发送音视频单聊通话消息
-
 ```
 im.rtcManage.sendRTCMessage(message);
 ```
 
 ### 接受音视频单聊消息
-
 ```
 im.on({
   onRosterRTCMessage: function(message) {
@@ -510,7 +502,6 @@ im.on({
   }
 });
 ```
-
 ## 常见问题
 
 1\. 无法导入 flooim，提示
@@ -545,4 +536,5 @@ npm i -f
 The requested module '/src/im/floo-3.0.0.js' does not provide an export named 'default'
 ```
 
-需要通过 yarn 安装 vite-plugin-commonjs 和 vite-plugin-require-transform 两个插件。![](../../.gitbook/assets/vue3-import.jpg)
+需要通过 yarn 安装 vite-plugin-commonjs 和 vite-plugin-require-transform 两个插件。
+![](../assets/vue3-import.jpg)

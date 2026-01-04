@@ -1,7 +1,7 @@
 # BMXRosterService Class Reference
 
-**Inherits from** NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,16 +9,20 @@
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/acceptWithRosterId:" title="acceptWithRosterId:"></a>
 ### acceptWithRosterId:
 
 接受加好友申请
@@ -27,25 +31,20 @@
 
 #### Parameters
 
-_rosterId_\
-申请加为好友的用户id
+*rosterId*  
+   申请加为好友的用户id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/acceptWithRosterId:completion:" title="acceptWithRosterId:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="acceptWithRosterId:" %}{% endlanying_code_snippet %}
 ```
-
 ### acceptWithRosterId:completion:
 
 接受加好友申请
@@ -54,25 +53,20 @@ _rosterId_\
 
 #### Parameters
 
-_rosterId_\
-申请加为好友的用户id
+*rosterId*  
+   申请加为好友的用户id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/addDelegate:" title="addDelegate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="acceptWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### addDelegate:
 
 添加好友变化监听者
@@ -81,33 +75,26 @@ _rosterId_\
 
 #### Parameters
 
-_listener_\
-好友变化监听者
+*listener*  
+   好友变化监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXRosterServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
+<a name="//api/name/addRosterListener:" title="addRosterListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
-
 ### addRosterListener:
 
 添加好友变化监听者
@@ -116,33 +103,26 @@ _listener_\
 
 #### Parameters
 
-_listener_\
-好友变化监听者
+*listener*  
+   好友变化监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/applyWithRosterId:message:" title="applyWithRosterId:message:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="addRosterListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### applyWithRosterId:message:
 
 `- (BMXErrorCode)applyWithRosterId:(long long)*rosterId* message:(NSString *)*message*`
 
+<a name="//api/name/applyWithRosterId:message:authAnswer:" title="applyWithRosterId:message:authAnswer:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:" %}{% endlanying_code_snippet %}
 ```
-
 ### applyWithRosterId:message:authAnswer:
 
 申请添加好友
@@ -151,28 +131,23 @@ _listener_\
 
 #### Parameters
 
-_rosterId_\
-申请添加的用户id
+*rosterId*  
+   申请添加的用户id  
 
-_message_\
-好友申请信息
+*message*  
+   好友申请信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/applyWithRosterId:message:authAnswer:completion:" title="applyWithRosterId:message:authAnswer:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:authAnswer:" %}{% endlanying_code_snippet %}
 ```
-
 ### applyWithRosterId:message:authAnswer:completion:
 
 申请添加好友
@@ -181,40 +156,32 @@ _message_\
 
 #### Parameters
 
-_rosterId_\
-申请添加的用户id
+*rosterId*  
+   申请添加的用户id  
 
-_message_\
-好友申请信息
+*message*  
+   好友申请信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/applyWithRosterId:message:completion:" title="applyWithRosterId:message:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:authAnswer:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### applyWithRosterId:message:completion:
 
 `- (void)applyWithRosterId:(long long)*rosterId* message:(NSString *)*message* completion:(void ( ^ ) ( BMXError *error ))*aCompletionBlock*`
 
+<a name="//api/name/blockWithRosterId:" title="blockWithRosterId:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="applyWithRosterId:message:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### blockWithRosterId:
 
 加入黑名单
@@ -223,25 +190,20 @@ _message_\
 
 #### Parameters
 
-_rosterId_\
-加入黑名单的用户id
+*rosterId*  
+   加入黑名单的用户id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/blockWithRosterId:completion:" title="blockWithRosterId:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="blockWithRosterId:" %}{% endlanying_code_snippet %}
 ```
-
 ### blockWithRosterId:completion:
 
 加入黑名单
@@ -250,37 +212,29 @@ _rosterId_\
 
 #### Parameters
 
-_rosterId_\
-加入黑名单的用户id
+*rosterId*  
+   加入黑名单的用户id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="blockWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/declineWithRosterId:reason:" title="declineWithRosterId:reason:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### declineWithRosterId:reason:
 
 拒绝加好友申请
@@ -289,28 +243,23 @@ _rosterId_\
 
 #### Parameters
 
-_rosterId_\
-申请加为好友的用户id
+*rosterId*  
+   申请加为好友的用户id  
 
-_reason_\
-拒绝的原因
+*reason*  
+   拒绝的原因  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/declineWithRosterId:reason:completion:" title="declineWithRosterId:reason:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="declineWithRosterId:reason:" %}{% endlanying_code_snippet %}
 ```
-
 ### declineWithRosterId:reason:completion:
 
 拒绝加好友申请
@@ -319,28 +268,23 @@ _reason_\
 
 #### Parameters
 
-_rosterId_\
-申请加为好友的用户id
+*rosterId*  
+   申请加为好友的用户id  
 
-_reason_\
-拒绝的原因
+*reason*  
+   拒绝的原因  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/downloadAvatarWithItem:thumbnail:callback:" title="downloadAvatarWithItem:thumbnail:callback:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="declineWithRosterId:reason:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### downloadAvatarWithItem:thumbnail:callback:
 
 下载头像
@@ -349,31 +293,26 @@ _reason_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_thumbnail_\
-是否下载缩略图，ture为缩略图，false为原图
+*thumbnail*  
+   是否下载缩略图，ture为缩略图，false为原图  
 
-_callback_\
-下载回调函数
+*callback*  
+   下载回调函数  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/downloadAvatarWithItem:thumbnail:callback:completion:" title="downloadAvatarWithItem:thumbnail:callback:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="downloadAvatarWithItem:thumbnail:callback:" %}{% endlanying_code_snippet %}
 ```
-
 ### downloadAvatarWithItem:thumbnail:callback:completion:
 
 下载头像
@@ -382,31 +321,26 @@ _callback_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_thumbnail_\
-是否下载缩略图，ture为缩略图，false为原图
+*thumbnail*  
+   是否下载缩略图，ture为缩略图，false为原图  
 
-_callback_\
-下载回调函数
+*callback*  
+   下载回调函数  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fetchRosterByIdWithRosterId:forceRefresh:completion:" title="fetchRosterByIdWithRosterId:forceRefresh:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="downloadAvatarWithItem:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### fetchRosterByIdWithRosterId:forceRefresh:completion:
 
 通过联系人id搜索用户
@@ -415,31 +349,26 @@ _callback_\
 
 #### Parameters
 
-_rosterId_\
-搜索的好友id
+*rosterId*  
+   搜索的好友id  
 
-_forceRefresh_\
-为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+*forceRefresh*  
+   为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。  
 
-_item_\
-查询返回的用户的信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*item*  
+   查询返回的用户的信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fetchRosterByIdWithRosterId:forceRefresh:item:" title="fetchRosterByIdWithRosterId:forceRefresh:item:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByIdWithRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### fetchRosterByIdWithRosterId:forceRefresh:item:
 
 通过联系人id搜索用户
@@ -448,31 +377,26 @@ _item_\
 
 #### Parameters
 
-_rosterId_\
-搜索的好友id
+*rosterId*  
+   搜索的好友id  
 
-_forceRefresh_\
-为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+*forceRefresh*  
+   为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。  
 
-_item_\
-查询返回的用户的信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*item*  
+   查询返回的用户的信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fetchRosterByNameWithName:forceRefresh:completion:" title="fetchRosterByNameWithName:forceRefresh:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByIdWithRosterId:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
-
 ### fetchRosterByNameWithName:forceRefresh:completion:
 
 通过用户名搜索用户
@@ -481,31 +405,26 @@ _item_\
 
 #### Parameters
 
-_name_\
-搜索的用户名
+*name*  
+   搜索的用户名  
 
-_forceRefresh_\
-为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+*forceRefresh*  
+   为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。  
 
-_item_\
-查询返回的用户的信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*item*  
+   查询返回的用户的信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fetchRosterByNameWithName:forceRefresh:item:" title="fetchRosterByNameWithName:forceRefresh:item:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByNameWithName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### fetchRosterByNameWithName:forceRefresh:item:
 
 通过用户名搜索用户
@@ -514,31 +433,26 @@ _item_\
 
 #### Parameters
 
-_name_\
-搜索的用户名
+*name*  
+   搜索的用户名  
 
-_forceRefresh_\
-为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+*forceRefresh*  
+   为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。  
 
-_item_\
-查询返回的用户的信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*item*  
+   查询返回的用户的信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fetchRostersByIdListWithRosterIdList:forceRefresh:completion:" title="fetchRostersByIdListWithRosterIdList:forceRefresh:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRosterByNameWithName:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
-
 ### fetchRostersByIdListWithRosterIdList:forceRefresh:completion:
 
 通过联系人id列表批量搜索用户
@@ -547,31 +461,26 @@ _item_\
 
 #### Parameters
 
-_rosterIdList_\
-需要搜索的用户id列表
+*rosterIdList*  
+   需要搜索的用户id列表  
 
-_forceRefresh_\
-是否强制从服务器获取，为true则强制从服务器获取
+*forceRefresh*  
+   是否强制从服务器获取，为true则强制从服务器获取  
 
-_list_\
-返回的好友信息列表，传入空列表函数返回后从此处获取返回的好友信息列表
+*list*  
+   返回的好友信息列表，传入空列表函数返回后从此处获取返回的好友信息列表  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fetchRostersByIdListWithRosterIdList:list:forceRefresh:" title="fetchRostersByIdListWithRosterIdList:list:forceRefresh:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRostersByIdListWithRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### fetchRostersByIdListWithRosterIdList:list:forceRefresh:
 
 通过联系人id列表批量搜索用户
@@ -580,31 +489,26 @@ _list_\
 
 #### Parameters
 
-_rosterIdList_\
-需要搜索的用户id列表
+*rosterIdList*  
+   需要搜索的用户id列表  
 
-_list_\
-返回的好友信息列表，传入空列表函数返回后从此处获取返回的好友信息列表
+*list*  
+   返回的好友信息列表，传入空列表函数返回后从此处获取返回的好友信息列表  
 
-_forceRefresh_\
-是否强制从服务器获取，为true则强制从服务器获取
+*forceRefresh*  
+   是否强制从服务器获取，为true则强制从服务器获取  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/get:completion:" title="get:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="fetchRostersByIdListWithRosterIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
-
 ### get:completion:
 
 获取好友列表，如果forceRefresh == true，则强制从服务端拉取
@@ -613,28 +517,23 @@ _forceRefresh_\
 
 #### Parameters
 
-_forceRefresh_\
-是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取
+*forceRefresh*  
+   是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取  
 
-_list_\
-好友id列表，传入空列表函数返回后从此处获取返回的好友id列表
+*list*  
+   好友id列表，传入空列表函数返回后从此处获取返回的好友id列表  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/get:forceRefresh:" title="get:forceRefresh:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="get:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### get:forceRefresh:
 
 获取好友列表，如果forceRefresh == true，则强制从服务端拉取
@@ -643,52 +542,41 @@ _list_\
 
 #### Parameters
 
-_list_\
-好友id列表，传入空列表函数返回后从此处获取返回的好友id列表
+*list*  
+   好友id列表，传入空列表函数返回后从此处获取返回的好友id列表  
 
-_forceRefresh_\
-是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取
+*forceRefresh*  
+   是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getApplicationList:completion:" title="getApplicationList:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="get:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
-
 ### getApplicationList:completion:
 
 `- (void)getApplicationList:(NSString *)*cursor* completion:(void ( ^ ) ( BMXRosterApplicationResultPage *res , BMXError *error ))*aCompletionBlock*`
 
+<a name="//api/name/getApplicationList:cursor:" title="getApplicationList:cursor:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getApplicationList:cursor:
 
 `- (BMXErrorCode)getApplicationList:(BMXRosterApplicationResultPage *)*result* cursor:(NSString *)*cursor*`
 
+<a name="//api/name/getApplicationList:cursor:pageSize:" title="getApplicationList:cursor:pageSize:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:cursor:" %}{% endlanying_code_snippet %}
 ```
-
 ### getApplicationList:cursor:pageSize:
 
 获取申请添加好友列表
@@ -697,31 +585,26 @@ _forceRefresh_\
 
 #### Parameters
 
-_result_\
-返回的申请好友列表信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*result*  
+   返回的申请好友列表信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
-_cursor_\
-分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+*cursor*  
+   分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor  
 
-_pageSize_\
-分页大小
+*pageSize*  
+   分页大小  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getApplicationList:pageSize:completion:" title="getApplicationList:pageSize:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:cursor:pageSize:" %}{% endlanying_code_snippet %}
 ```
-
 ### getApplicationList:pageSize:completion:
 
 获取申请添加好友列表
@@ -730,31 +613,26 @@ _pageSize_\
 
 #### Parameters
 
-_cursor_\
-分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor
+*cursor*  
+   分页获取的起始cursor，第一次传入为空，后续传入上次操作返回的result中的cursor  
 
-_pageSize_\
-分页大小
+*pageSize*  
+   分页大小  
 
-_result_\
-返回的申请好友列表信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*result*  
+   返回的申请好友列表信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getBlockList:completion:" title="getBlockList:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getApplicationList:pageSize:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getBlockList:completion:
 
 获取黑名单，如果forceRefresh == true，则强制从服务端拉取
@@ -763,28 +641,23 @@ _result_\
 
 #### Parameters
 
-_forceRefresh_\
-是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取
+*forceRefresh*  
+   是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取  
 
-_list_\
-好友id列表，传入空列表函数返回后从此处获取返回的黑名单id列表
+*list*  
+   好友id列表，传入空列表函数返回后从此处获取返回的黑名单id列表  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getBlockList:forceRefresh:" title="getBlockList:forceRefresh:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getBlockList:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getBlockList:forceRefresh:
 
 获取黑名单，如果forceRefresh == true，则强制从服务端拉取
@@ -793,40 +666,32 @@ _list_\
 
 #### Parameters
 
-_list_\
-好友id列表，传入空列表函数返回后从此处获取返回的黑名单id列表
+*list*  
+   好友id列表，传入空列表函数返回后从此处获取返回的黑名单id列表  
 
-_forceRefresh_\
-是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取
+*forceRefresh*  
+   是否从服务器读取数据，true为强制从服务器获取，false情况下本地读取列表为空的情况下会自动从服务器读取  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="getBlockList:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
+<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeDelegate:
 
 移除好友变化监听者
@@ -835,21 +700,17 @@ _forceRefresh_\
 
 #### Parameters
 
-_listener_\
-好友变化监听者
+*listener*  
+   好友变化监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeRosterListener:" title="removeRosterListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeRosterListener:
 
 移除好友变化监听者
@@ -858,21 +719,17 @@ _listener_\
 
 #### Parameters
 
-_listener_\
-好友变化监听者
+*listener*  
+   好友变化监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeWithRosterId:" title="removeWithRosterId:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeRosterListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeWithRosterId:
 
 删除好友
@@ -881,25 +738,20 @@ _listener_\
 
 #### Parameters
 
-_rosterId_\
-删除的好友id
+*rosterId*  
+   删除的好友id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeWithRosterId:completion:" title="removeWithRosterId:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeWithRosterId:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeWithRosterId:completion:
 
 删除好友
@@ -908,49 +760,38 @@ _rosterId_\
 
 #### Parameters
 
-_rosterId_\
-删除的好友id
+*rosterId*  
+   删除的好友id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/searchWithName:forceRefresh:completion:" title="searchWithName:forceRefresh:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="removeWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchWithName:forceRefresh:completion:
 
 `- (void)searchWithName:(NSString *)*name* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( BMXRosterItem *item , BMXError *error ))*aCompletionBlock*`
 
+<a name="//api/name/searchWithName:forceRefresh:item:" title="searchWithName:forceRefresh:item:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithName:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchWithName:forceRefresh:item:
 
 `- (BMXErrorCode)searchWithName:(NSString *)*name* forceRefresh:(BOOL)*forceRefresh* item:(BMXRosterItem *)*item*`
 
+<a name="//api/name/searchWithRosterId:forceRefresh:completion:" title="searchWithRosterId:forceRefresh:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithName:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchWithRosterId:forceRefresh:completion:
 
 搜索用户
@@ -959,35 +800,29 @@ _rosterId_\
 
 #### Parameters
 
-_rosterId_\
-搜索的好友id
+*rosterId*  
+   搜索的好友id  
 
-_forceRefresh_\
-为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+*forceRefresh*  
+   为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。  
 
-_item_\
-查询返回的用户的信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*item*  
+   查询返回的用户的信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Discussion
-
 Deprecated. use fetchRosterById instead.
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/searchWithRosterId:forceRefresh:item:" title="searchWithRosterId:forceRefresh:item:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterId:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchWithRosterId:forceRefresh:item:
 
 搜索用户
@@ -996,59 +831,47 @@ Deprecated. use fetchRosterById instead.
 
 #### Parameters
 
-_rosterId_\
-搜索的好友id
+*rosterId*  
+   搜索的好友id  
 
-_forceRefresh_\
-为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。
+*forceRefresh*  
+   为true强制从服务器获取，为false情况下查询结果为空时自动从服务器获取。  
 
-_item_\
-查询返回的用户的信息，传入指向为空的shared\_ptr对象函数执行后会自动赋值。
+*item*  
+   查询返回的用户的信息，传入指向为空的shared_ptr对象函数执行后会自动赋值。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Discussion
-
 Deprecated. use fetchRosterById instead.
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/searchWithRosterIdList:forceRefresh:completion:" title="searchWithRosterIdList:forceRefresh:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterId:forceRefresh:item:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchWithRosterIdList:forceRefresh:completion:
 
 `- (void)searchWithRosterIdList:(ListOfLongLong *)*rosterIdList* forceRefresh:(BOOL)*forceRefresh* completion:(void ( ^ ) ( BMXRosterItemList *list , BMXError *error ))*aCompletionBlock*`
 
+<a name="//api/name/searchWithRosterIdList:list:forceRefresh:" title="searchWithRosterIdList:list:forceRefresh:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterIdList:forceRefresh:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchWithRosterIdList:list:forceRefresh:
 
 `- (BMXErrorCode)searchWithRosterIdList:(ListOfLongLong *)*rosterIdList* list:(BMXRosterItemList *)*list* forceRefresh:(BOOL)*forceRefresh*`
 
+<a name="//api/name/setItemAlias:alias:" title="setItemAlias:alias:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="searchWithRosterIdList:list:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemAlias:alias:
 
 更新好友别名
@@ -1057,28 +880,23 @@ Deprecated. use fetchRosterById instead.
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_alias_\
-好友别名
+*alias*  
+   好友别名  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setItemAlias:alias:completion:" title="setItemAlias:alias:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemAlias:alias:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemAlias:alias:completion:
 
 更新好友别名
@@ -1087,28 +905,23 @@ _alias_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_alias_\
-好友别名
+*alias*  
+   好友别名  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setItemExtension:extension:" title="setItemExtension:extension:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemAlias:alias:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemExtension:extension:
 
 更新好友服务器扩展信息
@@ -1117,28 +930,23 @@ _alias_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_extension_\
-服务器扩展信息
+*extension*  
+   服务器扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setItemExtension:extension:completion:" title="setItemExtension:extension:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemExtension:extension:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemExtension:extension:completion:
 
 更新好友服务器扩展信息
@@ -1147,28 +955,23 @@ _extension_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_extension_\
-服务器扩展信息
+*extension*  
+   服务器扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setItemLocalExtension:extension:" title="setItemLocalExtension:extension:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemExtension:extension:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemLocalExtension:extension:
 
 更新好友本地扩展信息
@@ -1177,28 +980,23 @@ _extension_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_extension_\
-本地扩展信息
+*extension*  
+   本地扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setItemLocalExtension:extension:completion:" title="setItemLocalExtension:extension:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemLocalExtension:extension:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemLocalExtension:extension:completion:
 
 更新好友本地扩展信息
@@ -1207,28 +1005,23 @@ _extension_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_extension_\
-本地扩展信息
+*extension*  
+   本地扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setItemMuteNotification:status:" title="setItemMuteNotification:status:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemLocalExtension:extension:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemMuteNotification:status:
 
 设置是否拒收用户消息
@@ -1237,28 +1030,23 @@ _extension_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_status_\
-是否拒收用户消息，true拒收，false不拒收
+*status*  
+   是否拒收用户消息，true拒收，false不拒收  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setItemMuteNotification:status:completion:" title="setItemMuteNotification:status:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemMuteNotification:status:" %}{% endlanying_code_snippet %}
 ```
-
 ### setItemMuteNotification:status:completion:
 
 设置是否拒收用户消息
@@ -1267,28 +1055,23 @@ _status_\
 
 #### Parameters
 
-_item_\
-用户信息
+*item*  
+   用户信息  
 
-_status_\
-是否拒收用户消息，true拒收，false不拒收
+*status*  
+   是否拒收用户消息，true拒收，false不拒收  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/unblockWithRosterId:" title="unblockWithRosterId:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="setItemMuteNotification:status:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### unblockWithRosterId:
 
 从黑名单移除
@@ -1297,25 +1080,20 @@ _status_\
 
 #### Parameters
 
-_rosterId_\
-从黑名单移除的用户id
+*rosterId*  
+   从黑名单移除的用户id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/unblockWithRosterId:completion:" title="unblockWithRosterId:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="unblockWithRosterId:" %}{% endlanying_code_snippet %}
 ```
-
 ### unblockWithRosterId:completion:
 
 从黑名单移除
@@ -1324,20 +1102,16 @@ _rosterId_\
 
 #### Parameters
 
-_rosterId_\
-从黑名单移除的用户id
+*rosterId*  
+   从黑名单移除的用户id  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRosterService'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRosterService",function="unblockWithRosterId:completion:" %}{% endlanying_code_snippet %}
 ```

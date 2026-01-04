@@ -1,8 +1,8 @@
 # BMXMessageAttachment Class Reference
 
-**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
-NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
+NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -10,30 +10,25 @@ NSObject\
 
 ## Instance Methods
 
+<a name="//api/name/clone" title="clone"></a>
 ### clone
 
 `- (BMXMessageAttachment *)clone`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/type" title="type"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachment",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### type
 
 附件类型
@@ -41,16 +36,12 @@ NSObject\
 `- (BMXMessageAttachment_Type)type`
 
 #### Return Value
-
 Type
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXMessageAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXMessageAttachment",function="type" %}{% endlanying_code_snippet %}
 ```

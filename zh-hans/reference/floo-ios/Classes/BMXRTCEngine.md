@@ -1,7 +1,7 @@
 # BMXRTCEngine Class Reference
 
-**Inherits from** NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,16 +9,20 @@
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
 添加聊天监听者
@@ -27,57 +31,44 @@
 
 #### Parameters
 
-_listener_\
-聊天监听者
+*listener*  
+   聊天监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXRTCEngineProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
+<a name="//api/name/addRTCEngineListener:" title="addRTCEngineListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
-
 ### addRTCEngineListener:
 
 `- (void)addRTCEngineListener:(id<BMXRTCEngineProtocol>)*listener*`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="addRTCEngineListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/destroy" title="destroy"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### destroy
 
 销毁音视频Engine
@@ -85,17 +76,13 @@ _listener_\
 `- (void)destroy`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getRTCConfig" title="getRTCConfig"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="destroy" %}{% endlanying_code_snippet %}
 ```
-
 ### getRTCConfig
 
 获取RTC设置
@@ -103,33 +90,25 @@ _listener_\
 `- (BMXRTCConfig *)getRTCConfig`
 
 #### Return Value
-
-[BMXRTCConfig](BMXRTCConfig.md)
+<a href="../Classes/BMXRTCConfig.md">BMXRTCConfig</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="getRTCConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
+<a name="//api/name/joinRoomWithAuth:" title="joinRoomWithAuth:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
-
 ### joinRoomWithAuth:
 
 加入频道
@@ -138,25 +117,20 @@ _listener_\
 
 #### Parameters
 
-_auth_\
-加入频道时的认证信息
+*auth*  
+   加入频道时的认证信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/leaveRoom" title="leaveRoom"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="joinRoomWithAuth:" %}{% endlanying_code_snippet %}
 ```
-
 ### leaveRoom
 
 离开频道
@@ -164,21 +138,16 @@ _auth_\
 `- (BMXErrorCode)leaveRoom`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/muteLocalAudioWithMute:" title="muteLocalAudioWithMute:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="leaveRoom" %}{% endlanying_code_snippet %}
 ```
-
 ### muteLocalAudioWithMute:
 
 打开关闭本地音频
@@ -187,25 +156,20 @@ _auth_\
 
 #### Parameters
 
-_mute_\
-true为打开，false为关闭
+*mute*  
+   true为打开，false为关闭  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/muteLocalVideoWithType:mute:" title="muteLocalVideoWithType:mute:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteLocalAudioWithMute:" %}{% endlanying_code_snippet %}
 ```
-
 ### muteLocalVideoWithType:mute:
 
 打开关闭本地视频
@@ -214,28 +178,23 @@ true为打开，false为关闭
 
 #### Parameters
 
-_type_\
-视频流类型
+*type*  
+   视频流类型  
 
-_mute_\
-true为打开，false为关闭
+*mute*  
+   true为打开，false为关闭  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/muteRemoteAudioWithStream:mute:" title="muteRemoteAudioWithStream:mute:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteLocalVideoWithType:mute:" %}{% endlanying_code_snippet %}
 ```
-
 ### muteRemoteAudioWithStream:mute:
 
 打开关闭远端音频
@@ -244,28 +203,23 @@ true为打开，false为关闭
 
 #### Parameters
 
-_stream_\
-远端流
+*stream*  
+   远端流  
 
-_mute_\
-true为打开，false为关闭
+*mute*  
+   true为打开，false为关闭  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/muteRemoteVideoWithStream:mute:" title="muteRemoteVideoWithStream:mute:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteRemoteAudioWithStream:mute:" %}{% endlanying_code_snippet %}
 ```
-
 ### muteRemoteVideoWithStream:mute:
 
 打开关闭远端视频
@@ -274,28 +228,23 @@ true为打开，false为关闭
 
 #### Parameters
 
-_stream_\
-远端流
+*stream*  
+   远端流  
 
-_mute_\
-true为打开，false为关闭
+*mute*  
+   true为打开，false为关闭  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/publishWithType:hasVideo:hasAudio:" title="publishWithType:hasVideo:hasAudio:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="muteRemoteVideoWithStream:mute:" %}{% endlanying_code_snippet %}
 ```
-
 ### publishWithType:hasVideo:hasAudio:
 
 发布流信息
@@ -304,31 +253,26 @@ true为打开，false为关闭
 
 #### Parameters
 
-_type_\
-流媒体类型
+*type*  
+   流媒体类型  
 
-_hasVideo_\
-是否存在视频流
+*hasVideo*  
+   是否存在视频流  
 
-_hasAudio_\
-是否存在音频流
+*hasAudio*  
+   是否存在音频流  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="publishWithType:hasVideo:hasAudio:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeDelegate:
 
 移除聊天监听者
@@ -337,33 +281,26 @@ _hasAudio_\
 
 #### Parameters
 
-_listener_\
-聊天监听者
+*listener*  
+   聊天监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeRTCEngineListener:" title="removeRTCEngineListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeRTCEngineListener:
 
 `- (void)removeRTCEngineListener:(id<BMXRTCEngineProtocol>)*listener*`
 
+<a name="//api/name/setAudioProfile:" title="setAudioProfile:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="removeRTCEngineListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAudioProfile:
 
 设置音频编码格式
@@ -372,25 +309,20 @@ _listener_\
 
 #### Parameters
 
-_profile_\
-音频编码格式
+*profile*  
+   音频编码格式  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setRoomType:" title="setRoomType:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setAudioProfile:" %}{% endlanying_code_snippet %}
 ```
-
 ### setRoomType:
 
 设置Room的类型
@@ -399,25 +331,20 @@ _profile_\
 
 #### Parameters
 
-_type_\
-Room类型
+*type*  
+   Room类型  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setStreamRole:" title="setStreamRole:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setRoomType:" %}{% endlanying_code_snippet %}
 ```
-
 ### setStreamRole:
 
 设置流操作权限
@@ -426,25 +353,20 @@ Room类型
 
 #### Parameters
 
-_role_\
-操作权限，推流、拉流、推拉流。
+*role*  
+   操作权限，推流、拉流、推拉流。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setVideoCodec:" title="setVideoCodec:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setStreamRole:" %}{% endlanying_code_snippet %}
 ```
-
 ### setVideoCodec:
 
 设置视频编码格式类型
@@ -453,25 +375,20 @@ _role_\
 
 #### Parameters
 
-_codec_\
-VP8编码、H264编码
+*codec*  
+   VP8编码、H264编码  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setVideoProfile:" title="setVideoProfile:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setVideoCodec:" %}{% endlanying_code_snippet %}
 ```
-
 ### setVideoProfile:
 
 设置视频编码格式类型
@@ -480,25 +397,20 @@ VP8编码、H264编码
 
 #### Parameters
 
-_codec_\
-VP8编码、H264编码
+*codec*  
+   VP8编码、H264编码  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/startPreviewWithCanvas:" title="startPreviewWithCanvas:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="setVideoProfile:" %}{% endlanying_code_snippet %}
 ```
-
 ### startPreviewWithCanvas:
 
 开启本地渲染
@@ -507,25 +419,20 @@ VP8编码、H264编码
 
 #### Parameters
 
-_canvas_\
-画布属性信息
+*canvas*  
+   画布属性信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/startRemoteViewWithCanvas:" title="startRemoteViewWithCanvas:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="startPreviewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
-
 ### startRemoteViewWithCanvas:
 
 开启远端渲染
@@ -534,25 +441,20 @@ _canvas_\
 
 #### Parameters
 
-_canvas_\
-画布属性信息
+*canvas*  
+   画布属性信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/stopPreviewWithCanvas:" title="stopPreviewWithCanvas:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="startRemoteViewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
-
 ### stopPreviewWithCanvas:
 
 停止本地渲染
@@ -561,25 +463,20 @@ _canvas_\
 
 #### Parameters
 
-_canvas_\
-画布属性信息
+*canvas*  
+   画布属性信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/stopRemoteViewWithCanvas:" title="stopRemoteViewWithCanvas:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="stopPreviewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
-
 ### stopRemoteViewWithCanvas:
 
 停止远端渲染
@@ -588,25 +485,20 @@ _canvas_\
 
 #### Parameters
 
-_canvas_\
-画布属性信息
+*canvas*  
+   画布属性信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/subscribeWithStream:" title="subscribeWithStream:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="stopRemoteViewWithCanvas:" %}{% endlanying_code_snippet %}
 ```
-
 ### subscribeWithStream:
 
 订阅流信息
@@ -614,21 +506,16 @@ _canvas_\
 `- (BMXErrorCode)subscribeWithStream:(BMXStream *)*stream*`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/switchCamera" title="switchCamera"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="subscribeWithStream:" %}{% endlanying_code_snippet %}
 ```
-
 ### switchCamera
 
 切换摄像头
@@ -636,21 +523,16 @@ _canvas_\
 `- (BMXErrorCode)switchCamera`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/unPublishWithType:" title="unPublishWithType:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="switchCamera" %}{% endlanying_code_snippet %}
 ```
-
 ### unPublishWithType:
 
 停止发布流
@@ -659,25 +541,20 @@ _canvas_\
 
 #### Parameters
 
-_type_\
-流媒体类型
+*type*  
+   流媒体类型  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/unSubscribeWithStream:" title="unSubscribeWithStream:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="unPublishWithType:" %}{% endlanying_code_snippet %}
 ```
-
 ### unSubscribeWithStream:
 
 停止订阅流
@@ -685,16 +562,12 @@ _type_\
 `- (BMXErrorCode)unSubscribeWithStream:(BMXStream *)*stream*`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCEngine'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCEngine",function="unSubscribeWithStream:" %}{% endlanying_code_snippet %}
 ```

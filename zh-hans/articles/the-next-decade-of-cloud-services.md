@@ -1,15 +1,16 @@
 ---
-keywords: 云服务, 技术服务, IM SDK, PUSH SDK
 description: 云服务的下一个十年，未来的技术服务发展
+keywords: 云服务, 技术服务, IM SDK, PUSH SDK
 ---
-
 # 云服务的下一个十年
 
 美信拓扑 _2019-12-21 21:50_
 
+
+
 > 以下文章来源于一乐来了 ，作者一乐
 >
-> <img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM4hJgAarw10L53TDmQD4vDvUbXTMRvaH4GqDU1wNzMIPQ/0" alt="" data-size="original">
+> ![](http://wx.qlogo.cn/mmhead/Q3auHgzwzM4hJgAarw10L53TDmQD4vDvUbXTMRvaH4GqDU1wNzMIPQ/0)
 >
 > **一乐来了**.
 >
@@ -23,7 +24,7 @@ description: 云服务的下一个十年，未来的技术服务发展
 
 爱它，因为这是多少人梦寐以求的挑战，一身所学终于要有用武之地；恨它，因为在惊人的销售额背后，是巨大的网络吞吐和极端的访问峰值，足以让挡在前面的任何系统都有随时垮掉的风险。
 
-![](../../.gitbook/assets/autogen-96734dca2ee4a81b0c45d73cc91310e95790dc8c6782f176079031e14de2a96e.webp)
+![](../assets/articles/autogen-96734dca2ee4a81b0c45d73cc91310e95790dc8c6782f176079031e14de2a96e.webp)
 
 很多人都会记得，这场起源于十年前的商业促销，即使在最开始规模不到现在百分之一的时候，也并不是一帆风顺的（文后参考链接1）。但十年之后面对曾经的百倍千倍访问量，居然还有意犹未尽之感（从社区的兴奋程度来看），不禁让人赞叹其背后的技术能力的增长。
 
@@ -31,7 +32,7 @@ description: 云服务的下一个十年，未来的技术服务发展
 
 ## **1. 云服务的浪潮**
 
-![Photo by guille pozzi on Unsplash](../../.gitbook/assets/autogen-fbf9287e68d8dc44ac7e075c891de0083d47120135cb2a3efbfb60ca0561b69b.webp)
+![Photo by guille pozzi on Unsplash](../assets/articles/autogen-fbf9287e68d8dc44ac7e075c891de0083d47120135cb2a3efbfb60ca0561b69b.webp)
 
 我喜欢读历史，历史中有很多故事。那些或有趣或惨淡的故事，都在让过去的人和物变得丰满，让看的人不自觉地回看自身，思考当下和未来。
 
@@ -45,7 +46,7 @@ description: 云服务的下一个十年，未来的技术服务发展
 
 ## **2. 过去的十年**
 
-![Cape Town, Photo by Douglas Bagg on Unsplash](../../.gitbook/assets/autogen-5aa2e869e4a47a1f9c9c829cccae95081be1583a8f9dfcab6c7d530fcf2bb731.webp)
+![Cape Town, Photo by Douglas Bagg on Unsplash](../assets/articles/autogen-5aa2e869e4a47a1f9c9c829cccae95081be1583a8f9dfcab6c7d530fcf2bb731.webp)
 
 2004年底的时候，亚马逊IT部门的 Chris Pinkham 跑到南非开普敦，带领团队开始着手开发亚马逊的AWS的第一个产品，来实现「把基础设施当做一种服务卖出去」的点子，一个讨论了近一年的念想。这个产品就是我们后来熟知的弹性云计算 Elastic Compute Cloud，也就是EC2（参考链接2）。
 
@@ -53,7 +54,7 @@ description: 云服务的下一个十年，未来的技术服务发展
 
 AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里云充足的时间成长。实际情况是，阿里云根本不需要这么长时间，2011年7月开始已经可以大规模对外提供云计算服务了。
 
-![Photo by imgix on Unsplash](../../.gitbook/assets/autogen-8deb904309c595b2448cb2f3b926ce92fb4559a81b6bcba404d7892d854afbe9.webp)
+![Photo by imgix on Unsplash](../assets/articles/autogen-8deb904309c595b2448cb2f3b926ce92fb4559a81b6bcba404d7892d854afbe9.webp)
 
 以2011年为界，刚好把我的工作经历分成了两半。让我有足够的时间体会自己采购服务器、安装操作系统、调整网络然后上线服务的艰难与繁复，也让我有足够的时间来观察这个转变，观察这个云服务带来的行业变革。
 
@@ -67,7 +68,7 @@ AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里�
 
 一波一波的创新业务，一次又一次的技术服务演化，催动了这个属于云服务的浪潮。
 
-![](../../.gitbook/assets/autogen-e1c8c92cbfb23c2714f2e97c1d32ea1b4d922156855ec32518b39116ac3e6a99.webp)
+![](../assets/articles/autogen-e1c8c92cbfb23c2714f2e97c1d32ea1b4d922156855ec32518b39116ac3e6a99.webp)
 
 2018年3月24日，Dropbox上市，5亿多注册用户，超过1100万付费用户。
 
@@ -77,7 +78,7 @@ AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里�
 
 当然，这个世界是平行的，每一时每一刻都有不同的故事在发生着。
 
-![](../../.gitbook/assets/autogen-c6b0c4c7ad6c165ed76adf9784988d1697612f2f65cc6a09b2e69251b4940527.webp)
+![](../assets/articles/autogen-c6b0c4c7ad6c165ed76adf9784988d1697612f2f65cc6a09b2e69251b4940527.webp)
 
 2007年，Chris Wanstrath 走进 Zeke，一个位于旧金山的体育酒吧。遇到了在里面的 Tom Preston Werner 。后者一反常态，并没有跟他扯淡，而是正经地说，他想建立一个专属于程序员的社交网站，一个可以在上面分享代码的网站（参考链接5）。
 
@@ -91,7 +92,7 @@ AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里�
 
 ## **3. 技术服务的未来**
 
-![Photo by Drew Beamer on Unsplash](../../.gitbook/assets/autogen-152027303d568271895c190d96ad3a8dd2563c1148d9a3de6ae292ff6b2ba154.webp)
+![Photo by Drew Beamer on Unsplash](../assets/articles/autogen-152027303d568271895c190d96ad3a8dd2563c1148d9a3de6ae292ff6b2ba154.webp)
 
 2007年我开始工作，做 Jabberd2 上的二次开发，一个C语言的 XMPP 服务器。然后就陆陆续续有朋友找过来，希望做一套即时通讯IM，出价十万。等到2014年我们开始做即时通讯云服务，自己研发的通讯协议，源码授权的价格已经变成了百万级别，但是同时你却可以租用云服务，只需要一万块一年。
 
@@ -135,7 +136,7 @@ AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里�
 
 不过要消除这种恐惧，并不是说说就可以的，还需要时间，需要一些技术上的适应和变化。
 
-![Photo by Frank Park on Unsplash](../../.gitbook/assets/autogen-37d1ed97a050b08599422d44b4c3287f90cadf1a680b370c64580c620bdfd99a.webp)
+![Photo by Frank Park on Unsplash](../assets/articles/autogen-37d1ed97a050b08599422d44b4c3287f90cadf1a680b370c64580c620bdfd99a.webp)
 
 在过去的几年，很多云服务的厂商通过公有云，发现了大量这样的需求，转化未遂之余，只好开始销售私有云解决方案。虽然看起来提高了收入，然而却是把自己从云时代拉回了软件开发时代。
 
@@ -147,7 +148,7 @@ AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里�
 
 容器技术的发展，已经可以抹平多数硬件设备的差异，而云原生技术的逐渐成熟，已经足以让私有化部署变得高效。一个多云架构的平台，有机会从根本上提高私有云和专有云的服务效率，降低私有云和专有云的的成本，从而再次利用规模效应改变私有云的市场。
 
-![](../../.gitbook/assets/autogen-14edc5747a0d26ac382205a7a9c71b909f1d2c336c0112849e9894407b193791.webp)
+![](../assets/articles/autogen-14edc5747a0d26ac382205a7a9c71b909f1d2c336c0112849e9894407b193791.webp)
 
 这就是我们做美信拓扑的原因，这个多云架构的即时通讯云服务，现在已经出来了。欢迎各位试用下载，一键安装你的即时通讯私有云，有免费规格可以玩哦😜
 
@@ -161,11 +162,11 @@ AWS宣布进入中国已经是七年后，这也给了他的中国学生阿里�
 
 如果今天像昨天一样，为什么会跟十年前不太一样？
 
-![Photo by Stefan Gessert on Unsplash](../../.gitbook/assets/autogen-350a98b8a2653828a338c8eb221879f6ede228c0cafd3f5a7dd1932ddaba1b46.webp)
+![Photo by Stefan Gessert on Unsplash](../assets/articles/autogen-350a98b8a2653828a338c8eb221879f6ede228c0cafd3f5a7dd1932ddaba1b46.webp)
 
 关注「一乐来了」，一起再聊个十年
 
-![](../../.gitbook/assets/autogen-edb3c4ec912a4f5799a5ef22ab29ce3b1966826804cf428d7bd97af1c1796465.webp)
+![](../assets/articles/autogen-edb3c4ec912a4f5799a5ef22ab29ce3b1966826804cf428d7bd97af1c1796465.webp)
 
 ## **参考链接**
 

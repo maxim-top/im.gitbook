@@ -1,7 +1,7 @@
 # BMXRTCServiceProtocol Protocol Reference
 
-**Conforms to** NSObject\
-**Declared in** floo\_proxy.h
+  **Conforms to** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,42 +9,37 @@
 
 ## Instance Methods
 
+<a name="//api/name/onRTCCallMessageReceiveWithMsg:" title="onRTCCallMessageReceiveWithMsg:"></a>
 ### onRTCCallMessageReceiveWithMsg:
 
-Received a RTC call message @param msg
+Received a RTC call message
+@param msg
 
 `- (void)onRTCCallMessageReceiveWithMsg:(BMXMessage *)*msg*`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/onRTCHangupMessageReceiveWithMsg:" title="onRTCHangupMessageReceiveWithMsg:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCCallMessageReceiveWithMsg:" %}{% endlanying_code_snippet %}
 ```
-
 ### onRTCHangupMessageReceiveWithMsg:
 
-Received a RTC hangup message @param msg
+Received a RTC hangup message
+@param msg
 
 `- (void)onRTCHangupMessageReceiveWithMsg:(BMXMessage *)*msg*`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/onRTCMessageStatusChangedWithMsg:error:" title="onRTCMessageStatusChangedWithMsg:error:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCHangupMessageReceiveWithMsg:" %}{% endlanying_code_snippet %}
 ```
-
 ### onRTCMessageStatusChangedWithMsg:error:
 
 A RTC message status changed
@@ -53,35 +48,29 @@ A RTC message status changed
 
 #### Parameters
 
-_msg_
+*msg*  
 
-@param error
+@param error  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/onRTCPickupMessageReceiveWithMsg:" title="onRTCPickupMessageReceiveWithMsg:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCMessageStatusChangedWithMsg:error:" %}{% endlanying_code_snippet %}
 ```
-
 ### onRTCPickupMessageReceiveWithMsg:
 
-Receive a RTC pickup message @param msg
+Receive a RTC pickup message
+@param msg
 
 `- (void)onRTCPickupMessageReceiveWithMsg:(BMXMessage *)*msg*`
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCServiceProtocol'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCServiceProtocol",function="onRTCPickupMessageReceiveWithMsg:" %}{% endlanying_code_snippet %}
 ```

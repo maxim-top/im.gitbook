@@ -1,10 +1,10 @@
 # BMXVideoAttachment Class Reference
 
-**Inherits from** [BMXFileAttachment](BMXFileAttachment.md) :\
-[BMXMessageAttachment](BMXMessageAttachment.md) :\
-[BMXBaseObject](BMXBaseObject.md) :\
-NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** <a href="../Classes/BMXFileAttachment.md">BMXFileAttachment</a> :   
+<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a> :   
+<a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
+NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -12,6 +12,7 @@ NSObject\
 
 ## Class Methods
 
+<a name="//api/name/dynamicCastWithAttachment:" title="dynamicCastWithAttachment:"></a>
 ### dynamicCastWithAttachment:
 
 消息附件强制转换为视频附件
@@ -20,27 +21,23 @@ NSObject\
 
 #### Parameters
 
-_attachment_\
-附件
+*attachment*  
+   附件  
 
 #### Return Value
-
 BMXVideoAttachment
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/clone" title="clone"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="dynamicCastWithAttachment:" %}{% endlanying_code_snippet %}
 ```
-
 ### clone
 
 克隆函数
@@ -48,33 +45,25 @@ BMXVideoAttachment
 `- (BMXMessageAttachment *)clone`
 
 #### Return Value
-
-[BMXMessageAttachment](BMXMessageAttachment.md)
+<a href="../Classes/BMXMessageAttachment.md">BMXMessageAttachment</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/duration" title="duration"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### duration
 
 视频片段时长
@@ -82,33 +71,25 @@ BMXVideoAttachment
 `- (int)duration`
 
 #### Return Value
-
 int
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithPath:duration:size:" title="initWithPath:duration:size:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="duration" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithPath:duration:size:
 
 `- (id)initWithPath:(NSString *)*path* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size*`
 
+<a name="//api/name/initWithPath:duration:size:displayName:" title="initWithPath:duration:size:displayName:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:duration:size:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithPath:duration:size:displayName:
 
 构造函数，构建发送视频消息附件
@@ -117,42 +98,35 @@ int
 
 #### Parameters
 
-_path_\
-文件的本地路径
+*path*  
+   文件的本地路径  
 
-_duration_\
-视频片段时长
+*duration*  
+   视频片段时长  
 
-_size_\
-视频大小，宽度和高度
+*size*  
+   视频大小，宽度和高度  
 
-_displayName_\
-文件展示名
+*displayName*  
+   文件展示名  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithPath:thumbnailPath:duration:size:" title="initWithPath:thumbnailPath:duration:size:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithPath:thumbnailPath:duration:size:
 
 `- (id)initWithPath:(NSString *)*path* thumbnailPath:(NSString *)*thumbnailPath* duration:(int)*duration* size:(BMXMessageAttachmentSize *)*size*`
 
+<a name="//api/name/initWithPath:thumbnailPath:duration:size:displayName:" title="initWithPath:thumbnailPath:duration:size:displayName:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:thumbnailPath:duration:size:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithPath:thumbnailPath:duration:size:displayName:
 
 构造函数，构建发送视频消息附件
@@ -161,33 +135,29 @@ _displayName_\
 
 #### Parameters
 
-_path_\
-文件的本地路径
+*path*  
+   文件的本地路径  
 
-_thumbnailPath_\
-缩略图文件的本地路径
+*thumbnailPath*  
+   缩略图文件的本地路径  
 
-_duration_\
-视频片段时长
+*duration*  
+   视频片段时长  
 
-_size_\
-视频大小，宽度和高度
+*size*  
+   视频大小，宽度和高度  
 
-_displayName_\
-文件展示名
+*displayName*  
+   文件展示名  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithRatelUrl:duration:size:displayName:fileLength:" title="initWithRatelUrl:duration:size:displayName:fileLength:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithPath:thumbnailPath:duration:size:displayName:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithRatelUrl:duration:size:displayName:fileLength:
 
 构造函数，构建接收视频消息附件
@@ -196,33 +166,29 @@ _displayName_\
 
 #### Parameters
 
-_ratelUrl_\
-ratel文件服务器地址
+*ratelUrl*  
+   ratel文件服务器地址  
 
-_duration_\
-视频片段时长
+*duration*  
+   视频片段时长  
 
-_size_\
-视频大小，宽度和高度
+*size*  
+   视频大小，宽度和高度  
 
-_displayName_\
-文件展示名
+*displayName*  
+   文件展示名  
 
-_fileLength_\
-文件大小
+*fileLength*  
+   文件大小  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:" title="initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:
 
 构造函数，构建接收视频消息附件
@@ -231,36 +197,32 @@ _fileLength_\
 
 #### Parameters
 
-_ratelUrl_\
-ratel文件服务器地址
+*ratelUrl*  
+   ratel文件服务器地址  
 
-_thumbnailRatelUrl_\
-缩略图ratel文件服务器地址
+*thumbnailRatelUrl*  
+   缩略图ratel文件服务器地址  
 
-_duration_\
-视频片段时长
+*duration*  
+   视频片段时长  
 
-_size_\
-视频大小，宽度和高度
+*size*  
+   视频大小，宽度和高度  
 
-_displayName_\
-文件展示名
+*displayName*  
+   文件展示名  
 
-_fileLength_\
-文件大小
+*fileLength*  
+   文件大小  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setThumbnail:" title="setThumbnail:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="initWithRatelUrl:thumbnailRatelUrl:duration:size:displayName:fileLength:" %}{% endlanying_code_snippet %}
 ```
-
 ### setThumbnail:
 
 设置发送视频片段消息缩略图
@@ -269,21 +231,17 @@ _fileLength_\
 
 #### Parameters
 
-_path_\
-视频片段消息缩略图
+*path*  
+   视频片段消息缩略图  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setThumbnailRatelUrl:" title="setThumbnailRatelUrl:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="setThumbnail:" %}{% endlanying_code_snippet %}
 ```
-
 ### setThumbnailRatelUrl:
 
 设置发送视频片段消息缩略图ratel服务器路径
@@ -292,21 +250,17 @@ _path_\
 
 #### Parameters
 
-_thumbnailRatelUrl_\
-视频片段消息缩略图服务器路径
+*thumbnailRatelUrl*  
+   视频片段消息缩略图服务器路径  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/size" title="size"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="setThumbnailRatelUrl:" %}{% endlanying_code_snippet %}
 ```
-
 ### size
 
 视频大小，宽度和高度
@@ -314,21 +268,16 @@ _thumbnailRatelUrl_\
 `- (BMXMessageAttachmentSize *)size`
 
 #### Return Value
-
-[BMXMessageAttachmentSize](BMXMessageAttachmentSize.md)
+<a href="../Classes/BMXMessageAttachmentSize.md">BMXMessageAttachmentSize</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/thumbnailDownloadStatus" title="thumbnailDownloadStatus"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="size" %}{% endlanying_code_snippet %}
 ```
-
 ### thumbnailDownloadStatus
 
 缩略图下载状态
@@ -336,21 +285,16 @@ _thumbnailRatelUrl_\
 `- (BMXMessageAttachment_DownloadStatus)thumbnailDownloadStatus`
 
 #### Return Value
-
 DownloadStatus
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/thumbnailPath" title="thumbnailPath"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailDownloadStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### thumbnailPath
 
 缩略图本地路径
@@ -358,21 +302,16 @@ DownloadStatus
 `- (NSString *)thumbnailPath`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/thumbnailRatelUrl" title="thumbnailRatelUrl"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailPath" %}{% endlanying_code_snippet %}
 ```
-
 ### thumbnailRatelUrl
 
 缩略图ratel服务器路径
@@ -380,21 +319,16 @@ NSString
 `- (NSString *)thumbnailRatelUrl`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/thumbnailUrl" title="thumbnailUrl"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailRatelUrl" %}{% endlanying_code_snippet %}
 ```
-
 ### thumbnailUrl
 
 远程缩略图使用URL
@@ -402,21 +336,16 @@ NSString
 `- (NSString *)thumbnailUrl`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/type" title="type"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="thumbnailUrl" %}{% endlanying_code_snippet %}
 ```
-
 ### type
 
 返回文件类型
@@ -424,16 +353,12 @@ NSString
 `- (BMXMessageAttachment_Type)type`
 
 #### Return Value
-
-[BMXMessageAttachment\_Type](../Constants/BMXMessageAttachment_Type.md)
+<a href="../Constants/BMXMessageAttachment_Type.md">BMXMessageAttachment_Type</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXVideoAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXVideoAttachment",function="type" %}{% endlanying_code_snippet %}
 ```

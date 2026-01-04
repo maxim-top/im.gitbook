@@ -1,84 +1,87 @@
 ---
 title: im::floo::floolib::BMXMessage
-summary: Message
+summary: Message 
+
 ---
 
 # im::floo::floolib::BMXMessage
 
-Message
+
+
+Message 
 
 Inherits from BMXBaseObject
 
 ## Public Functions
 
-|                                                                                    | Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| synchronized void                                                                  | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-delete)()                                                                                                                                                                                                                                                                                                                                                                                           |
-| long                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-msgid"><strong>msgId</strong></a>()<br>Message unique ID</p>                                                                                                                                                                                                                                                                                                                                         |
-| long                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-clientmsgid"><strong>clientMsgId</strong></a>()<br>Message client ID, only exists on message sender-side</p>                                                                                                                                                                                                                                                                                         |
-| long                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-fromid"><strong>fromId</strong></a>()<br>Message sender ID</p>                                                                                                                                                                                                                                                                                                                                       |
-| long                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-toid"><strong>toId</strong></a>()<br>Message receiver ID</p>                                                                                                                                                                                                                                                                                                                                         |
-| BMXMessage.MessageType                                                             | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-type"><strong>type</strong></a>()<br>Message type</p>                                                                                                                                                                                                                                                                                                                                                |
-| long                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-conversationid"><strong>conversationId</strong></a>()<br>Conversation ID that message belongs to</p>                                                                                                                                                                                                                                                                                                 |
-| BMXMessage.DeliveryStatus                                                          | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-deliverystatus"><strong>deliveryStatus</strong></a>()<br>Messaging state</p>                                                                                                                                                                                                                                                                                                                         |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setdeliverystatus"><strong>setDeliveryStatus</strong></a>(BMXMessage.DeliveryStatus arg0)<br>Set messaging state</p>                                                                                                                                                                                                                                                                                 |
-| long                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-servertimestamp"><strong>serverTimestamp</strong></a>()<br>Message timestamp (when received by server-side)</p>                                                                                                                                                                                                                                                                                      |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setservertimestamp"><strong>setServerTimestamp</strong></a>(long arg0)<br>Set message timestamp (when received by server-side)</p>                                                                                                                                                                                                                                                                   |
-| long                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-clienttimestamp"><strong>clientTimestamp</strong></a>()<br>Local timestamp (local time when message created or received)</p>                                                                                                                                                                                                                                                                         |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setclienttimestamp"><strong>setClientTimestamp</strong></a>(long arg0)<br>Set message local timestamp</p>                                                                                                                                                                                                                                                                                            |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isplayed"><strong>isPlayed</strong></a>()<br>Whether voice or video message has been played, valid only for received audio/video messages</p>                                                                                                                                                                                                                                                        |
-| void                                                                               | [**setIsPlayed**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisplayed)(boolean arg0)                                                                                                                                                                                                                                                                                                                                                                     |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isplayacked"><strong>isPlayAcked</strong></a>()<br>Whether voice or video message receives a playback acknowledgement, valid only for received audio/video messages</p>                                                                                                                                                                                                                              |
-| void                                                                               | [**setIsPlayAcked**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisplayacked)(boolean arg0)                                                                                                                                                                                                                                                                                                                                                               |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isreceivemsg"><strong>isReceiveMsg</strong></a>()<br>Message whether to receive</p>                                                                                                                                                                                                                                                                                                                  |
-| void                                                                               | [**setIsReceiveMsg**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisreceivemsg)(boolean arg0)                                                                                                                                                                                                                                                                                                                                                             |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isread"><strong>isRead</strong></a>()<br>Message read or unread mark</p>                                                                                                                                                                                                                                                                                                                             |
-| void                                                                               | [**setIsRead**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisread)(boolean arg0)                                                                                                                                                                                                                                                                                                                                                                         |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isreadacked"><strong>isReadAcked</strong></a>()<br>Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent</p>                                                                                                                                                                                                                                |
-| void                                                                               | [**setIsReadAcked**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisreadacked)(boolean arg0)                                                                                                                                                                                                                                                                                                                                                               |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isdeliveryacked"><strong>isDeliveryAcked</strong></a>()<br>Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent</p>                                                                                                                                                                                          |
-| void                                                                               | [**setIsDeliveryAcked**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisdeliveryacked)(boolean arg0)                                                                                                                                                                                                                                                                                                                                                       |
-| String                                                                             | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-content"><strong>content</strong></a>()<br>Message text content</p>                                                                                                                                                                                                                                                                                                                                  |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setcontent"><strong>setContent</strong></a>(String content)<br>Message text content</p>                                                                                                                                                                                                                                                                                                              |
-| BMXMessage.ContentType                                                             | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-contenttype"><strong>contentType</strong></a>()<br>Message content type, attachment-type with attachment, text-type with no attachment</p>                                                                                                                                                                                                                                                           |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-attachment"><strong>attachment</strong></a>()<br>Message attachment, BMXMessage owns the attachment and is responsible for releasing it</p>                                                                                                                                                                                                                                                          |
-| [BMXMessageConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md)         | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-config"><strong>config</strong></a>()<br>Message settings</p>                                                                                                                                                                                                                                                                                                                                        |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setconfig"><strong>setConfig</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md">BMXMessageConfig</a> arg0)<br>Set message config information</p>                                                                                                                                                                                                                          |
-| String                                                                             | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-extension"><strong>extension</strong></a>()<br>Message extension information</p>                                                                                                                                                                                                                                                                                                                     |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setextension"><strong>setExtension</strong></a>(String arg0)<br>Set message extension information</p>                                                                                                                                                                                                                                                                                                |
-| BMXMessage.DeliveryQos                                                             | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-deliveryqos"><strong>deliveryQos</strong></a>()<br>QOS of messaging</p>                                                                                                                                                                                                                                                                                                                              |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setdeliveryqos"><strong>setDeliveryQos</strong></a>(BMXMessage.DeliveryQos qos)<br>Set QOS of messaging</p>                                                                                                                                                                                                                                                                                          |
-| String                                                                             | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-sendername"><strong>senderName</strong></a>()<br>Display name of message sender</p>                                                                                                                                                                                                                                                                                                                  |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setsendername"><strong>setSenderName</strong></a>(String senderName)<br>Set display name of message sender</p>                                                                                                                                                                                                                                                                                       |
-| int                                                                                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupackcount"><strong>groupAckCount</strong></a>()<br>AckCount of read group messages</p>                                                                                                                                                                                                                                                                                                           |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupackcount"><strong>setGroupAckCount</strong></a>(int count)<br>Set groupAckCount of read messages (an SDK internal calling interface that shall not be called by upper layer)</p>                                                                                                                                                                                                             |
-| int                                                                                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupackunreadcount"><strong>groupAckUnreadCount</strong></a>()<br>AckCount of unread group messages</p>                                                                                                                                                                                                                                                                                             |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupackunreadcount"><strong>setGroupAckUnreadCount</strong></a>(int count)<br>Set groupAckCount of unread messages (an SDK internal calling interface that shall not be called by upper layer)</p>                                                                                                                                                                                               |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupackreadall"><strong>groupAckReadAll</strong></a>()<br>Whether all group messages are read</p>                                                                                                                                                                                                                                                                                                   |
-| int                                                                                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackcount"><strong>groupPlayAckCount</strong></a>()<br>Get count of played group messages</p>                                                                                                                                                                                                                                                                                                |
-| void                                                                               | [**setGroupPlayAckCount**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupplayackcount)(int count)                                                                                                                                                                                                                                                                                                                                                      |
-| int                                                                                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackunreadcount"><strong>groupPlayAckUnreadCount</strong></a>()<br>Get count of unread playback acknowledgements of group messages</p>                                                                                                                                                                                                                                                       |
-| void                                                                               | [**setGroupPlayAckUnreadCount**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupplayackunreadcount)(int count)                                                                                                                                                                                                                                                                                                                                          |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackreadall"><strong>groupPlayAckReadAll</strong></a>()<br>Set all playback acknowledgements of group messages as read</p>                                                                                                                                                                                                                                                                   |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setpriority"><strong>setPriority</strong></a>(int priority)<br>Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. Value range 0-10. The default level of messages sent by ordinary users in chatroom is 5, which can be discarded. Admin level defaults to 0 and will not be discarded. Other values can be set according to business.</p> |
-| int                                                                                | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-priority"><strong>priority</strong></a>()<br>Message diffusion priority</p>                                                                                                                                                                                                                                                                                                                          |
-| void                                                                               | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setpushmessagemode"><strong>setPushMessageMode</strong></a>(boolean arg0)<br>Set whether to push messages</p>                                                                                                                                                                                                                                                                                        |
-| boolean                                                                            | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-ispushmessage"><strong>isPushMessage</strong></a>()<br>Whether it is a push message</p>                                                                                                                                                                                                                                                                                                              |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)                      | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage"><strong>createMessage</strong></a>(long from, long to, BMXMessage.MessageType type, long conversationId, String content)<br>Create a text message</p>                                                                                                                                                                                                                                 |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)                      | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage"><strong>createMessage</strong></a>(long from, long to, BMXMessage.MessageType type, long conversationId, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md">BMXMessageAttachment</a> attachment)<br>Create a sent-attachment message</p>                                                                                                                            |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)                      | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createcommandmessage"><strong>createCommandMessage</strong></a>(long from, long to, BMXMessage.MessageType type, long conversationId, String content)<br>Create a sent command message (command message holds command information in a content field or an extension field)</p>                                                                                                                      |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)                      | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage"><strong>createMessage</strong></a>(long msgId, long from, long to, BMXMessage.MessageType type, long conversationId, String content, long serverTimestamp)<br>Create a received message</p>                                                                                                                                                                                           |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)                      | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage"><strong>createMessage</strong></a>(long msgId, long from, long to, BMXMessage.MessageType type, long conversationId, <a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md">BMXMessageAttachment</a> attachment, long serverTimestamp)<br>Create a received message</p>                                                                                                 |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)                      | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createcommandmessage"><strong>createCommandMessage</strong></a>(long msgId, long from, long to, BMXMessage.MessageType type, long conversationId, String content, long serverTimestamp)<br>Create a received command message (command message holds command information in a content field or an extension field)</p>                                                                                |
-| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md)                      | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createforwardmessage"><strong>createForwardMessage</strong></a>(<a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message.md">BMXMessage</a> msg, long from, long to, BMXMessage.MessageType type, long conversationId)<br>Create a forwarding message</p>                                                                                                                                               |
+|                | Name           |
+| -------------- | -------------- |
+| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-delete)**() |
+| long | **[msgId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-msgid)**()<br>Message unique ID  |
+| long | **[clientMsgId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-clientmsgid)**()<br>Message client ID, only exists on message sender-side  |
+| long | **[fromId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-fromid)**()<br>Message sender ID  |
+| long | **[toId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-toid)**()<br>Message receiver ID  |
+| BMXMessage.MessageType | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-type)**()<br>Message type  |
+| long | **[conversationId](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-conversationid)**()<br>Conversation ID that message belongs to  |
+| BMXMessage.DeliveryStatus | **[deliveryStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-deliverystatus)**()<br>Messaging state  |
+| void | **[setDeliveryStatus](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setdeliverystatus)**(BMXMessage.DeliveryStatus arg0)<br>Set messaging state  |
+| long | **[serverTimestamp](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-servertimestamp)**()<br>Message timestamp (when received by server-side)  |
+| void | **[setServerTimestamp](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setservertimestamp)**(long arg0)<br>Set message timestamp (when received by server-side)  |
+| long | **[clientTimestamp](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-clienttimestamp)**()<br>Local timestamp (local time when message created or received)  |
+| void | **[setClientTimestamp](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setclienttimestamp)**(long arg0)<br>Set message local timestamp  |
+| boolean | **[isPlayed](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isplayed)**()<br>Whether voice or video message has been played, valid only for received audio/video messages  |
+| void | **[setIsPlayed](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisplayed)**(boolean arg0) |
+| boolean | **[isPlayAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isplayacked)**()<br>Whether voice or video message receives a playback acknowledgement, valid only for received audio/video messages  |
+| void | **[setIsPlayAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisplayacked)**(boolean arg0) |
+| boolean | **[isReceiveMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isreceivemsg)**()<br>Message whether to receive  |
+| void | **[setIsReceiveMsg](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisreceivemsg)**(boolean arg0) |
+| boolean | **[isRead](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isread)**()<br>Message read or unread mark  |
+| void | **[setIsRead](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisread)**(boolean arg0) |
+| boolean | **[isReadAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isreadacked)**()<br>Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent  |
+| void | **[setIsReadAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisreadacked)**(boolean arg0) |
+| boolean | **[isDeliveryAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-isdeliveryacked)**()<br>Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent  |
+| void | **[setIsDeliveryAcked](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setisdeliveryacked)**(boolean arg0) |
+| String | **[content](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-content)**()<br>Message text content  |
+| void | **[setContent](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setcontent)**(String content)<br>Message text content  |
+| BMXMessage.ContentType | **[contentType](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-contenttype)**()<br>Message content type, attachment-type with attachment, text-type with no attachment  |
+| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[attachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-attachment)**()<br>Message attachment, BMXMessage owns the attachment and is responsible for releasing it  |
+| [BMXMessageConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md) | **[config](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-config)**()<br>Message settings  |
+| void | **[setConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setconfig)**([BMXMessageConfig](classim_1_1floo_1_1floolib_1_1_b_m_x_message_config.md) arg0)<br>Set message config information  |
+| String | **[extension](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-extension)**()<br>Message extension information  |
+| void | **[setExtension](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setextension)**(String arg0)<br>Set message extension information  |
+| BMXMessage.DeliveryQos | **[deliveryQos](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-deliveryqos)**()<br>QOS of messaging  |
+| void | **[setDeliveryQos](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setdeliveryqos)**(BMXMessage.DeliveryQos qos)<br>Set QOS of messaging  |
+| String | **[senderName](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-sendername)**()<br>Display name of message sender  |
+| void | **[setSenderName](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setsendername)**(String senderName)<br>Set display name of message sender  |
+| int | **[groupAckCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupackcount)**()<br>AckCount of read group messages  |
+| void | **[setGroupAckCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupackcount)**(int count)<br>Set groupAckCount of read messages (an SDK internal calling interface that shall not be called by upper layer)  |
+| int | **[groupAckUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupackunreadcount)**()<br>AckCount of unread group messages  |
+| void | **[setGroupAckUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupackunreadcount)**(int count)<br>Set groupAckCount of unread messages (an SDK internal calling interface that shall not be called by upper layer)  |
+| boolean | **[groupAckReadAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupackreadall)**()<br>Whether all group messages are read  |
+| int | **[groupPlayAckCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackcount)**()<br>Get count of played group messages  |
+| void | **[setGroupPlayAckCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupplayackcount)**(int count) |
+| int | **[groupPlayAckUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackunreadcount)**()<br>Get count of unread playback acknowledgements of group messages  |
+| void | **[setGroupPlayAckUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setgroupplayackunreadcount)**(int count) |
+| boolean | **[groupPlayAckReadAll](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-groupplayackreadall)**()<br>Set all playback acknowledgements of group messages as read  |
+| void | **[setPriority](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setpriority)**(int priority)<br>Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. Value range 0-10. The default level of messages sent by ordinary users in chatroom is 5, which can be discarded. Admin level defaults to 0 and will not be discarded. Other values can be set according to business.  |
+| int | **[priority](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-priority)**()<br>Message diffusion priority  |
+| void | **[setPushMessageMode](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-setpushmessagemode)**(boolean arg0)<br>Set whether to push messages  |
+| boolean | **[isPushMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-ispushmessage)**()<br>Whether it is a push message  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[createMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage)**(long from, long to, BMXMessage.MessageType type, long conversationId, String content)<br>Create a text message  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[createMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage)**(long from, long to, BMXMessage.MessageType type, long conversationId, [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) attachment)<br>Create a sent-attachment message  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[createCommandMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createcommandmessage)**(long from, long to, BMXMessage.MessageType type, long conversationId, String content)<br>Create a sent command message (command message holds command information in a content field or an extension field)  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[createMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage)**(long msgId, long from, long to, BMXMessage.MessageType type, long conversationId, String content, long serverTimestamp)<br>Create a received message  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[createMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createmessage)**(long msgId, long from, long to, BMXMessage.MessageType type, long conversationId, [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) attachment, long serverTimestamp)<br>Create a received message  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[createCommandMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createcommandmessage)**(long msgId, long from, long to, BMXMessage.MessageType type, long conversationId, String content, long serverTimestamp)<br>Create a received command message (command message holds command information in a content field or an extension field)  |
+| [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[createForwardMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-createforwardmessage)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) msg, long from, long to, BMXMessage.MessageType type, long conversationId)<br>Create a forwarding message  |
 
 ## Protected Functions
 
-|      | Name                                                                                                                                               |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      | [**BMXMessage**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-bmxmessage)(long cPtr, boolean cMemoryOwn)                               |
-| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-finalize)()                                                                |
-| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-getcptr)([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) obj) |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-bmxmessage)**(long cPtr, boolean cMemoryOwn) |
+| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-finalize)**() |
+| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md#function-getcptr)**([BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) obj) |
 
 ## Public Functions Documentation
 
@@ -88,140 +91,109 @@ Inherits from BMXBaseObject
 inline synchronized void delete()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="delete" %}{% endlanying_code_snippet %}
 ```
-
 ### function msgId
 
 ```java
 inline long msgId()
 ```
 
-Message unique ID
+Message unique ID 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="msgId" %}{% endlanying_code_snippet %}
 ```
-
 ### function clientMsgId
 
 ```java
 inline long clientMsgId()
 ```
 
-Message client ID, only exists on message sender-side
+Message client ID, only exists on message sender-side 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="clientMsgId" %}{% endlanying_code_snippet %}
 ```
-
 ### function fromId
 
 ```java
 inline long fromId()
 ```
 
-Message sender ID
+Message sender ID 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="fromId" %}{% endlanying_code_snippet %}
 ```
-
 ### function toId
 
 ```java
 inline long toId()
 ```
 
-Message receiver ID
+Message receiver ID 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="toId" %}{% endlanying_code_snippet %}
 ```
-
 ### function type
 
 ```java
 inline BMXMessage.MessageType type()
 ```
 
-Message type
+Message type 
 
-**Return**: \[MessageType]
+**Return**: [MessageType]
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="type" %}{% endlanying_code_snippet %}
 ```
-
 ### function conversationId
 
 ```java
 inline long conversationId()
 ```
 
-Conversation ID that message belongs to
+Conversation ID that message belongs to 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="conversationId" %}{% endlanying_code_snippet %}
 ```
-
 ### function deliveryStatus
 
 ```java
 inline BMXMessage.DeliveryStatus deliveryStatus()
 ```
 
-Messaging state
+Messaging state 
 
-**Return**: \[DeliveryStatus]
+**Return**: [DeliveryStatus]
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="deliveryStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function setDeliveryStatus
 
 ```java
@@ -230,34 +202,26 @@ inline void setDeliveryStatus(
 )
 ```
 
-Set messaging state
+Set messaging state 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setDeliveryStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### function serverTimestamp
 
 ```java
 inline long serverTimestamp()
 ```
 
-Message timestamp (when received by server-side)
+Message timestamp (when received by server-side) 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="serverTimestamp" %}{% endlanying_code_snippet %}
 ```
-
 ### function setServerTimestamp
 
 ```java
@@ -266,34 +230,26 @@ inline void setServerTimestamp(
 )
 ```
 
-Set message timestamp (when received by server-side)
+Set message timestamp (when received by server-side) 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setServerTimestamp" %}{% endlanying_code_snippet %}
 ```
-
 ### function clientTimestamp
 
 ```java
 inline long clientTimestamp()
 ```
 
-Local timestamp (local time when message created or received)
+Local timestamp (local time when message created or received) 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="clientTimestamp" %}{% endlanying_code_snippet %}
 ```
-
 ### function setClientTimestamp
 
 ```java
@@ -302,34 +258,26 @@ inline void setClientTimestamp(
 )
 ```
 
-Set message local timestamp
+Set message local timestamp 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setClientTimestamp" %}{% endlanying_code_snippet %}
 ```
-
 ### function isPlayed
 
 ```java
 inline boolean isPlayed()
 ```
 
-Whether voice or video message has been played, valid only for received audio/video messages
+Whether voice or video message has been played, valid only for received audio/video messages 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isPlayed" %}{% endlanying_code_snippet %}
 ```
-
 ### function setIsPlayed
 
 ```java
@@ -338,32 +286,25 @@ inline void setIsPlayed(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsPlayed" %}{% endlanying_code_snippet %}
 ```
-
 ### function isPlayAcked
 
 ```java
 inline boolean isPlayAcked()
 ```
 
-Whether voice or video message receives a playback acknowledgement, valid only for received audio/video messages
+Whether voice or video message receives a playback acknowledgement, valid only for received audio/video messages 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isPlayAcked" %}{% endlanying_code_snippet %}
 ```
-
 ### function setIsPlayAcked
 
 ```java
@@ -372,32 +313,25 @@ inline void setIsPlayAcked(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsPlayAcked" %}{% endlanying_code_snippet %}
 ```
-
 ### function isReceiveMsg
 
 ```java
 inline boolean isReceiveMsg()
 ```
 
-Message whether to receive
+Message whether to receive 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isReceiveMsg" %}{% endlanying_code_snippet %}
 ```
-
 ### function setIsReceiveMsg
 
 ```java
@@ -406,32 +340,25 @@ inline void setIsReceiveMsg(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsReceiveMsg" %}{% endlanying_code_snippet %}
 ```
-
 ### function isRead
 
 ```java
 inline boolean isRead()
 ```
 
-Message read or unread mark
+Message read or unread mark 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isRead" %}{% endlanying_code_snippet %}
 ```
-
 ### function setIsRead
 
 ```java
@@ -440,32 +367,25 @@ inline void setIsRead(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsRead" %}{% endlanying_code_snippet %}
 ```
-
 ### function isReadAcked
 
 ```java
 inline boolean isReadAcked()
 ```
 
-Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent
+Show sender whether read acknowledgement received, and show receiver whether message read acknowledgement sent 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isReadAcked" %}{% endlanying_code_snippet %}
 ```
-
 ### function setIsReadAcked
 
 ```java
@@ -474,32 +394,25 @@ inline void setIsReadAcked(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsReadAcked" %}{% endlanying_code_snippet %}
 ```
-
 ### function isDeliveryAcked
 
 ```java
 inline boolean isDeliveryAcked()
 ```
 
-Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent
+Show sender whether message has been delivered to the other party, and show receiver whether message delivered acknowledgement has been sent 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isDeliveryAcked" %}{% endlanying_code_snippet %}
 ```
-
 ### function setIsDeliveryAcked
 
 ```java
@@ -508,32 +421,25 @@ inline void setIsDeliveryAcked(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setIsDeliveryAcked" %}{% endlanying_code_snippet %}
 ```
-
 ### function content
 
 ```java
 inline String content()
 ```
 
-Message text content
+Message text content 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="content" %}{% endlanying_code_snippet %}
 ```
-
 ### function setContent
 
 ```java
@@ -542,74 +448,59 @@ inline void setContent(
 )
 ```
 
-Message text content
+Message text content 
 
-**Parameters**:
+**Parameters**: 
 
-* **content** Message text content
+  * **content** Message text content 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setContent" %}{% endlanying_code_snippet %}
 ```
-
 ### function contentType
 
 ```java
 inline BMXMessage.ContentType contentType()
 ```
 
-Message content type, attachment-type with attachment, text-type with no attachment
+Message content type, attachment-type with attachment, text-type with no attachment 
 
-**Return**: \[ContentType]
+**Return**: [ContentType]
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="contentType" %}{% endlanying_code_snippet %}
 ```
-
 ### function attachment
 
 ```java
 inline BMXMessageAttachment attachment()
 ```
 
-Message attachment, BMXMessage owns the attachment and is responsible for releasing it
+Message attachment, BMXMessage owns the attachment and is responsible for releasing it 
 
-**Return**: BMXMessageAttachmentPtr
+**Return**: BMXMessageAttachmentPtr 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="attachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function config
 
 ```java
 inline BMXMessageConfig config()
 ```
 
-Message settings
+Message settings 
 
-**Return**: JSON(std::string)
+**Return**: JSON(std::string) 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="config" %}{% endlanying_code_snippet %}
 ```
-
 ### function setConfig
 
 ```java
@@ -618,34 +509,26 @@ inline void setConfig(
 )
 ```
 
-Set message config information
+Set message config information 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### function extension
 
 ```java
 inline String extension()
 ```
 
-Message extension information
+Message extension information 
 
-**Return**: JSON(std::string)
+**Return**: JSON(std::string) 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="extension" %}{% endlanying_code_snippet %}
 ```
-
 ### function setExtension
 
 ```java
@@ -654,34 +537,26 @@ inline void setExtension(
 )
 ```
 
-Set message extension information
+Set message extension information 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setExtension" %}{% endlanying_code_snippet %}
 ```
-
 ### function deliveryQos
 
 ```java
 inline BMXMessage.DeliveryQos deliveryQos()
 ```
 
-QOS of messaging
+QOS of messaging 
 
-**Return**: \[DeliveryQos]
+**Return**: [DeliveryQos]
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="deliveryQos" %}{% endlanying_code_snippet %}
 ```
-
 ### function setDeliveryQos
 
 ```java
@@ -690,38 +565,31 @@ inline void setDeliveryQos(
 )
 ```
 
-Set QOS of messaging
+Set QOS of messaging 
 
-**Parameters**:
+**Parameters**: 
 
-* **qos** QOS of messaging
+  * **qos** QOS of messaging 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setDeliveryQos" %}{% endlanying_code_snippet %}
 ```
-
 ### function senderName
 
 ```java
 inline String senderName()
 ```
 
-Display name of message sender
+Display name of message sender 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="senderName" %}{% endlanying_code_snippet %}
 ```
-
 ### function setSenderName
 
 ```java
@@ -730,38 +598,31 @@ inline void setSenderName(
 )
 ```
 
-Set display name of message sender
+Set display name of message sender 
 
-**Parameters**:
+**Parameters**: 
 
-* **senderName** Message text content
+  * **senderName** Message text content 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setSenderName" %}{% endlanying_code_snippet %}
 ```
-
 ### function groupAckCount
 
 ```java
 inline int groupAckCount()
 ```
 
-AckCount of read group messages
+AckCount of read group messages 
 
-**Return**: int
+**Return**: int 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupAckCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function setGroupAckCount
 
 ```java
@@ -770,38 +631,31 @@ inline void setGroupAckCount(
 )
 ```
 
-Set groupAckCount of read messages (an SDK internal calling interface that shall not be called by upper layer)
+Set groupAckCount of read messages (an SDK internal calling interface that shall not be called by upper layer) 
 
-**Parameters**:
+**Parameters**: 
 
-* **count** Set the number of read group messages
+  * **count** Set the number of read group messages 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupAckCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function groupAckUnreadCount
 
 ```java
 inline int groupAckUnreadCount()
 ```
 
-AckCount of unread group messages
+AckCount of unread group messages 
 
-**Return**: int
+**Return**: int 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupAckUnreadCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function setGroupAckUnreadCount
 
 ```java
@@ -810,56 +664,45 @@ inline void setGroupAckUnreadCount(
 )
 ```
 
-Set groupAckCount of unread messages (an SDK internal calling interface that shall not be called by upper layer)
+Set groupAckCount of unread messages (an SDK internal calling interface that shall not be called by upper layer) 
 
-**Parameters**:
+**Parameters**: 
 
-* **count** Set the number of unread group messages
+  * **count** Set the number of unread group messages 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupAckUnreadCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function groupAckReadAll
 
 ```java
 inline boolean groupAckReadAll()
 ```
 
-Whether all group messages are read
+Whether all group messages are read 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupAckReadAll" %}{% endlanying_code_snippet %}
 ```
-
 ### function groupPlayAckCount
 
 ```java
 inline int groupPlayAckCount()
 ```
 
-Get count of played group messages
+Get count of played group messages 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupPlayAckCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function setGroupPlayAckCount
 
 ```java
@@ -868,32 +711,25 @@ inline void setGroupPlayAckCount(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupPlayAckCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function groupPlayAckUnreadCount
 
 ```java
 inline int groupPlayAckUnreadCount()
 ```
 
-Get count of unread playback acknowledgements of group messages
+Get count of unread playback acknowledgements of group messages 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function setGroupPlayAckUnreadCount
 
 ```java
@@ -902,32 +738,25 @@ inline void setGroupPlayAckUnreadCount(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setGroupPlayAckUnreadCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function groupPlayAckReadAll
 
 ```java
 inline boolean groupPlayAckReadAll()
 ```
 
-Set all playback acknowledgements of group messages as read
+Set all playback acknowledgements of group messages as read 
 
-**Return**: bool
+**Return**: bool 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="groupPlayAckReadAll" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPriority
 
 ```java
@@ -936,38 +765,31 @@ inline void setPriority(
 )
 ```
 
-Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. Value range 0-10. The default level of messages sent by ordinary users in chatroom is 5, which can be discarded. Admin level defaults to 0 and will not be discarded. Other values can be set according to business.
+Set message diffusion priority, default 0. 0 means diffusion, and the smaller the number, the more diffused. Value range 0-10. The default level of messages sent by ordinary users in chatroom is 5, which can be discarded. Admin level defaults to 0 and will not be discarded. Other values can be set according to business. 
 
-**Parameters**:
+**Parameters**: 
 
-* **priority** Set the number of unread group messages
+  * **priority** Set the number of unread group messages 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setPriority" %}{% endlanying_code_snippet %}
 ```
-
 ### function priority
 
 ```java
 inline int priority()
 ```
 
-Message diffusion priority
+Message diffusion priority 
 
-**Return**: int
+**Return**: int 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="priority" %}{% endlanying_code_snippet %}
 ```
-
 ### function setPushMessageMode
 
 ```java
@@ -976,34 +798,26 @@ inline void setPushMessageMode(
 )
 ```
 
-Set whether to push messages
+Set whether to push messages 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="setPushMessageMode" %}{% endlanying_code_snippet %}
 ```
-
 ### function isPushMessage
 
 ```java
 inline boolean isPushMessage()
 ```
 
-Whether it is a push message
+Whether it is a push message 
 
-**Return**: boolean
+**Return**: boolean 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="isPushMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function createMessage
 
 ```java
@@ -1016,24 +830,21 @@ static inline BMXMessage createMessage(
 )
 ```
 
-Create a text message
+Create a text message 
 
-**Parameters**:
+**Parameters**: 
 
-* **from** Message sender
-* **to** Message receiver
-* **type** Message type
-* **conversationId** Conversation id
-* **content** Message content
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Conversation id 
+  * **content** Message content 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function createMessage
 
 ```java
@@ -1046,24 +857,21 @@ static inline BMXMessage createMessage(
 )
 ```
 
-Create a sent-attachment message
+Create a sent-attachment message 
 
-**Parameters**:
+**Parameters**: 
 
-* **from** Message sender
-* **to** Message receiver
-* **type** Message type
-* **conversationId** Conversation id
-* **attachment** Attachment
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Conversation id 
+  * **attachment** Attachment 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function createCommandMessage
 
 ```java
@@ -1076,24 +884,21 @@ static inline BMXMessage createCommandMessage(
 )
 ```
 
-Create a sent command message (command message holds command information in a content field or an extension field)
+Create a sent command message (command message holds command information in a content field or an extension field) 
 
-**Parameters**:
+**Parameters**: 
 
-* **from** Message sender
-* **to** Message receiver
-* **type** Message type
-* **conversationId** Conversation id
-* **content** Message content
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Conversation id 
+  * **content** Message content 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function createMessage
 
 ```java
@@ -1108,26 +913,23 @@ static inline BMXMessage createMessage(
 )
 ```
 
-Create a received message
+Create a received message 
 
-**Parameters**:
+**Parameters**: 
 
-* **msgId** Message id
-* **from** Message sender
-* **to** Message receiver
-* **type** Message type
-* **conversationId** Conversation id
-* **content** Message content
-* **serverTimestamp** Server timestamp
+  * **msgId** Message id 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Conversation id 
+  * **content** Message content 
+  * **serverTimestamp** Server timestamp 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function createMessage
 
 ```java
@@ -1142,26 +944,23 @@ static inline BMXMessage createMessage(
 )
 ```
 
-Create a received message
+Create a received message 
 
-**Parameters**:
+**Parameters**: 
 
-* **msgId** Message id
-* **from** Message sender
-* **to** Message receiver
-* **type** Message type
-* **conversationId** Conversation id
-* **attachment** Attachment
-* **serverTimestamp** Server timestamp
+  * **msgId** Message id 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Conversation id 
+  * **attachment** Attachment 
+  * **serverTimestamp** Server timestamp 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function createCommandMessage
 
 ```java
@@ -1176,26 +975,23 @@ static inline BMXMessage createCommandMessage(
 )
 ```
 
-Create a received command message (command message holds command information in a content field or an extension field)
+Create a received command message (command message holds command information in a content field or an extension field) 
 
-**Parameters**:
+**Parameters**: 
 
-* **msgId** Message id
-* **from** Message sender
-* **to** Message receiver
-* **type** Message type
-* **conversationId** Conversation id
-* **content** Message content
-* **serverTimestamp** Server timestamp
+  * **msgId** Message id 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Conversation id 
+  * **content** Message content 
+  * **serverTimestamp** Server timestamp 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createCommandMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function createForwardMessage
 
 ```java
@@ -1208,26 +1004,23 @@ static inline BMXMessage createForwardMessage(
 )
 ```
 
-Create a forwarding message
+Create a forwarding message 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message to forward
-* **from** Message sender
-* **to** Message receiver
-* **type** Message type
-* **conversationId** Conversation id
+  * **msg** Message to forward 
+  * **from** Message sender 
+  * **to** Message receiver 
+  * **type** Message type 
+  * **conversationId** Conversation id 
+
 
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="createForwardMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXMessage
 
 ```java
@@ -1237,28 +1030,22 @@ inline BMXMessage(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="BMXMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="finalize" %}{% endlanying_code_snippet %}
 ```
-
 ### function getCPtr
 
 ```java
@@ -1267,13 +1054,11 @@ static inline long getCPtr(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessage'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessage",function="getCPtr" %}{% endlanying_code_snippet %}
 ```
-
-***
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

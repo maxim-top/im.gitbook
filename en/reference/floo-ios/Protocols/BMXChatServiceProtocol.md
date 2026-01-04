@@ -1,7 +1,7 @@
 # BMXChatServiceProtocol Protocol Reference
 
-**Conforms to** NSObject\
-**Declared in** floo\_proxy.h
+  **Conforms to** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,6 +9,7 @@
 
 ## Instance Methods
 
+<a name="//api/name/conversationDidCreatedConversation:message:" title="conversationDidCreatedConversation:message:"></a>
 ### conversationDidCreatedConversation:message:
 
 Conversation created
@@ -17,26 +18,20 @@ Conversation created
 
 #### Parameters
 
-_conversation_
+*conversation*  
 
-_message_
+*message*  
 
-```
-The latest message
-```
+    The latest message
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/conversationDidDeletedConversationId:error:" title="conversationDidDeletedConversationId:error:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="conversationDidCreatedConversation:message:" %}{% endlanying_code_snippet %}
 ```
-
 ### conversationDidDeletedConversationId:error:
 
 Conversation deleted
@@ -45,22 +40,18 @@ Conversation deleted
 
 #### Parameters
 
-_conversationId_
+*conversationId*  
 
-_error_
+*error*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/conversationTotalCountChanged:" title="conversationTotalCountChanged:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="conversationDidDeletedConversationId:error:" %}{% endlanying_code_snippet %}
 ```
-
 ### conversationTotalCountChanged:
 
 Conversation unread message count changed
@@ -69,20 +60,16 @@ Conversation unread message count changed
 
 #### Parameters
 
-_unreadCount_
+*unreadCount*  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/loadAllConversationDidFinished" title="loadAllConversationDidFinished"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="conversationTotalCountChanged:" %}{% endlanying_code_snippet %}
 ```
-
 ### loadAllConversationDidFinished
 
 All conversations loaded
@@ -92,17 +79,13 @@ All conversations loaded
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/messageAttachmentStatusDidChanged:error:percent:" title="messageAttachmentStatusDidChanged:error:percent:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="loadAllConversationDidFinished" %}{% endlanying_code_snippet %}
 ```
-
 ### messageAttachmentStatusDidChanged:error:percent:
 
 Message attachment download status changed
@@ -112,17 +95,13 @@ Message attachment download status changed
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/messageAttachmentUploadProgressChanged:percent:" title="messageAttachmentUploadProgressChanged:percent:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageAttachmentStatusDidChanged:error:percent:" %}{% endlanying_code_snippet %}
 ```
-
 ### messageAttachmentUploadProgressChanged:percent:
 
 Message attachment upload status changed
@@ -132,17 +111,13 @@ Message attachment upload status changed
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/messageRecallStatusDidChanged:error:" title="messageRecallStatusDidChanged:error:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageAttachmentUploadProgressChanged:percent:" %}{% endlanying_code_snippet %}
 ```
-
 ### messageRecallStatusDidChanged:error:
 
 Message recall status changed
@@ -152,17 +127,13 @@ Message recall status changed
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/messageStatusChanged:error:" title="messageStatusChanged:error:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageRecallStatusDidChanged:error:" %}{% endlanying_code_snippet %}
 ```
-
 ### messageStatusChanged:error:
 
 Message sending status changed
@@ -172,17 +143,13 @@ Message sending status changed
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receiveDeleteMessages:" title="receiveDeleteMessages:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="messageStatusChanged:error:" %}{% endlanying_code_snippet %}
 ```
-
 ### receiveDeleteMessages:
 
 Receive messages deleted
@@ -192,17 +159,13 @@ Receive messages deleted
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receiveReadAllMessages:" title="receiveReadAllMessages:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receiveDeleteMessages:" %}{% endlanying_code_snippet %}
 ```
-
 ### receiveReadAllMessages:
 
 Receive all messages have been read
@@ -212,17 +175,13 @@ Receive all messages have been read
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receiveReadCancelsMessages:" title="receiveReadCancelsMessages:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receiveReadAllMessages:" %}{% endlanying_code_snippet %}
 ```
-
 ### receiveReadCancelsMessages:
 
 Receive messages have been set as unread
@@ -232,17 +191,13 @@ Receive messages have been set as unread
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedCommandMessages:" title="receivedCommandMessages:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receiveReadCancelsMessages:" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedCommandMessages:
 
 Receive command messages
@@ -252,17 +207,13 @@ Receive command messages
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedDeliverAcks:" title="receivedDeliverAcks:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedCommandMessages:" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedDeliverAcks:
 
 Recieve delivery ACKs
@@ -272,17 +223,13 @@ Recieve delivery ACKs
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedMessages:" title="receivedMessages:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedDeliverAcks:" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedMessages:
 
 Receive messages
@@ -292,17 +239,13 @@ Receive messages
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedReadAcks:" title="receivedReadAcks:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedMessages:" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedReadAcks:
 
 Receive read ACKs
@@ -312,17 +255,13 @@ Receive read ACKs
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedRecallMessages:" title="receivedRecallMessages:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedReadAcks:" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedRecallMessages:
 
 Receive recalled messages
@@ -332,17 +271,13 @@ Receive recalled messages
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/receivedSystemMessages:" title="receivedSystemMessages:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedRecallMessages:" %}{% endlanying_code_snippet %}
 ```
-
 ### receivedSystemMessages:
 
 Receive system messages
@@ -352,17 +287,13 @@ Receive system messages
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/retrieveHistoryMessagesConversation:" title="retrieveHistoryMessagesConversation:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="receivedSystemMessages:" %}{% endlanying_code_snippet %}
 ```
-
 ### retrieveHistoryMessagesConversation:
 
 Retrieve history messages of a conversation
@@ -372,12 +303,9 @@ Retrieve history messages of a conversation
 #### Discussion
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXChatServiceProtocol'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatServiceProtocol",function="retrieveHistoryMessagesConversation:" %}{% endlanying_code_snippet %}
 ```

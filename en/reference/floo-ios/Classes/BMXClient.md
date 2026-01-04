@@ -1,8 +1,8 @@
 # BMXClient Class Reference
 
-**Inherits from** [BMXNetworkListener](BMXNetworkListener.md) :\
-NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** <a href="../Classes/BMXNetworkListener.md">BMXNetworkListener</a> :   
+NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -10,32 +10,40 @@ NSObject\
 
 ## Properties
 
+<a name="//api/name/chatService" title="chatService"></a>
 ### chatService
 
 `@property (nonatomic, strong, readonly) BMXChatService *chatService`
 
+<a name="//api/name/groupService" title="groupService"></a>
 ### groupService
 
 `@property (nonatomic, strong, readonly) BMXGroupService *groupService`
 
+<a name="//api/name/pushService" title="pushService"></a>
 ### pushService
 
 `@property (nonatomic, strong, readonly) BMXPushService *pushService`
 
+<a name="//api/name/rosterService" title="rosterService"></a>
 ### rosterService
 
 `@property (nonatomic, strong, readonly) BMXRosterService *rosterService`
 
+<a name="//api/name/rtcService" title="rtcService"></a>
 ### rtcService
 
 `@property (nonatomic, strong, readonly) BMXRTCService *rtcService`
 
+<a name="//api/name/userService" title="userService"></a>
 ### userService
 
 `@property (nonatomic, strong, readonly) BMXUserService *userService`
 
+<a title="Class Methods" name="class_methods"></a>
 ## Class Methods
 
+<a name="//api/name/createWithConfig:" title="createWithConfig:"></a>
 ### createWithConfig:
 
 Create a BMXClient
@@ -44,51 +52,41 @@ Create a BMXClient
 
 #### Parameters
 
-_config_\
-[BMXSDKConfig](BMXSDKConfig.md) SDK config created
+*config*  
+   <a href="../Classes/BMXSDKConfig.md">BMXSDKConfig</a> SDK config created
 
 #### Return Value
-
 BMXClient
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/sharedClient" title="sharedClient"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="createWithConfig:" %}{% endlanying_code_snippet %}
 ```
-
 ### sharedClient
 
 `+ (instancetype)sharedClient`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/changeAppIdWithAppId:" title="changeAppIdWithAppId:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sharedClient" %}{% endlanying_code_snippet %}
 ```
-
 ### changeAppIdWithAppId:
 
 `- (BMXErrorCode)changeAppIdWithAppId:(NSString *)*appId*`
 
+<a name="//api/name/changeAppIdWithAppId:appSecret:" title="changeAppIdWithAppId:appSecret:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:" %}{% endlanying_code_snippet %}
 ```
-
 ### changeAppIdWithAppId:appSecret:
 
 Change appId，also works on appId in BMXConfig
@@ -97,25 +95,20 @@ Change appId，also works on appId in BMXConfig
 
 #### Parameters
 
-_appId_\
-The new appId
+*appId*  
+   The new appId  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/changeAppIdWithAppId:appSecret:completion:" title="changeAppIdWithAppId:appSecret:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:appSecret:" %}{% endlanying_code_snippet %}
 ```
-
 ### changeAppIdWithAppId:appSecret:completion:
 
 Change appId，also works on appId in BMXConfig
@@ -124,37 +117,29 @@ Change appId，also works on appId in BMXConfig
 
 #### Parameters
 
-_appId_\
-The new appId
+*appId*  
+   The new appId
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/changeAppIdWithAppId:completion:" title="changeAppIdWithAppId:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:appSecret:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### changeAppIdWithAppId:completion:
 
 `- (void)changeAppIdWithAppId:(NSString *)*appId* completion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
+<a name="//api/name/connectStatus" title="connectStatus"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="changeAppIdWithAppId:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### connectStatus
 
 Get connection status to the server
@@ -162,33 +147,25 @@ Get connection status to the server
 `- (BMXConnectStatus)connectStatus`
 
 #### Return Value
-
-[BMXConnectStatus](../Constants/BMXConnectStatus.md)
+<a href="../Constants/BMXConnectStatus.md">BMXConnectStatus</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="connectStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/deleteAccountWithPassword:" title="deleteAccountWithPassword:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteAccountWithPassword:
 
 Delete my account
@@ -197,25 +174,20 @@ Delete my account
 
 #### Parameters
 
-_password_\
-The password for my account
+*password*  
+   The password for my account  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/deleteAccountWithPassword:completion:" title="deleteAccountWithPassword:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="deleteAccountWithPassword:" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteAccountWithPassword:completion:
 
 Delete my account
@@ -224,25 +196,20 @@ Delete my account
 
 #### Parameters
 
-_password_\
-The password for my account
+*password*  
+   The password for my account
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/disconnect" title="disconnect"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="deleteAccountWithPassword:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### disconnect
 
 Disconnect from the server
@@ -250,17 +217,13 @@ Disconnect from the server
 `- (void)disconnect`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/disconnectWithCompletion:" title="disconnectWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="disconnect" %}{% endlanying_code_snippet %}
 ```
-
 ### disconnectWithCompletion:
 
 Disconnect from the server
@@ -268,17 +231,13 @@ Disconnect from the server
 `- (void)disconnectWithCompletion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fastSignInByIdWithUid:password:" title="fastSignInByIdWithUid:password:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="disconnectWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### fastSignInByIdWithUid:password:
 
 Fast login by user ID (A successful login required)
@@ -287,28 +246,23 @@ Fast login by user ID (A successful login required)
 
 #### Parameters
 
-_uid_\
-The user ID
+*uid*  
+   The user ID  
 
-_password_\
-The password
+*password*  
+   The password  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fastSignInByIdWithUid:password:completion:" title="fastSignInByIdWithUid:password:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByIdWithUid:password:" %}{% endlanying_code_snippet %}
 ```
-
 ### fastSignInByIdWithUid:password:completion:
 
 Fast login by user ID (A successful login required)
@@ -317,28 +271,23 @@ Fast login by user ID (A successful login required)
 
 #### Parameters
 
-_uid_\
-The user ID
+*uid*  
+   The user ID
 
-_password_\
-The password
+*password*  
+   The password
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fastSignInByNameWithName:password:" title="fastSignInByNameWithName:password:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByIdWithUid:password:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### fastSignInByNameWithName:password:
 
 Fast login by username (A successful login required)
@@ -347,28 +296,23 @@ Fast login by username (A successful login required)
 
 #### Parameters
 
-_name_\
-The username
+*name*  
+   The username
 
-_password_\
-The password
+*password*  
+   The password
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/fastSignInByNameWithName:password:completion:" title="fastSignInByNameWithName:password:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByNameWithName:password:" %}{% endlanying_code_snippet %}
 ```
-
 ### fastSignInByNameWithName:password:completion:
 
 Fast login by username (A successful login required)
@@ -377,28 +321,23 @@ Fast login by username (A successful login required)
 
 #### Parameters
 
-_name_\
-The username
+*name*  
+   The username  
 
-_password_\
-The password
+*password*  
+   The password
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getSDKConfig" title="getSDKConfig"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="fastSignInByNameWithName:password:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getSDKConfig
 
 Get SDK config
@@ -406,21 +345,16 @@ Get SDK config
 `- (BMXSDKConfig *)getSDKConfig`
 
 #### Return Value
-
-[BMXSDKConfig](BMXSDKConfig.md)
+<a href="../Classes/BMXSDKConfig.md">BMXSDKConfig</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initializeServerConfigWithIsLocal:" title="initializeServerConfigWithIsLocal:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="getSDKConfig" %}{% endlanying_code_snippet %}
 ```
-
 ### initializeServerConfigWithIsLocal:
 
 Initialize server config to accelerate login speed
@@ -429,25 +363,20 @@ Initialize server config to accelerate login speed
 
 #### Parameters
 
-_isLocal_\
-true for loading from local file, or downloading from server
+*isLocal*  
+   true for loading from local file, or downloading from server
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initializeServerConfigWithIsLocal:completion:" title="initializeServerConfigWithIsLocal:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="initializeServerConfigWithIsLocal:" %}{% endlanying_code_snippet %}
 ```
-
 ### initializeServerConfigWithIsLocal:completion:
 
 Initialize server config to accelerate login speed
@@ -456,25 +385,20 @@ Initialize server config to accelerate login speed
 
 #### Parameters
 
-_isLocal_\
-true for loading from local file, or downloading from server
+*isLocal*  
+   true for loading from local file, or downloading from server
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/onNetworkChangedWithType:reconnect:" title="onNetworkChangedWithType:reconnect:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="initializeServerConfigWithIsLocal:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### onNetworkChangedWithType:reconnect:
 
 Send network status change events to SDK
@@ -483,24 +407,20 @@ Send network status change events to SDK
 
 #### Parameters
 
-_type_\
-New network type
+*type*  
+   New network type  
 
-_reconnect_\
-Need to reconnect or not
+*reconnect*  
+   Need to reconnect or not
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/reconnect" title="reconnect"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="onNetworkChangedWithType:reconnect:" %}{% endlanying_code_snippet %}
 ```
-
 ### reconnect
 
 Enforce reconnection
@@ -508,17 +428,13 @@ Enforce reconnection
 `- (void)reconnect`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/reconnectWithCompletion:" title="reconnectWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="reconnect" %}{% endlanying_code_snippet %}
 ```
-
 ### reconnectWithCompletion:
 
 Enforce reconnection
@@ -526,17 +442,13 @@ Enforce reconnection
 `- (void)reconnectWithCompletion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/sendMessageWithMsg:" title="sendMessageWithMsg:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="reconnectWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### sendMessageWithMsg:
 
 Send a message
@@ -545,21 +457,17 @@ Send a message
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/sendMessageWithMsg:completion:" title="sendMessageWithMsg:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sendMessageWithMsg:" %}{% endlanying_code_snippet %}
 ```
-
 ### sendMessageWithMsg:completion:
 
 Send a message
@@ -568,21 +476,17 @@ Send a message
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signInByIdWithArg1:password:" title="signInByIdWithArg1:password:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="sendMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### signInByIdWithArg1:password:
 
 Sign in by username
@@ -591,28 +495,23 @@ Sign in by username
 
 #### Parameters
 
-_password_\
-The password
+*password*  
+   The password 
 
-_name_\
-THe username
+*name*  
+   THe username
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signInByIdWithArg1:password:completion:" title="signInByIdWithArg1:password:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='1' data-2='1' data-3='1' data-4='1' data-5='1' data-6='1' data-7='1' data-8='1' data-9='1' data-10='1' data-11='1' data-12='1' data-13='1' data-14='1' data-15='1' data-16='1' data-17='1' data-18='1' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByIdWithArg1:password:" %}{% endlanying_code_snippet %}
 ```
-
 ### signInByIdWithArg1:password:completion:
 
 Sign in by user ID
@@ -621,28 +520,23 @@ Sign in by user ID
 
 #### Parameters
 
-_password_\
-The password
+*password*  
+   The password
 
-_int64\_t_\
-The user ID
+*int64_t*  
+   The user ID  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signInByNameWithName:password:" title="signInByNameWithName:password:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='1' data-2='1' data-3='1' data-4='1' data-5='1' data-6='1' data-7='1' data-8='1' data-9='1' data-10='1' data-11='1' data-12='1' data-13='1' data-14='1' data-15='1' data-16='1' data-17='1' data-18='1' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByIdWithArg1:password:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### signInByNameWithName:password:
 
 Sign in by username
@@ -651,28 +545,23 @@ Sign in by username
 
 #### Parameters
 
-_name_\
-The username
+*name*  
+   The username  
 
-_password_\
-The password
+*password*  
+   The password 
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signInByNameWithName:password:completion:" title="signInByNameWithName:password:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByNameWithName:password:" %}{% endlanying_code_snippet %}
 ```
-
 ### signInByNameWithName:password:completion:
 
 Sign in by username
@@ -681,28 +570,23 @@ Sign in by username
 
 #### Parameters
 
-_name_\
-The username
+*name*  
+   The username 
 
-_password_\
-The password
+*password*  
+   The password  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signInStatus" title="signInStatus"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInByNameWithName:password:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### signInStatus
 
 Get login status
@@ -710,69 +594,52 @@ Get login status
 `- (BMXSignInStatus)signInStatus`
 
 #### Return Value
-
-[BMXSignInStatus](../Constants/BMXSignInStatus.md)
+<a href="../Constants/BMXSignInStatus.md">BMXSignInStatus</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signOut" title="signOut"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signInStatus" %}{% endlanying_code_snippet %}
 ```
-
 ### signOut
 
 `- (BMXErrorCode)signOut`
 
+<a name="//api/name/signOutWithCompletion:" title="signOutWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOut" %}{% endlanying_code_snippet %}
 ```
-
 ### signOutWithCompletion:
 
 `- (void)signOutWithCompletion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
+<a name="//api/name/signOutWithUid:" title="signOutWithUid:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### signOutWithUid:
 
 `- (BMXErrorCode)signOutWithUid:(long long)*uid*`
 
+<a name="//api/name/signOutWithUid:completion:" title="signOutWithUid:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:" %}{% endlanying_code_snippet %}
 ```
-
 ### signOutWithUid:completion:
 
 `- (void)signOutWithUid:(long long)*uid* completion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
+<a name="//api/name/signOutWithUid:ignoreUnbindDevice:" title="signOutWithUid:ignoreUnbindDevice:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### signOutWithUid:ignoreUnbindDevice:
 
 Sign out
@@ -781,28 +648,23 @@ Sign out
 
 #### Parameters
 
-_uid_\
-My user ID
+*uid*  
+   My user ID  
 
-_ignoreUnbindDevice_\
-Ignore unbinding device on sign out
+*ignoreUnbindDevice*  
+   Ignore unbinding device on sign out
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signOutWithUid:ignoreUnbindDevice:completion:" title="signOutWithUid:ignoreUnbindDevice:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:ignoreUnbindDevice:" %}{% endlanying_code_snippet %}
 ```
-
 ### signOutWithUid:ignoreUnbindDevice:completion:
 
 Sign out
@@ -811,28 +673,23 @@ Sign out
 
 #### Parameters
 
-_uid_\
-My user ID
+*uid*  
+   My user ID    
 
-_ignoreUnbindDevice_\
-Ignore unbinding device on sign out
+*ignoreUnbindDevice*  
+   Ignore unbinding device on sign out
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signUpNewUserWithUsername:password:bmxUserProfilePtr:" title="signUpNewUserWithUsername:password:bmxUserProfilePtr:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signOutWithUid:ignoreUnbindDevice:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### signUpNewUserWithUsername:password:bmxUserProfilePtr:
 
 Sign up a new account
@@ -841,31 +698,26 @@ Sign up a new account
 
 #### Parameters
 
-_username_\
-The username
+*username*  
+   The username
 
-_password_\
-The password
+*password*  
+   The password
 
-_bmxUserProfilePtr_\
-Profile of the new user
+*bmxUserProfilePtr*  
+   Profile of the new user
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/signUpNewUserWithUsername:password:completion:" title="signUpNewUserWithUsername:password:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signUpNewUserWithUsername:password:bmxUserProfilePtr:" %}{% endlanying_code_snippet %}
 ```
-
 ### signUpNewUserWithUsername:password:completion:
 
 Sign up a new account
@@ -874,26 +726,22 @@ Sign up a new account
 
 #### Parameters
 
-_username_\
-The username
+*username*  
+   The username  
 
-_password_\
-The password
+*password*  
+   The password
 
-_bmxUserProfilePtr_\
-Profile of the new user
+*bmxUserProfilePtr*  
+   Profile of the new user
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXClient'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXClient",function="signUpNewUserWithUsername:password:completion:" %}{% endlanying_code_snippet %}
 ```

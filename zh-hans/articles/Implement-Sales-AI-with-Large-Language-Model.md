@@ -1,18 +1,17 @@
 ---
-keywords: 销售AI, 大模型LLM, Chat AI SDK, AI智能体
 description: 介绍了如何使用大模型LLM实现销售AI以及智能插件驱动API服务的架构方案
+keywords: 销售AI, 大模型LLM, Chat AI SDK, AI智能体
 ---
-
 # 使用大模型LLM实现销售AI
 
 原创 一乐 蓝莺IM _2024-04-29 18:53_ _北京_
 
 > 为了讨论如何使用大型语言模型（LLM）实现销售AI，我们首先需要探讨销售AI面临的一些核心挑战，然后展示如何通过智能应用（ChatAI）架构来解决这些问题。
->
+> 
 > 这是蓝莺AI案例分享 Vol.4，感谢阅读。🙇
->
+> 
 > 如果你只是关心提示词技巧，可以直接阅读「小蓝AI：从客服到销售」部分。
->
+> 
 > 想要实现销售AI或者对通过AI促进销售漏斗转化感兴趣，或者了解蓝莺AI最新产品功能，欢迎添加文后微信入群探讨👏👏👏
 
 想象一个场景，客户通过聊天窗口咨询一款产品。销售AI首先使用LLM解析客户的问题，然后通过智能代理查询数据库获取产品详细信息，并以自然而友好的方式回应客户。
@@ -23,7 +22,7 @@ description: 介绍了如何使用大模型LLM实现销售AI以及智能插件�
 
 AI的主动性和被动性的平衡通过不断的实际交互中学习和优化，使得它既不会过度推销，也不会错过合适的销售时机。
 
-![销售AI场景演示，使用DALL·E3生成](../../.gitbook/assets/autogen-e13efd0da214c2f19f1b41d383b8d9983db1e22dd4274308ba7f1c41ec7b04a5.webp)
+![销售AI场景演示，使用DALL·E3生成](../assets/articles/autogen-e13efd0da214c2f19f1b41d383b8d9983db1e22dd4274308ba7f1c41ec7b04a5.webp)
 
 在很多年前，现在称为AI1.0的时代，我们就在畅想，并有很多先行者进行了尝试，只不过受限于技术发展，实现效果始终差强人意。
 
@@ -47,7 +46,7 @@ AI的主动性和被动性的平衡通过不断的实际交互中学习和优化
 
 一个典型的智能应用架构，是以大模型LLM驱动，聊天为入口，使用Agent智能插件能力驱动API服务：
 
-![智能应用（ChatAI）架构](../../.gitbook/assets/autogen-ab02b88cbe381ffe4d54ee954349f9965c03ff8c26e1bc3a264f4fe671e73d38.webp)
+![智能应用（ChatAI）架构](../assets/articles/autogen-ab02b88cbe381ffe4d54ee954349f9965c03ff8c26e1bc3a264f4fe671e73d38.webp)
 
 ### 以大模型LLM为核心
 
@@ -91,19 +90,19 @@ AI的主动性和被动性的平衡通过不断的实际交互中学习和优化
 
 在TiDB Data Service中，会自动映射一个RESTful API，如下：
 
-![TiDB Data Service：用户画像信息](../../.gitbook/assets/autogen-2cec272ea35991f937270028f96795110f731a575be9a9b57f63269aae862f15.webp)
+![TiDB Data Service：用户画像信息](../assets/articles/autogen-2cec272ea35991f937270028f96795110f731a575be9a9b57f63269aae862f15.webp)
 
 蓝莺AI服务中的智能插件则定义调用这个API：
 
-![蓝莺AI智能插件：插件配置](../../.gitbook/assets/autogen-c29fb76ecd2fb4a3ff1f27902222b86b73159467dc9fa5874be5b6ca7a8f98dd.webp)
+![蓝莺AI智能插件：插件配置](../assets/articles/autogen-c29fb76ecd2fb4a3ff1f27902222b86b73159467dc9fa5874be5b6ca7a8f98dd.webp)
 
 并在其中添加两个函数，一个是获取用户信息：
 
-![蓝莺AI智能插件：获取用户信息函数](../../.gitbook/assets/autogen-e591bd93ef825abaa89244466c4a4d671a66279344deb62038ff258c24a5c6c5.webp)
+![蓝莺AI智能插件：获取用户信息函数](../assets/articles/autogen-e591bd93ef825abaa89244466c4a4d671a66279344deb62038ff258c24a5c6c5.webp)
 
 另一个是设置用户信息：
 
-![蓝莺AI智能插件：设置用户信息函数](../../.gitbook/assets/autogen-a98b539aad64864c6479f974a30b3ca54ecf1144351d2c8e23dbe910b1680469.webp)
+![蓝莺AI智能插件：设置用户信息函数](../assets/articles/autogen-a98b539aad64864c6479f974a30b3ca54ecf1144351d2c8e23dbe910b1680469.webp)
 
 注意，数据库表的主键是`userid`，在插件中是从系统环境变量传入的。
 
@@ -119,7 +118,7 @@ AI的主动性和被动性的平衡通过不断的实际交互中学习和优化
 
 在收集数据方面，实测时AI显得并不积极，甚至是有一点刻意回避。
 
-我们猜测，除了变懒的因素外，并不能排除跟底层Prompt设置有关。因此解释收集动作的目的，会增强AI对当前身份角色的理解，更容易达到主动询问用户的目的。
+我们猜测，除了变懒的因素外，并不能排除跟底层Prompt设置有关。因此解释收集动作的目的，会增强AI对当前身份角色的理解，更容易达到主动询问用户的目的。  
 
 部分提示词如下：
 
@@ -180,31 +179,31 @@ AI的主动性和被动性的平衡通过不断的实际交互中学习和优化
 
 以上，是我们在销售AI上的实践，供参考。我们相信肯定有更好的提示词，也有很多地方可以去改进，欢迎一起来探讨。
 
-![](../../.gitbook/assets/autogen-1ec4fb02f4aa6cdd55deb5b3f43d59e26bfec17eef5cdb697c70e3dbcafc4a34.webp)
+![](../assets/articles/autogen-1ec4fb02f4aa6cdd55deb5b3f43d59e26bfec17eef5cdb697c70e3dbcafc4a34.webp)
 
 添加「小蓝会聊天」微信进群，与提示词专家们一起探讨复现与改进的方法：
 
-![扫码添加小蓝会聊天](../../.gitbook/assets/autogen-678480e75c7fcdbf6ec3492f1b2f9386e73af14e551ee9fa2baa98b93db02dcb.webp)
+![扫码添加小蓝会聊天](../assets/articles/autogen-678480e75c7fcdbf6ec3492f1b2f9386e73af14e551ee9fa2baa98b93db02dcb.webp)
 
 ## 本期重要产品更新 🚀🚀🚀
 
-### 1. 智能插件强制调用
+### 1\. 智能插件强制调用
 
 前面讲过，为了AI的个性化，我们需要在每次对话前告诉AI对话用户的画像信息，这个调用虽然可以让AI自动调用，但其调用还是让AI进行了二次思考，增加了响应时间。
 
-因此，我们在函数中增加了强制调用的配置 `"force_call": true`。设置了这个参数，那么在调用AI之前，Agent框架就会先行调用对应的API，并将其结果传给AI进行处理。
+因此，我们在函数中增加了强制调用的配置 `"force_call": true`。设置了这个参数，那么在调用AI之前，Agent框架就会先行调用对应的API，并将其结果传给AI进行处理。
 
-![智能插件函数设置：强制调用](../../.gitbook/assets/autogen-3d3c44428921861c387d52e2c064f09aa704a59bea215c7ad82abede398f9b63.webp)
+![智能插件函数设置：强制调用](../assets/articles/autogen-3d3c44428921861c387d52e2c064f09aa704a59bea215c7ad82abede398f9b63.webp)
 
 这在大部分情况下，**可以缩短一半的AI响应时间**。
 
-### 2. 多模态增加图片支持 🎉🎉🎉
+### 2\. 多模态增加图片支持 🎉🎉🎉
 
 蓝莺AI的多模态是从语音开始的，[上篇文章](https://docs.lanyingim.com/articles/product-and-technologies/Lanying-AI-Please-Enable-Voice-Communication.html)介绍了如何使用语音与小蓝AI交互，现在你图片生成与识别也正式发布了。
 
 依然是在智能消息服务里找到`配置Chatbot`，勾选多模态支持，那么向AI发送的图片就会被AI进行识别，具体如何识别，则依赖系统插件中的图片识别插件：
 
-![蓝莺AIChatbot配置：多模态](../../.gitbook/assets/autogen-59ad90f7030e63b60f402c5bb38babab05a8275a46930948c71a60670edfa3ee.webp)
+![蓝莺AIChatbot配置：多模态](../assets/articles/autogen-59ad90f7030e63b60f402c5bb38babab05a8275a46930948c71a60670edfa3ee.webp)
 
 ## 关于蓝莺IM
 
@@ -214,4 +213,4 @@ AI的主动性和被动性的平衡通过不断的实际交互中学习和优化
 
 我们会持续分享关于智能聊天ChatAI、大模型技术进展、AI Agent设计等方面的内容，也会分享典型AI应用案例，扫码关注不失联：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](../../.gitbook/assets/autogen-1fdbd901f4a0c5b667df0e25fda7b53203aa868bb4da0962845b112f26e2d5b5.webp)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-1fdbd901f4a0c5b667df0e25fda7b53203aa868bb4da0962845b112f26e2d5b5.webp)

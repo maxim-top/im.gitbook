@@ -1,7 +1,7 @@
 # BMXRTCService Class Reference
 
-**Inherits from** NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,16 +9,20 @@
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
 添加RTCService回调监听
@@ -27,33 +31,26 @@
 
 #### Parameters
 
-_listener_\
-RTCService监听器
+*listener*  
+   RTCService监听器  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXRTCServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
+<a name="//api/name/addRTCListener:" title="addRTCListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
-
 ### addRTCListener:
 
 添加RTCService回调监听
@@ -62,33 +59,26 @@ RTCService监听器
 
 #### Parameters
 
-_listener_\
-RTCService监听器
+*listener*  
+   RTCService监听器  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="addRTCListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/getBMXRTCSignalService" title="getBMXRTCSignalService"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### getBMXRTCSignalService
 
 获取BMXRTCSignalService的信令服务service（只有BMXRTCEngine需要使用该信令service，第三方RTCEngine对象不需要）
@@ -96,17 +86,13 @@ RTCService监听器
 `- (BMXRTCSignalService *)getBMXRTCSignalService`
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getRTCEngine" title="getRTCEngine"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="getBMXRTCSignalService" %}{% endlanying_code_snippet %}
 ```
-
 ### getRTCEngine
 
 获取存储的engine对象实例
@@ -114,33 +100,25 @@ RTCService监听器
 `- (BMXRTCEngine *)getRTCEngine`
 
 #### Return Value
-
-BMXRTCEngine\*
+BMXRTCEngine*
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="getRTCEngine" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
+<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeDelegate:
 
 移除RTCService回调监听
@@ -149,21 +127,17 @@ BMXRTCEngine\*
 
 #### Parameters
 
-_listener_\
-RTCService监听器
+*listener*  
+   RTCService监听器  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeRTCListener:" title="removeRTCListener:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeRTCListener:
 
 移除RTCService回调监听
@@ -172,21 +146,17 @@ RTCService监听器
 
 #### Parameters
 
-_listener_\
-RTCService监听器
+*listener*  
+   RTCService监听器  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/sendRTCMessageWithMsg:" title="sendRTCMessageWithMsg:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="removeRTCListener:" %}{% endlanying_code_snippet %}
 ```
-
 ### sendRTCMessageWithMsg:
 
 发送消息，用来RTCService层进行交互信令发送的操作。
@@ -195,21 +165,17 @@ RTCService监听器
 
 #### Parameters
 
-_msg_\
-发送的信息消息，消息的类型仅为信令消息
+*msg*  
+   发送的信息消息，消息的类型仅为信令消息  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/sendRTCMessageWithMsg:completion:" title="sendRTCMessageWithMsg:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="sendRTCMessageWithMsg:" %}{% endlanying_code_snippet %}
 ```
-
 ### sendRTCMessageWithMsg:completion:
 
 发送消息，用来RTCService层进行交互信令发送的操作。
@@ -218,21 +184,17 @@ _msg_\
 
 #### Parameters
 
-_msg_\
-发送的信息消息，消息的类型仅为信令消息
+*msg*  
+   发送的信息消息，消息的类型仅为信令消息  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setupRTCEngine:" title="setupRTCEngine:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="sendRTCMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setupRTCEngine:
 
 初始化并存储engine对象实例
@@ -241,16 +203,13 @@ _msg_\
 
 #### Parameters
 
-_engine_\
-BMXRTCEngine对象实例指针
+*engine*  
+   BMXRTCEngine对象实例指针  
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXRTCService'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXRTCService",function="setupRTCEngine:" %}{% endlanying_code_snippet %}
 ```

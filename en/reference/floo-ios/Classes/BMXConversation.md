@@ -1,8 +1,8 @@
 # BMXConversation Class Reference
 
-**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
-NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
+NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -10,6 +10,7 @@ NSObject\
 
 ## Instance Methods
 
+<a name="//api/name/conversationId" title="conversationId"></a>
 ### conversationId
 
 Conversation ID
@@ -17,33 +18,25 @@ Conversation ID
 `- (long long)conversationId`
 
 #### Return Value
-
 long long
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="conversationId" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/editMessage" title="editMessage"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### editMessage
 
 Edit a message
@@ -51,21 +44,16 @@ Edit a message
 `- (NSString *)editMessage`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/extension" title="extension"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="editMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### extension
 
 Extension information of a message
@@ -73,21 +61,16 @@ Extension information of a message
 `- (NSString *)extension`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/insertMessageWithMsg:" title="insertMessageWithMsg:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="extension" %}{% endlanying_code_snippet %}
 ```
-
 ### insertMessageWithMsg:
 
 Insert a message
@@ -96,25 +79,20 @@ Insert a message
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/insertMessageWithMsg:completion:" title="insertMessageWithMsg:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="insertMessageWithMsg:" %}{% endlanying_code_snippet %}
 ```
-
 ### insertMessageWithMsg:completion:
 
 Insert a message
@@ -123,25 +101,20 @@ Insert a message
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/isMuteNotification" title="isMuteNotification"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="insertMessageWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### isMuteNotification
 
 Turn off message notifications
@@ -149,21 +122,16 @@ Turn off message notifications
 `- (BOOL)isMuteNotification`
 
 #### Return Value
-
 BOOL
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/lastMsg" title="lastMsg"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="isMuteNotification" %}{% endlanying_code_snippet %}
 ```
-
 ### lastMsg
 
 The last message
@@ -171,21 +139,16 @@ The last message
 `- (BMXMessage *)lastMsg`
 
 #### Return Value
-
-[BMXMessage](BMXMessage.md)
+<a href="../Classes/BMXMessage.md">BMXMessage</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/loadMessageWithMsgId:" title="loadMessageWithMsgId:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="lastMsg" %}{% endlanying_code_snippet %}
 ```
-
 ### loadMessageWithMsgId:
 
 Get a message by ID
@@ -194,25 +157,20 @@ Get a message by ID
 
 #### Parameters
 
-_msgId_\
-The message ID
+*msgId*  
+   The message ID
 
 #### Return Value
-
-[BMXMessage](BMXMessage.md)
+<a href="../Classes/BMXMessage.md">BMXMessage</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/loadMessageWithMsgId:completion:" title="loadMessageWithMsgId:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessageWithMsgId:" %}{% endlanying_code_snippet %}
 ```
-
 ### loadMessageWithMsgId:completion:
 
 Get a message by ID
@@ -221,25 +179,20 @@ Get a message by ID
 
 #### Parameters
 
-_msgId_\
-The message ID
+*msgId*  
+   The message ID
 
 #### Return Value
-
-[BMXMessage](BMXMessage.md)
+<a href="../Classes/BMXMessage.md">BMXMessage</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/loadMessagesWithRefMsgId:size:arg4:completion:" title="loadMessagesWithRefMsgId:size:arg4:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessageWithMsgId:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### loadMessagesWithRefMsgId:size:arg4:completion:
 
 Get messages from the starting message ID
@@ -248,34 +201,29 @@ Get messages from the starting message ID
 
 #### Parameters
 
-_refMsgId_\
-Starting message ID
+*refMsgId*  
+   Starting message ID 
 
-_size_\
-Maximum number of messages
+*size*  
+   Maximum number of messages
 
-_result_\
-Message list as result
+*result*  
+   Message list as result
 
-_Direction_\
-Search direction, Up for earlier
+*Direction*  
+   Search direction, Up for earlier
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/loadMessagesWithRefMsgId:size:completion:" title="loadMessagesWithRefMsgId:size:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='4' data-2='4' data-3='4' data-4='4' data-5='4' data-6='4' data-7='4' data-8='4' data-9='4' data-10='4' data-11='4' data-12='4' data-13='4' data-14='4' data-15='4' data-16='4' data-17='4' data-18='4' data-19='4' data-20='4' data-21='4' data-22='4' data-23='4' data-24='4' data-25='4' data-26='4' data-27='4' data-28='4' data-29='4' data-30='4' data-31='4' data-32='4' data-33='4' data-34='4' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:arg4:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### loadMessagesWithRefMsgId:size:completion:
 
 Search messages by message ID
@@ -284,49 +232,41 @@ Search messages by message ID
 
 #### Parameters
 
-_size_\
-Maximum number of messages
+*size*  
+   Maximum number of messages
 
-_refTime_\
-Starting time
+*refTime*  
+   Starting time
 
-_result_\
-Message list as result
+*result*  
+   Message list as result
 
-_keywords_\
-The keywords
+*keywords*  
+   The keywords
 
-_Direction_\
-Search direction, Up for earlier
+*Direction*  
+   Search direction, Up for earlier
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/loadMessagesWithRefMsgId:size:result:" title="loadMessagesWithRefMsgId:size:result:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### loadMessagesWithRefMsgId:size:result:
 
 `- (BMXErrorCode)loadMessagesWithRefMsgId:(long long)*refMsgId* size:(unsigned long)*size* result:(BMXMessageList *)*result*`
 
+<a name="//api/name/loadMessagesWithRefMsgId:size:result:arg4:" title="loadMessagesWithRefMsgId:size:result:arg4:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:result:" %}{% endlanying_code_snippet %}
 ```
-
 ### loadMessagesWithRefMsgId:size:result:arg4:
 
 Load messages
@@ -335,34 +275,29 @@ Load messages
 
 #### Parameters
 
-_refMsgId_\
-First Message Id
+*refMsgId*  
+   First Message Id
 
-_size_\
-Maximum number of messages
+*size*  
+   Maximum number of messages
 
-_result_\
-Message list as result
+*result*  
+   Message list as result
 
-_Direction_\
-Search direction, Up for earlier
+*Direction*  
+   Search direction, Up for earlier
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/messageCount" title="messageCount"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='4' data-2='4' data-3='4' data-4='4' data-5='4' data-6='4' data-7='4' data-8='4' data-9='4' data-10='4' data-11='4' data-12='4' data-13='4' data-14='4' data-15='4' data-16='4' data-17='4' data-18='4' data-19='4' data-20='4' data-21='4' data-22='4' data-23='4' data-24='4' data-25='4' data-26='4' data-27='4' data-28='4' data-29='4' data-30='4' data-31='4' data-32='4' data-33='4' data-34='4' data-35='4' data-36='4' data-37='4' data-38='4' data-39='4' data-40='4' data-41='4' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="loadMessagesWithRefMsgId:size:result:arg4:" %}{% endlanying_code_snippet %}
 ```
-
 ### messageCount
 
 The number of messages
@@ -370,21 +305,16 @@ The number of messages
 `- (int)messageCount`
 
 #### Return Value
-
 int
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/refreshConversation" title="refreshConversation"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="messageCount" %}{% endlanying_code_snippet %}
 ```
-
 ### refreshConversation
 
 Force update the total number of messages and unread messages for the conversation
@@ -392,21 +322,16 @@ Force update the total number of messages and unread messages for the conversati
 `- (BMXErrorCode)refreshConversation`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/refreshConversationWithCompletion:" title="refreshConversationWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="refreshConversation" %}{% endlanying_code_snippet %}
 ```
-
 ### refreshConversationWithCompletion:
 
 Force update the total number of messages and unread messages for the conversation
@@ -414,21 +339,16 @@ Force update the total number of messages and unread messages for the conversati
 `- (void)refreshConversationWithCompletion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeAllMessages" title="removeAllMessages"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="refreshConversationWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeAllMessages
 
 Remove all messages in the conversation
@@ -436,21 +356,16 @@ Remove all messages in the conversation
 `- (BMXErrorCode)removeAllMessages`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/removeAllMessagesWithCompletion:" title="removeAllMessagesWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="removeAllMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### removeAllMessagesWithCompletion:
 
 Remove all messages in the conversation
@@ -458,21 +373,16 @@ Remove all messages in the conversation
 `- (void)removeAllMessagesWithCompletion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="removeAllMessagesWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:
 
 Search messages by keywords
@@ -481,65 +391,53 @@ Search messages by keywords
 
 #### Parameters
 
-_keywords_\
-The keywords
+*keywords*  
+   The keywords
 
-_refTime_\
-Starting time
+*refTime*  
+   Starting time
 
-_size_\
-Maximum number of messages
+*size*  
+   Maximum number of messages
 
-_result_\
-Message list as result
+*result*  
+   Message list as result
 
-_Direction_\
-Search direction, Up for earlier
+*Direction*  
+   Search direction, Up for earlier  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Discussion
-
 Deprecated. use searchMessagesByKeyWords instead.
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:completion:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='5' data-2='5' data-3='5' data-4='5' data-5='5' data-6='5' data-7='5' data-8='5' data-9='5' data-10='5' data-11='5' data-12='5' data-13='5' data-14='5' data-15='5' data-16='5' data-17='5' data-18='5' data-19='5' data-20='5' data-21='5' data-22='5' data-23='5' data-24='5' data-25='5' data-26='5' data-27='5' data-28='5' data-29='5' data-30='5' data-31='5' data-32='5' data-33='5' data-34='5' data-35='5' data-36='5' data-37='5' data-38='5' data-39='5' data-40='5' data-41='5' data-42='5' data-43='5' data-44='5' data-45='5' data-46='5' data-47='5' data-48='5' data-49='5' data-50='5' data-51='5' data-52='5' data-53='5' data-54='5' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:arg5:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:completion:
 
 `- (void)searchMessagesByKeyWordsWithKeywords:(NSString *)*keywords* refTime:(long long)*refTime* size:(unsigned long)*size* completion:(void ( ^ ) ( BMXMessageList *result , BMXError *aError ))*resBlock*`
 
+<a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:result:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:result:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:result:
 
 `- (BMXErrorCode)searchMessagesByKeyWordsWithKeywords:(NSString *)*keywords* refTime:(long long)*refTime* size:(unsigned long)*size* result:(BMXMessageList *)*result*`
 
+<a name="//api/name/searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:" title="searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:result:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:
 
 Search messages by keywords
@@ -548,37 +446,32 @@ Search messages by keywords
 
 #### Parameters
 
-_keywords_\
-The keywords
+*keywords*  
+   The keywords
 
-_refTime_\
-Starting time
+*refTime*  
+   Starting time
 
-_size_\
-Maximum number of messages
+*size*  
+   Maximum number of messages
 
-_result_\
-Message list as result
+*result*  
+   Message list as result
 
-_arg5_\
-Search direction, Up for earlier
+*arg5*  
+   Search direction, Up for earlier
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/searchMessagesByTypeWithType:refTime:size:arg5:completion:" title="searchMessagesByTypeWithType:refTime:size:arg5:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='5' data-2='5' data-3='5' data-4='5' data-5='5' data-6='5' data-7='5' data-8='5' data-9='5' data-10='5' data-11='5' data-12='5' data-13='5' data-14='5' data-15='5' data-16='5' data-17='5' data-18='5' data-19='5' data-20='5' data-21='5' data-22='5' data-23='5' data-24='5' data-25='5' data-26='5' data-27='5' data-28='5' data-29='5' data-30='5' data-31='5' data-32='5' data-33='5' data-34='5' data-35='5' data-36='5' data-37='5' data-38='5' data-39='5' data-40='5' data-41='5' data-42='5' data-43='5' data-44='5' data-45='5' data-46='5' data-47='5' data-48='5' data-49='5' data-50='5' data-51='5' data-52='5' data-53='5' data-54='5' data-55='5' data-56='5' data-57='5' data-58='5' data-59='5' data-60='5' data-61='5' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByKeyWordsWithKeywords:refTime:size:result:arg5:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByTypeWithType:refTime:size:arg5:completion:
 
 Search messages by type
@@ -587,61 +480,50 @@ Search messages by type
 
 #### Parameters
 
-_type_\
-The type
+*type*  
+   The type  
 
-_refTime_\
-Starting time
+*refTime*  
+   Starting time
 
-_size_\
-Maximum number of messages
+*size*  
+   Maximum number of messages
 
-_result_\
-Message list as result
+*result*  
+   Message list as result
 
-_Direction_\
-Search direction, Up for earlier
+*Direction*  
+   Search direction, Up for earlier
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/searchMessagesByTypeWithType:refTime:size:completion:" title="searchMessagesByTypeWithType:refTime:size:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='5' data-2='5' data-3='5' data-4='5' data-5='5' data-6='5' data-7='5' data-8='5' data-9='5' data-10='5' data-11='5' data-12='5' data-13='5' data-14='5' data-15='5' data-16='5' data-17='5' data-18='5' data-19='5' data-20='5' data-21='5' data-22='5' data-23='5' data-24='5' data-25='5' data-26='5' data-27='5' data-28='5' data-29='5' data-30='5' data-31='5' data-32='5' data-33='5' data-34='5' data-35='5' data-36='5' data-37='5' data-38='5' data-39='5' data-40='5' data-41='5' data-42='5' data-43='5' data-44='5' data-45='5' data-46='5' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:arg5:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByTypeWithType:refTime:size:completion:
 
 `- (void)searchMessagesByTypeWithType:(BMXMessage_ContentType)*type* refTime:(long long)*refTime* size:(unsigned long)*size* completion:(void ( ^ ) ( BMXMessageList *result , BMXError *aError ))*resBlock*`
 
+<a name="//api/name/searchMessagesByTypeWithType:refTime:size:result:" title="searchMessagesByTypeWithType:refTime:size:result:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByTypeWithType:refTime:size:result:
 
 `- (BMXErrorCode)searchMessagesByTypeWithType:(BMXMessage_ContentType)*type* refTime:(long long)*refTime* size:(unsigned long)*size* result:(BMXMessageList *)*result*`
 
+<a name="//api/name/searchMessagesByTypeWithType:refTime:size:result:arg5:" title="searchMessagesByTypeWithType:refTime:size:result:arg5:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:result:" %}{% endlanying_code_snippet %}
 ```
-
 ### searchMessagesByTypeWithType:refTime:size:result:arg5:
 
 Search messages by type
@@ -650,37 +532,32 @@ Search messages by type
 
 #### Parameters
 
-_type_\
-The type
+*type*  
+   The type
 
-_refTime_\
-Starting time
+*refTime*  
+   Starting time
 
-_size_\
-Maximum number of messages
+*size*  
+   Maximum number of messages
 
-_result_\
-Message list as result
+*result*  
+   Message list as result
 
-_Direction_\
-Search direction, Up for earlier
+*Direction*  
+   Search direction, Up for earlier
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAllMessagesRead" title="setAllMessagesRead"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-1='5' data-2='5' data-3='5' data-4='5' data-5='5' data-6='5' data-7='5' data-8='5' data-9='5' data-10='5' data-11='5' data-12='5' data-13='5' data-14='5' data-15='5' data-16='5' data-17='5' data-18='5' data-19='5' data-20='5' data-21='5' data-22='5' data-23='5' data-24='5' data-25='5' data-26='5' data-27='5' data-28='5' data-29='5' data-30='5' data-31='5' data-32='5' data-33='5' data-34='5' data-35='5' data-36='5' data-37='5' data-38='5' data-39='5' data-40='5' data-41='5' data-42='5' data-43='5' data-44='5' data-45='5' data-46='5' data-47='5' data-48='5' data-49='5' data-50='5' data-51='5' data-52='5' data-53='5' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="searchMessagesByTypeWithType:refTime:size:result:arg5:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAllMessagesRead
 
 Set all messages as read
@@ -688,21 +565,16 @@ Set all messages as read
 `- (BMXErrorCode)setAllMessagesRead`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAllMessagesReadWithCompletion:" title="setAllMessagesReadWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setAllMessagesRead" %}{% endlanying_code_snippet %}
 ```
-
 ### setAllMessagesReadWithCompletion:
 
 Set all messages as read
@@ -710,21 +582,16 @@ Set all messages as read
 `- (void)setAllMessagesReadWithCompletion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEditMessage:" title="setEditMessage:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setAllMessagesReadWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEditMessage:
 
 Set message in editting
@@ -733,25 +600,20 @@ Set message in editting
 
 #### Parameters
 
-_editMessage_\
-The message content
+*editMessage*  
+   The message content
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setExtension:" title="setExtension:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setEditMessage:" %}{% endlanying_code_snippet %}
 ```
-
 ### setExtension:
 
 Set extension information of messages
@@ -760,25 +622,20 @@ Set extension information of messages
 
 #### Parameters
 
-_ext_\
-The extension information
+*ext*  
+   The extension information  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setMessagePlayedStatus:status:" title="setMessagePlayedStatus:status:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setExtension:" %}{% endlanying_code_snippet %}
 ```
-
 ### setMessagePlayedStatus:status:
 
 Set palyed status of messages
@@ -787,28 +644,23 @@ Set palyed status of messages
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+    The message
 
-_status_\
-Played or not
+*status*  
+    Played or not
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setMessagePlayedStatus:status:completion:" title="setMessagePlayedStatus:status:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessagePlayedStatus:status:" %}{% endlanying_code_snippet %}
 ```
-
 ### setMessagePlayedStatus:status:completion:
 
 Set the palyed status of messages
@@ -817,28 +669,23 @@ Set the palyed status of messages
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message
 
-_status_\
-Played or not
+*status*  
+   Played or not
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setMessageReadStatus:status:" title="setMessageReadStatus:status:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessagePlayedStatus:status:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setMessageReadStatus:status:
 
 Set the read status of messages
@@ -847,28 +694,23 @@ Set the read status of messages
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message
 
-_status_\
-Read or not
+*status*  
+   Read or not
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setMessageReadStatus:status:completion:" title="setMessageReadStatus:status:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessageReadStatus:status:" %}{% endlanying_code_snippet %}
 ```
-
 ### setMessageReadStatus:status:completion:
 
 Set the read status of messages
@@ -877,28 +719,23 @@ Set the read status of messages
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message
 
-_status_\
-Read or not
+*status*  
+   Read or not
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/type" title="type"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="setMessageReadStatus:status:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### type
 
 Conversation type
@@ -906,21 +743,16 @@ Conversation type
 `- (BMXConversation_Type)type`
 
 #### Return Value
-
-[BMXConversation\_Type](../Constants/BMXConversation_Type.md)
+<a href="../Constants/BMXConversation_Type.md">BMXConversation_Type</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/unreadNumber" title="unreadNumber"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="type" %}{% endlanying_code_snippet %}
 ```
-
 ### unreadNumber
 
 THe number of unread messages
@@ -928,21 +760,16 @@ THe number of unread messages
 `- (int)unreadNumber`
 
 #### Return Value
-
 int
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/updateMessageExtensionWithMsg:" title="updateMessageExtensionWithMsg:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="unreadNumber" %}{% endlanying_code_snippet %}
 ```
-
 ### updateMessageExtensionWithMsg:
 
 Update the extension information of a message
@@ -951,25 +778,20 @@ Update the extension information of a message
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/updateMessageExtensionWithMsg:completion:" title="updateMessageExtensionWithMsg:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="updateMessageExtensionWithMsg:" %}{% endlanying_code_snippet %}
 ```
-
 ### updateMessageExtensionWithMsg:completion:
 
 Update the extension information of a message
@@ -978,20 +800,16 @@ Update the extension information of a message
 
 #### Parameters
 
-_msg_\
-The message
+*msg*  
+   The message  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXConversation'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXConversation",function="updateMessageExtensionWithMsg:completion:" %}{% endlanying_code_snippet %}
 ```

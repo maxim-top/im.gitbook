@@ -1,11 +1,14 @@
 ---
 title: im::floo::floolib::BMXMessageAttachment
-summary: 消息附件
+summary: 消息附件 
+
 ---
 
 # im::floo::floolib::BMXMessageAttachment
 
-消息附件
+
+
+消息附件 
 
 Inherits from BMXBaseObject
 
@@ -13,19 +16,19 @@ Inherited by [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_
 
 ## Public Functions
 
-|                                                                                    | Name                                                                                                                            |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| synchronized void                                                                  | [**delete**](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-delete)()                                      |
-| BMXMessageAttachment.Type                                                          | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-type"><strong>type</strong></a>()<br>附件类型</p>   |
-| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | <p><a href="classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-clone"><strong>clone</strong></a>()<br>复制附件</p> |
+|                | Name           |
+| -------------- | -------------- |
+| synchronized void | **[delete](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-delete)**() |
+| BMXMessageAttachment.Type | **[type](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-type)**()<br>附件类型  |
+| [BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) | **[clone](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-clone)**()<br>复制附件  |
 
 ## Protected Functions
 
-|      | Name                                                                                                                                                                               |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      | [**BMXMessageAttachment**](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)(long cPtr, boolean cMemoryOwn)                                |
-| void | [**finalize**](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-finalize)()                                                                                     |
-| long | [**getCPtr**](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-getcptr)([BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) obj) |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-bmxmessageattachment)**(long cPtr, boolean cMemoryOwn) |
+| void | **[finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-finalize)**() |
+| long | **[getCPtr](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md#function-getcptr)**([BMXMessageAttachment](classim_1_1floo_1_1floolib_1_1_b_m_x_message_attachment.md) obj) |
 
 ## Public Functions Documentation
 
@@ -35,58 +38,50 @@ Inherited by [im.floo.floolib.BMXFileAttachment](classim_1_1floo_1_1floolib_1_1_
 inline synchronized void delete()
 ```
 
+
 **Reimplemented by**: [im::floo::floolib::BMXFileAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-delete), [im::floo::floolib::BMXImageAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-delete), [im::floo::floolib::BMXLocationAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-delete), [im::floo::floolib::BMXVideoAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-delete), [im::floo::floolib::BMXVoiceAttachment::delete](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-delete)
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessageAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageAttachment",function="delete" %}{% endlanying_code_snippet %}
 ```
-
 ### function type
 
 ```java
 inline BMXMessageAttachment.Type type()
 ```
 
-附件类型
+附件类型 
 
-**Return**: \[Type]
+**Return**: [Type]
 
 **Reimplemented by**: [im::floo::floolib::BMXFileAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-type), [im::floo::floolib::BMXImageAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-type), [im::floo::floolib::BMXLocationAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-type), [im::floo::floolib::BMXVideoAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-type), [im::floo::floolib::BMXVoiceAttachment::type](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-type)
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessageAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageAttachment",function="type" %}{% endlanying_code_snippet %}
 ```
-
 ### function clone
 
 ```java
 inline BMXMessageAttachment clone()
 ```
 
-复制附件
+复制附件 
 
-**Return**: BMXMessageAttachmentPtr
+**Return**: BMXMessageAttachmentPtr 
 
 **Reimplemented by**: [im::floo::floolib::BMXFileAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-clone), [im::floo::floolib::BMXImageAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-clone), [im::floo::floolib::BMXLocationAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-clone), [im::floo::floolib::BMXVideoAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-clone), [im::floo::floolib::BMXVoiceAttachment::clone](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-clone)
+
 
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessageAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageAttachment",function="clone" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXMessageAttachment
 
 ```java
@@ -96,30 +91,25 @@ inline BMXMessageAttachment(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessageAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageAttachment",function="BMXMessageAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function finalize
 
 ```java
 inline void finalize()
 ```
 
+
 **Reimplemented by**: [im::floo::floolib::BMXFileAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_file_attachment.md#function-finalize), [im::floo::floolib::BMXImageAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_image_attachment.md#function-finalize), [im::floo::floolib::BMXLocationAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_location_attachment.md#function-finalize), [im::floo::floolib::BMXVideoAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_video_attachment.md#function-finalize), [im::floo::floolib::BMXVoiceAttachment::finalize](classim_1_1floo_1_1floolib_1_1_b_m_x_voice_attachment.md#function-finalize)
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessageAttachment'></div>
-
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageAttachment",function="finalize" %}{% endlanying_code_snippet %}
 ```
-
 ### function getCPtr
 
 ```java
@@ -128,13 +118,11 @@ static inline long getCPtr(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-android' data-class='BMXMessageAttachment'></div>
+{% lanying_code_snippet repo="lanying-im-android",class="BMXMessageAttachment",function="getCPtr" %}{% endlanying_code_snippet %}
 ```
-
-***
+-------------------------------
 
 Updated on 2022-01-26 at 17:18:31 +0800

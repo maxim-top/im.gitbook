@@ -1,15 +1,14 @@
 ---
-keywords: 数字孪生, 智能制造, AI智能体, AI Agent
 description: 关于汽车工厂数字孪生与智能制造的文章
+keywords: 数字孪生, 智能制造, AI智能体, AI Agent
 ---
-
 # 汽车工厂里的数字孪生与智能制造
 
 艾姆姐 美信拓扑 _2021-08-20 16:19_
 
 > 创新企业研习营北京站开启，立刻报名参加数字化转型主题分享与摩托车赛道技术开放日。
 
-![](../../.gitbook/assets/autogen-37c84b1b2a769b61883c1116052955fd657a631770000600d80b7c20c808b031.webp)
+![](../assets/articles/autogen-37c84b1b2a769b61883c1116052955fd657a631770000600d80b7c20c808b031.webp)
 
 > 每隔几十年，各技术之间的融合就会催生出一个全新的事物，Omniverse便是这样诞生的。
 >
@@ -25,7 +24,7 @@ description: 关于汽车工厂数字孪生与智能制造的文章
 
 汽车行业是制造业中自动化和信息化程度最高的，在全球的工业机器人，有 35% 都是应用在汽车行业中的，由此可见一斑。始于 1916 年的 BMW 宝马，也是汽车行业的优秀代表；加上在 1923 年就有第一部 BMW 摩托车问世。2020 年 10 月，宝马成立数字化汽车（Digital Car）部门，将自动驾驶及驾驶辅助、智能互联及数字化服务等集合为一个部门，促进数字化研发力量的内部整合。
 
-## TGO 鲲鹏会创新企业研习营 \[北京站]
+## TGO 鲲鹏会创新企业研习营 [北京站]
 
 创新企业研习营北京站将于 **8 月 28 日**举行，本站将会邀请**宝马汽车数字化生产与物流总监戚海飞**分享数字化转型实践经验分享，同时会对针对数字孪生等前沿技术应用进行深入探讨交流。
 
@@ -67,7 +66,7 @@ description: 关于汽车工厂数字孪生与智能制造的文章
 
 **扫描下方小程序进行报名。**
 
-![TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日](../../.gitbook/assets/autogen-19be5dff5823d13a5138d8c421b4b71624a220f1e39fcd5e6518e33cda51a5df.jpeg)
+![TGO鲲鹏会会员服务，数字化转型与摩托车赛道开放日](../assets/articles/autogen-19be5dff5823d13a5138d8c421b4b71624a220f1e39fcd5e6518e33cda51a5df.jpeg)
 
 ## 关于创新企业研习营
 
@@ -79,7 +78,7 @@ description: 关于汽车工厂数字孪生与智能制造的文章
 
 欢迎持续关注并参与各地分站活动。
 
-![](../../.gitbook/assets/autogen-6712116078ce8cb5ca8ed4a24c18ae19270e5ae4622c82c510aa07a6e7d612da.webp)
+![](../assets/articles/autogen-6712116078ce8cb5ca8ed4a24c18ae19270e5ae4622c82c510aa07a6e7d612da.webp)
 
 ## 关于 TGO 鲲鹏会
 
@@ -93,16 +92,16 @@ TGO 鲲鹏会是极客邦旗下科技领导者聚集和交流的组织，我们�
 
 2021 年，摩托车骑行小组正式更名「101 摩托车队」，旨在连接更多的行业内技术人，一起快乐安全骑行。101 是二进制代表技术，也是兄弟连的意思。
 
-![](../../.gitbook/assets/autogen-988813e2e022eb6864031837ab412ab4c486b8191a688d38c19ad89ef7011b0f.webp)
+![](../assets/articles/autogen-988813e2e022eb6864031837ab412ab4c486b8191a688d38c19ad89ef7011b0f.webp)
 
 ## 关于美信拓扑
 
 美信拓扑，一家很酷的云服务公司，他们研发的新一代云原生 IM，是可以一键启用多云架构的即时通讯云服务。目前各种组件正在陆续开源。
 
-![](../../.gitbook/assets/autogen-d9fc86d9b55eb9d7259572ffef9d724acefde38c36fc08f2a368a57f2f36c224.webp)
+![](../assets/articles/autogen-d9fc86d9b55eb9d7259572ffef9d724acefde38c36fc08f2a368a57f2f36c224.webp)
 
 ## **特别提示**
 
 继续关注「美信拓扑」，了解按月付费十分钟安装的即时通讯私有云。
 
-![](../../.gitbook/assets/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)
+![](../assets/articles/autogen-9c1da9e4a9e37fe718184c6ceeb84a3401afabccc3269ff9a5bd7ef8b087462e.webp)

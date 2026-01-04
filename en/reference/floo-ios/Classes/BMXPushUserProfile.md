@@ -1,8 +1,8 @@
 # BMXPushUserProfile Class Reference
 
-**Inherits from** [BMXBaseObject](BMXBaseObject.md) :\
-NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** <a href="../Classes/BMXBaseObject.md">BMXBaseObject</a> :   
+NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -10,18 +10,16 @@ NSObject\
 
 ## Instance Methods
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/messagePushSetting" title="messagePushSetting"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### messagePushSetting
 
 Push settings for the user
@@ -29,21 +27,16 @@ Push settings for the user
 `- (BMXPushUserProfileMessagePushSetting *)messagePushSetting`
 
 #### Return Value
-
-[BMXPushUserProfileMessagePushSetting](BMXPushUserProfileMessagePushSetting.md)
+<a href="../Classes/BMXPushUserProfileMessagePushSetting.md">BMXPushUserProfileMessagePushSetting</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushAlias" title="pushAlias"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="messagePushSetting" %}{% endlanying_code_snippet %}
 ```
-
 ### pushAlias
 
 Push user alias
@@ -51,21 +44,16 @@ Push user alias
 `- (NSString *)pushAlias`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/pushToken" title="pushToken"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="pushAlias" %}{% endlanying_code_snippet %}
 ```
-
 ### pushToken
 
 Push token
@@ -73,21 +61,16 @@ Push token
 `- (NSString *)pushToken`
 
 #### Return Value
-
 NSString
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/userId" title="userId"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="pushToken" %}{% endlanying_code_snippet %}
 ```
-
 ### userId
 
 User ID
@@ -95,16 +78,12 @@ User ID
 `- (long long)userId`
 
 #### Return Value
-
 long long
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXPushUserProfile'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXPushUserProfile",function="userId" %}{% endlanying_code_snippet %}
 ```

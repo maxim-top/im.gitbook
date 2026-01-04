@@ -1,7 +1,7 @@
 # BMXUserService Class Reference
 
-**Inherits from** NSObject\
-**Declared in** floo\_proxy.h
+  **Inherits from** NSObject  
+  **Declared in** floo_proxy.h  
 
 ## Overview
 
@@ -9,16 +9,20 @@
 
 ## Properties
 
+<a name="//api/name/swigCMemOwn" title="swigCMemOwn"></a>
 ### swigCMemOwn
 
 `@property (nonatomic) BOOL swigCMemOwn`
 
+<a name="//api/name/swigCPtr" title="swigCPtr"></a>
 ### swigCPtr
 
 `@property (nonatomic) void *swigCPtr`
 
+<a title="Instance Methods" name="instance_methods"></a>
 ## Instance Methods
 
+<a name="//api/name/addDelegate:" title="addDelegate:"></a>
 ### addDelegate:
 
 添加用户状态监听者
@@ -27,33 +31,26 @@
 
 #### Parameters
 
-_listener_\
-用户状态监听者
+*listener*  
+   用户状态监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/addDelegate:delegateQueue:" title="addDelegate:delegateQueue:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="addDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### addDelegate:delegateQueue:
 
 `- (void)addDelegate:(id<BMXUserServiceProtocol>)*aDelegate* delegateQueue:(dispatch_queue_t)*aQueue*`
 
+<a name="//api/name/bindDeviceWithToken:" title="bindDeviceWithToken:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="addDelegate:delegateQueue:" %}{% endlanying_code_snippet %}
 ```
-
 ### bindDeviceWithToken:
 
 绑定设备推送token
@@ -62,25 +59,20 @@ _listener_\
 
 #### Parameters
 
-_token_\
-设备token
+*token*  
+   设备token  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/bindDeviceWithToken:completion:" title="bindDeviceWithToken:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="bindDeviceWithToken:" %}{% endlanying_code_snippet %}
 ```
-
 ### bindDeviceWithToken:completion:
 
 绑定设备推送token
@@ -89,37 +81,29 @@ _token_\
 
 #### Parameters
 
-_token_\
-设备token
+*token*  
+   设备token  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/dealloc" title="dealloc"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="bindDeviceWithToken:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### dealloc
 
 `- (void)dealloc`
 
+<a name="//api/name/deleteDeviceWithDeviceSn:" title="deleteDeviceWithDeviceSn:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="dealloc" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteDeviceWithDeviceSn:
 
 删除设备
@@ -128,25 +112,20 @@ _token_\
 
 #### Parameters
 
-_device\_sn_\
-设备序列号
+*device_sn*  
+   设备序列号  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/deleteDeviceWithDeviceSn:completion:" title="deleteDeviceWithDeviceSn:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="deleteDeviceWithDeviceSn:" %}{% endlanying_code_snippet %}
 ```
-
 ### deleteDeviceWithDeviceSn:completion:
 
 删除设备
@@ -155,25 +134,20 @@ _device\_sn_\
 
 #### Parameters
 
-_device\_sn_\
-设备序列号
+*device_sn*  
+   设备序列号  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/downloadAvatarWithProfile:thumbnail:callback:" title="downloadAvatarWithProfile:thumbnail:callback:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="deleteDeviceWithDeviceSn:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### downloadAvatarWithProfile:thumbnail:callback:
 
 下载头像，默认下载缩略图
@@ -182,31 +156,26 @@ _device\_sn_\
 
 #### Parameters
 
-_profile_\
-用户profile
+*profile*  
+   用户profile  
 
-_thumbnail_\
-是否下载缩略图，true下载缩略图，false下载原图
+*thumbnail*  
+   是否下载缩略图，true下载缩略图，false下载原图  
 
-_callback_\
-下载回调函数
+*callback*  
+   下载回调函数  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/downloadAvatarWithProfile:thumbnail:callback:completion:" title="downloadAvatarWithProfile:thumbnail:callback:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="downloadAvatarWithProfile:thumbnail:callback:" %}{% endlanying_code_snippet %}
 ```
-
 ### downloadAvatarWithProfile:thumbnail:callback:completion:
 
 下载头像，默认下载缩略图
@@ -215,31 +184,26 @@ _callback_\
 
 #### Parameters
 
-_profile_\
-用户profile
+*profile*  
+   用户profile  
 
-_thumbnail_\
-是否下载缩略图，true下载缩略图，false下载原图
+*thumbnail*  
+   是否下载缩略图，true下载缩略图，false下载原图  
 
-_callback_\
-下载回调函数
+*callback*  
+   下载回调函数  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDeviceList:" title="getDeviceList:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="downloadAvatarWithProfile:thumbnail:callback:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getDeviceList:
 
 获取设备列表
@@ -248,25 +212,20 @@ _callback_\
 
 #### Parameters
 
-_deviceList_\
-设备列表，传入空列表函数返回后从此处获取返回的设备列表
+*deviceList*  
+   设备列表，传入空列表函数返回后从此处获取返回的设备列表  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getDeviceListWithCompletion:" title="getDeviceListWithCompletion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getDeviceList:" %}{% endlanying_code_snippet %}
 ```
-
 ### getDeviceListWithCompletion:
 
 获取设备列表
@@ -275,25 +234,20 @@ _deviceList_\
 
 #### Parameters
 
-_deviceList_\
-设备列表，传入空列表函数返回后从此处获取返回的设备列表
+*deviceList*  
+   设备列表，传入空列表函数返回后从此处获取返回的设备列表  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getProfile:completion:" title="getProfile:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getDeviceListWithCompletion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getProfile:completion:
 
 获取用户详情，如果forceRefresh == true，则强制从服务端拉取
@@ -302,28 +256,23 @@ _deviceList_\
 
 #### Parameters
 
-_forceRefresh_\
-是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取
+*forceRefresh*  
+   是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取  
 
-_profile_\
-用户profile信息，初始传入指向为空的shared\_ptr对象，函数返回后从此处获取用户profile信息。
+*profile*  
+   用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/getProfile:forceRefresh:" title="getProfile:forceRefresh:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getProfile:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### getProfile:forceRefresh:
 
 获取用户详情，如果forceRefresh == true，则强制从服务端拉取
@@ -332,40 +281,32 @@ _profile_\
 
 #### Parameters
 
-_profile_\
-用户profile信息，初始传入指向为空的shared\_ptr对象，函数返回后从此处获取用户profile信息。
+*profile*  
+   用户profile信息，初始传入指向为空的shared_ptr对象，函数返回后从此处获取用户profile信息。  
 
-_forceRefresh_\
-是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取
+*forceRefresh*  
+   是否强制从服务器拉取，本地获取失败的情况下会自动从服务器拉取  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="getProfile:forceRefresh:" %}{% endlanying_code_snippet %}
 ```
-
 ### initWithCptr:swigOwnCObject:
 
 `- (id)initWithCptr:(void *)*cptr* swigOwnCObject:(BOOL)*ownCObject*`
 
+<a name="//api/name/removeDelegate:" title="removeDelegate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="initWithCptr:swigOwnCObject:" %}{% endlanying_code_snippet %}
 ```
-
 ### removeDelegate:
 
 移除用户状态监听者
@@ -374,21 +315,17 @@ _forceRefresh_\
 
 #### Parameters
 
-_listener_\
-用户状态监听者
+*listener*  
+   用户状态监听者  
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAddFriendAuthMode:" title="setAddFriendAuthMode:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="removeDelegate:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAddFriendAuthMode:
 
 设置加好友验证方式
@@ -397,25 +334,20 @@ _listener_\
 
 #### Parameters
 
-_mode_\
-加好友验证方式
+*mode*  
+   加好友验证方式  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAddFriendAuthMode:completion:" title="setAddFriendAuthMode:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAddFriendAuthMode:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAddFriendAuthMode:completion:
 
 设置加好友验证方式
@@ -424,25 +356,20 @@ _mode_\
 
 #### Parameters
 
-_mode_\
-加好友验证方式
+*mode*  
+   加好友验证方式  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAuthQuestion:" title="setAuthQuestion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAddFriendAuthMode:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAuthQuestion:
 
 设置加好友验证问题
@@ -451,25 +378,20 @@ _mode_\
 
 #### Parameters
 
-_authQuestion_\
-加好友验证问题
+*authQuestion*  
+   加好友验证问题  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAuthQuestion:completion:" title="setAuthQuestion:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAuthQuestion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAuthQuestion:completion:
 
 设置加好友验证问题
@@ -478,25 +400,20 @@ _authQuestion_\
 
 #### Parameters
 
-_authQuestion_\
-加好友验证问题
+*authQuestion*  
+   加好友验证问题  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoAcceptGroupInvite:" title="setAutoAcceptGroupInvite:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAuthQuestion:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoAcceptGroupInvite:
 
 设置是否自动同意入群邀请
@@ -505,25 +422,20 @@ _authQuestion_\
 
 #### Parameters
 
-_enable_\
-是否自动同意入群邀请，true同意，false不同意
+*enable*  
+   是否自动同意入群邀请，true同意，false不同意  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoAcceptGroupInvite:completion:" title="setAutoAcceptGroupInvite:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoAcceptGroupInvite:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoAcceptGroupInvite:completion:
 
 设置是否自动同意入群邀请
@@ -532,25 +444,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-是否自动同意入群邀请，true同意，false不同意
+*enable*  
+   是否自动同意入群邀请，true同意，false不同意  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoDownloadAttachment:" title="setAutoDownloadAttachment:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoAcceptGroupInvite:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoDownloadAttachment:
 
 设置是否自动缩略图和语音附件
@@ -559,25 +466,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-是否自动缩略图和语音附件，true自动下载，false不会自动下载
+*enable*  
+   是否自动缩略图和语音附件，true自动下载，false不会自动下载  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setAutoDownloadAttachment:completion:" title="setAutoDownloadAttachment:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoDownloadAttachment:" %}{% endlanying_code_snippet %}
 ```
-
 ### setAutoDownloadAttachment:completion:
 
 设置是否自动缩略图和语音附件
@@ -586,25 +488,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-是否自动缩略图和语音附件，true自动下载，false不会自动下载
+*enable*  
+   是否自动缩略图和语音附件，true自动下载，false不会自动下载  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePush:" title="setEnablePush:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setAutoDownloadAttachment:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePush:
 
 设置是否允许推送
@@ -613,25 +510,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-是否允许推送，true推送，false不推送
+*enable*  
+   是否允许推送，true推送，false不推送  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePush:completion:" title="setEnablePush:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePush:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePush:completion:
 
 设置是否允许推送
@@ -640,25 +532,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-是否允许推送，true推送，false不推送
+*enable*  
+   是否允许推送，true推送，false不推送  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePushDetaile:" title="setEnablePushDetaile:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePush:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePushDetaile:
 
 设置是否推送详情
@@ -667,25 +554,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-是否推送详情，true推送，false不推送
+*enable*  
+   是否推送详情，true推送，false不推送  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setEnablePushDetaile:completion:" title="setEnablePushDetaile:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePushDetaile:" %}{% endlanying_code_snippet %}
 ```
-
 ### setEnablePushDetaile:completion:
 
 设置是否推送详情
@@ -694,25 +576,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-是否推送详情，true推送，false不推送
+*enable*  
+   是否推送详情，true推送，false不推送  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNickname:" title="setNickname:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setEnablePushDetaile:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNickname:
 
 设置昵称
@@ -721,25 +598,20 @@ _enable_\
 
 #### Parameters
 
-_nickname_\
-用户昵称
+*nickname*  
+   用户昵称  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNickname:completion:" title="setNickname:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNickname:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNickname:completion:
 
 设置昵称
@@ -748,25 +620,20 @@ _nickname_\
 
 #### Parameters
 
-_nickname_\
-用户昵称
+*nickname*  
+   用户昵称  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationSound:" title="setNotificationSound:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNickname:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationSound:
 
 设置收到新消息是否声音提醒
@@ -775,25 +642,20 @@ _nickname_\
 
 #### Parameters
 
-_enable_\
-收到新消息是否声音提醒，true提醒，false不提醒
+*enable*  
+   收到新消息是否声音提醒，true提醒，false不提醒  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationSound:completion:" title="setNotificationSound:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationSound:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationSound:completion:
 
 设置收到新消息是否声音提醒
@@ -802,25 +664,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-收到新消息是否声音提醒，true提醒，false不提醒
+*enable*  
+   收到新消息是否声音提醒，true提醒，false不提醒  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationVibrate:" title="setNotificationVibrate:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationSound:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationVibrate:
 
 设置收到新消息是否震动
@@ -829,25 +686,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-收到新消息是否震动，true震动，false不震动
+*enable*  
+   收到新消息是否震动，true震动，false不震动  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setNotificationVibrate:completion:" title="setNotificationVibrate:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationVibrate:" %}{% endlanying_code_snippet %}
 ```
-
 ### setNotificationVibrate:completion:
 
 设置收到新消息是否震动
@@ -856,25 +708,20 @@ _enable_\
 
 #### Parameters
 
-_enable_\
-收到新消息是否震动，true震动，false不震动
+*enable*  
+   收到新消息是否震动，true震动，false不震动  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPrivateInfo:" title="setPrivateInfo:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setNotificationVibrate:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPrivateInfo:
 
 设置私有扩展信息
@@ -883,25 +730,20 @@ _enable_\
 
 #### Parameters
 
-_privateInfo_\
-私有扩展信息
+*privateInfo*  
+   私有扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPrivateInfo:completion:" title="setPrivateInfo:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPrivateInfo:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPrivateInfo:completion:
 
 设置私有扩展信息
@@ -910,25 +752,20 @@ _privateInfo_\
 
 #### Parameters
 
-_privateInfo_\
-私有扩展信息
+*privateInfo*  
+   私有扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPublicInfo:" title="setPublicInfo:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPrivateInfo:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPublicInfo:
 
 设置公开扩展信息
@@ -937,25 +774,20 @@ _privateInfo_\
 
 #### Parameters
 
-_publicInfo_\
-公开扩展信息
+*publicInfo*  
+   公开扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPublicInfo:completion:" title="setPublicInfo:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPublicInfo:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPublicInfo:completion:
 
 设置公开扩展信息
@@ -964,25 +796,20 @@ _publicInfo_\
 
 #### Parameters
 
-_publicInfo_\
-公开扩展信息
+*publicInfo*  
+   公开扩展信息  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushAlias:bmxPushToken:" title="setPushAlias:bmxPushToken:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPublicInfo:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushAlias:bmxPushToken:
 
 @brief
@@ -991,29 +818,23 @@ _publicInfo_\
 
 #### Parameters
 
-_nickname_\
-推送昵称
+*nickname*  
+   推送昵称  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Discussion
-
 @brief
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushAlias:bmxPushToken:completion:" title="setPushAlias:bmxPushToken:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushAlias:bmxPushToken:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushAlias:bmxPushToken:completion:
 
 @brief
@@ -1022,29 +843,23 @@ _nickname_\
 
 #### Parameters
 
-_nickname_\
-推送昵称
+*nickname*  
+   推送昵称  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Discussion
-
 @brief
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushNickname:" title="setPushNickname:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushAlias:bmxPushToken:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushNickname:
 
 设置推送昵称
@@ -1053,25 +868,20 @@ _nickname_\
 
 #### Parameters
 
-_nickname_\
-推送昵称
+*nickname*  
+   推送昵称  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/setPushNickname:completion:" title="setPushNickname:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushNickname:" %}{% endlanying_code_snippet %}
 ```
-
 ### setPushNickname:completion:
 
 设置推送昵称
@@ -1080,25 +890,20 @@ _nickname_\
 
 #### Parameters
 
-_nickname_\
-推送昵称
+*nickname*  
+   推送昵称  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/uploadAvatarWithAvatarPath:callback:" title="uploadAvatarWithAvatarPath:callback:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="setPushNickname:completion:" %}{% endlanying_code_snippet %}
 ```
-
 ### uploadAvatarWithAvatarPath:callback:
 
 上传头像
@@ -1107,28 +912,23 @@ _nickname_\
 
 #### Parameters
 
-_avatarPath_\
-上传头像的本地地址
+*avatarPath*  
+   上传头像的本地地址  
 
-_callback_\
-上传回调函数
+*callback*  
+   上传回调函数  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
+<a name="//api/name/uploadAvatarWithAvatarPath:callback:completion:" title="uploadAvatarWithAvatarPath:callback:completion:"></a>
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
-
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="uploadAvatarWithAvatarPath:callback:" %}{% endlanying_code_snippet %}
 ```
-
 ### uploadAvatarWithAvatarPath:callback:completion:
 
 上传头像
@@ -1137,23 +937,19 @@ _callback_\
 
 #### Parameters
 
-_avatarPath_\
-上传头像的本地地址
+*avatarPath*  
+   上传头像的本地地址  
 
-_callback_\
-上传回调函数
+*callback*  
+   上传回调函数  
 
 #### Return Value
-
-[BMXErrorCode](../Constants/BMXErrorCode.md)
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
 
 #### Declared In
-
 * `floo_proxy.h`
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-ios' data-class='BMXUserService'></div>
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXUserService",function="uploadAvatarWithAvatarPath:callback:completion:" %}{% endlanying_code_snippet %}
 ```

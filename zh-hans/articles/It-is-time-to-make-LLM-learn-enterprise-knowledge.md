@@ -1,8 +1,7 @@
 ---
-keywords: 大模型, 企业知识库, AI开源, PUSH SDK
 description: 是时候让大模型学习企业知识了
+keywords: 大模型, 企业知识库, AI开源, PUSH SDK
 ---
-
 # 是时候让大模型学习企业知识了
 
 有知识的小蓝 蓝莺IM _2023-07-19 22:16_
@@ -10,23 +9,22 @@ description: 是时候让大模型学习企业知识了
 > 蓝莺企业知识库（BlueVector）正式发布，你的AI老专家来了🎉🎉🎉
 >
 > 如果已经阅读过关于企业知识库的文章或者已经试用过，可以跳到高级玩法，看看酷不酷😝
->
+> 
 > 文章最后有蓝莺提示词工坊（Prompt Workshop）的信息，想一起交流提示词写作的同学不要错过👏🏻
->
+> 
 > 感谢在产品预览阶段提过宝贵建议的产品体验官们，感谢天蓬太帅、老白、云昆、Alex、华健和亲爱的蓝朋友们❤️
 
-![](../../.gitbook/assets/autogen-6acbcc27c2e6372292e690f2e4b7d9c59b554557ad77ddace8d2d3de322fb3.jpeg)
+![](../assets/articles/autogen-6acbcc27c2e6372292e690f2e4b7d9c59b554557ad77ddace8d2d3de322fb3.jpeg)
 
 之前我们讲过用提示词[实现智能客服](how-to-implement-an-intelligent-customer-service-by-chatgpt.md)，也讲过[大模型使用Embedding嵌入的原理](../Industry-development/do-not-train-your-own-llm-your-business-might-not-need-it.md)，今天蓝莺企业知识库（BlueVector）发布，可以轻松将两者合二为一，提示词不再复杂，添加知识也更方便了。
 
 还是老习惯，吃自己产品的狗粮，小蓝AI先上为敬。
 
-![蓝莺企业知识库控制台](../../.gitbook/assets/autogen-5413bb1f91200ec6654ed463599599ff0f4edcfbd7e0fa24e2951ff0750ce3bc.jpeg)
+![蓝莺企业知识库控制台](../assets/articles/autogen-5413bb1f91200ec6654ed463599599ff0f4edcfbd7e0fa24e2951ff0750ce3bc.jpeg)
 
 从控制台图中可以看到我们添加了三个文档。一个是蓝莺IM产品介绍，一个是蓝莺IM官网，后台程序会自动下载网页内容，还有一个是QA表格，就是关于蓝莺IM产品的问答。
 
 QA表格的内容是一行行Question和Answer组成的问答对，上传后文档会自动展开成提示词格式的AI对话，所以小蓝AI的预设提示词可以简化，不再需要在提示词中介绍产品，只需要留下三条：蓝莺服务准则、欢迎语、知识约束设置：
-
 ```
 {  
  "model": "gpt-3.5-turbo-16k",  
@@ -49,7 +47,7 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 可以到Github查看[源码\[1\]](https://github.com/maxim-top/lanying-connector/blob/17bee674460c0e3f603d747e8f7b7c427494941a/configs/openai-xiaolan-bluevector.json)，也可以找小蓝聊一聊：
 
-![小蓝AI回复](../../.gitbook/assets/autogen-15522b5836e39a2ece7f56ed0e106d8f14203313675aa0b501ff2976b382cae9.jpeg)
+![小蓝AI回复](../assets/articles/autogen-15522b5836e39a2ece7f56ed0e106d8f14203313675aa0b501ff2976b382cae9.jpeg)
 
 [https://lanying.link/imdbc4 \[2\]](https://lanying.link/imdbc4)
 
@@ -62,7 +60,6 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 ### 1. 知识溯源
 
 在小蓝AI的配置里，可以[设置在回答中添加引用\[4\]](https://github.com/maxim-top/lanying-connector/blob/c2f7916e14a325bcda4dcd76fbda2ec6b09bfb55/configs/openai-xiaolan-bluevector.json#L20)，如下所示：
-
 ```
 "ext": {  
   "add_reference": "body"  
@@ -75,10 +72,10 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 如前图所示，一个文档上传后将会有以下状态：
 
-* 等待处理：文档已上传成功，通常意味着文件已经分片并进入作业队列；
-* 正在处理：文件已开始处理，这意味着文件正在通过AI服务进行预处理，生成嵌入向量；
-* 处理失败：文件未能成功进行向量化处理，可能需要检查文件格式是否支持或者AI服务是否正常；
-* 处理成功：文件已进入知识库，绑定该知识库的AI可以正常读取文档中的内容；
+*   等待处理：文档已上传成功，通常意味着文件已经分片并进入作业队列；
+*   正在处理：文件已开始处理，这意味着文件正在通过AI服务进行预处理，生成嵌入向量；
+*   处理失败：文件未能成功进行向量化处理，可能需要检查文件格式是否支持或者AI服务是否正常；
+*   处理成功：文件已进入知识库，绑定该知识库的AI可以正常读取文档中的内容；
 
 你可以在控制台删除文档，或者切换AI引擎后重新对文档进行向量化。
 
@@ -86,7 +83,7 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 企业知识库已支持各种常见文档格式，包括 pdf、csv、markdown、doc/docsx、xls/xlsx 等十余种文档，也支持直接从 URL 获取网站页面。
 
-![上传文档](../../.gitbook/assets/autogen-6cfd198d4e6875fbcf96d860a3392a49f6ebabb35574adaf85baba39acdc8f.jpeg)
+![上传文档](../assets/articles/autogen-6cfd198d4e6875fbcf96d860a3392a49f6ebabb35574adaf85baba39acdc8f.jpeg)
 
 ### 4. 权限管理
 
@@ -96,7 +93,7 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 如前所述，由于业务领域各异，你无法使用同一套参数适配所有场景，因此我们将重要参数全部在控制台中进行了展示和设置：
 
-![蓝莺企业知识库配置](../../.gitbook/assets/autogen-9d44b3ec1958dcd7e60c8438a600fd600d37c25ae5424ad0cd12e9abfb3ca70a.jpeg)
+![蓝莺企业知识库配置](../assets/articles/autogen-9d44b3ec1958dcd7e60c8438a600fd600d37c25ae5424ad0cd12e9abfb3ca70a.jpeg)
 
 #### 5.1 文档切片尺寸（字数）
 
@@ -144,7 +141,7 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 在打开蓝莺LinkChat的聊天界面后，你可以发送命令`</bluevector help>`。这个命令会返回你可以操作的具体指令。
 
-![/bluevector help](../../.gitbook/assets/autogen-53ced8932bbe300c138efe8a0a77ea4aabc10575d50fb4b680f4ecd5dc4e4e10.jpeg)
+![/bluevector help](../assets/articles/autogen-53ced8932bbe300c138efe8a0a77ea4aabc10575d50fb4b680f4ecd5dc4e4e10.jpeg)
 
 如果没有权限，错误提示会告知你当前登录的蓝莺IM用户ID，到前面知识库配置页面中添加为管理员即可。
 
@@ -155,7 +152,6 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 当事情来到企业知识库，问题就变得更加严峻了。很多时候，你难以确定是文档内容不对，还是大模型的理解不对，还是问法有问题。
 
 为了解决这个问题，我们为知识库增加了调试模式。通过在AI预设中设置`debug`参数为`true`，服务在调用前会返回选用的知识片段：
-
 ```
 "ext": {  
   "debug": true  
@@ -168,7 +164,7 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 对企业知识库的还有期待的功能？欢迎来群内交流。
 
-![](../../.gitbook/assets/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
+![](../assets/articles/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
 
 扫码添加小蓝会聊天
 
@@ -182,9 +178,9 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 本周四（7.20）晚上20:00，我们有一场线上的会议和直播，演示蓝莺企业知识库的同时，也会跟参与会议的同学一起交流练习提示词的写法。预计会玩的有小红书写作助手、知识付费课程助理、网红主播AI等。
 
-欢迎感兴趣的同学参加，记得找小蓝报名\~
+欢迎感兴趣的同学参加，记得找小蓝报名~
 
-![蓝莺提示词工坊](../../.gitbook/assets/autogen-41326728e11da38df376846be8d99adbf9c8b345ce8f9f6698270f021ad3a0f4.png)
+![蓝莺提示词工坊](../assets/articles/autogen-41326728e11da38df376846be8d99adbf9c8b345ce8f9f6698270f021ad3a0f4.png)
 
 ## 关于蓝莺IM
 
@@ -194,7 +190,7 @@ QA表格的内容是一行行Question和Answer组成的问答对，上传后文�
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](<../../.gitbook/assets/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06 (1).jpeg>)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 参考资料
 

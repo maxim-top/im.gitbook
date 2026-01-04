@@ -1,94 +1,97 @@
 ---
 title: floo::BMXChatService
-summary: Chat Service
+summary: Chat Service 
+
 ---
 
 # floo::BMXChatService
 
-Chat Service
+
+
+Chat Service 
+
 
 `#include <bmx_chat_service.h>`
 
 ## Public Types
 
-|            | Name                                                                                                                                                                                                |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| enum class | <p><a href="classfloo_1_1_b_m_x_chat_service.md#enum-thumbnailstrategy"><strong>ThumbnailStrategy</strong></a> { ThirdpartyServerCreate = 1, LocalServerCreate}<br>Thumbnail generation policy,</p> |
+|                | Name           |
+| -------------- | -------------- |
+| enum class| **[ThumbnailStrategy](classfloo_1_1_b_m_x_chat_service.md#enum-thumbnailstrategy)** { ThirdpartyServerCreate = 1, LocalServerCreate}<br>Thumbnail generation policy,  |
 
 ## Public Functions
 
-|                             | Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| virtual                     | [**\~BMXChatService**](classfloo_1_1_b_m_x_chat_service.md#function-~bmxchatservice)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-sendmessage"><strong>sendMessage</strong></a>(BMXMessagePtr msg) =0<br>Send a message, and the message status change is notified via listener</p>                                                                                                                                                                                                                                                                                                                                                                       |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-resendmessage"><strong>resendMessage</strong></a>(BMXMessagePtr msg) =0<br>Resend this message, and the message status change is notified via listener</p>                                                                                                                                                                                                                                                                                                                                                              |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-recallmessage"><strong>recallMessage</strong></a>(BMXMessagePtr msg) =0<br>Recall a message, and the message status change is notified via listener</p>                                                                                                                                                                                                                                                                                                                                                                 |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage"><strong>forwardMessage</strong></a>(const BMXMessageList &#x26; list, BMXConversationPtr to, BMXMessagePtr &#x26; newMsg) =0<br>Merge and forward messages</p>                                                                                                                                                                                                                                                                                                                                          |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage"><strong>forwardMessage</strong></a>(BMXMessagePtr msg) =0<br>Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()</p>                                                                                                                                                                                                                                                                                                                 |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-ackmessage"><strong>ackMessage</strong></a>(BMXMessagePtr msg) =0<br>Send read acknowledgement</p>                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-ackmessagedelivered"><strong>ackMessageDelivered</strong></a>(BMXMessagePtr msg) =0<br>Send delivery acknowledgement</p>                                                                                                                                                                                                                                                                                                                                                                                                |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-ackplaymessage"><strong>ackPlayMessage</strong></a>(BMXMessagePtr msg) =0<br>Send an audio/video message playback acknowledgement</p>                                                                                                                                                                                                                                                                                                                                                                                   |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-readcancel"><strong>readCancel</strong></a>(BMXMessagePtr msg) =0<br>Mark this message as unread and synchronize to all devices of the current user</p>                                                                                                                                                                                                                                                                                                                                                                 |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-readallmessage"><strong>readAllMessage</strong></a>(BMXMessagePtr msg) =0<br>Mark this message and all previous messages as read, and synchronize to all current users' devices</p>                                                                                                                                                                                                                                                                                                                                     |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-removemessage"><strong>removeMessage</strong></a>(BMXMessagePtr msg, bool synchronize =true) =0<br>Delete this message, which synchronizes to other devices of the current user</p>                                                                                                                                                                                                                                                                                                                                     |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-downloadthumbnail"><strong>downloadThumbnail</strong></a>(BMXMessagePtr msg, <a href="classfloo_1_1_b_m_x_chat_service.md#enum-thumbnailstrategy">ThumbnailStrategy</a> strategy =<a href="classfloo_1_1_b_m_x_chat_service.md#enumvalue-thirdpartyservercreate">ThumbnailStrategy::ThirdpartyServerCreate</a>) =0<br>Download thumbnail, downloading state changes and progress notified via listener. Thumbnail generation policy: 1 - generated by third-party server, 2 - generated by local server, default 1.</p> |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-downloadattachment"><strong>downloadAttachment</strong></a>(BMXMessagePtr msg) =0<br>Downloaded attachments, and download state changes and progress are notified via listener</p>                                                                                                                                                                                                                                                                                                                                      |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl"><strong>downloadAttachmentByUrl</strong></a>(int64_t msgId, const std::string &#x26; url, const std::string &#x26; path) =0<br>Downloaded attachments, and download state changes and progress are notified via listener</p>                                                                                                                                                                                                                                                                   |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-canceluploadattachment"><strong>cancelUploadAttachment</strong></a>(BMXMessagePtr msg) =0<br>Cancel uploading attachment</p>                                                                                                                                                                                                                                                                                                                                                                                            |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-canceldownloadattachment"><strong>cancelDownloadAttachment</strong></a>(BMXMessagePtr msg) =0<br>Cancel attachment downloading</p>                                                                                                                                                                                                                                                                                                                                                                                      |
-| virtual int                 | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-transferingnum"><strong>transferingNum</strong></a>() =0<br>Number of uploading/downloading files</p>                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-insertmessages"><strong>insertMessages</strong></a>(const BMXMessageList &#x26; list) =0<br>Insert a message</p>                                                                                                                                                                                                                                                                                                                                                                                                        |
-| virtual BMXMessagePtr       | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-getmessage"><strong>getMessage</strong></a>(int64_t msgId) =0<br>Read a message</p>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-deleteconversation"><strong>deleteConversation</strong></a>(int64_t conversationId, bool synchronize =false) =0<br>Delete a conversation</p>                                                                                                                                                                                                                                                                                                                                                                            |
-| virtual BMXConversationPtr  | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-openconversation"><strong>openConversation</strong></a>(int64_t conversationId, <a href="classfloo_1_1_b_m_x_conversation.md#enum-type">BMXConversation::Type</a> type, bool createIfNotExist =true) =0<br>Launch a conversation</p>                                                                                                                                                                                                                                                                                    |
-| virtual std::string         | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-attachmentdir"><strong>attachmentDir</strong></a>() =0<br>Get attachment saving path</p>                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| virtual std::string         | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation"><strong>attachmentDirForConversation</strong></a>(int64_t conversationId) =0<br>Get attachment saving path for a conversation</p>                                                                                                                                                                                                                                                                                                                                                         |
-| virtual BMXConversationList | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-getallconversations"><strong>getAllConversations</strong></a>() =0<br>Get all conversations</p>                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| virtual int                 | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount"><strong>getAllConversationsUnreadCount</strong></a>() =0<br>Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)</p>                                                                                                                                                                                                                                                                                               |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-retrievehistorymessages"><strong>retrieveHistoryMessages</strong></a>(BMXConversationPtr conversation, int64_t refMsgId, size_t size, BMXMessageList &#x26; result) =0<br>Pull message history</p>                                                                                                                                                                                                                                                                                                                      |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords"><strong>searchMessagesByKeyWords</strong></a>(const std::string &#x26; keywords, int64_t refTime, size_t size, std::vector&#x3C; BMXMessageList > &#x26; result, <a href="classfloo_1_1_b_m_x_conversation.md#enum-direction">BMXConversation::Direction</a> =<a href="classfloo_1_1_b_m_x_conversation.md#enumvalue-up">BMXConversation::Direction::Up</a>) =0<br>Search for messages by keyword</p>                                                                                         |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-searchmessages"><strong>searchMessages</strong></a>(const std::string &#x26; keywords, int64_t refTime, size_t size, std::vector&#x3C; BMXMessageList > &#x26; result, <a href="classfloo_1_1_b_m_x_conversation.md#enum-direction">BMXConversation::Direction</a> =<a href="classfloo_1_1_b_m_x_conversation.md#enumvalue-up">BMXConversation::Direction::Up</a>) =0<br>Deprecated.</p>                                                                                                                                |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-getgroupackmessageuseridlist"><strong>getGroupAckMessageUserIdList</strong></a>(BMXMessagePtr msg, std::vector&#x3C; int64_t > &#x26; groupMemberIdList) =0<br>Get the list of user-ids that have read group messages</p>                                                                                                                                                                                                                                                                                               |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-getgroupackmessageunreaduseridlist"><strong>getGroupAckMessageUnreadUserIdList</strong></a>(BMXMessagePtr msg, std::vector&#x3C; int64_t > &#x26; groupMemberIdList) =0<br>Get a list of unread user ids for the sent group message</p>                                                                                                                                                                                                                                                                                 |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-getgroupplayackmessageuseridlist"><strong>getGroupPlayAckMessageUserIdList</strong></a>(BMXMessagePtr msg, std::vector&#x3C; int64_t > &#x26; groupMemberIdList) =0<br>Get the user id list for sent group audio/video messages played (for audio/video messages only)</p>                                                                                                                                                                                                                                              |
-| virtual BMXErrorCode        | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-getgroupunplayackmessageuseridlist"><strong>getGroupUnPlayAckMessageUserIdList</strong></a>(BMXMessagePtr msg, std::vector&#x3C; int64_t > &#x26; groupMemberIdList) =0<br>Get the user id list for sent group audio/video messages unplayed (for audio/video messages only)</p>                                                                                                                                                                                                                                        |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-addchatlistener"><strong>addChatListener</strong></a>(<a href="classfloo_1_1_b_m_x_chat_service_listener.md">BMXChatServiceListener</a> * listener) =0<br>Add chat listener</p>                                                                                                                                                                                                                                                                                                                                         |
-| virtual void                | <p><a href="classfloo_1_1_b_m_x_chat_service.md#function-removechatlistener"><strong>removeChatListener</strong></a>(<a href="classfloo_1_1_b_m_x_chat_service_listener.md">BMXChatServiceListener</a> * listener) =0<br>Remove chat listener</p>                                                                                                                                                                                                                                                                                                                                |
+|                | Name           |
+| -------------- | -------------- |
+| virtual | **[~BMXChatService](classfloo_1_1_b_m_x_chat_service.md#function-~bmxchatservice)**() |
+| virtual void | **[sendMessage](classfloo_1_1_b_m_x_chat_service.md#function-sendmessage)**(BMXMessagePtr msg) =0<br>Send a message, and the message status change is notified via listener  |
+| virtual void | **[resendMessage](classfloo_1_1_b_m_x_chat_service.md#function-resendmessage)**(BMXMessagePtr msg) =0<br>Resend this message, and the message status change is notified via listener  |
+| virtual void | **[recallMessage](classfloo_1_1_b_m_x_chat_service.md#function-recallmessage)**(BMXMessagePtr msg) =0<br>Recall a message, and the message status change is notified via listener  |
+| virtual BMXErrorCode | **[forwardMessage](classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage)**(const BMXMessageList & list, BMXConversationPtr to, BMXMessagePtr & newMsg) =0<br> Merge and forward messages |
+| virtual void | **[forwardMessage](classfloo_1_1_b_m_x_chat_service.md#function-forwardmessage)**(BMXMessagePtr msg) =0<br>Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()  |
+| virtual void | **[ackMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackmessage)**(BMXMessagePtr msg) =0<br>Send read acknowledgement  |
+| virtual void | **[ackMessageDelivered](classfloo_1_1_b_m_x_chat_service.md#function-ackmessagedelivered)**(BMXMessagePtr msg) =0<br>Send delivery acknowledgement  |
+| virtual void | **[ackPlayMessage](classfloo_1_1_b_m_x_chat_service.md#function-ackplaymessage)**(BMXMessagePtr msg) =0<br>Send an audio/video message playback acknowledgement  |
+| virtual void | **[readCancel](classfloo_1_1_b_m_x_chat_service.md#function-readcancel)**(BMXMessagePtr msg) =0<br>Mark this message as unread and synchronize to all devices of the current user  |
+| virtual void | **[readAllMessage](classfloo_1_1_b_m_x_chat_service.md#function-readallmessage)**(BMXMessagePtr msg) =0<br>Mark this message and all previous messages as read, and synchronize to all current users' devices  |
+| virtual void | **[removeMessage](classfloo_1_1_b_m_x_chat_service.md#function-removemessage)**(BMXMessagePtr msg, bool synchronize =true) =0<br>Delete this message, which synchronizes to other devices of the current user  |
+| virtual void | **[downloadThumbnail](classfloo_1_1_b_m_x_chat_service.md#function-downloadthumbnail)**(BMXMessagePtr msg, [ThumbnailStrategy](classfloo_1_1_b_m_x_chat_service.md#enum-thumbnailstrategy) strategy =[ThumbnailStrategy::ThirdpartyServerCreate](classfloo_1_1_b_m_x_chat_service.md#enumvalue-thirdpartyservercreate)) =0<br>Download thumbnail, downloading state changes and progress notified via listener. Thumbnail generation policy: 1 - generated by third-party server, 2 - generated by local server, default 1.  |
+| virtual void | **[downloadAttachment](classfloo_1_1_b_m_x_chat_service.md#function-downloadattachment)**(BMXMessagePtr msg) =0<br>Downloaded attachments, and download state changes and progress are notified via listener  |
+| virtual void | **[downloadAttachmentByUrl](classfloo_1_1_b_m_x_chat_service.md#function-downloadattachmentbyurl)**(int64_t msgId, const std::string & url, const std::string & path) =0<br>Downloaded attachments, and download state changes and progress are notified via listener  |
+| virtual void | **[cancelUploadAttachment](classfloo_1_1_b_m_x_chat_service.md#function-canceluploadattachment)**(BMXMessagePtr msg) =0<br>Cancel uploading attachment  |
+| virtual void | **[cancelDownloadAttachment](classfloo_1_1_b_m_x_chat_service.md#function-canceldownloadattachment)**(BMXMessagePtr msg) =0<br>Cancel attachment downloading  |
+| virtual int | **[transferingNum](classfloo_1_1_b_m_x_chat_service.md#function-transferingnum)**() =0<br>Number of uploading/downloading files  |
+| virtual BMXErrorCode | **[insertMessages](classfloo_1_1_b_m_x_chat_service.md#function-insertmessages)**(const BMXMessageList & list) =0<br>Insert a message  |
+| virtual BMXMessagePtr | **[getMessage](classfloo_1_1_b_m_x_chat_service.md#function-getmessage)**(int64_t msgId) =0<br>Read a message  |
+| virtual void | **[deleteConversation](classfloo_1_1_b_m_x_chat_service.md#function-deleteconversation)**(int64_t conversationId, bool synchronize =false) =0<br> Delete a conversation  |
+| virtual BMXConversationPtr | **[openConversation](classfloo_1_1_b_m_x_chat_service.md#function-openconversation)**(int64_t conversationId, [BMXConversation::Type](classfloo_1_1_b_m_x_conversation.md#enum-type) type, bool createIfNotExist =true) =0<br>Launch a conversation  |
+| virtual std::string | **[attachmentDir](classfloo_1_1_b_m_x_chat_service.md#function-attachmentdir)**() =0<br>Get attachment saving path  |
+| virtual std::string | **[attachmentDirForConversation](classfloo_1_1_b_m_x_chat_service.md#function-attachmentdirforconversation)**(int64_t conversationId) =0<br>Get attachment saving path for a conversation  |
+| virtual BMXConversationList | **[getAllConversations](classfloo_1_1_b_m_x_chat_service.md#function-getallconversations)**() =0<br>Get all conversations  |
+| virtual int | **[getAllConversationsUnreadCount](classfloo_1_1_b_m_x_chat_service.md#function-getallconversationsunreadcount)**() =0<br> Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
+| virtual BMXErrorCode | **[retrieveHistoryMessages](classfloo_1_1_b_m_x_chat_service.md#function-retrievehistorymessages)**(BMXConversationPtr conversation, int64_t refMsgId, size_t size, BMXMessageList & result) =0<br>Pull message history  |
+| virtual BMXErrorCode | **[searchMessagesByKeyWords](classfloo_1_1_b_m_x_chat_service.md#function-searchmessagesbykeywords)**(const std::string & keywords, int64_t refTime, size_t size, std::vector< BMXMessageList > & result, [BMXConversation::Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[BMXConversation::Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Search for messages by keyword  |
+| virtual BMXErrorCode | **[searchMessages](classfloo_1_1_b_m_x_chat_service.md#function-searchmessages)**(const std::string & keywords, int64_t refTime, size_t size, std::vector< BMXMessageList > & result, [BMXConversation::Direction](classfloo_1_1_b_m_x_conversation.md#enum-direction)  =[BMXConversation::Direction::Up](classfloo_1_1_b_m_x_conversation.md#enumvalue-up)) =0<br>Deprecated.  |
+| virtual BMXErrorCode | **[getGroupAckMessageUserIdList](classfloo_1_1_b_m_x_chat_service.md#function-getgroupackmessageuseridlist)**(BMXMessagePtr msg, std::vector< int64_t > & groupMemberIdList) =0<br>Get the list of user-ids that have read group messages  |
+| virtual BMXErrorCode | **[getGroupAckMessageUnreadUserIdList](classfloo_1_1_b_m_x_chat_service.md#function-getgroupackmessageunreaduseridlist)**(BMXMessagePtr msg, std::vector< int64_t > & groupMemberIdList) =0<br>Get a list of unread user ids for the sent group message  |
+| virtual BMXErrorCode | **[getGroupPlayAckMessageUserIdList](classfloo_1_1_b_m_x_chat_service.md#function-getgroupplayackmessageuseridlist)**(BMXMessagePtr msg, std::vector< int64_t > & groupMemberIdList) =0<br>Get the user id list for sent group audio/video messages played (for audio/video messages only)  |
+| virtual BMXErrorCode | **[getGroupUnPlayAckMessageUserIdList](classfloo_1_1_b_m_x_chat_service.md#function-getgroupunplayackmessageuseridlist)**(BMXMessagePtr msg, std::vector< int64_t > & groupMemberIdList) =0<br>Get the user id list for sent group audio/video messages unplayed (for audio/video messages only)  |
+| virtual void | **[addChatListener](classfloo_1_1_b_m_x_chat_service.md#function-addchatlistener)**([BMXChatServiceListener](classfloo_1_1_b_m_x_chat_service_listener.md) * listener) =0<br>Add chat listener  |
+| virtual void | **[removeChatListener](classfloo_1_1_b_m_x_chat_service.md#function-removechatlistener)**([BMXChatServiceListener](classfloo_1_1_b_m_x_chat_service_listener.md) * listener) =0<br>Remove chat listener  |
 
 ## Protected Functions
 
-|      | Name                                                                                                                   |
-| ---- | ---------------------------------------------------------------------------------------------------------------------- |
-|      | [**BMXChatService**](classfloo_1_1_b_m_x_chat_service.md#function-bmxchatservice)()                                    |
-| void | [**updateMessageId**](classfloo_1_1_b_m_x_chat_service.md#function-updatemessageid)(BMXMessagePtr msg, int64\_t newId) |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXChatService](classfloo_1_1_b_m_x_chat_service.md#function-bmxchatservice)**() |
+| void | **[updateMessageId](classfloo_1_1_b_m_x_chat_service.md#function-updatemessageid)**(BMXMessagePtr msg, int64_t newId) |
 
 ## Public Types Documentation
 
 ### enum ThumbnailStrategy
 
-| Enumerator             | Value | Description                     |
-| ---------------------- | ----- | ------------------------------- |
-| ThirdpartyServerCreate | 1     | Generated by third-party server |
-| LocalServerCreate      |       | Generated by local server       |
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| ThirdpartyServerCreate | 1| Generated by third-party server   |
+| LocalServerCreate | | Generated by local server   |
 
-Thumbnail generation policy,
+
+
+Thumbnail generation policy, 
 
 ## Public Functions Documentation
 
-### function \~BMXChatService
+### function ~BMXChatService
 
 ```cpp
 inline virtual ~BMXChatService()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="~BMXChatService" %}{% endlanying_code_snippet %}
 ```
-
 ### function sendMessage
 
 ```cpp
@@ -97,20 +100,17 @@ virtual void sendMessage(
 ) =0
 ```
 
-Send a message, and the message status change is notified via listener
+Send a message, and the message status change is notified via listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message to be sent
+  * **msg** Message to be sent 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="sendMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function resendMessage
 
 ```cpp
@@ -119,20 +119,17 @@ virtual void resendMessage(
 ) =0
 ```
 
-Resend this message, and the message status change is notified via listener
+Resend this message, and the message status change is notified via listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Resent message
+  * **msg** Resent message 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="resendMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function recallMessage
 
 ```cpp
@@ -141,20 +138,17 @@ virtual void recallMessage(
 ) =0
 ```
 
-Recall a message, and the message status change is notified via listener
+Recall a message, and the message status change is notified via listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Recalled message
+  * **msg** Recalled message 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="recallMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function forwardMessage
 
 ```cpp
@@ -165,24 +159,21 @@ virtual BMXErrorCode forwardMessage(
 ) =0
 ```
 
-Merge and forward messages
+ Merge and forward messages
 
-**Parameters**:
+**Parameters**: 
 
-* **list** List of messages to be forwarded
-* **to** The conversation to which message is forwarded
-* **newMsg** The newly generated single forwarded message from the merging list of messages to be forwarded
+  * **list**  List of messages to be forwarded
+  * **to** The conversation to which message is forwarded 
+  * **newMsg** The newly generated single forwarded message from the merging list of messages to be forwarded
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="forwardMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function forwardMessage
 
 ```cpp
@@ -191,20 +182,17 @@ virtual void forwardMessage(
 ) =0
 ```
 
-Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage ()
+Simple forwarding messages, users should create forwarding messages first through BMXMessage:: createForwardMessage () 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Messages to be forwarded
+  * **msg**  Messages to be forwarded 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="forwardMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function ackMessage
 
 ```cpp
@@ -213,20 +201,17 @@ virtual void ackMessage(
 ) =0
 ```
 
-Send read acknowledgement
+Send read acknowledgement 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring a read acknowledgement to be sent
+  * **msg** Message requiring a read acknowledgement to be sent 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="ackMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function ackMessageDelivered
 
 ```cpp
@@ -235,16 +220,12 @@ virtual void ackMessageDelivered(
 ) =0
 ```
 
-Send delivery acknowledgement
+Send delivery acknowledgement 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="ackMessageDelivered" %}{% endlanying_code_snippet %}
 ```
-
 ### function ackPlayMessage
 
 ```cpp
@@ -253,20 +234,17 @@ virtual void ackPlayMessage(
 ) =0
 ```
 
-Send an audio/video message playback acknowledgement
+Send an audio/video message playback acknowledgement 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring a read acknowledgement to be sent
+  * **msg** Message requiring a read acknowledgement to be sent 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="ackPlayMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function readCancel
 
 ```cpp
@@ -275,20 +253,17 @@ virtual void readCancel(
 ) =0
 ```
 
-Mark this message as unread and synchronize to all devices of the current user
+Mark this message as unread and synchronize to all devices of the current user 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** The message needs to send “read recalled”
+  * **msg** The message needs to send “read recalled” 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="readCancel" %}{% endlanying_code_snippet %}
 ```
-
 ### function readAllMessage
 
 ```cpp
@@ -297,20 +272,17 @@ virtual void readAllMessage(
 ) =0
 ```
 
-Mark this message and all previous messages as read, and synchronize to all current users' devices
+Mark this message and all previous messages as read, and synchronize to all current users' devices 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** The message for which all earlier messages need to be marked as read
+  * **msg** The message for which all earlier messages need to be marked as read 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="readAllMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeMessage
 
 ```cpp
@@ -320,21 +292,18 @@ virtual void removeMessage(
 ) =0
 ```
 
-Delete this message, which synchronizes to other devices of the current user
+Delete this message, which synchronizes to other devices of the current user 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message to be deleted
-* **synchronize** Whether to synchronize to other devices, otherwise only the locally stored message will be deleted
+  * **msg** Message to be deleted 
+  * **synchronize** Whether to synchronize to other devices, otherwise only the locally stored message will be deleted 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="removeMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function downloadThumbnail
 
 ```cpp
@@ -344,21 +313,18 @@ virtual void downloadThumbnail(
 ) =0
 ```
 
-Download thumbnail, downloading state changes and progress notified via listener. Thumbnail generation policy: 1 - generated by third-party server, 2 - generated by local server, default 1.
+Download thumbnail, downloading state changes and progress notified via listener. Thumbnail generation policy: 1 - generated by third-party server, 2 - generated by local server, default 1. 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to download thumbnail
-* **strategy** Thumbnail generation policy, 1 - generated by third-party server, 2 - Generated by local server, default 1.
+  * **msg** Message requiring to download thumbnail 
+  * **strategy** Thumbnail generation policy, 1 - generated by third-party server, 2 - Generated by local server, default 1. 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="downloadThumbnail" %}{% endlanying_code_snippet %}
 ```
-
 ### function downloadAttachment
 
 ```cpp
@@ -367,20 +333,17 @@ virtual void downloadAttachment(
 ) =0
 ```
 
-Downloaded attachments, and download state changes and progress are notified via listener
+Downloaded attachments, and download state changes and progress are notified via listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to download attachment
+  * **msg** Message requiring to download attachment 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="downloadAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function downloadAttachmentByUrl
 
 ```cpp
@@ -391,16 +354,12 @@ virtual void downloadAttachmentByUrl(
 ) =0
 ```
 
-Downloaded attachments, and download state changes and progress are notified via listener
+Downloaded attachments, and download state changes and progress are notified via listener 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="downloadAttachmentByUrl" %}{% endlanying_code_snippet %}
 ```
-
 ### function cancelUploadAttachment
 
 ```cpp
@@ -409,20 +368,17 @@ virtual void cancelUploadAttachment(
 ) =0
 ```
 
-Cancel uploading attachment
+Cancel uploading attachment 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to cancel attachment uploading
+  * **msg** Message requiring to cancel attachment uploading 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="cancelUploadAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function cancelDownloadAttachment
 
 ```cpp
@@ -431,38 +387,31 @@ virtual void cancelDownloadAttachment(
 ) =0
 ```
 
-Cancel attachment downloading
+Cancel attachment downloading 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to cancel attachment downloading
+  * **msg** Message requiring to cancel attachment downloading 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="cancelDownloadAttachment" %}{% endlanying_code_snippet %}
 ```
-
 ### function transferingNum
 
 ```cpp
 virtual int transferingNum() =0
 ```
 
-Number of uploading/downloading files
+Number of uploading/downloading files 
 
-**Return**: Number of files
+**Return**: Number of files 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="transferingNum" %}{% endlanying_code_snippet %}
 ```
-
 ### function insertMessages
 
 ```cpp
@@ -471,22 +420,19 @@ virtual BMXErrorCode insertMessages(
 ) =0
 ```
 
-Insert a message
+Insert a message 
 
-**Parameters**:
+**Parameters**: 
 
-* **list** Insert message list
+  * **list** Insert message list 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="insertMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function getMessage
 
 ```cpp
@@ -495,22 +441,19 @@ virtual BMXMessagePtr getMessage(
 ) =0
 ```
 
-Read a message
+Read a message 
 
-**Parameters**:
+**Parameters**: 
 
-* **msgId** id of the message which needs to be fetched
+  * **msgId** id of the message which needs to be fetched 
 
-**Return**: BMXMessagePtr
+
+**Return**: BMXMessagePtr 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getMessage" %}{% endlanying_code_snippet %}
 ```
-
 ### function deleteConversation
 
 ```cpp
@@ -520,21 +463,18 @@ virtual void deleteConversation(
 ) =0
 ```
 
-Delete a conversation
+ Delete a conversation 
 
-**Parameters**:
+**Parameters**: 
 
-* **conversationId** Conversation id requiring to delete conversation
-* **synchronize** Whether to delete the conversation on other devices synchronously, default false, means only delete the conversation on the current device
+  * **conversationId** Conversation id requiring to delete conversation 
+  * **synchronize** Whether to delete the conversation on other devices synchronously, default false, means only delete the conversation on the current device 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="deleteConversation" %}{% endlanying_code_snippet %}
 ```
-
 ### function openConversation
 
 ```cpp
@@ -545,42 +485,35 @@ virtual BMXConversationPtr openConversation(
 ) =0
 ```
 
-Launch a conversation
+Launch a conversation 
 
-**Parameters**:
+**Parameters**: 
 
-* **conversationId** id of the conversation which needs to be opened
-* **type** Conversation type, single/group chat.
-* **createIfNotExist** Whether to create a local conversation if no conversation existing, default to create
+  * **conversationId** id of the conversation which needs to be opened 
+  * **type** Conversation type, single/group chat. 
+  * **createIfNotExist** Whether to create a local conversation if no conversation existing, default to create 
 
-**Return**: BMXConversationPtr
+
+**Return**: BMXConversationPtr 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="openConversation" %}{% endlanying_code_snippet %}
 ```
-
 ### function attachmentDir
 
 ```cpp
 virtual std::string attachmentDir() =0
 ```
 
-Get attachment saving path
+Get attachment saving path 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="attachmentDir" %}{% endlanying_code_snippet %}
 ```
-
 ### function attachmentDirForConversation
 
 ```cpp
@@ -589,58 +522,47 @@ virtual std::string attachmentDirForConversation(
 ) =0
 ```
 
-Get attachment saving path for a conversation
+Get attachment saving path for a conversation 
 
-**Parameters**:
+**Parameters**: 
 
-* **conversationId** Conversation id requiring a conversation attachment path
+  * **conversationId** Conversation id requiring a conversation attachment path 
 
-**Return**: std::string
+
+**Return**: std::string 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="attachmentDirForConversation" %}{% endlanying_code_snippet %}
 ```
-
 ### function getAllConversations
 
 ```cpp
 virtual BMXConversationList getAllConversations() =0
 ```
 
-Get all conversations
+Get all conversations 
 
-**Return**: BMXConversationList
+**Return**: BMXConversationList 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getAllConversations" %}{% endlanying_code_snippet %}
 ```
-
 ### function getAllConversationsUnreadCount
 
 ```cpp
 virtual int getAllConversationsUnreadCount() =0
 ```
 
-Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)
+ Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted) 
 
-**Return**: int
+**Return**: int 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getAllConversationsUnreadCount" %}{% endlanying_code_snippet %}
 ```
-
 ### function retrieveHistoryMessages
 
 ```cpp
@@ -652,25 +574,22 @@ virtual BMXErrorCode retrieveHistoryMessages(
 ) =0
 ```
 
-Pull message history
+Pull message history 
 
-**Parameters**:
+**Parameters**: 
 
-* **conversation** Conversation for which message history needs to pull
-* **refMsgId** Start message Id for pulling conversation messages
-* **size** Maximum number of messages to pull
-* **result** List of messages fetched by pull operation, externally initializing an incoming empty list.
+  * **conversation** Conversation for which message history needs to pull 
+  * **refMsgId** Start message Id for pulling conversation messages 
+  * **size** Maximum number of messages to pull 
+  * **result** List of messages fetched by pull operation, externally initializing an incoming empty list. 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="retrieveHistoryMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function searchMessagesByKeyWords
 
 ```cpp
@@ -683,26 +602,23 @@ virtual BMXErrorCode searchMessagesByKeyWords(
 ) =0
 ```
 
-Search for messages by keyword
+Search for messages by keyword 
 
-**Parameters**:
+**Parameters**: 
 
-* **keywords** Keyword for search
-* **refTime** Start time of message search
-* **size** Maximum number of messages to search
-* **result** List of searched message results, externally initializing an incoming empty list.
-* **Direction** Message search direction, default (Direction::Up)means search from earlier messages.
+  * **keywords** Keyword for search 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of messages to search 
+  * **result** List of searched message results, externally initializing an incoming empty list. 
+  * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="searchMessagesByKeyWords" %}{% endlanying_code_snippet %}
 ```
-
 ### function searchMessages
 
 ```cpp
@@ -715,30 +631,28 @@ virtual BMXErrorCode searchMessages(
 ) =0
 ```
 
-Deprecated.
+Deprecated. 
 
-**Parameters**:
+**Parameters**: 
 
-* **keywords** Keyword for search
-* **refTime** Start time of message search
-* **size** Maximum number of messages to search
-* **result** List of searched message results, externally initializing an incoming empty list.
-* **Direction** Message search direction, default (Direction::Up)means search from earlier messages.
+  * **keywords** Keyword for search 
+  * **refTime** Start time of message search 
+  * **size** Maximum number of messages to search 
+  * **result** List of searched message results, externally initializing an incoming empty list. 
+  * **Direction** Message search direction, default (Direction::Up)means search from earlier messages. 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 use searchMessagesByKeyWords instead.
 
-Search for messages
+Search for messages 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="searchMessages" %}{% endlanying_code_snippet %}
 ```
-
 ### function getGroupAckMessageUserIdList
 
 ```cpp
@@ -748,23 +662,20 @@ virtual BMXErrorCode getGroupAckMessageUserIdList(
 ) =0
 ```
 
-Get the list of user-ids that have read group messages
+Get the list of user-ids that have read group messages 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to get list of read user ids
-* **groupMemberIdList** List of read user ids for this message, initially passed in as an empty list
+  * **msg** Message requiring to get list of read user ids 
+  * **groupMemberIdList** List of read user ids for this message, initially passed in as an empty list 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupAckMessageUserIdList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getGroupAckMessageUnreadUserIdList
 
 ```cpp
@@ -774,23 +685,20 @@ virtual BMXErrorCode getGroupAckMessageUnreadUserIdList(
 ) =0
 ```
 
-Get a list of unread user ids for the sent group message
+Get a list of unread user ids for the sent group message 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to get list of unread user ids
-* **groupMemberIdList** List of unread user ids for this message, initially passed in as an empty list
+  * **msg** Message requiring to get list of unread user ids 
+  * **groupMemberIdList** List of unread user ids for this message, initially passed in as an empty list 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupAckMessageUnreadUserIdList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getGroupPlayAckMessageUserIdList
 
 ```cpp
@@ -800,23 +708,20 @@ virtual BMXErrorCode getGroupPlayAckMessageUserIdList(
 ) =0
 ```
 
-Get the user id list for sent group audio/video messages played (for audio/video messages only)
+Get the user id list for sent group audio/video messages played (for audio/video messages only) 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to get list of played user ids
-* **groupMemberIdList** List of played user ids for this message, initially passed in as an empty list
+  * **msg** Message requiring to get list of played user ids 
+  * **groupMemberIdList** List of played user ids for this message, initially passed in as an empty list 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupPlayAckMessageUserIdList" %}{% endlanying_code_snippet %}
 ```
-
 ### function getGroupUnPlayAckMessageUserIdList
 
 ```cpp
@@ -826,23 +731,20 @@ virtual BMXErrorCode getGroupUnPlayAckMessageUserIdList(
 ) =0
 ```
 
-Get the user id list for sent group audio/video messages unplayed (for audio/video messages only)
+Get the user id list for sent group audio/video messages unplayed (for audio/video messages only) 
 
-**Parameters**:
+**Parameters**: 
 
-* **msg** Message requiring to get list of unplayed user ids
-* **groupMemberIdList** List of unplayed user ids for this message, initially passed in as an empty list
+  * **msg** Message requiring to get list of unplayed user ids 
+  * **groupMemberIdList** List of unplayed user ids for this message, initially passed in as an empty list 
 
-**Return**: BMXErrorCode
+
+**Return**: BMXErrorCode 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="getGroupUnPlayAckMessageUserIdList" %}{% endlanying_code_snippet %}
 ```
-
 ### function addChatListener
 
 ```cpp
@@ -851,20 +753,17 @@ virtual void addChatListener(
 ) =0
 ```
 
-Add chat listener
+Add chat listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** Chat listener
+  * **listener** Chat listener 
+
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="addChatListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function removeChatListener
 
 ```cpp
@@ -873,36 +772,30 @@ virtual void removeChatListener(
 ) =0
 ```
 
-Remove chat listener
+Remove chat listener 
 
-**Parameters**:
+**Parameters**: 
 
-* **listener** Chat listener
+  * **listener** Chat listener 
+
 
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="removeChatListener" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXChatService
 
 ```cpp
 inline BMXChatService()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="BMXChatService" %}{% endlanying_code_snippet %}
 ```
-
 ### function updateMessageId
 
 ```cpp
@@ -912,13 +805,11 @@ void updateMessageId(
 )
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXChatService'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXChatService",function="updateMessageId" %}{% endlanying_code_snippet %}
 ```
-
-***
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

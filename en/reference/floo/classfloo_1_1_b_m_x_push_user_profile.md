@@ -1,11 +1,15 @@
 ---
 title: floo::BMXPushUserProfile
-summary: Push user Profile.
+summary: Push user Profile. 
+
 ---
 
 # floo::BMXPushUserProfile
 
-Push user Profile.
+
+
+Push user Profile. 
+
 
 `#include <bmx_push_user_profile.h>`
 
@@ -13,125 +17,103 @@ Inherits from BMXBaseObject
 
 ## Public Functions
 
-|                                       | Name                                                                                                                                                                 |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| virtual                               | <p><a href="classfloo_1_1_b_m_x_push_user_profile.md#function-~bmxpushuserprofile"><strong>~BMXPushUserProfile</strong></a>()<br>Destructor</p>                      |
-| virtual int64\_t                      | <p><a href="classfloo_1_1_b_m_x_push_user_profile.md#function-userid"><strong>userId</strong></a>() =0<br>User ID (unique)</p>                                       |
-| virtual std::string                   | <p><a href="classfloo_1_1_b_m_x_push_user_profile.md#function-pushalias"><strong>pushAlias</strong></a>() =0<br>Push user alias</p>                                  |
-| virtual std::string                   | <p><a href="classfloo_1_1_b_m_x_push_user_profile.md#function-pushtoken"><strong>pushToken</strong></a>() =0<br>Push user token</p>                                  |
-| virtual const \[MessagePushSetting] & | <p><a href="classfloo_1_1_b_m_x_push_user_profile.md#function-messagepushsetting"><strong>messagePushSetting</strong></a>() =0<br>Push user information settings</p> |
+|                | Name           |
+| -------------- | -------------- |
+| virtual | **[~BMXPushUserProfile](classfloo_1_1_b_m_x_push_user_profile.md#function-~bmxpushuserprofile)**()<br>Destructor  |
+| virtual int64_t | **[userId](classfloo_1_1_b_m_x_push_user_profile.md#function-userid)**() =0<br>User ID (unique)  |
+| virtual std::string | **[pushAlias](classfloo_1_1_b_m_x_push_user_profile.md#function-pushalias)**() =0<br>Push user alias  |
+| virtual std::string | **[pushToken](classfloo_1_1_b_m_x_push_user_profile.md#function-pushtoken)**() =0<br>Push user token  |
+| virtual const [MessagePushSetting] & | **[messagePushSetting](classfloo_1_1_b_m_x_push_user_profile.md#function-messagepushsetting)**() =0<br>Push user information settings  |
 
 ## Protected Functions
 
-|   | Name                                                                                             |
-| - | ------------------------------------------------------------------------------------------------ |
-|   | [**BMXPushUserProfile**](classfloo_1_1_b_m_x_push_user_profile.md#function-bmxpushuserprofile)() |
+|                | Name           |
+| -------------- | -------------- |
+| | **[BMXPushUserProfile](classfloo_1_1_b_m_x_push_user_profile.md#function-bmxpushuserprofile)**() |
 
 ## Public Functions Documentation
 
-### function \~BMXPushUserProfile
+### function ~BMXPushUserProfile
 
 ```cpp
 inline virtual ~BMXPushUserProfile()
 ```
 
-Destructor
+Destructor 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="~BMXPushUserProfile" %}{% endlanying_code_snippet %}
 ```
-
 ### function userId
 
 ```cpp
 virtual int64_t userId() =0
 ```
 
-User ID (unique)
+User ID (unique) 
 
-**Return**: int64\_t
+**Return**: int64_t 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="userId" %}{% endlanying_code_snippet %}
 ```
-
 ### function pushAlias
 
 ```cpp
 virtual std::string pushAlias() =0
 ```
 
-Push user alias
+Push user alias 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="pushAlias" %}{% endlanying_code_snippet %}
 ```
-
 ### function pushToken
 
 ```cpp
 virtual std::string pushToken() =0
 ```
 
-Push user token
+Push user token 
 
-**Return**: std::string
+**Return**: std::string 
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="pushToken" %}{% endlanying_code_snippet %}
 ```
-
 ### function messagePushSetting
 
 ```cpp
 virtual const MessagePushSetting & messagePushSetting() =0
 ```
 
-Push user information settings
+Push user information settings 
 
-**Return**: \[MessagePushSetting]
+**Return**: [MessagePushSetting]
 
 ## Protected Functions Documentation
 
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushUserProfile'></div>
-
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="messagePushSetting" %}{% endlanying_code_snippet %}
 ```
-
 ### function BMXPushUserProfile
 
 ```cpp
 inline BMXPushUserProfile()
 ```
 
+
 **Example**:
-
 ```
-
-<div data-gb-custom-block data-tag="lanying_code_snippet" data-0=',function=' data-repo='lanying-im-embedded' data-class='BMXPushUserProfile'></div>
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXPushUserProfile",function="BMXPushUserProfile" %}{% endlanying_code_snippet %}
 ```
-
-***
+-------------------------------
 
 Updated on 2022-01-26 at 17:20:40 +0800

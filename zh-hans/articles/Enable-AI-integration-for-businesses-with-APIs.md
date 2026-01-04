@@ -1,23 +1,22 @@
 ---
-keywords: API业务, AI插件, AI Agent, AI开发
 description: 介绍如何让有API的业务应用上AI以及数字员工与员工关系的讨论，同时提及蓝莺IM相关内容
+keywords: API业务, AI插件, AI Agent, AI开发
 ---
-
 # 让有API的业务用上AI
 
 原创 一乐 蓝莺IM _2023-11-12 17:06_ _发表于北京_
 
 > GPT商店是ChatGPT生态的一大进步，只不过离企业应用仍有一段距离。
->
+> 
 > 每一个有API的服务都可以改造成AI插件。
->
+> 
 > 蓝莺AI插件已支持Swagger导入，企业级AI插件可以一键搞定了🎉。
 
-[OpenAI DevDay](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==\&mid=2247702711\&idx=1\&sn=d447731f23e485aaab5e18988d7807a2\&scene=21#wechat_redirect)结束，有人惊喜AI进入了新时代，也有人因此伤感，说OpenAI一顿操作，创业项目打了水漂。小道消息说，YC2023年的投资项目团灭，因为他们大多数解决的问题都被OpenAI覆盖。
+[OpenAI DevDay](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247702711&idx=1&sn=d447731f23e485aaab5e18988d7807a2&scene=21#wechat_redirect)结束，有人惊喜AI进入了新时代，也有人因此伤感，说OpenAI一顿操作，创业项目打了水漂。小道消息说，YC2023年的投资项目团灭，因为他们大多数解决的问题都被OpenAI覆盖。
 
 我们倒是没那么悲观，因为Stateful这样的特性很早之前就已预料到，在前几天的[第九届全球软件大会:生成式AI应用开发峰会\[1\]](https://www.bagevent.com/event/8237772)也公开分享过。
 
-![](../../.gitbook/assets/autogen-e144da06b8981591f241b9d39516c326cdb5165252f60351047d0599f5ad4574.jpeg)
+![](../assets/articles/autogen-e144da06b8981591f241b9d39516c326cdb5165252f60351047d0599f5ad4574.jpeg)
 
 这一回，OpenAI在用行动给出几个问题的答案：
 
@@ -53,15 +52,15 @@ description: 介绍如何让有API的业务应用上AI以及数字员工与员�
 
 AI插件发布后，我们也看到了很多的实践应用，插件函数定义的易用性也变得重要起来。因此我们增加了Swagger支持，从现在开始，构建大型插件只需使用API的Swagger定义文件，即可在插件中创建函数映射。
 
-![导入Swagger文件创建插件](../../.gitbook/assets/autogen-b43e466d97e408eebced34ee165232cb04990ad61525ee3106b5e597d072133b.png)
+![导入Swagger文件创建插件](../assets/articles/autogen-b43e466d97e408eebced34ee165232cb04990ad61525ee3106b5e597d072133b.png)
 
 导入后再调整函数调用权限部分即可。
 
 更进一步，我们设计了**环境变量机制**，即可以通过在插件中定义环境变量，简化插件函数中的参数设置，示例如下：
 
-![在插件中定义环境变量](../../.gitbook/assets/autogen-5b62e9df74ce40a1de6ba3cb65de7f8c44823e584b470bce43f4f711ea5860a.png)
+![在插件中定义环境变量](../assets/articles/autogen-5b62e9df74ce40a1de6ba3cb65de7f8c44823e584b470bce43f4f711ea5860a.png)
 
-![在函数中使用环境变量](../../.gitbook/assets/autogen-59f4a24b70e7835c90e7612c06d72e1c653132ac24b106a051abc45bd41432fe.png)
+![在函数中使用环境变量](../assets/articles/autogen-59f4a24b70e7835c90e7612c06d72e1c653132ac24b106a051abc45bd41432fe.png)
 
 欢迎试用，欢迎随时交流。
 
@@ -73,7 +72,7 @@ AI插件发布后，我们也看到了很多的实践应用，插件函数定义
 
 出现这种想法，首先还是因为对程序员的定义太窄了，认为编程才是程序员。忘了最开始在[为ENIAC工作的女程序员\[3\]](https://m.thepaper.cn/baijiahao_16703327)，编程还只是文书工作。
 
-![为ENIAC工作的女程序员](../../.gitbook/assets/autogen-fe94b7eab301bc6755885280d331ffd35b88f9faf8e3e8b7e288d52710e66e38.png)
+![为ENIAC工作的女程序员](../assets/articles/autogen-fe94b7eab301bc6755885280d331ffd35b88f9faf8e3e8b7e288d52710e66e38.png)
 
 而在没有ChatGPT之前，很多程序员的工作其实也是借助搜索引擎、StackOverflow找寻代码，然后应用在工作中。只不过现在ChatGPT更加强大，找到的代码质量更高了而已。
 
@@ -93,7 +92,7 @@ AI插件发布后，我们也看到了很多的实践应用，插件函数定义
 
 如果你有自己的观点或者想参与讨论，欢迎添加「小蓝会聊天」微信进群：
 
-![扫码添加小蓝会聊天](../../.gitbook/assets/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
+![扫码添加小蓝会聊天](../assets/articles/autogen-5d8b60effd72306cf5e0fbd4c1eda8269dd75bcde3679710d310f6541420ffb1.png)
 
 本文内容已进入小蓝文章知识库，可使用蓝莺 Link 提问：
 
@@ -107,7 +106,7 @@ AI插件发布后，我们也看到了很多的实践应用，插件函数定义
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](<../../.gitbook/assets/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06 (1).jpeg>)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 参考资料
 

@@ -1,13 +1,12 @@
 ---
-keywords: 大模型, 企业知识服务, AI开源, IM云服务
 description: 以大模型为核心的企业知识服务
+keywords: 大模型, 企业知识服务, AI开源, IM云服务
 ---
-
 # 不要总想着自己训练大模型，你的业务可能并不需要
 
 一乐 蓝莺IM _2023-07-01 19:13_
 
-至少企业知识库是这样。
+至少企业知识库是这样。  
 
 我要训练大模型，我要做私有部署，我要做模型 Fine-tune，我要搞垂类 GPT。最近真是听了好多这样的话，让我想起之前刷到的一个视频：
 
@@ -17,9 +16,9 @@ _我长大要开飞机，我想当宇航员，我要有所大大的房子，哈�
 
 是的，我们都有过梦想，实现了的理想在过去叫梦想，但很多人的梦想其实只是美好的想象。
 
-![](../../.gitbook/assets/autogen-fd0ac5963fbedf88734e06af98daee56e0460a8fc0c3a583813c6ca5e459160.jpeg)
+![](../assets/articles/autogen-fd0ac5963fbedf88734e06af98daee56e0460a8fc0c3a583813c6ca5e459160.jpeg)
 
-前两天，于游前几天发了[一篇文章](https://mp.weixin.qq.com/s?__biz=MzkwOTQ0Njg4OA==\&mid=2247484205\&idx=1\&sn=c939e7b9aa6963c9e3fa3fc5dd9c4d1f\&scene=21#wechat_redirect)，引用了清华东老师的分享：
+前两天，于游前几天发了[一篇文章](https://mp.weixin.qq.com/s?__biz=MzkwOTQ0Njg4OA==&mid=2247484205&idx=1&sn=c939e7b9aa6963c9e3fa3fc5dd9c4d1f&scene=21#wechat_redirect)，引用了清华东老师的分享：
 
 _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 就达到了 GPT3.5 的水平，从智谱的目前公布的情况，这个牛吹的真的是可以。_
 
@@ -41,7 +40,7 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 大模型带来的强 AI 风已经刮过[各种人类考试 \[1\]](https://openai.com/research/gpt-4)。
 
-![GPT-4 Exam Results](../../.gitbook/assets/autogen-2b52259ac6498017ef96b3532b05412e95f1d394fc9ab2c6feb323a8bc38ee47.jpeg)
+![GPT-4 Exam Results](../assets/articles/autogen-2b52259ac6498017ef96b3532b05412e95f1d394fc9ab2c6feb323a8bc38ee47.jpeg)
 
 慢慢的，已经没人怀疑它是否能够通过图灵测试了。这也意味着，大模型 AI 通过 Chat 对话方式提供的服务，在很多场景下已经媲美甚至超越人类了。
 
@@ -49,9 +48,9 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 即使是发明了 Transformer 架构的 Google，Bard 的效果依然离 ChatGPT 有不少距离。
 
-中文大模型方面，可以参照 SuperCLUE 发布的[评测基准 6 月榜单](https://mp.weixin.qq.com/s?__biz=MzA5NzAxNTA0MQ==\&mid=2247490190\&idx=1\&sn=e07a391920420ee9e0e93e3dd219a9b2\&scene=21#wechat_redirect)，模型差距可见一斑。
+中文大模型方面，可以参照 SuperCLUE 发布的[评测基准 6 月榜单](https://mp.weixin.qq.com/s?__biz=MzA5NzAxNTA0MQ==&mid=2247490190&idx=1&sn=e07a391920420ee9e0e93e3dd219a9b2&scene=21#wechat_redirect)，模型差距可见一斑。
 
-![中文大模型评测基准6月榜单](../../.gitbook/assets/autogen-20de4061e31bcca3dec077dc61e8f26753695c707a8f55f523c85426898cceca.png)
+![中文大模型评测基准6月榜单](../assets/articles/autogen-20de4061e31bcca3dec077dc61e8f26753695c707a8f55f523c85426898cceca.png)
 
 需要提醒的是，看起来在评测基准上差距只有几分，实际上可能是行与不行的区别。
 
@@ -59,11 +58,11 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 关于[大模型能力涌现的研究\[2\]](https://arxiv.org/abs/2206.07682)，很早就提出，大模型的能力是在规模参数大到一定程度才会涌现。虽然机制尚不完全明确，但研究表明，像我们之前提到[智能客服\[3\]](https://docs.lanyingim.com/articles/product-and-technologies/chatgpt-intelligent-customer-service-ten-service-guidelines.html)使用的 Instruction Following 能力，在规模参数约为 68B（训练算力在 10^23 FLOPs 左右）才开始涌现。
 
-![大模型能力涌现的规模](../../.gitbook/assets/autogen-9a0ac06f7cc65a348576cc97e380aff21d09ebe42532472c51e6251cccdc4d0d.png)
+![大模型能力涌现的规模](../assets/articles/autogen-9a0ac06f7cc65a348576cc97e380aff21d09ebe42532472c51e6251cccdc4d0d.png)
 
 如何训练大模型在更小规模上达到能力涌现，是当前研究的重点，我们虽然可以期待未来有新的突破，但这需要时间。
 
-重要的是，私有部署一个可用大模型的成本之高昂，训练要求之高，并非一般企业所能承担。这也是最近开始有声音感慨[大模型应用落地难](https://mp.weixin.qq.com/s?__biz=MjM5ODIzNTc2MA==\&mid=2660982335\&idx=1\&sn=7247e586478d8dd2531c37533e2e2dbb\&scene=21#wechat_redirect)的原因之一。
+重要的是，私有部署一个可用大模型的成本之高昂，训练要求之高，并非一般企业所能承担。这也是最近开始有声音感慨[大模型应用落地难](https://mp.weixin.qq.com/s?__biz=MjM5ODIzNTc2MA==&mid=2660982335&idx=1&sn=7247e586478d8dd2531c37533e2e2dbb&scene=21#wechat_redirect)的原因之一。
 
 **一个弱智的大模型是大模型还是弱智，这是一个问题。**
 
@@ -107,7 +106,7 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 **ChatGPT = Chat + GPT**
 
-过去，人类与计算机的交互方式是专业编程人员学习计算机的语言与机器交互，现在，计算机学会了人类的语言，与机器的交互可以通过自然语言来进行。这必然引起应用形态的重构，智能客服是一个[例子](https://mp.weixin.qq.com/s?__biz=Mzg3NzEyMTc1OA==\&mid=2247484244\&idx=1\&sn=b41f74ecdf127e0f5253f4bb71b4faaa\&scene=21#wechat_redirect)，企业知识库也是。
+过去，人类与计算机的交互方式是专业编程人员学习计算机的语言与机器交互，现在，计算机学会了人类的语言，与机器的交互可以通过自然语言来进行。这必然引起应用形态的重构，智能客服是一个[例子](https://mp.weixin.qq.com/s?__biz=Mzg3NzEyMTc1OA==&mid=2247484244&idx=1&sn=b41f74ecdf127e0f5253f4bb71b4faaa&scene=21#wechat_redirect)，企业知识库也是。
 
 说到交互的改变，可能有的人会想到微信这种语音交互对原来文本社交网络的影响，但这一次可能要远大与此，真正能与之相比的可能要算图形界面 GUI 对原来命令行 CLI 交互的改变，要说到 Windows 操作系统这种级别的产品变革。
 
@@ -131,7 +130,7 @@ _某些团队号称自己的模型规模在非常小的情况下，比如说 7B 
 
 这个问题在上下文越大时问题越严重，而且单次 API 调用越大，大模型处理响应越慢，迟早会到达用户无法忍受的延时。
 
-这背后有一个算法上的原因，即 OpenAI 执行[Attention 的算法复杂度是 O (n^2)](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==\&mid=2652994889\&idx=1\&sn=257342371bc677cadce5d8a04752ee99\&scene=21#wechat_redirect) ，这意味着，随着序列长度的增加，执行 Attention 计算所需的计算资源呈指数增长。
+这背后有一个算法上的原因，即 OpenAI 执行[Attention 的算法复杂度是 O (n^2)](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2652994889&idx=1&sn=257342371bc677cadce5d8a04752ee99&scene=21#wechat_redirect) ，这意味着，随着序列长度的增加，执行 Attention 计算所需的计算资源呈指数增长。
 
 也因此引发了第二个问题，即大模型支持的上下文在相当长时间内最大也只会到 MB 级别，而模式二支持的知识库大小则可轻松突破 GB 级别。
 
@@ -213,7 +212,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 ### 为企业打造懂业务的 AI 老专家
 
-![](../../.gitbook/assets/autogen-a21fe046a9fec64cff74f57df307478f85ab3cfdc228f192b1e478c45c4a08c1.jpeg)
+![](../assets/articles/autogen-a21fe046a9fec64cff74f57df307478f85ab3cfdc228f192b1e478c45c4a08c1.jpeg)
 
 在互联网黑话里，有一句广为流传，就是 GIFY，Google is your friend。提醒的是，有事先问谷歌，再问你的朋友和同事。
 
@@ -287,7 +286,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 这样就用到了我们企业知识库的联邦架构：
 
-![企业知识库联邦架构](../../.gitbook/assets/autogen-ad49358db9acc2f7fe58bad021cd1e5e2e75d1d0bace747104a58c30d343726d.png)
+![企业知识库联邦架构](../assets/articles/autogen-ad49358db9acc2f7fe58bad021cd1e5e2e75d1d0bace747104a58c30d343726d.png)
 
 原理如图所示，企业知识库在获得知识片段的时候，可以增加一个联邦查询请求，去其他知识库服务中获取知识，然后在合并起来提供给大模型服务。
 
@@ -317,7 +316,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 如果你对企业知识库感兴趣，或者你觉得还有新的需求，也欢迎进群讨论。
 
-![扫码添加小蓝会聊天](../../.gitbook/assets/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
+![扫码添加小蓝会聊天](../assets/articles/autogen-c4178f6f4feacc627dd23742ee913529b2563c0cfa7116793d5aa541309adc6a.png)
 
 本文内容已进入小蓝文章知识库，欢迎使用蓝莺 Link 提问：
 
@@ -331,7 +330,7 @@ Prompt-tuning 确实是随着 GPT 热起来之后才开始引起重视，因为�
 
 如果你希望在强AI时代打磨好自己的产品，欢迎继续关注蓝莺IM，我们会持续输出最新的经验与技术：
 
-![打造新一代智能聊天APP，使用蓝莺IM SDK！](<../../.gitbook/assets/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06 (1).jpeg>)
+![打造新一代智能聊天APP，使用蓝莺IM SDK！](../assets/articles/autogen-7aa69a076157dc20defae405d39298a1be9d210b5b2a5aa5218ad2ecd72c0a06.jpeg)
 
 ## 参考资料
 
