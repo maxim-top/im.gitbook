@@ -36,6 +36,7 @@
 |  ------ |  ------ |  ------ |
 | code | int32 | 返回码，200是成功 |
 | data | object | 结果数据 |
+|⇥ message_quota_usage | double | 消耗智能消息条数 |
 |⇥ messages | array[object] | 消息列表 |
 |⇥⇥ attachment | string | 消息附件: 消息类型为图片/语音/视频/文件时，此字段会包括文件地址 |
 |⇥⇥ config | string | SDK层使用的扩展字段 |
