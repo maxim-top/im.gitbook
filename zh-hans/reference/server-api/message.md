@@ -30,7 +30,42 @@
 #### 接口描述
 > 
 
-## 5.2 取指定会话的消息{#get__message_conversation}
+## 5.2 广播消息{#post__message_broadcast}
+
+> POST /message/broadcast
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| attachment | string | false |  |  |
+| config | string | false |  |  |
+| content | string | false |  |  |
+| content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6; |
+| ext | string | false |  |  |
+| type | int32 | true |  | 目标类型，1 - 普通用户 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | object | 结果数据 |
+|⇥ send_num | int64 | 发送数量 |
+|⇥ success | boolean | 是否成功 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 5.3 取指定会话的消息{#get__message_conversation}
 
 > GET /message/conversation
 
@@ -77,7 +112,7 @@
 #### 接口描述
 > 
 
-## 5.3 删除用户的指定会话{#delete__message_conversation}
+## 5.4 删除用户的指定会话{#delete__message_conversation}
 
 > DELETE /message/conversation
 
@@ -105,7 +140,7 @@
 #### 接口描述
 > 
 
-## 5.4 发送系统通知{#put__message_notify}
+## 5.5 发送系统通知{#put__message_notify}
 
 > PUT /message/notify
 
@@ -122,7 +157,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| attachment | string | true |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
+| attachment | string | false |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
 | config | string | false |  | SDK使用的扩展字段 |
 | content | string | true |  | 消息内容 |
 | content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;<br>    READ_ACK  = 9;<br>    RECALL    = 10;<br>    APPEND    = 11;<br>    REPLACE   = 12; |
@@ -146,7 +181,7 @@
 #### 接口描述
 > 
 
-## 5.5 撤回消息{#put__message_recall}
+## 5.6 撤回消息{#put__message_recall}
 
 > PUT /message/recall
 
@@ -177,7 +212,7 @@
 #### 接口描述
 > 
 
-## 5.6 发送消息{#put__message_send}
+## 5.7 发送消息{#put__message_send}
 
 > PUT /message/send
 
@@ -194,7 +229,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| attachment | string | true |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
+| attachment | string | false |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
 | config | string | false |  | SDK使用的扩展字段 |
 | content | string | true |  | 消息内容 |
 | content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;<br>    READ_ACK  = 9;<br>    RECALL    = 10;<br>    APPEND    = 11;<br>    REPLACE   = 12; |
@@ -218,7 +253,7 @@
 #### 接口描述
 > 
 
-## 5.7 取指定用户的最近会话列表{#get__message_unread}
+## 5.8 取指定用户的最近会话列表{#get__message_unread}
 
 > GET /message/unread
 

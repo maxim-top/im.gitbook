@@ -152,7 +152,91 @@
 #### 接口描述
 > 
 
-## 1.6 删除用户{#delete__user_delete}
+## 1.6 置顶会话{#put__user_conversation_pin}
+
+> PUT /user/conversation/pin
+
+> POST /user/conversation/pin
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| conversation_id | int64 | true |  | 会话ID |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 1.7 获取置顶会话列表{#get__user_conversation_pin_list}
+
+> GET /user/conversation/pin_list
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | object | 结果数据 |
+|⇥ conversation_ids | array[int64] | 会话ID列表 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 1.8 取消置顶会话{#put__user_conversation_unpin}
+
+> PUT /user/conversation/unpin
+
+> POST /user/conversation/unpin
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| conversation_id | int64 | true |  | 会话ID |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 1.9 删除用户{#delete__user_delete}
 
 > DELETE /user/delete
 
@@ -182,7 +266,7 @@
 #### 接口描述
 > 
 
-## 1.7 设备列表{#get__user_device_list}
+## 1.10 设备列表{#get__user_device_list}
 
 > GET /user/device/list
 
@@ -211,7 +295,7 @@
 #### 接口描述
 > 
 
-## 1.8 删除device{#delete__user_device_remove}
+## 1.11 删除device{#delete__user_device_remove}
 
 > DELETE /user/device/remove
 
@@ -241,7 +325,7 @@
 #### 接口描述
 > 
 
-## 1.9 封禁用户{#put__user_disable}
+## 1.12 封禁用户{#put__user_disable}
 
 > PUT /user/disable
 
@@ -269,7 +353,7 @@
 #### 接口描述
 > 
 
-## 1.10 设置是否自动下载缩略图和文件{#put__user_download}
+## 1.13 设置是否自动下载缩略图和文件{#put__user_download}
 
 > PUT /user/download
 
@@ -299,7 +383,7 @@
 #### 接口描述
 > 
 
-## 1.11 解禁用户{#put__user_enable}
+## 1.14 解禁用户{#put__user_enable}
 
 > PUT /user/enable
 
@@ -327,7 +411,7 @@
 #### 接口描述
 > 
 
-## 1.12 踢指定设备下线{#put__user_kick}
+## 1.15 踢指定设备下线{#put__user_kick}
 
 > PUT /user/kick
 
@@ -357,7 +441,7 @@
 #### 接口描述
 > 
 
-## 1.13 列出APP下所有用户{#get__user_list}
+## 1.16 列出APP下所有用户{#get__user_list}
 
 > GET /user/list
 
@@ -389,7 +473,7 @@
 #### 接口描述
 > 
 
-## 1.14 设置手机号码{#put__user_mobile}
+## 1.17 设置手机号码{#put__user_mobile}
 
 > PUT /user/mobile
 
@@ -419,7 +503,7 @@
 #### 接口描述
 > 
 
-## 1.15 设置昵称{#put__user_nickname}
+## 1.18 设置昵称{#put__user_nickname}
 
 > PUT /user/nickname
 
@@ -449,7 +533,7 @@
 #### 接口描述
 > 
 
-## 1.16 查询用户在线状态{#get__user_online_status}
+## 1.19 查询用户在线状态{#get__user_online_status}
 
 > GET /user/online_status
 
@@ -473,7 +557,7 @@
 #### 接口描述
 > 
 
-## 1.17 设置私有扩展信息{#put__user_private}
+## 1.20 设置私有扩展信息{#put__user_private}
 
 > PUT /user/private
 
@@ -503,7 +587,7 @@
 #### 接口描述
 > 
 
-## 1.18 获取用户信息{#get__user_profile}
+## 1.21 获取用户信息{#get__user_profile}
 
 > GET /user/profile
 
@@ -535,7 +619,7 @@
 #### 接口描述
 > 
 
-## 1.19 更新用户信息{#put__user_profile}
+## 1.22 更新用户信息{#put__user_profile}
 
 > PUT /user/profile
 
@@ -568,7 +652,7 @@
 #### 接口描述
 > 
 
-## 1.20 批量更新用户信息{#put__user_profile_batch}
+## 1.23 批量更新用户信息{#put__user_profile_batch}
 
 > PUT /user/profile/batch
 
@@ -606,7 +690,7 @@
 #### 接口描述
 > 
 
-## 1.21 设置公开扩展信息{#put__user_public}
+## 1.24 设置公开扩展信息{#put__user_public}
 
 > PUT /user/public
 
@@ -636,7 +720,7 @@
 #### 接口描述
 > 
 
-## 1.22 设置是否关闭推送{#put__user_push}
+## 1.25 设置是否关闭推送{#put__user_push}
 
 > PUT /user/push
 
@@ -666,7 +750,7 @@
 #### 接口描述
 > 
 
-## 1.23 绑定别名{#post__user_push_alias}
+## 1.26 绑定别名{#post__user_push_alias}
 
 > POST /user/push/alias
 
@@ -695,7 +779,7 @@
 #### 接口描述
 > 
 
-## 1.24 设置badge{#post__user_push_badge}
+## 1.27 设置badge{#post__user_push_badge}
 
 > POST /user/push/badge
 
@@ -723,7 +807,7 @@
 #### 接口描述
 > 
 
-## 1.25 设置是否关闭推送详情{#put__user_push_detail}
+## 1.28 设置是否关闭推送详情{#put__user_push_detail}
 
 > PUT /user/push/detail
 
@@ -753,7 +837,7 @@
 #### 接口描述
 > 
 
-## 1.26 设置推送免打扰时间{#put__user_push_limit}
+## 1.29 设置推送免打扰时间{#put__user_push_limit}
 
 > PUT /user/push/limit
 
@@ -784,7 +868,7 @@
 #### 接口描述
 > 
 
-## 1.27 设置推送昵称{#put__user_push_nickname}
+## 1.30 设置推送昵称{#put__user_push_nickname}
 
 > PUT /user/push/nickname
 
@@ -814,7 +898,7 @@
 #### 接口描述
 > 
 
-## 1.28 获取标签{#get__user_push_tag}
+## 1.31 获取标签{#get__user_push_tag}
 
 > GET /user/push/tag
 
@@ -837,7 +921,7 @@
 #### 接口描述
 > 
 
-## 1.29 绑定标签{#post__user_push_tag}
+## 1.32 绑定标签{#post__user_push_tag}
 
 > POST /user/push/tag
 
@@ -865,7 +949,7 @@
 #### 接口描述
 > 
 
-## 1.30 解绑标签{#delete__user_push_tag}
+## 1.33 解绑标签{#delete__user_push_tag}
 
 > DELETE /user/push/tag
 
@@ -893,7 +977,7 @@
 #### 接口描述
 > 
 
-## 1.31 删除所有标签{#delete__user_push_tag_all}
+## 1.34 删除所有标签{#delete__user_push_tag_all}
 
 > DELETE /user/push/tag/all
 
@@ -916,7 +1000,7 @@
 #### 接口描述
 > 
 
-## 1.32 批量注册用户{#post__user_register_batch}
+## 1.35 批量注册用户{#post__user_register_batch}
 
 > POST /user/register/batch
 
@@ -950,7 +1034,7 @@
 #### 接口描述
 > 
 
-## 1.33 注册推送用户{#post__user_register_push}
+## 1.36 注册推送用户{#post__user_register_push}
 
 > POST /user/register/push
 
@@ -1000,7 +1084,7 @@
 #### 接口描述
 > 
 
-## 1.34 注册用户{#post__user_register_v2}
+## 1.37 注册用户{#post__user_register_v2}
 
 > POST /user/register/v2
 
@@ -1046,7 +1130,7 @@
 #### 接口描述
 > 
 
-## 1.35 获取用户设置{#get__user_settings}
+## 1.38 获取用户设置{#get__user_settings}
 
 > GET /user/settings
 
@@ -1086,7 +1170,7 @@
 #### 接口描述
 > 
 
-## 1.36 修改用户设置{#put__user_settings}
+## 1.39 修改用户设置{#put__user_settings}
 
 > PUT /user/settings
 
@@ -1132,7 +1216,7 @@
 #### 接口描述
 > 
 
-## 1.37 设置新消息是否关闭声音提醒{#put__user_sounds}
+## 1.40 设置新消息是否关闭声音提醒{#put__user_sounds}
 
 > PUT /user/sounds
 
@@ -1162,7 +1246,7 @@
 #### 接口描述
 > 
 
-## 1.38 绑定token{#put__user_token_bind}
+## 1.41 绑定token{#put__user_token_bind}
 
 > PUT /user/token/bind
 
@@ -1194,7 +1278,7 @@
 #### 接口描述
 > 
 
-## 1.39 解绑token{#delete__user_token_unbind}
+## 1.42 解绑token{#delete__user_token_unbind}
 
 > DELETE /user/token/unbind
 
@@ -1224,7 +1308,7 @@
 #### 接口描述
 > 
 
-## 1.40 修改用户名{#put__user_username}
+## 1.43 修改用户名{#put__user_username}
 
 > PUT /user/username
 
@@ -1254,7 +1338,7 @@
 #### 接口描述
 > 
 
-## 1.41 设置新消息是否振动{#put__user_vibratory}
+## 1.44 设置新消息是否振动{#put__user_vibratory}
 
 > PUT /user/vibratory
 

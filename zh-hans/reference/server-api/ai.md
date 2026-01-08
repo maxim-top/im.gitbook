@@ -17,7 +17,7 @@
 #### 请求体(Request Body)
 |  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |  ------ |
-| attachment | string | true |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
+| attachment | string | false |  | 附件：如果消息类型为图片/语音/视频/文件时需要设置此字段。格式如:{"url":"https://xxx"  ,"dName":"1658890327124.amr","fLen":1670,"duration":1}{"url":"https://xxx"  ,"dName":"1646751218948","fLen":508728,"width":828.0,"height":828.0} |
 | config | string | false |  | SDK使用的扩展字段 |
 | content | string | true |  | 消息内容 |
 | content_type | int32 | true |  | 消息类型 TEXT      = 0;<br>    IMAGE     = 1;<br>    AUDIO     = 2;<br>    VIDEO     = 3;<br>    FILE      = 4;<br>    LOCATION  = 5;<br>    COMMAND   = 6;<br>    FORWARD   = 7;<br>    READ_ACK  = 9;<br>    RECALL    = 10;<br>    APPEND    = 11;<br>    REPLACE   = 12; |

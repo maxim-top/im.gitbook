@@ -548,6 +548,7 @@
 |⇥ description | string | 群描述 |
 |⇥ ext | string | 群扩展信息 |
 |⇥ group_id | int64 | 群id |
+|⇥ hide_member_info | boolean | 是否隐藏群成员详细信息： true - 隐藏， false - 不隐藏 |
 |⇥ history_visible | boolean | 新成员可见历史聊天记录设置： true - 新成员可见历史聊天记录， false - 新成员不可见历史聊天记录 |
 |⇥ member_invite | boolean | 是否允许群成员邀请其他人入群: true - 群成员允许邀请其他人入群， false - 群成员不允许邀请其他人入群 |
 |⇥ member_modify | boolean | 群成员修改群信息设置： true - 允许群成员修改群信息， false - 不允许群成员修改群信息 |
@@ -835,6 +836,7 @@
 |⇥ description | string | 群描述 |
 |⇥ ext | string | 群扩展信息 |
 |⇥ group_id | int64 | 群id |
+|⇥ hide_member_info | boolean | 是否隐藏群成员详细信息： true - 隐藏， false - 不隐藏 |
 |⇥ history_visible | boolean | 新成员可见历史聊天记录设置： true - 新成员可见历史聊天记录， false - 新成员不可见历史聊天记录 |
 |⇥ member_invite | boolean | 是否允许群成员邀请其他人入群: true - 群成员允许邀请其他人入群， false - 群成员不允许邀请其他人入群 |
 |⇥ member_modify | boolean | 群成员修改群信息设置： true - 允许群成员修改群信息， false - 不允许群成员修改群信息 |
@@ -1426,6 +1428,7 @@
 |⇥ description | string | 群描述 |
 |⇥ ext | string | 群扩展信息 |
 |⇥ group_id | int64 | 群id |
+|⇥ hide_member_info | boolean | 是否隐藏群成员详细信息： true - 隐藏， false - 不隐藏 |
 |⇥ history_visible | boolean | 新成员可见历史聊天记录设置： true - 新成员可见历史聊天记录， false - 新成员不可见历史聊天记录 |
 |⇥ member_invite | boolean | 是否允许群成员邀请其他人入群: true - 群成员允许邀请其他人入群， false - 群成员不允许邀请其他人入群 |
 |⇥ member_modify | boolean | 群成员修改群信息设置： true - 允许群成员修改群信息， false - 不允许群成员修改群信息 |
@@ -1564,7 +1567,38 @@
 #### 接口描述
 > 
 
-## 4.47 更新群设置--新成员是否可见群历史聊天记录{#put__group_settings_history_visible}
+## 4.47 更新群设置--是否隐藏群成员详细信息{#put__group_settings_hide_member_info}
+
+> PUT /group/settings/hide_member_info
+
+> POST /group/settings/hide_member_info
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| group_id | int64 | true |  | 群id |
+| value | boolean | true |  | 更新内容 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 4.48 更新群设置--新成员是否可见群历史聊天记录{#put__group_settings_history_visible}
 
 > PUT /group/settings/history_visible
 
@@ -1595,7 +1629,7 @@
 #### 接口描述
 > 
 
-## 4.48 更新群设置--群申请是否需要管理员审批{#put__group_settings_require_admin_approval}
+## 4.49 更新群设置--群申请是否需要管理员审批{#put__group_settings_require_admin_approval}
 
 > PUT /group/settings/require_admin_approval
 
@@ -1626,7 +1660,7 @@
 #### 接口描述
 > 
 
-## 4.49 取消全员禁言{#post__group_settings_unban_all}
+## 4.50 取消全员禁言{#post__group_settings_unban_all}
 
 > POST /group/settings/unban_all
 
@@ -1654,7 +1688,7 @@
 #### 接口描述
 > 
 
-## 4.50 转让群{#put__group_transfer}
+## 4.51 转让群{#put__group_transfer}
 
 > PUT /group/transfer
 
@@ -1688,7 +1722,7 @@
 #### 接口描述
 > 
 
-## 4.51 从禁言列表移除用户{#post__group_unban}
+## 4.52 从禁言列表移除用户{#post__group_unban}
 
 > POST /group/unban
 
@@ -1720,7 +1754,7 @@
 #### 接口描述
 > 
 
-## 4.52 从黑名单移除用户{#delete__group_unblock}
+## 4.53 从黑名单移除用户{#delete__group_unblock}
 
 > DELETE /group/unblock
 
@@ -1754,7 +1788,7 @@
 #### 接口描述
 > 
 
-## 4.53 获取用户的群组列表{#get__group_user_joined}
+## 4.54 获取用户的群组列表{#get__group_user_joined}
 
 > GET /group/user_joined
 
