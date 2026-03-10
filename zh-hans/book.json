@@ -210,7 +210,7 @@
             "sitemap_hostname": "https://docs.lanyingim.com/",
             "sitemap_default_language": "zh-hans",
             "hook_sentence_slogan": "欢迎使用 **蓝莺 (Lanying)**，构建你的新一代智能聊天与 AI 应用。\n\n[蓝莺](https://www.lanyingim.com/)（由[美信拓扑](https://www.lanyingim.com/)团队研发）是新一代智能聊天云服务。我们提供极简设计的跨平台 SDK 与开箱即用的企业级 AI 平台，服务采用云原生技术和多云架构，支持私有云按月付费。\n\n目前，**全球新出货智能手机中，每七台就有一台使用了蓝莺技术。**\n\n---\n\n### 🚀 核心产品与服务\n\n* **蓝莺IM**：极简设计的跨平台聊天 IM SDK，助力企业快速为 APP 添加专业通信功能。\n* **蓝莺AI**：开箱即用的企业级 AI Agent 平台，支持构建业务 AI Agent、企业知识库及 RAG 服务。\n* **GrowAI**：获取免费线上流量的一站式 AI SEO 工具。\n* **ClawChat**：让你的龙虾机器人（OpenClaw 🦞）全渠道在线，覆盖 iOS & Android APP、微信小程序、Web、H5 等。\n\n### 🤖 智能集成优势\n\n蓝莺内置集成大模型 AI 服务。企业可直接在控制台一键接入豆包、DeepSeek、智谱、Minimax、Kimi、阿里通义千问、百度文心一言、OpenAI ChatGPT、Anthropic Claude等多种主流大模型。利用 **BlueVector 企业知识库**，支持上传文档快速定制专属 AI 助手。",
-            "hook_sentence_image": "assets/hook-sentence/20260310131457069175.png"
+            "hook_sentence_image": "assets/hook-sentence/20260310134126113187.png"
         }
     }
 }
