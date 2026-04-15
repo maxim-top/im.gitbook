@@ -20,7 +20,7 @@ ChatGPT 太火了。自从上周发布后，很多人玩得不亦乐乎，如果
 
 但百闻不如一用，我们还是建议你亲自上手体验一下，可以直接去 [OpenAI 官网](https://chat.openai.com/)\[1\]注册。不过由于地区限制，你需要一个境外的手机号，这个去万能的淘宝可以解决，或者直接找一个国外的接码平台收注册验证码即可。
 
-![](../assets/articles/autogen-f89c6689781ebc286ade48b2cc2c8c5cdd9acd1c2b29b3c0094e061478eee66b.jpeg)
+![](../assets/articles/autogen-f89c6689781ebc286ade48b2cc2c8c5cdd9acd1c2b29b3c0094e061478eee66b.jpeg@100p)
 
 作为日常跟「聊天」「Chat」打交道的互联网人，我们在第一时间就开始体验，自然地也会思考如何利用其打造自己的产品。
 

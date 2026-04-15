@@ -12,7 +12,7 @@ keywords: 大模型, 企业知识库, IM开源, Chat AI SDK
 > 
 > 未来`10`天，你有一个尽情无限量使用大模型和企业知识库的机会，由Minimax和蓝莺IM共同提供，详情见文末介绍。
 
-![](../assets/articles/autogen-5f06aab7da0797d201e688f9196a7031574ee3f5df2b25863e20f55f9a5ca2c4.jpeg)
+![](../assets/articles/autogen-5f06aab7da0797d201e688f9196a7031574ee3f5df2b25863e20f55f9a5ca2c4.jpeg@100p)
 
 [企业知识库发布](https://docs.lanyingim.com/articles/product-and-technologies/It-is-time-to-make-LLM-learn-enterprise-knowledge.html)的时候，我们讲过要做多模型适配的原因。
 

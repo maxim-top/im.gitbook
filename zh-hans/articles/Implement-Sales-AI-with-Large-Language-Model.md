@@ -22,7 +22,7 @@ keywords: 销售AI, 大模型LLM, Chat AI SDK, AI智能体
 
 AI的主动性和被动性的平衡通过不断的实际交互中学习和优化，使得它既不会过度推销，也不会错过合适的销售时机。
 
-![销售AI场景演示，使用DALL·E3生成](../assets/articles/autogen-e13efd0da214c2f19f1b41d383b8d9983db1e22dd4274308ba7f1c41ec7b04a5.webp)
+![销售AI场景演示，使用DALL·E3生成](../assets/articles/autogen-e13efd0da214c2f19f1b41d383b8d9983db1e22dd4274308ba7f1c41ec7b04a5.webp@100p)
 
 在很多年前，现在称为AI1.0的时代，我们就在畅想，并有很多先行者进行了尝试，只不过受限于技术发展，实现效果始终差强人意。
 

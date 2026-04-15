@@ -12,7 +12,7 @@
 
 百模大战一年后，大模型服务到底该如何选择？
 
-![](../../assets/articles/autogen-8940d9761acd06fad161bc98dc5d8c8b71a34f616caf6df3d0b39964d86af539.webp)
+![](../assets/articles/autogen-8940d9761acd06fad161bc98dc5d8c8b71a34f616caf6df3d0b39964d86af539.webp@100p)
 
 我们整理了当前最具性价比的六款大模型，以GPT-3.5为价格基准做了对比，汇总如下：
 

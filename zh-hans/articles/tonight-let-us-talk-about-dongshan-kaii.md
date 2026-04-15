@@ -6,7 +6,7 @@ keywords: 东山魁夷, 画家, AI智能体, AI Agent
 
 原创 艾姆姐 美信拓扑 _2020-11-05 15:31_
 
-![《绵云》](../assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp)
+![《绵云》](../assets/articles/autogen-dae12fa7e228090a98e2b87aeea1e32302708f418a21bbe3ab713dd4bddf4bb7.webp@100p)
 
 > 东山魁夷（Higashiyama Kaii），被认为是战后日本最重要的画家之一，作品以风景画为主，画风有着静谧而深厚的精神力量，1969年获得日本文化勋章与文化功劳者称号，2018年是其诞辰110周年。
 

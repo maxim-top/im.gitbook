@@ -25,7 +25,7 @@ keywords: IM SDK, SWIG, IM开源, 同步 vs 异步
 
 ## SWIG 是什么
 
-![Photo by Marco Djallo on @unsplash](../assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp)
+![Photo by Marco Djallo on @unsplash](../assets/articles/autogen-d616ae0b2710058ffe22ef723448515e7f1bfe8af5f04771cf6b348a2ee08786.webp@100p)
 
 SWIG 全称是 Simplified Wrapper and Interface Generator [2]。这个名字相当直白，翻译过来就是简化的包装和接口生成器。官方介绍是一个联结 C/C++ 软件与其它各种高级编程语言的开发工具。其实主要做了一件事，就是把 C/C++ 写的软件库封装成其他高级编程语言可以调用的本地库。
 

@@ -10,7 +10,7 @@
 > 
 > 文后有蓝莺GrowAI产品内测指南，关心业务增长的企业可以直接跳到最后。
 
-![](../../assets/articles/autogen-eedd114bc3d1f99dacb077b0a8bcaf83b708c6e5aaa2c9a4d1f0da4a85434496.webp)
+![](../assets/articles/autogen-eedd114bc3d1f99dacb077b0a8bcaf83b708c6e5aaa2c9a4d1f0da4a85434496.webp@100p)
 
 你们AI增长如何？有新场景落地吗？
 

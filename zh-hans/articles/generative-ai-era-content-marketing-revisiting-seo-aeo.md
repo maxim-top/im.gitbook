@@ -10,7 +10,7 @@
 
 不管在哪个时代，企业都要做营销，但在新的时代，自然也会有新的方法。
 
-![](../../assets/articles/autogen-c0ff7fc1864f4e3c6ba55dab9f461b91f7b7461bd0377c30a2c34178440bb2a3.webp)
+![](../assets/articles/autogen-c0ff7fc1864f4e3c6ba55dab9f461b91f7b7461bd0377c30a2c34178440bb2a3.webp@100p)
 
 ## AI SEO：生成式AI时代的内容营销
 

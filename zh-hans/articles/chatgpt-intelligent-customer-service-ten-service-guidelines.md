@@ -28,7 +28,7 @@ keywords: ChatGPT, 智能客服, AI Agent, AI智能体
 
 也就是说，**要给ChatGPT限定范围**，让它做到有知而不言。
 
-![](../assets/articles/autogen-2188e094c4af767a525773e778fbd828a0dfc5929b9a674747ac61e75070fc97.jpeg)
+![](../assets/articles/autogen-2188e094c4af767a525773e778fbd828a0dfc5929b9a674747ac61e75070fc97.jpeg@100p)
 
 ## 蓝莺服务准则
 

@@ -1,6 +1,6 @@
 # 告别内网穿透！蓝莺ClawChat，让你的OpenClaw全渠道在线！
 
-![lanying-clawchat](../../assets/articles/autogen-cb3ccb9da40f98d26ad7a9a101aecca87da03286b4b9dd7198c8d9dcec42d613.webp)
+![lanying-clawchat](../../assets/articles/autogen-cb3ccb9da40f98d26ad7a9a101aecca87da03286b4b9dd7198c8d9dcec42d613.webp@100p)
 
 相信很多朋友和我一样，刚接触[龙虾机器人OpenClaw🦞 [1]](https://openclaw.ai)的时候，心里想的都是怎么把它调教成一个随叫随到的专属 AI 助理。
 

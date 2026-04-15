@@ -36,7 +36,7 @@ keywords: SaaS定价, IM价格, PUSH SDK, 第三方推送
 
 从架构模式上看，这便是所谓的基于空间的架构。很多云厂商的「行业专有云」，都是这个模式。虽然空间分离了，但每个空间依然是多租户的，这就意味着在空间内资源依然是共享的，因此吵闹邻居的风险依然存在。
 
-![Photo by alevision.co on Unsplash](../assets/articles/autogen-41b6aa066fabc2b23ca9539a6270866d5152dfa57043ebabf7e5b915dfdcab63.webp)
+![Photo by alevision.co on Unsplash](../assets/articles/autogen-41b6aa066fabc2b23ca9539a6270866d5152dfa57043ebabf7e5b915dfdcab63.webp@100p)
 
 真正解决这个问题，只有将资源彻底的隔离，保证客户对资源的独享。这只有两种方式能够做到，或者是独享的公有云，或者是托管的私有云。
 

@@ -12,7 +12,7 @@ keywords: 智能应用, 蓝莺IM, IM SDK, IM云服务
 > 
 > ～福利也在里面，不要错过～😄
 
-![](../assets/articles/autogen-4b6e72138188bee666a2fd3f8ca45d18233159bce2a58b0b1373c6beb9e58b74.jpeg)
+![](../assets/articles/autogen-4b6e72138188bee666a2fd3f8ca45d18233159bce2a58b0b1373c6beb9e58b74.jpeg@100p)
 
 ChatGPT 绝对是 2023 年最值得了解的技术，如果你还没有玩过，是时候动手了。
 

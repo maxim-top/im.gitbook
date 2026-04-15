@@ -20,7 +20,7 @@ keywords: 微信公众号, AI助手, AI智能体, Chat AI SDK
 
 不过这也正常，因为大模型相关的产品和想法都仍处在相互催化的爆发阶段，已经到了让人眼花缭乱的地步。即使是每天都在打磨大产品的我们，也会经常发现新的好玩的想法。
 
-![](../assets/articles/autogen-c6b3bf3f51f3d321f04cfdd524c8209057d88cab0b233f8bab49956324903011.jpeg)
+![](../assets/articles/autogen-c6b3bf3f51f3d321f04cfdd524c8209057d88cab0b233f8bab49956324903011.jpeg@100p)
 
 这些想法有部分来自实现过程的思考，但有更多是来自朋友的启发、客户的需求，今天又是一个例子。
 

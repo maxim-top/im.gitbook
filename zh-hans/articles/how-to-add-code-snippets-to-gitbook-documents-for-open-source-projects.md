@@ -18,7 +18,7 @@ keywords: 开源仓库, 示例代码, IM开源, LIMOS
 
 编辑 | 小蓝会聊天
 
-![](../assets/articles/autogen-f76e48cd9591e13554f7ee7a488b311f06e397dcf8f8587af14ce34686ec9693.jpeg)
+![](../assets/articles/autogen-f76e48cd9591e13554f7ee7a488b311f06e397dcf8f8587af14ce34686ec9693.jpeg@100p)
 
 “源码之前，了无秘密。”  
 

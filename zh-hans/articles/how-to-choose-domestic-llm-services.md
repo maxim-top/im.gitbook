@@ -16,7 +16,7 @@ keywords: 国产大模型, 嵌入接口, AI Agent, AI智能体
 
 蓝莺IM已经集成大部分公开API的国产大模型服务，现在开发者可以在智能消息服务中任意切换AI引擎，选择合适的模型试用。
 
-![](../assets/articles/autogen-40dfa0321a746cf7e1cfcb775dbbc9aa3b2bf18f5036c0f9ef26c120a030edc6.jpeg)
+![](../assets/articles/autogen-40dfa0321a746cf7e1cfcb775dbbc9aa3b2bf18f5036c0f9ef26c120a030edc6.jpeg@100p)
 
 ## 如何选择国产大模型？
 

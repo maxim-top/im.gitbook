@@ -14,7 +14,7 @@ keywords: 数字分身, 数字分身预设, APP内聊天功能, IM开源
 
 最近，蓝莺AI服务接口开始支持流式消息，我们终于有了不错的产品实现。我也趁机会给自己做了个AI分身，使用的知识均来自于公众号发布的文章。
 
-![](../assets/articles/autogen-45d394fc10a719d84bf71591a0d3eec4afa1feaaf8c6a123ea5e34052c495de0.jpeg)
+![](../assets/articles/autogen-45d394fc10a719d84bf71591a0d3eec4afa1feaaf8c6a123ea5e34052c495de0.jpeg@100p)
 
 想跟他聊天的话，你可以在「一乐来了」公众号的聊天中提问，也可以用下面的链接，AI会参考使用我的观点进行回复：
 

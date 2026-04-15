@@ -20,7 +20,7 @@ keywords: AI助手, MultiAgent, IM SDK, 即时通讯SDK
 
 当程序员们遇到问题时不再使用搜索引擎查找文章或问答社区，而是更多通过对话询问AI的时候，当[产品经理也开始编程](https://mp.weixin.qq.com/s?__biz=MjM5ODQwMjA4MA==&mid=2649294202&idx=1&sn=d3d47e35cc21292e24ac4ec7bf80be18&scene=21#wechat_redirect)，我们知道，**一个新的开发时代到来了**。
 
-![](../assets/articles/autogen-bee6161648efd23887599ea5f54cf3ee086f731b23a409b826e36e0e6bc98d02.jpeg)
+![](../assets/articles/autogen-bee6161648efd23887599ea5f54cf3ee086f731b23a409b826e36e0e6bc98d02.jpeg@100p)
 
 所以，作为一个在意团队成长的技术领导者，2024年首先应该做的，就是为团队成员提供这样的机会，让每个人用上ChatGPT。
 

@@ -26,7 +26,7 @@ keywords: IM发展, 云原生, IM SDK, IM云服务
 
 所以今天我们不谈产品，来谈一个技术问题，我们怎样实现一个即时通讯系统（IM）。
 
-![](../assets/articles/autogen-30adb140b95291410f8a471a21f4680739d48018bea2f19dc7fb2100aee87475.jpeg)
+![](../assets/articles/autogen-30adb140b95291410f8a471a21f4680739d48018bea2f19dc7fb2100aee87475.jpeg@100p)
 
 过去的十五年里，即时通讯（IM）技术大致经历了三个阶段。
 

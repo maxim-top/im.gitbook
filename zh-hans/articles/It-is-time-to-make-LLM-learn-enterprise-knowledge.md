@@ -14,7 +14,7 @@ keywords: 大模型, 企业知识库, AI开源, PUSH SDK
 > 
 > 感谢在产品预览阶段提过宝贵建议的产品体验官们，感谢天蓬太帅、老白、云昆、Alex、华健和亲爱的蓝朋友们❤️
 
-![](../assets/articles/autogen-6acbcc27c2e6372292e690f2e4b7d9c59b554557ad77ddace8d2d3de322fb3.jpeg)
+![](../assets/articles/autogen-6acbcc27c2e6372292e690f2e4b7d9c59b554557ad77ddace8d2d3de322fb3.jpeg@100p)
 
 之前我们讲过用提示词[实现智能客服](how-to-implement-an-intelligent-customer-service-by-chatgpt.md)，也讲过[大模型使用Embedding嵌入的原理](../Industry-development/do-not-train-your-own-llm-your-business-might-not-need-it.md)，今天蓝莺企业知识库（BlueVector）发布，可以轻松将两者合二为一，提示词不再复杂，添加知识也更方便了。
 

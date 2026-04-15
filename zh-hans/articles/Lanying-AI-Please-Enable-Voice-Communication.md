@@ -17,7 +17,7 @@ keywords: 小蓝AI, 语音交流, IM SDK, 第三方推送
 
 今天我们介绍的，就是使用大模型AI服务的语音文本转换接口来构建智能应用。
 
-![一张由小蓝AI生成的关于小蓝AI会讲话的图](../assets/articles/autogen-a23a52567fe9c3d8827b4dce3283c9ea4efa90bdfccfe1a0f530b164c20b3933.webp)
+![一张由小蓝AI生成的关于小蓝AI会讲话的图](../assets/articles/autogen-a23a52567fe9c3d8827b4dce3283c9ea4efa90bdfccfe1a0f530b164c20b3933.webp@100p)
 
 也如前文所述，我们在实现某个功能的时候，除了功能本身外，还会考虑企业开发者实现的难度以及替换的灵活性，所以这次依然也做了几件事：
 

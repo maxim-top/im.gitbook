@@ -6,7 +6,7 @@ keywords: 即时通讯IM, IM私有云, IM SDK, 即时通讯SDK
 
 原创 一乐 美信拓扑 _2020-03-26 19:49_
 
-![Photo by Ben Kolde on Unsplash](../assets/articles/autogen-3327f0040a74492f5f4424d29ce2e9b8325971b165772ba135f1168b265a3c9e.webp)
+![Photo by Ben Kolde on Unsplash](../assets/articles/autogen-3327f0040a74492f5f4424d29ce2e9b8325971b165772ba135f1168b265a3c9e.webp@100p)
 
 虽然企业上云已是趋势，但考虑到 IT 管理、数据安全和基础设施仍在改造适应阶段，私有云模式，也即云服务的私有部署，仍是很多企业采用云服务的典型模式。
 

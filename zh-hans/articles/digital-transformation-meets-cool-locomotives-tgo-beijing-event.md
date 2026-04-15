@@ -6,7 +6,7 @@ keywords: 数字化转型, TGO 鲲鹏会, RTC SDK, 实时音视频
 
 TGO鲲鹏会 美信拓扑 _2021-09-03 19:06_
 
-![](../assets/articles/autogen-5327e45f40392b822a0f0f01b0a5bad337cd6c036618fced8f22099d62a6e208.webp)
+![](../assets/articles/autogen-5327e45f40392b822a0f0f01b0a5bad337cd6c036618fced8f22099d62a6e208.webp@100p)
 
 当略感神秘的技术管理者遇上令人心潮澎湃的摩托机车，会碰撞出什么样的火花？
 

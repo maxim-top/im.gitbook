@@ -8,7 +8,7 @@ keywords: 数字孪生, 智能制造, AI智能体, AI Agent
 
 > 创新企业研习营北京站开启，立刻报名参加数字化转型主题分享与摩托车赛道技术开放日。
 
-![](../assets/articles/autogen-37c84b1b2a769b61883c1116052955fd657a631770000600d80b7c20c808b031.webp)
+![](../assets/articles/autogen-37c84b1b2a769b61883c1116052955fd657a631770000600d80b7c20c808b031.webp@100p)
 
 > 每隔几十年，各技术之间的融合就会催生出一个全新的事物，Omniverse便是这样诞生的。
 >

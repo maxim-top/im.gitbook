@@ -16,7 +16,7 @@ keywords: API业务, AI插件, AI Agent, AI开发
 
 我们倒是没那么悲观，因为Stateful这样的特性很早之前就已预料到，在前几天的[第九届全球软件大会:生成式AI应用开发峰会\[1\]](https://www.bagevent.com/event/8237772)也公开分享过。
 
-![](../assets/articles/autogen-e144da06b8981591f241b9d39516c326cdb5165252f60351047d0599f5ad4574.jpeg)
+![](../assets/articles/autogen-e144da06b8981591f241b9d39516c326cdb5165252f60351047d0599f5ad4574.jpeg@100p)
 
 这一回，OpenAI在用行动给出几个问题的答案：
 

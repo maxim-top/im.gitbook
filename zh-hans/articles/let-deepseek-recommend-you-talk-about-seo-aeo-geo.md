@@ -17,7 +17,7 @@
 > 
 > 如果你关注这些问题，本文值得你阅读。
 
-![Like by AI](../../assets/articles/autogen-c52109f5cc4c3eef0b699534e0837fb28c3267c50a953ba73a3cc0cddf6b20a3.webp)
+![Like by AI](../assets/articles/autogen-c52109f5cc4c3eef0b699534e0837fb28c3267c50a953ba73a3cc0cddf6b20a3.webp@100p)
 
 DeepSeek火了，上海一家拉面店在门口打出广告写明DeepSeek推荐，内容便是与DeepSeek聊天的截图，因为AI在回答里推荐了他们。
 

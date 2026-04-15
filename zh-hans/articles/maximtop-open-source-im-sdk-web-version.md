@@ -24,7 +24,7 @@ keywords: 美信拓扑, IM SDK, 即时通讯SDK, MTOS
 
 所以我们不只是会继续开源，还会将系统设计、协议等方面的材料公开出来，欢迎感兴趣的朋友持续关注。
 
-![](../assets/articles/autogen-86648f536f547fb95b7eebc3087e71653b7333ce945666222af6b2b9bdc1a111.webp)
+![](../assets/articles/autogen-86648f536f547fb95b7eebc3087e71653b7333ce945666222af6b2b9bdc1a111.webp@100p)
 
 ## 美信拓扑开源计划（MTOS）
 

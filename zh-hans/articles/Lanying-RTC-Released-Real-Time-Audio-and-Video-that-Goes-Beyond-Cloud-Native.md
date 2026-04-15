@@ -34,7 +34,7 @@ keywords: 蓝莺RTC, 云原生RTC, RTC SDK, 第三方推送
 
 但现在，如果你需要语音通话、视频对讲，你会需要看看蓝莺RTC，看看云原生RTC带来了什么不一样的东西。
 
-![](../assets/articles/autogen-4afe0b8ab0a01148a041ea3f15f8b74852ce219399256ff29319bc15bbc5376e.jpeg)
+![](../assets/articles/autogen-4afe0b8ab0a01148a041ea3f15f8b74852ce219399256ff29319bc15bbc5376e.jpeg@100p)
 
 ## 像软件一样使用的云原生RTC
 

@@ -8,7 +8,7 @@ keywords: 蓝莺LinkChat, 蓝莺IM SDK, APP内聊天功能, IM开源
 
 今天开始，给你的文章增加一个AI助手吧。  
 
-![](../assets/articles/autogen-6835cc5d12d1f0890b116322cfbf6575c3c07b6068a6560d2ffeff94f69e43dd.jpeg)
+![](../assets/articles/autogen-6835cc5d12d1f0890b116322cfbf6575c3c07b6068a6560d2ffeff94f69e43dd.jpeg@100p)
 
 想想下面的场景。
 
