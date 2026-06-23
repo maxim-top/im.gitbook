@@ -598,6 +598,10 @@ BMXMessageObject entity provides extensible attributes (extensionJson and config
 
       }];
     ```
+
+#### Push Notification Capabilities Settings
+To enable push notifications on iOS,Navigate to your App ID via the Identifiers page in the [Apple Developer Portal](https://developer.apple.com),then enable Communication Notifications, Push Notifications and Time Sensitive Notifications on the Capabilities tab.
+
 ## RTC AV Call
 The RTC call function needs to integrate floo-ios and floo-rtc-ios on the client side.Floo-ios provides a signaling channel for AV calls, and floo-rtc-ios implements the business logic in RTC calls. Therefore, before implementing AV calls, it is necessary to integrate floo-ios, and implement the features of login and messaging.
 
