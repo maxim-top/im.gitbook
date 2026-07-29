@@ -35,6 +35,8 @@ Group Service
 | [BMXErrorCode] | **[leave](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-leave)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Quit group  |
 | [BMXErrorCode] | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinfo)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>Get group details, pull the latest information from server  |
 | [BMXErrorCode] | **[getMembersNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembersnickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, BMXGroupMemberList list)<br>Get group member details  |
+| [BMXErrorCode] | **[getMembersInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembersinfo)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, BMXGroupMemberList list)<br>Get information for the specified group members in batches  |
+| [BMXErrorCode] | **[searchMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-searchmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String keyword, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>Search for group members  |
 | [BMXErrorCode] | **[getInvitationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinvitationlist)**(GroupInvitaionPage result, String cursor, int pageSize)<br>Get group invitation list in pages  |
 | [BMXErrorCode] | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getapplicationlist)**(BMXGroupList list, GroupApplicationPage result, String cursor, int pageSize)<br>Get a list of group applications in pages  |
 | [BMXErrorCode] | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>Get list of group members in pages, pull from server if forceRefresh is set, up to 500 per page.  |
@@ -441,6 +443,60 @@ Get group member details
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembersNickname" %}{% endlanying_code_snippet %}
+```
+### function getMembersInfo
+
+```java
+inline BMXErrorCode getMembersInfo(
+    BMXGroup group,
+    ListOfLongLong members,
+    BMXGroupMemberList list
+)
+```
+
+Get information for the specified group members in batches
+
+**Parameters**:
+
+  * **group** Group to operate on
+  * **members** List of group member IDs whose information is requested
+  * **list** Group member information list; pass an empty list and retrieve the results from it after the function returns
+
+
+**Return**: [BMXErrorCode]
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembersInfo" %}{% endlanying_code_snippet %}
+```
+### function searchMembers
+
+```java
+inline BMXErrorCode searchMembers(
+    BMXGroup group,
+    String keyword,
+    BMXGroupMemberResultPage result,
+    String cursor,
+    int pageSize
+)
+```
+
+Search for group members
+
+**Parameters**:
+
+  * **group** Group to operate on
+  * **keyword** Search keyword
+  * **result** Search result containing the group member list and the cursor for the next page
+  * **cursor** Starting cursor for pagination; pass an empty string for the first request
+  * **pageSize** Page size; defaults to 20 and must be between 1 and 100
+
+
+**Return**: [BMXErrorCode]
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="searchMembers" %}{% endlanying_code_snippet %}
 ```
 ### function getInvitationList
 
@@ -1738,4 +1794,4 @@ transient boolean swigCMemOwn;
 ```
 -------------------------------
 
-Updated on 2022-01-26 at 17:18:31 +0800
+Updated on 2026-07-29 at 17:40:31 +0800

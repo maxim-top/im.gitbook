@@ -27,6 +27,9 @@ Group Manager
 | void | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinfo)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>Get group details, pull the latest information from server  |
 | void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000  |
 | void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get group member list, pull from server if forceRefresh is set, up to 1,000  |
+| void | **[getMembersInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembersinfo)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>Get information for the specified group members in batches  |
+| void | **[searchMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-searchmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String keyword, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>Search for group members  |
+| void | **[searchMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-searchmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String keyword, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>Search for group members, returning 20 results by default for the first request  |
 | void | **[addMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String message, final BMXCallBack callBack)<br>Add group member  |
 | void | **[removeMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removemembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String reason, final BMXCallBack callBack)<br>Remove group member  |
 | void | **[addAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String message, final BMXCallBack callBack)<br>Add Admin  |
@@ -352,6 +355,79 @@ Get group member list, pull from server if forceRefresh is set, up to 1,000
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembers" %}{% endlanying_code_snippet %}
+```
+### function getMembersInfo
+
+```java
+inline void getMembersInfo(
+    final BMXGroup group,
+    final ListOfLongLong members,
+    final BMXDataCallBack< BMXGroupMemberList > callBack
+)
+```
+
+Get information for the specified group members in batches
+
+**Parameters**:
+
+  * **group** Group to operate on
+  * **members** List of group member IDs whose information is requested
+  * **callBack** [BMXErrorCode], group member information list
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembersInfo" %}{% endlanying_code_snippet %}
+```
+### function searchMembers
+
+```java
+inline void searchMembers(
+    final BMXGroup group,
+    final String keyword,
+    final String cursor,
+    final int pageSize,
+    final BMXDataCallBack< BMXGroupMemberResultPage > callBack
+)
+```
+
+Search for group members
+
+**Parameters**:
+
+  * **group** Group to operate on
+  * **keyword** Search keyword
+  * **cursor** Starting cursor for pagination; pass an empty string for the first request
+  * **pageSize** Page size; defaults to 20 and must be between 1 and 100
+  * **callBack** [BMXErrorCode], paged group member search results
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="searchMembers" %}{% endlanying_code_snippet %}
+```
+### function searchMembers
+
+```java
+inline void searchMembers(
+    final BMXGroup group,
+    final String keyword,
+    final BMXDataCallBack< BMXGroupMemberResultPage > callBack
+)
+```
+
+Search for group members, returning 20 results by default for the first request
+
+**Parameters**:
+
+  * **group** Group to operate on
+  * **keyword** Search keyword
+  * **callBack** [BMXErrorCode], paged group member search results
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="searchMembers" %}{% endlanying_code_snippet %}
 ```
 ### function addMembers
 
@@ -1341,4 +1417,4 @@ Set whether group message read acknowledgement is enabled
 ```
 -------------------------------
 
-Updated on 2022-01-26 at 17:18:31 +0800
+Updated on 2026-07-29 at 17:40:31 +0800
