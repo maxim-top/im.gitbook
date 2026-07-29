@@ -35,6 +35,8 @@ summary: 群组Service
 | [BMXErrorCode] | **[leave](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-leave)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>退出群  |
 | [BMXErrorCode] | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinfo)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group)<br>获取群详情，从服务端拉取最新信息  |
 | [BMXErrorCode] | **[getMembersNickname](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembersnickname)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, BMXGroupMemberList list)<br>获取群组成员详细信息  |
+| [BMXErrorCode] | **[getMembersInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembersinfo)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, ListOfLongLong members, BMXGroupMemberList list)<br>批量获取指定群成员信息  |
+| [BMXErrorCode] | **[searchMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-searchmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, String keyword, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>搜索群成员  |
 | [BMXErrorCode] | **[getInvitationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getinvitationlist)**(GroupInvitaionPage result, String cursor, int pageSize)<br>分页获取群组邀请列表  |
 | [BMXErrorCode] | **[getApplicationList](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getapplicationlist)**(BMXGroupList list, GroupApplicationPage result, String cursor, int pageSize)<br>分页获取群组申请列表  |
 | [BMXErrorCode] | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_service.md#function-getmembers)**([BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, BMXGroupMemberResultPage result, String cursor, int pageSize)<br>分页获取群成员列表，如果设置了forceRefresh则从服务器拉取，单页最大数量为500.  |
@@ -441,6 +443,60 @@ inline BMXErrorCode getMembersNickname(
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembersNickname" %}{% endlanying_code_snippet %}
+```
+### function getMembersInfo
+
+```java
+inline BMXErrorCode getMembersInfo(
+    BMXGroup group,
+    ListOfLongLong members,
+    BMXGroupMemberList list
+)
+```
+
+批量获取指定群成员信息
+
+**Parameters**:
+
+  * **group** 进行操作的群组
+  * **members** 要获取信息的群成员id列表
+  * **list** 返回的群成员信息列表，传入空列表在函数操作后从此处获取结果
+
+
+**Return**: [BMXErrorCode]
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="getMembersInfo" %}{% endlanying_code_snippet %}
+```
+### function searchMembers
+
+```java
+inline BMXErrorCode searchMembers(
+    BMXGroup group,
+    String keyword,
+    BMXGroupMemberResultPage result,
+    String cursor,
+    int pageSize
+)
+```
+
+搜索群成员
+
+**Parameters**:
+
+  * **group** 进行操作的群组
+  * **keyword** 搜索关键词
+  * **result** 搜索结果，包含群成员列表和下一页cursor
+  * **cursor** 分页起始cursor，首次搜索传入空字符串
+  * **pageSize** 分页大小，默认20，有效范围1到100
+
+
+**Return**: [BMXErrorCode]
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupService",function="searchMembers" %}{% endlanying_code_snippet %}
 ```
 ### function getInvitationList
 
@@ -1738,4 +1794,4 @@ transient boolean swigCMemOwn;
 ```
 -------------------------------
 
-Updated on 2022-01-26 at 17:18:31 +0800
+Updated on 2026-07-29 at 17:40:31 +0800

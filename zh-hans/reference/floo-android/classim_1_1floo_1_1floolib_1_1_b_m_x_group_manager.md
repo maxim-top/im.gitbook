@@ -27,6 +27,9 @@ summary: 群组管理器
 | void | **[getInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getinfo)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final BMXDataCallBack< [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) > callBack)<br>获取群详情，从服务端拉取最新信息  |
 | void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人  |
 | void | **[getMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final boolean forceRefresh, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>获取群成员列表，如果设置了forceRefresh则从服务器拉取，最多拉取1000人  |
+| void | **[getMembersInfo](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-getmembersinfo)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final BMXDataCallBack< BMXGroupMemberList > callBack)<br>批量获取指定群成员信息  |
+| void | **[searchMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-searchmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String keyword, final String cursor, final int pageSize, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>搜索群成员  |
+| void | **[searchMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-searchmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final String keyword, final BMXDataCallBack< BMXGroupMemberResultPage > callBack)<br>搜索群成员，首次搜索默认返回20条  |
 | void | **[addMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addmembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String message, final BMXCallBack callBack)<br>添加群成员  |
 | void | **[removeMembers](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-removemembers)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong members, final String reason, final BMXCallBack callBack)<br>删除群成员  |
 | void | **[addAdmins](classim_1_1floo_1_1floolib_1_1_b_m_x_group_manager.md#function-addadmins)**(final [BMXGroup](classim_1_1floo_1_1floolib_1_1_b_m_x_group.md) group, final ListOfLongLong admins, final String message, final BMXCallBack callBack)<br>添加管理员  |
@@ -352,6 +355,79 @@ inline void getMembers(
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembers" %}{% endlanying_code_snippet %}
+```
+### function getMembersInfo
+
+```java
+inline void getMembersInfo(
+    final BMXGroup group,
+    final ListOfLongLong members,
+    final BMXDataCallBack< BMXGroupMemberList > callBack
+)
+```
+
+批量获取指定群成员信息
+
+**Parameters**:
+
+  * **group** 进行操作的群组
+  * **members** 要获取信息的群成员id列表
+  * **callBack** [BMXErrorCode],群成员信息列表
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="getMembersInfo" %}{% endlanying_code_snippet %}
+```
+### function searchMembers
+
+```java
+inline void searchMembers(
+    final BMXGroup group,
+    final String keyword,
+    final String cursor,
+    final int pageSize,
+    final BMXDataCallBack< BMXGroupMemberResultPage > callBack
+)
+```
+
+搜索群成员
+
+**Parameters**:
+
+  * **group** 进行操作的群组
+  * **keyword** 搜索关键词
+  * **cursor** 分页起始cursor，首次搜索传入空字符串
+  * **pageSize** 分页大小，默认20，有效范围1到100
+  * **callBack** [BMXErrorCode],群成员搜索结果
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="searchMembers" %}{% endlanying_code_snippet %}
+```
+### function searchMembers
+
+```java
+inline void searchMembers(
+    final BMXGroup group,
+    final String keyword,
+    final BMXDataCallBack< BMXGroupMemberResultPage > callBack
+)
+```
+
+搜索群成员，首次搜索默认返回20条
+
+**Parameters**:
+
+  * **group** 进行操作的群组
+  * **keyword** 搜索关键词
+  * **callBack** [BMXErrorCode],群成员搜索结果
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXGroupManager",function="searchMembers" %}{% endlanying_code_snippet %}
 ```
 ### function addMembers
 
@@ -1341,4 +1417,4 @@ inline void setEnableReadAck(
 ```
 -------------------------------
 
-Updated on 2022-01-26 at 17:18:31 +0800
+Updated on 2026-07-29 at 17:40:31 +0800
