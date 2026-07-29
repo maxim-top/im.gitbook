@@ -39,6 +39,8 @@ Group Service
 | virtual BMXErrorCode | **[leave](classfloo_1_1_b_m_x_group_service.md#function-leave)**(BMXGroupPtr group) =0<br>Quit group  |
 | virtual BMXErrorCode | **[getInfo](classfloo_1_1_b_m_x_group_service.md#function-getinfo)**(BMXGroupPtr group) =0<br>Get group details, pull the latest information from server  |
 | virtual BMXErrorCode | **[getMembersNickname](classfloo_1_1_b_m_x_group_service.md#function-getmembersnickname)**(BMXGroupPtr group, const std::vector< int64_t > & members, BMXGroup::MemberList & list) =0<br>Get group member details  |
+| virtual BMXErrorCode | **[getMembersInfo](classfloo_1_1_b_m_x_group_service.md#function-getmembersinfo)**(BMXGroupPtr group, const std::vector< int64_t > & members, BMXGroup::MemberList & list) =0<br>Get information for the specified group members in batches  |
+| virtual BMXErrorCode | **[searchMembers](classfloo_1_1_b_m_x_group_service.md#function-searchmembers)**(BMXGroupPtr group, const std::string & keyword, BMXGroupMemberResultPagePtr & result, const std::string & cursor ="", int pageSize =20) =0<br>Search for group members  |
 | virtual BMXErrorCode | **[getInvitationList](classfloo_1_1_b_m_x_group_service.md#function-getinvitationlist)**(BMXGroupInvitationPagePtr & result, const std::string & cursor ="", int pageSize =10) =0<br>Get group invitation list in pages  |
 | virtual BMXErrorCode | **[getApplicationList](classfloo_1_1_b_m_x_group_service.md#function-getapplicationlist)**(BMXGroupList list, BMXGroupApplicationPagePtr & result, const std::string & cursor ="", int pageSize =10) =0<br>Get a list of group applications in pages  |
 | virtual BMXErrorCode | **[getMembers](classfloo_1_1_b_m_x_group_service.md#function-getmembers)**(BMXGroupPtr group, BMXGroupMemberResultPagePtr & result, const std::string & cursor ="", int pageSize =200) =0<br>Get list of group members in pages, pull from server if forceRefresh is set, up to 500 per page.  |
@@ -470,6 +472,60 @@ Get group member details
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembersNickname" %}{% endlanying_code_snippet %}
+```
+### function getMembersInfo
+
+```cpp
+virtual BMXErrorCode getMembersInfo(
+    BMXGroupPtr group,
+    const std::vector< int64_t > & members,
+    BMXGroup::MemberList & list
+) =0
+```
+
+Get information for the specified group members in batches
+
+**Parameters**:
+
+  * **group** Group to operate on
+  * **members** List of group member IDs whose information is requested
+  * **list** Group member information list; pass an empty list and retrieve the results from it after the function returns
+
+
+**Return**: BMXErrorCode
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="getMembersInfo" %}{% endlanying_code_snippet %}
+```
+### function searchMembers
+
+```cpp
+virtual BMXErrorCode searchMembers(
+    BMXGroupPtr group,
+    const std::string & keyword,
+    BMXGroupMemberResultPagePtr & result,
+    const std::string & cursor ="",
+    int pageSize =20
+) =0
+```
+
+Search for group members
+
+**Parameters**:
+
+  * **group** Group to operate on
+  * **keyword** Search keyword
+  * **result** Search result containing the group member list and the cursor for the next page
+  * **cursor** Starting cursor for pagination; pass an empty string for the first request
+  * **pageSize** Page size; defaults to 20 and must be between 1 and 100
+
+
+**Return**: BMXErrorCode
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-embedded",class="BMXGroupService",function="searchMembers" %}{% endlanying_code_snippet %}
 ```
 ### function getInvitationList
 
@@ -1688,4 +1744,4 @@ inline BMXGroupService()
 ```
 -------------------------------
 
-Updated on 2022-01-26 at 17:20:40 +0800
+Updated on 2026-07-29 at 17:51:01 +0800
