@@ -2035,10 +2035,63 @@
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/getMembersNickname:members:completion:" title="getMembersNickname:members:completion:"></a>
+<a name="//api/name/getMembersInfo:members:completion:" title="getMembersInfo:members:completion:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
+```
+### getMembersInfo:members:completion:
+
+批量获取指定群成员信息
+
+`- (void)getMembersInfo:(BMXGroup *)*group* members:(ListOfLongLong *)*members* completion:(void ( ^ ) ( BMXGroupMemberList *res , BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*group*
+   进行操作的群组
+
+*members*
+   要获取信息的群成员id列表
+
+*resBlock*
+   操作完成后的回调，返回群成员信息列表和错误信息
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/getMembersInfo:members:list:" title="getMembersInfo:members:list:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembersInfo:members:completion:" %}{% endlanying_code_snippet %}
+```
+### getMembersInfo:members:list:
+
+批量获取指定群成员信息
+
+`- (BMXErrorCode)getMembersInfo:(BMXGroup *)*group* members:(ListOfLongLong *)*members* list:(BMXGroupMemberList *)*list*`
+
+#### Parameters
+
+*group*
+   进行操作的群组
+
+*members*
+   要获取信息的群成员id列表
+
+*list*
+   返回的群成员信息列表，传入空列表，函数执行后从此处获取结果
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/getMembersNickname:members:completion:" title="getMembersNickname:members:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembersInfo:members:list:" %}{% endlanying_code_snippet %}
 ```
 ### getMembersNickname:members:completion:
 
@@ -2500,10 +2553,75 @@
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/searchWithGroupId:forceRefresh:completion:" title="searchWithGroupId:forceRefresh:completion:"></a>
+<a name="//api/name/searchMembersWithGroup:keyword:cursor:pageSize:completion:" title="searchMembersWithGroup:keyword:cursor:pageSize:completion:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeSharedFileWithGroup:sharedFile:completion:" %}{% endlanying_code_snippet %}
+```
+### searchMembersWithGroup:keyword:cursor:pageSize:completion:
+
+搜索群成员
+
+`- (void)searchMembersWithGroup:(BMXGroup *)*group* keyword:(NSString *)*keyword* cursor:(NSString *)*cursor* pageSize:(int)*pageSize* completion:(void ( ^ ) ( BMXGroupMemberResultPage *res , BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*group*
+   进行操作的群组
+
+*keyword*
+   搜索关键词
+
+*cursor*
+   分页起始cursor，首次搜索传入空字符串
+
+*pageSize*
+   分页大小，默认20，有效范围1到100
+
+*resBlock*
+   操作完成后的回调，返回群成员列表、下一页cursor和错误信息
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/searchMembersWithGroup:keyword:result:cursor:pageSize:" title="searchMembersWithGroup:keyword:result:cursor:pageSize:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchMembersWithGroup:keyword:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
+### searchMembersWithGroup:keyword:result:cursor:pageSize:
+
+搜索群成员
+
+`- (BMXErrorCode)searchMembersWithGroup:(BMXGroup *)*group* keyword:(NSString *)*keyword* result:(BMXGroupMemberResultPage *)*result* cursor:(NSString *)*cursor* pageSize:(int)*pageSize*`
+
+#### Parameters
+
+*group*
+   进行操作的群组
+
+*keyword*
+   搜索关键词
+
+*result*
+   搜索结果，包含群成员列表和下一页cursor
+
+*cursor*
+   分页起始cursor，首次搜索传入空字符串
+
+*pageSize*
+   分页大小，默认20，有效范围1到100
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/searchWithGroupId:forceRefresh:completion:" title="searchWithGroupId:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchMembersWithGroup:keyword:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithGroupId:forceRefresh:completion:
 

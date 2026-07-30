@@ -1938,10 +1938,63 @@ Get group members in pages
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/getMembersNickname:members:completion:" title="getMembersNickname:members:completion:"></a>
+<a name="//api/name/getMembersInfo:members:completion:" title="getMembersInfo:members:completion:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembers:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
+```
+### getMembersInfo:members:completion:
+
+Get information for the specified group members in batches
+
+`- (void)getMembersInfo:(BMXGroup *)*group* members:(ListOfLongLong *)*members* completion:(void ( ^ ) ( BMXGroupMemberList *res , BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*group*
+    The group
+
+*members*
+    The group member ID list
+
+*resBlock*
+    Completion callback that returns the group member information list and error
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/getMembersInfo:members:list:" title="getMembersInfo:members:list:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembersInfo:members:completion:" %}{% endlanying_code_snippet %}
+```
+### getMembersInfo:members:list:
+
+Get information for the specified group members in batches
+
+`- (BMXErrorCode)getMembersInfo:(BMXGroup *)*group* members:(ListOfLongLong *)*members* list:(BMXGroupMemberList *)*list*`
+
+#### Parameters
+
+*group*
+    The group
+
+*members*
+    The group member ID list
+
+*list*
+    The group member information list populated by the method
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/getMembersNickname:members:completion:" title="getMembersNickname:members:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="getMembersInfo:members:list:" %}{% endlanying_code_snippet %}
 ```
 ### getMembersNickname:members:completion:
 
@@ -2391,10 +2444,75 @@ Remove the shared files from the group
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/searchWithGroupId:forceRefresh:completion:" title="searchWithGroupId:forceRefresh:completion:"></a>
+<a name="//api/name/searchMembersWithGroup:keyword:cursor:pageSize:completion:" title="searchMembersWithGroup:keyword:cursor:pageSize:completion:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="removeSharedFileWithGroup:sharedFile:completion:" %}{% endlanying_code_snippet %}
+```
+### searchMembersWithGroup:keyword:cursor:pageSize:completion:
+
+Search for group members
+
+`- (void)searchMembersWithGroup:(BMXGroup *)*group* keyword:(NSString *)*keyword* cursor:(NSString *)*cursor* pageSize:(int)*pageSize* completion:(void ( ^ ) ( BMXGroupMemberResultPage *res , BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*group*
+    The group
+
+*keyword*
+    Search keyword
+
+*cursor*
+    Pagination cursor; pass an empty string for the first search
+
+*pageSize*
+    Page size, default 20, valid range 1 to 100
+
+*resBlock*
+    Completion callback that returns the group member list, next cursor, and error
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/searchMembersWithGroup:keyword:result:cursor:pageSize:" title="searchMembersWithGroup:keyword:result:cursor:pageSize:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchMembersWithGroup:keyword:cursor:pageSize:completion:" %}{% endlanying_code_snippet %}
+```
+### searchMembersWithGroup:keyword:result:cursor:pageSize:
+
+Search for group members
+
+`- (BMXErrorCode)searchMembersWithGroup:(BMXGroup *)*group* keyword:(NSString *)*keyword* result:(BMXGroupMemberResultPage *)*result* cursor:(NSString *)*cursor* pageSize:(int)*pageSize*`
+
+#### Parameters
+
+*group*
+    The group
+
+*keyword*
+    Search keyword
+
+*result*
+    Search result containing the group member list and next cursor
+
+*cursor*
+    Pagination cursor; pass an empty string for the first search
+
+*pageSize*
+    Page size, default 20, valid range 1 to 100
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/searchWithGroupId:forceRefresh:completion:" title="searchWithGroupId:forceRefresh:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupService",function="searchMembersWithGroup:keyword:result:cursor:pageSize:" %}{% endlanying_code_snippet %}
 ```
 ### searchWithGroupId:forceRefresh:completion:
 
