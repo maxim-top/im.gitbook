@@ -32,7 +32,36 @@
 #### 接口描述
 > 
 
-## 4.2 移除群管理员{#delete__group_admin_remove}
+## 4.2 管理员token直接拉群成员{#post__group_admin_member_join}
+
+> POST /group/admin/member_join
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| group_id | int64 | true |  | 群id |
+| user_list | array[int64] | true |  | 用户id列表 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | object | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 4.3 移除群管理员{#delete__group_admin_remove}
 
 > DELETE /group/admin/remove
 
@@ -66,7 +95,7 @@
 #### 接口描述
 > 
 
-## 4.3 获取群管理员列表{#get__group_admin_list}
+## 4.4 获取群管理员列表{#get__group_admin_list}
 
 > GET /group/admin_list
 
@@ -97,7 +126,7 @@
 #### 接口描述
 > 
 
-## 4.4 根据群id和公告id获取群公告详情{#get__group_announcement}
+## 4.5 根据群id和公告id获取群公告详情{#get__group_announcement}
 
 > GET /group/announcement
 
@@ -131,7 +160,7 @@
 #### 接口描述
 > 
 
-## 4.5 删除公告{#delete__group_announcement_delete}
+## 4.6 删除公告{#delete__group_announcement_delete}
 
 > DELETE /group/announcement/delete
 
@@ -161,7 +190,7 @@
 #### 接口描述
 > 
 
-## 4.6 编辑群公告{#post__group_announcement_edit}
+## 4.7 编辑群公告{#post__group_announcement_edit}
 
 > POST /group/announcement/edit
 
@@ -197,7 +226,7 @@
 #### 接口描述
 > 
 
-## 4.7 获取最新一条群公告详情{#get__group_announcement_last}
+## 4.8 获取最新一条群公告详情{#get__group_announcement_last}
 
 > GET /group/announcement/last
 
@@ -230,7 +259,7 @@
 #### 接口描述
 > 
 
-## 4.8 获取群公告列表{#get__group_announcement_list}
+## 4.9 获取群公告列表{#get__group_announcement_list}
 
 > GET /group/announcement/list
 
@@ -263,7 +292,7 @@
 #### 接口描述
 > 
 
-## 4.9 获取群申请列表{#post__group_application_list}
+## 4.10 获取群申请列表{#post__group_application_list}
 
 > POST /group/application_list
 
@@ -306,7 +335,7 @@
 #### 接口描述
 > 
 
-## 4.10 申请入群{#post__group_apply}
+## 4.11 申请入群{#post__group_apply}
 
 > POST /group/apply
 
@@ -338,7 +367,7 @@
 #### 接口描述
 > 
 
-## 4.11 管理员处理入群申请{#put__group_apply_handle}
+## 4.12 管理员处理入群申请{#put__group_apply_handle}
 
 > PUT /group/apply/handle
 
@@ -373,7 +402,7 @@
 #### 接口描述
 > 
 
-## 4.12 将用户禁言{#post__group_ban}
+## 4.13 将用户禁言{#post__group_ban}
 
 > POST /group/ban
 
@@ -406,7 +435,7 @@
 #### 接口描述
 > 
 
-## 4.13 获取禁言列表{#get__group_banned_list}
+## 4.14 获取禁言列表{#get__group_banned_list}
 
 > GET /group/banned_list
 
@@ -443,7 +472,7 @@
 #### 接口描述
 > 
 
-## 4.14 将用户加入黑名单{#post__group_block}
+## 4.15 将用户加入黑名单{#post__group_block}
 
 > POST /group/block
 
@@ -475,7 +504,7 @@
 #### 接口描述
 > 
 
-## 4.15 获取黑名单列表{#get__group_blocked_list}
+## 4.16 获取黑名单列表{#get__group_blocked_list}
 
 > GET /group/blocked_list
 
@@ -511,7 +540,7 @@
 #### 接口描述
 > 
 
-## 4.16 创建群{#post__group_create}
+## 4.17 创建群{#post__group_create}
 
 > POST /group/create
 
@@ -529,7 +558,7 @@
 | avatar | string | false |  | 群头像 |
 | description | string | false |  | 群描述 |
 | name | string | false |  | 群名称 |
-| type | int32 | false |  | 群类型 0表示私有群, 2表示聊天室 |
+| type | int32 | false |  | 群类型 0表示私有群, 1表示公开群, 2表示聊天室, 3表示临时群 |
 | user_list | array[int64] | false |  | 邀请入群的用户id列表 |
 
 #### 响应体
@@ -558,13 +587,13 @@
 |⇥ owner_id | int64 | 群主id |
 |⇥ read_ack | boolean | 是否开启群消息已读功能设置：true - 开启群消息已读功能， false - 不开启群消息已读功能 |
 |⇥ status | int32 | 群状态, 0：正常, 1：已解散 |
-|⇥ type | int32 | 群类型： 0 - 表示私有群, 2 - 表示聊天室 |
+|⇥ type | int32 | 群类型：0 - 表示私有群, 1 - 表示公开群, 2 - 表示聊天室, 3 - 表示临时群 |
 |⇥ updated_at | int64 | 更新时间（毫秒） |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 4.17 解散群{#delete__group_destroy}
+## 4.18 解散群{#delete__group_destroy}
 
 > DELETE /group/destroy
 
@@ -593,7 +622,7 @@
 #### 接口描述
 > 
 
-## 4.18 更新群名片{#put__group_display_name}
+## 4.19 更新群名片{#put__group_display_name}
 
 > PUT /group/display_name
 
@@ -624,7 +653,7 @@
 #### 接口描述
 > 
 
-## 4.19 下载群文件{#get__group_file}
+## 4.20 下载群文件{#get__group_file}
 
 > GET /group/file
 
@@ -661,7 +690,7 @@
 #### 接口描述
 > 
 
-## 4.20 删除群文件{#delete__group_file_delete}
+## 4.21 删除群文件{#delete__group_file_delete}
 
 > DELETE /group/file/delete
 
@@ -695,7 +724,7 @@
 #### 接口描述
 > 
 
-## 4.21 获取群文件列表{#get__group_file_list}
+## 4.22 获取群文件列表{#get__group_file_list}
 
 > GET /group/file/list
 
@@ -731,7 +760,7 @@
 #### 接口描述
 > 
 
-## 4.22 更新群文件名称{#put__group_file_update_name}
+## 4.23 更新群文件名称{#put__group_file_update_name}
 
 > PUT /group/file/update_name
 
@@ -763,7 +792,7 @@
 #### 接口描述
 > 
 
-## 4.23 上传群文件{#post__group_file_upload}
+## 4.24 上传群文件{#post__group_file_upload}
 
 > POST /group/file/upload
 
@@ -804,7 +833,7 @@
 #### 接口描述
 > 
 
-## 4.24 根据group id获取群信息{#get__group_info}
+## 4.25 根据group id获取群信息{#get__group_info}
 
 > GET /group/info
 
@@ -846,13 +875,13 @@
 |⇥ owner_id | int64 | 群主id |
 |⇥ read_ack | boolean | 是否开启群消息已读功能设置：true - 开启群消息已读功能， false - 不开启群消息已读功能 |
 |⇥ status | int32 | 群状态, 0：正常, 1：已解散 |
-|⇥ type | int32 | 群类型： 0 - 表示私有群, 2 - 表示聊天室 |
+|⇥ type | int32 | 群类型：0 - 表示私有群, 1 - 表示公开群, 2 - 表示聊天室, 3 - 表示临时群 |
 |⇥ updated_at | int64 | 更新时间（毫秒） |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 4.25 更新群头像{#put__group_info_avatar}
+## 4.26 更新群头像{#put__group_info_avatar}
 
 > PUT /group/info/avatar
 
@@ -883,7 +912,7 @@
 #### 接口描述
 > 
 
-## 4.26 根据group id获取群信息{#post__group_info_batch}
+## 4.27 根据group id获取群信息{#post__group_info_batch}
 
 > POST /group/info/batch
 
@@ -917,12 +946,12 @@
 |⇥ name | string | 群名称 |
 |⇥ owner | int64 | 群主id |
 |⇥ status | int32 | 群状态, 0：正常, 1：已解散 |
-|⇥ type | int32 | 群类型： 0 - 表示私有群, 2 - 表示聊天室 |
+|⇥ type | int32 | 群类型：0 - 表示私有群, 1 - 表示公开群, 2 - 表示聊天室, 3 - 表示临时群 |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 4.27 更新群描述{#put__group_info_description}
+## 4.28 更新群描述{#put__group_info_description}
 
 > PUT /group/info/description
 
@@ -953,7 +982,7 @@
 #### 接口描述
 > 
 
-## 4.28 更新扩展信息{#put__group_info_ext}
+## 4.29 更新扩展信息{#put__group_info_ext}
 
 > PUT /group/info/ext
 
@@ -984,7 +1013,7 @@
 #### 接口描述
 > 
 
-## 4.29 更新群名称{#put__group_info_name}
+## 4.30 更新群名称{#put__group_info_name}
 
 > PUT /group/info/name
 
@@ -1015,7 +1044,7 @@
 #### 接口描述
 > 
 
-## 4.30 获取群邀请列表{#get__group_invitation_list}
+## 4.31 获取群邀请列表{#get__group_invitation_list}
 
 > GET /group/invitation_list
 
@@ -1055,7 +1084,7 @@
 #### 接口描述
 > 
 
-## 4.31 邀请入群{#post__group_invite}
+## 4.32 邀请入群{#post__group_invite}
 
 > POST /group/invite
 
@@ -1088,7 +1117,7 @@
 #### 接口描述
 > 
 
-## 4.32 用户处理入群邀请{#put__group_invite_handle}
+## 4.33 用户处理入群邀请{#put__group_invite_handle}
 
 > PUT /group/invite/handle
 
@@ -1120,7 +1149,7 @@
 #### 接口描述
 > 
 
-## 4.33 将成员踢出群{#delete__group_kick}
+## 4.34 将成员踢出群{#delete__group_kick}
 
 > DELETE /group/kick
 
@@ -1154,7 +1183,7 @@
 #### 接口描述
 > 
 
-## 4.34 成员退出群{#delete__group_leave}
+## 4.35 成员退出群{#delete__group_leave}
 
 > DELETE /group/leave
 
@@ -1183,7 +1212,7 @@
 #### 接口描述
 > 
 
-## 4.35 根据group id获取群成员列表{#get__group_member_list}
+## 4.36 根据group id获取群成员列表{#get__group_member_list}
 
 > GET /group/member_list
 
@@ -1220,7 +1249,7 @@
 #### 接口描述
 > 
 
-## 4.36 批量获取群成员的群名片{#post__group_members_display_name}
+## 4.37 批量获取群成员的群名片{#post__group_members_display_name}
 
 > POST /group/members/display_name
 
@@ -1253,7 +1282,80 @@
 #### 接口描述
 > 
 
-## 4.37 设置群消息屏蔽模式{#put__group_msg_mute_mode}
+## 4.38 批量获取指定群成员信息{#post__group_members_info}
+
+> POST /group/members/info
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| group_id | int64 | true |  | 群ID |
+| user_list | array[int64] | true |  | 用户ID列表，最多100个 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | array[object] | 结果数据 |
+|⇥ avatar | string | 用户头像 |
+|⇥ display_name | string | 成员群名片 |
+|⇥ join_time | int64 | 成员入群时间戳（毫秒） |
+|⇥ nick_name | string | 用户昵称 |
+|⇥ user_id | int64 | 用户ID |
+|⇥ username | string | 用户名 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 4.39 搜索群成员{#get__group_members_search}
+
+> GET /group/members/search
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求参数(Query Param)
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| cursor | string | false | 游标 |
+| group_id | int64 | true | 群组ID |
+| keyword | string | true | 搜索关键字 |
+| limit | int32 | false | 最多取多少条，默认20，有效范围1到100，超过100按100处理 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| cursor | string | 游标，返回结果中缺失 cursor，表示已经返回最后一页 |
+| data | array[object] | 结果数据 |
+|⇥ avatar | string | 用户头像 |
+|⇥ display_name | string | 成员群名片 |
+|⇥ join_time | int64 | 成员入群时间戳（毫秒） |
+|⇥ nick_name | string | 用户昵称 |
+|⇥ user_id | int64 | 用户ID |
+|⇥ username | string | 用户名 |
+| message | string | 错误信息，如果成功，该项为null |
+| version | int64 | 版本 |
+#### 接口描述
+> 
+
+## 4.40 设置群消息屏蔽模式{#put__group_msg_mute_mode}
 
 > PUT /group/msg/mute_mode
 
@@ -1284,7 +1386,7 @@
 #### 接口描述
 > 
 
-## 4.38 设置群消息推送模式{#put__group_msg_push_mode}
+## 4.41 设置群消息推送模式{#put__group_msg_push_mode}
 
 > PUT /group/msg/push_mode
 
@@ -1315,7 +1417,7 @@
 #### 接口描述
 > 
 
-## 4.39 获取公开群列表(已废弃){#get__group_public_list}
+## 4.42 获取公开群列表(已废弃){#get__group_public_list}
 
 > GET /group/public_list
 
@@ -1338,7 +1440,7 @@
 #### 接口描述
 > 
 
-## 4.40 二维码邀请入群{#post__group_qrcode_invite}
+## 4.43 二维码邀请入群{#post__group_qrcode_invite}
 
 > POST /group/qrcode/invite
 
@@ -1366,7 +1468,7 @@
 #### 接口描述
 > 
 
-## 4.41 获取群邀请二维码信息{#get__group_qrcode_sign}
+## 4.44 获取群邀请二维码信息{#get__group_qrcode_sign}
 
 > GET /group/qrcode/sign
 
@@ -1396,7 +1498,7 @@
 #### 接口描述
 > 
 
-## 4.42 获取群设置{#get__group_settings}
+## 4.45 获取群设置{#get__group_settings}
 
 > GET /group/settings
 
@@ -1438,13 +1540,13 @@
 |⇥ owner_id | int64 | 群主id |
 |⇥ read_ack | boolean | 是否开启群消息已读功能设置：true - 开启群消息已读功能， false - 不开启群消息已读功能 |
 |⇥ status | int32 | 群状态, 0：正常, 1：已解散 |
-|⇥ type | int32 | 群类型： 0 - 表示私有群, 2 - 表示聊天室 |
+|⇥ type | int32 | 群类型：0 - 表示私有群, 1 - 表示公开群, 2 - 表示聊天室, 3 - 表示临时群 |
 |⇥ updated_at | int64 | 更新时间（毫秒） |
 | message | string | 错误信息，如果成功，该项为null |
 #### 接口描述
 > 
 
-## 4.43 更新群设置--是否允许成员邀请{#put__group_settings_allow_member_invitation}
+## 4.46 更新群设置--是否允许成员邀请{#put__group_settings_allow_member_invitation}
 
 > PUT /group/settings/allow_member_invitation
 
@@ -1475,7 +1577,7 @@
 #### 接口描述
 > 
 
-## 4.44 更新群设置--群成员是否可修改群信息{#put__group_settings_allow_member_modify}
+## 4.47 更新群设置--群成员是否可修改群信息{#put__group_settings_allow_member_modify}
 
 > PUT /group/settings/allow_member_modify
 
@@ -1506,7 +1608,7 @@
 #### 接口描述
 > 
 
-## 4.45 全员禁言，只允许管理员发消息{#post__group_settings_ban_all}
+## 4.48 全员禁言，只允许管理员发消息{#post__group_settings_ban_all}
 
 > POST /group/settings/ban_all
 
@@ -1536,7 +1638,7 @@
 #### 接口描述
 > 
 
-## 4.46 更新群设置--是否开启群消息已读功能{#put__group_settings_enable_read_ack}
+## 4.49 更新群设置--是否开启群消息已读功能{#put__group_settings_enable_read_ack}
 
 > PUT /group/settings/enable_read_ack
 
@@ -1567,7 +1669,7 @@
 #### 接口描述
 > 
 
-## 4.47 更新群设置--是否隐藏群成员详细信息{#put__group_settings_hide_member_info}
+## 4.50 更新群设置--是否隐藏群成员详细信息{#put__group_settings_hide_member_info}
 
 > PUT /group/settings/hide_member_info
 
@@ -1598,7 +1700,7 @@
 #### 接口描述
 > 
 
-## 4.48 更新群设置--新成员是否可见群历史聊天记录{#put__group_settings_history_visible}
+## 4.51 更新群设置--新成员是否可见群历史聊天记录{#put__group_settings_history_visible}
 
 > PUT /group/settings/history_visible
 
@@ -1629,7 +1731,7 @@
 #### 接口描述
 > 
 
-## 4.49 更新群设置--群申请是否需要管理员审批{#put__group_settings_require_admin_approval}
+## 4.52 更新群设置--群申请是否需要管理员审批{#put__group_settings_require_admin_approval}
 
 > PUT /group/settings/require_admin_approval
 
@@ -1660,7 +1762,7 @@
 #### 接口描述
 > 
 
-## 4.50 取消全员禁言{#post__group_settings_unban_all}
+## 4.53 取消全员禁言{#post__group_settings_unban_all}
 
 > POST /group/settings/unban_all
 
@@ -1688,7 +1790,7 @@
 #### 接口描述
 > 
 
-## 4.51 转让群{#put__group_transfer}
+## 4.54 转让群{#put__group_transfer}
 
 > PUT /group/transfer
 
@@ -1722,7 +1824,7 @@
 #### 接口描述
 > 
 
-## 4.52 从禁言列表移除用户{#post__group_unban}
+## 4.55 从禁言列表移除用户{#post__group_unban}
 
 > POST /group/unban
 
@@ -1754,7 +1856,7 @@
 #### 接口描述
 > 
 
-## 4.53 从黑名单移除用户{#delete__group_unblock}
+## 4.56 从黑名单移除用户{#delete__group_unblock}
 
 > DELETE /group/unblock
 
@@ -1788,7 +1890,7 @@
 #### 接口描述
 > 
 
-## 4.54 获取用户的群组列表{#get__group_user_joined}
+## 4.57 获取用户的群组列表{#get__group_user_joined}
 
 > GET /group/user_joined
 

@@ -1078,6 +1078,7 @@
 |⇥ push_token | string | 推送token |
 |⇥ silence_end_time | int32 | 推送不提醒结束时间（小时 0-23） |
 |⇥ silence_start_time | int32 | 推送不提醒开始时间（小时 0-23） |
+|⇥ stranger_chat | int32 | 陌生人聊天处理方式： 0 - 未设置， 1 - 允许， 2 - 拒绝 |
 |⇥ user_id | int64 | 用户ID |
 |⇥ vibratory | boolean | 收到消息时否振动: true - 振动， false - 不振动 |
 | message | string | 错误信息，如果成功，该项为null |
@@ -1124,6 +1125,7 @@
 |⇥ push_token | string | 推送token |
 |⇥ silence_end_time | int32 | 推送不提醒结束时间（小时 0-23） |
 |⇥ silence_start_time | int32 | 推送不提醒开始时间（小时 0-23） |
+|⇥ stranger_chat | int32 | 陌生人聊天处理方式： 0 - 未设置， 1 - 允许， 2 - 拒绝 |
 |⇥ user_id | int64 | 用户ID |
 |⇥ vibratory | boolean | 收到消息时否振动: true - 振动， false - 不振动 |
 | message | string | 错误信息，如果成功，该项为null |
@@ -1164,6 +1166,7 @@
 |⇥ push_token | string | 推送token |
 |⇥ silence_end_time | int32 | 推送不提醒结束时间（小时 0-23） |
 |⇥ silence_start_time | int32 | 推送不提醒开始时间（小时 0-23） |
+|⇥ stranger_chat | int32 | 陌生人聊天处理方式： 0 - 未设置， 1 - 允许， 2 - 拒绝 |
 |⇥ user_id | int64 | 用户ID |
 |⇥ vibratory | boolean | 收到消息时否振动: true - 振动， false - 不振动 |
 | message | string | 错误信息，如果成功，该项为null |
@@ -1202,6 +1205,7 @@
 | push_token | string | false |  | 推送token |
 | silence_end_time | int32 | false |  | 推送不提醒结束时间（小时 0-23） |
 | silence_start_time | int32 | false |  | 推送不提醒开始时间（小时 0-23） |
+| stranger_chat | int32 | false |  | 陌生人聊天处理方式： 0 - 未设置， 1 - 允许， 2 - 拒绝 |
 | user_id | int64 | true |  | 用户ID |
 | vibratory | boolean | false |  | 收到消息时否振动: true - 振动， false - 不振动 |
 
@@ -1246,7 +1250,37 @@
 #### 接口描述
 > 
 
-## 1.41 绑定token{#put__user_token_bind}
+## 1.41 陌生人聊天处理方式{#put__user_stranger_chat}
+
+> PUT /user/stranger_chat
+
+> POST /user/stranger_chat
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求参数(Query Param)
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| value | int32 | true | 陌生人聊天处理方式： 0 - 未设置， 1 - 允许， 2 -拒绝 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 1.42 绑定token{#put__user_token_bind}
 
 > PUT /user/token/bind
 
@@ -1278,7 +1312,7 @@
 #### 接口描述
 > 
 
-## 1.42 解绑token{#delete__user_token_unbind}
+## 1.43 解绑token{#delete__user_token_unbind}
 
 > DELETE /user/token/unbind
 
@@ -1308,7 +1342,7 @@
 #### 接口描述
 > 
 
-## 1.43 修改用户名{#put__user_username}
+## 1.44 修改用户名{#put__user_username}
 
 > PUT /user/username
 
@@ -1338,7 +1372,7 @@
 #### 接口描述
 > 
 
-## 1.44 设置新消息是否振动{#put__user_vibratory}
+## 1.45 设置新消息是否振动{#put__user_vibratory}
 
 > PUT /user/vibratory
 

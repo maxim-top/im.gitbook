@@ -140,7 +140,44 @@
 #### 接口描述
 > 
 
-## 5.5 发送系统通知{#put__message_notify}
+## 5.5 取指定用户的所有会话列表{#get__message_conversation_list}
+
+> GET /message/conversation_list
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求参数(Query Param)
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| cursor | string | false | 继续拉取使用的游标 |
+| limit | int32 | false | 每页拉取多少条，默认20，最大20 |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | object | 结果数据 |
+|⇥ conversations | array[object] | 会话列表 |
+|⇥⇥ conversation_id | object | 会话信息 |
+|⇥⇥⇥ uid | int64 | 会话ID |
+|⇥⇥ create_timestamp | int64 | 创建时间戳 |
+|⇥⇥ latest_msg_id | int64 | 最新消息ID |
+|⇥⇥ update_timestamp | int64 | 最近活跃时间戳 |
+|⇥ has_more | boolean | 是否还有更多会话: true - 表示后面还有更多会话, false - 表示后面没有更多会话 |
+|⇥ next_cursor | string | 继续拉取使用的游标 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 5.6 发送系统通知{#put__message_notify}
 
 > PUT /message/notify
 
@@ -181,7 +218,7 @@
 #### 接口描述
 > 
 
-## 5.6 撤回消息{#put__message_recall}
+## 5.7 撤回消息{#put__message_recall}
 
 > PUT /message/recall
 
@@ -212,7 +249,7 @@
 #### 接口描述
 > 
 
-## 5.7 发送消息{#put__message_send}
+## 5.8 发送消息{#put__message_send}
 
 > PUT /message/send
 
@@ -253,7 +290,7 @@
 #### 接口描述
 > 
 
-## 5.8 取指定用户的最近会话列表{#get__message_unread}
+## 5.9 取指定用户的最近会话列表{#get__message_unread}
 
 > GET /message/unread
 

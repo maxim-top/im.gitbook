@@ -29,7 +29,35 @@
 #### 接口描述
 > 
 
-## 3.2 申请加好友{#post__roster_apply}
+## 3.2 管理员token直接加好友{#post__roster_admin_add_direct}
+
+> POST /roster/admin/add_direct
+
+#### 请求头
+|  参数名称 |  数据类型 | 必填 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |
+| access-token | string | false | 令牌 |
+| app_id | string | true | 应用ID |
+| group_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此群ID的管理员身份来调用此接口 |
+| user_id | int64 | false | 仅当access-token为管理员token时，可以设置此字段，表示以此用户ID的身份来调用此接口 |
+
+#### 请求体(Request Body)
+|  参数名称 |  数据类型 | 必填  |  默认值 |  描述 |
+|  ------ |  ------ |  ------ |  ------ |  ------ |
+| list | array[int64] | true |  | ids |
+
+#### 响应体
+● 200 响应数据格式：JSON
+
+|  参数名称 |  类型 |  描述 |
+|  ------ |  ------ |  ------ |
+| code | int32 | 返回码，200是成功 |
+| data | boolean | 结果数据 |
+| message | string | 错误信息，如果成功，该项为null |
+#### 接口描述
+> 
+
+## 3.3 申请加好友{#post__roster_apply}
 
 > POST /roster/apply
 
@@ -60,7 +88,7 @@
 #### 接口描述
 > 
 
-## 3.3 批量添加好友{#post__roster_apply_batch}
+## 3.4 批量添加好友{#post__roster_apply_batch}
 
 > POST /roster/apply/batch
 
@@ -95,7 +123,7 @@
 #### 接口描述
 > 
 
-## 3.4 好友申请列表{#get__roster_apply_list}
+## 3.5 好友申请列表{#get__roster_apply_list}
 
 > GET /roster/apply/list
 
@@ -130,7 +158,7 @@
 #### 接口描述
 > 
 
-## 3.5 添加黑名单{#put__roster_block}
+## 3.6 添加黑名单{#put__roster_block}
 
 > PUT /roster/block
 
@@ -159,7 +187,7 @@
 #### 接口描述
 > 
 
-## 3.6 黑名单列表{#get__roster_blocked_list}
+## 3.7 黑名单列表{#get__roster_blocked_list}
 
 > GET /roster/blocked_list
 
@@ -182,7 +210,7 @@
 #### 接口描述
 > 
 
-## 3.7 拒绝好友申请{#put__roster_decline}
+## 3.8 拒绝好友申请{#put__roster_decline}
 
 > PUT /roster/decline
 
@@ -213,7 +241,7 @@
 #### 接口描述
 > 
 
-## 3.8 删除好友{#delete__roster_delete}
+## 3.9 删除好友{#delete__roster_delete}
 
 > DELETE /roster/delete
 
@@ -242,7 +270,7 @@
 #### 接口描述
 > 
 
-## 3.9 更新好友扩展信息{#put__roster_ext}
+## 3.10 更新好友扩展信息{#put__roster_ext}
 
 > PUT /roster/ext
 
@@ -275,7 +303,7 @@
 #### 接口描述
 > 
 
-## 3.10 用ID搜索用户{#get__roster_id}
+## 3.11 用ID搜索用户{#get__roster_id}
 
 > GET /roster/id
 
@@ -314,7 +342,7 @@
 #### 接口描述
 > 
 
-## 3.11 好友列表{#get__roster_list}
+## 3.12 好友列表{#get__roster_list}
 
 > GET /roster/list
 
@@ -345,7 +373,7 @@
 #### 接口描述
 > 
 
-## 3.12 好友详情列表{#post__roster_list}
+## 3.13 好友详情列表{#post__roster_list}
 
 > POST /roster/list
 
@@ -385,7 +413,7 @@
 #### 接口描述
 > 
 
-## 3.13 是否允许发消息{#get__roster_may_message}
+## 3.14 是否允许发消息{#get__roster_may_message}
 
 > GET /roster/may_message
 
@@ -413,7 +441,7 @@
 #### 接口描述
 > 
 
-## 3.14 用手机号搜索用户{#get__roster_mobile}
+## 3.15 用手机号搜索用户{#get__roster_mobile}
 
 > GET /roster/mobile
 
@@ -453,7 +481,7 @@
 #### 接口描述
 > 
 
-## 3.15 用用户名搜索用户{#get__roster_name}
+## 3.16 用用户名搜索用户{#get__roster_name}
 
 > GET /roster/name
 
@@ -493,7 +521,7 @@
 #### 接口描述
 > 
 
-## 3.16 从黑名单移除{#delete__roster_unblock}
+## 3.17 从黑名单移除{#delete__roster_unblock}
 
 > DELETE /roster/unblock
 

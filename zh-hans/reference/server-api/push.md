@@ -16,7 +16,7 @@
 |  参数名称 |  数据类型 | 必填 |  描述 |
 |  ------ |  ------ |  ------ |  ------ |
 | environment | int32 | false | 运行环境， 0 - 开发环境， 1 - 生产环境 , 默认值：1 |
-| provider | int32 | true | 证书提供方, 1-APNS，2-华为，3-小米，4-魅族，5-VIVO， 6-OPPO, 7-FCM |
+| provider | int32 | true | 证书提供方, 1-APNS，2-华为，3-小米，4-魅族，5-VIVO，6-OPPO，7-FCM，8-荣耀 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -110,6 +110,12 @@
 |⇥⇥ channel_id | string | false |  | 通知栏通道，可为空 |
 |⇥⇥ click_action | string | false |  | 点击通知的后续动作: intent 打开应用特定页面; open_app 打开应用首页。可为空 |
 |⇥⇥ intent | string | false |  | 点击通知打开应用特定页面: 可为空，click_action为intent时不可为空。示例：intent:#Intent;component=包名/activity全路径;S.parm1=value1;S.parm2=value2;end |
+|⇥ honor | object | false |  | honor厂商额外参数 |
+|⇥⇥ sound | string | false |  | 通知提示声音，可为空 |
+|⇥⇥ channel_id | string | false |  | 通知栏通道，可为空 |
+|⇥⇥ click_action | string | false |  | 点击通知的后续动作: intent 打开应用特定页面; open_app 打开应用首页。可为空 |
+|⇥⇥ intent | string | false |  | 点击通知打开应用特定页面: 可为空，click_action为intent时不可为空。示例：intent:#Intent;component=包名/activity全路径;S.parm1=value1;S.parm2=value2;end |
+|⇥⇥ badge_class | string | false |  | 桌面图标对应的应用入口Activity类， 比如 com.test.badge.MainActivity， 可为空 |
 
 #### 响应体
 ● 200 响应数据格式：JSON
@@ -156,6 +162,9 @@
 |⇥ flyme_received | int64 | 魅族通道送达数 |
 |⇥ flyme_sent | int64 | 魅族通道发送数 |
 |⇥ flyme_target | int64 | 魅族通道有效目标数 |
+|⇥ honor_received | int64 | 荣耀通道送达数 |
+|⇥ honor_sent | int64 | 荣耀通道发送数 |
+|⇥ honor_target | int64 | 荣耀通道有效目标数 |
 |⇥ huawei_received | int64 | 华为通道送达数 |
 |⇥ huawei_sent | int64 | 华为通道发送数 |
 |⇥ huawei_target | int64 | 华为通道有效目标数 |
