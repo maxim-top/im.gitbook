@@ -27,10 +27,21 @@
 
 `- (void)dealloc`
 
-<a name="//api/name/getMCreateTime" title="getMCreateTime"></a>
+<a name="//api/name/getMAvatar" title="getMAvatar"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="dealloc" %}{% endlanying_code_snippet %}
+```
+### getMAvatar
+
+Get the group member avatar
+
+`- (NSString *)getMAvatar`
+
+<a name="//api/name/getMCreateTime" title="getMCreateTime"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMAvatar" %}{% endlanying_code_snippet %}
 ```
 ### getMCreateTime
 
@@ -45,19 +56,41 @@
 
 `- (NSString *)getMGroupNickname`
 
-<a name="//api/name/getMUid" title="getMUid"></a>
+<a name="//api/name/getMNickname" title="getMNickname"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMGroupNickname" %}{% endlanying_code_snippet %}
+```
+### getMNickname
+
+Get the group member nickname
+
+`- (NSString *)getMNickname`
+
+<a name="//api/name/getMUid" title="getMUid"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMNickname" %}{% endlanying_code_snippet %}
 ```
 ### getMUid
 
 `- (long long)getMUid`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
+<a name="//api/name/getMUsername" title="getMUsername"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMUid" %}{% endlanying_code_snippet %}
+```
+### getMUsername
+
+Get the group member username
+
+`- (NSString *)getMUsername`
+
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="getMUsername" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -72,10 +105,21 @@
 
 `- (id)initWithUid:(long long)*uid* nickname:(NSString *)*nickname* createTime:(long long)*createTime*`
 
-<a name="//api/name/setMCreateTime:" title="setMCreateTime:"></a>
+<a name="//api/name/setMAvatar:" title="setMAvatar:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="initWithUid:nickname:createTime:" %}{% endlanying_code_snippet %}
+```
+### setMAvatar:
+
+Set the group member avatar
+
+`- (void)setMAvatar:(NSString *)*value*`
+
+<a name="//api/name/setMCreateTime:" title="setMCreateTime:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMAvatar:" %}{% endlanying_code_snippet %}
 ```
 ### setMCreateTime:
 
@@ -90,16 +134,38 @@
 
 `- (void)setMGroupNickname:(NSString *)*value*`
 
-<a name="//api/name/setMUid:" title="setMUid:"></a>
+<a name="//api/name/setMNickname:" title="setMNickname:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMGroupNickname:" %}{% endlanying_code_snippet %}
+```
+### setMNickname:
+
+Set the group member nickname
+
+`- (void)setMNickname:(NSString *)*value*`
+
+<a name="//api/name/setMUid:" title="setMUid:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMNickname:" %}{% endlanying_code_snippet %}
 ```
 ### setMUid:
 
 `- (void)setMUid:(long long)*value*`
 
+<a name="//api/name/setMUsername:" title="setMUsername:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMUid:" %}{% endlanying_code_snippet %}
+```
+### setMUsername:
+
+Set the group member username
+
+`- (void)setMUsername:(NSString *)*value*`
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXGroupMember",function="setMUsername:" %}{% endlanying_code_snippet %}
 ```
