@@ -39,7 +39,7 @@ jobs:
         cd
         wget https://github.com/joernio/joern/releases/download/v1.1.1108/joern-install.sh
         chmod +x ./joern-install.sh
-        sudo ./joern-install.sh --version=v1.1.1108
+        sudo ./joern-install.sh --version=v1.1.1108 --without-plugins
         which joern
         joern --help
 
