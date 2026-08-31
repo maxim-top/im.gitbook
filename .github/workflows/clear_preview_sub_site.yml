@@ -1,0 +1,96 @@
+name: Clear GrowAI preview site
+
+on:
+  workflow_dispatch:
+    inputs:
+      site_name:
+        description: 'GrowAI site name'
+        required: true
+      callback_url:
+        description: 'Preview clear callback URL'
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: growai-preview-${{ inputs.site_name }}
+  cancel-in-progress: false
+
+jobs:
+  clear_preview:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Validate inputs
+      env:
+        SITE_NAME: ${{ inputs.site_name }}
+      run: |
+        set -euo pipefail
+        [[ "$SITE_NAME" =~ ^[A-Za-z0-9-]+$ ]]
+        [[ "/preview-$SITE_NAME" =~ ^/preview-[A-Za-z0-9-]+$ ]]
+
+    - name: Checkout central workflow helpers
+      uses: actions/checkout@v4
+
+    - name: Create empty preview page
+      run: |
+        mkdir -p _book
+        cat > _book/index.html <<'EOF'
+        <!doctype html>
+        <html lang="zh-CN">
+        <head>
+          <meta charset="utf-8">
+          <meta name="robots" content="noindex,nofollow,noarchive">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>暂无预览内容</title>
+        </head>
+        <body><main><h1>暂无预览内容</h1><p>当前预览已被丢弃。</p></main></body>
+        </html>
+        EOF
+
+    - name: Upload empty preview staging directory
+      uses: maxim-top/upload-to-oss@1.0.1
+      with:
+        access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        bucket: grow-ai-sites
+        endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+        local-path: _book
+        remote-path: /_growai_preview_staging/${{ inputs.site_name }}/${{ github.run_id }}
+        delay-html-file-upload: true
+        no-delete-remote-files: false
+        retry: 10
+        concurrency: 10
+        increment: false
+
+    - name: Promote empty preview with rollback
+      env:
+        ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        ALIYUN_OSS_ENDPOINT: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+        ALIYUN_OSS_BUCKET: grow-ai-sites
+      run: |
+        python3 -m pip install --disable-pip-version-check 'oss2==2.19.1'
+        python3 scripts/promote_preview_oss.py --site-name '${{ inputs.site_name }}' --staging-id '${{ github.run_id }}'
+
+    - name: Refresh preview CDN
+      uses: maxim-top/ali-cdn-refresh@1.0.0
+      with:
+        accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        type: Directory
+        path: https://preview-${{ inputs.site_name }}.site.chatai101.com/
+
+    - name: Send success callback
+      if: success()
+      env:
+        CALLBACK_URL: ${{ inputs.callback_url }}
+      run: |
+        curl --fail-with-body -X POST "$CALLBACK_URL" -H "Content-Type: application/json" -d '{"status":"ok"}'
+
+    - name: Send failure callback
+      if: failure() || cancelled()
+      env:
+        CALLBACK_URL: ${{ inputs.callback_url }}
+      run: |
+        curl --fail-with-body -X POST "$CALLBACK_URL" -H "Content-Type: application/json" -d '{"status":"error"}'

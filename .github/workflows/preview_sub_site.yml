@@ -1,0 +1,147 @@
+name: Build GrowAI preview site
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: 'Hosted site repository (owner/repo)'
+        required: true
+      commit_sha:
+        description: 'Exact preview commit SHA'
+        required: true
+      site_name:
+        description: 'GrowAI site name'
+        required: true
+      check_url:
+        description: 'Preview deploy check URL'
+        required: true
+      callback_url:
+        description: 'Preview deploy callback URL'
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: growai-preview-${{ inputs.site_name }}
+  cancel-in-progress: false
+
+jobs:
+  build_and_deploy_preview:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Validate inputs
+      env:
+        REPOSITORY: ${{ inputs.repository }}
+        COMMIT_SHA: ${{ inputs.commit_sha }}
+        SITE_NAME: ${{ inputs.site_name }}
+        HOSTED_ORG: ${{ vars.GITHUB_HOSTING_ORG }}
+      run: |
+        set -euo pipefail
+        [[ -n "$HOSTED_ORG" ]]
+        [[ "$REPOSITORY" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]]
+        [[ "${REPOSITORY%%/*}" == "$HOSTED_ORG" ]]
+        [[ "$COMMIT_SHA" =~ ^[0-9a-fA-F]{40}$ ]]
+        [[ "$SITE_NAME" =~ ^[A-Za-z0-9-]+$ ]]
+        [[ "/preview-$SITE_NAME" != "/" ]]
+
+    - name: Checkout central workflow helpers
+      uses: actions/checkout@v4
+      with:
+        path: _central
+
+    - name: Checkout preview commit
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ inputs.repository }}
+        ref: ${{ inputs.commit_sha }}
+        fetch-depth: 0
+        submodules: 'true'
+        path: _site
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '10'
+
+    - name: Install GitBook
+      run: npm install gitbook-cli -g
+
+    - name: Install GitBook dependencies
+      run: gitbook install
+      working-directory: _site
+
+    - name: Build GitBook
+      run: |
+        mkdir -p ../cache
+        gitbook build
+      working-directory: _site
+
+    - name: Format output
+      run: make refine
+      working-directory: _site
+
+    - name: Prevent preview indexing
+      run: |
+        find _book -type f -name '*.html' -exec sed -i 's#</head>#<meta name="robots" content="noindex,nofollow,noarchive"></head>#' {} +
+        printf 'User-agent: *\nDisallow: /\n' > _book/robots.txt
+      working-directory: _site
+
+    - name: Check preview deploy
+      env:
+        CHECK_URL: ${{ inputs.check_url }}
+      run: |
+        set -euo pipefail
+        release_size=$(du -sb _site/_book/ | awk '{print $1}')
+        response=$(curl --fail-with-body -X POST "$CHECK_URL" \
+          -H "Content-Type: application/json" \
+          -d "{\"release_size\": $release_size}")
+        echo "Response: $response"
+        echo "$response" | grep -q '"success"[[:space:]]*:[[:space:]]*true'
+
+    - name: Upload preview staging directory
+      uses: maxim-top/upload-to-oss@1.0.1
+      with:
+        access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        bucket: grow-ai-sites
+        endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+        local-path: _site/_book
+        remote-path: /_growai_preview_staging/${{ inputs.site_name }}/${{ inputs.commit_sha }}
+        delay-html-file-upload: true
+        no-delete-remote-files: false
+        retry: 10
+        concurrency: 50
+        increment: false
+
+    - name: Promote preview with rollback
+      env:
+        ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        ALIYUN_OSS_ENDPOINT: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+        ALIYUN_OSS_BUCKET: grow-ai-sites
+      run: |
+        python3 -m pip install --disable-pip-version-check 'oss2==2.19.1'
+        python3 _central/scripts/promote_preview_oss.py --site-name '${{ inputs.site_name }}' --staging-id '${{ inputs.commit_sha }}'
+
+    - name: Refresh preview CDN
+      uses: maxim-top/ali-cdn-refresh@1.0.0
+      with:
+        accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        type: Directory
+        path: https://preview-${{ inputs.site_name }}.site.chatai101.com/
+
+    - name: Send success callback
+      if: success()
+      env:
+        CALLBACK_URL: ${{ inputs.callback_url }}
+      run: |
+        curl --fail-with-body -X POST "$CALLBACK_URL" -H "Content-Type: application/json" -d '{"status":"ok"}'
+
+    - name: Send failure callback
+      if: failure() || cancelled()
+      env:
+        CALLBACK_URL: ${{ inputs.callback_url }}
+      run: |
+        curl --fail-with-body -X POST "$CALLBACK_URL" -H "Content-Type: application/json" -d '{"status":"error"}'
