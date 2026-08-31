@@ -24,7 +24,7 @@ permissions:
 
 concurrency:
   group: growai-preview-${{ inputs.site_name }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build_and_deploy_preview:
