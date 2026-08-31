@@ -35,7 +35,7 @@ jobs:
         REPOSITORY: ${{ inputs.repository }}
         COMMIT_SHA: ${{ inputs.commit_sha }}
         SITE_NAME: ${{ inputs.site_name }}
-        HOSTED_ORG: ${{ vars.GITHUB_HOSTING_ORG }}
+        HOSTED_ORG: ${{ github.repository_owner }}
       run: |
         set -euo pipefail
         [[ -n "$HOSTED_ORG" ]]
