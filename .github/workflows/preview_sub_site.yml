@@ -87,6 +87,11 @@ jobs:
         printf 'User-agent: *\nDisallow: /\n' > _book/robots.txt
       working-directory: _site
 
+    - name: Restore current Node.js for deployment actions
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
     - name: Check preview deploy
       env:
         CHECK_URL: ${{ inputs.check_url }}
@@ -112,7 +117,7 @@ jobs:
         no-delete-remote-files: false
         retry: 10
         concurrency: 50
-        increment: false
+        incremental: false
 
     - name: Promote preview with rollback
       env:

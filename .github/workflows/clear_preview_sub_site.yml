@@ -61,7 +61,7 @@ jobs:
         no-delete-remote-files: false
         retry: 10
         concurrency: 10
-        increment: false
+        incremental: false
 
     - name: Promote empty preview with rollback
       env:
