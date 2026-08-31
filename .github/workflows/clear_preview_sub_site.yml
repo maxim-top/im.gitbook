@@ -29,9 +29,6 @@ jobs:
         [[ "$SITE_NAME" =~ ^[A-Za-z0-9-]+$ ]]
         [[ "/preview-$SITE_NAME" =~ ^/preview-[A-Za-z0-9-]+$ ]]
 
-    - name: Checkout central workflow helpers
-      uses: actions/checkout@v4
-
     - name: Create empty preview page
       run: |
         mkdir -p _book
@@ -48,7 +45,7 @@ jobs:
         </html>
         EOF
 
-    - name: Upload empty preview staging directory
+    - name: Upload empty preview site
       uses: maxim-top/upload-to-oss@1.0.1
       with:
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
@@ -56,22 +53,12 @@ jobs:
         bucket: grow-ai-sites
         endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
         local-path: _book
-        remote-path: /_growai_preview_staging/${{ inputs.site_name }}/${{ github.run_id }}
+        remote-path: /preview-${{ inputs.site_name }}
         delay-html-file-upload: true
         no-delete-remote-files: false
         retry: 10
         concurrency: 10
         incremental: false
-
-    - name: Promote empty preview with rollback
-      env:
-        ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-        ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
-        ALIYUN_OSS_ENDPOINT: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
-        ALIYUN_OSS_BUCKET: grow-ai-sites
-      run: |
-        python3 -m pip install --disable-pip-version-check 'oss2==2.19.1'
-        python3 scripts/promote_preview_oss.py --site-name '${{ inputs.site_name }}' --staging-id '${{ github.run_id }}'
 
     - name: Refresh preview CDN
       uses: maxim-top/ali-cdn-refresh@1.0.0

@@ -45,11 +45,6 @@ jobs:
         [[ "$SITE_NAME" =~ ^[A-Za-z0-9-]+$ ]]
         [[ "/preview-$SITE_NAME" != "/" ]]
 
-    - name: Checkout central workflow helpers
-      uses: actions/checkout@v4
-      with:
-        path: _central
-
     - name: Checkout preview commit
       uses: actions/checkout@v4
       with:
@@ -104,7 +99,7 @@ jobs:
         echo "Response: $response"
         echo "$response" | grep -q '"success"[[:space:]]*:[[:space:]]*true'
 
-    - name: Upload preview staging directory
+    - name: Upload preview site
       uses: maxim-top/upload-to-oss@1.0.1
       with:
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
@@ -112,22 +107,12 @@ jobs:
         bucket: grow-ai-sites
         endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
         local-path: _site/_book
-        remote-path: /_growai_preview_staging/${{ inputs.site_name }}/${{ inputs.commit_sha }}
+        remote-path: /preview-${{ inputs.site_name }}
         delay-html-file-upload: true
         no-delete-remote-files: false
         retry: 10
         concurrency: 50
         incremental: false
-
-    - name: Promote preview with rollback
-      env:
-        ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-        ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
-        ALIYUN_OSS_ENDPOINT: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
-        ALIYUN_OSS_BUCKET: grow-ai-sites
-      run: |
-        python3 -m pip install --disable-pip-version-check 'oss2==2.19.1'
-        python3 _central/scripts/promote_preview_oss.py --site-name '${{ inputs.site_name }}' --staging-id '${{ inputs.commit_sha }}'
 
     - name: Refresh preview CDN
       uses: maxim-top/ali-cdn-refresh@1.0.0
