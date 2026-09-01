@@ -69,6 +69,12 @@ jobs:
       with:
         node-version: '10'
 
+    - name: Restore GitBook CLI
+      uses: actions/cache@v4
+      with:
+        path: .gitbook-cli
+        key: growai-gitbook-cli-${{ runner.os }}-node10-2.3.2
+
     - name: Restore GitBook dependencies
       id: gitbook-dependencies
       uses: actions/cache@v4
@@ -78,8 +84,12 @@ jobs:
           _site/node_modules
         key: growai-gitbook-${{ runner.os }}-${{ hashFiles('_site/book.json') }}
 
-    - name: Install GitBook
-      run: npm install gitbook-cli -g
+    - name: Prepare GitBook CLI
+      run: |
+        echo "${{ github.workspace }}/.gitbook-cli/node_modules/.bin" >> "$GITHUB_PATH"
+        if [[ ! -x .gitbook-cli/node_modules/.bin/gitbook ]]; then
+          npm install --prefix .gitbook-cli gitbook-cli@2.3.2 --no-audit --no-fund
+        fi
 
     - name: Install GitBook dependencies
       if: steps.gitbook-dependencies.outputs.cache-hit != 'true'
