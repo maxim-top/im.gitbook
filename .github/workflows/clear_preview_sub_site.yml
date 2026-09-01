@@ -29,6 +29,15 @@ jobs:
         [[ "$SITE_NAME" =~ ^[A-Za-z0-9-]+$ ]]
         [[ "/preview-$SITE_NAME" =~ ^/preview-[A-Za-z0-9-]+$ ]]
 
+    - name: Checkout deployment tools
+      uses: actions/checkout@v4
+      with:
+        path: _central
+        fetch-depth: 1
+        sparse-checkout: |
+          scripts/refresh_cdn.py
+        sparse-checkout-cone-mode: false
+
     - name: Create empty preview page
       run: |
         mkdir -p _book
@@ -61,12 +70,10 @@ jobs:
         incremental: false
 
     - name: Refresh preview CDN
-      uses: maxim-top/ali-cdn-refresh@1.0.0
-      with:
-        accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-        accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
-        type: Directory
-        path: https://preview-${{ inputs.site_name }}.site.chatai101.com/
+      env:
+        ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+      run: python3 _central/scripts/refresh_cdn.py --type Directory --path "https://preview-${{ inputs.site_name }}.site.chatai101.com/"
 
     - name: Send success callback
       if: success()
