@@ -52,6 +52,7 @@ jobs:
         fetch-depth: 1
         sparse-checkout: |
           scripts/refresh_cdn.py
+          scripts/subdirectory_summary.py
         sparse-checkout-cone-mode: false
 
     - name: Checkout preview commit
@@ -92,7 +93,12 @@ jobs:
       working-directory: _site
 
     - name: Format output
-      run: make refine
+      run: |
+        legacy_command='docker run -t -w /gitbook -v `pwd`:/gitbook erlang:21  escript scripts/subdirectory_summary.escript'
+        if grep -Fq "$legacy_command" Makefile; then
+          perl -0pi -e 's{\Qdocker run -t -w /gitbook -v `pwd`:/gitbook erlang:21  escript scripts/subdirectory_summary.escript\E}{python3 ../_central/scripts/subdirectory_summary.py --site-dir .}' Makefile
+        fi
+        make refine
       working-directory: _site
 
     - name: Prevent preview indexing
