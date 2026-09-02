@@ -32,6 +32,9 @@ Chat manager
 | void | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-insertmessages)**(final BMXMessageList list, final BMXCallBack callBack)<br>Insert a message  |
 | void | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getmessage)**(final long msgId, final BMXDataCallBack< [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) > callBack)<br>Read a message  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-deleteconversation)**(final long conversationId, final Boolean sync)<br> Delete a conversation  |
+| void | **[pinConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-pinconversation)**(final long conversationId, final BMXCallBack callBack)<br>Pin a conversation  |
+| void | **[unpinConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-unpinconversation)**(final long conversationId, final BMXCallBack callBack)<br>Unpin a conversation  |
+| void | **[getPinnedConversationList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getpinnedconversationlist)**(final BMXDataCallBack< ListOfLongLong > callBack)<br>Get the list of pinned conversation IDs  |
 | void | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-openconversation)**(final long conversationId, final BMXConversation.Type type, final boolean createIfNotExist, final BMXDataCallBack< [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) > callBack)<br>Launch a conversation  |
 | void | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversations)**(final BMXDataCallBack< BMXConversationList > callBack)<br>Get all conversations  |
 | void | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversationsunreadcount)**(final BMXDataCallBack< Integer > callBack)<br> Get number of unread messages for all conversations (unreads for individuals and groups marked as blocked is not counted)  |
@@ -372,6 +375,67 @@ inline void deleteConversation(
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="deleteConversation" %}{% endlanying_code_snippet %}
+```
+### function pinConversation
+
+```java
+inline void pinConversation(
+    final long conversationId,
+    final BMXCallBack callBack
+)
+```
+
+Pin a conversation
+
+**Parameters**:
+
+  * **conversationId** ID of the conversation to pin
+  * **callBack** [BMXErrorCode]
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="pinConversation" %}{% endlanying_code_snippet %}
+```
+### function unpinConversation
+
+```java
+inline void unpinConversation(
+    final long conversationId,
+    final BMXCallBack callBack
+)
+```
+
+Unpin a conversation
+
+**Parameters**:
+
+  * **conversationId** ID of the conversation to unpin
+  * **callBack** [BMXErrorCode]
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="unpinConversation" %}{% endlanying_code_snippet %}
+```
+### function getPinnedConversationList
+
+```java
+inline void getPinnedConversationList(
+    final BMXDataCallBack< ListOfLongLong > callBack
+)
+```
+
+Get the list of pinned conversation IDs
+
+**Parameters**:
+
+  * **callBack** [BMXErrorCode] and the list of pinned conversation IDs
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="getPinnedConversationList" %}{% endlanying_code_snippet %}
 ```
 ### function openConversation
 

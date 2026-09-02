@@ -38,6 +38,9 @@ Chat Service
 | [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getmessage)**(long msgId)<br>Read a message  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId, boolean synchronize)<br> Delete a conversation  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-deleteconversation)**(long conversationId) |
+| [BMXErrorCode] | **[pinConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-pinconversation)**(long conversationId)<br>Pin a conversation  |
+| [BMXErrorCode] | **[unpinConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-unpinconversation)**(long conversationId)<br>Unpin a conversation  |
+| [BMXErrorCode] | **[getPinnedConversationList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-getpinnedconversationlist)**(ListOfLongLong conversationIds)<br>Get the list of pinned conversation IDs  |
 | [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type, boolean createIfNotExist)<br>Launch a conversation  |
 | [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-openconversation)**(long conversationId, BMXConversation.Type type) |
 | String | **[attachmentDir](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_service.md#function-attachmentdir)**()<br>Get attachment saving path  |
@@ -516,6 +519,69 @@ inline void deleteConversation(
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="deleteConversation" %}{% endlanying_code_snippet %}
+```
+### function pinConversation
+
+```java
+inline BMXErrorCode pinConversation(
+    long conversationId
+)
+```
+
+Pin a conversation
+
+**Parameters**:
+
+  * **conversationId** ID of the conversation to pin
+
+
+**Return**: [BMXErrorCode]
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="pinConversation" %}{% endlanying_code_snippet %}
+```
+### function unpinConversation
+
+```java
+inline BMXErrorCode unpinConversation(
+    long conversationId
+)
+```
+
+Unpin a conversation
+
+**Parameters**:
+
+  * **conversationId** ID of the conversation to unpin
+
+
+**Return**: [BMXErrorCode]
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="unpinConversation" %}{% endlanying_code_snippet %}
+```
+### function getPinnedConversationList
+
+```java
+inline BMXErrorCode getPinnedConversationList(
+    ListOfLongLong conversationIds
+)
+```
+
+Get the list of pinned conversation IDs
+
+**Parameters**:
+
+  * **conversationIds** An empty list to be populated with the pinned conversation IDs
+
+
+**Return**: [BMXErrorCode]
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatService",function="getPinnedConversationList" %}{% endlanying_code_snippet %}
 ```
 ### function openConversation
 
