@@ -824,10 +824,51 @@ int
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
+<a name="//api/name/getPinnedConversationList:" title="getPinnedConversationList:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="getMessage:" %}{% endlanying_code_snippet %}
+```
+### getPinnedConversationList:
+
+获取置顶会话 ID 列表
+
+`- (BMXErrorCode)getPinnedConversationList:(ListOfLongLong *)*conversationIds*`
+
+#### Parameters
+
+*conversationIds*
+   置顶会话 ID 列表，初始传入空列表
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/getPinnedConversationListWithCompletion:" title="getPinnedConversationListWithCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="getPinnedConversationList:" %}{% endlanying_code_snippet %}
+```
+### getPinnedConversationListWithCompletion:
+
+异步获取置顶会话 ID 列表
+
+`- (void)getPinnedConversationListWithCompletion:(void ( ^ ) ( ListOfLongLong *res , BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*resBlock*
+   完成回调，包含置顶会话 ID 列表和错误信息
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="getPinnedConversationListWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -899,7 +940,7 @@ int
 
 #### Parameters
 
-*conversationId*  
+*conversationId*
    需要打开的会话的会话id  
 
 *type*  
@@ -914,10 +955,54 @@ int
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/readAllMessageWithMsg:" title="readAllMessageWithMsg:"></a>
+<a name="//api/name/pinConversationWithConversationId:" title="pinConversationWithConversationId:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="openConversationWithConversationId:type:createIfNotExist:" %}{% endlanying_code_snippet %}
+```
+### pinConversationWithConversationId:
+
+置顶会话
+
+`- (BMXErrorCode)pinConversationWithConversationId:(long long)*conversationId*`
+
+#### Parameters
+
+*conversationId*
+   需要置顶的会话 ID
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/pinConversationWithConversationId:completion:" title="pinConversationWithConversationId:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="pinConversationWithConversationId:" %}{% endlanying_code_snippet %}
+```
+### pinConversationWithConversationId:completion:
+
+异步置顶会话
+
+`- (void)pinConversationWithConversationId:(long long)*conversationId* completion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*conversationId*
+   需要置顶的会话 ID
+
+*resBlock*
+   完成回调，包含错误信息
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/readAllMessageWithMsg:" title="readAllMessageWithMsg:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="pinConversationWithConversationId:completion:" %}{% endlanying_code_snippet %}
 ```
 ### readAllMessageWithMsg:
 
@@ -1360,4 +1445,49 @@ int
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="transferingNum" %}{% endlanying_code_snippet %}
+```
+
+<a name="//api/name/unpinConversationWithConversationId:" title="unpinConversationWithConversationId:"></a>
+### unpinConversationWithConversationId:
+
+取消置顶会话
+
+`- (BMXErrorCode)unpinConversationWithConversationId:(long long)*conversationId*`
+
+#### Parameters
+
+*conversationId*
+   需要取消置顶的会话 ID
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/unpinConversationWithConversationId:completion:" title="unpinConversationWithConversationId:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="unpinConversationWithConversationId:" %}{% endlanying_code_snippet %}
+```
+### unpinConversationWithConversationId:completion:
+
+异步取消置顶会话
+
+`- (void)unpinConversationWithConversationId:(long long)*conversationId* completion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*conversationId*
+   需要取消置顶的会话 ID
+
+*resBlock*
+   完成回调，包含错误信息
+
+#### Declared In
+* `floo_proxy.h`
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="unpinConversationWithConversationId:completion:" %}{% endlanying_code_snippet %}
 ```
