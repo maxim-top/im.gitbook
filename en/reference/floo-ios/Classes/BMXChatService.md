@@ -824,10 +824,51 @@ Get a message by ID
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
+<a name="//api/name/getPinnedConversationList:" title="getPinnedConversationList:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="getMessage:" %}{% endlanying_code_snippet %}
+```
+### getPinnedConversationList:
+
+Get the list of pinned conversation IDs
+
+`- (BMXErrorCode)getPinnedConversationList:(ListOfLongLong *)*conversationIds*`
+
+#### Parameters
+
+*conversationIds*
+   An empty list to be populated with the pinned conversation IDs
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/getPinnedConversationListWithCompletion:" title="getPinnedConversationListWithCompletion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="getPinnedConversationList:" %}{% endlanying_code_snippet %}
+```
+### getPinnedConversationListWithCompletion:
+
+Get the list of pinned conversation IDs asynchronously
+
+`- (void)getPinnedConversationListWithCompletion:(void ( ^ ) ( ListOfLongLong *res , BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*resBlock*
+   Completion callback containing the pinned conversation IDs and error information
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/initWithCptr:swigOwnCObject:" title="initWithCptr:swigOwnCObject:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="getPinnedConversationListWithCompletion:" %}{% endlanying_code_snippet %}
 ```
 ### initWithCptr:swigOwnCObject:
 
@@ -899,7 +940,7 @@ Open a conversation
 
 #### Parameters
 
-*conversationId*  
+*conversationId*
    The conversation ID  
 
 *type*  
@@ -914,10 +955,54 @@ Open a conversation
 #### Declared In
 * `floo_proxy.h`
 
-<a name="//api/name/readAllMessageWithMsg:" title="readAllMessageWithMsg:"></a>
+<a name="//api/name/pinConversationWithConversationId:" title="pinConversationWithConversationId:"></a>
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="openConversationWithConversationId:type:createIfNotExist:" %}{% endlanying_code_snippet %}
+```
+### pinConversationWithConversationId:
+
+Pin a conversation
+
+`- (BMXErrorCode)pinConversationWithConversationId:(long long)*conversationId*`
+
+#### Parameters
+
+*conversationId*
+   The ID of the conversation to pin
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/pinConversationWithConversationId:completion:" title="pinConversationWithConversationId:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="pinConversationWithConversationId:" %}{% endlanying_code_snippet %}
+```
+### pinConversationWithConversationId:completion:
+
+Pin a conversation asynchronously
+
+`- (void)pinConversationWithConversationId:(long long)*conversationId* completion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*conversationId*
+   The ID of the conversation to pin
+
+*resBlock*
+   Completion callback containing error information
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/readAllMessageWithMsg:" title="readAllMessageWithMsg:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="pinConversationWithConversationId:completion:" %}{% endlanying_code_snippet %}
 ```
 ### readAllMessageWithMsg:
 
@@ -1360,4 +1445,49 @@ int
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="transferingNum" %}{% endlanying_code_snippet %}
+```
+
+<a name="//api/name/unpinConversationWithConversationId:" title="unpinConversationWithConversationId:"></a>
+### unpinConversationWithConversationId:
+
+Unpin a conversation
+
+`- (BMXErrorCode)unpinConversationWithConversationId:(long long)*conversationId*`
+
+#### Parameters
+
+*conversationId*
+   The ID of the conversation to unpin
+
+#### Return Value
+<a href="../Constants/BMXErrorCode.md">BMXErrorCode</a>
+
+#### Declared In
+* `floo_proxy.h`
+
+<a name="//api/name/unpinConversationWithConversationId:completion:" title="unpinConversationWithConversationId:completion:"></a>
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="unpinConversationWithConversationId:" %}{% endlanying_code_snippet %}
+```
+### unpinConversationWithConversationId:completion:
+
+Unpin a conversation asynchronously
+
+`- (void)unpinConversationWithConversationId:(long long)*conversationId* completion:(void ( ^ ) ( BMXError *aError ))*resBlock*`
+
+#### Parameters
+
+*conversationId*
+   The ID of the conversation to unpin
+
+*resBlock*
+   Completion callback containing error information
+
+#### Declared In
+* `floo_proxy.h`
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-ios",class="BMXChatService",function="unpinConversationWithConversationId:completion:" %}{% endlanying_code_snippet %}
 ```
