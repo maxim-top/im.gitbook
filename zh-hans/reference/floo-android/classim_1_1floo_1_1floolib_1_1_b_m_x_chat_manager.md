@@ -32,6 +32,9 @@ summary: 聊天管理器
 | void | **[insertMessages](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-insertmessages)**(final BMXMessageList list, final BMXCallBack callBack)<br>插入消息  |
 | void | **[getMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getmessage)**(final long msgId, final BMXDataCallBack< [BMXMessage](classim_1_1floo_1_1floolib_1_1_b_m_x_message.md) > callBack)<br>读取一条消息  |
 | void | **[deleteConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-deleteconversation)**(final long conversationId, final Boolean sync)<br>删除会话  |
+| void | **[pinConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-pinconversation)**(final long conversationId, final BMXCallBack callBack)<br>置顶会话  |
+| void | **[unpinConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-unpinconversation)**(final long conversationId, final BMXCallBack callBack)<br>取消置顶会话  |
+| void | **[getPinnedConversationList](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getpinnedconversationlist)**(final BMXDataCallBack< ListOfLongLong > callBack)<br>获取置顶会话 ID 列表  |
 | void | **[openConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-openconversation)**(final long conversationId, final BMXConversation.Type type, final boolean createIfNotExist, final BMXDataCallBack< [BMXConversation](classim_1_1floo_1_1floolib_1_1_b_m_x_conversation.md) > callBack)<br>打开一个会话  |
 | void | **[getAllConversations](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversations)**(final BMXDataCallBack< BMXConversationList > callBack)<br>获取所有会话  |
 | void | **[getAllConversationsUnreadCount](classim_1_1floo_1_1floolib_1_1_b_m_x_chat_manager.md#function-getallconversationsunreadcount)**(final BMXDataCallBack< Integer > callBack)<br>获取所有会话的全部未读数（标记为屏蔽的个人和群组的未读数不统计在内）  |
@@ -372,6 +375,67 @@ inline void deleteConversation(
 **Example**:
 ```
 {% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="deleteConversation" %}{% endlanying_code_snippet %}
+```
+### function pinConversation
+
+```java
+inline void pinConversation(
+    final long conversationId,
+    final BMXCallBack callBack
+)
+```
+
+置顶会话
+
+**Parameters**:
+
+  * **conversationId** 需要置顶的会话 ID
+  * **callBack** [BMXErrorCode]
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="pinConversation" %}{% endlanying_code_snippet %}
+```
+### function unpinConversation
+
+```java
+inline void unpinConversation(
+    final long conversationId,
+    final BMXCallBack callBack
+)
+```
+
+取消置顶会话
+
+**Parameters**:
+
+  * **conversationId** 需要取消置顶的会话 ID
+  * **callBack** [BMXErrorCode]
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="unpinConversation" %}{% endlanying_code_snippet %}
+```
+### function getPinnedConversationList
+
+```java
+inline void getPinnedConversationList(
+    final BMXDataCallBack< ListOfLongLong > callBack
+)
+```
+
+获取置顶会话 ID 列表
+
+**Parameters**:
+
+  * **callBack** [BMXErrorCode] 和置顶会话 ID 列表
+
+
+**Example**:
+```
+{% lanying_code_snippet repo="lanying-im-android",class="BMXChatManager",function="getPinnedConversationList" %}{% endlanying_code_snippet %}
 ```
 ### function openConversation
 
