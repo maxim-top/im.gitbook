@@ -23,6 +23,15 @@ jobs:
   deploy_sub_site:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout deployment tools
+      uses: actions/checkout@v4
+      with:
+        path: _central
+        fetch-depth: 1
+        sparse-checkout: |
+          scripts/refresh_cdn.py
+        sparse-checkout-cone-mode: false
+
     - name: Download book
       run: |
         wget ${{ github.event.inputs.book_url }}
@@ -67,15 +76,14 @@ jobs:
         concurrency: 50
 
         # Use increment or not
-        increment: true
+        incremental: true
 
     - name: CDN Refresh
-      uses: maxim-top/ali-cdn-refresh@1.0.0
-      with:
-          accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-          accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
-          type: Directory
-          path: ${{ github.event.inputs.cdn_url }}
+      env:
+        ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+        ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        CDN_URL: ${{ github.event.inputs.cdn_url }}
+      run: python3 _central/scripts/refresh_cdn.py --type Directory --path "$CDN_URL"
 
     # 发送成功回调
     - name: Send success callback
