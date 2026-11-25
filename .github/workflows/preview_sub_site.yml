@@ -82,7 +82,7 @@ jobs:
         path: |
           ~/.gitbook
           _site/node_modules
-        key: growai-gitbook-${{ runner.os }}-${{ hashFiles('_site/book.json') }}
+        key: growai-gitbook-${{ runner.os }}-${{ hashFiles('_site/book.json', '_site/*/book.json', '_site/LANGS.md') }}
 
     - name: Prepare GitBook CLI
       run: |
@@ -108,14 +108,19 @@ jobs:
         if grep -Fq "$legacy_command" Makefile; then
           perl -0pi -e 's{\Qdocker run -t -w /gitbook -v `pwd`:/gitbook erlang:21  escript scripts/subdirectory_summary.escript\E}{python3 ../_central/scripts/subdirectory_summary.py --site-dir .}' Makefile
         fi
-        make refine
+        SEENICAL_PREVIEW_BUILD=1 make refine
+        if [ -f site-layout.json ] && python3 -c 'import json; assert json.load(open("site-layout.json")).get("version") == 2'; then
+          test -f .build/_book/index.html
+          echo 'PREVIEW_BOOK_DIR=_site/.build/_book' >> "$GITHUB_ENV"
+        else
+          echo 'PREVIEW_BOOK_DIR=_site/_book' >> "$GITHUB_ENV"
+        fi
       working-directory: _site
 
     - name: Prevent preview indexing
       run: |
-        find _book -type f -name '*.html' -exec sed -i 's#</head>#<meta name="robots" content="noindex,nofollow,noarchive"></head>#' {} +
-        printf 'User-agent: *\nDisallow: /\n' > _book/robots.txt
-      working-directory: _site
+        find "$PREVIEW_BOOK_DIR" -type f -name '*.html' -exec sed -i 's#</head>#<meta name="robots" content="noindex,nofollow,noarchive"></head>#' {} +
+        printf 'User-agent: *\nDisallow: /\n' > "$PREVIEW_BOOK_DIR/robots.txt"
 
     - name: Restore current Node.js for deployment actions
       uses: actions/setup-node@v4
@@ -127,7 +132,7 @@ jobs:
         CHECK_URL: ${{ inputs.check_url }}
       run: |
         set -euo pipefail
-        release_size=$(du -sb _site/_book/ | awk '{print $1}')
+        release_size=$(du -sb "$PREVIEW_BOOK_DIR" | awk '{print $1}')
         response=$(curl --fail-with-body -X POST "$CHECK_URL" \
           -H "Content-Type: application/json" \
           -d "{\"release_size\": $release_size}")
@@ -141,7 +146,7 @@ jobs:
         access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
         bucket: grow-ai-sites
         endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
-        local-path: _site/_book
+        local-path: ${{ env.PREVIEW_BOOK_DIR }}
         remote-path: /preview-${{ inputs.site_name }}
         delay-html-file-upload: true
         no-delete-remote-files: false
