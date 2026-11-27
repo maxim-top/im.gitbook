@@ -34,8 +34,15 @@ jobs:
     - name: Setup Docker Buildx
       uses: docker/setup-buildx-action@v3
 
+    - name: Set up Java 17 for Joern
+      uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: '17'
+
     - name: Install Joern
       run: |
+        java -version
         cd
         wget https://github.com/joernio/joern/releases/download/v1.1.1108/joern-install.sh
         chmod +x ./joern-install.sh
