@@ -52,7 +52,7 @@ jobs:
         fi
 
     - name: Upload to OSS
-      uses: maxim-top/upload-to-oss@1.0.1
+      uses: maxim-top/upload-to-oss@1.0.2
       with:
         # Use Access Key
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
@@ -87,16 +87,24 @@ jobs:
 
     # 发送成功回调
     - name: Send success callback
+      id: report_success
       if: success()
+      env:
+        CALLBACK_URL: ${{ inputs.callback_url }}
       run: |
-        curl -X POST ${{ github.event.inputs.callback_url }} \
-        -H "Content-Type: application/json" \
-        -d '{"status": "ok"}'
+        receipt="$RUNNER_TEMP/deploy-finish.json"
+        status=$(curl --silent --show-error --connect-timeout 10 --max-time 60 \
+          --output "$receipt" --write-out '%{http_code}' \
+          -H 'Content-Type: application/json' --data '{"status":"ok"}' "$CALLBACK_URL")
+        if [[ "$status" != 2?? ]] || ! jq -se 'length == 1 and (.[0] | .code == 200 and .data.success == true)' "$receipt" >/dev/null; then
+          echo "::error::Deployment finished, but Connector did not acknowledge success (HTTP $status)."
+          exit 1
+        fi
 
-    # 发送失败回调
+    # A missing acknowledgement must not overwrite a successful deployment.
     - name: Send failure callback
-      if: failure()
+      if: failure() && steps.report_success.outcome == 'skipped'
+      env:
+        CALLBACK_URL: ${{ inputs.callback_url }}
       run: |
-        curl -X POST ${{ github.event.inputs.callback_url }} \
-        -H "Content-Type: application/json" \
-        -d '{"status": "error"}'
+        curl -X POST "$CALLBACK_URL" -H "Content-Type: application/json" -d '{"status":"error"}'

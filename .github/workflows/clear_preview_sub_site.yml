@@ -55,7 +55,7 @@ jobs:
         EOF
 
     - name: Upload empty preview site
-      uses: maxim-top/upload-to-oss@1.0.1
+      uses: maxim-top/upload-to-oss@1.0.2
       with:
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
         access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}

@@ -17,7 +17,7 @@ jobs:
         tar xzvf book.tar.gz
 
     - name: Upload to OSS
-      uses: maxim-top/upload-to-oss@1.0.1
+      uses: maxim-top/upload-to-oss@1.0.2
       with:
         # Use Access Key
         access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
