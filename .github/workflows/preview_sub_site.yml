@@ -109,7 +109,8 @@ jobs:
           perl -0pi -e 's{\Qdocker run -t -w /gitbook -v `pwd`:/gitbook erlang:21  escript scripts/subdirectory_summary.escript\E}{python3 ../_central/scripts/subdirectory_summary.py --site-dir .}' Makefile
         fi
         SEENICAL_PREVIEW_BUILD=1 make refine
-        if [ -f site-layout.json ] && python3 -c 'import json; assert json.load(open("site-layout.json")).get("version") == 2'; then
+        if ( [ -f site-layout.json ] && python3 -c 'import json; assert json.load(open("site-layout.json")).get("version") == 2' ) ||
+           ( [ ! -f site-layout.json ] && [ -f seenical.json ] && [ -f .build/.language-build ] ); then
           test -f .build/_book/index.html
           echo 'PREVIEW_BOOK_DIR=_site/.build/_book' >> "$GITHUB_ENV"
         else
